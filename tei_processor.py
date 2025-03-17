@@ -36,21 +36,18 @@ db_name = "tei_data.db"
 tei_processor = TEIProcessor(input_folder, db_name)
 tei_processor.read_xml()
 output_generator = OutputGenerator(output_folder, db_name)
-# Build the query dynamically
-# query = output_generator.build_query(
-#     columns=["manuscript.id", "manuscript_parts.id", "general_codicology.data", "general_palaeography.data"],
-#     tables=["manuscript"],
-#     joins=[
-#         ("INNER", "manuscript_parts", "manuscript.id", "manuscript_parts.manuscript_id"),
-#         ("LEFT", "general_codicology", "manuscript_parts.id", "general_codicology.part_id"),
-#         ("LEFT", "general_palaeography", "manuscript_parts.id", "general_palaeography.part_id"),
-#     ]
-# )
-#
-# print(query)
-
-# Fetch data and export it to different formats
-output_generator.to_csv()
+# Build query
+query = """
+SELECT *
+FROM manuscript
+INNER JOIN manuscript_parts ON manuscript.id = manuscript_parts.manuscript_id
+LEFT JOIN general_codicology ON manuscript_parts.id = general_codicology.part_id
+LEFT JOIN general_palaeography ON manuscript_parts.id = general_palaeography.part_id
+"""
+output_generator.build_query(query)
+# output_generator.to_csv()
+output_generator.to_json()
+# output_generator.to_excel()
 
 print("Processing completed!")
 tei_processor.close()

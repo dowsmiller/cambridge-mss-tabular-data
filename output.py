@@ -1,6 +1,6 @@
+import os
 import sqlite3
 from datetime import datetime
-
 import pandas as pd
 from typing import List, Tuple, Optional
 
@@ -13,25 +13,9 @@ class OutputGenerator:
         self.query = None
         self.df = None
 
-    def build_query(self, columns: Optional[List[str]], tables: List[str], joins: List[Tuple[str, str, str, str]]):
-        """
-        Builds and stores the SQL query dynamically.
-
-        :param columns: List of columns to select, or None for all columns.
-        :param tables: List of base tables (first table is the main table).
-        :param joins: List of tuples (join_type, table_name, on_left, on_right).
-        """
-        base_table = tables[0]
-        column_str = ", ".join(columns) if columns else "*"
-
-        query = f"SELECT {column_str} FROM {base_table}"
-
-        for join_type, table, left_key, right_key in joins:
-            query += f" {join_type.upper()} JOIN {table} ON {left_key} = {right_key}"
-
+    def build_query(self, query: str):
         self.query = query
-        # print(f"Built Query:\n{self.query}")
-        return self.query
+        print(f"Built Query:\n{self.query}")
 
     def fetch_data(self):
         """Executes the stored SQL query and stores the result as a Pandas DataFrame."""
@@ -41,11 +25,15 @@ class OutputGenerator:
         self.df = pd.read_sql_query(self.query, self.conn)
 
     def generate_filename(self, filename: Optional[str], extension: str) -> str:
-        """Generates a filename with a timestamp if none is provided."""
+        """Generates a filename with a timestamp if none is provided and ensures the output folder exists."""
+        # Ensure the output folder exists
+        os.makedirs(self.output_folder, exist_ok=True)
+        # Generate a timestamped filename if not provided
         if not filename:
             timestamp = datetime.now().strftime("%d_%m_%Y_%H_%M_%S")
             filename = f"output_{timestamp}"
-        return f"{self.output_folder}/{filename}.{extension}"
+
+        return os.path.join(self.output_folder, f"{filename}.{extension}")
 
     def to_csv(self, filename: Optional[str] = None):
         """Exports stored DataFrame to a CSV file."""
@@ -60,6 +48,8 @@ class OutputGenerator:
         if self.df is None:
             self.fetch_data()
         file_path = self.generate_filename(filename, "xlsx")
+        print(f"Exporting to {file_path}")
+        self.df.to_excel(file_path, index=False)
         self.df.to_excel(file_path, index=False)
         print(f"Saved to {file_path}")
 
@@ -67,7 +57,16 @@ class OutputGenerator:
         """Exports stored DataFrame to a JSON file."""
         if self.df is None:
             self.fetch_data()
+
+        # Ensure column names are unique
+        self.df.columns = [
+            f"{col}_{i}" if self.df.columns.tolist().count(col) > 1 else col
+            for i, col in enumerate(self.df.columns)
+        ]
+
         file_path = self.generate_filename(filename, "json")
         self.df.to_json(file_path, orient="records", indent=4)
         print(f"Saved to {file_path}")
+
+
 
