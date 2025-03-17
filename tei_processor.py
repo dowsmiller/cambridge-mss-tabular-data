@@ -1,7 +1,7 @@
 from database import Database
 import xmltodict
 import os
-from menuscript import Manuscript
+from manuscript import Manuscript
 from output import OutputGenerator
 
 class TEIProcessor:
