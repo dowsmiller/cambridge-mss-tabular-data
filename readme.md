@@ -1,4 +1,4 @@
-## Setting up and running script Locally
+## Setting Up and Running Script Locally
 ### Mac Users
 
 **Step 1:** Clone repository
