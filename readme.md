@@ -21,6 +21,7 @@ pip3 --version
 **Step 5:** Install dependencies
 
 ```pip install -r requirements.txt```
+
 **Step 6:** Place input xml files inside `data` folder in root of project
 
 **Step 7:** Changing configs (Optional)
