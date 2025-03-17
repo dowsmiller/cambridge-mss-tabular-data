@@ -28,9 +28,11 @@ pip3 --version
 
 Inside ```tei_processor.py``` you can change paths and database name
 
-input_folder = "data/collections" # Path of the input folder where all xml files are added
+```
+input_folder = "data/collections"
 output_folder = "output"
 db_name = "tei_data.db"
+```
 
 **Step 8:** Run processor script
 
