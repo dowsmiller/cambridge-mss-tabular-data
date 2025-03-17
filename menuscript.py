@@ -36,14 +36,21 @@ class Manuscript:
         return self.get_idno_by_type(tei_json, "collection")
 
     def get_idno_by_type(self, tei_json, idno_type):
-        idnos = self.get_nested_value(tei_json, ["TEI", "teiHeader", "fileDesc", "publicationStmt", "idno"], [])
-        if not isinstance(idnos, list):
-            idnos = [idnos]
+        idnos_publication_stmt = self.get_nested_value(tei_json,
+                                                       ["TEI", "teiHeader", "fileDesc", "publicationStmt", "idno"], [])
+        idnos_source_desc = self.get_nested_value(tei_json, ["TEI", "teiHeader", "fileDesc", "sourceDesc", "msDesc",
+                                                             "msIdentifier", "idno"], [])
+        # Ensure both are lists
+        idnos_publication_stmt = idnos_publication_stmt if isinstance(idnos_publication_stmt, list) else [
+            idnos_publication_stmt]
+        idnos_source_desc = idnos_source_desc if isinstance(idnos_source_desc, list) else [idnos_source_desc]
+        # Combine lists
+        all_idnos = idnos_publication_stmt + idnos_source_desc
 
-        for idno in idnos:
-            if isinstance(idno, dict) and idno.get("@type") == idno_type:
-                return idno.get("#text", "")
-        return ""
+        # Filter using next() (fast exit on first match)
+        return next(
+            (idno.get("#text", "") for idno in all_idnos if isinstance(idno, dict) and idno.get("@type") == idno_type),
+            "")
 
     def get_parts(self, tei_json):
         parts_list = []

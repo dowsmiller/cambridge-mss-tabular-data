@@ -1,11 +1,25 @@
-pip --version
+## Setting up and running script
+### Mac Users
 
-if on mac try 
+Step 1: Clone repository
 
-pip3 --version
+Step 2: Check if python and pip is installed
 
-python3 -m venv .venv 
-source .venv/bin/activate   
-pip install -r requirements.txt
+```pip3 --version```
 
-python tei_processor.py
+Step 3: Create a virtual environment 
+
+```python3 -m venv .venv```
+
+Step 4: Activate source
+
+```source .venv/bin/activate``` 
+
+Step 5: Install dependencies
+
+```pip install -r requirements.txt```
+Step 6: Place input xml filest inside `data` folder
+
+Step 7: Run processor script
+
+```python tei_processor.py```

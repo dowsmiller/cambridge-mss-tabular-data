@@ -7,15 +7,15 @@ class Part:
         self.db_cursor = db_cursor
         self.part_name = ms_part.get('@xml:id', '')
         self.part_type = ms_part.get('@type', '')
-        self.general_codicology = self.get_general_codicology(ms_part)
-        self.general_palaeography = self.get_general_palaeography(ms_part)
-        self.latest_revision_date = self.get_latest_revision_date(tei_json)
-        self.record_history = self.get_record_history(ms_part)
+        self.general_codicology = None #self.get_general_codicology(ms_part)
+        self.general_palaeography = None #self.get_general_palaeography(ms_part)
+        self.latest_revision_date = None #self.get_latest_revision_date(tei_json)
+        self.record_history = None #self.get_record_history(ms_part)
         # self.surrogates = self.get_surrogates(ms_part)
-        self.non_textual_content = self.get_non_textual_content(ms_part)
-        self.binding = self.get_binding(ms_part)
-        self.leaves = self.get_leaves(ms_part)
-        self.resources = self.get_resources(ms_part)
+        self.non_textual_content = None #self.get_non_textual_content(ms_part)
+        self.binding = None #self.get_binding(ms_part)
+        self.leaves = None #self.get_leaves(ms_part)
+        self.resources = None #self.get_resources(ms_part)
 
 
     def get_latest_revision_date(self, tei_json):
@@ -124,18 +124,23 @@ class Part:
         if not bibleObj:
             return data
 
-        title = bibleObj.get("title", "")
-        if isinstance(title, list):
-            title = ", ".join(title)
-        data["record_history"] = title
 
-        list_bibl_data = bibleObj.get("listBibl", {}).get("bibl", [])
-        if isinstance(list_bibl_data, dict):  # Single bibl entry
-            list_bibl_data = [list_bibl_data]
+        if isinstance(bibleObj, str):
+            title = bibleObj
+        elif isinstance(bibleObj, dict):
+            # Read title
+            title = bibleObj.get("title", "")
+            if isinstance(title, list):
+                title = ", ".join(title)
+            data["record_history"] = title
 
-        data["bibliography"] = ", ".join(
-            bibl.get("#text", "") for bibl in list_bibl_data if "#text" in bibl
-        )
+            list_bibl_data = bibleObj.get("listBibl", {}).get("bibl", [])
+            if isinstance(list_bibl_data, dict):  # Single bibl entry
+                list_bibl_data = [list_bibl_data]
+
+            data["bibliography"] = ", ".join(
+                bibl.get("#text", "") for bibl in list_bibl_data if "#text" in bibl
+            )
 
         availability = Helper.get_nested_value(ms_part, ["additional", "adminInfo", "availability"])
         if isinstance(availability, dict) and availability.get("@status") == "restricted":
@@ -150,7 +155,7 @@ class Part:
         if isinstance(extent_content, dict):
             extent_content = extent_content.get("#text", "")
 
-        return {
+        data = {
             "form": Helper.get_nested_value(ms_part, ["physDesc", "objectDesc", "@form"]),
             "condition": Helper.get_nested_value(ms_part, ["physDesc", "objectDesc", "supportDesc", "condition", "p"]),
             "watermark": Helper.get_nested_value(ms_part, ["physDesc", "objectDesc", "supportDesc", "support", "watermark"]),
@@ -160,6 +165,7 @@ class Part:
             "additions": bool(ms_part.get('additional')) and ms_part.get('additional') != {},
             "foliation": Helper.convert_to_string(Helper.get_nested_value(ms_part, ["physDesc", "objectDesc", "supportDesc", "foliation"])),
         }
+        return data
 
     def get_general_palaeography(self, ms_part):
         return {
@@ -177,96 +183,96 @@ class Part:
         )
         part_id = self.db_cursor.lastrowid
 
-        # Save general codicology data
-        self.db_cursor.execute(
-            """INSERT INTO general_codicology (part_id, form, condition, watermark, extent, collation,
-                                               mainStructures, additions, foliation)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-            (part_id,
-             self.general_codicology.get("form", ""),
-             self.general_codicology.get("condition", ""),
-             self.general_codicology.get("watermark", ""),
-             self.general_codicology.get("extent", ""),
-             self.general_codicology.get("collation", ""),
-             self.general_codicology.get("mainStructures", ""),
-             self.general_codicology.get("additions", ""),
-             self.general_codicology.get("foliation", ""))
-        )
-
-        # Save general palaeography data
-        self.db_cursor.execute(
-            """INSERT INTO general_palaeography (part_id, hands, script, main_script, execution, medium)
-               VALUES (?, ?, ?, ?, ?, ?)""",
-            (part_id,
-             self.general_palaeography.get("hands", ""),
-             self.general_palaeography.get("script", ""),
-             self.general_palaeography.get("main_script", ""),
-             self.general_palaeography.get("execution", ""),
-             self.general_palaeography.get("medium", ""))
-        )
-
-        self.db_cursor.execute(
-            """INSERT INTO non_textual_content (part_id, music_notation, miniature, drawing, border, diagram,
-            hist_init,dec_init,flour_init,misc)
-               VALUES (?, ?, ?, ?, ?, ?,?,?,?,?)""",
-            (part_id,
-             self.non_textual_content.get("music_notation"),
-             self.non_textual_content.get("miniature"),
-             self.non_textual_content.get("drawing"),
-             self.non_textual_content.get("border"),
-             self.non_textual_content.get("diagram"),
-             self.non_textual_content.get("hist_init"),
-             self.non_textual_content.get("dec_init"),
-             self.non_textual_content.get("flour_init"),
-             self.non_textual_content.get("misc"))
-        )
-
-        self.db_cursor.execute(
-            """INSERT INTO binding (part_id, binding, contemporary, not_after, not_before, height,
-            width,unit)
-               VALUES (?, ?, ?, ?, ?, ?,?,?)""",
-            (part_id,
-             self.binding.get("binding",""),
-             self.binding.get("contemporary",""),
-             self.binding.get("not_after",""),
-             self.binding.get("not_before",""),
-             self.binding.get("height",""),
-             self.binding.get("width",""),
-             self.binding.get("unit",""))
-        )
-
-        self.db_cursor.execute(
-            """INSERT INTO leaves (part_id, leaves, height, height_min, height_max, width,
-            width_min, width_max, unit)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-            (part_id,
-             self.leaves.get("leaves", ""),
-             self.leaves.get("height", ""),
-             self.leaves.get("height_min", ""),
-             self.leaves.get("height_max", ""),
-             self.leaves.get("width", ""),
-             self.leaves.get("width_min", ""),
-             self.leaves.get("width_max", ""),
-             self.leaves.get("unit", ""))
-        )
-
-        for res in self.resources:
-            self.db_cursor.execute(
-                """INSERT INTO resources (part_id, bibliography, uri, resource_id,resource_type)
-                   VALUES (?, ?, ?, ?, ?)""",
-                (part_id,
-                 res.get("bibliography", ""),
-                 res.get("uri", ""),
-                 res.get("resource_id", ""),
-                 res.get("resource_type", ""))
-            )
-
-        self.db_cursor.execute(
-            """INSERT INTO record_history (part_id, record_history, bibliography, recent_change_date, availability_statement)
-               VALUES (?, ?, ?, ?, ?)""",
-            (part_id,
-             self.record_history.get("record_history"),
-             self.record_history.get("bibliography"),
-             self.record_history.get("recent_change_date"),
-             self.record_history.get("availability_statement"))
-        )
+        # # Save general codicology data
+        # self.db_cursor.execute(
+        #     """INSERT INTO general_codicology (part_id, form, condition, watermark, extent, collation,
+        #                                        mainStructures, additions, foliation)
+        #        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+        #     (part_id,
+        #      self.general_codicology.get("form", ""),
+        #      self.general_codicology.get("condition", ""),
+        #      self.general_codicology.get("watermark", ""),
+        #      self.general_codicology.get("extent", ""),
+        #      self.general_codicology.get("collation", ""),
+        #      self.general_codicology.get("mainStructures", ""),
+        #      self.general_codicology.get("additions", ""),
+        #      self.general_codicology.get("foliation", ""))
+        # )
+        #
+        # # Save general palaeography data
+        # self.db_cursor.execute(
+        #     """INSERT INTO general_palaeography (part_id, hands, script, main_script, execution, medium)
+        #        VALUES (?, ?, ?, ?, ?, ?)""",
+        #     (part_id,
+        #      self.general_palaeography.get("hands", ""),
+        #      self.general_palaeography.get("script", ""),
+        #      self.general_palaeography.get("main_script", ""),
+        #      self.general_palaeography.get("execution", ""),
+        #      self.general_palaeography.get("medium", ""))
+        # )
+        #
+        # self.db_cursor.execute(
+        #     """INSERT INTO non_textual_content (part_id, music_notation, miniature, drawing, border, diagram,
+        #     hist_init,dec_init,flour_init,misc)
+        #        VALUES (?, ?, ?, ?, ?, ?,?,?,?,?)""",
+        #     (part_id,
+        #      self.non_textual_content.get("music_notation"),
+        #      self.non_textual_content.get("miniature"),
+        #      self.non_textual_content.get("drawing"),
+        #      self.non_textual_content.get("border"),
+        #      self.non_textual_content.get("diagram"),
+        #      self.non_textual_content.get("hist_init"),
+        #      self.non_textual_content.get("dec_init"),
+        #      self.non_textual_content.get("flour_init"),
+        #      self.non_textual_content.get("misc"))
+        # )
+        #
+        # self.db_cursor.execute(
+        #     """INSERT INTO binding (part_id, binding, contemporary, not_after, not_before, height,
+        #     width,unit)
+        #        VALUES (?, ?, ?, ?, ?, ?,?,?)""",
+        #     (part_id,
+        #      self.binding.get("binding",""),
+        #      self.binding.get("contemporary",""),
+        #      self.binding.get("not_after",""),
+        #      self.binding.get("not_before",""),
+        #      self.binding.get("height",""),
+        #      self.binding.get("width",""),
+        #      self.binding.get("unit",""))
+        # )
+        #
+        # self.db_cursor.execute(
+        #     """INSERT INTO leaves (part_id, leaves, height, height_min, height_max, width,
+        #     width_min, width_max, unit)
+        #        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+        #     (part_id,
+        #      self.leaves.get("leaves", ""),
+        #      self.leaves.get("height", ""),
+        #      self.leaves.get("height_min", ""),
+        #      self.leaves.get("height_max", ""),
+        #      self.leaves.get("width", ""),
+        #      self.leaves.get("width_min", ""),
+        #      self.leaves.get("width_max", ""),
+        #      self.leaves.get("unit", ""))
+        # )
+        #
+        # for res in self.resources:
+        #     self.db_cursor.execute(
+        #         """INSERT INTO resources (part_id, bibliography, uri, resource_id,resource_type)
+        #            VALUES (?, ?, ?, ?, ?)""",
+        #         (part_id,
+        #          res.get("bibliography", ""),
+        #          res.get("uri", ""),
+        #          res.get("resource_id", ""),
+        #          res.get("resource_type", ""))
+        #     )
+        #
+        # self.db_cursor.execute(
+        #     """INSERT INTO record_history (part_id, record_history, bibliography, recent_change_date, availability_statement)
+        #        VALUES (?, ?, ?, ?, ?)""",
+        #     (part_id,
+        #      self.record_history.get("record_history"),
+        #      self.record_history.get("bibliography"),
+        #      self.record_history.get("recent_change_date"),
+        #      self.record_history.get("availability_statement"))
+        # )

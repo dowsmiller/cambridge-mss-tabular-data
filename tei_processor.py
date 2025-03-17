@@ -24,13 +24,14 @@ class TEIProcessor:
             for file in files:
                 if file.endswith(".xml"):
                     file_path = os.path.join(root, file)
+                    print(f"Processing {file_path}")
                     self.process_tei_file(file_path)
 
     def close(self):
         self.db.close()
 
 # Handle the processing
-input_folder = "data/collections"
+input_folder = "data/collections" # Path of the input folder where all xml files are added
 output_folder = "output"
 db_name = "tei_data.db"
 tei_processor = TEIProcessor(input_folder, db_name)
@@ -46,7 +47,7 @@ LEFT JOIN general_palaeography ON manuscript_parts.id = general_palaeography.par
 """
 output_generator.build_query(query)
 # output_generator.to_csv()
-output_generator.to_json()
+# output_generator.to_json()
 # output_generator.to_excel()
 
 print("Processing completed!")
