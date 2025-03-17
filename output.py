@@ -49,8 +49,7 @@ class OutputGenerator:
             self.fetch_data()
         file_path = self.generate_filename(filename, "xlsx")
         print(f"Exporting to {file_path}")
-        self.df.to_excel(file_path, index=False)
-        self.df.to_excel(file_path, index=False)
+        self.df.to_excel(file_path, index=False
         print(f"Saved to {file_path}")
 
     def to_json(self, filename: Optional[str] = None):
