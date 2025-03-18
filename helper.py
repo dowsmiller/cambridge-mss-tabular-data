@@ -102,9 +102,24 @@ class Helper:
         return {}
 
     @staticmethod
-    def convert_to_string(data):
-        if isinstance(data, str):
+    def list_to_string(data):
+        if data is None or isinstance(data, str):
             return data
+
+        if isinstance(data, list):
+            return ", ".join(map(str, data))
+
+        return str(data)
+
+    @staticmethod
+    def convert_to_string(data):
+
+        if data is None or isinstance(data, str):
+            return data
+
+        if isinstance(data, list):
+            return ", ".join(map(str, data))  # Convert list elements to a string
+
         result = data.get('#text', '')
         superscripts = data.get('hi', [])
         if isinstance(superscripts, dict):
