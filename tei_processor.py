@@ -40,7 +40,7 @@ class TEIProcessor:
         self.db.close()
 
 # Handle the processing
-input_folder = "data/collections1" # Path of the input folder where all xml files are added
+input_folder = "data/collections" # Path of the input folder where all xml files are added
 output_folder = "output"
 db_name = "tei_data.db"
 tei_processor = TEIProcessor(input_folder, db_name)
@@ -54,10 +54,10 @@ INNER JOIN manuscript_parts ON manuscript.id = manuscript_parts.manuscript_id
 LEFT JOIN general_codicology ON manuscript_parts.id = general_codicology.part_id
 LEFT JOIN general_palaeography ON manuscript_parts.id = general_palaeography.part_id
 """
-# output_generator.build_query(query)
-# output_generator.to_csv()
+output_generator.build_query(query)
+output_generator.to_csv()
 # output_generator.to_json()
-# output_generator.to_excel()
+output_generator.to_excel()
 
 print("Processing completed!")
 tei_processor.close()
