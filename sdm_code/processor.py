@@ -33,7 +33,6 @@ def extract_with_xpath(xml_element, xpath_expr, namespaces):
 # Read in the XML catalogue files
 print("Reading catalogue files...")
 catalogue_files = read_xml_files("collections")
-
 # Parse XML catalogue files with a progress bar
 catalogue = {}
 for file in tqdm(catalogue_files, desc="Parsing catalogue files"):
@@ -52,7 +51,6 @@ for file in tqdm(authority_files, desc="Parsing authority files"):
 # Read in the CSV configuration files (don't use read_xml_files here)
 print("Reading CSV configuration files...")
 config_files = read_xml_files("config", pattern=".csv")
-
 # Parse CSV files with progress bar
 config_list = {}
 for file in tqdm(config_files, desc="Parsing CSV files"):

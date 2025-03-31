@@ -23,6 +23,6 @@ Step 6: Install dependencies
 
 Step 7: Run processor script
 
-	python tei_processor.py
+	python processor.py
 
 After processing is completed, outputs should appear in the 'output' folder
