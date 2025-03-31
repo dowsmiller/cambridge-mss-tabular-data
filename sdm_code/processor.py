@@ -70,7 +70,7 @@ namespaces = {'tei': 'http://www.tei-c.org/ns/1.0'}
 
 # Process data with progress bar
 print("Extracting data from XML files...")
-for config_name, config in tqdm(config_list.items(), desc="Processing configurations"):
+for config_name, config in tqdm(config_list.items(), desc="Total progress"):
     df = df_list[config_name]
 
     # Extract relevant columns from the config
@@ -79,12 +79,12 @@ for config_name, config in tqdm(config_list.items(), desc="Processing configurat
     )
 
     # Extract data for each XPath
-    for xpath, heading, auth_file, auth_xpath_1, auth_xpath_2 in tqdm(zip(xpaths, headings, auth_files, auth_xpath_1s, auth_xpath_2s), total=len(xpaths), desc=f"Extracting '{config_name}'", leave=False):
+    for xpath, heading, auth_file, auth_xpath_1, auth_xpath_2 in tqdm(zip(xpaths, headings, auth_files, auth_xpath_1s, auth_xpath_2s), total=len(xpaths), desc=f"File '{config_name}'", leave=False):
         results = []
         auth_file = auth_file if pd.notna(auth_file) else None
         auth_xml = authority.get(auth_file) if auth_file else None
 
-        for filename, xml in tqdm(catalogue.items(), total=len(catalogue), desc=f"Processing '{heading}'", leave=False):
+        for filename, xml in tqdm(catalogue.items(), total=len(catalogue), desc=f"Column '{heading}'", leave=False):
             data = extract_with_xpath(xml, xpath, namespaces)
 
             if auth_file is None:
