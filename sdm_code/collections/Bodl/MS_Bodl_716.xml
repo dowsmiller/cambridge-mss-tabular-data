@@ -1,0 +1,152 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1705">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Bodl. 716</title>
+            <title type="collection">MSS. Bodl. (Bodley)</title>
+            <respStmt xml:id="DD">
+               <resp when="1984">Cataloguer</resp>
+               <persName>A. G. Watson</persName>
+            </respStmt>
+            <respStmt xml:id="PA">
+               <resp when="1974">Cataloguer</resp>
+               <persName>Bruce Barker-Benfield</persName>
+            </respStmt>
+            <respStmt xml:id="SC">
+               <resp when="1922">Cataloguer</resp>
+               <persName>H. H. E. Craster</persName>
+               <persName>Falconer Madan</persName>
+            </respStmt>
+            <respStmt xml:id="MLH">
+               <resp when="2019">Encoding</resp>
+               <resp when="2019">Updates and corrections</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Bodl_716</idno>
+            <idno type="collection">Bodl</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Bodl_716" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement key="place_7011931">Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Bodl. 716</idno>
+                  <idno type="ieArk">ark:29072/x0hh63sw09kg</idno><idno type="crArk">ark:29072/x0hd76s0268v</idno><altIdentifier type="internal">
+                     <idno type="SCN">2630</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents resp="#DD #SC">
+                  <textLang mainLang="la">Latin</textLang>
+                  <msItem n="1" xml:id="MS_Bodl_716-item1">
+                     <locus>(fol. 1)</locus>
+                     <author key="person_68939042">John Wyclif</author>
+                     <title key="work_2789">Postilla super nouum testamentum</title>
+                  </msItem>
+                  <msItem n="2" xml:id="MS_Bodl_716-item2">
+                     <locus>(fol. 173)</locus>
+                     <author key="person_2297">Ps.-Hugh of Saint-Cher</author>
+                     <title key="work_4024">Commentary on Revelation</title>
+                     <note>(<bibl type="repertory"><ref target="http://www.repbib.uni-trier.de/cgi-bin/rebiIndex.tcl?ac=searchlist&amp;tlnr=3771">Stegmüller, <title>Bibl.</title> 3771</ref></bibl>)</note>
+                  </msItem>
+                  <msItem>
+                     <locus>(fol. 246v)</locus>
+                     <colophon>Explicit etcetera Scriptus oxonie Anno domini mº ccccº 3º</colophon>
+                  </msItem>
+                  <msItem>
+                     <note>Fols. 247–255v contain tables in a later hand.</note>
+                  </msItem>
+               </msContents>
+               <physDesc resp="#DD">
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent>i + <num type="leaf">255</num> + i fols. <dimensions type="leaf" unit="mm">
+                              <height>345</height>
+                              <width>245</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2" writtenLines="53 56">2 cols., 53-c. 56 lines, column space <dimensions type="column" unit="mm">
+                              <height max="250" min="240">240–50</height>
+                              <width>80</width>
+                           </dimensions></layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc hands="2">
+                     <handNote>Two hands: (1) fols. 1–69v, 133v-246v; (2) fols. 73–133.</handNote>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote resp="#PA" type="flourInit">Penwork (<ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref>, addenda)</decoNote>
+                     <decoNote type="colInit">Coloured initials.</decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin resp="#DD">
+                     <origDate calendar="Gregorian" cert="high" when="1403">1403</origDate>
+                     <origPlace>
+                        <country key="place_7002445">English</country>, <settlement key="place_7011931">Oxford</settlement>
+                     </origPlace>
+                  </origin>
+                  <provenance resp="#DD"><orgName key="org_150107857" role="fmo">Benedictine abbey of Bury St Edmunds</orgName>, purchased by fr. <persName key="person_3056">John Cranewys</persName>: <q>Secunda pars postillatoris super sacram scripturam de empcione fratris Johannis Cranewys precij iii marcarum</q> (fol. iii verso).</provenance>
+                  <provenance resp="#SC"><orgName key="org_159532915" role="fmo">Pembroke College, Cambridge</orgName>, pressmark <q>A. 8. 1</q></provenance>
+                  <acquisition cert="low" resp="#SC" when="1613">Perhaps purchased from John Edwards, bookseller, London, 1613.</acquisition>
+                  <!-- not marked up, as bookseller, but check -->
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Description adapted (March 2019) from the following sources, and with reference to published sources cited in the description: <listBibl>
+                              <bibl>A. G. Watson, <title><ref target="https://catalog.hathitrust.org/Record/000310664">Catalogue of Dated and Datable Manuscripts c.435–1600 in Oxford Libraries</ref></title> (Oxford, 1984), no. 111 [contents, physical description, origin, provenance]</bibl>
+                              <bibl>Otto Pächt and J. J. G. Alexander, <title><ref target="https://catalog.hathitrust.org/Record/000468709">Illuminated Manuscripts in the Bodleian Library, Oxford</ref></title>, addenda (by B. Barker-Benfield) (1974), p. 10 [decoration]</bibl>
+                              <bibl>Summary Catalogue (1922) [contents, provenance, acquisition]</bibl>
+                           </listBibl>
+                           <listBibl>
+                              <bibl facs="aap0479.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 458</bibl>
+                              <bibl facs="aap0480.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 459</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl subtype="full" type="digital-facsimile">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/4915032a-5d02-4e4e-a82f-5c9c8ad78a36/">
+                           <title>Digital Bodleian</title>
+                        </ref>
+                        <note>(full digital facsimile)</note>
+                     </bibl>
+                  </surrogates>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl><ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/817"><title>MLGB3: Medieval Libraries of Great Britain</title></ref></bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2019-03-25" who="#MLH">Revised to incorporate all information in Watson and SC.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

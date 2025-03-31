@@ -1,0 +1,122 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7808">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Lyell 73</title>
+            <title type="collection">MSS. Lyell</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Lyell_73</idno>
+            <idno type="collection">Lyell</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Lyell_73" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Lyell 73</idno>
+               <idno type="ieArk">ark:29072/x02f75r913q8</idno><idno type="crArk">ark:29072/x02b88qd30dd</idno></msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Lyell_73-item1">
+                     <author key="person_7386286">Ps.-Augustine</author>
+                     <title key="work_3908">Soliloquia</title>
+                     <note>(Italian translation)</note>
+                     <textLang mainLang="it">Italian</textLang>
+                  </msItem>
+                  <msItem n="2" xml:id="MS_Lyell_73-item2">
+                     <author key="person_66806872">Augustine</author>
+                     <title key="work_789">Enarrationes in Psalmos</title>
+                     <note>(extracts in Italian translation)</note>
+                     <bibl type="commentedOn">
+                        <title>Bible, Psalms</title>
+                     </bibl>
+                     <textLang mainLang="it">Italian</textLang>
+                  </msItem>
+                  <msItem n="3" xml:id="MS_Lyell_73-item3">
+                     <author key="person_22494393">Bartolomeo da S. Concordio</author>
+                     <title key="work_893">Summa de casibus conscientiae</title>
+                     <note>(extracts in Italian translation)</note>
+                     <note>)</note>
+                     <textLang mainLang="it">Italian</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="chart">
+                        <support>paper</support>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote>
+                        <p>Blue or red initials flourished in red or purple.</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" when="1423" cert="high">1423</origDate>
+                     <origPlace>
+                        <country key="place_1000080">Italian</country>, <settlement key="place_7000457">Florence</settlement>
+                        <!--ORIGINAL: Italian, Florence-->
+                     </origPlace>
+                  </origin>
+                  <provenance notAfter="1948" notBefore="1871" resp="#MMM">
+                     <persName key="person_64157046" role="fmo">James P. R. Lyell, 1871–1948</persName>
+                  </provenance>
+                  <acquisition resp="#MMM" when="1948">Chosen as one of the hundred manuscripts bequeathed to the Bodleian by Lyell in 1948.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>
+                           <ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from A. de la Mare, <title>Catalogue of the Medieval Manuscripts Bequeathed to the Bodleian Library Oxford by James P. R. Lyell</title> (1971) <listBibl>
+                              <bibl facs="cah0255.gif" type="LYELL">Catalogue, p. 221</bibl>
+                              <bibl facs="cah0256.gif" type="LYELL">Catalogue, p. 222</bibl>
+                              <bibl facs="cah0257.gif" type="LYELL">Catalogue, p. 223</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="PRINT">
+                        <head>Printed descriptions:</head>
+                        <bibl>A. Watson, <title>Catalogue of Dated and Datable Manuscripts in Oxford Libraries</title> (1984), <citedRange unit="entry" from="644" to="644">
+                              <ref target="https://hdl.handle.net/2027/mdp.39015008982863?urlappend=%3Bseq=135">no. 644</ref>
+                           </citedRange>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2018-06-15" xml:id="MMM">
+            <persName>Mitch Fraas</persName> Provenance and acquisition information added using <ref target="https://github.com/littlegustv/oxfordupdates/blob/master/test_case_for_oxford_prov.rb">https://github.com/littlegustv/oxfordupdates/blob/master/test_case_for_oxford_prov.rb</ref> in collaboration with the <ref target="http://mappingmanuscriptmigrations.org/">Mapping Manuscript Migrations</ref> project.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

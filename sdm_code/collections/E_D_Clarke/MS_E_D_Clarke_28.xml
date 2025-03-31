@@ -1,0 +1,124 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3993">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. E. D. Clarke 28</title>
+            <title type="collection">MSS. E. D. Clarke</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_E_D_Clarke_28</idno>
+            <idno type="collection">Clarke</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_E_D_Clarke_28" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. E. D. Clarke 28</idno>
+                  <idno type="ieArk">ark:29072/x08k71nh7886</idno><idno type="crArk">ark:29072/x08g84mm94z0</idno><altIdentifier type="internal">
+                     <idno type="SCN">18390</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_E_D_Clarke_28-item1">
+                     <author key="person_66462384">Terence</author>
+                     <title key="work_4666">Comedies</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote>Decoration<p>Fine borders, initials. Related to the style of <persName key="person_45437156" role="art">Francesco d'Antonio del Cherico</persName>. Written in humanistic script by <persName key="person_415" role="scr">Gherardo di Giovanni del Ciriagio</persName>, citizen and notary of Florence, fol. 153v. (<ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> ii. 282, pl. XXV)</p>
+                        <list type="gloss">
+                           <head>fol. 1r</head>
+                           <label>Type</label>
+                           <item>
+                              <seg type="genreform">border, upper, left and lower margins</seg>
+                           </item>
+                           <label>Subject</label>
+                           <item>
+                              <seg type="subject">Floral designs, gold disks. In the lower margin two winged putti support a medallion with a coat of arms (azure a sea-lion (?) argent holding a crown or).</seg>
+                           </item>
+                        </list>
+                     </decoNote>
+                  </decoDesc>
+                  <bindingDesc>
+                     <binding contemporary="true">
+                        <p>Stamped leather on boards with four clasps (one lost), Italian work,
+         contemporary.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" when="1466" cert="high">1466</origDate>
+                     <origPlace>
+                        <country key="place_1000080">Italian</country>, <settlement key="place_7000457">Florence</settlement>
+                        <!--ORIGINAL: Italian, Florence-->
+                     </origPlace>
+                  </origin>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Summary description by Elizabeth Solopova and Matthew Holford, based on the Summary Catalogue and supplementary sources. <listBibl>
+                              <bibl facs="aaz0324.gif" type="SC">Summary Catalogue, Vol. 4, p. 305</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl subtype="partial" type="digital-facsimile">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/592708d0-fd51-4715-b3f0-ae47c123f375/">
+                           <title>Digital Bodleian</title>
+                        </ref>
+                        <note>(5 images from 35mm slides)</note>
+                     </bibl>
+                  </surrogates>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="PRINT">
+                        <head>Printed descriptions:</head>
+                        <bibl>A. Watson, <title>Catalogue of Dated and Datable Manuscripts in Oxford Libraries</title> (1984), <citedRange unit="entry" from="415" to="415">
+                              <ref target="https://hdl.handle.net/2027/mdp.39015008982863?urlappend=%3Bseq=94">no. 415</ref>
+                           </citedRange>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2022-04-04">Add binding information from Summary Catalogue.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

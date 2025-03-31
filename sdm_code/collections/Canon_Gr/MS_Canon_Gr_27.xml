@@ -1,0 +1,111 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_10018">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Canon. Gr. 27</title>
+            <title type="collection">MSS. Canon. Gr. (Canonici Greek)</title>
+            <respStmt>
+               <resp when="2018">Summary description</resp>
+               <resp>Markup and encoding</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+            <respStmt xml:id="BCBB">
+               <resp when="2020">Cataloguer</resp>
+               <persName>B. C. Barker-Benfield</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Canon_Gr_27</idno>
+            <idno type="collection">Canon Gr</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Canon_Gr_27" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Canon. Gr. 27</idno>
+                  <idno type="ieArk">ark:29072/x041687j22rx</idno><idno type="crArk">ark:29072/x05m60qs78pw</idno><altIdentifier type="internal">
+                     <idno type="SCN">18480</idno>
+                  </altIdentifier>
+                  <altIdentifier>
+                     <idno type="diktyon">47577</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Canon_Gr_27-item1">
+                     <author key="person_77111352">Theodoret, Bishop of Cyrrhus</author>
+                     <title key="work_4689">Graecorum affectionum curatio</title>
+                     <textLang mainLang="grc">Greek</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="chart">
+                        <support>paper</support>
+                     </supportDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Script attributed to <persName key="person_62343846" role="scr">Michael Trivolis (Maximus the Greek)</persName> (<bibl>Gamillscheg and Harlfinger, <title>Repertorium der greichischen Kopisten</title> I A (1981), p. 156, no. 287)</bibl>.</handNote>
+                  </handDesc>
+                  <bindingDesc resp="#BCBB">
+                     <binding notAfter="1510" notBefore="1490">
+                        <p>15th century, late, or early 16th century, <placeName key="place_1000080">Italian</placeName> (as MS., probably before 1505): wood boards; brown leather, blind-tooled with lines, stamps and strapwork; remains of two clasps with dark brown textile straps (lost); spine lost; edges plain, author’s name in ink on lower edge. Rebacked in similar leather, 18th century, <placeName key="place_7018159">Venice</placeName>, with added pink floral endleaves (carta bassanese), for Jacopo Soranzo, with his label at top of spine. <dimensions type="binding" unit="mm">
+                              <height max="165" min="163">163–165</height>
+                              <width max="106" min="105">105–106</width>
+                              <depth precision="medium" quantity="30">c. 30</depth>
+                           </dimensions> (book closed).</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1510" notBefore="1490">late 15th or early 16th century</origDate>
+                     <origPlace><country key="place_1000080">Italy</country></origPlace>
+                  </origin>
+                  <provenance notAfter="1805" notBefore="1727" resp="#MMM"><persName key="person_2384880" role="fmo">Matteo Luigi Canonici, 1727–1805</persName></provenance>
+                  <provenance notAfter="1807" resp="#MMM"><persName key="person_446" role="fmo">Giuseppe Canonici , -1807</persName></provenance>
+                  <acquisition resp="#MMM" when="1817">Purchased by the Bodleian in 1817</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Summary description by Matthew Holford, based on the Quarto Catalogue (H. O. Coxe, <title>Catalogi codicum manuscriptorum Bibliothecae Bodleianae pars prima recensionem codicum Graecorum continens</title>, Quarto Catalogues I, 1883, repr. with corrections 1969) and published sources cited in the description. Binding: <bibl>B. C. Barker-Benfield, <title>Bookbindings of Canonici manuscripts : a survey of early and non-standard bindings, mostly Italian, in the Canonici collection of the Bodleian Library, University of Oxford</title> (Oxford, privately printed, 2020).</bibl>
+                           <listBibl>
+                              <bibl facs="abu0478.gif" type="QUARTO">Quarto Catalogue, col. 34</bibl>
+                              <bibl facs="aaz0334.gif" type="SC">Summary Catalogue, vol. 4, p. 315</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl><ref target="http://pinakes.irht.cnrs.fr/notices/cote/47577/"><title>Pinakes | Πίνακες: Textes et manuscrits grecs</title></ref></bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2020-04">Binding description added.</change>
+         <change when="2018-11-26">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

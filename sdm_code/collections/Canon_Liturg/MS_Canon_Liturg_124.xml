@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_2828">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Canon. Liturg. 124</title>
+            <title type="collection">MSS. Canon. Liturg. (Canonici Liturgical)</title>
+            <respStmt xml:id="VD">
+               <resp when="1957">Cataloguer</resp>
+               <persName>S. J. P. van Dijk</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Canon_Liturg_124</idno>
+            <idno type="collection">Canon Liturg</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Canon_Liturg_124" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Canon. Liturg. 124</idno>
+                  <idno type="ieArk">ark:29072/x0hx11xf204t</idno>
+                  <idno type="crArk">ark:29072/x0dz010q43pw</idno>
+                  <altIdentifier type="internal">
+                     <idno type="SCN">19265</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem class="#liturgica" n="1" xml:id="MS_Canon_Liturg_124-item1">
+                     <title key="work_10582" type="desc">Book of Hours, Use of Tournai</title>
+                     <textLang mainLang="la" otherLangs="frm">Latin and Middle French</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent resp="#VD"> ii + 195 + ii fol.<dimensions type="leaf" unit="mm">
+                              <height>113</height>
+                              <width>85</width>
+                           </dimensions>
+                           <dimensions type="written" unit="mm">
+                              <height>63</height>
+                              <width>45</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                     <layoutDesc resp="#VD">
+                        <layout columns="1" writtenLines="11">11 lines</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote>Decoration<p>Good borders, initials. (<ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> i. 314)</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1450" notBefore="1425">15th century, second quarter</origDate>
+                     <origPlace>
+                        <country key="place_7024097">Flemish</country>, <settlement key="place_7008002">Tournai</settlement>
+                        <!--ORIGINAL: Flemish, Tournai-->
+                     </origPlace>
+                  </origin>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>
+                           <ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Summary Catalogue (1897). Decoration, localization and date follow Pächt and Alexander (1966). <listBibl>
+                              <bibl facs="aaz0362.gif" type="SC">Summary Catalogue, vol. 4, p. 343</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="PRINT">
+                        <head>Printed descriptions:</head>
+                        <bibl>S. J. P. van Dijk, <title>Latin Liturgical Manuscripts in the Bodleian Library, Oxford, vol. 4: Books of Hours</title> (typescript, 1957), <citedRange unit="page" from="117" to="117">p. 117</citedRange>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2024-09">Add extent, leaf dimensions and layout from van Dijk, Latin Liturgical Manuscripts in the Bodleian Library, Oxford.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

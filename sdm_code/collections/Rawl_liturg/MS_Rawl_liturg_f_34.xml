@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8715">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Rawl. liturg. f. 34</title>
+            <title type="collection">MSS. Rawl. liturg. (Rawlinson liturgical)</title>
+            <respStmt xml:id="VD">
+               <resp when="1957">Cataloguer</resp>
+               <persName>S. J. P. van Dijk</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Rawl_liturg_f_34</idno>
+            <idno type="collection">Rawl liturg</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Rawl_liturg_f_34" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Rawl. liturg. f. 34</idno>
+                  <idno type="ieArk">ark:29072/x0gh93gz77q8</idno>
+                  <idno type="crArk">ark:29072/x0gf06g294d2</idno>
+                  <altIdentifier type="internal">
+                     <idno type="SCN">15757</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem class="#liturgica" n="1" xml:id="MS_Rawl_liturg_f_34-item1">
+                     <title key="work_10565" type="desc">Book of Hours, Use of Rome</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent resp="#VD"> i + 118 + 2 + i fol.<dimensions type="leaf" unit="mm">
+                              <height>137</height>
+                              <width>100</width>
+                           </dimensions>
+                           <dimensions type="written" unit="mm">
+                              <height>74</height>
+                              <width>45</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                     <layoutDesc resp="#VD">
+                        <layout columns="1" writtenLines="17">17 long lines</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <summary>
+                        <ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> i. 328:</summary>
+                     <decoNote type="miniature">Good miniatures.</decoNote>
+                     <decoNote type="border">Good borders.</decoNote>
+                     <decoNote type="decInit"> Good initials. </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1475" notBefore="1450">15th century, third quarter</origDate>
+                     <origPlace>
+                        <country key="place_7024097">Flemish</country>, <region>Hainaut</region>
+                        <!--ORIGINAL: Flemish, Hainaut-->
+                     </origPlace>
+                  </origin>
+                  <provenance notAfter="1755" notBefore="1690" resp="#MMM">
+                     <persName key="person_47563478" role="fmo">Richard Rawlinson, 1690–1755</persName>
+                  </provenance>
+                  <acquisition resp="#MMM" when="1755">Bequeathed to the Bodleian in 1755</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>
+                           <ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Summary Catalogue (1895). Decoration, localization and date follow Pächt and Alexander (1966). <listBibl>
+                              <bibl facs="aas0499.gif" type="SC">Summary Catalogue, Vol. 3, p. 484</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl subtype="partial" type="digital-facsimile">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/d168e4c4-c97c-4c4d-a88e-f0b872ad9371/">
+                           <title>Digital Bodleian</title>
+                        </ref>
+                        <note>(1 image from 35mm slides)</note>
+                     </bibl>
+                  </surrogates>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="PRINT">
+                        <head>Printed descriptions:</head>
+                        <bibl>S. J. P. van Dijk, <title>Latin Liturgical Manuscripts in the Bodleian Library, Oxford, vol. 4: Books of Hours</title> (typescript, 1957), <citedRange unit="page" from="295" to="295">p. 295</citedRange>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2024-09">Add extent, leaf dimensions and layout from van Dijk, Latin Liturgical Manuscripts in the Bodleian Library, Oxford.</change>
+         <change when="2019-10-31" xml:id="MMM">
+            <persName>Toby Burrows/Mapping Manuscript Migrations</persName>Provenance and acquisition information added using <ref target="https://github.com/mapping-manuscript-migrations/oxford-tei-updates/blob/master/update_oxford_prov.rb">https://github.com/mapping-manuscript-migrations/oxford-tei-updates/blob/master/update_oxford_prov.rb</ref> in collaboration with the <ref target="http://mappingmanuscriptmigrations.org/">Mapping Manuscript Migrations</ref> project.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

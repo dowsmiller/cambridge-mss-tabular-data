@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6832">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Laud Gr. 2</title>
+            <title type="collection">MSS. Laud Gr. (Laud Greek)</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Laud_Gr_2</idno>
+            <idno type="collection">Laud Gr</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Laud_Gr_2" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Laud Gr. 2</idno>
+                  <idno type="ieArk">ark:29072/x09019s288sz</idno><idno type="crArk">ark:29072/x08g84mm95hd</idno><altIdentifier type="internal">
+                     <idno type="SCN">693</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem class="#liturgica #biblia" n="1" xml:id="MS_Laud_Gr_2-item1">
+                     <title key="work_14111" type="desc">Psalter</title>
+                     <textLang mainLang="grc">Greek</textLang>
+                     <bibl type="bible">
+                        <title>Bible, Psalms</title>
+                     </bibl>
+                  </msItem>
+                  <msItem class="#liturgica" n="2" xml:id="MS_Laud_Gr_2-item2">
+                     <title key="work_13036" type="desc">Liturgical texts</title>
+                     <textLang mainLang="grc">Greek</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote>Ornamental headpiece, ornamental strips and floral initials. (Hutter i. 70)</decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" when="1336">1336</origDate>
+                     <origPlace>
+                        <country key="place_7024407">Byzantine</country>, <settlement key="place_7002473">Constantinople</settlement>
+                        <!--ORIGINAL: Byzantine, Constantinople-->
+                     </origPlace>
+                  </origin>
+                  <provenance notAfter="1641" notBefore="1573" resp="#MMM"><persName key="person_54940373" role="fmo">William Laud, 1573–1645</persName></provenance>
+                  <acquisition notAfter="1641" notBefore="1635" resp="#MMM">Donated by him to the Bodleian between 1635 and 1641.</acquisition>
+               </history>
+               <additional><adminInfo>
+                     <recordHist>
+                        <source><ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Quarto Catalogue (H. O. Coxe, <title>Catalogi codicum manuscriptorum Bibliothecae Bodleianae pars prima recensionem codicum Graecorum continens</title>, Quarto Catalogues I, 1883, repr. with corrections 1969). Decoration, localization and date follow Hutter (1977–1982). <listBibl>
+                              <bibl facs="abu0253.gif" type="QUARTO">Quarto Catalogue, cols. 491–2</bibl>
+                              <bibl facs="abu0254.gif" type="QUARTO">Quarto Catalogue, col. 493</bibl>
+                              <bibl facs="aap0051.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 30</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo><listBibl type="WRAPPER"><listBibl type="PRINT">
+                        <bibl>Irmgard Hutter, <title>Corpus der byzantinischen Miniaturenhandschriften, I-III, Oxford, Bodleian Library</title>, 3 vols. in 4 (Stuttgart, 1977–82), i, 70 <ref target="https://archive.org/details/hutter-1-text/page/113/mode/1up">[Internet Archive]</ref></bibl>
+                     </listBibl><listBibl type="INTERNET"><head>Online resources:</head><!--Existing bibliography in place: check sorting of entries--><bibl><ref target="https://www.dbbe.ugent.be/manuscripts/14482"><title>DBBE: Database of Byzantine Book Epigrams</title></ref></bibl><bibl><ref target="http://pinakes.irht.cnrs.fr/notices/cote/48223/"><title>Pinakes | Πίνακες: Textes et manuscrits grecs</title></ref></bibl></listBibl></listBibl></additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2018-08-15" xml:id="MMM"><persName>Mitch Fraas</persName> Provenance and acquisition information added using <ref target="https://github.com/littlegustv/oxfordupdates/blob/master/test_case_for_oxford_prov.rb">https://github.com/littlegustv/oxfordupdates/blob/master/test_case_for_oxford_prov.rb</ref> in collaboration with the <ref target="http://mappingmanuscriptmigrations.org/">Mapping Manuscript Migrations</ref> project.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

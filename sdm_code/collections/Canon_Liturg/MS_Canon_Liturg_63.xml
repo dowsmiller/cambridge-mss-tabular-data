@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3101">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Canon. Liturg. 63</title>
+            <title type="collection">MSS. Canon. Liturg. (Canonici Liturgical)</title>
+            <respStmt xml:id="VD">
+               <resp when="1957">Cataloguer</resp>
+               <persName>S. J. P. van Dijk</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+            <respStmt xml:id="BCBB">
+               <resp when="2020">Cataloguer</resp>
+               <persName>B. C. Barker-Benfield</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Canon_Liturg_63</idno>
+            <idno type="collection">Canon Liturg</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Canon_Liturg_63" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Canon. Liturg. 63</idno>
+                  <idno type="ieArk">ark:29072/x09k41zd88b6</idno>
+                  <idno type="crArk">ark:29072/x07w62f894w2</idno>
+                  <altIdentifier type="internal">
+                     <idno type="SCN">19251</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem class="#liturgica" n="1" xml:id="MS_Canon_Liturg_63-item1">
+                     <title key="work_10565" type="desc">Book of Hours, Use of Rome</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent resp="#VD"> 1 + 221 + 5 + 1 fol.<dimensions type="leaf" unit="mm">
+                              <height>143</height>
+                              <width>100</width>
+                           </dimensions>
+                           <dimensions type="written" unit="mm">
+                              <height>63</height>
+                              <width>44</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                     <layoutDesc resp="#VD">
+                        <layout columns="1" writtenLines="12">12 lines</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="miniature">Good miniatures.</decoNote>
+                     <decoNote type="border"> Good borders.</decoNote>
+                     <decoNote type="decInit"> Good initials. (<ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> i. 616, pl. XLVI)</decoNote>
+                  </decoDesc>
+                  <bindingDesc resp="#BCBB">
+                     <binding notAfter="1700" notBefore="1575">
+                        <p>16th century, late, or 17th century, <placeName key="place_1000080">Italian</placeName>?: pasteboards; dark brown polished leather, tooled with blind and gilt lines, a gilt frame and corner-pieces, and gilt centrepieces of the Crucified Christ (front) or Virgin and Child (back), each amidst gilt stars; spine with blind and gilt lines and a gilt stamp; remains of two clasps with (lost) straps of similar gilt leather; edges gilt, gauffered (worn). Sewn on five double cords (medieval sewing?). Top of spine repaired with new leather, 20th century?, Bodleian. <dimensions type="binding" unit="mm">
+                              <height max="150" min="147">147–150</height>
+                              <width precision="medium" quantity="100">c. 100</width>
+                              <depth max="48" min="45" precision="medium">c. 45–8</depth>
+                           </dimensions> (book closed).</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1400" notBefore="1390">14th century, end</origDate>
+                     <origPlace>
+                        <country key="place_1000070">French</country>, <settlement key="place_7008038">Paris</settlement>
+                        <!--ORIGINAL: French, Paris-->
+                     </origPlace>
+                  </origin>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>
+                           <ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Summary Catalogue (1897). Decoration, localization and date follow Pächt and Alexander (1966). Binding: <bibl>B. C. Barker-Benfield, <title>Bookbindings of Canonici manuscripts : a survey of early and non-standard bindings, mostly Italian, in the Canonici collection of the Bodleian Library, University of Oxford</title> (Oxford, privately printed, 2020).</bibl>
+                           <listBibl>
+                              <bibl facs="aaz0358.gif" type="SC">Summary Catalogue, vol. 4, p. 339</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl subtype="partial" type="digital-facsimile">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/936adb06-2e5a-4460-be28-4b2b4ce69557/">
+                           <title>Digital Bodleian</title>
+                        </ref>
+                        <note>(1 image from 35mm slides)</note>
+                     </bibl>
+                  </surrogates>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="PRINT">
+                        <head>Printed descriptions:</head>
+                        <bibl>S. J. P. van Dijk, <title>Latin Liturgical Manuscripts in the Bodleian Library, Oxford, vol. 4: Books of Hours</title> (typescript, 1957), <citedRange unit="page" from="202" to="202">p. 202</citedRange>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2024-09">Add extent, leaf dimensions and layout from van Dijk, Latin Liturgical Manuscripts in the Bodleian Library, Oxford.</change>
+         <change when="2020-07-24">Binding description added.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,117 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1847">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Bodl. 857</title>
+            <title type="collection">MSS. Bodl. (Bodley)</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Bodl_857</idno>
+            <idno type="collection">Bodl</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Bodl_857" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement key="place_7011931">Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Bodl. 857</idno>
+                  <idno type="ieArk">ark:29072/x0gh93gz76hn</idno><idno type="crArk">ark:29072/x0gf06g2936f</idno><altIdentifier type="internal">
+                     <idno type="SCN">2760</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Bodl_857-item1">
+                     <author key="person_66805034">Nicholas de Aquaevilla</author>
+                     <title key="work_3283">Sermones dominicales</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#sermones" n="2" xml:id="MS_Bodl_857-item2">
+                     <title key="work_14583" type="desc">Sermons</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#theologica" n="3" xml:id="MS_Bodl_857-item3">
+                     <title key="work_15308" type="desc">Theological pieces</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#romances #exempla" n="4" xml:id="MS_Bodl_857-item4">
+                     <title key="work_12023">Gesta romanorum</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#sermones" n="5" xml:id="MS_Bodl_857-item5">
+                     <title key="work_14583" type="desc">Sermons</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="flourInit">Illuminated capitals.</decoNote>
+                  </decoDesc>
+                  <bindingDesc>
+                     <binding contemporary="true">
+                        <p>Red leather on boards, much worn, re-backed, contemporary English
+         work.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1450" notBefore="1400">15th century, first half</origDate>
+                     <origPlace>
+                        <country key="place_7002445">English</country>
+                     </origPlace>
+                  </origin>
+                  <provenance>'Iste liber constat <supplied>domino</supplied> 
+                     <persName key="person_3873" role="fmo">Willelmo Marschalle capellano de Pesholme</persName>,' i.e. Peasholme in York: but a former owner's name was once at fols. 82, 127v.</provenance>
+                  <acquisition when="1602">
+                     Presented by <persName key="person_2677" role="dnr">sir Walter Cope</persName> in 1602.</acquisition>
+                  
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>
+                           <ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Summary Catalogue (1922). <listBibl>
+                              <bibl facs="aap0551.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 530</bibl>
+                              <bibl facs="aap0552.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 531</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2022-04-04">Add binding information from Summary Catalogue.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

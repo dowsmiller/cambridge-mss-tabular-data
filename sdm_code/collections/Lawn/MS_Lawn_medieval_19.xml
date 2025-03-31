@@ -1,0 +1,112 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7689">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Lawn medieval 19</title>
+            <title type="collection">MSS. Lawn medieval</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Lawn_medieval_19</idno>
+            <idno type="collection">Lawn</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Lawn_medieval_19" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Lawn medieval 19</idno>
+               <idno type="ieArk">ark:29072/x08623hz45pf</idno><idno type="crArk">ark:29072/x08336h262ct</idno></msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Lawn_medieval_19-item1">
+                     <author key="person_306415749">Ps.-Bernard of Clairvaux</author>
+                     <title key="work_3946">De doctrina religiosorum</title>
+                     <note>(<ref target="http://webserver.erwin-rauner.de/php_ancarm/ancarm_refwerke.php?opus=1000&amp;var=WIC&amp;nr_char=16572"><title>WIC</title> 16572</ref>)</note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#versus" n="2" xml:id="MS_Lawn_medieval_19-item2">
+                     <title key="work_13884" type="desc">Poems</title>
+                     <note>(including <persName key="person_39382430" role="aut">Petrarch</persName>, <persName key="person_40175167" role="aut">Peter Comestor</persName>, <persName key="person_45108262" role="aut">Claudianus Mamertus</persName>, <persName key="person_289681963" role="aut">Ps.-Bonaventure</persName>, <persName key="person_1451" role="aut"><!-- not found -->Turcho de Prato</persName>)</note>
+                     <textLang mainLang="la" otherLangs="it">Latin and Italian</textLang>
+                  </msItem>
+                  <msItem n="3" xml:id="MS_Lawn_medieval_19-item3">
+                     <author key="person_257102351">Arnulfus de Boeriis</author>
+                     <title key="work_701">Speculum monasticum</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#monastica" n="4" xml:id="MS_Lawn_medieval_19-item4">
+                     <title key="work_15098" type="desc">Treatise on monastic life</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#theologica #miscellanea #astrologia_astronomia #historica" n="5" xml:id="MS_Lawn_medieval_19-item5">
+                     <title key="work_15272" type="desc">Theological, historical, astrological and other notes</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#theologica" n="6" xml:id="MS_Lawn_medieval_19-item6">
+                     <title key="work_15069" type="desc">Texts on Islam</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#proverbia" n="7" xml:id="MS_Lawn_medieval_19-item7">
+                     <title key="work_14063" type="desc">Proverbs</title>
+                     <note>(17th century addition, in Italian)</note>
+                     <textLang mainLang="it">Italian</textLang>
+                  </msItem>
+                  <msItem n="8" xml:id="MS_Lawn_medieval_19-item8">
+                     <author key="person_300696721">Ps.-Thomas Aquinas</author>
+                     <title key="work_4131">Quaternarius</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote>Penwork</decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1500" notBefore="1400">15th century</origDate>
+                     <origPlace>
+                        <country key="place_1000080">Italian</country>
+                     </origPlace>
+                  </origin>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Summary description based on <bibl>B. Lawn, <title>Catalogus Bibliothecae Lawnianae</title> (privately printed, 1994)</bibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

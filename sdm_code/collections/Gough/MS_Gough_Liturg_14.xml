@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4922">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Gough Liturg. 14</title>
+            <title type="collection">MSS. Gough</title>
+            <respStmt xml:id="VD">
+               <resp when="1957">Cataloguer</resp>
+               <persName>S. J. P. van Dijk</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Gough_Liturg_14</idno>
+            <idno type="collection">Gough</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Gough_Liturg_14" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Gough Liturg. 14</idno>
+                  <idno type="ieArk">ark:29072/x08w32r605br</idno>
+                  <idno type="crArk">ark:29072/x0n009w225ws</idno>
+                  <altIdentifier type="internal">
+                     <idno type="SCN">18337</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Gough_Liturg_14-item1">
+                     <title key="work_10561" type="desc">Book of Hours, Use of Rome.</title>
+                     <textLang mainLang="la" otherLangs="frm">Latin and Middle French</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent resp="#VD"> 1 + 157 (156) + iii fol.<dimensions type="leaf" unit="mm">
+                              <height>162</height>
+                              <width>110</width>
+                           </dimensions>
+                           <dimensions type="written" unit="mm">
+                              <height>90</height>
+                              <width>54</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                     <layoutDesc resp="#VD">
+                        <layout columns="1" writtenLines="18">18 long lines</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <summary>By the atelier of <persName key="person_95838820" role="art">Jean Colombe</persName>. <ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> i. 812, pl. LIX:</summary>
+                     <decoNote type="miniature">Fine miniatures. </decoNote>
+                     <decoNote type="border">Fine borders. </decoNote>
+                     <decoNote type="decInit">Fine initials. </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" when="1500">c. 1500</origDate>
+                     <origPlace>
+                        <country key="place_1000070">French</country>
+                     </origPlace>
+                  </origin>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Summary description by Elizabeth Solopova and Matthew Holford, based on the Summary Catalogue and supplementary sources. <listBibl>
+                              <bibl facs="aaz0310.gif" type="SC">Summary Catalogue, vol. 4, p. 291</bibl>
+                              <bibl facs="aaz0311.gif" type="SC">Summary Catalogue, vol. 4, p. 292</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl subtype="partial" type="digital-facsimile">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/727c6a0e-fbd5-4185-aec1-6e3015b1f04f/">
+                           <title>Digital Bodleian</title>
+                        </ref>
+                        <note>(3 images from 35mm slides)</note>
+                     </bibl>
+                  </surrogates>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="PRINT">
+                        <head>Printed descriptions:</head>
+                        <bibl>S. J. P. van Dijk, <title>Latin Liturgical Manuscripts in the Bodleian Library, Oxford, vol. 4: Books of Hours</title> (typescript, 1957), <citedRange unit="page" from="212" to="212">p. 212</citedRange>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2024-09">Add extent, leaf dimensions and layout from van Dijk, Latin Liturgical Manuscripts in the Bodleian Library, Oxford.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,104 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_888">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Barlow 26</title>
+            <title type="collection">MSS. Barlow</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Barlow_26</idno>
+            <idno type="collection">Barlow</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Barlow_26" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Barlow 26</idno>
+                  <idno type="ieArk">ark:29072/x0h702q637r8</idno><idno type="crArk">ark:29072/x047429b121q</idno><altIdentifier type="internal">
+                     <idno type="SCN">6460</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem class="#biblia #commentarii" n="1" xml:id="MS_Barlow_26-item1">
+                     <title key="work_13750" type="desc">Pauline Epistles, with the gloss 'pro altercatione'</title>
+                     <bibl type="bible">
+                        <title type="desc">Bible, Pauline epistles</title>
+                     </bibl>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <summary><ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> iii. 187, pl. XIX:</summary>
+                     <decoNote type="histInit">Good historiated initial in archaizing style.</decoNote><decoNote type="decInit"> Other fine initials.</decoNote>
+                  </decoDesc>
+                  <bindingDesc>
+                     <binding notAfter="1700" notBefore="1675">
+                        <p>Blind-tooled brown leather on boards, late 17th-cent. English work.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1175" notBefore="1150">12th century, third quarter</origDate>
+                     <origPlace>
+                        <country key="place_7002445">English</country>
+                     </origPlace>
+                  </origin>
+                  <provenance notAfter="1691" notBefore="1607" resp="#MMM">
+                     <persName key="person_465" role="fmo">Thomas Barlow, 1607–1691</persName>
+                  </provenance>
+                  <acquisition resp="#MMM" when="1691">Bequeathed to the Bodleian in 1691</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>
+                           <ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Summary Catalogue (1937). Decoration, localization and date follow Pächt and Alexander (1973). <listBibl>
+                              <bibl facs="aaq0414.gif" type="SC">Summary Catalogue, Vol. 2 Part 2, p. 1055</bibl>
+                              <bibl facs="aaq0415.gif" type="SC">Summary Catalogue, Vol. 2 Part 2, p. 1056</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2022-04-04">Add binding information from Summary Catalogue.</change>
+         <change when="2019-10-31" xml:id="MMM">
+            <persName>Toby Burrows/Mapping Manuscript Migrations</persName>Provenance and acquisition information added using <ref target="https://github.com/mapping-manuscript-migrations/oxford-tei-updates/blob/master/update_oxford_prov.rb">https://github.com/mapping-manuscript-migrations/oxford-tei-updates/blob/master/update_oxford_prov.rb</ref> in collaboration with the <ref target="http://mappingmanuscriptmigrations.org/">Mapping Manuscript Migrations</ref> project.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

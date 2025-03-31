@@ -1,0 +1,134 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_19">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Add. A. 165</title>
+            <title type="collection">MSS. Add. (Additional) A</title>
+            <respStmt xml:id="DD">
+               <resp when="1984">Cataloguer</resp>
+               <persName>A. G. Watson</persName>
+            </respStmt>
+            <respStmt xml:id="SC">
+               <resp when="1905">Cataloguer</resp>
+               <persName>Falconer Madan</persName>
+            </respStmt>
+            <respStmt xml:id="MLH">
+               <resp when="2017">Encoding and markup</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Add_A_165</idno>
+            <idno type="collection">Add A</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Add_A_165" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement key="place_7011931">Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Add. A. 165</idno>
+                  <idno type="ieArk">ark:29072/x0k930bw878z</idno><idno type="crArk">ark:29072/x0v405s89092</idno><altIdentifier type="internal">
+                     <idno type="SCN">24728</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents resp="#SC">
+                  <msItem n="1" xml:id="MS_Add_A_165-item1">
+                     <locus>(fol. 1)</locus>
+                     <author key="person_83985148">Juvenal</author>
+                     <title key="work_2896">Satires</title>
+                     <note>(with gloss)</note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="2" xml:id="MS_Add_A_165-item2">
+                     <locus>(fol. 93)</locus>
+                     <author key="person_100198157">Persius</author>
+                     <title key="work_3489">Satires</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="3">
+                     <locus>(fol. 112)</locus>
+                     <title type="desc">Form of a letter to a friend</title>
+                     <note>Later addition.</note>
+                     <textLang mainLang="la" otherLangs="it">Latin and Italian</textLang>
+                  </msItem>
+                  <msItem n="4">
+                     <locus>(fol. 113)</locus>
+                     <title key="work_5567" type="desc">Commentary on Juvenal, Sat. i.1 to ii.3</title>
+                     <incipit>In expositione poetarum</incipit>
+                     <listBibl>
+                        <bibl>See <ref target="http://catalogustranslationum.org/index.php/archives/volume-i"><title>Catalogus Translationum et Commentariorum</title></ref> I (1960), 200-1 (Eva M. Sanford) for summary.</bibl>
+                     </listBibl>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc resp="#DD">
+                  <objectDesc form="codex">
+                     <supportDesc material="chart">
+                        <support>paper</support>
+                        <extent>126 fols. <dimensions type="leaf" unit="mm">
+                              <height>215</height>
+                              <width>145</width>
+                           </dimensions>
+                           <dimensions type="written" unit="mm">
+                              <height max="155" min="145">145–55</height>
+                              <width max="90" min="80">80–90</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="20">20 long lines.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="decInit">Ink initials.</decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history resp="#DD">
+                  <origin>
+                     <origDate calendar="Gregorian" cert="high" when="1475">1475</origDate>
+                     <origPlace>
+                        <country key="place_1000080">Italian</country>
+                     </origPlace>
+                  </origin>
+                  <provenance>Fol. 91v: 'Explicit Juuenalis Deo Gratias Amen .M.CCCC.Lxxv Die Aprilis iij'. The rest of the MS to fol. 126 (except 112r-v) if in the same hand and at least as far as fol. 110 was probably written at the same time as fols. 1–91v.</provenance>
+                  <provenance><persName key="person_19743305" role="fmo">Guglielmo Libri</persName>, no. 564 in his sale, 1859.</provenance>
+                  <acquisition resp="#SC" when="1859">Purchased by the Bodleian.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Adapted (2017) from A. G. Watson, <title>Catalogue of Dated and Datable Manuscripts</title>, and from the Summary Catalogue (1905). <listBibl>
+                              <bibl facs="aam0090.gif" type="SC">Summary Catalogue, Vol. 5, p. 55</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="PRINT">                         <bibl>A. G. Watson, <title><ref target="https://catalog.hathitrust.org/Record/000310664">Catalogue of Dated and Datable Manuscripts c.435–1600 in Oxford Libraries</ref></title> (Oxford, 1984), no. 6</bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

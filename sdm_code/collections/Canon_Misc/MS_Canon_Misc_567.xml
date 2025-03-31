@@ -1,0 +1,132 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_3613">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Canon. Misc. 567</title>
+            <title type="collection">MSS. Canon. Misc. (Canonici Miscellaneous)</title>
+            <respStmt>
+               <resp when="1970">Cataloguer</resp>
+               <persName>Otto Pächt</persName>
+               <persName>J. J. G. Alexander</persName>
+            </respStmt>
+            <respStmt xml:id="DD">
+               <resp when="1984">Cataloguer</resp>
+               <persName>A. G. Watson</persName>
+            </respStmt>
+            <respStmt xml:id="Q">
+               <resp when="1854">Cataloguer</resp>
+               <persName>H. O. Coxe</persName>
+            </respStmt>
+            <respStmt xml:id="MLH">
+               <resp when="2021">Encoding and markup</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Canon_Misc_567</idno>
+            <idno type="collection">Canon Misc</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Canon_Misc_567" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Canon. Misc. 567</idno>
+                  <idno type="ieArk">ark:29072/x0cf95jb71bc</idno><idno type="crArk">ark:29072/x00k225c3006</idno><altIdentifier type="internal">
+                     <idno type="SCN">20043</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Canon_Misc_567-item1">
+                     <author key="person_69731706">Benvenutus de Rambaldis de Imola</author>
+                     <title key="work_1003">Commentary on Dante, Purgatory</title>
+                     <colophon>Per mj <persName key="person_67" role="scr"> Ant. V </persName> 1491 adj 16 otubrio <locus>(fol. 174v)</locus></colophon>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="chart">
+                        <support>paper</support>
+                        <extent>174 + iii medieval leaves
+                           <dimensions unit="mm" type="leaf">
+                              <height>320</height>
+                              <width>225</width>
+                           </dimensions></extent>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2" writtenLines="46 47">2 cols., c. 46-7 lines, column space <dimensions unit="mm" type="column">
+                           <height max="240" min="235">235-40</height>
+                           <width>60</width>
+                        </dimensions></layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <summary><ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> ii. 670, pl. LXIV:</summary>
+                     <decoNote type="border">Good historiated border.</decoNote>
+                     <decoNote type="histInit">Good historiated initials.</decoNote>
+                     <decoNote type="decInit">Good initials. (Watson: 'uncoloured designs for further initials'.)</decoNote>
+                     <decoNote type="rubrication">Rubrics.</decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" when="1491" cert="high">1491</origDate>
+                     <origPlace cert="low">
+                        <country key="place_1000080">Italian</country>, <settlement key="place_7004847">Bologna</settlement> (?)<!--ORIGINAL: Italian, Bologna (?)--></origPlace>
+                  </origin>
+                  <provenance>Arms, fol. 1: <heraldry>paly of five azure and argent</heraldry>, <persName role="fmo" key="person_3477">Aerosti of Bologna</persName></provenance>
+                  <provenance><persName role="fmo" key="person_308770014">Jacopo Soranzo</persName>, his MS. 330 in f. (J. B. Mitchell card-index, Bodleian Library)</provenance>
+                  <provenance notAfter="1805" notBefore="1727" resp="#MMM"><persName key="person_2384880" role="fmo">Matteo Luigi Canonici, 1727–1805</persName></provenance>
+                  <provenance notAfter="1807" resp="#MMM"><persName key="person_446" role="fmo">Giuseppe Canonici , -1807</persName></provenance>
+                  <acquisition resp="#MMM" when="1817">Purchased by the Bodleian in 1817</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Description adapted (2021) from the following sources:
+                           <listBibl>
+                              <bibl>Andrew G. Watson, <title>Catalogue of Dated and Datable Manuscripts c. 435-1600 in Oxford Libraries</title> (1984), no. 376</bibl>
+                              <bibl>Otto Pächt and J. J. G. Alexander, <title><ref target="https://catalog.hathitrust.org/Record/000468709">Illuminated Manuscripts in the Bodleian Library, Oxford</ref></title>, II (1970), no. 670</bibl>
+                              <bibl>Quarto Catalogue (1854)</bibl>
+                           </listBibl>
+                          <listBibl>
+                              <bibl facs="abz0439.gif" type="QUARTO">Quarto Catalogue, col. 866</bibl>
+                              <bibl facs="aaz0424.gif" type="SC">Summary Catalogue, vol. 4, p. 405</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl type="digital-facsimile" subtype="full">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/14de9a32-5297-429b-b088-99529dff92ec/">
+                           <title>Digital Bodleian</title></ref> <note>(full digital facsimile)</note>
+                     </bibl>
+                  </surrogates>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2021-11-09">Description revised with reference to Watson</change>
+         <change when="2018-10-14" xml:id="MMM"><persName>Mitch Fraas</persName> Provenance and acquisition information added using <ref target="https://github.com/littlegustv/oxfordupdates/blob/master/test_case_for_oxford_prov.rb">https://github.com/littlegustv/oxfordupdates/blob/master/test_case_for_oxford_prov.rb</ref> in collaboration with the <ref target="http://mappingmanuscriptmigrations.org/">Mapping Manuscript Migrations</ref> project.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

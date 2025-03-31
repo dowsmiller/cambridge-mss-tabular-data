@@ -1,0 +1,115 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_614">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Auct. F. 2. 18</title>
+            <title type="collection">MSS. Auct. F. (Auctarium F.)</title>
+            <respStmt xml:id="PA">
+               <resp when="1970">Cataloguer</resp>
+               <persName>Otto Pächt</persName>
+               <persName>J. J. G. Alexander</persName>
+            </respStmt>
+            <respStmt xml:id="SC">
+               <resp when="1922">Cataloguer</resp>
+               <persName>Falconer Madan</persName>
+               <persName>H. H. E. Craster</persName>
+            </respStmt>
+            <respStmt xml:id="MLH">
+               <resp when="2021">Encoding</resp>
+               <resp when="2021">Catalogue updates and corrections</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Auct_F_2_18</idno>
+            <idno type="collection">Auct F</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Auct_F_2_18" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Auct. F. 2. 18</idno>
+                  <idno type="ieArk">ark:29072/x0v118rd0741</idno><idno type="crArk">ark:29072/x0tx31qh23tt</idno><altIdentifier type="internal">
+                     <idno type="SCN">2173</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Auct_F_2_18-item1">
+                     <author key="person_78769600">Cicero</author>
+                     <title key="work_1248">De Oratore</title>
+                     <rubric>Marci Tulii Ciceronis de institutione oratoria ad Q. fratrem ...</rubric>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <!-- extent and dimensions not given in SC -->
+                     </supportDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote script="humanistica">Humanistic script.</handNote>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote type="border">Fine border</decoNote>
+                     <decoNote type="histInit">Fine historiated initials (including Cicero).</decoNote>
+                     <decoNote type="decInit"> Fine initials. (<ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> ii. 794, pl. LXXIV)</decoNote>
+                  </decoDesc>
+                  <bindingDesc>
+                     <binding notAfter="1620" notBefore="1600">
+                        <p>Light-brown calf with gold ornament and arms on sides, 17th cent. French work, worm-eaten and repaired.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1450" notBefore="1425">15th century, second quarter</origDate>
+                     <origPlace cert="low">
+                        <country key="place_1000080">Italian</country>, <region>Emilia</region> (?)<!--ORIGINAL: Italian, Emilia (?)--></origPlace>
+                  </origin>
+                  <provenance>The arms on the 17th cent. binding (<heraldry>a chevron between three Moors' heads</heraldry>) may belong to the family of <persName key="person_3401" role="fmo">Moreau</persName>.</provenance>
+                  <acquisition notAfter="1620" notBefore="1613"> Apparently acquired between 1613 and 1620.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Description adapted (Jan. 2021) from the following sources, with additional reference to published literature as cited: <listBibl>
+                              <bibl>Otto Pächt and J. J. G. Alexander, <title><ref target="https://catalog.hathitrust.org/Record/000468709">Illuminated Manuscripts in the Bodleian Library, Oxford</ref></title>, II (1970), no. 794 [script, decoration, origin, date]</bibl>
+                              <bibl>Summary Catalogue (1922) [contents, physical description, provenance and acquisition]</bibl>
+                           </listBibl>
+                           <listBibl>
+                              <bibl facs="aap0263.gif" type="SC">Summary Catalogue, Vol. 2, part 1, p. 242</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates><bibl subtype="partial" type="digital-facsimile"><ref target="https://digital.bodleian.ox.ac.uk/objects/dea3ca67-3231-429c-8ac7-c236a0100d90/"><title>Digital Bodleian</title></ref>
+                        <note>(2 images from 35mm slides)</note></bibl></surrogates>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2021-01-05">Description revised to incorporate all information in SC.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,111 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1811">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Bodl. 822</title>
+            <title type="collection">MSS. Bodl. (Bodley)</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Bodl_822</idno>
+            <idno type="collection">Bodl</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Bodl_822" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement key="place_7011931">Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Bodl. 822</idno>
+                  <idno type="ieArk">ark:29072/x07m01bm44s2</idno><idno type="crArk">ark:29072/x07h149q61g6</idno><altIdentifier type="internal">
+                     <idno type="SCN">2702</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Bodl_822-item1">
+                     <author key="person_61907230">Petrus Riga</author>
+                     <title key="work_3602">Aurora</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="decInit">Initials. (<ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> iii. 412)</decoNote>
+                  </decoDesc>
+                  <bindingDesc>
+                     <binding notBefore="1400" notAfter="1500">
+                        <p>White leather on boards, clasps lost, English early 15th cent. work, with
+         coloured pattern on the edges.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1260" notBefore="1240">13th century, middle</origDate>
+                     <origPlace>
+                        <country key="place_7002445">English</country>
+                     </origPlace>
+                  </origin>
+                  <provenance>'Hugo de la Penne recepit pannosdomini Johannis filii Thome', 14th cent.</provenance>
+                  <provenance type="MLGB3_provenance_evidence" source="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/5887">
+                     <orgName role="fmo" key="org_2142145857037522921207">Windsor, Berkshire, Royal collegiate chapel of St George</orgName>: 'Liber collegii de Wyndesore' (fol. 276v, s. xv ex ). The binding has the usual heavy chain-staple mark at the foot of the front board. Visible in the inventory of 1384–5. (<ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/5887">MLGB3</ref>: evidence from binding or pastedowns and from an ex-libris inscription or note of gift). </provenance>
+                  <acquisition when="1612">Given to Bodley in 1612 by the Dean and Canons of Windsor. (<ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/5887">MLGB3</ref>)</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>
+                           <ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Summary Catalogue (1922). Decoration, localization and date follow Pächt and Alexander (1973). <listBibl>
+                              <bibl facs="aap0524.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 503</bibl>
+                              <bibl facs="aap0525.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 504</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl>
+                           <ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/5887">
+                              <title>MLGB3: Medieval Libraries of Great Britain</title>
+                           </ref>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2022-04-04">Add binding information from Summary Catalogue.</change>
+         <change when="2021-12-14">Add provenance information from MLGB3.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

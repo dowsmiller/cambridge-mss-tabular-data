@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6043">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Hatton 12</title>
+            <title type="collection">MSS. Hatton</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Hatton_12</idno>
+            <idno type="collection">Hatton</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Hatton_12" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Hatton 12</idno>
+                  <idno type="ieArk">ark:29072/x02b88qd3030</idno><idno type="crArk">ark:29072/x02801ph46sf</idno><altIdentifier type="internal">
+                     <idno type="SCN">4127</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Hatton_12-item1">
+                     <author key="person_2465074">Richard Rolle</author>
+                     <title key="work_4280">Commentary on the Psalter</title>
+                     <bibl type="commentedOn">
+                        <title>Bible, Psalms</title>
+                     </bibl>
+                     <textLang mainLang="enm">Middle English</textLang>
+                  </msItem>
+                  <msItem n="2" xml:id="MS_Hatton_12-item2">
+                     <author key="person_2465074">Richard Rolle</author>
+                     <title key="work_4282">Commentary on the Ten Commandments</title>
+                     <textLang mainLang="enm">Middle English</textLang>
+                  </msItem>
+                  <msItem n="3" xml:id="MS_Hatton_12-item3">
+                     <title key="work_14371">Religious pieces</title>
+                     <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support><extent source="SC"><measure type="leaf" quantity="213">213</measure> leaves, in double columns
+                           <dimensions type="binding" unit="in"><height>14.125</height><width>9.5</width></dimensions>
+                        </extent>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="miniature">
+                        <p>Miniature (drawing) on pastedown. (<ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> iii. 1130)</p>
+                     </decoNote>
+                  </decoDesc>
+                  <bindingDesc>
+                     <binding contemporary="true">
+                        <p>White leather on boards, in white sheepskin cover, one clasp wanting and the
+         other renewed, contemporary English work.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1500" notBefore="1490">15th century, end</origDate>
+                     <origPlace cert="low">
+                        <country key="place_7002445">English</country>, <region>North</region> (?)<!--ORIGINAL: English, North (?)--></origPlace>
+                  </origin>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>
+                           <ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Summary Catalogue (1937). Decoration, localization and date follow Pächt and Alexander (1973).  <listBibl>
+                              <bibl facs="aaq0214.gif" type="SC">Summary Catalogue, Vol. 2 Part 2, p. 855</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2024-05">Add extent and leaf dimensions from Summary Catalogue.</change>
+         <change when="2022-04-04">Add binding information from Summary Catalogue.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

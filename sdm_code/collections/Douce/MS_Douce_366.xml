@@ -1,0 +1,338 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4688">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Douce 366</title>
+            <title type="collection">MSS. Douce</title>
+            <respStmt xml:id="VD">
+               <resp when="1957">Cataloguer</resp>
+               <persName>S. J. P. van Dijk</persName>
+            </respStmt>
+            <respStmt xml:id="PA">
+               <resp when="1973">Cataloguer</resp>
+               <persName>Otto Pächt</persName>
+               <persName>J. J. G. Alexander</persName>
+            </respStmt>
+            <respStmt xml:id="DL">
+               <resp when="1984">Cataloguer</resp>
+               <persName>A. de la Mare</persName>
+            </respStmt>
+            <respStmt xml:id="MLH">
+               <resp when="2018">Encoding and markup</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Douce_366</idno>
+            <idno type="collection">Douce</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Douce_366" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Douce 366</idno>
+                  <idno type="ieArk">ark:29072/x0kh04dp53p5</idno><idno type="crArk">ark:29072/x0g158bh609v</idno><altIdentifier type="internal">
+                     <idno type="SCN">21941</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents resp="#VD">
+                  <msItem class="#liturgica #biblia" n="1" xml:id="MS_Douce_366-item1">
+                     <title key="work_14103" type="desc">Psalter ('The Ormesby Psalter')</title>
+                     <msItem>
+                        <locus>(fol. 2)</locus>
+                        <title type="desc">Calendar</title>
+                        <note>Added, c. 1325.</note>
+                     </msItem>
+                     <msItem>
+                        <locus>(fol. 8)</locus>
+                        <title type="desc">Easter table</title>
+                        <note>With dots and a pricking at the years 1290, 1295 and 1300</note>
+                     </msItem>
+                     <msItem resp="#VD #MLH">
+                        <locus>(fol. 10)</locus>
+                        <title type="desc">Psalter</title>
+                        <note>Textual divisions at Pss. 1 (fols. 9v-10r), 26 (fol. 38r), 38 (fol. 55v), 51 (fol. 71v), 52 (fol. 72r), 68 (fol. 89r), 80 (fol. 109r), 97 (fol. 128r), 101 (fol. 131r) and 109 (fol. 147v).</note>
+                     </msItem>
+                     <msItem resp="#MLH #VD">
+                        <locus>(fol. 189v)</locus>
+                        <title type="desc">Weekly canticles, each followed by a collect; no rubrics</title>
+                        <msItem>
+                           <locus>(fol. 189v)</locus>
+                           <title>Confitebor tibi domine</title>
+                        </msItem>
+                        <!-- collect, fol. 189v, Deus qui nobis per prophetarum ora precepisti' -->
+                        <msItem>
+                           <locus>(fol. 190r)</locus>
+                           <title>Ego dixi</title>
+                        </msItem>
+                        <!-- followed by a collect (?), fol. 191r, 'Deus qui famulo tuo ezechie regi ter qui nos...' -->
+                        <msItem>
+                           <locus>(fol. 191r)</locus>
+                           <title>Exultauit cor meum</title>
+                        </msItem>
+                        <!-- followed by a collect (?), fol. 192r, 'Omnipotens sempiterne deus seps unica mundi...' -->
+                        <msItem>
+                           <locus>(fol. 192r)</locus>
+                           <title>Cantemus domino</title>
+                        </msItem>
+                        <!-- collect, fol. 193v, 'deus cuius antiqua miracula etiam nostris seculis -->
+                        <msItem>
+                           <locus>(fol. 194r)</locus>
+                           <title>Domine audiui</title>
+                        </msItem>
+                        <!-- collect, fol. 195v, 'Deus qui in omnibus ecclesie teu filiis sanctorum prophetarum uoce manifestas' -->
+                        <msItem>
+                           <locus>(fol. 196r)</locus>
+                           <title>Audite celi</title>
+                        </msItem>
+                        <!-- collect, fol. 199v, 'Deus gloriatio fidelium et uita iustorum qui per moysen' -->
+                     </msItem>
+                     <msItem resp="#VD #MLH">
+                        <locus>(fol. 199v)</locus>
+                        <title type="desc">Daily canticles, prayers and creeds, each except the Te Deum followed by a collect; no rubrics</title>
+                        <msItem>
+                           <locus>(fol. 199v)</locus>
+                           <title>Te deum</title>
+                        </msItem>
+                        <msItem>
+                           <locus>(fol. 201r)</locus>
+                           <title>Benedicite omnia opera</title>
+                        </msItem>
+                        <!-- collect, fol. 201v, Deus qui tribus pueris mitigasti flammas ignium -->
+                        <msItem>
+                           <locus>(fol. 202r)</locus>
+                           <title>Benedictus dominus deus</title>
+                        </msItem>
+                        <!-- collect, fol. 202v, 'Deus qui conspicis quia nos undique mala contristant -->
+                        <msItem>
+                           <locus>(fol. 202v)</locus>
+                           <title>Magnificat</title>
+                        </msItem>
+                        <!-- collect, fol. 203r, 'Singularis meriti sola sine exemplo mater' -->
+                        <msItem>
+                           <locus>(fol. 203r)</locus>
+                           <title>Nunc dimittis</title>
+                        </msItem>
+                        <!-- collect, f. 203v, 'Omnipotens sempiterne deus fac nost quos tibi et  -->
+                        <msItem>
+                           <locus>(fol. 203v)</locus>
+                           <title type="desc">Quicumque vult</title>
+                        </msItem>
+                        <!-- collect, 'Perpetus nos quesumus domine pace custodi  -->
+                     </msItem>
+                     <msItem resp="#MLH #VD">
+                        <locus>(fol. 206r)</locus>
+                        <title type="desc">Litany</title>
+                        <note>Followed by collects:</note>
+                        <msItem>
+                           <incipit>Deus cui proprium est misereri semper et parcere</incipit>
+                        </msItem>
+                        <msItem>
+                           <incipit>Omnipotens sempiterne deus qui facis mirabilia magna solus</incipit>
+                        </msItem>
+                     </msItem>
+                     <msItem resp="#VD #MLH">
+                        <locus>(fol. 209v)</locus>
+                        <title type="desc">Litany of Norwich cathedral</title>
+                        <note>Added, c. 1325.</note>
+                        <note>Followed by collects (fol. 212r):</note>
+                        <msItem>
+                           <incipit>Deus cui proprium est misereri semper et parcere</incipit>
+                        </msItem>
+                        <msItem>
+                           <incipit>Mentem famuli episcopi nostri q<ex>uesumu</ex>s omnipotens deus lumine tue ueritatis illustra </incipit>
+                        </msItem>
+                        <msItem>
+                           <incipit>Omnipotens sempiterne deus qui facis mirabilia magna solus</incipit>
+                        </msItem>
+                        <msItem>
+                           <incipit>Pretende domine famulis et famulabus tuis dexteram celestis auxilii</incipit>
+                        </msItem>
+                        <msItem>
+                           <incipit>Ure igne sancti spiritus renes nostros et cor nostrum domine</incipit>
+                        </msItem>
+                        <msItem>
+                           <incipit>Acciones nostras q<ex>uesumu</ex>s domine aspirando preueni </incipit>
+                        </msItem>
+                        <msItem>
+                           <incipit>Adesto domine suppicationibus nostris et viam famulorum tuorum in salutis tue</incipit>
+                        </msItem>
+                        <msItem>
+                           <incipit>Ecclesie tue domine preces placatus admitte ut destructis aduersitatibus inimici</incipit>
+                        </msItem>
+                        <msItem>
+                           <incipit>A domo tua q<ex>uesumu</ex>s domine spirituales nequicie repellantur</incipit>
+                        </msItem>
+                        <msItem>
+                           <incipit>Deus a quo sancta desideria recta consilia et iusta sunt</incipit>
+                        </msItem>
+                        <msItem>
+                           <incipit>Deus qui inter apostolicos sacerdotes famulos tuos pontificali fecisti</incipit>
+                        </msItem>
+                        <msItem>
+                           <incipit>Animabus quesumus domine famulorum famularumque tuarum oracio proficiat supplicancium</incipit>
+                        </msItem>
+                        <msItem>
+                           <incipit>Deus qui es sanctorum tuorum splendor mirabilis atque lapsorum sulleuator</incipit>
+                        </msItem>
+                     </msItem>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc resp="#VD">
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent> 2 + 213 + 2 fol. <dimensions type="leaf" unit="mm">
+                              <height>377</height>
+                              <width>250</width>
+                           </dimensions>
+                           <dimensions type="written" unit="mm">
+                              <height>229</height>
+                              <width>136</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="18">18 lines.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <summary resp="#MLH"> Sandler (1986, no. 43) divides the decoration as follows: <list>
+                           <head>Late thirteenth century (?c. 1280–1300): </head>
+                           <item>Minor decoration of fols. 10–45v.</item>
+                           <item>Decoration of fols. 58–67v, and part of fols. 70–81v, by a different artist.</item>
+                           <note>Cf. <ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> iii. 499, pl. XLVIII.</note>
+                        </list>
+                        <list>
+                           <head>c. 1310–20: </head>
+                           <item>Inital and border of Ps. 26 (fol. 38).</item>
+                           <item>Other large initials and borders, by a different artist, whose work is also found in the Bromholm Psalter, the Emmanuel College Gregory, and the Dublin Apocalypse (fols. 9v, 55v, 71v, 72, 89, 109, 128, 131, 147v).</item>
+                           <item>Initials on fols. 22–45v, under-drawings on fols. 46–57v, line initials and 2-line Psalm initials on fols. 70–81v, and some other minor decoration (e.g. fol. 154)</item>
+                           <note>Cf. <ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> iii. 536, pl. L-LI.</note>
+                        </list>
+                        <list>
+                           <head>1320s:</head>
+                           <item>Donor portrait, fol. 9v.</item>
+                           <item>Beatus initial, fol. 10.</item>
+                           <item>Decoration finished by the artist called by Cockerell the 'cheap finisher'.</item>
+                           <note>Cf. <ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> iii.581, pl. LX.</note>
+                        </list>
+                     </summary>
+                     <decoNote resp="#MLH" type="histInit">(fol. 9v), full page Beatus initial, with Tree of Jesse, Annunciation, and praying couple (with arms of Foliot and Bardolf); praying bishop and Benedictine monk painted over the original block of text.</decoNote>
+                     <decoNote resp="#MLH" type="histInit">Five- or ten-line initials at the text divisions: <list>
+                           <item>
+                              <locus>(fol. 10r)</locus>, Ps. 1, David playing harp</item>
+                           <item>
+                              <locus>(fol. 38r)</locus>, Ps. 26, Anointing of David</item>
+                           <item>
+                              <locus>(fol. 55v)</locus>, Ps. 38, Christ before Pilate</item>
+                           <item>
+                              <locus>(fol. 71v)</locus>, Ps. 51, Doeg and the Priests</item>
+                           <item>
+                              <locus>(fol. 72r)</locus>, Ps. 52, Temptation of Christ</item>
+                           <item>
+                              <locus>(fol. 89r)</locus>, Ps. 68, Jonah and the Whale</item>
+                           <item>
+                              <locus>(fol. 109r)</locus>, Ps. 80, David playing bells</item>
+                           <item>
+                              <locus>(fol. 128r)</locus>, Ps. 97, Clerics singing</item>
+                           <item>
+                              <locus>(fol. 131r)</locus>, Ps. 101, David praying</item>
+                           <item>
+                              <locus>(fol. 147v)</locus>, Ps. 109, Christ and God the Father</item>
+                        </list>
+                     </decoNote>
+                     <decoNote type="border">All historiated initials except Ps. 1 with full borders.</decoNote>
+                     <decoNote type="decInit">2-line decorated and inhabited initials extending into partial borders; 1-line versals.</decoNote>
+                  </decoDesc>
+                  <bindingDesc resp="#PA">
+                     <binding contemporary="true" notAfter="1325">
+                        <p>Contemporary binding of white leather on boards with leather chemise. Fore-edge painting with the arms of Norwich cathedral priory, the see of Norwich, and the Uffords of Suffolk.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin resp="#DL">
+                     <origDate calendar="Gregorian" notAfter="1325" notBefore="1280">13th century, late; additions, c. 1310–20 and c. 1325</origDate>
+                     <origPlace>
+                        <country key="place_7002445">English</country>, <region>East Anglia</region>; additions, <settlement key="place_7012005">Norwich</settlement>
+                        <!--MULTIPLE PLACES OF ORIGIN-->
+                     </origPlace>
+                  </origin>
+                  <provenance resp="#DL">Three stages of production: (1) late 13th century, the main part of the MS. was written, and most of the minor decoration on fols. 10–45, 58–69 decorated; (2) c. 1310–20, most of the main historiated borders and initials were added; (3) 1320s, finishing of the decoration, the insertion of fol. 9v, execution of the second Beatus initial on fol. 10, addition of calendar and new litany, binding.</provenance>
+                  <provenance resp="#DL">Arms of Foliot and Bardolf (fol. 9v), possibly associated with an intended marriage between these families (not known to have taken place).</provenance>
+                  <provenance resp="#DL">Presented to <orgName key="org_167950876" role="fmo">Norwich cathedral</orgName> by Robert of Ormesby, probably c. 1325.</provenance>
+                  <provenance resp="#DL">Pressmarks 'A.I', 'xlij', 14th cent.</provenance>
+                  <provenance resp="#DL">'<persName key="person_2858" role="fmo">A. Gray</persName>', 1654, fol. i.</provenance>
+                  <provenance resp="#DL">
+                     <persName key="person_69848690" role="fmo">Francis Douce</persName>, acquired November 1831.</provenance>
+                  <acquisition resp="#DL">Bequeathed by him to the Bodleian.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Description adapted from <title>The Douce Legacy</title> (1984), no. 244; Pächt and Alexander; and S. J. P. Van Dijk, <title>Handlist of the Latin Liturgical Manuscripts in the Bodleian Library Oxford : Vol. 2: Office Books</title> (typescript, 1957); additional description of content and decoration by Matthew Holford, March 2018. Previously described in the Summary Catalogue. <listBibl>
+                              <bibl facs="aaz0626.gif" type="SC">Summary Catalogue, vol. 4, p. 607</bibl>
+                              <bibl facs="aaz0627.gif" type="SC">Summary Catalogue, vol. 4, p. 608</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                     <availability status="restricted">
+                        <p>To ensure its preservation, access to this item is restricted, and readers are asked to work from reproductions and published descriptions as far as possible. If you wish to apply to see the original, please click the request button above. When your request is received, you will be asked to contact the relevant curator outlining the subject of your research, the importance of this item to that research, and the resources you have already consulted.</p>
+                        <!--<p>Please note in addition that this item is on display in the Bodleian Libraries exhibition <title>Gifts and Books</title> (Weston Library, 16 June 2023 – 29 Oct. 2023). It cannot be requested during those dates or for a short period before and after.</p>
+                     -->
+                        <p>Please note in addition that this item is on display in the exhibition ‘Figures du fou. Du Moyen Âge aux romantiques’, Paris, The Louvre, 16 October 2024 – 3 February 2025 . It will not be orderable between those dates or for a short period before or afterwards.</p> 
+                     </availability>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl subtype="full" type="digital-facsimile">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/34a6037b-12e8-4b12-8920-26c33914fe0e/">
+                           <title>Digital Bodleian</title>
+                        </ref>
+                     </bibl>
+                     <bibl subtype="partial" type="digital-facsimile">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/06c3f494-5e28-4d92-9603-80d77f07a318/">
+                           <title>Digital Bodleian</title>
+                        </ref>
+                        <note>(132 images from 35mm slides)</note>
+                     </bibl>
+                  </surrogates>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="PRINT">
+                        <head>Printed descriptions:</head>
+                        <bibl>Otto Pächt and J. J. G. Alexander, <title>
+                              <ref target="https://catalog.hathitrust.org/Record/000468709">Illuminated Manuscripts in the Bodleian Library, Oxford</ref>
+                           </title>, III (1973), nos. 49, 536, 581</bibl>
+                        <bibl>S. J. P. van Dijk, <title>Latin Liturgical Manuscripts in the Bodleian Library, Oxford, vol. 2: Office Books</title> (typescript, 1957), <citedRange unit="page" from="17" to="17">p. 17</citedRange>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

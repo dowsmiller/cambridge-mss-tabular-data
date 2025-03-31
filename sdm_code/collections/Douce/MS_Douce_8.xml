@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4741">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Douce 8</title>
+            <title type="collection">MSS. Douce</title>
+            <respStmt xml:id="VD">
+               <resp when="1957">Cataloguer</resp>
+               <persName>S. J. P. van Dijk</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Douce_8</idno>
+            <idno type="collection">Douce</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Douce_8" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Douce 8</idno>
+                  <idno type="ieArk">ark:29072/x0b2773w059x</idno>
+                  <idno type="crArk">ark:29072/x0nc580m5929</idno>
+                  <altIdentifier type="internal">
+                     <idno type="SCN">21582</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem class="#liturgica #oratio" n="1" xml:id="MS_Douce_8-item1">
+                     <title key="work_13591" type="desc">Offices and prayers for private use</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent>xxix + <measure type="leaf" quantity="457">457</measure> pages
+                           <dimensions type="binding" unit="in">
+                              <height>4</height>
+                              <width>3</width>
+                           </dimensions>
+                           <dimensions type="leaf" unit="mm">
+                              <height>94</height>
+                              <width>70</width>
+                           </dimensions>
+                           <dimensions type="written" unit="mm">
+                              <height>52</height>
+                              <width>40</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                     <layoutDesc resp="#VD">
+                        <layout columns="1" writtenLines="12">12 long lines.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="miniature">Some fine, many good miniatures.</decoNote>
+                     <decoNote type="border">Borders.</decoNote>
+                     <decoNote type="decInit">Initials. By various hands. Italian script. (<ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> i. 371, pl. XXX)</decoNote>
+                  </decoDesc>
+                  <bindingDesc>
+                     <binding notBefore="1700" notAfter="1800">
+                        <p>Red morocco with gilt ornament, with embroidered filigree work inside each
+         cover. (18th cent.).</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1500" notBefore="1490">15th century, end</origDate>
+                     <origPlace cert="low">
+                        <country key="place_7024097">Flemish</country>, <settlement key="place_7007867">Bruges</settlement> (?) (decoration)</origPlace>; <origPlace>
+                        <country key="place_1000080">Italian</country> (script)</origPlace>
+                     <!--MULTIPLE PLACES OF ORIGIN-->
+                  </origin>
+                  <provenance notAfter="1834" notBefore="1757" resp="#MMM">
+                     <persName key="person_69848690" role="fmo">Francis Douce, 1757–1834</persName>
+                  </provenance>
+                  <acquisition resp="#MMM" when="1834">Bequeathed to the Bodleian in 1834</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>
+                           <ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Summary Catalogue (1897). Decoration, localization and date follow Pächt and Alexander (1966). <listBibl>
+                              <bibl facs="aaz0510.gif" type="SC">Summary Catalogue, vol. 4, p. 491</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl subtype="partial" type="digital-facsimile">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/5ea19124-c875-4486-a120-4e8263641d04/">
+                           <title>Digital Bodleian</title>
+                        </ref>
+                        <note>(68 images from 35mm slides)</note>
+                     </bibl>
+                  </surrogates>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="PRINT">
+                        <head>Printed descriptions:</head>
+                        <bibl>S. J. P. van Dijk, <title>Latin Liturgical Manuscripts in the Bodleian Library, Oxford, vol. 4: Books of Hours</title> (typescript, 1957), <citedRange unit="page" from="319" to="319">p. 319</citedRange>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2024-09">Add extent, leaf dimensions and layout from van Dijk, Latin Liturgical Manuscripts in the Bodleian Library, Oxford.</change>
+         <change when="2024-05">Add extent and leaf dimensions from Summary Catalogue.</change>
+         <change when="2022-04-04">Add binding information from Summary Catalogue.</change>
+         <change when="2018-10-14" xml:id="MMM">
+            <persName>Mitch Fraas</persName> Provenance and acquisition information added using <ref target="https://github.com/littlegustv/oxfordupdates/blob/master/test_case_for_oxford_prov.rb">https://github.com/littlegustv/oxfordupdates/blob/master/test_case_for_oxford_prov.rb</ref> in collaboration with the <ref target="http://mappingmanuscriptmigrations.org/">Mapping Manuscript Migrations</ref> project.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

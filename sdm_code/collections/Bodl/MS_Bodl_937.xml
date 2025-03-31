@@ -1,0 +1,127 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1889">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Bodl. 937</title>
+            <title type="collection">MSS. Bodl. (Bodley)</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Bodl_937</idno>
+            <idno type="collection">Bodl</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Bodl_937" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement key="place_7011931">Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Bodl. 937</idno>
+                  <idno type="ieArk">ark:29072/x0r781wf74q4</idno><idno type="crArk">ark:29072/x0r494vj91d8</idno><altIdentifier type="internal">
+                     <idno type="SCN">3088</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem class="#documenta #vitae_sanctorum" n="1" xml:id="MS_Bodl_937-item1">
+                     <title key="work_11657" type="desc">Documents relating to <persName key="person_100187947">Thomas Becket</persName>
+                     </title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="2" xml:id="MS_Bodl_937-item2">
+                     <author key="person_69286128">Alan of Tewkesbury</author>
+                     <title key="work_307">Vita S. Thomae Cantuariensis</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="3" xml:id="MS_Bodl_937-item3">
+                     <author key="person_67145970022632250570">John of Salisbury</author>
+                     <title key="work_2849">Vita S. Thomae Becket</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="4" xml:id="MS_Bodl_937-item4">
+                     <author key="person_69286128">Alan of Tewkesbury</author>
+                     <title key="work_306">Collectio epistolarum S. Thomae Cantuariensis</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="5" xml:id="MS_Bodl_937-item5">
+                     <author key="person_100187947">Thomas Becket</author>
+                     <title key="work_4786">Epistolae</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="flourInit">Illuminated capitals.</decoNote>
+                  </decoDesc>
+                  <bindingDesc>
+                     <binding when="1605">
+                        <p>Elaborately stamped leather on paste-boards, Oxford work by 'G.K.' of about
+         1605 or so.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1210" notBefore="1200">13th century, early</origDate>
+                     <origPlace>
+                        <country key="place_7002445">English</country>
+                     </origPlace>
+                  </origin>
+                  <acquisition>Presented by <persName role="dnr" key="person_3010">Thomas Draper, M.A.</persName>, in 1601.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>
+                           <ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Summary Catalogue (1922). <listBibl>
+                              <bibl facs="aap0608.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 587</bibl>
+                              <bibl facs="aap0609.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 588</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl>
+                           <ref target="https://www.diamm.ac.uk/sources/3884/">
+                              <title>DIAMM: Digital Image Archive of Medieval Music</title>
+                           </ref>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2022-04-04">Add binding information from Summary Catalogue.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,112 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6756">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Lat. th. d. 44</title>
+            <title type="collection">MSS. Lat. th. (Latin theology)</title>
+            <respStmt>
+               <resp>Preliminary description</resp>
+               <persName>Peter Kidd</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Lat_th_d_44</idno>
+            <idno type="collection">Lat theol</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Lat_th_d_44" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Lat. th. d. 44</idno>
+                  <idno type="ieArk">ark:29072/x0sn009x41zr</idno><idno type="crArk">ark:29072/x0sj139158n8</idno><altIdentifier type="internal">
+                     <idno type="SCN">Not in SC (late accession): no full description available</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem xml:id="MS_Lat_th_d_44-item1">
+                     <author key="person_282035032">Hildebert of Lavardin</author>
+                     <title key="work_2053">Versus de mysterio missae</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem xml:id="MS_Lat_th_d_44-item2">
+                     <author key="person_59875293">Bernard of Clairvaux</author>
+                     <title key="work_1053">Sermons and Sentences</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent>v (loose paper leaves, stored separtely) + i (paper) + 121 + i (paper)<dimensions type="leaf" unit="mm">
+                              <height>255</height>
+                              <width>180</width>
+                           </dimensions>
+                           <dimensions type="ruled" unit="mm">
+                              <height>185</height>
+                              <width max="125" min="120">120–5</width>
+                           </dimensions>
+                        </extent>
+                        <foliation>Modern pencil, i-v (loose leaves, stored separately), I-II, 1–121 (a partial pencil foliation in the lower right corner, probably by Christie's, is one in advance of the full foliation)</foliation>
+                        <collation>I<hi rend="superscript">8+1</hi> (1st leaf is an extra flyleaf), II-XIII<hi rend="superscript">8</hi> (fols. 9–104) | XIV<hi rend="superscript">8</hi> (fols. 105–112) | XV<hi rend="superscript">8</hi> (3rd &amp; 6th leaves, fols. 115 &amp; 118, are singletons (fols. 113–120)</collation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2" writtenLines="28">28 lines, in 2 columns</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Gothic bookhands (change of hand at fol. 25r in col. a)</handNote>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote type="flourInit">Red initials, some with penwork.</decoNote>
+                  </decoDesc>
+                  <bindingDesc>
+                     <binding>
+                        <p>Sewn on four bands, and bound in reddish-brown leather over pasteboards; the covers tooled with simple blind fillets, the spine inscribed in corrosive ink 'S. BERN. | SER[M...?]', and with the remains of two paper labels, the upper one inscribed '56 [or S0?]', the lower one with and indecipherable ?number; rust stains and holes in the first few leaves are probably evidence of a former binding with two clasps and five bosses</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin><!--Complex date:  markup manually-->
+                     <origDate calendar="Gregorian" notAfter="1300" notBefore="1100">12th century - 13th century</origDate>
+                     <origPlace>
+                        <country key="place_1000080">Italian</country>
+                     </origPlace>
+                  </origin>
+                  <provenance>Ex-libris of <orgName key="org_248254900" role="fmo"> Morimondo </orgName>, 15th century /16th century: 'Liber sancte Marie de Morimundo.N.LXXXXI' (fol. IIv)</provenance>
+                  <provenance>
+                     <persName key="person_64015055" role="fmo"> Paolo Giovio </persName> (?) (1483–1552)</provenance>
+                  <provenance>Bought at Christie's, 17 Nov. 1976, lot 372.</provenance>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Preliminary description by Peter Kidd, late 1990s</source>
+                     </recordHist>
+                  </adminInfo>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

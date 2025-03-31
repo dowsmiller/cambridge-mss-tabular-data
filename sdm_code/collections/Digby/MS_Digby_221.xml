@@ -1,0 +1,105 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4343">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Digby 221</title>
+            <title type="collection">MSS. Digby</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Digby_221</idno>
+            <idno type="collection">Digby</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Digby_221" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Digby 221</idno>
+                  <idno type="ieArk">ark:29072/x0sb397768q8</idno><idno type="crArk">ark:29072/x0mc87pq25wz</idno><altIdentifier type="internal">
+                     <idno type="SCN">1822</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Digby_221-item1">
+                     <author key="person_267277950">Alberic of London (?)</author>
+                     <title key="work_317">Poetarius siue Scintillarium poetarum</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="2" xml:id="MS_Digby_221-item2">
+                     <author key="person_71420958">Alexander Nequam</author>
+                     <title key="work_399">Commentary on Martianus Capella</title>
+                     <bibl type="commentedOn">
+                        <author key="person_95152094">Martianus Capella</author>
+                        <title>De nuptiis Philologiae et Mercurii</title>
+                     </bibl>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="3" xml:id="MS_Digby_221-item3">
+                     <author key="person_2241"><!-- no good entry found -->'Hermes'</author>
+                     <title key="work_182">De sex rerum principiis</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#miscellanea" n="4" xml:id="MS_Digby_221-item4">
+                     <!-- check -->
+                     <title key="work_13422" type="desc">Mythographical treatise</title>
+                     <note>(De natura deorum)</note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1400" notBefore="1300">14th century</origDate>
+                  </origin>
+                  <provenance notAfter="1634" notBefore="1603" resp="#MMM"><persName key="person_49357645" role="fmo">Kenelm Digby, 1603–1665</persName></provenance>
+                  <acquisition resp="#MMM" when="1634">Donated to the Bodleian, 1634.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source><ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Quarto Catalogue (W. D. Macray, <title>Bodleian Library Quarto Catalogues IX: Digby Manuscripts</title>, repr. with addenda by R. W. Hunt and A. G. Watson, 1999). <listBibl>
+                              <bibl facs="abw0127.gif" type="QUARTO">Quarto Catalogue, col. 236</bibl>
+                              <bibl facs="abw0273.gif" type="QUARTO">Quarto Catalogue (addenda), p. 96</bibl>
+                              <bibl facs="abw0274.gif" type="QUARTO">Quarto Catalogue (addenda), p. 97</bibl>
+                              <bibl facs="aap0097.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 76</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2018-10-14" xml:id="MMM"><persName>Mitch Fraas</persName> Provenance and acquisition information added using <ref target="https://github.com/littlegustv/oxfordupdates/blob/master/test_case_for_oxford_prov.rb">https://github.com/littlegustv/oxfordupdates/blob/master/test_case_for_oxford_prov.rb</ref> in collaboration with the <ref target="http://mappingmanuscriptmigrations.org/">Mapping Manuscript Migrations</ref> project.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

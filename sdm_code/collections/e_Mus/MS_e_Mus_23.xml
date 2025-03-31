@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_9123">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. e Mus. 23</title>
+            <title type="collection">MSS. e Mus. (e Musaeo)</title>
+            <respStmt xml:id="DD">
+               <resp when="1984">Cataloguer</resp>
+               <persName>A. G. Watson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_e_Mus_23</idno>
+            <idno type="collection">e Musaeo</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_e_Mus_23" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. e Mus. 23</idno>
+                  <idno type="ieArk">ark:29072/x0v405s89134</idno>
+                  <idno type="crArk">ark:29072/x0v118rd07s7</idno>
+                  <altIdentifier type="internal">
+                     <idno type="SCN">3493</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem class="#theologica #pastoralia" n="1" xml:id="MS_e_Mus_23-item1">
+                     <title key="work_10429">Aventure and Grace</title>
+                     <note>English translation of Laurent d'Orléans, <title>La somme le roi</title>, made by a Knight of Henry VI (<persName key="person_1431" role="trl">Robert Shottesbroke</persName> (?)) 1451</note>
+                     <textLang mainLang="enm">Middle English</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent resp="#DD">162 pages
+      <dimensions unit="mm" type="leaf">
+                              <height>233</height>
+                              <width>220</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                     <layoutDesc resp="#DD">
+                        <layout writtenLines="35" columns="2">2 cols., 35 lines, column space <dimensions type="column" unit="mm">
+                              <height>220</height>
+                              <width quantity="75">c. 75</width>
+                           </dimensions>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Written by <persName key="person_192" role="scr">Carpenter</persName>, p. 161. (<ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> iii. 1051, pl. XCVII)</handNote>
+                  </handDesc>
+                  <decoDesc><summary><ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> iii. 1051, pl. XCVII</summary>
+                     <decoNote type="miniature">Good miniature. </decoNote><decoNote type="border">Fine border. </decoNote><decoNote type="decInit">Fine initials. </decoNote>
+                  </decoDesc>
+                  <bindingDesc>
+                     <binding contemporary="true">
+                        <p>Stamped brown leather, clasps lost, contemporary English work.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian"
+                               notAfter="1500"
+                               notBefore="1451"
+                               cert="high">15th century (after 1451)</origDate>
+                     <origPlace>
+                        <country key="place_7002445">English</country>
+                     </origPlace>
+                  </origin>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Summary description by Elizabeth Solopova and Matthew Holford, based on the Summary Catalogue and supplementary sources. <listBibl>
+                              <bibl facs="aaq0015.gif" type="SC">Summary Catalogue, Vol. 2 Part 2, p. 656</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl subtype="partial" type="digital-facsimile">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/00017123-fae2-4c64-99c2-a33e90ac808b/">
+                           <title>Digital Bodleian</title>
+                        </ref>
+                        <note>(2 images from 35mm slides)</note>
+                     </bibl>
+                  </surrogates>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="PRINT">
+                        <head>Printed descriptions:</head>
+                        <bibl>A. Watson, <title>Catalogue of Dated and Datable Manuscripts in Oxford Libraries</title> (1984), <citedRange unit="entry" from="653" to="653">
+                              <ref target="https://hdl.handle.net/2027/mdp.39015008982863?urlappend=%3Bseq=136">no. 653</ref>
+                           </citedRange>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2024-09">Add extent, leaf dimensions and layout from Watson, Dated and Datable.</change>
+         <change when="2022-04-04">Add binding information from Summary Catalogue.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

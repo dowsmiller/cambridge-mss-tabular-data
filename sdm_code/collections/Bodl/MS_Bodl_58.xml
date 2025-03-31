@@ -1,0 +1,123 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1597">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Bodl. 58</title>
+            <title type="collection">MSS. Bodl. (Bodley)</title>
+            <respStmt xml:id="SC">
+               <resp when="1922">Cataloguer</resp>
+               <persName>Falconer Madan</persName>
+               <persName>H. H. E. Craster</persName>
+            </respStmt>
+            <respStmt xml:id="MLH">
+               <resp when="2020">Encoding</resp>
+               <resp when="2020">Catalogue updates and corrections</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Bodl_58</idno>
+            <idno type="collection">Bodl</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Bodl_58" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement key="place_7011931">Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Bodl. 58</idno>
+                  <idno type="ieArk">ark:29072/x0sq87bt249g</idno><idno type="crArk">ark:29072/x0sn009x4104</idno><altIdentifier type="internal">
+                     <idno type="SCN">2006</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <textLang mainLang="la">Latin</textLang>
+                  <msItem n="1" xml:id="MS_Bodl_58-item1">
+                     <locus>(fol. 1)</locus>
+                     <author key="person_316874550">John Waleys</author>
+                     <title key="work_2775">Breuiloquium de uirtutibus antiquorum principum et philosophorum</title>
+                     <rubric>Breuiloquium Johannis Wallensis de quatuor virtutibus cardinalibus secundum dicta principum et philosophorum</rubric>
+                     <incipit>Quoniam misericordia &amp; veritas</incipit>
+                  </msItem>
+                  <msItem n="2" xml:id="MS_Bodl_58-item2">
+                     <locus>(fol. 51)</locus>
+                     <author key="person_14802130">Jacobus de Cessolis</author>
+                     <title key="work_2307">Liber de moribus hominum et officiis nobilium ac popularium super ludo scaccorum</title>
+                     <rubric>Liber quem composuit frater Jacobus de Cessolis ordinis fratrum Predicatorum qui intitulatur de moribus hominum et officijs nobilium super ludo Scachorum</rubric>
+                     <incipit type="prologue">Multorum fratrum ordinis</incipit>
+                     <incipit type="text">Inter omnia mala signa</incipit>
+                     <note>With list of chapters.</note>
+                  </msItem>
+                  <msItem class="#medica" n="3" xml:id="MS_Bodl_58-item3">
+                     <title key="work_15363">Tractatus de regimine sanitatis secundum Bartholomeum</title>
+                     <bibl type="repertory"><ref target="https://cctr1.umkc.edu/find/$db=eTK&amp;ms=1614G">eTK 1614G</ref></bibl>
+                     <rubric>Tractatus de regimine sanitatis secundum Bartholomeum in suo Breuiario</rubric>
+                     <incipit>Ut autem dicit Galienus</incipit>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent>i + 147 leaves <dimensions type="binding" unit="in">
+                              <height>7.75</height>
+                              <width>5.375</width>
+                           </dimensions></extent>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="flourInit">Illuminated capitals.</decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1410" notBefore="1390">c. 1400</origDate>
+                     <origPlace>
+                        <country key="place_7002445">English</country>
+                     </origPlace>
+                  </origin>
+                  <provenance notBefore="1390"><orgName key="org_154916527" role="fmo">Winchester, cathedral priory</orgName>: erased inscription on fol. 1, <q type="exLibris">Liber sancti Swithini Wyntoniensis ecclesie</q></provenance>
+                  <provenance when="1600"><persName key="person_55215473" role="fmo">Henry Jackson (of Corpus Christi college, Oxford)</persName>, 1600: inscription, fol. 144.</provenance>
+                  <acquisition notAfter="1620" notBefore="1619"> Acquired probably by purchase from Jackson in 1619–20.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Description adapted (April 2020) from the Summary Catalogue (1922), with additional reference to other published literature as cited. <listBibl>
+                              <bibl facs="aap0179.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 158</bibl>
+                              <bibl facs="aap0180.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 159</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl><ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/5772"><title>MLGB3: Medieval Libraries of Great Britain</title></ref></bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2020-04-14">Description revised to incorporate all information in SC.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

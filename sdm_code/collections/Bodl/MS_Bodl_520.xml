@@ -1,0 +1,227 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1545">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Bodl. 520</title>
+            <title type="collection">MSS. Bodl. (Bodley)</title>
+            <respStmt xml:id="SC">
+               <resp when="1922">Cataloguer</resp>
+               <persName>H. H. E. Craster</persName>
+               <persName>Falconer Madan</persName>
+            </respStmt>
+            <respStmt xml:id="MLH">
+               <resp when="2021">Encoding</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Bodl_520</idno>
+            <idno type="collection">Bodl</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Bodl_520" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement key="place_7011931">Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Bodl. 520</idno>
+                  <idno type="ieArk">ark:29072/x0fq977v09zg</idno><idno type="crArk">ark:29072/x0fn106z26n4</idno><altIdentifier type="internal">
+                     <idno type="SCN">2194</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <p n="composite">Composite: three parts</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <extent>ii + 60 leaves <dimensions type="binding" unit="in">
+                              <height>9.875</height>
+                              <width>7.125</width>
+                           </dimensions></extent>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <acquisition>Presented by <persName key="person_3338" role="dnr">Edward James, M.A.</persName>, brother of the first Librarian, in 1601</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Description adapted (Jan. 2021) from the Summary Catalogue (1922). <listBibl>
+                              <bibl facs="aap0274.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 253</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl type="digital-facsimile" subtype="full">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/3e24cd11-77b1-4d96-a371-bedc199ecd34/">
+                           <title>Digital Bodleian</title></ref> <note>(full digital facsimile)</note>
+                     </bibl>
+                  </surrogates>
+               </additional>
+               <!--  <p>A 
+                 
+                    <p>There was a Thomas Harliston, a monk of Bury, in the middle of the 15th
+                        century.</p>
+                  
+                    <p>C 4 (fol. 43). 'Tractatus de signis &#x0026; moribus naturalibus hominum ...'
+                        the Secreta Secretorum once ascribed to Aristotle, with list of chapters and
+                        the same three prologues as in no. 2136, but wanting many leaves at the end:
+                        ends 'multum laborare &#x0026; frequenter ad', with catchwords 'solem
+                        stare', about half way through the treatise.</p>
+                    <p>The fly-leaves (foll. ii, 59) are from a Latin commentary on the Apocalypse
+                        of about A.D. 1300.</p> -->
+               <msPart xml:id="MS_Bodl_520-part1">
+                  <msIdentifier>
+                     <altIdentifier type="partial">
+                        <idno type="part">MS. Bodl. 520 – Part 1</idno>
+                     </altIdentifier>
+                  </msIdentifier>
+                  <msContents>
+                     <msItem n="1" xml:id="MS_Bodl_520-part1-item1">
+                        <locus>(fol. 1)</locus>
+                        <author key="person_2261">Henry Teesdale (?)<!-- not in VIAF --></author>
+                        <title key="work_1997">De naturis</title>
+                        <incipit>Natura quedam est naturans, quedam natura naturata</incipit>
+                        <finalRubric>Expliciunt libri naturales secundum M<ex>agistrum</ex> Teysdale in veritate Et sic ait quidam uenerabilis senex</finalRubric>
+                        <textLang mainLang="la">Latin</textLang>
+                     </msItem>
+                     <msItem n="2" xml:id="MS_Bodl_520-part1-item2">
+                        <locus>(fol. 12v)</locus>
+                        <author key="person_300696721">Ps.-Thomas Aquinas</author>
+                        <title key="work_4129">De natura accidentis</title>
+                        <finalRubric>Explicit tractatus fratris Thome de genere. Amen</finalRubric>
+                        <note>Wanting some leaves after fol. 12.</note>
+                        <textLang mainLang="la">Latin</textLang>
+                     </msItem>
+                  </msContents>
+                  <physDesc>
+                     <objectDesc form="codex">
+                        <supportDesc material="perg">
+                           <support>parchment</support>
+                        </supportDesc>
+                     </objectDesc>
+                     <handDesc>
+                        <handNote>Written and rubricated by <persName key="person_3418" role="scr">Thomas Harlyston</persName>, see fols. 6, 16v. There was a Thomas Harliston, a monk of Bury, in the middle of the 15th century.</handNote>
+                     </handDesc>
+                  </physDesc>
+                  <history>
+                     <origin>
+                        <origDate calendar="Gregorian" notAfter="1500" notBefore="1400">15th century</origDate>
+                        <origPlace>
+                           <country key="place_7002445">English</country>
+                        </origPlace>
+                     </origin>
+                  </history>
+               </msPart>
+               <msPart xml:id="MS_Bodl_520-part2">
+                  <msIdentifier>
+                     <altIdentifier type="partial">
+                        <idno type="part">MS. Bodl. 520 – Part 2</idno>
+                     </altIdentifier>
+                  </msIdentifier>
+                  <msContents>
+                     <msItem class="#logica #scientifica" n="1" xml:id="MS_Bodl_520-part2-item1">
+                        <locus>(fol. 17)</locus>
+                        <title key="work_13818" type="desc">'Proposiciones'</title>
+                        <note>From various physical treatises by Porphyrius (de quinque vocibus), Boethius (Topica), Gilbertus Porretanus (de sex principiis) and Aristotle (Elenchi, Topica, Posteriora Analytica, Physica, Metaphysica, de Anima, de Generatione), imperfect at end, perhaps also at beginning.</note>
+                        <textLang mainLang="la">Latin</textLang>
+                     </msItem>
+                  </msContents>
+                  <physDesc>
+                     <objectDesc form="codex">
+                        <supportDesc material="perg">
+                           <support>parchment</support>
+                        </supportDesc>
+                     </objectDesc>
+                  </physDesc>
+                  <history>
+                     <origin>
+                        <origDate calendar="Gregorian" notAfter="1500" notBefore="1400">15th century</origDate>
+                        <origPlace>
+                           <country key="place_7002445">English</country>
+                        </origPlace>
+                     </origin>
+                  </history>
+               </msPart>
+               <msPart xml:id="MS_Bodl_520-part3">
+                  <msIdentifier>
+                     <altIdentifier type="partial">
+                        <idno type="part">MS. Bodl. 520 – Part 3</idno>
+                     </altIdentifier>
+                  </msIdentifier>
+                  <msContents>
+                     <msItem n="1" xml:id="MS_Bodl_520-part3-item1">
+                        <locus>(fol. 43)</locus>
+                        <author key="person_2581859">Ps.-Aristotle</author>
+                        <title key="work_3861">Secreta secretorum</title>
+                        <rubric>Tractatus de signis &amp; moribus naturalibus hominum ...</rubric>
+                        <note>With list of chapters and the same three prologues as in MS. Bodl. 67 (SC 2136), but wanting many leaves at the end: ends 'multum laborare &amp; frequenter ad', with catchwords 'solem stare', about half way through the treatise.</note>
+                        <textLang mainLang="la">Latin</textLang>
+                     </msItem>
+                  </msContents>
+                  <physDesc>
+                     <objectDesc form="codex">
+                        <supportDesc material="perg">
+                           <support>parchment</support>
+                        </supportDesc>
+                     </objectDesc>
+                  </physDesc>
+                  <history>
+                     <origin>
+                        <origDate calendar="Gregorian" notAfter="1500" notBefore="1400">15th century</origDate>
+                        <origPlace>
+                           <country key="place_7002445">English</country>
+                        </origPlace>
+                     </origin>
+                  </history>
+               </msPart>
+               <msPart type="fragment" xml:id="MS_Bodl_520-endleaves">
+                  <msIdentifier>
+                     <altIdentifier type="partial">
+                        <idno type="part">MS. Bodl. 520 - endleaves (fols. ii, 59)</idno>
+                     </altIdentifier>
+                  </msIdentifier>
+                  <msContents>
+                     <textLang mainLang="la">Latin</textLang>
+                     <msItem xml:id="MS_Bodl_520-endleaves-item1">
+                        <title key="work_11137" type="desc">Commentary on the Apocalypse</title>
+                     </msItem>
+                  </msContents>
+                  <physDesc>
+                     <objectDesc form="codex">
+                        <supportDesc material="perg">
+                           <support>parchment</support>
+                        </supportDesc>
+                     </objectDesc>
+                  </physDesc>
+                  <history>
+                     <origin>
+                        <origDate calendar="Gregorian" notAfter="1310" notBefore="1290">c. 1300</origDate>
+                     </origin>
+                  </history>
+               </msPart>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2021-01-13">Description revised to incorporate all information in SC.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

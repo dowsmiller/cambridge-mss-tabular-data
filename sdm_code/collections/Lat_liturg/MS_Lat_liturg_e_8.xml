@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6516">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Lat. liturg. e. 8</title>
+            <title type="collection">MSS. Lat. liturg. (Latin liturgical)</title>
+            <respStmt xml:id="DD">
+               <resp when="1984">Cataloguer</resp>
+               <persName>A. G. Watson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Lat_liturg_e_8</idno>
+            <idno type="collection">Lat liturg</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Lat_liturg_e_8" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Lat. liturg. e. 8</idno>
+                  <idno type="ieArk">ark:29072/x06108vc12p0</idno>
+                  <idno type="crArk">ark:29072/x05x21tg29c8</idno>
+                  <altIdentifier type="internal">
+                     <idno type="SCN">32705</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem class="#liturgica #monastica"
+                          n="1"
+                          xml:id="MS_Lat_liturg_e_8-item1">
+                     <title key="work_13570" type="desc">Office of admission of a novice into a Franciscan nunnery.</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent resp="#DD">ii + 64 + i fols.<dimensions unit="mm" type="leaf">
+                              <height>175</height>
+                              <width>110</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                     <layoutDesc resp="#DD">
+                        <layout writtenLines="14" columns="1">1 col., 14 lines or a variable number of lines of
+         script and staves of music, <dimensions unit="mm" type="written">
+                              <height>123</height>
+                              <width min="78" max="88">78-88</width>
+                           </dimensions>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Written by <persName key="person_376" role="scr"><!-- not found -->fr. Paul</persName>.</handNote>
+                  </handDesc>
+                  <musicNotation>
+                     <p>Notation on staves (see van Dijk 1957).</p>
+                  </musicNotation>
+                  <decoDesc>
+                     <summary>
+                        <ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> i. 892:</summary>
+                     <decoNote type="histInit">Historiated initials.  </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" when="1490" cert="high">1490</origDate>
+                     <origPlace>
+                        <country key="place_1000095">Spanish</country>, <settlement key="place_7008383">Perpignan</settlement>
+                        <!--ORIGINAL: Spanish, Perpignan-->
+                     </origPlace>
+                  </origin>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>
+                           <ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Summary Catalogue (1924). Decoration, localization and date follow Pächt and Alexander (1966). <listBibl>
+                              <bibl facs="abj0225.gif" type="SC">Summary Catalogue, vol. 6, p. 187</bibl>
+                              <bibl facs="abj0226.gif" type="SC">Summary Catalogue, vol. 6, p. 188</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl subtype="partial" type="digital-facsimile">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/643288d4-ebf1-45e5-9c0d-706ddff1fafd/">
+                           <title>Digital Bodleian</title>
+                        </ref>
+                        <note>(3 images from 35mm slides)</note>
+                     </bibl>
+                  </surrogates>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="PRINT">
+                        <head>Printed descriptions:</head>
+                        <bibl>A. Watson, <title>Catalogue of Dated and Datable Manuscripts in Oxford Libraries</title> (1984), <citedRange unit="entry" from="545" to="545">
+                              <ref target="https://hdl.handle.net/2027/mdp.39015008982863?urlappend=%3Bseq=117">no. 545</ref>
+                           </citedRange>
+                        </bibl>
+                        <bibl>S. J. P. van Dijk, <title>Latin Liturgical Manuscripts in the Bodleian Library, Oxford, vol. 3: Rituals and Directories</title> (typescript, 1957), <citedRange unit="page" from="93" to="93">p. 93</citedRange>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2024-09">Add extent, leaf dimensions and layout from Watson, Dated and Datable.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

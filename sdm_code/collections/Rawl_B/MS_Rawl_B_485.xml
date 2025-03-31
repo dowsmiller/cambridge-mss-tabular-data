@@ -1,0 +1,105 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8055">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Rawl. B. 485</title>
+            <title type="collection">MSS. Rawl. B (Rawlinson B)</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Rawl_B_485</idno>
+            <idno type="collection">Rawl B</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Rawl_B_485" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Rawl. B. 485</idno>
+                  <idno type="ieArk">ark:29072/x08c97kq99dm</idno><idno type="crArk">ark:29072/x02v23vv4704</idno><altIdentifier type="internal">
+                     <idno type="SCN">11832</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Rawl_B_485-item1">
+                     <author key="person_172179352">Jocelin of Furness</author>
+                     <title key="work_2443">Life of St. Patrick</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#vitae_sanctorum" n="2" xml:id="MS_Rawl_B_485-item2">
+                     <title key="work_13051" type="desc">Lives of Irish Saints.</title>
+                     <textLang mainLang="la" otherLangs="ga">Latin with some Irish in the text and in later additions</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1400" notBefore="1300">14th century</origDate>
+                     <origPlace cert="low">
+                        <country key="place_1000078">Irish</country>, Augustinian priory of <orgName key="org_127">Saints' Island</orgName> in Lough Ree, Co. Longford (?)<!--ORIGINAL: Irish, Saints' Island in Lough Ree Co. Longford (?)--></origPlace>
+                  </origin>
+                  <provenance notAfter="1755" notBefore="1690" resp="#MMM">
+                     <persName key="person_47563478" role="fmo">Richard Rawlinson, 1690–1755</persName>
+                  </provenance>
+                  <acquisition resp="#MMM" when="1755">Bequeathed to the Bodleian in 1755</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>
+                           <ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Quarto Catalogue (W. D. Macray, <title>Catalogi codicum manuscriptorum Bibliothecæ Bodleianæ...viri munificentissimi Ricardi Rawlinson, J.C.D., codicum...complectens</title>, Quarto Catalogues V, 5 fascicles, 1862–1900). <listBibl>
+                              <bibl facs="aas0218.gif" type="SC">Summary Catalogue, Vol. 3, p. 203</bibl>
+                              <bibl facs="acv0355.gif" type="QUARTO">Quarto Catalogue, Col. 702</bibl>
+                              <bibl facs="acv0356.gif" type="QUARTO">Quarto Catalogue, Cols. 703–4</bibl>
+                              <bibl facs="acv0357.gif" type="QUARTO">Quarto Catalogue, Col. 705</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="PRINT">
+                        <head>Printed descriptions:</head>
+                        <bibl>Brian Ó Cuiv, <title>Catalogue of Irish Language Manuscripts in the Bodleian Library at Oxford and Oxford College Libraries</title>, 2 vols (Dublin, 2001–3), I.115–19</bibl>
+                        <bibl>S. J. P. van Dijk, <title>Latin Liturgical Manuscripts in the Bodleian Library, Oxford, vol. 2: Office Books</title> (typescript, 1957), <citedRange unit="page" from="179b" to="179b">p. 179b</citedRange>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2019-10-31" xml:id="MMM">
+            <persName>Toby Burrows/Mapping Manuscript Migrations</persName>Provenance and acquisition information added using <ref target="https://github.com/mapping-manuscript-migrations/oxford-tei-updates/blob/master/update_oxford_prov.rb">https://github.com/mapping-manuscript-migrations/oxford-tei-updates/blob/master/update_oxford_prov.rb</ref> in collaboration with the <ref target="http://mappingmanuscriptmigrations.org/">Mapping Manuscript Migrations</ref> project.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

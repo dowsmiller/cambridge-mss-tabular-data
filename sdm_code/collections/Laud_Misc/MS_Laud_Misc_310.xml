@@ -1,0 +1,107 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7121">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Laud Misc. 310</title>
+            <title type="collection">MSS. Laud Misc. (Laud miscellaneous)</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Laud_Misc_310</idno>
+            <idno type="collection">Laud Misc</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Laud_Misc_310" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Laud Misc. 310</idno>
+                  <idno type="ieArk">ark:29072/x0th83kx68jq</idno><idno type="crArk">ark:29072/x0pk02c959d3</idno><altIdentifier type="internal">
+                     <idno type="SCN">646</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Laud_Misc_310-item1">
+                     <author key="person_9865788">Hugh of St.-Victor</author>
+                     <title key="work_2151">De sacramentis christianae fidei</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <summary><ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> iii. 214:</summary><decoNote type="decInit">Good initials.</decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1200" notBefore="1190">12th century, end</origDate>
+                     <origPlace>
+                        <country key="place_7002445">English</country>, <orgName key="org_143145136">Fountains Abbey</orgName>
+                        <!--ORIGINAL: English, Fountains-->
+                     </origPlace>
+                  </origin>
+                  <provenance type="MLGB3_provenance_evidence" source="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/2873">
+                     <orgName role="fmo" key="org_143145136">Fountains, Yorkshire, Cistercian abbey of St Mary the Virgin</orgName>: "Liber Sancte Marie de Fontibus" (s. xii), at top of fol. 1r, in the same hand as the text.      No pressmark. (<ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/2873">MLGB3</ref>: evidence from an ex-libris inscription or note of gift to an institution). </provenance>
+                  <provenance type="MLGB3_laterOwners" source="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/2873">Laud "1635". (<ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/2873">MLGB3</ref>)</provenance>
+                  <provenance type="MLGB3_generalNotes" source="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/2873">No old flyleaves. (<ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/2873">MLGB3</ref>)
+                                             </provenance>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>
+                           <ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Quarto Catalogue (H. O. Coxe, <title>Laudian Manuscripts</title>, Quarto Catalogues II, repr. with corrections, 1969, from the original ed. of 1858–1885). Decoration, localization and date follow Pächt and Alexander (1973). <listBibl>
+                              <bibl facs="aby0170.gif" type="QUARTO">Quarto Catalogue, col. 244</bibl>
+                              <bibl facs="aby0336.gif" type="QUARTO">Quarto Catalogue, p. 556</bibl>
+                              <bibl facs="aap0049.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 28</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl>
+                           <ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/2873">
+                              <title>MLGB3: Medieval Libraries of Great Britain</title>
+                           </ref>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2021-12-14">Add provenance information from MLGB3.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,98 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4404">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Digby 66</title>
+            <title type="collection">MSS. Digby</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Digby_66</idno>
+            <idno type="collection">Digby</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Digby_66" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Digby 66</idno>
+                  <idno type="ieArk">ark:29072/x0w08929185s</idno><idno type="crArk">ark:29072/x0td96k207t1</idno><altIdentifier type="internal">
+                     <idno type="SCN">1667</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem class="#ecclesiastica" n="1" xml:id="MS_Digby_66-item1">
+                     <title key="work_10103" type="desc">Acts of the <orgName key="org_147193963">Council of Basel</orgName></title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#theologica" n="2" xml:id="MS_Digby_66-item2">
+                     <title key="work_15240" type="desc">Theological and other notes</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="3" xml:id="MS_Digby_66-item3">
+                     <author key="person_207244871">Henricus de Hassia</author>
+                     <title key="work_1983">Commentary on Genesis</title>
+                     <note>(extract)</note>
+                     <bibl type="commentedOn">
+                        <title>Bible, Genesis</title>
+                     </bibl>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="chart">
+                        <support>paper</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1500" notBefore="1400">15th century</origDate>
+                  </origin>
+                  <provenance notAfter="1634" notBefore="1603" resp="#MMM"><persName key="person_49357645" role="fmo">Kenelm Digby, 1603–1665</persName></provenance>
+                  <acquisition resp="#MMM" when="1634">Donated to the Bodleian, 1634.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source><ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Quarto Catalogue (W. D. Macray, <title>Bodleian Library Quarto Catalogues IX: Digby Manuscripts</title>, repr. with addenda by R. W. Hunt and A. G. Watson, 1999). <listBibl>
+                              <bibl facs="abw0045.gif" type="QUARTO">Quarto Catalogue, cols. 71–2</bibl>
+                              <bibl facs="abw0046.gif" type="QUARTO">Quarto Catalogue, col. 73</bibl>
+                              <bibl facs="abw0211.gif" type="QUARTO">Quarto Catalogue (addenda), p. 34</bibl>
+                              <bibl facs="abw0212.gif" type="QUARTO">Quarto Catalogue (addenda), p. 35</bibl>
+                              <bibl facs="aap0093.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 72</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2018-10-14" xml:id="MMM"><persName>Mitch Fraas</persName> Provenance and acquisition information added using <ref target="https://github.com/littlegustv/oxfordupdates/blob/master/test_case_for_oxford_prov.rb">https://github.com/littlegustv/oxfordupdates/blob/master/test_case_for_oxford_prov.rb</ref> in collaboration with the <ref target="http://mappingmanuscriptmigrations.org/">Mapping Manuscript Migrations</ref> project.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

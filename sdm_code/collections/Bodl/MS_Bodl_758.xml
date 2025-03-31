@@ -1,0 +1,153 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1745">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Bodl. 758</title>
+            <title type="collection">MSS. Bodl. (Bodley)</title>
+            <respStmt xml:id="DD">
+               <resp when="1984">Cataloguer</resp>
+               <persName>A. G. Watson</persName>
+            </respStmt>
+            <respStmt xml:id="PA">
+               <resp when="1973">Cataloguer</resp>
+               <persName>Otto Pächt</persName>
+               <persName>J. J. G. Alexander</persName>
+            </respStmt>
+            <respStmt xml:id="SC">
+               <resp when="1922">Cataloguer</resp>
+               <persName>H. H. E. Craster</persName>
+               <persName>Falconer Madan</persName>
+            </respStmt>
+            <respStmt xml:id="MLH">
+               <resp when="2019">Encoding</resp>
+               <resp when="2019">Updates and corrections</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Bodl_758</idno>
+            <idno type="collection">Bodl</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Bodl_758" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement key="place_7011931">Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Bodl. 758</idno>
+                  <idno type="ieArk">ark:29072/x0sj139157qp</idno><idno type="crArk">ark:29072/x0sf268474dt</idno><altIdentifier type="internal">
+                     <idno type="SCN">2670</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents resp="#SC">
+                  <msItem n="1" xml:id="MS_Bodl_758-item1">
+                     <author key="person_19444509">Michael de Massa</author>
+                     <title key="work_3209">Tractatus de passione domini</title>
+                     <rubric>Incipiunt scripta super totam Passionem Christi a quatuor Euangelistis formatam edita a quodam fratre heremitarum ordinis sancti Augustini nomine <expan>et</expan> cognomine Michael de Massa</rubric>
+                     <incipit><cit>
+                           <quote>Angeli pacis amare flebunt.</quote>
+                           <bibl>Ysaie .33. capitulo.</bibl>
+                        </cit> In sacra scriptura inuenitur</incipit>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem>
+                     <locus>(fol. 87)</locus>
+                     <colophon>Hunc libellum fecit fieri dominus Milo de Stapiltoun Miles. quem Radulphus de Medyltoun scripsit apud Ingham. Anno domini Millesimo CCCC quinto</colophon>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem>
+                     <locus>(fol. 88v)</locus>
+                     <note>Added lines on the things which corrupt the world (in part = <bibl type="repertory"><ref target="https://www.dimev.net/Results.php?imev=1820"><title>IMEV</title> 1820</ref></bibl>)</note>
+                     <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc resp="#DD">
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent>iv + <num type="leaf">87</num> + iii fols. <dimensions type="leaf" unit="mm">
+                              <height>222</height>
+                              <width>143</width>
+                           </dimensions></extent>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>1 col., 23 lines, written space <dimensions type="written" unit="mm">
+                              <height>140</height>
+                              <width>90</width>
+                           </dimensions></layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Written by <persName key="person_1380" role="scr">Ralph de Medylton</persName> (colophon).</handNote>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote resp="#PA" type="miniature">Fine miniatures (drawings)</decoNote>
+                     <decoNote type="border">Borders</decoNote>
+                     <decoNote type="decInit">Initials.</decoNote>
+                     <decoNote type="rubrication">Rubrics.</decoNote>
+                  </decoDesc>
+                  <bindingDesc>
+                     <binding notAfter="1500" notBefore="1405">
+                        <p>Red whittawed leather over boards, 15th century</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history resp="#DD">
+                  <origin>
+                     <origDate calendar="Gregorian" when="1405" cert="high">1405</origDate>
+                     <origPlace>
+                        <country key="place_7002445">English</country>, Norfolk, <settlement key="place_4005284">Ingham</settlement>
+                        <!--ORIGINAL: English, Norfolk, Ingham-->
+                     </origPlace>
+                  </origin>
+                  <provenance>Written on the order of <persName key="person_3059" role="pat">Miles Stapleton of Ingham, -1419</persName> (colophon); Stapleton arms, fol. 1.</provenance>
+                  <provenance>The scribe (depicted robed, fol. 87) may have belonged to the Trinitarian house at Ingham, founded by Miles Stapleton (-1384), father of the patron.</provenance>
+                  <acquisition resp="#SC" when="1605">Presented by <persName key="person_44167598" role="dnr">William Cotton</persName>, bishop of Exeter, in 1605 (<title>Summary catalogue</title> I.91).</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Description adapted (March 2019) from the following sources: <listBibl>
+                              <bibl>A. G. Watson, <title><ref target="https://catalog.hathitrust.org/Record/000310664">Catalogue of Dated and Datable Manuscripts c.435–1600 in Oxford Libraries</ref></title> (Oxford, 1984), no. 113 [physical description, origin, provenance]</bibl>
+                              <bibl>Otto Pächt and J. J. G. Alexander, <title><ref target="https://catalog.hathitrust.org/Record/000468709">Illuminated Manuscripts in the Bodleian Library, Oxford</ref></title>, III (1973), no. 794 and pl. LXXVI [decoration]</bibl>
+                              <bibl>Summary Catalogue (1922) [contents, acquisition]</bibl>
+                           </listBibl>
+                           <listBibl>
+                              <bibl facs="aap0504.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 483</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl subtype="full" type="digital-facsimile">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/0b26393b-7f1a-4ad7-95e2-3d17d1e66508/">
+                           <title>Digital Bodleian</title></ref>
+                        <note>(full digital facsimile)</note>
+                     </bibl>
+                     <bibl subtype="partial" type="digital-facsimile"><ref target="https://digital.bodleian.ox.ac.uk/objects/a0f840fc-ad3d-4b28-ac49-4072da1992df/"><title>Digital Bodleian</title></ref>
+                        <note>(3 images from 35mm slides)</note></bibl></surrogates>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2019-03-25" who="#MLH">Revised to incorporate all information in Watson, SC and <ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref>.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

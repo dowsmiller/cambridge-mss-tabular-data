@@ -1,0 +1,123 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1538">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Bodl. 511</title>
+            <title type="collection">MSS. Bodl. (Bodley)</title>
+            <respStmt xml:id="DD">
+               <resp when="1984">Cataloguer</resp>
+               <persName>A. G. Watson</persName>
+            </respStmt>
+            <respStmt xml:id="SC">
+               <resp when="1922">Cataloguer</resp>
+               <persName>H. H. E. Craster</persName>
+               <persName>Falconer Madan</persName>
+            </respStmt>
+            <respStmt xml:id="MLH">
+               <resp when="2019">Encoding and markup</resp>
+               <resp when="2019">Updates and corrections</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Bodl_511</idno>
+            <idno type="collection">Bodl</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Bodl_511" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement key="place_7011931">Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Bodl. 511</idno>
+                  <idno type="ieArk">ark:29072/x0df65v826x6</idno><idno type="crArk">ark:29072/x0db78tc43mb</idno><altIdentifier type="internal">
+                     <idno type="SCN">2179</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Bodl_511-item1">
+                     <author key="person_67260463">Giraldus Cambrensis</author>
+                     <title key="work_1792">De topographia Hiberniae</title>
+                     <note>Fol. iii, note of the election of Leo X in 1513 and his death in 1521.</note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent> iii + 89 + i fols. <dimensions type="leaf" unit="mm">
+                              <height>206</height>
+                              <width>145</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="21 25">1 col., 21–25 lines, written space <dimensions type="written" unit="mm">
+                              <height max="150" min="145">145–50</height>
+                              <width max="90" min="83">83–90</width>
+                           </dimensions></layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote script="gothicoAntiqua">Fere-humanistica.</handNote>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote type="colInit">Coloured initials, rubrics.</decoNote>
+                  </decoDesc>
+                  <bindingDesc>
+                     <binding notBefore="1513">
+                        <p>Former parchment cover, part of which is now fol. i</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" cert="high" when="1513">1513</origDate>
+                     <origPlace>
+                        <country key="place_7002445">English</country>
+                     </origPlace>
+                  </origin>
+                  <provenance><q>1513 aprilis 12</q>, in the margin opposite the final rubric, probably in the scribe's hand.</provenance>
+                  <provenance><q type="exLibris"><persName key="person_3016" role="fmo"><unclear>Euganis</unclear></persName> ex dono <persName key="person_3015" role="fmo">W.D.</persName></q>, 16th century, fol. iii verso.</provenance>
+                  <acquisition when="1605">Presented by <persName key="person_44167598" role="dnr">William Cotton</persName>, bishop of Exeter, in 1605.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Description adapted (2019) from the following sources, with additional reference to published literature cited in the description: <listBibl>
+                              <bibl>A. G. Watson, <title><ref target="https://catalog.hathitrust.org/Record/000310664">Catalogue of Dated and Datable Manuscripts c.435–1600 in Oxford Libraries</ref></title> (Oxford, 1984), no. 97 [contents, physical description, origin, provenance]</bibl>
+                              <bibl>Summary Catalogue (1922) [acquisition]</bibl>
+                           </listBibl>
+                           <listBibl>
+                              <bibl facs="aap0267.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 246</bibl>
+                              <bibl facs="aap0268.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 247</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2019-03-05" who="#MLH">Revised to incorporate all information in Watson and SC.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

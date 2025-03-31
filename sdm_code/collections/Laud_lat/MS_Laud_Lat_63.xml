@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7639">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Laud Lat. 63</title>
+            <title type="collection">MSS. Laud Lat. (Latin)</title>
+            <respStmt xml:id="DD">
+               <resp when="1984">Cataloguer</resp>
+               <persName>A. G. Watson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Laud_Lat_63</idno>
+            <idno type="collection">Laud lat</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Laud_Lat_63" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Laud Lat. 63</idno>
+                  <idno type="ieArk">ark:29072/x0n009w2033r</idno>
+                  <idno type="crArk">ark:29072/x0st74cq08mp</idno>
+                  <altIdentifier type="internal">
+                     <idno type="SCN">542</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Laud_Lat_63-item1">
+                     <author key="person_78769600">Cicero</author>
+                     <title key="work_1254">Epistolae ad familiares</title>
+                     <note>(selection)</note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent  resp="#DD">30 fols.
+      <dimensions unit="mm" type="leaf">
+                              <height>170</height>
+                              <width>115</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                     <layoutDesc  resp="#DD">
+                        <layout writtenLines="25" columns="1">1 col., 25
+lines, <dimensions unit="mm" type="written">
+                              <height>110</height>
+                              <width>70</width>
+                           </dimensions>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="decInit">Decoration<p>Good initial. Humanistic script. (<ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> ii. 602)</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" when="1455" cert="high">1455</origDate>
+                     <origPlace cert="low">
+                        <country key="place_1000080">Italian</country>, <settlement key="place_7003085">Padua</settlement> (?)<!--ORIGINAL: Italian, Padua (?)--></origPlace>
+                  </origin>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>
+                           <ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Quarto Catalogue (H. O. Coxe, <title>Laudian Manuscripts</title>, Quarto Catalogues II, repr. with corrections, 1969, from the original ed. of 1858–1885). Decoration, localization and date follow Pächt and Alexander (1970). <listBibl>
+                              <bibl facs="aby0063.gif" type="QUARTO"> Quarto Catalogue, col. 29 </bibl>
+                           </listBibl>
+                           <listBibl>
+                              <bibl facs="aap0047.gif" type="SC">Summary Catalogue, Vol. 2, part 1, p. 16</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl subtype="partial" type="digital-facsimile">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/8735b65d-b149-4ffd-b199-197f9a2b140c/">
+                           <title>Digital Bodleian</title>
+                        </ref>
+                        <note>(1 image from 35mm slides)</note>
+                     </bibl>
+                  </surrogates>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="PRINT">
+                        <head>Printed descriptions:</head>
+                        <bibl>A. Watson, <title>Catalogue of Dated and Datable Manuscripts in Oxford Libraries</title> (1984), <citedRange unit="entry" from="585" to="585">
+                              <ref target="https://hdl.handle.net/2027/mdp.39015008982863?urlappend=%3Bseq=124">no. 585</ref>
+                           </citedRange>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2024-09">Add extent, leaf dimensions and layout from Watson, Dated and Datable.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

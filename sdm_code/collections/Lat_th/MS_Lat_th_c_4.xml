@@ -1,0 +1,118 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6718">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Lat. th. c. 4</title>
+            <title type="collection">MSS. Lat. th. (Latin theology)</title>
+            <respStmt xml:id="SC">
+               <resp when="1922">Cataloguer</resp>
+               <persName>Falconer Madan</persName>
+               <persName>H. H. E. Craster</persName>
+            </respStmt>
+            <respStmt xml:id="MLH">
+               <resp when="2020">Encoding</resp>
+               <resp when="2020">Catalogue updates and corrections</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Lat_th_c_4</idno>
+            <idno type="collection">Lat theol</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Lat_th_c_4" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Lat. th. c. 4</idno>
+                  <idno type="ieArk">ark:29072/x0j6731393pq</idno><idno type="crArk">ark:29072/x0j3860710c1</idno><altIdentifier type="internal">
+                     <idno type="SCN">1926*</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Lat_th_c_4-item1">
+                     <note>Four leaves of Sedulius, <title>Carmen Paschale</title>, with prosodial notes, glosses, and a marginal commentary (by Remigius of Auxerre), hardly later than the text. The passages preserved are bk. i, ll. 142–179, 180–218, 219–259, 339-end, with some lemmata. Between ll. 350 and 351 is the rubric 'Explicit carmen Sedulii de Miraculis ueteris testament. incipit prologus quatuor Euangelistarum'.</note>
+                     <msItem>
+                        <author key="person_18636329">Sedulius</author>
+                        <title key="work_4490">Carmen paschale</title>
+                        <textLang mainLang="la">Latin</textLang>
+                     </msItem>
+                     <msItem>
+                        <author key="person_121885360">Remigius of Auxerre</author>
+                        <title key="work_6275">Commentarium in Sedulii Carmen Paschale</title>
+                        <textLang mainLang="la">Latin</textLang>
+                     </msItem>
+                     <msItem>
+                        <note>One gloss in Old English, fol. 1, 11th century, first half.</note>
+                        <textLang mainLang="ang">Old English</textLang>
+                     </msItem>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent>iii + 11 leaves <dimensions type="binding" unit="in">
+                              <height>14.5</height>
+                              <width>10.625</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1000" notBefore="0950">10th century, second half</origDate>
+                     <origPlace cert="low">
+                        <country key="place_7002445">English</country>, <settlement key="place_7015155">Worcester</settlement> (?)<!--ORIGINAL: English, Worcester (?)--></origPlace>
+                  </origin>
+                  <provenance>For the date and possible origin see Gneuss, no. 652. For the Old English gloss see Ker, no. 340.</provenance>
+                  <!-- check AS MSS mFF -->
+                  <acquisition when="1894">Removed from the binding of MS. Auct. F. inf. 1. 2; referenced in 1894.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Description adapted (March 2020) from the Summary Catalogue (1922) with additional reference to published literature as cited. <listBibl>
+                              <bibl facs="aap0142.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 121</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl>
+                           <ref target="https://clasp.ell.ox.ac.uk/db-latest/apmo/entry/652">
+                              <title>Electronic Gneuss-Lapidge</title> (entry 652)</ref>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2020-03-31">Revised to incorporate all information in SC.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

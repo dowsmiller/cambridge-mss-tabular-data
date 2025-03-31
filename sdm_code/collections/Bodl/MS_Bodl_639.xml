@@ -1,0 +1,125 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1643">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Bodl. 639</title>
+            <title type="collection">MSS. Bodl. (Bodley)</title>
+            <respStmt xml:id="PA">
+               <resp when="1973">Cataloguer</resp>
+               <persName>B. Barker-Benfield</persName>
+            </respStmt>
+            <respStmt xml:id="SC">
+               <resp when="1922">Cataloguer</resp>
+               <persName>Falconer Madan</persName>
+               <persName>H. H. E. Craster</persName>
+            </respStmt>
+            <respStmt xml:id="MLH">
+               <resp when="2020">Encoding</resp>
+               <resp when="2020">Catalogue updates and corrections</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Bodl_639</idno>
+            <idno type="collection">Bodl</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Bodl_639" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement key="place_7011931">Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Bodl. 639</idno>
+                  <idno type="ieArk">ark:29072/x03j33332917</idno><idno type="crArk">ark:29072/x03f462645q1</idno><altIdentifier type="internal">
+                     <idno type="SCN">2080</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <textLang mainLang="la">Latin</textLang>
+                  <msItem n="1" xml:id="MS_Bodl_639-item1">
+                     <author key="person_91013639">Gregory IX</author>
+                     <title key="work_1830">Decretales</title>
+                     <finalRubric>Expliciunt Decretales</finalRubric>
+                     <note>Preceded by a list of chapters.</note>
+                     <note type="annotation">Some notes.</note>
+                  </msItem>
+                  <msItem xml:id="MS_Bodl_639-item1a">
+                     <note>A few similar documents are added on foll. 282–89 in another hand, beginning with one of pope Innocent IV (beg. 'Cum in multis iuris articulis'), and ending imperfect. A few juridical notes are on fol. i recto, 292v, and fragments of a 15th cent. deed are in the binding at each end.</note>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent>iv + 292 leaves <dimensions type="binding" unit="in">
+                              <height>9.125</height>
+                              <width>6.25</width>
+                           </dimensions></extent>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2">2 cols.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="flourInit">Fleuronée initials.</decoNote>
+                  </decoDesc>
+                  <bindingDesc>
+                     <binding notAfter="1525" notBefore="1500">
+                        <p>Red leather on older boards (Reading work?), early 16th cent.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1300" notBefore="1250">13th century, second half</origDate>
+                     <origPlace>
+                        <country key="place_1000070">French</country>
+                     </origPlace>
+                  </origin>
+                  <provenance><orgName key="org_139637930" role="fmo">Reading Abbey</orgName>: evidence of the binding (MLGB).</provenance>
+                  <acquisition when="1608">Given by <persName key="person_3194" role="dnr">William Burdet of Sonning</persName> in 1608.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Description adapted (April 2020) from the following sources, with additional reference to other published literature as cited: <listBibl>
+                              <bibl>Otto Pächt and J. J. G. Alexander, <title><ref target="https://catalog.hathitrust.org/Record/000468709">Illuminated Manuscripts in the Bodleian Library, Oxford</ref></title>, addenda (by Bruce Barker-Benfield) [decoration, origin, date]</bibl>
+                              <bibl>Summary Catalogue (1922) [contents, physical description, provenance and acquisition]</bibl>
+                           </listBibl>
+                           <listBibl>
+                              <bibl facs="aap0222.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 201</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl><ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/4556"><title>MLGB3: Medieval Libraries of Great Britain</title></ref></bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2020-05-06">Description revised to include all information in SC.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>
