@@ -1,9 +1,9 @@
 import os
 import pandas as pd
-import math
 import xml.etree.ElementTree as ET
 import elementpath
 from tqdm import tqdm
+from itertools import chain
 
 # Function to read XML files
 def read_xml_files(directory, pattern=".xml"):
@@ -20,7 +20,7 @@ def parse_xml(file):
     root = tree.getroot()
     return root
 
-# Function to extract text using XPath 2.0
+# Function to apply XPath 2.0 queries
 def extract_with_xpath(xml_element, xpath_expr, namespaces):
     result = elementpath.select(xml_element, xpath_expr, namespaces=namespaces)
     # Ensure the result is always a list
@@ -36,7 +36,7 @@ catalogue_files = read_xml_files("collections")
 
 # Parse XML catalogue files with a progress bar
 catalogue = {}
-for file in tqdm(catalogue_files, desc="Parsing XML files"):
+for file in tqdm(catalogue_files, desc="Parsing catalogue files"):
     filename = os.path.splitext(os.path.basename(file))[0]  # Extract filename (without extension)
     catalogue[filename] = parse_xml(file)
 
@@ -49,7 +49,7 @@ for file in tqdm(authority_files, desc="Parsing authority files"):
     filename = os.path.splitext(os.path.basename(file))[0]  # Extract filename (without extension)
     authority[filename] = parse_xml(file)
 
-# Read in the CSV files
+# Read in the CSV configuration files (don't use read_xml_files here)
 print("Reading CSV configuration files...")
 config_files = read_xml_files("config", pattern=".csv")
 
@@ -74,40 +74,29 @@ for config_name, config in tqdm(config_list.items(), desc="Processing configurat
     df = df_list[config_name]
 
     # Extract relevant columns from the config
-    headings = config['heading'].tolist()
-    xpaths = config['xpath'].tolist()
-    auth_files = config['auth_file'].tolist()
-    auth_xpath_1s = config['auth_xpath_1'].tolist()
-    auth_xpath_2s = config['auth_xpath_2'].tolist()
+    headings, xpaths, auth_files, auth_xpath_1s, auth_xpath_2s = (
+        config[col].tolist() for col in ["heading", "xpath", "auth_file", "auth_xpath_1", "auth_xpath_2"]
+    )
 
     # Extract data for each XPath
-    for xpath, heading, auth_file, auth_xpath_1, auth_xpath_2 in tqdm(zip(xpaths, headings, auth_files, auth_xpath_1s, auth_xpath_2s), total=len(xpaths), desc=f"Extracting {config_name}", leave=False):
+    for xpath, heading, auth_file, auth_xpath_1, auth_xpath_2 in tqdm(zip(xpaths, headings, auth_files, auth_xpath_1s, auth_xpath_2s), total=len(xpaths), desc=f"Extracting '{config_name}'", leave=False):
         results = []
-        for filename, xml in catalogue.items():
+        auth_file = auth_file if pd.notna(auth_file) else None
+        auth_xml = authority.get(auth_file) if auth_file else None
+
+        for filename, xml in tqdm(catalogue.items(), total=len(catalogue), desc=f"Processing '{heading}'", leave=False):
             data = extract_with_xpath(xml, xpath, namespaces)
 
-            if math.isnan(auth_file):
-                # If no authority file or XPath provided, just append the data
+            if auth_file is None:
                 results.append(data)
-                continue
             else:
-                # If an authority file is provided, process the data
-                updated_data = []
-                for data_item in data:
-                    combined_data = []
-
-                    for split_item in data_item.split(" "):
-                        auth_xml = authority.get(auth_file)
-                        xpath_combined = auth_xpath_1 + split_item + auth_xpath_2
-                        auth_data = extract_with_xpath(auth_xml, xpath_combined, namespaces)
-                        combined_data.append(auth_data)
-
-                    #Unlist and concatenate the combined data using "; "
-                    combined_data = [item for sublist in combined_data for item in sublist]
-                    combined_data = "; ".join(combined_data)
-                    
-                    # Append the combined data to the updated data list
-                    updated_data.append(combined_data)
+                updated_data = [
+                    "; ".join(chain.from_iterable(
+                        extract_with_xpath(auth_xml, auth_xpath_1 + identifier + auth_xpath_2, namespaces)
+                        for identifier in data_item.split(" ")
+                    ))
+                    for data_item in data
+                ]
 
                 results.append(updated_data)
 
