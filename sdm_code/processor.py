@@ -4,19 +4,6 @@ import xml.etree.ElementTree as ET
 import elementpath
 from tqdm import tqdm
 
-# Set root directory
-root_dir = os.path.dirname(os.path.abspath(__name__))
-os.chdir(root_dir)
-
-# Set catalogue directory
-catalogue_dir = os.path.join(root_dir, "collections")
-
-# Set authority directory
-authority_dir = os.path.join(root_dir, "sdm_code/authority")
-
-# Set config directory
-config_dir = os.path.join(root_dir, "sdm_code/config")
-
 # Function to read XML files
 def read_xml_files(directory, pattern=".xml"):
     xml_files = []
@@ -44,7 +31,7 @@ def extract_with_xpath(xml_element, xpath_expr, namespaces):
 
 # Read in the XML catalogue files
 print("Reading catalogue files...")
-catalogue_files = read_xml_files(catalogue_dir)
+catalogue_files = read_xml_files("collections")
 
 # Parse XML catalogue files with a progress bar
 catalogue = {}
@@ -54,7 +41,7 @@ for file in tqdm(catalogue_files, desc="Parsing XML files"):
 
 # Read in the XML authority files
 print("Reading authority files...")
-authority_files = read_xml_files(authority_dir)
+authority_files = read_xml_files("authority")
 # Parse XML authority files with progress bar
 authority = {}
 for file in tqdm(authority_files, desc="Parsing authority files"):
@@ -63,7 +50,7 @@ for file in tqdm(authority_files, desc="Parsing authority files"):
 
 # Read in the CSV files
 print("Reading CSV configuration files...")
-config_files = read_xml_files(config_dir, pattern=".csv")
+config_files = read_xml_files("config", pattern=".csv")
 
 # Parse CSV files with progress bar
 config_list = {}
