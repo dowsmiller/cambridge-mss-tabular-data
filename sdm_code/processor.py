@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import math
 import xml.etree.ElementTree as ET
 import elementpath
 from tqdm import tqdm
@@ -85,19 +86,30 @@ for config_name, config in tqdm(config_list.items(), desc="Processing configurat
         for filename, xml in catalogue.items():
             data = extract_with_xpath(xml, xpath, namespaces)
 
-            updated_data = []
-            for data_item in data:
-                auth_xml = authority.get(auth_file)
-                if auth_xml is not None:
-                    xpath = auth_xpath_1 + data_item + auth_xpath_2
-                    auth_data = extract_with_xpath(auth_xml, xpath, namespaces)
-                    if auth_data:
-                        updated_data.append(auth_data[0])  # Assuming `auth_data` is a list
-                    else:
-                        updated_data.append(data_item)
-                else:
-                    updated_data.append(data_item)
-            results.append(updated_data)
+            if math.isnan(auth_file):
+                # If no authority file or XPath provided, just append the data
+                results.append(data)
+                continue
+            else:
+                # If an authority file is provided, process the data
+                updated_data = []
+                for data_item in data:
+                    combined_data = []
+
+                    for split_item in data_item.split(" "):
+                        auth_xml = authority.get(auth_file)
+                        xpath_combined = auth_xpath_1 + split_item + auth_xpath_2
+                        auth_data = extract_with_xpath(auth_xml, xpath_combined, namespaces)
+                        combined_data.append(auth_data)
+
+                    #Unlist and concatenate the combined data using "; "
+                    combined_data = [item for sublist in combined_data for item in sublist]
+                    combined_data = "; ".join(combined_data)
+                    
+                    # Append the combined data to the updated data list
+                    updated_data.append(combined_data)
+
+                results.append(updated_data)
 
         results = [item for sublist in results if isinstance(sublist, list) for item in sublist]
         df[heading] = results
