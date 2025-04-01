@@ -101,10 +101,6 @@ for config_name, config in tqdm(config_list.items(), desc="Total progress"):
         results = [item for sublist in results if isinstance(sublist, list) for item in sublist]
         df[heading] = results
 
-    df_list[config_name] = df
-
-# Order each data frame by the number after "manuscript_" in the "file URL" column, putting empty values at the end
-for name, df in df_list.items():
     if 'file URL' in df.columns:
         df['file URL temp'] = df['file URL'].str.extract(r'manuscript_(\d+)')[0].astype(float)
         df.sort_values(by=['file URL temp'], ascending=True, na_position='last', inplace=True)
@@ -112,10 +108,11 @@ for name, df in df_list.items():
     else:
         print(f"Warning: 'file URL' column not found in {name}. Skipping sorting.")
 
-# Save the data frames to CSV files
-output_dir = "output"
-os.makedirs(output_dir, exist_ok=True)
-for name, df in df_list.items():
+    # Save the data frame to CSV file
+    output_dir = "output"
+    os.makedirs(output_dir, exist_ok=True)
     output_file = os.path.join(output_dir, f"{name}.csv")
     df.to_csv(output_file, index=False)
     print(f"Saved {name} to {output_file}")
+
+    df_list[config_name] = df

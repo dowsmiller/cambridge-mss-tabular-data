@@ -1,4 +1,5 @@
 ﻿section,heading,xpath,auth_file,auth_xpath_1,auth_xpath_2,comment
+hand,hand UID,"//tei:handNote/concat(ancestor::tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:idno[@type=""msID""], ""_hand_"", count(preceding::tei:handNote) + 1)",,,,
 manuscript metadata,file URL,"//tei:handNote/string-join(ancestor::tei:TEI/@xml:id, """")",,,,
 manuscript metadata,msID,"//tei:handNote/string-join(ancestor::tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:idno[@type=""msID""], """")",,,,
 manuscript metadata,shelfmark,"//tei:handNote/string-join(ancestor::tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno[@type=""shelfmark""], """")",,,,
