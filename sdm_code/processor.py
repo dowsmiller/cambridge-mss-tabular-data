@@ -77,7 +77,7 @@ for config_name, config in tqdm(config_list.items(), desc="Total progress"):
     )
 
     # Extract data for each XPath
-    for xpath, heading, auth_file, auth_xpath_1, auth_xpath_2 in tqdm(zip(xpaths, headings, auth_files, auth_xpath_1s, auth_xpath_2s), total=len(xpaths), desc=f"File '{config_name}'", leave=False):
+    for xpath, heading, auth_file, auth_xpath_1, auth_xpath_2 in tqdm(zip(xpaths, headings, auth_files, auth_xpath_1s, auth_xpath_2s), total=len(xpaths), desc=f"File '{config_name}'"):
         results = []
         auth_file = auth_file if pd.notna(auth_file) else None
         auth_xml = authority.get(auth_file) if auth_file else None
