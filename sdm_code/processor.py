@@ -111,8 +111,8 @@ for config_name, config in tqdm(config_list.items(), desc="Total progress"):
     # Save the data frame to CSV file
     output_dir = "output"
     os.makedirs(output_dir, exist_ok=True)
-    output_file = os.path.join(output_dir, f"{name}.csv")
+    output_file = os.path.join(output_dir, f"{config_name}.csv")
     df.to_csv(output_file, index=False)
-    print(f"Saved {name} to {output_file}")
+    print(f"Saved {config_name} to {output_file}")
 
     df_list[config_name] = df
