@@ -7,7 +7,7 @@ metadata,collection,"//tei:provenance/string-join(ancestor::tei:TEI/tei:teiHeade
 metadata,part,"//tei:provenance/string-join((ancestor::tei:msPart|ancestor::tei:msDesc)[last()]/tei:idno[@type=""part""][not(@subtype=""alt"")], "" "")",,,,
 metadata,part ID,"//tei:provenance/string-join((ancestor::tei:msPart|ancestor::tei:msDesc)[last()]/@xml:id, "" "")",,,,
 metadata,part type,"//tei:provenance/string-join((ancestor::tei:msPart|ancestor::tei:msDesc)[last()]/@type, "" "")",,,,
-provenance,provenance text,"//tei:provenance/normalize-space(string-join(.//text(), "" ""))",,,,
+provenance,provenance text,"//tei:provenance/normalize-space(string-join(., """"))",,,,
 provenance,type,"//tei:provenance/string-join(@type, "" "")",,,,
 dates,notAfter,"//tei:provenance/string-join(@notAfter, "" "")",,,,
 dates,notBefore,"//tei:provenance/string-join(@notBefore, "" "")",,,,
