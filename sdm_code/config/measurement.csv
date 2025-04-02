@@ -8,7 +8,7 @@ metadata,part,"(//tei:layout|//tei:extent)/string-join((ancestor::tei:msPart|anc
 metadata,part ID,"(//tei:layout|//tei:extent)/string-join((ancestor::tei:msPart|ancestor::tei:msDesc)[last()]/@xml:id, "" "")",,,,
 metadata,part type,"(//tei:layout|//tei:extent)/string-join((ancestor::tei:msPart|ancestor::tei:msDesc)[last()]/@type, "" "")",,,,
 measurement,layout or extent,(//tei:layout|//tei:extent)/name(),,,,
-measurement,text,"(//tei:layout|//tei:extent)/normalize-space(string-join(.//text(), "" ""))",,,,
+measurement,text,"(//tei:layout|//tei:extent)/normalize-space(string-join(., """"))",,,,
 leaves,leaves,"(//tei:layout|//tei:extent)/string-join(.//tei:measure[@type=""leaf""]/@quantity, "" "")",,,,
 leaves,leaf height,"(//tei:layout|//tei:extent)/string-join(.//tei:dimensions[@type=""leaf""]/(tei:height[@quantity]/@quantity|tei:height[not(@quantity)]), "" "")",,,,
 leaves,leaf height max,"(//tei:layout|//tei:extent)/string-join(.//tei:dimensions[@type=""leaf""]/(tei:height/@max|tei:height[@quantity]/@quantity|tei:height[not(@quantity)])[last()], "" "")",,,,

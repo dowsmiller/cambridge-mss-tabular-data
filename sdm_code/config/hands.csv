@@ -8,7 +8,7 @@ metadata,part,"//tei:handNote/string-join((ancestor::tei:msPart|ancestor::tei:ms
 metadata,part ID,"//tei:handNote/string-join((ancestor::tei:msPart|ancestor::tei:msDesc)[last()]/@xml:id, "" "")",,,,
 metadata,part type,"//tei:handNote/string-join((ancestor::tei:msPart|ancestor::tei:msDesc)[last()]/@type, "" "")",,,,
 summary,total hands,"//tei:handNote/string-join(ancestor::tei:handDesc/@hands, "" "")",,,,
-summary,hand text,"//tei:handNote/normalize-space(string-join(.//text(), """"))",,,,
+summary,hand text,"//tei:handNote/normalize-space(string-join(., """"))",,,,
 person,scribe ref,"//tei:handNote/string-join(@scribe, "" "")",,,,
 person,hand n,"//tei:handNote/string-join(@n, "" "")",,,,
 person,hand ID,"//tei:handNote/string-join(@xml:id, "" "")",,,,
