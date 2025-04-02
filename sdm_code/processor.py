@@ -5,7 +5,7 @@ import elementpath
 from tqdm import tqdm
 from itertools import chain
 
-# Function to read XML files
+# Function to read XML files from a directory
 def read_xml_files(directory, pattern=".xml"):
     xml_files = []
     for root, _, files in os.walk(directory):
@@ -14,13 +14,13 @@ def read_xml_files(directory, pattern=".xml"):
                 xml_files.append(os.path.join(root, file))
     return xml_files
 
-# Function to parse XML with namespaces
+# Function to parse an XML file and return its root element
 def parse_xml(file):
     tree = ET.parse(file)
     root = tree.getroot()
     return root
 
-# Function to apply XPath 2.0 queries
+# Function to apply XPath 2.0 queries to an XML element
 def extract_with_xpath(xml_element, xpath_expr, namespaces):
     result = elementpath.select(xml_element, xpath_expr, namespaces=namespaces)
     # Ensure the result is always a list
@@ -30,64 +30,64 @@ def extract_with_xpath(xml_element, xpath_expr, namespaces):
         return [result]  # Wrap single values in a list
     return result
 
-# Read in the XML catalogue files
+# Step 1: Read and parse XML catalogue files
 print("Reading catalogue files...")
 catalogue_files = read_xml_files("collections")
-# Parse XML catalogue files with a progress bar
 catalogue = {}
 for file in tqdm(catalogue_files, desc="Parsing catalogue files"):
-    filename = os.path.splitext(os.path.basename(file))[0]  # Extract filename (without extension)
+    filename = os.path.splitext(os.path.basename(file))[0]
     catalogue[filename] = parse_xml(file)
 
-# Read in the XML authority files
+# Step 2: Read and parse XML authority files
 print("Reading authority files...")
 authority_files = read_xml_files("authority")
-# Parse XML authority files with progress bar
 authority = {}
 for file in tqdm(authority_files, desc="Parsing authority files"):
-    filename = os.path.splitext(os.path.basename(file))[0]  # Extract filename (without extension)
+    filename = os.path.splitext(os.path.basename(file))[0]
     authority[filename] = parse_xml(file)
 
-# Read in the CSV configuration files (don't use read_xml_files here)
+# Step 3: Read and parse CSV configuration files
 print("Reading CSV configuration files...")
 config_files = read_xml_files("config", pattern=".csv")
-# Parse CSV files with progress bar
 config_list = {}
 for file in tqdm(config_files, desc="Parsing CSV files"):
-    name = os.path.splitext(os.path.basename(file))[0]  # Extract filename (without extension)
+    name = os.path.splitext(os.path.basename(file))[0]
     config_list[name] = pd.read_csv(file, dtype=str)
 
-# Create a data frame per list item in CSV
+# Step 4: Create an empty DataFrame for each configuration file
 df_list = {
     name: pd.DataFrame(columns=config['heading'].tolist())
     for name, config in config_list.items()
 }
 
-# Set namespaces (assuming 'tei' corresponds to the correct namespace)
+# Step 5: Define XML namespaces
 namespaces = {'tei': 'http://www.tei-c.org/ns/1.0'}
 
-# Process data with progress bar
+# Step 6: Extract data from XML files based on configuration
 print("Extracting data from XML files...")
 for config_name, config in tqdm(config_list.items(), desc="Total progress"):
     df = df_list[config_name]
 
-    # Extract relevant columns from the config
+    # Step 6.1: Extract relevant columns from the configuration file
     headings, xpaths, auth_files, auth_xpath_1s, auth_xpath_2s = (
         config[col].tolist() for col in ["heading", "xpath", "auth_file", "auth_xpath_1", "auth_xpath_2"]
     )
 
-    # Extract data for each XPath
+    # Step 6.2: Process each XPath expression in the configuration
     for xpath, heading, auth_file, auth_xpath_1, auth_xpath_2 in tqdm(zip(xpaths, headings, auth_files, auth_xpath_1s, auth_xpath_2s), total=len(xpaths), desc=f"File '{config_name}'"):
         results = []
         auth_file = auth_file if pd.notna(auth_file) else None
         auth_xml = authority.get(auth_file) if auth_file else None
 
+        # Extract data for each XML file in the catalogue
         for filename, xml in tqdm(catalogue.items(), total=len(catalogue), desc=f"Column '{heading}'", leave=False):
             data = extract_with_xpath(xml, xpath, namespaces)
 
+            # If no authority file is specified, use the extracted data directly
             if auth_file is None:
                 results.append(data)
             else:
+                # Look up data in the authority file
                 updated_data = [
                     "; ".join(chain.from_iterable(
                         extract_with_xpath(auth_xml, auth_xpath_1 + identifier + auth_xpath_2, namespaces)
@@ -95,24 +95,30 @@ for config_name, config in tqdm(config_list.items(), desc="Total progress"):
                     ))
                     for data_item in data
                 ]
-
                 results.append(updated_data)
 
+        # Flatten the results and add them to the DataFrame
         results = [item for sublist in results if isinstance(sublist, list) for item in sublist]
         df[heading] = results
 
+    # Step 6.3: Optionally sort the DataFrame based on specific columns
     if 'file URL' in df.columns:
         df['file URL temp'] = df['file URL'].str.extract(r'manuscript_(\d+)')[0].astype(float)
         df.sort_values(by=['file URL temp'], ascending=True, na_position='last', inplace=True)
         df.drop(columns=['file URL temp'], inplace=True)
+    elif 'item URI' in df.columns:
+        df['item UID temp'] = df['item UID']
+        df.sort_values(by=['item UID temp'], ascending=True, na_position='last', inplace=True)
+        df.drop(columns=['item UID temp'], inplace=True)
     else:
-        print(f"Warning: 'file URL' column not found in {name}. Skipping sorting.")
+        print(f"Warning: no sorting column found in {config_name}. Skipping sorting.")
 
-    # Save the data frame to CSV file
+    # Step 6.4: Save the DataFrame to a CSV file
     output_dir = "output"
     os.makedirs(output_dir, exist_ok=True)
     output_file = os.path.join(output_dir, f"{config_name}.csv")
     df.to_csv(output_file, index=False)
     print(f"Saved {config_name} to {output_file}")
 
+    # Step 6.5: Update the DataFrame list with the processed DataFrame
     df_list[config_name] = df
