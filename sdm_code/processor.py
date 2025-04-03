@@ -30,47 +30,90 @@ def extract_with_xpath(xml_element, xpath_expr):
         return [result]  # Wrap single values in a list
     return result
 
-# Step 1: Read and parse XML catalogue files
-catalogue_files = read_xml_files("collections")
-catalogue = {}
-for file in tqdm(catalogue_files, desc="Parsing catalogue files"):
-    filename = os.path.splitext(os.path.basename(file))[0]
-    catalogue[filename] = parse_xml(file)
-
-# Step 2: Read and parse XML authority files
+# Step 1: Read and parse XML authority files
 authority_files = read_xml_files("authority")
 authority = {}
 for file in tqdm(authority_files, desc="Parsing authority files"):
     filename = os.path.splitext(os.path.basename(file))[0]
     authority[filename] = parse_xml(file)
 
-# Step 3: Read and parse CSV configuration files
-config_files = read_xml_files("config", pattern=".csv")
-config_list = {}
-for file in tqdm(config_files, desc="Parsing CSV files"):
-    name = os.path.splitext(os.path.basename(file))[0]
-    config_list[name] = pd.read_csv(file, dtype=str)
+# Step 2: Read and parse XML catalogue files
+catalogue_files = read_xml_files("collections")
+catalogue = {}
+for file in tqdm(catalogue_files, desc="Parsing catalogue files"):
+    filename = os.path.splitext(os.path.basename(file))[0]
+    catalogue[filename] = parse_xml(file)
 
-# Step 4: Create an empty DataFrame for each configuration file
-df_list = {
+# Step 3: Read and parse CSV authority configuration files
+auth_config_files = read_xml_files("config/auth", pattern=".csv")
+auth_config_list = {}
+for file in tqdm(auth_config_files, desc="Parsing authority config files"):
+    name = os.path.splitext(os.path.basename(file))[0]
+    auth_config_list[name] = pd.read_csv(file, dtype=str)
+
+# Step 4: Read and parse CSV collection configuration files
+coll_config_files = read_xml_files("config/collection", pattern=".csv")
+coll_config_list = {}
+for file in tqdm(coll_config_files, desc="Parsing collection config files"):
+    name = os.path.splitext(os.path.basename(file))[0]
+    coll_config_list[name] = pd.read_csv(file, dtype=str)
+
+# Step 5: Create an empty DataFrame for each authority configuration file
+auth_df_list = {
     name: pd.DataFrame(columns=config['heading'].tolist())
-    for name, config in config_list.items()
+    for name, config in auth_config_list.items()
 }
 
-# Step 5: Extract data from XML files based on configuration
-for config_name, config in tqdm(config_list.items(), desc="Total progress"):
-    df = df_list[config_name]
+# Step 6: Create an empty DataFrame for each collection configuration file
+coll_df_list = {
+    name: pd.DataFrame(columns=config['heading'].tolist())
+    for name, config in coll_config_list.items()
+}
 
-    # Step 5.1: Extract relevant columns from the configuration file
-    headings, xpaths, auth_files, auth_xpath_1s, auth_xpath_2s = (
-        config[col].tolist() for col in ["heading", "xpath", "auth_file", "auth_xpath_1", "auth_xpath_2"]
+# Step 7: Extract data from the authority XML files based on the authority configuration files
+for config_name, config in tqdm(auth_config_list.items(), desc="Authority progress"):
+    df = auth_df_list[config_name]
+
+    # Step 7.1 Extract relevant columns from the configuration file
+    headings, auth_files, xpaths = (
+        config[col].tolist() for col in ["heading", "auth_file", "xpath"]
     )
 
-    # Step 5.2: Process each XPath expression in the configuration
-    for xpath, heading, auth_file, auth_xpath_1, auth_xpath_2 in tqdm(zip(xpaths, headings, auth_files, auth_xpath_1s, auth_xpath_2s), total=len(xpaths), desc=f"File '{config_name}'"):
+    # Step 7.2: Process each XPath expression in the configuration
+    for xpath, heading, auth_file in tqdm(zip(xpaths, headings, auth_files), total=len(xpaths), desc=f"File '{config_name}'"):
+        auth_xml = authority.get(auth_file)
+        df[heading] = extract_with_xpath(auth_xml, xpath)
+
+    # Step 7.3: Optionally sort the DataFrame based on the number after "_" in the first column
+    df['temp'] = df.iloc[:, 0].str.extract(r'_(\d+)', expand=False).astype(float)
+    df = df.sort_values(by='temp', ascending=True, na_position='last').reset_index(drop=True)
+    df.drop(columns='temp', inplace=True)
+    
+    # Step 7.4: Save the DataFrame to a CSV file
+    auth_output_dir = "output/auth"
+    os.makedirs(auth_output_dir, exist_ok=True)
+    output_file = os.path.join(auth_output_dir, f"{config_name}.csv")
+    df.to_csv(output_file, index=False)
+    print(f"Saved '{config_name}' to '{output_file}'")
+
+    # Step 7.5: Update the DataFrame list with the processed DataFrame
+    auth_df_list[config_name] = df
+
+
+# Step 8: Extract data from the collection XML files based on the collection configuration files
+for config_name, config in tqdm(coll_config_list.items(), desc="Collections progress"):
+    df = coll_df_list[config_name]
+
+    # Step 8.1: Extract relevant columns from the configuration file
+    headings, xpaths, auth_files, auth_cols = (
+        config[col].tolist() for col in ["heading", "xpath", "auth_file", "auth_col"]
+    )
+
+    # Step 8.2: Process each XPath expression in the configuration
+    for xpath, heading, auth_file, auth_col in tqdm(zip(xpaths, headings, auth_files, auth_cols), total=len(xpaths), desc=f"File '{config_name}'"):
         results = []
         auth_file = auth_file if pd.notna(auth_file) else None
-        auth_xml = authority.get(auth_file) if auth_file else None
+        auth_df = auth_df_list.get(auth_file) if auth_file else None
 
         # Extract data for each XML file in the catalogue
         for filename, xml in tqdm(catalogue.items(), total=len(catalogue), desc=f"Column '{heading}'", leave=False):
@@ -79,22 +122,25 @@ for config_name, config in tqdm(config_list.items(), desc="Total progress"):
             # If no authority file is specified, use the extracted data directly
             if auth_file is None:
                 results.append(data)
+            
+            # Else extract the required data from the authority DataFrame
             else:
-                # Look up data in the authority file
                 updated_data = [
                     "; ".join(chain.from_iterable(
-                        extract_with_xpath(auth_xml, auth_xpath_1 + identifier + auth_xpath_2)
+                        [auth_df[auth_df.iloc[:, 0] == identifier][auth_col].iloc[0]]
+                        if not auth_df[auth_df.iloc[:, 0] == identifier].empty else []
                         for identifier in data_item.split(" ")
                     ))
                     for data_item in data
                 ]
+
                 results.append(updated_data)
 
         # Flatten the results and add them to the DataFrame
         results = [item for sublist in results if isinstance(sublist, list) for item in sublist]
         df[heading] = results
 
-    # Step 5.3: Optionally sort the DataFrame based on specific columns
+    # Step 8.3: Optionally sort the DataFrame based on specific columns
     if 'file URL' in df.columns:
         df['file URL temp'] = df['file URL'].str.extract(r'manuscript_(\d+)')[0].astype(float)
         df.sort_values(by=['file URL temp'], ascending=True, na_position='last', inplace=True)
@@ -107,13 +153,13 @@ for config_name, config in tqdm(config_list.items(), desc="Total progress"):
         print(f"Warning: no sorting column found in {config_name}. Skipping sorting.")
 
     # Step 5.4: Save the DataFrame to a CSV file
-    output_dir = "output"
+    output_dir = "output/collection"
     os.makedirs(output_dir, exist_ok=True)
     output_file = os.path.join(output_dir, f"{config_name}.csv")
     df.to_csv(output_file, index=False)
     print(f"Saved '{config_name}' to '{output_file}'")
 
     # Step 5.5: Update the DataFrame list with the processed DataFrame
-    df_list[config_name] = df
+    coll_df_list[config_name] = df
 
-# Step 6: Save the DataFrame list to an .xlsx file as separate tabs, with 'overview' first
+# Step 9: Save the DataFrame lists to .xlsx file with separate tabs, ('overview' first for collections)
