@@ -7,6 +7,8 @@ name,name (index),places,"//tei:place/normalize-space(string-join(tei:placeName[
 name,name(s) (variant),places,"//tei:place/normalize-space(string-join(tei:placeName[@type=""variant""]/string-join(., """"), ""; ""))",
 location,place type,places,"//tei:place/string-join(@type, "" "")",
 location,geo,places,"//tei:place/string-join(tei:location/tei:geo/string-join(.,""""), ""; "")",
+location,geo lat,places,"//tei:place/string-join(tei:location/tei:geo/normalize-space(substring-before(string-join(., """"),"","")), ""; "")",
+location,geo long,places,"//tei:place/string-join(tei:location/tei:geo/normalize-space(substring-after(string-join(., """"),"","")), ""; "")",
 location,geo source,places,"//tei:place/string-join(tei:location/@source, "" "")",
 location,region,places,"//tei:place/string-join(tei:region/string-join(., """"), ""; "")",
 location,region ID,places,"//tei:place/string-join(tei:region/@key, "" "")",

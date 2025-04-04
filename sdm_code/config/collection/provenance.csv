@@ -64,6 +64,8 @@ associated organisations,other org ID(s),"//tei:provenance/string-join(.//tei:or
 former owner details (organisation),orgName,"//tei:provenance/string-join(.//tei:orgName[contains(@role, ""fmo"")]/@key, "" "")",orgs,name (display),
 former owner details (organisation),affiliation,"//tei:provenance/string-join(.//tei:orgName[contains(@role, ""fmo"")]/@key, "" "")",orgs,affiliation,
 former owner details (organisation),geo,"//tei:provenance/string-join(.//tei:orgName[contains(@role, ""fmo"")]/@key, "" "")",orgs,geo,
+former owner details (organisation),geo lat,"//tei:provenance/string-join(.//tei:orgName[contains(@role, ""fmo"")]/@key, "" "")",orgs,geo lat,
+former owner details (organisation),geo long,"//tei:provenance/string-join(.//tei:orgName[contains(@role, ""fmo"")]/@key, "" "")",orgs,geo long,
 former owner details (organisation),country,"//tei:provenance/string-join(.//tei:orgName[contains(@role, ""fmo"")]/@key, "" "")",orgs,country,
 former owner details (organisation),settlement,"//tei:provenance/string-join(.//tei:orgName[contains(@role, ""fmo"")]/@key, "" "")",orgs,settlement,
 associated places,named place(s),"//tei:provenance/normalize-space(string-join(.//tei:placeName/string-join(., """"), ""; ""))",,,

@@ -38,7 +38,7 @@ def extract_with_xpath(xml_element, xpath_expr):
 def save_as_csv(df, output_dir, config_name):
     os.makedirs(output_dir, exist_ok=True)
     output_file = os.path.join(output_dir, f"{config_name}.csv")
-    df.to_csv(output_file, index=False)
+    df.to_csv(output_file, index=False, encoding='utf-8-sig')
     print(f"Saved '{config_name}' to '{output_file}'")
 
 # Function to save DataFrame list as an xlsx file with individual tables as tabs
@@ -82,6 +82,7 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
                         start_col = col_idx + 1
 
         print(f"Saved collection data to '{output_filename}'")
+
     except Exception as e:
         print(f"Saving collection data to '{output_filename}' failed.")
 

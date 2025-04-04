@@ -15,6 +15,8 @@ name,name(s) (variant),places,"//tei:org/normalize-space(string-join(tei:orgName
 name,name(s) (crossref),places,"//tei:org/normalize-space(string-join(tei:orgName[@type=""crossref""]/string-join(., """"), ""; ""))",
 affiliation,affiliation,places,"//tei:org/string-join(.//tei:affiliation/string-join(., """"), ""; "")",
 location,geo,places,"//tei:org/string-join(tei:location/tei:geo/string-join(., """"), ""; "")",
+location,geo lat,places,"//tei:org/string-join(tei:location/tei:geo/normalize-space(substring-before(string-join(., """"),"","")), ""; "")",
+location,geo long,places,"//tei:org/string-join(tei:location/tei:geo/normalize-space(substring-after(string-join(., """"),"","")), ""; "")",
 location,geo source,places,"//tei:org/string-join(tei:location/@source, "" "")",
 location,settlement,places,"//tei:org/string-join(tei:settlement/string-join(., """"), ""; "")",
 location,settlement ID,places,"//tei:org/string-join(tei:settlement/@key, "" "")",
