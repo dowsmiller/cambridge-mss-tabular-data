@@ -7,6 +7,7 @@ from itertools import chain
 import openpyxl
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Alignment
+from openpyxl.comments import Comment
 
 # Function to read XML files from a directory
 def read_xml_files(directory, pattern=".xml"):
@@ -45,10 +46,12 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
     os.makedirs(output_dir, exist_ok=True)
     output_file = os.path.join(output_dir, f"{output_filename}.xlsx")
     sections_list = [config_list[config_name]['section'].to_numpy() for config_name in config_list.keys()]
+    comments_list = [config_list[config_name]['comment'].to_numpy() for config_name in config_list.keys()]
     print(f"Saving '{output_filename}'...")
     try:
         with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
-            for (name, df), sections in zip(df_list.items(), sections_list):
+            # Zip over the sheets' data, section titles, and comments.
+            for (name, df), sections, comments in zip(df_list.items(), sections_list, comments_list):
                 # Write the DataFrame starting from row 2 (leaves row 1 for the section titles)
                 df.to_excel(writer, sheet_name=name, index=False, startrow=1)
 
@@ -58,9 +61,14 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
 
                 # Write the section titles into the first row
                 for col_idx, value in enumerate(sections, start=1):
-                    cell = worksheet.cell(row=1, column=col_idx, value=value)
+                    worksheet.cell(row=1, column=col_idx, value=value)
 
-                # Merge and center identical consecutive section values
+                # Add comments to each cell of the second row using the relevant value from comments
+                for col_idx, comment_text in enumerate(comments, start=1):
+                    cell = worksheet.cell(row=2, column=col_idx)
+                    cell.comment = Comment(comment_text, "Generated")
+
+                # Merge and centre identical consecutive section values in the first row
                 start_col = 1
                 for col_idx in range(1, len(sections) + 1):
                     if col_idx == len(sections) or sections[col_idx] != sections[start_col - 1]:
