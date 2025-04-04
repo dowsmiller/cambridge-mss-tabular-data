@@ -83,8 +83,8 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
                     cell = worksheet.cell(row=2, column=col_idx)
                     comment = Comment(comment_text, "Generated")
                     # Set comment height, assuming 15 characters per line and 15pt per line
-                    num_lines = (len(str(comment_text)) // 15) + 1
-                    comment.height = 15 * num_lines
+                    num_lines = (len(str(comment_text)) // 15)
+                    comment.height = 30 + 15 * num_lines
                     cell.comment = comment
 
                 # Set up a filter for each column, with row 2 given as the header value
