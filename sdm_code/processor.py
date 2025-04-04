@@ -50,7 +50,7 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
     print(f"Saving '{output_filename}'...")
     try:
         with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
-            # Zip over the sheets' data, section titles, and comments.
+            # Zip over the sheets' data, section titles, and comments
             for (name, df), sections, comments in zip(df_list.items(), sections_list, comments_list):
                 # Write the DataFrame starting from row 2 (leaves row 1 for the section titles)
                 df.to_excel(writer, sheet_name=name, index=False, startrow=1)
@@ -63,19 +63,33 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
                 for col_idx, value in enumerate(sections, start=1):
                     worksheet.cell(row=1, column=col_idx, value=value)
 
+                # Set each column to the width of the content in the second row, plus some padding
+                for col_idx, cell in enumerate(worksheet[2], start=1):
+                        column_letter = get_column_letter(col_idx)
+                        if cell.value is not None:
+                            cell_length = len(str(cell.value))
+                            worksheet.column_dimensions[column_letter].width = cell_length + 2
+                        else:
+                            worksheet.column_dimensions[column_letter].width = 10
+
                 # Add comments to each cell of the second row using the relevant value from comments
                 for col_idx, comment_text in enumerate(comments, start=1):
                     cell = worksheet.cell(row=2, column=col_idx)
                     cell.comment = Comment(comment_text, "Generated")
 
+                # Set up a filter for each column, with row 2 given as the header value
+                last_row = worksheet.max_row
+                last_col_letter = get_column_letter(len(sections))
+                worksheet.auto_filter.ref = f"A2:{last_col_letter}{last_row}"
+
                 # Merge and centre identical consecutive section values in the first row
                 start_col = 1
                 for col_idx in range(1, len(sections) + 1):
                     if col_idx == len(sections) or sections[col_idx] != sections[start_col - 1]:
-                        if col_idx - start_col > 1:
+                        if col_idx - start_col >= 1:
                             worksheet.merge_cells(
                                 start_row=1, start_column=start_col,
-                                end_row=1, end_column=col_idx
+                                end_row=1, end_column=col_idx - 1
                             )
                             merged_cell = worksheet.cell(row=1, column=start_col)
                             merged_cell.alignment = Alignment(horizontal='center', vertical='center')
