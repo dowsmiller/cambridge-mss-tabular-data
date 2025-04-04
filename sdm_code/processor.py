@@ -63,19 +63,29 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
                 for col_idx, value in enumerate(sections, start=1):
                     worksheet.cell(row=1, column=col_idx, value=value)
 
+                # Force text type if value starts with '='
+                for row in worksheet.iter_rows(min_row=2, max_row=worksheet.max_row):
+                    for cell in row:
+                        if isinstance(cell.value, str) and cell.value.startswith('='):
+                            cell.value = "'" + cell.value
+
                 # Set each column to the width of the content in the second row, plus some padding
                 for col_idx, cell in enumerate(worksheet[2], start=1):
-                        column_letter = get_column_letter(col_idx)
-                        if cell.value is not None:
-                            cell_length = len(str(cell.value))
-                            worksheet.column_dimensions[column_letter].width = cell_length + 2
-                        else:
-                            worksheet.column_dimensions[column_letter].width = 10
+                    column_letter = get_column_letter(col_idx)
+                    if cell.value is not None:
+                        cell_length = len(str(cell.value))
+                        worksheet.column_dimensions[column_letter].width = cell_length + 2
+                    else:
+                        worksheet.column_dimensions[column_letter].width = 10
 
                 # Add comments to each cell of the second row using the relevant value from comments
                 for col_idx, comment_text in enumerate(comments, start=1):
                     cell = worksheet.cell(row=2, column=col_idx)
-                    cell.comment = Comment(comment_text, "Generated")
+                    comment = Comment(comment_text, "Generated")
+                    # Set comment height, assuming 15 characters per line and 15pt per line
+                    num_lines = (len(str(comment_text)) // 15) + 1
+                    comment.height = 15 * num_lines
+                    cell.comment = comment
 
                 # Set up a filter for each column, with row 2 given as the header value
                 last_row = worksheet.max_row
@@ -93,7 +103,12 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
                             )
                             merged_cell = worksheet.cell(row=1, column=start_col)
                             merged_cell.alignment = Alignment(horizontal='center', vertical='center')
+                        else:
+                            worksheet.cell(row=1, column=start_col).alignment = Alignment(horizontal='center', vertical='center')
                         start_col = col_idx + 1
+
+                # Freeze the first two rows
+                worksheet.freeze_panes = worksheet['A3']
 
         print(f"Saved collection data to '{output_filename}'")
 
