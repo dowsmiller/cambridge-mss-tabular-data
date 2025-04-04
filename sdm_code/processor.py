@@ -89,7 +89,7 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
                         if col_idx - start_col >= 1:
                             worksheet.merge_cells(
                                 start_row=1, start_column=start_col,
-                                end_row=1, end_column=col_idx - 1
+                                end_row=1, end_column=col_idx
                             )
                             merged_cell = worksheet.cell(row=1, column=start_col)
                             merged_cell.alignment = Alignment(horizontal='center', vertical='center')
