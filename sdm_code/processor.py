@@ -5,6 +5,8 @@ import elementpath
 from tqdm import tqdm
 from itertools import chain
 import openpyxl
+from openpyxl.utils import get_column_letter
+from openpyxl.styles import Alignment
 
 # Function to read XML files from a directory
 def read_xml_files(directory, pattern=".xml"):
@@ -39,14 +41,38 @@ def save_as_csv(df, output_dir, config_name):
     print(f"Saved '{config_name}' to '{output_file}'")
 
 # Function to save DataFrame list as an xlsx file with individual tables as tabs
-def save_as_xlsx(df_list, output_dir, output_filename):
+def save_as_xlsx(df_list, config_list, output_dir, output_filename):
     os.makedirs(output_dir, exist_ok=True)
     output_file = os.path.join(output_dir, f"{output_filename}.xlsx")
+    sections_list = [config_list[config_name]['section'].to_numpy() for config_name in config_list.keys()]
     print(f"Saving '{output_filename}'...")
     try:
         with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
-            for name, df in df_list.items():
-                df.to_excel(writer, sheet_name=name, index=False)
+            for (name, df), sections in zip(df_list.items(), sections_list):
+                # Write the DataFrame starting from row 2 (leaves row 1 for the section titles)
+                df.to_excel(writer, sheet_name=name, index=False, startrow=1)
+
+                # Access the workbook and worksheet
+                workbook = writer.book
+                worksheet = writer.sheets[name]
+
+                # Write the section titles into the first row
+                for col_idx, value in enumerate(sections, start=1):
+                    cell = worksheet.cell(row=1, column=col_idx, value=value)
+
+                # Merge and center identical consecutive section values
+                start_col = 1
+                for col_idx in range(1, len(sections) + 1):
+                    if col_idx == len(sections) or sections[col_idx] != sections[start_col - 1]:
+                        if col_idx - start_col > 1:
+                            worksheet.merge_cells(
+                                start_row=1, start_column=start_col,
+                                end_row=1, end_column=col_idx
+                            )
+                            merged_cell = worksheet.cell(row=1, column=start_col)
+                            merged_cell.alignment = Alignment(horizontal='center', vertical='center')
+                        start_col = col_idx + 1
+
         print(f"Saved collection data to '{output_filename}'")
     except Exception as e:
         print(f"Saving collection data to '{output_filename}' failed.")
@@ -100,7 +126,7 @@ for config_name, config in tqdm(auth_config_list.items(), desc="Authority progre
         config[col].tolist() for col in ["heading", "auth_file", "xpath"]
     )
 
-    # Step 7.2: Process each XPath expression in the configuration
+    # Step 7.2: Process each XPath expression in the configuration file
     for xpath, heading, auth_file in tqdm(zip(xpaths, headings, auth_files), total=len(xpaths), desc=f"File '{config_name}'"):
         auth_xml = authority.get(auth_file)
         df[heading] = extract_with_xpath(auth_xml, xpath)
@@ -120,12 +146,10 @@ for config_name, config in tqdm(auth_config_list.items(), desc="Authority progre
     # Step 7.6: Update the DataFrame list with the processed DataFrame
     auth_df_list[config_name] = df
 
-
 # Step 8: Save the DataFrame list to an .xlsx file with separate tabs
 auth_xlsx_output_dir = "output/auth"
 auth_output_filename = "authority_data"
-save_as_xlsx(auth_df_list, auth_xlsx_output_dir, auth_output_filename)
-
+save_as_xlsx(auth_df_list, auth_config_list, auth_xlsx_output_dir, auth_output_filename)
 
 # Step 9: Extract data from the collection XML files based on the collection configuration files
 for config_name, config in tqdm(coll_config_list.items(), desc="Collections progress"):
@@ -136,7 +160,7 @@ for config_name, config in tqdm(coll_config_list.items(), desc="Collections prog
         config[col].tolist() for col in ["heading", "xpath", "auth_file", "auth_col"]
     )
 
-    # Step 9.2: Process each XPath expression in the configuration
+    # Step 9.2: Process each XPath expression in the configuration file
     for xpath, heading, auth_file, auth_col in tqdm(zip(xpaths, headings, auth_files, auth_cols), total=len(xpaths), desc=f"File '{config_name}'"):
         results = []
         auth_file = auth_file if pd.notna(auth_file) else None
@@ -190,4 +214,4 @@ for config_name, config in tqdm(coll_config_list.items(), desc="Collections prog
 # Step 10: Save the DataFrame list to an .xlsx file with separate tabs
 coll_xlsx_output_dir = "output/collection"
 coll_output_filename = "collection_data"
-save_as_xlsx(coll_df_list, coll_xlsx_output_dir, coll_output_filename)
+save_as_xlsx(coll_df_list, coll_config_list, coll_xlsx_output_dir, coll_output_filename)
