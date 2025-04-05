@@ -1,5 +1,5 @@
 ﻿section,heading,xpath,auth_file,auth_col,comment
-metadata,measurement UID,"(//tei:extent[not(ancestor::tei:physDesc//tei:layout)]|//tei:layout)/concat(ancestor::tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:idno[@type=""msID""], ""_measure_"", count((preceding::tei:extent[not(ancestor::tei:physDesc//tei:layout)]|preceding:://tei:layout)) + 1)",,,
+metadata,measurement UID,"(//tei:extent[not(ancestor::tei:physDesc//tei:layout)]|//tei:layout)/concat(ancestor::tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:idno[@type=""msID""], ""_measure_"", count((preceding::tei:extent[not(ancestor::tei:physDesc//tei:layout)]|preceding::tei:layout)) + 1)",,,
 metadata,file URL,"(//tei:extent[not(ancestor::tei:physDesc//tei:layout)]|//tei:layout)/string-join(ancestor::tei:TEI/@xml:id, "" "")",,,
 metadata,msID,"(//tei:extent[not(ancestor::tei:physDesc//tei:layout)]|//tei:layout)/string-join(ancestor::tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:idno[@type=""msID""][not(@subtype=""alt"")], "" "")",,,
 metadata,shelfmark,"(//tei:extent[not(ancestor::tei:physDesc//tei:layout)]|//tei:layout)/string-join(ancestor::tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:idno[@type=""shelfmark""][not(@subtype=""alt"")], "" "")",,,
