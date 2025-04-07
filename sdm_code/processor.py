@@ -3,8 +3,6 @@ import pandas as pd
 import xml.etree.ElementTree as ET
 import elementpath
 from tqdm import tqdm
-from itertools import chain
-import openpyxl
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Alignment
 from openpyxl.comments import Comment
@@ -44,24 +42,27 @@ def extract_with_xpath(xml_element, xpath_expr):
         print(f"XPath extraction failed. Offending XPath: {xpath_expr}. Error: {e}")
 
 # Function to save DataFrame as a csv file
-def save_as_csv(df, output_dir, config_name):
+def save_as_csv(df, output_dir, config_name, sections):
+    df_copy = df.copy()
     os.makedirs(output_dir, exist_ok=True)
     output_filename = f"{config_name}.csv"
     output_file = os.path.join(output_dir, output_filename)
     try:
-        df.to_csv(output_file, index=False, encoding='utf-8-sig')
+        df_copy.columns = [section + ": " + col for section, col in zip(sections, df_copy.columns)]
+        df_copy.to_csv(output_file, index=False, encoding='utf-8-sig')
         print(f"Saved '{config_name}' to '{output_file}'")
     except Exception as e:
         print(f"Saving data to '{output_filename}' failed. Error: {e}")
 
 # Function to save DataFrame as a json file
-def save_as_json(df, output_dir, config_name):
+def save_as_json(df, output_dir, config_name, sections):
+    df_copy = df.copy()
     os.makedirs(output_dir, exist_ok=True)
     output_filename = f"{config_name}.json"
     output_file = os.path.join(output_dir, output_filename)
     try:
-        df.columns = [f"{col}_{i}" if df.columns.duplicated()[i] else col for i, col in enumerate(df.columns)]
-        df.to_json(output_file, orient='records', lines=True, force_ascii=False)
+        df_copy.columns = [section + ": " + col for section, col in zip(sections, df_copy.columns)]
+        df_copy.to_json(output_file, orient='records', lines=True, force_ascii=False)
         print(f"Saved '{config_name}' to '{output_file}'")
     except Exception as e:
         print(f"Saving data to '{output_filename}' failed. Error: {e}")
@@ -77,11 +78,10 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
         with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
             # Zip over the sheets' data, section titles, and comments
             for (name, df), sections, comments in zip(df_list.items(), sections_list, comments_list):
-                # Write the DataFrame starting from row 2 (leaves row 1 for the section titles)
+                # Write the DataFrame starting from row 2
                 df.to_excel(writer, sheet_name=name, index=False, startrow=1)
 
                 # Access the workbook and worksheet
-                workbook = writer.book
                 worksheet = writer.sheets[name]
 
                 # Write the section titles into the first row
@@ -185,8 +185,8 @@ for config_name, config in tqdm(auth_config_list.items(), desc="Authority progre
     df = auth_df_list[config_name]
 
     # Step 7.1 Extract relevant columns from the configuration file
-    headings, auth_files, xpaths = (
-        config[col].tolist() for col in ["heading", "auth_file", "xpath"]
+    sections, headings, auth_files, xpaths = (
+        config[col].tolist() for col in ["section", "heading", "auth_file", "xpath"]
     )
 
     # Step 7.2: Process each XPath expression in the configuration file
@@ -194,21 +194,21 @@ for config_name, config in tqdm(auth_config_list.items(), desc="Authority progre
         auth_xml = authority.get(auth_file)
         df[heading] = extract_with_xpath(auth_xml, xpath)
 
-    # Step 7.3: Optionally sort the DataFrame based on the number after "_" in the first column
+    # Step 7.3: Defragment the DataFrame
+    df = pd.concat([df], ignore_index=True)
+
+    # Step 7.4: Optionally sort the DataFrame based on the number after "_" in the first column
     df['temp'] = df.iloc[:, 0].str.extract(r'_(\d+)', expand=False).astype(float)
     df = df.sort_values(by='temp', ascending=True, na_position='last').reset_index(drop=True)
     df.drop(columns='temp', inplace=True)
-
-    # Step 7.4: Defragment the DataFrame
-    df = pd.concat([df], ignore_index=True)
     
     # Step 7.5: Save the DataFrame to a CSV file
     auth_csv_output_dir = "output/auth/csv"
-    save_as_csv(df, auth_csv_output_dir, config_name)
+    save_as_csv(df, auth_csv_output_dir, config_name, sections)
 
     # Step 7.6: Save the DataFrame to a JSON file
     auth_json_output_dir = "output/auth/json"
-    save_as_json(df, auth_json_output_dir, config_name)
+    save_as_json(df, auth_json_output_dir, config_name, sections)
 
     # Step 7.7: Update the DataFrame list with the processed DataFrame
     auth_df_list[config_name] = df
@@ -223,8 +223,8 @@ for config_name, config in tqdm(coll_config_list.items(), desc="Collections prog
     df = coll_df_list[config_name]
 
     # Step 9.1: Extract relevant columns from the configuration file
-    headings, xpaths, auth_files, auth_cols = (
-        config[col].tolist() for col in ["heading", "xpath", "auth_file", "auth_col"]
+    sections, headings, xpaths, auth_files, auth_cols = (
+        config[col].tolist() for col in ["section", "heading", "xpath", "auth_file", "auth_col"]
     )
 
     # Step 9.2: Process each XPath expression in the configuration file
@@ -256,7 +256,10 @@ for config_name, config in tqdm(coll_config_list.items(), desc="Collections prog
         results = [item for sublist in results if isinstance(sublist, list) for item in sublist]
         df[heading] = results
 
-    # Step 9.3: Optionally sort the DataFrame based on specific columns
+    # Step 9.3: Defragment the DataFrame list
+    df = pd.concat([df], ignore_index=True)
+
+    # Step 9.4: Optionally sort the DataFrame based on specific columns
     if 'file URL' in df.columns:
         df['file URL temp'] = df['file URL'].str.extract(r'manuscript_(\d+)')[0].astype(float)
         df.sort_values(by=['file URL temp'], ascending=True, na_position='last', inplace=True)
@@ -268,16 +271,13 @@ for config_name, config in tqdm(coll_config_list.items(), desc="Collections prog
     else:
         print(f"Warning: no sorting column found in '{config_name}'. Skipping sorting.")
 
-    # Step 9.4: Defragment the DataFrame list
-    df = pd.concat([df], ignore_index=True)
-
     # Step 9.5: Save the DataFrame to a CSV file
     coll_csv_output_dir = "output/collection/csv"
-    save_as_csv(df, coll_csv_output_dir, config_name)
+    save_as_csv(df, coll_csv_output_dir, config_name, sections)
 
     # Step 9.6: Save the DataFrame to a JSON file
     coll_json_output_dir = "output/collection/json"
-    save_as_json(df, coll_json_output_dir, config_name)
+    save_as_json(df, coll_json_output_dir, config_name, sections)
 
     # Step 9.6: Update the DataFrame list with the processed DataFrame
     coll_df_list[config_name] = df
