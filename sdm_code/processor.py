@@ -12,34 +12,59 @@ from openpyxl.comments import Comment
 # Function to read XML files from a directory
 def read_xml_files(directory, pattern=".xml"):
     xml_files = []
-    for root, _, files in os.walk(directory):
-        for file in files:
-            if file.endswith(pattern):
-                xml_files.append(os.path.join(root, file))
-    return xml_files
+    try:
+        for root, _, files in os.walk(directory):
+            for file in files:
+                if file.endswith(pattern):
+                    xml_files.append(os.path.join(root, file))
+        return xml_files
+    except Exception as e:
+        print(f"Reading XML files in {directory} failed. Error: {e}")
 
 # Function to parse an XML file and return its root element
 def parse_xml(file):
     tree = ET.parse(file)
     root = tree.getroot()
-    return root
+    try:
+        return root
+    except Exception as e:
+        print(f"Parsing {file} failed. Error: {e}")
 
 # Function to apply XPath 2.0 queries to an XML element in the TEI namespace
 def extract_with_xpath(xml_element, xpath_expr):
     result = elementpath.select(xml_element, xpath_expr, namespaces={'tei': 'http://www.tei-c.org/ns/1.0'})
     # Ensure the result is always a list
-    if isinstance(result, bool):
-        return [result]  # Wrap the boolean in a list
-    elif not isinstance(result, list):
-        return [result]  # Wrap single values in a list
-    return result
+    try:
+        if isinstance(result, bool):
+            return [result]  # Wrap the boolean in a list
+        elif not isinstance(result, list):
+            return [result]  # Wrap single values in a list
+        return result
+    except Exception as e:
+        print(f"XPath extraction failed. Offending XPath: {xpath_expr}. Error: {e}")
 
 # Function to save DataFrame as a csv file
 def save_as_csv(df, output_dir, config_name):
     os.makedirs(output_dir, exist_ok=True)
-    output_file = os.path.join(output_dir, f"{config_name}.csv")
-    df.to_csv(output_file, index=False, encoding='utf-8-sig')
-    print(f"Saved '{config_name}' to '{output_file}'")
+    output_filename = f"{config_name}.csv"
+    output_file = os.path.join(output_dir, output_filename)
+    try:
+        df.to_csv(output_file, index=False, encoding='utf-8-sig')
+        print(f"Saved '{config_name}' to '{output_file}'")
+    except Exception as e:
+        print(f"Saving data to '{output_filename}' failed. Error: {e}")
+
+# Function to save DataFrame as a json file
+def save_as_json(df, output_dir, config_name):
+    os.makedirs(output_dir, exist_ok=True)
+    output_filename = f"{config_name}.json"
+    output_file = os.path.join(output_dir, output_filename)
+    try:
+        df.columns = [f"{col}_{i}" if df.columns.duplicated()[i] else col for i, col in enumerate(df.columns)]
+        df.to_json(output_file, orient='records', lines=True, force_ascii=False)
+        print(f"Saved '{config_name}' to '{output_file}'")
+    except Exception as e:
+        print(f"Saving data to '{output_filename}' failed. Error: {e}")
 
 # Function to save DataFrame list as an xlsx file with individual tables as tabs
 def save_as_xlsx(df_list, config_list, output_dir, output_filename):
@@ -110,10 +135,10 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
                 # Freeze the first two rows
                 worksheet.freeze_panes = worksheet['A3']
 
-        print(f"Saved collection data to '{output_filename}'")
+        print(f"Saved data to '{output_filename}'")
 
     except Exception as e:
-        print(f"Saving collection data to '{output_filename}' failed.")
+        print(f"Saving data to '{output_filename}' failed.")
 
 # Step 1: Read and parse XML authority files
 authority_files = read_xml_files("authority")
@@ -181,7 +206,11 @@ for config_name, config in tqdm(auth_config_list.items(), desc="Authority progre
     auth_csv_output_dir = "output/auth/csv"
     save_as_csv(df, auth_csv_output_dir, config_name)
 
-    # Step 7.6: Update the DataFrame list with the processed DataFrame
+    # Step 7.6: Save the DataFrame to a JSON file
+    auth_json_output_dir = "output/auth/json"
+    save_as_json(df, auth_json_output_dir, config_name)
+
+    # Step 7.7: Update the DataFrame list with the processed DataFrame
     auth_df_list[config_name] = df
 
 # Step 8: Save the DataFrame list to an .xlsx file with separate tabs
@@ -245,6 +274,10 @@ for config_name, config in tqdm(coll_config_list.items(), desc="Collections prog
     # Step 9.5: Save the DataFrame to a CSV file
     coll_csv_output_dir = "output/collection/csv"
     save_as_csv(df, coll_csv_output_dir, config_name)
+
+    # Step 9.6: Save the DataFrame to a JSON file
+    coll_json_output_dir = "output/collection/json"
+    save_as_json(df, coll_json_output_dir, config_name)
 
     # Step 9.6: Update the DataFrame list with the processed DataFrame
     coll_df_list[config_name] = df
