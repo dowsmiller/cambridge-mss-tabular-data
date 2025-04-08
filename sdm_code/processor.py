@@ -190,9 +190,11 @@ for config_name, config in tqdm(auth_config_list.items(), desc="Authority progre
     )
 
     # Step 7.2: Process each XPath expression in the configuration file
-    for xpath, heading, auth_file in tqdm(zip(xpaths, headings, auth_files), total=len(xpaths), desc=f"File '{config_name}'"):
+    for i, (xpath, heading, auth_file) in enumerate(
+        tqdm(zip(xpaths, headings, auth_files), total=len(xpaths), desc=f"File '{config_name}'")
+    ):
         auth_xml = authority.get(auth_file)
-        df[heading] = extract_with_xpath(auth_xml, xpath)
+        df.iloc[:, i] = extract_with_xpath(auth_xml, xpath)
 
     # Step 7.3: Defragment the DataFrame
     df = pd.concat([df], ignore_index=True)
