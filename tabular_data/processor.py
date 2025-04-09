@@ -5,16 +5,16 @@ from helpers import import_authority, import_collection, process_authority_file,
 # Main function
 def main():
     # Step 1: Import authority files
-    authority, auth_config_list, auth_df_list = import_authority()
+    authority, auth_config_list, auth_df_list = import_authority(auth_path="..", auth_config_path="config/auth", auth_recursive=False, auth_config_recursive=False)
 
     # Step 2: Import collection files
-    catalogue, coll_config_list, coll_df_list = import_collection()
+    catalogue, coll_config_list, coll_df_list = import_collection(coll_path="../collections", coll_config_path="config/collection", coll_recursive=True, coll_config_recursive=False)
 
     # Step 3: Extract data from the authority XML files based on the authority configuration files
     with ProcessPoolExecutor() as executor:
         futures = {
             executor.submit(process_authority_file, config_name, config, authority, auth_df_list, bar_pos): config_name
-            for (config_name, config), bar_pos in zip(auth_config_list.items(), range(2, len(catalogue) + 2))
+            for (config_name, config), bar_pos in zip(auth_config_list.items(), range(1, len(catalogue) + 1))
         }
         for future in tqdm(as_completed(futures), total=len(futures), desc="Authority progress", leave=True):
             config_name, processed_df = future.result()
@@ -29,7 +29,7 @@ def main():
     with ProcessPoolExecutor() as executor:
         futures = {
             executor.submit(process_collection_file, config_name, config, catalogue, coll_df_list, auth_df_list, bar_pos): config_name
-            for (config_name, config), bar_pos in zip(coll_config_list.items(), range(2, len(catalogue) + 2))
+            for (config_name, config), bar_pos in zip(coll_config_list.items(), range(1, len(catalogue) + 1))
         }
         for future in tqdm(as_completed(futures), total=len(futures), desc="Collection progress", leave=True, position=1):
             config_name, processed_df = future.result()

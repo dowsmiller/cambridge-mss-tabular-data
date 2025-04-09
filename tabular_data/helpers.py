@@ -8,26 +8,28 @@ from openpyxl.utils import get_column_letter
 from openpyxl.styles import Alignment
 from openpyxl.comments import Comment
 from concurrent.futures import ProcessPoolExecutor, as_completed
+from pathlib import Path
 
-# Function to read XML files from a directory
-def read_xml_files(directory, pattern=".xml"):
+# Function to read files from a directory
+def read_files(directory, pattern, recursive=True):
     """
-    Reads XML files from a specified directory.
+    Reads files from a specified directory.
     Args:
-        directory (str): Directory to search for XML files.
+        directory (str): Directory to search for files.
         pattern (str): File extension pattern to match.
+        recursive (bool): Whether to search subdirectories.
     Returns:
-        list: List of XML file paths.
+        list: List of file paths.
     """
-    xml_files = []
     try:
-        for root, _, files in os.walk(directory):
-            for file in files:
-                if file.endswith(pattern):
-                    xml_files.append(os.path.join(root, file))
-        return xml_files
+        directory_path = Path(directory)
+        if recursive:
+            files = list(directory_path.rglob(f"*{pattern}"))
+        else:
+            files = list(directory_path.glob(f"*{pattern}"))
+        return [str(file) for file in files]
     except Exception as e:
-        print(f"Reading XML files in {directory} failed. Error: {e}")
+        print(f"Reading files in {directory} failed. Error: {e}")
         raise
 
 # Function to parse an XML file and return its root element
@@ -48,7 +50,7 @@ def parse_xml(file):
         raise
 
 # Function to import all authority files and their config files
-def import_authority(auth_path="authority", auth_config_path="config/auth"):
+def import_authority(auth_path, auth_config_path, auth_recursive, auth_config_recursive):
     """
     Imports and processes authority files and their configuration.
     Args:
@@ -56,7 +58,7 @@ def import_authority(auth_path="authority", auth_config_path="config/auth"):
         auth_config_path (str): Directory containing authority configuration CSV files.
     """
     # Read and parse XML authority files in parallel
-    authority_files = read_xml_files(auth_path)
+    authority_files = read_files(auth_path, pattern=".xml", recursive=auth_recursive)
     authority = {}
     for file in tqdm(authority_files, desc="Parsing authority files"):
         try:
@@ -66,12 +68,12 @@ def import_authority(auth_path="authority", auth_config_path="config/auth"):
             print(f"Failed to parse authority file {file}. Error: {e}")
 
     # Read and parse CSV authority configuration files sequentially
-    auth_config_files = sorted(read_xml_files(auth_config_path, pattern=".csv"))
+    auth_config_files = sorted(read_files(auth_config_path, pattern=".csv", recursive=auth_config_recursive))
     auth_config_list = {}
     for file in tqdm(auth_config_files, desc="Parsing authority config files"):
         try:
             name = os.path.splitext(os.path.basename(file))[0]
-            auth_config_list[name] = pd.read_csv(file, dtype=str)
+            auth_config_list[name] = pd.read_csv(file, dtype=str, na_values=["", "nan"])
         except Exception as e:
             print(f"Failed to parse authority config file {file}. Error: {e}")
 
@@ -84,7 +86,7 @@ def import_authority(auth_path="authority", auth_config_path="config/auth"):
     return authority, auth_config_list, auth_df_list
 
 # Function to import all collection files and their config files
-def import_collection(coll_path="collections", coll_config_path="config/collection"):
+def import_collection(coll_path, coll_config_path, coll_recursive, coll_config_recursive):
     """
     Imports and processes collection files and their configuration.
     Args:
@@ -94,7 +96,7 @@ def import_collection(coll_path="collections", coll_config_path="config/collecti
         tuple: A dictionary of parsed XML files, a dictionary of configuration DataFrames, and a dictionary of empty DataFrames.
     """
     # Read and parse XML catalogue files in parallel
-    catalogue_files = read_xml_files(coll_path)
+    catalogue_files = read_files(coll_path, pattern=".xml", recursive=coll_recursive)
     catalogue = {}
     for file in tqdm(catalogue_files, desc="Parsing catalogue files"):
         try:
@@ -104,7 +106,7 @@ def import_collection(coll_path="collections", coll_config_path="config/collecti
             print(f"Failed to parse catalogue file {file}. Error: {e}")
 
     # Read and parse CSV collection configuration files sequentially
-    coll_config_files = sorted(read_xml_files(coll_config_path, pattern=".csv"))
+    coll_config_files = sorted(read_files(coll_config_path, pattern=".csv", recursive=coll_config_recursive))
     coll_config_list = {}
     for file in tqdm(coll_config_files, desc="Parsing collection config files"):
         try:

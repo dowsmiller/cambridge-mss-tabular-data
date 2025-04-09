@@ -2,7 +2,7 @@ Mac Users
 
 Step 1: Clone repository
 
-Step 2: Open a Terminal window at 'sdm_code'
+Step 2: Open a Terminal window at 'tabular_data'
 
 Step 3: Check if python and pip are installed:
 
