@@ -7,6 +7,7 @@ from tqdm import tqdm
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Alignment
 from openpyxl.comments import Comment
+from concurrent.futures import ProcessPoolExecutor, as_completed
 
 # Function to read XML files from a directory
 def read_xml_files(directory, pattern=".xml"):
@@ -46,29 +47,41 @@ def parse_xml(file):
         print(f"Parsing {file} failed. Error: {e}")
         raise
 
-# Function to import all authority files and their config files.
-def import_authority(auth_path = "authority", auth_config_path = "config/auth"):
+# Function to import all authority files and their config files in parallel.
+def import_authority(auth_path="authority", auth_config_path="config/auth"):
     """
-    Imports and processes authority files and their configuration.
+    Imports and processes authority files and their configuration in parallel.
     Args:
         auth_path (str): Directory containing authority XML files.
         auth_config_path (str): Directory containing authority configuration CSV files.
     """
-    # Read and parse XML authority files
+    # Read and parse XML authority files in parallel
     authority_files = read_xml_files(auth_path)
     authority = {}
-    for file in tqdm(authority_files, desc="Parsing authority files"):
-        filename = os.path.splitext(os.path.basename(file))[0]
-        authority[filename] = parse_xml(file)
+    with ProcessPoolExecutor() as executor:
+        futures = {executor.submit(parse_xml, file): file for file in authority_files}
+        for future in tqdm(as_completed(futures), total=len(futures), desc="Parsing authority files"):
+            file = futures[future]
+            try:
+                filename = os.path.splitext(os.path.basename(file))[0]
+                authority[filename] = future.result()
+            except Exception as e:
+                print(f"Failed to parse authority file {file}. Error: {e}")
 
-    # Read and parse CSV authority configuration files
+    # Read and parse CSV authority configuration files in parallel
     auth_config_files = sorted(read_xml_files(auth_config_path, pattern=".csv"))
     auth_config_list = {}
-    for file in tqdm(auth_config_files, desc="Parsing authority config files"):
-        name = os.path.splitext(os.path.basename(file))[0]
-        auth_config_list[name] = pd.read_csv(file, dtype=str)
+    with ProcessPoolExecutor() as executor:
+        futures = {executor.submit(pd.read_csv, file, dtype=str): file for file in auth_config_files}
+        for future in tqdm(as_completed(futures), total=len(futures), desc="Parsing authority config files"):
+            file = futures[future]
+            try:
+                name = os.path.splitext(os.path.basename(file))[0]
+                auth_config_list[name] = future.result()
+            except Exception as e:
+                print(f"Failed to parse authority config file {file}. Error: {e}")
 
-    # Step 5: Create an empty DataFrame for each authority configuration file
+    # Create an empty DataFrame for each authority configuration file
     auth_df_list = {
         name: pd.DataFrame(columns=config['section'] + ": " + config['heading'])
         for name, config in auth_config_list.items()
@@ -76,46 +89,186 @@ def import_authority(auth_path = "authority", auth_config_path = "config/auth"):
 
     return authority, auth_config_list, auth_df_list
 
-# Function to import all collection files and their config files.
-def import_collection(coll_path = "collections", coll_config_path = "config/collection"):
-    # Read and parse XML catalogue files
+# Function to import all collection files and their config files in parallel.
+def import_collection(coll_path="collections", coll_config_path="config/collection"):
+    """
+    Imports and processes collection files and their configuration in parallel.
+    Args:
+        coll_path (str): Directory containing collection XML files.
+        coll_config_path (str): Directory containing collection configuration CSV files.
+    Returns:
+        tuple: A dictionary of parsed XML files, a dictionary of configuration DataFrames, and a dictionary of empty DataFrames.
+    """
+    # Read and parse XML catalogue files in parallel
     catalogue_files = read_xml_files(coll_path)
     catalogue = {}
-    for file in tqdm(catalogue_files, desc="Parsing catalogue files"):
-        filename = os.path.splitext(os.path.basename(file))[0]
-        catalogue[filename] = parse_xml(file)
+    with ProcessPoolExecutor() as executor:
+        futures = {executor.submit(parse_xml, file): file for file in catalogue_files}
+        for future in tqdm(as_completed(futures), total=len(futures), desc="Parsing catalogue files"):
+            file = futures[future]
+            try:
+                filename = os.path.splitext(os.path.basename(file))[0]
+                catalogue[filename] = future.result()
+            except Exception as e:
+                print(f"Failed to parse catalogue file {file}. Error: {e}")
 
-    # Read and parse CSV collection configuration files
+    # Read and parse CSV collection configuration files in parallel
     coll_config_files = sorted(read_xml_files(coll_config_path, pattern=".csv"))
     coll_config_list = {}
-    for file in tqdm(coll_config_files, desc="Parsing collection config files"):
-        name = os.path.splitext(os.path.basename(file))[0]
-        coll_config_list[name] = pd.read_csv(file, dtype=str)
+    with ProcessPoolExecutor() as executor:
+        futures = {executor.submit(pd.read_csv, file, dtype=str): file for file in coll_config_files}
+        for future in tqdm(as_completed(futures), total=len(futures), desc="Parsing collection config files"):
+            file = futures[future]
+            try:
+                name = os.path.splitext(os.path.basename(file))[0]
+                coll_config_list[name] = future.result()
+            except Exception as e:
+                print(f"Failed to parse collection config file {file}. Error: {e}")
 
     # Create an empty DataFrame for each collection configuration file
     coll_df_list = {
         name: pd.DataFrame(columns=config['section'] + ": " + config['heading'])
         for name, config in coll_config_list.items()
     }
-    
+
     return catalogue, coll_config_list, coll_df_list
 
-# Function to process authority columns
-def process_authority_column(i, xpath, auth_file, authority):
-        """
-        Processes a single column for the authority DataFrame.
-        Args:
-            i (int): The index of the column.
-            xpath (str): The XPath expression to extract data.
-            auth_file (str): The authority file name.
-        Returns:
-            tuple: The index and the extracted results.
-        """
-        auth_xml = authority.get(auth_file)
-        results = extract_with_xpath(auth_xml, xpath)
-        return i, results
+# Function to extract data from the authority XML files based on the authority configuration files
+def process_authority_file(config_name, config, authority, auth_df_list, bar_pos):
+    """
+    Processes the authority DataFrame based on the configuration file.
+    Args:
+        config_name (str): Name of the configuration file.
+        config (DataFrame): The configuration DataFrame.
+        authority (dict): Dictionary of authority XML files.
+        auth_df_list (dict): Dictionary of DataFrames for each configuration file.
+    Returns:
+        tuple: The configuration name and the processed DataFrame.
+    """
+    df = auth_df_list[config_name]
 
-# Function to process collection columns
+    # Extract relevant columns from the configuration file
+    auth_files, xpaths = (
+        config[col].tolist() for col in ["auth_file", "xpath"]
+    )
+
+    # Process each XPath expression in the configuration file
+    with ProcessPoolExecutor() as executor:
+        futures = {
+            executor.submit(process_authority_column, i, xpath, auth_file, authority): i 
+            for i, (xpath, auth_file) in enumerate(zip(xpaths, auth_files))
+        }
+        for future in tqdm(as_completed(futures), total=len(futures), desc=f"File '{config_name}'", position=bar_pos):
+            i, results = future.result()
+            df.iloc[:, i] = results
+
+    # Defragment the DataFrame
+    df = pd.concat([df], ignore_index=True)
+
+    # Optionally sort the DataFrame based on the number after "_" in the first column
+    df['temp'] = df.iloc[:, 0].str.extract(r'_(\d+)', expand=False).astype(float)
+    df = df.sort_values(by='temp', ascending=True, na_position='last').reset_index(drop=True)
+    df.drop(columns='temp', inplace=True)
+    
+    # Save the DataFrame to a CSV file
+    auth_csv_output_dir = "output/auth/csv"
+    save_as_csv(df, auth_csv_output_dir, config_name)
+
+    # Save the DataFrame to a JSON file
+    auth_json_output_dir = "output/auth/json"
+    save_as_json(df, auth_json_output_dir, config_name)
+
+    # Update the DataFrame list with the processed DataFrame
+    return config_name, df
+
+# Helper function to process authority columns
+def process_authority_column(i, xpath, auth_file, authority):
+    """
+    Processes a single column for the authority DataFrame.
+    Args:
+        i (int): The index of the column.
+        xpath (str): The XPath expression to extract data.
+        auth_file (str): The authority file name.
+    Returns:
+        tuple: The index and the extracted results.
+    """
+    auth_xml = authority.get(auth_file)
+    results = extract_with_xpath(auth_xml, xpath)
+    return i, results
+
+# Function to extract data from the collection XML files based on the collection configuration files
+def process_collection_file(config_name, config, catalogue, coll_df_list, auth_df_list, bar_pos):
+    """
+    Processes the collection DataFrame based on the configuration file.
+    Args:
+        config_name (str): Name of the configuration file.
+        config (DataFrame): The configuration DataFrame.
+        catalogue (dict): Dictionary of collection XML files.
+        coll_df_list (dict): Dictionary of DataFrames for each configuration file.
+        auth_df_list (dict): Dictionary of DataFrames for authority files.
+    Returns:
+        tuple: The configuration name and the processed DataFrame.
+    """
+    df = coll_df_list[config_name]
+
+    # Extract relevant columns from the configuration file
+    xpaths, auth_files, auth_sections, auth_cols, separators = (
+        config[col].tolist() for col in ["xpath", "auth_file", "auth_section", "auth_col", "separator"]
+    )
+
+    # Process each XPath expression in the configuration file
+    with ProcessPoolExecutor() as executor:
+        futures = [
+            executor.submit(process_collection_column, i, xpath, auth_file, catalogue, auth_df_list, auth_section, auth_col, separator)
+            for i, (xpath, auth_file, auth_section, auth_col, separator) in enumerate(
+                zip(xpaths, auth_files, auth_sections, auth_cols, separators)
+            )
+        ]
+        for future in tqdm(as_completed(futures), total=len(futures), desc=f"File '{config_name}'", position=bar_pos):
+            i, results = future.result()
+            df.iloc[:, i] = results
+
+    # Defragment the DataFrame list
+    df = pd.concat([df], ignore_index=True)
+
+    # Optionally sort the DataFrame based on specific columns
+    if 'file URL' in df.columns:
+        # Extract the numeric part from file URL values
+        df['file URL temp'] = df['file URL'].str.extract(r'manuscript_(\d+)')[0].astype(float)
+        first_col = df.columns[0]
+        # If 'file URL' is the first column, sort only by file URL
+        # Otherwise, sort first by file URL then by the first column
+        if first_col == 'file URL':
+            sort_by = ['file URL temp']
+        else:
+            sort_by = ['file URL temp', first_col]
+        df.sort_values(by=sort_by, ascending=True, na_position='last', inplace=True)
+        df.drop(columns=['file URL temp'], inplace=True)
+        
+    elif 'collection' in df.columns:
+        # Use the first column (which is not 'file URL') but extract a number that appears after '_' at the end.
+        first_col = df.columns[0]
+        df['first_col_num'] = df[first_col].str.extract(r'_(\d+)$')[0].astype(float)
+        df.sort_values(by=['collection', 'first_col_num'], ascending=True, na_position='last', inplace=True)
+        df.drop(columns=['first_col_num'], inplace=True)
+        
+    else:
+        # If neither 'file URL' nor 'collection' exist, perform a natural sort on the first column.
+        first_col = df.columns[0]
+        df.sort_values(by=first_col, key=lambda col: col.map(natural_keys), ascending=True, na_position='last', inplace=True)
+
+    # Save the DataFrame to a CSV file
+    coll_csv_output_dir = "output/collection/csv"
+    save_as_csv(df, coll_csv_output_dir, config_name)
+
+    # Save the DataFrame to a JSON file
+    coll_json_output_dir = "output/collection/json"
+    save_as_json(df, coll_json_output_dir, config_name)
+
+    # Update the DataFrame list with the processed DataFrame
+    return config_name, df
+
+# Helper function to process collection columns
 def process_collection_column(i, xpath, auth_file, catalogue, auth_df_list, auth_section, auth_col, separator):
     """
     Processes a collection column by extracting data using XPath and looking up values in an authority file.
