@@ -1,0 +1,106 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8905">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Selden Supra 31</title>
+            <title type="collection">MSS. Selden Supra</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Selden_Supra_31</idno>
+            <idno type="collection">Selden supra</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Selden_Supra_31" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Selden Supra 31</idno>
+                  <idno type="ieArk">ark:29072/x0z316q067vg</idno><idno type="crArk">ark:29072/x08s45q945rh</idno><altIdentifier type="internal">
+                     <idno type="SCN">3419</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem class="#historica" n="1" xml:id="MS_Selden_Supra_31-item1">
+                     <title key="work_10915" type="desc">'Chronica mendosa Sarracenorum' to 683 A.D.</title>
+                     <note>Latin translation by <persName key="person_296465262" role="trl">Robert of Ketton</persName>
+                     </note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#historica #theologica" n="2" xml:id="MS_Selden_Supra_31-item2">
+                     <title key="work_11444">De generacione Mahumet</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#theologica" n="3" xml:id="MS_Selden_Supra_31-item3">
+                     <title key="work_11580">Doctrina Mahumet</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#theologica" n="4" xml:id="MS_Selden_Supra_31-item4">
+                     <!-- check -->
+                     <title key="work_12470">Koran</title>
+                     <note>Latin translation by <persName key="person_296465262" role="trl">Robert of Ketton</persName>
+                     </note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1300" notBefore="1200">13th century</origDate>
+                  </origin>
+                  <provenance type="MLGB3_provenance_evidence" source="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/841"><orgName role="fmo" key="org_150107857">Bury St Edmunds, Suffolk, Benedictine abbey of St Edmund, King and Martyr</orgName>: 'Liber monachorum sancti Edmundi' (flyleaf verso, s. xiv); pressmark <q type="pressmark">M. 10</q> (top fol. 1r, ?s. xiv). (<ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/841">MLGB3</ref>: evidence from an ex-libris inscription or note of gift to an institution).</provenance>
+                  <provenance notAfter="1654" notBefore="1584" resp="#MMM"><persName key="person_51728429" role="fmo">John Selden, 1584–1654</persName></provenance>
+                  <acquisition resp="#MMM" when="1659">Acquired by the Bodleian in 1659</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Summary description by Elizabeth Solopova and Matthew Holford, based on the Summary Catalogue and supplementary sources. <listBibl>
+                              <bibl facs="aap0647.gif" type="SC">Summary Catalogue, Vol. 2 Part 1, p. 626</bibl>
+                              <bibl facs="aap0648.gif" type="SC">Summary Catalogue, Vol. 2 Part 1, p. 627</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl><ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/841"><title>MLGB3: Medieval Libraries of Great Britain</title></ref></bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2019-10-31" xml:id="MMM"><persName>Toby Burrows/Mapping Manuscript Migrations</persName>Provenance and acquisition information added using <ref target="https://github.com/mapping-manuscript-migrations/oxford-tei-updates/blob/master/update_oxford_prov.rb">https://github.com/mapping-manuscript-migrations/oxford-tei-updates/blob/master/update_oxford_prov.rb</ref> in collaboration with the <ref target="http://mappingmanuscriptmigrations.org/">Mapping Manuscript Migrations</ref> project.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

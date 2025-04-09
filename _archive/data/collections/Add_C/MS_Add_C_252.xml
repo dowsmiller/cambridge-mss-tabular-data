@@ -1,0 +1,121 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_134">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Add. C. 252</title>
+            <title type="collection">MSS. Add. (Additional) C</title>
+            <respStmt xml:id="DD">
+               <resp when="1984">Cataloguer</resp>
+               <persName>A. G. Watson</persName>
+            </respStmt>
+            <respStmt xml:id="PA">
+               <resp when="1970">Cataloguer</resp>
+               <persName>Otto Pächt</persName>
+               <persName>J. J. G. Alexander</persName>
+            </respStmt>
+            <respStmt xml:id="SC">
+               <resp when="1905">Cataloguer</resp>
+               <persName>Falconer Madan</persName>
+            </respStmt>
+            <respStmt xml:id="MLH">
+               <resp when="2018">Encoding and markup</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Add_C_252</idno>
+            <idno type="collection">Add C</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Add_C_252" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Add. C. 252</idno>
+                  <idno type="ieArk">ark:29072/x0h128nd92pk</idno><idno type="crArk">ark:29072/x0gx41mj09c1</idno><altIdentifier type="internal">
+                     <idno type="SCN">29437</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents resp="#DD">
+                  <msItem n="1" xml:id="MS_Add_C_252-item1">
+                     <author key="person_78770305">'John Mandeville'</author>
+                     <title key="work_188">Travels</title>
+                     <note>(Italian translation)</note>
+                     <colophon><locus>(fol. 83)</locus> ...<persName key="person_2817" role="scr">Antonio delgayo</persName> do la cuntra de Sam quilicho Scripsi de lano de 1442. del messe de zenaro e finito a vltimo de febraro del Millesimo suprascritto.</colophon>
+                     <textLang mainLang="it">Italian</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc resp="#DD">
+                  <objectDesc form="codex">
+                     <supportDesc material="chart">
+                        <support>paper</support>
+                        <extent>
+                           <dimensions type="written" unit="mm">
+                              <height>295</height>
+                              <width>205</width>
+                           </dimensions>
+                           <dimensions type="leaf" unit="mm">
+                              <height>190</height>
+                              <width>115</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="37">1 col., 37 lines.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote resp="#PA" type="flourInit">Penwork initials. (<ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> ii. List p. 105)</decoNote>
+                     <decoNote type="colInit">Coloured initial</decoNote>
+                     <decoNote type="rubrication">Rubrics.</decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" cert="high" when="1442">1442</origDate>
+                     <origPlace>
+                        <country key="place_1000080">Italian</country>
+                     </origPlace>
+                  </origin>
+                  <acquisition resp="#SC"><persName key="person_76484564" role="fmo">Isaac de Costa, 1798–1860</persName><!-- check -->: bought at his sale, Sotheby's, 11 August 1884, lot 376, for £13.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Adapted (2018) from A. G. Watson, <title>Catalogue of Dated and Datable Manuscripts</title>, Pächt and Alexander, and the Summary Catalogue (1905). <listBibl>
+                              <bibl facs="aam0657.gif" type="SC">Summary Catalogue, Vol. 5, p. 622</bibl>
+                              <bibl facs="aam0658.gif" type="SC">Summary Catalogue, Vol. 5, p. 623</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="PRINT">                         <bibl>A. G. Watson, <title><ref target="https://catalog.hathitrust.org/Record/000310664">Catalogue of Dated and Datable Manuscripts c.435–1600 in Oxford Libraries</ref></title> (Oxford, 1984), no. 24</bibl>
+                        <bibl>Otto Pächt and J. J. G. Alexander, <title><ref target="https://catalog.hathitrust.org/Record/000468709">Illuminated Manuscripts in the Bodleian Library, Oxford</ref></title>, II (1970), p. 105</bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

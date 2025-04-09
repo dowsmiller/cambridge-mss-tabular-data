@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1403">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Bodl. 374</title>
+            <title type="collection">MSS. Bodl. (Bodley)</title>
+
+            <respStmt xml:id="SC">
+               <resp when="1922">Cataloguer</resp>
+               <persName>Falconer Madan</persName>
+               <persName>H. H. E. Craster</persName>
+            </respStmt>
+            
+            <respStmt xml:id="PA">
+               <resp when="1973">Cataloguer</resp>
+               <persName>Otto Pächt</persName>
+               <persName>J. J. G. Alexander</persName>
+            </respStmt>
+            
+            <respStmt xml:id="SJB">
+               <resp when="2023">Encoding</resp>
+               <persName>Stewart Brookes</persName>
+            </respStmt>
+
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Bodl_374</idno>
+            <idno type="collection">Bodl</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Bodl_374" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement key="place_7011931">Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Bodl. 374</idno>
+                  <idno type="ieArk">ark:29072/x0hd76s02663</idno><idno type="crArk">ark:29072/x0h989r342ww</idno>
+                  <altIdentifier type="internal">
+                     <idno type="SCN">2484</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Bodl_374-item1">
+                     <author key="person_66806872">Augustine</author>
+                     <title key="work_753">De civitate dei</title>
+                     <rubric>Aurelii Augustini Ypponiensis episcopi De Ciuitate Dei liber primus</rubric>
+                     
+                     <note>Preceded by the <title key="work_804">Retractationes</title> and ends with 'Terminus hic denis est libris cum duodenis'</note>
+                     
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  
+                  <msItem n="2" xml:id="MS_Bodl_374-item2">
+                     <title type="desc">Poem on De civitate dei</title>
+                     <incipit>Munere multiplici mirabilis enituisti</incipit> 
+                     <note>Mutilated poem, 12-16 lines long. The first eight lines are intact</note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+
+                        <extent>
+                           iii + 225 leaves
+                           <dimensions unit="in" type="binding">
+                              <height>13.5</height>
+                              <width>10.625</width>
+                           </dimensions>
+                        </extent>
+                        
+                     </supportDesc>
+                     
+                     <layoutDesc>
+                        <layout columns="2">2 cols</layout>
+                     </layoutDesc>
+                  
+                  </objectDesc>
+                  
+                  <decoDesc resp="#PA">
+                     <summary><ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> iii. 155
+                     </summary>
+                     <decoNote type="decInit">Good and other initials</decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1160" notBefore="1140">12th century, middle</origDate>
+                     <origPlace>
+                        <country key="place_7002445">England</country>
+                     </origPlace>
+                  </origin>
+                  <provenance type="MLGB3_provenance_evidence"
+                              source="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/1721">
+                     <orgName role="fmo" key="org_125482319">Chichester, West Sussex, Cathedral church of Holy Trinity</orgName>: Identification by pressmark, according to M. R. James:  
+                     'Augustinus de Civitate dei ij<hi rend="superscript">do.</hi> fo gilium   h. vj.' (fol. 1r), s. xiv (<ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/1721">MLGB3</ref>)</provenance>
+                  <acquisition when="1606">Given by <persName role="dnr" key="person_2771">Ralph Barlow</persName> in 1606</acquisition> 
+               
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>
+                           Description adapted (March 2023) by Stewart J. Brookes from the Summary Catalogue (1922). Decoration, localization and date follow Pächt and Alexander (1973)
+                           <listBibl>                              
+                              <bibl facs="aap0412.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 391</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl>
+                           <ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/1721">
+                              <title>MLGB3: Medieval Libraries of Great Britain</title>
+                           </ref>
+                        </bibl>
+                     </listBibl>
+                     <listBibl type="PRINT">
+                        <head>Printed descriptions:</head>
+                        <bibl>S. J. P. van Dijk, <title>Latin Liturgical Manuscripts in the Bodleian Library, Oxford, vol. 5: Fragments - Mass Books</title> (typescript, 1957), <citedRange unit="page" from="196" to="196">p. 196</citedRange>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+               
+               <msPart xml:id="Bodl_374_flyleaves">
+                  <msIdentifier>
+                     <altIdentifier>
+                        <idno>MS. Bodl. 374, flyleaves</idno>
+                     </altIdentifier>
+                  </msIdentifier>
+                  <msContents>
+                     
+                     <msItem>
+                        <locus>(Fols ii-iii, 223-224)
+                           </locus>
+                        <title key="work_13372">Sarum Missal</title>
+                        
+                        <textLang mainLang="la">Latin</textLang>
+                     </msItem>
+                     
+                  </msContents>
+                  <physDesc>
+                     <objectDesc form="codex">
+                        <supportDesc material="perg">
+                           <support>Parchment</support>
+                           <extent>parts of four leaves</extent>
+                        </supportDesc>
+                        
+                     </objectDesc>
+                     
+                  </physDesc>
+                  <history>
+                     
+                     <origin>
+                        
+                        <origDate notAfter="1400" notBefore="1300" calendar="Gregorian">14th century</origDate>
+                        <origPlace><country key="place_7002445">England</country></origPlace>
+                        
+                     </origin>
+                     
+                  </history>
+               </msPart>
+               
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2023-03-09">Description revised to incorporate all the information in the Summary Catalogue (1922)</change>
+         <change when="2021-12-14">Add provenance information from MLGB3.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

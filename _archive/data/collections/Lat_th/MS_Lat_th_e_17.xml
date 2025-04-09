@@ -1,0 +1,117 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6770">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Lat. th. e. 17</title>
+            <title type="collection">MSS. Lat. th. (Latin theology)</title>
+            <respStmt>
+               <resp>Cataloguer</resp>
+               <persName>Bodleian Library staff</persName>
+               <persName>Peter Kidd</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Lat_th_e_17</idno>
+            <idno type="collection">Lat theol</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Lat_th_e_17" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Lat. th. e. 17</idno>
+                  <idno type="ieArk">ark:29072/x0w9504z91bb</idno><idno type="crArk">ark:29072/x0w663430811</idno><altIdentifier type="internal">
+                     <idno type="SCN">Not in SC (late accession)</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem xml:id="MS_Lat_th_e_17-item1">
+                     <locus>(fol. 1r)</locus>
+                     <author key="person_41951136">Willelmus Peraldus</author>
+                     <title key="work_4990">Sermones de evangeliis dominicalibus</title>
+                     <!-- Schneyer pp. 533ff -->
+                     <rubric>Sermones fratris Gullelmi de Petra alta ordinis fratrum predicatorum super evangelia</rubric>
+                     <incipit>Dicite filie Syon ... in verbis istis</incipit>
+                     <explicit>legitur in anno</explicit>
+                     <finalRubric>Expliciunt sermones fratris Guillelmi de Petra Alta ordinis fratrum predicatorum. Qui item fecit summam de viciis et virtutibus</finalRubric>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem xml:id="MS_Lat_th_e_17-item2">
+                     <locus>(fol. 192r)</locus>
+                     <author key="person_101584149">Nicholas de Gorran</author>
+                     <title key="work_3263">Sermones de occasionibus</title>
+                     <rubric>De thematibus fratris Nycolay de Gorrau ordinis predicatorum ad religiosos</rubric>
+                     <incipit>Ecce quam bonum ... bonum eo quod habet</incipit>
+                     <!-- Schneyer, p. 318, no. 952, C19 -->
+                     <note>Selection, mainly from the final section (pr. <title>Fundamentum aureum</title> (Antwerp, 1620), pp. 210–2).</note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent>iii + 205 leaves, with ’<dimensions type="leaf" unit="mm">
+                              <height>190</height>
+                              <width>130</width>
+                           </dimensions>
+                           <dimensions type="written" unit="mm">
+                              <height>145</height>
+                              <width max="100" min="95">95–100</width>
+                           </dimensions>
+                        </extent>
+                        <foliation>contemporary foliation which runs ‘f.1–109, 200–209, 300–309, 400–409… 900–909, 1000–1083</foliation>
+                        <collation> 1(16) – 12(16), 13(4), 14(6) + 1 </collation>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="flourInit">Red and blue penwork initials.</decoNote>
+                  </decoDesc>
+                  <bindingDesc>
+                     <binding notBefore="1800" notAfter="1900">
+                        <p>Binding russia with gilt panels, York 19th cent.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1300" notBefore="1275">13th century, last quarter</origDate>
+                     <origPlace>
+                        <country key="place_1000070">French</country>
+                     </origPlace>
+                  </origin>
+                  <provenance>
+                     <persName key="person_13858622" role="fmo"><!-- ?d. 1868: http://viaf.org/viaf/13858622 --> Robert Mackenzie Beverley </persName> (bookplate)</provenance>
+                  <provenance>John Grant, Edinburgh bookseller, catalogue, 1928 (?), item 1138, priced £10 10s. (with MS. Lat. th. e. 16); bought by the Bodleian</provenance>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Typescript description by Bodleian Library staff, partly revised by Peter Kidd, late 1990s.</source>
+                     </recordHist>
+                  </adminInfo>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

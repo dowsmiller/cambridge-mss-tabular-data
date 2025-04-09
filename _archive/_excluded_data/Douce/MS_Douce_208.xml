@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4570">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Douce 208</title>
+            <title type="collection">MSS. Douce</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Douce_208</idno>
+            <idno type="collection">Douce</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Douce_208" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Douce 208</idno>
+                  <idno type="ieArk">ark:29072/x08c97kq895n</idno><idno type="crArk">ark:29072/x01r66j229tk</idno><altIdentifier type="internal">
+                     <idno type="SCN">21782</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Douce_208-item1">
+                     <author key="person_286265178">Caesar</author>
+                     <title key="work_1181">De bello Gallico</title>
+                     <note>(French translation by <persName key="person_8145541702696600111" role="trl"> Jean Duchesne </persName>)</note>
+                     <textLang mainLang="frm">Middle French</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support><extent><measure type="leaf" quantity="17">17</measure> + cccxxxvii leaves, in double columns
+                           <dimensions type="binding" unit="in"><height>15.125</height><width>11.25</width></dimensions>
+                        </extent>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <summary>By the <persName key="person_95728141" role="art"> Bruges Master of 1482 </persName>. <ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> i. 351, pl. XXVIII:</summary>
+                     <decoNote type="miniature">Fine miniatures. </decoNote>
+                     <decoNote type="decInit">Fine initials. </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1500" notBefore="1474">15th century, last quarter (after 1474)</origDate>
+                     <origPlace>
+                        <country key="place_7024097">Flemish</country>
+                     </origPlace>
+                  </origin>
+                  <provenance notAfter="1834" notBefore="1757" resp="#MMM"><persName key="person_69848690" role="fmo">Francis Douce, 1757–1834</persName></provenance>
+                  <acquisition resp="#MMM" when="1834">Bequeathed to the Bodleian in 1834</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source><ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Summary Catalogue (1897). Decoration, localization and date follow Pächt and Alexander (1966). <listBibl>
+                              <bibl facs="aaz0574.gif" type="SC">Summary Catalogue, vol. 4, p. 555</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates><bibl subtype="partial" type="digital-facsimile"><ref target="https://digital.bodleian.ox.ac.uk/objects/305671a6-3694-4de8-991f-160237af854b/"><title>Digital Bodleian</title></ref>
+                        <note>(15 images from 35mm slides)</note></bibl></surrogates>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl><ref target="http://jonas.irht.cnrs.fr/manuscrit/74500"><title>JONAS: Répertoire des textes et des manuscrits médiévaux d'oc et d'oïl</title></ref></bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2024-05">Add extent and leaf dimensions from Summary Catalogue.</change>
+         <change when="2018-10-14" xml:id="MMM"><persName>Mitch Fraas</persName> Provenance and acquisition information added using <ref target="https://github.com/littlegustv/oxfordupdates/blob/master/test_case_for_oxford_prov.rb">https://github.com/littlegustv/oxfordupdates/blob/master/test_case_for_oxford_prov.rb</ref> in collaboration with the <ref target="http://mappingmanuscriptmigrations.org/">Mapping Manuscript Migrations</ref> project.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

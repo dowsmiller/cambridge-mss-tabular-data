@@ -1,51 +1,12 @@
-## Setting Up and Running Script Locally
-### Mac Users
+## Medieval Manuscripts in Oxford Libraries
 
-**Step 1:** Clone repository
+This repository contains the TEI data that represents the Bodleian Library's catalogue of manuscripts written from the Middle Ages, [Medieval Manuscripts in Oxford Libraries](https://medieval.bodleian.ox.ac.uk).
 
-**Step 2:** Check if python and pip is installed
+It also contains several scripts and tools for processing this data into a Solr instance for use with our
+Blacklight search service.
 
-```
-python3 --version
-pip3 --version
-```
+For some additional information see the [Wiki](https://github.com/bodleian/medieval-mss/wiki).
 
-**Step 3:** Create a virtual environment 
+For the TEI schema and guidelines, see the [msDesc repository](https://github.com/msDesc/).
 
-```
-python3 -m venv .venv
-```
-
-**Step 4:** Activate source
-
-```
-source .venv/bin/activate
-``` 
-
-**Step 5:** Install dependencies
-
-```
-pip install -r requirements.txt
-```
-
-**Step 6:** Place input xml files inside `data` folder in root of project
-
-**Step 7:** Changing configs (Optional)
-
-Inside ```tei_processor.py``` you can change paths and database name
-
-```
-input_folder = "data/collections"
-output_folder = "output"
-db_name = "tei_data.db"
-```
-
-**Step 8:** Run processor script
-
-```
-python tei_processor.py
-```
-
-After processing is completed you should be able to see outputs in ```output``` folder
-
-
+For information on the collections themselves, see the [LibGuide](https://libguides.bodleian.ox.ac.uk/medieval-sc).

@@ -1,0 +1,99 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_840">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Auct. F. 5. 25</title>
+            <title type="collection">MSS. Auct. T. (Auctarium T.)</title>
+            <respStmt xml:id="Q">
+               <resp when="1883">Cataloguer</resp>
+               <persName>H. O. Coxe</persName>
+            </respStmt>
+            <respStmt xml:id="MLH">
+               <resp when="2022">Encoding</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Auct_T_5_25</idno>
+            <idno type="collection">Auct T</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Auct_T_5_25" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Auct. T. 5. 25</idno>
+                  <idno type="ieArk">ark:29072/x0vx021d56zf</idno><idno type="crArk">ark:29072/x0vt150h73nk</idno><altIdentifier type="internal">
+                     <idno type="SCN">30332</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem class="#romances #historica" n="1" xml:id="MS_Auct_T_5_25-item1">
+                     <title key="work_12225" type="desc">Imberios et Margarona</title>
+                     <bibl>Byzantine verse novel, unrhymed version; pr. Lambros, <title>Collection de romans grecs</title> (188), pp. 239ff, with discussion of the manuscript at pp. cx-cxiii.</bibl>
+                     <bibl>Michael Jeffreys and Elizabeth Jeffreys, 'Imberios and Margarona: the manuscripts, sources and edition of a Byzantine verse romance', <title>Byzantion</title> 41 (1971), 122-160</bibl>
+                     <textLang mainLang="el">Modern Greek</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="chart">
+                        <support>paper</support>
+                        <extent>39 leaves, small quarto</extent>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1516" notBefore="1515" cert="high">16th century, beginning (c. 1515-16)</origDate>
+                  </origin>
+                  <provenance>Summary Catalogue nos. 30328-30332 (Gr. misc. 282, 284-7 = MSS. Auct. T. 5. 20, Auct. T. 5. 22-5) were acquired together with S.C. 28475 (Misc. 283 = MS. Auct. T. 5. 21) from Payne and Foss in 1840 for £3 3s. (see Summary Catalogue V p.789). Lambros, op. cit., p. cxi argued that Misc. 282-7 were originally a single manuscript, with the date 1515-16 (cf. Jeffreys and Jeffreys, op. cit., p. 126) on Misc. 283, fol. 120v. The same folio has the ex libris of Zigaïtès <q>archiereos</q> </provenance><acquisition>Acquired 1840; see above.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Description adapted by Matthew Holford (July 2022) from the Quarto Catalogue (H. O. Coxe, <title>Catalogi codicum manuscriptorum Bibliothecae Bodleianae pars prima recensionem codicum Graecorum continens</title>, Quarto Catalogues I, 1883, repr. with corrections 1969), with additional reference to published literature as cited. <listBibl>
+                              <bibl facs="abu0418.gif" type="QUARTO">Quarto Catalogue I, col. 821 (Misc. 287)</bibl>
+                              <bibl facs="aam0826.gif" type="SC">Summary Catalogue, Vol. 5, p. 789</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl subtype="full" type="digital-facsimile">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/a6a0ae58-cbab-47d7-94c5-5073eabd0857/">
+                        <title>Digital Bodleian</title></ref> <note>(full digital facsimile)</note>
+                     </bibl>
+                  </surrogates>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl><ref target="http://pinakes.irht.cnrs.fr/notices/cote/47233/"><title>Pinakes | Πίνακες: Textes et manuscrits grecs</title></ref></bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2022-07">Description revised for publication on Digital Bodleian.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

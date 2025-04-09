@@ -1,0 +1,135 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4360">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Digby 25</title>
+            <title type="collection">MSS. Digby</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Digby_25</idno>
+            <idno type="collection">Digby</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Digby_25" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Digby 25</idno>
+                  <idno type="ieArk">ark:29072/x0ns064569mf</idno><idno type="crArk">ark:29072/x0p2676v425x</idno><altIdentifier type="internal">
+                     <idno type="SCN">1626</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem class="#liturgica" n="1" xml:id="MS_Digby_25-item1">
+                     <title key="work_15356" type="desc">Tonale</title>
+                     <note>(incorporating the tonary of <persName key="person_59199545" role="aut">Odo of Cluny</persName>)</note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#versus #musica" n="2" xml:id="MS_Digby_25-item2">
+                     <title key="work_13420" type="desc">Poem on music</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="3" xml:id="MS_Digby_25-item3">
+                     <author key="person_7776051">Deusdedit (d. 1099)</author>
+                     <title key="work_1385">Poems</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                     </supportDesc>
+                  </objectDesc>
+                  <musicNotation>
+                     <p>Beneventan notation. (<ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> ii. 23)</p>
+                  </musicNotation>
+                  <decoDesc>
+                     <summary>
+                        <ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> ii. 23</summary>
+                     <decoNote type="decInit">Initials.</decoNote>
+                     <decoNote type="diagram"> Diagrams. </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" when="1100">c. 1100</origDate>
+                     <origPlace>
+                        <country key="place_1000080">Italian</country>, <region>Central</region>
+                        <!--ORIGINAL: Italian, Central-->
+                     </origPlace>
+                  </origin>
+                  <provenance notAfter="1634" notBefore="1603" resp="#MMM">
+                     <persName key="person_49357645" role="fmo">Kenelm Digby, 1603–1665</persName>
+                  </provenance>
+                  <acquisition resp="#MMM" when="1634">Donated to the Bodleian, 1634.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>
+                           <ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Quarto Catalogue (W. D. Macray, <title>Bodleian Library Quarto Catalogues IX: Digby Manuscripts</title>, repr. with addenda by R. W. Hunt and A. G. Watson, 1999). Decoration follows Pächt and Alexander (1970). <listBibl>
+                              <bibl facs="abw0019.gif" type="QUARTO">Quarto Catalogue, col. 20</bibl>
+                              <bibl facs="abw0020.gif" type="QUARTO">Quarto Catalogue, col. 21</bibl>
+                              <bibl facs="abw0193.gif" type="QUARTO">Quarto Catalogue (addenda), p. 16</bibl>
+                              <bibl facs="aap0091.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 70</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl subtype="partial" type="digital-facsimile">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/2625e03a-02f3-4f0f-b30d-13ba966b67bb/">
+                           <title>Digital Bodleian</title>
+                        </ref>
+                        <note>(1 image from 35mm slides)</note>
+                     </bibl>
+                  </surrogates>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl>
+                           <ref target="http://musmed.fr/RISM/rismindex01.htm">Christian Meyer, <title>Les Sources manuscrites de la théorie de la musique (S. IX-XVI)</title>
+                           </ref>
+                        </bibl>
+                     </listBibl>
+                     <listBibl type="PRINT">
+                        <head>Printed descriptions:</head>
+                        <bibl>S. J. P. van Dijk, <title>Latin Liturgical Manuscripts in the Bodleian Library, Oxford, vol. 3: Rituals and Directories</title> (typescript, 1957), <citedRange unit="page" from="232" to="232">p. 232</citedRange>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2018-10-14" xml:id="MMM">
+            <persName>Mitch Fraas</persName> Provenance and acquisition information added using <ref target="https://github.com/littlegustv/oxfordupdates/blob/master/test_case_for_oxford_prov.rb">https://github.com/littlegustv/oxfordupdates/blob/master/test_case_for_oxford_prov.rb</ref> in collaboration with the <ref target="http://mappingmanuscriptmigrations.org/">Mapping Manuscript Migrations</ref> project.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

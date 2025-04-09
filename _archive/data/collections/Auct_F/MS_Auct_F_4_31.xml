@@ -1,0 +1,104 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_674">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Auct. F. 4. 31</title>
+            <title type="collection">MSS. Auct. F. (Auctarium F.)</title>
+            <respStmt xml:id="SC">
+               <resp when="1895">Cataloguer</resp>
+               <persName>Falconer Madan</persName>
+            </respStmt>
+            <respStmt xml:id="MLH">
+               <resp when="2022">Encoding</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Auct_F_4_31</idno>
+            <idno type="collection">Auct F</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Auct_F_4_31" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Auct. F. 4. 31</idno>
+                  <idno type="ieArk">ark:29072/x0w0892920w9</idno><idno type="crArk">ark:29072/x04q77fs28jt</idno><altIdentifier type="internal">
+                     <idno type="SCN">8862</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Auct_F_4_31-item1">
+                     <author key="person_88342447">Ovid</author>
+                     <title key="work_3425">Metamorphoses</title>
+                     <note>Imperfect: from i.647 'Nec retinet' to viii.56 'utile uinci', ending on the recto of a leaf.</note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent>71 leaves
+                           <dimensions type="binding" unit="in">
+                              <height>9.25</height>
+                              <width>6.75</width>
+                           </dimensions></extent>
+                        <condition>In parts rubbed.</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1300" notBefore="1200">13th century</origDate>
+                     <origPlace>
+                        <country key="place_1000070">French</country>
+                     </origPlace>
+                  </origin>
+                  <provenance>'Bourdelot', fol. 5: <persName key="person_41850191" role="fmo">Jean Bourdelot (d. 1638)</persName> and/or his nephew and heir <persName key="person_44383160" role="fmo">Pierre Bourdelot (d. 1685)</persName>; Pierre was the doctor of Queen Christina of Sweden, who acquired most of his library, now in the Reg. lat. fonds in the Vatican (Elisabeth Pellegrin, <ref target="https://www.persee.fr/doc/scrip_0036-9772_1986_num_40_2_1446">'Catalogue des manuscrits de Jean et Pierre Bourdelot'</ref>, <title>Scriptorium</title> 40/2 (1986) 202-232).</provenance>
+                  <provenance>The present manuscript acquired by <persName key="person_54197108" role="fmo">Isaac Voss</persName>, Queen Christina's librarian (Pellegrin, p. 203).</provenance>
+                  <provenance>Acquired from Voss by <persName key="person_95302161" role="fmo">Nicholas Heinsius</persName>: 'NH vidi' (Pellegrin, p. 203); Heinsius sale, March 1682/3; catalogue, II.88, no. 338.</provenance>
+                  <provenance>Purchased at the sale by <persName key="person_237497" role="fmo">Edward Bernard</persName>.</provenance>
+                  <acquisition when="1698">Bequeathed by him to his wife; purchased from her by the Bodleian in 1698.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Description adapted (July 2022) from the Summary Catalogue (1895) with additional reference to published literature as cited.<listBibl>
+                              <bibl facs="aas0034.gif" type="SC">Summary Catalogue, Vol. 3, p. 19</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl subtype="full" type="digital-facsimile">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/047068da-6381-4edd-82d0-2b0c72f7a926/">
+                        <title>Digital Bodleian</title></ref> <note>(full digital facsimile)</note>
+                     </bibl>
+                  </surrogates>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2022-07">Description revised for publication on Digital Bodleian.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,124 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_481">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Auct. D. 5. 10</title>
+            <title type="collection">MSS. Auct. D. (Auctarium D.)</title>
+            <respStmt xml:id="VD">
+               <resp when="1957">Cataloguer</resp>
+               <persName>S. J. P. van Dijk</persName>
+            </respStmt>
+            <respStmt xml:id="PA">
+               <resp when="1973">Cataloguer</resp>
+               <persName>Otto Pächt</persName>
+               <persName>J. J. G. Alexander</persName>
+            </respStmt>
+            <respStmt xml:id="SC">
+               <resp when="1922">Cataloguer</resp>
+               <persName>Falconer Madan</persName>
+               <persName>H. H. E. Craster</persName>
+            </respStmt>
+            <respStmt>
+               <resp when="2017">Encoding and markup</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Auct_D_5_10</idno>
+            <idno type="collection">Auct D</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Auct_D_5_10" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Auct. D. 5. 10</idno>
+                  <idno type="ieArk">ark:29072/x01z40kt95tx</idno><idno type="crArk">ark:29072/x01v53jz12h7</idno><altIdentifier type="internal">
+                     <idno type="SCN">1853</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem class="#biblia" n="1" resp="#SC" xml:id="MS_Auct_D_5_10-item1">
+                     <title key="work_10455" type="desc">Bible</title>
+                     <note>A Latin Vulgate Bible, with prefaces, in a minute hand: the New Testament begins on fol. 415. At fol. 524 follow: <title key="work_4622">Interpretations nominum Hebraicorum</title>; (fol. 563) the Eusebian Canons applied to a summary of the Gospels; (fol. 569) a list of texts for sermons on holy days, Sundays, and special occasions. A 15th cent. hand has added on fol. 579 two sets of memorial verses about the books of the Bible (begg. 'Sunt Genes. Ex. Le. Nu.', 'L. Genesis, minus Exo decem'). There is a Latin note about the death of pope Urban vi in 1389 and his successor's election on fol. ii, and other theological notes.</note>
+                     <msItem resp="#VD">
+                        <locus>(fol. 575v)</locus>
+                        <title key="work_16033" type="desc">Epistle and Gospel list</title>
+                        <note>Temporale, Sarum use. Added. The opening words of the introit precede those of the epistle and gospel. Incipits only.</note>
+                     </msItem>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent resp="#SC"> ii + 580 leaves <dimensions resp="#VD" type="leaf" unit="mm">
+                              <height>125</height>
+                              <width>83</width>
+                           </dimensions>
+                           <dimensions resp="#VD" type="written" unit="mm">
+                              <height>96</height>
+                              <width>56</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                     <layoutDesc resp="#VD">
+                        <layout columns="2" writtenLines="46">2 col. of 46 lines</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <decoDesc resp="#PA">
+                     <decoNote type="histInit">Good historiated initials.</decoNote>
+                     <decoNote type="decInit">Other initials. (<ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> iii. 1318, pl. CXIX)</decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin resp="#PA">
+                     <origDate calendar="Gregorian" notAfter="1275" notBefore="1250">13th century, third quarter</origDate>
+                     <origPlace>
+                        <country key="place_1000070">French</country>
+                     </origPlace>
+                  </origin>
+                  <provenance resp="#SC #PA">'<persName key="person_2772" role="fmo">Johannes Powell</persName>', 16th cent., fol. 1.</provenance>
+                  <acquisition notAfter="1620" notBefore="1613" resp="#SC">Probably acquired between 1613 and 1620.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source> Description adapted (March 2020) from the following sources: <listBibl>
+                              <bibl>Otto Pächt and J. J. G. Alexander, <title><ref target="https://catalog.hathitrust.org/Record/000468709">Illuminated Manuscripts in the Bodleian Library, Oxford</ref></title>, III (1973), no. 1318 [decoration, date, origin]</bibl>
+                              <bibl>S. J. P. Van Dijk, <title>Handlist of the Latin Liturgical Manuscripts in the Bodleian Library Oxford : Vol. 1: Mass Books</title> (typescript, 1957) [contents, physical description]</bibl>
+                              <bibl>Summary Catalogue (1922) [contents, provenance and acquisition]</bibl>
+                           </listBibl>
+                           <listBibl>
+                              <bibl facs="aap0106.gif" type="SC">Summary Catalogue, Vol. 2, part 1, p. 85</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2020-03-19">Description revised to include all information in SC.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

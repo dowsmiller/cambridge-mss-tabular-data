@@ -1,0 +1,166 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1536">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Bodl. 507</title>
+            <title type="collection">MSS. Bodl. (Bodley)</title>
+            <respStmt xml:id="SC">
+               <resp when="1922">Cataloguer</resp>
+               <persName>Falconer Madan</persName>
+               <persName>H. H. E. Craster</persName>
+            </respStmt>
+            <respStmt xml:id="MLH">
+               <resp when="2021">Encoding</resp>
+               <resp when="2021">Catalogue updates and corrections</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Bodl_507</idno>
+            <idno type="collection">Bodl</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Bodl_507" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement key="place_7011931">Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Bodl. 507</idno>
+                  <idno type="ieArk">ark:29072/x0d217qp93p2</idno><idno type="crArk">ark:29072/x0cz30pt10cc</idno><altIdentifier type="internal">
+                     <idno type="SCN">2171</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <!-- 
+                   <p>1 (fol. 1). 'Massa computi', beg. 'Licet modo in fine the verses beg. 'Aureus
+                        in Jano': the well-known work by Alexander de Villa Dei: followed by a short
+                        calendarial poem, which beg. 'Filius esto Dei' (fol. 12). On fol. iii is the
+                        prophecy of Hildegardis against mendicant monks, cp. no. 1997.</p>
+                    <p>3 (fol. 12v). A Computus manualis: beg. 'Intencionis in hoc episculo [sic]
+                        est artem ostendere'.</p>
+                    <p>2 (fol. 18). The calendarial poem called from its first words 'Cisio
+                        janus'.</p>
+                    <p>4 (fol. 19). 'Ars &#x0026; liber Algorismi', a treatise on Arithmetic in
+                        verse, beg. 'Hec algorismus ars presens dicitur in qua': by Alexander de
+                        Villa Dei: with notes and preceded by notes; and followed by some
+                        arithmetical puzzles (fol. 24) and astrological notes, and an English
+                        recipe. Two pieces of canvas, perhaps part of a 16th cent. binding, are on
+                        foll. iiv, 27r, with 'Hew Clement' 'Clow' (?) and some drawings. Some short
+                        accounts of tithes at Bradwell and Ullesthorpe are at foll. iiiv, 26v.</p>
+                  -->
+                  <msItem>
+                     <locus>(fol. iii)</locus>
+                     <author key="person_2339">Ps.-Hildegard of Bingen</author>
+                     <title key="work_4015">Insurgent gentes</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="1" xml:id="MS_Bodl_507-item1">
+                     <locus>(fol. 1)</locus>
+                     <author key="person_2583890">Alexander de Villa Dei</author>
+                     <title key="work_411">Massa compoti</title>
+                     <incipit>Licet modo in fine</incipit>
+                     <incipit>Aureus in Jano</incipit>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem>
+                     <locus>(fol. 12)</locus>
+                     <title key="work_14992">Poem on compotus</title>
+                     <incipit>Filius esto Dei</incipit>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#computistica" n="2" xml:id="MS_Bodl_507-item2">
+                     <locus>(fol. 12v)</locus>
+                     <title key="work_11334">Computus manualis</title>
+                     <incipit>Intencionis in hoc <sic>episculo</sic> est artem ostendere</incipit>
+                     <note><bibl type="repertory"><ref target="https://cctr1.umkc.edu/find/$db=eTK&amp;ms=0763B">eTK 0763B</ref></bibl> (?); see <bibl>C. Philipp E. Nothaft, 'John of Pulchro Rivo and John of Saxony: A Mise au Point', <title>Journal for the History of Astronomy</title> 45/2 (2014), 227–242, app. C</bibl>.</note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#computistica" n="3" xml:id="MS_Bodl_507-item3">
+                     <locus>(fol. 18)</locus>
+                     <title key="work_14992" type="desc">Calendarial poem</title>
+                     <incipit>Cisio janus</incipit>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="4" xml:id="MS_Bodl_507-item4">
+                     <locus>(fol. 19)</locus>
+                     <author key="person_2583890">Alexander de Villa Dei</author>
+                     <title key="work_409">Algorismus</title>
+                     <rubric>Ars &amp; liber Algorismi</rubric>
+                     <incipit>Hec algorismus ars presens dicitur in qua</incipit>
+                     <note type="annotation">With notes and preceded by notes.</note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem>
+                     <note>Followed by some arithmetical puzzles (fol. 24) and astrological notes, and an English <title key="work_14235" type="desc">recipe</title>.</note>
+                     <textLang mainLang="la" otherLangs="enm">Latin and Middle English</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="chart">
+                        <support>paper</support>
+                        <extent>iii + 28 leaves <dimensions type="binding" unit="in">
+                              <height>9</height>
+                              <width>6.25</width>
+                           </dimensions></extent>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="colInit">Coloured capitals.</decoNote>
+                     <decoNote type="drawing">Drawings, fols. iiv, 27r.</decoNote>
+                  </decoDesc>
+                  <accMat>Two pieces of canvas, perhaps part of a 16th cent. binding, are on foll. iiv, 27r, with 'Hew Clement' 'Clow' (?) and some drawings.</accMat>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1460" notBefore="1440">15th century, middle</origDate>
+                     <origPlace>
+                        <country key="place_7002445">English</country>
+                     </origPlace>
+                  </origin>
+                  <provenance>Some short accounts of tithes at <placeName key="place_7025022">Bradwell</placeName> (Bucks?) and <placeName key="place_7027700">Ullesthorpe</placeName> (Leics.) are at foll. iiiv, 26v.</provenance>
+                  <provenance notAfter="1540" notBefore="1463"><orgName key="org_165174766" role="fmo">Canterbury, Benedictine abbey of St Augustine</orgName>; notes made by the librarian, <persName key="person_3398">Clement Canterbury, fl. 1463–95</persName> ('Clemens Cantirbury', fol. 1; see <bibl>B. C. Barker-Benfield, 'Clement Canterbury, librarian of St. Augustine's Abbey, Canterbury', <title>Manuscripts at Oxford: an exhibition in memory of Richard William Hunt</title> (Oxford, 1980), pp. 88–92</bibl>).</provenance>
+                  <provenance notAfter="1581"><persName key="person_37266689" role="fmo">John Twyne, -1581</persName> (?): see A. G. Watson, 'John Twyne of Canterbury (d. 1581) as a Collector of Medieval Manuscripts: a Preliminary Investigation', <title>The Library</title> 6th ser. 8 (1986) 133–151 at 149–50 no. 23, on the evidence only of Thomas Twyne's later ownership.</provenance>
+                  <provenance notAfter="1612"><persName key="person_15121578" role="fmo">Thomas Twyne</persName></provenance>
+                  <acquisition when="1612"> Presented by him in 1612.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Description adapted (Jan. 2021) from the Summary Catalogue (1922), with additional reference to published literature as cited. <listBibl>
+                              <bibl facs="aap0262.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 241</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl><ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/1581"><title>MLGB3: Medieval Libraries of Great Britain</title></ref></bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2021-01-05">Description revised to incorporate all information in SC updated with reference to published literature as cited.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

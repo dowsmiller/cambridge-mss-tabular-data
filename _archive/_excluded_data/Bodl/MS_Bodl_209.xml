@@ -1,0 +1,150 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1267">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Bodl. 209</title>
+            <title type="collection">MSS. Bodl. (Bodley)</title>
+            <respStmt xml:id="PA">
+               <resp when="1973">Cataloguer</resp>
+               <persName>Otto Pächt</persName>
+               <persName>J. J. G. Alexander</persName>
+            </respStmt>
+            <respStmt xml:id="SC">
+               <resp when="1922">Cataloguer</resp>
+               <persName>Falconer Madan</persName>
+               <persName>H. H. E. Craster</persName>
+            </respStmt>
+            <respStmt xml:id="MLH">
+               <resp when="2020">Encoding</resp>
+               <resp when="2020">Catalogue updates and corrections</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Bodl_209</idno>
+            <idno type="collection">Bodl</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Bodl_209" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement key="place_7011931">Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Bodl. 209</idno>
+                  <idno type="ieArk">ark:29072/x0k06987594m</idno><idno type="crArk">ark:29072/x0jw827b75td</idno><altIdentifier type="internal">
+                     <idno type="SCN">2035</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <textLang mainLang="la">Latin</textLang>
+                  <msItem n="1" xml:id="MS_Bodl_209-item1">
+                     <author key="person_7742231">Zacharias of Besançon</author>
+                     <title key="work_5118">Concordia Evangelistarum</title>
+                     <rubric>Incipit prima pars Explanationis in Vnum ex quatuor, seu Concordia Euangelistarum &amp; de super expositio continua exactissima diligentia edita a Zacharia Crisopolitano</rubric>
+                     <incipit>De excellentia Euangelii &amp; differentia ipsius</incipit>
+                     <finalRubric>Explicit Vnum ex quatuor, seu <supplied>con</supplied>cordia Euangelii &amp; ... exposition ...</finalRubric>
+                  </msItem>
+                  <msItem class="#biblia" xml:id="MS_Bodl_209-item1a">
+                     <note>Preceded at fol. ii by the first words of the sections of the Gospels, of which Matth. has 355, Mark 235, Luke 338, John 232, each marked with the number of the ten Eusebian canons.</note>
+                  </msItem>
+                  <msItem class="#biblia" xml:id="MS_Bodl_209-item1b">
+                     <note>At fol. 183 follow:</note>
+                     <msItem>
+                        <rubric>Interpretationes nominum in Evangelio</rubric>
+                        <incipit>Abraham pater uidens populum</incipit>
+                        <!-- cannot be certainly identified from Stegmuller on this basis -->
+                     </msItem>
+                     <msItem class="#theologica">
+                        <note>Two patristic passages on angels, fol. 184v.</note>
+                     </msItem>
+                  </msItem>
+                  <msItem class="#grammatica" xml:id="MS_Bodl_209-item1c">
+                     <note>A few contemporary grammatical notes are on fol. 185.</note>
+                  </msItem>
+                  <msItem class="#historica #monastica">
+                     <note>At fol. 185v is entered in three handwritings an account of the election of Gervasius as abbot of Pershore (Persora) 1204 CE, and his many purchases and improvements of the abbey lands. The first hand extends to 1215, and is only slightly later than that of the text of the book, the second and third successively to about 1234 when Gervase died. On fol. 186v is a half-erased note of an incident in the 13th year of a reign, perhaps of a fire at Pershore about 1400 CE.</note>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent>viii + 186 leaves <dimensions type="binding" unit="in">
+                              <height>14.875</height>
+                              <width>11.375</width>
+                           </dimensions></extent>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2">2 cols</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <decoDesc resp="#PA">
+                     <summary><ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> iii. 327
+                     </summary>
+                     <decoNote type="decInit">Fine initial</decoNote>
+                     <decoNote type="flourInit">Illuminated capitals</decoNote>
+                 </decoDesc>
+                  
+                  <bindingDesc>
+                     <binding notAfter="1850" notBefore="1840">
+                        <p>In 1655 this manuscript had a black velvet binding, but it was rebound about 1840–50. (For a list of manuscripts with comparable bindings, see <ref target="https://medieval.bodleian.ox.ac.uk/catalog/manuscript_1275">MS. Bodl. 218</ref>)</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1215" notBefore="1200">13th century, beginning (before c. 1204–1215 (?)</origDate>
+                     <origPlace>
+                        <country key="place_7002445">England</country>
+                     </origPlace>
+                  </origin>
+                  <provenance notAfter="1540" notBefore="1200">'Parshare' (15th cent.) on fol. iv shows that the volume belonged at that time to the <orgName key="org_124680895" role="fmo">Benedictine abbey of Pershore</orgName>, but it was probably there from the first, see above.</provenance>
+                  <provenance>Owned by <persName key="person_172419710" role="fmo">King Henry VIII</persName>. See <ref target="https://medieval.bodleian.ox.ac.uk/catalog/manuscript_1275">MS. Bodl. 218</ref>.</provenance>
+                  <acquisition when="1604"> Presented by <persName key="person_76469410" role="dnr">Charles Howard, earl of Nottingham</persName> in 1604</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Description adapted (April 2020) from the following sources: <listBibl>
+                              <bibl>Otto Pächt and J. J. G. Alexander, <title><ref target="https://catalog.hathitrust.org/Record/000468709">Illuminated Manuscripts in the Bodleian Library, Oxford</ref></title>, III (1973), no. 327 [decoration, origin, date]</bibl>
+                              <bibl>Summary Catalogue (1922) [contents, physical description, provenance and acquisition]</bibl>
+                           </listBibl>
+                           <listBibl>
+                              <bibl facs="aap0199.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 178</bibl>
+                              <bibl facs="aap0200.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 179</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl><ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/4422"><title>MLGB3: Medieval Libraries of Great Britain</title></ref></bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2020-04-22">Description revised to incorporate all information in the Summary Catalogue.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,93 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_780">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Auct. T. 2. 3</title>
+            <title type="collection">MSS. Auct. T. (Auctarium T.)</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Auct_T_2_3</idno>
+            <idno type="collection">Auct T</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Auct_T_2_3" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Auct. T. 2. 3</idno>
+                  <idno type="ieArk">ark:29072/x05999n40706</idno><idno type="crArk">ark:29072/x0nc580m58gh</idno><altIdentifier type="internal">
+                     <idno type="SCN">20587</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Auct_T_2_3-item1">
+                     <author key="person_262453640">Hesychios of Jerusalem</author>
+                     <title key="work_2645">‘Grand’ Commentary on the Psalter</title>
+                     <textLang mainLang="grc">Greek</textLang>
+                  </msItem>
+                  <msItem>
+                     <note>Later marginalia in Latin.</note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="colInit">Coloured initials. </decoNote><decoNote type="headpiece">Decorative headbands.</decoNote>
+                  </decoDesc>
+                  <accMat>
+                     <p xml:id="MS_Auct_T_2_3-accMat-item1">Fol. 1: leaf from a 13th-century <title key="work_13136" type="desc">Martyrologion</title>, perhaps from northern Greece.</p>
+                     <p xml:id="MS_Auct_T_2_3-accMat-item2">Fols. 2–5 (2r, 5v blank): binion from another manuscript containing a fragment of <persName key="person_88071118" role="aut">Euthymius Zigabenus</persName>, <title key="work_1513">Commentary on the Psalter</title>, 14th century.</p>
+                  </accMat>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1110" notBefore="1090">11th century, late or 12th century, early</origDate>
+                     <origPlace cert="low"><country key="place_1000080">Italy</country>, <region>South</region>, area of <settlement key="place_7004093">Otranto (?)</settlement></origPlace>
+                  </origin>
+               </history>
+               <additional><adminInfo>
+                     <recordHist>
+                        <source><p>Summary description based on Annaclara Cataldi Palau, <title><ref target="https://ora.ox.ac.uk/objects/uuid:7aa0a0a3-8fd3-4118-872d-5c0cfd34c865">A Catalogue of Greek Manuscripts from the Meerman Collection in the Bodleian Library</ref></title> (Oxford, 2011), pp. 197–204.</p>
+                           <p>Previously described in the Quarto Catalogue (H. O. Coxe, <title>Catalogi codicum manuscriptorum Bibliothecae Bodleianae pars prima recensionem codicum Graecorum continens</title>, Quarto Catalogues I, 1883, repr. with corrections 1969).</p>
+                           <listBibl>
+                              <bibl facs="abu0386.gif" type="QUARTO">Quarto Catalogue I, col. 758 (Misc. 203)</bibl>
+                              <bibl facs="aaz0452.gif" type="SC">Summary Catalogue, Vol. 4, p. 433</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo><listBibl type="WRAPPER"><listBibl type="INTERNET"><head>Online resources:</head><!--Existing bibliography in place: check sorting of entries--><bibl><ref target="https://www.dbbe.ugent.be/manuscripts/16367"><title>DBBE: Database of Byzantine Book Epigrams</title></ref></bibl><bibl><ref target="http://pinakes.irht.cnrs.fr/notices/cote/47151/"><title>Pinakes | Πίνακες: Textes et manuscrits grecs</title></ref></bibl></listBibl></listBibl></additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2019-01-17">Description revised with reference to Palau.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

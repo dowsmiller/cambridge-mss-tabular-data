@@ -1,0 +1,149 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_7122">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Laud Misc. 311</title>
+            <title type="collection">MSS. Laud Misc. (Laud miscellaneous)</title>
+            <respStmt xml:id="Q">
+               <resp when="1858">Cataloguer</resp>
+               <persName>H. O. Coxe</persName>
+            </respStmt>
+            <respStmt xml:id="Q2">
+               <resp when="1969">Cataloguer</resp>
+               <persName>R. W. Hunt</persName>
+            </respStmt>
+            <respStmt xml:id="PA">
+               <resp when="1966">Cataloguer</resp>
+               <persName>Otto Pächt</persName>
+               <persName>J. J. G. Alexander</persName>
+            </respStmt>
+            <respStmt xml:id="TA">
+               <resp when="2020">Encoding</resp>
+               <persName>Tuija Ainonen</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Laud_Misc_311</idno>
+            <idno type="collection">Laud Misc</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Laud_Misc_311" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Laud Misc. 311</idno>
+                  <idno type="ieArk">ark:29072/x0n009w20378</idno><idno type="crArk">ark:29072/x0pn89d642q9</idno><altIdentifier type="internal">
+                     <idno type="SCN">901</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <head>Willelmus Durandus the Elder, Rationale divinorum officiorum; Bohemia, 14th century</head>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Laud_Misc_311-item1">
+                     <locus>(fols. 1r-267v)</locus>
+                     <author key="person_44320252">Willelmus Durandus the Elder</author>
+                     <title key="work_4984">Rationale diuinorum officiorum</title>
+                     <finalRubric>Explicit Rationale Divinorum Officiorum.</finalRubric>
+                     <note>Fols. i-ii blank except for ruling. Fols. 268r-270v blank except for ruling.</note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <p><secFol>misticis rebus</secFol></p>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent>2 + 270 leaves <dimensions type="leaf" unit="mm">
+                              <height>385</height>
+                              <width>280</width>
+                           </dimensions>
+                           <dimensions type="ruled" unit="mm">
+                              <height>250</height>
+                              <width>180</width>
+                           </dimensions>
+                        </extent>
+                        <foliation>i-ii, 1–270</foliation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2" resp="#TA" writtenLines="40">Written in 2 columns, 40 lines.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote script="textualisNorthern">Textualis; several hands.</handNote>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote resp="#PA" type="histInit">Historiated initial, fol. 1r: the author reading his book to an audience. (<ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> i. 149). Attributed by Gaudek to the workshop of the Master of the Opatovice Breviary (<bibl subtype="external" type="ms">Krakow, Archiwum Krakowskiej Kapituły Katedralnej, MS 240</bibl>)</decoNote>
+                     <decoNote resp="#PA" type="border">Fine border, fol. 1r. (<ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> i. 149)</decoNote>
+                     <decoNote resp="#TA" type="flourInit">Red and blue puzzle initials with pen flourishes in red and in blue.</decoNote>
+                     <decoNote resp="#TA" type="rubrication">Red rubrics.</decoNote>
+                  </decoDesc>
+                  <bindingDesc>
+                     <binding calendar="Gregorian" notAfter="1639" notBefore="1637">
+                        <p>Brown tanned calf over laminated pulpboard for Abp. Laud, 1637–1639; rebacked.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1400" notBefore="1370">14th century, end, perhaps 1370s</origDate>
+                     <origPlace>
+                        <country key="place_7006470">Bohemia</country>
+                     </origPlace>
+                  </origin>
+                  <provenance>Provenance unknown: erased and illegible inscription, fol. 1r.</provenance>
+                  <provenance resp="#Q2" when="1638"><persName key="person_54940373" role="fmo">William Laud, 1573–1645</persName>, 1638. </provenance>
+                  <acquisition resp="#Q2" when="1639">Part of his third donation to the Bodleian, 1639.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source> Description adapted (October 2020) from the following sources: <listBibl>
+                              <bibl>T. Gaudek, 'Zpráva ze studia českých iluminovaných rukopisů 14. století v Bodleian Library', <title>Studie o rukopisech</title> 42 (2013), 145–59</bibl>
+                              <bibl>Otto Pächt and J. J. G. Alexander, <title><ref target="https://catalog.hathitrust.org/Record/000468709">Illuminated Manuscripts in the Bodleian Library, Oxford</ref></title>, 3 vols. (1966–1973) I, no. 149 [decoration, localization and date].</bibl>
+                              <bibl>H. O. Coxe, <title>Laudian Manuscripts</title>, Quarto Catalogues II, repr. with corrections, 1969, from the original ed. of 1858–1885 [contents, acquisition].</bibl>
+                           </listBibl>
+                           <listBibl>
+                              <bibl facs="aby0170.gif" type="QUARTO">Quarto Catalogue, col. 244</bibl>
+                              <bibl facs="aap0059.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 38</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl subtype="full" type="digital-facsimile">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/7f5f9c2f-b840-4af9-a434-6c1f5689136e/">
+                           <title>Digital Bodleian</title></ref>
+                        <note>(full digital facsimile)</note>
+                     </bibl>
+                  </surrogates>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl><ref target="https://hab.bodleian.ox.ac.uk/en/"><title>Manuscripts from German-Speaking Lands – A Polonsky Foundation Digitization Project</title></ref></bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2020-11-05">Description revised for Polonsky digitization project to include additional information from printed descriptions.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4644">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Douce 305</title>
+            <title type="collection">MSS. Douce</title>
+            <respStmt xml:id="DD">
+               <resp when="1984">Cataloguer</resp>
+               <persName>A. G. Watson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Douce_305</idno>
+            <idno type="collection">Douce</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Douce_305" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Douce 305</idno>
+                  <idno type="ieArk">ark:29072/x0dn39x171jj</idno>
+                  <idno type="crArk">ark:29072/x09g54xj2815</idno>
+                  <altIdentifier type="internal">
+                     <idno type="SCN">21879</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Douce_305-item1">
+                     <author key="person_66600206">Jean Galopes</author>
+                     <title key="work_2365">Le pelerinage de l'ame en prose</title>
+                     <note>(prose version of Guillaume de Diguleville, <title>Pelerinage de l'ame</title>)</note>
+                     <bibl type="related">
+                        <author key="person_100226060">Guillaume de Diguleville</author>
+                        <title>Pelerinage de l'ame</title>
+                     </bibl>
+                     <textLang mainLang="frm">Middle French</textLang>
+                  </msItem>
+                  <msItem n="2" xml:id="MS_Douce_305-item2">
+                     <author key="person_2581859">Ps.-Aristotle</author>
+                     <title key="work_5649">Secreta secretorum</title>
+                     <note>(French translation)</note>
+                     <textLang mainLang="frm">Middle French</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="chart">
+                        <support>paper</support>
+                        <extent resp="#DD">1-81 fols.<dimensions unit="mm" type="leaf">
+                              <height>275</height>
+                              <width>212</width>
+                           </dimensions>
+                        </extent>
+                     </supportDesc>
+                     <layoutDesc resp="#DD">
+                        <layout writtenLines="36" columns="1">1 col., c. 28-36 lines, <dimensions unit="mm" type="written">
+                              <height min="178" max="185">c. 178-185</height>
+                              <width min="125" max="135">125-135</width>
+                           </dimensions>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>Fols. 1–80 written by <persName key="person_384" role="scr"> G. de Pacy, <hi rend="italic">escolastre</hi> and canon of St. Peter, Lille </persName>, in 1435.</handNote>
+                  </handDesc>
+                  <decoDesc>
+                     <summary>
+                        <ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> i. 312, pl. XXV:</summary>
+                     <decoNote type="miniature">Good coloured drawings. </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian"
+                               notAfter="1500"
+                               notBefore="1435"
+                               cert="high">1435; additions, 15th century, late</origDate>
+                     <origPlace cert="low">
+                        <country key="place_7024097">Flemish</country>, <settlement key="place_7008461">Lille</settlement> (?)<!--ORIGINAL: Flemish, Lille (?)--></origPlace>
+                  </origin>
+                  <provenance notAfter="1834" notBefore="1757" resp="#MMM">
+                     <persName key="person_69848690" role="fmo">Francis Douce, 1757–1834</persName>
+                  </provenance>
+                  <acquisition resp="#MMM" when="1834">Bequeathed to the Bodleian in 1834</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>
+                           <ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Summary Catalogue (1897). Decoration, localization and date follow Pächt and Alexander (1966). <listBibl>
+                              <bibl facs="aaz0606.gif" type="SC">Summary Catalogue, vol. 4, p. 587</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl subtype="partial" type="digital-facsimile">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/0c5c47e6-a6cf-4b8c-9680-3a8309f67964/">
+                           <title>Digital Bodleian</title>
+                        </ref>
+                        <note>(61 images from 35mm slides)</note>
+                     </bibl>
+                  </surrogates>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl>
+                           <ref target="http://jonas.irht.cnrs.fr/manuscrit/72627">
+                              <title>JONAS: Répertoire des textes et des manuscrits médiévaux d'oc et d'oïl</title>
+                           </ref>
+                        </bibl>
+                     </listBibl>
+                     <listBibl type="PRINT">
+                        <head>Printed descriptions:</head>
+                        <bibl>A. Watson, <title>Catalogue of Dated and Datable Manuscripts in Oxford Libraries</title> (1984), <citedRange unit="entry" from="472" to="472">
+                              <ref target="https://hdl.handle.net/2027/mdp.39015008982863?urlappend=%3Bseq=104">no. 472</ref>
+                           </citedRange>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2024-05">Add extent, leaf dimensions and layout from Watson, Dated and Datable.</change>
+         <change when="2018-10-14" xml:id="MMM">
+            <persName>Mitch Fraas</persName> Provenance and acquisition information added using <ref target="https://github.com/littlegustv/oxfordupdates/blob/master/test_case_for_oxford_prov.rb">https://github.com/littlegustv/oxfordupdates/blob/master/test_case_for_oxford_prov.rb</ref> in collaboration with the <ref target="http://mappingmanuscriptmigrations.org/">Mapping Manuscript Migrations</ref> project.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

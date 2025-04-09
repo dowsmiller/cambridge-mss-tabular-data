@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_770">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Auct. T. 2. 2</title>
+            <title type="collection">MSS. Auct. T. (Auctarium T.)</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Auct_T_2_2</idno>
+            <idno type="collection">Auct T</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Auct_T_2_2" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Auct. T. 2. 2</idno>
+                  <idno type="ieArk">ark:29072/x08w32r60656</idno><idno type="crArk">ark:29072/x0mc87pq25c8</idno><altIdentifier type="internal">
+                     <idno type="SCN">20588</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Auct_T_2_2-item1">
+                     <author key="person_77111352">Theodoretus</author>
+                     <title key="work_4687">Commentary on the Twelve Minor Prophets</title>
+                     <textLang mainLang="grc">Greek</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                     </supportDesc>
+                  </objectDesc>
+                  <handDesc hands="1">
+                     <handNote>Written by <persName key="person_2997" role="scr">Gregorius</persName>, monk of the monastery of the Theotokos Evergetis.</handNote>
+                  </handDesc>
+                  <decoDesc><summary>Hutter iii. 43</summary>
+                     <decoNote type="headpiece">Ornamental headpiece, ornamental strips.</decoNote><decoNote type="decInit">Decorated initials.</decoNote><decoNote type="rubrication"> Titles in brown ink.</decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" when="1067">1067</origDate>
+                     <origPlace>
+                        <country key="place_7024407">Byzantine</country>, <settlement key="place_7002473">Constantinople</settlement>, <orgName key="org_122051762">monastery of Theotokos Evergetis</orgName>
+                        <!--ORIGINAL: Byzantine, Constantinople-->
+                     </origPlace>
+                  </origin>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source><p>Summary description based on Annaclara Cataldi Palau, <title><ref target="https://ora.ox.ac.uk/objects/uuid:7aa0a0a3-8fd3-4118-872d-5c0cfd34c865">A Catalogue of Greek Manuscripts from the Meerman Collection in the Bodleian Library</ref></title> (Oxford, 2011), pp. 193–196.</p>
+                           <p>Previously described in the Quarto Catalogue (H. O. Coxe, <title>Catalogi codicum manuscriptorum Bibliothecae Bodleianae pars prima recensionem codicum Graecorum continens</title>, Quarto Catalogues I, 1883, repr. with corrections 1969).</p>
+                           <listBibl>
+                              <bibl facs="abu0386.gif" type="QUARTO">Quarto Catalogue I, col. 758 (Misc. 202)</bibl>
+                              <bibl facs="aaz0452.gif" type="SC">Summary Catalogue, Vol. 4, p. 433</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="PRINT">
+                        <bibl>Irmgard Hutter, <title>Corpus der byzantinischen Miniaturenhandschriften, I-III, Oxford, Bodleian Library</title>, 3 vols. in 4 (Stuttgart, 1977–82), iii, 43 <ref target="https://archive.org/details/hutter-3.2bis-pp.-32-end-mss.-29-197-abb.-112-885/Hutter%203.1%2C%20pp.%201-201%20%28Intr.%3B%20mss.%201-130%29/page/65/mode/1up">[Internet Archive]</ref></bibl>
+                     </listBibl>
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl><ref target="http://pinakes.irht.cnrs.fr/notices/cote/47150/"><title>Pinakes | Πίνακες: Textes et manuscrits grecs</title></ref></bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2019-01-15">Description revised with reference to Palau.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

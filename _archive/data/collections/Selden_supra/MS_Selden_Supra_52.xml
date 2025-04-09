@@ -1,0 +1,115 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_8922">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Selden Supra 52</title>
+            <title type="collection">MSS. Selden Supra</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Selden_Supra_52</idno>
+            <idno type="collection">Selden supra</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Selden_Supra_52" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Selden Supra 52</idno>
+                  <idno type="ieArk">ark:29072/x0g158bh37t1</idno><idno type="crArk">ark:29072/x0bn999728np</idno><altIdentifier type="internal">
+                     <idno type="SCN">3440</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem class="#biblia #versus" n="1" xml:id="MS_Selden_Supra_52-item1">
+                     <title key="work_13618" type="desc">Old Testament, metrical paraphrase</title>
+                     <note>including Judith and the Maccabees; 18,372 lines in 12-line stanzas</note>
+                     <incipit>God fader in heuyn of myghtes most That mad this mold &amp; all man kynd</incipit>
+                     <bibl type="bible">
+                        <title>Bible, Old Testament</title>
+                     </bibl>
+                     <textLang mainLang="enm">Middle English</textLang>
+                  </msItem>
+                  <msItem class="#sermones" n="2" xml:id="MS_Selden_Supra_52-item2">
+                     <title key="work_13460">Northern homily cycle</title>
+                     <note>extract: thirty-five rhymed narratives</note>
+                     <textLang mainLang="enm">Middle English</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="chart">
+                        <support>paper</support>
+                     </supportDesc>
+                  </objectDesc>
+                  <musicNotation>
+                     <p>Notation on staves (see van Dijk 1957).</p>
+                  </musicNotation>
+                  <bindingDesc>
+                     <binding contemporary="true">
+                        <p>Plain brown leather on boards, clasp lost, contemporary English work.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1460" notBefore="1440">15th century, middle</origDate>
+                     <origPlace>
+                        <country key="place_7002445">English</country>
+                     </origPlace>
+                  </origin>
+                  <provenance notAfter="1654" notBefore="1584" resp="#MMM">
+                     <persName key="person_51728429" role="fmo">John Selden, 1584–1654</persName>
+                  </provenance>
+                  <acquisition resp="#MMM" when="1659">Acquired by the Bodleian in 1659</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Summary description by Elizabeth Solopova and Matthew Holford, based on the Summary Catalogue and supplementary sources. <listBibl>
+                              <bibl facs="aap0656.gif" type="SC">Summary Catalogue, Vol. 2 Part 1, p. 635</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="PRINT">
+                        <head>Printed descriptions:</head>
+                        <bibl>S. J. P. van Dijk, <title>Latin Liturgical Manuscripts in the Bodleian Library, Oxford, vol. 5: Fragments - Mass Books</title> (typescript, 1957), <citedRange unit="page" from="102" to="102">p. 102</citedRange>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2022-04-04">Add binding information from Summary Catalogue.</change>
+         <change when="2019-10-31" xml:id="MMM">
+            <persName>Toby Burrows/Mapping Manuscript Migrations</persName>Provenance and acquisition information added using <ref target="https://github.com/mapping-manuscript-migrations/oxford-tei-updates/blob/master/update_oxford_prov.rb">https://github.com/mapping-manuscript-migrations/oxford-tei-updates/blob/master/update_oxford_prov.rb</ref> in collaboration with the <ref target="http://mappingmanuscriptmigrations.org/">Mapping Manuscript Migrations</ref> project.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

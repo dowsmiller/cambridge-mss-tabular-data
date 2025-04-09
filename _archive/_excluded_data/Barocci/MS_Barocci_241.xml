@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1079">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Barocci 241</title>
+            <title type="collection">MSS. Barocci</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Barocci_241</idno>
+            <idno type="collection">Barocci</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Barocci_241" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Barocci 241</idno>
+                  <idno type="ieArk">ark:29072/x09z9030442c</idno><idno type="crArk">ark:29072/x09w032360rk</idno><altIdentifier type="internal">
+                     <idno type="SCN">241</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Barocci_241-item1">
+                     <title key="work_12290" type="desc">Homilies for Church year.</title>
+                     <textLang mainLang="grc">Greek</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote>Decoration<p>Borders, ornamental strips and decorated initials. <bibl>(<abbr>Hutter</abbr> iii. 150, Abb. 536–42) <ref target="https://archive.org/details/hutter-3.2bis-pp.-32-end-mss.-29-197-abb.-112-885/Hutter%203.1%2C%20pp.%20201-end%20%28mss.%20131-197%20%2B%20Corr.%26Add.%20%2B%20Indices%29/page/226/mode/1up">[Internet Archive]</ref></bibl>
+                        </p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1350" notBefore="1325">14th century, second quarter</origDate>
+                     <origPlace>
+                        <country key="place_7024407">Byzantine</country>, <settlement key="place_7002473">Constantinople</settlement>
+                        <!--ORIGINAL: Byzantine, Constantinople-->
+                     </origPlace>
+                  </origin>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source><ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Quarto Catalogue (H. O. Coxe, <title>Greek Manuscripts</title>, Quarto Catalogues I, repr. 1969, with corrections, from the ed. of 1853). Decoration, localization and date follow Hutter (1977–1982). <listBibl>
+                              <bibl facs="aap0030.gif" type="SC">Summary Catalogue, Vol. 2 Part 1, p. 9</bibl>
+                              <bibl facs="abu0214.gif" type="QUARTO">Quarto Catalogue, Cols. 413–414</bibl>
+                              <bibl facs="abu0215.gif" type="QUARTO">Quarto Catalogue, Cols. 415–416</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates><bibl subtype="full" type="digital-facsimile"><ref target="https://digital.bodleian.ox.ac.uk/objects/78ba30ef-a13a-4bd0-a8f1-84660fc58b2b/"><title>Digital Bodleian</title>
+                           <note>(full digital facsimile)</note></ref></bibl></surrogates>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="PRINT">
+                        <bibl>Irmgard Hutter, <title>Corpus der byzantinischen Miniaturenhandschriften, I-III, Oxford, Bodleian Library</title>, 3 vols. in 4 (Stuttgart, 1977–82), iii, 150, Abb. 536–42 <ref target="https://archive.org/details/hutter-3.2bis-pp.-32-end-mss.-29-197-abb.-112-885/Hutter%203.1%2C%20pp.%20201-end%20%28mss.%20131-197%20%2B%20Corr.%26Add.%20%2B%20Indices%29/page/226/mode/1up">[Internet Archive]</ref></bibl>
+                     </listBibl>
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl><ref target="http://pinakes.irht.cnrs.fr/notices/cote/47529/"><title>Pinakes | Πίνακες: Textes et manuscrits grecs</title></ref></bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

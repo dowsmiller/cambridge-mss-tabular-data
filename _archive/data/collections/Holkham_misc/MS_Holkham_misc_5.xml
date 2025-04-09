@@ -1,0 +1,112 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_6278">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Holkham misc. 5</title>
+            <title type="collection">MSS. Holkham misc. (Holkham miscellaneous)</title>
+            <respStmt>
+               <resp>Preliminary description</resp>
+               <persName>Peter Kidd</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Holkham_misc_5</idno>
+            <idno type="collection">Holkham misc</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Holkham_misc_5" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Holkham misc. 5</idno>
+                  <idno type="ieArk">ark:29072/x0np193909fx</idno><idno type="crArk">ark:29072/x0nk322d2645</idno><altIdentifier type="internal">
+                     <idno type="SCN">Not in SC (late accession): no detailed description available</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Holkham_misc_5-item1">
+                     <author key="person_261601822">Victor de Vita</author>
+                     <title key="work_4907">De persecutione Vandalorum</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="2" xml:id="MS_Holkham_misc_5-item2">
+                     <author key="person_4929593">Eusebius of Caesarea</author>
+                     <title key="work_1509">Ecclesiastica historiae</title>
+                     <note>translated by <persName key="person_77679446" role="trl"> Rufinus </persName>
+                     </note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>Parchment, mediocre quality.</support>
+                        <extent> ii (paper) + 168 + ii (paper) <dimensions type="leaf" unit="mm">
+                              <height>310</height>
+                              <width>210</width>
+                           </dimensions>
+                           <dimensions type="ruled" unit="mm">
+                              <height max="240" min="235">235–40</height>
+                              <width max="155" min="150">150–5</width>
+                           </dimensions>
+                        </extent>
+                        <foliation>Modern, pencil, i-ii, 1–170.</foliation>
+                        <!-- collation not given -->
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="35 36">35–6, written above top line; in 1 column</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote script="bookhand">Fine bookhands by numerous scribes.</handNote>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote type="decInit">Fine zoomorphic initials (fols. 7r, 30r). (<ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> ii. 46, pl. V)</decoNote>
+                  </decoDesc>
+                  <bindingDesc>
+                     <binding notBefore="1800" notAfter="1900">
+                        <p>Sewn on five cords, and bound in a typical Holkham binding of polished brown leather over pasteboards, framed with gilt fillets, the centre of the upper board stamped in gilt with the Coke crest; the spine lettered in gilt 'S. VICTORIS | DE | PERSECUTIONE | VANDALICA | HISTORIA || M.S.' with the number '461' at the bottom.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace cert="low">
+                        <country key="place_1000080">Italian</country>, <settlement key="place_7006076">Lucca</settlement> (?)<!--ORIGINAL: Italian, Lucca (?)--></origPlace>
+                     <origDate calendar="Gregorians" notAfter="1150" notBefore="1100">12th century, first half</origDate>
+                  </origin>
+                  <provenance>Canons of <orgName key="org_243863172" role="fmo"> S. Giovanni in Verdara, Padua </orgName>, with a list on fol. 17r headed 'Iste sunt indulgentie concesse per romanos pontifices et alios primates omnibus uisitantibus ecclesiam sancti Iohannis de Verdara de pad' contritis et confessis.', the first item on the list is dated 1230.</provenance>
+                  <provenance>Numerous marginalia by a variety of medieval and humanistic Italian hands.</provenance>
+                  <provenance>The upper pastedown with the gilt booklabel of '<persName key="person_8145335" role="fmo"> THOMAS WILLIAM COKE' (1754–1842) </persName>; formerly Norfolk, <orgName key="org_8">Holkham Hall</orgName>, MS. 461.</provenance>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Draft description by Peter Kidd, late 1990s</source>
+                     </recordHist>
+                  </adminInfo>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

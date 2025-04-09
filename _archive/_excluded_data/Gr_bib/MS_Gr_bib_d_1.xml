@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4946">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Gr. bib. d. 1</title>
+            <title type="collection">MSS. Gr. bib. (Greek bibles)</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Encoding</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Gr_bib_d_1</idno>
+            <idno type="collection">Gr bib</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Gr_bib_d_1" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Gr. bib. d. 1</idno>
+                  <idno type="ieArk">ark:29072/x0st74cq0830</idno><idno type="crArk">ark:29072/x0sq87bt24ss</idno><altIdentifier type="internal">
+                     <idno type="SCN">29802</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <textLang mainLang="grc">Greek</textLang>
+                  <msItem n="1" xml:id="MS_Gr_bib_d_1-item1">
+                     <title key="work_12096" type="desc">Gospels</title>
+                  </msItem>
+                  <msItem n="2" xml:id="MS_Gr_bib_d_1-item2">
+                     <title key="work_12067" type="desc">Gospel lectionary</title>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote>Decorated headpieces and initials. (Hutter i. 65)</decoNote>
+                     <decoNote>Titles in red (Epigraphische Auszeichungsmajuskel).</decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" cert="high" when="1322">1322</origDate>
+                     <origPlace>attributed by Hutter to <settlement key="place_7002473">Constantinople</settlement>
+                        <!--ORIGINAL: Byzantine, Constantinople-->
+                     </origPlace>
+                  </origin>
+               </history>
+               <additional><adminInfo>
+                     <recordHist>
+                        <source><p>Summary description based on Annaclara Cataldi Palau, <title><ref target="https://ora.ox.ac.uk/objects/uuid:7aa0a0a3-8fd3-4118-872d-5c0cfd34c865">A Catalogue of Greek Manuscripts from the Meerman Collection in the Bodleian Library</ref></title> (Oxford, 2011), pp. 297–301.</p>
+                           <p>Previously described in the Quarto Catalogue (H. O. Coxe, <title>Catalogi codicum manuscriptorum Bibliothecae Bodleianae pars prima recensionem codicum Graecorum continens</title>, Quarto Catalogues I, 1883, repr. with corrections 1969).</p>
+                           <listBibl>
+                              <bibl facs="aam0732.gif" type="SC">Summary Catalogue, vol. 5, p. 697</bibl>
+                              <bibl facs="aam0733.gif" type="SC">Summary Catalogue, vol. 5, p. 698</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl subtype="full" type="digital-facsimile">
+                        <ref target="https://ntvmr.uni-muenster.de/manuscript-workspace?docID=30521">
+                           <title>New Testament Virtual Manuscript Room</title></ref>
+                        <note>(digitized microfilm)</note>
+                     </bibl>
+                  </surrogates>
+                  <listBibl type="WRAPPER"><listBibl type="PRINT">
+                        <bibl>Irmgard Hutter, <title>Corpus der byzantinischen Miniaturenhandschriften, I-III, Oxford, Bodleian Library</title>, 3 vols. in 4 (Stuttgart, 1977–82), i, 65 <ref target="https://archive.org/details/hutter-1-text/page/106/mode/1up">[Internet Archive]</ref></bibl>
+                     </listBibl><listBibl type="INTERNET"><head>Online resources:</head><!--Existing bibliography in place: check sorting of entries--><bibl><ref target="https://www.dbbe.ugent.be/manuscripts/15338"><title>DBBE: Database of Byzantine Book Epigrams</title></ref></bibl><bibl><ref target="http://pinakes.irht.cnrs.fr/notices/cote/47958/"><title>Pinakes | Πίνακες: Textes et manuscrits grecs</title></ref></bibl></listBibl></listBibl></additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2019-02-22">Description revised with reference to Palau.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

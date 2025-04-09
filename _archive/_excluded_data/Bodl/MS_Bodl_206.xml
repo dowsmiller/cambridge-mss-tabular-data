@@ -1,0 +1,112 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1264">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Bodl. 206</title>
+            <title type="collection">MSS. Bodl. (Bodley)</title>
+            <respStmt xml:id="SC">
+               <resp when="1922">Cataloguer</resp>
+               <persName>Falconer Madan</persName>
+               <persName>H. H. E. Craster</persName>
+            </respStmt>
+            <respStmt xml:id="MLH">
+               <resp when="2020">Encoding</resp>
+               <resp when="2020">Catalogue updates and corrections</resp>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Bodl_206</idno>
+            <idno type="collection">Bodl</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Bodl_206" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement key="place_7011931">Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Bodl. 206</idno>
+                  <idno type="ieArk">ark:29072/x0jd472w598q</idno><idno type="crArk">ark:29072/x0j9602075zv</idno><altIdentifier type="internal">
+                     <idno type="SCN">2012</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Bodl_206-item1">
+                     <author key="person_100227669">Ambrose</author>
+                     <title key="work_480">Hexaemeron</title>
+                     <finalRubric>Explicit Liber Exameron beati Ambrosii Mediolanensis episcopi</finalRubric>
+                     <note>A contemporary list of the rubrics for each book is fol. i, but none of them have been inserted.</note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                        <extent>i + 76 leaves <dimensions type="binding" unit="in">
+                              <height>13.25</height>
+                              <width>8.75</width>
+                           </dimensions></extent>
+                        <condition>Discoloured by damp throughout, and some margins injured by it.</condition>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2">2 cols.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <bindingDesc>
+                     <binding when="1602">
+                        <p>Stamped white sheepskin (about 1602) on older sewing and boards, injured and re-backed.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1200" notBefore="1100">12th century</origDate>
+                     <origPlace>
+                        <country key="place_7002445">English</country>
+                     </origPlace>
+                  </origin>
+                  <provenance notAfter="1506" notBefore="1327"><orgName key="org_127815410" role="fmo">Exeter Cathedral</orgName>: identifiable in the catalogues of 1327 and 1506 (<bibl>G. Oliver, <title>Lives of the Bishops of Exeter</title> (1861), pp. 303, 374</bibl>) (MLGB).</provenance>
+                  <acquisition when="1602">Presented by the dean and chapter of Exeter in 1602.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Description adapted (April 2020) from the Summary Catalogue (1922). <listBibl>
+                              <bibl facs="aap0183.gif" type="SC">Summary Catalogue, vol. 2, part 1, p. 162</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <!--<bibl><ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/69"><title>MLGB3: Medieval Libraries of Great Britain</title></ref></bibl>-->
+                        <bibl><ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/2744"><title>MLGB3: Medieval Libraries of Great Britain</title></ref></bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2020-04-14">Description revised to incorporate all information in SC.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

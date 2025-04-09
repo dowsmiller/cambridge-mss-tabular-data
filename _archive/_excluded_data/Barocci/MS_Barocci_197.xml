@@ -1,0 +1,108 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1030">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Barocci 197</title>
+            <title type="collection">MSS. Barocci</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Barocci_197</idno>
+            <idno type="collection">Barocci</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Barocci_197" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Barocci 197</idno>
+                  <idno type="ieArk">ark:29072/x008612p79nr</idno><idno type="crArk">ark:29072/x005741s96bw</idno><altIdentifier type="internal">
+                     <idno type="SCN">197</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Barocci_197-item1">
+                     <title key="work_14578" type="desc">Sermons</title>
+                     <textLang mainLang="grc">Greek</textLang>
+                  </msItem>
+                  <msItem n="2" xml:id="MS_Barocci_197-item2">
+                     <title key="work_15303" type="desc">Theological texts</title>
+                     <textLang mainLang="grc">Greek</textLang>
+                  </msItem>
+                  <msItem n="3" xml:id="MS_Barocci_197-item3">
+                     <title key="work_13056" type="desc">Saints' Lives</title>
+                     <textLang mainLang="grc">Greek</textLang>
+                  </msItem>
+                  <msItem n="4" xml:id="MS_Barocci_197-item4">
+                     <note>Former flyleaves bound separately in 1913 as MS Barocci 197*.</note>
+                     <textLang mainLang="grc">Greek</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="chart">
+                        <support>paper</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" when="1344" cert="high">14th century (1344, at least in part)</origDate>
+                     <origPlace>
+                        <country key="place_8697461">Greek</country>, <settlement key="place_7002473">Constantinople</settlement>
+                        <!--ORIGINAL: Greek, Constantinople-->
+                     </origPlace>
+                  </origin>
+               </history>
+               <additional><adminInfo>
+                     <recordHist>
+                        <source><ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Quarto Catalogue (H. O. Coxe, <title>Greek Manuscripts</title>, Quarto Catalogues I, repr. 1969, with corrections, from the ed. of 1853). <listBibl>
+                              <bibl facs="aap0029.gif" type="SC">Summary Catalogue, Vol. 2 Part 1, p. 8</bibl>
+                              <bibl facs="abu0178.gif" type="QUARTO">Quarto Catalogue, Cols. 341–342</bibl>
+                              <bibl facs="abu0179.gif" type="QUARTO">Quarto Catalogue, Cols. 343–344</bibl>
+                              <bibl facs="abu0180.gif" type="QUARTO">Quarto Catalogue, Cols. 345–346</bibl>
+                              <bibl facs="abu0181.gif" type="QUARTO">Quarto Catalogue, Cols. 347–348</bibl>
+                              <bibl facs="abu0182.gif" type="QUARTO">Quarto Catalogue, Cols. 349–350</bibl>
+                              <bibl facs="abu0183.gif" type="QUARTO">Quarto Catalogue, Col. 351</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo><surrogates><bibl subtype="full" type="digital-facsimile"><ref target="https://digital.bodleian.ox.ac.uk/objects/eba7435d-673e-449b-8a8f-bd644ee88ea4/"><title>Digital Bodleian</title>
+                           <note>(full digital facsimile)</note></ref></bibl></surrogates><listBibl type="WRAPPER"><listBibl type="INTERNET"><head>Online resources:</head><!--Existing bibliography in place: check sorting of entries--><bibl><ref target="https://www.dbbe.ugent.be/manuscripts/14460"><title>DBBE: Database of Byzantine Book Epigrams</title></ref></bibl><bibl><ref target="http://pinakes.irht.cnrs.fr/notices/cote/47484/"><title>Pinakes | Πίνακες: Textes et manuscrits grecs</title></ref></bibl></listBibl></listBibl></additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <figure n="MS">
+            <graphic url="http://www.bodley.ox.ac.uk/dept/scwmss/wmss/online/medieval/barocci/images/197.2232.jpg"/>
+            <figDesc n="title">3r</figDesc>
+            <figDesc n="daodesc"> Greek palimpsest. 12th-cent. lessons from Old Testament written over the the older writing on leaves from a 10th-cent. Gospel Book. </figDesc>
+         </figure>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

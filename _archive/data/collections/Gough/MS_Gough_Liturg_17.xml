@@ -1,0 +1,113 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_4925">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Gough Liturg. 17</title>
+            <title type="collection">MSS. Gough</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Gough_Liturg_17</idno>
+            <idno type="collection">Gough</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Gough_Liturg_17" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement>Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Gough Liturg. 17</idno>
+                  <idno type="ieArk">ark:29072/x03484zh73dn</idno><idno type="crArk">ark:29072/x0n870zq75tr</idno><altIdentifier type="internal">
+                     <idno type="SCN">18330</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Gough_Liturg_17-item1">
+                     <title key="work_11569">Diurnal, Benedictine use.</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>parchment</support>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <summary>Unusual style. <ref target="https://catalog.hathitrust.org/Record/000468709">Pächt and Alexander</ref> iii. 930, pl. LXXXIX:</summary>
+                     <decoNote type="border">Good borders.</decoNote>
+                     <decoNote type="decInit">Good initials.</decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1450" notBefore="1425">15th century, second quarter (?)</origDate>
+                     <origPlace cert="low">
+                        <country key="place_7002445">English</country>, <settlement key="place_7010809">Peterborough</settlement> (?)<!--ORIGINAL: English, Peterborough (?)--></origPlace>
+                  </origin>
+                  <provenance type="MLGB3_provenance_evidence" source="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/187">
+                     <orgName role="fmo" key="org_139684558">Peterborough, Northamptonshire, Benedictine abbey of St Peter, St Paul, and St Andrew</orgName>:  (<ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/187">MLGB3</ref>: evidence from an inscription of ownership by an individual member of a religious house (which may not, however, be evidence for institutional ownership)). </provenance>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Summary description by Elizabeth Solopova and Matthew Holford, based on the Summary Catalogue and supplementary sources. <listBibl>
+                              <bibl facs="aaz0308.gif" type="SC">Summary Catalogue, vol. 4, p. 289</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <bibl subtype="partial" type="digital-facsimile">
+                        <ref target="https://digital.bodleian.ox.ac.uk/objects/3ab84833-a998-4364-adc1-aba60dc245f7/">
+                           <title>Digital Bodleian</title>
+                        </ref>
+                        <note>(4 images from 35mm slides)</note>
+                     </bibl>
+                  </surrogates>
+                  <listBibl type="WRAPPER">
+                     <listBibl type="INTERNET">
+                        <head>Online resources:</head>
+                        <bibl>
+                           <ref target="http://mlgb3.bodleian.ox.ac.uk/mlgb/book/187">
+                              <title>MLGB3: Medieval Libraries of Great Britain</title>
+                           </ref>
+                        </bibl>
+                     </listBibl>
+                     <listBibl type="PRINT">
+                        <head>Printed descriptions:</head>
+                        <bibl>S. J. P. van Dijk, <title>Latin Liturgical Manuscripts in the Bodleian Library, Oxford, vol. 2: Office Books</title> (typescript, 1957), <citedRange unit="page" from="322b" to="322b">p. 322b</citedRange>
+                        </bibl>
+                     </listBibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2021-12-14">Add provenance information from MLGB3.</change>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25">
+            <persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

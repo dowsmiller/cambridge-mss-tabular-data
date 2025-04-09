@@ -1,0 +1,119 @@
+<?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1869">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS. Bodl. 881</title>
+            <title type="collection">MSS. Bodl. (Bodley)</title>
+            <respStmt>
+               <resp>Summary description</resp>
+               <persName>Elizabeth Solopova</persName>
+               <persName>Matthew Holford</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName type="department">Special Collections</orgName>
+               <orgName type="unit">Bodleian Libraries</orgName>
+               <orgName type="institution">University of Oxford</orgName>
+               <email>specialcollections.enquiries@bodleian.ox.ac.uk</email>
+            </publisher>
+            <idno type="msID">MS_Bodl_881</idno>
+            <idno type="collection">Bodl</idno>
+            <idno type="catalogue">Western</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS_Bodl_881" xml:lang="en">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region type="county">Oxfordshire</region>
+                  <settlement key="place_7011931">Oxford</settlement>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <idno type="shelfmark">MS. Bodl. 881</idno>
+                  <idno type="ieArk">ark:29072/x09880vr41t4</idno><idno type="crArk">ark:29072/x0mg74qm08xs</idno><altIdentifier type="internal">
+                     <idno type="SCN">27707</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="1" xml:id="MS_Bodl_881-item1">
+                     <author key="person_14802130">Jacobus de Cessolis</author>
+                     <title key="work_2307">Liber de scacchis</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="2" xml:id="MS_Bodl_881-item2">
+                     <author key="person_303814984">Ps.-Plato <!-- VIAF entry not fully satisfactory --></author>
+                     <title key="work_4091">Axiochus</title>
+                     <note>(Latin translation)</note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="3" xml:id="MS_Bodl_881-item3">
+                     <author key="person_268955446">Plutarch</author>
+                     <title key="work_3723">De uirtute et uitio</title>
+                     <note>(Latin translation)</note>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="4" xml:id="MS_Bodl_881-item4">
+                     <author key="person_316874550">John Waleys</author>
+                     <title key="work_2775">Breuiloquium de uirtutibus antiquorum principum et philosophorum</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="5" xml:id="MS_Bodl_881-item5">
+                     <author key="person_41951136">Willelmus Peraldus</author>
+                     <title key="work_4986">De eruditione principum</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="6" xml:id="MS_Bodl_881-item6">
+                     <author key="person_121674480">Iohannes de Tambaco</author>
+                     <title key="work_2231">Consolatio theologiae</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem class="#sacramenta" n="7" xml:id="MS_Bodl_881-item7">
+                     <title key="work_15161" type="desc">Treatise on the sacraments</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+                  <msItem n="8" xml:id="MS_Bodl_881-item8">
+                     <author key="person_88800528">Bernardus Silvestris</author>
+                     <title key="work_1075">Epistola rei familiaris</title>
+                     <textLang mainLang="la">Latin</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="mixed">
+                        <support>parchment, paper</support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1500" notBefore="1400">15th century</origDate>
+                     <origPlace>
+                        <country key="place_1000080">Italian</country>
+                     </origPlace>
+                  </origin>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source><ref target="https://medieval.bodleian.ox.ac.uk/about">Summary description</ref> abbreviated from the Summary Catalogue (1905). <listBibl>
+                              <bibl facs="aam0379.gif" type="SC">Summary Catalogue, vol. 5, p. 344</bibl>
+                              <bibl facs="aam0380.gif" type="SC">Summary Catalogue, vol. 5, p. 345</bibl>
+                           </listBibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2017-07-01">First online publication.</change>
+         <change when="2017-05-25"><persName>James Cummings</persName> Up-converted the markup using <ref target="https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl">https://github.com/jamescummings/Bodleian-msDesc-ODD/blob/master/convertTolkien2Bodley.xsl</ref></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>
