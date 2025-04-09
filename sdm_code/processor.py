@@ -230,14 +230,14 @@ for config_name, config in tqdm(coll_config_list.items(), desc="Collections prog
     )
 
     # Step 9.2: Process each XPath expression in the configuration file
-    for xpath, heading, auth_file, auth_col in tqdm(zip(xpaths, headings, auth_files, auth_cols), total=len(xpaths), desc=f"File '{config_name}'"):
+    for xpath, section, heading, auth_file, auth_col in tqdm(zip(xpaths, sections, headings, auth_files, auth_cols), total=len(xpaths), desc=f"File '{config_name}'"):
         results = []
         auth_file = auth_file if pd.notna(auth_file) else None
         auth_df = auth_df_list.get(auth_file) if auth_file else None
 
         # If no authority file is specified, extract the data and append directly
         if auth_file is None:
-            for filename, xml in tqdm(catalogue.items(), total=len(catalogue), desc=f"Column '{heading}'", leave=False):
+            for filename, xml in tqdm(catalogue.items(), total=len(catalogue), desc=f"Section '{section}': Column '{heading}'", leave=False):
                 results.append(extract_with_xpath(xml, xpath))
 
         # Else extract the data and lookup in the authority DataFrame
