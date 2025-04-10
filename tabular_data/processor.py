@@ -1,8 +1,6 @@
 from tqdm import tqdm
 from _global_config import global_config
-from input import import_files
-from helpers import process_file
-from output import save_as_xlsx
+from helpers import import_files, process_file, save_as_xlsx
 
 # Main function
 def main():
