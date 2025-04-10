@@ -70,7 +70,7 @@ former owner details (organisation),settlement,"//tei:provenance/string-join(dis
 former owner details (organisation),country,"//tei:provenance/string-join(distinct-values(.//tei:orgName[contains(@role, ""fmo"")]/@key), "" "")",orgs,location,country,semi-colon,
 associated places,name(s),"//tei:provenance/normalize-space(string-join(.//tei:placeName/string-join(., """"), ""; ""))",,,,,
 associated places,place ID(s),"//tei:provenance/string-join(distinct-values(.//tei:placeName/@key), "" "")",,,,,
-associated places,standard name(s),"//tei:provenance/string-join(distinct-values(.//tei:placeName/@key), "" "")",places,name,name (index),semi-colon,
+associated places,standard name(s),"//tei:provenance/string-join(distinct-values(.//tei:placeName/@key), "" "")",places,names,name (index),semi-colon,
 associated places,geo,"//tei:provenance/string-join(distinct-values(.//tei:placeName/@key), "" "")",places,location,geo,semi-colon,
 associated places,region,"//tei:provenance/string-join(distinct-values(.//tei:placeName/@key), "" "")",places,location,region,semi-colon,
 associated places,country,"//tei:provenance/string-join(distinct-values(.//tei:placeName/@key), "" "")",places,location,country,semi-colon,
