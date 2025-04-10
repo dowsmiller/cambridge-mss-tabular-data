@@ -1,19 +1,60 @@
 from tqdm import tqdm
-from concurrent.futures import ProcessPoolExecutor, as_completed
-from helpers import import_authority, import_collection, process_authority_file, process_collection_file, save_as_xlsx
+from _global_config import global_config
+from input import import_files
+from helpers import process_file
+from output import save_as_xlsx
 
 # Main function
 def main():
+    # Step 1: Set config variables from global_config
+    auth_xml_path = global_config["auth_xml_path"]
+    auth_config_path = global_config["auth_config_path"]
+    auth_xml_recursive = global_config["auth_xml_recursive"]
+    auth_config_recursive = global_config["auth_config_recursive"]
+    coll_xml_path = global_config["coll_xml_path"]
+    coll_config_path = global_config["coll_config_path"]
+    coll_xml_recursive = global_config["coll_xml_recursive"]
+    coll_config_recursive = global_config["coll_config_recursive"]
+    auth_csv_output_dir = global_config["auth_csv_output_dir"]
+    auth_json_output_dir = global_config["auth_json_output_dir"]
+    auth_xlsx_output_dir = global_config["auth_xlsx_output_dir"]
+    auth_output_filename = global_config["auth_output_filename"]
+    coll_csv_output_dir = global_config["coll_csv_output_dir"]
+    coll_json_output_dir = global_config["coll_json_output_dir"]
+    coll_xlsx_output_dir = global_config["coll_xlsx_output_dir"]
+    coll_output_filename = global_config["coll_output_filename"]
+    separator_map = global_config["separator_map"]
+
     # Step 1: Import authority files
-    authority, auth_config_list, auth_df_list = import_authority(auth_path="..", auth_config_path="config/auth", auth_recursive=False, auth_config_recursive=False)
+    tqdm.write("Importing authority files...")
+    authority, auth_config_list, auth_df_list = import_files(
+        xml_path=auth_xml_path,
+        config_path=auth_config_path,
+        xml_recursive=auth_xml_recursive,
+        config_recursive=auth_config_recursive
+    )
 
     # Step 2: Import collection files
-    catalogue, coll_config_list, coll_df_list = import_collection(coll_path="../collections", coll_config_path="config/collection", coll_recursive=True, coll_config_recursive=False)
+    tqdm.write("Importing collection files...")
+    catalogue, coll_config_list, coll_df_list = import_files(
+        xml_path=coll_xml_path,
+        config_path=coll_config_path,
+        xml_recursive=coll_xml_recursive,
+        config_recursive=coll_config_recursive
+    )
 
     # Step 3: Extract data from the authority XML files based on the authority configuration files
     with tqdm(total=len(auth_config_list), desc="Authority progress", leave=True, position=0) as pbar:
         for config_name, config in auth_config_list.items():
-            config_name, processed_df = process_authority_file(config_name, config, authority, auth_df_list, bar_pos=1)
+            config_name, processed_df = process_file(
+                file_type="authority",
+                config_name=config_name,
+                config=config,
+                xml_data=authority,
+                df_list=auth_df_list,
+                csv_output_dir = auth_csv_output_dir,
+                json_output_dir = auth_json_output_dir
+            )
             auth_df_list[config_name] = processed_df
             pbar.update(1)
 
@@ -23,9 +64,19 @@ def main():
     save_as_xlsx(auth_df_list, auth_config_list, auth_xlsx_output_dir, auth_output_filename)
 
     # Step 5: Extract data from the collection XML files based on the collection configuration files
-    with tqdm(total=len(coll_config_list), desc="Collection progress", leave=True, position=1) as pbar:
+    with tqdm(total=len(coll_config_list), desc="Collection progress", leave=True, position=0) as pbar:
         for config_name, config in coll_config_list.items():
-            config_name, processed_df = process_collection_file(config_name, config, catalogue, coll_df_list, auth_df_list, bar_pos=1)
+            config_name, processed_df = process_file(
+                file_type="collection",
+                config_name=config_name,
+                config=config,
+                xml_data=catalogue,
+                df_list=coll_df_list,
+                csv_output_dir=coll_csv_output_dir,
+                json_output_dir=coll_json_output_dir,
+                separator_map=separator_map,
+                lookup_df_list=auth_df_list
+            )
             coll_df_list[config_name] = processed_df
             pbar.update(1)
 
