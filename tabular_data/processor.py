@@ -11,14 +11,11 @@ def main():
     catalogue, coll_config_list, coll_df_list = import_collection(coll_path="../collections", coll_config_path="config/collection", coll_recursive=True, coll_config_recursive=False)
 
     # Step 3: Extract data from the authority XML files based on the authority configuration files
-    with ProcessPoolExecutor() as executor:
-        futures = {
-            executor.submit(process_authority_file, config_name, config, authority, auth_df_list, bar_pos): config_name
-            for (config_name, config), bar_pos in zip(auth_config_list.items(), range(1, len(catalogue) + 1))
-        }
-        for future in tqdm(as_completed(futures), total=len(futures), desc="Authority progress", leave=True):
-            config_name, processed_df = future.result()
+    with tqdm(total=len(auth_config_list), desc="Authority progress", leave=True, position=0) as pbar:
+        for config_name, config in auth_config_list.items():
+            config_name, processed_df = process_authority_file(config_name, config, authority, auth_df_list, bar_pos=1)
             auth_df_list[config_name] = processed_df
+            pbar.update(1)
 
     # Step 4: Save the DataFrame list to an .xlsx file with separate tabs
     auth_xlsx_output_dir = "output/auth"
@@ -26,14 +23,11 @@ def main():
     save_as_xlsx(auth_df_list, auth_config_list, auth_xlsx_output_dir, auth_output_filename)
 
     # Step 5: Extract data from the collection XML files based on the collection configuration files
-    with ProcessPoolExecutor() as executor:
-        futures = {
-            executor.submit(process_collection_file, config_name, config, catalogue, coll_df_list, auth_df_list, bar_pos): config_name
-            for (config_name, config), bar_pos in zip(coll_config_list.items(), range(1, len(catalogue) + 1))
-        }
-        for future in tqdm(as_completed(futures), total=len(futures), desc="Collection progress", leave=True, position=1):
-            config_name, processed_df = future.result()
+    with tqdm(total=len(coll_config_list), desc="Collection progress", leave=True, position=1) as pbar:
+        for config_name, config in coll_config_list.items():
+            config_name, processed_df = process_collection_file(config_name, config, catalogue, coll_df_list, auth_df_list, bar_pos=1)
             coll_df_list[config_name] = processed_df
+            pbar.update(1)
 
     # Step 6: Save the DataFrame list to an .xlsx file with separate tabs
     coll_xlsx_output_dir = "output/collection"

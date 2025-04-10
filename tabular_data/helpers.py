@@ -3,11 +3,11 @@ import pandas as pd
 import xml.etree.ElementTree as ET
 import elementpath
 import re
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from tqdm import tqdm
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Alignment
 from openpyxl.comments import Comment
-from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 
 # Function to read files from a directory
@@ -57,7 +57,7 @@ def import_authority(auth_path, auth_config_path, auth_recursive, auth_config_re
         auth_path (str): Directory containing authority XML files.
         auth_config_path (str): Directory containing authority configuration CSV files.
     """
-    # Read and parse XML authority files in parallel
+    # Read and parse XML authority files
     authority_files = read_files(auth_path, pattern=".xml", recursive=auth_recursive)
     authority = {}
     for file in tqdm(authority_files, desc="Parsing authority files"):
@@ -67,13 +67,13 @@ def import_authority(auth_path, auth_config_path, auth_recursive, auth_config_re
         except Exception as e:
             print(f"Failed to parse authority file {file}. Error: {e}")
 
-    # Read and parse CSV authority configuration files sequentially
+    # Read and parse CSV authority configuration files
     auth_config_files = sorted(read_files(auth_config_path, pattern=".csv", recursive=auth_config_recursive))
     auth_config_list = {}
     for file in tqdm(auth_config_files, desc="Parsing authority config files"):
         try:
             name = os.path.splitext(os.path.basename(file))[0]
-            auth_config_list[name] = pd.read_csv(file, dtype=str, na_values=["", "nan"])
+            auth_config_list[name] = pd.read_csv(file, na_values=["", "nan", "NaN"]).where(pd.notna, None)
         except Exception as e:
             print(f"Failed to parse authority config file {file}. Error: {e}")
 
@@ -95,7 +95,7 @@ def import_collection(coll_path, coll_config_path, coll_recursive, coll_config_r
     Returns:
         tuple: A dictionary of parsed XML files, a dictionary of configuration DataFrames, and a dictionary of empty DataFrames.
     """
-    # Read and parse XML catalogue files in parallel
+    # Read and parse XML catalogue files
     catalogue_files = read_files(coll_path, pattern=".xml", recursive=coll_recursive)
     catalogue = {}
     for file in tqdm(catalogue_files, desc="Parsing catalogue files"):
@@ -105,13 +105,13 @@ def import_collection(coll_path, coll_config_path, coll_recursive, coll_config_r
         except Exception as e:
             print(f"Failed to parse catalogue file {file}. Error: {e}")
 
-    # Read and parse CSV collection configuration files sequentially
+    # Read and parse CSV collection configuration files
     coll_config_files = sorted(read_files(coll_config_path, pattern=".csv", recursive=coll_config_recursive))
     coll_config_list = {}
     for file in tqdm(coll_config_files, desc="Parsing collection config files"):
         try:
             name = os.path.splitext(os.path.basename(file))[0]
-            coll_config_list[name] = pd.read_csv(file, dtype=str)
+            coll_config_list[name] = pd.read_csv(file, na_values=["", "nan", "NaN"]).where(pd.notna, None)
         except Exception as e:
             print(f"Failed to parse collection config file {file}. Error: {e}")
 
@@ -221,41 +221,7 @@ def process_collection_file(config_name, config, catalogue, coll_df_list, auth_d
     # Defragment the DataFrame list
     df = pd.concat([df], ignore_index=True)
 
-    # Optionally sort the DataFrame based on specific columns
-    if 'file URL' in df.columns:
-        # Extract the numeric part from file URL values
-        df['file URL temp'] = df['file URL'].str.extract(r'manuscript_(\d+)')[0].astype(float)
-        first_col = df.columns[0]
-        # If 'file URL' is the first column, sort only by file URL
-        # Otherwise, sort first by file URL then by the first column
-        if first_col == 'file URL':
-            sort_by = ['file URL temp']
-        else:
-            sort_by = ['file URL temp', first_col]
-        df.sort_values(by=sort_by, ascending=True, na_position='last', inplace=True)
-        df.drop(columns=['file URL temp'], inplace=True)
-        
-    elif 'collection' in df.columns:
-        # Use the first column (which is not 'file URL') but extract a number that appears after '_' at the end.
-        first_col = df.columns[0]
-        df['first_col_num'] = df[first_col].str.extract(r'_(\d+)$')[0].astype(float)
-        df.sort_values(by=['collection', 'first_col_num'], ascending=True, na_position='last', inplace=True)
-        df.drop(columns=['first_col_num'], inplace=True)
-        
-    else:
-        # If neither 'file URL' nor 'collection' exist, perform a natural sort on the first column.
-        first_col = df.columns[0]
-        df.sort_values(by=first_col, key=lambda col: col.map(natural_keys), ascending=True, na_position='last', inplace=True)
-
-    # Save the DataFrame to a CSV file
-    coll_csv_output_dir = "output/collection/csv"
-    save_as_csv(df, coll_csv_output_dir, config_name)
-
-    # Save the DataFrame to a JSON file
-    coll_json_output_dir = "output/collection/json"
-    save_as_json(df, coll_json_output_dir, config_name)
-
-    # Update the DataFrame list with the processed DataFrame
+    # Additional processing...
     return config_name, df
 
 # Helper function to process collection columns
@@ -272,23 +238,24 @@ def process_collection_column(i, xpath, auth_file, catalogue, auth_df_list, auth
     Returns:
         tuple: The index and the processed results.
     """
-    # Extract the data using XPath
+    # Set up list, DataFrame, and map
     results = []
-    
-    # Handle missing or invalid auth_file values
-    if pd.isna(auth_file) or str(auth_file).strip().lower() == "nan" or auth_file.strip() == "":
-        auth_file = None
     auth_df = auth_df_list.get(auth_file) if auth_file else None
+    separator_map = {
+        "space": " ",
+        "semi-colon": "; ",
+        "comma": ", "
+    }
 
-    # If no authority file is specified, extract the data and append directly
-    if auth_file is None:
+    # If separator is not in separator_map, extract the data and append directly
+    if str(separator).lower().strip() not in separator_map:
         for filename, xml in catalogue.items():
             results.append(extract_with_xpath(xml, xpath))
 
     # Else extract the data and lookup in the authority DataFrame
     else:
         # Set the separator
-        s = get_separator(separator, auth_file)
+        s = get_separator(separator)
 
         # Set the column name
         col_name = auth_section + ": " + auth_col
@@ -332,16 +299,15 @@ def extract_with_xpath(xml_element, xpath_expr):
     return result
 
 # Helper function to determine the separator for authority lookups
-def get_separator(separator, auth_file):
+def get_separator(separator):
     separator_map = {
         "space": " ",
         "semi-colon": "; ",
-        "comma": ", ",
-        "none": ""
+        "comma": ", "
     }
-    s = separator_map.get(separator, "; ")
+    s = separator_map.get(str(separator).lower().strip(), "; ")
     if separator not in separator_map:
-        print(f"Unexpected separator '{separator}' for file '{auth_file}'. Using '; ' instead.")
+        print(f"Unexpected separator '{separator}'. Using '; ' instead.")
     return s
 
 # Helper function to process data found through the authority lookup
