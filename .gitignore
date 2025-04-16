@@ -15,33 +15,16 @@ env/
 *.swp
 .DS_Store
 
-# Ignore logs and database files
-*.log
-*.sqlite3
-*.db
-
 # Ignore environment variables and credentials
 .env
 *.secret
 
-# Ignore compiled and temporary files
-*.egg
-*.egg-info/
-dist/
-build/
-
 # Ignore Excel working files
 **/~$*.xlsx
-
-# Ignore data files, might need to enable later
-data/*
-!data/.gitignore
-output/*
-!output/.gitignore
 
 # Ignore WIP files
 /tabular_data/work_in_progress
 
-# Ignore files that are too large
+# Ignore files that are too large to push
 tabular_data/output/collection/json/msContents.json
 tabular_data/output/collection/json/_overview.json
