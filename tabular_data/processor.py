@@ -57,8 +57,6 @@ def main():
             pbar.update(1)
 
     # Step 4: Save the DataFrame list to an .xlsx file with separate tabs
-    auth_xlsx_output_dir = "output/auth"
-    auth_output_filename = "authority_data"
     save_as_xlsx(auth_df_list, auth_config_list, auth_xlsx_output_dir, auth_output_filename)
 
     # Step 5: Extract data from the collection XML files based on the collection configuration files
@@ -79,8 +77,6 @@ def main():
             pbar.update(1)
 
     # Step 6: Save the DataFrame list to an .xlsx file with separate tabs
-    coll_xlsx_output_dir = "output/collection"
-    coll_output_filename = "collection_data"
     save_as_xlsx(coll_df_list, coll_config_list, coll_xlsx_output_dir, coll_output_filename)
 
 # Run the function

@@ -7,7 +7,7 @@
 global_config = {
     # Authority input directories
     "auth_xml_path": "..",                              # Where are the authority files found? To get to the parent folder of 'tabular_data', use '..'.
-    "auth_config_path": "config/auth",                  # Where are the authority configuration files found?
+    "auth_config_path": "config/authority",             # Where are the authority configuration files found?
     "auth_xml_recursive": False,                        # Should the program look for authority files inside any folders in the auth_xml_path directory?
     "auth_config_recursive": False,                     # Should the program look for authority configuration files inside any folders in the auth_config_path directory?
 
@@ -18,9 +18,9 @@ global_config = {
     "coll_config_recursive": False,                     # Should the program look for collection configuration files inside any folders in the coll_config_path directory?
 
     # Authority output directories
-    "auth_csv_output_dir": "output/auth/csv",           # Where should the authority csv outputs appear?
-    "auth_json_output_dir": "output/auth/json",         # Where should the authority json outputs appear?
-    "auth_xlsx_output_dir": "output/auth",              # Where should the authority xlsx output appear?
+    "auth_csv_output_dir": "output/authority/csv",      # Where should the authority csv outputs appear?
+    "auth_json_output_dir": "output/authority/json",    # Where should the authority json outputs appear?
+    "auth_xlsx_output_dir": "output/authority",         # Where should the authority xlsx output appear?
     "auth_output_filename": "authority_data",           # What should the authority xlsx output be called?
 
     # Collection output directories

@@ -1,5 +1,6 @@
 import os
 import re
+import math
 import pandas as pd
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -98,7 +99,8 @@ def process_file(
     json_output_dir,
     separator_map=None,
     lookup_df_list=None,
-    bar_pos=1
+    bar_pos=1,
+    cores_spare=0
 ):
     """
     Function that processes either authority or collection files depending on file_type.
@@ -130,15 +132,40 @@ def process_file(
             tqdm.write(f"Failed to extract configuration columns for '{config_name}'. Error: {e}")
             return config_name, df
 
-        # Process each authority column
-        with ProcessPoolExecutor() as executor:
-            futures = {
-                executor.submit(process_authority_column, i, xpath, auth_file, xml_data): i 
-                for i, (xpath, auth_file) in enumerate(zip(xpaths, auth_files))
-            }
-            for future in tqdm(as_completed(futures), total=len(futures), desc=f"File '{config_name}'", position=bar_pos):
-                i, results = future.result()
-                df.iloc[:, i] = results
+        # Count cores
+        num_workers = os.cpu_count() - cores_spare or 1
+
+        # Prepare arguments
+        all_args = [
+            (i, xpath, auth_file)
+            for i, (xpath, auth_file)
+            in enumerate(zip(xpaths, auth_files))
+        ]
+
+        # Split into batches
+        max_batches = num_workers + 1
+        batch_size = max(1, math.ceil(len(all_args) / max_batches))
+
+        batches = [
+            all_args[i : i + batch_size]
+            for i in range(0, len(all_args), batch_size)
+        ]
+
+        # Dispatch batches in parallel
+        with ProcessPoolExecutor(max_workers=num_workers) as executor:
+            futures = [
+                executor.submit(process_authority_batch, batch, xml_data)
+                for batch in batches
+            ]
+            for future in tqdm(
+                as_completed(futures),
+                total=len(futures),
+                desc=f"File '{config_name}'",
+                position=bar_pos
+            ):
+                batch_result = future.result()
+                for i, col_data in batch_result.items():
+                    df.iloc[:, i] = col_data
 
         # Defragment the DataFrame by concatenation
         df = pd.concat([df], ignore_index=True)
@@ -156,27 +183,36 @@ def process_file(
             tqdm.write(f"Failed to extract configuration columns for '{config_name}'. Error: {e}")
             return config_name, df
 
-        # Process each collection column
-        with ProcessPoolExecutor() as executor:
+        # Count cores
+        num_workers = os.cpu_count() - cores_spare or 1
+
+        # Prepare arguments
+        all_args = [
+            (i, xpath, auth_file, auth_section, auth_col, separator)
+            for i, (xpath, auth_file, auth_section, auth_col, separator)
+            in enumerate(zip(xpaths, auth_files, auth_sections, auth_cols, separators))
+        ]
+
+        # Split into batches
+        max_batches = num_workers + 1
+        batch_size = max(1, math.ceil(len(all_args) / max_batches))
+
+        batches = [
+            all_args[i : i + batch_size]
+            for i in range(0, len(all_args), batch_size)
+        ]
+
+        # Dispatch batches in parallel
+        with ProcessPoolExecutor(max_workers=num_workers) as executor:
             futures = [
-                executor.submit(
-                    process_collection_column,
-                    i,
-                    xpath,
-                    auth_file,
-                    xml_data,
-                    lookup_df_list,
-                    auth_section,
-                    auth_col,
-                    separator,
-                    separator_map
-                )
-                for i, (xpath, auth_file, auth_section, auth_col, separator)
-                in enumerate(zip(xpaths, auth_files, auth_sections, auth_cols, separators))
+                executor.submit(process_collection_batch, batch, xml_data, lookup_df_list, separator_map)
+                for batch in batches
             ]
-            for future in tqdm(as_completed(futures), total=len(futures), desc=f"File '{config_name}'", position=bar_pos):
-                i, results = future.result()
-                df.iloc[:, i] = results
+            for future in tqdm(as_completed(futures), total=len(futures),
+                            desc=f"File '{config_name}'", position=bar_pos):
+                batch_result = future.result()
+                for i, col_data in batch_result.items():
+                    df.iloc[:, i] = col_data
 
         # Defragment the DataFrame by concatenation
         df = pd.concat([df], ignore_index=True)
@@ -193,6 +229,27 @@ def process_file(
 
     # Return the outputs
     return config_name, df
+
+# Helper function to process batches of collection columns
+def process_authority_batch(batch, xml_data):
+    """
+    Processes a batch of authority columns by extracting data using XPath.
+    Args:
+        batch (list): List of tuples containing index, XPath, and authority file name.
+        xml_data (dict): Dictionary of authority XML files.
+    Returns:
+        dict: Dictionary of processed results.
+    """
+    out = {}
+    for i, xpath, auth_file in batch:
+        _, col_data = process_authority_column(
+            i,
+            xpath,
+            auth_file,
+            xml_data
+        )
+        out[i] = col_data
+    return out
 
 # Helper function to process authority columns
 def process_authority_column(i, xpath, auth_file, authority):
@@ -211,7 +268,39 @@ def process_authority_column(i, xpath, auth_file, authority):
     """
     auth_xml = authority.get(auth_file)
     results = extract_with_xpath(auth_xml, xpath)
+
+    # Flatten the results and ensure no nested lists remain
+    results = [item for sublist in results for item in (sublist if isinstance(sublist, list) else [sublist])]
+    results = [item for item in results if not isinstance(item, list)]
     return i, results
+
+# Helper function to process batches of collection columns
+def process_collection_batch(batch, xml_data, lookup_df_list, separator_map):
+    """
+    Processes a batch of collection columns by extracting data using XPath and looking up values in an authority file.
+    Args:
+        batch (list): List of tuples containing index, XPath, authority file name, section, column, and separator.
+        xml_data (dict): Dictionary of collection XML files.
+        lookup_df_list (dict): Dictionary of DataFrames for authority files.
+        separator_map (dict): Dictionary of separators for authority lookups.
+    Returns:
+        dict: Dictionary of processed results.
+    """
+    out = {}
+    for i, xpath, auth_file, auth_section, auth_col, separator in batch:
+        _, col_data = process_collection_column(
+            i,
+            xpath,
+            auth_file,
+            xml_data,
+            lookup_df_list,
+            auth_section,
+            auth_col,
+            separator,
+            separator_map
+        )
+        out[i] = col_data
+    return out
 
 # Helper function to process collection columns
 def process_collection_column(i, xpath, auth_file, catalogue, auth_df_list, auth_section, auth_col, separator, separator_map):
@@ -259,8 +348,9 @@ def process_collection_column(i, xpath, auth_file, catalogue, auth_df_list, auth
 
             results.append(lookup_data)
 
-    # Flatten the results and return
+    # Flatten the results and ensure no nested lists remain
     results = [item for sublist in results for item in (sublist if isinstance(sublist, list) else [sublist])]
+    results = [item for item in results if not isinstance(item, list)]
     return i, results
 
 # Helper function to apply XPath 2.0 queries to an XML element in the TEI namespace
@@ -284,7 +374,7 @@ def extract_with_xpath(xml_element, xpath_expr):
             result = [result]
     except Exception as e:
         tqdm.write(f"XPath extraction failed. Offending XPath: {xpath_expr}. Error: {e}")
-        result = []
+        result = ""
     return result
 
 # Helper function to determine the separator for authority lookups
@@ -344,15 +434,19 @@ def sort_authority_df(df):
     Returns:
         DataFrame: The sorted DataFrame.
     """
-    # If the first column contains numbers after "_", sort by that number
-    if df.iloc[:, 0].str.contains(r'_\d+', na=False).any():
-        df['temp'] = df.iloc[:, 0].str.extract(r'_(\d+)', expand=False).astype(float)
-        df = df.sort_values(by='temp', ascending=True, na_position='last').reset_index(drop=True)
-        df.drop(columns='temp', inplace=True)
-    # Otherwise, sort by the first column directly
-    else:
-        df = df.sort_values(by=df.columns[0], ascending=True, na_position='last').reset_index(drop=True)
-    return df
+    try:
+        # If the first column contains numbers after "_", sort by that number
+        if df.iloc[:, 0].str.contains(r'_\d+', na=False).any():
+            df['temp'] = df.iloc[:, 0].str.extract(r'_(\d+)', expand=False).astype(float)
+            df = df.sort_values(by='temp', ascending=True, na_position='last').reset_index(drop=True)
+            df.drop(columns='temp', inplace=True)
+        # Otherwise, sort by the first column directly
+        else:
+            df = df.sort_values(by=df.columns[0], ascending=True, na_position='last').reset_index(drop=True)
+        return df
+    except Exception as e:
+        tqdm.write(f"Sorting DataFrame failed. Error: {e}")
+        return df
 
 # Helper function to sort collection data
 def sort_collection_df(df):
@@ -363,37 +457,41 @@ def sort_collection_df(df):
     Returns:
         DataFrame: The sorted DataFrame.
     """
-    # If 'file URL' exists, sort by it first, then by the first column
-    if 'file URL' in df.columns:
-        # Extract and sort by numeric part in the 'file URL'.
-        df['file URL temp'] = df['file URL'].str.extract(r'manuscript_(\d+)')[0].astype(float)
-        first_col = df.columns[0]
-        sort_by = ['file URL temp'] if first_col == 'file URL' else ['file URL temp', first_col]
-        df.sort_values(by=sort_by, ascending=True, na_position='last', inplace=True)
-        df.drop(columns=['file URL temp'], inplace=True)
-    # If 'collection' exists, sort by it first, then by the first column
-    elif 'collection' in df.columns:
-        # If a 'collection' column exists, sort by it, then natural sort on the first column.
-        first_col = df.columns[0]
-        df.sort_values(
-            by=['collection', first_col],
-            key=lambda col: col.map(natural_keys),
-            ascending=True,
-            na_position='last',
-            inplace=True
-        )
-    # Otherwise, sort by the first column directly
-    else:
-        # Otherwise, use a natural sort on the first column.
-        first_col = df.columns[0]
-        df.sort_values(
-            by=first_col,
-            key=lambda col: col.map(natural_keys),
-            ascending=True,
-            na_position='last',
-            inplace=True
-        )
-    return df
+    try:
+        # If 'metadata: file URL' exists, sort by it first, then by the first column
+        if 'metadata: file URL' in df.columns:
+            # Extract and sort by numeric part in the 'file URL'.
+            df['metadata: file URL temp'] = df['metadata: file URL'].str.extract(r'manuscript_(\d+)')[0].astype(float)
+            first_col = df.columns[0]
+            sort_by = ['metadata: file URL temp'] if first_col == 'metadata: file URL' else ['metadata: file URL temp', first_col]
+            df.sort_values(by=sort_by, ascending=True, na_position='last', inplace=True)
+            df.drop(columns=['metadata: file URL temp'], inplace=True)
+        # Otherwise, if 'metadata: collection' exists, sort by it first, then by the first column
+        elif 'metadata: collection' in df.columns:
+            # If a 'metadata: collection' column exists, sort by it, then natural sort on the first column.
+            first_col = df.columns[0]
+            df.sort_values(
+                by=['metadata: collection', first_col],
+                key=lambda col: col.map(natural_keys),
+                ascending=True,
+                na_position='last',
+                inplace=True
+            )
+        # Otherwise, sort by the first column directly
+        else:
+            # Otherwise, use a natural sort on the first column.
+            first_col = df.columns[0]
+            df.sort_values(
+                by=first_col,
+                key=lambda col: col.map(natural_keys),
+                ascending=True,
+                na_position='last',
+                inplace=True
+            )
+        return df
+    except Exception as e:
+        tqdm.write(f"Sorting DataFrame failed. Error: {e}")
+        return df
 
 # Helper function for natural sorting of strings
 def natural_keys(text):
@@ -452,6 +550,10 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
         with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
             # Zip over the sheets' data, section titles, and comments
             for (name, df), sections, headings, comments in zip(df_list.items(), sections_list, headings_list, comments_list):
+                # Convert numpy_bool to bool
+                for col in df.select_dtypes(include="bool"):
+                    df[col] = df[col].astype(bool)
+                
                 # Write the DataFrame starting from row 2
                 df.to_excel(writer, sheet_name=name, index=False, startrow=1)
 
@@ -491,6 +593,9 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
                     # Set comment height, assuming 15 characters per line and 15pt per line
                     num_lines = (len(str(comment_text)) // 15)
                     comment.height = 30 + 15 * num_lines
+                    # Set comment width to a default value
+                    comment.width = 200
+                    # Set the comment to the cell
                     cell.comment = comment
 
                 # Set up a filter for each column, with row 2 given as the header value
