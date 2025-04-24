@@ -12,7 +12,7 @@ metadata,part type,"//tei:msItem/string-join((ancestor::tei:msPart|ancestor::tei
 metadata,nest level,"//tei:msItem/string-join(string(count(ancestor-or-self::tei:msItem)[.>0]), """")",,,,,
 locus,locus,"//tei:msItem/normalize-space(string-join(tei:locus[text()]/string-join(., """"), "" ""))",,,,,
 locus,from,"//tei:msItem/string-join(tei:locus/@from, "" "")",,,,,
-locus,to,"//tei:msItem/string-join(tei:locus/(@to|@from)[last()], "" "")",,,,,
+locus,to,"//tei:msItem/string-join(tei:locus/@to, "" "")",,,,,
 work,title,"//tei:msItem/normalize-space(string-join(tei:title/string-join(., """"), "" ""))",,,,,
 work,title type,"//tei:msItem/string-join(distinct-values(tei:title/@type), "" "")",,,,,
 work,work ID,"//tei:msItem/string-join(distinct-values(tei:title/@key), "" "")",,,,,
