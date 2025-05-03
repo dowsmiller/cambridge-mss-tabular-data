@@ -35,6 +35,7 @@ global_config = {
         "comma": ", ",          # The string to use if the 'separator' value is 'comma'.
         "semi-colon": "; ",     # The string to use if the 'separator' value is 'semi-colon'.
         "space": " ",           # The string to use if the 'separator' value is 'space'.
+        "empty": "",            # The string to use if the 'separator' value is 'empty'.
         # Add other mappings here as necessary.
     }
 }

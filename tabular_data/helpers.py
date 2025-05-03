@@ -125,8 +125,8 @@ def process_file(
     if file_type == "authority":
         # Extract columns for authority processing
         try:
-            auth_files, xpaths = (
-                config[col].tolist() for col in ["auth_file", "xpath"]
+            auth_files, xpaths, formats = (
+                config[col].tolist() for col in ["auth_file", "xpath", "format"]
             )
         except Exception as e:
             tqdm.write(f"Failed to extract configuration columns for '{config_name}'. Error: {e}")
@@ -167,8 +167,14 @@ def process_file(
                 for i, col_data in batch_result.items():
                     df.iloc[:, i] = col_data
 
-        # Defragment the DataFrame by concatenation
-        df = pd.concat([df], ignore_index=True)
+        # Defragment the DataFrame
+        df = defrag(df)
+
+        # Unlist each column in the DataFrame
+        df = unlist_columns(df)
+
+        # Set data formats
+        df = set_format(df, formats=formats)
 
         # Sort authority data
         df = sort_authority_df(df)
@@ -176,8 +182,8 @@ def process_file(
     elif file_type == "collection":
         # Extract columns for collection processing
         try:
-            xpaths, auth_files, auth_sections, auth_cols, separators = (
-                config[col].tolist() for col in ["xpath", "auth_file", "auth_section", "auth_col", "separator"]
+            xpaths, auth_files, auth_sections, auth_cols, separators, formats = (
+                config[col].tolist() for col in ["xpath", "auth_file", "auth_section", "auth_col", "separator", "format"]
             )
         except Exception as e:
             tqdm.write(f"Failed to extract configuration columns for '{config_name}'. Error: {e}")
@@ -214,8 +220,14 @@ def process_file(
                 for i, col_data in batch_result.items():
                     df.iloc[:, i] = col_data
 
-        # Defragment the DataFrame by concatenation
-        df = pd.concat([df], ignore_index=True)
+        # Defragment the DataFrame
+        df = defrag(df)
+
+        # Unlist each column in the DataFrame
+        df = unlist_columns(df)
+
+        # Set data formats
+        df = set_format(df, formats=formats)
 
         # Sort collection data
         df = sort_collection_df(df)
@@ -425,6 +437,88 @@ def process_lookup_item(data_item, auth_df, col_name, separator):
     # If all strings were empty, deduped will be empty; return a single empty string
     return separator.join(deduped) if deduped else ""
 
+# Helper function to defragment the DataFrame
+def defrag(df):
+    """
+    Defragment the DataFrame columns.
+    Args:
+        df (DataFrame): The DataFrame to defragment.
+    Returns:
+        DataFrame: The defragmented DataFrame.
+    """
+    new_df = df.copy()
+    return new_df
+
+# Helper function to unlist columnd in DataFrame
+def unlist_columns(df):
+    """
+    Unlists each cell in the DataFrame (assuming there is only one value per cell).
+    Args:
+        df (DataFrame): The DataFrame to unlist.
+    Returns:
+        DataFrame: The unlisted DataFrame.
+    """
+    for col in df.columns:
+        try:
+            df[col] = df[col].apply(lambda x: x[0] if isinstance(x, list) and len(x) == 1 else x)
+        except Exception as e:
+            tqdm.write(f"Failed to unlist column '{col}'. Error: {e}")
+    return df
+
+# Helper function to set data formats in DatFrame
+def set_format(df, formats):
+    """
+    Set the format of the DataFrame columns based on the provided formats.
+    Args:
+        df (DataFrame): The DataFrame to format.
+        formats (Series): Series containing the format for each column.
+    Returns:
+        DataFrame: The formatted DataFrame.
+    """
+    for i, col in enumerate(df.columns):
+        if formats[i] == "text":
+            df[col] = df[col].astype(str)
+        elif formats[i] == "number":
+            numeric_series = pd.to_numeric(df[col], errors='coerce')
+            df[col] = df[col].where(numeric_series.isna(), numeric_series)
+        elif formats[i] == "date":
+            new_col = []
+            for val in df[col]:
+                if pd.isna(val):
+                    new_col.append(val)
+                else:
+                    val_str = str(val).strip()
+                    if val_str.isdigit() or (val_str.startswith('-') and val_str[1:].isdigit()):
+                        new_col.append(int(val_str))
+                    else:
+                        try:
+                            dt = pd.to_datetime(val, errors='raise')
+                            if dt.year < 1900:
+                                new_col.append(val)
+                            else:
+                                new_col.append(dt.date())
+                        except (ValueError, TypeError):
+                            new_col.append(val)
+            df[col] = pd.Series(new_col, index=df.index)
+        elif formats[i] == "boolean":
+            new_col = []
+            for val in df[col]:
+                if pd.isna(val):
+                    new_col.append(val)
+                else:
+                    val_str = str(val).strip().lower()
+                    if val_str in ['true', '1', 'yes']:
+                        new_col.append(True)
+                    elif val_str in ['false', '0', 'no']:
+                        new_col.append(False)
+                    else:
+                        new_col.append(val)
+            df[col] = pd.Series(new_col, index=df.index)
+        else:
+            df[col] = df[col].astype(str)
+            tqdm.write(f"Unknown format '{formats[i]}'. Column '{col}' will be formatted as text.")
+    return df
+
 # Helper function to sort authority data
 def sort_authority_df(df):
     """
@@ -460,15 +554,21 @@ def sort_collection_df(df):
     try:
         # If 'metadata: file URL' exists, sort by it first, then by the first column
         if 'metadata: file URL' in df.columns:
-            # Extract and sort by numeric part in the 'file URL'.
-            df['metadata: file URL temp'] = df['metadata: file URL'].str.extract(r'manuscript_(\d+)')[0].astype(float)
+            # Extract and sort by numeric part in the 'file URL'
+            temp_col = df['metadata: file URL'].str.extract(r'manuscript_(\d+)')[0].astype(float)
+            temp_col.name = 'metadata: file URL temp'
+
+            # Concatenate the new column with the DataFrame
+            df = pd.concat([df, temp_col], axis=1)
+
+            # Sort the DataFrame
             first_col = df.columns[0]
             sort_by = ['metadata: file URL temp'] if first_col == 'metadata: file URL' else ['metadata: file URL temp', first_col]
             df.sort_values(by=sort_by, ascending=True, na_position='last', inplace=True)
             df.drop(columns=['metadata: file URL temp'], inplace=True)
         # Otherwise, if 'metadata: collection' exists, sort by it first, then by the first column
         elif 'metadata: collection' in df.columns:
-            # If a 'metadata: collection' column exists, sort by it, then natural sort on the first column.
+            # If a 'metadata: collection' column exists, sort by it, then natural sort on the first column
             first_col = df.columns[0]
             df.sort_values(
                 by=['metadata: collection', first_col],
@@ -479,7 +579,7 @@ def sort_collection_df(df):
             )
         # Otherwise, sort by the first column directly
         else:
-            # Otherwise, use a natural sort on the first column.
+            # Otherwise, use a natural sort on the first column
             first_col = df.columns[0]
             df.sort_values(
                 by=first_col,
@@ -523,7 +623,7 @@ def save_as(df, output_dir, config_name, format):
             df.to_csv(output_file, index=False, encoding='utf-8-sig')
             tqdm.write(f"Saved '{config_name}' to '{output_file}'")
         elif format == "json":
-            df.to_json(output_file, orient='records', lines=True, force_ascii=False)
+            df.to_json(output_file, orient='records', force_ascii=False)
             tqdm.write(f"Saved '{config_name}' to '{output_file}'")
         else:
             tqdm.write(f"Invalid format '{format}'. Supported formats are 'csv' and 'json'.")
