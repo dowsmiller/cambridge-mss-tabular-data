@@ -475,48 +475,51 @@ def set_format(df, formats):
     Returns:
         DataFrame: The formatted DataFrame.
     """
-    for i, col in enumerate(df.columns):
-        if formats[i] == "text":
-            df[col] = df[col].astype(str)
-        elif formats[i] == "number":
-            numeric_series = pd.to_numeric(df[col], errors='coerce')
-            df[col] = df[col].where(numeric_series.isna(), numeric_series)
-        elif formats[i] == "date":
-            new_col = []
-            for val in df[col]:
-                if pd.isna(val):
-                    new_col.append(val)
-                else:
-                    val_str = str(val).strip()
-                    if val_str.isdigit() or (val_str.startswith('-') and val_str[1:].isdigit()):
-                        new_col.append(int(val_str))
-                    else:
-                        try:
-                            dt = pd.to_datetime(val, errors='raise')
-                            if dt.year < 1900:
-                                new_col.append(val)
-                            else:
-                                new_col.append(dt.date())
-                        except (ValueError, TypeError):
-                            new_col.append(val)
-            df[col] = pd.Series(new_col, index=df.index)
-        elif formats[i] == "boolean":
-            new_col = []
-            for val in df[col]:
-                if pd.isna(val):
-                    new_col.append(val)
-                else:
-                    val_str = str(val).strip().lower()
-                    if val_str in ['true', '1', 'yes']:
-                        new_col.append(True)
-                    elif val_str in ['false', '0', 'no']:
-                        new_col.append(False)
-                    else:
+    try:
+        for i, col in enumerate(df.columns):
+            if formats[i] == "text":
+                df[col] = df[col].astype(str)
+            elif formats[i] == "number":
+                numeric_series = pd.to_numeric(df[col], errors='coerce')
+                df[col] = df[col].where(numeric_series.isna(), numeric_series)
+            elif formats[i] == "date":
+                new_col = []
+                for val in df[col]:
+                    if pd.isna(val):
                         new_col.append(val)
-            df[col] = pd.Series(new_col, index=df.index)
-        else:
-            df[col] = df[col].astype(str)
-            tqdm.write(f"Unknown format '{formats[i]}'. Column '{col}' will be formatted as text.")
+                    else:
+                        val_str = str(val).strip()
+                        if val_str.isdigit() or (val_str.startswith('-') and val_str[1:].isdigit()):
+                            new_col.append(int(val_str))
+                        else:
+                            try:
+                                dt = pd.to_datetime(val, errors='raise')
+                                if dt.year < 1900:
+                                    new_col.append(val)
+                                else:
+                                    new_col.append(dt.date())
+                            except (ValueError, TypeError):
+                                new_col.append(val)
+                df[col] = pd.Series(new_col, index=df.index)
+            elif formats[i] == "boolean":
+                new_col = []
+                for val in df[col]:
+                    if pd.isna(val):
+                        new_col.append(val)
+                    else:
+                        val_str = str(val).strip().lower()
+                        if val_str in ['true', '1', 'yes']:
+                            new_col.append(True)
+                        elif val_str in ['false', '0', 'no']:
+                            new_col.append(False)
+                        else:
+                            new_col.append(val)
+                df[col] = pd.Series(new_col, index=df.index)
+            else:
+                df[col] = df[col].astype(str)
+                tqdm.write(f"Unknown format '{formats[i]}'. Column '{col}' will be formatted as text.")
+    except Exception as e:
+        tqdm.write(f"Error occurred while setting formats. Error: {e}")
     return df
 
 # Helper function to sort authority data
