@@ -7,7 +7,7 @@ from pathlib import Path
 from tqdm import tqdm
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from openpyxl.utils import get_column_letter
-from openpyxl.styles import Alignment
+from openpyxl.styles import Alignment, Font, Border, Side, PatternFill
 from openpyxl.comments import Comment
 import elementpath
 
@@ -649,79 +649,109 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
     headings_list = [config_list[config_name]['heading'].to_numpy() for config_name in config_list.keys()]
     comments_list = [config_list[config_name]['comment'].to_numpy() for config_name in config_list.keys()]
     tqdm.write(f"Saving '{output_filename}'...")
+
     try:
         with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
-            # Zip over the sheets' data, section titles, and comments
             for (name, df), sections, headings, comments in zip(df_list.items(), sections_list, headings_list, comments_list):
-                # Convert numpy_bool to bool
                 for col in df.select_dtypes(include="bool"):
                     df[col] = df[col].astype(bool)
-                
-                # Write the DataFrame starting from row 2
-                df.to_excel(writer, sheet_name=name, index=False, startrow=1)
 
-                # Set the values in row 2 to headings
-                for col_idx, value in enumerate(headings, start=1):
-                    writer.sheets[name].cell(row=2, column=col_idx, value=value)
-
-                # Access the workbook and worksheet
+                # Write DataFrame starting from row 3 (leave room for section + heading rows)
+                df.to_excel(writer, sheet_name=name, index=False, startrow=2, header=False)
                 worksheet = writer.sheets[name]
 
-                # Write the section titles into the first row
-                for col_idx, value in enumerate(sections, start=1):
-                    worksheet.cell(row=1, column=col_idx, value=value)
+                # Define styling
+                fill = PatternFill("solid", fgColor="4F81BD")
+                bold_white_font = Font(bold=True, color="FFFFFF")
+                center_align = Alignment(horizontal="center", vertical="center")
+                thin_side = Side(style="thin")
 
-                # Force text type if value starts with '='
+                # === Row 1: Section Titles ===
+                for col_idx, value in enumerate(sections, start=1):
+                    cell = worksheet.cell(row=1, column=col_idx, value=value)
+                    cell.fill = fill
+                    cell.font = bold_white_font
+                    cell.alignment = center_align
+
+                # Merge and center identical adjacent section titles
+                start = 0
+                for i in range(1, len(sections) + 1):
+                    if i == len(sections) or sections[i] != sections[start]:
+                        if i - start > 1:
+                            worksheet.merge_cells(
+                                start_row=1, start_column=start + 1,
+                                end_row=1, end_column=i
+                            )
+                        # Apply style to all cells in merged block
+                        for j in range(start + 1, i + 1):
+                            cell = worksheet.cell(row=1, column=j)
+                            cell.fill = fill
+                            cell.font = bold_white_font
+                            cell.alignment = center_align
+                        start = i
+
+                # === Row 2: Column Headings ===
+                for col_idx, value in enumerate(headings, start=1):
+                    cell = worksheet.cell(row=2, column=col_idx, value=value)
+                    cell.font = Font(bold=True)
+                    cell.alignment = Alignment(horizontal='center')
+
+                # Add comments to headings
+                for col_idx, comment_text in enumerate(comments, start=1):
+                    cell = worksheet.cell(row=2, column=col_idx)
+                    comment = Comment(comment_text, "Generated")
+                    num_lines = (len(str(comment_text)) // 15)
+                    comment.height = 30 + 15 * num_lines
+                    comment.width = 200
+                    cell.comment = comment
+
+                # Force formula-looking strings to text in data cells
                 for row in worksheet.iter_rows(min_row=3, max_row=worksheet.max_row):
                     for cell in row:
                         if isinstance(cell.value, str) and cell.value.startswith('='):
                             cell.value = "'" + cell.value
 
-                # Set each column to the width of the content in the second row, with a minimum value
+                # Set column widths based on heading length
                 for col_idx, cell in enumerate(worksheet[2], start=1):
                     column_letter = get_column_letter(col_idx)
                     if cell.value is not None:
                         cell_length = len(str(cell.value))
-                        if cell_length >= 10:
-                            worksheet.column_dimensions[column_letter].width = cell_length
-                        else:
-                            worksheet.column_dimensions[column_letter].width = 10
+                        worksheet.column_dimensions[column_letter].width = max(cell_length, 10)
                     else:
                         worksheet.column_dimensions[column_letter].width = 10
 
-                # Add comments to each cell of the second row using the relevant value from comments
-                for col_idx, comment_text in enumerate(comments, start=1):
-                    cell = worksheet.cell(row=2, column=col_idx)
-                    comment = Comment(comment_text, "Generated")
-                    # Set comment height, assuming 15 characters per line and 15pt per line
-                    num_lines = (len(str(comment_text)) // 15)
-                    comment.height = 30 + 15 * num_lines
-                    # Set comment width to a default value
-                    comment.width = 200
-                    # Set the comment to the cell
-                    cell.comment = comment
-
-                # Set up a filter for each column, with row 2 given as the header value
+                # Auto filter from heading row
                 last_row = worksheet.max_row
                 last_col_letter = get_column_letter(len(sections))
                 worksheet.auto_filter.ref = f"A2:{last_col_letter}{last_row}"
 
-                # Merge and center identical consecutive section values in the first row
-                merge_and_center_cells(worksheet, sections)
-
-                # Freeze the first two rows
+                # Freeze panes below the headings
                 worksheet.freeze_panes = worksheet['A3']
+
+                # === Vertical borders between section blocks (full height) ===
+                last_section = sections[0]
+                max_row = worksheet.max_row
+                for col_idx in range(2, len(sections) + 1):
+                    if sections[col_idx - 1] != last_section:
+                        for row_idx in range(1, max_row + 1):
+                            cell = worksheet.cell(row=row_idx, column=col_idx)
+                            cell.border = Border(
+                                left=thin_side,
+                                right=cell.border.right,
+                                top=cell.border.top,
+                                bottom=cell.border.bottom
+                            )
+                        last_section = sections[col_idx - 1]
 
         tqdm.write(f"Saved data to '{output_filename}'")
 
     except Exception as e:
         tqdm.write(f"Saving data to '{output_filename}' failed. Error: {e}")
 
-# Helper function to merge and center identical consecutive section values in the first row of an xlsx file
+
 def merge_and_center_cells(worksheet, sections):
     """
     Merges and centers identical consecutive section values in the first row of the worksheet.
-
     Args:
         worksheet: The worksheet object where merging is applied.
         sections: A list of section titles corresponding to the columns.
@@ -734,8 +764,10 @@ def merge_and_center_cells(worksheet, sections):
                     start_row=1, start_column=start_col,
                     end_row=1, end_column=col_idx
                 )
-                merged_cell = worksheet.cell(row=1, column=start_col)
-                merged_cell.alignment = Alignment(horizontal='center', vertical='center')
-            else:
-                worksheet.cell(row=1, column=start_col).alignment = Alignment(horizontal='center', vertical='center')
+            # Apply formatting to all cells in merged range
+            for i in range(start_col, col_idx + 1):
+                cell = worksheet.cell(row=1, column=i)
+                cell.alignment = Alignment(horizontal='center', vertical='center')
+                cell.font = Font(bold=True, color='FFFFFF')
+                cell.fill = PatternFill('solid', fgColor='4F81BD')
             start_col = col_idx + 1
