@@ -1,15 +1,17 @@
 import os
 import re
 import math
+import elementpath
 import pandas as pd
 import xml.etree.ElementTree as ET
+from collections import defaultdict
+from itertools import chain
 from pathlib import Path
 from tqdm import tqdm
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Alignment, Font, Border, Side, PatternFill
 from openpyxl.comments import Comment
-import elementpath
 
 # Function to import xml files and their config files
 def import_files(xml_path, config_path, xml_recursive=False, config_recursive=False):
@@ -42,10 +44,23 @@ def import_files(xml_path, config_path, xml_recursive=False, config_recursive=Fa
             tqdm.write(f"Failed to parse config file {file}. Error: {e}")
 
     # Create an empty DataFrame for each configuration file
-    df_list = {
-        name: pd.DataFrame(columns=config['section'] + ": " + config['heading'])
-        for name, config in config_list.items()
-    }
+    df_list = {}
+
+    for name, config in config_list.items():
+        columns = []
+        seen = defaultdict(int)
+        
+        for col in zip(config['section'], config['heading']):
+            base_name = f"{col[0]}: {col[1]}"
+            if seen[base_name] > 0:
+                new_name = f"{base_name}_{seen[base_name]}"
+                tqdm.write(f"Warning: Duplicate column name '{base_name}' detected. Renaming to '{new_name}'.")
+            else:
+                new_name = base_name
+            columns.append(new_name)
+            seen[base_name] += 1
+        
+        df_list[name] = pd.DataFrame(columns=columns)
 
     return xml_data, config_list, df_list
 
@@ -133,7 +148,8 @@ def process_file(
             return config_name, df
 
         # Count cores
-        num_workers = os.cpu_count() - cores_spare or 1
+        num_workers = (os.cpu_count() or 1) - cores_spare
+        num_workers = max(num_workers, 1)
 
         # Prepare arguments
         all_args = [
@@ -142,7 +158,7 @@ def process_file(
             in enumerate(zip(xpaths, auth_files))
         ]
 
-        # Split into batches
+        max_batches = min(len(all_args), num_workers)
         max_batches = num_workers + 1
         batch_size = max(1, math.ceil(len(all_args) / max_batches))
 
@@ -154,7 +170,7 @@ def process_file(
         # Dispatch batches in parallel
         with ProcessPoolExecutor(max_workers=num_workers) as executor:
             futures = [
-                executor.submit(process_authority_batch, batch, xml_data)
+                executor.submit(process_batch, batch=batch, file_type=file_type, xml_data=xml_data)
                 for batch in batches
             ]
             for future in tqdm(
@@ -163,21 +179,12 @@ def process_file(
                 desc=f"File '{config_name}'",
                 position=bar_pos
             ):
-                batch_result = future.result()
-                for i, col_data in batch_result.items():
-                    df.iloc[:, i] = col_data
-
-        # Defragment the DataFrame
-        df = defrag(df)
-
-        # Unlist each column in the DataFrame
-        df = unlist_columns(df)
-
-        # Set data formats
-        df = set_format(df, formats=formats)
-
-        # Sort authority data
-        df = sort_authority_df(df)
+                try:
+                    batch_result = future.result()
+                    for i, col_data in batch_result.items():
+                        df.iloc[:, i] = col_data
+                except Exception as e:
+                    tqdm.write(f"Error processing batch for '{config_name}'. Error: {e}")
 
     elif file_type == "collection":
         # Extract columns for collection processing
@@ -190,7 +197,7 @@ def process_file(
             return config_name, df
 
         # Count cores
-        num_workers = os.cpu_count() - cores_spare or 1
+        num_workers = max(1, (os.cpu_count() or 1) - cores_spare)
 
         # Prepare arguments
         all_args = [
@@ -211,7 +218,7 @@ def process_file(
         # Dispatch batches in parallel
         with ProcessPoolExecutor(max_workers=num_workers) as executor:
             futures = [
-                executor.submit(process_collection_batch, batch, xml_data, lookup_df_list, separator_map)
+                executor.submit(process_batch, batch=batch, file_type=file_type, xml_data=xml_data, lookup_df_list=lookup_df_list, separator_map=separator_map)
                 for batch in batches
             ]
             for future in tqdm(as_completed(futures), total=len(futures),
@@ -220,20 +227,20 @@ def process_file(
                 for i, col_data in batch_result.items():
                     df.iloc[:, i] = col_data
 
-        # Defragment the DataFrame
-        df = defrag(df)
-
-        # Unlist each column in the DataFrame
-        df = unlist_columns(df)
-
-        # Set data formats
-        df = set_format(df, formats=formats)
-
-        # Sort collection data
-        df = sort_collection_df(df)
-
     else:
-        raise ValueError(f"Unsupported file_type: {file_type}")
+        raise ValueError(f"Unsupported file_type: '{file_type}'. Valid options are 'authority' or 'collection'.")
+    
+    # Defragment the DataFrame
+    df = defrag(df)
+
+    # Unlist each column in the DataFrame
+    df = unlist_columns(df)
+
+    # Set data formats
+    df = set_format(df, formats=formats)
+
+    # Sort authority data
+    df = sort_df(df=df, file_type=file_type)
 
     # Save the processed DataFrame to CSV and JSON files
     save_as(df, csv_output_dir, config_name, format="csv")
@@ -242,128 +249,138 @@ def process_file(
     # Return the outputs
     return config_name, df
 
-# Helper function to process batches of collection columns
-def process_authority_batch(batch, xml_data):
+# Helper function to process batches of columns
+def process_batch(
+    batch,
+    file_type,
+    xml_data,
+    lookup_df_list=None,
+    separator_map=None
+):
     """
-    Processes a batch of authority columns by extracting data using XPath.
+    Processes a batch of columns for either authority or collection files.
     Args:
-        batch (list): List of tuples containing index, XPath, and authority file name.
-        xml_data (dict): Dictionary of authority XML files.
+        batch (list): List of tuples containing column processing arguments.
+        file_type (str): Either 'authority' or 'collection'.
+        xml_data (dict): Dictionary of XML files.
+        lookup_df_list (dict, optional): Dictionary of DataFrames for authority files (for collection).
+        separator_map (dict, optional): Dictionary of separators for authority lookups (for collection).
     Returns:
         dict: Dictionary of processed results.
     """
     out = {}
-    for i, xpath, auth_file in batch:
-        _, col_data = process_authority_column(
-            i,
-            xpath,
-            auth_file,
-            xml_data
-        )
+    for args in batch:
+        # Unpack args according to file_type
+        if file_type == "authority":
+            i, xpath, auth_file = args
+            i, col_data = process_column(
+                i,
+                xpath,
+                auth_file,
+                xml_data,
+                file_type=file_type,
+                lookup_df_list=lookup_df_list,
+                separator_map=separator_map
+            )
+        elif file_type == "collection":
+            i, xpath, auth_file, auth_section, auth_col, separator = args
+            i, col_data = process_column(
+                i,
+                xpath,
+                auth_file,
+                xml_data,
+                lookup_df_list=lookup_df_list,
+                auth_section=auth_section,
+                auth_col=auth_col,
+                separator=separator,
+                separator_map=separator_map,
+                file_type=file_type
+            )
+        else:
+            raise ValueError(f"Unsupported file_type: {file_type}. Valid options are 'authority' or 'collection'.")
         out[i] = col_data
     return out
 
-# Helper function to process authority columns
-def process_authority_column(i, xpath, auth_file, authority):
+# Helper function to process a single column
+def process_column(
+    i,
+    xpath,
+    auth_file,
+    xml_data,
+    lookup_df_list=None,
+    auth_section=None,
+    auth_col=None,
+    separator=None,
+    separator_map=None,
+    file_type=None
+):
     """
-    Processes a single column for the authority DataFrame.
+    Processes a single column for either authority or collection DataFrame.
     Args:
         i (int): The index of the column.
         xpath (str): The XPath expression to extract data.
         auth_file (str): The authority file name.
-        authority (dict): Dictionary of authority XML files.
-    Returns:
-        tuple: The index and the extracted results.
-    Outputs:
-        csv: The extracted data is saved to a CSV file.
-        json: The extracted data is saved to a JSON file.
-    """
-    auth_xml = authority.get(auth_file)
-    results = extract_with_xpath(auth_xml, xpath)
-
-    # Flatten the results and ensure no nested lists remain
-    results = [item for sublist in results for item in (sublist if isinstance(sublist, list) else [sublist])]
-    results = [item for item in results if not isinstance(item, list)]
-    return i, results
-
-# Helper function to process batches of collection columns
-def process_collection_batch(batch, xml_data, lookup_df_list, separator_map):
-    """
-    Processes a batch of collection columns by extracting data using XPath and looking up values in an authority file.
-    Args:
-        batch (list): List of tuples containing index, XPath, authority file name, section, column, and separator.
-        xml_data (dict): Dictionary of collection XML files.
-        lookup_df_list (dict): Dictionary of DataFrames for authority files.
-        separator_map (dict): Dictionary of separators for authority lookups.
-    Returns:
-        dict: Dictionary of processed results.
-    """
-    out = {}
-    for i, xpath, auth_file, auth_section, auth_col, separator in batch:
-        _, col_data = process_collection_column(
-            i,
-            xpath,
-            auth_file,
-            xml_data,
-            lookup_df_list,
-            auth_section,
-            auth_col,
-            separator,
-            separator_map
-        )
-        out[i] = col_data
-    return out
-
-# Helper function to process collection columns
-def process_collection_column(i, xpath, auth_file, catalogue, auth_df_list, auth_section, auth_col, separator, separator_map):
-    """
-    Processes a collection column by extracting data using XPath and looking up values in an authority file.
-    Args:
-        i (int): The index of the column.
-        xpath (str): The XPath expression to extract data.
-        auth_file (str): The authority file name.
-        catalogue (dict): Dictionary of collection XML files.
-        auth_df_list (dict): Dictionary of DataFrames for authority files.
-        auth_section (str): The section name in the authority file.
-        auth_col (str): The column name in the authority file.
-        separator (str): The separator for joining values.
-        separator_map (dict): Dictionary of separators for authority lookups.
+        xml_data (dict): Dictionary of XML files.
+        lookup_df_list (dict, optional): Dictionary of DataFrames for authority files (for collection).
+        auth_section (str, optional): The section name in the authority file (for collection).
+        auth_col (str, optional): The column name in the authority file (for collection).
+        separator (str, optional): The separator for joining values (for collection).
+        separator_map (dict, optional): Dictionary of separators for authority lookups (for collection).
+        file_type (str): Either 'authority' or 'collection'.
     Returns:
         tuple: The index and the processed results.
     """
-    # Set up list
-    results = []
+    if file_type == "authority":
+        auth_xml = xml_data.get(auth_file)
+        results = extract_with_xpath(auth_xml, xpath)
+        # Flatten the results and ensure no nested lists remain
+        results = list(chain.from_iterable(sublist if isinstance(sublist, list) else [sublist] for sublist in results))
 
-    # If auth_file is not in auth_df_list keys, extract the data and append directly
-    if auth_file is None or auth_file.lower().strip() not in auth_df_list.keys():
-        for filename, xml in catalogue.items():
-            results.append(extract_with_xpath(xml, xpath))
+        if not auth_file or (lookup_df_list is not None and auth_file.lower().strip() not in lookup_df_list):
+            results = [item for item in results if not isinstance(item, list)]
+        return i, results
 
-    # Else extract the data and lookup in the authority DataFrame
+    elif file_type == "collection":
+        results = []
+        if not auth_file or (lookup_df_list is not None and auth_file.lower().strip() not in lookup_df_list):
+            pass
+        # If auth_file is not in lookup_df_list keys, extract the data and append directly
+        if not auth_file or auth_file.lower().strip() not in (lookup_df_list or {}):
+            for filename, xml in xml_data.items():
+                results.append(extract_with_xpath(xml, xpath))
+        else:
+            # Set up auth lookup DataFrame
+            auth_df = None
+            if lookup_df_list is not None:
+                auth_df = lookup_df_list.get(auth_file.lower().strip())
+            # Set the separator
+            s = get_separator(separator, separator_map)
+            # Set the column name, handling None values
+            section_str = auth_section if auth_section is not None else ""
+            col_str = auth_col if auth_col is not None else ""
+            col_name = section_str + ": " + col_str
+            # Lookup the value in the authority file
+            for filename, xml in xml_data.items():
+                # Extract data items using XPath
+                extracted_data = extract_with_xpath(xml, xpath)
+                
+                # Process each data item using the lookup function
+                lookup_data = []
+                for data_item in extracted_data:
+                    processed_item = process_lookup_item(data_item, auth_df, col_name, s)
+                    # Flatten and validate processed_item before appending
+                    if isinstance(processed_item, list):
+                        lookup_data.extend(processed_item)
+                    else:
+                        lookup_data.append(processed_item)
+                results.append(lookup_data)
+
+        # Flatten the results and ensure no nested lists remain
+        results = [item for sublist in results for item in (sublist if isinstance(sublist, list) else [sublist])]
+        return i, results
+
     else:
-        # Set up auth lookup DataFrame
-        auth_df = auth_df_list.get(auth_file.lower().strip())
-
-        # Set the separator
-        s = get_separator(separator, separator_map)
-
-        # Set the column name
-        col_name = auth_section + ": " + auth_col
-
-        # Lookup the value in the authority file
-        for filename, xml in catalogue.items():
-            # Build the lookup_data list using the helper function for each data_item
-            lookup_data = [
-                process_lookup_item(data_item, auth_df, col_name, s)
-                for data_item in extract_with_xpath(xml, xpath)
-            ]
-
-            results.append(lookup_data)
-
-    # Flatten the results and ensure no nested lists remain
-    results = [item for sublist in results for item in (sublist if isinstance(sublist, list) else [sublist])]
-    results = [item for item in results if not isinstance(item, list)]
-    return i, results
+        raise ValueError(f"Unsupported file_type: {file_type}. Valid options are 'authority' or 'collection'.")
 
 # Helper function to apply XPath 2.0 queries to an XML element in the TEI namespace
 def extract_with_xpath(xml_element, xpath_expr):
@@ -419,13 +436,16 @@ def process_lookup_item(data_item, auth_df, col_name, separator):
     pieces = []
     # Split the data_item on spaces
     for identifier in data_item.split(" "):
-        # Filter the DataFrame rows where the first column equals the identifier
-        filtered = auth_df[auth_df.iloc[:, 0] == identifier]
-        if not filtered.empty:
-            # Get the value from the specified column
-            value = filtered[col_name].iloc[0]
-            # If the value is a boolean, convert its string form to lowercase
-            piece = str(value).lower() if isinstance(value, bool) else str(value)
+        if auth_df is not None:
+            # Filter the DataFrame rows where the first column equals the identifier
+            filtered = auth_df[auth_df.iloc[:, 0] == identifier]
+            if not filtered.empty:
+                # Get the value from the specified column
+                value = filtered[col_name].iloc[0]
+                # If the value is a boolean, convert its string form to lowercase
+                piece = str(value).lower() if isinstance(value, bool) else str(value)
+            else:
+                piece = ""
         else:
             piece = ""
         # Add only non-empty strings
@@ -522,75 +542,55 @@ def set_format(df, formats):
         tqdm.write(f"Error occurred while setting formats. Error: {e}")
     return df
 
-# Helper function to sort authority data
-def sort_authority_df(df):
+# Helper function to sort data frames
+def sort_df(df, file_type):
     """
-    Sorts the authority DataFrame based on the first column.
+    Sorts the DataFrame based on file_type ('authority' or 'collection').
     Args:
         df (DataFrame): The DataFrame to sort.
+        file_type (str): Either 'authority' or 'collection'.
     Returns:
         DataFrame: The sorted DataFrame.
     """
     try:
-        # If the first column contains numbers after "_", sort by that number
-        if df.iloc[:, 0].str.contains(r'_\d+', na=False).any():
-            df['temp'] = df.iloc[:, 0].str.extract(r'_(\d+)', expand=False).astype(float)
-            df = df.sort_values(by='temp', ascending=True, na_position='last').reset_index(drop=True)
-            df.drop(columns='temp', inplace=True)
-        # Otherwise, sort by the first column directly
+        if file_type == "authority":
+            # If the first column contains numbers after "_", sort by that number
+            if df.iloc[:, 0].str.contains(r'_\d+', na=False).any():
+                df['temp'] = df.iloc[:, 0].str.extract(r'_(\d+)', expand=False).astype(float)
+                df = df.sort_values(by='temp', ascending=True, na_position='last').reset_index(drop=True)
+                df.drop(columns='temp', inplace=True)
+            else:
+                df = df.sort_values(by=df.columns[0], ascending=True, na_position='last').reset_index(drop=True)
+        elif file_type == "collection":
+            # If 'metadata: file URL' exists, sort by it first, then by the first column
+            if 'metadata: file URL' in df.columns:
+                temp_col = df['metadata: file URL'].str.extract(r'manuscript_(\d+)')[0].astype(float)
+                temp_col.name = 'metadata: file URL temp'
+                df = pd.concat([df, temp_col], axis=1)
+                first_col = df.columns[0]
+                sort_by = ['metadata: file URL temp'] if first_col == 'metadata: file URL' else ['metadata: file URL temp', first_col]
+                df.sort_values(by=sort_by, ascending=True, na_position='last', inplace=True)
+                df.drop(columns=['metadata: file URL temp'], inplace=True)
+            elif 'metadata: collection' in df.columns:
+                first_col = df.columns[0]
+                df.sort_values(
+                    by=['metadata: collection', first_col],
+                    key=lambda col: col.map(natural_keys),
+                    ascending=True,
+                    na_position='last',
+                    inplace=True
+                )
+            else:
+                first_col = df.columns[0]
+                df.sort_values(
+                    by=first_col,
+                    key=lambda col: col.map(natural_keys),
+                    ascending=True,
+                    na_position='last',
+                    inplace=True
+                )
         else:
-            df = df.sort_values(by=df.columns[0], ascending=True, na_position='last').reset_index(drop=True)
-        return df
-    except Exception as e:
-        tqdm.write(f"Sorting DataFrame failed. Error: {e}")
-        return df
-
-# Helper function to sort collection data
-def sort_collection_df(df):
-    """
-    Sorts the collection DataFrame based on the first column or 'file URL'.
-    Args:
-        df (DataFrame): The DataFrame to sort.
-    Returns:
-        DataFrame: The sorted DataFrame.
-    """
-    try:
-        # If 'metadata: file URL' exists, sort by it first, then by the first column
-        if 'metadata: file URL' in df.columns:
-            # Extract and sort by numeric part in the 'file URL'
-            temp_col = df['metadata: file URL'].str.extract(r'manuscript_(\d+)')[0].astype(float)
-            temp_col.name = 'metadata: file URL temp'
-
-            # Concatenate the new column with the DataFrame
-            df = pd.concat([df, temp_col], axis=1)
-
-            # Sort the DataFrame
-            first_col = df.columns[0]
-            sort_by = ['metadata: file URL temp'] if first_col == 'metadata: file URL' else ['metadata: file URL temp', first_col]
-            df.sort_values(by=sort_by, ascending=True, na_position='last', inplace=True)
-            df.drop(columns=['metadata: file URL temp'], inplace=True)
-        # Otherwise, if 'metadata: collection' exists, sort by it first, then by the first column
-        elif 'metadata: collection' in df.columns:
-            # If a 'metadata: collection' column exists, sort by it, then natural sort on the first column
-            first_col = df.columns[0]
-            df.sort_values(
-                by=['metadata: collection', first_col],
-                key=lambda col: col.map(natural_keys),
-                ascending=True,
-                na_position='last',
-                inplace=True
-            )
-        # Otherwise, sort by the first column directly
-        else:
-            # Otherwise, use a natural sort on the first column
-            first_col = df.columns[0]
-            df.sort_values(
-                by=first_col,
-                key=lambda col: col.map(natural_keys),
-                ascending=True,
-                na_position='last',
-                inplace=True
-            )
+            tqdm.write(f"Unknown file_type '{file_type}' for sorting. Returning unsorted DataFrame.")
         return df
     except Exception as e:
         tqdm.write(f"Sorting DataFrame failed. Error: {e}")
@@ -621,6 +621,11 @@ def save_as(df, output_dir, config_name, format):
     os.makedirs(output_dir, exist_ok=True)
     output_filename = f"{config_name}.{format}"
     output_file = os.path.join(output_dir, output_filename)
+
+    if df.empty:
+        tqdm.write(f"Skipping saving '{config_name}' as the DataFrame is empty.")
+        return
+
     try:
         if format == "csv":
             df.to_csv(output_file, index=False, encoding='utf-8-sig')
@@ -747,7 +752,6 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
 
     except Exception as e:
         tqdm.write(f"Saving data to '{output_filename}' failed. Error: {e}")
-
 
 def merge_and_center_cells(worksheet, sections):
     """
