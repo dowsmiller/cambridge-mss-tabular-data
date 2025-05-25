@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, University Library, MS Ff.1.25(5)</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+                <availability default="false" status="restricted" xml:id="displayImageRights">
+                    <p part="N">Zooming image © Cambridge University Library, All rights reserved.</p>
+                </availability>
+                <availability default="false" status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability default="false" status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-FF-00001-00025-00005" xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+                    <msIdentifier>
+                        <institution>University of Cambridge</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Medieval Manuscripts</collection>
+                        <idno>Cambridge, University Library, MS Ff.1.25(5)</idno>
+                    </msIdentifier>
+
+                    <head>Geoffrey of Monmouth, Historia regum Britanniae</head>
+
+                    <msContents>
+
+                        <summary>
+                            <seg type="para">This manuscript contains an incomplete, 14th-century copy of Geoffrey of Monmouth's <hi rend="italic">Historia regum Britanniae</hi>. This enormously popular pseudo-historical work, written in 1136, chronicles the
+                                kings of the Britons from the foundation of the kingdom of Britain by the Trojan Brutus to the arrival of the
+                                Anglo-Saxons, including the deeds of King Arthur and the prophecies of Merlin. It survives in 215 manuscripts and was
+                                enormously influential on later Arthurian literature. </seg>
+                            <seg type="para">The manuscript shown here was once in the possession of Matthew Parker (1504-1575), archbishop of
+                                Canterbury. Parker was not only a collector of manuscripts: he also used them, annotating and cross-referencing,
+                                rebinding and rearranging the books that he owned. Before donating this manuscript to Cambridge University Library in
+                                1574 (along with 24 others), he augmented it by commissioning a copy of the remaining text of the <hi rend="italic">Historia regum Britanniae</hi> that was missing from the 14th-century manuscript in his possession. </seg>
+                            <seg type="para">The description of the manuscript in the <ref target="https://www.lib.cam.ac.uk/collections/departments/manuscripts-university-archives/subject-guides/medieval-manuscripts/early">list of Parker's donations</ref> confirms that these additions were at that time bound together in a single
+                                volume. They remained in this state until 1862, whereupon they were divided into five separate volumes, all of which
+                                are now available to view on the Cambridge Digital Library: <list>
+                                    <item><ref target="https://cudl.lib.cam.ac.uk/view/MS-FF-00001-00025-00001/1">MS Ff.1.25(1)</ref>: William of
+                                        Malmesbury, <hi rend="italic">Gesta pontificum Anglorum (Books 1-4)</hi></item>
+                                    <item><ref target="https://cudl.lib.cam.ac.uk/view/MS-FF-00001-00025-00002/1">MS Ff.1.25(2)</ref>: William of
+                                        Malmesbury, <hi rend="italic">Gesta pontificum Anglorum (Book 5)</hi></item>
+                                    <item><ref target="https://cudl.lib.cam.ac.uk/view/MS-FF-00001-00025-00003/1">MS Ff.1.25(3)</ref>: William of
+                                        Malmesbury, <hi rend="italic">Historia novella</hi></item>
+                                    <item><ref target="https://cudl.lib.cam.ac.uk/view/MS-FF-00001-00025-00004/1">MS Ff.1.25(4)</ref>: compilation of
+                                        crusade texts</item>
+                                </list>
+                            </seg>
+                            <seg type="para">Dr Suzanne Paul<lb/>Keeper of Rare Books and Early Manuscripts<lb/>Cambridge University Library</seg>
+                        </summary>
+
+                    </msContents>
+
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="perg">
+                                <support>
+                                    <material>Parchment</material>
+                                </support>
+                                <extent>
+                                    <seg type="object">Codex: </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="9" type="laterEndleaf">ix</measure> + <measure quantity="1" type="laterEndleaf">i</measure>
+                                        + <measure quantity="35" type="leaf">35</measure> + <measure quantity="4" type="leaf">4</measure> + <measure quantity="2" type="laterEndleaf">ii</measure> + <measure quantity="9" type="laterEndleaf">ix</measure>
+                                        leaves. </seg>
+                                    <note>The nine modern paper endleaves at the front and rear have not been photographed. </note>
+                                    <seg type="dimensions"><dimensions type="leaf" unit="mm">
+                                            <height quantity="270">270</height>
+                                            <width quantity="190">190</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+
+                                <foliation notAfter="1886" notBefore="1856">
+                                    <p>19th-century foliation</p>
+                                    <p>[a-i] + 9 + 10-44 + 45-48 + 49-50 + [k-s]</p>
+                                    <note>Written in pencil in the upper right-hand corner of the recto side of each leaf, probably by <name key="person_v37074791"><persName type="display">Henry Bradshaw</persName><persName type="standard">Bradshaw, Henry, 1831-1886</persName></name>, University Librarian 1867-1886. </note>
+                                    <note>The sequence reflects the correct order of the text, leaves in Quires 1 and 2 having been misbound. </note>
+                                    <note>Folio numbers 1-9 have been assigned to leaves no longer present in the volume (as per historic foliation
+                                        practice at Cambridge University Library). The foliator has numbered the first early modern endleaf as 9 and,
+                                        in keeping with other 16th-century additions, has suffixed the folio number with an asterisk. Since these run
+                                        in a continuous sequence with the foliation for the medieval leaves (rather than indicating a separate
+                                        sequence that repeats the same numbers), for the purposes of display here these asterisks have been omitted
+                                        from the foliation. </note>
+                                </foliation>
+
+                                <foliation notAfter="1600" notBefore="1500">
+                                    <p>16th-century pagination</p>
+                                    <p>377-459 (for ff. <locus from="9r" to="48r">9r-48r</locus>)</p>
+                                    <note>Page numbers written in Parkerian red/orange crayon in the upper right-hand corner of the recto side of each
+                                        leaf only (see Provenance for further details). </note>
+                                </foliation>
+
+                                <collation>
+                                    <formula>1<hi rend="superscript">12-9</hi> (1st-9th missing) 2-3<hi rend="superscript">12</hi> 4<hi rend="superscript">10-2</hi> (9th-10th missing) 5<hi rend="superscript">4</hi>
+                                    </formula>
+                                </collation>
+                            </supportDesc>
+                        </objectDesc>
+
+                        <additions>
+                            <note><p>On f. <locus from="9v" to="9v">9v</locus>, notes concerning Pontus Virunnius' epitome, the <hi rend="italic">Historia</hi> and Geoffrey of Monmouth, by Parkerian scribes and later hands. </p></note>
+                            <note><p>Quire numbers added to lower right-hand corner of the first recto of each quire, and '+' sign added to the lower
+                                    right-hand corner of the first recto in the second half of each quire. Written in pencil by a modern hand,
+                                    probably Henry Bradshaw. </p></note></additions>
+
+                        <bindingDesc>
+                            <binding when="1862">
+                                <p>Bound in brown calfskin over pasteboards with blind stamped and rolled decoration, by <name key="org_v" role="bnd"><orgName type="display">Wiseman</orgName><orgName type="standard">Wiseman</orgName></name>, 1862. </p>
+                            </binding>
+
+                            <binding notAfter="1862" notBefore="1574">
+                                <p>Evidence preserved within the manuscript (recycled endleaf bearing four friction-holes and rust stains, suggesting
+                                    the presence formerly of four corner-bosses and a chain staple) indicates that the manuscript was previously bound
+                                    in similar style to that of the binding on other manuscripts donated to the University Library by Matthew Parker
+                                    (for an example, see: <ref target="https://cudl.lib.cam.ac.uk/view/MS-II-00002-00004/1">MS Ii.2.4</ref>). See
+                                    Provenance and Acquisition for further details. </p>
+                                <p>Thomas James's catalogue, <hi rend="italic">Ecloga Oxonio-Cantabrigiensis</hi> (1600) allocates two numbers to MS
+                                    Ff.1.25: <list>
+                                        <item>244: 1. Gu. Malmesbury de pontificum gestis, lib. 59, vltimus liber scriptus est a neoterico ... 2.
+                                            Nouella historia Anglorum ...</item>
+                                        <item>245: 1. Liber cum hac inscriptione. Itinerarium peregrinantium in terram sanctam ... 2. Galfridu
+                                            Monumetensis ... </item>
+                                    </list></p>
+                                <p>This implies that the manuscript was bound in two volumes at this time. However, in the list of manuscripts donated
+                                    by Parker to the University Library in 1574, the manuscript is described as containing 460 pages. Such statements
+                                    of extent were given for each of Parker's donations and were also written onto one of the opening leaves of the
+                                    manuscripts themselves (see here, f. <locus from="3r" to="3r">3r</locus>). None of the other manuscripts within
+                                    the Ff.1.25 classmark contain such an inscription, and the total number of pages amounts to 460, by the Parkerian
+                                    pagination (see Foliation for further details). </p>
+                                <p>Furthermore, as described above, Parker's donations were (with the odd exception) bound in a consistent format, and
+                                    where the manuscripts have been rebound since that time this evidence is often preserved within the new binding.
+                                    In MS Ff.1.25(1), only the recycled endleaves at the front of the volume have been preserved. Only Ff.1.25(5)
+                                    contains similar endleaves, and only at the rear; they are found in none of the other volumes. The material
+                                    evidence thus points to the manuscripts that are now Ff.1.25(1)-(5) having arrived bound as a single volume.
+                                    Furthermore, each of these volumes bear evidence of having had the author(s) and title(s) of their contents inked
+                                    onto the fore-edges of their leaves, presumably by <name key="person_v66476673">
+                                        <persName type="standard">Wheelocke, Abraham, 1593-1653</persName>
+                                        <persName type="display">Abraham Wheelocke</persName>
+                                    </name>, who treated other manuscripts in a similar manner (see, for example, <ref target="https://cudl.lib.cam.ac.uk/view/MS-FF-00001-00028/544">MS Ff.1.28</ref>. This indicates moreover that
+                                    the manuscript remained as a single volume in the mid-17th century. </p>
+                                <p>In his <hi rend="italic">History</hi> of the University Library, David McKitterick recounts that the part of this
+                                    manuscript containing the <hi rend="italic">Historia regum Britanniae</hi> (now MS Ff.1.25(5)) was discovered to
+                                    be missing when the manuscripts in the Old Library were inspected in 1732 and again in 1748: the number '245'
+                                    assigned by James in 1600 is in both lists, in the first with the partial title 'Galfrid: monumethensis etc' (see
+                                        <bibl subtype="internal" type="MS"><ref target="">Cambridge, University Library, MS Add. 4451</ref></bibl>,
+                                    ff. 18r and 19r). The implication is that by this stage Ff.1.25 had been rebound into two volumes. However, a more
+                                    probable explanation is that James's assigning of two numbers to the manuscript misled the compilers of these
+                                    lists of missing books, who were searching fruitlessly for Geoffrey of Monmouth and other texts bound into a
+                                    discrete volume, when in fact they remained in place in the same volume as what James has designated '244'.
+                                    Indeed, that no mention is made in the <hi rend="italic">Catalogue of manuscripts preserved in the Library of the
+                                        University of Cambridge</hi>, vol. 2 (1857) means that it is almost certain that it was not divided into
+                                    separate volumes until 1862. </p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+
+                    <history>
+                        <acquisition notAfter="1574" notBefore="1574">Presented to the University Library in 1574 by <name key="person_v88874512" role="fmo">
+                                <persName type="display">Matthew Parker (1504-1575)</persName>
+                                <persName type="standard">Parker, Matthew, 1504-1575</persName>
+                            </name>. No. 22 in the list of 25 'Libri Scripti in pergameno' published to commemorate Parker's gift (see <ref target="https://www.lib.cam.ac.uk/collections/departments/manuscripts-university-archives/subject-guides/medieval-manuscripts/early">Early catalogues of manuscripts, up to c. 1600</ref>).</acquisition>
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source>This catalogue entry draws on an unpublished description of the manuscript composed between 1926 and 1930 by
+                                        <name key="person_v88882890"><persName type="display">M.R. James</persName>
+                                        <persName type="standard">James, M.R. (Montague Rhodes), 1862-1936</persName></name>, now held in the
+                                    University Archives (<ref target="https://archivesearch.lib.cam.ac.uk/repositories/2/archival_objects/53125">UA
+                                        ULIB 7/3/74</ref>), and an unpublished description of the manuscript composed between 1948 and 1970 by <name key="person_v29141885"><persName type="display">H.L. Pink</persName>
+                                        <persName type="standard">Pink, H. L.</persName></name>, now held in the University Archives (<ref target="https://archivesearch.lib.cam.ac.uk/repositories/2/archival_objects/821022">UA ULIB 7/3/75</ref>). The
+                                    assistance of Dr Elisabeth Leedham-Green, formerly University Archivist, is also acknowledged.</source>
+                            </recordHist>
+
+                            <availability>
+                                <p>Entry to read in the Library is permitted only on presentation of a valid reader's card. For information on
+                                    eligibility and admissions procedures, see <ref target="https://www.lib.cam.ac.uk/using-library/joining-library">Joining the Library</ref>). For further information on the availability of the manuscript, please contact the
+                                        <ref target="mss@lib.cam.ac.uk">Manuscripts Reading Room</ref>.</p>
+                            </availability>
+                        </adminInfo>
+
+                        <listBibl xmlns="http://www.tei-c.org/ns/1.0">
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/IX53P8KI" type="book" xml:id="zoteroItem_IX53P8KI">
+                                <monogr>
+                                    <title level="m">A catalogue of the manuscripts preserved in the library of the University of Cambridge</title>
+                                    <extent>6</extent>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">2: Ee-Ff</biblScope>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1857</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 315-18. </note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/VPHHJHJF" type="book" xml:id="Hammer1951">
+                                <monogr>
+                                    <title level="m">Geoffrey of Monmouth, &lt;hi rend="italics"&gt;Historia regum Britanniae&lt;/hi&gt;: a variant
+                                        version edited from manuscripts</title>
+                                    <editor>
+                                        <forename>Jacob</forename>
+                                        <surname>Hammer</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Cambridge, Mass</pubPlace>
+                                        <publisher>Mediaeval Academy of America</publisher>
+                                        <date>1951</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Publication / The Mediaeval Academy of America</title>
+                                    <biblScope unit="volume">57</biblScope>
+                                </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/WSKD5QBQ" type="journalArticle" xml:id="Emanuel1966">
+                                <analytic>
+                                    <title level="a">Geoffrey of Monmouth's &lt;hi rend="italics"&gt;Historia Regum Britannie&lt;/hi&gt;: A second
+                                        variant version</title>
+                                    <author>
+                                        <forename>Hywel D.</forename>
+                                        <surname>Emanuel</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Medium Aevum</title>
+                                    <imprint>
+                                        <biblScope unit="volume">35</biblScope>
+                                        <date>1966</date>
+                                        <note type="url">http://search.proquest.com/docview/1293321074/14324173CA812BBF3F8/2?accountid=9851</note>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/HJWXZUS9" type="book" xml:id="Crick1989">
+                                <monogr>
+                                    <title level="m">The &lt;hi rend="italics"&gt;Historia regum Britannie&lt;/hi&gt; of Geoffrey of Monmouth</title>
+                                    <extent>5</extent>
+                                    <author>
+                                        <forename>Julia C.</forename>
+                                        <surname>Crick</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">3: A summary catalogue of the manuscripts</biblScope>
+                                        <publisher>D.S. Brewer</publisher>
+                                        <date>1989</date>
+                                    </imprint>
+                                </monogr>
+                                <note>no. 47 </note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/34UIT2GD" type="journalArticle" xml:id="Reeve1991">
+                                <analytic>
+                                    <title level="a">The Transmission of the &lt;hi rend="italics"&gt;Historia regum Britanniae&lt;/hi&gt;</title>
+                                    <idno type="DOI">10.1484/J.JML.2.303955</idno>
+                                    <author>
+                                        <forename>Michael D.</forename>
+                                        <surname>Reeve</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">The Journal of Medieval Latin</title>
+                                    <imprint>
+                                        <biblScope unit="volume">1</biblScope>
+                                        <biblScope unit="page">73-117</biblScope>
+                                        <date>1991</date>
+                                        <note type="url">http://dx.doi.org/10.1484/J.JML.2.303955</note>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/XCPBI4RA" type="book" xml:id="Reeve2007">
+                                <monogr>
+                                    <title level="m">Geoffrey of Monmouth: the history of the kings of Britain; an edition and translation of &lt;hi
+                                        rend="italics"&gt;De gestis Britonum&lt;/hi&gt; (&lt;hi rend="italics"&gt;Historia regum
+                                        Britanniae&lt;/hi&gt;)</title>
+                                    <editor>
+                                        <forename>Michael D.</forename>
+                                        <surname>Reeve</surname>
+                                    </editor>
+                                    <respStmt>
+                                        <resp>translator</resp>
+                                        <persName>
+                                            <forename>Neil</forename>
+                                            <surname>Wright</surname>
+                                        </persName>
+                                    </respStmt>
+                                    <imprint>
+                                        <pubPlace>Woodbridge</pubPlace>
+                                        <publisher>Boydell Press</publisher>
+                                        <date>2007</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Arthurian studies</title>
+                                    <biblScope unit="volume">69</biblScope>
+                                </series>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>
+
+                    <msPart n="1">
+                        <msIdentifier>
+                            <idno>Cambridge, University Library, MS Ff.1.25(5), ff. 10-44</idno>
+                            <msName>Part 1: Geoffrey of Monmouth, Historia regum Britanniae (14th-century copy)</msName>
+                        </msIdentifier>
+
+                        <msContents>
+
+                            <msItem n="1">
+                                <locus from="10r" to="48v">10r-48v</locus>
+                                <title key="work_1677">Historia regum Britanniae</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <author key="person_v89028232">Geoffrey of Monmouth</author>
+                                <note>This text is a copy of the 'Second Variant' version, a recension which survives in fifteen manuscripts (see also
+                                        <bibl subtype="internal" type="MS"><ref>Cambridge, University Library, MS Mm.5.29</ref></bibl>. </note>
+                                <listBibl>
+                                    <bibl>Hammer (1951), siglum X</bibl>
+                                    <bibl>Emanuel (1966)</bibl>
+                                </listBibl>
+
+                                <msItem n="1.1">
+                                    <locus from="10r" to="12r">10r-12r</locus>
+                                    <title>Capitula</title>
+                                    <rubric><locus from="10r" to="10r">10r</locus>: Incipiunt capitula primi libri cronici uel historie Britannie .
+                                        Capitulum primum</rubric>
+                                    <incipit><locus from="10r" to="10r">10r</locus>: Descripcio quantitatis et multimode opulencie ac populosientis
+                                        Britannice insule</incipit>
+                                    <explicit><locus from="12r" to="12r">12r</locus> Capitulum xxxvi ubi in conclusione operis istoricus iste ceteris
+                                        quod nominat istoriographis reliqua Guallensis et anglice ystorie tractanda distribuit</explicit>
+                                    <finalRubric><locus from="12r" to="12r">12r</locus>: Expliciunt capitula Britannice historie</finalRubric>
+                                </msItem>
+
+                                <msItem n="1.2">
+                                    <locus from="12r" to="12r">12r</locus>
+                                    <title>Prologue</title>
+                                    <rubric><locus from="12r" to="12r">12r</locus>: Incipit prologus Gauffridi Monemutensis in sequentem
+                                        historiam</rubric>
+                                    <incipit><locus from="12r" to="12r">12r</locus>: Cum mecum multa et de multis sepius animo reuoluens in historiam
+                                        regum Britanniae inciderem</incipit>
+                                    <explicit><locus from="12r" to="12r">12r</locus>: alterum Henricum adepta interno gratulatur affectu</explicit>
+                                </msItem>
+
+                                <msItem n="1.3">
+                                    <locus from="12r" to="44v">12r-44v</locus>
+                                    <title>Text</title>
+                                    <rubric><locus from="12r" to="12r">12r</locus>: Descripcio britannia insule . Capitula primum</rubric>
+                                    <incipit><locus from="12r" to="12r">12r</locus>: Britannia insularum optima in occidentali occeano inter Galliam
+                                        et Hiberniam</incipit>
+                                    <explicit defective="true"><locus from="44v" to="44v">44v</locus>: Succedente tandem tempore defunctis parentibus
+                                        in britannia sunt reuersi</explicit>
+                                    <note>Text ends imperfectly, in Book 12, Chapter 2</note>
+                                </msItem>
+
+                            </msItem>
+
+                        </msContents>
+
+                        <physDesc>
+                            <p>
+                                <secFol><locus from="11r" to="11r">11r</locus>: Romanorum instinctu</secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="perg">
+                                    <support>
+                                        <material>Parchment (<term type="disposition">FHHF and HFFH</term>)</material>
+                                    </support>
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="35" type="leaf">35</measure> leaves. </seg>
+                                        <seg type="dimensions"><dimensions type="leaf" unit="mm">
+                                                <height quantity="270">270</height>
+                                                <width quantity="190">190</width>
+                                            </dimensions></seg>
+                                    </extent>
+
+                                    <collation mainStructures="12">
+                                        <p>
+                                            <list>
+                                                <item>Quire 1<hi rend="superscript">12-9</hi> (ff. <locus from="10r" to="12v">10-12</locus>: 1st-9th
+                                                    leaves missing)</item>
+                                                <item>Quires 2-3<hi rend="superscript">12</hi> (ff. <locus from="13r" to="36v">13-36</locus>)</item>
+                                                <item>Quire 4<hi rend="superscript">10-2</hi> (ff. <locus from="37r" to="44v">37-44</locus>: 9th-10th
+                                                    leaves missing) </item>
+                                            </list>
+                                        </p>
+                                        <signatures type="leaf">No leaf signatures. </signatures>
+                                        <signatures type="quire">No quire signatures. </signatures>
+                                        <catchwords><seg type="para">No catchwords. </seg></catchwords>
+                                    </collation>
+                                </supportDesc>
+
+
+                                <layoutDesc>
+                                    <layout columns="1" rulingMedium="leadpoint" topLine="below" writtenLines="53 59"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height quantity="220">220</height>
+                                                <width max="145" min="135">135-145</width>
+                                            </dimensions>
+                                            <seg type="ruling">Ruled in leadpoint, frame and line. Single column, 53-59 lines to the page, written
+                                                below top line. </seg></p>
+                                    </layout>
+
+                                </layoutDesc>
+
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote script="cursivaAntiquior">
+                                    <p>Copied by several hands writing mostly in <term type="script">Anglicana</term> (occasionally straying into a
+                                        slightly more formal <term type="script">Anglicana formata</term>). </p>
+                                </handNote>
+                            </handDesc>
+
+                            <decoDesc>
+                                <decoNote type="plainInit">
+                                    <p>Three- to four-line initials in red at the start of each book. </p>
+                                </decoNote>
+                                <decoNote type="unfilled"><p>Spaces left for two-line initials at the start of each chapter; left empty, later filled
+                                        in the 16th century by Parkerian secretaries. </p></decoNote>
+                            </decoDesc>
+
+                            <additions>
+                                <note><p>Running headers added to the upper margin by a later 14th- or 15th-century hand. </p></note>
+                                <note><p>Rubrics added at the start of each book, and marginal annotations, by Parkerian secretaries. </p></note>
+                            </additions>
+
+                        </physDesc>
+
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="medium" notAfter="1350" notBefore="1300">14th century (?first half). </origDate>
+                                <origPlace key="place_g7002445">England. </origPlace></origin>
+                        </history>
+
+                    </msPart>
+
+                    <msPart n="2">
+                        <msIdentifier>
+                            <idno>Cambridge, University Library, MS Ff.1.25(1), ff. 45-48</idno>
+                            <msName>Part 2: Geoffrey of Monmouth, Historia regum Britanniae (16th-century copy)</msName>
+                        </msIdentifier>
+
+                        <msContents>
+
+                            <textLang mainLang="la">Latin</textLang>
+
+                            <msItem n="1">
+                                <locus from="45r" to="48v">45r-48v</locus>
+                                <title key="work_1677">Historia regum Britanniae</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <author key="person_v89028232">Geoffrey of Monmouth</author>
+                                <incipit defective="true"><locus from="45r" to="45r">45r</locus>: susceptoque regni gubernaculo amicitiam</incipit>
+                                <explicit><locus from="48v" to="48v">48v</locus>: hoc modo in latinum sermonem transferre curaui</explicit>
+                                <finalRubric><locus from="48v" to="48v">48v</locus>: Explicit historia Britonum</finalRubric>
+                                <note>Text begins imperfectly, but continues that of Part 1 without interruption, from Book 12, Chapter 2 onwards.
+                                </note>
+                            </msItem>
+                        </msContents>
+
+                        <physDesc>
+                            <objectDesc form="codex">
+                                <supportDesc material="perg">
+                                    <support><material>Parchment (<term type="disposition">HFHF</term>)</material></support>
+
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf"><measure quantity="4" type="leaf">4</measure> leaves. </seg>
+                                        <seg type="dimensions"><dimensions type="leaf" unit="mm">
+                                                <height quantity="270">270</height>
+                                                <width quantity="190">190</width>
+                                            </dimensions></seg>
+                                    </extent>
+
+                                    <collation mainStructures="4">
+                                        <p>
+                                            <list>
+                                                <item>Quire 5<hi rend="superscript">4</hi> (ff. <locus from="45r" to="48v">45-48</locus>)</item>
+                                            </list>
+                                        </p>
+                                        <signatures type="leaf">No leaf signatures. </signatures>
+                                        <signatures type="quire">No quire signatures. </signatures>
+                                        <catchwords><seg type="para">No catchwords. </seg></catchwords>
+                                    </collation>
+
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="1" rulingMedium="leadpoint" topLine="above" writtenLines="34 37"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height quantity="220">220</height>
+                                                <width quantity="135">135</width>
+                                            </dimensions>
+                                            <seg type="ruling">Ruled in leadpoint, frame only. Single column, 34-37 lines to the page, written above
+                                                top line. </seg></p>
+                                    </layout>
+
+                                </layoutDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote script="cursiva">
+                                    <p>Written in Elizabethan <term type="script">Secretary</term> script, with <term type="script">italic</term> used
+                                        for rubrics. </p>
+                                </handNote>
+                            </handDesc>
+                        </physDesc>
+
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" notAfter="1574" notBefore="1540">Mid-16th century (not after 1574). </origDate>
+                                <origPlace key="place_g7002445">England. </origPlace>
+                            </origin>
+
+                            <provenance notAfter="1574" notBefore="1536">
+                                <p>
+                                    <name key="person_v88874512" role="fmo">
+                                        <persName type="display">Matthew Parker (1504-1575)</persName>
+                                        <persName type="standard">Parker, Matthew, 1504-1575</persName>
+                                    </name>, archbishop of Canterbury: text copied specifically as a supplement to the rest of the <hi rend="italic">Historia regum Britanniae</hi> in Parker's possession. As with other volumes within MS Ff.1.25, this contains
+                                    part of the sequence of partial pagination in characteristic red/orange crayon. </p>
+                            </provenance>
+                        </history>
+
+                    </msPart>
+
+                    <msPart n="3">
+                        <msIdentifier>
+                            <idno>Cambridge, University Library, MS Ff.1.25(5), ff. 49-50</idno>
+                            <msName>Part 3: former endleaves and pastedown</msName>
+                        </msIdentifier>
+
+                        <msContents>
+                            <textLang mainLang="la">Latin</textLang>
+
+                            <msItem n="1">
+                                <locus from="49r" to="50v">49-50</locus>
+                                <title>Fragment of ?two legal deeds</title>
+                                <note>Two endleaves, the latter formerly the rear pastedown, but neither obviously drawn from the same source as that
+                                    found in MS Ff.1.25(1). </note>
+                            </msItem>
+
+                        </msContents>
+
+                        <physDesc>
+                            <objectDesc form="sheet">
+                                <supportDesc material="perg">
+                                    <support>Parchment</support>
+
+                                    <extent>
+                                        <seg type="object">Two sheets of parchment: </seg>
+                                        <seg type="leaf"><measure quantity="3" type="laterEndleaf">iii</measure> leaves.</seg>
+                                        <seg type="dimensions"><dimensions type="leaf" unit="mm">
+                                                <height quantity="270">270</height>
+                                                <width quantity="190">190</width>
+                                            </dimensions></seg>
+                                    </extent>
+                                </supportDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote script="cursiva"><p>Written in 16th-century <term type="script">Secretary</term> scripts. </p></handNote>
+                            </handDesc>
+
+                        </physDesc>
+
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1575" notBefore="1525">Mid-16th century. </origDate>
+                                <origPlace key="place_g7002445">England. </origPlace>
+                            </origin>
+                        </history>
+                    </msPart>
+
+
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85056721">Great Britain. History. To 449.</term>
+                        </item>
+                        <item>
+                            <term key="subject_sh96006039">Arthur, King. Legends.</term>
+                        </item>
+                        <item>
+                            <term key="subject_sh2007101475">Arthurian romances. Sources.</term>
+                        </item>
+                        <item>
+                            <term key="subject_sh85083855">Merlin (legendary character).</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2014-06-17">
+                <persName>Suzanne Paul (2014); minor revisions and updates by James Freeman (2024)</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+        <graphic decls="#document-thumbnail" url="MS-FF-00001-00025-00005-000-00001"/>
+        <surface n="front cover, outer" xml:id="page-surface-1">
+            <graphic decls="#downloadImageRights #download" height="8274px" rend="portrait" url="MS-FF-00001-00025-00005-000-00001" width="5649px"/>
+        </surface>
+        <surface n="front cover, inner" xml:id="page-surface-2">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00002" width="5252px"/>
+        </surface>
+        <surface n="9r" xml:id="page-surface-3">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00003" width="5252px"/>
+        </surface>
+        <surface n="9v" xml:id="page-surface-4">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00004" width="5252px"/>
+        </surface>
+        <surface n="10r" xml:id="page-surface-5">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00005" width="5252px"/>
+        </surface>
+        <surface n="10v" xml:id="page-surface-6">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00006" width="5252px"/>
+        </surface>
+        <surface n="11r" xml:id="page-surface-7">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00007" width="5252px"/>
+        </surface>
+        <surface n="11v" xml:id="page-surface-8">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00008" width="5252px"/>
+        </surface>
+        <surface n="12r" xml:id="page-surface-9">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00009" width="5252px"/>
+        </surface>
+        <surface n="12v" xml:id="page-surface-10">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00010" width="5252px"/>
+        </surface>
+        <surface n="13r" xml:id="page-surface-11">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00011" width="5252px"/>
+        </surface>
+        <surface n="13v" xml:id="page-surface-12">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00012" width="5252px"/>
+        </surface>
+        <surface n="14r" xml:id="page-surface-13">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00013" width="5252px"/>
+        </surface>
+        <surface n="14v" xml:id="page-surface-14">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00014" width="5252px"/>
+        </surface>
+        <surface n="15r" xml:id="page-surface-15">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00015" width="5252px"/>
+        </surface>
+        <surface n="15v" xml:id="page-surface-16">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00016" width="5252px"/>
+        </surface>
+        <surface n="16r" xml:id="page-surface-17">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00017" width="5252px"/>
+        </surface>
+        <surface n="16v" xml:id="page-surface-18">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00018" width="5252px"/>
+        </surface>
+        <surface n="17r" xml:id="page-surface-19">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00019" width="5252px"/>
+        </surface>
+        <surface n="17v" xml:id="page-surface-20">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00020" width="5252px"/>
+        </surface>
+        <surface n="18r" xml:id="page-surface-21">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00021" width="5252px"/>
+        </surface>
+        <surface n="18v" xml:id="page-surface-22">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00022" width="5252px"/>
+        </surface>
+        <surface n="19r" xml:id="page-surface-23">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00023" width="5252px"/>
+        </surface>
+        <surface n="19v" xml:id="page-surface-24">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00024" width="5252px"/>
+        </surface>
+        <surface n="20r" xml:id="page-surface-25">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00025" width="5252px"/>
+        </surface>
+        <surface n="20v" xml:id="page-surface-26">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00026" width="5252px"/>
+        </surface>
+        <surface n="21r" xml:id="page-surface-27">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00027" width="5252px"/>
+        </surface>
+        <surface n="21v" xml:id="page-surface-28">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00028" width="5252px"/>
+        </surface>
+        <surface n="22r" xml:id="page-surface-29">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00029" width="5252px"/>
+        </surface>
+        <surface n="22v" xml:id="page-surface-30">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00030" width="5252px"/>
+        </surface>
+        <surface n="23r" xml:id="page-surface-31">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00031" width="5252px"/>
+        </surface>
+        <surface n="23v" xml:id="page-surface-32">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00032" width="5252px"/>
+        </surface>
+        <surface n="24r" xml:id="page-surface-33">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00033" width="5252px"/>
+        </surface>
+        <surface n="24v" xml:id="page-surface-34">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00034" width="5252px"/>
+        </surface>
+        <surface n="25r" xml:id="page-surface-35">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00035" width="5252px"/>
+        </surface>
+        <surface n="25v" xml:id="page-surface-36">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00036" width="5252px"/>
+        </surface>
+        <surface n="26r" xml:id="page-surface-37">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00037" width="5252px"/>
+        </surface>
+        <surface n="26v" xml:id="page-surface-38">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00038" width="5252px"/>
+        </surface>
+        <surface n="27r" xml:id="page-surface-39">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00039" width="5252px"/>
+        </surface>
+        <surface n="27v" xml:id="page-surface-40">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00040" width="5252px"/>
+        </surface>
+        <surface n="28r" xml:id="page-surface-41">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00041" width="5252px"/>
+        </surface>
+        <surface n="28v" xml:id="page-surface-42">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00042" width="5252px"/>
+        </surface>
+        <surface n="29r" xml:id="page-surface-43">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00043" width="5252px"/>
+        </surface>
+        <surface n="29v" xml:id="page-surface-44">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00044" width="5252px"/>
+        </surface>
+        <surface n="30r" xml:id="page-surface-45">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00045" width="5252px"/>
+        </surface>
+        <surface n="30v" xml:id="page-surface-46">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00046" width="5252px"/>
+        </surface>
+        <surface n="31r" xml:id="page-surface-47">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00047" width="5252px"/>
+        </surface>
+        <surface n="31v" xml:id="page-surface-48">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00048" width="5252px"/>
+        </surface>
+        <surface n="32r" xml:id="page-surface-49">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00049" width="5252px"/>
+        </surface>
+        <surface n="32v" xml:id="page-surface-50">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00050" width="5252px"/>
+        </surface>
+        <surface n="33r" xml:id="page-surface-51">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00051" width="5252px"/>
+        </surface>
+        <surface n="33v" xml:id="page-surface-52">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00052" width="5252px"/>
+        </surface>
+        <surface n="34r" xml:id="page-surface-53">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00053" width="5252px"/>
+        </surface>
+        <surface n="34v" xml:id="page-surface-54">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00054" width="5252px"/>
+        </surface>
+        <surface n="35r" xml:id="page-surface-55">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00055" width="5252px"/>
+        </surface>
+        <surface n="35v" xml:id="page-surface-56">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00056" width="5252px"/>
+        </surface>
+        <surface n="36r" xml:id="page-surface-57">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00057" width="5252px"/>
+        </surface>
+        <surface n="36v" xml:id="page-surface-58">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00058" width="5252px"/>
+        </surface>
+        <surface n="37r" xml:id="page-surface-59">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00059" width="5252px"/>
+        </surface>
+        <surface n="37v" xml:id="page-surface-60">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00060" width="5252px"/>
+        </surface>
+        <surface n="38r" xml:id="page-surface-61">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00061" width="5252px"/>
+        </surface>
+        <surface n="38v" xml:id="page-surface-62">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00062" width="5252px"/>
+        </surface>
+        <surface n="39r" xml:id="page-surface-63">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00063" width="5252px"/>
+        </surface>
+        <surface n="39v" xml:id="page-surface-64">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00064" width="5252px"/>
+        </surface>
+        <surface n="40r" xml:id="page-surface-65">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00065" width="5252px"/>
+        </surface>
+        <surface n="40v" xml:id="page-surface-66">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00066" width="5252px"/>
+        </surface>
+        <surface n="41r" xml:id="page-surface-67">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00067" width="5252px"/>
+        </surface>
+        <surface n="41v" xml:id="page-surface-68">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00068" width="5252px"/>
+        </surface>
+        <surface n="42r" xml:id="page-surface-69">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00069" width="5252px"/>
+        </surface>
+        <surface n="42v" xml:id="page-surface-70">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00070" width="5252px"/>
+        </surface>
+        <surface n="43r" xml:id="page-surface-71">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00071" width="5252px"/>
+        </surface>
+        <surface n="43v" xml:id="page-surface-72">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00072" width="5252px"/>
+        </surface>
+        <surface n="44r" xml:id="page-surface-73">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00073" width="5252px"/>
+        </surface>
+        <surface n="44v" xml:id="page-surface-74">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00074" width="4921px"/>
+        </surface>
+        <surface n="45r" xml:id="page-surface-75">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00075" width="5252px"/>
+        </surface>
+        <surface n="45v" xml:id="page-surface-76">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00076" width="5252px"/>
+        </surface>
+        <surface n="46r" xml:id="page-surface-77">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00077" width="5252px"/>
+        </surface>
+        <surface n="46v" xml:id="page-surface-78">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00078" width="5252px"/>
+        </surface>
+        <surface n="47r" xml:id="page-surface-79">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00079" width="5252px"/>
+        </surface>
+        <surface n="47v" xml:id="page-surface-80">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00080" width="5252px"/>
+        </surface>
+        <surface n="48r" xml:id="page-surface-81">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00081" width="5252px"/>
+        </surface>
+        <surface n="48v" xml:id="page-surface-82">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00082" width="5252px"/>
+        </surface>
+        <surface n="49r" xml:id="page-surface-83">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00083" width="5252px"/>
+        </surface>
+        <surface n="49v" xml:id="page-surface-84">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00084" width="5252px"/>
+        </surface>
+        <surface n="50r" xml:id="page-surface-85">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00085" width="5252px"/>
+        </surface>
+        <surface n="50v" xml:id="page-surface-86">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00086" width="5010px"/>
+        </surface>
+        <surface n="rear cover, inner" xml:id="page-surface-87">
+            <graphic decls="#downloadImageRights #download" height="8121px" rend="portrait" url="MS-FF-00001-00025-00005-000-00087" width="5252px"/>
+        </surface>
+        <surface n="rear cover, outer" xml:id="page-surface-88">
+            <graphic decls="#downloadImageRights #download" height="8241px" rend="portrait" url="MS-FF-00001-00025-00005-000-00088" width="5456px"/>
+        </surface>
+        <surface n="spine" xml:id="page-surface-89">
+            <graphic decls="#downloadImageRights #download" height="8103px" rend="portrait" url="MS-FF-00001-00025-00005-000-00089" width="2429px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#page-surface-1" n="front cover, outer" xml:id="page-pb-1"/>
+                <pb facs="#page-surface-2" n="front cover, inner" xml:id="page-pb-2"/>
+                <pb facs="#page-surface-3" n="9r" xml:id="page-pb-3"/>
+                <pb facs="#page-surface-4" n="9v" xml:id="page-pb-4"/>
+                <pb facs="#page-surface-5" n="10r" xml:id="page-pb-5"/>
+                <pb facs="#page-surface-6" n="10v" xml:id="page-pb-6"/>
+                <pb facs="#page-surface-7" n="11r" xml:id="page-pb-7"/>
+                <pb facs="#page-surface-8" n="11v" xml:id="page-pb-8"/>
+                <pb facs="#page-surface-9" n="12r" xml:id="page-pb-9"/>
+                <pb facs="#page-surface-10" n="12v" xml:id="page-pb-10"/>
+                <pb facs="#page-surface-11" n="13r" xml:id="page-pb-11"/>
+                <pb facs="#page-surface-12" n="13v" xml:id="page-pb-12"/>
+                <pb facs="#page-surface-13" n="14r" xml:id="page-pb-13"/>
+                <pb facs="#page-surface-14" n="14v" xml:id="page-pb-14"/>
+                <pb facs="#page-surface-15" n="15r" xml:id="page-pb-15"/>
+                <pb facs="#page-surface-16" n="15v" xml:id="page-pb-16"/>
+                <pb facs="#page-surface-17" n="16r" xml:id="page-pb-17"/>
+                <pb facs="#page-surface-18" n="16v" xml:id="page-pb-18"/>
+                <pb facs="#page-surface-19" n="17r" xml:id="page-pb-19"/>
+                <pb facs="#page-surface-20" n="17v" xml:id="page-pb-20"/>
+                <pb facs="#page-surface-21" n="18r" xml:id="page-pb-21"/>
+                <pb facs="#page-surface-22" n="18v" xml:id="page-pb-22"/>
+                <pb facs="#page-surface-23" n="19r" xml:id="page-pb-23"/>
+                <pb facs="#page-surface-24" n="19v" xml:id="page-pb-24"/>
+                <pb facs="#page-surface-25" n="20r" xml:id="page-pb-25"/>
+                <pb facs="#page-surface-26" n="20v" xml:id="page-pb-26"/>
+                <pb facs="#page-surface-27" n="21r" xml:id="page-pb-27"/>
+                <pb facs="#page-surface-28" n="21v" xml:id="page-pb-28"/>
+                <pb facs="#page-surface-29" n="22r" xml:id="page-pb-29"/>
+                <pb facs="#page-surface-30" n="22v" xml:id="page-pb-30"/>
+                <pb facs="#page-surface-31" n="23r" xml:id="page-pb-31"/>
+                <pb facs="#page-surface-32" n="23v" xml:id="page-pb-32"/>
+                <pb facs="#page-surface-33" n="24r" xml:id="page-pb-33"/>
+                <pb facs="#page-surface-34" n="24v" xml:id="page-pb-34"/>
+                <pb facs="#page-surface-35" n="25r" xml:id="page-pb-35"/>
+                <pb facs="#page-surface-36" n="25v" xml:id="page-pb-36"/>
+                <pb facs="#page-surface-37" n="26r" xml:id="page-pb-37"/>
+                <pb facs="#page-surface-38" n="26v" xml:id="page-pb-38"/>
+                <pb facs="#page-surface-39" n="27r" xml:id="page-pb-39"/>
+                <pb facs="#page-surface-40" n="27v" xml:id="page-pb-40"/>
+                <pb facs="#page-surface-41" n="28r" xml:id="page-pb-41"/>
+                <pb facs="#page-surface-42" n="28v" xml:id="page-pb-42"/>
+                <pb facs="#page-surface-43" n="29r" xml:id="page-pb-43"/>
+                <pb facs="#page-surface-44" n="29v" xml:id="page-pb-44"/>
+                <pb facs="#page-surface-45" n="30r" xml:id="page-pb-45"/>
+                <pb facs="#page-surface-46" n="30v" xml:id="page-pb-46"/>
+                <pb facs="#page-surface-47" n="31r" xml:id="page-pb-47"/>
+                <pb facs="#page-surface-48" n="31v" xml:id="page-pb-48"/>
+                <pb facs="#page-surface-49" n="32r" xml:id="page-pb-49"/>
+                <pb facs="#page-surface-50" n="32v" xml:id="page-pb-50"/>
+                <pb facs="#page-surface-51" n="33r" xml:id="page-pb-51"/>
+                <pb facs="#page-surface-52" n="33v" xml:id="page-pb-52"/>
+                <pb facs="#page-surface-53" n="34r" xml:id="page-pb-53"/>
+                <pb facs="#page-surface-54" n="34v" xml:id="page-pb-54"/>
+                <pb facs="#page-surface-55" n="35r" xml:id="page-pb-55"/>
+                <pb facs="#page-surface-56" n="35v" xml:id="page-pb-56"/>
+                <pb facs="#page-surface-57" n="36r" xml:id="page-pb-57"/>
+                <pb facs="#page-surface-58" n="36v" xml:id="page-pb-58"/>
+                <pb facs="#page-surface-59" n="37r" xml:id="page-pb-59"/>
+                <pb facs="#page-surface-60" n="37v" xml:id="page-pb-60"/>
+                <pb facs="#page-surface-61" n="38r" xml:id="page-pb-61"/>
+                <pb facs="#page-surface-62" n="38v" xml:id="page-pb-62"/>
+                <pb facs="#page-surface-63" n="39r" xml:id="page-pb-63"/>
+                <pb facs="#page-surface-64" n="39v" xml:id="page-pb-64"/>
+                <pb facs="#page-surface-65" n="40r" xml:id="page-pb-65"/>
+                <pb facs="#page-surface-66" n="40v" xml:id="page-pb-66"/>
+                <pb facs="#page-surface-67" n="41r" xml:id="page-pb-67"/>
+                <pb facs="#page-surface-68" n="41v" xml:id="page-pb-68"/>
+                <pb facs="#page-surface-69" n="42r" xml:id="page-pb-69"/>
+                <pb facs="#page-surface-70" n="42v" xml:id="page-pb-70"/>
+                <pb facs="#page-surface-71" n="43r" xml:id="page-pb-71"/>
+                <pb facs="#page-surface-72" n="43v" xml:id="page-pb-72"/>
+                <pb facs="#page-surface-73" n="44r" xml:id="page-pb-73"/>
+                <pb facs="#page-surface-74" n="44v" xml:id="page-pb-74"/>
+                <pb facs="#page-surface-75" n="45r" xml:id="page-pb-75"/>
+                <pb facs="#page-surface-76" n="45v" xml:id="page-pb-76"/>
+                <pb facs="#page-surface-77" n="46r" xml:id="page-pb-77"/>
+                <pb facs="#page-surface-78" n="46v" xml:id="page-pb-78"/>
+                <pb facs="#page-surface-79" n="47r" xml:id="page-pb-79"/>
+                <pb facs="#page-surface-80" n="47v" xml:id="page-pb-80"/>
+                <pb facs="#page-surface-81" n="48r" xml:id="page-pb-81"/>
+                <pb facs="#page-surface-82" n="48v" xml:id="page-pb-82"/>
+                <pb facs="#page-surface-83" n="49r" xml:id="page-pb-83"/>
+                <pb facs="#page-surface-84" n="49v" xml:id="page-pb-84"/>
+                <pb facs="#page-surface-85" n="50r" xml:id="page-pb-85"/>
+                <pb facs="#page-surface-86" n="50v" xml:id="page-pb-86"/>
+                <pb facs="#page-surface-87" n="rear cover, inner" xml:id="page-pb-87"/>
+                <pb facs="#page-surface-88" n="rear cover, outer" xml:id="page-pb-88"/>
+                <pb facs="#page-surface-89" n="spine" xml:id="page-pb-89"/>
+            </div>
+        </body>
+    </text>
+</TEI>

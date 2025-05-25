@@ -1,0 +1,2685 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_12025">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Cambridge, Trinity College, MS O.9.17</title>
+            <funder>The Polonsky Foundation</funder>
+            <principal>Suzanne Paul</principal>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>University Library</publisher>
+            <availability default="false" status="restricted" xml:id="displayImageRights">
+               <p part="N">Zooming image © University Library, All rights reserved.</p>
+            </availability>
+            <availability default="false" status="restricted" xml:id="downloadImageRights">
+               <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made
+                        available for download are licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+            </availability>
+            <availability default="false" status="restricted" xml:id="metadataRights">
+               <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This
+                        metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+            </availability>
+         <availability xml:id="watermark" status="restricted"><licence>Trinity College, Cambridge (CC BY-NC 4.0)</licence></availability></publicationStmt>
+         <sourceDesc default="false">
+            <msDesc status="draft" xml:id="MS-TRINITY-O-00009-00017" xml:lang="en">
+               <msIdentifier>
+                  <institution>Trinity College, Cambridge</institution>
+                  <repository>Trinity College Library</repository>
+                  <collection>Manuscripts</collection>
+                  <idno type="shelfmark">Cambridge, Trinity College, MS O.9.17</idno>
+                  <altIdentifier type="internal">
+                     <idno type="james">MS 1429</idno>
+                  </altIdentifier>
+                  <altIdentifier type="external">
+                     <idno type="diktyon"> Diktyon 12025</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <summary>
+                     <seg part="N" type="para">This manuscript, probably copied in the 11th century,
+                                contains a series of homilies attributed to the patristic theologian
+                                and hymnographer <title>Ephraem Syrus</title>. A native of Nisibis in Roman
+                                Mesopotamia, Ephraem wrote in Syriac, but a large number of texts in
+                                Greek were later attributed to him, a corpus of uncertain authorship
+                                known as Ephraem Graecus.</seg>
+                     <seg part="N" type="para">An incomplete quire from a Gospel lectionary
+                                manuscript, probably copied in the 12th century, has been reused to
+                                provide endleaves for this manuscript.</seg>
+                     <seg part="N" type="para">In the 16th or 17th century the manuscript was owned by
+                                a priest named Tranos from a place called Tabria, who donated it to
+                                a monastery dedicated to the Holy Trinity, as recorded by a note on
+                                    <locus from="11" scheme="pages" to="11">p. 11</locus>. This note
+                                was originally dated, but abrasion of the ink has resulted in this
+                                information being lost.</seg>
+                     <seg part="N" type="para">Dr Christopher Wright</seg>
+                  </summary>
+                  <textLang mainLang="grc">Greek</textLang>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="chart">
+                        <extent>
+                           <seg part="N" type="object">
+                              <objectType>Codex </objectType>
+                           </seg>
+                           <seg part="N" type="leaf">
+                              <num type="laterEndleaf" value="2">ii</num> + <num type="endleaf" value="6">vi</num> + <num type="leaf" value="249">249</num> + <num type="laterEndleaf" value="3">iii</num>
+                           </seg>
+                        </extent>
+                        <foliation xml:id="modern-1">The left endleaves begin with two
+                                    unnumbered folios [a-b], followed by folios foliated 1, 3-6, 8,
+                                    in Arabic numerals, in pencil, recto, upper right. The
+                                    discontinuous numbers of the left endleaves appear intended to
+                                    reflect the loss of two folios of the original
+                                    quire.</foliation>
+                        <foliation xml:id="modern-2">The left endleaves <locus from="1r" scheme="folios" to="8v">ff. 1-8</locus> are also
+                                    foliated in Roman numerals, in pencil, recto, upper right, with
+                                    the numbers I-III, IX, V-VI. The number IX appears to be an
+                                    error for IV.</foliation>
+                        <foliation xml:id="earlier">The main body of the manuscript is
+                                    paginated with the numbers 1-130, 139-498, in Arabic numerals,
+                                    in brown ink, recto, upper right and verso, upper
+                                    left.</foliation>
+                        <foliation xml:id="modern-3">The right endleaves are foliated with
+                                    the numbers i-ii, in Roman numerals, recto, upper left, followed
+                                    by the unnumbered folio [c].</foliation>
+                        <collation>Part I consists of one quire, Part II of 32. Right
+                                    endleaves with contents list: 1<hi rend="superscript">8-2</hi>,
+                                        2<hi rend="superscript">8-1</hi>, 3-10<hi rend="superscript">8</hi>, 11<hi rend="superscript">6</hi>, 12<hi rend="superscript">10-1</hi>, 13-18<hi rend="superscript">8</hi>, 19<hi rend="superscript">8-1</hi>, 20-32<hi rend="superscript">8</hi>, 33<hi rend="superscript">2</hi>
+                        </collation>
+                        <condition>There have been losses from the edges of some folios,
+                                    notably pp. <locus from="1" scheme="pages" to="2">1-2</locus>,
+                                        <locus from="1" scheme="pages" to="1">p. 1</locus> and
+                                        <locus from="419" scheme="pages" to="422">419-422</locus>.
+                                    The outer margins of <locus from="465" scheme="pages" to="468">pp. 465-468</locus> have been cut away. Damage to <locus from="1" scheme="pages" to="4">pp. 1-4</locus> has been
+                                    repaired with parchment patches. There has been severe abrasion
+                                    to the text and ornament on <locus from="1" scheme="pages" to="1">p. 1</locus>, and some abrasion to text on other
+                                    folios. There is water staining, quite extensive to <locus from="473" scheme="pages" to="495">pp. 473-495</locus>,
+                                    which has caused some slight fading of text. There is cockling,
+                                    creasing and areas of dirt.</condition>
+                     </supportDesc>
+                  </objectDesc>
+                  <additions>A contents list to the manuscript has been added to the right
+                            endleaves, <locus from="i recto" to="ii verso">ff. i recto-ii
+                                verso</locus>.</additions>
+                  <bindingDesc>
+                     <binding calendar="gregorian" notAfter="1799" notBefore="1700">
+                        <p part="N">18th-century binding with grey paper covering over
+                                    couched-laminate boards, with a white parchment spine and plain
+                                    pastedowns. The classmark appears on the spine on patches.</p>
+                        <p part="N">
+                           <dimensions type="binding" unit="mm">
+                              <height quantity="260">260</height>
+                              <width quantity="250">250</width>
+                              <depth quantity="98">98</depth>
+                           </dimensions>
+                        </p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <provenance>
+                     <p part="N">Owned by a priest named <name full="yes" instant="false" role="fmo" type="person">
+                           <persName full="yes" instant="false" type="display">Tranos</persName>
+                           <persName full="yes" instant="false" type="standard">Tranos, priest</persName>
+                        </name>, from Tabria, and donated
+                                by him to a monastery of the Holy Trinity, probably in the <date calendar="gregorian" instant="false" notAfter="1697" notBefore="1500">16th or
+                                    17th century</date>.</p>
+                     <p part="N">Owned by the antiquary <name full="yes" instant="false" key="person_v46783945" ref="http://viaf.org/viaf/46783945" role="fmo" type="person">
+                           <persName full="yes" instant="false" type="display">Thomas Gale (c.
+                                        1635-1702)</persName>
+                           <persName full="yes" instant="false" type="standard">Gale, Thomas,
+                                        1635?-1702</persName>
+                        </name>, Fellow of Trinity and Dean of
+                                York. It appears in the <date calendar="gregorian" instant="false" when="1697">1697</date> catalogue of Gale's collection contained in <bibl default="false" status="draft" subtype="internal" type="MS">Trinity College MS O.5.38</bibl>
+                                (p. 156).</p>
+                  </provenance>
+                  <acquisition calendar="gregorian" when="1738">Donated by Thomas's son, the
+                            antiquary <name full="yes" instant="false" key="person_v62981706" ref="http://viaf.org/viaf/62981706" role="fmo" type="person">
+                        <persName full="yes" instant="false" type="display">Roger
+                                    Gale (1672-1744)</persName>
+                        <persName full="yes" instant="false" type="standard">Gale,
+                                    Roger, 1672-1744</persName>
+                     </name>, in 1738.</acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <p part="N"/>
+                     </recordHist>
+                     <availability status="restricted">
+                        <p>Visitors to Trinity College who wish to consult Special Collections material
+                           are required to apply to the Library in advance of their visit. For information
+                           on eligibility and admission procedures see: <ref target="https://www.trin.cam.ac.uk/library/wren-library/information-for-readers/">Trinity College: Information for Readers</ref>.</p>
+                     </availability>
+                  </adminInfo>
+                  <listBibl default="false">
+                     <biblStruct corresp="http://zotero.org/groups/276440/items/Q2XTA4BA" default="false" status="draft" type="book" xml:id="James1902">
+                        <monogr>
+                           <title level="m">The western manuscripts in the library of
+                                        Trinity College: a descriptive catalogue</title>
+                           <extent>4</extent>
+                           <author>
+                              <forename full="yes">M.R.</forename>
+                              <surname full="yes">James</surname>
+                           </author>
+                           <imprint>
+                              <pubPlace>Cambridge</pubPlace>
+                              <biblScope unit="volume">3</biblScope>
+                              <publisher>Cambridge University Press</publisher>
+                              <date instant="false">1902</date>
+                           </imprint>
+                        </monogr>
+                     </biblStruct>
+                     <biblStruct corresp="http://zotero.org/groups/276440/items/W567E58G" default="false" status="draft" type="journalArticle" xml:id="Pattie1990">
+                        <analytic>
+                           <title level="a">Ephraem's 'On Repentance' and the Translation
+                                        of the Greek Text into other Languages</title>
+                           <author>
+                              <forename full="yes">T.S.</forename>
+                              <surname full="yes">Pattie</surname>
+                           </author>
+                        </analytic>
+                        <monogr>
+                           <title level="j">The British Library Journal</title>
+                           <imprint>
+                              <biblScope unit="volume">16</biblScope>
+                              <biblScope unit="page">174-186</biblScope>
+                              <date instant="false">1990</date>
+                           </imprint>
+                        </monogr>
+                     </biblStruct>
+                  </listBibl>
+               </additional>
+               <msPart n="1">
+                  <msIdentifier>
+                     <idno>Part I</idno>
+                  </msIdentifier>
+                  <msContents>
+                     <msItem n="1">
+                        <locus from="1r" scheme="folios" to="8v">ff. 1r-8v</locus>
+                        <title xml:lang="eng">Gospel lectionary</title>
+                        <note anchored="true">Fragment, with lacunas: begins during Wednesday of the 4th
+                                    week of John, ends during Thursday of the 5th week of John
+                                </note>
+                     </msItem>
+                  </msContents>
+                  <physDesc>
+                     <objectDesc form="codex">
+                        <supportDesc material="chart">
+                           <support>
+                              <material>
+                                 <locus from="1r" scheme="folios" to="8v">ff.
+                                                1r-8v</locus> Parchment (<term type="disposition">FHHF</term>), quite thick and of medium
+                                            quality.</material>
+                           </support>
+                           <collation>
+                              <p part="N">This part consists of a single quire, a quaternion.</p>
+                              <p part="N">
+                                 <list>
+                                    <item>Quire 1<hi rend="superscript">8-2</hi>
+                                       <locus from="1r" scheme="folios" to="8v"> ff. 1,
+                                                  3-6, 8 </locus>
+                                    </item>
+                                    <note anchored="true">The second and seventh folios have been lost,
+                                                  with loss of text.</note>
+                                 </list>
+                              </p>
+                           </collation>
+                        </supportDesc>
+                        <layoutDesc>
+                           <layout columns="2" ruledLines="13" rulingMedium="hardpoint" topLine="mixed" writtenLines="23 25">
+                              <locus from="1r" scheme="folios" to="8v">ff. 1r-8v</locus> Two
+                                        columns of 23-25 lines. <dimensions type="written" unit="mm">
+                                 <height quantity="204">204</height>
+                                 <width quantity="135">135</width>
+                              </dimensions>
+                              <seg part="N" type="pricking">Pricking does not survive. </seg>
+                              <seg part="N" type="ruling">Ruled in hardpoint, type Leroy <formula notation="Leroy">X 00E2</formula>, ruled for only 13
+                                            double-spaced lines. Text hangs from the first line but
+                                            otherwise largely ignores them.</seg>
+                           </layout>
+                        </layoutDesc>
+                     </objectDesc>
+                     <handDesc>
+                        <handNote scope="minor" xml:id="hand-1">
+                           <p part="N">
+                              <locus from="1r" scheme="folios" to="8v">ff. 1r-8v</locus>
+                                        were copied by Hand A in a somewhat inelegant <term type="script">mixed minuscule</term> script with
+                                        variable slant, in brown ink, with modest variation in
+                                        letter size.</p>
+                           <p part="N">Syllabic abbreviations and superscript word endings appear
+                                        only at the end of lines. Breathings are both angular and
+                                        round and mute <hi rend="italic">iota</hi> is absent. Use of
+                                        the double dot is functional only. <foreign xml:lang="la">Nomina sacra</foreign> are unaccentuated.</p>
+                           <p part="N">Punctuation used includes the middle and upper points, lower
+                                        and middle commas, full stop and frequent use of a small
+                                        cross as a normal punctuation mark.</p>
+                           <p part="N">Majuscule <hi rend="italic">lambda</hi> is often in an
+                                        unusual form with a short lower left-hand stroke and a long
+                                        lower right-hand one.</p>
+                           <p part="N">Headings are written <term type="script">Alexandrine
+                                            majuscule</term> script in brown ink.</p>
+                        </handNote>
+                     </handDesc>
+                     <decoDesc>
+                        <decoNote type="colInit">Lections and lines of headings begin with
+                                    minor initials in red ink.</decoNote>
+                     </decoDesc>
+                     <additions>The present classmark has been marked on <locus from="1r" scheme="folios" to="1r">f. 1r</locus>, along with a
+                                number of former classmarks including O.16.29 (cancelled) and two
+                                which are not clearly legible, the first being probably B.39, the
+                                other probably comprising a letter followed by the number 105. The
+                                former classmark O.16.29 has also been marked on <locus from="3r" scheme="folios" to="3r">f. 3r</locus>
+                     </additions>
+                  </physDesc>
+                  <history>
+                     <origin instant="false">The manuscript from which these folios, reused here as
+                                endleaves, originate was probably copied in the <date calendar="gregorian" instant="false" notAfter="1199" notBefore="1100">12th
+                                    century</date>, as suggested by the style of script.</origin>
+                  </history>
+               </msPart>
+               <msPart n="2">
+                  <msIdentifier>
+                     <idno>Part II</idno>
+                  </msIdentifier>
+                  <msContents>
+                     <msItem n="1">
+                        <locus from="1" scheme="pages" to="97">pp. 1-97</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">Sermones paraenetici ad monachos Aegyptii
+                                    (Paerenses quinquaginta</title>
+                        <note anchored="true">TLG 4138.036</note>
+                        <note anchored="true">CPG 3942</note>
+                     </msItem>
+                     <msItem n="2">
+                        <locus from="97" scheme="pages" to="100">pp. 97-100</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">De caritate</title>
+                        <note anchored="true">TLG 4138.079</note>
+                        <note anchored="true">CPG 3980</note>
+                     </msItem>
+                     <msItem n="3">
+                        <locus from="100" scheme="pages" to="113">pp. 100-113</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">Capita centum quomodo quis humilitatem sibi
+                                    comparet</title>
+                        <note anchored="true">TLG 4138.031</note>
+                        <note anchored="true">CPG 3936</note>
+                     </msItem>
+                     <msItem n="4">
+                        <locus from="141" scheme="pages" to="142">pp. 141-142</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">Paraenesis</title>
+                        <note anchored="true">TLG 4138.043</note>
+                        <note anchored="true">CPG 3964</note>
+                     </msItem>
+                     <msItem n="5">
+                        <locus from="143" scheme="pages" to="151">pp. 143-151</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">Sermo alius compunctorius</title>
+                        <note anchored="true">TLG 4138.013</note>
+                        <note anchored="true">CPG 3918</note>
+                     </msItem>
+                     <msItem n="6">
+                        <locus from="152" scheme="pages" to="160">pp. 152-160</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">Quod non oporteat ridere et extolli, sed
+                                    plangere potius ed nos ipsos deflere</title>
+                        <note anchored="true">TLG 4138.027</note>
+                        <note anchored="true">CPG 3933</note>
+                     </msItem>
+                     <msItem n="7">
+                        <locus from="160" scheme="pages" to="179">pp. 160-179</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">Ad correctionem eorum qui vitiose vivunt et
+                                    honores appetunt</title>
+                        <note anchored="true">TLG 4138.007</note>
+                        <note anchored="true">CPG 3912</note>
+                     </msItem>
+                     <msItem n="8">
+                        <locus from="180" scheme="pages" to="218">pp. 180-218</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">Sermo de virtutibus et vitiis (capita
+                                    XXII)</title>
+                        <note anchored="true">TLG 4138.001</note>
+                        <note anchored="true">CPG 3905</note>
+                     </msItem>
+                     <msItem n="9">
+                        <locus from="219" scheme="pages" to="225">pp. 219-225</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">De conversatione fratrum mutua in concordia et
+                                    dilectione</title>
+                        <note anchored="true">TLG 4138.098</note>
+                        <note anchored="true">CPG 4032</note>
+                     </msItem>
+                     <msItem n="10">
+                        <locus from="225" scheme="pages" to="310">pp. 225-310</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">Sermo asceticus</title>
+                        <note anchored="true">TLG 4138.005</note>
+                        <note anchored="true">CPG 3909</note>
+                     </msItem>
+                     <msItem n="11">
+                        <locus from="310" scheme="pages" to="315">pp. 310-315</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">Sermo de iudicio et resurrectione</title>
+                        <note anchored="true">CPG 4014</note>
+                     </msItem>
+                     <msItem n="12">
+                        <locus from="315" scheme="pages" to="325">pp. 315-325</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">De timore animarum</title>
+                        <note anchored="true">TLG 4138.019</note>
+                        <note anchored="true">CPG 3925</note>
+                     </msItem>
+                     <msItem n="13">
+                        <locus from="325" scheme="pages" to="348">pp. 325-348</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">De paenitentia</title>
+                        <note anchored="true">TLG 4138.010</note>
+                        <note anchored="true">CPG 3915</note>
+                     </msItem>
+                     <msItem n="14">
+                        <locus from="348" scheme="pages" to="420">pp. 348-420</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">Oratio in vanam vitam et de paenitentia</title>
+                        <note anchored="true">TLG 4138.075</note>
+                        <note anchored="true">CPG 4031, 4622</note>
+                        <note anchored="true">BHG 2103n</note>
+                     </msItem>
+                     <msItem n="15">
+                        <locus from="421" scheme="pages" to="432">pp. 421-432</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">Sermo de virginitate</title>
+                        <note anchored="true">TLG 4138.090</note>
+                        <note anchored="true">CPG 4002</note>
+                     </msItem>
+                     <msItem n="16">
+                        <locus from="433" scheme="pages" to="450">pp. 433-450</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">De iudicio et compunctione</title>
+                        <note anchored="true">TLG 4138.033</note>
+                        <note anchored="true">CPG 3940</note>
+                     </msItem>
+                     <msItem n="17">
+                        <locus from="451" scheme="pages" to="459">pp. 451-459</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">Sermo in patres defunctos</title>
+                        <note anchored="true">TLG 4138.015</note>
+                        <note anchored="true">CPG 3921</note>
+                        <note anchored="true">BHG 2103tc</note>
+                     </msItem>
+                     <msItem n="18">
+                        <locus from="459" scheme="pages" to="467">pp. 459-467</locus>
+                        <title xml:lang="eng">On the death of a brother</title>
+                        <note anchored="true">Attributed here to Ephraem</note>
+                        <rubric>
+                           <locus from="459" scheme="pages" to="459">p. 459</locus> Τοῦ
+                                    αὐτοῦ λόγος εἰς ἀδελφὸν κοιμηθέντα</rubric>
+                        <incipit>
+                           <locus from="459" scheme="pages" to="459">p. 459</locus>
+                                    Ὅταν ἀποστολῆ ἄγγελος ἐπὶ ψυχὴν ἀσκητοῦ τοῦ παραλαβεῖν</incipit>
+                     </msItem>
+                     <msItem n="19">
+                        <locus from="468" scheme="pages" to="478">pp. 468-478</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">In secundum aduentum Domini nostri Iesu
+                                    Christi</title>
+                        <note anchored="true">TLG 4138.048</note>
+                        <note anchored="true">CPG 3920</note>
+                     </msItem>
+                     <msItem n="20">
+                        <locus from="478" scheme="pages" to="485">pp. 478-485</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">Sermo compunctorius</title>
+                        <note anchored="true">TLG 4138.004</note>
+                        <note anchored="true">CPG 3917</note>
+                     </msItem>
+                     <msItem n="21">
+                        <locus from="485" scheme="pages" to="498">pp. 485-498</locus>
+                        <author>Ephraem Graecus</author>
+                        <title xml:lang="la">Beatitudines aliae, capita viginti</title>
+                        <note anchored="true">TLG 4138.030</note>
+                        <note anchored="true">CPG 3935.2</note>
+                     </msItem>
+                  </msContents>
+                  <physDesc>
+                     <objectDesc form="codex">
+                        <supportDesc material="chart">
+                           <support>
+                              <material>
+                                 <locus from="491" scheme="pages" to="498">pp.
+                                                1-498</locus> Parchment (<term type="disposition">FHHF</term>), of medium thickness and
+                                            quality.</material>
+                           </support>
+                           <collation>
+                              <p part="N">This part consists of 32 quires, all quaternia.</p>
+                              <p part="N">
+                                 <list>
+                                    <item>Quire 2<hi rend="superscript">8-1</hi>
+                                       <locus from="1" scheme="pages" to="14"> pp. 1-14 </locus>
+                                       <note anchored="true">The eighth folio has been cancelled, without
+                                                  loss of text.</note>
+                                    </item>
+                                    <item>Quires 3-9<hi rend="superscript">8</hi>
+                                       <locus from="15" scheme="pages" to="126"> pp.
+                                                  15-126 </locus>
+                                    </item>
+                                    <item>Quire 10<hi rend="superscript">8-1</hi>
+                                       <locus from="127" scheme="pages" to="148"> pp.
+                                                  127-130, 139-148 </locus>
+                                       <note anchored="true">The eighth folio
+                                                  has been lost, with loss of text.</note>
+                                    </item>
+                                    <item>Quires 11-18<hi rend="superscript">8</hi>
+                                       <locus from="149" scheme="pages" to="276"> pp.
+                                                  149-276 </locus>
+                                    </item>
+                                    <item>Quire 19<hi rend="superscript">8-1</hi>
+                                       <locus from="277" scheme="pages" to="290"> pp.
+                                                  277-290 </locus>
+                                       <note anchored="true">The second folio has been lost, with loss of
+                                                  text.</note>
+                                    </item>
+                                    <item>Quires 20-32<hi rend="superscript">8</hi>
+                                       <locus from="291" scheme="pages" to="498"> pp.
+                                                  291-498 </locus>
+                                    </item>
+                                 </list>
+                              </p>
+                              <signatures type="quire">There are quire signatures in Greek
+                                            numerals, in brown ink, on the first folio of each
+                                            quire, recto, lower left, and the last folio of each
+                                            quire, verso, lower right, original to the production of
+                                            the manuscript. Some have been overwritten in black ink.
+                                            They survive on Quires 3-32 (βʹ-λαʹ).</signatures>
+                              <signatures type="quire">There are modern quire signatures
+                                            in Arabic numerals, in pencil, on the first folio of
+                                            each quire, recto, lower right, ignoring the added first
+                                            quire to begin with the main body of the manuscript, and
+                                            therefore corresponding to the original signatures. They
+                                            appear on Quires 3-30 (2-29).</signatures>
+                           </collation>
+                        </supportDesc>
+                        <layoutDesc>
+                           <layout columns="1" rulingMedium="hardpoint" topLine="below" writtenLines="24">
+                              <locus from="1" scheme="pages" to="498">pp.
+                                            1-498</locus> A single column of 24 lines. <dimensions type="written" unit="mm">
+                                 <height quantity="190">190</height>
+                                 <width quantity="140">140</width>
+                              </dimensions>
+                              <seg part="N" type="pricking">Pricking does not survive. </seg>
+                              <seg part="N" type="ruling">Ruled in hardpoint, system Leroy 1, type
+                                            Leroy <formula notation="Leroy">34C1</formula>. Text
+                                            hangs from the lines.</seg>
+                           </layout>
+                        </layoutDesc>
+                     </objectDesc>
+                     <handDesc>
+                        <handNote scope="major" xml:id="hand-2">
+                           <p part="N">
+                              <locus from="1" scheme="pages" to="498">pp. 1-498</locus>
+                                        were copied by Hand B in <term type="script">mixed minuscule
+                                            Perlschrift</term>, in brown ink, slanting slightly to
+                                        the right, with little variation in letter size.</p>
+                           <p part="N">Syllabic abbreviations and superscript word endings are not
+                                        used apart from the horizontal stroke for <hi rend="italic">nu</hi>, which appears only at the end of lines.
+                                        Breathings are both angular and round, and mute <hi rend="italic">iota</hi> is absent. Use of the double dot
+                                        is functional only. <foreign xml:lang="la">Nomina
+                                            sacra</foreign> are accentuated only when more than
+                                        three letters long or with enclitics. <foreign xml:lang="la">Nomina sacra</foreign> strokes are sometimes decorated
+                                        with an X-shaped mark. Circumflexes appear above breathings,
+                                        and are sometimes somewhat enlarged when they do so. The
+                                        double grave accent is in use.</p>
+                           <p part="N">Punctuation used includes the middle and upper points, lower
+                                        and middle commas, question mark and full stop.</p>
+                           <p part="N">Headings are written in <term type="script">Alexandrine
+                                            majuscule</term> script in red ink.</p>
+                        </handNote>
+                     </handDesc>
+                     <decoDesc>
+                        <decoNote type="headpiece">The beginning of the text on <locus from="1" scheme="pages" to="1">p. 1</locus> is preceded by a
+                                        <hi rend="italic">pyle</hi> outlined in red ink, with blue
+                                    and green infill. Transitions between some texts are marked by
+                                    thin rectangular headpieces in red ink (e.g. pp. <locus from="160" scheme="pages" to="160">160</locus>, <locus from="180" scheme="pages" to="180">180</locus>).</decoNote>
+                        <decoNote type="colInit">Texts and sections begin with minor
+                                    initials in red ink.</decoNote>
+                        <decoNote type="lineFill">Transitions between some texts are marked
+                                    by line-fillers or vignettes in red ink (e.g. pp. <locus from="33" scheme="pages" to="34">33-34</locus>, <locus from="39" scheme="pages" to="39">39</locus>, <locus from="184" scheme="pages" to="185">184-185</locus>).</decoNote>
+                     </decoDesc>
+                     <additions>
+                        <p part="N">A note of ownership on <locus from="11" scheme="pages" to="11">p.
+                                        11</locus> records the donation of the manuscript to a
+                                    monastery of the Holy Trinity by the priest Tranos, from Tabria:
+                                        <q xml:lang="grc">Ἐτους [....] τὸ ἀφηἔξοσε· ὁ παπὰ κῦρ
+                                        Τρανος· ἀπὸ Ταβία· ἐν τῆ μον<supplied instant="false">ῆ</supplied>
+                              <supplied instant="false">τῆ</supplied>ς Αγίας Τριἄδος, ὑπερ ψυχης καὶ τῆς
+                                        σωτηρίας· καὶ ἡ τῆς βουθὴ ποταὶ τά [....]
+                                        <!-- <supplied>ἀ</supplied> -->πὸστερίσε, ἐκ τῆς ρισε μονῆς
+                                        κεχορισμένος ἔσε τοῦ Τριάδος τῆς ἉΓΊΑς</q>. The date has
+                                    been lost to damage, but the style of script suggests that it
+                                    was added in the 16th or 17th century.</p>
+                        <p part="N">Marginal notes have been added at the beginning of some texts
+                                    identifying the date of the liturgical calendar on which they
+                                    should be read, while another hand has marked a cross with two
+                                    cross-bars alongside the beginning of some texts (e.g. pp.
+                                        <locus from="57" scheme="pages" to="57">57</locus>, <locus from="485" scheme="pages" to="485">485</locus>).</p>
+                     </additions>
+                  </physDesc>
+                  <history>
+                     <origin instant="false">The main body of the manuscript was probably copied in the
+                                    <origDate calendar="gregorian" instant="false" notAfter="1099" notBefore="1000">11th century</origDate>, as suggested by the style of
+                                script.</origin>
+                  </history>
+               </msPart>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="LCSH">
+               <bibl default="false" status="draft">
+                  <ref target="https://authorities.loc.gov/">Library of Congress Subject
+                            Headings</ref>
+               </bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass default="false">
+            <keywords scheme="#LCSH">
+               <list>
+                  <item>
+                     <term key="subject_sh2009119491">Christian literature, Early--Greek
+                                authors</term>
+                  </item>
+                  <item>
+                     <term key="subject_sh85134665">Theology, Christian</term>
+                  </item>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change status="draft" when="2021-10-07">
+            <persName full="yes" instant="false">Christopher Wright</persName>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic decls="#document-thumbnail" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00001"/>
+      <surface n="left cover, outer" xml:id="i1">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00001" width="5547px"/>
+      </surface>
+      <surface n="left cover, inner" xml:id="i2">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00002" width="5288px"/>
+      </surface>
+      <surface n="[a] recto" xml:id="i3">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00003" width="5288px"/>
+      </surface>
+      <surface n="[a] verso" xml:id="i4">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00004" width="5288px"/>
+      </surface>
+      <surface n="[b] recto" xml:id="i5">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00005" width="5288px"/>
+      </surface>
+      <surface n="[b] verso" xml:id="i6">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00006" width="5288px"/>
+      </surface>
+      <surface n="1r" xml:id="i7">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00007" width="4926px"/>
+      </surface>
+      <surface n="1v" xml:id="i8">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00008" width="4926px"/>
+      </surface>
+      <surface n="3r" xml:id="i9">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00009" width="4926px"/>
+      </surface>
+      <surface n="3v" xml:id="i10">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00010" width="4926px"/>
+      </surface>
+      <surface n="4r" xml:id="i11">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00011" width="4926px"/>
+      </surface>
+      <surface n="4v" xml:id="i12">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00012" width="4926px"/>
+      </surface>
+      <surface n="5r" xml:id="i13">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00013" width="4922px"/>
+      </surface>
+      <surface n="5v" xml:id="i14">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00014" width="4922px"/>
+      </surface>
+      <surface n="6r" xml:id="i15">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00015" width="4922px"/>
+      </surface>
+      <surface n="6v" xml:id="i16">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00016" width="4922px"/>
+      </surface>
+      <surface n="8r" xml:id="i17">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00017" width="4922px"/>
+      </surface>
+      <surface n="8v" xml:id="i18">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00018" width="4922px"/>
+      </surface>
+      <surface n="1" xml:id="i19">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00019" width="5288px"/>
+      </surface>
+      <surface n="2" xml:id="i20">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00020" width="5288px"/>
+      </surface>
+      <surface n="3" xml:id="i21">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00021" width="5288px"/>
+      </surface>
+      <surface n="4" xml:id="i22">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00022" width="5288px"/>
+      </surface>
+      <surface n="5" xml:id="i23">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00023" width="5288px"/>
+      </surface>
+      <surface n="6" xml:id="i24">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00024" width="5288px"/>
+      </surface>
+      <surface n="7" xml:id="i25">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00025" width="5288px"/>
+      </surface>
+      <surface n="8" xml:id="i26">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00026" width="5288px"/>
+      </surface>
+      <surface n="9" xml:id="i27">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00027" width="5288px"/>
+      </surface>
+      <surface n="10" xml:id="i28">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00028" width="5288px"/>
+      </surface>
+      <surface n="11" xml:id="i29">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00029" width="5288px"/>
+      </surface>
+      <surface n="12" xml:id="i30">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00030" width="5288px"/>
+      </surface>
+      <surface n="13" xml:id="i31">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00031" width="5288px"/>
+      </surface>
+      <surface n="14" xml:id="i32">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00032" width="5288px"/>
+      </surface>
+      <surface n="15" xml:id="i33">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00033" width="5288px"/>
+      </surface>
+      <surface n="16" xml:id="i34">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00034" width="5288px"/>
+      </surface>
+      <surface n="17" xml:id="i35">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00035" width="5288px"/>
+      </surface>
+      <surface n="18" xml:id="i36">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00036" width="5288px"/>
+      </surface>
+      <surface n="19" xml:id="i37">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00037" width="5288px"/>
+      </surface>
+      <surface n="20" xml:id="i38">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00038" width="5288px"/>
+      </surface>
+      <surface n="21" xml:id="i39">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00039" width="5288px"/>
+      </surface>
+      <surface n="22" xml:id="i40">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00040" width="5288px"/>
+      </surface>
+      <surface n="23" xml:id="i41">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00041" width="5288px"/>
+      </surface>
+      <surface n="24" xml:id="i42">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00042" width="5288px"/>
+      </surface>
+      <surface n="25" xml:id="i43">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00043" width="5288px"/>
+      </surface>
+      <surface n="26" xml:id="i44">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00044" width="5288px"/>
+      </surface>
+      <surface n="27" xml:id="i45">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00045" width="5288px"/>
+      </surface>
+      <surface n="28" xml:id="i46">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00046" width="5288px"/>
+      </surface>
+      <surface n="29" xml:id="i47">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00047" width="5288px"/>
+      </surface>
+      <surface n="30" xml:id="i48">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00048" width="5288px"/>
+      </surface>
+      <surface n="31" xml:id="i49">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00049" width="5288px"/>
+      </surface>
+      <surface n="32" xml:id="i50">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00050" width="5288px"/>
+      </surface>
+      <surface n="33" xml:id="i51">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00051" width="5288px"/>
+      </surface>
+      <surface n="34" xml:id="i52">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00052" width="5288px"/>
+      </surface>
+      <surface n="35" xml:id="i53">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00053" width="5288px"/>
+      </surface>
+      <surface n="36" xml:id="i54">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00054" width="5288px"/>
+      </surface>
+      <surface n="37" xml:id="i55">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00055" width="5288px"/>
+      </surface>
+      <surface n="38" xml:id="i56">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00056" width="5288px"/>
+      </surface>
+      <surface n="39" xml:id="i57">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00057" width="5288px"/>
+      </surface>
+      <surface n="40" xml:id="i58">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00058" width="5288px"/>
+      </surface>
+      <surface n="41" xml:id="i59">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00059" width="5288px"/>
+      </surface>
+      <surface n="42" xml:id="i60">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00060" width="5288px"/>
+      </surface>
+      <surface n="43" xml:id="i61">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00061" width="5288px"/>
+      </surface>
+      <surface n="44" xml:id="i62">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00062" width="5288px"/>
+      </surface>
+      <surface n="45" xml:id="i63">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00063" width="5288px"/>
+      </surface>
+      <surface n="46" xml:id="i64">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00064" width="5288px"/>
+      </surface>
+      <surface n="47" xml:id="i65">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00065" width="5288px"/>
+      </surface>
+      <surface n="48" xml:id="i66">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00066" width="5288px"/>
+      </surface>
+      <surface n="49" xml:id="i67">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00067" width="5288px"/>
+      </surface>
+      <surface n="50" xml:id="i68">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00068" width="5288px"/>
+      </surface>
+      <surface n="51" xml:id="i69">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00069" width="5288px"/>
+      </surface>
+      <surface n="52" xml:id="i70">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00070" width="5288px"/>
+      </surface>
+      <surface n="53" xml:id="i71">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00071" width="5288px"/>
+      </surface>
+      <surface n="54" xml:id="i72">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00072" width="5288px"/>
+      </surface>
+      <surface n="55" xml:id="i73">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00073" width="5288px"/>
+      </surface>
+      <surface n="56" xml:id="i74">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00074" width="5288px"/>
+      </surface>
+      <surface n="57" xml:id="i75">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00075" width="5288px"/>
+      </surface>
+      <surface n="58" xml:id="i76">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00076" width="5288px"/>
+      </surface>
+      <surface n="59" xml:id="i77">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00077" width="5288px"/>
+      </surface>
+      <surface n="60" xml:id="i78">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00078" width="5288px"/>
+      </surface>
+      <surface n="61" xml:id="i79">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00079" width="5288px"/>
+      </surface>
+      <surface n="62" xml:id="i80">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00080" width="5288px"/>
+      </surface>
+      <surface n="63" xml:id="i81">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00081" width="5288px"/>
+      </surface>
+      <surface n="64" xml:id="i82">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00082" width="5288px"/>
+      </surface>
+      <surface n="65" xml:id="i83">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00083" width="5288px"/>
+      </surface>
+      <surface n="66" xml:id="i84">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00084" width="5288px"/>
+      </surface>
+      <surface n="67" xml:id="i85">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00085" width="5288px"/>
+      </surface>
+      <surface n="68" xml:id="i86">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00086" width="5288px"/>
+      </surface>
+      <surface n="69" xml:id="i87">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00087" width="5288px"/>
+      </surface>
+      <surface n="70" xml:id="i88">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00088" width="5288px"/>
+      </surface>
+      <surface n="71" xml:id="i89">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00089" width="5288px"/>
+      </surface>
+      <surface n="72" xml:id="i90">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00090" width="5288px"/>
+      </surface>
+      <surface n="73" xml:id="i91">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00091" width="5288px"/>
+      </surface>
+      <surface n="74" xml:id="i92">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00092" width="5288px"/>
+      </surface>
+      <surface n="75" xml:id="i93">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00093" width="5288px"/>
+      </surface>
+      <surface n="76" xml:id="i94">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00094" width="5288px"/>
+      </surface>
+      <surface n="77" xml:id="i95">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00095" width="5288px"/>
+      </surface>
+      <surface n="78" xml:id="i96">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00096" width="5288px"/>
+      </surface>
+      <surface n="79" xml:id="i97">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00097" width="5288px"/>
+      </surface>
+      <surface n="80" xml:id="i98">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00098" width="5288px"/>
+      </surface>
+      <surface n="81" xml:id="i99">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00099" width="5288px"/>
+      </surface>
+      <surface n="82" xml:id="i100">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00100" width="5288px"/>
+      </surface>
+      <surface n="83" xml:id="i101">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00101" width="5288px"/>
+      </surface>
+      <surface n="84" xml:id="i102">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00102" width="5288px"/>
+      </surface>
+      <surface n="85" xml:id="i103">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00103" width="5288px"/>
+      </surface>
+      <surface n="86" xml:id="i104">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00104" width="5288px"/>
+      </surface>
+      <surface n="87" xml:id="i105">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00105" width="5288px"/>
+      </surface>
+      <surface n="88" xml:id="i106">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00106" width="5288px"/>
+      </surface>
+      <surface n="89" xml:id="i107">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00107" width="5288px"/>
+      </surface>
+      <surface n="90" xml:id="i108">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00108" width="5288px"/>
+      </surface>
+      <surface n="91" xml:id="i109">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00109" width="5288px"/>
+      </surface>
+      <surface n="92" xml:id="i110">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00110" width="5288px"/>
+      </surface>
+      <surface n="93" xml:id="i111">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00111" width="5288px"/>
+      </surface>
+      <surface n="94" xml:id="i112">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00112" width="5288px"/>
+      </surface>
+      <surface n="95" xml:id="i113">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00113" width="5288px"/>
+      </surface>
+      <surface n="96" xml:id="i114">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00114" width="5288px"/>
+      </surface>
+      <surface n="97" xml:id="i115">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00115" width="5288px"/>
+      </surface>
+      <surface n="98" xml:id="i116">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00116" width="5288px"/>
+      </surface>
+      <surface n="99" xml:id="i117">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00117" width="5288px"/>
+      </surface>
+      <surface n="100" xml:id="i118">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00118" width="5288px"/>
+      </surface>
+      <surface n="101" xml:id="i119">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00119" width="5288px"/>
+      </surface>
+      <surface n="102" xml:id="i120">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00120" width="5288px"/>
+      </surface>
+      <surface n="103" xml:id="i121">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00121" width="5288px"/>
+      </surface>
+      <surface n="104" xml:id="i122">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00122" width="5288px"/>
+      </surface>
+      <surface n="105" xml:id="i123">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00123" width="5288px"/>
+      </surface>
+      <surface n="106" xml:id="i124">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00124" width="5288px"/>
+      </surface>
+      <surface n="107" xml:id="i125">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00125" width="5288px"/>
+      </surface>
+      <surface n="108" xml:id="i126">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00126" width="5288px"/>
+      </surface>
+      <surface n="109" xml:id="i127">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00127" width="5288px"/>
+      </surface>
+      <surface n="110" xml:id="i128">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00128" width="5288px"/>
+      </surface>
+      <surface n="111" xml:id="i129">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00129" width="5288px"/>
+      </surface>
+      <surface n="112" xml:id="i130">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00130" width="5288px"/>
+      </surface>
+      <surface n="113" xml:id="i131">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00131" width="5288px"/>
+      </surface>
+      <surface n="114" xml:id="i132">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00132" width="5288px"/>
+      </surface>
+      <surface n="115" xml:id="i133">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00133" width="5288px"/>
+      </surface>
+      <surface n="116" xml:id="i134">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00134" width="5288px"/>
+      </surface>
+      <surface n="117" xml:id="i135">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00135" width="5288px"/>
+      </surface>
+      <surface n="118" xml:id="i136">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00136" width="5288px"/>
+      </surface>
+      <surface n="119" xml:id="i137">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00137" width="5288px"/>
+      </surface>
+      <surface n="120" xml:id="i138">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00138" width="5288px"/>
+      </surface>
+      <surface n="121" xml:id="i139">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00139" width="5288px"/>
+      </surface>
+      <surface n="122" xml:id="i140">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00140" width="5288px"/>
+      </surface>
+      <surface n="123" xml:id="i141">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00141" width="5288px"/>
+      </surface>
+      <surface n="124" xml:id="i142">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00142" width="5288px"/>
+      </surface>
+      <surface n="125" xml:id="i143">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00143" width="5288px"/>
+      </surface>
+      <surface n="126" xml:id="i144">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00144" width="5288px"/>
+      </surface>
+      <surface n="127" xml:id="i145">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00145" width="5288px"/>
+      </surface>
+      <surface n="128" xml:id="i146">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00146" width="5288px"/>
+      </surface>
+      <surface n="129" xml:id="i147">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00147" width="5288px"/>
+      </surface>
+      <surface n="130" xml:id="i148">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00148" width="5288px"/>
+      </surface>
+      <surface n="139" xml:id="i149">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00149" width="5288px"/>
+      </surface>
+      <surface n="140" xml:id="i150">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00150" width="5288px"/>
+      </surface>
+      <surface n="141" xml:id="i151">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00151" width="5288px"/>
+      </surface>
+      <surface n="142" xml:id="i152">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00152" width="5288px"/>
+      </surface>
+      <surface n="143" xml:id="i153">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00153" width="5288px"/>
+      </surface>
+      <surface n="144" xml:id="i154">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00154" width="5288px"/>
+      </surface>
+      <surface n="145" xml:id="i155">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00155" width="5288px"/>
+      </surface>
+      <surface n="146" xml:id="i156">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00156" width="5288px"/>
+      </surface>
+      <surface n="147" xml:id="i157">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00157" width="5288px"/>
+      </surface>
+      <surface n="148" xml:id="i158">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00158" width="5288px"/>
+      </surface>
+      <surface n="149" xml:id="i159">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00159" width="5288px"/>
+      </surface>
+      <surface n="150" xml:id="i160">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00160" width="5288px"/>
+      </surface>
+      <surface n="151" xml:id="i161">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00161" width="5288px"/>
+      </surface>
+      <surface n="152" xml:id="i162">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00162" width="5288px"/>
+      </surface>
+      <surface n="153" xml:id="i163">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00163" width="5288px"/>
+      </surface>
+      <surface n="154" xml:id="i164">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00164" width="5288px"/>
+      </surface>
+      <surface n="155" xml:id="i165">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00165" width="5288px"/>
+      </surface>
+      <surface n="156" xml:id="i166">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00166" width="5288px"/>
+      </surface>
+      <surface n="157" xml:id="i167">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00167" width="5288px"/>
+      </surface>
+      <surface n="158" xml:id="i168">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00168" width="5288px"/>
+      </surface>
+      <surface n="159" xml:id="i169">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00169" width="5288px"/>
+      </surface>
+      <surface n="160" xml:id="i170">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00170" width="5288px"/>
+      </surface>
+      <surface n="161" xml:id="i171">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00171" width="5288px"/>
+      </surface>
+      <surface n="162" xml:id="i172">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00172" width="5288px"/>
+      </surface>
+      <surface n="163" xml:id="i173">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00173" width="5288px"/>
+      </surface>
+      <surface n="164" xml:id="i174">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00174" width="5288px"/>
+      </surface>
+      <surface n="165" xml:id="i175">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00175" width="5288px"/>
+      </surface>
+      <surface n="166" xml:id="i176">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00176" width="5288px"/>
+      </surface>
+      <surface n="167" xml:id="i177">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00177" width="5288px"/>
+      </surface>
+      <surface n="168" xml:id="i178">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00178" width="5288px"/>
+      </surface>
+      <surface n="169" xml:id="i179">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00179" width="5288px"/>
+      </surface>
+      <surface n="170" xml:id="i180">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00180" width="5288px"/>
+      </surface>
+      <surface n="171" xml:id="i181">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00181" width="5288px"/>
+      </surface>
+      <surface n="172" xml:id="i182">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00182" width="5288px"/>
+      </surface>
+      <surface n="173" xml:id="i183">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00183" width="5288px"/>
+      </surface>
+      <surface n="174" xml:id="i184">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00184" width="5288px"/>
+      </surface>
+      <surface n="175" xml:id="i185">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00185" width="5288px"/>
+      </surface>
+      <surface n="176" xml:id="i186">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00186" width="5288px"/>
+      </surface>
+      <surface n="177" xml:id="i187">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00187" width="5288px"/>
+      </surface>
+      <surface n="178" xml:id="i188">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00188" width="5288px"/>
+      </surface>
+      <surface n="179" xml:id="i189">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00189" width="5288px"/>
+      </surface>
+      <surface n="180" xml:id="i190">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00190" width="5288px"/>
+      </surface>
+      <surface n="181" xml:id="i191">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00191" width="5288px"/>
+      </surface>
+      <surface n="182" xml:id="i192">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00192" width="5288px"/>
+      </surface>
+      <surface n="183" xml:id="i193">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00193" width="5288px"/>
+      </surface>
+      <surface n="184" xml:id="i194">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00194" width="5288px"/>
+      </surface>
+      <surface n="185" xml:id="i195">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00195" width="5288px"/>
+      </surface>
+      <surface n="186" xml:id="i196">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00196" width="5288px"/>
+      </surface>
+      <surface n="187" xml:id="i197">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00197" width="5288px"/>
+      </surface>
+      <surface n="188" xml:id="i198">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00198" width="5288px"/>
+      </surface>
+      <surface n="189" xml:id="i199">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00199" width="5288px"/>
+      </surface>
+      <surface n="190" xml:id="i200">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00200" width="5288px"/>
+      </surface>
+      <surface n="191" xml:id="i201">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00201" width="5288px"/>
+      </surface>
+      <surface n="192" xml:id="i202">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00202" width="5288px"/>
+      </surface>
+      <surface n="193" xml:id="i203">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00203" width="5288px"/>
+      </surface>
+      <surface n="194" xml:id="i204">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00204" width="5288px"/>
+      </surface>
+      <surface n="195" xml:id="i205">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00205" width="5288px"/>
+      </surface>
+      <surface n="196" xml:id="i206">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00206" width="5288px"/>
+      </surface>
+      <surface n="197" xml:id="i207">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00207" width="5288px"/>
+      </surface>
+      <surface n="198" xml:id="i208">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00208" width="5288px"/>
+      </surface>
+      <surface n="199" xml:id="i209">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00209" width="5288px"/>
+      </surface>
+      <surface n="200" xml:id="i210">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00210" width="5288px"/>
+      </surface>
+      <surface n="201" xml:id="i211">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00211" width="5288px"/>
+      </surface>
+      <surface n="202" xml:id="i212">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00212" width="5288px"/>
+      </surface>
+      <surface n="203" xml:id="i213">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00213" width="5288px"/>
+      </surface>
+      <surface n="204" xml:id="i214">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00214" width="5288px"/>
+      </surface>
+      <surface n="205" xml:id="i215">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00215" width="5288px"/>
+      </surface>
+      <surface n="206" xml:id="i216">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00216" width="5288px"/>
+      </surface>
+      <surface n="207" xml:id="i217">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00217" width="5288px"/>
+      </surface>
+      <surface n="208" xml:id="i218">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00218" width="5288px"/>
+      </surface>
+      <surface n="209" xml:id="i219">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00219" width="5288px"/>
+      </surface>
+      <surface n="210" xml:id="i220">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00220" width="5288px"/>
+      </surface>
+      <surface n="211" xml:id="i221">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00221" width="5288px"/>
+      </surface>
+      <surface n="212" xml:id="i222">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00222" width="5288px"/>
+      </surface>
+      <surface n="213" xml:id="i223">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00223" width="5288px"/>
+      </surface>
+      <surface n="214" xml:id="i224">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00224" width="5288px"/>
+      </surface>
+      <surface n="215" xml:id="i225">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00225" width="5288px"/>
+      </surface>
+      <surface n="216" xml:id="i226">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00226" width="5288px"/>
+      </surface>
+      <surface n="217" xml:id="i227">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00227" width="5288px"/>
+      </surface>
+      <surface n="218" xml:id="i228">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00228" width="5288px"/>
+      </surface>
+      <surface n="219" xml:id="i229">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00229" width="5288px"/>
+      </surface>
+      <surface n="220" xml:id="i230">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00230" width="5288px"/>
+      </surface>
+      <surface n="221" xml:id="i231">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00231" width="5288px"/>
+      </surface>
+      <surface n="222" xml:id="i232">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00232" width="5288px"/>
+      </surface>
+      <surface n="223" xml:id="i233">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00233" width="5288px"/>
+      </surface>
+      <surface n="224" xml:id="i234">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00234" width="5288px"/>
+      </surface>
+      <surface n="225" xml:id="i235">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00235" width="5288px"/>
+      </surface>
+      <surface n="226" xml:id="i236">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00236" width="5288px"/>
+      </surface>
+      <surface n="227" xml:id="i237">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00237" width="5288px"/>
+      </surface>
+      <surface n="228" xml:id="i238">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00238" width="5288px"/>
+      </surface>
+      <surface n="229" xml:id="i239">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00239" width="5288px"/>
+      </surface>
+      <surface n="230" xml:id="i240">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00240" width="5288px"/>
+      </surface>
+      <surface n="231" xml:id="i241">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00241" width="5288px"/>
+      </surface>
+      <surface n="232" xml:id="i242">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00242" width="5288px"/>
+      </surface>
+      <surface n="233" xml:id="i243">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00243" width="5288px"/>
+      </surface>
+      <surface n="234" xml:id="i244">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00244" width="5288px"/>
+      </surface>
+      <surface n="235" xml:id="i245">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00245" width="5288px"/>
+      </surface>
+      <surface n="236" xml:id="i246">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00246" width="5288px"/>
+      </surface>
+      <surface n="237" xml:id="i247">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00247" width="5288px"/>
+      </surface>
+      <surface n="238" xml:id="i248">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00248" width="5288px"/>
+      </surface>
+      <surface n="239" xml:id="i249">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00249" width="5288px"/>
+      </surface>
+      <surface n="240" xml:id="i250">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00250" width="5288px"/>
+      </surface>
+      <surface n="241" xml:id="i251">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00251" width="5288px"/>
+      </surface>
+      <surface n="242" xml:id="i252">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00252" width="5288px"/>
+      </surface>
+      <surface n="243" xml:id="i253">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00253" width="5288px"/>
+      </surface>
+      <surface n="244" xml:id="i254">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00254" width="5288px"/>
+      </surface>
+      <surface n="245" xml:id="i255">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00255" width="5288px"/>
+      </surface>
+      <surface n="246" xml:id="i256">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00256" width="5288px"/>
+      </surface>
+      <surface n="247" xml:id="i257">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00257" width="5288px"/>
+      </surface>
+      <surface n="248" xml:id="i258">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00258" width="5288px"/>
+      </surface>
+      <surface n="249" xml:id="i259">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00259" width="5288px"/>
+      </surface>
+      <surface n="250" xml:id="i260">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00260" width="5288px"/>
+      </surface>
+      <surface n="251" xml:id="i261">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00261" width="5288px"/>
+      </surface>
+      <surface n="252" xml:id="i262">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00262" width="5288px"/>
+      </surface>
+      <surface n="253" xml:id="i263">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00263" width="5288px"/>
+      </surface>
+      <surface n="254" xml:id="i264">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00264" width="5288px"/>
+      </surface>
+      <surface n="255" xml:id="i265">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00265" width="5288px"/>
+      </surface>
+      <surface n="256" xml:id="i266">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00266" width="5288px"/>
+      </surface>
+      <surface n="257" xml:id="i267">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00267" width="5288px"/>
+      </surface>
+      <surface n="258" xml:id="i268">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00268" width="5288px"/>
+      </surface>
+      <surface n="259" xml:id="i269">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00269" width="5288px"/>
+      </surface>
+      <surface n="260" xml:id="i270">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00270" width="5288px"/>
+      </surface>
+      <surface n="261" xml:id="i271">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00271" width="5288px"/>
+      </surface>
+      <surface n="262" xml:id="i272">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00272" width="5288px"/>
+      </surface>
+      <surface n="263" xml:id="i273">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00273" width="5288px"/>
+      </surface>
+      <surface n="264" xml:id="i274">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00274" width="5288px"/>
+      </surface>
+      <surface n="265" xml:id="i275">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00275" width="5288px"/>
+      </surface>
+      <surface n="266" xml:id="i276">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00276" width="5288px"/>
+      </surface>
+      <surface n="267" xml:id="i277">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00277" width="5288px"/>
+      </surface>
+      <surface n="268" xml:id="i278">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00278" width="5288px"/>
+      </surface>
+      <surface n="269" xml:id="i279">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00279" width="5288px"/>
+      </surface>
+      <surface n="270" xml:id="i280">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00280" width="5288px"/>
+      </surface>
+      <surface n="271" xml:id="i281">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00281" width="5288px"/>
+      </surface>
+      <surface n="272" xml:id="i282">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00282" width="5288px"/>
+      </surface>
+      <surface n="273" xml:id="i283">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00283" width="5288px"/>
+      </surface>
+      <surface n="274" xml:id="i284">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00284" width="5288px"/>
+      </surface>
+      <surface n="275" xml:id="i285">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00285" width="5288px"/>
+      </surface>
+      <surface n="276" xml:id="i286">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00286" width="5288px"/>
+      </surface>
+      <surface n="277" xml:id="i287">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00287" width="4409px"/>
+      </surface>
+      <surface n="278" xml:id="i288">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00288" width="4409px"/>
+      </surface>
+      <surface n="279" xml:id="i289">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00289" width="5288px"/>
+      </surface>
+      <surface n="280" xml:id="i290">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00290" width="5288px"/>
+      </surface>
+      <surface n="281" xml:id="i291">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00291" width="5288px"/>
+      </surface>
+      <surface n="282" xml:id="i292">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00292" width="5288px"/>
+      </surface>
+      <surface n="283" xml:id="i293">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00293" width="5288px"/>
+      </surface>
+      <surface n="284" xml:id="i294">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00294" width="5288px"/>
+      </surface>
+      <surface n="285" xml:id="i295">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00295" width="5288px"/>
+      </surface>
+      <surface n="286" xml:id="i296">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00296" width="5288px"/>
+      </surface>
+      <surface n="287" xml:id="i297">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00297" width="5288px"/>
+      </surface>
+      <surface n="288" xml:id="i298">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00298" width="5288px"/>
+      </surface>
+      <surface n="289" xml:id="i299">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00299" width="5288px"/>
+      </surface>
+      <surface n="290" xml:id="i300">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00300" width="5288px"/>
+      </surface>
+      <surface n="291" xml:id="i301">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00301" width="5288px"/>
+      </surface>
+      <surface n="292" xml:id="i302">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00302" width="5288px"/>
+      </surface>
+      <surface n="293" xml:id="i303">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00303" width="5288px"/>
+      </surface>
+      <surface n="294" xml:id="i304">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00304" width="5288px"/>
+      </surface>
+      <surface n="295" xml:id="i305">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00305" width="5288px"/>
+      </surface>
+      <surface n="296" xml:id="i306">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00306" width="5288px"/>
+      </surface>
+      <surface n="297" xml:id="i307">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00307" width="5288px"/>
+      </surface>
+      <surface n="298" xml:id="i308">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00308" width="5288px"/>
+      </surface>
+      <surface n="299" xml:id="i309">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00309" width="5288px"/>
+      </surface>
+      <surface n="300" xml:id="i310">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00310" width="5288px"/>
+      </surface>
+      <surface n="301" xml:id="i311">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00311" width="5288px"/>
+      </surface>
+      <surface n="302" xml:id="i312">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00312" width="5288px"/>
+      </surface>
+      <surface n="303" xml:id="i313">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00313" width="5288px"/>
+      </surface>
+      <surface n="304" xml:id="i314">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00314" width="5288px"/>
+      </surface>
+      <surface n="305" xml:id="i315">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00315" width="5288px"/>
+      </surface>
+      <surface n="306" xml:id="i316">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00316" width="5288px"/>
+      </surface>
+      <surface n="307" xml:id="i317">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00317" width="5288px"/>
+      </surface>
+      <surface n="308" xml:id="i318">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00318" width="5288px"/>
+      </surface>
+      <surface n="309" xml:id="i319">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00319" width="5288px"/>
+      </surface>
+      <surface n="310" xml:id="i320">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00320" width="5288px"/>
+      </surface>
+      <surface n="311" xml:id="i321">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00321" width="5288px"/>
+      </surface>
+      <surface n="312" xml:id="i322">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00322" width="5288px"/>
+      </surface>
+      <surface n="313" xml:id="i323">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00323" width="5288px"/>
+      </surface>
+      <surface n="314" xml:id="i324">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00324" width="5288px"/>
+      </surface>
+      <surface n="315" xml:id="i325">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00325" width="5288px"/>
+      </surface>
+      <surface n="316" xml:id="i326">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00326" width="5288px"/>
+      </surface>
+      <surface n="317" xml:id="i327">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00327" width="5288px"/>
+      </surface>
+      <surface n="318" xml:id="i328">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00328" width="5288px"/>
+      </surface>
+      <surface n="319" xml:id="i329">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00329" width="5288px"/>
+      </surface>
+      <surface n="320" xml:id="i330">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00330" width="5288px"/>
+      </surface>
+      <surface n="321" xml:id="i331">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00331" width="5288px"/>
+      </surface>
+      <surface n="322" xml:id="i332">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00332" width="5288px"/>
+      </surface>
+      <surface n="323" xml:id="i333">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00333" width="5288px"/>
+      </surface>
+      <surface n="324" xml:id="i334">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00334" width="5288px"/>
+      </surface>
+      <surface n="325" xml:id="i335">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00335" width="5288px"/>
+      </surface>
+      <surface n="326" xml:id="i336">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00336" width="5288px"/>
+      </surface>
+      <surface n="327" xml:id="i337">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00337" width="5288px"/>
+      </surface>
+      <surface n="328" xml:id="i338">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00338" width="5288px"/>
+      </surface>
+      <surface n="329" xml:id="i339">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00339" width="5288px"/>
+      </surface>
+      <surface n="330" xml:id="i340">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00340" width="5288px"/>
+      </surface>
+      <surface n="331" xml:id="i341">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00341" width="5288px"/>
+      </surface>
+      <surface n="332" xml:id="i342">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00342" width="5288px"/>
+      </surface>
+      <surface n="333" xml:id="i343">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00343" width="5288px"/>
+      </surface>
+      <surface n="334" xml:id="i344">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00344" width="5288px"/>
+      </surface>
+      <surface n="335" xml:id="i345">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00345" width="5288px"/>
+      </surface>
+      <surface n="336" xml:id="i346">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00346" width="5288px"/>
+      </surface>
+      <surface n="337" xml:id="i347">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00347" width="5288px"/>
+      </surface>
+      <surface n="338" xml:id="i348">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00348" width="5288px"/>
+      </surface>
+      <surface n="339" xml:id="i349">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00349" width="5288px"/>
+      </surface>
+      <surface n="340" xml:id="i350">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00350" width="5288px"/>
+      </surface>
+      <surface n="341" xml:id="i351">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00351" width="5288px"/>
+      </surface>
+      <surface n="342" xml:id="i352">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00352" width="5288px"/>
+      </surface>
+      <surface n="343" xml:id="i353">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00353" width="5288px"/>
+      </surface>
+      <surface n="344" xml:id="i354">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00354" width="5288px"/>
+      </surface>
+      <surface n="345" xml:id="i355">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00355" width="5288px"/>
+      </surface>
+      <surface n="346" xml:id="i356">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00356" width="5288px"/>
+      </surface>
+      <surface n="347" xml:id="i357">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00357" width="5288px"/>
+      </surface>
+      <surface n="348" xml:id="i358">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00358" width="5288px"/>
+      </surface>
+      <surface n="349" xml:id="i359">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00359" width="4468px"/>
+      </surface>
+      <surface n="350" xml:id="i360">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00360" width="4470px"/>
+      </surface>
+      <surface n="351" xml:id="i361">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00361" width="5288px"/>
+      </surface>
+      <surface n="352" xml:id="i362">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00362" width="5288px"/>
+      </surface>
+      <surface n="353" xml:id="i363">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00363" width="5288px"/>
+      </surface>
+      <surface n="354" xml:id="i364">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00364" width="5288px"/>
+      </surface>
+      <surface n="355" xml:id="i365">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00365" width="5288px"/>
+      </surface>
+      <surface n="356" xml:id="i366">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00366" width="5288px"/>
+      </surface>
+      <surface n="357" xml:id="i367">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00367" width="5288px"/>
+      </surface>
+      <surface n="358" xml:id="i368">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00368" width="5288px"/>
+      </surface>
+      <surface n="359" xml:id="i369">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00369" width="5288px"/>
+      </surface>
+      <surface n="360" xml:id="i370">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00370" width="5288px"/>
+      </surface>
+      <surface n="361" xml:id="i371">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00371" width="5288px"/>
+      </surface>
+      <surface n="362" xml:id="i372">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00372" width="5288px"/>
+      </surface>
+      <surface n="363" xml:id="i373">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00373" width="5288px"/>
+      </surface>
+      <surface n="364" xml:id="i374">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00374" width="5288px"/>
+      </surface>
+      <surface n="365" xml:id="i375">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00375" width="5288px"/>
+      </surface>
+      <surface n="366" xml:id="i376">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00376" width="5288px"/>
+      </surface>
+      <surface n="367" xml:id="i377">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00377" width="5288px"/>
+      </surface>
+      <surface n="368" xml:id="i378">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00378" width="5288px"/>
+      </surface>
+      <surface n="369" xml:id="i379">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00379" width="5288px"/>
+      </surface>
+      <surface n="370" xml:id="i380">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00380" width="5288px"/>
+      </surface>
+      <surface n="371" xml:id="i381">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00381" width="5288px"/>
+      </surface>
+      <surface n="372" xml:id="i382">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00382" width="5288px"/>
+      </surface>
+      <surface n="373" xml:id="i383">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00383" width="5288px"/>
+      </surface>
+      <surface n="374" xml:id="i384">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00384" width="5288px"/>
+      </surface>
+      <surface n="375" xml:id="i385">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00385" width="5288px"/>
+      </surface>
+      <surface n="376" xml:id="i386">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00386" width="5288px"/>
+      </surface>
+      <surface n="377" xml:id="i387">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00387" width="5288px"/>
+      </surface>
+      <surface n="378" xml:id="i388">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00388" width="5288px"/>
+      </surface>
+      <surface n="379" xml:id="i389">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00389" width="5288px"/>
+      </surface>
+      <surface n="380" xml:id="i390">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00390" width="5288px"/>
+      </surface>
+      <surface n="381" xml:id="i391">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00391" width="5288px"/>
+      </surface>
+      <surface n="382" xml:id="i392">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00392" width="5288px"/>
+      </surface>
+      <surface n="383" xml:id="i393">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00393" width="5288px"/>
+      </surface>
+      <surface n="384" xml:id="i394">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00394" width="5288px"/>
+      </surface>
+      <surface n="385" xml:id="i395">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00395" width="5288px"/>
+      </surface>
+      <surface n="386" xml:id="i396">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00396" width="5288px"/>
+      </surface>
+      <surface n="387" xml:id="i397">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00397" width="5288px"/>
+      </surface>
+      <surface n="388" xml:id="i398">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00398" width="5288px"/>
+      </surface>
+      <surface n="389" xml:id="i399">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00399" width="5288px"/>
+      </surface>
+      <surface n="390" xml:id="i400">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00400" width="5288px"/>
+      </surface>
+      <surface n="391" xml:id="i401">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00401" width="5288px"/>
+      </surface>
+      <surface n="392" xml:id="i402">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00402" width="5288px"/>
+      </surface>
+      <surface n="393" xml:id="i403">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00403" width="5288px"/>
+      </surface>
+      <surface n="394" xml:id="i404">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00404" width="5288px"/>
+      </surface>
+      <surface n="395" xml:id="i405">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00405" width="5288px"/>
+      </surface>
+      <surface n="396" xml:id="i406">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00406" width="5288px"/>
+      </surface>
+      <surface n="397" xml:id="i407">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00407" width="5288px"/>
+      </surface>
+      <surface n="398" xml:id="i408">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00408" width="5288px"/>
+      </surface>
+      <surface n="399" xml:id="i409">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00409" width="5288px"/>
+      </surface>
+      <surface n="400" xml:id="i410">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00410" width="5288px"/>
+      </surface>
+      <surface n="401" xml:id="i411">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00411" width="5288px"/>
+      </surface>
+      <surface n="402" xml:id="i412">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00412" width="5288px"/>
+      </surface>
+      <surface n="403" xml:id="i413">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00413" width="5288px"/>
+      </surface>
+      <surface n="404" xml:id="i414">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00414" width="5288px"/>
+      </surface>
+      <surface n="405" xml:id="i415">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00415" width="5288px"/>
+      </surface>
+      <surface n="406" xml:id="i416">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00416" width="5288px"/>
+      </surface>
+      <surface n="407" xml:id="i417">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00417" width="5288px"/>
+      </surface>
+      <surface n="408" xml:id="i418">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00418" width="5288px"/>
+      </surface>
+      <surface n="409" xml:id="i419">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00419" width="5288px"/>
+      </surface>
+      <surface n="410" xml:id="i420">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00420" width="5288px"/>
+      </surface>
+      <surface n="411" xml:id="i421">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00421" width="5288px"/>
+      </surface>
+      <surface n="412" xml:id="i422">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00422" width="5288px"/>
+      </surface>
+      <surface n="413" xml:id="i423">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00423" width="5288px"/>
+      </surface>
+      <surface n="414" xml:id="i424">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00424" width="5288px"/>
+      </surface>
+      <surface n="415" xml:id="i425">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00425" width="5288px"/>
+      </surface>
+      <surface n="416" xml:id="i426">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00426" width="5288px"/>
+      </surface>
+      <surface n="417" xml:id="i427">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00427" width="5288px"/>
+      </surface>
+      <surface n="418" xml:id="i428">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00428" width="5288px"/>
+      </surface>
+      <surface n="419" xml:id="i429">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00429" width="5288px"/>
+      </surface>
+      <surface n="420" xml:id="i430">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00430" width="5288px"/>
+      </surface>
+      <surface n="421" xml:id="i431">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00431" width="5288px"/>
+      </surface>
+      <surface n="422" xml:id="i432">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00432" width="5288px"/>
+      </surface>
+      <surface n="423" xml:id="i433">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00433" width="5288px"/>
+      </surface>
+      <surface n="424" xml:id="i434">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00434" width="5288px"/>
+      </surface>
+      <surface n="425" xml:id="i435">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00435" width="5288px"/>
+      </surface>
+      <surface n="426" xml:id="i436">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00436" width="5288px"/>
+      </surface>
+      <surface n="427" xml:id="i437">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00437" width="5288px"/>
+      </surface>
+      <surface n="428" xml:id="i438">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00438" width="5288px"/>
+      </surface>
+      <surface n="429" xml:id="i439">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00439" width="5288px"/>
+      </surface>
+      <surface n="430" xml:id="i440">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00440" width="5288px"/>
+      </surface>
+      <surface n="431" xml:id="i441">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00441" width="5288px"/>
+      </surface>
+      <surface n="432" xml:id="i442">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00442" width="5288px"/>
+      </surface>
+      <surface n="433" xml:id="i443">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00443" width="5288px"/>
+      </surface>
+      <surface n="434" xml:id="i444">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00444" width="5288px"/>
+      </surface>
+      <surface n="435" xml:id="i445">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00445" width="5288px"/>
+      </surface>
+      <surface n="436" xml:id="i446">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00446" width="5288px"/>
+      </surface>
+      <surface n="437" xml:id="i447">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00447" width="4652px"/>
+      </surface>
+      <surface n="438" xml:id="i448">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00448" width="4651px"/>
+      </surface>
+      <surface n="439" xml:id="i449">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00449" width="5288px"/>
+      </surface>
+      <surface n="440" xml:id="i450">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00450" width="5288px"/>
+      </surface>
+      <surface n="441" xml:id="i451">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00451" width="5288px"/>
+      </surface>
+      <surface n="442" xml:id="i452">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00452" width="5288px"/>
+      </surface>
+      <surface n="443" xml:id="i453">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00453" width="5288px"/>
+      </surface>
+      <surface n="444" xml:id="i454">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00454" width="5288px"/>
+      </surface>
+      <surface n="445" xml:id="i455">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00455" width="5288px"/>
+      </surface>
+      <surface n="446" xml:id="i456">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00456" width="5288px"/>
+      </surface>
+      <surface n="447" xml:id="i457">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00457" width="5288px"/>
+      </surface>
+      <surface n="448" xml:id="i458">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00458" width="5288px"/>
+      </surface>
+      <surface n="449" xml:id="i459">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00459" width="5288px"/>
+      </surface>
+      <surface n="450" xml:id="i460">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00460" width="5288px"/>
+      </surface>
+      <surface n="451" xml:id="i461">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00461" width="5288px"/>
+      </surface>
+      <surface n="452" xml:id="i462">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00462" width="5288px"/>
+      </surface>
+      <surface n="453" xml:id="i463">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00463" width="5288px"/>
+      </surface>
+      <surface n="454" xml:id="i464">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00464" width="5288px"/>
+      </surface>
+      <surface n="455" xml:id="i465">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00465" width="5288px"/>
+      </surface>
+      <surface n="456" xml:id="i466">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00466" width="5288px"/>
+      </surface>
+      <surface n="457" xml:id="i467">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00467" width="5288px"/>
+      </surface>
+      <surface n="458" xml:id="i468">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00468" width="5288px"/>
+      </surface>
+      <surface n="459" xml:id="i469">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00469" width="5288px"/>
+      </surface>
+      <surface n="460" xml:id="i470">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00470" width="5288px"/>
+      </surface>
+      <surface n="461" xml:id="i471">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00471" width="5288px"/>
+      </surface>
+      <surface n="462" xml:id="i472">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00472" width="5288px"/>
+      </surface>
+      <surface n="463" xml:id="i473">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00473" width="5288px"/>
+      </surface>
+      <surface n="464" xml:id="i474">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00474" width="5288px"/>
+      </surface>
+      <surface n="465" xml:id="i475">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00475" width="5288px"/>
+      </surface>
+      <surface n="466" xml:id="i476">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00476" width="5288px"/>
+      </surface>
+      <surface n="467" xml:id="i477">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00477" width="5288px"/>
+      </surface>
+      <surface n="468" xml:id="i478">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00478" width="5288px"/>
+      </surface>
+      <surface n="469" xml:id="i479">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00479" width="4790px"/>
+      </surface>
+      <surface n="470" xml:id="i480">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00480" width="4787px"/>
+      </surface>
+      <surface n="471" xml:id="i481">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00481" width="4776px"/>
+      </surface>
+      <surface n="472" xml:id="i482">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00482" width="5247px"/>
+      </surface>
+      <surface n="473" xml:id="i483">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00483" width="5288px"/>
+      </surface>
+      <surface n="474" xml:id="i484">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00484" width="5288px"/>
+      </surface>
+      <surface n="475" xml:id="i485">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00485" width="5288px"/>
+      </surface>
+      <surface n="476" xml:id="i486">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00486" width="5288px"/>
+      </surface>
+      <surface n="477" xml:id="i487">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00487" width="5288px"/>
+      </surface>
+      <surface n="478" xml:id="i488">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00488" width="5288px"/>
+      </surface>
+      <surface n="479" xml:id="i489">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00489" width="5288px"/>
+      </surface>
+      <surface n="480" xml:id="i490">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00490" width="5288px"/>
+      </surface>
+      <surface n="481" xml:id="i491">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00491" width="5288px"/>
+      </surface>
+      <surface n="482" xml:id="i492">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00492" width="5288px"/>
+      </surface>
+      <surface n="483" xml:id="i493">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00493" width="5288px"/>
+      </surface>
+      <surface n="484" xml:id="i494">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00494" width="5288px"/>
+      </surface>
+      <surface n="485" xml:id="i495">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00495" width="5288px"/>
+      </surface>
+      <surface n="486" xml:id="i496">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00496" width="5288px"/>
+      </surface>
+      <surface n="487" xml:id="i497">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00497" width="5288px"/>
+      </surface>
+      <surface n="488" xml:id="i498">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00498" width="5288px"/>
+      </surface>
+      <surface n="489" xml:id="i499">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00499" width="5288px"/>
+      </surface>
+      <surface n="490" xml:id="i500">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00500" width="5288px"/>
+      </surface>
+      <surface n="491" xml:id="i501">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00501" width="5288px"/>
+      </surface>
+      <surface n="492" xml:id="i502">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00502" width="5288px"/>
+      </surface>
+      <surface n="493" xml:id="i503">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00503" width="5288px"/>
+      </surface>
+      <surface n="494" xml:id="i504">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00504" width="5288px"/>
+      </surface>
+      <surface n="495" xml:id="i505">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00505" width="5288px"/>
+      </surface>
+      <surface n="496" xml:id="i506">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00506" width="5288px"/>
+      </surface>
+      <surface n="497" xml:id="i507">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00507" width="5288px"/>
+      </surface>
+      <surface n="498" xml:id="i508">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00508" width="5288px"/>
+      </surface>
+      <surface n="i recto" xml:id="i509">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00509" width="5288px"/>
+      </surface>
+      <surface n="i verso" xml:id="i510">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00510" width="5288px"/>
+      </surface>
+      <surface n="ii recto" xml:id="i511">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00511" width="5288px"/>
+      </surface>
+      <surface n="ii verso" xml:id="i512">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00512" width="5288px"/>
+      </surface>
+      <surface n="[c] recto" xml:id="i513">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00513" width="5288px"/>
+      </surface>
+      <surface n="[c] verso" xml:id="i514">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00514" width="5288px"/>
+      </surface>
+      <surface n="right cover, inner" xml:id="i515">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00515" width="5288px"/>
+      </surface>
+      <surface n="right cover, outer" xml:id="i516">
+         <graphic decls="#downloadImageRights #download" height="6531px" rend="portrait" url="MS-TRINITY-O-00009-00017-000-00516" width="5547px"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div>
+            <pb facs="#i1" n="left cover, outer" xml:id="pb-leftcover,outer"/>
+            <pb facs="#i2" n="left cover, inner" xml:id="pb-leftcover,inner"/>
+            <pb facs="#i3" n="[a] recto" xml:id="pb-arecto"/>
+            <pb facs="#i4" n="[a] verso" xml:id="pb-averso"/>
+            <pb facs="#i5" n="[b] recto" xml:id="pb-brecto"/>
+            <pb facs="#i6" n="[b] verso" xml:id="pb-bverso"/>
+            <pb facs="#i7" n="1r" xml:id="pb-1r"/>
+            <pb facs="#i8" n="1v" xml:id="pb-1v"/>
+            <pb facs="#i9" n="3r" xml:id="pb-3r"/>
+            <pb facs="#i10" n="3v" xml:id="pb-3v"/>
+            <pb facs="#i11" n="4r" xml:id="pb-4r"/>
+            <pb facs="#i12" n="4v" xml:id="pb-4v"/>
+            <pb facs="#i13" n="5r" xml:id="pb-5r"/>
+            <pb facs="#i14" n="5v" xml:id="pb-5v"/>
+            <pb facs="#i15" n="6r" xml:id="pb-6r"/>
+            <pb facs="#i16" n="6v" xml:id="pb-6v"/>
+            <pb facs="#i17" n="8r" xml:id="pb-8r"/>
+            <pb facs="#i18" n="8v" xml:id="pb-8v"/>
+            <pb facs="#i19" n="1" xml:id="pb-1"/>
+            <pb facs="#i20" n="2" xml:id="pb-2"/>
+            <pb facs="#i21" n="3" xml:id="pb-3"/>
+            <pb facs="#i22" n="4" xml:id="pb-4"/>
+            <pb facs="#i23" n="5" xml:id="pb-5"/>
+            <pb facs="#i24" n="6" xml:id="pb-6"/>
+            <pb facs="#i25" n="7" xml:id="pb-7"/>
+            <pb facs="#i26" n="8" xml:id="pb-8"/>
+            <pb facs="#i27" n="9" xml:id="pb-9"/>
+            <pb facs="#i28" n="10" xml:id="pb-10"/>
+            <pb facs="#i29" n="11" xml:id="pb-11"/>
+            <pb facs="#i30" n="12" xml:id="pb-12"/>
+            <pb facs="#i31" n="13" xml:id="pb-13"/>
+            <pb facs="#i32" n="14" xml:id="pb-14"/>
+            <pb facs="#i33" n="15" xml:id="pb-15"/>
+            <pb facs="#i34" n="16" xml:id="pb-16"/>
+            <pb facs="#i35" n="17" xml:id="pb-17"/>
+            <pb facs="#i36" n="18" xml:id="pb-18"/>
+            <pb facs="#i37" n="19" xml:id="pb-19"/>
+            <pb facs="#i38" n="20" xml:id="pb-20"/>
+            <pb facs="#i39" n="21" xml:id="pb-21"/>
+            <pb facs="#i40" n="22" xml:id="pb-22"/>
+            <pb facs="#i41" n="23" xml:id="pb-23"/>
+            <pb facs="#i42" n="24" xml:id="pb-24"/>
+            <pb facs="#i43" n="25" xml:id="pb-25"/>
+            <pb facs="#i44" n="26" xml:id="pb-26"/>
+            <pb facs="#i45" n="27" xml:id="pb-27"/>
+            <pb facs="#i46" n="28" xml:id="pb-28"/>
+            <pb facs="#i47" n="29" xml:id="pb-29"/>
+            <pb facs="#i48" n="30" xml:id="pb-30"/>
+            <pb facs="#i49" n="31" xml:id="pb-31"/>
+            <pb facs="#i50" n="32" xml:id="pb-32"/>
+            <pb facs="#i51" n="33" xml:id="pb-33"/>
+            <pb facs="#i52" n="34" xml:id="pb-34"/>
+            <pb facs="#i53" n="35" xml:id="pb-35"/>
+            <pb facs="#i54" n="36" xml:id="pb-36"/>
+            <pb facs="#i55" n="37" xml:id="pb-37"/>
+            <pb facs="#i56" n="38" xml:id="pb-38"/>
+            <pb facs="#i57" n="39" xml:id="pb-39"/>
+            <pb facs="#i58" n="40" xml:id="pb-40"/>
+            <pb facs="#i59" n="41" xml:id="pb-41"/>
+            <pb facs="#i60" n="42" xml:id="pb-42"/>
+            <pb facs="#i61" n="43" xml:id="pb-43"/>
+            <pb facs="#i62" n="44" xml:id="pb-44"/>
+            <pb facs="#i63" n="45" xml:id="pb-45"/>
+            <pb facs="#i64" n="46" xml:id="pb-46"/>
+            <pb facs="#i65" n="47" xml:id="pb-47"/>
+            <pb facs="#i66" n="48" xml:id="pb-48"/>
+            <pb facs="#i67" n="49" xml:id="pb-49"/>
+            <pb facs="#i68" n="50" xml:id="pb-50"/>
+            <pb facs="#i69" n="51" xml:id="pb-51"/>
+            <pb facs="#i70" n="52" xml:id="pb-52"/>
+            <pb facs="#i71" n="53" xml:id="pb-53"/>
+            <pb facs="#i72" n="54" xml:id="pb-54"/>
+            <pb facs="#i73" n="55" xml:id="pb-55"/>
+            <pb facs="#i74" n="56" xml:id="pb-56"/>
+            <pb facs="#i75" n="57" xml:id="pb-57"/>
+            <pb facs="#i76" n="58" xml:id="pb-58"/>
+            <pb facs="#i77" n="59" xml:id="pb-59"/>
+            <pb facs="#i78" n="60" xml:id="pb-60"/>
+            <pb facs="#i79" n="61" xml:id="pb-61"/>
+            <pb facs="#i80" n="62" xml:id="pb-62"/>
+            <pb facs="#i81" n="63" xml:id="pb-63"/>
+            <pb facs="#i82" n="64" xml:id="pb-64"/>
+            <pb facs="#i83" n="65" xml:id="pb-65"/>
+            <pb facs="#i84" n="66" xml:id="pb-66"/>
+            <pb facs="#i85" n="67" xml:id="pb-67"/>
+            <pb facs="#i86" n="68" xml:id="pb-68"/>
+            <pb facs="#i87" n="69" xml:id="pb-69"/>
+            <pb facs="#i88" n="70" xml:id="pb-70"/>
+            <pb facs="#i89" n="71" xml:id="pb-71"/>
+            <pb facs="#i90" n="72" xml:id="pb-72"/>
+            <pb facs="#i91" n="73" xml:id="pb-73"/>
+            <pb facs="#i92" n="74" xml:id="pb-74"/>
+            <pb facs="#i93" n="75" xml:id="pb-75"/>
+            <pb facs="#i94" n="76" xml:id="pb-76"/>
+            <pb facs="#i95" n="77" xml:id="pb-77"/>
+            <pb facs="#i96" n="78" xml:id="pb-78"/>
+            <pb facs="#i97" n="79" xml:id="pb-79"/>
+            <pb facs="#i98" n="80" xml:id="pb-80"/>
+            <pb facs="#i99" n="81" xml:id="pb-81"/>
+            <pb facs="#i100" n="82" xml:id="pb-82"/>
+            <pb facs="#i101" n="83" xml:id="pb-83"/>
+            <pb facs="#i102" n="84" xml:id="pb-84"/>
+            <pb facs="#i103" n="85" xml:id="pb-85"/>
+            <pb facs="#i104" n="86" xml:id="pb-86"/>
+            <pb facs="#i105" n="87" xml:id="pb-87"/>
+            <pb facs="#i106" n="88" xml:id="pb-88"/>
+            <pb facs="#i107" n="89" xml:id="pb-89"/>
+            <pb facs="#i108" n="90" xml:id="pb-90"/>
+            <pb facs="#i109" n="91" xml:id="pb-91"/>
+            <pb facs="#i110" n="92" xml:id="pb-92"/>
+            <pb facs="#i111" n="93" xml:id="pb-93"/>
+            <pb facs="#i112" n="94" xml:id="pb-94"/>
+            <pb facs="#i113" n="95" xml:id="pb-95"/>
+            <pb facs="#i114" n="96" xml:id="pb-96"/>
+            <pb facs="#i115" n="97" xml:id="pb-97"/>
+            <pb facs="#i116" n="98" xml:id="pb-98"/>
+            <pb facs="#i117" n="99" xml:id="pb-99"/>
+            <pb facs="#i118" n="100" xml:id="pb-100"/>
+            <pb facs="#i119" n="101" xml:id="pb-101"/>
+            <pb facs="#i120" n="102" xml:id="pb-102"/>
+            <pb facs="#i121" n="103" xml:id="pb-103"/>
+            <pb facs="#i122" n="104" xml:id="pb-104"/>
+            <pb facs="#i123" n="105" xml:id="pb-105"/>
+            <pb facs="#i124" n="106" xml:id="pb-106"/>
+            <pb facs="#i125" n="107" xml:id="pb-107"/>
+            <pb facs="#i126" n="108" xml:id="pb-108"/>
+            <pb facs="#i127" n="109" xml:id="pb-109"/>
+            <pb facs="#i128" n="110" xml:id="pb-110"/>
+            <pb facs="#i129" n="111" xml:id="pb-111"/>
+            <pb facs="#i130" n="112" xml:id="pb-112"/>
+            <pb facs="#i131" n="113" xml:id="pb-113"/>
+            <pb facs="#i132" n="114" xml:id="pb-114"/>
+            <pb facs="#i133" n="115" xml:id="pb-115"/>
+            <pb facs="#i134" n="116" xml:id="pb-116"/>
+            <pb facs="#i135" n="117" xml:id="pb-117"/>
+            <pb facs="#i136" n="118" xml:id="pb-118"/>
+            <pb facs="#i137" n="119" xml:id="pb-119"/>
+            <pb facs="#i138" n="120" xml:id="pb-120"/>
+            <pb facs="#i139" n="121" xml:id="pb-121"/>
+            <pb facs="#i140" n="122" xml:id="pb-122"/>
+            <pb facs="#i141" n="123" xml:id="pb-123"/>
+            <pb facs="#i142" n="124" xml:id="pb-124"/>
+            <pb facs="#i143" n="125" xml:id="pb-125"/>
+            <pb facs="#i144" n="126" xml:id="pb-126"/>
+            <pb facs="#i145" n="127" xml:id="pb-127"/>
+            <pb facs="#i146" n="128" xml:id="pb-128"/>
+            <pb facs="#i147" n="129" xml:id="pb-129"/>
+            <pb facs="#i148" n="130" xml:id="pb-130"/>
+            <pb facs="#i149" n="139" xml:id="pb-139"/>
+            <pb facs="#i150" n="140" xml:id="pb-140"/>
+            <pb facs="#i151" n="141" xml:id="pb-141"/>
+            <pb facs="#i152" n="142" xml:id="pb-142"/>
+            <pb facs="#i153" n="143" xml:id="pb-143"/>
+            <pb facs="#i154" n="144" xml:id="pb-144"/>
+            <pb facs="#i155" n="145" xml:id="pb-145"/>
+            <pb facs="#i156" n="146" xml:id="pb-146"/>
+            <pb facs="#i157" n="147" xml:id="pb-147"/>
+            <pb facs="#i158" n="148" xml:id="pb-148"/>
+            <pb facs="#i159" n="149" xml:id="pb-149"/>
+            <pb facs="#i160" n="150" xml:id="pb-150"/>
+            <pb facs="#i161" n="151" xml:id="pb-151"/>
+            <pb facs="#i162" n="152" xml:id="pb-152"/>
+            <pb facs="#i163" n="153" xml:id="pb-153"/>
+            <pb facs="#i164" n="154" xml:id="pb-154"/>
+            <pb facs="#i165" n="155" xml:id="pb-155"/>
+            <pb facs="#i166" n="156" xml:id="pb-156"/>
+            <pb facs="#i167" n="157" xml:id="pb-157"/>
+            <pb facs="#i168" n="158" xml:id="pb-158"/>
+            <pb facs="#i169" n="159" xml:id="pb-159"/>
+            <pb facs="#i170" n="160" xml:id="pb-160"/>
+            <pb facs="#i171" n="161" xml:id="pb-161"/>
+            <pb facs="#i172" n="162" xml:id="pb-162"/>
+            <pb facs="#i173" n="163" xml:id="pb-163"/>
+            <pb facs="#i174" n="164" xml:id="pb-164"/>
+            <pb facs="#i175" n="165" xml:id="pb-165"/>
+            <pb facs="#i176" n="166" xml:id="pb-166"/>
+            <pb facs="#i177" n="167" xml:id="pb-167"/>
+            <pb facs="#i178" n="168" xml:id="pb-168"/>
+            <pb facs="#i179" n="169" xml:id="pb-169"/>
+            <pb facs="#i180" n="170" xml:id="pb-170"/>
+            <pb facs="#i181" n="171" xml:id="pb-171"/>
+            <pb facs="#i182" n="172" xml:id="pb-172"/>
+            <pb facs="#i183" n="173" xml:id="pb-173"/>
+            <pb facs="#i184" n="174" xml:id="pb-174"/>
+            <pb facs="#i185" n="175" xml:id="pb-175"/>
+            <pb facs="#i186" n="176" xml:id="pb-176"/>
+            <pb facs="#i187" n="177" xml:id="pb-177"/>
+            <pb facs="#i188" n="178" xml:id="pb-178"/>
+            <pb facs="#i189" n="179" xml:id="pb-179"/>
+            <pb facs="#i190" n="180" xml:id="pb-180"/>
+            <pb facs="#i191" n="181" xml:id="pb-181"/>
+            <pb facs="#i192" n="182" xml:id="pb-182"/>
+            <pb facs="#i193" n="183" xml:id="pb-183"/>
+            <pb facs="#i194" n="184" xml:id="pb-184"/>
+            <pb facs="#i195" n="185" xml:id="pb-185"/>
+            <pb facs="#i196" n="186" xml:id="pb-186"/>
+            <pb facs="#i197" n="187" xml:id="pb-187"/>
+            <pb facs="#i198" n="188" xml:id="pb-188"/>
+            <pb facs="#i199" n="189" xml:id="pb-189"/>
+            <pb facs="#i200" n="190" xml:id="pb-190"/>
+            <pb facs="#i201" n="191" xml:id="pb-191"/>
+            <pb facs="#i202" n="192" xml:id="pb-192"/>
+            <pb facs="#i203" n="193" xml:id="pb-193"/>
+            <pb facs="#i204" n="194" xml:id="pb-194"/>
+            <pb facs="#i205" n="195" xml:id="pb-195"/>
+            <pb facs="#i206" n="196" xml:id="pb-196"/>
+            <pb facs="#i207" n="197" xml:id="pb-197"/>
+            <pb facs="#i208" n="198" xml:id="pb-198"/>
+            <pb facs="#i209" n="199" xml:id="pb-199"/>
+            <pb facs="#i210" n="200" xml:id="pb-200"/>
+            <pb facs="#i211" n="201" xml:id="pb-201"/>
+            <pb facs="#i212" n="202" xml:id="pb-202"/>
+            <pb facs="#i213" n="203" xml:id="pb-203"/>
+            <pb facs="#i214" n="204" xml:id="pb-204"/>
+            <pb facs="#i215" n="205" xml:id="pb-205"/>
+            <pb facs="#i216" n="206" xml:id="pb-206"/>
+            <pb facs="#i217" n="207" xml:id="pb-207"/>
+            <pb facs="#i218" n="208" xml:id="pb-208"/>
+            <pb facs="#i219" n="209" xml:id="pb-209"/>
+            <pb facs="#i220" n="210" xml:id="pb-210"/>
+            <pb facs="#i221" n="211" xml:id="pb-211"/>
+            <pb facs="#i222" n="212" xml:id="pb-212"/>
+            <pb facs="#i223" n="213" xml:id="pb-213"/>
+            <pb facs="#i224" n="214" xml:id="pb-214"/>
+            <pb facs="#i225" n="215" xml:id="pb-215"/>
+            <pb facs="#i226" n="216" xml:id="pb-216"/>
+            <pb facs="#i227" n="217" xml:id="pb-217"/>
+            <pb facs="#i228" n="218" xml:id="pb-218"/>
+            <pb facs="#i229" n="219" xml:id="pb-219"/>
+            <pb facs="#i230" n="220" xml:id="pb-220"/>
+            <pb facs="#i231" n="221" xml:id="pb-221"/>
+            <pb facs="#i232" n="222" xml:id="pb-222"/>
+            <pb facs="#i233" n="223" xml:id="pb-223"/>
+            <pb facs="#i234" n="224" xml:id="pb-224"/>
+            <pb facs="#i235" n="225" xml:id="pb-225"/>
+            <pb facs="#i236" n="226" xml:id="pb-226"/>
+            <pb facs="#i237" n="227" xml:id="pb-227"/>
+            <pb facs="#i238" n="228" xml:id="pb-228"/>
+            <pb facs="#i239" n="229" xml:id="pb-229"/>
+            <pb facs="#i240" n="230" xml:id="pb-230"/>
+            <pb facs="#i241" n="231" xml:id="pb-231"/>
+            <pb facs="#i242" n="232" xml:id="pb-232"/>
+            <pb facs="#i243" n="233" xml:id="pb-233"/>
+            <pb facs="#i244" n="234" xml:id="pb-234"/>
+            <pb facs="#i245" n="235" xml:id="pb-235"/>
+            <pb facs="#i246" n="236" xml:id="pb-236"/>
+            <pb facs="#i247" n="237" xml:id="pb-237"/>
+            <pb facs="#i248" n="238" xml:id="pb-238"/>
+            <pb facs="#i249" n="239" xml:id="pb-239"/>
+            <pb facs="#i250" n="240" xml:id="pb-240"/>
+            <pb facs="#i251" n="241" xml:id="pb-241"/>
+            <pb facs="#i252" n="242" xml:id="pb-242"/>
+            <pb facs="#i253" n="243" xml:id="pb-243"/>
+            <pb facs="#i254" n="244" xml:id="pb-244"/>
+            <pb facs="#i255" n="245" xml:id="pb-245"/>
+            <pb facs="#i256" n="246" xml:id="pb-246"/>
+            <pb facs="#i257" n="247" xml:id="pb-247"/>
+            <pb facs="#i258" n="248" xml:id="pb-248"/>
+            <pb facs="#i259" n="249" xml:id="pb-249"/>
+            <pb facs="#i260" n="250" xml:id="pb-250"/>
+            <pb facs="#i261" n="251" xml:id="pb-251"/>
+            <pb facs="#i262" n="252" xml:id="pb-252"/>
+            <pb facs="#i263" n="253" xml:id="pb-253"/>
+            <pb facs="#i264" n="254" xml:id="pb-254"/>
+            <pb facs="#i265" n="255" xml:id="pb-255"/>
+            <pb facs="#i266" n="256" xml:id="pb-256"/>
+            <pb facs="#i267" n="257" xml:id="pb-257"/>
+            <pb facs="#i268" n="258" xml:id="pb-258"/>
+            <pb facs="#i269" n="259" xml:id="pb-259"/>
+            <pb facs="#i270" n="260" xml:id="pb-260"/>
+            <pb facs="#i271" n="261" xml:id="pb-261"/>
+            <pb facs="#i272" n="262" xml:id="pb-262"/>
+            <pb facs="#i273" n="263" xml:id="pb-263"/>
+            <pb facs="#i274" n="264" xml:id="pb-264"/>
+            <pb facs="#i275" n="265" xml:id="pb-265"/>
+            <pb facs="#i276" n="266" xml:id="pb-266"/>
+            <pb facs="#i277" n="267" xml:id="pb-267"/>
+            <pb facs="#i278" n="268" xml:id="pb-268"/>
+            <pb facs="#i279" n="269" xml:id="pb-269"/>
+            <pb facs="#i280" n="270" xml:id="pb-270"/>
+            <pb facs="#i281" n="271" xml:id="pb-271"/>
+            <pb facs="#i282" n="272" xml:id="pb-272"/>
+            <pb facs="#i283" n="273" xml:id="pb-273"/>
+            <pb facs="#i284" n="274" xml:id="pb-274"/>
+            <pb facs="#i285" n="275" xml:id="pb-275"/>
+            <pb facs="#i286" n="276" xml:id="pb-276"/>
+            <pb facs="#i287" n="277" xml:id="pb-277"/>
+            <pb facs="#i288" n="278" xml:id="pb-278"/>
+            <pb facs="#i289" n="279" xml:id="pb-279"/>
+            <pb facs="#i290" n="280" xml:id="pb-280"/>
+            <pb facs="#i291" n="281" xml:id="pb-281"/>
+            <pb facs="#i292" n="282" xml:id="pb-282"/>
+            <pb facs="#i293" n="283" xml:id="pb-283"/>
+            <pb facs="#i294" n="284" xml:id="pb-284"/>
+            <pb facs="#i295" n="285" xml:id="pb-285"/>
+            <pb facs="#i296" n="286" xml:id="pb-286"/>
+            <pb facs="#i297" n="287" xml:id="pb-287"/>
+            <pb facs="#i298" n="288" xml:id="pb-288"/>
+            <pb facs="#i299" n="289" xml:id="pb-289"/>
+            <pb facs="#i300" n="290" xml:id="pb-290"/>
+            <pb facs="#i301" n="291" xml:id="pb-291"/>
+            <pb facs="#i302" n="292" xml:id="pb-292"/>
+            <pb facs="#i303" n="293" xml:id="pb-293"/>
+            <pb facs="#i304" n="294" xml:id="pb-294"/>
+            <pb facs="#i305" n="295" xml:id="pb-295"/>
+            <pb facs="#i306" n="296" xml:id="pb-296"/>
+            <pb facs="#i307" n="297" xml:id="pb-297"/>
+            <pb facs="#i308" n="298" xml:id="pb-298"/>
+            <pb facs="#i309" n="299" xml:id="pb-299"/>
+            <pb facs="#i310" n="300" xml:id="pb-300"/>
+            <pb facs="#i311" n="301" xml:id="pb-301"/>
+            <pb facs="#i312" n="302" xml:id="pb-302"/>
+            <pb facs="#i313" n="303" xml:id="pb-303"/>
+            <pb facs="#i314" n="304" xml:id="pb-304"/>
+            <pb facs="#i315" n="305" xml:id="pb-305"/>
+            <pb facs="#i316" n="306" xml:id="pb-306"/>
+            <pb facs="#i317" n="307" xml:id="pb-307"/>
+            <pb facs="#i318" n="308" xml:id="pb-308"/>
+            <pb facs="#i319" n="309" xml:id="pb-309"/>
+            <pb facs="#i320" n="310" xml:id="pb-310"/>
+            <pb facs="#i321" n="311" xml:id="pb-311"/>
+            <pb facs="#i322" n="312" xml:id="pb-312"/>
+            <pb facs="#i323" n="313" xml:id="pb-313"/>
+            <pb facs="#i324" n="314" xml:id="pb-314"/>
+            <pb facs="#i325" n="315" xml:id="pb-315"/>
+            <pb facs="#i326" n="316" xml:id="pb-316"/>
+            <pb facs="#i327" n="317" xml:id="pb-317"/>
+            <pb facs="#i328" n="318" xml:id="pb-318"/>
+            <pb facs="#i329" n="319" xml:id="pb-319"/>
+            <pb facs="#i330" n="320" xml:id="pb-320"/>
+            <pb facs="#i331" n="321" xml:id="pb-321"/>
+            <pb facs="#i332" n="322" xml:id="pb-322"/>
+            <pb facs="#i333" n="323" xml:id="pb-323"/>
+            <pb facs="#i334" n="324" xml:id="pb-324"/>
+            <pb facs="#i335" n="325" xml:id="pb-325"/>
+            <pb facs="#i336" n="326" xml:id="pb-326"/>
+            <pb facs="#i337" n="327" xml:id="pb-327"/>
+            <pb facs="#i338" n="328" xml:id="pb-328"/>
+            <pb facs="#i339" n="329" xml:id="pb-329"/>
+            <pb facs="#i340" n="330" xml:id="pb-330"/>
+            <pb facs="#i341" n="331" xml:id="pb-331"/>
+            <pb facs="#i342" n="332" xml:id="pb-332"/>
+            <pb facs="#i343" n="333" xml:id="pb-333"/>
+            <pb facs="#i344" n="334" xml:id="pb-334"/>
+            <pb facs="#i345" n="335" xml:id="pb-335"/>
+            <pb facs="#i346" n="336" xml:id="pb-336"/>
+            <pb facs="#i347" n="337" xml:id="pb-337"/>
+            <pb facs="#i348" n="338" xml:id="pb-338"/>
+            <pb facs="#i349" n="339" xml:id="pb-339"/>
+            <pb facs="#i350" n="340" xml:id="pb-340"/>
+            <pb facs="#i351" n="341" xml:id="pb-341"/>
+            <pb facs="#i352" n="342" xml:id="pb-342"/>
+            <pb facs="#i353" n="343" xml:id="pb-343"/>
+            <pb facs="#i354" n="344" xml:id="pb-344"/>
+            <pb facs="#i355" n="345" xml:id="pb-345"/>
+            <pb facs="#i356" n="346" xml:id="pb-346"/>
+            <pb facs="#i357" n="347" xml:id="pb-347"/>
+            <pb facs="#i358" n="348" xml:id="pb-348"/>
+            <pb facs="#i359" n="349" xml:id="pb-349"/>
+            <pb facs="#i360" n="350" xml:id="pb-350"/>
+            <pb facs="#i361" n="351" xml:id="pb-351"/>
+            <pb facs="#i362" n="352" xml:id="pb-352"/>
+            <pb facs="#i363" n="353" xml:id="pb-353"/>
+            <pb facs="#i364" n="354" xml:id="pb-354"/>
+            <pb facs="#i365" n="355" xml:id="pb-355"/>
+            <pb facs="#i366" n="356" xml:id="pb-356"/>
+            <pb facs="#i367" n="357" xml:id="pb-357"/>
+            <pb facs="#i368" n="358" xml:id="pb-358"/>
+            <pb facs="#i369" n="359" xml:id="pb-359"/>
+            <pb facs="#i370" n="360" xml:id="pb-360"/>
+            <pb facs="#i371" n="361" xml:id="pb-361"/>
+            <pb facs="#i372" n="362" xml:id="pb-362"/>
+            <pb facs="#i373" n="363" xml:id="pb-363"/>
+            <pb facs="#i374" n="364" xml:id="pb-364"/>
+            <pb facs="#i375" n="365" xml:id="pb-365"/>
+            <pb facs="#i376" n="366" xml:id="pb-366"/>
+            <pb facs="#i377" n="367" xml:id="pb-367"/>
+            <pb facs="#i378" n="368" xml:id="pb-368"/>
+            <pb facs="#i379" n="369" xml:id="pb-369"/>
+            <pb facs="#i380" n="370" xml:id="pb-370"/>
+            <pb facs="#i381" n="371" xml:id="pb-371"/>
+            <pb facs="#i382" n="372" xml:id="pb-372"/>
+            <pb facs="#i383" n="373" xml:id="pb-373"/>
+            <pb facs="#i384" n="374" xml:id="pb-374"/>
+            <pb facs="#i385" n="375" xml:id="pb-375"/>
+            <pb facs="#i386" n="376" xml:id="pb-376"/>
+            <pb facs="#i387" n="377" xml:id="pb-377"/>
+            <pb facs="#i388" n="378" xml:id="pb-378"/>
+            <pb facs="#i389" n="379" xml:id="pb-379"/>
+            <pb facs="#i390" n="380" xml:id="pb-380"/>
+            <pb facs="#i391" n="381" xml:id="pb-381"/>
+            <pb facs="#i392" n="382" xml:id="pb-382"/>
+            <pb facs="#i393" n="383" xml:id="pb-383"/>
+            <pb facs="#i394" n="384" xml:id="pb-384"/>
+            <pb facs="#i395" n="385" xml:id="pb-385"/>
+            <pb facs="#i396" n="386" xml:id="pb-386"/>
+            <pb facs="#i397" n="387" xml:id="pb-387"/>
+            <pb facs="#i398" n="388" xml:id="pb-388"/>
+            <pb facs="#i399" n="389" xml:id="pb-389"/>
+            <pb facs="#i400" n="390" xml:id="pb-390"/>
+            <pb facs="#i401" n="391" xml:id="pb-391"/>
+            <pb facs="#i402" n="392" xml:id="pb-392"/>
+            <pb facs="#i403" n="393" xml:id="pb-393"/>
+            <pb facs="#i404" n="394" xml:id="pb-394"/>
+            <pb facs="#i405" n="395" xml:id="pb-395"/>
+            <pb facs="#i406" n="396" xml:id="pb-396"/>
+            <pb facs="#i407" n="397" xml:id="pb-397"/>
+            <pb facs="#i408" n="398" xml:id="pb-398"/>
+            <pb facs="#i409" n="399" xml:id="pb-399"/>
+            <pb facs="#i410" n="400" xml:id="pb-400"/>
+            <pb facs="#i411" n="401" xml:id="pb-401"/>
+            <pb facs="#i412" n="402" xml:id="pb-402"/>
+            <pb facs="#i413" n="403" xml:id="pb-403"/>
+            <pb facs="#i414" n="404" xml:id="pb-404"/>
+            <pb facs="#i415" n="405" xml:id="pb-405"/>
+            <pb facs="#i416" n="406" xml:id="pb-406"/>
+            <pb facs="#i417" n="407" xml:id="pb-407"/>
+            <pb facs="#i418" n="408" xml:id="pb-408"/>
+            <pb facs="#i419" n="409" xml:id="pb-409"/>
+            <pb facs="#i420" n="410" xml:id="pb-410"/>
+            <pb facs="#i421" n="411" xml:id="pb-411"/>
+            <pb facs="#i422" n="412" xml:id="pb-412"/>
+            <pb facs="#i423" n="413" xml:id="pb-413"/>
+            <pb facs="#i424" n="414" xml:id="pb-414"/>
+            <pb facs="#i425" n="415" xml:id="pb-415"/>
+            <pb facs="#i426" n="416" xml:id="pb-416"/>
+            <pb facs="#i427" n="417" xml:id="pb-417"/>
+            <pb facs="#i428" n="418" xml:id="pb-418"/>
+            <pb facs="#i429" n="419" xml:id="pb-419"/>
+            <pb facs="#i430" n="420" xml:id="pb-420"/>
+            <pb facs="#i431" n="421" xml:id="pb-421"/>
+            <pb facs="#i432" n="422" xml:id="pb-422"/>
+            <pb facs="#i433" n="423" xml:id="pb-423"/>
+            <pb facs="#i434" n="424" xml:id="pb-424"/>
+            <pb facs="#i435" n="425" xml:id="pb-425"/>
+            <pb facs="#i436" n="426" xml:id="pb-426"/>
+            <pb facs="#i437" n="427" xml:id="pb-427"/>
+            <pb facs="#i438" n="428" xml:id="pb-428"/>
+            <pb facs="#i439" n="429" xml:id="pb-429"/>
+            <pb facs="#i440" n="430" xml:id="pb-430"/>
+            <pb facs="#i441" n="431" xml:id="pb-431"/>
+            <pb facs="#i442" n="432" xml:id="pb-432"/>
+            <pb facs="#i443" n="433" xml:id="pb-433"/>
+            <pb facs="#i444" n="434" xml:id="pb-434"/>
+            <pb facs="#i445" n="435" xml:id="pb-435"/>
+            <pb facs="#i446" n="436" xml:id="pb-436"/>
+            <pb facs="#i447" n="437" xml:id="pb-437"/>
+            <pb facs="#i448" n="438" xml:id="pb-438"/>
+            <pb facs="#i449" n="439" xml:id="pb-439"/>
+            <pb facs="#i450" n="440" xml:id="pb-440"/>
+            <pb facs="#i451" n="441" xml:id="pb-441"/>
+            <pb facs="#i452" n="442" xml:id="pb-442"/>
+            <pb facs="#i453" n="443" xml:id="pb-443"/>
+            <pb facs="#i454" n="444" xml:id="pb-444"/>
+            <pb facs="#i455" n="445" xml:id="pb-445"/>
+            <pb facs="#i456" n="446" xml:id="pb-446"/>
+            <pb facs="#i457" n="447" xml:id="pb-447"/>
+            <pb facs="#i458" n="448" xml:id="pb-448"/>
+            <pb facs="#i459" n="449" xml:id="pb-449"/>
+            <pb facs="#i460" n="450" xml:id="pb-450"/>
+            <pb facs="#i461" n="451" xml:id="pb-451"/>
+            <pb facs="#i462" n="452" xml:id="pb-452"/>
+            <pb facs="#i463" n="453" xml:id="pb-453"/>
+            <pb facs="#i464" n="454" xml:id="pb-454"/>
+            <pb facs="#i465" n="455" xml:id="pb-455"/>
+            <pb facs="#i466" n="456" xml:id="pb-456"/>
+            <pb facs="#i467" n="457" xml:id="pb-457"/>
+            <pb facs="#i468" n="458" xml:id="pb-458"/>
+            <pb facs="#i469" n="459" xml:id="pb-459"/>
+            <pb facs="#i470" n="460" xml:id="pb-460"/>
+            <pb facs="#i471" n="461" xml:id="pb-461"/>
+            <pb facs="#i472" n="462" xml:id="pb-462"/>
+            <pb facs="#i473" n="463" xml:id="pb-463"/>
+            <pb facs="#i474" n="464" xml:id="pb-464"/>
+            <pb facs="#i475" n="465" xml:id="pb-465"/>
+            <pb facs="#i476" n="466" xml:id="pb-466"/>
+            <pb facs="#i477" n="467" xml:id="pb-467"/>
+            <pb facs="#i478" n="468" xml:id="pb-468"/>
+            <pb facs="#i479" n="469" xml:id="pb-469"/>
+            <pb facs="#i480" n="470" xml:id="pb-470"/>
+            <pb facs="#i481" n="471" xml:id="pb-471"/>
+            <pb facs="#i482" n="472" xml:id="pb-472"/>
+            <pb facs="#i483" n="473" xml:id="pb-473"/>
+            <pb facs="#i484" n="474" xml:id="pb-474"/>
+            <pb facs="#i485" n="475" xml:id="pb-475"/>
+            <pb facs="#i486" n="476" xml:id="pb-476"/>
+            <pb facs="#i487" n="477" xml:id="pb-477"/>
+            <pb facs="#i488" n="478" xml:id="pb-478"/>
+            <pb facs="#i489" n="479" xml:id="pb-479"/>
+            <pb facs="#i490" n="480" xml:id="pb-480"/>
+            <pb facs="#i491" n="481" xml:id="pb-481"/>
+            <pb facs="#i492" n="482" xml:id="pb-482"/>
+            <pb facs="#i493" n="483" xml:id="pb-483"/>
+            <pb facs="#i494" n="484" xml:id="pb-484"/>
+            <pb facs="#i495" n="485" xml:id="pb-485"/>
+            <pb facs="#i496" n="486" xml:id="pb-486"/>
+            <pb facs="#i497" n="487" xml:id="pb-487"/>
+            <pb facs="#i498" n="488" xml:id="pb-488"/>
+            <pb facs="#i499" n="489" xml:id="pb-489"/>
+            <pb facs="#i500" n="490" xml:id="pb-490"/>
+            <pb facs="#i501" n="491" xml:id="pb-491"/>
+            <pb facs="#i502" n="492" xml:id="pb-492"/>
+            <pb facs="#i503" n="493" xml:id="pb-493"/>
+            <pb facs="#i504" n="494" xml:id="pb-494"/>
+            <pb facs="#i505" n="495" xml:id="pb-495"/>
+            <pb facs="#i506" n="496" xml:id="pb-496"/>
+            <pb facs="#i507" n="497" xml:id="pb-497"/>
+            <pb facs="#i508" n="498" xml:id="pb-498"/>
+            <pb facs="#i509" n="i recto" xml:id="pb-irecto"/>
+            <pb facs="#i510" n="i verso" xml:id="pb-iverso"/>
+            <pb facs="#i511" n="ii recto" xml:id="pb-iirecto"/>
+            <pb facs="#i512" n="ii verso" xml:id="pb-iiverso"/>
+            <pb facs="#i513" n="[c] recto" xml:id="pb-crecto"/>
+            <pb facs="#i514" n="[c] verso" xml:id="pb-cverso"/>
+            <pb facs="#i515" n="right cover, inner" xml:id="pb-rightcover,inner"/>
+            <pb facs="#i516" n="right cover, outer" xml:id="pb-rightcover,outer"/>
+         </div>
+      </body>
+   </text>
+</TEI>

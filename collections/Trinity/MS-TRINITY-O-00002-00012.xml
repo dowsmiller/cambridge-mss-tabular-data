@@ -1,0 +1,1596 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11971">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, Trinity College, MS O.2.12</title>
+                <funder>The Polonsky Foundation</funder>
+                <principal>Suzanne Paul</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>University Library</publisher>
+
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © The Master and Fellows of Trinity College, Cambridge.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made
+                        available for download are licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This
+                        metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+
+            <availability xml:id="watermark" status="restricted"><licence>Trinity College, Cambridge (CC BY-NC 4.0)</licence></availability></publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-TRINITY-O-00002-00012" xml:lang="en">
+                    <msIdentifier>
+                        <institution>Trinity College, Cambridge</institution>
+                        <repository>Trinity College Library</repository>
+                        <collection>Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, Trinity College, MS O.2.12</idno>
+
+                        <altIdentifier type="internal">
+                            <idno type="james">MS 1116</idno>
+                        </altIdentifier>
+                        <altIdentifier type="external">
+                            <idno type="diktyon">Diktyon 11971</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+
+                    <msContents>
+                        <summary>
+                            <seg type="para">This manuscript is a composite made up of small parts
+                                copied at a variety of dates from the 13th to the 16th centuries. It
+                                contains a variety of <title>Greek grammatical, rhetorical and
+                                    philosophical texts</title>. The oldest part, copied in the late
+                                13th or early 14th century, contains three orations by the
+                                4th-century rhetorician Libanios. The date and the use of eastern
+                                paper indicate that it was produced in the Greek-speaking world.
+                                Another portion, from the mid-15th century, contains another oration
+                                of Libanios and a short lexical text. A third part contains a
+                                fragment of a text by Andromachos of Crete, physician to the Emperor
+                                Nero (37-68 CE). This was copied by the Italian scribe Bartolomeo
+                                Zanetti, a native of Brescia who worked in Venice, Florence and Rome,
+                                in the first half of the 16th century. The longest part, also from
+                                the 16th century and probably also produced in Italy, contains a
+                                series of brief texts and excerpts, some anonymous, others from the
+                                works of the 1st century BCE historian and teacher of rhetoric
+                                Dionysios of Halikarnassos and the 4th century CE philosopher
+                                Maximos Byzantios.</seg>
+                            <seg type="para">The manuscript, or at least the older parts of it, was
+                                owned by the Venetian humanist Cardinal Domenico Grimani
+                                (1460-1523). It later came into the hands of the scholar Isaac
+                                Casaubon (1559-1614), and then those of Thomas Gale (c. 1635-1702),
+                                whose son Roger Gale (1672-1744) donated it to Trinity College along
+                                with the rest of his collection.</seg>
+                            <seg type="par">A previous binding for the manuscript reused a fragment
+                                of a 16th-century French document as a wrapper.</seg>
+                            <seg type="para">Dr Christopher Wright</seg>
+                        </summary>
+
+                        <textLang mainLang="grc" otherLangs="la">Greek and Latin</textLang>
+                    </msContents>
+
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="mixed">
+                                <extent>
+                                    <seg type="object">
+                                        <objectType>Codex </objectType>
+                                    </seg>
+                                    <seg type="leaf">
+                                        <num type="laterEndleaf" value="3">iii</num> + <num type="endleaf" value="2">2</num> + <num type="leaf" value="52">52</num> + <num type="laterEndleaf" value="3">iii</num>
+                           </seg>
+                                </extent>
+
+                                <foliation xml:id="modern">The manuscript is foliated with the
+                                    numbers [a-c] + I-II + 1-52 + [d-f], in pencil, in Roman
+                                    numerals, recto, upper right, and Arabic numerals, recto, in the
+                                    lower half of the right-hand margin.</foliation>
+                                <foliation xml:id="earlier">
+                           <locus from="1r" to="14v">ff.
+                                        1-14</locus> have an older foliation in Arabic numerals,
+                                    recto, upper right. Some numbers have been corrected. On <locus from="15r" to="17v">ff. 15-17</locus> a new foliation
+                                    sequence in this position runs 3-5; <locus from="18r" to="20v">ff. 18-20</locus> are unfoliated in this position. Another
+                                    new sequence in this position appears on <locus from="21r" to="52v">ff. 21-52</locus>, running 1-32.</foliation>
+                            </supportDesc>
+                        </objectDesc>
+
+                        <bindingDesc>
+                            <binding calendar="gregorian" notAfter="1999" notBefore="1900">
+                                <p>20th-century binding with marbled paper covering over
+                                    pasteboards, with a white parchment spine and plain pastedowns.
+                                    The classmark appears on the spine on patches.</p>
+                                <p>
+                                    <dimensions type="binding" unit="mm">
+                                        <height quantity="236">236</height>
+                                        <width quantity="186">186</width>
+                                        <depth quantity="25">25</depth>
+                                    </dimensions>
+                                </p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+
+                    <history>
+                        <provenance>Owned by <name key="person_v67314831" role="fmo" type="person">
+                        <persName type="display">Cardinal Domenico Grimani
+                                    (1460-1523)</persName>
+                        <persName type="standard">Grimani,
+                                    Domenico, 1460-1523</persName>
+                     </name>.</provenance>
+                        <provenance>Owned by the classical scholar <name key="person_v56620173" role="fmo" type="person">
+                        <persName type="display">Isaac Casaubon
+                                    (1559-1614)</persName>
+                        <persName type="standard">Casaubon, Isaac,
+                                    1559-1614</persName>
+                     </name>.</provenance>
+                        <provenance>Owned by the antiquary <name key="person_v46783945" role="fmo" type="person">
+                        <persName type="display">Thomas
+                                    Gale (c. 1635-1702)</persName>
+                        <persName type="standard">Gale,
+                                    Thomas, 1635?-1702</persName>
+                     </name>, Fellow of Trinity and Dean
+                            of York. It appears in the <date calendar="gregorian" when="1697">1697</date> catalogue of Gale's collection contained in <bibl subtype="internal" type="MS">Trinity College MS O.5.38</bibl> (p.
+                            165).</provenance>
+
+                        <acquisition calendar="gregorian" when="1738">Donated by Thomas's son, the
+                            antiquary <name key="person_v62981706" role="fmo" type="person">
+                        <persName type="display">Roger Gale
+                                    (1672-1744)</persName>
+                        <persName type="standard">Gale, Roger,
+                                    1672-1744</persName>
+                     </name>, in 1738.</acquisition>
+                    </history>
+
+
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <p/>
+                            </recordHist>
+                            <availability status="restricted">
+                                <p>Visitors to Trinity College who wish to consult Special Collections material
+                                    are required to apply to the Library in advance of their visit. For information
+                                    on eligibility and admission procedures see: <ref target="https://www.trin.cam.ac.uk/library/wren-library/information-for-readers/">Trinity College: Information for Readers</ref>.</p>
+                            </availability>
+                        </adminInfo>
+
+                        <listBibl>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/Q2XTA4BA" type="book" xml:id="James1902">
+                                <monogr>
+                                    <title level="m">The western manuscripts in the library of
+                                        Trinity College: a descriptive catalogue</title>
+                                    
+                                    <author>
+                              <forename>M. R.</forename>
+                              <surname>James</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">3</biblScope>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1902</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/6C9LQP7L" type="journalArticle" xml:id="Craster1926">
+                                <analytic>
+                                    <title level="a">Casaubon’s Greek Manuscripts</title>
+                                    <author>
+                              <forename>E.</forename>
+                              <surname>Craster</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Bodleian Quarterly Record</title>
+                                    <imprint>
+                                        <biblScope unit="volume">5</biblScope>
+                                        <biblScope unit="page">97-100</biblScope>
+                                        <date>1926</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/VCK93XKZ" type="book" xml:id="Gamillscheg1981">
+                                <monogr>
+                                    <title level="m">Repertorium der griechischen Kopisten,
+                                        800-1600</title>
+                                    <author>
+                              <forename>Ernst</forename>
+                              <surname>Gamillscheg</surname>
+                           </author>
+                                    <author>
+                              <forename>Dieter</forename>
+                              <surname>Harlfinger</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Wien</pubPlace>
+                                        <biblScope unit="volume">I. Grossbritannien</biblScope>
+                                        <publisher>Verlag der Österreichischen Akademie der
+                                            Wissenschaften</publisher>
+                                        <date>1981</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                           <title level="s">Veröffentlichungen der Kommission für
+                                        Byzantinistik</title>
+                           <biblScope unit="volume">3</biblScope>
+                        </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/5DPCZUCN" type="book" xml:id="Diller2003">
+                                <monogr>
+                                    <title level="m">Bibliotheca graeca manuscripta cardinalis
+                                        Dominici Grimani (1461-1523)</title>
+                                    <author>
+                              <forename>A.</forename>
+                              <surname>Diller</surname>
+                           </author>
+                                    <author>
+                              <forename>H.
+                                        D.</forename>
+                              <surname>Saffrey</surname>
+                           </author>
+                                    <author>
+                              <forename>L.
+                                        G.</forename>
+                              <surname>Westerink</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Mariano del Friuli (Gorizia)</pubPlace>
+                                        <publisher>Edizioni della Laguna</publisher>
+                                        <date>2003</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                           <title level="s">Collana di studi (Biblioteca nazionale
+                                        marciana)</title>
+                           <biblScope unit="volume">1</biblScope>
+                        </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/8H4TXIGD" type="book" xml:id="Boudon-Millot2007">
+                                <monogr>
+                                    <title level="m">Galien. Tome I, Introduction générale; Sur
+                                        l'ordre de ses propres livres; Sur ses propres livres; Que
+                                        l'excellent médecin est aussi philosophie</title>
+                                   
+                                    <author>
+                              <forename>Véronique</forename>
+                              <surname>Boudon-Millot</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Paris</pubPlace>
+                                        <publisher>Belles Lettres</publisher>
+                                        <date>2007</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                           <title level="s">Collection des Universités de France. série
+                                        grecque</title>
+                           <biblScope unit="volume">450</biblScope>
+                        </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/DS8BYF38" type="journalArticle" xml:id="Jackson2008">
+                                <analytic>
+                                    <title level="a">A List of the Greek MSS of Domenico
+                                        Grimani</title>
+                                    <author>
+                              <forename>Donald F.</forename>
+                              <surname>Jackson</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Scriptorium</title>
+                                    <imprint>
+                                        <biblScope unit="page">164-169</biblScope>
+                                        <date>2008</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/IXICM7AK" type="journalArticle" xml:id="Palla2016">
+                                <analytic>
+                                    <title level="a">Un testimone trascurato della Seconda lettera
+                                        ad Ammeo di Dionigi di Alicarnasso</title>
+                                    <author>
+                              <forename>A.</forename>
+                              <surname>Palla</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Νέα Ῥώμη. Rivista di Studi
+                                        Bizantinistici</title>
+                                    <imprint>
+                                        <biblScope unit="volume">13</biblScope>
+                                        <biblScope unit="page">33-44, figg. 1-2</biblScope>
+                                        <date>2016</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/WTID8RWV" type="journalArticle" xml:id="Calvié2020">
+                                <analytic>
+                                    <title level="a">Le commerce transalpin du copiste-libraire
+                                        vénitien Andréas Darmarios entre 1582 et 1585</title>
+                                    <author>
+                              <forename>L.</forename>
+                              <surname>Calvié</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Revue d'Histoire des Textes</title>
+                                    <imprint>
+                                        <biblScope unit="volume">15</biblScope>
+                                        <biblScope unit="page">89-168</biblScope>
+                                        <date>2020</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>
+
+                    <msPart n="1">
+                        <msIdentifier>
+                            <idno>Part I</idno>
+                        </msIdentifier>
+
+                        <msContents>
+                            <msItem n="1">
+                                <locus from="I verso" to="II recto">ff. i verso-ii recto</locus>
+                                <title>Fragment of a deed</title>
+                                <textLang mainLang="fr">French</textLang>
+                                <note>Signed <q xml:lang="fr">Mellas</q> and <q xml:lang="fr">P.
+                                        Douffe</q> (?), with what appear to be notarial
+                                    signs.</note>
+                            </msItem>
+                        </msContents>
+
+                        <physDesc>
+                            <objectDesc form="codex">
+                                <supportDesc material="perg">
+                                    <support>
+                                        <material>Parchment</material>
+                                    </support>
+
+                                    <extent>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="220">220</height>
+                                                <width quantity="165">165</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+
+                                    <condition> The inner sides of the two parchment leaves are
+                                        grimy around all four edges, suggesting that these may have
+                                        been formed the outer side of the binding, before they were
+                                        separated from the rest of the contents and rebound as
+                                        endleaves at the front of the manuscript. The two upper
+                                        corners are heavily creased. </condition>
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="1" writtenLines="16">
+                                        <dimensions subtype="written" type="fragment" unit="mm">
+                                            <height quantity=""/>
+                                            <width quantity=""/>
+                                        </dimensions>
+                                        <seg type="ruling">A single column of text, more than 16
+                                            lines (rest lost due to reuse and trimming), unruled.
+                                        </seg>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote scope="minor" script="cursiva" xml:id="hand-1">
+                           <locus from="I verso" to="II recto">ff. i verso-ii recto</locus>
+                                    were written in a French <term type="script">secretary </term>
+                                    script.</handNote>
+                            </handDesc>
+
+                            <additions>A Greek note has been addded on <locus from="II recto" to="II recto">f. ii recto</locus>.</additions>
+
+                            <bindingDesc>
+                                <binding notAfter="1900">
+                                    <p>Multiple pricking holes along the gutter of this bifolium
+                                        indicates that it was used as a wrapper for some or all of
+                                        the contents of this composite manuscript. It likely
+                                        remained in place as the wrapper at least until the
+                                        manuscript came to Trinity College: <locus from="II verso" to="II verso">f. II verso</locus> bears a rectangular
+                                        stain corresponding to the size and shape of the college
+                                        bookplate.</p>
+                                </binding>
+                            </bindingDesc>
+                        </physDesc>
+
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="medium" notAfter="1600" notBefore="1500">This document was probably written in the 16th
+                                    century in </origDate>
+                                <origPlace cert="medium" key="place_g10000070"> France.</origPlace>
+                            </origin>
+                        </history>
+                    </msPart>
+
+                    <msPart n="2">
+                        <msIdentifier>
+                            <idno>Part II</idno>
+                        </msIdentifier>
+
+                        <msContents>
+                            <msItem n="2">
+                                <locus from="1r" to="1v">f. 1r-1v, line 13</locus>
+                                <author key="person_v17225859">Libanios</author>
+                                <title xml:lang="la">Orationes 1-64</title>
+                                <note>Oration 14 (Pro Aristophane)</note>
+                                <note>Defective at the beginning: begins ed. Foerster section
+                                    61</note>
+                                <incipit defective="true">
+                           <locus from="1r" to="1r">f. 1r</locus>
+                                    οὐδὲ συνετάραξε Διὸς γαμηλίου θεσμὸν· οὐδ’ ἐξ ὧν ἄλλους ἠδίκει
+                                    τὰς ἡδονὰς ἐπλήρωσεν</incipit>
+                                <explicit>
+                           <locus from="1v" to="1v">f. 1v</locus> σκόπει δὲ αὐτὸς εἰ
+                                    μηδέν σοι βλάβος τὸ δοκεῖν οὐκ εὖ φρονεῖν, ὃν περὶ πολλοῦ
+                                    ποιῇ</explicit>
+                                <note>TLG 2200.004</note>
+                            </msItem>
+
+                            <msItem n="3">
+                                <locus from="1v" to="5v">f. 1v, line 13-f. 5v, line 7</locus>
+                                <author>Libanios</author>
+                                <title xml:lang="la">Orationes 1-64</title>
+                                <note>Oration 19 (Ad Theodosium imperatorem de seditione
+                                    Antiochena)</note>
+                                <rubric>
+                           <locus from="1v" to="1v">f. 1v</locus> Πρὸς Θεοδόσιον
+                                    βασίλεα περὶ τῆς στάσεως</rubric>
+                                <incipit>
+                           <locus from="1v" to="1v">f. 1v</locus> Ἠτύχηκε ἡμῖν ἡ πόλις
+                                    ὦ βασιλεῦ· τοιούτων ἐν αὐτῆ πρὸς τὸν ἐραστὴν τὸν ἑαυτῆς
+                                    γεγενημένων</incipit>
+                                <explicit>
+                           <locus from="5v" to="5v">f. 5v</locus> χρηστὴν ἀγγελίαν
+                                    φέροντα τοῖς ἐμαυτοῦ πολίταις ἀπόπεμψον</explicit>
+                                <note>TLG 2200.004</note>
+                            </msItem>
+
+                            <msItem n="4">
+                                <locus from="5v" to="6v">f. 5v, line 8-f. 6v</locus>
+                                <author>Libanios</author>
+                                <title xml:lang="la">Orationes 1-64</title>
+                                <note>Oration 20 (Ad Theodosium post reconciliationem)</note>
+                                <note>Defective at the end: ends ed. Foerster, section 18</note>
+                                <rubric>
+                           <locus from="5v" to="5v">f. 5v</locus> Πρὸς Θεοδόσιον ἐπὶ
+                                    ταῖς διαλλαγαῖς</rubric>
+                                <incipit>
+                           <locus from="5v" to="5v">f. 5v</locus> Ὃ μὲν πολλάκις
+                                    προεῖπον ὡς οὔτ’ἔσται τῆ πόλει δεινὸν οὐδὲν ἕτερον</incipit>
+                                <explicit>
+                           <locus from="6v" to="6v">f. 6v</locus> ὁ δὲ τὸν ἐγγυτέρω
+                                    διακρούσμενος θάνατον ἤγετο στένων</explicit>
+                                <note>TLG 2200.004</note>
+                            </msItem>
+                        </msContents>
+
+                        <physDesc>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>
+                                 <locus from="1r" to="6v">ff. 1-6</locus> Eastern
+                                            paper</material>
+                                    </support>
+
+                                    <extent>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height max="230" min="220">220-230</height>
+                                                <width max="175" min="165">165-175</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+
+                                    <collation mainStructures="6">
+                                        <p>A ternion:</p>
+                                        <p>
+                                            <list>
+                                                <item>Quire 1<hi rend="superscript">6</hi> ff.
+                                                  <locus from="1r" to="6v">1-6</locus>
+                                    </item>
+                                            </list>
+                                        </p>
+                                    </collation>
+
+                                    <condition>The leaves have been badly damaged along all four
+                                        edges, and the paper stabilised and repaired extensively
+                                        with Japanese tissue paper.</condition>
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="1" writtenLines="31">
+                              <locus from="1r" to="6v">ff. 1r-6v</locus> A single column of 31 lines.
+                                            <dimensions type="written" unit="mm">
+                                            <height quantity="205">205</height>
+                                            <width quantity="135">135</width>
+                                        </dimensions>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote scope="minor" xml:id="hand-2">
+                                    <p>
+                              <locus from="1r" to="6v">ff. 1r-6v</locus> were copied by
+                                        Hand B in <term type="script">Fettaugen-style mixed
+                                            minuscule</term> script, slanting to the right, with
+                                        significant variation in letter size, in black ink.</p>
+                                    <p>Syllabic abbreviations and superscript word endings appear
+                                        throughout the line. Breathings are round and mute <hi rend="italic">iota</hi> is absent. There is decorative
+                                        use of the double dot and accentuation of all <foreign xml:lang="la">nomina sacra</foreign>. Accents are
+                                        sometimes joined to letters, breathings and
+                                        abbreviations.</p>
+                                    <p>The modern <hi rend="italic">nu</hi> and <hi rend="italic">sigma telikon</hi> are present.</p>
+                                    <p>Punctuation used includes the middle and upper points, lower
+                                        and middle commas, question mark and full stop.</p>
+                                </handNote>
+                            </handDesc>
+
+                            <decoDesc>
+                                <decoNote type="colInit">Texts begin with simple minor initials in
+                                    red ink.</decoNote>
+
+                                <decoNote type="lineFill">Transitions between texts are marked by
+                                    line-fillers in red ink.</decoNote>
+                            </decoDesc>
+                        </physDesc>
+
+                        <history>
+                            <origin>This part was probably copied in the <origDate calendar="gregorian" notAfter="1399" notBefore="1250">second
+                                    half of the 13th or 14th century</origDate>, as suggested by the
+                                style of script and use of eastern paper.</origin>
+                        </history>
+                    </msPart>
+
+                    <msPart n="3">
+                        <msIdentifier>
+                            <idno>Part III</idno>
+                        </msIdentifier>
+
+                        <msContents>
+                            <msItem n="5">
+                                <locus from="7r" to="11v">ff. 7r-11v</locus>
+                                <title xml:lang="eng">Lexicon</title>
+                                <note>Excerpt: begins with <hi rend="italic">gamma</hi>, ends with
+                                        <hi rend="italic">epsilon</hi>
+                        </note>
+                                <incipit defective="true">
+                           <locus from="7r" to="7r">f. 7r</locus>
+                                    Γάμα τὸ στοιχεῖον πόθεν γίνεται· παρὰ τὸ ἀμᾶν τὴν γὴν</incipit>
+                                <explicit defective="true">
+                           <locus from="11v" to="11v">f. 11v</locus>
+                                    ὁμοίως τῆ εὐθεῖα· οἷον ἴαν καὶ μίαν</explicit>
+                            </msItem>
+
+                            <msItem n="6">
+                                <locus from="12r" to="12r">f. 12r</locus>
+                                <author>Libanios</author>
+                                <title xml:lang="la">Orationes 1-64</title>
+                                <note>Oration 6</note>
+                                <note>Defective at the end: ends ed. Foerster, section 2</note>
+                                <incipit>
+                           <locus from="12r" to="12r">f. 12r</locus> οὐ ῥάδιον
+                                    ἐντυχεῖν ὦ ἄνδρες ἀνθρώπων μὴ λοιδοροῦντι</incipit>
+                                <explicit defective="true">
+                           <locus from="12r" to="12r">f. 12r</locus>
+                                    οὐδὲ ἡγεῖσθαι <sic>στρατιπαίδων</sic>
+                        </explicit>
+                                <note>TLG 2200.004</note>
+                                <note>
+                           <locus from="12v" to="12v">f. 12v</locus> is blank</note>
+                            </msItem>
+                        </msContents>
+
+                        <physDesc>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>
+                                 <locus from="7r" to="12v">ff. 7-12</locus> Western
+                                            paper, folded in <measure type="folding">folio</measure>. Watermark: <watermark>
+                                    <term type="watermarkMotif">Crown</term> (<dimensions type="watermark" unit="mm">
+                                                  <height quantity="58">58</height>
+                                                  <width quantity="31">31</width>
+                                                </dimensions>) <note type="watermarkPosition">roughly in the centre of the folio</note>,
+                                                similar to <note>Briquet 4730</note>. This example
+                                                is dated to <date calendar="gregorian" notAfter="1439" notBefore="1437">1437-1439</date>.</watermark>
+                              </material>
+                                    </support>
+
+                                    <extent>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="230">230</height>
+                                                <width quantity="175">175</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+
+                                    <collation mainStructures="6">
+                                        <p>A ternion:</p>
+                                        <p>
+                                            <list>
+                                                <item>Quire 2<hi rend="superscript">6</hi> (ff.
+                                                  <locus from="7r" to="12v">7-12</locus>)</item>
+                                            </list>
+                                        </p>
+                                        <signatures type="quire">No quire signatures
+                                            visible</signatures>
+                                    </collation>
+
+                                    <condition>The leaves have suffered water damage along the upper
+                                        edge and extending up to a third of the way down the leaves,
+                                        with discolouration of the paper and some blurring of the
+                                        lines of text closest to the upper edge and of scholia in
+                                        the margins. The continuation of similar patterns of
+                                        staining in the following section of the manuscript
+                                        indicates that these two parts were bound together at the
+                                        time that they were damaged in this way, but not with the
+                                        other contents of the manuscript. </condition>
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="1" writtenLines="31 49">ff. <locus from="7r" to="12v">7r-12v</locus> A single column of 31-49 lines.
+                                            <dimensions type="written" unit="mm">
+                                            <height max="210" min="205">205-210</height>
+                                            <width quantity="145">145</width>
+                                        </dimensions>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote scope="minor" xml:id="hand-3">
+                                    <p>
+                              <locus from="7r" to="12r">ff. 7r-12r</locus> were copied by
+                                        Hand C in <term type="script">mixed minuscule</term> script
+                                        with variable slant, in brown ink, with moderate variation
+                                        in letter size.</p>
+                                    <p>Syllabic abbreviations and superscript word endings appear
+                                        throughout the line. Breathings are round and mute <hi rend="italic">iota</hi> is subscript. There is
+                                        decorative use of the double dot. Accents are sometimes
+                                        joined to letters, breathings and abbreviations.</p>
+                                    <p>The modern modern <hi rend="italic">eta</hi> , modern <hi rend="italic">nu</hi>, <hi rend="italic">sigma
+                                            telikon</hi> and loop <hi rend="italic">epsilon</hi> are
+                                        present.</p>
+                                    <p>Punctuation used includes the middle and upper points, lower
+                                        comma and full stop.</p>
+                                </handNote>
+                            </handDesc>
+
+                            <additions>On <locus from="12v" to="12v">12v</locus> there are pen
+                                trials and three sketches of heads in profile. </additions>
+                        </physDesc>
+
+                        <history>
+                            <origin>This part was probably copied in the <date calendar="gregorian" notAfter="1450" notBefore="1425">second quarter of the 15th
+                                    century</date>, as suggested by the watermark. This is
+                                consistent with the style of script.</origin>
+                        </history>
+                    </msPart>
+
+                    <msPart n="4">
+                        <msIdentifier>
+                            <idno>Part IV</idno>
+                        </msIdentifier>
+
+                        <msContents>
+                            <msItem n="7">
+                                <locus from="13r" to="19r">ff. 13r-19r</locus>
+                                <author key="person_v259813010">Andromachos of Crete (the
+                                    Elder)</author>
+                                <title xml:lang="eng">Fragment</title>
+                                <rubric>
+                           <locus from="13r" to="13r">f. 13r</locus>
+                                    Ἀνδρομάχου</rubric>
+                                <incipit>
+                           <locus from="13r" to="13r">f. 13r</locus> Κλύθι πολυθρονίου
+                                    βριαρὸν σθένος ἀντιδότοιο</incipit>
+                                <explicit>
+                           <locus from="19r" to="19r">f. 19r</locus> ἱλάσεται τὴν σὴν
+                                    αἰὲν ἀνωδυνίην</explicit>
+                                <note>TLG 0280.001</note>
+                                <note>
+                           <locus from="19v" to="20v">ff. 19v-20v</locus> are
+                                    blank</note>
+                            </msItem>
+                        </msContents>
+
+                        <physDesc>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>
+                                 <locus from="13r" to="20v">ff. 13-20</locus>
+                                            Western paper, folded in <measure type="folding">quarto</measure>. Watermark: <watermark>
+                                    <term type="watermarkMotif">Arrows</term> (<dimensions type="watermark" unit="mm">
+                                                  <height cert="low" quantity="65">c. 65</height>
+                                                  <width quantity="38">38</width>
+                                                </dimensions>) <note type="watermarkPosition">in the
+                                                  gutter</note>, similar to <note>Briquet
+                                                  6289</note> and <note>Sosower Fleche 19</note>.
+                                                These examples are dated to <date calendar="gregorian" when="1511">1511</date> and
+                                                  <date calendar="gregorian" when="1542">1542</date>.</watermark>
+                              </material>
+                                    </support>
+
+                                    <extent>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height max="230" min="225">225-230</height>
+                                                <width max="170" min="165">165-170</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+
+                                    <collation mainStructures="8">
+                                        <p>A quaternion:</p>
+                                        <p>
+                                            <list>
+                                                <item>Quire 3<hi rend="superscript">8</hi> (ff.
+                                                  <locus from="13r" to="20v">13-20</locus>)</item>
+                                            </list>
+                                        </p>
+                                    </collation>
+
+                                    <condition>The leaves have suffered water damage along the upper
+                                        edge and extending up to a third of the way down the leaves,
+                                        with discolouration of the paper. The continuation of
+                                        similar patterns of staining from the previous section of
+                                        the manuscript indicates that these two parts were bound
+                                        together at the time that they were damaged in this way, but
+                                        not with the other contents of the manuscript. </condition>
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="1" rulingMedium="hardpoint" writtenLines="14">
+                              <locus from="13r" to="19r">ff. 13r-19r</locus> A single
+                                        column of 14 lines <dimensions type="written" unit="mm">
+                                            <height max="170" min="165">165-170</height>
+                                            <width max="115" min="100">100-115</width>
+                                        </dimensions>
+                                        <seg type="ruling">Frame and line ruling in hardpoint.
+                                        </seg>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote scope="minor" xml:id="hand-4">
+                                    <p>
+                              <locus from="13r" to="19r">ff. 13r-19r</locus> were copied by
+                                        Bartolomeo Zanetti (Hand D) (RGK I 31) in <term type="script">mixed minuscule</term> script, slanting
+                                        sharply to the right, in brown ink, with modest variation in
+                                        letter size.</p>
+                                    <p>Syllabic abbreviations and superscript word endings appear
+                                        throughout the line. Breathings are round and mute <hi rend="italic">iota</hi> is subscript. There is
+                                        decorative use of the double dot. Accents are sometimes
+                                        joined to abbreviations.</p>
+                                    <p>The modern modern <hi rend="italic">eta</hi> , modern <hi rend="italic">nu</hi>, <hi rend="italic">sigma
+                                            telikon</hi> and loop <hi rend="italic">epsilon</hi> are
+                                        present.</p>
+                                    <p>Punctuation used includes the lower and middle points, lower
+                                        commas and full stop.</p>
+                                </handNote>
+                            </handDesc>
+
+                            <decoDesc>
+                                <decoNote type="colInit">The text begins with a simple minor initial
+                                    in red ink.</decoNote>
+                            </decoDesc>
+
+                            <additions>On <locus from="13r" to="13r">f. 13r</locus> are notes on the
+                                text in Latin by later hands.</additions>
+                        </physDesc>
+
+                        <history>
+                            <origin>This part was copied in <placeName key="place_g1000080">Italy</placeName> by <name key="person_v66520793" role="scr" type="person">
+                           <persName type="display">Bartolomeo
+                                        Zanetti (1486/7-c. 1547)</persName>
+                           <persName type="standard">Zanetti, Bartholomeo, 1486 or 1487-</persName>
+                        </name> in
+                                the <date calendar="gregorian" notAfter="1547" notBefore="1500">first half of the 16th century</date>, as indicated by the
+                                watermark and the scribe's period and region of activity.</origin>
+                        </history>
+                    </msPart>
+
+                    <msPart n="5">
+                        <msIdentifier>
+                            <idno>Part V</idno>
+                        </msIdentifier>
+
+                        <msContents>
+                            <msItem n="8">
+                                <locus from="21r" to="31v">ff. 21r-31v, line 4</locus>
+                                <author key="person_v100218889">Dionysios of Halikarnassos</author>
+                                <title xml:lang="la">Ars rhetorica</title>
+                                <note>Excerpt: chapters 10-11</note>
+                                <rubric>
+                           <locus from="21r" to="21r">f. 21r</locus> Τοῦ αὐτοῦ
+                                    Διονυσίου: περὶ τῶν ἐν ταῖς μελέταις πλημελημένων</rubric>
+                                <incipit>
+                           <locus from="21r" to="21r">f. 21r</locus> Τὰ δὲ
+                                        <sic>πλημελούμενα</sic> ἐν ταῖς μελέταις, οἱ μὲν, ἠθῶν
+                                    ἀμοίρους</incipit>
+                                <explicit>
+                           <locus from="31v" to="31v">f. 31v</locus> οὗτος ὁ περὶ τῆς
+                                    τῶν λόγων ἐξετάσεως λόγος</explicit>
+                                <note>TLG 0081.016</note>
+                            </msItem>
+
+                            <msItem n="9">
+                                <locus from="31v" to="34r">f. 31v, line 5-f. 34r, line 22</locus>
+                                <author>Dionysios of Halikarnassos</author>
+                                <title xml:lang="la">De imitatione</title>
+                                <note>Fragments 31,1,1-31,5,7</note>
+                                <incipit>
+                           <locus from="31v" to="31v">f. 31v</locus> Ὅτι δεῖ τῆς τῶν
+                                    ἀρχαίων ἐντυγχάνειν συγγράμμασιν</incipit>
+                                <explicit>
+                           <locus from="34r" to="34r">f. 34r</locus> βελτίων ἡ φράσις
+                                    τῆ μίψει γίνεται</explicit>
+                                <note>TLG 0081.014</note>
+                            </msItem>
+
+                            <msItem n="10">
+                                <locus from="34r" to="38v">f. 34r, line 23-f. 38v, line 7</locus>
+                                <author>Dionysios of Halikarnassos</author>
+                                <title xml:lang="la">De Thucydidis idiomatibus (epistula ad
+                                    Ammaeum)</title>
+                                <rubric>
+                           <locus from="34r" to="34r">f. 34r</locus> Διονυσίου
+                                        <sic>Ἀλικαρνασέως</sic> περὶ τῶν Θουκυδίδου ἰδιωμάτων:
+                                    Διονύσιος Ἀμμαίω τῶ φιλτάτω χαίρειν</rubric>
+                                <incipit>
+                           <locus from="34r" to="34r">f. 34r</locus> Ἐγὼ μὲν
+                                    ὑπελάμβανον ἀρκούντως δεδηλωμέναι τὸν Θουκυδίδου
+                                    χαρακτῆρα</incipit>
+                                <explicit>
+                           <locus from="38v" to="38v">f. 38v</locus> καθ'ἕκαστον
+                                    αὐτῶν ἐκ τῆς κοινῆς ἐξητασμένα πραγματείας ὡς
+                                    ἐπεζήτης</explicit>
+                                <note>TLG 0081.011</note>
+                            </msItem>
+
+                            <msItem n="11">
+                                <locus from="38v" to="47r">f. 38v, line 8-f. 47r, line 1</locus>
+                                <author key="person_v69321335">Maximos Byzantios</author>
+                                <title xml:lang="eng">On unresolved antitheses</title>
+                                <title type="alt" xml:lang="grc">Περὶ τῶν ἀλύτων ἀντιθέσεων</title>
+                                <rubric>
+                           <locus from="38v" to="38v">f. 38v</locus> Μαξίμου περὶ
+                                    ἀλύτων ἀντιθέσεων</rubric>
+                                <incipit>
+                           <locus from="38v" to="38v">f. 38v</locus> Αἱ ἄλυτοι
+                                    ἀντιθέσεις ὅτι μὲν οὐκ ἐπιδείχονται λύσιν</incipit>
+                                <explicit>
+                           <locus from="47r" to="47r">f. 47r</locus> τοὺς λόγους
+                                    ἐποίησε τούτους λέγειν διὰ τῆς ἐπιλογικῆς ἀντιθέσεως</explicit>
+                                <note>TLG 2025.002</note>
+                            </msItem>
+
+                            <msItem n="12">
+                                <locus from="47r" to="48v">f. 47r, line 2-f. 48v, line 2</locus>
+                                <title xml:lang="la">Prolegomena in librum Περὶ στάσεων</title>
+                                <note>Excerpt: ed. Rabe, pp. 221-223</note>
+                                <rubric>
+                           <locus from="47r" to="47r">f. 47r</locus> Μαξίμου περὶ
+                                    ἀλύτων ἀντιθέσεων</rubric>
+                                <incipit>
+                           <locus from="47r" to="47r">f. 47r</locus> Ἴδιον στοχασμοῦ
+                                    τὸ ἀνεύθυνον εἶναι τὸ πραττόμενον· σημεῖον δὲ τίνος γενέσθαι
+                                    ὑπευθύνου</incipit>
+                                <explicit>
+                           <locus from="48v" to="48v">f. 48v</locus> οὐδενὸς ἀπ'αὐτῶν
+                                    δὲ τῶν πραγμάτων</explicit>
+                                <note>TLG 2025.002</note>
+                            </msItem>
+
+                            <msItem n="13">
+                                <locus from="48v" to="49v">f. 48v, line 2-f. 49v, line 5</locus>
+                                <title xml:lang="eng">On the distinction between objection and
+                                    antithesis</title>
+                                <rubric>
+                           <locus from="48v" to="48v">f. 48v</locus> Τίνι διαφέρει
+                                    ἀντίληψις τῶν ἀντιθετικῶν</rubric>
+                                <incipit>
+                           <locus from="48v" to="48v">f. 48v</locus> Ὅτι ἐν μὲν ταῖς
+                                    ἀντιθετικαῖς, ὁμολογούμενον ἀδίκημα ἐκ τῆς περιστάσεως</incipit>
+                                <explicit>
+                           <locus from="49v" to="49v">f. 49v</locus> ἐν δὲ τῆ
+                                    μεταστάσει ἐφέτερον τὴν μωρίαν μεθίστησιν</explicit>
+                            </msItem>
+
+                            <msItem n="14">
+                                <locus from="49v" to="50v">f. 49v, line 5-f. 50v</locus>
+                                <title xml:lang="eng">On the distinction between sympathy in word
+                                    and in thought</title>
+                                <rubric>
+                           <locus from="49v" to="49v">f. 49v</locus> Τίνι διαφέρει
+                                    συγγνώμη πρὸς ῥητὸν καὶ διάνοιαν</rubric>
+                                <incipit>
+                           <locus from="49v" to="49v">f. 49v</locus> Ὅτι ἐν ἐκείνη
+                                    μὲν, ἄκων ὁ ἀπολογούμενος ἥμαρτεν</incipit>
+                                <explicit>
+                           <locus from="50v" to="50v">f. 50v</locus> καὶ χρήζομεν τοῦ
+                                    πατρὸς, ἢ τοῦ δεσπότου προτέρου</explicit>
+                            </msItem>
+
+                            <msItem n="15">
+                                <locus from="51r" to="51v">f. 51r-51v</locus>
+                                <title xml:lang="eng">Glossary of grammatical terms</title>
+                                <incipit>
+                           <locus from="51r" to="51r">f. 51r</locus> Επιστολή ἐστι
+                                    ὁμιλίοι ἐγγράμματος</incipit>
+                                <explicit>
+                           <locus from="51v" to="51v">f. 51v</locus>
+                                    ἐλυκτική</explicit>
+                            </msItem>
+
+                            <msItem n="16">
+                                <locus from="52r" to="52v">f. 52r-52v</locus>
+                                <title xml:lang="eng">Contents list</title>
+                                <textLang mainLang="la" otherLangs="grc">Latin and Greek</textLang>
+                            </msItem>
+                        </msContents>
+
+                        <physDesc>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>
+                                 <locus from="21r" to="52v">ff. 21-52</locus>
+                                            Western paper, folded in <measure type="folding">octavo</measure>. Watermark: <watermark>
+                                    <term type="watermarkMotif">Circles</term> (<dimensions type="watermark" unit="mm">
+                                                  <height quantity="100">100</height>
+                                                  <width quantity="33">33</width>
+                                                </dimensions>) <note type="watermarkPosition">on the
+                                                  upper edge of the folio near the gutter</note>,
+                                                similar to <note>Briquet 3165</note>. This example
+                                                is dated to <date calendar="gregorian" notAfter="1339" notBefore="1329">1329-1339</date>.</watermark>
+                              </material>
+                                    </support>
+
+                                    <extent>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="210">210</height>
+                                                <width max="150" min="135">130-150</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+
+                                    <collation mainStructures="8">
+                                        <p>This part consists of four quires, all quaternia:</p>
+                                        <p>
+                                            <list>
+                                                <item>Quires 4-7<hi rend="superscript">8</hi> ff.
+                                                  <locus from="21r" to="52v">21-52</locus>
+                                    </item>
+                                            </list>
+                                        </p>
+                                        <signatures type="quire">There are quire signatures in on
+                                            the first folio of each quire, recto, lower
+                                            centre.</signatures>
+                                    </collation>
+
+                                    <condition>The leaves have suffered water damage along the three
+                                        outer edges, causing discolouration which sometimes impinges
+                                        upon the text. Some edges and corners of the leaves have
+                                        been repaired.</condition>
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="1" writtenLines="24 28">
+                              <locus from="21r" to="52v">ff. 21r-52v</locus> A single column of 24-28
+                                        lines. <dimensions type="written" unit="mm">
+                                            <height max="165" min="150">150-165</height>
+                                            <width max="115" min="100">100-115</width>
+                                        </dimensions>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote scope="minor" xml:id="hand-5">
+                                    <p>
+                              <locus from="21r" to="50v">ff. 21r-50v</locus> were copied by
+                                        Hand E in upright <term type="script">mixed minuscule</term>
+                                        script, in brown ink, with moderate variation in letter size
+                                        and some flourishing of tails into the margin.</p>
+                                    <p>Syllabic abbreviations and superscript word endings appear
+                                        throughout the line. Breathings are round and mute <hi rend="italic">iota</hi> is absent. There is decorative
+                                        use of the double dot. Accents are sometimes joined to
+                                        letters, breathings and abbreviations.</p>
+                                    <p>The modern <hi rend="italic">nu</hi> and <hi rend="italic">sigma telikon</hi> are present.</p>
+                                    <p>Punctuation used includes the middle and upper points, lower
+                                        comma and full stop.</p>
+                                </handNote>
+
+                                <handNote scope="minor" xml:id="hand-6">
+                                    <p>
+                              <locus from="51r" to="51v">f. 51r-51v</locus> were copied by
+                                        Hand F in <term type="script">mixed minuscule</term> script,
+                                        in brown ink, with variable slant, with moderate variation
+                                        in letter size.</p>
+                                    <p>Syllabic abbreviations and superscript word endings appear
+                                        throughout the line. Breathings are round.</p>
+                                    <p>The modern <hi rend="italic">eta</hi> and modern <hi rend="italic">nu</hi> are present.</p>
+                                    <p>Punctuation used includes the middle and upper points and
+                                        lower comma.</p>
+                                </handNote>
+
+                                <handNote scope="minor" xml:id="hand-7">
+                                    <p>
+                              <locus from="52r" to="52v">f. 52r-52v</locus> were copied by
+                                        Hand G in Latin and Greek <term type="script">mixed
+                                            minuscule</term> script, slanting to the right, in brown
+                                        ink.</p>
+                                </handNote>
+                            </handDesc>
+                        </physDesc>
+
+                        <history>
+                            <origin>This part was probably copied in the <date calendar="gregorian" notAfter="1350" notBefore="1300">first half of the 14th
+                                    century</date>, as suggested by the watermark. This is
+                                consistent with the style of script.</origin>
+                        </history>
+                    </msPart>
+                </msDesc>
+            </sourceDesc>
+
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject
+                            Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh88002561">Greek language--Grammar</term>
+                        </item>
+                        <item>
+                            <term key="subject_sh88002561">Rhetoric, ancient</term>
+                        </item>
+                        <item>
+                            <term key="subject_sh85100861">Philosophy, ancient</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2021-10-04">
+                <persName>Christopher Wright</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+      <graphic decls="#document-thumbnail" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00001"/>
+      <surface n="left cover, outer" xml:id="i1">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00001" width="4700px"/>
+      </surface>
+      <surface n="left cover, inner" xml:id="i2">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00002" width="4700px"/>
+      </surface>
+      <surface n="[a] recto" xml:id="i3">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00003" width="4700px"/>
+      </surface>
+      <surface n="[a] verso" xml:id="i4">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00004" width="4700px"/>
+      </surface>
+      <surface n="[b] recto" xml:id="i5">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00005" width="4700px"/>
+      </surface>
+      <surface n="[b] verso" xml:id="i6">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00006" width="4700px"/>
+      </surface>
+      <surface n="[c] recto" xml:id="i7">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00007" width="4700px"/>
+      </surface>
+      <surface n="[c] verso" xml:id="i8">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00008" width="4700px"/>
+      </surface>
+      <surface n="I recto" xml:id="i9">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00009" width="4700px"/>
+      </surface>
+      <surface n="I verso" xml:id="i10">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00010" width="4700px"/>
+      </surface>
+      <surface n="II recto" xml:id="i11">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00011" width="4700px"/>
+      </surface>
+      <surface n="II verso" xml:id="i12">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00013" width="4700px"/>
+      </surface>
+      <surface n="1r" xml:id="i13">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00014" width="4700px"/>
+      </surface>
+      <surface n="1v" xml:id="i14">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00015" width="4700px"/>
+      </surface>
+      <surface n="2r" xml:id="i15">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00016" width="4700px"/>
+      </surface>
+      <surface n="2v" xml:id="i16">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00017" width="4700px"/>
+      </surface>
+      <surface n="3r" xml:id="i17">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00018" width="4700px"/>
+      </surface>
+      <surface n="3v" xml:id="i18">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00019" width="4700px"/>
+      </surface>
+      <surface n="4r" xml:id="i19">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00020" width="4700px"/>
+      </surface>
+      <surface n="4v" xml:id="i20">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00021" width="4700px"/>
+      </surface>
+      <surface n="5r" xml:id="i21">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00022" width="4700px"/>
+      </surface>
+      <surface n="5v" xml:id="i22">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00023" width="4700px"/>
+      </surface>
+      <surface n="6r" xml:id="i23">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00024" width="4700px"/>
+      </surface>
+      <surface n="6v" xml:id="i24">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00025" width="4700px"/>
+      </surface>
+      <surface n="7r" xml:id="i25">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00026" width="4700px"/>
+      </surface>
+      <surface n="7v" xml:id="i26">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00027" width="4700px"/>
+      </surface>
+      <surface n="8r" xml:id="i27">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00028" width="4700px"/>
+      </surface>
+      <surface n="8v" xml:id="i28">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00029" width="4700px"/>
+      </surface>
+      <surface n="9r" xml:id="i29">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00030" width="4700px"/>
+      </surface>
+      <surface n="9v" xml:id="i30">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00031" width="4700px"/>
+      </surface>
+      <surface n="10r" xml:id="i31">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00032" width="4700px"/>
+      </surface>
+      <surface n="10v" xml:id="i32">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00033" width="4700px"/>
+      </surface>
+      <surface n="11r" xml:id="i33">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00034" width="4700px"/>
+      </surface>
+      <surface n="11v" xml:id="i34">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00035" width="4700px"/>
+      </surface>
+      <surface n="12r" xml:id="i35">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00036" width="4700px"/>
+      </surface>
+      <surface n="12v" xml:id="i36">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00037" width="4700px"/>
+      </surface>
+      <surface n="13r" xml:id="i37">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00038" width="4700px"/>
+      </surface>
+      <surface n="13v" xml:id="i38">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00039" width="4700px"/>
+      </surface>
+      <surface n="14r" xml:id="i39">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00040" width="4700px"/>
+      </surface>
+      <surface n="14v" xml:id="i40">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00041" width="4700px"/>
+      </surface>
+      <surface n="15r" xml:id="i41">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00042" width="4700px"/>
+      </surface>
+      <surface n="15v" xml:id="i42">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00043" width="4700px"/>
+      </surface>
+      <surface n="16r" xml:id="i43">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00044" width="4700px"/>
+      </surface>
+      <surface n="16v" xml:id="i44">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00045" width="4700px"/>
+      </surface>
+      <surface n="17r" xml:id="i45">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00046" width="4700px"/>
+      </surface>
+      <surface n="17v" xml:id="i46">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00047" width="4700px"/>
+      </surface>
+      <surface n="18r" xml:id="i47">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00048" width="4700px"/>
+      </surface>
+      <surface n="18v" xml:id="i48">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00049" width="4700px"/>
+      </surface>
+      <surface n="19r" xml:id="i49">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00050" width="4700px"/>
+      </surface>
+      <surface n="19v" xml:id="i50">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00051" width="4700px"/>
+      </surface>
+      <surface n="20r" xml:id="i51">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00052" width="4700px"/>
+      </surface>
+      <surface n="20v" xml:id="i52">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00053" width="4700px"/>
+      </surface>
+      <surface n="21r" xml:id="i53">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00054" width="4244px"/>
+      </surface>
+      <surface n="21v" xml:id="i54">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00055" width="4245px"/>
+      </surface>
+      <surface n="22r" xml:id="i55">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00056" width="4244px"/>
+      </surface>
+      <surface n="22v" xml:id="i56">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00057" width="4245px"/>
+      </surface>
+      <surface n="23r" xml:id="i57">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00058" width="4244px"/>
+      </surface>
+      <surface n="23v" xml:id="i58">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00059" width="4245px"/>
+      </surface>
+      <surface n="24r" xml:id="i59">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00060" width="4244px"/>
+      </surface>
+      <surface n="24v" xml:id="i60">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00061" width="4245px"/>
+      </surface>
+      <surface n="25r" xml:id="i61">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00062" width="4244px"/>
+      </surface>
+      <surface n="25v" xml:id="i62">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00063" width="4245px"/>
+      </surface>
+      <surface n="26r" xml:id="i63">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00064" width="4244px"/>
+      </surface>
+      <surface n="26v" xml:id="i64">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00065" width="4245px"/>
+      </surface>
+      <surface n="27r" xml:id="i65">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00066" width="4244px"/>
+      </surface>
+      <surface n="27v" xml:id="i66">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00067" width="4245px"/>
+      </surface>
+      <surface n="28r" xml:id="i67">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00068" width="4244px"/>
+      </surface>
+      <surface n="28v" xml:id="i68">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00069" width="4245px"/>
+      </surface>
+      <surface n="29r" xml:id="i69">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00070" width="4244px"/>
+      </surface>
+      <surface n="29v" xml:id="i70">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00071" width="4245px"/>
+      </surface>
+      <surface n="30r" xml:id="i71">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00072" width="4244px"/>
+      </surface>
+      <surface n="30v" xml:id="i72">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00073" width="4245px"/>
+      </surface>
+      <surface n="31r" xml:id="i73">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00074" width="4244px"/>
+      </surface>
+      <surface n="31v" xml:id="i74">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00075" width="4245px"/>
+      </surface>
+      <surface n="32r" xml:id="i75">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00076" width="4244px"/>
+      </surface>
+      <surface n="32v" xml:id="i76">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00077" width="4245px"/>
+      </surface>
+      <surface n="33r" xml:id="i77">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00078" width="4244px"/>
+      </surface>
+      <surface n="33v" xml:id="i78">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00079" width="4245px"/>
+      </surface>
+      <surface n="34r" xml:id="i79">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00080" width="4244px"/>
+      </surface>
+      <surface n="34v" xml:id="i80">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00081" width="4245px"/>
+      </surface>
+      <surface n="35r" xml:id="i81">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00082" width="4244px"/>
+      </surface>
+      <surface n="35v" xml:id="i82">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00083" width="4245px"/>
+      </surface>
+      <surface n="36r" xml:id="i83">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00084" width="4244px"/>
+      </surface>
+      <surface n="36v" xml:id="i84">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00085" width="4245px"/>
+      </surface>
+      <surface n="37r" xml:id="i85">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00086" width="4244px"/>
+      </surface>
+      <surface n="37v" xml:id="i86">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00087" width="4245px"/>
+      </surface>
+      <surface n="38r" xml:id="i87">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00088" width="4244px"/>
+      </surface>
+      <surface n="38v" xml:id="i88">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00089" width="4245px"/>
+      </surface>
+      <surface n="39r" xml:id="i89">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00090" width="4244px"/>
+      </surface>
+      <surface n="39v" xml:id="i90">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00091" width="4245px"/>
+      </surface>
+      <surface n="40r" xml:id="i91">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00092" width="4244px"/>
+      </surface>
+      <surface n="40v" xml:id="i92">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00093" width="4245px"/>
+      </surface>
+      <surface n="41r" xml:id="i93">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00094" width="4244px"/>
+      </surface>
+      <surface n="41v" xml:id="i94">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00095" width="4245px"/>
+      </surface>
+      <surface n="42r" xml:id="i95">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00096" width="4244px"/>
+      </surface>
+      <surface n="42v" xml:id="i96">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00097" width="4245px"/>
+      </surface>
+      <surface n="43r" xml:id="i97">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00098" width="4244px"/>
+      </surface>
+      <surface n="43v" xml:id="i98">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00099" width="4245px"/>
+      </surface>
+      <surface n="44r" xml:id="i99">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00100" width="4244px"/>
+      </surface>
+      <surface n="44v" xml:id="i100">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00101" width="4245px"/>
+      </surface>
+      <surface n="45r" xml:id="i101">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00102" width="4244px"/>
+      </surface>
+      <surface n="45v" xml:id="i102">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00103" width="4245px"/>
+      </surface>
+      <surface n="46r" xml:id="i103">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00104" width="4244px"/>
+      </surface>
+      <surface n="46v" xml:id="i104">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00105" width="4245px"/>
+      </surface>
+      <surface n="47r" xml:id="i105">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00106" width="4244px"/>
+      </surface>
+      <surface n="47v" xml:id="i106">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00107" width="4245px"/>
+      </surface>
+      <surface n="48r" xml:id="i107">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00108" width="4244px"/>
+      </surface>
+      <surface n="48v" xml:id="i108">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00109" width="4245px"/>
+      </surface>
+      <surface n="49r" xml:id="i109">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00110" width="4244px"/>
+      </surface>
+      <surface n="49v" xml:id="i110">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00111" width="4245px"/>
+      </surface>
+      <surface n="50r" xml:id="i111">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00112" width="4244px"/>
+      </surface>
+      <surface n="50v" xml:id="i112">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00113" width="4245px"/>
+      </surface>
+      <surface n="51r" xml:id="i113">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00114" width="4244px"/>
+      </surface>
+      <surface n="51v" xml:id="i114">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00115" width="4245px"/>
+      </surface>
+      <surface n="52r" xml:id="i115">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00116" width="4244px"/>
+      </surface>
+      <surface n="52v" xml:id="i116">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00117" width="4245px"/>
+      </surface>
+      <surface n="[d] recto" xml:id="i117">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00118" width="4700px"/>
+      </surface>
+      <surface n="[d] verso" xml:id="i118">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00119" width="4700px"/>
+      </surface>
+      <surface n="[e] recto" xml:id="i119">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00120" width="4700px"/>
+      </surface>
+      <surface n="[e] verso" xml:id="i120">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00121" width="4700px"/>
+      </surface>
+      <surface n="[f] recto" xml:id="i121">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00122" width="4700px"/>
+      </surface>
+      <surface n="[f] verso" xml:id="i122">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00123" width="4700px"/>
+      </surface>
+      <surface n="right cover, inner" xml:id="i123">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00124" width="4700px"/>
+      </surface>
+      <surface n="right cover, outer" xml:id="i124">
+            <graphic decls="#downloadImageRights #download" height="5896px" rend="portrait" url="MS-TRINITY-O-00002-00012-000-00125" width="4700px"/>
+      </surface>
+   </facsimile>
+
+    <text>
+      <body>
+         <div>
+            <pb facs="#i1" n="left cover, outer" xml:id="pb-leftcover,outer"/>
+            <pb facs="#i2" n="left cover, inner" xml:id="pb-leftcover,inner"/>
+            <pb facs="#i3" n="[a] recto" xml:id="pb-arecto"/>
+            <pb facs="#i4" n="[a] verso" xml:id="pb-averso"/>
+            <pb facs="#i5" n="[b] recto" xml:id="pb-brecto"/>
+            <pb facs="#i6" n="[b] verso" xml:id="pb-bverso"/>
+            <pb facs="#i7" n="[c] recto" xml:id="pb-crecto"/>
+            <pb facs="#i8" n="[c] verso" xml:id="pb-cverso"/>
+            <pb facs="#i9" n="I recto" xml:id="pb-Irecto"/>
+            <pb facs="#i10" n="I verso" xml:id="pb-Iverso"/>
+            <pb facs="#i11" n="II recto" xml:id="pb-IIrecto"/>
+            <pb facs="#i12" n="II verso" xml:id="pb-IIverso"/>
+            <pb facs="#i13" n="1r" xml:id="pb-1r"/>
+            <pb facs="#i14" n="1v" xml:id="pb-1v"/>
+            <pb facs="#i15" n="2r" xml:id="pb-2r"/>
+            <pb facs="#i16" n="2v" xml:id="pb-2v"/>
+            <pb facs="#i17" n="3r" xml:id="pb-3r"/>
+            <pb facs="#i18" n="3v" xml:id="pb-3v"/>
+            <pb facs="#i19" n="4r" xml:id="pb-4r"/>
+            <pb facs="#i20" n="4v" xml:id="pb-4v"/>
+            <pb facs="#i21" n="5r" xml:id="pb-5r"/>
+            <pb facs="#i22" n="5v" xml:id="pb-5v"/>
+            <pb facs="#i23" n="6r" xml:id="pb-6r"/>
+            <pb facs="#i24" n="6v" xml:id="pb-6v"/>
+            <pb facs="#i25" n="7r" xml:id="pb-7r"/>
+            <pb facs="#i26" n="7v" xml:id="pb-7v"/>
+            <pb facs="#i27" n="8r" xml:id="pb-8r"/>
+            <pb facs="#i28" n="8v" xml:id="pb-8v"/>
+            <pb facs="#i29" n="9r" xml:id="pb-9r"/>
+            <pb facs="#i30" n="9v" xml:id="pb-9v"/>
+            <pb facs="#i31" n="10r" xml:id="pb-10r"/>
+            <pb facs="#i32" n="10v" xml:id="pb-10v"/>
+            <pb facs="#i33" n="11r" xml:id="pb-11r"/>
+            <pb facs="#i34" n="11v" xml:id="pb-11v"/>
+            <pb facs="#i35" n="12r" xml:id="pb-12r"/>
+            <pb facs="#i36" n="12v" xml:id="pb-12v"/>
+            <pb facs="#i37" n="13r" xml:id="pb-13r"/>
+            <pb facs="#i38" n="13v" xml:id="pb-13v"/>
+            <pb facs="#i39" n="14r" xml:id="pb-14r"/>
+            <pb facs="#i40" n="14v" xml:id="pb-14v"/>
+            <pb facs="#i41" n="15r" xml:id="pb-15r"/>
+            <pb facs="#i42" n="15v" xml:id="pb-15v"/>
+            <pb facs="#i43" n="16r" xml:id="pb-16r"/>
+            <pb facs="#i44" n="16v" xml:id="pb-16v"/>
+            <pb facs="#i45" n="17r" xml:id="pb-17r"/>
+            <pb facs="#i46" n="17v" xml:id="pb-17v"/>
+            <pb facs="#i47" n="18r" xml:id="pb-18r"/>
+            <pb facs="#i48" n="18v" xml:id="pb-18v"/>
+            <pb facs="#i49" n="19r" xml:id="pb-19r"/>
+            <pb facs="#i50" n="19v" xml:id="pb-19v"/>
+            <pb facs="#i51" n="20r" xml:id="pb-20r"/>
+            <pb facs="#i52" n="20v" xml:id="pb-20v"/>
+            <pb facs="#i53" n="21r" xml:id="pb-21r"/>
+            <pb facs="#i54" n="21v" xml:id="pb-21v"/>
+            <pb facs="#i55" n="22r" xml:id="pb-22r"/>
+            <pb facs="#i56" n="22v" xml:id="pb-22v"/>
+            <pb facs="#i57" n="23r" xml:id="pb-23r"/>
+            <pb facs="#i58" n="23v" xml:id="pb-23v"/>
+            <pb facs="#i59" n="24r" xml:id="pb-24r"/>
+            <pb facs="#i60" n="24v" xml:id="pb-24v"/>
+            <pb facs="#i61" n="25r" xml:id="pb-25r"/>
+            <pb facs="#i62" n="25v" xml:id="pb-25v"/>
+            <pb facs="#i63" n="26r" xml:id="pb-26r"/>
+            <pb facs="#i64" n="26v" xml:id="pb-26v"/>
+            <pb facs="#i65" n="27r" xml:id="pb-27r"/>
+            <pb facs="#i66" n="27v" xml:id="pb-27v"/>
+            <pb facs="#i67" n="28r" xml:id="pb-28r"/>
+            <pb facs="#i68" n="28v" xml:id="pb-28v"/>
+            <pb facs="#i69" n="29r" xml:id="pb-29r"/>
+            <pb facs="#i70" n="29v" xml:id="pb-29v"/>
+            <pb facs="#i71" n="30r" xml:id="pb-30r"/>
+            <pb facs="#i72" n="30v" xml:id="pb-30v"/>
+            <pb facs="#i73" n="31r" xml:id="pb-31r"/>
+            <pb facs="#i74" n="31v" xml:id="pb-31v"/>
+            <pb facs="#i75" n="32r" xml:id="pb-32r"/>
+            <pb facs="#i76" n="32v" xml:id="pb-32v"/>
+            <pb facs="#i77" n="33r" xml:id="pb-33r"/>
+            <pb facs="#i78" n="33v" xml:id="pb-33v"/>
+            <pb facs="#i79" n="34r" xml:id="pb-34r"/>
+            <pb facs="#i80" n="34v" xml:id="pb-34v"/>
+            <pb facs="#i81" n="35r" xml:id="pb-35r"/>
+            <pb facs="#i82" n="35v" xml:id="pb-35v"/>
+            <pb facs="#i83" n="36r" xml:id="pb-36r"/>
+            <pb facs="#i84" n="36v" xml:id="pb-36v"/>
+            <pb facs="#i85" n="37r" xml:id="pb-37r"/>
+            <pb facs="#i86" n="37v" xml:id="pb-37v"/>
+            <pb facs="#i87" n="38r" xml:id="pb-38r"/>
+            <pb facs="#i88" n="38v" xml:id="pb-38v"/>
+            <pb facs="#i89" n="39r" xml:id="pb-39r"/>
+            <pb facs="#i90" n="39v" xml:id="pb-39v"/>
+            <pb facs="#i91" n="40r" xml:id="pb-40r"/>
+            <pb facs="#i92" n="40v" xml:id="pb-40v"/>
+            <pb facs="#i93" n="41r" xml:id="pb-41r"/>
+            <pb facs="#i94" n="41v" xml:id="pb-41v"/>
+            <pb facs="#i95" n="42r" xml:id="pb-42r"/>
+            <pb facs="#i96" n="42v" xml:id="pb-42v"/>
+            <pb facs="#i97" n="43r" xml:id="pb-43r"/>
+            <pb facs="#i98" n="43v" xml:id="pb-43v"/>
+            <pb facs="#i99" n="44r" xml:id="pb-44r"/>
+            <pb facs="#i100" n="44v" xml:id="pb-44v"/>
+            <pb facs="#i101" n="45r" xml:id="pb-45r"/>
+            <pb facs="#i102" n="45v" xml:id="pb-45v"/>
+            <pb facs="#i103" n="46r" xml:id="pb-46r"/>
+            <pb facs="#i104" n="46v" xml:id="pb-46v"/>
+            <pb facs="#i105" n="47r" xml:id="pb-47r"/>
+            <pb facs="#i106" n="47v" xml:id="pb-47v"/>
+            <pb facs="#i107" n="48r" xml:id="pb-48r"/>
+            <pb facs="#i108" n="48v" xml:id="pb-48v"/>
+            <pb facs="#i109" n="49r" xml:id="pb-49r"/>
+            <pb facs="#i110" n="49v" xml:id="pb-49v"/>
+            <pb facs="#i111" n="50r" xml:id="pb-50r"/>
+            <pb facs="#i112" n="50v" xml:id="pb-50v"/>
+            <pb facs="#i113" n="51r" xml:id="pb-51r"/>
+            <pb facs="#i114" n="51v" xml:id="pb-51v"/>
+            <pb facs="#i115" n="52r" xml:id="pb-52r"/>
+            <pb facs="#i116" n="52v" xml:id="pb-52v"/>
+            <pb facs="#i117" n="[d] recto" xml:id="pb-drecto"/>
+            <pb facs="#i118" n="[d] verso" xml:id="pb-dverso"/>
+            <pb facs="#i119" n="[e] recto" xml:id="pb-erecto"/>
+            <pb facs="#i120" n="[e] verso" xml:id="pb-everso"/>
+            <pb facs="#i121" n="[f] recto" xml:id="pb-frecto"/>
+            <pb facs="#i122" n="[f] verso" xml:id="pb-fverso"/>
+            <pb facs="#i123" n="right cover, inner" xml:id="pb-rightcover,inner"/>
+            <pb facs="#i124" n="right cover, outer" xml:id="pb-rightcover,outer"/>
+         </div>
+      </body>
+   </text>
+</TEI>

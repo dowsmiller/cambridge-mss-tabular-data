@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>MS Ll.5.18</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+
+                <availability xml:id="displayImageRights" status="restricted">
+                    <p>Zooming image © Cambridge University Library, All rights reserved.</p>
+                </availability>
+                <availability xml:id="downloadImageRights" status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability xml:id="metadataRights" status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+
+                <availability xml:id="watermark" status="restricted">
+                    <licence>Cambridge University Library (CC BY-NC 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-LL-00005-00018" xml:lang="en">
+                    <msIdentifier>
+                        <institution>Cambridge University</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Medieval Manuscripts</collection>
+                        <idno>MS Ll.5.18</idno>
+
+                        <altIdentifier type="other">
+                            <idno/>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents>
+
+                        <summary>
+                            <seg type="para">Cambridge University Library MS Ll.5.18 is a small fifteenth-century miscellany, consisting of a
+                                selection of devotional vernacular texts: the final portion of the treatise <hi rend="italic">The Direccion of a
+                                    Mannys Lyfe</hi>, <hi rend="italic">The Life</hi> and <hi rend="italic">The Charter of the Abbey of the Holy
+                                    Ghost</hi>, the <hi rend="italic">Life of Saint Dorothy</hi>, a translated excerpt from Saint Augustine’s <hi
+                                    rend="italic">De contemptu mundi</hi> and John Lydgate’s <hi rend="italic">Life of Saint Margaret</hi>. As such,
+                                it can offer us a valuable insight into personal spiritual practices in the late medieval period. </seg>
+                            <seg type="para">Currently, the provenance of the manuscript remains a matter of supposition. That said, it can be firmly
+                                situated among a well-documented manuscript tradition from the period in which miscellanies present female saints’ <hi
+                                    rend="italic">vitae</hi> and/or Marian material along with the <hi rend="italic">Abbey</hi> and <hi rend="italic"
+                                    >Charter</hi>. British Library MS Harley 5272, for example, bears close textual parallels to MS Ll.5.18,
+                                containing both the <hi rend="italic">Abbey</hi> and <hi rend="italic">Charter</hi> in addition to a verse life of
+                                Saint Dorothy and Lydgate’s <hi rend="italic">Life of Our Lady</hi>. Drawing upon this, a number of scholars have
+                                proposed that these compilations were prepared with a female reader in mind; if this proves true for MS Ll.5.18, it
+                                becomes an all the more focused lens into fifteenth-century religious habitudes.</seg>
+                            <seg type="para">Katherine Dixon<lb/> English Faculty<lb/> University of Cambridge</seg>
+                        </summary>
+
+                        <msItem>
+                            <title>The Abbey of the Holy Ghost, etc.</title>
+
+                            <textLang mainLang="eng">English</textLang>
+
+                            <msItem>
+                                <locus from="1r" to="1r"/>
+                                <title>The Direccion of a Mannys Lyfe</title>
+
+                                <explicit>Explicit | Dexteram sc<hi rend="italic">ri</hi>bentis regat virtus o<hi rend="italic"
+                                    >mn</hi>ipotentis</explicit>
+
+                            </msItem>
+                            <msItem>
+                                <locus from="1r" to="9v"/>
+                                <title>The Abbey of the Holy Ghost</title>
+
+                                <incipit>This ys the abbey of Seint Sperite that ys founded in a place that ys clepyd conscience</incipit>
+
+                                <explicit>Thus endith the abbay of the holy goste of the conscience in whiche ben founded all good v<hi rend="italic"
+                                        >er</hi>tues and all weked vices of synne drevyn oute <hi rend="italic">et</hi> c<hi rend="italic">e</hi>t<hi
+                                        rend="italic">era</hi>
+                                </explicit>
+
+                            </msItem>
+                            <msItem>
+                                <locus from="9v" to="24v"/>
+                                <title>The Charter of the Abbey of the Holy Ghost</title>
+
+                                <incipit>Thus begynnethe the place of the abbasse and all the convent and of ther charters and inoueni</incipit>
+
+                                <explicit>Dexteram scribentis regat v<hi rend="italic">ir</hi>t<hi rend="italic">u</hi>s om<hi rend="italic"
+                                        >n</hi>ipote<hi rend="italic">n</hi>t<hi rend="italic">is</hi>
+                                </explicit>
+
+                            </msItem>
+                            <msItem>
+                                <locus from="25r" to="28v"/>
+                                <title>The Life of Saint Dorothy</title>
+
+                                <incipit>Here begynythe the lyff off the holy virgine Seynte dorothea</incipit>
+
+                                <explicit>here endethe the lyff off þe holy v<hi rend="italic">er</hi>gyne Seynt Dorothea</explicit>
+
+                                <colophon>Si modo non sensus non claru<hi rend="italic">m</hi> ubi auor<hi rend="italic">um</hi> | Si p<hi
+                                        rend="italic">ro</hi>bitas magnos Ingeniu<hi rend="italic">m</hi> q<hi rend="italic">ue</hi> fac<hi
+                                        rend="italic">i</hi>t. [This couplet is taken from Ovid’s Ex Ponto: Book 1, Chapter IX. See Ovid, <hi
+                                        rend="italic">Tristia &amp; Ex Ponto</hi>, ed. and trans. by A. L. Wheeler, 2nd edn, rev. by G. P. Gould
+                                    (London: Harvard University Press, 1996), p. 312.]</colophon>
+
+                            </msItem>
+
+                            <msItem>
+                                <locus from="29r" to="29r"/>
+                                <title>A translated excerpt of Augustine’s <hi rend="italic">De Contemptu Mundi</hi>
+                                </title>
+
+
+
+                                <explicit>Explicit q<hi rend="italic">uod</hi> R.F.</explicit>
+
+                                <colophon>Qui vult vt vnus uti duobus beneficiis | Hic vnus vt duo ardebit in suppliciis. [This seems to paraphrase
+                                    the Athanasian Creed in its stressing of the unity of the Godhead.]</colophon>
+
+                            </msItem>
+
+                            <msItem>
+                                <locus from="29v" to="41v"/>
+                                <title>John Lydgate’s <hi rend="italic">Life of Saint Margaret</hi>
+                                </title>
+
+                                <incipit>Here begynythe the lyff off þ<hi rend="italic">e</hi> holy virgine <hi rend="italic">and</hi> m<hi
+                                        rend="italic">a</hi>rtyr seynt margarete</incipit>
+
+                                <explicit>Explicit vita s<hi rend="italic">ain</hi>te margarete</explicit>
+
+                                <colophon>Nunc feci all þ<hi rend="italic">is</hi> p<hi rend="italic">ro</hi>
+                                    <hi rend="italic">Christo</hi> da m<hi rend="italic">ih</hi>i s<hi rend="italic">e</hi>ruice | Du<hi rend="italic"
+                                        >m</hi> calor est <hi rend="italic">et</hi> amena dies formica laborat | Ne p<hi rend="italic">er</hi>eat
+                                        cu<hi rend="italic">m</hi> nix ven<hi rend="italic">er</hi>it alta fame. [The second two lines are taken from
+                                    Alain de Lille’s Liber parabolarum. See Alanus de Insulis, ‘Liber Parabolarum’, in <hi rend="italic">Patrologia
+                                        Latina</hi> ed. by J P. Migne, 221 vols (Harvard University Divinity School, 1844-1864), CCX (1855), col. 584.
+                                    Note that Lille’s text reads ‘pulchra’ where Roger F writes ‘amena’.]</colophon>
+
+                            </msItem>
+
+
+                        </msItem>
+
+                    </msContents>
+
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="paper">
+                                <support>
+                                    <material> Paper </material>
+                                </support>
+
+
+
+                                <extent>vi + 41 + v; all flyleaves part of modern rebinding. Written height and width varies per page. <dimensions
+                                        type="leaf" unit="mm">
+                                        <height> 207 </height>
+                                        <width> 142 </width>
+                                    </dimensions>
+                                </extent>
+
+
+
+                                <collation>
+                                    <p>1<hi rend="superscript">8</hi> (wants 1), 2<hi rend="superscript">14</hi>, 3<hi rend="superscript">12</hi>,
+                                            4<hi rend="superscript">8</hi>
+                                    </p>
+                                    <p>There are no conventional catchwords or quire signatures visible in MS Ll.5.18. Having said this, there is
+                                        equally no explicit evidence to suggest that trimming to remove such inclusions has occurred. Certainly, the
+                                        retention of the marginalia on <locus from="36r" to="36r">f. 36r</locus>, in which the final letters are
+                                        obfuscated by wear rather than trimming, shows that the size of the manuscript cannot have been significantly
+                                        altered in size since this commentary was added. Although a compilation manuscript, texts regularly run
+                                        unbroken between quires.</p>
+                                    <p>There is a single example of a ‘catchword’ functioning between the recto and verso of a leaf as opposed to
+                                        between quires on <locus from="28r" to="28r">f. 28r</locus>. Here, at the centre of the bottom of the page the
+                                        word ‘Scribe’ appears, distinct from the body of the text. This is the word with which the verso continues.
+                                        This feature is found elsewhere in homiletic prose and to this end, particularly given the quarto structure of
+                                        MS Ll.5.18, raises questions regarding the sequence in which pages of a quarto were filled and at which stage
+                                        the pages were folded and ordered during the writing process. Similarly, it could potentially indicate the
+                                        scribe offering himself an aide-memoire during the copying process, noting where to commence upon return to
+                                        the manuscript.</p>
+                                    <p>There is no evidence of pricking or ruling in MS Ll.5.18 and lines are written in free-hand throughout.</p>
+                                </collation>
+
+                                <condition>The manuscript is generally of a good condition. The leaf height and width offered above is, however, an
+                                    average measurement. Due to both rough-trimming in the first instance and subsequent wear over time the edges of
+                                    pages are particularly worn (<locus from="36r" to="36r">with some minor interventional repairs</locus>). The size
+                                    of each folio therefore varies slightly from one to the next.</condition>
+
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>The writing area on each page varies not only between texts or quires but often from folium to folium,
+                                    augmenting the sense of a semi-spontaneous production. As a general rule, the scribe is conscious to leave
+                                    conventional margins (generally in excess of an inch) to the top, bottom and inside of each page (and particularly
+                                    after the first quire) however, in prose, he often allows lines to run to the very edge of the paper.</layout>
+                            </layoutDesc>
+
+                        </objectDesc>
+
+                        <handDesc>
+
+                            <p>The majority of the text is self-referentially attributed to the same scribe ‘Roger F’, discussed in more detail below.
+                                He writes in a mixed or hybrid script throughout, combining elements of Anglicana Formata and Current Secretary
+                                hands.</p>
+                            <p>The scribe uses the capital short-s form that is adopted from university hands and the lowercase ‘d’ grapheme that is,
+                                although still somewhat looped, more upright than its predecessors. The ‘2’-shaped ‘r’ and angular ‘o’ are also
+                                present. The highly identifiable double compartment ‘a’ is also used frequently. Two lowercase ‘e’ allographs are
+                                present: both the reverse ductus ‘e’ and horned ‘e’ grapheme. Almost always, the scribe loops ascenders, particularly
+                                for ‘b’, ‘h’ and ‘l’, however he shows less of a preponderance to do so on the first line of a page where he
+                                frequently only partially loops them. A cursive ‘m’, produced in a single pen stroke, appears far more consistently
+                                than its Anglicana Formata form, for which each minim is formed separately.</p>
+                            <p>The scribe also adopts the horned form of ‘g’ as opposed to the closed-compartment ‘g’. Similarly, the Secretary single
+                                compartment ‘a’ and simpler ‘w’ form also occur mixed among their corresponding Anglicana Formata forms throughout.
+                                See for example ‘margarete’ on <locus from="33r" to="33r">f. 33r</locus> in which both ‘a’ allographs appear.</p>
+                            <p>Notably, the only example of the dotted ‘y’ grapheme occurs in the first treatise fragment.</p>
+                            <p>The ductus of the scribe is predominantly of a vertical aspect with the stems and tails of most graphemes extending to
+                                approximately twice the height of the main line of writing. The scribe shows a propensity to slant to the right in
+                                some parts of the manuscript, perhaps an indication of the haste of composition at times. This also reflects the
+                                influence of the Secretary script on the hand. Otiose strokes are equally as present in either instance. The hand is
+                                highly cursive and ligatures are used frequently but idiosyncratically, the same is true of approach and end
+                                strokes.</p>
+                            <p>The titles of the <hi rend="italic">Life of Saint Dorothy</hi> and <hi rend="italic">Life of Saint Margaret</hi> are
+                                far larger than the main script, serving a decorative function, and are in a mixed Bastard Anglicana and Bastard
+                                Secretary hand.</p>
+                            <p>A characteristic feature of Roger F’s style is his inclusion of a brief Latin colophon at the end of each vernacular
+                                text. This is always in a distinctly different and more formal hand from his main script: Neat Secretary following the
+                                majority and Anglicana Formata following the <hi rend="italic">Life of Saint Margaret</hi>.</p>
+                            <p>While this is a compilation manuscript, the main mixed hand it relatively consistent throughout. There is one notable
+                                exception to this on the final leaf of the final text in the manuscript: Lygate’s <hi rend="italic">Life of Saint
+                                    Margaret</hi>. Throughout the verse, the scribe maintains a design of three stanzas to the page, however
+                                two-thirds of the way down <locus from="41r" to="41r">f. 41r</locus> the handwriting changes to a distinct Secretary
+                                Hand of a much smaller aspect but taking up no less space. This is the opposite of an example offered by Malcolm
+                                Parkes, in which he illustrates the ‘degradation’ of a mid-fifteenth century hand that increases in cursivity as the
+                                manuscript progresses, moving from Current Secretary to a mixed script. See Parkes, <hi rend="italic">English Cursive
+                                    Book Hands: 1350 – 1550</hi> (Oxford: Clarendon Press, 1969), pp. 21-22.</p>
+                            <p>A seventeenth-century hand, writing in abbreviated Latin, appears on the bottom of <locus from="29r" to="29r">f.
+                                    29r</locus>.</p>
+
+                            <p>
+                                <hi rend="bold">Scribal attribution:</hi> Ian Doyle attributes this manuscript to the ‘amateurish hand of Roger F’.
+                                His signature appears at the end of each text with the exception of the first incomplete treatise excerpt. He adds
+                                    ‘p<hi rend="italic">er</hi> Roger R F’ following the final prayer that ends <hi rend="italic">The Abbey of the
+                                    Holy Ghost</hi> and <hi rend="italic">The Charter of the Abbey of the Holy Ghost</hi> (that appear to have been
+                                copied in a single instance as the copying bridges two quires and occurs in identical ink and with the same
+                                mise-en-page) on <locus from="24v" to="24v">f. 24v</locus>. The <hi rend="italic">Life of Saint Dorothy</hi> ends with
+                                ‘Roger F’ (<locus from="28v" to="28v">f. 28v</locus>) and the Augustine excerpt with ‘p<hi rend="italic">er</hi> R F’
+                                    (<locus from="29r" to="29r">f. 29r</locus>). The manuscript ends with a brief prayer following Lydgate’s <hi
+                                    rend="italic">Life of Saint Margaret</hi>. It finishes ‘Amen p<hi rend="italic">er</hi> F’ (<locus from="41v"
+                                    to="41v">f. 41v</locus>). </p>
+                            <p>The <hi rend="italic">A Catalogue of the Manuscripts Preserved in the Library of the University of Cambridge</hi>
+                                identifies a brief addition in the hand of Thomas Tanner (d. 1735) who catalogues this manuscript in his <hi
+                                    rend="italic">Bibliotheca Britannico-Hibernica</hi> (published in 1748) under Lydgate as ‘MS. Norwic. More. 191’.
+                                MS Ll.5.18 came to Cambridge University Library through the Bishop Moore bequest and <locus from="cover (inside)"
+                                    to="cover (inside)">a bookplate dated to 1715 from the Moore collection has been preserved in the re-binding
+                                    process</locus>. Tanner was private chaplain to Bishop John Moore of Norwich during his early career. It is
+                                presumably for these reasons that the <hi rend="italic">Catalogue</hi> deduces that the addition ‘by John Lydgate Monk
+                                of Bury’ on <locus from="29v" to="29v">f. 29v</locus> to the originally unattributed <hi rend="italic">Life of Saint
+                                    Margaret</hi>, which begins on this page, was inserted by Tanner.</p>
+
+
+                            <p>
+                                <hi rend="bold">Punctuation:</hi> Punctuation occurs only in the form of the raised punctus in both the prose and
+                                verse material. In Lydgate’s <hi rend="italic">Life of Saint Margaret</hi> stanzas are marked with a flat topped ‘u’
+                                grapheme.</p>
+
+                            <p>
+                                <hi rend="bold">Abbreviation:</hi> The abbreviation schema throughout the manuscript is standard in both the
+                                vernacular and the Latin.</p>
+
+                            <p>Abbreviation generally takes the form of superscription (such as w<hi rend="superscript">t</hi> and þ<hi
+                                    rend="superscript">t</hi>) although the scribe employs these erratically, often electing to use the unabbreviated
+                                word form regardless of issues such as space. </p>
+
+                            <p>The scribe also frequently uses typical indicators of contraction such as a looped superscript flourish extending from
+                                the preceding grapheme to indicate an ‘m’ or ‘n’ (e.g. ‘o<hi rend="italic">mn</hi>ipotentis’ on <locus from="1r"
+                                    to="1r">f. 1r</locus>) or similarly on the word final letter to indicate an absent penultimate ‘m’ or ‘n’ such as
+                                in the case of ‘oyntme<hi rend="italic">n</hi>t’ on <locus from="25v" to="25v">f. 25v</locus>. Similarly, the scribe
+                                consistently abbreviates er/ar/ir/ur/or/ro following m, v and p as in the examples of ‘m<hi rend="italic">er</hi>cy’
+                                    (<locus from="1r" to="1r">f. 1r</locus>), v<hi rend="italic">ir</hi>gyne (<locus from="25r" to="25r">f.
+                                    25r</locus>) and p<hi rend="italic">er</hi>secucon (<locus from="25r" to="25r">f. 25r</locus>) or p<hi
+                                    rend="italic">er</hi>eat (<locus from="41v" to="41v">f. 41v</locus>). As above, abbreviations following both ‘m’
+                                and ‘v’ are indicated with a flourish extending from the grapheme whereas an abbreviation following ‘p’ is typically
+                                marked by crossing the descender of the letter form. Bar suspension indicating a word final 'm' in Ingeni<hi
+                                    rend="italic">um</hi> on <locus from="28v" to="28v">f. 28v</locus>. Bar suspension is also used to indicate an
+                                absent 'i' in tion/cion constructions.</p>
+
+                        </handDesc>
+
+                        <decoDesc>
+                            <decoNote> No illumination, illustration or rubrication occurs in MS Ll.5.18. Larger, more decorative handwriting with
+                                otiose strokes and additional flourishes is adopted for the titles of the two saints’ lives (<locus from="25r"
+                                    to="25r">f. 25r</locus> and <locus from="29v" to="29v">f. 29v</locus>) and far more significantly in the case of
+                                the Lydgate. The scribe also shows a greater preponderance for otiose strokes in the verse. Underlining of occasional
+                                passages throughout. </decoNote>
+
+                            <decoNote>At the end of the <hi rend="italic">Dirrection of a Mannys Life</hi> (<locus from="1r" to="1r">f. 1r</locus>),
+                                    <hi rend="italic">The Charter of the Abbey of the Holy Ghost</hi> (<locus from="24v" to="24v">f. 24v</locus>) and
+                                the Augustine excerpt (<locus from="29r" to="29r">f. 29r</locus>) one sees the same practice of filling the end of a
+                                line of prose with a distinctive decorative ‘AMEN’. In each instance, this sequence is identical, consisting of each
+                                letter capitalised and separated by a decorative marking made up of a tilde stroke intersected by one or two vertical
+                                lines. The fact that this distinctive trait is present at the end of the first excerpt may evidence the fact that the
+                                same scribe copied the now largely lost first text as part of the surviving manuscript segment as opposed to
+                                repurposing a half-used quire to commence this compilation work. This practice is in contrast to the purely decorative
+                                line-filling that appears on <locus from="18r" to="18r">f. 18r</locus>.</decoNote>
+                        </decoDesc>
+
+                        <additions>
+                            <p>
+                                <hi rend="bold">Marginalia:</hi> There is a single example of marginalia in MS Ll.5.18 on <locus from="36r" to="36r"
+                                    >f. 36r</locus>, where the phrase ‘moyses famulus d<hi rend="italic">o</hi>m<hi rend="italic">ini</hi>’ appears in
+                                the top right-hand corner. This corresponds to the beginning of Joshua 22.2 and is also the name of a popular chant
+                                inspired by the Biblical passage that was frequently allocated to the Feast of Dom. 4 Quadragesimae. There appears to
+                                be no connection between this notation and the Lydgate stanzas to which it is adjacent and, thus, is likely an example
+                                of pen practice.</p>
+                            <p>
+                                <hi rend="bold">Corrections:</hi> There are very few corrections in this manuscript. The few cases of correction seem
+                                to occur in the same hand and ink immediately following the error. For example, on <locus from="2v" to="2v">f.
+                                    2v</locus> the scribe simply scribbles out ‘That’ before continuing the prose and similarly does so for ‘yf’ on
+                                    <locus from="25v" to="25v">f. 25v</locus>.</p>
+                            <p>The scribe also employs the corrective methods of insertion and superscription. On <locus from="6v" to="6v">f.
+                                    6v</locus> there is an example of the word ‘white’ being added by means of a circumflex between letters. More
+                                commonly, however, the scribe simply superscripts the missing letter over the place of omission (e.g. senato˹r˺es on
+                                    <locus from="25r" to="25r">f. 25r</locus>). Due to the scribe’s application of superscription both when correcting
+                                and abbreviating words, it is occasionally unclear which task is in action. This is particularly true where only one
+                                letter is superscripted when there has been an omission of several letters, as is the case on <locus from="26r"
+                                    to="26r">f. 26r</locus> where the scribe writes: ‘dist˹o˺ye’. The word fits best semantically as ‘dist(r)˹o˺ye’,
+                                however the superscription does not clearly denote this and is not a common abbreviation notation for ‘ro’. It could
+                                thus be equally viewed to serve as an idiosyncratic abbreviation or to fulfil a corrective function. This is
+                                particularly so given that two words later ‘torment’ is represented as ‘to˹r˺ment’ where one or both functions are in
+                                operation simultaneously. In this instance, the word is not shortened in terms of the number of letters that appear if
+                                the superscript ‘r’ is viewed as an abbreviation, it does however abbreviate in the sense that it condenses the
+                                physical length of the word on the page.</p>
+                            <p>On <locus from="25r" to="25r">f. 25r</locus> correction has occurred through scraping between ‘god’ and ‘with’ and this
+                                has thinned the paper beyond use on the verso. This indicates that the correction happened immediately in the writing
+                                process, rather than during a process of checking and revision. </p>
+                            <p>
+                                <hi rend="bold">Additions:</hi> A strip of paper was pasted over the bottom quarter of <locus from="29 pasteover (r)"
+                                    to="29 pasteover (v)">f. 29r</locus>, although has since become loose revealing that which it covered. The
+                                material that has been covered is inverted and consists of three lines of writing and a signature. The writing
+                                fragment has been cut through to form the correct dimensions for the quarto. The paper that has been used to cover
+                                this is also scrap material being re-utilised, with writing covering its entirety and truncated by trimming on its
+                                outer and bottom edges. This suggests that the strip was cut specifically to fit the space it was required to cover.
+                                    <locus from="29r" to="29v">F. 29r</locus> appears mid-quire, however it marks the beginning of the excerpt taken
+                                from Augustine, which finishes well in advance of the material that required covering. The writing that follows the
+                                excerpt is a Latin couplet, with a matching (in both hand and form) Latin couplet occurring adjacently, and then a
+                                short piece of Latin writing in a separate hand and ink. The latter piece of writing, written in a seventeenth century
+                                hand, flows directly from the original page and onto the paste-over.</p>
+                        </additions>
+
+
+
+                        <bindingDesc>
+                            <p>The binding is modern and of paper boards, completed by Douglas Cockerell &amp; Son in 1970. There is also internal
+                                evidence for this preservation as <locus from="21r" to="21r">worm holes</locus> within the manuscript have become
+                                misaligned as a result of the re-binding.</p>
+                        </bindingDesc>
+
+
+
+
+                    </physDesc>
+
+                    <history>
+                        <origin>
+                            <origDate from="1400" to="1499">Fifteenth century. This is ratified by the dateable texts contained in MS Ll.5.18, which
+                                accommodate production from quite early in the first half of the century. <hi rend="italic">The Life of Saint
+                                    Margaret</hi>, commissioned by Edmund Mortimer, was composed by John Lydgate between 1415-26 and the version of
+                                the <hi rend="italic">Life of Saint Dorothy</hi> contained in MS Ll.5.18 has been identified by Manfred Görlach to be
+                                one of a group of the tale that dates from the early fifteenth century.</origDate>
+                            <origPlace>Unknown</origPlace>
+                        </origin>
+
+
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source>This catalogue entry draws on unpublished manuscript notes by M. R. James. I also am grateful to Richard
+                                    Beadle for his advice regarding the provenance of the manuscript, which remains a work in progress.</source>
+                            </recordHist>
+                            <availability status="restricted">
+                                <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures
+                                    contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library
+                                        Admissions</ref>). Contact the Manuscripts Department for further information on the availability of this
+                                    manuscript</p>
+                            </availability>
+                            <note/>
+                        </adminInfo>
+                        <listBibl>
+                            <bibl>
+                                <hi rend="italic">A Catalogue of the Manuscripts Preserved in the Library of the University of Cambridge</hi>, ed. by
+                                Charles Hardwick and Henry Richards Luard, 5 vols (Cambridge: Cambridge University Press, 1821-1859), IV
+                                (1856).</bibl>
+                            <bibl>
+                                <hi rend="italic">A Check-List of Middle English Prose Writings of Spiritual Guidance</hi>, ed. by P. S. Jolliffe
+                                (Toronto: Pontifical Institute of Mediaeval Studies, 1974).</bibl>
+                            <bibl>
+                                <hi rend="italic">A Manual of the Writings in Middle English 1050–1400</hi>, ed. by John Edwin Wells (London: Oxford
+                                University Press, 1916).<lb/> [Supplements 1-9, ed. by Wells (London: Oxford University Press, 1919-1951].</bibl>
+                            <bibl>
+                                <hi rend="italic">A New Index of Middle English Verse</hi>, ed. by Julia Boffey and A. S. G. Edwards (London: British
+                                Library, 2005). </bibl>
+                            <bibl>
+                                <hi rend="italic">A Revised Manual of the Writings in Middle English 1050–1500</hi>, 11 vols-. I-II ed. by J. Burke
+                                Severs, III-X ed. by Albert Hartung, XI ed. by Peter Beidler. (New Haven, Conneticut: Conneticut Academy of Arts and
+                                Sciences, 1967-2005), II (1970), VII (1986).</bibl>
+                            <bibl>
+                                <hi rend="italic">The Index of Middle English Prose, Handlist XIX: Manuscripts in the University Library, Cambridge
+                                    (Dd-Oo)</hi>, ed. by Margaret Connolly (Woodbridge: D. S. Brewer, 2009).</bibl>
+                            <bibl>
+                                <hi rend="italic">The Index of Printed Middle English Prose, Handlist XIX: Cambridge University Library (Dd-Oo)</hi>,
+                                ed. by R. E. Lewis, N. F. Blake and A. S. G. Edwards, (New York: Garland, 1985).</bibl>
+                            <bibl>Boffey, Julia, ‘<hi rend="italic">The Charter of the Abbey of the Holy Ghost</hi> and its Role in Manuscript
+                                Anthologies’, <hi rend="italic">The Yearbook of English Studies</hi>, 33 (2003), 120-130.</bibl>
+                            <bibl>Doyle, Anthony Ian, 'A Survey of the Origins and Circulation of Theological Writings in the 14th, 15th and Early
+                                16th Centuries with Special Consideration of the Part of the Clergy therein', 2 vols (unpublished Ph.D. dissertation,
+                                University of Cambridge, 1953).</bibl>
+                            <bibl>Görlach, Manfred, <hi rend="italic">The South English Legendary, Gilte legende and Golden legend</hi> (Braunschweig:
+                                Institut für Anglistik und Amerikanistik, 1972).</bibl>
+                            <bibl>James, M. R., ‘Unpublished description of Cambridge University Library MS Ll.5.18’, University of Cambridge.</bibl>
+                            <bibl>Tanner, Thomas, <hi rend="italic">Bibliotheca Britannico-Hibernica</hi> (Londoni: Excudit Gulielmus Bowyer,
+                                1748).</bibl>
+                            <bibl>Rice, Nicole, <hi rend="italic">Lay Piety and Religious Discipline in Middle English Literature</hi> (Cambridge:
+                                Cambridge University Press, 2008).</bibl>
+
+                        </listBibl>
+
+
+
+                    </additional>
+
+
+
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh89005456">Devotional literature, English (Middle)</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2017-12-20">
+                <persName>Katherine Dixon</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+        <graphic decls="#document-thumbnail" rend="portrait" url="MS-LL-00005-00018-000-00001"/>
+        <surface n="cover" xml:id="i1">
+            <graphic decls="#downloadImageRights #download" height="6552px" width="4252px" rend="portrait" url="MS-LL-00005-00018-000-00001"/>
+        </surface>
+        <surface n="cover (inside)" xml:id="i2">
+            <graphic decls="#downloadImageRights #download" height="6521px" width="4117px" rend="portrait" url="MS-LL-00005-00018-000-00002"/>
+        </surface>
+        <surface n="flyleaf1(r)" xml:id="i3">
+            <graphic decls="#downloadImageRights #download" height="6304px" width="3904px" rend="portrait" url="MS-LL-00005-00018-000-00003"/>
+        </surface>
+        <surface n="flyleaf1(v)" xml:id="i4">
+            <graphic decls="#downloadImageRights #download" height="6281px" width="3958px" rend="portrait" url="MS-LL-00005-00018-000-00004"/>
+        </surface>
+        <surface n="flyleaf2(r)" xml:id="i5">
+            <graphic decls="#downloadImageRights #download" height="6385px" width="3884px" rend="portrait" url="MS-LL-00005-00018-000-00005"/>
+        </surface>
+        <surface n="flyleaf2(v)" xml:id="i6">
+            <graphic decls="#downloadImageRights #download" height="6281px" width="3958px" rend="portrait" url="MS-LL-00005-00018-000-00006"/>
+        </surface>
+        <surface n="flyleaf3(r)" xml:id="i7">
+            <graphic decls="#downloadImageRights #download" height="6395px" width="3884px" rend="portrait" url="MS-LL-00005-00018-000-00007"/>
+        </surface>
+        <surface n="flyleaf3(v)" xml:id="i8">
+            <graphic decls="#downloadImageRights #download" height="6265px" width="3958px" rend="portrait" url="MS-LL-00005-00018-000-00008"/>
+        </surface>
+        <surface n="flyleaf4(r)" xml:id="i9">
+            <graphic decls="#downloadImageRights #download" height="6376px" width="3914px" rend="portrait" url="MS-LL-00005-00018-000-00009"/>
+        </surface>
+        <surface n="flyleaf4(v)" xml:id="i10">
+            <graphic decls="#downloadImageRights #download" height="6265px" width="3980px" rend="portrait" url="MS-LL-00005-00018-000-00010"/>
+        </surface>
+        <surface n="flyleaf5(r)" xml:id="i11">
+            <graphic decls="#downloadImageRights #download" height="6376px" width="3914px" rend="portrait" url="MS-LL-00005-00018-000-00011"/>
+        </surface>
+        <surface n="flyleaf5(v)" xml:id="i12">
+            <graphic decls="#downloadImageRights #download" height="6265px" width="3980px" rend="portrait" url="MS-LL-00005-00018-000-00012"/>
+        </surface>
+        <surface n="flyleaf6(r)" xml:id="i13">
+            <graphic decls="#downloadImageRights #download" height="6376px" width="3879px" rend="portrait" url="MS-LL-00005-00018-000-00013"/>
+        </surface>
+        <surface n="flyleaf6(v)" xml:id="i14">
+            <graphic decls="#downloadImageRights #download" height="6265px" width="3980px" rend="portrait" url="MS-LL-00005-00018-000-00014"/>
+        </surface>
+        <surface n="1r" xml:id="i15">
+            <graphic decls="#downloadImageRights #download" height="6343px" width="3743px" rend="portrait" url="MS-LL-00005-00018-000-00015"/>
+        </surface>
+        <surface n="1v" xml:id="i16">
+            <graphic decls="#downloadImageRights #download" height="6218px" width="3827px" rend="portrait" url="MS-LL-00005-00018-000-00016"/>
+        </surface>
+        <surface n="2r" xml:id="i17">
+            <graphic decls="#downloadImageRights #download" height="6323px" width="3730px" rend="portrait" url="MS-LL-00005-00018-000-00017"/>
+        </surface>
+        <surface n="2v" xml:id="i18">
+            <graphic decls="#downloadImageRights #download" height="6257px" width="3827px" rend="portrait" url="MS-LL-00005-00018-000-00018"/>
+        </surface>
+        <surface n="3r" xml:id="i19">
+            <graphic decls="#downloadImageRights #download" height="6358px" width="3751px" rend="portrait" url="MS-LL-00005-00018-000-00019"/>
+        </surface>
+        <surface n="3v" xml:id="i20">
+            <graphic decls="#downloadImageRights #download" height="6257px" width="3858px" rend="portrait" url="MS-LL-00005-00018-000-00020"/>
+        </surface>
+        <surface n="4r" xml:id="i21">
+            <graphic decls="#downloadImageRights #download" height="6358px" width="3699px" rend="portrait" url="MS-LL-00005-00018-000-00021"/>
+        </surface>
+        <surface n="4v" xml:id="i22">
+            <graphic decls="#downloadImageRights #download" height="6257px" width="3838px" rend="portrait" url="MS-LL-00005-00018-000-00022"/>
+        </surface>
+        <surface n="5r" xml:id="i23">
+            <graphic decls="#downloadImageRights #download" height="6324px" width="3699px" rend="portrait" url="MS-LL-00005-00018-000-00023"/>
+        </surface>
+        <surface n="5v" xml:id="i24">
+            <graphic decls="#downloadImageRights #download" height="6288px" width="3816px" rend="portrait" url="MS-LL-00005-00018-000-00024"/>
+        </surface>
+        <surface n="6r" xml:id="i25">
+            <graphic decls="#downloadImageRights #download" height="6328px" width="3683px" rend="portrait" url="MS-LL-00005-00018-000-00025"/>
+        </surface>
+        <surface n="6v" xml:id="i26">
+            <graphic decls="#downloadImageRights #download" height="6262px" width="3816px" rend="portrait" url="MS-LL-00005-00018-000-00026"/>
+        </surface>
+        <surface n="7r" xml:id="i27">
+            <graphic decls="#downloadImageRights #download" height="6271px" width="3721px" rend="portrait" url="MS-LL-00005-00018-000-00027"/>
+        </surface>
+        <surface n="7v" xml:id="i28">
+            <graphic decls="#downloadImageRights #download" height="6301px" width="3730px" rend="portrait" url="MS-LL-00005-00018-000-00028"/>
+        </surface>
+        <surface n="8r" xml:id="i29">
+            <graphic decls="#downloadImageRights #download" height="6271px" width="3663px" rend="portrait" url="MS-LL-00005-00018-000-00029"/>
+        </surface>
+        <surface n="8v" xml:id="i30">
+            <graphic decls="#downloadImageRights #download" height="6244px" width="3852px" rend="portrait" url="MS-LL-00005-00018-000-00030"/>
+        </surface>
+        <surface n="9r" xml:id="i31">
+            <graphic decls="#downloadImageRights #download" height="6297px" width="3663px" rend="portrait" url="MS-LL-00005-00018-000-00031"/>
+        </surface>
+        <surface n="9v" xml:id="i32">
+            <graphic decls="#downloadImageRights #download" height="6244px" width="3832px" rend="portrait" url="MS-LL-00005-00018-000-00032"/>
+        </surface>
+        <surface n="10r" xml:id="i33">
+            <graphic decls="#downloadImageRights #download" height="6328px" width="3652px" rend="portrait" url="MS-LL-00005-00018-000-00033"/>
+        </surface>
+        <surface n="10v" xml:id="i34">
+            <graphic decls="#downloadImageRights #download" height="6276px" width="3855px" rend="portrait" url="MS-LL-00005-00018-000-00034"/>
+        </surface>
+        <surface n="11r" xml:id="i35">
+            <graphic decls="#downloadImageRights #download" height="6328px" width="3767px" rend="portrait" url="MS-LL-00005-00018-000-00035"/>
+        </surface>
+        <surface n="11v" xml:id="i36">
+            <graphic decls="#downloadImageRights #download" height="6276px" width="3855px" rend="portrait" url="MS-LL-00005-00018-000-00036"/>
+        </surface>
+        <surface n="12r" xml:id="i37">
+            <graphic decls="#downloadImageRights #download" height="6328px" width="3767px" rend="portrait" url="MS-LL-00005-00018-000-00037"/>
+        </surface>
+        <surface n="12v" xml:id="i38">
+            <graphic decls="#downloadImageRights #download" height="6276px" width="3836px" rend="portrait" url="MS-LL-00005-00018-000-00038"/>
+        </surface>
+        <surface n="13r" xml:id="i39">
+            <graphic decls="#downloadImageRights #download" height="6328px" width="3767px" rend="portrait" url="MS-LL-00005-00018-000-00039"/>
+        </surface>
+        <surface n="13v" xml:id="i40">
+            <graphic decls="#downloadImageRights #download" height="6226px" width="3801px" rend="portrait" url="MS-LL-00005-00018-000-00040"/>
+        </surface>
+        <surface n="14r" xml:id="i41">
+            <graphic decls="#downloadImageRights #download" height="6328px" width="3759px" rend="portrait" url="MS-LL-00005-00018-000-00041"/>
+        </surface>
+        <surface n="14v" xml:id="i42">
+            <graphic decls="#downloadImageRights #download" height="6226px" width="3759px" rend="portrait" url="MS-LL-00005-00018-000-00042"/>
+        </surface>
+        <surface n="15r" xml:id="i43">
+            <graphic decls="#downloadImageRights #download" height="6330px" width="3750px" rend="portrait" url="MS-LL-00005-00018-000-00043"/>
+        </surface>
+        <surface n="15v" xml:id="i44">
+            <graphic decls="#downloadImageRights #download" height="6256px" width="3802px" rend="portrait" url="MS-LL-00005-00018-000-00044"/>
+        </surface>
+        <surface n="16r" xml:id="i45">
+            <graphic decls="#downloadImageRights #download" height="6315px" width="3769px" rend="portrait" url="MS-LL-00005-00018-000-00045"/>
+        </surface>
+        <surface n="16v" xml:id="i46">
+            <graphic decls="#downloadImageRights #download" height="6256px" width="3824px" rend="portrait" url="MS-LL-00005-00018-000-00046"/>
+        </surface>
+        <surface n="17r" xml:id="i47">
+            <graphic decls="#downloadImageRights #download" height="6332px" width="3802px" rend="portrait" url="MS-LL-00005-00018-000-00047"/>
+        </surface>
+        <surface n="17v" xml:id="i48">
+            <graphic decls="#downloadImageRights #download" height="6281px" width="3824px" rend="portrait" url="MS-LL-00005-00018-000-00048"/>
+        </surface>
+        <surface n="18r" xml:id="i49">
+            <graphic decls="#downloadImageRights #download" height="6332px" width="3748px" rend="portrait" url="MS-LL-00005-00018-000-00049"/>
+        </surface>
+        <surface n="18v" xml:id="i50">
+            <graphic decls="#downloadImageRights #download" height="6281px" width="3824px" rend="portrait" url="MS-LL-00005-00018-000-00050"/>
+        </surface>
+        <surface n="19r" xml:id="i51">
+            <graphic decls="#downloadImageRights #download" height="6332px" width="3748px" rend="portrait" url="MS-LL-00005-00018-000-00051"/>
+        </surface>
+        <surface n="19v" xml:id="i52">
+            <graphic decls="#downloadImageRights #download" height="6262px" width="3796px" rend="portrait" url="MS-LL-00005-00018-000-00052"/>
+        </surface>
+        <surface n="20r" xml:id="i53">
+            <graphic decls="#downloadImageRights #download" height="6277px" width="3748px" rend="portrait" url="MS-LL-00005-00018-000-00053"/>
+        </surface>
+        <surface n="20v" xml:id="i54">
+            <graphic decls="#downloadImageRights #download" height="6262px" width="3796px" rend="portrait" url="MS-LL-00005-00018-000-00054"/>
+        </surface>
+        <surface n="21r" xml:id="i55">
+            <graphic decls="#downloadImageRights #download" height="6277px" width="3748px" rend="portrait" url="MS-LL-00005-00018-000-00055"/>
+        </surface>
+        <surface n="21v" xml:id="i56">
+            <graphic decls="#downloadImageRights #download" height="6262px" width="3759px" rend="portrait" url="MS-LL-00005-00018-000-00056"/>
+        </surface>
+        <surface n="22r" xml:id="i57">
+            <graphic decls="#downloadImageRights #download" height="6325px" width="3663px" rend="portrait" url="MS-LL-00005-00018-000-00057"/>
+        </surface>
+        <surface n="22v" xml:id="i58">
+            <graphic decls="#downloadImageRights #download" height="6262px" width="3691px" rend="portrait" url="MS-LL-00005-00018-000-00058"/>
+        </surface>
+        <surface n="23r" xml:id="i59">
+            <graphic decls="#downloadImageRights #download" height="6332px" width="3714px" rend="portrait" url="MS-LL-00005-00018-000-00059"/>
+        </surface>
+        <surface n="23v" xml:id="i60">
+            <graphic decls="#downloadImageRights #download" height="6268px" width="3714px" rend="portrait" url="MS-LL-00005-00018-000-00060"/>
+        </surface>
+        <surface n="24r" xml:id="i61">
+            <graphic decls="#downloadImageRights #download" height="6332px" width="3714px" rend="portrait" url="MS-LL-00005-00018-000-00061"/>
+        </surface>
+        <surface n="24v" xml:id="i62">
+            <graphic decls="#downloadImageRights #download" height="6268px" width="3745px" rend="portrait" url="MS-LL-00005-00018-000-00062"/>
+        </surface>
+        <surface n="25r" xml:id="i63">
+            <graphic decls="#downloadImageRights #download" height="6298px" width="3750px" rend="portrait" url="MS-LL-00005-00018-000-00063"/>
+        </surface>
+        <surface n="25v" xml:id="i64">
+            <graphic decls="#downloadImageRights #download" height="6218px" width="3783px" rend="portrait" url="MS-LL-00005-00018-000-00064"/>
+        </surface>
+        <surface n="26r" xml:id="i65">
+            <graphic decls="#downloadImageRights #download" height="6264px" width="3770px" rend="portrait" url="MS-LL-00005-00018-000-00065"/>
+        </surface>
+        <surface n="26v" xml:id="i66">
+            <graphic decls="#downloadImageRights #download" height="6215px" width="3774px" rend="portrait" url="MS-LL-00005-00018-000-00066"/>
+        </surface>
+        <surface n="27r" xml:id="i67">
+            <graphic decls="#downloadImageRights #download" height="6264px" width="3794px" rend="portrait" url="MS-LL-00005-00018-000-00067"/>
+        </surface>
+        <surface n="27v" xml:id="i68">
+            <graphic decls="#downloadImageRights #download" height="6194px" width="3774px" rend="portrait" url="MS-LL-00005-00018-000-00068"/>
+        </surface>
+        <surface n="28r" xml:id="i69">
+            <graphic decls="#downloadImageRights #download" height="6275px" width="3760px" rend="portrait" url="MS-LL-00005-00018-000-00069"/>
+        </surface>
+        <surface n="28v" xml:id="i70">
+            <graphic decls="#downloadImageRights #download" height="6230px" width="3751px" rend="portrait" url="MS-LL-00005-00018-000-00070"/>
+        </surface>
+        <surface n="29 pasteover (r)" xml:id="i71">
+            <graphic decls="#downloadImageRights #download" height="2536px" width="3582px" rend="landscape" url="MS-LL-00005-00018-000-00071"/>
+        </surface>
+        <surface n="29 pasteover (v)" xml:id="i72">
+            <graphic decls="#downloadImageRights #download" height="2567px" width="3582px" rend="landscape" url="MS-LL-00005-00018-000-00072"/>
+        </surface>
+        <surface n="29r" xml:id="i73">
+            <graphic decls="#downloadImageRights #download" height="6306px" width="3787px" rend="portrait" url="MS-LL-00005-00018-000-00073"/>
+        </surface>
+        <surface n="29v" xml:id="i74">
+            <graphic decls="#downloadImageRights #download" height="6253px" width="3757px" rend="portrait" url="MS-LL-00005-00018-000-00074"/>
+        </surface>
+        <surface n="30r" xml:id="i75">
+            <graphic decls="#downloadImageRights #download" height="6306px" width="3760px" rend="portrait" url="MS-LL-00005-00018-000-00075"/>
+        </surface>
+        <surface n="30v" xml:id="i76">
+            <graphic decls="#downloadImageRights #download" height="6271px" width="3704px" rend="portrait" url="MS-LL-00005-00018-000-00076"/>
+        </surface>
+        <surface n="31r" xml:id="i77">
+            <graphic decls="#downloadImageRights #download" height="6341px" width="3781px" rend="portrait" url="MS-LL-00005-00018-000-00077"/>
+        </surface>
+        <surface n="31v" xml:id="i78">
+            <graphic decls="#downloadImageRights #download" height="6253px" width="3757px" rend="portrait" url="MS-LL-00005-00018-000-00078"/>
+        </surface>
+        <surface n="32r" xml:id="i79">
+            <graphic decls="#downloadImageRights #download" height="6346px" width="3806px" rend="portrait" url="MS-LL-00005-00018-000-00079"/>
+        </surface>
+        <surface n="32v" xml:id="i80">
+            <graphic decls="#downloadImageRights #download" height="6253px" width="3757px" rend="portrait" url="MS-LL-00005-00018-000-00080"/>
+        </surface>
+        <surface n="33r" xml:id="i81">
+            <graphic decls="#downloadImageRights #download" height="6346px" width="3806px" rend="portrait" url="MS-LL-00005-00018-000-00081"/>
+        </surface>
+        <surface n="33v" xml:id="i82">
+            <graphic decls="#downloadImageRights #download" height="6226px" width="3727px" rend="portrait" url="MS-LL-00005-00018-000-00082"/>
+        </surface>
+        <surface n="34r" xml:id="i83">
+            <graphic decls="#downloadImageRights #download" height="6343px" width="3714px" rend="portrait" url="MS-LL-00005-00018-000-00083"/>
+        </surface>
+        <surface n="34v" xml:id="i84">
+            <graphic decls="#downloadImageRights #download" height="6226px" width="3727px" rend="portrait" url="MS-LL-00005-00018-000-00084"/>
+        </surface>
+        <surface n="35r" xml:id="i85">
+            <graphic decls="#downloadImageRights #download" height="6342px" width="3737px" rend="portrait" url="MS-LL-00005-00018-000-00085"/>
+        </surface>
+        <surface n="35v" xml:id="i86">
+            <graphic decls="#downloadImageRights #download" height="6226px" width="3739px" rend="portrait" url="MS-LL-00005-00018-000-00086"/>
+        </surface>
+        <surface n="36r" xml:id="i87">
+            <graphic decls="#downloadImageRights #download" height="6289px" width="3829px" rend="portrait" url="MS-LL-00005-00018-000-00087"/>
+        </surface>
+        <surface n="36v" xml:id="i88">
+            <graphic decls="#downloadImageRights #download" height="6226px" width="3757px" rend="portrait" url="MS-LL-00005-00018-000-00088"/>
+        </surface>
+        <surface n="37r" xml:id="i89">
+            <graphic decls="#downloadImageRights #download" height="6319px" width="3732px" rend="portrait" url="MS-LL-00005-00018-000-00089"/>
+        </surface>
+        <surface n="37v" xml:id="i90">
+            <graphic decls="#downloadImageRights #download" height="6226px" width="3757px" rend="portrait" url="MS-LL-00005-00018-000-00090"/>
+        </surface>
+        <surface n="38r" xml:id="i91">
+            <graphic decls="#downloadImageRights #download" height="6346px" width="3732px" rend="portrait" url="MS-LL-00005-00018-000-00091"/>
+        </surface>
+        <surface n="38v" xml:id="i92">
+            <graphic decls="#downloadImageRights #download" height="6226px" width="3757px" rend="portrait" url="MS-LL-00005-00018-000-00092"/>
+        </surface>
+        <surface n="39r" xml:id="i93">
+            <graphic decls="#downloadImageRights #download" height="6338px" width="3763px" rend="portrait" url="MS-LL-00005-00018-000-00093"/>
+        </surface>
+        <surface n="39v" xml:id="i94">
+            <graphic decls="#downloadImageRights #download" height="6255px" width="3776px" rend="portrait" url="MS-LL-00005-00018-000-00094"/>
+        </surface>
+        <surface n="40r" xml:id="i95">
+            <graphic decls="#downloadImageRights #download" height="6348px" width="3784px" rend="portrait" url="MS-LL-00005-00018-000-00095"/>
+        </surface>
+        <surface n="40v" xml:id="i96">
+            <graphic decls="#downloadImageRights #download" height="6248px" width="3776px" rend="portrait" url="MS-LL-00005-00018-000-00096"/>
+        </surface>
+        <surface n="41r" xml:id="i97">
+            <graphic decls="#downloadImageRights #download" height="6348px" width="3784px" rend="portrait" url="MS-LL-00005-00018-000-00097"/>
+        </surface>
+        <surface n="41v" xml:id="i98">
+            <graphic decls="#downloadImageRights #download" height="6202px" width="3795px" rend="portrait" url="MS-LL-00005-00018-000-00098"/>
+        </surface>
+        <surface n="flyleaf7(r)" xml:id="i99">
+            <graphic decls="#downloadImageRights #download" height="6382px" width="3742px" rend="portrait" url="MS-LL-00005-00018-000-00099"/>
+        </surface>
+        <surface n="flyleaf7(v)" xml:id="i100">
+            <graphic decls="#downloadImageRights #download" height="6313px" width="3815px" rend="portrait" url="MS-LL-00005-00018-000-00100"/>
+        </surface>
+        <surface n="flyleaf8(r)" xml:id="i101">
+            <graphic decls="#downloadImageRights #download" height="6406px" width="3782px" rend="portrait" url="MS-LL-00005-00018-000-00101"/>
+        </surface>
+        <surface n="flyleaf8(v)" xml:id="i102">
+            <graphic decls="#downloadImageRights #download" height="6313px" width="3815px" rend="portrait" url="MS-LL-00005-00018-000-00102"/>
+        </surface>
+        <surface n="flyleaf9(r)" xml:id="i103">
+            <graphic decls="#downloadImageRights #download" height="6425px" width="3857px" rend="portrait" url="MS-LL-00005-00018-000-00103"/>
+        </surface>
+        <surface n="flyleaf9(v)" xml:id="i104">
+            <graphic decls="#downloadImageRights #download" height="6298px" width="3857px" rend="portrait" url="MS-LL-00005-00018-000-00104"/>
+        </surface>
+        <surface n="flyleaf10(r)" xml:id="i105">
+            <graphic decls="#downloadImageRights #download" height="6435px" width="3805px" rend="portrait" url="MS-LL-00005-00018-000-00105"/>
+        </surface>
+        <surface n="flyleaf10(v)" xml:id="i106">
+            <graphic decls="#downloadImageRights #download" height="6298px" width="3800px" rend="portrait" url="MS-LL-00005-00018-000-00106"/>
+        </surface>
+        <surface n="flyleaf11(r)" xml:id="i107">
+            <graphic decls="#downloadImageRights #download" height="6435px" width="3805px" rend="portrait" url="MS-LL-00005-00018-000-00107"/>
+        </surface>
+        <surface n="flyleaf11(v)" xml:id="i108">
+            <graphic decls="#downloadImageRights #download" height="6298px" width="3864px" rend="portrait" url="MS-LL-00005-00018-000-00108"/>
+        </surface>
+        <surface n="back cover (inside)" xml:id="i109">
+            <graphic decls="#downloadImageRights #download" height="6550px" width="4154px" rend="portrait" url="MS-LL-00005-00018-000-00109"/>
+        </surface>
+        <surface n="back cover" xml:id="i110">
+            <graphic decls="#downloadImageRights #download" height="6525px" width="4234px" rend="portrait" url="MS-LL-00005-00018-000-00110"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb n="cover" xml:id="pb-cover" facs="#i1"/>
+                <pb n="cover (inside)" xml:id="pb-coverinside" facs="#i2"/>
+                <pb n="flyleaf1(r)" xml:id="pb-flyleaf1r" facs="#i3"/>
+                <pb n="flyleaf1(v)" xml:id="pb-flyleaf1v" facs="#i4"/>
+                <pb n="flyleaf2(r)" xml:id="pb-flyleaf2r" facs="#i5"/>
+                <pb n="flyleaf2(v)" xml:id="pb-flyleaf2v" facs="#i6"/>
+                <pb n="flyleaf3(r)" xml:id="pb-flyleaf3r" facs="#i7"/>
+                <pb n="flyleaf3(v)" xml:id="pb-flyleaf3v" facs="#i8"/>
+                <pb n="flyleaf4(r)" xml:id="pb-flyleaf4r" facs="#i9"/>
+                <pb n="flyleaf4(v)" xml:id="pb-flyleaf4v" facs="#i10"/>
+                <pb n="flyleaf5(r)" xml:id="pb-flyleaf5r" facs="#i11"/>
+                <pb n="flyleaf5(v)" xml:id="pb-flyleaf5v" facs="#i12"/>
+                <pb n="flyleaf6(r)" xml:id="pb-flyleaf6r" facs="#i13"/>
+                <pb n="flyleaf6(v)" xml:id="pb-flyleaf6v" facs="#i14"/>
+                <pb n="1r" xml:id="pb-1r" facs="#i15"/>
+                <pb n="1v" xml:id="pb-1v" facs="#i16"/>
+                <pb n="2r" xml:id="pb-2r" facs="#i17"/>
+                <pb n="2v" xml:id="pb-2v" facs="#i18"/>
+                <pb n="3r" xml:id="pb-3r" facs="#i19"/>
+                <pb n="3v" xml:id="pb-3v" facs="#i20"/>
+                <pb n="4r" xml:id="pb-4r" facs="#i21"/>
+
+                <pb n="4v" xml:id="pb-4v" facs="#i22"/>
+                <pb n="5r" xml:id="pb-5r" facs="#i23"/>
+                <pb n="5v" xml:id="pb-5v" facs="#i24"/>
+                <pb n="6r" xml:id="pb-6r" facs="#i25"/>
+                <pb n="6v" xml:id="pb-6v" facs="#i26"/>
+                <pb n="7r" xml:id="pb-7r" facs="#i27"/>
+                <pb n="7v" xml:id="pb-7v" facs="#i28"/>
+                <pb n="8r" xml:id="pb-8r" facs="#i29"/>
+                <pb n="8v" xml:id="pb-8v" facs="#i30"/>
+                <pb n="9r" xml:id="pb-9r" facs="#i31"/>
+                <pb n="9v" xml:id="pb-9v" facs="#i32"/>
+                <pb n="10r" xml:id="pb-10r" facs="#i33"/>
+                <pb n="10v" xml:id="pb-10v" facs="#i34"/>
+                <pb n="11r" xml:id="pb-11r" facs="#i35"/>
+                <pb n="11v" xml:id="pb-11v" facs="#i36"/>
+                <pb n="12r" xml:id="pb-12r" facs="#i37"/>
+                <pb n="12v" xml:id="pb-12v" facs="#i38"/>
+                <pb n="13r" xml:id="pb-13r" facs="#i39"/>
+                <pb n="13v" xml:id="pb-13v" facs="#i40"/>
+                <pb n="14r" xml:id="pb-14r" facs="#i41"/>
+                <pb n="14v" xml:id="pb-14v" facs="#i42"/>
+                <pb n="15r" xml:id="pb-15r" facs="#i43"/>
+                <pb n="15v" xml:id="pb-15v" facs="#i44"/>
+                <pb n="16r" xml:id="pb-16r" facs="#i45"/>
+                <pb n="16v" xml:id="pb-16v" facs="#i46"/>
+                <pb n="17r" xml:id="pb-17r" facs="#i47"/>
+                <pb n="17v" xml:id="pb-17v" facs="#i48"/>
+                <pb n="18r" xml:id="pb-18r" facs="#i49"/>
+                <pb n="18v" xml:id="pb-18v" facs="#i50"/>
+                <pb n="19r" xml:id="pb-19r" facs="#i51"/>
+                <pb n="19v" xml:id="pb-19v" facs="#i52"/>
+                <pb n="20r" xml:id="pb-20r" facs="#i53"/>
+                <pb n="20v" xml:id="pb-20v" facs="#i54"/>
+                <pb n="21r" xml:id="pb-21r" facs="#i55"/>
+                <pb n="21v" xml:id="pb-21v" facs="#i56"/>
+                <pb n="22r" xml:id="pb-22r" facs="#i57"/>
+                <pb n="22v" xml:id="pb-22v" facs="#i58"/>
+                <pb n="23r" xml:id="pb-23r" facs="#i59"/>
+                <pb n="23v" xml:id="pb-23v" facs="#i60"/>
+                <pb n="24r" xml:id="pb-24r" facs="#i61"/>
+                <pb n="24v" xml:id="pb-24v" facs="#i62"/>
+                <pb n="25r" xml:id="pb-25r" facs="#i63"/>
+                <pb n="25v" xml:id="pb-25v" facs="#i64"/>
+                <pb n="26r" xml:id="pb-26r" facs="#i65"/>
+                <pb n="26v" xml:id="pb-26v" facs="#i66"/>
+                <pb n="27r" xml:id="pb-27r" facs="#i67"/>
+                <pb n="27v" xml:id="pb-27v" facs="#i68"/>
+                <pb n="28r" xml:id="pb-28r" facs="#i69"/>
+                <pb n="28v" xml:id="pb-28v" facs="#i70"/>
+                <pb n="29 pasteover (r)" xml:id="pb-29pasteoverr" facs="#i71"/>
+                <pb n="29 pasteover (v)" xml:id="pb-29pasteoverv" facs="#i72"/>
+                <pb n="29r" xml:id="pb-29r" facs="#i73"/>
+                <pb n="29v" xml:id="pb-29v" facs="#i74"/>
+                <pb n="30r" xml:id="pb-30r" facs="#i75"/>
+                <pb n="30v" xml:id="pb-30v" facs="#i76"/>
+                <pb n="31r" xml:id="pb-31r" facs="#i77"/>
+                <pb n="31v" xml:id="pb-31v" facs="#i78"/>
+                <pb n="32r" xml:id="pb-32r" facs="#i79"/>
+                <pb n="32v" xml:id="pb-32v" facs="#i80"/>
+                <pb n="33r" xml:id="pb-33r" facs="#i81"/>
+                <pb n="33v" xml:id="pb-33v" facs="#i82"/>
+                <pb n="34r" xml:id="pb-34r" facs="#i83"/>
+                <pb n="34v" xml:id="pb-34v" facs="#i84"/>
+                <pb n="35r" xml:id="pb-35r" facs="#i85"/>
+                <pb n="35v" xml:id="pb-35v" facs="#i86"/>
+                <pb n="36r" xml:id="pb-36r" facs="#i87"/>
+                <pb n="36v" xml:id="pb-36v" facs="#i88"/>
+                <pb n="37r" xml:id="pb-37r" facs="#i89"/>
+                <pb n="37v" xml:id="pb-37v" facs="#i90"/>
+                <pb n="38r" xml:id="pb-38r" facs="#i91"/>
+                <pb n="38v" xml:id="pb-38v" facs="#i92"/>
+                <pb n="39r" xml:id="pb-39r" facs="#i93"/>
+                <pb n="39v" xml:id="pb-39v" facs="#i94"/>
+                <pb n="40r" xml:id="pb-40r" facs="#i95"/>
+                <pb n="40v" xml:id="pb-40v" facs="#i96"/>
+                <pb n="41r" xml:id="pb-41r" facs="#i97"/>
+                <pb n="41v" xml:id="pb-41v" facs="#i98"/>
+                <pb n="flyleaf7(r)" xml:id="pb-flyleaf7r" facs="#i99"/>
+                <pb n="flyleaf7(v)" xml:id="pb-flyleaf7v" facs="#i100"/>
+                <pb n="flyleaf8(r)" xml:id="pb-flyleaf8r" facs="#i101"/>
+                <pb n="flyleaf8(v)" xml:id="pb-flyleaf8v" facs="#i102"/>
+                <pb n="flyleaf9(r)" xml:id="pb-flyleaf9r" facs="#i103"/>
+                <pb n="flyleaf9(v)" xml:id="pb-flyleaf9v" facs="#i104"/>
+                <pb n="flyleaf10(r)" xml:id="pb-flyleaf10r" facs="#i105"/>
+                <pb n="flyleaf10(v)" xml:id="pb-flyleaf10v" facs="#i106"/>
+                <pb n="flyleaf11(r)" xml:id="pb-flyleaf11r" facs="#i107"/>
+                <pb n="flyleaf11(v)" xml:id="pb-flyleaf11v" facs="#i108"/>
+                <pb n="back cover (inside)" xml:id="pb-backcoverinside" facs="#i109"/>
+                <pb n="back cover" xml:id="pb-backcover" facs="#i110"/>
+            </div>
+        </body>
+    </text>
+
+</TEI>

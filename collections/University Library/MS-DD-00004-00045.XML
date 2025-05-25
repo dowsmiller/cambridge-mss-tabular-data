@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, University Library, MS Dd.4.45</title>
+                <funder>Wellcome</funder>
+                <principal>James Freeman</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+                <availability default="false" status="restricted" xml:id="displayImageRights">
+                    <p part="N">Zooming image © Cambridge University Library, All rights reserved.</p>
+                </availability>
+                <availability default="false" status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability default="false" status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+                <availability xml:id="watermark" status="restricted">
+                    <licence>Cambridge University Library (CC BY-NC 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-DD-00004-00045" xml:lang="en">
+                    <msIdentifier>
+                        <institution>University of Cambridge</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Medieval Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, University Library, MS Dd.4.45</idno>
+                    </msIdentifier>
+                    <head>Alchemical works</head>
+                    <msContents>
+                        <summary>
+                            <seg type="para"><!--Introduction to be written or sourced--></seg>
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc material="mixed">
+                                <support>A composite manuscript of four separate parts. The manuscript's first three parts (ff. <locus from="1:1r"
+                                        to="1:32v">1:1r-1:32v</locus>) consists of paper leaves, while its fourth part (ff. <locus from="2:1r"
+                                        to="2:12v">2:1r-2:12v</locus>) consists of parchment leaves. </support>
+                                <extent>
+                                    <seg type="object">Codex: </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="2" type="laterEndleaf">ii</measure> + <measure quantity="10" type="leaf">10</measure> |
+                                            <measure quantity="13" type="leaf">13</measure> | <measure quantity="9" type="leaf">9</measure> | <measure
+                                            quantity="12" type="leaf">12</measure> + <measure quantity="2" type="laterEndleaf">ii</measure> leaves.
+                                    </seg>
+                                </extent>
+                                <foliation notAfter="1970" notBefore="1947">
+                                    <p>Mid-20th-century foliation:</p>
+                                    <p>[i-ii] + 1:1-1:10 | 1:11-1:23 | 1:24-1:32 | 2:1-2:12 + [iii-iv]</p>
+                                    <note>Numbering in pencil in the upper right-hand corner of the rectos, in part by <name key="person_v29141885"
+                                                ><persName type="display">H.L. Pink</persName><persName type="standard">Pink, H.
+                                        L.</persName></name>.</note>
+                                </foliation>
+                                <collation mainStructures="14 10 8">
+                                    <formula>
+                                        <formula> 1<hi rend="superscript">8</hi> 2<hi rend="superscript">4-2</hi> (1st and 2nd leaves cancelled) |
+                                                3<hi rend="superscript">14-1</hi> (1st leaf cancelled) | 4<hi rend="superscript">10-1</hi> (1st leaf
+                                            cancelled) | 5<hi rend="superscript">8</hi> 6<hi rend="superscript">4</hi>
+                                        </formula>
+                                    </formula>
+                                    <signatures type="leaf"><p>Crosses in pencil added to the lower corners of rectos of inner bifolia, to mark the
+                                            centre of the quires.</p></signatures>
+                                </collation>
+                            </supportDesc>
+                        </objectDesc>
+                        <bindingDesc>
+                            <binding notAfter="1965" notBefore="1965">
+                                <p>Binding by Gray of Cambridge, dated 1965 by a note on the front pastedown. Millboard three-quarter binding with
+                                    marbled cloth covering and brown leather spine. </p>
+                                <p>Binding height: 245 mm, width: 158 mm, depth: 18 mm. </p>
+                                <p>The manuscript was previously bound together with Dd.4.43, Dd.4.44, and Dd.4.46.</p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <provenance notAfter="1714" notBefore="1664">
+                            <p><name key="person_v75019443" role="fmo">
+                                    <persName type="display">John Moore (1646-1714), bishop of Ely</persName>
+                                    <persName type="standard">Moore, John, 1646-1714</persName>
+                                </name>: no. 606 (inscribed on f. <locus from="1:1r" to="1:1r">1:1r</locus>) in <bibl>Bernard, <hi rend="italic"
+                                        >Catalogi librorum manuscriptorum Angliæ et Hiberniæ</hi> (c. 1697)</bibl>.</p></provenance>
+                        <acquisition when="1715"><p>Presented to the University Library in 1715 by <name key="person_v263401905" role="dnr">
+                                    <persName type="display">George I</persName>
+                                    <persName type="standard">George I, King of Great Britain, 1660-1727</persName>
+                                </name>: donation bookplate engraved by <name key="person_v34796690">
+                                    <persName type="display">John Pine</persName>
+                                    <persName type="standard">Pine, John, 1690-1756</persName>
+                                </name> in 1736 on the <locus from="front cover, inner" to="front cover, inner">inside upper cover</locus> of
+                                Cambridge, University Library, MS Dd.4.43, with which it was previously bound.</p>
+                        </acquisition>
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source>This catalogue entry draws on <bibl>M. Connolly, <hi rend="italic">Manuscripts in the University Library,
+                                        Cambridge (Dd-Oo)</hi>, Index of Middle English Prose, 19 (Cambridge: Brewer, 2009)</bibl>, <bibl>A.
+                                        Timmerman, 'Alchemy in Cambridge: An Annotated Catalogue of Alchemical Texts and Illustrations in Cambridge
+                                        Repositories', <hi rend="italic">Nuncius</hi>, 30:2 (2015), 345-511 (pp. 475-477)</bibl>, and an unpublished
+                                        description of the manuscript composed between 1926 and 1930 by <name key="person_v88882890"><persName
+                                        type="display">M.R. James</persName>
+                                        <persName type="standard">James, M.R. (Montague Rhodes), 1862-1936</persName></name>, now held in the
+                                        University Archives (<ref target="https://archivesearch.lib.cam.ac.uk/repositories/2/archival_objects/53125">UA
+                                        ULIB 7/3/74</ref>). </source>
+                            </recordHist>
+                            <availability>
+                                <p>Entry to read in the Library is permitted only on presentation of a valid reader's card. For information on
+                                   eligibility and admissions procedures, see <ref target="https://www.lib.cam.ac.uk/using-library/joining-library"
+                                   >Joining the Library</ref>). For further information on the availability of the manuscript, please contact the
+                                   <ref target="mss@lib.cam.ac.uk">Manuscripts Reading Room</ref>.</p>
+                            </availability>
+                        </adminInfo>
+                        <listBibl type="WRAPPER">
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/RRVF5HRP" type="book" xml:id="Singer1928">
+                                <monogr>
+                                    <title level="m">Catalogue of Latin and Vernacular Alchemical Manuscripts in Great Britain and Ireland Dating from
+                                        before the XVI century</title>
+                                    <extent>3</extent>
+                                    <author><forename>Dorothea Waley</forename><surname>Singer</surname></author>
+                                    <author><forename>Annie</forename><surname>Anderson</surname></author>
+                                    <imprint>
+                                        <pubPlace>Brussels</pubPlace>
+                                        <publisher>Maurice Lamertin</publisher>
+                                        <date>1928</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 188; no. 210:iii.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/RV9PIVP6" type="book" xml:id="Connolly2009">
+                                <monogr>
+                                    <title level="m">Manuscripts in the University Library, Cambridge (Dd-Oo)</title>
+                                    <author><forename>Margaret</forename><surname>Connolly</surname></author>
+                                    <imprint>
+                                        <pubPlace>Woodbridge</pubPlace>
+                                        <publisher>D.S. Brewer</publisher>
+                                        <date>2009</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">Index of Middle English prose</title><biblScope unit="volume">19</biblScope></series>
+                            </biblStruct>
+                            <biblStruct type="book" xml:id="Timmermann2013" corresp="http://zotero.org/groups/276440/items/B7WMXVFS">
+                                <monogr>
+                                    <title level="m">Verse and Transmutation: A Corpus of Middle English Alchemical Poetry (Critical Editions and
+                                        Studies)</title>
+                                    <author>
+                                        <forename>Anke</forename>
+                                        <surname>Timmermann</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Leiden</pubPlace>
+                                        <publisher>Brill</publisher>
+                                        <date>2013</date>
+                                        <note type="accessed">2023-01-19T09:55:37Z</note>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Medieval and Early Modern Philosophy and Science Series</title>
+                                    <biblScope unit="volume">21</biblScope>
+                                </series>
+                                <note>pp. 65 fn. 3; 69 fn. 11.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/INMDXRYZ" type="journalArticle" xml:id="Timmermann2015">
+                                <analytic>
+                                    <title level="a">Alchemy in Cambridge: An Annotated Catalogue of Alchemical Texts and Illustrations in Cambridge Repositories</title>
+                                    <author>
+                                    <forename>Anke</forename>
+                                    <surname>Timmermann</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Nuncius: Journal of the Material and Visual History of Science</title>
+                                    <imprint>
+                                        <biblScope unit="volume">30</biblScope>
+                                        <biblScope unit="issue">2</biblScope>
+                                        <biblScope unit="page">345-511</biblScope>
+                                        <date>2015</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 475-77.</note>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>
+                    <msPart n="1">
+                        <msIdentifier>
+                            <idno>Cambridge, University Library, MS Dd.4.45, ff. 1:1-1:10</idno>
+                            <msName>Part 1</msName>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="la" otherLangs="enm"> Latin treatises with a Middle English poem.</textLang>
+                            <msItem n="1">
+                                <locus from="1:1r" to="1:4r">1:1r-1:4r</locus>
+                                <title key="">Liber Lucis</title>
+                                <author key="">Pseudo-Johannes de Rupescissa</author>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="1:1r" to="1:1r">1:1r</locus> Arnaldus de Noua Villa </rubric>
+                                <incipit><locus from="1:1r" to="1:1r">1:1r</locus> [M]ateria lapidis est rest vilis pretii ubicunque reperitur que est
+                                    aqua viscosa sive mercurius communis sicut extrahitur de minera</incipit>
+                                <explicit><locus from="1:4r" to="1:4r">1:4r</locus> Non tangat latera scutellarum et hic finis et deo
+                                    gratias</explicit>
+                                <note>Attributed to Arnaldus de Villa Nova, but actually a copy of the <hi rend="italic">Liber Lucis</hi> (Book of
+                                    Light): a work that describes seven operations for making the philosopher's stone, and is attributed to Franciscan
+                                    friar and alchemist Johannes de Rupescissa [Jean de Roquetaillade] (c. 1310-1366) [not among the 55 copies of the
+                                    work listed by Robert Halleux, 'Les ouvrages alchimiques de Jean de Rupescissa', <hi rend="italic">Histoire
+                                    littéraire de la France</hi>, 41 (1981), pp. 241-284 (pp. 278-284)]. Also Pseudoy-Raymond Lull, <hi
+                                    rend="italic">De lapide phisico minerali</hi> (see Timmermann (2015), p. 475).</note>
+                            </msItem>
+                            <msItem n="2">
+                                <locus from="1:4v" to="1:6r">1:4v-1:6r</locus>
+                                <title key="">Alchemical work on the Philosopher's Stone</title>
+                                <author key="person_v6210147425864145040000">Pseudo-Avicenna</author>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="1:4v" to="1:4v">1:4v</locus> Declaracio lapidis philosophorum per auicennam filio suo </rubric>
+                                <incipit><locus from="1:4v" to="1:4v">1:4v</locus> Fili mi Abbulhaly intellige que dicam tibi de cognicione
+                                    lapidis</incipit>
+                                <explicit><locus from="1:6r" to="1:6r">1:6r</locus> Ita ut utri aliam habent potentiam supra mille gradus Mercurii seu
+                                    Jouis veneris vel saturni</explicit>
+                                <finalRubric><locus from="1:6r" to="1:6r">1:6r</locus> Explicit archananum auicenne de philosophorum
+                                    lapide</finalRubric>
+                                <note>Attributed to to the Muslim physician and philospher Ibn Sīnā [Abū ʿAlī al-Ḥusayn ibn ʿAbd Allāh ibn Sīnā]
+                                    (980-1037), known in the West as Avicenna.</note>
+                                <note/>
+                            </msItem>
+                            <msItem n="3">
+                                <locus from="1:6v" to="1:10r">1:6v-1:10r</locus>
+                                <title key="work_6320">Secretum Secretorum</title>
+                                <author key="person_3284">Pseudo-Pliny</author>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="1:6v" to="1:6v">1:6v</locus> Hic incipit tractatus optimus in quo exponit et aperte declarat
+                                    plenius philosophus quis sit lapis philosophicus et ex qua materia debet fieri</incipit>
+                                <explicit><locus from="1:10r" to="1:10r">1:10r</locus> quod qui habet ipsum incomparabilem habet thesaurum </explicit>
+                                <listBibl>
+                                    <bibl>eTK t0120190000</bibl>
+                                </listBibl>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="1:2r" to="1:2r">1:2r</locus> forciore igne </secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>Paper</material> folded in <measure type="folding">quarto</measure>. <watermark><seg type="para"
+                                                >Folios <locus from="1:1r" to="1:8v">1:1-1:8</locus>: <term type="watermarkMotif">Balance</term>
+                                                    (<dimensions type="watermark" unit="mm">
+                                                    <height>70</height>
+                                                    <width>85</width>
+                                                </dimensions>). <note type="watermarkPosition">Centre of the inner margin. </note>
+                                                <note>Resembles Briquet nos 2425-2431. These examples are dated to <date calendar="gregorian"
+                                                        notAfter="1476" notBefore="1430">1430-1476</date>.</note></seg>
+                                        </watermark>
+                                        <watermark><seg type="para">Folios <locus from="1:9r" to="1:10v">1:9-1:10</locus>: <term type="watermarkMotif"
+                                                    >bœuf</term> (<dimensions type="watermark" unit="mm">
+                                                    <height>25</height>
+                                                    <width>40</width>
+                                                </dimensions>). <note type="watermarkPosition">Centre of the inner margin. </note>
+                                                <note>The height measure is based on the upper half of the watermark only, since the lower half is
+                                                    missing. Resembles Briquet no. 2773. This example is dated to <date calendar="gregorian"
+                                                        notAfter="1432" notBefore="1423">1423-1432</date>.</note></seg>
+                                        </watermark>
+                                    </support>
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="32" type="leaf">32</measure> leaves. </seg>
+                                        <seg type="dimensions">
+                                            <locus from="1:1r" to="1:10v">1:1-1:10</locus>
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="220">220</height>
+                                                <width quantity="145">145</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                    <collation mainStructures="8 4">
+                                        <p>
+                                            <list>
+                                                <item>Quire 1<hi rend="superscript">8</hi> (ff. <locus from="1:1r" to="1:8v">1:1-1:8</locus>)</item>
+                                                <item>Quire 2<hi rend="superscript">4-2</hi> (ff. <locus from="1:9r" to="1:10v">1:9-1:10</locus>: 1st
+                                                    and 2nd leaves cancelled</item>
+                                            </list>
+                                        </p>
+                                        <catchwords><seg type="para">Catchwords in brown ink on each verso of quire 3 (ff. <locus from="1:11r"
+                                                    to="1:23v">1:11-1:23</locus>)</seg></catchwords>
+                                    </collation>
+                                    <condition>Brittle paper edges with some torn edges and corners that have been subsequently repaired with new
+                                        paper. Some staining. No loss of text. </condition>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout columns="1" rulingMedium="none" writtenLines="28">
+                                        <locus from="1:1r" to="1:10r">1:1r-1:10r</locus>
+                                        <dimensions type="written" unit="mm">
+                                            <height max="170" min="165">165-170</height>
+                                            <width quantity="105">100</width>
+                                        </dimensions>
+                                        <seg type="ruling"> No ruling. Single columns. 26-28 lines to the page.</seg>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="CursivaAntiquior">
+                                    <p>ff. <locus from="1:1r" to="1:10r">1:1r-1:10r</locus> are written in a script with <term type="script"
+                                            >Anglicana</term> features, executed in <term type="script">Currens</term>. </p>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote type="other">
+                                    <p>Underlining of quotations and authorities in brown ink.</p>
+                                </decoNote>
+                            </decoDesc>
+                            <additions>Quire signatures written in pencil by a 20th-century hand, in the lower corners of first rectos:
+                                1-2.</additions>
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1500" notBefore="1450"> second half of the 15th century </origDate>
+                                <origPlace cert="high" key="place_g7002445">England </origPlace>
+                            </origin>
+                        </history>
+                    </msPart>
+                    <msPart n="2">
+                        <msIdentifier>
+                            <idno>Cambridge, University Library, MS Dd.4.45, ff. 1:11-1:23</idno>
+                            <msName>Part 2</msName>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="la">Latin</textLang>
+                            <msItem n="1">
+                                <locus from="1:11r" to="1:12v">1:11r-1:12v</locus>
+                                <title key="">Alchemical work on Aqua Mercurius and Oleum Sulphuris</title>
+                                <author key="person_v104113324">Pseudo-Albertus Magnus</author>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="1:11r" to="1:11r">1:11r</locus> Aqua mercurius et oleum sulphuris. Opus istud multis diebus
+                                    abscondebatur. Circa quod primo principaliter est notandum quod Mercurius noster non est</incipit>
+                                <explicit><locus from="1:12v" to="1:12v">1:12v</locus> et ego Albertus dico quod sum expertus istas duas operationes,
+                                    et quod non est aliud opus perfectum [a] me, nisi hec duo opera, et vera sunt et etiam Euclides et multi
+                                    philosophi concordant mecum et dicunt quod totum beneficium hujus artis in Mercurio et luna consistit, et in
+                                    Mercurio et Sole, et scias quod omnia alia sunt vana et illusoria. Deo gratias </explicit>
+                                <note>Attributed to Albertus Magnus (on this work, see Pearl Kibre, 'Alchemical Writings Ascribed to Albertus Magnus',
+                                        <hi rend="italic">Speculum</hi>, 17:4 (1942), 499-518 (p. 505) [without this manuscript]. </note>
+                                <note>A shorter version of this text, with a slightly different preface, and no authorial attribution, appears in
+                                        <bibl type="MS" subtype="external"><ref
+                                            target="https://cudl.lib.cam.ac.uk/view/MS-TRINITY-COLLEGE-O-00002-00047/25">Cambridge, Trinity College,
+                                            MS O.2.47</ref></bibl>. </note>
+                                <listBibl>
+                                    <bibl>eTK t0022780000</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="2">
+                                <locus from="1:13r" to="1:22r">1:13r-1:22r</locus>
+                                <title key="">Alchemical sayings attributed to various authors</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="1:13r" to="1:13r">1:13r</locus> Hermes dicit quod elixerium sine mercurio stare non potest nec
+                                    confiti nec compleri</incipit>
+                                <explicit><locus from="1:22r" to="1:22r">1:22r</locus>et oleum dico quod iterum calcinetur et sufficit et tunc ad opus
+                                    seruetur etcaetera deo gracias</explicit>
+                                <note>Authors are identified Hermes Trismegistus, Aristotle, Jābir ibn Ḥayyān [Geber], and Ortolanus
+                                    [Hortolanus].</note>
+                                <listBibl>
+                                    <bibl>eTK t0118640000</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="3">
+                                <locus from="1:22v" to="1:23r">1:22v-1:23r</locus>
+                                <title key="">Collection of alchemical recipes</title>
+                                <textLang mainLang="la" otherLangs="enm">Latin and Middle English</textLang>
+                                <rubric><locus from="1:22v" to="1:22v">1:22v</locus> super cuprum </rubric>
+                                <incipit><locus from="1:22v" to="1:22v">1:22v</locus> Opus verum super cuprum: Take copir in plate and cement hem with
+                                    arsenik </incipit>
+                                <explicit><locus from="1:23r" to="1:23r">1:23r</locus> omnibus virgis coruli una post aliam</explicit>
+                                <note>Six recipes added by the same <date notAfter="1500" notBefore="1400">15th-century</date> hand</note>
+                                <listBibl>
+                                    <bibl>Margaret Connolly, <hi rend="italic">Manuscripts in the University Library, Cambridge (Dd-Oo)</hi> (2019),
+                                        p. 19.</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="4">
+                                <locus from="1:23v" to="1:23v">1:23v</locus>
+                                <title key="">Biblical excerpts</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="1:23v" to="1:23v">1:23v</locus> Si vere utique justiciam loquimini / Recumbentibus undecim
+                                    discipulis / Missus est Angelus / In principio erat etcaetera </incipit>
+                                <note>Psalm 57:2; Mark 16:14; Luke 1:26; and John 1:1, added by a <date notAfter="1550" notBefore="1450">late 15th or
+                                early 16th-century</date> hand.</note>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="1:12r" to="1:12r">1:12r</locus> lapidem calidum</secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>Paper, folded in <measure type="folding">quarto</measure>.</material>
+                                        <watermark><seg type="para">Folios <locus from="1:11r" to="1:23v">1:11-1:23</locus>: <term
+                                                    type="watermarkMotif">fleur a 7 pétales</term> (<dimensions type="watermark" unit="mm">
+                                                    <height>30</height>
+                                                    <width>40</width>
+                                                </dimensions>). <note type="watermarkPosition">Upper half of the inner margin.</note>
+                                                <note>Resembles Briquet no. 6560. This example is dated to <date calendar="gregorian" notAfter="1473"
+                                                        notBefore="1473">1473</date>.</note></seg>
+                                        </watermark>
+                                    </support>
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="13" type="leaf">13</measure> leaves. </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="220">220</height>
+                                                <width quantity="150">150</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                    <collation mainStructures="14">
+                                        <p>Quire 3<hi rend="superscript">14-1</hi> (ff. <locus from="1:11r" to="1:23v">1:11-1:23</locus>: 1st leaf
+                                            cancelled) </p>
+                                    </collation>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout columns="1" writtenLines="32 36">
+                                        <dimensions type="written" unit="mm">
+                                            <height max="175" min="170">170-175</height>
+                                            <width max="125" min="115">115-125</width>
+                                        </dimensions>
+                                        <seg type="ruling"> No ruling visible. Single columns. 32-36 lines to the page.</seg>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="CursivaAntiquior">
+                                    <p>ff. <locus from="1:11r" to="1:22r">1:11r-1:22r</locus> are written by a single scribe in a cursive <term
+                                            type="script">Anglicana</term> and <term type="script">Secretary</term> features, executed in <term
+                                            type="script">Currens</term>.</p>
+                                </handNote>
+                                <handNote script="CursivaAntiquior">
+                                    <p>ff. <locus from="1:22v" to="1:23v">1:22v-1:23v</locus> are written by one or two scribes in a cursive <term
+                                            type="script">Anglicana</term> script.</p>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote type="other">
+                                    <p>Underlining of quotations and authorities in brown ink.</p>
+                                </decoNote>
+                            </decoDesc>
+                            <additions>Quire signatures written in pencil by a 20th-century hand, in the lower corners of first rectos: 3.</additions>
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1500" notBefore="1400"> Copied in the 15th century.</origDate>
+                                <origPlace cert="high" key="place_g7002445"> England.</origPlace>
+                            </origin>
+                        </history>
+                    </msPart>
+                    <msPart n="3">
+                        <msIdentifier>
+                            <idno>Cambridge, University Library, MS Dd.4.45, ff. 1:24-1:32</idno>
+                            <msName>Part 3</msName>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="la">Latin</textLang>
+                            <msItem n="1">
+                                <locus from="1:24r" to="1:32v">1:24r-1:32v</locus>
+                                <title key="">Lapis aquilae</title>
+                                <author key="">John of Cripplegate</author>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="1:24r" to="1:24r">1:24r</locus> [L]apis Aquile cum natura preciosissimus nec vllus ei thesaurus
+                                    invalore comparabile eo</incipit>
+                                <explicit><locus from="1:32v" to="1:32v">1:32v</locus> Est cuius testis Senior hoc secretum magnum dei gloriosi Soror
+                                    prophecie inspiratum a deo prophetis et electis suis in ipsum credentibus Cuius patri igitur sit honor et gloria
+                                    in secula seculorum Amen</explicit>
+                                <finalRubric><locus from="1:32v" to="1:32v">1:32v</locus> Explicit tractatus magistri Johannis de porta claudorum
+                                    cuius cognomen quere in hoc libello et invenies </finalRubric>
+                                <listBibl>
+                                    <bibl>eTK t0155660000</bibl>
+                                </listBibl>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="1:25r" to="1:25r">1:25r</locus> ethiopem genitrix </secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>Paper, folded in <measure type="folding">quarto</measure>.</material>
+                                        <watermark><seg type="para">Folios <locus from="1:24r" to="1:32v">1:24-1:32</locus>: <term
+                                                    type="watermarkMotif">cloche</term> (<dimensions type="watermark" unit="mm">
+                                                    <height>60</height>
+                                                    <width>35</width>
+                                                </dimensions>). <note type="watermarkPosition">Upper half of the inner margin. </note>
+                                                <note>Resembles Briquet nos 3984-3985. These examples are dated to <date calendar="gregorian"
+                                                notAfter="1473" notBefore="1436">1436-1473</date>.</note></seg>
+                                        </watermark>
+                                    </support>
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="9" type="leaf">9</measure> leaves.</seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="225">225</height>
+                                                <width quantity="150">150</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                    <collation mainStructures="10">
+                                        <p> Quire 4<hi rend="superscript">10-1</hi> (ff. <locus from="1:24r" to="1:32v">1:24-1:32</locus>: 1st leaf
+                                            cancelled) </p>
+                                        <signatures type="quire"><p>A letter 'c' in the lower margin of f. <locus from="1:32v" to="1:32v"
+                                        >1:32v</locus> may be a quire signature.</p></signatures>
+                                    </collation>
+                                    <condition>Brittle corners and outer margins; the lower outer corner of f. <locus from="1:24r" to="1:24v"
+                                        >1:24</locus> and the lower outer margin of f. <locus from="1:32r" to="1:32v">1:32</locus> have been torn
+                                        off and repaired with blank paper.</condition>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout columns="1" rulingMedium="leadpoint" topLine="below" writtenLines="30 33">
+                                        <dimensions type="written" unit="mm">
+                                            <height quantity="170">170</height>
+                                            <width max="105" min="100">100-105</width>
+                                        </dimensions>
+                                        <seg type="ruling"> Ruled in leadpoint (?), frame only. Single columns. 30-33 lines to the page, written below top.</seg>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="Cursiva">
+                                    <p>ff. <locus from="1:24r" to="1:32v">1:24r-1:32v</locus> are written in a script with <term type="script"
+                                    >Secretary</term> and <term type="script">Anglicana</term> features, executed in slighly more formal
+                                    upright style. </p>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote type="other">
+                                    <p>Underlining of quotations and authorities in brown ink.</p>
+                                </decoNote>
+                            </decoDesc>
+                            <additions>Quire signatures written in pencil by a 20th-century hand, in the lower corners of first rectos: 1-4.</additions>
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1500" notBefore="1400"> Copied in the 15th century.</origDate>
+                                <origPlace cert="high" key="place_g7002445"> England.</origPlace>
+                            </origin>
+                        </history>
+                    </msPart>
+                    <msPart n="4">
+                        <msIdentifier>
+                            <idno>Cambridge, University Library, MS Dd.4.45, ff. 2:1-2:12</idno>
+                            <msName>Part 4</msName>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="la" otherLangs="enm">Latin prose text followed by Middle English prose and verse</textLang>
+                            <msItem n="1">
+                                <locus from="2:1r" to="2:9v">2:1r-2:9v</locus>
+                                <title key="">Tractatus de serpente</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="2:1r" to="2:1r">2:1r</locus> Christi nomine inuocato ad honorem proficiencium in actibus nature
+                                    quia plerumque plures litteras philosophorum intelligentos operantur vt inueniunt in scripturis et lapsum
+                                    paciuntur laboris erroris et dampi</incipit>
+                                <explicit><locus from="2:9v" to="2:9v">2:9v</locus> hiis autem paucis dictis sufficit doctrina supradictum [sic:
+                                    supradicta] solide ac sane intelligenti. Et scimus quoniam diligentibus deum omnia cooperantur in bonum. Deo
+                                    gratias.</explicit>
+                                <finalRubric><locus from="2:9v" to="2:9v">2:9v</locus> Explicit tractatus de serpente sub compendio breviloquii
+                                    Holkottis</finalRubric>
+                                <note>Perhaps (spuriously) attributed to the Dominican friar <name key="person_v9841479" role="att"><persName
+                                            type="display">Robert Holcot (d. 1349)</persName><persName type="standard">Holcot, Robert, d. 1349</persName></name>
+                                    (d. 1349). This work also survives in <bibl subtype="external" type="MS"><ref
+                                            target="http://searcharchives.bl.uk/IAMS_VU2:LSCOP_BL:IAMS040-002049360">London, British Library, Harley
+                                            MS 3528</ref></bibl>, ff. 25r-31v; <bibl subtype="external" type="MS"><ref
+                                            type="https://medieval.bodleian.ox.ac.uk/catalog/manuscript_265">Oxford, Bodleian Library, MS Ashmole
+                                            1450</ref></bibl>, ff. 6v-10v (see Singer, Catalogue of Latin and Vernacular Alchemical Manuscripts, I
+                                    (1928), p. 282 (no. 300) [without this manuscript]; 16th-century alchemical manuscript <bibl subtype="external"
+                                        type="MS"><ref type="https://wellcomecollection.org/works/va33xz6r">London, Wellcome Library,
+                                        MS.527</ref></bibl>, ff. 17v-19v, contains text entitled 'Breviloquium' attributed to Robert Holcot.</note>
+                                <listBibl>
+                                    <bibl>Singer, <hi rend="italic">Catalogue of Latin and Vernacular Alchemical Manuscripts</hi>, I (1928), p. 282
+                                        (no. 300)</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="2">
+                                <locus from="2:9v" to="2:10r">2:9v-2:10r</locus>
+                                <title key="">Alchemical tract</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="2:9v" to="2:9v">2:9v</locus> Aske ye of þe clerkys that holden hem so wise What is þe whete that
+                                    moste be sawen in þe erth</incipit>
+                                <explicit><locus from="2:10r" to="2:10r">2:10r</locus> And whan he is of age norssh hym forth wiþ his owne moders
+                                    mylk. or gif hym his owne moders mylke.</explicit>
+                                <note>Extract from an alchemical tract usually attributed to Roger Bacon </note>
+                                <listBibl>
+                                    <bibl>For other copies, see Margaret Connolly, <hi rend="italic">Manuscripts in the University Library, Cambridge
+                                    (Dd-Oo)</hi> (2019), p. 19.</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="3">
+                                <locus from="2:10r" to="2:11v">2:10r-2:11v</locus>
+                                <title key="">Of Spain take the clear light</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="2:10r" to="2:10r">2:10r</locus> Of spayn take the clere light / þe rede gumme þat is so bright</incipit>
+                                <explicit><locus from="2:11v" to="2:11v">2:11v</locus> Avise þe welle er þou begynne / Or ellis litel shalt þou wynne</explicit>
+                                <finalRubric><locus from="2:11v" to="2:11v">2:11v</locus> Explicit</finalRubric>
+                                <note>Poem on preparing the Philosopher’s Stone, ascribed in <bibl subtype="external" type="MS"><ref
+                                target="https://mss-cat.trin.cam.ac.uk/Manuscript/O.2.16">Cambridge, Trinity College O.2.16</ref></bibl>
+                                to <name role="att"><persName type="display">Richard Carpenter</persName><persName type="standard">Carpenter,
+                                Richard</persName></name>.</note>
+                                <listBibl>
+                                    <bibl>IMEV 2656</bibl>
+                                    <bibl>NIMEV 2656</bibl>
+                                    <bibl>DIMEV 4210-17</bibl>
+                                </listBibl>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="2:2r" to="2:2r">2:2r</locus> mundificacio sudoris propter terram</secFol>
+                            </p>
+                            <objectDesc form="Codex">
+                                <supportDesc material="perg">
+                                    <support>
+                                        <material>Parchment (<term type="disposition">FHHF</term>)</material>
+                                    </support>
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="12" type="leaf">12</measure> leaves.</seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="233">233</height>
+                                                <width max="155" min="150">150-155</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                    <collation mainStructures="8 4">
+                                        <p>
+                                            <list>
+                                                <item>Quires 1<hi rend="superscript">8</hi> (ff. <locus from="2:1r" to="2:8v">2:1-2:8</locus>)</item>
+                                                <item>Quire 2<hi rend="superscript">4</hi> (ff. <locus from="2:9r" to="2:12v">2:9-2:12</locus>
+                                                </item>
+                                            </list>
+                                        </p>
+                                        <signatures type="leaf"><p>Leaf signatures in brown ink in lower margins and corners of the rectos of the
+                                        first halves of quires: <q>aj</q>-<q>aiiij</q> and <q>bj</q>-<q>bij</q>.</p></signatures>
+                                        <catchwords><seg type="para">A catchword in a red frame on f. <locus from="2:8v" to="2:8v"
+                                        >2:8v</locus>.</seg></catchwords>
+                                    </collation>
+                                    <condition> A large horizontal fold in the lower margin of f. <locus from="2:4r" to="2:4r">2:4r</locus>. A hole in
+                                        the parchment in the right margin of f. <locus from="2:6r" to="2:6r">2:6r</locus>. Stains throughout. No loss
+                                        of text.</condition>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout columns="1" rulingMedium="leadpoint" topLine="below" writtenLines="29">
+                                        <dimensions type="written" unit="mm">
+                                            <height quantity="155">115</height>
+                                            <width quantity="95">95</width>
+                                        </dimensions>
+                                        <seg type="ruling"> Ruled in leadpoint, frame only, but only rarely visible. Single columns. 29 lines to the
+                                            page, written below top line.</seg>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="CursivaAntiquior">
+                                    <p>ff. <locus from="2:1r" to="2:9v">2:1r-2:11v</locus> is written by a single scribe in an <term type="script"
+                                            >Anglicana</term> script with <term type="script">Secretary</term> features.</p>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote type="flourInit"><p>One large (2-line) blue initial with penwork decoration in red on f. <locus from="2:1r" to="2:1r">2:1r</locus>.</p></decoNote>
+                                <decoNote type="plainInit"><p>2 small (1-line) red initial on ff. <locus from="2:9v" to="2:9v">2:9v</locus> and <locus from="2:10r" to="2:10r">2:10r</locus>.</p></decoNote>
+                                <decoNote type="rubrication"><p>Marginal notae and a final rubric on f. <locus from="2:9v" to="2:9v">2:9v</locus> rubricated in red.</p></decoNote>
+                                <decoNote type="other"><p>Paraphs in red on ff. <locus from="2:1r" to="2:9v">2:1r-2:9v</locus>.</p></decoNote>
+                                <decoNote type="other"><p>Verse couplet lines in red on ff. <locus from="2:10r" to="2:11v">2:10r-2:11v</locus></p>.</decoNote>
+                            </decoDesc>
+                            <additions><p>Quire signature 'b' written in pencil by a 19th-century hand, in the lower corner of first rectos of f. 2:9.</p>
+                            </additions>
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1500" notBefore="1450">Second half of the 15th century.</origDate>
+                                <origPlace cert="high" key="place_g7002445">England.</origPlace>
+                            </origin>
+                        </history>
+                    </msPart>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85003265">Alchemy</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change status="draft" when="20220818">
+                <persName>Dr Clarck Drieshen, Project Cataloguer in Curious Cures in Cambridge Libraries, Cambridge University Library</persName>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic decls="#document-thumbnail" rend="portrait" url="MS-DD-00004-00045-000-00001"/>
+        <surface n="front cover, outer" xml:id="page-surface-1">
+            <graphic decls="#downloadImageRights #download" height="7357px" rend="portrait" url="MS-DD-00004-00045-000-00001" width="4584px"/>
+        </surface>
+        <surface n="front cover, inner" xml:id="page-surface-2">
+            <graphic decls="#downloadImageRights #download" height="7347px" rend="portrait" url="MS-DD-00004-00045-000-00002" width="4524px"/>
+        </surface>
+        <surface n="[i] recto" xml:id="page-surface-3">
+            <graphic decls="#downloadImageRights #download" height="6974px" rend="portrait" url="MS-DD-00004-00045-000-00003" width="4327px"/>
+        </surface>
+        <surface n="[i] verso" xml:id="page-surface-4">
+            <graphic decls="#downloadImageRights #download" height="7027px" rend="portrait" url="MS-DD-00004-00045-000-00004" width="4192px"/>
+        </surface>
+        <surface n="[ii] recto" xml:id="page-surface-5">
+            <graphic decls="#downloadImageRights #download" height="6955px" rend="portrait" url="MS-DD-00004-00045-000-00005" width="4126px"/>
+        </surface>
+        <surface n="[ii] verso" xml:id="page-surface-6">
+            <graphic decls="#downloadImageRights #download" height="7056px" rend="portrait" url="MS-DD-00004-00045-000-00006" width="4176px"/>
+        </surface>
+        <surface n="1:1r" xml:id="page-surface-7">
+            <graphic decls="#downloadImageRights #download" height="6556px" rend="portrait" url="MS-DD-00004-00045-000-00007" width="3958px"/>
+        </surface>
+        <surface n="1:1v" xml:id="page-surface-8">
+            <graphic decls="#downloadImageRights #download" height="6586px" rend="portrait" url="MS-DD-00004-00045-000-00008" width="3910px"/>
+        </surface>
+        <surface n="1:2r" xml:id="page-surface-9">
+            <graphic decls="#downloadImageRights #download" height="6556px" rend="portrait" url="MS-DD-00004-00045-000-00009" width="3958px"/>
+        </surface>
+        <surface n="1:2v" xml:id="page-surface-10">
+            <graphic decls="#downloadImageRights #download" height="6586px" rend="portrait" url="MS-DD-00004-00045-000-00010" width="3910px"/>
+        </surface>
+        <surface n="1:3r" xml:id="page-surface-11">
+            <graphic decls="#downloadImageRights #download" height="6556px" rend="portrait" url="MS-DD-00004-00045-000-00011" width="3958px"/>
+        </surface>
+        <surface n="1:3v" xml:id="page-surface-12">
+            <graphic decls="#downloadImageRights #download" height="6586px" rend="portrait" url="MS-DD-00004-00045-000-00012" width="3910px"/>
+        </surface>
+        <surface n="1:4r" xml:id="page-surface-13">
+            <graphic decls="#downloadImageRights #download" height="6556px" rend="portrait" url="MS-DD-00004-00045-000-00013" width="3958px"/>
+        </surface>
+        <surface n="1:4v" xml:id="page-surface-14">
+            <graphic decls="#downloadImageRights #download" height="6586px" rend="portrait" url="MS-DD-00004-00045-000-00014" width="3910px"/>
+        </surface>
+        <surface n="1:5r" xml:id="page-surface-15">
+            <graphic decls="#downloadImageRights #download" height="6556px" rend="portrait" url="MS-DD-00004-00045-000-00015" width="3958px"/>
+        </surface>
+        <surface n="1:5v" xml:id="page-surface-16">
+            <graphic decls="#downloadImageRights #download" height="6586px" rend="portrait" url="MS-DD-00004-00045-000-00016" width="3910px"/>
+        </surface>
+        <surface n="1:6r" xml:id="page-surface-17">
+            <graphic decls="#downloadImageRights #download" height="6556px" rend="portrait" url="MS-DD-00004-00045-000-00017" width="3958px"/>
+        </surface>
+        <surface n="1:6v" xml:id="page-surface-18">
+            <graphic decls="#downloadImageRights #download" height="6586px" rend="portrait" url="MS-DD-00004-00045-000-00018" width="3967px"/>
+        </surface>
+        <surface n="1:7r" xml:id="page-surface-19">
+            <graphic decls="#downloadImageRights #download" height="6556px" rend="portrait" url="MS-DD-00004-00045-000-00019" width="3958px"/>
+        </surface>
+        <surface n="1:7v" xml:id="page-surface-20">
+            <graphic decls="#downloadImageRights #download" height="6653px" rend="portrait" url="MS-DD-00004-00045-000-00020" width="3908px"/>
+        </surface>
+        <surface n="1:8r" xml:id="page-surface-21">
+            <graphic decls="#downloadImageRights #download" height="6556px" rend="portrait" url="MS-DD-00004-00045-000-00021" width="3958px"/>
+        </surface>
+        <surface n="1:8v" xml:id="page-surface-22">
+            <graphic decls="#downloadImageRights #download" height="6653px" rend="portrait" url="MS-DD-00004-00045-000-00022" width="3908px"/>
+        </surface>
+        <surface n="1:9r" xml:id="page-surface-23">
+            <graphic decls="#downloadImageRights #download" height="6587px" rend="portrait" url="MS-DD-00004-00045-000-00023" width="3943px"/>
+        </surface>
+        <surface n="1:9v" xml:id="page-surface-24">
+            <graphic decls="#downloadImageRights #download" height="6653px" rend="portrait" url="MS-DD-00004-00045-000-00024" width="3908px"/>
+        </surface>
+        <surface n="1:10r" xml:id="page-surface-25">
+            <graphic decls="#downloadImageRights #download" height="6564px" rend="portrait" url="MS-DD-00004-00045-000-00025" width="4003px"/>
+        </surface>
+        <surface n="1:10v" xml:id="page-surface-26">
+            <graphic decls="#downloadImageRights #download" height="6593px" rend="portrait" url="MS-DD-00004-00045-000-00026" width="3908px"/>
+        </surface>
+        <surface n="1:11r" xml:id="page-surface-27">
+            <graphic decls="#downloadImageRights #download" height="6599px" rend="portrait" url="MS-DD-00004-00045-000-00027" width="4073px"/>
+        </surface>
+        <surface n="1:11v" xml:id="page-surface-28">
+            <graphic decls="#downloadImageRights #download" height="6579px" rend="portrait" url="MS-DD-00004-00045-000-00028" width="3908px"/>
+        </surface>
+        <surface n="1:12r" xml:id="page-surface-29">
+            <graphic decls="#downloadImageRights #download" height="6557px" rend="portrait" url="MS-DD-00004-00045-000-00029" width="4092px"/>
+        </surface>
+        <surface n="1:12v" xml:id="page-surface-30">
+            <graphic decls="#downloadImageRights #download" height="6536px" rend="portrait" url="MS-DD-00004-00045-000-00030" width="4057px"/>
+        </surface>
+        <surface n="1:13r" xml:id="page-surface-31">
+            <graphic decls="#downloadImageRights #download" height="6557px" rend="portrait" url="MS-DD-00004-00045-000-00031" width="4092px"/>
+        </surface>
+        <surface n="1:13v" xml:id="page-surface-32">
+            <graphic decls="#downloadImageRights #download" height="6536px" rend="portrait" url="MS-DD-00004-00045-000-00032" width="4057px"/>
+        </surface>
+        <surface n="1:14r" xml:id="page-surface-33">
+            <graphic decls="#downloadImageRights #download" height="6557px" rend="portrait" url="MS-DD-00004-00045-000-00033" width="4092px"/>
+        </surface>
+        <surface n="1:14v" xml:id="page-surface-34">
+            <graphic decls="#downloadImageRights #download" height="6649px" rend="portrait" url="MS-DD-00004-00045-000-00034" width="4105px"/>
+        </surface>
+        <surface n="1:15r" xml:id="page-surface-35">
+            <graphic decls="#downloadImageRights #download" height="6557px" rend="portrait" url="MS-DD-00004-00045-000-00035" width="4092px"/>
+        </surface>
+        <surface n="1:15v" xml:id="page-surface-36">
+            <graphic decls="#downloadImageRights #download" height="6536px" rend="portrait" url="MS-DD-00004-00045-000-00036" width="4057px"/>
+        </surface>
+        <surface n="1:16r" xml:id="page-surface-37">
+            <graphic decls="#downloadImageRights #download" height="6557px" rend="portrait" url="MS-DD-00004-00045-000-00037" width="4092px"/>
+        </surface>
+        <surface n="1:16v" xml:id="page-surface-38">
+            <graphic decls="#downloadImageRights #download" height="6536px" rend="portrait" url="MS-DD-00004-00045-000-00038" width="4057px"/>
+        </surface>
+        <surface n="1:17r" xml:id="page-surface-39">
+            <graphic decls="#downloadImageRights #download" height="6557px" rend="portrait" url="MS-DD-00004-00045-000-00039" width="4092px"/>
+        </surface>
+        <surface n="1:17v" xml:id="page-surface-40">
+            <graphic decls="#downloadImageRights #download" height="6536px" rend="portrait" url="MS-DD-00004-00045-000-00040" width="4057px"/>
+        </surface>
+        <surface n="1:18r" xml:id="page-surface-41">
+            <graphic decls="#downloadImageRights #download" height="6557px" rend="portrait" url="MS-DD-00004-00045-000-00041" width="4092px"/>
+        </surface>
+        <surface n="1:18v" xml:id="page-surface-42">
+            <graphic decls="#downloadImageRights #download" height="6536px" rend="portrait" url="MS-DD-00004-00045-000-00042" width="4057px"/>
+        </surface>
+        <surface n="1:19r" xml:id="page-surface-43">
+            <graphic decls="#downloadImageRights #download" height="6557px" rend="portrait" url="MS-DD-00004-00045-000-00043" width="4092px"/>
+        </surface>
+        <surface n="1:19v" xml:id="page-surface-44">
+            <graphic decls="#downloadImageRights #download" height="6536px" rend="portrait" url="MS-DD-00004-00045-000-00044" width="4057px"/>
+        </surface>
+        <surface n="1:20r" xml:id="page-surface-45">
+            <graphic decls="#downloadImageRights #download" height="6557px" rend="portrait" url="MS-DD-00004-00045-000-00045" width="4092px"/>
+        </surface>
+        <surface n="1:20v" xml:id="page-surface-46">
+            <graphic decls="#downloadImageRights #download" height="6576px" rend="portrait" url="MS-DD-00004-00045-000-00046" width="4057px"/>
+        </surface>
+        <surface n="1:21r" xml:id="page-surface-47">
+            <graphic decls="#downloadImageRights #download" height="6557px" rend="portrait" url="MS-DD-00004-00045-000-00047" width="4092px"/>
+        </surface>
+        <surface n="1:21v" xml:id="page-surface-48">
+            <graphic decls="#downloadImageRights #download" height="6576px" rend="portrait" url="MS-DD-00004-00045-000-00048" width="4057px"/>
+        </surface>
+        <surface n="1:22r" xml:id="page-surface-49">
+            <graphic decls="#downloadImageRights #download" height="6557px" rend="portrait" url="MS-DD-00004-00045-000-00049" width="4092px"/>
+        </surface>
+        <surface n="1:22v" xml:id="page-surface-50">
+            <graphic decls="#downloadImageRights #download" height="6576px" rend="portrait" url="MS-DD-00004-00045-000-00050" width="4057px"/>
+        </surface>
+        <surface n="1:23r" xml:id="page-surface-51">
+            <graphic decls="#downloadImageRights #download" height="6557px" rend="portrait" url="MS-DD-00004-00045-000-00051" width="4092px"/>
+        </surface>
+        <surface n="1:23v" xml:id="page-surface-52">
+            <graphic decls="#downloadImageRights #download" height="6576px" rend="portrait" url="MS-DD-00004-00045-000-00052" width="4057px"/>
+        </surface>
+        <surface n="1:24r" xml:id="page-surface-53">
+            <graphic decls="#downloadImageRights #download" height="6642px" rend="portrait" url="MS-DD-00004-00045-000-00053" width="4092px"/>
+        </surface>
+        <surface n="1:24v" xml:id="page-surface-54">
+            <graphic decls="#downloadImageRights #download" height="6675px" rend="portrait" url="MS-DD-00004-00045-000-00054" width="4069px"/>
+        </surface>
+        <surface n="1:25r" xml:id="page-surface-55">
+            <graphic decls="#downloadImageRights #download" height="6699px" rend="portrait" url="MS-DD-00004-00045-000-00055" width="4032px"/>
+        </surface>
+        <surface n="1:25v" xml:id="page-surface-56">
+            <graphic decls="#downloadImageRights #download" height="6691px" rend="portrait" url="MS-DD-00004-00045-000-00056" width="4022px"/>
+        </surface>
+        <surface n="1:26r" xml:id="page-surface-57">
+            <graphic decls="#downloadImageRights #download" height="6697px" rend="portrait" url="MS-DD-00004-00045-000-00057" width="4092px"/>
+        </surface>
+        <surface n="1:26v" xml:id="page-surface-58">
+            <graphic decls="#downloadImageRights #download" height="6691px" rend="portrait" url="MS-DD-00004-00045-000-00058" width="4022px"/>
+        </surface>
+        <surface n="1:27r" xml:id="page-surface-59">
+            <graphic decls="#downloadImageRights #download" height="6697px" rend="portrait" url="MS-DD-00004-00045-000-00059" width="4092px"/>
+        </surface>
+        <surface n="1:27v" xml:id="page-surface-60">
+            <graphic decls="#downloadImageRights #download" height="6691px" rend="portrait" url="MS-DD-00004-00045-000-00060" width="4022px"/>
+        </surface>
+        <surface n="1:28r" xml:id="page-surface-61">
+            <graphic decls="#downloadImageRights #download" height="6697px" rend="portrait" url="MS-DD-00004-00045-000-00061" width="4092px"/>
+        </surface>
+        <surface n="1:28v" xml:id="page-surface-62">
+            <graphic decls="#downloadImageRights #download" height="6691px" rend="portrait" url="MS-DD-00004-00045-000-00062" width="4022px"/>
+        </surface>
+        <surface n="1:29r" xml:id="page-surface-63">
+            <graphic decls="#downloadImageRights #download" height="6697px" rend="portrait" url="MS-DD-00004-00045-000-00063" width="4092px"/>
+        </surface>
+        <surface n="1:29v" xml:id="page-surface-64">
+            <graphic decls="#downloadImageRights #download" height="6782px" rend="portrait" url="MS-DD-00004-00045-000-00064" width="4057px"/>
+        </surface>
+        <surface n="1:30r" xml:id="page-surface-65">
+            <graphic decls="#downloadImageRights #download" height="6697px" rend="portrait" url="MS-DD-00004-00045-000-00065" width="4092px"/>
+        </surface>
+        <surface n="1:30v" xml:id="page-surface-66">
+            <graphic decls="#downloadImageRights #download" height="6661px" rend="portrait" url="MS-DD-00004-00045-000-00066" width="4000px"/>
+        </surface>
+        <surface n="1:31r" xml:id="page-surface-67">
+            <graphic decls="#downloadImageRights #download" height="6697px" rend="portrait" url="MS-DD-00004-00045-000-00067" width="4092px"/>
+        </surface>
+        <surface n="1:31v" xml:id="page-surface-68">
+            <graphic decls="#downloadImageRights #download" height="6661px" rend="portrait" url="MS-DD-00004-00045-000-00068" width="3935px"/>
+        </surface>
+        <surface n="1:32r" xml:id="page-surface-69">
+            <graphic decls="#downloadImageRights #download" height="6697px" rend="portrait" url="MS-DD-00004-00045-000-00069" width="4092px"/>
+        </surface>
+        <surface n="1:32v" xml:id="page-surface-70">
+            <graphic decls="#downloadImageRights #download" height="6661px" rend="portrait" url="MS-DD-00004-00045-000-00070" width="3939px"/>
+        </surface>
+        <surface n="2:1r" xml:id="page-surface-71">
+            <graphic decls="#downloadImageRights #download" height="6933px" rend="portrait" url="MS-DD-00004-00045-000-00071" width="4304px"/>
+        </surface>
+        <surface n="2:1v" xml:id="page-surface-72">
+            <graphic decls="#downloadImageRights #download" height="6939px" rend="portrait" url="MS-DD-00004-00045-000-00072" width="4132px"/>
+        </surface>
+        <surface n="2:2r" xml:id="page-surface-73">
+            <graphic decls="#downloadImageRights #download" height="6975px" rend="portrait" url="MS-DD-00004-00045-000-00073" width="4200px"/>
+        </surface>
+        <surface n="2:2v" xml:id="page-surface-74">
+            <graphic decls="#downloadImageRights #download" height="6924px" rend="portrait" url="MS-DD-00004-00045-000-00074" width="4120px"/>
+        </surface>
+        <surface n="2:3r" xml:id="page-surface-75">
+            <graphic decls="#downloadImageRights #download" height="6910px" rend="portrait" url="MS-DD-00004-00045-000-00075" width="4074px"/>
+        </surface>
+        <surface n="2:3v" xml:id="page-surface-76">
+            <graphic decls="#downloadImageRights #download" height="6924px" rend="portrait" url="MS-DD-00004-00045-000-00076" width="4120px"/>
+        </surface>
+        <surface n="2:4r" xml:id="page-surface-77">
+            <graphic decls="#downloadImageRights #download" height="6854px" rend="portrait" url="MS-DD-00004-00045-000-00077" width="4159px"/>
+        </surface>
+        <surface n="2:4v" xml:id="page-surface-78">
+            <graphic decls="#downloadImageRights #download" height="6743px" rend="portrait" url="MS-DD-00004-00045-000-00078" width="4035px"/>
+        </surface>
+        <surface n="2:5r" xml:id="page-surface-79">
+            <graphic decls="#downloadImageRights #download" height="6941px" rend="portrait" url="MS-DD-00004-00045-000-00079" width="4200px"/>
+        </surface>
+        <surface n="2:5v" xml:id="page-surface-80">
+            <graphic decls="#downloadImageRights #download" height="6930px" rend="portrait" url="MS-DD-00004-00045-000-00080" width="4082px"/>
+        </surface>
+        <surface n="2:6r" xml:id="page-surface-81">
+            <graphic decls="#downloadImageRights #download" height="6941px" rend="portrait" url="MS-DD-00004-00045-000-00081" width="4128px"/>
+        </surface>
+        <surface n="2:6v" xml:id="page-surface-82">
+            <graphic decls="#downloadImageRights #download" height="6854px" rend="portrait" url="MS-DD-00004-00045-000-00082" width="4093px"/>
+        </surface>
+        <surface n="2:7r" xml:id="page-surface-83">
+            <graphic decls="#downloadImageRights #download" height="6941px" rend="portrait" url="MS-DD-00004-00045-000-00083" width="4101px"/>
+        </surface>
+        <surface n="2:7v" xml:id="page-surface-84">
+            <graphic decls="#downloadImageRights #download" height="6854px" rend="portrait" url="MS-DD-00004-00045-000-00084" width="4050px"/>
+        </surface>
+        <surface n="2:8r" xml:id="page-surface-85">
+            <graphic decls="#downloadImageRights #download" height="6941px" rend="portrait" url="MS-DD-00004-00045-000-00085" width="4109px"/>
+        </surface>
+        <surface n="2:8v" xml:id="page-surface-86">
+            <graphic decls="#downloadImageRights #download" height="6854px" rend="portrait" url="MS-DD-00004-00045-000-00086" width="4093px"/>
+        </surface>
+        <surface n="2:9r" xml:id="page-surface-87">
+            <graphic decls="#downloadImageRights #download" height="7006px" rend="portrait" url="MS-DD-00004-00045-000-00087" width="4306px"/>
+        </surface>
+        <surface n="2:9v" xml:id="page-surface-88">
+            <graphic decls="#downloadImageRights #download" height="6945px" rend="portrait" url="MS-DD-00004-00045-000-00088" width="4093px"/>
+        </surface>
+        <surface n="2:10r" xml:id="page-surface-89">
+            <graphic decls="#downloadImageRights #download" height="7052px" rend="portrait" url="MS-DD-00004-00045-000-00089" width="4128px"/>
+        </surface>
+        <surface n="2:10v" xml:id="page-surface-90">
+            <graphic decls="#downloadImageRights #download" height="6945px" rend="portrait" url="MS-DD-00004-00045-000-00090" width="4093px"/>
+        </surface>
+        <surface n="2:11r" xml:id="page-surface-91">
+            <graphic decls="#downloadImageRights #download" height="6941px" rend="portrait" url="MS-DD-00004-00045-000-00091" width="4128px"/>
+        </surface>
+        <surface n="2:11v" xml:id="page-surface-92">
+            <graphic decls="#downloadImageRights #download" height="6945px" rend="portrait" url="MS-DD-00004-00045-000-00092" width="4093px"/>
+        </surface>
+        <surface n="2:12r" xml:id="page-surface-93">
+            <graphic decls="#downloadImageRights #download" height="7065px" rend="portrait" url="MS-DD-00004-00045-000-00093" width="4130px"/>
+        </surface>
+        <surface n="2:12v" xml:id="page-surface-94">
+            <graphic decls="#downloadImageRights #download" height="6945px" rend="portrait" url="MS-DD-00004-00045-000-00094" width="4093px"/>
+        </surface>
+        <surface n="[iii] recto" xml:id="page-surface-95">
+            <graphic decls="#downloadImageRights #download" height="7037px" rend="portrait" url="MS-DD-00004-00045-000-00095" width="4317px"/>
+        </surface>
+        <surface n="[iii] verso" xml:id="page-surface-96">
+            <graphic decls="#downloadImageRights #download" height="7129px" rend="portrait" url="MS-DD-00004-00045-000-00096" width="4174px"/>
+        </surface>
+        <surface n="[iv] recto" xml:id="page-surface-97">
+            <graphic decls="#downloadImageRights #download" height="7073px" rend="portrait" url="MS-DD-00004-00045-000-00097" width="4271px"/>
+        </surface>
+        <surface n="[iv] verso" xml:id="page-surface-98">
+            <graphic decls="#downloadImageRights #download" height="7049px" rend="portrait" url="MS-DD-00004-00045-000-00098" width="4156px"/>
+        </surface>
+        <surface n="rear cover, inner" xml:id="page-surface-99">
+            <graphic decls="#downloadImageRights #download" height="7347px" rend="portrait" url="MS-DD-00004-00045-000-00099" width="4524px"/>
+        </surface>
+        <surface n="rear cover, outer" xml:id="page-surface-100">
+            <graphic decls="#downloadImageRights #download" height="7360px" rend="portrait" url="MS-DD-00004-00045-000-00100" width="4601px"/>
+        </surface>
+        <surface n="spine" xml:id="page-surface-101">
+            <graphic decls="#downloadImageRights #download" height="6743px" rend="portrait" url="MS-DD-00004-00045-000-00101" width="1903px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#page-surface-1" n="front cover, outer" xml:id="page-pb-1"/>
+                <pb facs="#page-surface-2" n="front cover, inner" xml:id="page-pb-2"/>
+                <pb facs="#page-surface-3" n="[i] recto" xml:id="page-pb-3"/>
+                <pb facs="#page-surface-4" n="[i] verso" xml:id="page-pb-4"/>
+                <pb facs="#page-surface-5" n="[ii] recto" xml:id="page-pb-5"/>
+                <pb facs="#page-surface-6" n="[ii] verso" xml:id="page-pb-6"/>
+                <pb facs="#page-surface-7" n="1:1r" xml:id="page-pb-7"/>
+                <pb facs="#page-surface-8" n="1:1v" xml:id="page-pb-8"/>
+                <pb facs="#page-surface-9" n="1:2r" xml:id="page-pb-9"/>
+                <pb facs="#page-surface-10" n="1:2v" xml:id="page-pb-10"/>
+                <pb facs="#page-surface-11" n="1:3r" xml:id="page-pb-11"/>
+                <pb facs="#page-surface-12" n="1:3v" xml:id="page-pb-12"/>
+                <pb facs="#page-surface-13" n="1:4r" xml:id="page-pb-13"/>
+                <pb facs="#page-surface-14" n="1:4v" xml:id="page-pb-14"/>
+                <pb facs="#page-surface-15" n="1:5r" xml:id="page-pb-15"/>
+                <pb facs="#page-surface-16" n="1:5v" xml:id="page-pb-16"/>
+                <pb facs="#page-surface-17" n="1:6r" xml:id="page-pb-17"/>
+                <pb facs="#page-surface-18" n="1:6v" xml:id="page-pb-18"/>
+                <pb facs="#page-surface-19" n="1:7r" xml:id="page-pb-19"/>
+                <pb facs="#page-surface-20" n="1:7v" xml:id="page-pb-20"/>
+                <pb facs="#page-surface-21" n="1:8r" xml:id="page-pb-21"/>
+                <pb facs="#page-surface-22" n="1:8v" xml:id="page-pb-22"/>
+                <pb facs="#page-surface-23" n="1:9r" xml:id="page-pb-23"/>
+                <pb facs="#page-surface-24" n="1:9v" xml:id="page-pb-24"/>
+                <pb facs="#page-surface-25" n="1:10r" xml:id="page-pb-25"/>
+                <pb facs="#page-surface-26" n="1:10v" xml:id="page-pb-26"/>
+                <pb facs="#page-surface-27" n="1:11r" xml:id="page-pb-27"/>
+                <pb facs="#page-surface-28" n="1:11v" xml:id="page-pb-28"/>
+                <pb facs="#page-surface-29" n="1:12r" xml:id="page-pb-29"/>
+                <pb facs="#page-surface-30" n="1:12v" xml:id="page-pb-30"/>
+                <pb facs="#page-surface-31" n="1:13r" xml:id="page-pb-31"/>
+                <pb facs="#page-surface-32" n="1:13v" xml:id="page-pb-32"/>
+                <pb facs="#page-surface-33" n="1:14r" xml:id="page-pb-33"/>
+                <pb facs="#page-surface-34" n="1:14v" xml:id="page-pb-34"/>
+                <pb facs="#page-surface-35" n="1:15r" xml:id="page-pb-35"/>
+                <pb facs="#page-surface-36" n="1:15v" xml:id="page-pb-36"/>
+                <pb facs="#page-surface-37" n="1:16r" xml:id="page-pb-37"/>
+                <pb facs="#page-surface-38" n="1:16v" xml:id="page-pb-38"/>
+                <pb facs="#page-surface-39" n="1:17r" xml:id="page-pb-39"/>
+                <pb facs="#page-surface-40" n="1:17v" xml:id="page-pb-40"/>
+                <pb facs="#page-surface-41" n="1:18r" xml:id="page-pb-41"/>
+                <pb facs="#page-surface-42" n="1:18v" xml:id="page-pb-42"/>
+                <pb facs="#page-surface-43" n="1:19r" xml:id="page-pb-43"/>
+                <pb facs="#page-surface-44" n="1:19v" xml:id="page-pb-44"/>
+                <pb facs="#page-surface-45" n="1:20r" xml:id="page-pb-45"/>
+                <pb facs="#page-surface-46" n="1:20v" xml:id="page-pb-46"/>
+                <pb facs="#page-surface-47" n="1:21r" xml:id="page-pb-47"/>
+                <pb facs="#page-surface-48" n="1:21v" xml:id="page-pb-48"/>
+                <pb facs="#page-surface-49" n="1:22r" xml:id="page-pb-49"/>
+                <pb facs="#page-surface-50" n="1:22v" xml:id="page-pb-50"/>
+                <pb facs="#page-surface-51" n="1:23r" xml:id="page-pb-51"/>
+                <pb facs="#page-surface-52" n="1:23v" xml:id="page-pb-52"/>
+                <pb facs="#page-surface-53" n="1:24r" xml:id="page-pb-53"/>
+                <pb facs="#page-surface-54" n="1:24v" xml:id="page-pb-54"/>
+                <pb facs="#page-surface-55" n="1:25r" xml:id="page-pb-55"/>
+                <pb facs="#page-surface-56" n="1:25v" xml:id="page-pb-56"/>
+                <pb facs="#page-surface-57" n="1:26r" xml:id="page-pb-57"/>
+                <pb facs="#page-surface-58" n="1:26v" xml:id="page-pb-58"/>
+                <pb facs="#page-surface-59" n="1:27r" xml:id="page-pb-59"/>
+                <pb facs="#page-surface-60" n="1:27v" xml:id="page-pb-60"/>
+                <pb facs="#page-surface-61" n="1:28r" xml:id="page-pb-61"/>
+                <pb facs="#page-surface-62" n="1:28v" xml:id="page-pb-62"/>
+                <pb facs="#page-surface-63" n="1:29r" xml:id="page-pb-63"/>
+                <pb facs="#page-surface-64" n="1:29v" xml:id="page-pb-64"/>
+                <pb facs="#page-surface-65" n="1:30r" xml:id="page-pb-65"/>
+                <pb facs="#page-surface-66" n="1:30v" xml:id="page-pb-66"/>
+                <pb facs="#page-surface-67" n="1:31r" xml:id="page-pb-67"/>
+                <pb facs="#page-surface-68" n="1:31v" xml:id="page-pb-68"/>
+                <pb facs="#page-surface-69" n="1:32r" xml:id="page-pb-69"/>
+                <pb facs="#page-surface-70" n="1:32v" xml:id="page-pb-70"/>
+                <pb facs="#page-surface-71" n="2:1r" xml:id="page-pb-71"/>
+                <pb facs="#page-surface-72" n="2:1v" xml:id="page-pb-72"/>
+                <pb facs="#page-surface-73" n="2:2r" xml:id="page-pb-73"/>
+                <pb facs="#page-surface-74" n="2:2v" xml:id="page-pb-74"/>
+                <pb facs="#page-surface-75" n="2:3r" xml:id="page-pb-75"/>
+                <pb facs="#page-surface-76" n="2:3v" xml:id="page-pb-76"/>
+                <pb facs="#page-surface-77" n="2:4r" xml:id="page-pb-77"/>
+                <pb facs="#page-surface-78" n="2:4v" xml:id="page-pb-78"/>
+                <pb facs="#page-surface-79" n="2:5r" xml:id="page-pb-79"/>
+                <pb facs="#page-surface-80" n="2:5v" xml:id="page-pb-80"/>
+                <pb facs="#page-surface-81" n="2:6r" xml:id="page-pb-81"/>
+                <pb facs="#page-surface-82" n="2:6v" xml:id="page-pb-82"/>
+                <pb facs="#page-surface-83" n="2:7r" xml:id="page-pb-83"/>
+                <pb facs="#page-surface-84" n="2:7v" xml:id="page-pb-84"/>
+                <pb facs="#page-surface-85" n="2:8r" xml:id="page-pb-85"/>
+                <pb facs="#page-surface-86" n="2:8v" xml:id="page-pb-86"/>
+                <pb facs="#page-surface-87" n="2:9r" xml:id="page-pb-87"/>
+                <pb facs="#page-surface-88" n="2:9v" xml:id="page-pb-88"/>
+                <pb facs="#page-surface-89" n="2:10r" xml:id="page-pb-89"/>
+                <pb facs="#page-surface-90" n="2:10v" xml:id="page-pb-90"/>
+                <pb facs="#page-surface-91" n="2:11r" xml:id="page-pb-91"/>
+                <pb facs="#page-surface-92" n="2:11v" xml:id="page-pb-92"/>
+                <pb facs="#page-surface-93" n="2:12r" xml:id="page-pb-93"/>
+                <pb facs="#page-surface-94" n="2:12v" xml:id="page-pb-94"/>
+                <pb facs="#page-surface-95" n="[iii] recto" xml:id="page-pb-95"/>
+                <pb facs="#page-surface-96" n="[iii] verso" xml:id="page-pb-96"/>
+                <pb facs="#page-surface-97" n="[iv] recto" xml:id="page-pb-97"/>
+                <pb facs="#page-surface-98" n="[iv] verso" xml:id="page-pb-98"/>
+                <pb facs="#page-surface-99" n="rear cover, inner" xml:id="page-pb-99"/>
+                <pb facs="#page-surface-100" n="rear cover, outer" xml:id="page-pb-100"/>
+                <pb facs="#page-surface-101" n="spine" xml:id="page-pb-101"/>
+            </div>
+        </body>
+    </text>
+</TEI>

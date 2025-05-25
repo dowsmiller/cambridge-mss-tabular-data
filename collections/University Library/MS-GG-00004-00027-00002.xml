@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, University Library, MS Gg.4.27(2)</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+
+                <availability default="false" status="restricted" xml:id="displayImageRights">
+                    <p part="N">Zooming image © Cambridge University Library, All rights reserved.</p>
+                </availability>
+                <availability default="false" status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability default="false" status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+
+            <availability xml:id="watermark" status="restricted"><licence>Cambridge University Library (CC BY-NC 4.0)</licence></availability></publicationStmt>
+            <sourceDesc default="false">
+                <msDesc status="draft" xml:id="MS-GG-00004-00027-00002" xml:lang="en">
+                    <msIdentifier>
+                        <institution>University of Cambridge</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Medieval Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, University Library, MS Gg.4.27(2)</idno>
+
+                    </msIdentifier>
+
+                    <head>The Geste of King Horn, with fragments of other Middle English verse texts</head>
+
+                    <msContents>
+                        <summary>
+                            <p>This single quire of fourteen leaves evidently once formed part of a larger manuscript, made probably in the first
+                                quarter of the fourteenth century (though some scholars have proposed dates as early as the third quarter of the
+                                thirteenth century, and as late as the mid-fourteenth century). Of the three Middle English verse texts it contains,
+                                only the middle one - <hi rend="italic">King Horn</hi> - is complete: at the front, <hi rend="italic">Floris and
+                                    Blaunchfleur</hi> begins imperfectly, while at the back, <hi rend="italic">The Assumption of Our Lady</hi>, ends
+                                after just 240 lines. Nothing of the rest of the manuscript is known to survive.</p>
+                            <p>Nothing is known either of the manuscript's origins or of its ownership until it came into the possession of the
+                                antiquary Joseph Holland (d. 1605). It is generally agreed that it was Holland who was responsible for having this
+                                quire bound with a manuscript anthology of Chaucer's writings (now <ref target="https://cudl.lib.cam.ac.uk/view/MS-GG-00004-00027-00001/1">MS Gg.4.27(1)</ref>). Certainly Holland owned
+                                both manuscripts: they each contain his characteristic mark of annotation (a curved line above two dots, as on f.
+                                    <locus from="10r" to="10r">10r</locus> of this volume). Holland made various interventions in MS Gg.4.27(1): most
+                                notably, supplying textual deficiencies in the mutilated manuscript on added leaves, inserting materials such as a
+                                frontispiece and other texts and apparatus, and also foliating the manuscript in black ink. Unlike Chaucer's works,
+                                the texts in Gg.4.27(2) have not survived widely in manuscript copies, nor were they disseminated in printed editions
+                                until the nineteenth century. It is therefore not surprising that Holland did not - or, rather, was likely not able to
+                                - 'restore' the imperfect copies of <hi rend="italic">Floris and Blaunchfleur</hi> or <hi rend="italic">The Assumption
+                                    of Our Lady</hi> to something like their complete form, in similar manner to his treatment of the <hi rend="italic">Canterbury Tales</hi>, <hi rend="italic">Troilus and Criseyde</hi>, and other Chaucerian texts.
+                                However, if Holland did indeed bind the two together, it is curious that his foliation did not include leaves that
+                                were physically part of the manuscript. This may reflect Holland's awareness that these works were not Chaucerian, and
+                                that he bound them in owing to the fact that they too were verse texts written in Middle English, and therefore had a
+                                generic connection with the contents of the rest of the manuscript. Alternatively, they may have come into his
+                                possession after he had foliated the rest of the manuscript, but before he had had it rebound with his supplementary
+                                leaves.</p>
+                            <p>After Holland's death, these manuscripts almost certainly passed through the hands of Richard Holdsworth (1590-1649),
+                                to whom the University Library is indebted for a substantial portion of its holdings of Middle English manuscripts.
+                                His collection of manuscripts and printed books came to the Library in July 1664. The inventory of Holdsworth's
+                                manuscripts (preserved in two copies, now <bibl subtype="internal" type="MS">MS Dd.8.45</bibl> and <bibl subtype="internal" type="MS">MS Ff.4.27</bibl>), compiled by William Crowe, gave only brief descriptions of the
+                                books' contents; the entry that most likely refers to the volume - '51. Chaucer's Workes' - makes no mention of these
+                                leaves. Indeed, they appear to have been generally overlooked until John Mitchell Kemble added the following note to
+                                the manuscript (this note is now preserved separately to MS Gg.4.27(2), among the Hollandian additions to MS
+                                Gg.4.27(1)):</p>
+                            <p><hi rend="italic">Note: after p. 482b of this volume are inserted fourteen folios in parchment containing a fine copy
+                                    of the fragment of Floriz and Blauncheflur. A copy of King Horn and a poem on the assumption of our Lady. To the
+                                    best of my knowledge these have never been noticed.</hi>
+                            </p>
+                            <p>The full contents of the manuscript were first described in published form in 1858, in the third volume of the <hi rend="italic">Catalogue of manuscripts preserved in the library of the University of Cambridge</hi>. These leaves
+                                were bound between the end of the <hi rend="italic">Supplicatio amantis</hi> and before Chaucer's <hi rend="italic">Retraction</hi> and other Hollandian additions. The pencil numbering - §21, §22 and §23 - at the beginning of
+                                each text in MS Gg.4.27(2) refers to the numbering in that catalogue. However, they were not long afterwards subject
+                                to further rearrangement by Henry Bradshaw, who began his career at the University Library in November 1856, but whose
+                                contact with the manuscripts and printed books properly began from 1859 onwards (he was subsequently appointed
+                                University Librarian in 1867, in which post he served until his untimely death in 1886). (This matter is dealt with in
+                                greater detail in the description of <ref target="https://cudl.lib.cam.ac.uk/view/MS-GG-00004-00027-00001/1">MS
+                                    Gg.4.27(1)</ref>). It was in the course of this rearrangement that Bradshaw had these present leaves removed from
+                                the manuscript and reclassified as 'MS Gg.4.27.2', the remainder thereby becoming 'MS Gg.4.27.1'. In his personal copy
+                                of the catalogue of manuscripts (now <bibl>Cambridge, University Library, Adv.c.77.52</bibl>), Bradshaw had noted
+                                against Gg.4.27, 'out on a bond 14<hi rend="superscript">th</hi> Nov<hi rend="superscript">r</hi> 64'. Records of
+                                Bradshaw's borrowing of the manuscript are preserved in <bibl>H.R. Luard, <hi rend="italic">A chronological list of
+                                        the graces, documents, and other papers in the University Registry which concern the University Library</hi>
+                                    (Cambridge, 1870)</bibl>. Entries nos 755 and 760 confirm that by February 1866, the manuscript had been separated
+                                into two volumes thereafter referred to as 'MS Gg.4.27.1' and the King Horn leaves as 'MS Gg.4.27.2' (see: Beadle
+                                (2019) for further details). The separation of the final running number by a full-stop reflects 19th- and early
+                                20th-century practice, though brackets were also in use during this period and is the preferred approach today. The
+                                state of MS Gg.4.27(1) at the time of Bradshaw' death - bound or unbound - is not known, but it was certainly rebound
+                                in 1896; these covers are preserved with the manuscript. Perhaps MS Gg.4.27(2) was bound at that point too, if it had
+                                not already been. When the two manuscripts were the subject of two separate, unpublished descriptions by M.R. James
+                                (now <ref target="https://archivesearch.lib.cam.ac.uk/repositories/2/archival_objects/90557">UA ULIB 7/3/74/35</ref>),
+                                he noted that the binding of each was 'new'. MS Gg.4.27(2) was rebound once more in 1983, at Cambridge University
+                                Library; similar rebinding of MS Gg.4.27(1) followed fourteen years later.</p>
+                            <p>Dr James Freeman<lb/> Medieval Manuscripts Specialist<lb/> Cambridge University Library</p>
+                        </summary>
+
+
+                        <textLang mainLang="enm">Middle English</textLang>
+
+                        <msItem n="1">
+                            <locus from="1r" to="5v">1r-5v</locus>
+                            <title>Floris and Blaunchfleur</title>
+                            <incipit defective="true"><locus from="1r" to="1r">1r</locus>: Heo tok ferþ a wel fair þing / Of hire finger a riche
+                                Ryng</incipit>
+                            <explicit><locus from="5v" to="5v">5v</locus>: þat we him mote louie so / þat we mote to heuene go</explicit>
+                            <note>DIMEV: 824 lines.</note>
+                            <listBibl>
+                                <bibl>DIMEV 3686</bibl>
+                                <bibl>NIMEV 2288.8</bibl>
+                                <bibl>Lumby (1866)</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="2">
+                            <locus from="6r" to="13r">6r-13r</locus>
+                            <title>The Geste of King Horn</title>
+                            <rubric><locus from="6r" to="6r">6r</locus>: Horn</rubric>
+                            <incipit><locus from="6r" to="6r">6r</locus>: Alle beon he bliþe / Þat to my song lyþe</incipit>
+                            <explicit><locus from="13r" to="13r">13r</locus>: Iesus þat is of heuene king / Ȝeue vs alle his suete blessing</explicit>
+                            <note>DIMEV 1530 lines.</note>
+                            <note>Most recent edition only listed below; for others, see the Bibliography.</note>
+                            <listBibl>
+                                <bibl>DIMEV 312</bibl>
+                                <bibl>NIMEV 166</bibl>
+                                <bibl>Hertzmann et al. (1999)</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="3">
+                            <locus from="13v" to="14v">13v-14v</locus>
+                            <title>The Assumption of Our Lady</title>
+                            <rubric><locus from="13v" to="13v">13v</locus>: Assumpcioun de nostre dame</rubric>
+                            <incipit><locus from="13v" to="13v">13v</locus>: Merie tale telle ihc þis day / Of seinte Marye þat swete may</incipit>
+                            <explicit defective="true"><locus from="14v" to="14v">14v</locus>: Marie ansuerde wiþ milde steu[en] / A sonde me al while
+                                er fram</explicit>
+                            <note>DIMEV: Lines 1-240 only.</note>
+                            <listBibl>
+                                <bibl>DIMEV 122</bibl>
+                                <bibl>NIMEV 2165</bibl>
+                                <bibl>Hackauf (1902)</bibl>
+                            </listBibl>
+                        </msItem>
+
+                    </msContents>
+
+                    <physDesc>
+                        <p>
+                            <secFol>
+                                <locus from="2r" to="2r">2r</locus>: Glade and bliþe hi weren alle</secFol>
+                        </p>
+
+                        <objectDesc form="codex">
+                            <supportDesc material="perg">
+                                <support>
+                                    <material>Parchment (<term type="disposition">HFFH</term>)</material>
+                                </support>
+
+                                <extent>
+                                    <seg type="leaf">
+                                        <measure quantity="1" type="laterEndleaf">i</measure> + <measure quantity="14" type="leaf">14</measure> +
+                                            <measure quantity="1" type="laterEndleaf">i</measure> leaves. </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height max="250" min="220">220-250</height>
+                                            <width max="160" min="130">130-160</width>
+                                        </dimensions>
+                                    </seg></extent>
+
+                                <foliation notAfter="1900" notBefore="1800">
+                                    <p>[i] + 1-14 + [ii]</p>
+                                    <note>Foliation in pencil in the lower right-hand corner of the rectos. This system of foliation is used for
+                                        references in this description.</note>
+                                </foliation>
+
+                                <foliation notAfter="1990" notBefore="1947">
+                                    <p>(1)-(28)</p>
+                                    <note>Pagination enclosed in brackets, in pencil in the upper right-hand corner of the rectos only (so only odd
+                                        numbers written into the volume).</note>
+                                </foliation>
+
+                                <collation mainStructures="14">
+                                    <p>A single quire of 14 leaves, with irregular edges.</p>
+                                    <signatures type="leaf"><p>No leaf signatures.</p></signatures>
+                                    <signatures type="quire"><p>No quire signatures.</p></signatures>
+                                    <catchwords><seg type="para">No catchwords.</seg></catchwords>
+                                </collation>
+
+                            </supportDesc>
+
+                            <layoutDesc>
+
+                                <layout columns="2" rulingMedium="leadpoint" topLine="below" writtenLines="39 42">
+                                    <dimensions type="written" unit="mm">
+                                        <height max="210" min="200">200-210</height>
+                                        <width max="145" min="125">125-145</width>
+                                    </dimensions>
+                                    <seg type="ruling"> Two columns, 39-42 lines, frame and line ruling in leadpoint, written below top line.</seg>
+                                    <note>The first letter of each line of verse is separated from the rest, and the scribe placed a punctus at the
+                                        end of each line.</note>
+                                </layout>
+
+                            </layoutDesc>
+                        </objectDesc>
+
+
+                        <handDesc>
+                            <handNote script="cursivaAntiquior">
+                                <p>Folios <locus from="1r" to="5v">1r-5v</locus> written in <term type="script">Anglicana formata</term>, and ff.
+                                        <locus from="6r" to="14v">6r-14v</locus> in <term type="script">Anglicana</term>, both by the same scribe (see
+                                    Parkes and Beadle (1979-80), p. 68). For a detailed analysis of the hand, and the use of abbreviations and
+                                    punctuations, as well as corrections to the text by the scribe and another, see Allen (1984), pp. 4-5.</p>
+                            </handNote>
+                        </handDesc>
+
+                        <decoDesc>
+                            <decoNote type="plainInit">
+                                <p>Plain initials in red or blue, 2-4 lines.</p>
+                            </decoNote>
+
+                            <decoNote type="rubrication">Headings written in red.</decoNote>
+                        </decoDesc>
+
+                        <bindingDesc>
+                            <binding notAfter="1983" notBefore="1983">
+                                <p>Binding of quarter brown leather and marbled paper sides. Rebound at Cambridge University Library, 1983.</p>
+                            </binding>
+                        </bindingDesc>
+
+                    </physDesc>
+
+                    <history>
+                        <origin>
+                            <origDate calendar="Gregorian" cert="medium" notAfter="1325" notBefore="1300">First quarter of the 14th century </origDate>
+                            <origPlace key="place_g7002445">England </origPlace>
+                        </origin>
+
+                        <provenance notAfter="1605" notBefore="1600">
+                            <p><locus from="10r" to="10r">10r</locus>: annotation mark in the margin (a curved line above two dots), also found in
+                                other manuscripts known to have belonged to the antiquary <name key="person_v9786540" role="fmo">
+                                    <persName type="standard">Holland, Joseph, active 1585</persName>
+                                    <persName type="display">Joseph Holland (d. 1605) </persName></name> (see, for example: <bibl subtype="external" type="MS"><ref target="">London, British Library, Cotton MS Vespasian E.v</ref></bibl>, ff. 18v, 19r, 19v).
+                                Holland was apparently responsible for having this quire bound together with what is now <ref target="https://cudl.lib.cam.ac.uk/view/MS-GG-00004-00027-00001/1"> MS Gg.4.27(1)</ref>, which contains Holland's
+                                ownership inscription on ff. 5r (now erased, but located directly beneath the border flourishing in the lower margin)
+                                and 516v (also erased, but located directly beneath the Cambridge University Library stamp in the lower margin). MS
+                                Gg.4.27(1) also contains Holland's annotation mark, on ff. 166v and 213v. There is a note by 'J.M.K.' - i.e. <name key="person_v70145857792823020047"><persName type="display">John Mitchell Kemble (1807-1857)</persName><persName type="standard">Kemble, John M. (John Mitchell), 1807-1857</persName></name> - in a volume containing other
+                                leaves that were added to MS Gg.4.27(1) by Holland: see <bibl subtype="internal" type="MS"><ref target="https://cudl.lib.cam.ac.uk/view/MS-GG-00004-00027-00001/1070">MS Gg.4.27(1), f. (2r</ref></bibl>. This
+                                confirms that the leaves now bound separately as MS Gg.4.27(2) were at that time, and probably originally, positioned
+                                    <ref target="https://cudl.lib.cam.ac.uk/view/MS-GG-00004-00027-00001/1054">after f. 516v of MS Gg.4.27(1)</ref>
+                                (f. 482v by the foliation in ink, the numbering added by Holland and the only foliation sequence in the volume at the
+                                time that Kemble saw it). </p></provenance>
+
+                        <provenance notAfter="1649" notBefore="1610"><p>Almost certainly one of the manuscripts of <name key="person_v56962917" role="fmo">
+                                    <persName type="display">Richard Holdsworth (1590-1649), Master of Emmanuel College</persName>
+                                    <persName type="standard">Holdsworth, Richard, 1590-1649</persName></name>.</p></provenance>
+
+                        <acquisition>Acquired by the University Library in July 1664. Probably no. 51 in the inventory of Holdsworth's manuscripts
+                            compiled by William Crowe (MS Ff.4.27 / Dd.8.45).</acquisition>
+
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+
+                            <availability status="restricted">
+                                <p>Entry to read in the Library is permitted only on presentation of a valid reader's card. For information on
+                                    eligibility and admissions procedures, see <ref target="https://www.lib.cam.ac.uk/using-library/joining-library">Joining the Library</ref>). For further information on the availability of the manuscript, please contact the
+                                        <ref target="mss@lib.cam.ac.uk">Manuscripts Reading Room</ref>.</p>
+                            </availability>
+
+                            <custodialHist>
+                                <custEvent notAfter="1866" notBefore="1864"><p>By February 1866 at the latest, but probably not before November 1864,
+                                        Henry Bradshaw had the leaves containing King Horn and other fragmentary Middle English texts removed from MS
+                                        Gg.4.27. In his personal copy of the catalogue of manuscripts (now <bibl>Cambridge, University Library,
+                                            Adv.c.77.52</bibl>), Bradshaw had noted against Gg.4.27, 'out on a bond 14<hi rend="superscript">th</hi>
+                                            Nov<hi rend="superscript">r</hi> 64'. Records of Bradshaw's borrowing of the manuscript are preserved in
+                                            <bibl>H.R. Luard, <hi rend="italic">A chronological list of the graces, documents, and other papers in the
+                                                University Registry which concern the University Library</hi> (Cambridge, 1870)</bibl>. Entries nos
+                                        755 and 760 confirm that by February 1866, the manuscript had been separated into two volumes thereafter
+                                        referred to as 'MS Gg.4.27.1' and the King Horn leaves as 'MS Gg.4.27.2'. See: Beadle (2019) for further
+                                        details. (The separation of the final running number by a full-stop reflects 19th- and early 20th-century
+                                        practice, though brackets were also in use during this period and is the preferred approach today).
+                                    </p></custEvent>
+                                <custEvent cert="medium" when="1896"><p>It is unclear whether Henry Bradshaw had MS Gg.4.27(2) rebound during his
+                                        lifetime or whether the manuscript was left unbound at the time of his death in 1886. Certainly, MS Gg.4.27(1)
+                                        was bound in 1896 by Stoakley (late Hawes) and it may be that MS Gg.4.27(2), if it had not already been bound
+                                        by that time, was rebound by Stoakley as part of the same job.</p></custEvent>
+                                <custEvent when="1983"><p>The manuscript was rebound at Cambridge University Library in 1983 (see
+                                    Binding).</p></custEvent>
+                            </custodialHist>
+
+
+                        </adminInfo>
+
+                        <listBibl>
+                            <head>Editions:</head>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/UHDRYHK8" type="book" xml:id="Michel1845">
+                                <monogr>
+                                    <title level="m">Horn et Rimenhild: recueil de ce qui reste des poëmes relatifs à leurs aventures composés en
+                                        françois, en anglois, et en écossois dans les treizième, quatorzième, quinzième, et seizième siècles</title>
+                                    <author><forename>Francisque Xavier</forename><surname>Michel</surname></author>
+                                    <imprint>
+                                        <pubPlace>Paris</pubPlace>
+                                        <publisher>Imprimé pour le Bannatyne Club par Maulde et Renou</publisher>
+                                        <date>1845</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">Bannatyne Club Publications</title><biblScope unit="volume">80</biblScope></series>
+                                <note>pp. 259-338 [ff. 6r-13r]. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/SPV28MR9" type="book" xml:id="Lumby1866">
+                                <monogr>
+                                    <title level="m">King Horn: with fragments of Floriz and Blauncheflur, and of the Assumption of Our Lady, from a
+                                        ms. (GG 4.27.2) in the Cambridge University Library; also, from mss. in the British Museum, the Assumption of
+                                        Our Lady (Add. Mss. 10036), and fragments of the Floyres and Blancheflur (Cotton Vitellius D.III)</title>
+                                    <author><forename>J. Rawson</forename><surname>Lumby</surname></author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>published for the Early English Text Society by Trübner &amp; Co</publisher>
+                                        <date>1866</date>
+                                        <note type="url">https://www.gutenberg.org/ebooks/42713</note>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">Early English Text Society. Original Series</title><biblScope unit="volume">14</biblScope></series>
+                                <note>pp. 1-43 [ff. 6r-13r], 44-50 [ff. 13v-14v], 51-74 [ff. 1r-5v]. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/HRZYF7SJ" type="book" xml:id="Morris1872">
+                                <monogr>
+                                    <title level="m">Specimens of early English</title>
+                                    <extent>2</extent>
+                                    <author><forename>Richard</forename><surname>Morris</surname></author>
+                                    <respStmt>
+                                        <resp>contributor</resp>
+                                        <persName><forename>Walter W.</forename><surname>Skeat</surname></persName>
+                                    </respStmt>
+                                    <edition>2nd rev. edn.</edition>
+                                    <imprint>
+                                        <pubPlace>Oxford</pubPlace>
+                                        <biblScope unit="volume">1</biblScope>
+                                        <publisher>Clarendon Press</publisher>
+                                        <date>1872</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">Clarendon Press series</title></series>
+                                <note>pp. 237-86 [ff. 6r-13r]. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/THNY4HUH" type="book" xml:id="Zupitza1897">
+                                <monogr>
+                                    <title level="m">Alt- und mittelenglisches Übungsbuch: zum Gebrauche bei Uinversitäts-Vorlesungen und
+                                        Seminar-Übungen, mit einem Wörterbuche</title>
+                                    <title type="short">Alt- und mittelenglisches Übungsbuch</title>
+                                    <editor><forename>Julius</forename><surname>Zupitza</surname></editor>
+                                    <editor><forename>Jakob</forename><surname>Schipper</surname></editor>
+                                    <edition>5th</edition>
+                                    <imprint>
+                                        <pubPlace>Wien, Leipzig</pubPlace>
+                                        <publisher>W. Braumüller</publisher>
+                                        <date>1897</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 115-19 [ff. 6r-6v]. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/T5KVNEMR" type="book" xml:id="Hall1901">
+                                <monogr>
+                                    <title level="m">King Horn: a Middle-English romance</title>
+                                    <author><forename>Joseph</forename><surname>Hall</surname></author>
+                                    <imprint>
+                                        <pubPlace>Oxford</pubPlace>
+                                        <publisher>Clarence Press</publisher>
+                                        <date>1901</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/KJRXKPLG" type="book" xml:id="Hackauf1902">
+                                <monogr>
+                                    <title level="m">Die älteste mittelenglische version der Assumptio Mariae</title>
+                                    <editor><forename>Emil</forename><surname>Hackauf</surname></editor>
+                                    <imprint>
+                                        <pubPlace>Berlin</pubPlace>
+                                        <publisher>E. Felber</publisher>
+                                        <date>1902</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">Englische textbibliothek</title><biblScope unit="volume">8</biblScope></series>
+                                <note>pp. ii (MS A); 1-22 [ff. 13v-14v]. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/MEGWXP8R" type="book" xml:id="French1930">
+                                <monogr>
+                                    <title level="m">Middle English metrical romances</title>
+                                    <editor><forename>Walter H.</forename><surname>French</surname></editor>
+                                    <editor><forename>Charles Brockway</forename><surname>Hale</surname></editor>
+                                    <imprint>
+                                        <pubPlace>New York</pubPlace>
+                                        <publisher>Prentice-Hall</publisher>
+                                        <date>1930</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 25-70 [ff. 6r-13r]. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/HMJ3GTUU" type="thesis" xml:id="De_Vries1966">
+                                <monogr>
+                                    <title level="m">Floris and Blauncheflur: A Middle English romance edited with introduction, notes and
+                                        glossary</title>
+                                    <author><forename>Franciscus Catharina</forename><surname>De Vries</surname></author>
+                                    <imprint>
+                                        <pubPlace>Groningen</pubPlace>
+                                        <date>1966</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 3-4 (MS C), 81-121 [ff. 1r-5v]. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/QIBNIB9M" type="book" xml:id="Allen1984">
+                                <monogr>
+                                    <title level="m">'King Horn'. An Edition Based on Cambridge University Library MS Gg. 4.27 (2)</title>
+                                    <author><forename>Rosamund</forename><surname>Allen</surname></author>
+                                    <imprint>
+                                        <pubPlace>New York/Londres</pubPlace>
+                                        <publisher>Garland</publisher>
+                                        <date>1984</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">Garland Medieval Texts</title><biblScope unit="volume">7</biblScope></series>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/UF4SVLE2" type="book" xml:id="Herzman1999">
+                                <monogr>
+                                    <title level="m">Four romances of England: King Horn, Havelok the Dane, Bevis of Hampton, Athelston</title>
+                                    <editor><forename>Ronald B.</forename><surname>Herzman</surname></editor>
+                                    <editor><forename>Graham</forename><surname>Drake</surname></editor>
+                                    <editor><forename>Eve</forename><surname>Salisbury</surname></editor>
+                                    <imprint>
+                                        <pubPlace>Kalamazoo, Mich.</pubPlace>
+                                        <publisher>Medieval Institute Publications, Western Michigan University</publisher>
+                                        <date>1999</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">Middle English texts</title></series>
+                                <note>pp. 17-56 [ff. 6r-13r]. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/XCI8NK4V" type="book" xml:id="Oguro2010">
+                                <monogr>
+                                    <title level="m">King Horn: an English medieval romance [translated into Japanese]</title>
+                                    <respStmt>
+                                        <resp>translator</resp>
+                                        <persName><forename>Shoichi</forename><surname>Oguro</surname></persName>
+                                    </respStmt>
+                                    <imprint>
+                                        <pubPlace>Tokyo</pubPlace>
+                                        <publisher>[private press]</publisher>
+                                        <date>2010</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Manuscript descriptions:</head>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/WEJIXJXZ" type="book" xml:id="Parkes1979">
+                                <monogr>
+                                    <title level="m">Poetical works [of] Geoffrey Chaucer: a facsimile of Cambridge University Library MS.
+                                        Gg.4.27</title>
+                                    <author><forename>M.B.</forename><surname>Parkes</surname></author>
+                                    <author><forename>Richard</forename><surname>Beadle</surname></author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>D.S. Brewer</publisher>
+                                        <date>1979</date>
+                                    </imprint>
+                                </monogr>
+                                <note>vol. 3, pp. 66-68. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/QI6RC9CK" type="book" xml:id="Guddat-Figge1976">
+                                <monogr>
+                                    <title level="m">Catalogue of manuscripts containing Middle English romances</title>
+                                    <author><forename>Gisela</forename><surname>Guddat-Figge</surname></author>
+                                    <imprint>
+                                        <pubPlace>München</pubPlace>
+                                        <publisher>W. Fink</publisher>
+                                        <date>1976</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">Münchener Universitäts-Schriften : Philosophische Fakultät</title><biblScope unit="volume">4</biblScope></series>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/ZPGG9QD6" type="book" xml:id="Dean1999">
+                                <monogr>
+                                    <title level="m">Anglo-Norman literature: a guide to texts and manuscripts</title>
+                                    <author><forename>Ruth J.</forename><surname>Dean</surname></author>
+                                    <author><forename>Maureen Barry McCann</forename><surname>Boulton</surname></author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>Anglo-Norman Text Society</publisher>
+                                        <date>1999</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">Anglo-Norman Text Society occasional publications series</title><biblScope unit="volume">3</biblScope></series>
+                                <note>no. 137.</note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/7AFF5JC7" type="bookSection" xml:id="McDonald2012a">
+                                <analytic>
+                                    <title level="a">Middle English Romances: Floris and Blancheflour</title>
+                                    <author><forename>Nicola</forename><surname>McDonald</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Database of Middle English Romance</title>
+                                    <imprint>
+                                        <date>2012</date>
+                                        <note type="url">http://www.middleenglishromance.org.uk/mer/21</note>
+                                    </imprint>
+                                </monogr>
+                                <note>ff. 1r-5v: c. 1300, south-west Midlands. 824 lines. Lacks first two leaves, about 350 lines. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/DDIUEVD3" type="bookSection" xml:id="McDonald2012b">
+                                <analytic>
+                                    <title level="a">Middle English Romances: King Horn</title>
+                                    <author><forename>Nicola</forename><surname>McDonald</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Database of Middle English Romance</title>
+                                    <imprint>
+                                        <date>2012</date>
+                                        <note type="url">http://www.middleenglishromance.org.uk/mer/33</note>
+                                    </imprint>
+                                </monogr>
+                                <note>ff. 6r-13r: c. 1300, south-west Midlands. 1544 lines. </note>
+                            </biblStruct>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Secondary literature:</head>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/WHPWQQHE" type="journalArticle" xml:id="Caldwell1943">
+                                <analytic>
+                                    <title level="a">Joseph Holand, Collector and Antiquary</title>
+                                    <author><forename>Robert A.</forename><surname>Caldwell</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Modern Philology</title>
+                                    <imprint>
+                                        <biblScope unit="volume">40</biblScope>
+                                        <biblScope unit="issue">4</biblScope>
+                                        <biblScope unit="page">295-301</biblScope>
+                                        <date>1943</date>
+                                        <note type="url">http://www.jstor.org/stable/434142</note>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/3G8F9Z4U" type="book" xml:id="Reichl1973">
+                                <monogr>
+                                    <title level="m">Religiöse Dichtung im englischen Hochmittelalter: Untersuchung u. Edition d. Handschrift B. 14.
+                                        39 d. Trinity College in Cambridge</title>
+                                    <author><forename>Karl</forename><surname>Reichl</surname></author>
+                                    <imprint>
+                                        <pubPlace>München</pubPlace>
+                                        <publisher>Fink</publisher>
+                                        <date>1973</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">Münchener Universitätsschriften. Philosophische Fakultät. Texte und Untersuchungen zur
+                                        englischen Philologie</title><biblScope unit="volume">1</biblScope></series>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/9TPJTUPQ" type="book" xml:id="Boffey1985">
+                                <monogr>
+                                    <title level="m">Manuscripts of English courtly love lyrics in the later Middle Ages</title>
+                                    <author><forename>Julia</forename><surname>Boffey</surname></author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>D.S. Brewer</publisher>
+                                        <date>1985</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">Manuscript studies</title><biblScope unit="volume">1</biblScope></series>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/9C8WHDG5" type="book" xml:id="McIntosh1986">
+                                <monogr>
+                                    <title level="m">A linguistic atlas of late mediaeval English</title>
+                                    <extent>4</extent>
+                                    <author><forename>Angus</forename><surname>McIntosh</surname></author>
+                                    <author><forename>M.L.</forename><surname>Samuels</surname></author>
+                                    <author><forename>Michael</forename><surname>Benskin</surname></author>
+                                    <imprint>
+                                        <pubPlace>Aberdeen</pubPlace>
+                                        <publisher>Aberdeen University Press</publisher>
+                                        <date>1986</date>
+                                    </imprint>
+                                </monogr>
+                                <note>MS in one hand. LP 6800. Grid 437 181, Berks. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/ZM7QWDW7" type="bookSection" xml:id="Allen1988">
+                                <analytic>
+                                    <title level="a">The date and provenance of King Horn: some interim reassessments</title>
+                                    <author><forename>Rosamund S.</forename><surname>Allen</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Medieval English Studies Presented to George Kane</title>
+                                    <editor><forename>Edward Donald</forename><surname>Kennedy</surname></editor>
+                                    <editor><forename>Ronald</forename><surname>Waldron</surname></editor>
+                                    <editor><forename>Joseph S.</forename><surname>Wittig</surname></editor>
+                                    <imprint>
+                                        <pubPlace>Woodbridge</pubPlace>
+                                        <biblScope unit="page">99-125</biblScope>
+                                        <publisher>Boydell &amp; Brewer</publisher>
+                                        <date>1988</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/UPTKCPEX" type="bookSection" xml:id="Turville-Petre1990">
+                                <analytic>
+                                    <title level="a">The relationship of the Vernon and Clopton Manuscripts</title>
+                                    <author><forename>Thorlac</forename><surname>Turville-Petre</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Studies in the Vernon Manuscript</title>
+                                    <editor><forename>Derek</forename><surname>Pearsall</surname></editor>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="page">29-44</biblScope>
+                                        <publisher>D. S. Brewer</publisher>
+                                        <date>1990</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/5QEMXEC8" type="book" xml:id="Laing1993">
+                                <monogr>
+                                    <title level="m">Catalogue of sources for a linguistic atlas of early medieval English</title>
+                                    <author><forename>Margaret</forename><surname>Laing</surname></author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>D.S. Brewer</publisher>
+                                        <date>1993</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 45. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/IWNUW2X7" type="book" xml:id="Evans1995">
+                                <monogr>
+                                    <title level="m">Rereading Middle English romance: manuscript layout, decoration, and the rhetoric of composite
+                                        structure</title>
+                                    <author><forename>Murray J.</forename><surname>Evans</surname></author>
+                                    <imprint>
+                                        <pubPlace>Montreal; London</pubPlace>
+                                        <publisher>McGill; Queen's University Press</publisher>
+                                        <date>1995</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/UQ7JJU4P" type="bookSection" xml:id="Connolly2008a">
+                                <analytic>
+                                    <title level="a">"Chaucer's scribe", Adam and the Hengwrt project</title>
+                                    <author><forename>Daniel W.</forename><surname>Mosser</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Design and distribution of late medieval manuscripts in England</title>
+                                    <editor><forename>Margaret</forename><surname>Connolly</surname></editor>
+                                    <editor><forename>Linne R.</forename><surname>Mooney</surname></editor>
+                                    <imprint>
+                                        <pubPlace>York</pubPlace>
+                                        <biblScope unit="page">11-40</biblScope>
+                                        <publisher>York Medieval Press in association with the Boydell Press and with the Centre for Medieval Studies,
+                                            University of York</publisher>
+                                        <date>2008</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 30-32, 32n., 33n. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/72RNDRPT" type="bookSection" xml:id="Connolly2008b">
+                                <analytic>
+                                    <title level="a">The Trinity Gower D scribe's two Canterbury Tales manuscripts revisited</title>
+                                    <author><forename>Jacob</forename><surname>Thaisen</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Design and distribution of late medieval manuscripts in England</title>
+                                    <editor><forename>Margaret</forename><surname>Connolly</surname></editor>
+                                    <editor><forename>Linne R.</forename><surname>Mooney</surname></editor>
+                                    <imprint>
+                                        <pubPlace>York</pubPlace>
+                                        <biblScope unit="page">41-60</biblScope>
+                                        <publisher>York Medieval Press in association with the Boydell Press and with the Centre for Medieval Studies,
+                                            University of York</publisher>
+                                        <date>2008</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 46, 58. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/EUXAVAAP" type="journalArticle" xml:id="Boro2009">
+                                <analytic>
+                                    <title level="a">Miscellaneity and history: reading sixteenth-century romance manuscripts</title>
+                                    <author><forename>Joyce</forename><surname>Boro</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">English Manuscript Studies: 1100-1700</title>
+                                    <imprint>
+                                        <biblScope unit="volume">15</biblScope>
+                                        <biblScope unit="page">123-151</biblScope>
+                                        <date>2009</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 144. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/X42CMHD2" type="journalArticle" xml:id="Cook2016">
+                                <analytic>
+                                    <title level="a">Joseph Holland and the Idea of the Chaucerian Book</title>
+                                    <idno type="DOI">10.1353/mns.2016.0012</idno>
+                                    <author><forename>Megan L.</forename><surname>Cook</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Manuscript Studies: A Journal of the Schoenberg Institute for Manuscript Studies</title>
+                                    <imprint>
+                                        <biblScope unit="volume">1</biblScope>
+                                        <biblScope unit="issue">2</biblScope>
+                                        <biblScope unit="page">165-188</biblScope>
+                                        <date>2016</date>
+                                        <note type="url">https://muse.jhu.edu/article/635585</note>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/DRF6INL2" type="journalArticle" xml:id="Beadle2019">
+                                <analytic>
+                                    <title level="a">Bradshaw’s Chaucer: Some Preliminary Observations</title>
+                                    <author><forename>Richard</forename><surname>Beadle</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Transactions of the Cambridge Bibliographical Society</title>
+                                    <imprint>
+                                        <biblScope unit="volume">16</biblScope>
+                                        <biblScope unit="issue">4</biblScope>
+                                        <biblScope unit="page">557-574</biblScope>
+                                        <date>2019</date>
+                                        <note type="url">https://www.jstor.org/stable/27099640</note>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/M5GJKUAG" type="book" xml:id="Cook2019">
+                                <monogr>
+                                    <title level="m">The Poet and the Antiquaries</title>
+                                    <author>
+                                        <forename>Megan L.</forename>
+                                        <surname>Cook</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Philadelphia</pubPlace>
+                                        <publisher>University of Pennsylvania Press</publisher>
+                                        <date>2019</date>
+                                        <note type="url">https://www.degruyter.com/document/doi/10.9783/9780812295825/html</note>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/LD6YIK9E" type="book" xml:id="Singh2023">
+                                <monogr>
+                                    <title level="m">Chaucer's early modern readers: reception in print and manuscript</title>
+                                    <author><forename>Devani</forename><surname>Singh</surname></author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>University Press</publisher>
+                                        <date>2023</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 99. </note>
+                            </biblStruct>
+                        </listBibl>
+
+                    </additional>
+
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass default="false">
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85080710">Manuscripts, Middle English</term>
+                            <term key="subject_sh99002698">Narrative poetry, Middle English</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change status="draft" when="2021-06-15">
+                <persName>Dr James Freeman, Medieval Manuscripts Specialist, Cambridge University Library</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+        <graphic decls="#document-thumbnail" rend="portrait" url="MS-GG-00004-00027-00002-000-00001"/>
+        <surface n="front cover, outer" xml:id="i1">
+            <graphic decls="#downloadImageRights #download" height="7789px" rend="portrait" url="MS-GG-00004-00027-00002-000-00001" width="4730px"/>
+        </surface>
+        <surface n="front cover, inner" xml:id="i2">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00002" width="4365px"/>
+        </surface>
+        <surface n="[i] recto" xml:id="i3">
+            <graphic decls="#downloadImageRights #download" height="7943px" rend="portrait" url="MS-GG-00004-00027-00002-000-00003" width="4703px"/>
+        </surface>
+        <surface n="[i] verso" xml:id="i4">
+            <graphic decls="#downloadImageRights #download" height="7899px" rend="portrait" url="MS-GG-00004-00027-00002-000-00004" width="4775px"/>
+        </surface>
+        <surface n="1r" xml:id="i5">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00005" width="4365px"/>
+        </surface>
+        <surface n="1v" xml:id="i6">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00006" width="4365px"/>
+        </surface>
+        <surface n="2r" xml:id="i7">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00007" width="4365px"/>
+        </surface>
+        <surface n="2v" xml:id="i8">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00008" width="4365px"/>
+        </surface>
+        <surface n="3r" xml:id="i9">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00009" width="4365px"/>
+        </surface>
+        <surface n="3v" xml:id="i10">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00010" width="4365px"/>
+        </surface>
+        <surface n="4r" xml:id="i11">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00011" width="4365px"/>
+        </surface>
+        <surface n="4v" xml:id="i12">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00012" width="4365px"/>
+        </surface>
+        <surface n="5r" xml:id="i13">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00013" width="4365px"/>
+        </surface>
+        <surface n="5v" xml:id="i14">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00014" width="4365px"/>
+        </surface>
+        <surface n="6r" xml:id="i15">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00015" width="4365px"/>
+        </surface>
+        <surface n="6v" xml:id="i16">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00016" width="4365px"/>
+        </surface>
+        <surface n="7r" xml:id="i17">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00017" width="4365px"/>
+        </surface>
+        <surface n="7v" xml:id="i18">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00018" width="4365px"/>
+        </surface>
+        <surface n="8r" xml:id="i19">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00019" width="4365px"/>
+        </surface>
+        <surface n="8v" xml:id="i20">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00020" width="4365px"/>
+        </surface>
+        <surface n="9r" xml:id="i21">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00021" width="4365px"/>
+        </surface>
+        <surface n="9v" xml:id="i22">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00022" width="4365px"/>
+        </surface>
+        <surface n="10r" xml:id="i23">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00023" width="4365px"/>
+        </surface>
+        <surface n="10v" xml:id="i24">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00024" width="4365px"/>
+        </surface>
+        <surface n="11r" xml:id="i25">
+            <graphic decls="#downloadImageRights #download" height="7064px" rend="portrait" url="MS-GG-00004-00027-00002-000-00025" width="4365px"/>
+        </surface>
+        <surface n="11v" xml:id="i26">
+            <graphic decls="#downloadImageRights #download" height="7064px" rend="portrait" url="MS-GG-00004-00027-00002-000-00026" width="4365px"/>
+        </surface>
+        <surface n="12r" xml:id="i27">
+            <graphic decls="#downloadImageRights #download" height="7277px" rend="portrait" url="MS-GG-00004-00027-00002-000-00027" width="4365px"/>
+        </surface>
+        <surface n="12v" xml:id="i28">
+            <graphic decls="#downloadImageRights #download" height="7277px" rend="portrait" url="MS-GG-00004-00027-00002-000-00028" width="4365px"/>
+        </surface>
+        <surface n="13r" xml:id="i29">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00029" width="4365px"/>
+        </surface>
+        <surface n="13v" xml:id="i30">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00030" width="4365px"/>
+        </surface>
+        <surface n="14r" xml:id="i31">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00031" width="4365px"/>
+        </surface>
+        <surface n="14v" xml:id="i32">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00032" width="4365px"/>
+        </surface>
+        <surface n="[ii] recto" xml:id="i33">
+            <graphic decls="#downloadImageRights #download" height="7978px" rend="portrait" url="MS-GG-00004-00027-00002-000-00033" width="4775px"/>
+        </surface>
+        <surface n="[ii] verso" xml:id="i34">
+            <graphic decls="#downloadImageRights #download" height="7891px" rend="portrait" url="MS-GG-00004-00027-00002-000-00034" width="4775px"/>
+        </surface>
+        <surface n="[iii] recto" xml:id="i35">
+            <graphic decls="#downloadImageRights #download" height="7906px" rend="portrait" url="MS-GG-00004-00027-00002-000-00035" width="4775px"/>
+        </surface>
+        <surface n="[iii] verso" xml:id="i36">
+            <graphic decls="#downloadImageRights #download" height="7923px" rend="portrait" url="MS-GG-00004-00027-00002-000-00036" width="4775px"/>
+        </surface>
+        <surface n="[iv] recto" xml:id="i37">
+            <graphic decls="#downloadImageRights #download" height="7935px" rend="portrait" url="MS-GG-00004-00027-00002-000-00037" width="4775px"/>
+        </surface>
+        <surface n="[iv] verso" xml:id="i38">
+            <graphic decls="#downloadImageRights #download" height="7968px" rend="portrait" url="MS-GG-00004-00027-00002-000-00038" width="4712px"/>
+        </surface>
+        <surface n="rear cover, inner" xml:id="i39">
+            <graphic decls="#downloadImageRights #download" height="7568px" rend="portrait" url="MS-GG-00004-00027-00002-000-00039" width="4365px"/>
+        </surface>
+        <surface n="rear cover, outer" xml:id="i40">
+            <graphic decls="#downloadImageRights #download" height="7789px" rend="portrait" url="MS-GG-00004-00027-00002-000-00040" width="4730px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#i1" n="front cover, outer" xml:id="pb-frontcover,outer"/>
+                <pb facs="#i2" n="front cover, inner" xml:id="pb-frontcover,inner"/>
+                <pb facs="#i3" n="[i] recto" xml:id="pb-irecto"/>
+                <pb facs="#i4" n="[i] verso" xml:id="pb-iverso"/>
+                <pb facs="#i5" n="1r" xml:id="pb-1r"/>
+                <pb facs="#i6" n="1v" xml:id="pb-1v"/>
+                <pb facs="#i7" n="2r" xml:id="pb-2r"/>
+                <pb facs="#i8" n="2v" xml:id="pb-2v"/>
+                <pb facs="#i9" n="3r" xml:id="pb-3r"/>
+                <pb facs="#i10" n="3v" xml:id="pb-3v"/>
+                <pb facs="#i11" n="4r" xml:id="pb-4r"/>
+                <pb facs="#i12" n="4v" xml:id="pb-4v"/>
+                <pb facs="#i13" n="5r" xml:id="pb-5r"/>
+                <pb facs="#i14" n="5v" xml:id="pb-5v"/>
+                <pb facs="#i15" n="6r" xml:id="pb-6r"/>
+                <pb facs="#i16" n="6v" xml:id="pb-6v"/>
+                <pb facs="#i17" n="7r" xml:id="pb-7r"/>
+                <pb facs="#i18" n="7v" xml:id="pb-7v"/>
+                <pb facs="#i19" n="8r" xml:id="pb-8r"/>
+                <pb facs="#i20" n="8v" xml:id="pb-8v"/>
+                <pb facs="#i21" n="9r" xml:id="pb-9r"/>
+                <pb facs="#i22" n="9v" xml:id="pb-9v"/>
+                <pb facs="#i23" n="10r" xml:id="pb-10r"/>
+                <pb facs="#i24" n="10v" xml:id="pb-10v"/>
+                <pb facs="#i25" n="11r" xml:id="pb-11r"/>
+                <pb facs="#i26" n="11v" xml:id="pb-11v"/>
+                <pb facs="#i27" n="12r" xml:id="pb-12r"/>
+                <pb facs="#i28" n="12v" xml:id="pb-12v"/>
+                <pb facs="#i29" n="13r" xml:id="pb-13r"/>
+                <pb facs="#i30" n="13v" xml:id="pb-13v"/>
+                <pb facs="#i31" n="14r" xml:id="pb-14r"/>
+                <pb facs="#i32" n="14v" xml:id="pb-14v"/>
+                <pb facs="#i33" n="[ii] recto" xml:id="pb-iirecto"/>
+                <pb facs="#i34" n="[ii] verso" xml:id="pb-iiverso"/>
+                <pb facs="#i35" n="[iii] recto" xml:id="pb-iiirecto"/>
+                <pb facs="#i36" n="[iii] verso" xml:id="pb-iiiverso"/>
+                <pb facs="#i37" n="[iv] recto" xml:id="pb-ivrecto"/>
+                <pb facs="#i38" n="[iv] verso" xml:id="pb-ivverso"/>
+                <pb facs="#i39" n="rear cover, inner" xml:id="pb-rearcover,inner"/>
+                <pb facs="#i40" n="rear cover, outer" xml:id="pb-rearcover,outer"/>
+            </div>
+        </body>
+    </text>
+
+
+
+
+
+
+
+
+</TEI>

@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_12043"> 
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, Trinity College, MS R.9.26</title>  
+                <funder>The Polonsky Foundation</funder>
+                <principal>Suzanne Paul</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>University Library</publisher>
+
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made
+                        available for download are licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This
+                        metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+
+            <availability xml:id="watermark" status="restricted"><licence>Trinity College, Cambridge (CC BY-NC 4.0)</licence></availability></publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-TRINITY-R-00009-00026" xml:lang="en">
+                    <msIdentifier>
+                        <institution>Trinity College, Cambridge</institution>
+                        <repository>Trinity College Library</repository>
+                        <collection>Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, Trinity College, MS R.9.26</idno>
+                        <altIdentifier type="internal">
+                            <idno type="james">MS 827</idno>
+                        </altIdentifier>
+                        <altIdentifier type="external">
+                            <idno type="diktyon"> Diktyon 12043</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+
+                    <msContents>  
+                        <summary> 
+                            <seg type="para"> The manuscript contains <title>Three rhetorical texts by Libanius</title>, a pagan Greek rhetorician of the 4th century BCE, 
+                                translated in Latin by Desiderius Erasmus (1466 or 1469-1536), together with the original texts in Greek copied by him. 
+                                The texts are a declamation (<hi rend="italic"> melete</hi>), 
+                                <hi rend="italic"> Legatio Menelai</hi>, and two <hi rend="italic"> ethopoeiae</hi>, model rhetorical exercises, 
+                                speeches on fictional themes, used in an educational context.</seg>
+                            <seg type="para"> The manuscript is written by Erasmus himself (see the note on f. 1r, and <bibl> Bernardinello 1979</bibl>, no. 61), 
+                                and is the presentation copy to Nicholas Ruistre 
+                                (Nicolaus Ruterius ca. 1442-1509), bishop of Arras, as indicated by a dedication letter by Erasmus dated on 17th November 1503,
+                                and by the presence of the arms of the bishop, painted on f. 3v. 
+                                 Erasmus received from Ruistre 10 gold pieces for this Libanius (see <bibl> Garrod 1950</bibl>, p. 9).
+                                Erasmus' translations were printed afterwards, by Thomas 
+                            Martens in Louvain, in 1519 (see <bibl> Morgan-Panaytova 2009</bibl>, p. 112). </seg>
+                            <seg type="para">Dr Erika Elia</seg>
+                            
+                        </summary>
+
+                        <textLang mainLang="grc" otherLangs="la"> Greek and Latin</textLang>
+
+                        <msItem n="1">
+                            <locus from="2v-3r" to="2v-3r"> f. 2v</locus>
+                            <author key="person_v87673996"> Erasmus, Desiderius</author>
+                            <title xml:lang="en"> Epigram <note> (Reedijk no. 75)</note>
+                     </title>
+                            <rubric>
+                        <locus from="2v-3r" to="2v-3r"> f. 2v </locus> Scazon trimeter ad libellum</rubric>
+                            <incipit>
+                        <locus from="2v-3r" to="2v-3r"> f. 2v</locus> Avibus secundis</incipit>
+                            <explicit>
+                        <locus from="2v-3r" to="2v-3r"> f. 2v</locus> viceris et Erythraeos</explicit>
+                            <note> Ed. <bibl> C. Reedijk, <hi rend="italic"> The poems of Desiderius Erasmus</hi>, Leiden 1956</bibl>, no. 75</note>
+                        </msItem>
+                        
+                        <msItem n="2">
+                            <locus from="3v-4r" to="10v-11r"> ff. 3v-11r</locus>
+                            <author key="person_v87673996"> Erasmus, Desiderius</author>
+                            <title xml:lang="en"> Dedication to Nicholas Ruistre</title>
+                            <incipit>
+                        <locus from="3v-4r" to="3v-4r">f. 3v</locus> Reverendo in Christo patri Nicolao Ruterio</incipit>
+                            <explicit>
+                        <locus from="10v-11r" to="10v-11r">f. 11r</locus> Lovanii anno a Christo nato MDIII decimo quinto calendas Decembres</explicit>
+                            <note> The dedication is dated 17 November 1503</note>
+                            <note> Ed. <bibl> P.S. Allen, <hi rend="italic"> Opus epistolarum Desiderii Erasmi Roterdami</hi>, Oxford 1906</bibl>, no. 177</note>
+                        </msItem>
+                        
+                        <msItem n="3">
+                            <locus from="10v-11r" to="26v-27r"> ff. 11r-26v</locus>
+                            <author key="person_v17225859"> Libanius</author>
+                            <editor key="person_v87673996" role="trl"> Erasmus, Desiderius</editor>
+                            <title xml:lang="la"> Legatio Menelai <note> (Decl. 3 Foerster)</note>, Latin translation by Desiderius Erasmus</title>
+                            <rubric>
+                        <locus from="10v-11r" to="10v-11r">f. 11r</locus> Declamatio Libanii sophistae sub persona Menelai pro concione 
+                            Troianorum Helenam et res repetentis, ni reddant, armis iniuriam ulturum se denunciantis. Latina facta Erasmo Desiderio interprete</rubric>
+                            <incipit>
+                        <locus from="11v-12r" to="11v-12r">f. 11v</locus> Si quidem Paris viri Troiani</incipit>
+                            <explicit>
+                        <locus from="25v-26r" to="25v-26r">f. 26r</locus> bellum sumus inituri. Dixi.</explicit>
+                            <finalRubric>
+                        <locus from="26v-27r" to="26v-27r">f. 26v</locus> Finis declamationis 
+                            Libanii sophistae e Graeco sermone in Latinum conversae Erasmo Desiderio 
+                            canonico ordinis divi Aurelii Augustini. Qui dicitur interprete anno salutis millesimo quingentesimo tercio 
+                            mense novembre</finalRubric>
+                            <note> Ed. <bibl> 
+                           <hi rend="italic"> Libanius. Aliquot declamatiunculae Graecae, 
+                                eademque Latinae, per Desiderium Erasmum Roterodamum</hi>, Lovanii 1519</bibl>
+                     </note>
+                        </msItem>
+                        
+                        <msItem n="4">
+                            <locus from="26v-27r" to="31v-32r"> ff. 27r-31v</locus>
+                            <author key="person_v17225859"> Libanius</author>
+                            <editor key="person_v87673996" role="trl"> Erasmus, Desiderius</editor>
+                            <title xml:lang="la"> Ethopoeiae <note> (Progymn. 11.1 Foerster)</note>, Latin translation by Desiderius Erasmus</title> 
+                            <rubric>
+                        <locus from="26v-27r" to="26v-27r">f. 27r</locus> Τίνας ἂν εἴποι λόγους Μήδεια μέλλουσα
+                                ἀποσφάττειν τοὺς ἑαυτῆς παῖδας. Declamatio</rubric>
+                            <incipit>
+                        <locus from="26v-27r" to="26v-27r">f. 27r</locus> Fuit et mihi mea ars auxilio</incipit>
+                            <explicit>
+                        <locus from="31v-32r" to="31v-32r">f. 31v</locus> inde cruciatum spectabo.</explicit>
+                            <finalRubric>
+                        <locus from="31v-32r" to="31v-32r">f. 31v</locus> Finis Deo gratias</finalRubric>
+                            <note> Ed. <bibl> 
+                           <hi rend="italic"> Libanius. Aliquot declamatiunculae Graecae, 
+                                eademque Latinae, per Desiderium Erasmum Roterodamum</hi>, Lovanii 1519</bibl>
+                     </note>
+                        </msItem>
+                        
+                        <msItem n="5">
+                            <locus from="31v-32r" to="34v-35r"> ff. 32r-34v</locus>
+                            <author key="person_v17225859"> Libanius</author>
+                            <editor key="person_v87673996" role="trl"> Erasmus, Desiderius, -1536</editor>
+                            <title xml:lang="la"> Ethopoeiae <note> (Progymn. 11.2 Foerster)</note>, Latin translation by Desiderius Erasmus</title>
+                            <rubric>
+                        <locus from="31v-32r" to="31v-32r">f. 32r</locus> Quae dixerit Andromache 
+                                interfecto Hectore. Declamatio</rubric>
+                            <incipit>
+                        <locus from="31v-32r" to="31v-32r">f. 32r</locus> Evenit quod timebam</incipit>
+                            <explicit>
+                        <locus from="34v-35r" to="34v-35r">f. 34v</locus> qui interemit Hectorem.</explicit>
+                            <finalRubric>
+                        <locus from="34v-35r" to="34v-35r">f. 34v</locus> Finis</finalRubric>
+                            <note> Ed. <bibl> 
+                           <hi rend="italic"> Libanius. Aliquot declamatiunculae Graecae, 
+                                eademque Latinae, per Desiderium Erasmum Roterodamum</hi>, Lovanii 1519</bibl>
+                     </note>
+                        </msItem>
+                        
+                        <msItem n="6">
+                            <locus from="34v-35r" to="48v-49r">ff. 34v-49r</locus>
+                            <author key="person_v17225859"> Libanius</author>
+                            <title xml:lang="la"> Legatio Menelai <note> (Decl. 3 Foerster)</note>
+                     </title>
+                            <rubric>
+                        <locus from="34v-35r" to="34v-35r"> f. 34v</locus> Μελέτη Λιβανίου σοφιστοῦ</rubric>
+                            <incipit>
+                        <locus from="34v-35r" to="34v-35r">f. 35r</locus> Εἰ μὲν ἐβούλετο Ἀλέξανδρος</incipit>
+                            <explicit>
+                        <locus from="48v-49r" to="48v-49r">f. 49r</locus> καὶ πολεμήσομεν ἑτέρων ἀναγκαζόντων</explicit>
+                            <finalRubric>
+                        <locus from="48v-49r" to="48v-49r">f. 49r</locus> Τοῦ Λιβανίου σοφιστοῦ τῆς μελέτης 
+                                τέλος· σὺν θεῷ ἀρχὴν ἁπάντων καὶ τέλος ποιοῦ θεόν· ἀρκεῖ τ' ἐν μεγάλοις καὶ τὸ θέλημα μόνον· ἔρρωσθε
+                           </finalRubric>
+                            <note> TLG 2200.005</note>
+                            <note> 
+                        <locus from="49v-50r" to="49v-50r"> f. 49v</locus> is blank</note>
+                        </msItem>
+                        
+                        <msItem n="7">
+                            <locus from="49v-50r" to="53v-54r">ff. 50r-54r</locus>
+                            <author key="person_v17225859"> Libanius</author>
+                            <title xml:lang="la"> Ethopoeiae <note> (Progymn. 11.1 Foerster)</note>
+                     </title>
+                            <rubric>
+                        <locus from="49v-50r" to="49v-50r"> f. 50r</locus> Quae dixerit Medaea suos mactatura filios. Declamatio.</rubric>
+                            <incipit>
+                        <locus from="49v-50r" to="49v-50r"> f. 50r</locus> Εἶχον ἄρα καὶ αὐτὴ βοήθειαν</incipit>
+                            <explicit>
+                        <locus from="53v-54r" to="53v-54r">f. 54r</locus> ἐκεῖθεν τὴν λύπην ἀποθήσομαι.</explicit>
+                            <finalRubric>
+                        <locus from="53v-54r" to="53v-54r">f. 54r</locus> Τέλος σὺν τῷ θεῷ</finalRubric>
+                            <note> TLG 2200.006</note>
+                        </msItem>
+                        
+                        <msItem n="8">
+                            <locus from="54v-55r" to="56v-57r">ff. 54v-56v</locus>
+                            <author key="person_v17225859"> Libanius</author>
+                            <title xml:lang="la"> Ethopoeiae <note> (Progymn. 11.2 Foerster)</note>
+                     </title>  
+                            <rubric>
+                        <locus from="54v-55r" to="54v-55r"> f. 54v</locus> Τίνας ἂν εἴποι λόγους Ἀνδρομάχη 
+                                ἀναιρεθέντος Ἕκτορος· μελέτη</rubric>
+                            <incipit>
+                        <locus from="54v-55r" to="54v-55r"> f. 54v</locus> Ἥκει δὴ πρὸς ἔργον ὁ φόβος</incipit>
+                            <explicit>
+                        <locus from="56v-57r" to="56v-57r">f. 56v</locus> μίγνυσθαι τῷ τὸν Ἕκτορα ἀπεκτονότι.</explicit>
+                            <finalRubric>
+                        <locus from="56v-57r" to="56v-57r">f. 56v</locus> Τέλος σὺν τῷ θεῷ</finalRubric>
+                            <note> TLG 2200.006</note>
+                            <note> ff. <locus from="56v-57r" to="63v-[vii] recto"> 57r-63v</locus>, 
+                                <locus from="63v-[vii] recto" to="[viii] verso-right cover, inner"> [vii] recto-[viii] verso</locus> 
+                                are blank</note>
+                        </msItem>
+                        
+                    </msContents>
+
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="mixed"> 
+                                <support>
+                                    
+                                    <material>
+                                        <locus from="[ii] verso-[iii] recto" to="63v-[vii] recto"> ff. [iii]-[vi], 1-2, 5-63</locus>
+                                        Western paper, folded in <measure type="folding"> quarto</measure>.
+                                       
+                                       Watermarks:
+                                        <watermark>
+                                            <locus from="[ii] verso-[iii] recto" to="63v-[vii] recto"> ff. [iii]-[vi], 1-2, 7-8, 58-63</locus>
+                                            <term type="watermarkMotif"> Assembled letters </term> 
+                                            <note type="watermarkVariation"> (unclear), surmounted by a crown and a clover</note>
+                                            (<dimensions type="watermark" unit="mm">
+                                                <height quantity="40"> ca. 40</height>
+                                                <width quantity="25"> 25</width>
+                                            </dimensions>) <note type="watermarkPosition"> in the gutter</note>, 
+                                            no parallels found in the main repertoires.
+                                        </watermark>
+                                        
+                                        <watermark>
+                                            <locus from="4v-5r" to="57v-58r"> ff. 5-6, 9-57</locus>
+                                            <term type="watermarkMotif"> Hand </term> 
+                                            <note type="watermarkVariation"> surmounted by a four-leaf clover 
+                                            (type Briquet <hi rend="italic"> Main , au naturel, face interne</hi>)</note>
+                                            (<dimensions type="watermark" unit="mm">
+                                                <height quantity="50"> ca. 50</height>
+                                                <width quantity="15"> 15</width>
+                                            </dimensions>) <note type="watermarkPosition"> ,
+                                            </note> comparable to the types <note> Briquet <hi rend="italic"> Main</hi> 11421, 11423, 11424, 11425</note>,
+                                            which are dated in 1483,  1496, 1502-1508, 1507. 
+                                        </watermark>
+                                      
+                                    </material>
+                                    
+                                    <material> 
+                                        <locus from="2v-3r" to="3v-s4v"> ff. 3-4</locus> Parchment. 
+                                    </material>
+                                    
+                                    <material>
+                                        <locus from="left cover, inner-[i] recto" to="[viii] verso-right cover, inner"> ff. [i]-[ii], [vii]-[viii]</locus> 
+                                         Western paper, folded in folio, no watermarks 
+                                        (later endleaves associated with the binding).
+                                    </material>
+                                </support>
+
+                                <extent> 
+                                    <seg type="object"> 
+                                        <objectType>Codex </objectType>
+                                    </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="2" type="endleaf"> ii</measure> + 
+                                        <measure quantity="4" type="endleaf"> 4</measure> + 
+                                        <measure quantity="63" type="leaf"> 63</measure> + 
+                                        <measure quantity="2" type="laterEndleaf"> ii</measure> 
+                                    </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height quantity="204"> 204</height> 
+                                            <width quantity="135"> 135</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+
+                                <foliation xml:id="modern"> 
+                                    <p> Modern foliation in pencil, in Arabic numerals, in the upper margin right, from 1 to 63: 
+                                    [i]-[vi] + 1-63 + [vii]-[viii].</p>
+                                </foliation>
+
+                                <collation> 
+                                    <p>The manuscript consists mainly of quaternions. Quire 2 is a bifolium of parchment. 
+                                    The quires have been sewn tightly and are not numbered, therefore the collation has been reconstructed 
+                                    on the basis of the watermark positions. Quire 9 is a quaternion missing the last leaf (with no loss of text).</p>
+                                    <p>
+                                        <list>
+                                            <item>2 later endleaves <locus from="left cover, inner-[i] recto" to="[ii] verso-[iii] recto"> ff. [i]-[ii]</locus>
+                                 </item>                                            
+                                            <item>Quire 1<hi rend="superscript">6</hi>
+                                    <locus from="[ii] verso-[iii] recto" to="2v-3r"> ff. [iii]-[vi], 1-2</locus>
+                                 </item>
+                                            <item>Quire 2<hi rend="superscript">2</hi>
+                                    <locus from="2v-3r" to="4v-5r"> ff. 3-4</locus>
+                                 </item>
+                                            <item>Quire 3<hi rend="superscript">6</hi>
+                                    <locus from="4v-5r" to="10v-11r"> ff. 5-10</locus>
+                                 </item>  
+                                            <item>Quires 4-8<hi rend="superscript">8</hi>
+                                    <locus from="10v-11r" to="50v-51r"> ff. 11-50</locus>
+                                 </item> 
+                                            <item>Quire 9<hi rend="superscript">8-1</hi>
+                                    <locus from="50v-51r" to="57v-58r"> ff. 51-57</locus>
+                                 </item> 
+                                            <item>Quire 10<hi rend="superscript">6</hi>
+                                    <locus from="57v-58r" to="63v-[vii] recto"> ff. 58-63</locus>
+                                 </item>
+                                            <item>2 later endleaves <locus from="63v-[vii] recto" to="[viii] verso-right cover, inner"> ff. [vii]-[viii]</locus>
+                                 </item>
+                                        </list>
+                                    </p>
+                                </collation>
+
+                                <condition> 
+                                    The manuscript is in good condition. 
+                                    Two paper strips have been pasted on the external margins of ff. <locus from="[ii] verso-[iii] recto" to="[iii] verso-[iv] recto"> [iii]</locus> 
+                                    and <locus from="1v-2r" to="2v-3r"> 2</locus>, which were damaged.
+                                </condition>
+                            </supportDesc>
+
+                            <layoutDesc> 
+                                <layout columns="1" writtenLines="15"> 
+                                    A single column of 14-15 lines (15 in the Greek part). 
+                                    <dimensions type="written" unit="mm"> 
+                                        <height max="140" min="130"> 130-140</height> 
+                                        <width quantity="80"> 80</width>
+                                    </dimensions>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        
+                        <handDesc> 
+                            <handNote scope="sole" xml:id="hand-1"> 
+                                <p>
+                           <locus from="34v-35r" to="56v-57r"> ff. 34v-49r, 50r-56v</locus>
+                                    Hand A: the texts have been written by <name key="person_v87673996" role="scr">
+                                        <persName type="standard"> Erasmus, Desiderius, -1536</persName>
+                                         <persName type="display"> Desiderius Erasmus </persName>
+                                     </name> (Bernardinello 1979, no. 61; see also <bibl> Garrod 1950</bibl>, p. 10), in a minuscule script slanting to the right, 
+                                    characterized by the presence of ornamental hooks at the end of uprights. The text is written in a brown ink. 
+                                    Titles and some initials are written in red. For the titles, the scribe used a majuscule script.</p>
+                                <p> The Latin texts on <locus from="2v-3r" to="34v-35r"> ff. 2v, 3v-34v</locus> have been also written by Erasmus.</p>
+                            </handNote>
+                        </handDesc>
+                        
+                        <decoDesc>  
+                            
+                            <decoNote type="miniature"> On <locus from="3v-4r" to="3v-4r"> f. 3v</locus>, in the centre of the leaf, 
+                                with the text written around it, is painted a shield, coloured in blue, with <hi rend="italic"> trompe l'oeuil</hi> 
+                                arms of Nicholas Ruistre, on a crozier, surmounted by a scroll with the <hi rend="italic"> motto</hi> 
+                        <q> Aequo animo</q>; 
+                                three mice run on the left edge of the shield.</decoNote>
+                            
+                            <decoNote type="decInit"> On <locus from="3v-4r" to="3v-4r"> f. 4r</locus> there is a brown and gold acanthus initial 
+                                on a square ground coloured in pink and grey. 
+                                On <locus from="11v-12r" to="11v-12r"> f. 11v</locus> there is a zoomorphic initial (dragon) painted in blue, 
+                                gold and brown, on a square ground coloured in pink. 
+                                On <locus from="34v-35r" to="34v-35r"> f. 35r</locus> there is a golden and brown initial 
+                                on a square ground coloured in blue.</decoNote>
+                            
+                            <decoNote type="colInit"> Thick initials in red ink, see e.g. <locus from="49v-50r" to="49v-50r"> f. 50r</locus>; 
+                                filled with lines in red ink on ff. <locus from="31v-32r" to="31v-32r"> 32r</locus>, 
+                            <locus from="54v-55r" to="54v-55r"> 54v</locus>.</decoNote>
+                            
+                            <decoNote type="other"> The text ends in form of a cross on ff. <locus from="48v-49r" to="48v-49r"> 49r</locus> 
+                                and <locus from="56v-57r" to="56v-57r"> 56v</locus>; in the form of a chalice on ff. 
+                                <locus from="31v-32r" to="31v-32r"> 31v</locus>, <locus from="53v-54r" to="53v-54r"> 54r</locus>.</decoNote>
+                            
+                        </decoDesc> 
+
+                        <additions> 
+                            <p> On the <locus from="left cover, inner-[i] recto" to="left cover, inner-[i] recto"> left pastedown</locus> is written, in pencil, the shelfmark, <q> R.9.26</q>. </p>                           
+                            <p> On <locus from="left cover, inner-[i] recto" to="left cover, inner-[i] recto"> f. [i] recto</locus> there is a note, in pencil, concerning the 
+                                donation of the manuscript; a note on the same topic, in brown ink, on <locus from="[iii] verso-[iv] recto" to="[iii] verso-[iv] verso"> f. [iii] verso</locus>  (see Acquisition). </p> 
+                            <p> On <locus from="[ii] verso-[iii] recto" to="[ii] verso-[iii] recto"> f. [iii] recto</locus> is written, in black ink, the shelfmark <q> R.9.26</q>.</p>
+                            <p> On <locus from="[vi] verso-1r" to="[vi] verso-1r"> f. 1r</locus> there are notes by Abraham Ortelius, in brown ink, about the manuscript, its contents and history: <list>
+                                <item>
+                              <q xml:lang="la"> Declamationes tres, prima Libanii Sophistae, reliquae incerti authoris. Ab Erasmo Roterodamo Latio donatae.</q>
+                           </item>
+                                <item> 
+                              <q xml:lang="la"> Scriptus est liber manu ipsius interpretis, Domini Erasmi Roterodami nempe. Constat hoc mihi Ab. Ortelis.</q>
+                           </item>
+                            </list>. 
+                                Below is written the name of Ortelius' nephew, Jacob/James Cool/Cole, <q xml:lang="la"> Jacobi Colii Orteliani 1598</q>
+                     </p>
+                            <p> In the upper margin, left, of <locus from="3v-4r" to="3v-4r"> f. 3v</locus> is written the shelfmark, <q> R.9.26</q>
+                     </p>
+                        </additions>
+
+                        <bindingDesc>  
+                            <binding calendar="gregorian" notAfter="1799" notBefore="1700"> 
+                                <p> Western binding, leather cover over couched-laminate boards; 
+                                    blind tooling on the boards' edges. 
+                                    Parchment on spine, where there are a gold tooled title, 
+                                    <q xml:lang="la"> Declamat. | Libanii | Etc. </q>, and 
+                                    three paper labels with the shelfmark, <q> R</q>, <q> 9</q>, <q> 26</q>.                                    
+                                    <dimensions type="binding" unit="mm">
+                                        <height quantity="210"> 210</height>
+                                        <width quantity="140"> 140</width>
+                                        <depth quantity="16"> 16</depth>
+                                    </dimensions>
+                                </p>
+                                <condition> There are scratches on the cover.</condition>
+                            </binding>
+                        </bindingDesc>
+  
+                    </physDesc>
+
+                    <history> 
+                        <origin calendar="gregorian" when="1503"> 
+                            <p> The manuscript was copied by Desiderius Erasmus in <placeName key="place_g7007949"> Louvain</placeName>
+                                 <origDate calendar="gregorian" when="1503"> in 1503</origDate>: this date occurs at the end of the presentation letter 
+                                (17 November 1503, see <locus from="10v-11r" to="10v-11r"> f. 11r</locus>), 
+                                and in the final rubric of the first text (November 1503, see <locus from="26v-27r" to="26v-27r"> f. 26v</locus>). 
+                                Since also the following texts were written by the same hand on the same paper, 
+                                it can be assumed that they were copied in the same period. 
+                            </p>
+                        </origin>
+                        
+                        <provenance>
+                            The manuscript was owned by  
+                            <name key="person_v308309801" role="fmo">
+                                <persName type="standard"> Le Ruistre, Nicolas, 14..-1509</persName>
+                                <persName type="display"> Nicolas Ruistre  (d. 1509)</persName>
+                     </name>, 
+                            bishop of Arras, whom the copy was dedicated. 
+                            After his death in 1509, the manuscript could have returned briefly to the hands of Erasmus (<bibl> Garrod 1950</bibl>, p. 9). 
+                            It was later owned by the cartographer 
+                            <name ref="person_v24407717" role="fmo" type="person">
+                                <persName type="display"> Abraham Ortelius (1527-1598)</persName>
+                                <persName type="standard"> Ortelius, Abraham, 1527-1598.</persName>
+                     </name>, 
+                            see his note on <locus from="[vi] verso-1r" to="[vi] verso-1r"> f. 1r</locus>, 
+                            <q xml:lang="la"> Constat hoc mihi Ab. Ortelis</q>. Ortelius collected autographs by Erasmus 
+                            (<bibl> Garrod 1950</bibl>, p. 10). The codex, after his death in 1598, passed 
+                            to his nephew <name key="person_v163301026" role="fmo">
+                                <persName type="standard"> Colius, Jacobus, 1563-1628</persName>
+                                <persName type="display"> Jacobus Colius (Jacob/James Cool/Cole)</persName>
+                     </name>, 
+                            see note on <locus from="[vi] verso-1r" to="[vi] verso-1r"> f. 1r</locus>, 
+                            <q xml:lang="la"> Jacobi Colii Orteliani 1598</q>. After Cole's death in 1628, 
+                            the manuscript was given to his nephew, Abraham Bush (<bibl> Garrod 1950</bibl>, p. 10).
+                        </provenance>
+
+                        <acquisition calendar="gregorian" when="1657">  
+                            The manuscript was donated to the Library by 
+                            <name key="person_v5362815" role="dnr">
+                                <persName type="standard"> Peters, Hugh, 1598-1660</persName>
+                                <persName type="display"> Hugh Peters  (1598-1660)</persName>
+                     </name>, 
+                            a preacher of Dutch origin, chaplain in England during the Civil war, and minister of the church of Salem in New England, 
+                            who studied in Cambridge as member of Trinity College; see a modern note in pencil on 
+                            <locus from="left cover, inner-[i] recto" to="left cover, inner-[i] recto"> f. [i] recto</locus>, <q xml:lang="en"> Given by Hugh Peters 1657</q>, 
+                            and an earlier one, in brown ink, on <locus from="[iii] verso-[iv] recto" to="[iii] verso-[iv] recto"> f. [iii] verso</locus>, 
+                            <q> Me sibi vendicat Bibliotheca Collegii 
+                            Trinitatis in Academia Cantabrigiense 
+                            ex dono Domini Hugonis Petri. A.D. 1657</q>. On the same leaf 
+                            is pasted the Trinity College bookplate. </acquisition>
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+                            <recordHist> 
+                                <source>  Description (2021) draws partly on M. R. James, M. R. James, <hi rend="italic"> The Western Manuscripts in the 
+                                    Library of Trinity College Cambridge</hi>, vol. 2,
+                                    Cambridge University Press, Cambridge, 1901, pp. 268-270.</source>
+                            </recordHist>
+                            <availability status="restricted">
+                                <p>Visitors to Trinity College who wish to consult Special Collections material
+                                    are required to apply to the Library in advance of their visit. For information
+                                    on eligibility and admission procedures see: <ref target="https://www.trin.cam.ac.uk/library/wren-library/information-for-readers/">Trinity College: Information for Readers</ref>.</p>
+                            </availability>
+                        </adminInfo>
+
+                        
+                            <listBibl>
+                            
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/W785UEVP" type="book" xml:id="James1901">
+                                <monogr>
+                                    <title level="m">The western manuscripts in the library of Trinity College, Cambridge: a descriptive catalogue</title>
+                                    <author>
+                              <forename>M. R.</forename>
+                              <surname>James</surname>
+                           </author>
+                                    <imprint>
+                              <pubPlace>Cambridge</pubPlace>
+                              <biblScope unit="volume">2</biblScope>
+                              <publisher>Cambridge University Press</publisher>
+                              <date>1901</date>
+                           </imprint>
+                                </monogr>
+                            </biblStruct>
+                                
+                                <biblStruct corresp="http://zotero.org/groups/276440/items/CPICBIAR" type="book" xml:id="Foerster1909">
+                                    <monogr>
+                                        <title level="m">Libanii opera, Vol. V, Declamationes I-XII</title>
+                                        <editor> 
+                              <forename>Richard</forename>
+                              <surname>Foerster</surname>
+                           </editor>
+                                        <author>
+                              <name>Libanius</name>
+                           </author>
+                                        <imprint>
+                              <pubPlace>Lipsiae</pubPlace>
+                              <publisher>B.G. Teubner</publisher>
+                              <date>1909</date>
+                           </imprint>
+                                    </monogr>
+                                </biblStruct>
+                                
+                                <biblStruct corresp="http://zotero.org/groups/276440/items/ULL53HBL" type="book" xml:id="Libanius1915">
+                        <monogr>
+                           <title level="m">Libanii opera / recensuit Richardus Foerster. Vol. VIII, Progymnasmata ; Argumenta orationum demosthenicarum.</title>
+                                        <author> 
+                              <name>Libanius</name>
+                           </author>
+                                        <respStmt>
+                                            <resp>contributor</resp>
+                                            <persName>
+                                 <forename>Richard</forename>
+                                 <surname>Foerster</surname>
+                              </persName>
+                           </respStmt>
+                                        <imprint>
+                              <pubPlace>Lipsiae</pubPlace>
+                              <publisher>Teubner</publisher>
+                              <date>1915</date>
+                           </imprint>
+                                    </monogr>
+                                    <series> 
+                           <title level="s">Bibliotheca scriptorum Graecorum et Romanorum Teubneriana</title>
+                        </series>
+                                </biblStruct>
+                                
+                                <biblStruct corresp="http://zotero.org/groups/276440/items/VCK93XKZ" type="book" xml:id="Gamillscheg1981">
+                                    <monogr>
+                                        <title level="m">Repertorium der griechischen Kopisten, 800-1600. I. Grossbritannien</title>
+                                        <author>
+                              <forename>Ernst</forename>
+                              <surname>Gamillscheg</surname>
+                           </author>
+                           <author>
+                              <forename>Dieter</forename>
+                              <surname>Harlfinger</surname>
+                           </author>
+                                        <imprint>
+                              <pubPlace>Wien</pubPlace>
+                              <publisher>Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                              <date>1981</date>
+                           </imprint>
+                                    </monogr>
+                                    <series>
+                           <title level="s">Veröffentlichungen der Kommission für Byzantinistik</title>
+                           <biblScope unit="volume">Bd. 3</biblScope>
+                        </series>
+                                </biblStruct>
+                                
+                                <biblStruct corresp="http://zotero.org/groups/276440/items/4UZBTNJT" type="journalArticle" xml:id="Garrod1949">
+                                    <analytic>
+                                        <title level="a">Erasmus and his English patrons</title>
+                                        <author>
+                              <forename>H W</forename>
+                              <surname>Garrod</surname>
+                           </author>
+                                    </analytic>
+                                    <monogr>
+                                        <title level="j">The Library</title>
+                                        <imprint>
+                              <biblScope unit="volume">4</biblScope>
+                              <biblScope unit="page">1-13</biblScope>
+                              <date>1949</date>
+                           </imprint>
+                                    </monogr>
+                                </biblStruct>
+                                
+                                <biblStruct corresp="http://zotero.org/groups/276440/items/ARXUC9SX" type="book" xml:id="Bernardinello1979">
+                                    <monogr>
+                                        <title level="m">Autografi greci e greco-latini in Occidente</title>
+                                        <author>
+                              <forename>S.</forename>
+                              <surname>Bernardinello</surname>
+                           </author>
+                                        <imprint>
+                              <pubPlace>Padova</pubPlace>
+                              <publisher>CEDAM</publisher>
+                              <date>1979</date>
+                           </imprint>
+                                    </monogr>
+                                </biblStruct>
+                                
+                                <biblStruct corresp="http://zotero.org/groups/276440/items/QPS7HWZ9" type="book" xml:id="Robinson1988">
+                                    <monogr>
+                                        <title level="m">Catalogue of dated and datable manuscripts c. 737-1600 in Cambridge libraries</title>
+                                        <extent>2</extent>
+                                        <author>
+                              <forename>P.R.</forename>
+                              <surname>Robinson</surname>
+                           </author>
+                                        <imprint>
+                              <pubPlace>Cambridge</pubPlace>
+                              <publisher>D.S. Brewer</publisher>
+                              <date>1988</date>
+                           </imprint>
+                                    </monogr>
+                                </biblStruct>
+                                
+                                <biblStruct corresp="http://zotero.org/groups/276440/items/6BM3I4PR" type="book" xml:id="Morgan2009">
+                                    <monogr>
+                                        <title level="m">A catalogue of western book illumination in the Fitzwilliam Museum and the Cambridge colleges</title>
+                                        <extent>2</extent>
+                                        <author>
+                              <forename>Nigel J.</forename>
+                              <surname>Morgan</surname>
+                           </author>
+                                        <author>
+                              <forename>Stella</forename>
+                              <surname>Panayotova</surname>
+                           </author>
+                                        <imprint>
+                              <pubPlace>London</pubPlace>
+                              <publisher>Harvey Miller</publisher>
+                              <date>2009</date>
+                           </imprint>
+                                    </monogr>
+                                    <series>
+                           <title level="s">Illuminated manuscripts in Cambridge</title>
+                           <biblScope unit="volume">1: The Frankish Kingdoms, Northern Netherlands, Germany, Bohemia, Hungary, Austria (vol. 1); The Meuse Region, Southern Netherlands (vol. 2)</biblScope>
+                        </series>
+                                </biblStruct>
+
+                            </listBibl>
+                        
+
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject
+                            Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                     <term key="subject_sh85057171"> Greek literature</term>
+                  </item>
+                        <item>
+                            <term key="subject_sh2008110802"> Rhetoric Early works to 1800</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2021-05-10">
+                <persName>Erika Elia</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+      <graphic decls="#document-thumbnail" rend="portrait" url="MS-TRINITY-R-00009-00026-000-00001"/>
+      <surface n="left cover, outer" xml:id="i1">
+            <graphic decls="#downloadImageRights #download" height="2649px" rend="portrait" url="MS-TRINITY-R-00009-00026-000-00001" width="1877px"/>
+      </surface>
+      <surface n="left cover, inner-[i] recto" xml:id="i2">
+            <graphic decls="#downloadImageRights #download" height="2637px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00002" width="3453px"/>
+      </surface>
+      <surface n="[i] verso-[ii] recto" xml:id="i3">
+            <graphic decls="#downloadImageRights #download" height="2667px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00003" width="3423px"/>
+      </surface>
+      <surface n="[ii] verso-[iii] recto" xml:id="i4">
+            <graphic decls="#downloadImageRights #download" height="2667px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00004" width="3423px"/>
+      </surface>
+      <surface n="[iii] verso-[iv] recto" xml:id="i5">
+            <graphic decls="#downloadImageRights #download" height="2637px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00005" width="3465px"/>
+      </surface>
+      <surface n="[iv] verso-[v] recto" xml:id="i6">
+            <graphic decls="#downloadImageRights #download" height="2673px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00006" width="3477px"/>
+      </surface>
+      <surface n="[v] verso-[vi] recto" xml:id="i7">
+            <graphic decls="#downloadImageRights #download" height="2607px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00007" width="3459px"/>
+      </surface>
+      <surface n="[vi] verso-1r" xml:id="i8">
+            <graphic decls="#downloadImageRights #download" height="2643px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00008" width="3453px"/>
+      </surface>
+      <surface n="1v-2r" xml:id="i9">
+            <graphic decls="#downloadImageRights #download" height="2637px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00009" width="3411px"/>
+      </surface>
+      <surface n="2v-3r" xml:id="i10">
+            <graphic decls="#downloadImageRights #download" height="2631px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00010" width="3501px"/>
+      </surface>
+      <surface n="3v-4r" xml:id="i11">
+            <graphic decls="#downloadImageRights #download" height="2643px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00011" width="3537px"/>
+      </surface>
+      <surface n="4v-5r" xml:id="i12">
+            <graphic decls="#downloadImageRights #download" height="2643px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00012" width="3489px"/>
+      </surface>
+      <surface n="5v-6r" xml:id="i13">
+            <graphic decls="#downloadImageRights #download" height="2631px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00013" width="3507px"/>
+      </surface>
+      <surface n="6v-7r" xml:id="i14">
+            <graphic decls="#downloadImageRights #download" height="2619px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00014" width="3507px"/>
+      </surface>
+      <surface n="7v-8r" xml:id="i15">
+            <graphic decls="#downloadImageRights #download" height="2643px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00015" width="3555px"/>
+      </surface>
+      <surface n="8v-9r" xml:id="i16">
+            <graphic decls="#downloadImageRights #download" height="2619px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00016" width="3537px"/>
+      </surface>
+      <surface n="9v-10r" xml:id="i17">
+            <graphic decls="#downloadImageRights #download" height="2631px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00017" width="3561px"/>
+      </surface>
+      <surface n="10v-11r" xml:id="i18">
+            <graphic decls="#downloadImageRights #download" height="2607px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00018" width="3507px"/>
+      </surface>
+      <surface n="11v-12r" xml:id="i19">
+            <graphic decls="#downloadImageRights #download" height="2613px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00019" width="3537px"/>
+      </surface>
+      <surface n="12v-13r" xml:id="i20">
+            <graphic decls="#downloadImageRights #download" height="2589px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00020" width="3525px"/>
+      </surface>
+      <surface n="13v-14r" xml:id="i21">
+            <graphic decls="#downloadImageRights #download" height="2595px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00021" width="3507px"/>
+      </surface>
+      <surface n="14v-15r" xml:id="i22">
+            <graphic decls="#downloadImageRights #download" height="2619px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00022" width="3513px"/>
+      </surface>
+      <surface n="15v-16r" xml:id="i23">
+            <graphic decls="#downloadImageRights #download" height="2619px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00023" width="3555px"/>
+      </surface>
+      <surface n="16v-17r" xml:id="i24">
+            <graphic decls="#downloadImageRights #download" height="2631px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00024" width="3585px"/>
+      </surface>
+      <surface n="17v-18r" xml:id="i25">
+            <graphic decls="#downloadImageRights #download" height="2613px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00025" width="3555px"/>
+      </surface>
+      <surface n="18v-19r" xml:id="i26">
+            <graphic decls="#downloadImageRights #download" height="2607px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00026" width="3555px"/>
+      </surface>
+      <surface n="19v-20r" xml:id="i27">
+            <graphic decls="#downloadImageRights #download" height="2601px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00027" width="3531px"/>
+      </surface>
+      <surface n="20v-21r" xml:id="i28">
+            <graphic decls="#downloadImageRights #download" height="2583px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00028" width="3519px"/>
+      </surface>
+      <surface n="21v-22r" xml:id="i29">
+            <graphic decls="#downloadImageRights #download" height="2595px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00029" width="3591px"/>
+      </surface>
+      <surface n="22v-23r" xml:id="i30">
+            <graphic decls="#downloadImageRights #download" height="2601px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00030" width="3525px"/>
+      </surface>
+      <surface n="23v-24r" xml:id="i31">
+            <graphic decls="#downloadImageRights #download" height="2595px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00031" width="3537px"/>
+      </surface>
+      <surface n="24v-25r" xml:id="i32">
+            <graphic decls="#downloadImageRights #download" height="2589px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00032" width="3573px"/>
+      </surface>
+      <surface n="25v-26r" xml:id="i33">
+            <graphic decls="#downloadImageRights #download" height="2589px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00033" width="3549px"/>
+      </surface>
+      <surface n="26v-27r" xml:id="i34">
+            <graphic decls="#downloadImageRights #download" height="2589px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00034" width="3543px"/>
+      </surface>
+      <surface n="27v-28r" xml:id="i35">
+            <graphic decls="#downloadImageRights #download" height="2589px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00035" width="3537px"/>
+      </surface>
+      <surface n="28v-29r" xml:id="i36">
+            <graphic decls="#downloadImageRights #download" height="2619px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00036" width="3573px"/>
+      </surface>
+      <surface n="29v-30r" xml:id="i37">
+            <graphic decls="#downloadImageRights #download" height="2613px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00037" width="3537px"/>
+      </surface>
+      <surface n="30v-31r" xml:id="i38">
+            <graphic decls="#downloadImageRights #download" height="2607px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00038" width="3555px"/>
+      </surface>
+      <surface n="31v-32r" xml:id="i39">
+            <graphic decls="#downloadImageRights #download" height="2613px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00039" width="3549px"/>
+      </surface>
+      <surface n="32v-33r" xml:id="i40">
+            <graphic decls="#downloadImageRights #download" height="2649px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00040" width="3603px"/>
+      </surface>
+      <surface n="33v-34r" xml:id="i41">
+            <graphic decls="#downloadImageRights #download" height="2577px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00041" width="3513px"/>
+      </surface>
+      <surface n="34v-35r" xml:id="i42">
+            <graphic decls="#downloadImageRights #download" height="2583px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00042" width="3549px"/>
+      </surface>
+      <surface n="35v-36r" xml:id="i43">
+            <graphic decls="#downloadImageRights #download" height="2583px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00043" width="3549px"/>
+      </surface>
+      <surface n="36v-37r" xml:id="i44">
+            <graphic decls="#downloadImageRights #download" height="2595px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00044" width="3543px"/>
+      </surface>
+      <surface n="37v-38r" xml:id="i45">
+            <graphic decls="#downloadImageRights #download" height="2637px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00045" width="3573px"/>
+      </surface>
+      <surface n="38v-39r" xml:id="i46">
+            <graphic decls="#downloadImageRights #download" height="2589px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00046" width="3585px"/>
+      </surface>
+      <surface n="39v-40r" xml:id="i47">
+            <graphic decls="#downloadImageRights #download" height="2607px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00047" width="3519px"/>
+      </surface>
+      <surface n="40v-41r" xml:id="i48">
+            <graphic decls="#downloadImageRights #download" height="2619px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00048" width="3531px"/>
+      </surface>
+      <surface n="41v-42r" xml:id="i49">
+            <graphic decls="#downloadImageRights #download" height="2631px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00049" width="3531px"/>
+      </surface>
+      <surface n="42v-43r" xml:id="i50">
+            <graphic decls="#downloadImageRights #download" height="2637px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00050" width="3537px"/>
+      </surface>
+      <surface n="43v-44r" xml:id="i51">
+            <graphic decls="#downloadImageRights #download" height="2607px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00051" width="3543px"/>
+      </surface>
+      <surface n="44v-45r" xml:id="i52">
+            <graphic decls="#downloadImageRights #download" height="2619px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00052" width="3531px"/>
+      </surface>
+      <surface n="45v-46r" xml:id="i53">
+            <graphic decls="#downloadImageRights #download" height="2613px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00053" width="3537px"/>
+      </surface>
+      <surface n="46v-47r" xml:id="i54">
+            <graphic decls="#downloadImageRights #download" height="2595px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00054" width="3507px"/>
+      </surface>
+      <surface n="47v-48r" xml:id="i55">
+            <graphic decls="#downloadImageRights #download" height="2619px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00055" width="3501px"/>
+      </surface>
+      <surface n="48v-49r" xml:id="i56">
+            <graphic decls="#downloadImageRights #download" height="2589px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00056" width="3555px"/>
+      </surface>
+      <surface n="49v-50r" xml:id="i57">
+            <graphic decls="#downloadImageRights #download" height="2619px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00057" width="3531px"/>
+      </surface>
+      <surface n="50v-51r" xml:id="i58">
+            <graphic decls="#downloadImageRights #download" height="2613px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00058" width="3525px"/>
+      </surface>
+      <surface n="51v-52r" xml:id="i59">
+            <graphic decls="#downloadImageRights #download" height="2607px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00059" width="3489px"/>
+      </surface>
+      <surface n="52v-53r" xml:id="i60">
+            <graphic decls="#downloadImageRights #download" height="2625px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00060" width="3501px"/>
+      </surface>
+      <surface n="53v-54r" xml:id="i61">
+            <graphic decls="#downloadImageRights #download" height="2613px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00061" width="3531px"/>
+      </surface>
+      <surface n="54v-55r" xml:id="i62">
+            <graphic decls="#downloadImageRights #download" height="2595px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00062" width="3489px"/>
+      </surface>
+      <surface n="55v-56r" xml:id="i63">
+            <graphic decls="#downloadImageRights #download" height="2601px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00063" width="3483px"/>
+      </surface>
+      <surface n="56v-57r" xml:id="i64">
+            <graphic decls="#downloadImageRights #download" height="2607px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00064" width="3537px"/>
+      </surface>
+      <surface n="57v-58r" xml:id="i65">
+            <graphic decls="#downloadImageRights #download" height="2637px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00065" width="3513px"/>
+      </surface>
+      <surface n="58v-59r" xml:id="i66">
+            <graphic decls="#downloadImageRights #download" height="2625px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00066" width="3507px"/>
+      </surface>
+      <surface n="59v-60r" xml:id="i67">
+            <graphic decls="#downloadImageRights #download" height="2637px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00067" width="3519px"/>
+      </surface>
+      <surface n="60v-61r" xml:id="i68">
+            <graphic decls="#downloadImageRights #download" height="2625px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00068" width="3507px"/>
+      </surface>
+      <surface n="61v-62r" xml:id="i69">
+            <graphic decls="#downloadImageRights #download" height="2583px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00069" width="3495px"/>
+      </surface>
+      <surface n="62v-63r" xml:id="i70">
+            <graphic decls="#downloadImageRights #download" height="2637px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00070" width="3477px"/>
+      </surface>
+      <surface n="63v-[vii] recto" xml:id="i71">
+            <graphic decls="#downloadImageRights #download" height="2643px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00071" width="3471px"/>
+      </surface>
+      <surface n="[vii] verso-[viii] recto" xml:id="i72">
+            <graphic decls="#downloadImageRights #download" height="2637px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00072" width="3501px"/>
+      </surface>
+      <surface n="[viii] verso-right cover, inner" xml:id="i73">
+            <graphic decls="#downloadImageRights #download" height="2607px" rend="landscape" url="MS-TRINITY-R-00009-00026-000-00073" width="3465px"/>
+      </surface>
+      <surface n="right cover, outer" xml:id="i74">
+            <graphic decls="#downloadImageRights #download" height="2679px" rend="portrait" url="MS-TRINITY-R-00009-00026-000-00074" width="1787px"/>
+      </surface>
+   </facsimile>
+    <text>
+      <body>
+         <div>
+            <pb facs="#i1" n="left cover, outer" xml:id="pb-leftcover,outer"/>
+            <pb facs="#i2" n="left cover, inner-[i] recto" xml:id="pb-leftcover,inner-irecto"/>
+            <pb facs="#i3" n="[i] verso-[ii] recto" xml:id="pb-iverso-iirecto"/>
+            <pb facs="#i4" n="[ii] verso-[iii] recto" xml:id="pb-iiverso-iiirecto"/>
+            <pb facs="#i5" n="[iii] verso-[iv] recto" xml:id="pb-iiiverso-ivrecto"/>
+            <pb facs="#i6" n="[iv] verso-[v] recto" xml:id="pb-ivverso-vrecto"/>
+            <pb facs="#i7" n="[v] verso-[vi] recto" xml:id="pb-vverso-virecto"/>
+            <pb facs="#i8" n="[vi] verso-1r" xml:id="pb-viverso-1r"/>
+            <pb facs="#i9" n="1v-2r" xml:id="pb-1v-2r"/>
+            <pb facs="#i10" n="2v-3r" xml:id="pb-2v-3r"/>
+            <pb facs="#i11" n="3v-4r" xml:id="pb-3v-4r"/>
+            <pb facs="#i12" n="4v-5r" xml:id="pb-4v-5r"/>
+            <pb facs="#i13" n="5v-6r" xml:id="pb-5v-6r"/>
+            <pb facs="#i14" n="6v-7r" xml:id="pb-6v-7r"/>
+            <pb facs="#i15" n="7v-8r" xml:id="pb-7v-8r"/>
+            <pb facs="#i16" n="8v-9r" xml:id="pb-8v-9r"/>
+            <pb facs="#i17" n="9v-10r" xml:id="pb-9v-10r"/>
+            <pb facs="#i18" n="10v-11r" xml:id="pb-10v-11r"/>
+            <pb facs="#i19" n="11v-12r" xml:id="pb-11v-12r"/>
+            <pb facs="#i20" n="12v-13r" xml:id="pb-12v-13r"/>
+            <pb facs="#i21" n="13v-14r" xml:id="pb-13v-14r"/>
+            <pb facs="#i22" n="14v-15r" xml:id="pb-14v-15r"/>
+            <pb facs="#i23" n="15v-16r" xml:id="pb-15v-16r"/>
+            <pb facs="#i24" n="16v-17r" xml:id="pb-16v-17r"/>
+            <pb facs="#i25" n="17v-18r" xml:id="pb-17v-18r"/>
+            <pb facs="#i26" n="18v-19r" xml:id="pb-18v-19r"/>
+            <pb facs="#i27" n="19v-20r" xml:id="pb-19v-20r"/>
+            <pb facs="#i28" n="20v-21r" xml:id="pb-20v-21r"/>
+            <pb facs="#i29" n="21v-22r" xml:id="pb-21v-22r"/>
+            <pb facs="#i30" n="22v-23r" xml:id="pb-22v-23r"/>
+            <pb facs="#i31" n="23v-24r" xml:id="pb-23v-24r"/>
+            <pb facs="#i32" n="24v-25r" xml:id="pb-24v-25r"/>
+            <pb facs="#i33" n="25v-26r" xml:id="pb-25v-26r"/>
+            <pb facs="#i34" n="26v-27r" xml:id="pb-26v-27r"/>
+            <pb facs="#i35" n="27v-28r" xml:id="pb-27v-28r"/>
+            <pb facs="#i36" n="28v-29r" xml:id="pb-28v-29r"/>
+            <pb facs="#i37" n="29v-30r" xml:id="pb-29v-30r"/>
+            <pb facs="#i38" n="30v-31r" xml:id="pb-30v-31r"/>
+            <pb facs="#i39" n="31v-32r" xml:id="pb-31v-32r"/>
+            <pb facs="#i40" n="32v-33r" xml:id="pb-32v-33r"/>
+            <pb facs="#i41" n="33v-34r" xml:id="pb-33v-34r"/>
+            <pb facs="#i42" n="34v-35r" xml:id="pb-34v-35r"/>
+            <pb facs="#i43" n="35v-36r" xml:id="pb-35v-36r"/>
+            <pb facs="#i44" n="36v-37r" xml:id="pb-36v-37r"/>
+            <pb facs="#i45" n="37v-38r" xml:id="pb-37v-38r"/>
+            <pb facs="#i46" n="38v-39r" xml:id="pb-38v-39r"/>
+            <pb facs="#i47" n="39v-40r" xml:id="pb-39v-40r"/>
+            <pb facs="#i48" n="40v-41r" xml:id="pb-40v-41r"/>
+            <pb facs="#i49" n="41v-42r" xml:id="pb-41v-42r"/>
+            <pb facs="#i50" n="42v-43r" xml:id="pb-42v-43r"/>
+            <pb facs="#i51" n="43v-44r" xml:id="pb-43v-44r"/>
+            <pb facs="#i52" n="44v-45r" xml:id="pb-44v-45r"/>
+            <pb facs="#i53" n="45v-46r" xml:id="pb-45v-46r"/>
+            <pb facs="#i54" n="46v-47r" xml:id="pb-46v-47r"/>
+            <pb facs="#i55" n="47v-48r" xml:id="pb-47v-48r"/>
+            <pb facs="#i56" n="48v-49r" xml:id="pb-48v-49r"/>
+            <pb facs="#i57" n="49v-50r" xml:id="pb-49v-50r"/>
+            <pb facs="#i58" n="50v-51r" xml:id="pb-50v-51r"/>
+            <pb facs="#i59" n="51v-52r" xml:id="pb-51v-52r"/>
+            <pb facs="#i60" n="52v-53r" xml:id="pb-52v-53r"/>
+            <pb facs="#i61" n="53v-54r" xml:id="pb-53v-54r"/>
+            <pb facs="#i62" n="54v-55r" xml:id="pb-54v-55r"/>
+            <pb facs="#i63" n="55v-56r" xml:id="pb-55v-56r"/>
+            <pb facs="#i64" n="56v-57r" xml:id="pb-56v-57r"/>
+            <pb facs="#i65" n="57v-58r" xml:id="pb-57v-58r"/>
+            <pb facs="#i66" n="58v-59r" xml:id="pb-58v-59r"/>
+            <pb facs="#i67" n="59v-60r" xml:id="pb-59v-60r"/>
+            <pb facs="#i68" n="60v-61r" xml:id="pb-60v-61r"/>
+            <pb facs="#i69" n="61v-62r" xml:id="pb-61v-62r"/>
+            <pb facs="#i70" n="62v-63r" xml:id="pb-62v-63r"/>
+            <pb facs="#i71" n="63v-[vii] recto" xml:id="pb-63v-viirecto"/>
+            <pb facs="#i72" n="[vii] verso-[viii] recto" xml:id="pb-viiverso-viiirecto"/>
+            <pb facs="#i73" n="[viii] verso-right cover, inner" xml:id="pb-viiiverso-rightcover,inner"/>
+            <pb facs="#i74" n="right cover, outer" xml:id="pb-rightcover,outer"/>
+         </div>
+      </body>
+   </text>
+
+</TEI>

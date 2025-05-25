@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, Pembroke College, MS 243</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+
+                <availability default="false" status="restricted" xml:id="displayImageRights">
+                    <p part="N">Zooming image © Cambridge University Library, All rights
+                        reserved.</p>
+                </availability>
+                <availability default="false" status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made
+                        available for download are licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability default="false" status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This
+                        metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+
+            <availability xml:id="watermark" status="restricted"><licence>Pembroke College, Cambridge (CC BY-NC 4.0)</licence></availability></publicationStmt>
+            <sourceDesc default="false">
+                <msDesc status="draft" xml:id="MS-PEMBROKE-00243" xml:lang="en">
+                    <msIdentifier>
+                        <institution>Pembroke College, Cambridge</institution>
+                        <repository>Pembroke College Library: on long-term deposit at Cambridge University Library</repository>
+                        <collection>Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, Pembroke College, MS 243</idno>
+
+                    </msIdentifier>
+                    <head>Knighthood and Battle</head>
+                    <msContents>
+
+                        <msItem n="1">
+                            <locus from="1r" to="55v">1r-55v</locus>
+                            <title key="work_12468" xml:lang="en">Knighthood and Battle</title>
+                            <title type="alt" xml:lang="enm">Knyghthode and bataile</title>
+                            <textLang mainLang="enm" otherLangs="la">Middle English (opening lines
+                                of the proheme in Latin)</textLang>
+
+                            <msItem n="1.1">
+                                <locus from="1r" to="2v">1r-2v</locus>
+                                <title>Proheme</title>
+                                <rubric><locus from="1r" to="1r">1r</locus>: Proemium</rubric>
+                                <incipit><locus from="1r" to="1r">1r</locus>: Salue festa dies
+                                    mauortis auete kalende... Hail halyday deuout Alhail
+                                    kalende</incipit>
+                                <explicit><locus from="2v" to="2v">2v</locus>: What Chilvaler is
+                                    best on it bewere</explicit>
+                            </msItem>
+
+                            <msItem n="1.2">
+                                <locus from="3r" to="55v">3r-55v</locus>
+                                <title>Knighthood and Battle</title>
+                                <rubric><locus from="3r" to="3r">3r</locus>: Of knyghthode and
+                                    bataile</rubric>
+                                <incipit><locus from="3r" to="3r">3r</locus>: Sumtyme it was the
+                                    gise among the wise</incipit>
+                                <explicit><locus from="55v" to="55v">55v</locus>: That neither he
+                                    take of ner multiplye</explicit>
+                                <finalRubric><locus from="55v" to="55v">55v</locus>:
+                                    Finis</finalRubric>
+                            </msItem>
+
+                            <note>Versified paraphrase and translation of <persName key="person_v100197892">Vegetius</persName>, <title key="work_4900">De re militari</title>.</note>
+
+                            <note>Text also preserved in <ref target="https://medieval.bodleian.ox.ac.uk/catalog/manuscript_350">Oxford, Bodleian Library, MS Ashmole 45, Part 2</ref> and <ref target="http://searcharchives.bl.uk/IAMS_VU2:IAMS040-001103514">London, British Library, Cotton MS Titus A.XXIII, ff.
+                                    2r-53v</ref>. </note>
+
+                            <listBibl>
+                                <bibl>Dyboski and Arend (1936)</bibl>
+                                <bibl>Livingston and Smith (2021)</bibl>
+                                <bibl>IMEV 3185</bibl>
+                                <bibl>DIMEV 4982</bibl>
+                            </listBibl>
+                        </msItem>
+
+                    </msContents>
+
+                    <physDesc>
+                        <p>
+                            <secFol>
+                                <locus from="2r" to="2r">2r</locus>: Whil te deum</secFol>
+                        </p>
+
+                        <objectDesc form="codex">
+                            <supportDesc material="perg">
+                                <support>
+                                    <material>Parchment (<term type="disposition">FHHF</term>)</material>
+                                </support>
+
+                                <extent>
+                                    <seg type="object">Codex: </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="2" type="laterEndleaf">ii</measure> +
+                                            <measure quantity="56" type="leaf">56</measure> +
+                                            <measure quantity="2" type="laterEndleaf">ii</measure> leaves.
+                                    </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height quantity="240">240</height>
+                                            <width quantity="165">165</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+
+                                <foliation notAfter="2020" notBefore="2018">
+                                    <p>21st-century foliation:</p>
+                                    <p>[a-b] + 1-56 + [c-d]</p>
+                                    <note anchored="true">Numbering in pencil.</note>
+                                </foliation>
+
+                                <foliation notAfter="1461" notBefore="1459">
+                                    <p>15th-century foliation:</p>
+                                    <p>[1]-53 (for ff. <locus from="3r" to="55v">3-55</locus>,
+                                        numbering commencing with 2 on f. <locus from="4r" to="4r">4r</locus>).</p>
+                                </foliation>
+
+
+                                <collation mainStructures="8">
+                                    <p>
+                                        <list>
+                                            <item>Quires 1-6<hi rend="superscript">8</hi> (ff.
+                                                  <locus from="1r" to="48v">1-48</locus>)</item>
+                                            <item>Quire 7<hi rend="superscript">8-1</hi> (ff. <locus from="49r" to="55v">49-55</locus>: 8th leaf
+                                                excised, after f. 55, probably blank)</item>
+                                        </list>
+                                        <note>In Quire 5, sheet 4 was misbound as 2. Scribbles on
+                                            these leaves and patterns of off-set, indicate that the
+                                            misbinding predates the current 19th-century
+                                            binding.</note>
+                                    </p>
+                                    <formula>1-6<hi rend="superscript">8</hi> 7<hi rend="superscript">8-1</hi> (8 excised, probably blank),
+                                        a singleton </formula>
+                                    <signatures type="leaf"><p>Leaf signatures in the usual late
+                                        medieval form.</p></signatures>
+                                    <catchwords><seg type="para">Catchwords, framed.</seg></catchwords>
+                                </collation>
+
+                                <condition>Scribbles and scrawls in crayon on ff. <locus from="50r" to="50v">50</locus> and <locus from="53r" to="53">53</locus>. Spotting and staining of the leaves at the
+                                    beginning and end of the manuscript (ff. <locus from="1r" to="13v">1-13</locus> and <locus from="46r" to="56v">46-56</locus>).</condition>
+
+                            </supportDesc>
+
+                            <layoutDesc>
+                                <layout columns="1" rulingMedium="ink" topLine="below" writtenLines="28">
+                                    <dimensions type="written" unit="mm">
+                                        <height quantity="165">165</height>
+                                        <width quantity="95">95</width>
+                                    </dimensions>
+                                    <seg type="ruling"> Single columns, frame ruling in ink with
+                                        dividing lines for stanzas, 28 lines in four stanzas,
+                                        written below top line. </seg>
+                                </layout>
+
+                                <layout type="paratext">Running headers in paratext.</layout>
+
+                            </layoutDesc>
+                        </objectDesc>
+
+
+                        <handDesc>
+                            <handNote script="cursiva">
+                                <p>Written in <term type="script">secretary</term> script by one
+                                    scribe. </p>
+                            </handNote>
+
+                        </handDesc>
+
+                        <decoDesc>
+
+                            <decoNote type="cadel">
+                                <p>At the opening of the proheme, a large cadel in brown ink (f.
+                                        <locus from="1r" to="1r">1r</locus>).</p>
+                            </decoNote>
+                            <decoNote type="flourInit">
+                                <p>Five- to eleven-line initials in blue, with infill and marginal
+                                    flourishing in red.</p>
+                            </decoNote>
+
+                            <decoNote type="other"><p>Highlighting in red.</p></decoNote>
+                        </decoDesc>
+
+                        <additions>
+                            <note><p>Pen-trials throughout, including, on f. <locus from="56r" to="56r">56r</locus>, parts of two documents.</p></note>
+                            <note><p>Scribbles in crayon in the margins of ff. <locus from="50r" to="50v">50r-50v</locus> and <locus from="53r" to="53r">53r</locus>).</p></note>
+                        </additions>
+
+                        <bindingDesc>
+                            <binding notAfter="1900" notBefore="1800">
+                                <p>19th-century binding, by Hawes. </p>
+                            </binding>
+                            
+                            <binding notAfter="1471" notBefore="1459"><p>Folio <locus from="56r" to="56v">56</locus>
+                            perhaps formerly the rear pastedown of the medieval binding, now lifted.</p></binding>
+                        </bindingDesc>
+
+                    </physDesc>
+
+                    <history>
+                        <origin>
+                            <origDate calendar="Gregorian" cert="high" notAfter="1471" notBefore="1459"> 1459×1471 </origDate>
+                            <origPlace key="place_g7002445">England</origPlace>
+                            <p>According to P.R. Robinson, 'The translation seems to have been
+                                completed in the years 1458-59. Its proem, lines 1-88 (ff. 1r-2v),
+                                celebrates the triumphant entry of Henry VI into London on 25 March
+                                1458, and in lines 978-1026 (ff. 19r-19v) the poet refers to the
+                                political situation after the Yorkist defeat at the battle of
+                                Ludiford, in October 1459. However, there is no mention of Henry's
+                                defeat and capture in 1460 or the ensuing events that led to Edward
+                                IV's accession. In the only other two copies...the proem is
+                                omitted...and the name of Edward IV is substituted for that of Henry
+                                in lines 121 and 2880 (ff. 3v and 53r). This would suggest that the
+                                Pembroke copy was made before March 1461 when Henry was deposed, and
+                                certainly before his death in 1471.'</p>
+                            <listBibl>
+                                <bibl>Robinson (1988), no. 270</bibl>
+                            </listBibl>
+                        </origin>
+
+                        <provenance notAfter="1500" notBefore="1490">
+                           <p> <locus from="1v" to="1v">1v</locus>: 'Thomas bynder', written
+                            upside-down in the lower margin (late 15th century) ('Thomas' repeated
+                            in similar fashion on f. <locus from="20r" to="20r">20r</locus>).</p> </provenance>
+
+                        <provenance notAfter="1600" notBefore="1500"><p><locus from="56r" to="56r">56r</locus>: copy of a warrant made out for Richarde Artur,
+                            addressed to the Keeper of the park at Wanstead, to take one buck, dated
+                            13 Aug. 23 (most likely Hen VIII, i.e. 1531/32).</p></provenance>
+
+                        <provenance notAfter="1600" notBefore="1500"><p>Scribbled names: 'Glyntham'
+                            (i.e. Glentham, Lincs.), 'Brantyngthorp' (i.e. Bruntingthorpe, Lincs.)
+                            and 'Lyncoln' (16th century).</p></provenance>
+
+                        <acquisition notAfter="1898" notBefore="1898"><p>First noted as part of the
+                            collection of <orgName key="org_159532915">Pembroke College</orgName> by
+                            H. Schenkl, <hi rend="italic">Bibliotheca Patrum Latinorum
+                                Britannica</hi>, II/2 (Vienna, 1898), p. 5.</p> </acquisition>
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source>This catalogue entry draws on the description provided by
+                                        <bibl>Rodney M. Thomson, <hi rend="italic">A descriptive
+                                            catalogue of the medieval manuscripts of Pembroke
+                                            College, Cambridge</hi> (2022) </bibl>(used here by kind
+                                    permission of the author).</source>
+
+                            </recordHist>
+
+                            <availability status="restricted">
+                                <p>Researchers should note that Pembroke College's western European medieval manuscripts are 
+                                    housed at Cambridge University Library (CUL). Scholars who wish to consult Pembroke College manuscripts 
+                                    should contact the <ref target="mss@lib.cam.ac.uk">Manuscripts Reading Room</ref> at CUL to arrange their visit; 
+                                    all CUL admissions procedures will apply.
+                                    For information on eligibility and admissions procedures, see <ref target="https://www.lib.cam.ac.uk/using-library/joining-library">Joining the Library</ref>. For further information on the availability of the manuscript, please contact the
+                                    <ref target="mss@lib.cam.ac.uk">Manuscripts Reading Room</ref>.</p>
+                            </availability>
+                        </adminInfo>
+
+                        <listBibl default="false" type="WRAPPER">
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/TRB4US9Z" type="book" xml:id="James1905">
+                                <monogr>
+                                    <title level="m">A descriptive catalogue of the manuscripts in
+                                        the library of Pembroke College, Cambridge</title>
+                                    <author><forename>M.R.</forename><surname>James</surname></author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1905</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 219.</note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/GHSJJYYP" type="book" xml:id="Dyboski1935">
+                                <monogr>
+                                    <title level="m">Knyghthode and bataile: a XVth century verse
+                                        paraphrase of Flavius Vesetius Renatus' treatise &lt;hi
+                                        rend="italics"&gt;De re militari&lt;/hi&gt;</title>
+                                    <title type="short">Knyghthode and bataile</title>
+                                    <editor><forename>Roman</forename><surname>Dyboski</surname></editor>
+                                    <editor><forename>Zygfryd
+                                            Marjan</forename><surname>Arend</surname></editor>
+                                    <respStmt>
+                                        <resp>contributor</resp>
+                                        <persName><forename>Zygfryd
+                                                Marjan</forename><surname>Arend</surname></persName>
+                                    </respStmt>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>Published for the Early English Text Society, by
+                                            H Milford, Oxford University Press</publisher>
+                                        <date>1935</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">Early English Text Society / Original
+                                        series</title><biblScope unit="volume">201</biblScope></series>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/QPS7HWZ9" type="book" xml:id="Robinson1988">
+                                <monogr>
+                                    <title level="m">Catalogue of dated and datable manuscripts c.
+                                        737-1600 in Cambridge libraries</title>
+                                    <extent>2</extent>
+                                    <author><forename>P.R.</forename><surname>Robinson</surname></author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>D.S. Brewer</publisher>
+                                        <date>1988</date>
+                                    </imprint>
+                                </monogr>
+                                <note>no. 270, pl. 278. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/IQZPBY5Q" type="journalArticle" xml:id="Wakelin2005">
+                                <analytic>
+                                    <title level="a">Scholarly scribes and the creation of &lt;hi
+                                        rend="italics"&gt;Knyghthode and Bataile&lt;/hi&gt;</title>
+                                    <author><forename>Daniel</forename><surname>Wakelin</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">English Manuscript Studies: 1100-1700</title>
+                                    <imprint>
+                                        <biblScope unit="volume">12</biblScope>
+                                        <biblScope unit="page">26-45</biblScope>
+                                        <date>2005</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 28-31, 36-37, 40. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/JUUD8THG" type="book" xml:id="Smith2021">
+                                <monogr>
+                                    <title level="m">Of knyghthode and bataile</title>
+                                    <editor><forename>Trevor
+                                            Russell</forename><surname>Smith</surname></editor>
+                                    <editor><forename>Michael</forename><surname>Livingston</surname></editor>
+                                    <imprint>
+                                        <date>2021</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/3GHJYTY2" type="book" xml:id="Thomson2022">
+                                <monogr>
+                                    <title level="m">A descriptive catalogue of the medieval manuscripts of Pembroke
+                                        College, Cambridge</title>
+                                    <author><forename>Rodney M.</forename><surname>Thomson</surname></author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>D.S. Brewer</publisher>
+                                        <date>2022</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>
+
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass default="false">
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh94003480">
+                                Didactic poetry, English (Middle)</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change status="draft" when="2022-06-27">
+                <persName>Dr James Freeman, Medieval Manuscripts Specialist, Cambridge University
+                    Library</persName>
+            </change>
+            <change when="20230801">Updated msIdentifier and availability fields.</change>
+
+        </revisionDesc>
+    </teiHeader>
+
+
+
+
+
+
+<facsimile><graphic decls="#document-thumbnail" url="MS-PEMBROKE-00243-000-00001"/><surface n="front cover, outer" xml:id="page-surface-1"><graphic decls="#downloadImageRights #download" height="7474px" rend="portrait" url="MS-PEMBROKE-00243-000-00001" width="4728px"/></surface><surface n="front cover, inner" xml:id="page-surface-2"><graphic decls="#downloadImageRights #download" height="7397px" rend="portrait" url="MS-PEMBROKE-00243-000-00002" width="4579px"/></surface><surface n="[a] recto" xml:id="page-surface-3"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00003" width="4311px"/></surface><surface n="[a] verso" xml:id="page-surface-4"><graphic decls="#downloadImageRights #download" height="7397px" rend="portrait" url="MS-PEMBROKE-00243-000-00004" width="4579px"/></surface><surface n="[b] recto" xml:id="page-surface-5"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00005" width="4311px"/></surface><surface n="[b] verso" xml:id="page-surface-6"><graphic decls="#downloadImageRights #download" height="7397px" rend="portrait" url="MS-PEMBROKE-00243-000-00006" width="4579px"/></surface><surface n="1r" xml:id="page-surface-7"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00007" width="4311px"/></surface><surface n="1v" xml:id="page-surface-8"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00008" width="4311px"/></surface><surface n="2r" xml:id="page-surface-9"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00009" width="4311px"/></surface><surface n="2v" xml:id="page-surface-10"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00010" width="4311px"/></surface><surface n="3r" xml:id="page-surface-11"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00011" width="4311px"/></surface><surface n="3v" xml:id="page-surface-12"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00012" width="4311px"/></surface><surface n="4r" xml:id="page-surface-13"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00013" width="4311px"/></surface><surface n="4v" xml:id="page-surface-14"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00014" width="4311px"/></surface><surface n="5r" xml:id="page-surface-15"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00015" width="4311px"/></surface><surface n="5v" xml:id="page-surface-16"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00016" width="4311px"/></surface><surface n="6r" xml:id="page-surface-17"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00017" width="4311px"/></surface><surface n="6v" xml:id="page-surface-18"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00018" width="4311px"/></surface><surface n="7r" xml:id="page-surface-19"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00019" width="4311px"/></surface><surface n="7v" xml:id="page-surface-20"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00020" width="4311px"/></surface><surface n="8r" xml:id="page-surface-21"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00021" width="4311px"/></surface><surface n="8v" xml:id="page-surface-22"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00022" width="4311px"/></surface><surface n="9r" xml:id="page-surface-23"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00023" width="4311px"/></surface><surface n="9v" xml:id="page-surface-24"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00024" width="4311px"/></surface><surface n="10r" xml:id="page-surface-25"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00025" width="4311px"/></surface><surface n="10v" xml:id="page-surface-26"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00026" width="4311px"/></surface><surface n="11r" xml:id="page-surface-27"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00027" width="4311px"/></surface><surface n="11v" xml:id="page-surface-28"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00028" width="4311px"/></surface><surface n="12r" xml:id="page-surface-29"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00029" width="4311px"/></surface><surface n="12v" xml:id="page-surface-30"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00030" width="4311px"/></surface><surface n="13r" xml:id="page-surface-31"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00031" width="4311px"/></surface><surface n="13v" xml:id="page-surface-32"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00032" width="4311px"/></surface><surface n="14r" xml:id="page-surface-33"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00033" width="4311px"/></surface><surface n="14v" xml:id="page-surface-34"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00034" width="4311px"/></surface><surface n="15r" xml:id="page-surface-35"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00035" width="4311px"/></surface><surface n="15v" xml:id="page-surface-36"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00036" width="4311px"/></surface><surface n="16r" xml:id="page-surface-37"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00037" width="4311px"/></surface><surface n="16v" xml:id="page-surface-38"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00038" width="4311px"/></surface><surface n="17r" xml:id="page-surface-39"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00039" width="4311px"/></surface><surface n="17v" xml:id="page-surface-40"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00040" width="4311px"/></surface><surface n="18r" xml:id="page-surface-41"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00041" width="4311px"/></surface><surface n="18v" xml:id="page-surface-42"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00042" width="4311px"/></surface><surface n="19r" xml:id="page-surface-43"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00043" width="4311px"/></surface><surface n="19v" xml:id="page-surface-44"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00044" width="4311px"/></surface><surface n="20r" xml:id="page-surface-45"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00045" width="4311px"/></surface><surface n="20v" xml:id="page-surface-46"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00046" width="4311px"/></surface><surface n="21r" xml:id="page-surface-47"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00047" width="4311px"/></surface><surface n="21v" xml:id="page-surface-48"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00048" width="4311px"/></surface><surface n="22r" xml:id="page-surface-49"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00049" width="4311px"/></surface><surface n="22v" xml:id="page-surface-50"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00050" width="4311px"/></surface><surface n="23r" xml:id="page-surface-51"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00051" width="4311px"/></surface><surface n="23v" xml:id="page-surface-52"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00052" width="4311px"/></surface><surface n="24r" xml:id="page-surface-53"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00053" width="4311px"/></surface><surface n="24v" xml:id="page-surface-54"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00054" width="4311px"/></surface><surface n="25r" xml:id="page-surface-55"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00055" width="4311px"/></surface><surface n="25v" xml:id="page-surface-56"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00056" width="4311px"/></surface><surface n="26r" xml:id="page-surface-57"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00057" width="4311px"/></surface><surface n="26v" xml:id="page-surface-58"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00058" width="4311px"/></surface><surface n="27r" xml:id="page-surface-59"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00059" width="4311px"/></surface><surface n="27v" xml:id="page-surface-60"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00060" width="4311px"/></surface><surface n="28r" xml:id="page-surface-61"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00061" width="4311px"/></surface><surface n="28v" xml:id="page-surface-62"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00062" width="4311px"/></surface><surface n="29r" xml:id="page-surface-63"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00063" width="4311px"/></surface><surface n="29v" xml:id="page-surface-64"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00064" width="4311px"/></surface><surface n="30r" xml:id="page-surface-65"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00065" width="4311px"/></surface><surface n="30v" xml:id="page-surface-66"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00066" width="4311px"/></surface><surface n="31r" xml:id="page-surface-67"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00067" width="4311px"/></surface><surface n="31v" xml:id="page-surface-68"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00068" width="4311px"/></surface><surface n="32r" xml:id="page-surface-69"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00069" width="4311px"/></surface><surface n="32v" xml:id="page-surface-70"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00070" width="4311px"/></surface><surface n="33r" xml:id="page-surface-71"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00071" width="4311px"/></surface><surface n="33v" xml:id="page-surface-72"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00072" width="4311px"/></surface><surface n="34r" xml:id="page-surface-73"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00073" width="4311px"/></surface><surface n="34v" xml:id="page-surface-74"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00074" width="4311px"/></surface><surface n="35r" xml:id="page-surface-75"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00075" width="4311px"/></surface><surface n="35v" xml:id="page-surface-76"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00076" width="4311px"/></surface><surface n="36r" xml:id="page-surface-77"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00077" width="4311px"/></surface><surface n="36v" xml:id="page-surface-78"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00078" width="4311px"/></surface><surface n="37r" xml:id="page-surface-79"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00079" width="4311px"/></surface><surface n="37v" xml:id="page-surface-80"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00080" width="4311px"/></surface><surface n="38r" xml:id="page-surface-81"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00081" width="4311px"/></surface><surface n="38v" xml:id="page-surface-82"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00082" width="4311px"/></surface><surface n="39r" xml:id="page-surface-83"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00083" width="4311px"/></surface><surface n="39v" xml:id="page-surface-84"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00084" width="4311px"/></surface><surface n="40r" xml:id="page-surface-85"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00085" width="4311px"/></surface><surface n="40v" xml:id="page-surface-86"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00086" width="4311px"/></surface><surface n="41r" xml:id="page-surface-87"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00087" width="4311px"/></surface><surface n="41v" xml:id="page-surface-88"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00088" width="4311px"/></surface><surface n="42r" xml:id="page-surface-89"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00089" width="4311px"/></surface><surface n="42v" xml:id="page-surface-90"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00090" width="4311px"/></surface><surface n="43r" xml:id="page-surface-91"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00091" width="4311px"/></surface><surface n="43v" xml:id="page-surface-92"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00092" width="4311px"/></surface><surface n="44r" xml:id="page-surface-93"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00093" width="4311px"/></surface><surface n="44v" xml:id="page-surface-94"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00094" width="4311px"/></surface><surface n="45r" xml:id="page-surface-95"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00095" width="4311px"/></surface><surface n="45v" xml:id="page-surface-96"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00096" width="4311px"/></surface><surface n="46r" xml:id="page-surface-97"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00097" width="4311px"/></surface><surface n="46v" xml:id="page-surface-98"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00098" width="4311px"/></surface><surface n="47r" xml:id="page-surface-99"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00099" width="4311px"/></surface><surface n="47v" xml:id="page-surface-100"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00100" width="4311px"/></surface><surface n="48r" xml:id="page-surface-101"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00101" width="4311px"/></surface><surface n="48v" xml:id="page-surface-102"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00102" width="4311px"/></surface><surface n="49r" xml:id="page-surface-103"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00103" width="4311px"/></surface><surface n="49v" xml:id="page-surface-104"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00104" width="4311px"/></surface><surface n="50r" xml:id="page-surface-105"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00105" width="4311px"/></surface><surface n="50v" xml:id="page-surface-106"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00106" width="4311px"/></surface><surface n="51r" xml:id="page-surface-107"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00107" width="4311px"/></surface><surface n="51v" xml:id="page-surface-108"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00108" width="4311px"/></surface><surface n="52r" xml:id="page-surface-109"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00109" width="4311px"/></surface><surface n="52v" xml:id="page-surface-110"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00110" width="4311px"/></surface><surface n="53r" xml:id="page-surface-111"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00111" width="4311px"/></surface><surface n="53v" xml:id="page-surface-112"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00112" width="4311px"/></surface><surface n="54r" xml:id="page-surface-113"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00113" width="4311px"/></surface><surface n="54v" xml:id="page-surface-114"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00114" width="4311px"/></surface><surface n="55r" xml:id="page-surface-115"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00115" width="4311px"/></surface><surface n="55v" xml:id="page-surface-116"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00116" width="4311px"/></surface><surface n="56r" xml:id="page-surface-117"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00117" width="4311px"/></surface><surface n="56v" xml:id="page-surface-118"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00118" width="4311px"/></surface><surface n="[c] recto" xml:id="page-surface-119"><graphic decls="#downloadImageRights #download" height="7297px" rend="portrait" url="MS-PEMBROKE-00243-000-00119" width="4579px"/></surface><surface n="[c] verso" xml:id="page-surface-120"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00120" width="4311px"/></surface><surface n="[d] recto" xml:id="page-surface-121"><graphic decls="#downloadImageRights #download" height="7240px" rend="portrait" url="MS-PEMBROKE-00243-000-00121" width="4579px"/></surface><surface n="[d] verso" xml:id="page-surface-122"><graphic decls="#downloadImageRights #download" height="7146px" rend="portrait" url="MS-PEMBROKE-00243-000-00122" width="4311px"/></surface><surface n="rear cover, inner" xml:id="page-surface-123"><graphic decls="#downloadImageRights #download" height="7397px" rend="portrait" url="MS-PEMBROKE-00243-000-00123" width="4579px"/></surface><surface n="rear cover, outer" xml:id="page-surface-124"><graphic decls="#downloadImageRights #download" height="7548px" rend="portrait" url="MS-PEMBROKE-00243-000-00124" width="4726px"/></surface><surface n="spine" xml:id="page-surface-125"><graphic decls="#downloadImageRights #download" height="7376px" rend="portrait" url="MS-PEMBROKE-00243-000-00125" width="1696px"/></surface></facsimile><text><body><div><pb facs="#page-surface-1" n="front cover, outer" xml:id="page-pb-1"/><pb facs="#page-surface-2" n="front cover, inner" xml:id="page-pb-2"/><pb facs="#page-surface-3" n="[a] recto" xml:id="page-pb-3"/><pb facs="#page-surface-4" n="[a] verso" xml:id="page-pb-4"/><pb facs="#page-surface-5" n="[b] recto" xml:id="page-pb-5"/><pb facs="#page-surface-6" n="[b] verso" xml:id="page-pb-6"/><pb facs="#page-surface-7" n="1r" xml:id="page-pb-7"/><pb facs="#page-surface-8" n="1v" xml:id="page-pb-8"/><pb facs="#page-surface-9" n="2r" xml:id="page-pb-9"/><pb facs="#page-surface-10" n="2v" xml:id="page-pb-10"/><pb facs="#page-surface-11" n="3r" xml:id="page-pb-11"/><pb facs="#page-surface-12" n="3v" xml:id="page-pb-12"/><pb facs="#page-surface-13" n="4r" xml:id="page-pb-13"/><pb facs="#page-surface-14" n="4v" xml:id="page-pb-14"/><pb facs="#page-surface-15" n="5r" xml:id="page-pb-15"/><pb facs="#page-surface-16" n="5v" xml:id="page-pb-16"/><pb facs="#page-surface-17" n="6r" xml:id="page-pb-17"/><pb facs="#page-surface-18" n="6v" xml:id="page-pb-18"/><pb facs="#page-surface-19" n="7r" xml:id="page-pb-19"/><pb facs="#page-surface-20" n="7v" xml:id="page-pb-20"/><pb facs="#page-surface-21" n="8r" xml:id="page-pb-21"/><pb facs="#page-surface-22" n="8v" xml:id="page-pb-22"/><pb facs="#page-surface-23" n="9r" xml:id="page-pb-23"/><pb facs="#page-surface-24" n="9v" xml:id="page-pb-24"/><pb facs="#page-surface-25" n="10r" xml:id="page-pb-25"/><pb facs="#page-surface-26" n="10v" xml:id="page-pb-26"/><pb facs="#page-surface-27" n="11r" xml:id="page-pb-27"/><pb facs="#page-surface-28" n="11v" xml:id="page-pb-28"/><pb facs="#page-surface-29" n="12r" xml:id="page-pb-29"/><pb facs="#page-surface-30" n="12v" xml:id="page-pb-30"/><pb facs="#page-surface-31" n="13r" xml:id="page-pb-31"/><pb facs="#page-surface-32" n="13v" xml:id="page-pb-32"/><pb facs="#page-surface-33" n="14r" xml:id="page-pb-33"/><pb facs="#page-surface-34" n="14v" xml:id="page-pb-34"/><pb facs="#page-surface-35" n="15r" xml:id="page-pb-35"/><pb facs="#page-surface-36" n="15v" xml:id="page-pb-36"/><pb facs="#page-surface-37" n="16r" xml:id="page-pb-37"/><pb facs="#page-surface-38" n="16v" xml:id="page-pb-38"/><pb facs="#page-surface-39" n="17r" xml:id="page-pb-39"/><pb facs="#page-surface-40" n="17v" xml:id="page-pb-40"/><pb facs="#page-surface-41" n="18r" xml:id="page-pb-41"/><pb facs="#page-surface-42" n="18v" xml:id="page-pb-42"/><pb facs="#page-surface-43" n="19r" xml:id="page-pb-43"/><pb facs="#page-surface-44" n="19v" xml:id="page-pb-44"/><pb facs="#page-surface-45" n="20r" xml:id="page-pb-45"/><pb facs="#page-surface-46" n="20v" xml:id="page-pb-46"/><pb facs="#page-surface-47" n="21r" xml:id="page-pb-47"/><pb facs="#page-surface-48" n="21v" xml:id="page-pb-48"/><pb facs="#page-surface-49" n="22r" xml:id="page-pb-49"/><pb facs="#page-surface-50" n="22v" xml:id="page-pb-50"/><pb facs="#page-surface-51" n="23r" xml:id="page-pb-51"/><pb facs="#page-surface-52" n="23v" xml:id="page-pb-52"/><pb facs="#page-surface-53" n="24r" xml:id="page-pb-53"/><pb facs="#page-surface-54" n="24v" xml:id="page-pb-54"/><pb facs="#page-surface-55" n="25r" xml:id="page-pb-55"/><pb facs="#page-surface-56" n="25v" xml:id="page-pb-56"/><pb facs="#page-surface-57" n="26r" xml:id="page-pb-57"/><pb facs="#page-surface-58" n="26v" xml:id="page-pb-58"/><pb facs="#page-surface-59" n="27r" xml:id="page-pb-59"/><pb facs="#page-surface-60" n="27v" xml:id="page-pb-60"/><pb facs="#page-surface-61" n="28r" xml:id="page-pb-61"/><pb facs="#page-surface-62" n="28v" xml:id="page-pb-62"/><pb facs="#page-surface-63" n="29r" xml:id="page-pb-63"/><pb facs="#page-surface-64" n="29v" xml:id="page-pb-64"/><pb facs="#page-surface-65" n="30r" xml:id="page-pb-65"/><pb facs="#page-surface-66" n="30v" xml:id="page-pb-66"/><pb facs="#page-surface-67" n="31r" xml:id="page-pb-67"/><pb facs="#page-surface-68" n="31v" xml:id="page-pb-68"/><pb facs="#page-surface-69" n="32r" xml:id="page-pb-69"/><pb facs="#page-surface-70" n="32v" xml:id="page-pb-70"/><pb facs="#page-surface-71" n="33r" xml:id="page-pb-71"/><pb facs="#page-surface-72" n="33v" xml:id="page-pb-72"/><pb facs="#page-surface-73" n="34r" xml:id="page-pb-73"/><pb facs="#page-surface-74" n="34v" xml:id="page-pb-74"/><pb facs="#page-surface-75" n="35r" xml:id="page-pb-75"/><pb facs="#page-surface-76" n="35v" xml:id="page-pb-76"/><pb facs="#page-surface-77" n="36r" xml:id="page-pb-77"/><pb facs="#page-surface-78" n="36v" xml:id="page-pb-78"/><pb facs="#page-surface-79" n="37r" xml:id="page-pb-79"/><pb facs="#page-surface-80" n="37v" xml:id="page-pb-80"/><pb facs="#page-surface-81" n="38r" xml:id="page-pb-81"/><pb facs="#page-surface-82" n="38v" xml:id="page-pb-82"/><pb facs="#page-surface-83" n="39r" xml:id="page-pb-83"/><pb facs="#page-surface-84" n="39v" xml:id="page-pb-84"/><pb facs="#page-surface-85" n="40r" xml:id="page-pb-85"/><pb facs="#page-surface-86" n="40v" xml:id="page-pb-86"/><pb facs="#page-surface-87" n="41r" xml:id="page-pb-87"/><pb facs="#page-surface-88" n="41v" xml:id="page-pb-88"/><pb facs="#page-surface-89" n="42r" xml:id="page-pb-89"/><pb facs="#page-surface-90" n="42v" xml:id="page-pb-90"/><pb facs="#page-surface-91" n="43r" xml:id="page-pb-91"/><pb facs="#page-surface-92" n="43v" xml:id="page-pb-92"/><pb facs="#page-surface-93" n="44r" xml:id="page-pb-93"/><pb facs="#page-surface-94" n="44v" xml:id="page-pb-94"/><pb facs="#page-surface-95" n="45r" xml:id="page-pb-95"/><pb facs="#page-surface-96" n="45v" xml:id="page-pb-96"/><pb facs="#page-surface-97" n="46r" xml:id="page-pb-97"/><pb facs="#page-surface-98" n="46v" xml:id="page-pb-98"/><pb facs="#page-surface-99" n="47r" xml:id="page-pb-99"/><pb facs="#page-surface-100" n="47v" xml:id="page-pb-100"/><pb facs="#page-surface-101" n="48r" xml:id="page-pb-101"/><pb facs="#page-surface-102" n="48v" xml:id="page-pb-102"/><pb facs="#page-surface-103" n="49r" xml:id="page-pb-103"/><pb facs="#page-surface-104" n="49v" xml:id="page-pb-104"/><pb facs="#page-surface-105" n="50r" xml:id="page-pb-105"/><pb facs="#page-surface-106" n="50v" xml:id="page-pb-106"/><pb facs="#page-surface-107" n="51r" xml:id="page-pb-107"/><pb facs="#page-surface-108" n="51v" xml:id="page-pb-108"/><pb facs="#page-surface-109" n="52r" xml:id="page-pb-109"/><pb facs="#page-surface-110" n="52v" xml:id="page-pb-110"/><pb facs="#page-surface-111" n="53r" xml:id="page-pb-111"/><pb facs="#page-surface-112" n="53v" xml:id="page-pb-112"/><pb facs="#page-surface-113" n="54r" xml:id="page-pb-113"/><pb facs="#page-surface-114" n="54v" xml:id="page-pb-114"/><pb facs="#page-surface-115" n="55r" xml:id="page-pb-115"/><pb facs="#page-surface-116" n="55v" xml:id="page-pb-116"/><pb facs="#page-surface-117" n="56r" xml:id="page-pb-117"/><pb facs="#page-surface-118" n="56v" xml:id="page-pb-118"/><pb facs="#page-surface-119" n="[c] recto" xml:id="page-pb-119"/><pb facs="#page-surface-120" n="[c] verso" xml:id="page-pb-120"/><pb facs="#page-surface-121" n="[d] recto" xml:id="page-pb-121"/><pb facs="#page-surface-122" n="[d] verso" xml:id="page-pb-122"/><pb facs="#page-surface-123" n="rear cover, inner" xml:id="page-pb-123"/><pb facs="#page-surface-124" n="rear cover, outer" xml:id="page-pb-124"/><pb facs="#page-surface-125" n="spine" xml:id="page-pb-125"/></div></body></text></TEI>

@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11959">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, Trinity College, MS O.1.23</title>
+                <funder>The Polonsky Foundation</funder>
+                <principal>Suzanne Paul</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>University Library</publisher>
+
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made
+                        available for download are licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This
+                        metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+
+            <availability xml:id="watermark" status="restricted"><licence>Trinity College, Cambridge (CC BY-NC 4.0)</licence></availability></publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-TRINITY-O-00001-00023" xml:lang="en">
+                    <msIdentifier>
+                        <institution>Trinity College, Cambridge</institution>
+                        <repository>Trinity College Library</repository>
+                        <collection>Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, Trinity College, MS O.1.23</idno>
+                        <altIdentifier type="internal">
+                            <idno type="james">MS 1047</idno>
+                        </altIdentifier>
+                        <altIdentifier type="external">
+                            <idno type="diktyon">Diktyon 11959</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+
+                    <msContents>
+                        <summary>
+                            <seg type="para">This manuscript is a working autograph, first written
+                                in Crete by its author Michael Apostolis, or Apostolios (c. 1422-c.
+                                1480), probably in 1462. It contains a tract produced as part of an
+                                intellectual controversy over the relative merits of Plato and
+                                Aristotle, partiuclarly with regard to the compatibility of their
+                                theories with Christianity. The debate involved most of the leading
+                                Greek-speaking scholars of the mid-15th century, many of whom had
+                                settled in Italy. The manuscript contains numerous alterations and
+                                expansions of the initial draft.</seg>
+                            <seg type="para">The author was a native of <placeName ref="http://vocab.getty.edu/page/tgn/7002473">Constantinople</placeName> who had received an advanced
+                                education there under the famous teacher <name ref="http://viaf.org/viaf/206383504" type="person"><persName type="display">John Argyropoulos (c. 1416-1486)</persName><persName type="standard">Johannes Argyropulus</persName></name>.
+                                Apostolis was also a follower of the zealous Platonist and alleged
+                                neo-pagan <name ref="http://viaf.org/viaf/100222474" type="person"><persName type="display">George Gemistos Plethon (c.
+                                        1360-1452)</persName><persName type="standard">Gemistus
+                                        Plethon, George, active 15th century</persName></name>, and
+                                around 1449 he had felt compelled to address an oration to the
+                                emperor defending himself against accusations that he had become a
+                                worshipper of the ancient Greek gods.</seg>
+                            <seg type="para">When Constantinople fell to the Ottomans, Apostolis was
+                                captured and held prisoner for some months. Having secured his
+                                freedom, he sought the patronage of <name ref="http://viaf.org/viaf/100183781" type="person"><persName type="display">Cardinal Bessarion (1403-1472)</persName><persName type="standard">Bessarion, Cardinal,
+                                    1403-1472</persName></name>, the most distinguished of the
+                                Byzantine exiles in Italy. Failing to secure the teaching work he
+                                sought in Italy, Apostolis settled in Venetian-ruled Crete, where he
+                                was commissioned by Bessarion to acquire manuscripts for him, as
+                                part of the cardinal's efforts to preserve Greek learning in the
+                                face of the Ottoman conquests. He also worked as a scribe and
+                                apparently commissioned others to copy manuscripts for Bessarion and
+                                other patrons. Throughout his life he continued to petition the
+                                cardinal with complaints of poverty and unsuccessful requests to
+                                help him establish a school on Crete, or preferably to find a
+                                teaching position elsewhere.</seg>
+                            <seg type="para">The controversy over Plato and Aristotle originated
+                                with arguments for the superiority of Plato and the deficiencies of
+                                Aristotle put forward by Plethon, summed up in a work he released in
+                                about 1448. This line of argument arose out of Plethon's
+                                participation in the Byzantine delegation to the Council of
+                                Ferrara-Florence in 1437-1438, where Union had been concluded
+                                between the Eastern and Western Churches. Confronted at close
+                                quarters by the dominant position of Aristotle in western European
+                                scholarship, Plethon reacted vehemently. The dispute burst fully
+                                into life in the later 1450s, with a flurry of interventions on one
+                                side or the other. These included a criticism of Plato's views on
+                                the prior existence of universals to individuals which was written
+                                in <date calendar="gregorian" when="1459">1459</date> by <name ref="http://viaf.org/viaf/100189101" type="person"><persName type="display">Theodore Gazes (c. 1400-c.
+                                        1475)</persName><persName type="standard">Gazes, Theodoros,
+                                        approximately 1400-approximately 1475</persName></name>, a
+                                Byzantine exile teaching in Italy, structured as a dialogue between
+                                himself and Plethon. It was to this text that Apostolis responded
+                                with the far more polemical refutation contained in this manuscript,
+                                laced with personal invective against Gazes, including allegations
+                                of homosexuality and prostitution. Apostolis not only affirms the
+                                superiority of Plato over Aristotle, but asserts that Plethon too
+                                was superior to Aristotle and his contemporaries.</seg>
+                            <seg type="para">The text begins with a preface addressed to Bessarion,
+                                himself a former student of Plethon and an enthusiast for the
+                                philosophy of Plato. Gazes's tract was written in response to an
+                                essay by Bessarion regarding Aristotle's <foreign xml:lang="grc">Περὶ οὐσίας</foreign> (<foreign xml:lang="la">De
+                                    substantia</foreign>), in which the cardinal had sought an
+                                accommodation between Aristotle's views and Plethon's arguments
+                                against them. Apostolis presumably hoped that his intervention
+                                against Gazes would win him favour with his patron. He does not,
+                                however, seem to have presented the text to Bessarion, who became
+                                aware of it only indirectly. Apostolis sent a copy to a friend in
+                                Rome, a Cypriot monk named <name ref=" http://viaf.org/viaf/416556" type="person"><persName type="display">Isaias</persName><persName type="standard">Isaias Cyprius
+                                        ca. um 1430</persName></name>, who circulated it at his
+                                request in the scholarly community. One of those who read it was
+                                    <name ref="http://viaf.org/viaf/316400439" type="person"><persName type="display">Andronikos Kallistos (d.
+                                        1478)</persName><persName type="standard">Andronicus
+                                        Callistus, -1478</persName></name>, another
+                                Constantinopolitan exile and a cousin of Gazes, who wrote a response
+                                defending Gazes and Aristotle and then sent both texts to
+                                Bessarion.</seg>
+                            <seg type="para">Whatever hopes Apostolis had entertained of pleasing
+                                Bessarion with this work, his effort backfired. The extreme nature
+                                of his polemic prompted a letter from Bessarion to Apostolis, dated
+                                    <date calendar="gregorian" when="1462-05-19">19 May 1462</date>,
+                                in which the cardinal reprimanded Apostolis for his attacks on Gazes
+                                and Aristotle, and proclaimed his own great respect for both of the
+                                ancient philosophers. Gazes was himself one of Bessarion's protégés,
+                                while the cardinal, for all his own Platonist leanings, was
+                                committed to upholding the reputation of Aristotle, the chief
+                                philosophical authority of the Catholic Church.</seg>
+                            <seg type="para">Despite this blunder, Bessarion continued to employ
+                                Apostolis as before, and the incident failed to deter the author
+                                from being drawn back into the controversy. Another refutation of
+                                his tract was produced by another Byzantine exile, the Professor of
+                                Greek at Padua <name ref="http://viaf.org/viaf/120695715" type="person"><persName type="display">Demetrios Chalkokondyles (c. 1423-1511)</persName><persName type="standard">Calcondila, Demetrio,
+                                    1423-1511</persName></name>, prompting Apostolis in <date exclude="gregorian" when="1467">1467</date> to write another
+                                vituperative response, featuring mockery of Chalkokondyles's surname
+                                and aspersions on the sexual propriety of his mother.</seg>
+                            <seg type="para">The relationship between this manuscript and the
+                                surviving copies of the text is unclear. Its text differs greatly
+                                from that found across the rest of the textual tradition. Many
+                                passages found here are absent from the other manuscripts, including
+                                the many additions to the text which Apostolis made in the margins,
+                                but also much of the original content. Thus its seems likely that
+                                the copies derive from some other archetype, probably the manuscript
+                                sent to Isaias for circulation. It appears that Apostolis continued
+                                to rework the tract after he had first made it public, expanding on
+                                his first recension in the writing of the original text here and
+                                then expanding further in his revisions. He perhaps intended to
+                                improve on his first attempt before presenting the amended version
+                                to his patron. While for the most part the text of this manuscript
+                                is fuller than that of the copies, it lacks their last passage,
+                                which draws the argument to a conclusion, and ends rather abruptly.
+                                Hence it seems likely that the text here was left unfinished. It may
+                                be that Apostolis abandoned it on the arrival of Bessarion's letter,
+                                with its negative verdict on the whole undertaking.</seg>
+                            <seg type="para">Dr Christopher Wright</seg>
+                        </summary>
+
+                        <textLang mainLang="grc">Greek</textLang>
+
+                        <msItem n="1">
+                            <locus from="1r" to="21v">ff. 1r-21v</locus>
+                            <author ref="http://viaf.org/viaf/4965889"><persName type="display">Michael Apostolis (c. 1422-c. 1480)</persName><persName type="standard">Apostolius, Michael, approximately
+                                    1422-approximately 1480</persName></author>
+                            <title xml:lang="eng">Tract against the objections of Theodore Gazes
+                                against Plethon regarding Aristotle's <foreign xml:lang="la">De
+                                    substantia</foreign></title>
+                            <filiation>This manuscript is a working autograph of the text, and forms
+                                the basis of Powell's edition. It does not appear among the
+                                manuscripts consulted for the subsequent edition of <bibl>Ludwig
+                                    Mohler, <title level="m">Aus Bessarions Gelehrtenkreis:
+                                        Abhandlungen, Reden, Briefe von Bessarion, Theodoros Gazes,
+                                        Michael Apostolios, Andronikos Kallistos, Georgios
+                                        Trapezountios, Niccolò Perotti, Niccolò Capranica</title>
+                                        (<title level="s">Kardinal Bessarion als Theologe, Humanist
+                                        und Staatsmann</title>, vol. 3) (Paderborn 1942), <title level="s">Quellen und Forschungen aus dem Gebiete der
+                                        Geschichte</title> 24, pp. 159-169</bibl>. The text
+                                appearing in this manuscript differs very substantially from the
+                                bulk of the tradition and the Mohler edition derived from
+                                it.</filiation>
+                            <rubric><locus from="1r" to="1r">f. 1r</locus> Μιχαήλου Ἀποστόλου τοῦ
+                                Βυζαντίου· πρὸς τὰς ὑπὲρ Ἀριστοτέλους Περὶ οὐσίας κατὰ Πλήθωνος,
+                                Θεοδώρου τοῦ Γάζη ἀντιλείψεις:- Ἐπιστολὴ· πρὸς τὸν σοφώτατον
+                                Βησσαρίω</rubric>
+                            <incipit><locus from="1r" to="1r">f. 1r</locus> Οἶδα σε θειότατε
+                                καρδιναλέων· δυοῖν τούτοιν ὄντοιν ἡγεμόνοιν τῶν λόγων</incipit>
+                            <explicit><locus from="21v" to="21v">f. 21v</locus> τὸν δοξομανῆ κὰν
+                                τούτῳ Ἀριστοτέλη μιμούμενος</explicit>
+                        </msItem>
+                    </msContents>
+
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="chart">
+                                <support>
+                                    <material>Western paper, folded in <measure type="folding">quarto</measure>, with <measure type="chainlinesLeaf">6</measure> chainlines per leaf. Watermark:
+                                                <watermark><term type="watermarkMotif">Bull's
+                                                head</term> (<dimensions type="watermark" unit="mm">
+                                                <height cert="low" quantity="80">c. 80</height>
+                                                <width quantity="31">31</width>
+                                            </dimensions>) <note type="watermarkPosition">in the
+                                                gutter</note>, similar to <note>Briquet 14795,
+                                                14801</note>. These examples are dated to <date calendar="gregorian" notAfter="1474" notBefore="1465">1465-1474</date>.</watermark></material>
+                                </support>
+
+                                <extent>
+                                    <seg type="object">
+                                        <objectType>Codex </objectType>
+                                    </seg>
+                                    <seg type="leaf">
+                                        <num type="laterEndleaf" value="6">vi</num> + <num type="leaf" value="22">22</num> + <num type="laterEndleaf" value="6">vi</num></seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height quantity="199">199</height>
+                                            <width quantity="145">145</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+
+                                <foliation xml:id="modern">The manuscript is foliated with the
+                                    numbers [i-vi] + 1-22 + [vii-xii], in pencil, in Arabic
+                                    numerals, recto, upper right.</foliation>
+
+                                <collation>
+                                    <p>The manuscript consists of 3 quires, all quaternia.</p>
+                                    <p>
+                                        <list>
+                                            <item>Quires 1-2<hi rend="superscript">8</hi>
+                                                <locus from="1r" to="16v"> ff. 1-16</locus></item>
+                                            <item>Quire 3<hi rend="superscript">8-2</hi>
+                                                <locus from="17r" to="22v"> ff. 17-22 </locus>
+                                                <note>The last two folios have been cancelled,
+                                                  without loss of text.</note></item>
+                                        </list>
+                                    </p>
+                                    <signatures type="quire">There are original quire signatures in
+                                        Greek numerals, in brown ink, on the first folio of each
+                                        quire, recto, lower right. They survive on all quires
+                                        (αʹ-γʹ).</signatures>
+                                </collation>
+
+                                <condition>There are small tears to the edges of some folios, and
+                                    some water staining.</condition>
+                            </supportDesc>
+
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="24">A single column of 24 lines.
+                                        <dimensions type="written" unit="mm">
+                                        <height quantity="135">135</height>
+                                        <width quantity="85">85</width>
+                                    </dimensions>
+                                    <note>The author's additions to the text have sometimes been
+                                        made by continuing it directly into the lower margin with
+                                        additional lines of greater length. Some of this text has
+                                        been lost to cropping.</note>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <handDesc>
+                            <handNote scope="sole" xml:id="hand-1">
+                                <p>The manuscript was written by Michael Apostolis in <term type="script">mixed minuscule</term> script, with variable
+                                    slant, in brown ink, with modest variation in letter size. There
+                                    are deletions by strikethrough.</p>
+                                <p>Syllabic abbreviations and superscript word endings usually
+                                    appear only at the end of lines, but occasionally elsewhere.
+                                    Breathings are round and mute <hi rend="italic">iota</hi> is
+                                    subscript. There is decorative use of the double dot. Accents
+                                    are sometimes joined to breathings.</p>
+                                <p>The modern <hi rend="italic">eta</hi>, modern <hi rend="italic">nu</hi> and loop <hi rend="italic">epsilon</hi> are
+                                    present.</p>
+                                <p>Punctuation used includes the lower, middle and upper points,
+                                    lower comma, question mark and full stop.</p>
+                                <p>Headings are written in the same style in red ink.</p>
+                            </handNote>
+                        </handDesc>
+
+                        <decoDesc>
+                            <decoNote type="colInit">The beginning of sections are marked by minor
+                                initials in red ink.</decoNote>
+
+                            <decoNote type="unfilled">Some spaces have been left for initials which
+                                have not been added.</decoNote>
+                        </decoDesc>
+
+                        <additions>
+                            <p>There are extensive marginal annotations and additions to the text by
+                                the author.</p>
+                            <p>There are marginal annotations in brown ink, identifiying authors
+                                cited. The same hand added a note in Latin on <locus from="[i] recto" to="[i] recto">f. [i] recto</locus> citing
+                                Oxford manuscripts containing other works relevant to the same
+                                controversy.</p>
+                            <p>A note of content in Latin in brown ink has been added to <locus from="[i] recto" to="[i] recto">f. [i] recto</locus>: <q xml:lang="la">Michael Apostolius. pro Plethono contra Theodorum
+                                    Gazam de essentia defensio</q>.</p>
+                            <p>Further marginal notes of authors cited have been added in pencil,
+                                along with a list on <locus from="[i] recto" to="[i] recto">f. [i]
+                                    recto</locus> of works relevant to the controversy to be
+                                examined.</p>
+                        </additions>
+
+                        <bindingDesc>
+                            <binding calendar="gregorian" notAfter="1699" notBefore="1600">
+                                <p>17-century limp vellum binding, with plain pastedowns. The
+                                    classmark appears on patches on the spine.</p>
+                                <p>
+                                    <dimensions type="binding" unit="mm">
+                                        <height quantity="203">203</height>
+                                        <width quantity="150">150</width>
+                                        <depth quantity="13">13</depth>
+                                    </dimensions>
+                                </p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+
+                    <history>
+                        <origin>The manuscript is a working autograph, written and expanded by the
+                            author, Michael Apostolis (PLP 1201; RGK I 278, II 379, III 454) in
+                                <placeName ref="http://vocab.getty.edu/page/tgn/7012056">Crete</placeName>
+                            <origDate calendar="gregorian" notAfter="1462-05-19" notBefore="1459"> between 1459 and 1462</origDate>. The tract to which it responded
+                            was produced in 1459, while Bessarions's letter written in response to
+                            the text it contains is dated 19 May 1462. Its apparently unfinished
+                            state suggests that Apostolis may still have been working on it in 1462,
+                            until interrupted by the arrival of Bessarion's reprimand.</origin>
+
+                        <acquisition calendar="gregorian" when="1738">Donated by the antiquary <name ref="http://viaf.org/viaf/62981706" role="fmo" type="person"><persName type="display">Roger Gale
+                                    (1672-1744)</persName><persName type="standard">Gale, Roger,
+                                    1672-1744</persName></name> in 1738.</acquisition>
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <p/>
+                            </recordHist>
+                            <availability status="restricted">
+                                <p>Visitors to Trinity College who wish to consult Special Collections material
+                                    are required to apply to the Library in advance of their visit. For information
+                                    on eligibility and admission procedures see: <ref target="https://www.trin.cam.ac.uk/library/wren-library/information-for-readers/">Trinity College: Information for Readers</ref>.</p>
+                            </availability>
+                        </adminInfo>
+
+                            <listBibl>
+                                <biblStruct corresp="http://zotero.org/groups/276440/items/Q2XTA4BA" type="book" xml:id="James1902">
+                                    <monogr>
+                                        <title level="m">The western manuscripts in the library of
+                                            Trinity College : a descriptive catalogue</title>
+                                        <author><forename>M. R. (Montague
+                                                Rhodes)</forename><surname>James</surname></author>
+                                        <imprint>
+                                            <pubPlace>Cambridge</pubPlace>
+                                            <biblScope unit="volume">3</biblScope>
+                                            <publisher>Cambridge University Press</publisher>
+                                            <date>1902</date>
+                                        </imprint>
+                                    </monogr>
+                                </biblStruct>
+                                <biblStruct corresp="http://zotero.org/groups/276440/items/J6XWVN95" type="journalArticle" xml:id="Powell1938">
+                                    <analytic>
+                                        <title level="a">Michael Apostolios gegen Theodoros
+                                            Gaza</title>
+                                        <author><forename>J. Enoch (John
+                                            Enoch)</forename><surname>Powell</surname></author>
+                                    </analytic>
+                                    <monogr>
+                                        <title level="j">Byzantinische Zeitschrift</title>
+                                        <imprint>
+                                            <biblScope unit="volume">38</biblScope>
+                                            <biblScope unit="page">71-86</biblScope>
+                                            <date>1938</date>
+                                        </imprint>
+                                    </monogr>
+                                </biblStruct>
+                                <biblStruct corresp="http://zotero.org/groups/276440/items/V44FKBZ3" type="journalArticle" xml:id="Masai1946">
+                                    <analytic>
+                                        <title level="a">Un Περὶ τῆς οὐσίας faussement attribué a
+                                            Michel Apostolès</title>
+                                        <author><forename>F.</forename><surname>Masai</surname></author>
+                                    </analytic>
+                                    <monogr>
+                                        <title level="j">Scriptorium. Revue internationale des
+                                            études relatives aux manuscrits</title>
+                                        <imprint>
+                                            <biblScope unit="volume">1</biblScope>
+                                            <biblScope unit="page">162</biblScope>
+                                            <date>1946</date>
+                                        </imprint>
+                                    </monogr>
+                                </biblStruct>
+                                <biblStruct corresp="http://zotero.org/groups/276440/items/VCK93XKZ" type="book" xml:id="Gamillscheg1981">
+                                    <monogr>
+                                        <title level="m">Repertorium der griechischen Kopisten,
+                                            800-1600. I. Grossbritannien</title>
+                                        <author><forename>Ernst</forename><surname>Gamillscheg</surname></author>
+                                        <author><forename>Dieter</forename><surname>Harlfinger</surname></author>
+                                        <imprint>
+                                            <pubPlace>Wien</pubPlace>
+                                            <publisher>Verlag der Österreichischen Akademie der
+                                                Wissenschaften</publisher>
+                                            <date>1981</date>
+                                        </imprint>
+                                    </monogr>
+                                    <series><title level="s">Veröffentlichungen der Kommission für
+                                        Byzantinistik</title><biblScope unit="volume">Bd.
+                                            3</biblScope></series>
+                                </biblStruct>
+                            </listBibl>                        
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject
+                            Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh2010106079">Philosophy,
+                                Ancient--Early works to 1800</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2022-02-21">
+                <persName>Christopher Wright</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+
+   <facsimile>
+        <graphic decls="#document-thumbnail" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00001"/>
+        <surface n="left board, outside" xml:id="i1">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00001" width="3840px"/>
+        </surface>
+        <surface n="left boad, inside" xml:id="i2">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00002" width="3840px"/>
+        </surface>
+        <surface n="[i] recto" xml:id="i3">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00003" width="3840px"/>
+        </surface>
+        <surface n="[i] verso" xml:id="i4">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00004" width="3840px"/>
+        </surface>
+        <surface n="[ii] recto" xml:id="i5">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00005" width="3840px"/>
+        </surface>
+        <surface n="[ii] verso" xml:id="i6">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00006" width="3840px"/>
+        </surface>
+        <surface n="[iii] recto" xml:id="i7">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00007" width="3840px"/>
+        </surface>
+        <surface n="[iii] verso" xml:id="i8">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00008" width="3840px"/>
+        </surface>
+        <surface n="[iv] recto" xml:id="i9">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00009" width="3840px"/>
+        </surface>
+        <surface n="[iv] verso" xml:id="i10">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00010" width="3840px"/>
+        </surface>
+        <surface n="[v] recto" xml:id="i11">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00011" width="3840px"/>
+        </surface>
+        <surface n="[v] verso" xml:id="i12">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00012" width="3840px"/>
+        </surface>
+        <surface n="[vi] recto" xml:id="i13">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00013" width="3840px"/>
+        </surface>
+        <surface n="[vi] verso" xml:id="i14">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00014" width="3840px"/>
+        </surface>
+        <surface n="1r" xml:id="i15">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00015" width="3840px"/>
+        </surface>
+        <surface n="1v" xml:id="i16">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00016" width="3840px"/>
+        </surface>
+        <surface n="2r" xml:id="i17">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00017" width="3840px"/>
+        </surface>
+        <surface n="2v" xml:id="i18">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00018" width="3840px"/>
+        </surface>
+        <surface n="3r" xml:id="i19">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00019" width="3840px"/>
+        </surface>
+        <surface n="3v" xml:id="i20">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00020" width="3840px"/>
+        </surface>
+        <surface n="4r" xml:id="i21">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00021" width="3840px"/>
+        </surface>
+        <surface n="4v" xml:id="i22">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00022" width="3840px"/>
+        </surface>
+        <surface n="5r" xml:id="i23">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00023" width="3840px"/>
+        </surface>
+        <surface n="5v" xml:id="i24">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00024" width="3840px"/>
+        </surface>
+        <surface n="6r" xml:id="i25">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00025" width="3840px"/>
+        </surface>
+        <surface n="6v" xml:id="i26">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00026" width="3840px"/>
+        </surface>
+        <surface n="7r" xml:id="i27">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00027" width="3840px"/>
+        </surface>
+        <surface n="7v" xml:id="i28">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00028" width="3840px"/>
+        </surface>
+        <surface n="8r" xml:id="i29">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00029" width="3840px"/>
+        </surface>
+        <surface n="8v" xml:id="i30">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00030" width="3840px"/>
+        </surface>
+        <surface n="9r" xml:id="i31">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00031" width="3840px"/>
+        </surface>
+        <surface n="9v" xml:id="i32">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00032" width="3840px"/>
+        </surface>
+        <surface n="10r" xml:id="i33">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00033" width="3840px"/>
+        </surface>
+        <surface n="10v" xml:id="i34">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00034" width="3840px"/>
+        </surface>
+        <surface n="11r" xml:id="i35">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00035" width="3840px"/>
+        </surface>
+        <surface n="11v" xml:id="i36">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00036" width="3840px"/>
+        </surface>
+        <surface n="12r" xml:id="i37">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00037" width="3840px"/>
+        </surface>
+        <surface n="12v" xml:id="i38">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00038" width="3840px"/>
+        </surface>
+        <surface n="13r" xml:id="i39">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00039" width="3840px"/>
+        </surface>
+        <surface n="13v" xml:id="i40">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00040" width="3840px"/>
+        </surface>
+        <surface n="14r" xml:id="i41">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00041" width="3840px"/>
+        </surface>
+        <surface n="14v" xml:id="i42">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00042" width="3840px"/>
+        </surface>
+        <surface n="15r" xml:id="i43">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00043" width="3840px"/>
+        </surface>
+        <surface n="15v" xml:id="i44">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00044" width="3840px"/>
+        </surface>
+        <surface n="16r" xml:id="i45">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00045" width="3840px"/>
+        </surface>
+        <surface n="16v" xml:id="i46">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00046" width="3840px"/>
+        </surface>
+        <surface n="17r" xml:id="i47">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00047" width="3840px"/>
+        </surface>
+        <surface n="17v" xml:id="i48">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00048" width="3840px"/>
+        </surface>
+        <surface n="18r" xml:id="i49">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00049" width="3840px"/>
+        </surface>
+        <surface n="18v" xml:id="i50">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00050" width="3840px"/>
+        </surface>
+        <surface n="19r" xml:id="i51">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00051" width="3840px"/>
+        </surface>
+        <surface n="19v" xml:id="i52">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00052" width="3840px"/>
+        </surface>
+        <surface n="20r" xml:id="i53">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00053" width="3840px"/>
+        </surface>
+        <surface n="20v" xml:id="i54">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00054" width="3840px"/>
+        </surface>
+        <surface n="21r" xml:id="i55">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00055" width="3840px"/>
+        </surface>
+        <surface n="21v" xml:id="i56">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00056" width="3840px"/>
+        </surface>
+        <surface n="[vii] recto" xml:id="i57">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00057" width="3840px"/>
+        </surface>
+        <surface n="[vii] verso" xml:id="i58">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00058" width="3840px"/>
+        </surface>
+        <surface n="[viii] recto" xml:id="i59">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00059" width="3840px"/>
+        </surface>
+        <surface n="[viii] verso" xml:id="i60">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00060" width="3840px"/>
+        </surface>
+        <surface n="[ix] recto" xml:id="i61">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00061" width="3840px"/>
+        </surface>
+        <surface n="[ix] verso" xml:id="i62">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00062" width="3840px"/>
+        </surface>
+        <surface n="[x] recto" xml:id="i63">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00063" width="3840px"/>
+        </surface>
+        <surface n="[x] verso" xml:id="i64">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00064" width="3840px"/>
+        </surface>
+        <surface n="[xi] recto" xml:id="i65">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00065" width="3840px"/>
+        </surface>
+        <surface n="[xi] verso" xml:id="i66">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00066" width="3840px"/>
+        </surface>
+        <surface n="[xii] recto" xml:id="i67">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00067" width="3840px"/>
+        </surface>
+        <surface n="[xii] verso" xml:id="i68">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00068" width="3840px"/>
+        </surface>
+        <surface n="right board, inside" xml:id="i69">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00069" width="3840px"/>
+        </surface>
+        <surface n="right board, outside" xml:id="i70">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00070" width="3840px"/>
+        </surface>
+        <surface n="spine" xml:id="i71">
+            <graphic decls="#downloadImageRights #download" height="5172px" rend="portrait" url="MS-TRINITY-O-00001-00023-000-00071" width="3840px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#i1" n="left board, outside" xml:id="pb-leftboard,outside"/>
+                <pb facs="#i2" n="left boad, inside" xml:id="pb-leftboad,inside"/>
+                <pb facs="#i3" n="[i] recto" xml:id="pb-irecto"/>
+                <pb facs="#i4" n="[i] verso" xml:id="pb-iverso"/>
+                <pb facs="#i5" n="[ii] recto" xml:id="pb-iirecto"/>
+                <pb facs="#i6" n="[ii] verso" xml:id="pb-iiverso"/>
+                <pb facs="#i7" n="[iii] recto" xml:id="pb-iiirecto"/>
+                <pb facs="#i8" n="[iii] verso" xml:id="pb-iiiverso"/>
+                <pb facs="#i9" n="[iv] recto" xml:id="pb-ivrecto"/>
+                <pb facs="#i10" n="[iv] verso" xml:id="pb-ivverso"/>
+                <pb facs="#i11" n="[v] recto" xml:id="pb-vrecto"/>
+                <pb facs="#i12" n="[v] verso" xml:id="pb-vverso"/>
+                <pb facs="#i13" n="[vi] recto" xml:id="pb-virecto"/>
+                <pb facs="#i14" n="[vi] verso" xml:id="pb-viverso"/>
+                <pb facs="#i15" n="1r" xml:id="pb-1r"/>
+                <pb facs="#i16" n="1v" xml:id="pb-1v"/>
+                <pb facs="#i17" n="2r" xml:id="pb-2r"/>
+                <pb facs="#i18" n="2v" xml:id="pb-2v"/>
+                <pb facs="#i19" n="3r" xml:id="pb-3r"/>
+                <pb facs="#i20" n="3v" xml:id="pb-3v"/>
+                <pb facs="#i21" n="4r" xml:id="pb-4r"/>
+                <pb facs="#i22" n="4v" xml:id="pb-4v"/>
+                <pb facs="#i23" n="5r" xml:id="pb-5r"/>
+                <pb facs="#i24" n="5v" xml:id="pb-5v"/>
+                <pb facs="#i25" n="6r" xml:id="pb-6r"/>
+                <pb facs="#i26" n="6v" xml:id="pb-6v"/>
+                <pb facs="#i27" n="7r" xml:id="pb-7r"/>
+                <pb facs="#i28" n="7v" xml:id="pb-7v"/>
+                <pb facs="#i29" n="8r" xml:id="pb-8r"/>
+                <pb facs="#i30" n="8v" xml:id="pb-8v"/>
+                <pb facs="#i31" n="9r" xml:id="pb-9r"/>
+                <pb facs="#i32" n="9v" xml:id="pb-9v"/>
+                <pb facs="#i33" n="10r" xml:id="pb-10r"/>
+                <pb facs="#i34" n="10v" xml:id="pb-10v"/>
+                <pb facs="#i35" n="11r" xml:id="pb-11r"/>
+                <pb facs="#i36" n="11v" xml:id="pb-11v"/>
+                <pb facs="#i37" n="12r" xml:id="pb-12r"/>
+                <pb facs="#i38" n="12v" xml:id="pb-12v"/>
+                <pb facs="#i39" n="13r" xml:id="pb-13r"/>
+                <pb facs="#i40" n="13v" xml:id="pb-13v"/>
+                <pb facs="#i41" n="14r" xml:id="pb-14r"/>
+                <pb facs="#i42" n="14v" xml:id="pb-14v"/>
+                <pb facs="#i43" n="15r" xml:id="pb-15r"/>
+                <pb facs="#i44" n="15v" xml:id="pb-15v"/>
+                <pb facs="#i45" n="16r" xml:id="pb-16r"/>
+                <pb facs="#i46" n="16v" xml:id="pb-16v"/>
+                <pb facs="#i47" n="17r" xml:id="pb-17r"/>
+                <pb facs="#i48" n="17v" xml:id="pb-17v"/>
+                <pb facs="#i49" n="18r" xml:id="pb-18r"/>
+                <pb facs="#i50" n="18v" xml:id="pb-18v"/>
+                <pb facs="#i51" n="19r" xml:id="pb-19r"/>
+                <pb facs="#i52" n="19v" xml:id="pb-19v"/>
+                <pb facs="#i53" n="20r" xml:id="pb-20r"/>
+                <pb facs="#i54" n="20v" xml:id="pb-20v"/>
+                <pb facs="#i55" n="21r" xml:id="pb-21r"/>
+                <pb facs="#i56" n="21v" xml:id="pb-21v"/>
+                <pb facs="#i57" n="[vii] recto" xml:id="pb-viirecto"/>
+                <pb facs="#i58" n="[vii] verso" xml:id="pb-viiverso"/>
+                <pb facs="#i59" n="[viii] recto" xml:id="pb-viiirecto"/>
+                <pb facs="#i60" n="[viii] verso" xml:id="pb-viiiverso"/>
+                <pb facs="#i61" n="[ix] recto" xml:id="pb-ixrecto"/>
+                <pb facs="#i62" n="[ix] verso" xml:id="pb-ixverso"/>
+                <pb facs="#i63" n="[x] recto" xml:id="pb-xrecto"/>
+                <pb facs="#i64" n="[x] verso" xml:id="pb-xverso"/>
+                <pb facs="#i65" n="[xi] recto" xml:id="pb-xirecto"/>
+                <pb facs="#i66" n="[xi] verso" xml:id="pb-xiverso"/>
+                <pb facs="#i67" n="[xii] recto" xml:id="pb-xiirecto"/>
+                <pb facs="#i68" n="[xii] verso" xml:id="pb-xiiverso"/>
+                <pb facs="#i69" n="right board, inside" xml:id="pb-rightboard,inside"/>
+                <pb facs="#i70" n="right board, outside" xml:id="pb-rightboard,outside"/>
+                <pb facs="#i71" n="spine" xml:id="pb-spine"/>
+            </div>
+        </body>
+    </text>
+
+</TEI>

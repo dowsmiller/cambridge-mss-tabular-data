@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11834">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Cambridge, Corpus Christi College, MS 486</title>
+            <funder>The Polonsky Foundation (cataloguing). </funder>
+            <funder>Andrew W. Mellon Foundation (digital images). </funder>
+            <principal>Suzanne Paul</principal>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>University Library</publisher>
+            <availability default="false" status="restricted" xml:id="displayImageRights">
+               <p part="N">Zooming image © The Master and Fellows of Corpus Christi College,
+                        Cambridge.</p>
+               <!-- Copyright for college -->
+            </availability>
+            <availability default="false" status="restricted" xml:id="downloadImageRights">
+               <licence target="http://creativecommons.org/licenses/by-nc/3.0/"> Images made
+                        available for download are licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+            </availability>
+            <availability default="false" status="restricted" xml:id="metadataRights">
+               <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/"> This
+                        metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+            </availability>
+         <availability xml:id="watermark" status="restricted"><licence>Corpus Christi College, Cambridge (CC BY-NC 4.0)</licence></availability></publicationStmt>
+         <sourceDesc default="false">
+            <msDesc status="draft" xml:id="MS-CCCC-00486" xml:lang="en">
+               <msIdentifier>
+                  <institution>Corpus Christi College, Cambridge</institution>
+                  <repository>Parker Library</repository> 
+                  <collection>Manuscripts</collection>
+                  <idno type="shelfmark">Cambridge, Corpus Christi College, MS 486</idno>
+                  <altIdentifier type="external">
+                     <idno type="diktyon">Diktyon 11834</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <summary>
+                     <seg part="N" type="para">Cambridge, Corpus Christi College, MS 486 is a small
+                                codex that was copied around 1200, and which contains a
+                                    <title>Miscellany of Greek religious texts</title>, including:
+                                an excerpt of the Ecclesiasticus, a short section on the iambic
+                                metre, doctrinal responses by Gregory of Nyssa (c. 330-c. 395),
+                                Dionysius of Alexandria (d. c. 264), Nicon, and Peter, patriarch of
+                                Antioch and other unedited texts. Delle Donne (2014) pointed out
+                                that some texts in the manuscript have close links with other
+                                miscellanies or belong to textual traditions whose origin and
+                                circulation is located in southern Italy.</seg>
+                     <seg part="N" type="para">The manuscript retains its original medieval binding.
+                                As a result of the fragility of this binding it has only been
+                                possible to image the exterior and interior of the covers and ff.
+                                1r-9r.</seg>
+                     <seg part="N" type="para">Dr Matteo Di Franco</seg>
+                  </summary>
+                  <textLang mainLang="grc">Greek</textLang>
+                  <msItem n="1">
+                     <locus from="1r" to="9r">ff. 1r-94r</locus>
+                     <title xml:lang="en">Ecclesiasticus or Siracides 9,1-51,30 </title>
+                     <incipit defective="true">
+                        <locus from="1r" to="1r">f. 1r</locus> καὶ τοῦ
+                                κόλπου σου μηδὲ δείξης ἐπὶ σεαυτὸν παιδείαν πονηράν</incipit>
+                     <explicit>
+                        f. 94r ἐργάζεσθε τὸ ἔργον ὑμῶν πρὸ καιροῦ· καὶ
+                                δώσει τὸν μισθὸν ὑμῶν ἐν καιρῶ αὐτοῦ</explicit>
+                     <note anchored="true">Siracides 6,3 (κατα]φάγεσαι καὶ τοὺς καρπούς σου ἀπολέσεις) -8,7
+                                (ἐξ ἡμῶν γηράσκουσιν. (7) μὴ ἐπίχαιρε) is misplaced on
+                                183r-187v</note>
+                     <note anchored="true">TLG 0527.034</note>
+                     <note anchored="true">Defective at the beginning, with lacunae.</note>
+                  </msItem>
+                  <!--<msItem n="2">
+                     <locus>f. 94v</locus>
+                     <title xml:lang="en">Iambic verses on the iambic metre</title>
+                     <title xml:lang="la" type="alt">Iambici versus de iambi pedibus</title>
+                     <incipit>
+                        <locus>f. 94v</locus> τὸ τῶν ἰάμβων μέτρον ἐστὶν ἑξάπους ὁ
+                                ποῦς δὲ δισύλλαβος ὢν στεφηφόρε ποῦς δ' εἶς ἴαμβος προσφυῶς
+                                κεκλημένος</incipit>
+                     <explicit>
+                        <locus>f. 94v</locus> ταυτ' οὖν ἀκόυσας καὶ μαθὼν πάντων ἄναξ
+                                χάριν δίδου μοι σοὺς σοφωτάτους λόγους</explicit>
+                  </msItem>
+                  <msItem n="3">
+                     <locus>ff. 94v-96r</locus>
+                     <title xml:lang="en">A short tract on the Iambic metre</title>
+                     <title xml:lang="la" type="alt">De iambi pedibus et prosodia</title>
+                     <incipit>
+                        <locus>f. 94v</locus> Ἡ πρώτη χῶρα σύγκειται ἐκ βραχέως κὰι
+                                μακροῦ· οἷον λέων</incipit>
+                     <explicit>
+                        <locus>f. 96r</locus> ἰδοὺ ἐνταῦθα τὰ βραχέα δηλονότι τὸ ε
+                                καὶ ο ἀεὶ μακρά εἰσι θέσει οὐδέποτε δὲ βραχέα</explicit>
+                     <note anchored="true">ed. <bibl default="false" status="draft">S. Delle Donne, <hi rend="italic">Sedici giambi sul
+                                        giambo (per un imperatore?) e un trattatello sul giambo dal
+                                        ms. Corpus Christi College 486 di Cambridge</hi>, in
+                                    Medioevo greco, 13, 2013, p. 37-56</bibl>
+                     </note>
+                  </msItem>
+                  <msItem n="4">
+                     <locus>f. 96v</locus>
+                     <title xml:lang="eng">Greek Anthology Appendix IV, 116, ed. Cougny 1890
+                                ll. 1-19</title>
+                     <incipit>
+                        <locus>f. 96v</locus> ὀρθὰς φύλαττε τοῦ νοός σου τὰς φρένας καὶ
+                                κοιλίαν δάμαζε καὶ γλῶσσαν πλέον</incipit>
+                     <explicit>
+                        <locus>f. 96v</locus> τὸν ὄγκον ἐξόριζε τῆς ἐξουσίας· στρέφει
+                                γὰρ εἰς ἄκμωνα τὴν σφύραν χρόνος</explicit>
+                     <note anchored="true">TLG 7052.004</note>
+                     <note anchored="true">some later scribbles after the text</note>
+                  </msItem>
+                  <msItem n="5">
+                     <locus>ff. 97r-104r</locus>
+                     <author key="person_v103646160">Gregory of Nyssa</author>
+                     <title xml:lang="la">Ad Simplicium de fide</title>
+                     <rubric>
+                        <locus>f. 97r</locus> Τοῦ ἁγίου Γρηγορίου τουῦ Νύσσης πρ̀ος
+                                Συμπλόκιον τριβοῦνον περὶ πατρὸς υἱοῦ καὶ πνεύματος</rubric>
+                     <incipit>
+                        <locus>f. 97r</locus> Κελεύει ὁ θεὸς διὰ τοῦ προφήτου μηδένα
+                                πρόσφατον θεὸν εἶναι νομίζειν· μηδὲ προσκυνεῖν θεῶ
+                                ἀλλοτρίω</incipit>
+                     <explicit>
+                        <locus>f. 104r</locus> τοιαύτης βροντῆς γενόμενος ἀπαγγέλλει
+                                τὸν Χριστὸν καθὼς ὁ ἀπόστολος λέγει· ὅτι οὐδεὶς δύναται εἰπεῖν
+                                κύριον Ἰησοῦν Χριστόν, εἰ μὴ ἐν πνεύματι ἁγίω</explicit>
+                     <note anchored="true">PG 45, 136-145</note>
+                     <note anchored="true">CPG 3140</note>
+                     <note anchored="true">TLG 2017.004</note>
+                  </msItem>
+                  <msItem n="6">
+                     <locus>ff. 104r-124r</locus>
+                     <author key="person_v103646160">Gregory of Nyssa</author>
+                     <title xml:lang="la">Ad Ablabium quod non sint tres dei <note anchored="true">(with
+                                    lacunae)</note>
+                     </title>
+                     <rubric>
+                        <locus>f. 104r</locus> Τοῦ αὐτοῦ πρὸς Ἀβλάβιον· διὰ τί μίαν τὴν
+                                θεότητα ἐπὶ πατρὸς υἱοῦ καὶ πνεύματος ὁμολογοῦντες. τρεῖς θεοὺς
+                                λέγειν ἀπαγορεύομεν</rubric>
+                     <incipit>
+                        <locus>f. 104r</locus> Ὑμᾶς μὲν δίκαιόν ἐστι τοὺς ἀκμάζοντας ἐν
+                                πάση δυνάμει κατὰ τὸν ἔσω ἄνθρωπον. πρὸς τοὺς ἐναντίους τῆς ἀληθείας
+                                διαγωνίζεσθαι</incipit>
+                     <explicit>
+                        <locus>f. 124r</locus> διὰ τοῦτο κυρίως μία θεότης καὶ εἷς
+                                θεὸς καὶ τὰ ἄλλα πάντα τῶν θεοπρεπῶν ὀνομάτων μοναδικῶς
+                                ἐξαγγέλλεται· ὧ ἡ δόξα εἰς τοὺς αἰῶνας τῶν αἰώνων ἀμήν</explicit>
+                     <note anchored="true">PG 45, 116-136</note>
+                     <note anchored="true">CPG 3139</note>
+                     <note anchored="true">TLG 2017.003</note>
+                  </msItem>
+                  <msItem n="7">
+                     <locus>ff. 124r-132v</locus>
+                     <author key="person_v103646160">Gregory of Nyssa</author>
+                     <title xml:lang="la">Ad Graecos ex communibus notionibus <note anchored="true">(with
+                                    lacunae)</note>
+                     </title>
+                     <rubric>
+                        <locus>f. 124r</locus> Τοῦ αὐτοῦ πῶς τρία πρόσωπα λέγοντες ἐν τῆ
+                                θεότητι οὔ φαμεν τρεῖς θεούς πρὸς τοὺς Ἕλληνας ἀπὸ τῶν κοινῶν
+                                ἐννοιῶν</rubric>
+                     <incipit>
+                        <locus>f. 124r</locus> Εἰ τὸ θεὸς ὄνομα προσώπου δηλωτικὸν
+                                ὑπῆρχεν, τρία πρόσωπα λέγοντες ἐξ ἀνάγκης τρεῖς</incipit>
+                     <explicit>
+                        <locus>f. 132v</locus> ἀλλὰ ἕνα θεόν φαμεν τῶν ἁπάντων
+                                δημιουργόν· εἰ καὶ ἐν τρισὶ προσώποις, ἤγουν ὑποστάσεσι θεωρεῖται·
+                                πατρὸς καὶ υἱοῦ καὶ ἁγίου πνεύματος</explicit>
+                     <note anchored="true">PG 45, 178-185</note>
+                     <note anchored="true">CPG 3138</note>
+                     <note anchored="true">TLG 2017.002</note>
+                  </msItem>
+                  <msItem n="8">
+                     <locus>ff. 132v-147r</locus>
+                     <author key="person_v103646160">Gregory of Nyssa</author>
+                     <title xml:lang="la"> Epistula canonica ad Letoium</title>
+                     <rubric>
+                        <locus>f. 132v</locus> Τοῦ αὐτοῦ Γρηγορίου ἐπιστολὴ κανονικὴ
+                                πρὸς λητοίον ἐπίσκοπον μελιτινῆς</rubric>
+                     <incipit>
+                        <locus>f. 132v</locus> Ἓν καὶ τοῦτο τῶν εἰς τὴν ἁγίαν ἑορτὴν
+                                συντελούντων ἐστὶ· τὸ κατανοῆσαι ἡμᾶς τὴν ἔννομόν τε καὶ κανονικὴν
+                                ἐπὶ τῶν πεπλημμεληκότων οἰκονομίαν</incipit>
+                     <explicit>
+                        <locus>f. 147r</locus> τὸ γράμμα· καὶ οὐκ ἀτιμάσεις τὸ ξένιον
+                                κἄν τι μικρότερον τῆς σῆς μεγαλοφυΐας ἦ</explicit>
+                     <note anchored="true">PG 45, 221-236</note>
+                     <note anchored="true">CPG 3148</note>
+                     <note anchored="true">TLG 2017.076</note>
+                  </msItem>
+                  <msItem n="9">
+                     <locus>ff. 147r-152v</locus>
+                     <author key="person_v287805725">Dionysius Alexandrinus</author>
+                     <title xml:lang="la">Epistula ad Basilidem</title>
+                     <rubric>
+                        <locus>f. 147r</locus> Τοῦ μακαρίου Διονυσίου ἐπισκόπου
+                                Ἀλεξανδρείας ἐκ τῆς πρὸς Βασιλίδην ἐπιστολῆς. περὶ τοῦ μεγάλου
+                                σαββάτου πότε χρὴ ἀπονηστίζεσθαι· Διονύσιος Βασιλίδη τῶ ἀγαπητῶ μου
+                                υἱῶ. ἀδελφῶ συλλειτούργω. ἐν Κυρίω χαίρειν· ἀναγινώσκεται τῶ μεγάλω
+                                σαββάτω</rubric>
+                     <incipit>
+                        <locus>f. 147r</locus> Ἀπέστειλὰς μοι πιστότατε καὶ λογιώτατε
+                                υἱέ μου πυνθανόμενος καθ' ἥν ὥραν ἀπονηστίζεσθαι δεῖ</incipit>
+                     <explicit>
+                        <locus>f. 152v</locus> περὶ αὐτῶν ἀντιγράψεις· ἔρρωσθαί σε
+                                ἀγαπητέ μου υἱέ. ἐν εἰρήνη λειτουργοῦντα τῶ Κυρίω εὔχομαι</explicit>
+                     <note anchored="true">PG 10, 1272-1277</note>
+                     <note anchored="true">CPG 1569</note>
+                  </msItem>
+                  <msItem n="10">
+                     <locus>ff. 152v-153r</locus>
+                     <author key="person_v26126432">Peter of Alexandria</author>
+                     <title xml:lang="la">De paschate ad Tricentium</title>
+                     <title xml:lang="la" type="alt">Epistula canonica (fragmentum)</title>
+                     <rubric>
+                        <locus>f. 152v</locus> Τοῦ αὐτοῦ ἐκ τοῦ λόγου τοῦ εἰς τὸ πάσχα
+                                διατί νηστεύομεν τετράδα καὶ παρασκευήν</rubric>
+                     <incipit>
+                        <locus>f. 152v</locus> Οὐκ ἐγκαλέσει τίς ἡμῖν παρατηρουμένοις
+                                τετράδα καὶ παρασκευήν</incipit>
+                     <explicit>
+                        <locus>f. 153r</locus> ἐν ἧ οὐδὲ γόνατα κλίνειν
+                                παρειλήφαμεν</explicit>
+                     <note anchored="true">CPG 1640.2</note>
+                     <note anchored="true">TLG 2962.006</note>
+                  </msItem>
+                  <msItem n="11">
+                     <locus>ff. 153r-154v</locus>
+                     <author>Nicon Montis Nigri</author>
+                     <title xml:lang="la">Expositio de ieiunio Deiparae</title>
+                     <rubric>
+                        <locus>f. 153r</locus> Τοῦ ὁσιωτάτου Νίκονος μοναχοῦ τῆς μονῆς
+                                τῆς ἁγίας Θεοτόκου τῆς Ῥαιθοῦ εἴδησις περὶ τῆς πανσέπτου νηστείας
+                                τῆς ὑπεραγίας Θεοτόκου καὶ ἀειπαρθένου Μαρίας</rubric>
+                     <incipit>
+                        <locus>f. 153r</locus> Χρὴ εἰδέναι ὅτι ἡ τῆς ὑπερενδόξου
+                                Θεοτόκου νηστεία οὐ κατὰ τάξιν ἐγγράφως κεῖται</incipit>
+                     <explicit>
+                        <locus>f. 154v</locus> γραφικῆς μαρτυρίας· ἀνθρώποις πείθεσθαι
+                                καὶ περιφέρεσθαι· ὦδε κακεῖσε πρὸς τὰς ἑκάστου ἐπιθυμίας</explicit>
+                  </msItem>
+                  <msItem n="12">
+                     <locus>ff. 154v-166v</locus>
+                     <author>Nicon Montis Nigri</author>
+                     <title xml:lang="la">Epistula de ieiunio Deiparae</title>
+                     <rubric>
+                        <locus>f. 154v</locus> Τοῦ αὐτοῦ πρὸς τὸν αἰτησάμενον παρ' αὐτοῦ
+                                τῆς ὑπερενδόξου Θεοτόκου νηστείας</rubric>
+                     <incipit>
+                        <locus>f. 154v</locus> Ἐπειδήπερ ἡ αἴτησίς σου πνεύματι κύριε
+                                ἀδελφὲ εἰς ἐμὲ, περὶ <sic>τὴς</sic> ὑπερνδόξου Θεοτόκου νηστείας, ἥν
+                                ὅπως ἔχης ἐγγράφως</incipit>
+                     <explicit>
+                        <locus>f. 166v</locus> καὶ τῆς αὐτοῦ ἀχράντου ματρὸς ἱκεσίαις
+                                καὶ πάντων τῶν ἁγίων ἐλεηθείημεν πάντες εἰς σωτηρίαν ὁμοῦ σώματος
+                                καὶ ψυχῆς. ἀμὴν</explicit>
+                  </msItem>
+                  <msItem n="13">
+                     <locus>ff. 166v-168r</locus>
+                     <title xml:lang="la">De Paphnutio episcopo</title>
+                     <rubric>
+                        <locus>f. 166v</locus> Περὶ Παφνουτίου ἐπισκόπου</rubric>
+                     <incipit>
+                        <locus>f. 166v</locus> Παφνουτίος ἐπίσκοπος, ὅστις ἦν ἐκ μιᾶς
+                                πόλεως τῆς ἄνω Θηβαΐδος, οὗτος δὲ ἦν ἀνὴρ θεοφιλὴς καὶ ἀσκητὴς ὡς
+                                καὶ σημεῖα</incipit>
+                     <explicit>
+                        <locus>f. 168r</locus> τοῖς τοῦ Παφνουτίου λόγοις διὸ καὶ τὴν
+                                περὶ τούτου ζήτησιν ἔπαυσαν τὴν γνώμην <sic>καταλίψαντες</sic> τοῖς
+                                βουλομένοις ἀπέχεσθαι</explicit>
+                  </msItem>
+                  <msItem n="14">
+                     <locus>ff. 168r-171v l. 13</locus>
+                     <title xml:lang="la">Expositio brevis de ieiunio sanctae quadragesimae,
+                                hebdomadis quadragesimae praecedentis atque in hebdomade passionis
+                                Domini et de quaestionibus variis</title>
+                     <rubric>
+                        <locus>f. 168r</locus> Εἴδησις ἀκριβὴς καὶ σύντομος περί τε τῆς
+                                νηστείας τῆς ἁγίας τεσσακοστῆς καὶ περὶ τῆς πρὸ αὐτῆς
+                                    <sic>καθαρισίμου</sic> ἑβδομάδος καὶ τῆς μετ' αὐτὴν μεγάλης
+                                ἑβδομάδος τοῦ πάθους τοῦ Κυρίου καὶ ἄλλων τινῶν ἐν τῶ μεταξὺ
+                                ἀναγκαίων ζητημάτων</rubric>
+                     <incipit>
+                        <locus>f. 168r</locus> Ἐν ἕξ μὲν ἡμέραις ὁ θεὸς τὸν ὁρώμενον
+                                τοῦτον κόσμον ἐδημιούργησεν· τῆ δὲ ἑβδόμη κατέπαυσε τῶν ἔργων αὐτοῦ
+                                καθὰ καὶ ἡ τῆς κοσμοποιΐας βίβλος δηλοποιεῖ</incipit>
+                     <explicit>
+                        <locus>f. 171v l. 13</locus> τὴν θλίψιν τῶν μαθητῶν· διὰ τοῦτο
+                                καὶ ἡμεῖς κατὰ τὸν αὐτὸν τρόπον νηστεύομεν, τὴν τότε αὐτῶν θλίψιν
+                                τῶν μαθητῶν ὑπομνήσαντες</explicit>
+                  </msItem>
+                  <msItem n="15">
+                     <locus>ff. 171v l. 13-173r</locus>
+                     <title xml:lang="la">De praesanctificatis per interrogationes et
+                                responsiones</title>
+                     <incipit>
+                        <locus>f. 171v l. 13</locus> Ζητητέον δὲ τίνος χάριν ἐν ταῖς
+                                νηστίμοις ἡμέραις τῆς ἁγίας τεσσαρακοστῆς ἡ λειτουργία τῶν
+                                    <sic>προηγισμένων</sic> τελεῖται, πλὴν τῆς δευτέρας καὶ τρίτης
+                                τῆς πρώτης ἑβδομάδος καὶ τῆς μεγάλης</incipit>
+                     <explicit>
+                        <locus>f. 173r</locus> ταῦτα τοίνυν ἐν συντόμω ἐξεθέμεθα κατὰ
+                                τὸ ὑμῖν ἐφικτὸν, δόξαν καὶ εὐχαριστείαν ἀναπέμποντες τῶ πατρὶ καὶ τῶ
+                                υἱῶ καὶ τῶ ἁγίω πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν
+                                αἰώνων. ἀμήν</explicit>
+                     <note anchored="true">The text runs as follows: ff. 171v l. 13, 176r (incipit δὴ ἡ μὲν
+                                ἁγία τεσσερακοστὴ, κετανοίας καὶ δακρύων) - 177v (explicit οὔτε τῆ
+                                ἄκρα ἐγκρατεία τοῦ μέλλοντος), 172r-173r</note>
+                  </msItem>
+                  <msItem n="16">
+                     <locus>ff. 173r-175v, 178r-178v</locus>
+                     <author key="person_v44658407">Michael Anchialus</author>
+                     <title xml:lang="la">Epistula ad Paulum electum Callipoleos a Patriarcha
+                                Constantinopolitano missa <note anchored="true">(with lacunae)</note>
+                     </title>
+                     <incipit>
+                        <locus>f. 173r</locus> Θεοφιλέστατε καὶ ἡγιασμἐνε μοι δέσποτα.
+                                περὶ ὧν ἡμᾶς ἐρώτησας ἐκκλησιαστικῶν ζητημάτων</incipit>
+                     <explicit>
+                        <locus>f. 178v</locus> καὶ περὶ τοῦ ποτηρίου ὁμοίως ὁ πρῶτος
+                                λαβὼν ἐκεῖνος πρῶτον ἀπὸ τοῦ ποτηρίου μετέχει. οὐδὲν ὑπελήφθη σοι
+                                καὶ ὑγίαινε</explicit>
+                     <note anchored="true">f. 175v ends at ταῦτα μὲν πρωίας παρὰ παιδὸς καθαροῦ καὶ γηστίμου,
+                                f. 178r begings at κατασπᾶται· ἢ καὶ ἐν τούτω ἁγίω καὶ συνήθει
+                                ἐνθάπτεται</note>
+                     <note anchored="true">ed. <bibl default="false" status="draft">A.I. Cozza-Luzi, <hi rend="italic">Novae Patrum
+                                        Bibliothecae ab Ang. Card. Maio collectae</hi>, t. X, Roma
+                                    1905, p. 167-171</bibl>
+                     </note>
+                  </msItem>
+                  <msItem n="17">
+                     <locus>ff. 178v-182v</locus>
+                     <author key="person_v66823042">Petrus Antiochenus</author>
+                     <title xml:lang="en">Epistula ad Dominicum Gradensem <note anchored="true">(defective at
+                                    the end)</note>
+                     </title>
+                     <rubric>
+                        <locus>ff. 178v-179r</locus> Ἐπιστολὴ Πέτρου πατριάρχου
+                                Ἀντιοχείας πρὸς τὸν ἀρχιεπίσκοπον Γραδένσης ἀκιλιγένσης τῆς
+                                Βενετίας</rubric>
+                     <incipit>
+                        <locus>f. 179r</locus> Τῶ σεβασμίω ἰσαγγέλω δεσπότη μου καὶ
+                                πνευματικῶ ἡμῶν ἀδελφῶ τ ῶ ἁγιωτάτω ἀρχιεπισκόπω Γραδένσης
+                                ἀκιλιγένσης τῆς Βενετίας Πέτρος ἐλέω θεοῦ πατριάρχης πόλεως
+                                Ἀντιοχείας</incipit>
+                     <explicit defective="true">
+                        <locus>f. 182v</locus> ὅτι πάντες οἱ κατὰ τὴν
+                                ἀνατολὴν ἀοίδιμοι πατέρες τὴν διὰ τοῦζυ[μίτου <note anchored="true">(ed. Will, p.
+                                    213, 27)</note>
+                     </explicit>
+                     <note anchored="true">ed. <bibl default="false" status="draft">W. Will, <hi rend="italic">Acta et scripta quae de
+                                        controversiis Ecclesiae Graecae et Latinae saeculo undecimo
+                                        composita extant</hi>, Leipzig-Marburg 1861,
+                                208-228</bibl>
+                     </note>
+                     <note anchored="true">TLG 3108.003</note>
+                  </msItem>-->
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>
+                           <material>Parchment, thick and low quality, arranged
+                                        flesh-to-flesh and hair-to-hair with hair outermost, (<term type="disposition">FHHF</term>). ff. i-ii are in
+                                        paper.</material>
+                        </support>
+                        <extent>
+                           <seg part="N" type="object">
+                              <objectType>Codex </objectType>
+                           </seg>
+                           <seg part="N" type="leaf">
+                              <measure quantity="187" type="leaf">187</measure> + <measure quantity="2" type="endleaf">ii</measure>
+                           </seg>, <seg part="N" type="dimensions">
+                              <dimensions type="leaf" unit="mm">
+                                 <height quantity="138">138</height>
+                                 <width max="94" min="86">86-94</width>
+                              </dimensions>
+                           </seg>
+                        </extent>
+                        <foliation> 1-187 + i-ii. Foliated in Arabic numerals, in pencil,
+                                    recto, upper right.</foliation>
+                        <collation>
+                           <p part="N">The manuscript consists of 24 quires: <list>
+                                 <item>Quires 1-21<hi rend="superscript">8</hi>
+                                    <locus from="1r" to="9r"> ff. 1-168</locus>
+                                 </item>
+                                 <item>Quire 22<hi rend="superscript">6</hi>
+                                    ff. 169-174
+                                 </item>
+                                 <item>Quire 23<hi rend="superscript">6+2</hi>
+                                    ff. 175-182, a bifolium is inserted
+                                                after the first leaf</item>
+                                 <item>Quire 24<hi rend="superscript">4+1</hi>
+                                    ff. 183-187
+                                 </item>
+                              </list>
+                           </p>
+                           <signatures>
+                              <p part="N">Signatures in Greek numerals in black ink on first
+                                            rectos, upper outer corner, from quire 1, from αʹ to
+                                            κγʹ: quire 3 is numbered as ββʹ.</p>
+                              <p part="N">A modern signatures in Arabic numerals in pencil on first
+                                            rectos, lower outer corner from quire 2.</p>
+                           </signatures>
+                        </collation>
+                        <condition> The manuscript is fragile, there is some cockling,
+                                    creasing, water staining and areas of dirt, in particula from f.
+                                    129. Water staining at the tail towards the gutter has caused
+                                    fading and blurring of text; text on ff. 66v, 71r, 187v is not
+                                    legible. ff. 155, 157-159, 169, 170, 173, 174 have been repaired
+                                    with Japanes paper.</condition>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="1" rulingMedium="hardpoint" writtenLines="16">
+                                    written space <dimensions type="written" unit="mm">
+                              <height quantity="90">90</height>
+                              <width quantity="55">55</width>
+                           </dimensions>
+                           <note anchored="true">16 lines per column.</note>
+                           <seg part="N" type="pricking">Pricking does not survive.</seg> Ruled in
+                                    hardpoint, system and type not identificable.</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote scope="major" xml:id="hand-1">
+                        <p part="N">Hand A copied nearly the whole manuscript in a <term type="script">mixed minuscule</term> script, upright or
+                                    slanting slightly to the right, in dark brown ink, of the late
+                                    12th or early 13th century. The rubrics are in red ink in an
+                                    Alexandrinian majuscule.</p>
+                     </handNote>
+                     <handNote scope="minor" xml:id="hand-2">
+                        <p part="N">Hand B: ff. 65v, 66v, 73v, 75r, in a <term type="script">mixed
+                                        minuscule</term> script, very similar to Hand A.</p>
+                     </handNote>
+                  </handDesc>
+                  <additions>
+                     <p part="N">A 18th/19th-century piece of paper is attached to the <locus from="right cover, inner" to="right cover, inner">right cover,
+                                    inner</locus> with a note on provenance and dating: <q>Greek MS
+                                    (o vellum) from Mount Athos, date about 1200 A.D.</q>
+                     </p>
+                  </additions>
+                  <bindingDesc>
+                     <binding calendar="gregorian" notAfter="1500" notBefore="1400">
+                        <p part="N">Binding alla greca with dark brown full skin covering over wooden
+                                    boards. The same decorative pattern is embossed on the front and
+                                    back cover: a rectangular frame enclosing various small floral
+                                    motifs and a smaller rectangle, barely visible. A pin is present
+                                    on the fore-edge of the front board, corresponding to a set of
+                                    two holes on the back board. Both endleaves are made of paper,
+                                    sewn through a little stub to the board.</p>
+                        <p part="N">
+                           <dimensions type="binding" unit="mm">
+                              <height quantity="140">365</height>
+                              <width quantity="285">285</width>
+                              <depth quantity="80">80</depth>
+                           </dimensions>
+                        </p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin instant="false">The manuscript was copied in the <origDate calendar="gregorian" instant="false" notAfter="1225" notBefore="1175"> late 12th or early 13th
+                                century</origDate>, after 1174. </origin>
+                  <provenance> The provenance of the manuscript is unclear; it may have come
+                            from Mount Athos, as stated on the note on the <locus from="right cover, inner" to="right cover, inner">pastedown</locus>.</provenance>
+                  <acquisition when="1877">
+                     <p part="N">Presented in 1877 by the Rev. J. Priestley Foster, vicar of
+                                Dartmouth.</p>
+                  </acquisition>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source><!-- ok --> Description (2021) draws on M.R. James, <hi rend="italic">A descriptive catalogue of the manuscripts in
+                                        the library of Corpus Christi College, Cambridge</hi>, vol.
+                                    2 (Cambridge: Cambridge University Press, 1912), p. 441-443; S.
+                                    Delle Donne, 'Il codice greco Corpus Christi College 486 di
+                                    Cambridge: contenuto, organizzazione testuale e legami con
+                                    l’Italia Meridionale', in <hi rend="italic">Revue d'histoire des
+                                        textes</hi>, 9 (2014) p. 375-393; and a description
+                                    available on Parker Library on the Web.</source>
+                     </recordHist>
+                     <availability status="restricted">
+                        <p>Visitors to Corpus Christi College who wish to consult Special Collections material
+                           are required to apply to the Parker Library in advance of their visit. For information
+                           on eligibility and admission procedures see: <ref target="https://www.corpus.cam.ac.uk/parker-library/information-readers">Parker Library: Information for Readers</ref>.</p>
+                     </availability>
+                  </adminInfo>
+                  <listBibl default="false">
+                     <biblStruct corresp="http://zotero.org/groups/276440/items/I7H3DD7L" default="false" status="draft" type="book" xml:id="Mühlenberg2008">
+                        <monogr>
+                           <title level="m">Gregorii Nysseni Epistula canonica</title>
+                           <author>
+                              <forename full="yes">E.</forename>
+                              <surname full="yes">Mühlenberg</surname>
+                           </author>
+                           <imprint>
+                              <pubPlace>Leiden, Boston</pubPlace>
+                              <publisher>Brill</publisher>
+                              <date instant="false">2008</date>
+                           </imprint>
+                        </monogr>
+                        <series>
+                           <title level="s">Gregorii Nysseni Opera</title>
+                           <biblScope unit="volume">III.5</biblScope>
+                        </series>
+                     </biblStruct>
+                     <biblStruct corresp="http://zotero.org/groups/276440/items/8GSPUV74" default="false" status="draft" type="journalArticle" xml:id="Delle_Donne2013">
+                        <analytic>
+                           <title level="a">Sedici giambi sul giambo (per un imperatore?) e
+                                        un trattatello sul giambo dal ms. Corpus Christi College 486
+                                        di Cambridge</title>
+                           <author>
+                              <forename full="yes">S.</forename>
+                              <surname full="yes">Delle Donne</surname>
+                           </author>
+                        </analytic>
+                        <monogr>
+                           <title level="j">Medioevo greco</title>
+                           <imprint>
+                              <biblScope unit="volume">13</biblScope>
+                              <biblScope unit="page">37-56</biblScope>
+                              <date instant="false">2013</date>
+                           </imprint>
+                        </monogr>
+                     </biblStruct>
+                     <biblStruct corresp="http://zotero.org/groups/276440/items/V6TALPT6" default="false" status="draft" type="journalArticle" xml:id="Delle_Donne2014">
+                        <analytic>
+                           <title level="a">Il codice greco Corpus Christi College 486 di
+                                        Cambridge : contenuto, organizzazione testuale e legami con
+                                        l’Italia Meridionale</title>
+                           <author>
+                              <forename full="yes">S.</forename>
+                              <surname full="yes">Delle Donne</surname>
+                           </author>
+                        </analytic>
+                        <monogr>
+                           <title level="j">Revue d'histoire des textes</title>
+                           <imprint>
+                              <biblScope unit="volume">9</biblScope>
+                              <biblScope unit="page">375-393</biblScope>
+                              <date instant="false">2014</date>
+                           </imprint>
+                        </monogr>
+                     </biblStruct>
+                     <biblStruct corresp="http://zotero.org/groups/276440/items/W9LLYUD3" default="false" status="draft" type="bookSection" xml:id="Binggeli2016">
+                        <analytic>
+                           <title level="a">Heurs et malheurs d'un euchologe salentin
+                                        (Melphictensis 10)</title>
+                           <author>
+                              <forename full="yes">André</forename>
+                              <surname full="yes">Jacob</surname>
+                           </author>
+                        </analytic>
+                        <monogr>
+                           <title level="m">Manuscripta graeca et orientalia : mélanges
+                                        monastiques et patristiques en l'honneur de Paul
+                                        Géhin</title>
+                           <editor>
+                              <forename full="yes">André</forename>
+                              <surname full="yes">Binggeli</surname>
+                           </editor>
+                           <editor>
+                              <forename full="yes">Anne</forename>
+                              <surname full="yes">Boud'hors</surname>
+                           </editor>
+                           <editor>
+                              <forename full="yes">Matthieu</forename>
+                              <surname full="yes">Cassin</surname>
+                           </editor>
+                           <imprint>
+                              <pubPlace>Leuven</pubPlace>
+                              <biblScope unit="page">442-467</biblScope>
+                              <publisher>Peeters</publisher>
+                              <date instant="false">2016</date>
+                           </imprint>
+                        </monogr>
+                     </biblStruct>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="LCSH">
+               <bibl default="false" status="draft">
+                  <ref target="https://authorities.loc.gov/">Library of Congress Subject
+                            Headings</ref>
+               </bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass default="false">
+            <keywords scheme="#LCSH">
+               <list>
+                  <item>
+                     <term key="subject_sh80001460">John Chrysostom, Saint, -407</term>
+                  </item>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change status="draft" when="2021-05-10">
+            <persName full="yes" instant="false">Matteo Di Franco</persName>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic decls="#document-thumbnail" rend="portrait" url="MS-CCCC-00486-000-00001"/>
+      <surface n="left cover, outer" xml:id="i1">
+         <graphic decls="#downloadImageRights #download" height="4204px" rend="portrait" url="MS-CCCC-00486-000-00001" width="3213px"/>
+      </surface>
+      <surface n="left cover, inner" xml:id="i2">
+         <graphic decls="#downloadImageRights #download" height="4042px" rend="portrait" url="MS-CCCC-00486-000-00002" width="2709px"/>
+      </surface>
+      <surface n="1r" xml:id="i3">
+         <graphic decls="#downloadImageRights #download" height="4026px" rend="portrait" url="MS-CCCC-00486-000-00003" width="2532px"/>
+      </surface>
+      <surface n="1v" xml:id="i4">
+         <graphic decls="#downloadImageRights #download" height="3814px" rend="portrait" url="MS-CCCC-00486-000-00004" width="2430px"/>
+      </surface>
+      <surface n="2r" xml:id="i5">
+         <graphic decls="#downloadImageRights #download" height="3930px" rend="portrait" url="MS-CCCC-00486-000-00005" width="2484px"/>
+      </surface>
+      <surface n="2v" xml:id="i6">
+         <graphic decls="#downloadImageRights #download" height="3736px" rend="portrait" url="MS-CCCC-00486-000-00006" width="2388px"/>
+      </surface>
+      <surface n="3r" xml:id="i7">
+         <graphic decls="#downloadImageRights #download" height="3984px" rend="portrait" url="MS-CCCC-00486-000-00007" width="2466px"/>
+      </surface>
+      <surface n="3v" xml:id="i8">
+         <graphic decls="#downloadImageRights #download" height="3780px" rend="portrait" url="MS-CCCC-00486-000-00008" width="2472px"/>
+      </surface>
+      <surface n="4r" xml:id="i9">
+         <graphic decls="#downloadImageRights #download" height="3996px" rend="portrait" url="MS-CCCC-00486-000-00009" width="2562px"/>
+      </surface>
+      <surface n="4v" xml:id="i10">
+         <graphic decls="#downloadImageRights #download" height="3822px" rend="portrait" url="MS-CCCC-00486-000-00010" width="2484px"/>
+      </surface>
+      <surface n="5r" xml:id="i11">
+         <graphic decls="#downloadImageRights #download" height="4008px" rend="portrait" url="MS-CCCC-00486-000-00011" width="2604px"/>
+      </surface>
+      <surface n="5v" xml:id="i12">
+         <graphic decls="#downloadImageRights #download" height="3829px" rend="portrait" url="MS-CCCC-00486-000-00012" width="2550px"/>
+      </surface>
+      <surface n="6r" xml:id="i13">
+         <graphic decls="#downloadImageRights #download" height="3978px" rend="portrait" url="MS-CCCC-00486-000-00013" width="2574px"/>
+      </surface>
+      <surface n="6v" xml:id="i14">
+         <graphic decls="#downloadImageRights #download" height="3798px" rend="portrait" url="MS-CCCC-00486-000-00014" width="2592px"/>
+      </surface>
+      <surface n="7r" xml:id="i15">
+         <graphic decls="#downloadImageRights #download" height="3978px" rend="portrait" url="MS-CCCC-00486-000-00015" width="2562px"/>
+      </surface>
+      <surface n="7v" xml:id="i16">
+         <graphic decls="#downloadImageRights #download" height="3782px" rend="portrait" url="MS-CCCC-00486-000-00016" width="2439px"/>
+      </surface>
+      <surface n="8r" xml:id="i17">
+         <graphic decls="#downloadImageRights #download" height="4038px" rend="portrait" url="MS-CCCC-00486-000-00017" width="2472px"/>
+      </surface>
+      <surface n="8v" xml:id="i18">
+         <graphic decls="#downloadImageRights #download" height="3816px" rend="portrait" url="MS-CCCC-00486-000-00018" width="2574px"/>
+      </surface>
+      <surface n="9r" xml:id="i19">
+         <graphic decls="#downloadImageRights #download" height="3960px" rend="portrait" url="MS-CCCC-00486-000-00019" width="2479px"/>
+      </surface>
+      <surface n="right cover, inner" xml:id="i20">
+         <graphic decls="#downloadImageRights #download" height="4185px" rend="portrait" url="MS-CCCC-00486-000-00020" width="2284px"/>
+      </surface>
+      <surface n="right cover, outer" xml:id="i21">
+         <graphic decls="#downloadImageRights #download" height="4258px" rend="portrait" url="MS-CCCC-00486-000-00021" width="2913px"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div>
+            <pb facs="#i1" n="left cover, outer" xml:id="pb-leftcover,outer"/>
+            <pb facs="#i2" n="left cover, inner" xml:id="pb-leftcover,inner"/>
+            <pb facs="#i3" n="1r" xml:id="pb-1r"/>
+            <pb facs="#i4" n="1v" xml:id="pb-1v"/>
+            <pb facs="#i5" n="2r" xml:id="pb-2r"/>
+            <pb facs="#i6" n="2v" xml:id="pb-2v"/>
+            <pb facs="#i7" n="3r" xml:id="pb-3r"/>
+            <pb facs="#i8" n="3v" xml:id="pb-3v"/>
+            <pb facs="#i9" n="4r" xml:id="pb-4r"/>
+            <pb facs="#i10" n="4v" xml:id="pb-4v"/>
+            <pb facs="#i11" n="5r" xml:id="pb-5r"/>
+            <pb facs="#i12" n="5v" xml:id="pb-5v"/>
+            <pb facs="#i13" n="6r" xml:id="pb-6r"/>
+            <pb facs="#i14" n="6v" xml:id="pb-6v"/>
+            <pb facs="#i15" n="7r" xml:id="pb-7r"/>
+            <pb facs="#i16" n="7v" xml:id="pb-7v"/>
+            <pb facs="#i17" n="8r" xml:id="pb-8r"/>
+            <pb facs="#i18" n="8v" xml:id="pb-8v"/>
+            <pb facs="#i19" n="9r" xml:id="pb-9r"/>
+            <pb facs="#i20" n="right cover, inner" xml:id="pb-rightcover,inner"/>
+            <pb facs="#i21" n="right cover, outer" xml:id="pb-rightcover,outer"/>
+         </div>
+      </body>
+   </text>
+</TEI>

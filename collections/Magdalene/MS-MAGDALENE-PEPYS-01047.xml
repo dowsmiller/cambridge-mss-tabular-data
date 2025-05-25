@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, Magdalene College, Pepys MS 1047</title>
+                <funder>Wellcome</funder>
+                <principal>James Freeman</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+                <availability default="false" status="restricted" xml:id="displayImageRights">
+                    <p part="N">Zooming image © Cambridge University Library, All rights reserved.</p>
+                </availability>
+                <availability default="false" status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability default="false" status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+            <availability xml:id="watermark" status="restricted"><licence>Magdalene College, Cambridge (CC BY-NC 4.0)</licence></availability></publicationStmt>
+            <sourceDesc>
+                <msDesc status="draft" xml:id="MS-MAGDALENE-PEPYS-01047" xml:lang="en">
+                    <msIdentifier>
+                        <institution>University of Cambridge</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Medieval Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, Magdalene College, Pepys MS 1047</idno>
+                    </msIdentifier>
+                    <head>Medical and culinary recipes</head>
+                    <msContents>
+                        <summary>
+                            <seg type="para">This manuscript contains a large collection of medical and culinary recipes in Middle English. It also
+                                contains a compilation of selections from the instruction manual in Middle English prose and verse that was known as
+                                the <hi rend="italic">The Book of Hawking, Hunting, and Blasing of Arms</hi> or <hi rend="italic">The Boke of St
+                                    Albans</hi>. This work was first printed by the so-called Schoolmaster Printer at St Albans in 1486. This print
+                                includes a treatise on hunting (<hi rend="italic">The manere of huntynge for all manere of bestys</hi>) that partly
+                                takes the form of an instruction from a 'Dame' to her 'child' and associates it with a 'Dam Julyans Barnes' in its
+                                colophon: <q>Explicit Dam Julyans Barnes in her boke of huntyng.</q>. Pepys MS 1047 does not contain materials from
+                                this hunting treatise but a selection from additional materials that follow it in the 1486 print of <hi rend="italic">The Boke of St Albans</hi>. Although these additional materials are not associated with 'Dam Julyans Barnes',
+                                Pepys MS 1047 does refer to her at the end of one of its texts (see f. <locus from="5v" to="5v">5v</locus>: 'Explicit
+                                Julyan Barne'). This makes Pepys MS 1047 one of two manuscript copies from <hi rend="italic">The Boke of St
+                                    Albans</hi> to ascribe (part of) its contents to this female author; the other manuscript is <bibl subtype="external" type="MS"><ref target="http://searcharchives-beta.bl.uk/permalink/f/ja42l1/IAMS040-002048171">London, British Library, Harley MS 2340</ref></bibl> [see Boffey (2004)].</seg>
+                            <seg type="para">A copy of the 1486 edition at Cambridge University Library contains annotations by William Burton
+                                (1575–1645), historian of Leicestershire, who calls 'Dam Julyans Barnes' the work's author and identifies her as 'Lady
+                                Julian Berners', the daughter of Sir James Berners, of Berners Roding, in Essex, and prioress of the Benedictine
+                                nunnery of Sopwell, situated a stone's throw away from St Albans. However, there are no sources to corroborate this
+                                identification. Moreover, it is unknown what involvement 'Dam Julyans Barnes' had with the work: instead of an author,
+                                she may have been an owner, commissioner, or copyist as well [see Boffey (2004)].</seg>
+                            <seg type="para">Dr Clarck Drieshen<lb/> Project Cataloguer<lb/> Cambridge University Library</seg>
+                        </summary>
+                        <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                        <msItem n="1">
+                            <locus from="1r" to="1r">1r</locus>
+                            <title key="work_2882">Precepts in -ly, excerpted from The Book of Hawking, Hunting, and Blasing of Arms [The Boke of St
+                                Albans]</title>
+                            <author key="person_v79041718">(?) Juliana Berners [Bernes, Barnes] (fl. 1460)</author>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="1r" to="1r">1r</locus> A ryse erly and serue god devoutly / And the worlde besyly</incipit>
+                            <explicit><locus from="1r" to="1r">1r</locus> And then slepe suverly / This ffesyk is holi</explicit>
+                            <listBibl>
+                                <bibl>IMEV 324</bibl>
+                                <bibl>NIMEV 324</bibl>
+                                <bibl>DIMEV 560.2</bibl>
+                                <bibl>eVK2 v0074470000</bibl>
+                                <bibl>Hands (1975)</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="2">
+                            <locus from="1r" to="1v">1r-1v</locus>
+                            <title key="">Medical recipe for the stomach</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="1r" to="1r">1r</locus> A medesyn for the stomake</rubric>
+                            <incipit><locus from="1v" to="1v">1v</locus> Take sugur and tempyr hit with water yn a dysh then streyn hit through a
+                                fayre clene cloth and put ther to the clenest floure that ye can gett</incipit>
+                            <explicit><locus from="1v" to="1v">1v</locus> And yf hit will not rolle take the more of the sugure. To a pynte of water
+                                take an egge</explicit>
+                            <listBibl>
+                                <bibl>eVK2 v0074480000</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="3">
+                            <locus from="1v" to="2r">1v-2r</locus>
+                            <title key="">Medical recipe for the toothache</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="1v" to="1v">1v</locus> ffor the toth ake</rubric>
+                            <incipit><locus from="1v" to="2r">1v-2r</locus> Take a baggyd cony and flee here and take oute the knottes and boyle them
+                                with brynstone in a littell water then take a glove of lethere and let the glove tille fro your hand to your elbowe
+                                and boyle them yn the foresaid water tyll hit be sodyn and then take an vnce or more of assafetida and boyle all to
+                                gedere etcaetera</incipit>
+                            <note>Full transcription.</note>
+                        </msItem>
+                        <msItem n="4">
+                            <locus from="2r" to="5v">2r-5v</locus>
+                            <title key="work_2882">List of collective nouns for animals and humans, excerpted from The Book of Hawking, Hunting, and
+                                Blasing of Arms [The Boke of St Albans]</title>
+                            <author key="person_v79041718">(?) Juliana Berners [Bernes, Barnes] (fl. 1460)</author>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="2r" to="2r">2r</locus> A herde of hertes / A herd of all dere / A herde swannys</incipit>
+                            <explicit><locus from="5v" to="5v">5v</locus> An vncredibelite of cukkoldys / A dysworschip of stottes</explicit>
+                            <finalRubric><locus from="5v" to="5v">5v</locus> Explicit Julyan Barne</finalRubric>
+                            <note>One of the entries, giving the collective noun for wives (? 'An vnpacyence of wyfys') on f. <locus from="4r" to="4r">4r</locus> has been deleted.</note>
+                            <note>A 15th-century hand has made two additions in darker ink to the list on f. <locus from="2r" to="2r">2r</locus>: 'A
+                                bevy of quayles' and 'A raskall of Rayles'.</note>
+                            <listBibl>
+                                <bibl>Hands (1975)</bibl>
+                                <bibl>Franzen (2012) [edition]</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="5">
+                            <locus from="6r" to="7r">6r-7r</locus>
+                            <title key=""> Collection of medical recipes</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="6r" to="6r">6r</locus> ffor the fflyx a gode medecyn: Take a pynte of rede wyne and a pynte of hote
+                                mylke drynke them to gether with .ij. callys of a gose at onys hote of .ij. coppys</incipit>
+                            <explicit><locus from="6v" to="7r">6v-7r</locus> ffor the colycke and the stone: Take sawmper and take the levys and dry
+                                them yn the son or yn a oven on a fayre stone or borde and make powder ther of and vse this poudere when ye be payned
+                                take þe powder and put hit in your potage or yn gode ale and ye schall be esyd</explicit>
+                            <note>The collection includes a non-medical recipes, for protecting clothes against the clothes moth ['To cause mogthys do
+                                no hurte to clothes'] (f. <locus from="6r" to="6r">6r</locus>).</note>
+                            <listBibl>
+                                <bibl>eVK2 v0074490000</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="6">
+                            <locus from="7r" to="7r">7r</locus>
+                            <title key=""> Method for catching a pike</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="7r" to="7r">7r</locus> To take a pyke yn the water</rubric>
+                            <incipit><locus from="7r" to="7r">7r</locus> Take a raw chekyn and clense hit and fyll hit blacke sope and knytt both the
+                                endys and pryck hit full of holys and ley hit in þe [crossed out: 'l'] ryver and as sone as he hath etyn hit he wyll
+                                comen to land</incipit>
+                            <note>Full transcription.</note>
+                        </msItem>
+                        <msItem n="7">
+                            <locus from="7r" to="13r">7r-13r</locus>
+                            <title key=""> Collection of culinary recipes</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="7r" to="7r">7r</locus> Gentyll manly Cokere and copyd of the Sergent to the kyng: To make a stew of
+                                flesh yf thy potte be .iiij. gallons do yn a quarte of wyn take fayre befe of the fore loyne or of the hynder loyne
+                                and myns itt and take gode capons with all</incipit>
+                            <explicit defective="true"><locus from="13r" to="13r">13r</locus> To make water of alym: Take a clene bassyn and put yn
+                                water and podour of alym and then set hit yn the hote sonne and</explicit>
+                            <note>The final recipe is imperfect because the lower portion of the page, containing its ending, has been cut out.</note>
+                        </msItem>
+                        <msItem n="8">
+                            <locus from="13v" to="13v">13v</locus>
+                            <title key="">Charm for staunching blood [Flum Jordan]</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <rubric defective="true"><locus from="13v" to="13v">13v</locus> flome Jurdeyn and styntyst the water vpon the stone so
+                                stynte thys blode of this man or woman .N. thy seruaunte throw vertu of thy holi name Jhesus and of thy cosyn swete
+                                Seynte John and say thys charme .v. tymes with .v. pater nosters In worshipp of the .v. wondys of oure lorde</rubric>
+                            <incipit defective="true"><locus from="13v" to="13v">13v</locus> A Charme for the blody flyx: In nomine + patris + et
+                                filij + et spiritus + Amen + Stabat Jhesus contra flumen Jordanis et posuit pedem suum et dixit sta aqua per deum te
+                                coniuro longinus miles latus domini nostri Jhesu Christi lancia perforauit et continuo exiuit sanguis redempcionis et
+                                aqua baptismatis. In nomine Jhesu sta resta + sanguis + In nomine filij + cessa sanguis + In nomine spiritus sancti +
+                                vt non exiat amplius sanguis nec gutta ab hoc homine vel ab hac muliere famula uel famulo dei .N. + Sicut credimus in
+                                sancta maria vera mater</incipit>
+                            <note>Full transcription; the charm is missing its beginning because the lower portion of the page, containing its
+                                beginning on the recto side, has been cut out.</note>
+                        </msItem>
+                        <msItem n="9">
+                            <locus from="14r" to="15v">14r-15v</locus>
+                            <title key=""> Collection of culinary recipes in prose</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="14r" to="14r">14r</locus> Egges in brewte: Take water and seth hit. in the same water breke your
+                                egges and cast ther on gyngere pepur and saferon than temper hit vp with swete mylke and boyle hit and then kerve
+                                chese and cast ther to small kutte and when hit ys ynowgh serue hit furth</incipit>
+                            <explicit><locus from="15r" to="15v">15r</locus> To make sauce for a pyke: Take the resette of the pyke and mynse hit
+                                small and put hit yn a dysche and take a gode mese of musterd and put of the best and fattest of þe broth a litell in
+                                the saucer and schakyd and put hit in the dysche with the resete and put yn a litell vyneager and a lytell vergys ther
+                                to and a grete quantite of synamom and sugure and lityll gynger and as ye fele hit with your mowth ye may all way
+                                amend hit etcaetera</explicit>
+                        </msItem>
+                        <msItem n="10">
+                            <locus from="15r" to="16v">15r-16v</locus>
+                            <title key=""> Collection of culinary recipes in verse</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="15r" to="15r">15r</locus> Sauce for a mawlerd rosted: Take onyons and mense them wele / Put sum yn
+                                thy mawlerd so have þou sele / And mynce mo vnyons I the ken / With the grece of the mawlerd seth hit then / Put ale
+                                musterd and hony there to / Boyle all to gedere tyll hit be enowe</incipit>
+                            <explicit><locus from="16r" to="16v">16r-16v</locus> All maner herbys gode for potage: Take the croppe of rede brere /
+                                Rede nettyll croppe and avance also / Prymerose violet to gedere most goo / Letyse betys and borage gode / Towne
+                                cresse and cresse that groweth yn flode / Clare savery tyme gode wone / Parcelle worth other herbe many one / All
+                                these herbes thow not for sake / But best of prymerose thow schalt take / Rede cole halfe parte of potage ys / ffro
+                                June to seynte Jame tyde I wys / Then wynter hys cowrse schall holde / In lent seson porray be bolde</explicit>
+                            <note>A collection of four recipes for making a sauce for roasted duck, preparing woodcock, and making fritters and a
+                                herbs potage; all are associated with the <hi rend="italic">Liber Cure Cocorum</hi> a collection of versified recipes
+                                in <bibl subtype="external" type="MS"><ref target="http://searcharchives-beta.bl.uk/permalink/f/ja42l1/IAMS040-002114345">London, British Library, Sloane
+                                        MS 1986</ref></bibl>.</note>
+                            <listBibl>
+                                <bibl>IMEV 3254.5, 2361, 854.8, 4187.5, 3255.5</bibl>
+                                <bibl>NIMEV 3254.5, 2361, 854.8, 4187.5, 3255.5</bibl>
+                                <bibl>DIMEV 5104.1, 3799.1, 1420.1, 6721.1, 5106.1</bibl>
+                                <bibl>eVK2 v0074500000</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="11">
+                            <locus from="16v" to="16v">16v</locus>
+                            <title key=""> Two culinary recipes in prose</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="16v" to="16v">16v</locus> To dyght a crabe: Take out all yn the crabe and lay hit yn a lityll
+                                Wyneagyre take and put a litell rede wyne there to and streyne all trowgh a streynnour take pouder of gynger syamomme
+                                and sugure and menge hem all to geder and put hym yn the schell and set hit on the fyre tyll he boyll and when hit ys
+                                boyled take hit of an cast pouder of syamomme and sugure apon and serue hit furth</incipit>
+                            <explicit><locus from="16v" to="16v">16v</locus> To make gode almondys mylke: Take brokyn sugure or for fawte ther of take
+                                claryfied hony and put hit into fayre water and set hit on the fyre and boyle hit and skymme hit clene and set hit
+                                besyde the fyre and let hit cole and then blanche thy almondys cast them yn a morter and bray them small temper hem vp
+                                with þe same water</explicit>
+                        </msItem>
+                        <msItem n="12">
+                            <locus from="17r" to="17v">17r-17v</locus>
+                            <title key=""> Collection of medical recipes</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="17r" to="17r">17r</locus> A gode medecyn provyd for the reynys of þe backe: Take perspere and herbe
+                                yve and bray hit and streyn hit with olde ale or ellys make a posset and drynk the ale fastyng or ellys to bedward and
+                                walke hafter the space of an houre thys ys a soffereyn medecyn and a goode</incipit>
+                            <explicit><locus from="17v" to="17v">17v</locus> ffor the tothe ake: Take a lytill rew and as moche of alym as a bene and
+                                a gale that ye make ynke of and breke all thes to gether and put them yn a litell bolster of lynne cloth a .ij.
+                                fyngurs length and lay hit a while yn vyneagyr and then lay hit betwene thy gome and thy cheke whan thow goyst to
+                                bed</explicit>
+                        </msItem>
+                        <msItem n="13">
+                            <locus from="17v" to="18r">17v-18r</locus>
+                            <title key=""> Recipe for the pestilence in prose and verse</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="17v" to="17v">17v</locus> The most souereyn medycyn for the pestilence concludyd be docturs of
+                                fesycke both beyonde the se and yn ynglond also abowte the kyng in late days yn the reyngne of kyng Edward the iiij.
+                                þe x yere</rubric>
+                            <incipit><locus from="18r" to="18r">18r</locus> Take a .ij. spownfull of water and .i. spounfull of vyneagyre and as moche
+                                tryacle as a bene and menge all thes togethur and drynke hit fastyng onys yn a weke or .ij. yn a moneth and yff thow
+                                be not infecte hit schall preserue the and if thow be infecte hit schall save thy lyffe with goode rewle thys ys
+                                provyd and hath saued iij or iiij houndere mens lyvys and wemen and chyldrn yn the cite of Wynchestere in the yere of
+                                the kyng above sayde</incipit>
+                            <explicit><locus from="18r" to="18r">18r</locus> All ys gode but best ys thys / God graunte vs all hevyn blysse -
+                                Amen</explicit>
+                            <note>Full transcription.</note>
+                            <listBibl>
+                                <bibl>IMEV 189.5</bibl>
+                                <bibl>NIMEV 189.5</bibl>
+                                <bibl>DIMEV 340.1</bibl>
+                                <bibl>eVK2 v0074510000</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="14">
+                            <locus from="18r" to="19r">18r-19r</locus>
+                            <title key=""> Collection of medical recipes</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="18r" to="18r">18r</locus> A gode medecyn for the syctica and oft provyd: Take a spounefull of the
+                                gall of a rede oxe and .ij. spounfull of the water of culerage and .iiij. of his awne water and as moche comyn as half
+                                a freynch note and as moche sewet as a small notte</incipit>
+                            <explicit><locus from="19r" to="19r">19r</locus> To breke a byle: Take grownde Ive and stampe hit and lay the Juse and
+                                lefys all on a playstere and lay there to</explicit>
+                        </msItem>
+                        <msItem n="15">
+                            <locus from="19r" to="19r">19r</locus>
+                            <title key=""> Culinary recipe to make a stew of herring</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="19r" to="19r">19r</locus> ffor to stew herynges</rubric>
+                            <incipit><locus from="19r" to="19r">19r</locus> Sethy heryng be well waterd and take owte the bone and take the myltys and
+                                lay them yn a fayre dysh of water</incipit>
+                            <explicit><locus from="19r" to="19r">19r</locus> and set them on þe fyre and so serue them furth</explicit>
+                        </msItem>
+                        <msItem n="16">
+                            <locus from="19r" to="20r">19r-20r</locus>
+                            <title key=""> Collection of medical recipes</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="19r" to="19r">19r</locus> for to knytte a senow or a vayne þat is brokyn: Take long wormes when they
+                                gendyre and þen stampe them in a vessell and lay to the sore yn maner of a playster</incipit>
+                            <explicit><locus from="19v" to="20r">19v-20r</locus> To kepe a ffebyll brayn fro dronkeschippe: Take yn the mornyng
+                                fastyng .v. levys of bytten and ete them and kepe sum in thy hand to smell ther to all the day among and thow shalt be
+                                save</explicit>
+                        </msItem>
+                        <msItem n="17">
+                            <locus from="20r" to="20r">20r</locus>
+                            <title key=""> Methods for capturing salmon and pike</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="20r" to="20r">20r</locus> ffor to take samons: Go to the pole there ye suppose the samon lyeth and
+                                make a litill hole hard by the water syde and set yn your candell and take a bryght skowryd basyn and set be hynd the
+                                candell and he wyll cum to the candell be kynd of nature</incipit>
+                            <explicit><locus from="20r" to="20r">20r</locus> for to take a pyke in a poole: Take gutte of a chekyn and make hym clene
+                                and take a litell blake sope and put hit yn a litylll of of [sic] the gutte and knyte fast both endys and prycke hit
+                                well with a pynne and cast hit into the pole where as the pyke ys and he ete hit he schall turne vp the bely and so
+                                dye etcaetera</explicit>
+                        </msItem>
+                        <msItem n="18">
+                            <locus from="20r" to="20v">20r-20v</locus>
+                            <title key=""> Two medical recipes</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="20r" to="20v">20r-20v</locus> Here begynneth gode medecyns and trew for the mygrayne: Take a serten
+                                of prymerose levys .ij. partes and the iij parte of yowrthe [crossed out: 'Juse a'] ivys and make juse ther of and
+                                take the seke man and lay hym vp ryght and put the juse at his nosetyrle [sic] on the contrary syde that þe grevance
+                                ys on and for enythyng þat may fall loke ther go no tyng yn his een</incipit>
+                            <explicit><locus from="20v" to="20v">20v</locus> for the stone a precious medycyn: Take the levys of warmode and make juse
+                                of the same herbe and take hit .iiij. morenynges fastyng a spounfull with olde ale and thys prouyd</explicit>
+                        </msItem>
+                        <msItem n="19">
+                            <locus from="20v" to="23r">20v-23r</locus>
+                            <title key="work_2882"> Treatise on hunting, hawks and hakwing, excerpted from The Book of Hawking, Hunting, and Blasing
+                                of Arms [The Boke of St Albans]</title>
+                            <author key="person_v79041718">(?) Juliana Berners [Bernes, Barnes] (fl. 1460)</author>
+                            <textLang mainLang="la">Latin</textLang>
+                            <rubric><locus from="20v" to="20v">20v</locus> To helpe an hawke of dyvers sekenes</rubric>
+                            <incipit><locus from="20v" to="20v">20v</locus> ffor the ree take the Juse of a dasy and hony and put hit yn the pallet of
+                                the mowth that hit may stoppe the holes that ben yn the rofe of þe mowth</incipit>
+                            <explicit><locus from="22v" to="22v">22v</locus> Thes ben of the swete foote: The fulmard the fychew the grey the ffox the
+                                wheysyll the marteron the squyrrell þe waturrate the otur the stote the polkat. And all thes ben gamys of the stynkyng
+                                ffoote</explicit>
+                            <finalRubric><locus from="23r" to="23r">23r</locus> Here endys havkyng with medsysn and castyng / And all that longys to
+                                goode hauke kepyng</finalRubric>
+                            <note>This treatise comprises various sections from The Book of Hawking, Hunting, and Blasing of Arms [The Boke of St
+                                Albans], including sections on the names of dogs, the work of different hounds, hunting terms, resting and mating, the
+                                hierarchy of hawks and owners, wines, the ages of a hawk, and hawk's diseases and remedies.</note>
+                            <listBibl>
+                                <bibl>IMEV 1197.2</bibl>
+                                <bibl>NIMEV 1197.2</bibl>
+                                <bibl>DIMEV 1968.1</bibl>
+                                <bibl>eVK2 v0074520000</bibl>
+                                <bibl>Hands (1975)</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="20">
+                            <locus from="23r" to="23v">23r-23v</locus>
+                            <title key=""> Prognostications based on the day of the week on which Christmas falls</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="23r" to="23r">23r</locus> That yere that Cristysmas day fallyth on sonday Yemps schal be gode vere
+                                wyndy Estas dry vyndege goode and plenty of schepe and of hony pes schall be and olde folkes schall dye</incipit>
+                            <explicit><locus from="23v" to="23v">23v</locus> That yere that Crystysmas day falleth on a satterday Wyntyr trobyll vere
+                                wyndy ffrute travellous olde men schall dye and schepe perysche howses schall byrn</explicit>
+                            <listBibl>
+                                <bibl>eVK2 v0074530000</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="21">
+                            <locus from="23v" to="23v">23v</locus>
+                            <title key=""> Virtues of the Mass (imperfect)</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="23v" to="23v">23v</locus> Here ben the medys of the masse</rubric>
+                            <incipit><locus from="23v" to="23v">23v</locus> To hym that herys his masse and seys the blyssed lord in forme of brede as
+                                sayth Seynte Austyn that day a man may not fayll his sustynaunce of his body</incipit>
+                            <explicit defective="true"><locus from="23v" to="23v">23v</locus> And yf a man dye that day withowte howsyll the syght of
+                                goddys body schall be alowde for hym and stond for his howsyll and as long as thow arte</explicit>
+                            <note>See McKitterick and Beadle (1992) for other copies.</note>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <p>
+                            <secFol>
+                                <locus from="2r" to="2r">2r</locus> in a litell water </secFol>
+                        </p>
+                        <objectDesc form="codex">
+                            <supportDesc material="chart">
+                                <support>
+                                    <material>Paper</material>, folded in <measure type="folding">quarto</measure>. <watermark>
+                                        <seg type="para">Folios <locus from="1r" to="23v">1r-23v</locus>: <term type="watermarkMotif">Hand with a
+                                                six-petalled flower</term> (<dimensions type="watermark" unit="mm">
+                                                <height quantity="120">120</height>
+                                                <width quantity="20">20</width>
+                                            </dimensions>) <note type="watermarkPosition">in the centre of the folio</note>, comparable to
+                                                <note>Briquet 10713</note>. This example is dated to <date calendar="gregorian" notAfter="1485" notBefore="1485">1485</date>.</seg>
+                                    </watermark>
+                                </support>
+                                <extent>
+                                    <seg type="object">Codex: </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="1" type="laterEndleaf">i</measure> + <measure quantity="23" type="leaf">23</measure> +
+                                            <measure quantity="1" type="laterEndleaf">i</measure> leaves. </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height quantity="180">180</height>
+                                            <width quantity="135">135</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+                                <foliation notAfter="1970" notBefore="1947">
+                                    <p>20th-century foliation:</p>
+                                    <p>i-ii, 1-23, iii</p>
+                                    <note>Numbering in pencil in the upper right-hand corner of the rectos. </note>
+                                    <note>Folio i is paper pastedown on the inside of the upper cover; f. iii is a paper pastedown on a blank modern
+                                        flyleaf at the end of the manuscript.</note>
+                                </foliation>
+                                <collation mainStructures="24">
+                                    <p>
+                                        <list>
+                                            <item>Quire 1<hi rend="superscript">24-1</hi> (ff. <locus from="1r" to="23v">1-23</locus>: 1 leaf missing
+                                                after f. 13)</item>
+                                        </list>
+                                    </p>
+                                    <formula> 1<hi rend="superscript">24-1</hi>: 1 leaf missing between f. 13 and f. 14 </formula>
+                                </collation>
+                                <condition>The lower portions of f. 13 and f. 14 have been cut out. A vellum strip has been inserted in the gutter at
+                                    the innermost bifolium (ff. 12v-13r). </condition>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="1" rulingMedium="pencil" topLine="above" writtenLines="20">
+                                    <dimensions type="written" unit="mm">
+                                        <height quantity="140">140</height>
+                                        <width quantity="100">100</width>
+                                    </dimensions>
+                                    <seg type="ruling"> Frames occasionally ruled in pencil. Single columns. 20 lines to the page written above and
+                                        below top line. </seg>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote script="Cursiva">
+                                <p> Copied by a single scribe writing in <term type="script">Anglicana formata</term>.</p>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote type="rubrication">
+                                <p>Recipe headers have been written in red ink.</p>
+                            </decoNote>
+                        </decoDesc>
+                        <additions>A modern inscription in pencil on f. <locus from="iii verso" to="iii verso">iii verso</locus> ('M.R.J. 5') refers
+                            to the catalogue description of M.R. James, which describes the manuscript on pp. 5-6.</additions>
+                        <bindingDesc>
+                            <binding notAfter="1700" notBefore="1650">
+                                <p>17th-century limp binding with Dutch gilt paper covers, featuring dark leaves and birds on a pink and gold ground
+                                    with, on its front cover a printed heraldic coat of arms with mantling and a helmet, inscribed with the title:
+                                    'Miscell. of Reccipes M.S.S. Temp. R. Ed.4.'.</p>
+                                <p>Binding height: 185mm; width: 135mm; depth: 10mm.</p>
+                                <p>See Nixon, VI (1984), p. xxi and plate 21 ('K 1*')</p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origDate calendar="Gregorian" cert="high" notAfter="1500" notBefore="1470"> Copied in the late 15th century, certainly in
+                                or after 1470/1471 (see medical recipe on 17v-18r).</origDate>
+                            <origPlace key="place_g7002445"> England. </origPlace>
+                        </origin>
+                        <provenance notAfter="1700"> Acquired before 1700 by <name key="person_v29602261" role="fmo">
+                                <persName type="display">Samuel Pepys (1633–1703), naval officer and diarist</persName>
+                                <persName type="standard">Pepys, Samuel, 1633-1703</persName></name>: listed in the 1700 catalogue as 'A Miscellany of
+                            Receipts in Coookery etc. MSS temp. Ed. 4th'. ; no. 6801.82 in <bibl>Bernard, <hi rend="italic">Catalogi librorum
+                                    manuscriptorum Angliæ et Hiberniæ</hi> (c. 1697)</bibl>; f. <locus from="ii verso" to="ii verso">ii verso</locus>
+                            features an engraving of his portrait with the motto: 'Mens cujusque is est Quisque' and 'Sam. Pepys. Car. et. Iac. Angl.
+                            Regib. A. Secretis. Admiraliae' by R. White ['R. W. sculp.'], c. 1690 ; f. <locus from="iii recto" to="iii recto">iii
+                                recto</locus> features a paper pastedown with Pepys's bookplate engraved with two anchors and the motto 'Mens cujusque
+                            is est Quisque'.</provenance>
+                        <acquisition when="1724">
+                            <p>Acquired by Magdalene College, Cambridge upon the death of <name key="" role="dnr">
+                                <persName type="display">John Jackson (d. 1724)</persName>
+                                <persName type="standard">Jackson, John, d. 1724</persName>
+                            </name>: in his will (The National Archives, PROB 1/9, Will of Samuel Pepys, Codicil, 13th May 1703), Pepys left a
+                                bequest of approximately 3000 manuscripts and printed books to Magdalene College and instructed his nephew John
+                                Jackson to arrange for this but they only came to the college after Jackson died. Jackson respected the instructions
+                                given in the codicil to the will as can be evidenced from Magdalene College Archives A/41/1: an indenture between Anne
+                                Jackson, widow and executrix of John Jackson (nephew and residuary legatee of Samuel Pepys), and the Master and
+                                Fellows being a deed of covenant as to providing a Library at the College for the reception of the collection of the
+                                books and papers bequeathed to the College by Samuel Pepys, 1 June 1724. It is here that the manuscript's current shelfmark 'N<hi rend="superscript">o</hi> 1047' was inscribed in red ink on f. <locus from="i verso" to="i verso">i verso</locus> (the
+                                inside of the upper cover).</p>
+                        </acquisition>
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source> This catalogue entry draws on <bibl><name key="person_v88882890"><persName type="display">M.R.
+                                                James</persName>
+                                            <persName type="standard">James, M.R. (Montague Rhodes), 1862-1936</persName></name>
+                                        <hi rend="italic">A Descriptive Catalogue of the Manuscripts in the College Library of Magdalene College,
+                                            Cambridge</hi> (Cambridge: Cambridge University Library, 1909)</bibl> and the <bibl><hi rend="italic">Catalogue of the Pepys Library at Magdalene College Cambridge, Volume V: Manuscripts, Part I:
+                                            Medieval</hi>, compiled by Rosamond McKitterick and Richard Beadle (Woodbridge: Brewer, 1992)</bibl>, by
+                                    kind permission of the Boydell Press. </source>
+                            </recordHist>
+                            <availability status="restricted">
+                                <p>Visitors to Magdalene College who wish to consult Special Collections material are required to apply to the Pepys
+                                    Library in advance of their visit. For information on eligibility and admission procedures see: <ref target="https://www.magd.cam.ac.uk/pepys">Magdalene College: Pepys Library</ref>.</p>
+                            </availability>
+                        </adminInfo>
+                        <listBibl>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/ACG2XIR9" type="webpage" xml:id="Matterer">
+                                <analytic>
+                                    <title level="a">Gentyll manly Cokere. Culinary Recipes from MS Pepys 1047.</title>
+                                    <author>
+                                        <forename>James L</forename>
+                                        <surname>Matterer</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <imprint>
+                                        <date/>
+                                        <note type="accessed">2023-04-28T14:16:59Z</note>
+                                        <note type="url">http://www.godecookery.com/pepys/pepys.htm</note>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/QJDPI2U4" type="webpage" xml:id="Boffey">
+                                <analytic>
+                                    <title level="a">Berners [Bernes, Barnes], Juliana (fl. 1460), supposed author and prioress of Sopwell</title>
+                                    <author>
+                                        <forename>Julia</forename>
+                                        <surname>Boffey</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Oxford Dictionary of National Biography</title>
+                                    <imprint>
+                                        <date>2004</date>
+                                        <note type="accessed">2023-08-31T09:02:08Z</note>
+                                        <note type="url">https://www.oxforddnb.com/display/10.1093/ref:odnb/9780198614128.001.0001/odnb-9780198614128-e-2255</note>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/FQZBRZEG" type="book" xml:id="Gerald_A.J._Hodgett1972">
+                                <monogr>
+                                    <title level="m">Stere htt well : a book of medieval refinements, recipes and remedies, from a manuscript in
+                                        Samuel Pepys's library</title>
+                                    <author>
+                                        <forename>Delia Smith</forename>
+                                        <surname>Gerald A.J. Hodgett</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>Cornmarket Reprints</publisher>
+                                        <date>1972</date>
+                                        <note type="accessed">2023-04-28T11:58:27Z</note>
+                                    </imprint>
+                                </monogr>
+                                <note/>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/4KEJ2FIT" type="book" xml:id="Juliana_Berners-1975">
+                                <monogr>
+                                    <title level="m">English hawking and hunting in the Boke of St. Albans: a facsimile edition of sigs. a2-f8 of the
+                                        Boke of St. Albans (1486) / by Rachel Hands.</title>
+                                    <title type="short">English hawking and hunting in the Boke of St. Albans</title>
+                                    <author>
+                                        <name>Juliana Berners?-</name>
+                                    </author>
+                                    <editor>
+                                        <forename>Rachel</forename>
+                                        <surname>Hands</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>London, Oxford</pubPlace>
+                                        <publisher>Oxford University Press</publisher>
+                                        <date>1975</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Oxford English monographs</title>
+                                </series>
+                                <note>p. xlvii.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/WACG4WNS" type="book" xml:id="Nixon1984">
+                                <monogr>
+                                    <title level="m">Bindings</title>
+                                    <author>
+                                        <forename>Howard</forename>
+                                        <surname>Nixon</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Woodbridge</pubPlace>
+                                        <biblScope unit="volume">VI</biblScope>
+                                        <publisher>Brewer</publisher>
+                                        <date>1984</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Catalogue of the Pepys Library at Magdalene College Cambridge</title>
+                                </series>
+                                <note>p. xxi and plate 21 ('K 1*').</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/7QCIJTNC" type="book" xml:id="McKitterick1992">
+                                <monogr>
+                                    <title level="m">Manuscripts (Medieval)</title>
+                                    <author>
+                                        <forename>Rosamond</forename>
+                                        <surname>McKitterick</surname>
+                                    </author>
+                                    <author>
+                                        <forename>Richard</forename>
+                                        <surname>Beadle</surname>
+                                    </author>
+                                    <editor>
+                                        <forename>Robert</forename>
+                                        <surname>Latham</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">V.i</biblScope>
+                                        <publisher>Brewer</publisher>
+                                        <date>1992</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Catalogue of the Pepys Library at Magdalene College Cambridge</title>
+                                </series>
+                                <note>pp. 8-9.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/99N9F2KS" type="book" xml:id="Scott-Macnab2003">
+                                <monogr>
+                                    <title level="m">A sporting lexicon of the fifteenth century: the J.B. treatise</title>
+                                    <author>
+                                        <forename>David</forename>
+                                        <surname>Scott-Macnab</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Oxford</pubPlace>
+                                        <biblScope unit="volume">23</biblScope>
+                                        <publisher>Society for the Study of Mediaeval Languages and Literature</publisher>
+                                        <date>2003</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Medium Aevum monographs. New series</title>
+                                </series>
+                                <note>pp. xiv, 7 (as 'Pp').</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/HFE2LH6T" type="book" xml:id="James2009">
+                                <monogr>
+                                    <title level="m">Bibliotheca Pepysiana A Descriptive Catalogue of the Library of Samuel Pepys Volume 3 Mediaeval
+                                        Manuscripts.</title>
+                                    <author>
+                                        <forename>Montague Rhodes</forename>
+                                        <surname>James</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>University Press</publisher>
+                                        <date>2009</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 5-6.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/SWTQQJQR" type="bookSection" xml:id="Franzen2012">
+                                <analytic>
+                                    <title level="a">Late Fifteenth-Century ‘Terms of Association’ in MS. Pepys 1047</title>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Ashgate Critical Essays on Early English Lexicographers</title>
+                                    <extent>5</extent>
+                                    <editor>
+                                        <forename>Christine</forename>
+                                        <surname>Franzen</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <biblScope unit="volume">2</biblScope>
+                                        <biblScope unit="page">399-404</biblScope>
+                                        <publisher>Routledge</publisher>
+                                        <date>2012</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                        </listBibl>
+
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass default="false">
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85083064">Medicine</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change status="draft" when="2023-04-27">
+                <persName>Dr Clarck Drieshen, Project Cataloguer, Cambridge University Library</persName>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic decls="#document-thumbnail" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00001"/>
+        <surface n="front cover, outer" xml:id="page-surface-1">
+            <graphic decls="#downloadImageRights #download" height="6155px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00001" width="4132px"/>
+        </surface>
+        <surface n="i verso" xml:id="page-surface-2">
+            <graphic decls="#downloadImageRights #download" height="6191px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00002" width="4013px"/>
+        </surface>
+        <surface n="ii recto" xml:id="page-surface-3">
+            <graphic decls="#downloadImageRights #download" height="6081px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00003" width="4057px"/>
+        </surface>
+        <surface n="ii verso" xml:id="page-surface-4">
+            <graphic decls="#downloadImageRights #download" height="6191px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00004" width="4013px"/>
+        </surface>
+        <surface n="1r" xml:id="page-surface-5">
+            <graphic decls="#downloadImageRights #download" height="6081px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00005" width="4057px"/>
+        </surface>
+        <surface n="1v" xml:id="page-surface-6">
+            <graphic decls="#downloadImageRights #download" height="6191px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00006" width="4013px"/>
+        </surface>
+        <surface n="2r" xml:id="page-surface-7">
+            <graphic decls="#downloadImageRights #download" height="6081px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00007" width="4057px"/>
+        </surface>
+        <surface n="2v" xml:id="page-surface-8">
+            <graphic decls="#downloadImageRights #download" height="6191px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00008" width="4013px"/>
+        </surface>
+        <surface n="3r" xml:id="page-surface-9">
+            <graphic decls="#downloadImageRights #download" height="6081px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00009" width="4057px"/>
+        </surface>
+        <surface n="3v" xml:id="page-surface-10">
+            <graphic decls="#downloadImageRights #download" height="6191px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00010" width="4013px"/>
+        </surface>
+        <surface n="4r" xml:id="page-surface-11">
+            <graphic decls="#downloadImageRights #download" height="6081px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00011" width="4057px"/>
+        </surface>
+        <surface n="4v" xml:id="page-surface-12">
+            <graphic decls="#downloadImageRights #download" height="6191px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00012" width="4013px"/>
+        </surface>
+        <surface n="5r" xml:id="page-surface-13">
+            <graphic decls="#downloadImageRights #download" height="6081px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00013" width="4057px"/>
+        </surface>
+        <surface n="5v" xml:id="page-surface-14">
+            <graphic decls="#downloadImageRights #download" height="6191px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00014" width="4013px"/>
+        </surface>
+        <surface n="6r" xml:id="page-surface-15">
+            <graphic decls="#downloadImageRights #download" height="6081px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00015" width="4057px"/>
+        </surface>
+        <surface n="6v" xml:id="page-surface-16">
+            <graphic decls="#downloadImageRights #download" height="6191px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00016" width="4013px"/>
+        </surface>
+        <surface n="7r" xml:id="page-surface-17">
+            <graphic decls="#downloadImageRights #download" height="6081px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00017" width="4057px"/>
+        </surface>
+        <surface n="7v" xml:id="page-surface-18">
+            <graphic decls="#downloadImageRights #download" height="6191px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00018" width="4013px"/>
+        </surface>
+        <surface n="8r" xml:id="page-surface-19">
+            <graphic decls="#downloadImageRights #download" height="6081px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00019" width="4057px"/>
+        </surface>
+        <surface n="8v" xml:id="page-surface-20">
+            <graphic decls="#downloadImageRights #download" height="6172px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00020" width="3911px"/>
+        </surface>
+        <surface n="9r" xml:id="page-surface-21">
+            <graphic decls="#downloadImageRights #download" height="6081px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00021" width="4057px"/>
+        </surface>
+        <surface n="9v" xml:id="page-surface-22">
+            <graphic decls="#downloadImageRights #download" height="6172px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00022" width="3859px"/>
+        </surface>
+        <surface n="10r" xml:id="page-surface-23">
+            <graphic decls="#downloadImageRights #download" height="6143px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00023" width="3968px"/>
+        </surface>
+        <surface n="10v" xml:id="page-surface-24">
+            <graphic decls="#downloadImageRights #download" height="6172px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00024" width="3911px"/>
+        </surface>
+        <surface n="11r" xml:id="page-surface-25">
+            <graphic decls="#downloadImageRights #download" height="6143px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00025" width="3968px"/>
+        </surface>
+        <surface n="11v" xml:id="page-surface-26">
+            <graphic decls="#downloadImageRights #download" height="6172px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00026" width="3911px"/>
+        </surface>
+        <surface n="12r" xml:id="page-surface-27">
+            <graphic decls="#downloadImageRights #download" height="6143px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00027" width="3968px"/>
+        </surface>
+        <surface n="12v" xml:id="page-surface-28">
+            <graphic decls="#downloadImageRights #download" height="6172px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00028" width="3942px"/>
+        </surface>
+        <surface n="13r" xml:id="page-surface-29">
+            <graphic decls="#downloadImageRights #download" height="6020px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00029" width="3859px"/>
+        </surface>
+        <surface n="13v" xml:id="page-surface-30">
+            <graphic decls="#downloadImageRights #download" height="6172px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00030" width="3911px"/>
+        </surface>
+        <surface n="14r" xml:id="page-surface-31">
+            <graphic decls="#downloadImageRights #download" height="6142px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00031" width="3906px"/>
+        </surface>
+        <surface n="14v" xml:id="page-surface-32">
+            <graphic decls="#downloadImageRights #download" height="6172px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00032" width="3911px"/>
+        </surface>
+        <surface n="15r" xml:id="page-surface-33">
+            <graphic decls="#downloadImageRights #download" height="6194px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00033" width="3942px"/>
+        </surface>
+        <surface n="15v" xml:id="page-surface-34">
+            <graphic decls="#downloadImageRights #download" height="6172px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00034" width="3911px"/>
+        </surface>
+        <surface n="16r" xml:id="page-surface-35">
+            <graphic decls="#downloadImageRights #download" height="6194px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00035" width="3942px"/>
+        </surface>
+        <surface n="16v" xml:id="page-surface-36">
+            <graphic decls="#downloadImageRights #download" height="6172px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00036" width="3911px"/>
+        </surface>
+        <surface n="17r" xml:id="page-surface-37">
+            <graphic decls="#downloadImageRights #download" height="6194px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00037" width="3942px"/>
+        </surface>
+        <surface n="17v" xml:id="page-surface-38">
+            <graphic decls="#downloadImageRights #download" height="6172px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00038" width="3911px"/>
+        </surface>
+        <surface n="18r" xml:id="page-surface-39">
+            <graphic decls="#downloadImageRights #download" height="6194px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00039" width="3942px"/>
+        </surface>
+        <surface n="18v" xml:id="page-surface-40">
+            <graphic decls="#downloadImageRights #download" height="6172px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00040" width="3911px"/>
+        </surface>
+        <surface n="19r" xml:id="page-surface-41">
+            <graphic decls="#downloadImageRights #download" height="6194px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00041" width="3942px"/>
+        </surface>
+        <surface n="19v" xml:id="page-surface-42">
+            <graphic decls="#downloadImageRights #download" height="6172px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00042" width="3911px"/>
+        </surface>
+        <surface n="20r" xml:id="page-surface-43">
+            <graphic decls="#downloadImageRights #download" height="6194px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00043" width="3942px"/>
+        </surface>
+        <surface n="20v" xml:id="page-surface-44">
+            <graphic decls="#downloadImageRights #download" height="6172px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00044" width="3911px"/>
+        </surface>
+        <surface n="21r" xml:id="page-surface-45">
+            <graphic decls="#downloadImageRights #download" height="6194px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00045" width="3942px"/>
+        </surface>
+        <surface n="21v" xml:id="page-surface-46">
+            <graphic decls="#downloadImageRights #download" height="6172px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00046" width="3911px"/>
+        </surface>
+        <surface n="22r" xml:id="page-surface-47">
+            <graphic decls="#downloadImageRights #download" height="6194px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00047" width="3942px"/>
+        </surface>
+        <surface n="22v" xml:id="page-surface-48">
+            <graphic decls="#downloadImageRights #download" height="6172px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00048" width="3911px"/>
+        </surface>
+        <surface n="23r" xml:id="page-surface-49">
+            <graphic decls="#downloadImageRights #download" height="6194px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00049" width="3942px"/>
+        </surface>
+        <surface n="23v" xml:id="page-surface-50">
+            <graphic decls="#downloadImageRights #download" height="6172px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00050" width="3911px"/>
+        </surface>
+        <surface n="iii recto" xml:id="page-surface-51">
+            <graphic decls="#downloadImageRights #download" height="6205px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00051" width="3930px"/>
+        </surface>
+        <surface n="iii verso" xml:id="page-surface-52">
+            <graphic decls="#downloadImageRights #download" height="6172px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00052" width="3911px"/>
+        </surface>
+        <surface n="rear cover, inner" xml:id="page-surface-53">
+            <graphic decls="#downloadImageRights #download" height="6276px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00053" width="3977px"/>
+        </surface>
+        <surface n="rear cover, outer" xml:id="page-surface-54">
+            <graphic decls="#downloadImageRights #download" height="6139px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00054" width="4026px"/>
+        </surface>
+        <surface n="spine" xml:id="page-surface-55">
+            <graphic decls="#downloadImageRights #download" height="5217px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-01047-000-00055" width="1049px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#page-surface-1" n="front cover, outer" xml:id="page-pb-1"/>
+                <pb facs="#page-surface-2" n="i verso" xml:id="page-pb-2"/>
+                <pb facs="#page-surface-3" n="ii recto" xml:id="page-pb-3"/>
+                <pb facs="#page-surface-4" n="ii verso" xml:id="page-pb-4"/>
+                <pb facs="#page-surface-5" n="1r" xml:id="page-pb-5"/>
+                <pb facs="#page-surface-6" n="1v" xml:id="page-pb-6"/>
+                <pb facs="#page-surface-7" n="2r" xml:id="page-pb-7"/>
+                <pb facs="#page-surface-8" n="2v" xml:id="page-pb-8"/>
+                <pb facs="#page-surface-9" n="3r" xml:id="page-pb-9"/>
+                <pb facs="#page-surface-10" n="3v" xml:id="page-pb-10"/>
+                <pb facs="#page-surface-11" n="4r" xml:id="page-pb-11"/>
+                <pb facs="#page-surface-12" n="4v" xml:id="page-pb-12"/>
+                <pb facs="#page-surface-13" n="5r" xml:id="page-pb-13"/>
+                <pb facs="#page-surface-14" n="5v" xml:id="page-pb-14"/>
+                <pb facs="#page-surface-15" n="6r" xml:id="page-pb-15"/>
+                <pb facs="#page-surface-16" n="6v" xml:id="page-pb-16"/>
+                <pb facs="#page-surface-17" n="7r" xml:id="page-pb-17"/>
+                <pb facs="#page-surface-18" n="7v" xml:id="page-pb-18"/>
+                <pb facs="#page-surface-19" n="8r" xml:id="page-pb-19"/>
+                <pb facs="#page-surface-20" n="8v" xml:id="page-pb-20"/>
+                <pb facs="#page-surface-21" n="9r" xml:id="page-pb-21"/>
+                <pb facs="#page-surface-22" n="9v" xml:id="page-pb-22"/>
+                <pb facs="#page-surface-23" n="10r" xml:id="page-pb-23"/>
+                <pb facs="#page-surface-24" n="10v" xml:id="page-pb-24"/>
+                <pb facs="#page-surface-25" n="11r" xml:id="page-pb-25"/>
+                <pb facs="#page-surface-26" n="11v" xml:id="page-pb-26"/>
+                <pb facs="#page-surface-27" n="12r" xml:id="page-pb-27"/>
+                <pb facs="#page-surface-28" n="12v" xml:id="page-pb-28"/>
+                <pb facs="#page-surface-29" n="13r" xml:id="page-pb-29"/>
+                <pb facs="#page-surface-30" n="13v" xml:id="page-pb-30"/>
+                <pb facs="#page-surface-31" n="14r" xml:id="page-pb-31"/>
+                <pb facs="#page-surface-32" n="14v" xml:id="page-pb-32"/>
+                <pb facs="#page-surface-33" n="15r" xml:id="page-pb-33"/>
+                <pb facs="#page-surface-34" n="15v" xml:id="page-pb-34"/>
+                <pb facs="#page-surface-35" n="16r" xml:id="page-pb-35"/>
+                <pb facs="#page-surface-36" n="16v" xml:id="page-pb-36"/>
+                <pb facs="#page-surface-37" n="17r" xml:id="page-pb-37"/>
+                <pb facs="#page-surface-38" n="17v" xml:id="page-pb-38"/>
+                <pb facs="#page-surface-39" n="18r" xml:id="page-pb-39"/>
+                <pb facs="#page-surface-40" n="18v" xml:id="page-pb-40"/>
+                <pb facs="#page-surface-41" n="19r" xml:id="page-pb-41"/>
+                <pb facs="#page-surface-42" n="19v" xml:id="page-pb-42"/>
+                <pb facs="#page-surface-43" n="20r" xml:id="page-pb-43"/>
+                <pb facs="#page-surface-44" n="20v" xml:id="page-pb-44"/>
+                <pb facs="#page-surface-45" n="21r" xml:id="page-pb-45"/>
+                <pb facs="#page-surface-46" n="21v" xml:id="page-pb-46"/>
+                <pb facs="#page-surface-47" n="22r" xml:id="page-pb-47"/>
+                <pb facs="#page-surface-48" n="22v" xml:id="page-pb-48"/>
+                <pb facs="#page-surface-49" n="23r" xml:id="page-pb-49"/>
+                <pb facs="#page-surface-50" n="23v" xml:id="page-pb-50"/>
+                <pb facs="#page-surface-51" n="iii recto" xml:id="page-pb-51"/>
+                <pb facs="#page-surface-52" n="iii verso" xml:id="page-pb-52"/>
+                <pb facs="#page-surface-53" n="rear cover, inner" xml:id="page-pb-53"/>
+                <pb facs="#page-surface-54" n="rear cover, outer" xml:id="page-pb-54"/>
+                <pb facs="#page-surface-55" n="spine" xml:id="page-pb-55"/>
+            </div>
+        </body>
+    </text>
+</TEI>

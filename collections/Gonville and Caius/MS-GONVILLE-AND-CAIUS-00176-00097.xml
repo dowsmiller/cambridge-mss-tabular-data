@@ -1,0 +1,2089 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, Gonville and Caius College, MS 176/97</title>
+                <funder>Wellcome</funder>
+                <principal>James Freeman</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+            <availability xml:id="watermark" status="restricted"><licence>Gonville and Caius College, Cambridge (CC BY-NC 4.0)</licence></availability></publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-GONVILLE-AND-CAIUS-00176-00097" xml:lang="en">
+                    <msIdentifier>
+                        <institution>University of Cambridge</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Medieval Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, Gonville and Caius College, MS 176/97</idno>
+                    </msIdentifier>
+                    <head>Medical treatises</head>
+                    <msContents><!--
+                        <summary>
+                            <seg type="para"/>
+                            <!-\- Insert introductory summary here.
+                                 Use <seg type="para"></seg>-\->
+                           <seg type="para">Dr Clarck Drieshen<lb/>
+                                 Project Cataloguer<lb/>
+                                 Cambridge University Library</seg>
+                        </summary>-->
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc material="chart">
+                                <support> </support>
+                                <extent>
+                                    <seg type="object">Codex: </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="2" type="laterEndleaf">ii</measure> + <measure quantity="18" type="endleaf">18</measure> |
+                                            <measure quantity="96" type="endleaf">96</measure> + <measure quantity="2" type="laterEndleaf">ii</measure> leaves. </seg>
+                                </extent>
+                                <foliation notAfter="2000" notBefore="1800">
+                                    <p>19th- or 20th-century pagination:</p>
+                                    <p>[i]-[iv], 1-36 | 37-228, [v]-[viii]</p>
+                                    <p>Written in black ink in the upper right-hand corner of the recto of each leaf.</p>
+                                    <p>The manuscript opens and ends with two modern paper flyleaves. For the purposes of producing a functional
+                                        electronic catalogue record for the volume as part of the Curious Cures project, these leaves have been
+                                        assigned page numbers in square brackets: pp. [i]-[ii], [ii]-[iv], [v]-[vi], and [vii]-[viii].</p>
+                                </foliation>
+                                <collation mainStructures="10">
+                                    <formula> 1<hi rend="superscript">24-6</hi> (1st and 12th leaves replaced; 15th-19th leaves missing, and 1 other
+                                        leaf missing in the second half of the quire, perhaps the 22nd leaf) | 2-4<hi rend="superscript">20</hi> 5<hi rend="superscript">20-1</hi> (1st leaf replaced; 1 leaf cancelled in the second half of the quire) 6<hi rend="superscript">20-3</hi> (1st, 9th, 10th leave missing) </formula>
+                                    <signatures type="quire"><p>Quire numbers written in pencil in the right-hand lower corners of the first rectos of
+                                            quires.</p></signatures>
+                                </collation>
+                            </supportDesc>
+                        </objectDesc>
+                        <bindingDesc>
+                            <binding notAfter="1800" notBefore="1600">
+                                <p>17th- or 18th-century reverse brown calfskin with panel design (blind-stamped frames with floral motifs at the
+                                    cornes of the central frame). </p>
+                                <p>Binding height: 220mm; width: 150mm; depth: 30mm.</p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <provenance notAfter="1600" notBefore="1500"><p><name>
+                                    <persName type="display">Robert Matthius [Matthews] (fl. 16th century)</persName>
+                                    <persName type="standard">Matthius [Matthews], Robert, fl. 16th century</persName></name>: inscribed his first
+                                name in the lower margin of p. <locus from="1" to="1">1</locus> ('Robert'); his ownership inscription in the lower
+                                margin of p. <locus from="11" to="11">11</locus> ('Robert Matthius his Booke witnes Semuel [sic: Samuel] Salt'); and
+                                his full name in a jordan on p. <locus from="101" to="101">101</locus> ('Robert Matthius'). </p>
+                        </provenance>
+                        <provenance notAfter="1659" notBefore="1600"><p><name>
+                                    <persName type="display">William Moore (1590-1659)</persName>
+                                    <persName type="standard">Moore, William, 1590-1659</persName></name>, BA, MA, fellow of and lecturer in rhetoric
+                                at Gonville and Caius College, and librarian of Cambridge University Library.</p>
+                        </provenance>
+                        <acquisition notAfter="1659" notBefore="1659">Given or bequeathed by William Moore to Gonville and Caius College in 1659: its
+                            armorial bookplate pasted on the <locus from="front_cover_inner" to="front_cover_inner">inside of the upper cover</locus>,
+                            inscribed with the classmark numbers '176' and '97'; number 1075 in the catalogue of the College's manuscripts in
+                                <bibl>Edward Bernard, <hi rend="italic">Catalogi librorum manuscriptorum Angliæ et Hiberniæ</hi> (c. 1697)</bibl> and
+                            this number also inscribed on the <locus from="front_cover_inner" to="front_cover_inner">inside of the upper
+                            cover</locus>; also recorded as no. 176 in the catalogue of <bibl>J.J. Smith, <hi rend="italic">A Catalogue of the
+                                    Manuscripts in the Library of Gonville and Caius College, Cambridge</hi> (Cambridge: Deighton and Macmillan,
+                                1849)</bibl>. </acquisition>
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source>This catalogue entry draws on the description provided by <bibl><name key="person_v88882890"><persName type="display">M.R. James</persName>
+                                            <persName type="standard">James, M.R. (Montague Rhodes), 1862-1936</persName></name>, <hi rend="italic">A
+                                            Descriptive Catalogue of the Manuscripts in the Library of Gonville and Caius College</hi>, 2 vols
+                                        (Cambridge: Cambridge University Press, 1908)</bibl> and <bibl>Kari Anne Rand Schmidt, <hi rend="italic">Manuscripts in the Library of Gonville and Caius College, Cambridge</hi> (Cambridge: Brewer,
+                                    2001)</bibl>.</source>
+                            </recordHist>
+                        </adminInfo>
+                        <listBibl>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/CSGSZF6V" type="webpage" xml:id="Mooney">
+                                <analytic>
+                                    <title level="a">Late Medieval English Scribes: Cambridge, Gonville &amp; Caius College MS 176/97</title>
+                                    <author>
+                                        <forename>Linne</forename>
+                                        <surname>Mooney</surname>
+                                    </author>
+                                    <author>
+                                        <forename>Estelle</forename>
+                                        <surname>Stubbs</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Manuscript Description: Cambridge, Gonville &amp; Caius College MS 176/97</title>
+                                    <imprint>
+                                        <date/>
+                                        <note type="accessed">2015-07-14T15:48:20Z</note>
+                                        <note type="url">http://www.medievalscribes.com/</note>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/IF7495IV" type="webpage" xml:id="zoteroItem_IF7495IV">
+                                <analytic>
+                                    <title level="a">List of Manuscripts | The Henry Daniel Project</title>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">The Henry Daniel Project</title>
+                                    <imprint>
+                                        <date/>
+                                        <note type="accessed">2023-09-01T14:41:06Z</note>
+                                        <note type="url">https://henrydaniel.utoronto.ca/urines/manuscripts/list/</note>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/C2MIYMY2" type="book" xml:id="James1907">
+                                <monogr>
+                                    <title level="m">A descriptive catalogue of the manuscripts in the library of Gonville and Caius College</title>
+                                    <extent>2</extent>
+                                    <author>
+                                        <forename>M.R.</forename>
+                                        <surname>James</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">1</biblScope>
+                                        <publisher>University Press</publisher>
+                                        <date>1907</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 201-203.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/T9AJS9W3" type="journalArticle" xml:id="MacCracken_H._N.1912">
+                                <analytic>
+                                    <title level="a">An Odd Text of Chaucer's Purse</title>
+                                    <author>
+                                        <forename>(Henry Noble)</forename>
+                                        <surname>MacCracken, H. N.</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Modern Language Notes</title>
+                                    <imprint>
+                                        <biblScope unit="volume">27</biblScope>
+                                        <biblScope unit="page">228-229</biblScope>
+                                        <date>1912</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 228-229.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/783TX6KZ" type="journalArticle" xml:id="Pace1948a">
+                                <analytic>
+                                    <title level="a">Four Unpublished Chaucer Manuscripts</title>
+                                    <author>
+                                        <forename>George B.</forename>
+                                        <surname>Pace</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Modern Language Notes</title>
+                                    <imprint>
+                                        <biblScope unit="volume">63</biblScope>
+                                        <biblScope unit="page">457-62</biblScope>
+                                        <date>1948</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 461.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/4PCQ6CB3" type="journalArticle" xml:id="Pace1948b">
+                                <analytic>
+                                    <title level="a">The Text of Chaucer’s Purse</title>
+                                    <author>
+                                        <forename>George B.</forename>
+                                        <surname>Pace</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">apers of the Bibliographical Society of the University of Virginia</title>
+                                    <imprint>
+                                        <biblScope unit="volume">1</biblScope>
+                                        <biblScope unit="page">105-121</biblScope>
+                                        <date>1948</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 117-118.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/VC8DCIZN" type="book" xml:id="Person1962">
+                                <monogr>
+                                    <title level="m">Cambridge Middle English lyrics</title>
+                                    <idno type="callNumber">615.1.PER</idno>
+                                    <author>
+                                        <forename>Henry Axel</forename>
+                                        <surname>Person</surname>
+                                    </author>
+                                    <edition>Rev. ed.</edition>
+                                    <imprint>
+                                        <pubPlace>Seattle</pubPlace>
+                                        <publisher>University of Washington Press</publisher>
+                                        <date>1962</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 38.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/LEP9RY3S" type="book" xml:id="J_A_W_Bennett1968">
+                                <monogr>
+                                    <title level="m">Selections from John Gower</title>
+                                    <editor>
+                                        <forename>J.A.W. (Jack Arthur Walter)</forename>
+                                        <surname>Bennett</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Oxford</pubPlace>
+                                        <publisher>Clarendon Press</publisher>
+                                        <date>1968</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Clarendon medieval and Tudor series</title>
+                                </series>
+                                <note>p. 152.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/JP4MBIRR" type="bookSection" xml:id="Voigts1982">
+                                <analytic>
+                                    <title level="a">Editing Middle English Texts: Needs and Issues</title>
+                                    <author>
+                                        <forename>Linda Ehrsam</forename>
+                                        <surname>Voigts</surname>
+                                    </author>
+                                    <author>
+                                        <forename>Trevor H.</forename>
+                                        <surname>Levere</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Editing Texts in the History of Science and Medicine: Papers Given at the Seventeenth Annual
+                                        Conference on Editorial Problems University of Toronto, 6-7 November 1981</title>
+                                    <imprint>
+                                        <pubPlace>New York</pubPlace>
+                                        <biblScope unit="page">39-68</biblScope>
+                                        <publisher>Garland Publishing</publisher>
+                                        <date>1982</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 42-43.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/3A8444CN" type="journalArticle" xml:id="Horrall1983">
+                                <analytic>
+                                    <title level="a">Latin and Middle English Proverbs in a Manuscript at St. George's Chapel, Windsor Castle</title>
+                                    <author>
+                                        <forename>Sarah M.</forename>
+                                        <surname>Horrall</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Mediaeval Studies</title>
+                                    <imprint>
+                                        <biblScope unit="volume">45</biblScope>
+                                        <biblScope unit="page">343-384</biblScope>
+                                        <date>1983</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/VFZ9AK4U" type="book" xml:id="Voigts1984">
+                                <monogr>
+                                    <title level="m">A Latin Phlebotomy and Its Middle English Translation</title>
+                                    <author>
+                                        <forename>Linda E.</forename>
+                                        <surname>Voigts</surname>
+                                    </author>
+                                    <author>
+                                        <forename>Michael R.</forename>
+                                        <surname>McVaugh</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Philadelphia</pubPlace>
+                                        <publisher>American Philosophical Society</publisher>
+                                        <date>1984</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 14-16, 24, 31-34, 37-53.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/3IXR6MQ4" type="bookSection" xml:id="Griffiths1989">
+                                <analytic>
+                                    <title level="a">Scientific and medical books</title>
+                                    <author>
+                                        <forename>Linda Ehrsam</forename>
+                                        <surname>Voigts</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Book production and publishing in Britain 1375-1475</title>
+                                    <idno type="ISBN">0-521-25736-0</idno>
+                                    <editor>
+                                        <forename>Jeremy</forename>
+                                        <surname>Griffiths</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>Derek</forename>
+                                        <surname>Pearsall</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="page">345-402</biblScope>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1989</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Cambridge studies in publishing and printing history</title>
+                                </series>
+                                <note>pp. 381-382.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/XY9WHM2K" type="journalArticle" xml:id="Acker1993">
+                                <analytic>
+                                    <title level="a">The Crafte of Nombrynge in Columbia University Library, Plimpton MS 259</title>
+                                    <author>
+                                        <forename>Paul</forename>
+                                        <surname>Acker</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Manuscripta</title>
+                                    <imprint>
+                                        <biblScope unit="volume">37</biblScope>
+                                        <biblScope unit="page">71-83</biblScope>
+                                        <date>1993</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 78.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/CARE8334" type="bookSection" xml:id="Jones1999">
+                                <analytic>
+                                    <title level="a">Medicine and Science</title>
+                                    <author>
+                                        <forename>Peter Murray</forename>
+                                        <surname>Jones</surname>
+                                    </author>
+                                    <author>
+                                        <forename>Lotte</forename>
+                                        <surname>Hellinga</surname>
+                                    </author>
+                                    <author>
+                                        <forename>J. B.</forename>
+                                        <surname>Trapp</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">The Cambridge History of the Book in Britain</title>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">3</biblScope>
+                                        <biblScope unit="page">433–48</biblScope>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1999</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 435.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/K3FYSWV5" type="book" xml:id="Rand_Schmidt2001">
+                                <monogr>
+                                    <title level="m">Manuscripts in the Library of Gonville and Caius College, Cambridge</title>
+                                    <author>
+                                        <forename>Kari Anne</forename>
+                                        <surname>Rand Schmidt</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Woodbridge</pubPlace>
+                                        <publisher>D.S. Brewer</publisher>
+                                        <date>2001</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Index of Middle English prose</title>
+                                    <biblScope unit="volume">17</biblScope>
+                                </series>
+                                <note>pp. 41-45.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/3K5PZ7M4" type="bookSection" xml:id="Tavormina2014">
+                                <analytic>
+                                    <title level="a">Uroscopy in Middle English: A Guide to the Texts and Manuscripts</title>
+                                    <author>
+                                        <forename>M. Teresa</forename>
+                                        <surname>Tavormina</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <imprint>
+                                        <pubPlace>[Michigan?]</pubPlace>
+                                        <date>2014</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Studies in medieval and renaissance history</title>
+                                    <biblScope unit="volume">3rd ser., 11</biblScope>
+                                </series>
+                                <note>pp. 90 (no. 5.3), 96 (no. 17.0).</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/E6947CEB" type="book" xml:id="Daniel2020">
+                                <monogr>
+                                    <title level="m">&lt;hi rend="italics"&gt;Liber Uricrisiarum&lt;/hi&gt;: A Reading Edition</title>
+                                    <title type="short">Liber uricrisiarum</title>
+                                    <author>
+                                        <forename>Henry</forename>
+                                        <surname>Daniel</surname>
+                                    </author>
+                                    <editor>
+                                        <forename>E. Ruth</forename>
+                                        <surname>Harvey</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>M. Teresa</forename>
+                                        <surname>Tavormina</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>Sarah</forename>
+                                        <surname>Star</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Toronto</pubPlace>
+                                        <publisher>University of Toronto Press</publisher>
+                                        <date>2020</date>
+                                    </imprint>
+                                </monogr>
+                                <note>MS G7.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/AHLRTP35" type="book" xml:id="Star2022">
+                                <monogr>
+                                    <title level="m">Henry Daniel and the Rise of Middle English Medical Writing</title>
+                                    <author>
+                                        <forename>Sarah</forename>
+                                        <surname>Star</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Toronto</pubPlace>
+                                        <publisher>University of Toronto Press</publisher>
+                                        <date>2022</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. xi, 119 (as ‘G7’).</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/HVBVG267" type="journalArticle" xml:id="Voigts813">
+                                <analytic>
+                                    <title level="a">What’s the Word? Bilingualism in Late-Medieval England</title>
+                                    <author>
+                                        <forename>Linda Ehrsam</forename>
+                                        <surname>Voigts</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Speculum</title>
+                                    <imprint>
+                                        <biblScope unit="volume">71</biblScope>
+                                        <biblScope unit="issue">4</biblScope>
+                                        <biblScope unit="page">1996</biblScope>
+                                        <date>813</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 816.</note>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>
+                    <msPart>
+                        <msIdentifier>
+                            <idno>Cambridge, Gonville and Caius College, MS 176/97, pp. 1-36</idno>
+                            <msName>Part 1</msName>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="enm" otherLangs="">Middle English and Latin</textLang>
+                            <msItem n="1">
+                                <locus from="1" to="11">1-11</locus>
+                                <title key="">Propositum est [English translation of Latin treatise on phlebotomy]</title>
+                                <author key="">Henry of Winchester</author>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="1" to="1">1</locus> Of Phlebotomie [added title]</rubric>
+                                <incipit><locus from="1" to="1">1</locus> [T]he purpos forsoth of þis present besynes yt ys for to tret shortly in
+                                    which maner sekenes flebotomie ys competent and of which veynis þerfor it is to wyt that some minsion is made or
+                                    done by metacentesyn id est evyn drawyng some by antepasyn ys sayd to be done when þe blode ys drawyn on þe same
+                                    parte in which ys the sekenes</incipit>
+                                <explicit><locus from="11" to="11">11</locus> Wherefore sekirnesse is more for to slit þe veynez after lengþe wiþ an
+                                    instrument as warkyfe as haþe french men and oþire also and namely þo þat han streyte veynez and of fleubotomye
+                                    þese þyngis sufisyn aftir maistre henricus wyntonyensis amen</explicit>
+                                <note/>
+                                <listBibl>
+                                    <bibl>For another copy, see Rand Schmidt (2001), pp. 41-42</bibl>
+                                    <bibl>Voigts and McVaugh (1984), pp. 37-53 (odd pages only) [edition from this MS]</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="2">
+                                <locus from="12" to="12">12</locus>
+                                <title key="">Arithemetical puzzle (card trick)</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="12" to="12">12</locus> salue: duke / erle / baron; iii: noble / half noble / xx<hi rend="superscript">d</hi>; 1 / 2 / 3: d / e / b / a / e / i</incipit>
+                                <explicit><locus from="12" to="12">12</locus> maris: duke / baron / erle; ii: half noble / noble / xx<hi rend="superscript">d</hi>; 1 / 2 / 3: a / e / i</explicit>
+                                <note>Transcribed in full (with some errors) by M.R. James.</note>
+                                <listBibl>
+                                    <bibl>For other copies, see Rand Schmidt (2001), p. 42</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="3">
+                                <locus from="12" to="12">12</locus>
+                                <title key="">Chaucer's 'Complaynt to his Empty Purse'</title>
+                                <author key="person_v100185203">Geoffrey Chaucer</author>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="12" to="12">12</locus> Now purse that be to me my lyvys light / And saveour as in this worde
+                                    downe here</incipit>
+                                <explicit><locus from="12" to="12">12</locus> And you that may all my mys amend / Haue mynde opon my
+                                    supplicacioun</explicit>
+                                <listBibl>
+                                    <bibl>MacCracken (1912), pp. 228-29</bibl>
+                                    <bibl>Pace, 'Four Unpublished Chaucer Manuscripts' (1948), p. 461</bibl>
+                                    <bibl>Pace, 'The Text of Chaucer's Purse' (1948), pp. 117-18</bibl>
+                                    <bibl>IMEV 3787</bibl>
+                                    <bibl>NIMEV 3787</bibl>
+                                    <bibl>DIMEV 6044.4</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="4">
+                                <locus from="12" to="12">12</locus>
+                                <title key="">Proverb</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="12" to="12">12</locus> Nota</rubric>
+                                <incipit><locus from="12" to="12">12</locus> Vnde superbimus, quid ego, quid tu, nisi limus / Limus homo primus,
+                                    sortem mutare nequimus</incipit>
+                                <note>Full transcription.</note>
+                                <listBibl>
+                                    <bibl>Horrall (1983), 343-384</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="5">
+                                <locus from="13" to="13">13</locus>
+                                <title key="">Four Distichs</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="13" to="13">13</locus> Dicta iiij<hi rend="superscript">or</hi> philosophorum</rubric>
+                                <incipit><locus from="13" to="13">13</locus> Munus fit iudex fructus est mercator in vrbe / Nec lex est diris, nec
+                                    timor pueris - primus</incipit>
+                                <explicit><locus from="13" to="13">13</locus> Prudentes ceci, cognati degeneres sunt / Mortuus ignotus, nullus amicus
+                                    amat - 4</explicit>
+                            </msItem>
+                            <msItem n="6">
+                                <locus from="13" to="13">13</locus>
+                                <title key="work_409">Carmen de algorismo, excerpt of [English translation]</title>
+                                <author key="person_v2583890">Alexander de Villa Dei</author>
+                                <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                                <incipit><locus from="13" to="13">13</locus> Verses of þe .7. spices of algrym / septem sunt partes non plures istius
+                                    artis</incipit>
+                                <explicit><locus from="13" to="13">13</locus> Duplicacioun / Multiplicacioun / Diuisioun / Radix extraxcioun: on þe
+                                    lefte hand</explicit>
+                                <note/>
+                                <listBibl>
+                                    <bibl>eTK t0274270000</bibl>
+                                    <bibl>For a descripton of this copy, see Rand Schmidt (2001), p. 119</bibl>
+                                    <bibl>Acker (1993), p. 78</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="7">
+                                <locus from="13" to="13">13</locus>
+                                <title key="">List of Latin philosophical terms and their English equivalents</title>
+                                <textLang mainLang="la" otherLangs="enm">Latin and Middle English</textLang>
+                                <rubric><locus from="13" to="13">13</locus> 5 vniuerselez</rubric>
+                                <incipit><locus from="13" to="13">13</locus> Genus - kynde of generalte / Species - spice or specialte / Differencia -
+                                    difference / Proprium - propyirte / Accidense - accidente</incipit>
+                                <note>Full transcription.</note>
+                            </msItem>
+                            <msItem n="8">
+                                <locus from="13" to="14">13-14</locus>
+                                <title key="">De Kalendario</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                                <incipit defective="true"><locus from="13" to="13">13</locus> Þese ar termes of þe newe kalendere verus locus solus
+                                    quantitas diei artific[...]</incipit>
+                                <explicit><locus from="14" to="14">14</locus> quantitas temporis a mereidie ad noctis obscurum is fro mydday to derke
+                                    nyȝte</explicit>
+                                <note>The text is partially illegible due to cropping of the page.</note>
+                                <listBibl>
+                                    <bibl>eTK t0322210000</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="9">
+                                <locus from="14" to="14">14</locus>
+                                <title key="">List of the qualities and properties of the twelve houses</title>
+                                <textLang mainLang="la" otherLangs="enm">Latin and Middle English</textLang>
+                                <rubric><locus from="14" to="14">14</locus> Tripliciteis qualites et propretes of .12. houses</rubric>
+                                <incipit><locus from="14" to="14">14</locus> [A]tiractife [?] : Aries / Leo / Sagittarius: hote and drie colric fiere
+                                    orientale or est</incipit>
+                                <explicit><locus from="14" to="14">14</locus> Taurus / Cancer / Virgo / Scorpio / Capricornus / Pisses : ffemynyng
+                                    syngnes</explicit>
+                                <note>The text is partially illegible due to cropping of the page.</note>
+                            </msItem>
+                            <msItem n="10">
+                                <locus from="14" to="14">14</locus>
+                                <title key=""> List of planets and zodiacal signs</title>
+                                <textLang mainLang="la" otherLangs="enm">Latin and Middle English</textLang>
+                                <rubric><locus from="14" to="14">14</locus> House of planetes bi þe .12. sygnes</rubric>
+                                <incipit><locus from="14" to="14">14</locus> Leo - house of þe sonne</incipit>
+                                <explicit><locus from="14" to="14">14</locus> Gemini - house of mercurij</explicit>
+                            </msItem>
+                            <msItem n="11">
+                                <locus from="14" to="14">14</locus>
+                                <title key=""> List of opposite zodiacal signs</title>
+                                <textLang mainLang="la" otherLangs="enm">Latin and Middle English</textLang>
+                                <rubric><locus from="14" to="14">14</locus> Opposicioun of syngnes</rubric>
+                                <incipit><locus from="14" to="14">14</locus> Aries - Libra</incipit>
+                                <explicit><locus from="14" to="14">14</locus> Cancer - Capricornus</explicit>
+                                <note>Full transcription.</note>
+                            </msItem>
+                            <msItem n="12">
+                                <locus from="15" to="15">15</locus>
+                                <title key="">Figure of the twelve astrological houses</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="15" to="15">15</locus> A figure in þe 12 house in þe firmament</rubric>
+                                <incipit><locus from="15" to="15">15</locus> 1 ascendent lyne</incipit>
+                                <explicit><locus from="15" to="15">15</locus> 12 enuey ys dispair</explicit>
+                            </msItem>
+                            <msItem n="13">
+                                <locus from="15" to="15">15</locus>
+                                <title key="">List of terms for the twelve astrological houses</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="15" to="15">15</locus> 1 viuere 2 rem 3 fratres</incipit>
+                                <explicit><locus from="15" to="15">15</locus> 10 iudicium 11 spes 12 i[...]cicie</explicit>
+                                <note>The text is partially illegible due to cropping of the page.</note>
+                            </msItem>
+                            <msItem n="14">
+                                <locus from="15" to="15">15</locus>
+                                <title key="">Mnemonic for the twelve astrological houses</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="15" to="15">15</locus> 1 ascendyng lif 2 substance 3 breþren</incipit>
+                                <explicit><locus from="15" to="15">15</locus> 10 þe dyngnyte 11 of frendis and 12 enuies eke</explicit>
+                            </msItem>
+                            <msItem n="15">
+                                <locus from="15" to="15">15-16</locus>
+                                <title key="">List of English terms with synonyms for the parts of an astrolabe</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="15" to="15">15</locus> Þe termes of þe astirlabie of astronomie </rubric>
+                                <incipit><locus from="16" to="16">16</locus> The ryng þe turett þe modire þe plate of climate</incipit>
+                                <explicit><locus from="16" to="16">16</locus> þe arch þe corde recte or ryȝte þe corde verse or turned</explicit>
+                            </msItem>
+                            <msItem n="16">
+                                <locus from="16" to="16">16</locus>
+                                <title key="">List of res naturales, res non naturales and res contra naturales</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="16" to="16">16</locus> Þe .7. natural þyngis: elementis commixtions or complexiounus
+                                    compositions or humeruus membres vertues operaciouns sperites</incipit>
+                                <explicit><locus from="16" to="16">16</locus> .3. þyngis agayn nature: sekenesse causes and accidentis</explicit>
+                                <note>According to Voigts and McVaugh (p. 24) the list corresponds to the concepts and doctrines introduced in Galen's
+                                    Tegni as explained in the Isagoge by Hunain ibn Ishaq [Johannitius].</note>
+                            </msItem>
+                            <msItem n="17">
+                                <locus from="16" to="19">16-19</locus>
+                                <title key="">Questions and answeres which expound on the list res natures, res non naturales and res contra
+                                    naturales</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="16" to="16">16</locus> What natural þyngis doþe</rubric>
+                                <incipit><locus from="16" to="16">16</locus> Natural þyngis ordeyneth or makyþ a bodi as elementis humours
+                                    etcaetera</incipit>
+                                <explicit><locus from="19" to="19">19</locus> wherefor seiþ seneca he þat growth vp withine and þat quekenyþ me[...]
+                                    sleþ me[...] þe example of þis is schewid in a lampe and oyle</explicit>
+                                <note>Full transcription.</note>
+                                <note>The text is partially illegible due to cropping of the page.</note>
+                            </msItem>
+                            <msItem n="18">
+                                <locus from="20" to="20">20</locus>
+                                <title key="">Note on types of reference</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="20" to="20">20</locus> Of 3 maner of syngnez</rubric>
+                                <incipit><locus from="20" to="20">20</locus> [...] Remoratiue of þynge passide / Demonstratiue of þyng present /
+                                    Pronosticatiue of þyng þat is to come</incipit>
+                                <note>Full transcription.</note>
+                                <note>The text is partially illegible due to cropping of the page.</note>
+                            </msItem>
+                            <msItem n="19">
+                                <locus from="20" to="20">20</locus>
+                                <title key="">Tract on humours and diseases</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="20" to="20">20</locus> Of .4. maners of causes</rubric>
+                                <incipit><locus from="20" to="20">20</locus> Materiale / fformale / Efficient / ffinale - cause</incipit>
+                                <explicit><locus from="20" to="20">20</locus> Of melancolie is þat some porsioun of it be sent to diuerse membres and
+                                    þat melancolius membris as bonys senowys and cartilage be nurschid wiþ</explicit>
+                                <note>The text is partially illegible due to cropping of the page.</note>
+                            </msItem>
+                            <msItem n="20">
+                                <locus from="20" to="20">20</locus>
+                                <title key="">Tract on apostemes</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="20" to="20">20</locus> What is a posteme a gretnesse or inflacion id est boylyng þat þe membris
+                                    suffren of superflue humours</incipit>
+                                <explicit><locus from="20" to="20">20</locus> and sych oþer inwarde causes ben .6. after Auicen þat is .4 humours and
+                                    quosite \watri and vencosite |wyndenesse/</explicit>
+                                <note>The tract refers to Avicenna.</note>
+                            </msItem>
+                            <msItem n="21">
+                                <locus from="20" to="20">20</locus>
+                                <title key="">Note on types of medicines</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="20" to="20">20</locus> .3. þyngis medicinale: Alteratiues / Euacuatiues /
+                                    Confortatiues</incipit>
+                                <note>Full transcription.</note>
+                            </msItem>
+                            <msItem n="22">
+                                <locus from="20" to="21">20-21</locus>
+                                <title key="">List classifying parts of the body according to humours</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="20" to="20">20</locus> Ordere of hote membris: 1 Sperite and þe hert 2 Blode 3 Lyuere</incipit>
+                                <explicit><locus from="21" to="21">21</locus> hert / felyng senowis / skyn</explicit>
+                            </msItem>
+                            <msItem n="23">
+                                <locus from="21" to="21">21</locus>
+                                <title key="">List of the number of bones, veins and teeth in the human body and the number of bones in the bodies of
+                                    animals</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit defective="true"><locus from="21" to="21">21</locus> Nota in Corpore humano de ossibus ij<hi rend="superscript">C</hi> et xl[... </incipit>
+                                <explicit><locus from="21" to="21">21</locus> Cete vj M<hi rend="superscript">l</hi> v<hi rend="superscript">C</hi>
+                                    lv</explicit>
+                                <note>The list enumerates the bones of 'Cepes', dogs, horses, (?) 'homo', deer, crows, eagles, and whales. Added by a
+                                    different hand in the 16th century.</note>
+                            </msItem>
+                            <msItem n="24">
+                                <locus from="23" to="23">23</locus>
+                                <title key="work_2706">A pure balade of love [the glamour of a knight errant] [excerpt from Book IV of John Gower's
+                                    Confessio Amantis]</title>
+                                <author key="person_v120695167">John Gower</author>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="23" to="23">23</locus> A pure balade of love [attributed title by a later hand]</rubric>
+                                <incipit><locus from="23" to="23">23</locus> Knyȝte in travayle for to serve / Wherof the may thanke deserve</incipit>
+                                <explicit><locus from="23" to="23">23</locus> Vaillant viallant Lo where he goith / And then he gyvith hym gold and
+                                    cloth</explicit>
+                                <note/>
+                                <listBibl>
+                                    <bibl>Person (1962), p. 38</bibl>
+                                    <bibl>Bennett (1968), p. 152</bibl>
+                                    <bibl>IMEV 1827</bibl>
+                                    <bibl>NIMEV 1827</bibl>
+                                    <bibl>DIMEV 3008</bibl>
+                                    <bibl/>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="25">
+                                <locus from="23" to="23">23</locus>
+                                <title key="">Chaucer’s 'Complaynt to his Empty Purse'</title>
+                                <author key="person_v100185203">Geoffrey Chaucer</author>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="23" to="23">23</locus> A L Nother balade [attributed title by a later hand]</rubric>
+                                <incipit><locus from="23" to="23">23</locus> To you my purce and non other wyȝt / Complayne I for you by my lady
+                                    dere</incipit>
+                                <explicit><locus from="23" to="23">23</locus> Quene of comfort and of all company / Be hevy agayne or els most I
+                                    dye</explicit>
+                                <note/>
+                                <listBibl>
+                                    <bibl>MacCracken (1912), pp. 228-229</bibl>
+                                    <bibl>Pace, 'Four Unpublished Chaucer Manuscripts' (1948), p. 461</bibl>
+                                    <bibl>Pace, 'The Text of Chaucer’s Purse' (1948), pp. 117-18</bibl>
+                                    <bibl>IMEV 3787</bibl>
+                                    <bibl>NIMEV 3787</bibl>
+                                    <bibl>DIMEV 6044.5</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="26">
+                                <locus from="24" to="24">24</locus>
+                                <title key="">Medical recipes</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <note>Three recipes added by a later (16th-century) hand, including to unguents and a recipe for eye ailments.</note>
+                            </msItem>
+                            <msItem n="27">
+                                <locus from="33" to="34">33-34</locus>
+                                <title key="">Medical recipes</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="33" to="33">33</locus> Contra yliacam passionem</rubric>
+                                <incipit><locus from="33" to="33">33</locus> et detur in media nocte tepidum etcaetera</incipit>
+                                <note>Copied in a 15th-century hand.</note>
+                            </msItem>
+                            <msItem n="28">
+                                <locus from="35" to="35">35</locus>
+                                <title key="">List of four seasons with signs of the Zodiac and monts</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="35" to="35">35</locus> Jhesus M filius 1461</rubric>
+                                <incipit><locus from="35" to="35">35</locus> Hyem: Capricornus / Aquarius / Pisses - Januarius / Decembre /
+                                    Februarius</incipit>
+                                <explicit><locus from="35" to="35">35</locus> Autumpnus: Libra / Scorpio / Sagitarius - Novembre / Octobre /
+                                    Septembre</explicit>
+                            </msItem>
+                            <msItem n="29">
+                                <locus from="35" to="35">35</locus>
+                                <title key="">List of veins in the human body</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="35" to="35">35</locus> De venis</rubric>
+                                <incipit><locus from="35" to="35">35</locus> In templis: doloribus aurium valent - et visum oculorum</incipit>
+                                <explicit>
+                                    <locus from="35" to="35">35</locus> et dolori maxillarum pro dolor antiquo capitis pro stupore mentis</explicit>
+                            </msItem>
+                            <msItem n="">
+                                <locus from="35" to="35">35</locus>
+                                <title key="">Medical recipe</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <note>A medical recipe in a later (16th-century) hand with two crossed out drafts written above it; the same hand
+                                    added medical recipes to p. <locus from="24" to="24">24</locus>.</note>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="3" to="3">3</locus> excercisid</secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>Paper, folded in <measure type="folding">quarto</measure> with two watermarks: scales and a mountain
+                                            with a cross.</material>
+                                        <!--
+                                        <seg type="para">Folios <locus from="" to=""></locus>:
+                                        <term type="watermarkMotif">Fleur-de-lis</term>
+                                             (<dimensions type="watermark" unit="mm">
+                                             <height quantity="62">62</height>
+                                             <width quantity="47">47</width></dimensions>) 
+                                             <note type="watermarkPosition">in the
+                                             centre of the folio</note>, comparable to
+                                             <note>Heawood 1670, 1672</note>, but with a
+                                            different countermark (HD). 
+                                            These examples are dated to
+                                                <date calendar="gregorian" notBefore="1683" notAfter="1688">1683-1688</date>.</seg>
+                                                </watermark>-->
+                                    </support>
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="18" type="leaf">18</measure> leaves. </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="215">215</height>
+                                                <width quantity="140">140</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                    <collation mainStructures="24">
+                                        <p>
+                                            <list>
+                                                <item>Quire 1<hi rend="superscript">24-6</hi> (pp. <locus from="1r" to="36">1-36</locus>: 1st and 12th
+                                                    leaves replaced; 15th-19th leaves missing, and 1 other leaf missing in the second half of the
+                                                    quire, perhaps the 22nd leaf)</item>
+                                            </list>
+                                        </p>
+                                    </collation>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout columns="1" rulingMedium="ink" topLine="below" writtenLines="32"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height max="175" min="165">165-175</height>
+                                                <width max="130" min="120">120-130</width>
+                                            </dimensions>
+                                            <seg type="ruling"> Ruled in ink, frame only. About 32 lines to the page, written below top line.
+                                            </seg></p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="Cursiva">
+                                    <p>A late 15th- or early 16th-century hand has replaced text for a missing leaf on pp. <locus from="1" to="2">1-2</locus> in a <term type="script">Secretary</term> script; the same hand has copied text to replace a
+                                        missing leaf in the manuscript's second part on pp. <locus from="157" to="158">157-158</locus></p>
+                                </handNote>
+                                <handNote script="CursivaAntiquior">
+                                    <p>A single hand has copied medical texts on pp. <locus from="3" to="11">3-11</locus>, <locus from="13" to="21">13-21</locus>, <locus from="33" to="34">33-34</locus> in a cursive <term type="script">Anglicana</term>
+                                        script.</p>
+                                </handNote>
+                                <handNote script="Cursiva">
+                                    <p>One or two hands have copied verse texts on pp. <locus from="12" to="13">12-13</locus>, <locus from="23" to="23">23</locus> in a <term type="script">Secretary</term> script.</p>
+                                </handNote>
+                                <handNote script="Cursiva">
+                                    <p>One hand has added medical texts to p. <locus from="35" to="35">35</locus> in a script with both <term type="script">Secretary</term> and <term type="script">Anglicana</term> features.</p>
+                                </handNote>
+                                <handNote script="Cursiva">
+                                    <p>A later (16th-century) hand has added Latin medical recipes to pp. <locus from="24" to="24">24</locus> and
+                                            <locus from="35" to="35">35</locus> in a <term type="script">Secretary</term> script.</p>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote type="diagram">
+                                    <p>An astrological chart drawn in black in on p. <locus from="15" to="15">15</locus>.</p>
+                                </decoNote>
+                                <decoNote type="other">
+                                    <p>Underlining in red ink on pp. <locus from="12" to="13">12-13</locus> and <locus from="23" to="23">23</locus></p>
+                                </decoNote>
+                            </decoDesc>
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1500" notBefore="1400"> Copied in the 15th century </origDate>
+                                <origPlace cert="high" key="place_g7002445"> England. </origPlace>
+                            </origin>
+                        </history>
+                        <additional><!--
+                            <listBibl type="WRAPPER">
+                                <bibl/>
+                                <!-\- Insert references from Zotero that relate only to this mspart.-\->
+                            </listBibl>-->
+                        </additional>
+                    </msPart>
+                    <msPart>
+                        <msIdentifier>
+                            <idno>Cambridge, Gonville and Caius College, MS 176/97, pp. 37-228</idno>
+                            <msName>Part 2</msName>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <msItem n="1">
+                                <locus from="37" to="228">37-228</locus>
+                                <title key="">Medical compilation</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                                <rubric><locus from="37" to="37">37</locus> Prologus istius tractatus secundum linguam maternam</rubric>
+                                <incipit><locus from="37" to="37">37</locus> As salamon sayth in þe firste boke of of [sic] his prouerbis firste
+                                    chapitre sayth þus initium sapientie est timor domini bygynnynge of wisdom ys þe dred of god and as aristole [sic]
+                                    sayth in þe þride capitre of ethikis where he sayt þus omnium exspediendorum principium est dei sapientia þe
+                                    bygynnyng of eueri þynge ys þe wysdom of god</incipit>
+                                <explicit defective="true"><locus from="228" to="288">228</locus> tak eyschell y brent filipo'-
+                                </explicit>
+                                <note>Ends imperfectly in chapter 45, which, according to the rubric, is the last. The compiler identifies himself as
+                                    'Aystyn' and states that he produces his work for his friend 'Thomas Plawdon'. Thomas Plouden (d. 1413) was a
+                                    London citizen and barber-surgeon of the parish of All Hallows the Great A treatise on apostemes in Peterhouse
+                                    118, ff. 55v-65r, has also been translated for him. </note>
+                                <note>The work compiles relies on many medical works, including (p. <locus from="120" to="120">120</locus>) the 'booke
+                                    of feuerys of galterus' (i.e. Walter of Agilon [Galterius Agilus]), , and the ((p. <locus from="33" to="133">133</locus>) 'tretis of rasis [?]albulumnninon' (i.e. Abū Bakr Muḥammad ibn Zakariyyāʾ al-Rāzī
+                                    [Rhazes]).</note>
+                                <listBibl>
+                                    <bibl>Voigts (1982), pp. 42-43</bibl>
+                                    <bibl>Voigts (1996), p. 816 </bibl>
+                                    <bibl>Jones (1999), p. 435</bibl>
+                                    <bibl>Voigts and McVaugh (1984), pp. 14-16, 24, 31-34</bibl>
+                                    <bibl>For other texts, see Rand Schmidt (2001), p. 45</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="2">
+                                <locus from="65" to="120">65-120</locus>
+                                <title key="work_1993">Liber Uricrisiarum</title>
+                                <author key="person_v173452882">Henry Daniel</author>
+                                <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                                <rubric><locus from="65" to="65">65</locus> þe fifth chapitre ys what ys an vryne and were of sayd quid est vrina et
+                                    vnde dicatur</rubric>
+                                <incipit><locus from="65" to="65">65</locus> [F]or to knowe what ys an vryn I say as þe comente on gylis sayt in his
+                                    firste Boke of vrynes þe firste chapitre þus he sayt þere þat vryne is as meche to say in english as one in þe
+                                    raynes þat ys to mene vryne ys an onyng and a gaderyng to gederis in þe lendys ffor þe reynes ys frenche þe wiche
+                                    ys þe lendys in englische and why it ys sayde one in þe reynes for þere it ys kyndely causyd and formed</incipit>
+                                <explicit><locus from="120" to="120">120</locus> þe ferþe condicioun of ypostasis ys tyme þat ys to say ȝif ypostasis
+                                    abyde many dayes or elles day be day liche a pynappul white clere and þynne and hool to gedris it ys þanne þe
+                                    beste signe þat may be of helpe ffor it signifieþ þat þe kynde nature is of myȝt to worche and to ouercome þe
+                                    vnkynde maledyes of þe body</explicit>
+                                <finalRubric><locus from="120" to="120">120</locus> Now it is endyd þe vrinys and hir colours with hir contentes and
+                                    hir signifcacioun</finalRubric>
+                                <note>The shorter version of Henry Daniel's LIber Uricrisiarum, illustrated with jordans, and incorporated into a
+                                    large medical compendium (pp. <locus from="65" to="120">65-120</locus>).</note>
+                                <listBibl>
+                                    <bibl>For other texts, see Rand Schmidt (2001), p. 45</bibl>
+                                    <bibl>Tavormina (2014), pp. 90 (no. 5.3), 96 (no. 17.0)</bibl>
+                                    <bibl>Liber Uricrisiarum (2020) [MS G7]</bibl>
+                                    <bibl>Star (2022), pp. xi, 119 (as ‘G7’)</bibl>
+                                    <bibl>'The Seventeen-Chapter Abridgement', in The Henry Daniel Project
+                                        (https://henrydaniel.utoronto.ca/urines/manuscripts/list/) [accessed 24 February 2023]</bibl>
+                                </listBibl>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="39" to="39">39</locus> Galien þis auctorite </secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>Paper, folded in <measure type="folding">quarto</measure> with different watermarks: scales, a
+                                            dragon (wyvern) and a (?) shield.</material>
+                                        <!--<watermark>
+                                        <seg type="para">Folios <locus from="" to=""></locus>:
+                                        <term type="watermarkMotif">Fleur-de-lis</term>
+                                             (<dimensions type="watermark" unit="mm">
+                                             <height quantity="62">62</height>
+                                             <width quantity="47">47</width></dimensions>) 
+                                             <note type="watermarkPosition">in the
+                                             centre of the folio</note>, comparable to
+                                             <note>Heawood 1670, 1672</note>, but with a
+                                            different countermark (HD). 
+                                            These examples are dated to
+                                                <date calendar="gregorian" notBefore="1683" notAfter="1688">1683-1688</date>.</seg>
+                                                </watermark>-->
+                                    </support>
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="96" type="leaf">96</measure> leaves. </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="215">215</height>
+                                                <width quantity="145">145</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                    <collation mainStructures="20">
+                                        <p>
+                                            <list>
+                                                <item>Quires 2-4<hi rend="superscript">20</hi> (pp. <locus from="37" to="156">37-156</locus>)</item>
+                                                <item>Quire 5<hi rend="superscript">20-1</hi> (pp. <locus from="157" to="194">157-194</locus>: 1st
+                                                    leaf replaced; 1 leaf cancelled in the second half of the quire)</item>
+                                                <item>Quire 6<hi rend="superscript">20-3</hi> (pp. <locus from="195" to="228">157-228</locus>: 1st,
+                                                    9th, 10th leaves missing)</item>
+                                            </list>
+                                        </p>
+                                        <catchwords><seg type="para">Catchwords in frames of red ink in the right-hand lower margin of the last versos
+                                                of quires.</seg></catchwords>
+                                    </collation>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout columns="1" rulingMedium="leadpoint" topLine="below" writtenLines="30 31"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height quantity="185">185</height>
+                                                <width quantity="100">100</width>
+                                            </dimensions>
+                                            <seg type="ruling"> Ruled in leadpoint, frame only. 30-31 lines to the page, written below top line.
+                                            </seg></p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="CursivaAntiquior">
+                                    <p>Copied almost entirely by a single scribe in a cursive <term type="script">Anglicana</term> script. </p>
+                                </handNote>
+                                <handNote script="Cursiva">
+                                    <p>A late 15th- or early 16th-century hand has replaced text for a missing leaf on pp. <locus from="157" to="158">157-158</locus> in a <term type="script">Secretary</term> script; the same hand has copied text to
+                                        replace a missing leaf in the manuscript's first part on pp. <locus from="1" to="2">1-2</locus>. </p>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote type="miniature">
+                                    <p>Drawings of jordans on pp. <locus from="81" to="103">81-103</locus>. Initially, the jorands have been coloured
+                                        in, but they are left unfinished (only outlined in brown ink) after from p. <locus from="88" to="88">88</locus> onwards. </p>
+                                </decoNote>
+                                <decoNote type="decInit">
+                                    <p>One large (3-line) dark grey initial 'O' with a human face drawn inside it with black in on p. <locus from="85" to="85">85</locus>; perhaps added at a later stage.</p>
+                                </decoNote>
+                                <decoNote type="rubrication">
+                                    <p>Headers rubricated in red ink throughout.</p>
+                                </decoNote>
+                                <decoNote type="other">
+                                    <p>Small (1 line) capitals occasionally highlighted with red ink.</p>
+                                </decoNote>
+                                <decoNote type="other">
+                                    <p>Paraphs in red ink when used in regular text and in black ink when used in rubricated text.</p>
+                                </decoNote>
+                                <decoNote type="other">
+                                    <p>Underlining and strikethroughs in red ink.</p>
+                                </decoNote>
+                                <decoNote type="other">
+                                    <p>Guide letters in blank spaces left for large coloured initials throughout.</p>
+                                </decoNote>
+                            </decoDesc>
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1500" notBefore="1400"> Copied in the 15th century. </origDate>
+                                <origPlace cert="high" key="place_g7002445"> England. </origPlace>
+                            </origin>
+                        </history>
+                        <additional><!--
+                            <listBibl type="WRAPPER">
+                                <bibl/>
+                                <!-\- Insert references from Zotero that relate only to this mspart -\->
+                            </listBibl>-->
+                        </additional>
+                    </msPart>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85083064"> Medicine</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change status="draft" when="2023-02-24"><persName>Dr Clarck Drieshen, Project Cataloguer, Cambridge University Library</persName>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic decls="#document-thumbnail" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00001"/>
+        <surface n="front cover, outer" xml:id="page-surface-1">
+            <graphic decls="#downloadImageRights #download" height="7609px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00001" width="5167px"/>
+        </surface>
+        <surface n="front cover, inner" xml:id="page-surface-2">
+            <graphic decls="#downloadImageRights #download" height="7678px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00002" width="5201px"/>
+        </surface>
+        <surface n="[i]" xml:id="page-surface-3">
+            <graphic decls="#downloadImageRights #download" height="7496px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00003" width="4806px"/>
+        </surface>
+        <surface n="[ii]" xml:id="page-surface-4">
+            <graphic decls="#downloadImageRights #download" height="7654px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00004" width="4873px"/>
+        </surface>
+        <surface n="[iii]" xml:id="page-surface-5">
+            <graphic decls="#downloadImageRights #download" height="7630px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00005" width="4665px"/>
+        </surface>
+        <surface n="[iv]" xml:id="page-surface-6">
+            <graphic decls="#downloadImageRights #download" height="7654px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00006" width="4873px"/>
+        </surface>
+        <surface n="1" xml:id="page-surface-7">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00007" width="4850px"/>
+        </surface>
+        <surface n="2" xml:id="page-surface-8">
+            <graphic decls="#downloadImageRights #download" height="7654px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00008" width="4873px"/>
+        </surface>
+        <surface n="3" xml:id="page-surface-9">
+            <graphic decls="#downloadImageRights #download" height="7539px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00009" width="4825px"/>
+        </surface>
+        <surface n="4" xml:id="page-surface-10">
+            <graphic decls="#downloadImageRights #download" height="7654px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00010" width="4873px"/>
+        </surface>
+        <surface n="5" xml:id="page-surface-11">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00011" width="4850px"/>
+        </surface>
+        <surface n="6" xml:id="page-surface-12">
+            <graphic decls="#downloadImageRights #download" height="7654px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00012" width="4873px"/>
+        </surface>
+        <surface n="7" xml:id="page-surface-13">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00013" width="4712px"/>
+        </surface>
+        <surface n="8" xml:id="page-surface-14">
+            <graphic decls="#downloadImageRights #download" height="7654px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00014" width="4873px"/>
+        </surface>
+        <surface n="9" xml:id="page-surface-15">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00015" width="4712px"/>
+        </surface>
+        <surface n="10" xml:id="page-surface-16">
+            <graphic decls="#downloadImageRights #download" height="7654px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00016" width="4873px"/>
+        </surface>
+        <surface n="11" xml:id="page-surface-17">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00017" width="4712px"/>
+        </surface>
+        <surface n="12" xml:id="page-surface-18">
+            <graphic decls="#downloadImageRights #download" height="7654px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00018" width="4873px"/>
+        </surface>
+        <surface n="13" xml:id="page-surface-19">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00019" width="4712px"/>
+        </surface>
+        <surface n="14" xml:id="page-surface-20">
+            <graphic decls="#downloadImageRights #download" height="7654px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00020" width="4873px"/>
+        </surface>
+        <surface n="15" xml:id="page-surface-21">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00021" width="4712px"/>
+        </surface>
+        <surface n="16" xml:id="page-surface-22">
+            <graphic decls="#downloadImageRights #download" height="7654px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00022" width="4873px"/>
+        </surface>
+        <surface n="17" xml:id="page-surface-23">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00023" width="4712px"/>
+        </surface>
+        <surface n="18" xml:id="page-surface-24">
+            <graphic decls="#downloadImageRights #download" height="7654px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00024" width="4873px"/>
+        </surface>
+        <surface n="19" xml:id="page-surface-25">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00025" width="4712px"/>
+        </surface>
+        <surface n="20" xml:id="page-surface-26">
+            <graphic decls="#downloadImageRights #download" height="7654px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00026" width="4873px"/>
+        </surface>
+        <surface n="21" xml:id="page-surface-27">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00027" width="4712px"/>
+        </surface>
+        <surface n="22" xml:id="page-surface-28">
+            <graphic decls="#downloadImageRights #download" height="7654px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00028" width="4873px"/>
+        </surface>
+        <surface n="23" xml:id="page-surface-29">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00029" width="4712px"/>
+        </surface>
+        <surface n="24" xml:id="page-surface-30">
+            <graphic decls="#downloadImageRights #download" height="7654px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00030" width="4873px"/>
+        </surface>
+        <surface n="25" xml:id="page-surface-31">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00031" width="4712px"/>
+        </surface>
+        <surface n="26" xml:id="page-surface-32">
+            <graphic decls="#downloadImageRights #download" height="7654px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00032" width="4873px"/>
+        </surface>
+        <surface n="27" xml:id="page-surface-33">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00033" width="4712px"/>
+        </surface>
+        <surface n="28" xml:id="page-surface-34">
+            <graphic decls="#downloadImageRights #download" height="7654px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00034" width="4873px"/>
+        </surface>
+        <surface n="29" xml:id="page-surface-35">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00035" width="4712px"/>
+        </surface>
+        <surface n="30" xml:id="page-surface-36">
+            <graphic decls="#downloadImageRights #download" height="7654px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00036" width="4728px"/>
+        </surface>
+        <surface n="31" xml:id="page-surface-37">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00037" width="4712px"/>
+        </surface>
+        <surface n="32" xml:id="page-surface-38">
+            <graphic decls="#downloadImageRights #download" height="7654px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00038" width="4873px"/>
+        </surface>
+        <surface n="33" xml:id="page-surface-39">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00039" width="4628px"/>
+        </surface>
+        <surface n="34" xml:id="page-surface-40">
+            <graphic decls="#downloadImageRights #download" height="7649px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00040" width="4805px"/>
+        </surface>
+        <surface n="35" xml:id="page-surface-41">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00041" width="4628px"/>
+        </surface>
+        <surface n="36" xml:id="page-surface-42">
+            <graphic decls="#downloadImageRights #download" height="7649px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00042" width="4805px"/>
+        </surface>
+        <surface n="37" xml:id="page-surface-43">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00043" width="4628px"/>
+        </surface>
+        <surface n="38" xml:id="page-surface-44">
+            <graphic decls="#downloadImageRights #download" height="7649px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00044" width="4805px"/>
+        </surface>
+        <surface n="39" xml:id="page-surface-45">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00045" width="4628px"/>
+        </surface>
+        <surface n="40" xml:id="page-surface-46">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00046" width="4750px"/>
+        </surface>
+        <surface n="41" xml:id="page-surface-47">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00047" width="4628px"/>
+        </surface>
+        <surface n="42" xml:id="page-surface-48">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00048" width="4750px"/>
+        </surface>
+        <surface n="43" xml:id="page-surface-49">
+            <graphic decls="#downloadImageRights #download" height="7650px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00049" width="4628px"/>
+        </surface>
+        <surface n="44" xml:id="page-surface-50">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00050" width="4750px"/>
+        </surface>
+        <surface n="45" xml:id="page-surface-51">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00051" width="4561px"/>
+        </surface>
+        <surface n="46" xml:id="page-surface-52">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00052" width="4750px"/>
+        </surface>
+        <surface n="47" xml:id="page-surface-53">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00053" width="4561px"/>
+        </surface>
+        <surface n="48" xml:id="page-surface-54">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00054" width="4750px"/>
+        </surface>
+        <surface n="49" xml:id="page-surface-55">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00055" width="4561px"/>
+        </surface>
+        <surface n="50" xml:id="page-surface-56">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00056" width="4750px"/>
+        </surface>
+        <surface n="51" xml:id="page-surface-57">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00057" width="4561px"/>
+        </surface>
+        <surface n="52" xml:id="page-surface-58">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00058" width="4750px"/>
+        </surface>
+        <surface n="53" xml:id="page-surface-59">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00059" width="4561px"/>
+        </surface>
+        <surface n="54" xml:id="page-surface-60">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00060" width="4683px"/>
+        </surface>
+        <surface n="55" xml:id="page-surface-61">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00061" width="4561px"/>
+        </surface>
+        <surface n="56" xml:id="page-surface-62">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00062" width="4683px"/>
+        </surface>
+        <surface n="57" xml:id="page-surface-63">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00063" width="4561px"/>
+        </surface>
+        <surface n="58" xml:id="page-surface-64">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00064" width="4683px"/>
+        </surface>
+        <surface n="59" xml:id="page-surface-65">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00065" width="4561px"/>
+        </surface>
+        <surface n="60" xml:id="page-surface-66">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00066" width="4683px"/>
+        </surface>
+        <surface n="61" xml:id="page-surface-67">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00067" width="4561px"/>
+        </surface>
+        <surface n="62" xml:id="page-surface-68">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00068" width="4688px"/>
+        </surface>
+        <surface n="63" xml:id="page-surface-69">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00069" width="4561px"/>
+        </surface>
+        <surface n="64" xml:id="page-surface-70">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00070" width="4688px"/>
+        </surface>
+        <surface n="65" xml:id="page-surface-71">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00071" width="4561px"/>
+        </surface>
+        <surface n="66" xml:id="page-surface-72">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00072" width="4688px"/>
+        </surface>
+        <surface n="67" xml:id="page-surface-73">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00073" width="4561px"/>
+        </surface>
+        <surface n="68" xml:id="page-surface-74">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00074" width="4688px"/>
+        </surface>
+        <surface n="69" xml:id="page-surface-75">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00075" width="4561px"/>
+        </surface>
+        <surface n="70" xml:id="page-surface-76">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00076" width="4688px"/>
+        </surface>
+        <surface n="71" xml:id="page-surface-77">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00077" width="4561px"/>
+        </surface>
+        <surface n="72" xml:id="page-surface-78">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00078" width="4688px"/>
+        </surface>
+        <surface n="73" xml:id="page-surface-79">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00079" width="4521px"/>
+        </surface>
+        <surface n="74" xml:id="page-surface-80">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00080" width="4688px"/>
+        </surface>
+        <surface n="75" xml:id="page-surface-81">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00081" width="4521px"/>
+        </surface>
+        <surface n="76" xml:id="page-surface-82">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00082" width="4688px"/>
+        </surface>
+        <surface n="77" xml:id="page-surface-83">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00083" width="4521px"/>
+        </surface>
+        <surface n="78" xml:id="page-surface-84">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00084" width="4688px"/>
+        </surface>
+        <surface n="79" xml:id="page-surface-85">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00085" width="4521px"/>
+        </surface>
+        <surface n="80" xml:id="page-surface-86">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00086" width="4688px"/>
+        </surface>
+        <surface n="81" xml:id="page-surface-87">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00087" width="4521px"/>
+        </surface>
+        <surface n="82" xml:id="page-surface-88">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00088" width="4688px"/>
+        </surface>
+        <surface n="83" xml:id="page-surface-89">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00089" width="4521px"/>
+        </surface>
+        <surface n="84" xml:id="page-surface-90">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00090" width="4688px"/>
+        </surface>
+        <surface n="85" xml:id="page-surface-91">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00091" width="4521px"/>
+        </surface>
+        <surface n="86" xml:id="page-surface-92">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00092" width="4688px"/>
+        </surface>
+        <surface n="87" xml:id="page-surface-93">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00093" width="4521px"/>
+        </surface>
+        <surface n="88" xml:id="page-surface-94">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00094" width="4688px"/>
+        </surface>
+        <surface n="89" xml:id="page-surface-95">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00095" width="4521px"/>
+        </surface>
+        <surface n="90" xml:id="page-surface-96">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00096" width="4688px"/>
+        </surface>
+        <surface n="91" xml:id="page-surface-97">
+            <graphic decls="#downloadImageRights #download" height="7635px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00097" width="4543px"/>
+        </surface>
+        <surface n="92" xml:id="page-surface-98">
+            <graphic decls="#downloadImageRights #download" height="7660px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00098" width="4688px"/>
+        </surface>
+        <surface n="93" xml:id="page-surface-99">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00099" width="4521px"/>
+        </surface>
+        <surface n="94" xml:id="page-surface-100">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00100" width="4683px"/>
+        </surface>
+        <surface n="95" xml:id="page-surface-101">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00101" width="4521px"/>
+        </surface>
+        <surface n="96" xml:id="page-surface-102">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00102" width="4683px"/>
+        </surface>
+        <surface n="97" xml:id="page-surface-103">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00103" width="4583px"/>
+        </surface>
+        <surface n="98" xml:id="page-surface-104">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00104" width="4683px"/>
+        </surface>
+        <surface n="99" xml:id="page-surface-105">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00105" width="4583px"/>
+        </surface>
+        <surface n="100" xml:id="page-surface-106">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00106" width="4683px"/>
+        </surface>
+        <surface n="101" xml:id="page-surface-107">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00107" width="4583px"/>
+        </surface>
+        <surface n="102" xml:id="page-surface-108">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00108" width="4683px"/>
+        </surface>
+        <surface n="103" xml:id="page-surface-109">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00109" width="4583px"/>
+        </surface>
+        <surface n="104" xml:id="page-surface-110">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00110" width="4683px"/>
+        </surface>
+        <surface n="105" xml:id="page-surface-111">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00111" width="4583px"/>
+        </surface>
+        <surface n="106" xml:id="page-surface-112">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00112" width="4683px"/>
+        </surface>
+        <surface n="107" xml:id="page-surface-113">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00113" width="4583px"/>
+        </surface>
+        <surface n="108" xml:id="page-surface-114">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00114" width="4683px"/>
+        </surface>
+        <surface n="109" xml:id="page-surface-115">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00115" width="4583px"/>
+        </surface>
+        <surface n="110" xml:id="page-surface-116">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00116" width="4683px"/>
+        </surface>
+        <surface n="111" xml:id="page-surface-117">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00117" width="4583px"/>
+        </surface>
+        <surface n="112" xml:id="page-surface-118">
+            <graphic decls="#downloadImageRights #download" height="7747px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00118" width="4738px"/>
+        </surface>
+        <surface n="113" xml:id="page-surface-119">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00119" width="4583px"/>
+        </surface>
+        <surface n="114" xml:id="page-surface-120">
+            <graphic decls="#downloadImageRights #download" height="7711px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00120" width="4717px"/>
+        </surface>
+        <surface n="115" xml:id="page-surface-121">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00121" width="4583px"/>
+        </surface>
+        <surface n="116" xml:id="page-surface-122">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00122" width="4687px"/>
+        </surface>
+        <surface n="117" xml:id="page-surface-123">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00123" width="4583px"/>
+        </surface>
+        <surface n="118" xml:id="page-surface-124">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00124" width="4687px"/>
+        </surface>
+        <surface n="119" xml:id="page-surface-125">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00125" width="4583px"/>
+        </surface>
+        <surface n="120" xml:id="page-surface-126">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00126" width="4687px"/>
+        </surface>
+        <surface n="121" xml:id="page-surface-127">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00127" width="4583px"/>
+        </surface>
+        <surface n="122" xml:id="page-surface-128">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00128" width="4687px"/>
+        </surface>
+        <surface n="123" xml:id="page-surface-129">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00129" width="4583px"/>
+        </surface>
+        <surface n="124" xml:id="page-surface-130">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00130" width="4687px"/>
+        </surface>
+        <surface n="125" xml:id="page-surface-131">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00131" width="4583px"/>
+        </surface>
+        <surface n="126" xml:id="page-surface-132">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00132" width="4687px"/>
+        </surface>
+        <surface n="127" xml:id="page-surface-133">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00133" width="4583px"/>
+        </surface>
+        <surface n="128" xml:id="page-surface-134">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00134" width="4687px"/>
+        </surface>
+        <surface n="129" xml:id="page-surface-135">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00135" width="4583px"/>
+        </surface>
+        <surface n="130" xml:id="page-surface-136">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00136" width="4687px"/>
+        </surface>
+        <surface n="131" xml:id="page-surface-137">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00137" width="4583px"/>
+        </surface>
+        <surface n="132" xml:id="page-surface-138">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00138" width="4687px"/>
+        </surface>
+        <surface n="133" xml:id="page-surface-139">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00139" width="4615px"/>
+        </surface>
+        <surface n="134" xml:id="page-surface-140">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00140" width="4687px"/>
+        </surface>
+        <surface n="135" xml:id="page-surface-141">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00141" width="4615px"/>
+        </surface>
+        <surface n="136" xml:id="page-surface-142">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00142" width="4687px"/>
+        </surface>
+        <surface n="137" xml:id="page-surface-143">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00143" width="4615px"/>
+        </surface>
+        <surface n="138" xml:id="page-surface-144">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00144" width="4687px"/>
+        </surface>
+        <surface n="139" xml:id="page-surface-145">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00145" width="4615px"/>
+        </surface>
+        <surface n="140" xml:id="page-surface-146">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00146" width="4687px"/>
+        </surface>
+        <surface n="141" xml:id="page-surface-147">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00147" width="4615px"/>
+        </surface>
+        <surface n="142" xml:id="page-surface-148">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00148" width="4687px"/>
+        </surface>
+        <surface n="143" xml:id="page-surface-149">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00149" width="4615px"/>
+        </surface>
+        <surface n="144" xml:id="page-surface-150">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00150" width="4687px"/>
+        </surface>
+        <surface n="145" xml:id="page-surface-151">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00151" width="4615px"/>
+        </surface>
+        <surface n="146" xml:id="page-surface-152">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00152" width="4687px"/>
+        </surface>
+        <surface n="147" xml:id="page-surface-153">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00153" width="4615px"/>
+        </surface>
+        <surface n="148" xml:id="page-surface-154">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00154" width="4687px"/>
+        </surface>
+        <surface n="149" xml:id="page-surface-155">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00155" width="4615px"/>
+        </surface>
+        <surface n="150" xml:id="page-surface-156">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00156" width="4687px"/>
+        </surface>
+        <surface n="151" xml:id="page-surface-157">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00157" width="4615px"/>
+        </surface>
+        <surface n="152" xml:id="page-surface-158">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00158" width="4687px"/>
+        </surface>
+        <surface n="153" xml:id="page-surface-159">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00159" width="4615px"/>
+        </surface>
+        <surface n="154" xml:id="page-surface-160">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00160" width="4687px"/>
+        </surface>
+        <surface n="155" xml:id="page-surface-161">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00161" width="4615px"/>
+        </surface>
+        <surface n="156" xml:id="page-surface-162">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00162" width="4687px"/>
+        </surface>
+        <surface n="157" xml:id="page-surface-163">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00163" width="4615px"/>
+        </surface>
+        <surface n="158" xml:id="page-surface-164">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00164" width="4687px"/>
+        </surface>
+        <surface n="159" xml:id="page-surface-165">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00165" width="4615px"/>
+        </surface>
+        <surface n="160" xml:id="page-surface-166">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00166" width="4687px"/>
+        </surface>
+        <surface n="161" xml:id="page-surface-167">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00167" width="4554px"/>
+        </surface>
+        <surface n="162" xml:id="page-surface-168">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00168" width="4687px"/>
+        </surface>
+        <surface n="163" xml:id="page-surface-169">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00169" width="4554px"/>
+        </surface>
+        <surface n="164" xml:id="page-surface-170">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00170" width="4687px"/>
+        </surface>
+        <surface n="165" xml:id="page-surface-171">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00171" width="4554px"/>
+        </surface>
+        <surface n="166" xml:id="page-surface-172">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00172" width="4687px"/>
+        </surface>
+        <surface n="167" xml:id="page-surface-173">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00173" width="4554px"/>
+        </surface>
+        <surface n="168" xml:id="page-surface-174">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00174" width="4687px"/>
+        </surface>
+        <surface n="169" xml:id="page-surface-175">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00175" width="4554px"/>
+        </surface>
+        <surface n="170" xml:id="page-surface-176">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00176" width="4687px"/>
+        </surface>
+        <surface n="171" xml:id="page-surface-177">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00177" width="4554px"/>
+        </surface>
+        <surface n="172" xml:id="page-surface-178">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00178" width="4687px"/>
+        </surface>
+        <surface n="173" xml:id="page-surface-179">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00179" width="4554px"/>
+        </surface>
+        <surface n="174" xml:id="page-surface-180">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00180" width="4687px"/>
+        </surface>
+        <surface n="175" xml:id="page-surface-181">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00181" width="4554px"/>
+        </surface>
+        <surface n="176" xml:id="page-surface-182">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00182" width="4687px"/>
+        </surface>
+        <surface n="177" xml:id="page-surface-183">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00183" width="4554px"/>
+        </surface>
+        <surface n="178" xml:id="page-surface-184">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00184" width="4687px"/>
+        </surface>
+        <surface n="179" xml:id="page-surface-185">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00185" width="4554px"/>
+        </surface>
+        <surface n="180" xml:id="page-surface-186">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00186" width="4687px"/>
+        </surface>
+        <surface n="181" xml:id="page-surface-187">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00187" width="4646px"/>
+        </surface>
+        <surface n="182" xml:id="page-surface-188">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00188" width="4687px"/>
+        </surface>
+        <surface n="183" xml:id="page-surface-189">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00189" width="4686px"/>
+        </surface>
+        <surface n="184" xml:id="page-surface-190">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00190" width="4687px"/>
+        </surface>
+        <surface n="185" xml:id="page-surface-191">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00191" width="4686px"/>
+        </surface>
+        <surface n="186" xml:id="page-surface-192">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00192" width="4687px"/>
+        </surface>
+        <surface n="187" xml:id="page-surface-193">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00193" width="4686px"/>
+        </surface>
+        <surface n="188" xml:id="page-surface-194">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00194" width="4687px"/>
+        </surface>
+        <surface n="189" xml:id="page-surface-195">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00195" width="4686px"/>
+        </surface>
+        <surface n="190" xml:id="page-surface-196">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00196" width="4687px"/>
+        </surface>
+        <surface n="191" xml:id="page-surface-197">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00197" width="4686px"/>
+        </surface>
+        <surface n="192" xml:id="page-surface-198">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00198" width="4687px"/>
+        </surface>
+        <surface n="193" xml:id="page-surface-199">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00199" width="4686px"/>
+        </surface>
+        <surface n="194" xml:id="page-surface-200">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00200" width="4687px"/>
+        </surface>
+        <surface n="195" xml:id="page-surface-201">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00201" width="4686px"/>
+        </surface>
+        <surface n="196" xml:id="page-surface-202">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00202" width="4687px"/>
+        </surface>
+        <surface n="197" xml:id="page-surface-203">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00203" width="4686px"/>
+        </surface>
+        <surface n="198" xml:id="page-surface-204">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00204" width="4687px"/>
+        </surface>
+        <surface n="199" xml:id="page-surface-205">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00205" width="4686px"/>
+        </surface>
+        <surface n="200" xml:id="page-surface-206">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00206" width="4687px"/>
+        </surface>
+        <surface n="201" xml:id="page-surface-207">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00207" width="4686px"/>
+        </surface>
+        <surface n="202" xml:id="page-surface-208">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00208" width="4687px"/>
+        </surface>
+        <surface n="203" xml:id="page-surface-209">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00209" width="4686px"/>
+        </surface>
+        <surface n="204" xml:id="page-surface-210">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00210" width="4687px"/>
+        </surface>
+        <surface n="205" xml:id="page-surface-211">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00211" width="4686px"/>
+        </surface>
+        <surface n="206" xml:id="page-surface-212">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00212" width="4687px"/>
+        </surface>
+        <surface n="207" xml:id="page-surface-213">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00213" width="4686px"/>
+        </surface>
+        <surface n="208" xml:id="page-surface-214">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00214" width="4687px"/>
+        </surface>
+        <surface n="209" xml:id="page-surface-215">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00215" width="4686px"/>
+        </surface>
+        <surface n="210" xml:id="page-surface-216">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00216" width="4687px"/>
+        </surface>
+        <surface n="211" xml:id="page-surface-217">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00217" width="4686px"/>
+        </surface>
+        <surface n="212" xml:id="page-surface-218">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00218" width="4687px"/>
+        </surface>
+        <surface n="213" xml:id="page-surface-219">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00219" width="4686px"/>
+        </surface>
+        <surface n="214" xml:id="page-surface-220">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00220" width="4687px"/>
+        </surface>
+        <surface n="215" xml:id="page-surface-221">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00221" width="4686px"/>
+        </surface>
+        <surface n="216" xml:id="page-surface-222">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00222" width="4687px"/>
+        </surface>
+        <surface n="217" xml:id="page-surface-223">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00223" width="4686px"/>
+        </surface>
+        <surface n="218" xml:id="page-surface-224">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00224" width="4687px"/>
+        </surface>
+        <surface n="219" xml:id="page-surface-225">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00225" width="4686px"/>
+        </surface>
+        <surface n="220" xml:id="page-surface-226">
+            <graphic decls="#downloadImageRights #download" height="7658px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00226" width="4687px"/>
+        </surface>
+        <surface n="221" xml:id="page-surface-227">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00227" width="4686px"/>
+        </surface>
+        <surface n="222" xml:id="page-surface-228">
+            <graphic decls="#downloadImageRights #download" height="7678px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00228" width="4637px"/>
+        </surface>
+        <surface n="223" xml:id="page-surface-229">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00229" width="4686px"/>
+        </surface>
+        <surface n="224" xml:id="page-surface-230">
+            <graphic decls="#downloadImageRights #download" height="7678px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00230" width="4637px"/>
+        </surface>
+        <surface n="225" xml:id="page-surface-231">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00231" width="4686px"/>
+        </surface>
+        <surface n="226" xml:id="page-surface-232">
+            <graphic decls="#downloadImageRights #download" height="7678px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00232" width="4637px"/>
+        </surface>
+        <surface n="227" xml:id="page-surface-233">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00233" width="4686px"/>
+        </surface>
+        <surface n="228" xml:id="page-surface-234">
+            <graphic decls="#downloadImageRights #download" height="7678px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00234" width="4637px"/>
+        </surface>
+        <surface n="[v]" xml:id="page-surface-235">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00235" width="4686px"/>
+        </surface>
+        <surface n="[vi]" xml:id="page-surface-236">
+            <graphic decls="#downloadImageRights #download" height="7678px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00236" width="4637px"/>
+        </surface>
+        <surface n="[vii]" xml:id="page-surface-237">
+            <graphic decls="#downloadImageRights #download" height="7614px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00237" width="4686px"/>
+        </surface>
+        <surface n="[viii]" xml:id="page-surface-238">
+            <graphic decls="#downloadImageRights #download" height="7678px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00238" width="4637px"/>
+        </surface>
+        <surface n="rear cover, inner" xml:id="page-surface-239">
+            <graphic decls="#downloadImageRights #download" height="7706px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00239" width="4804px"/>
+        </surface>
+        <surface n="rear cover, outer" xml:id="page-surface-240">
+            <graphic decls="#downloadImageRights #download" height="7839px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00240" width="4962px"/>
+        </surface>
+        <surface n="spine" xml:id="page-surface-241">
+            <graphic decls="#downloadImageRights #download" height="6944px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00176-00097-000-00242" width="2137px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#page-surface-1" n="front cover, outer" xml:id="page-pb-1"/>
+                <pb facs="#page-surface-2" n="front cover, inner" xml:id="page-pb-2"/>
+                <pb facs="#page-surface-3" n="[i]" xml:id="page-pb-3"/>
+                <pb facs="#page-surface-4" n="[ii]" xml:id="page-pb-4"/>
+                <pb facs="#page-surface-5" n="[iii]" xml:id="page-pb-5"/>
+                <pb facs="#page-surface-6" n="[iv]" xml:id="page-pb-6"/>
+                <pb facs="#page-surface-7" n="1" xml:id="page-pb-7"/>
+                <pb facs="#page-surface-8" n="2" xml:id="page-pb-8"/>
+                <pb facs="#page-surface-9" n="3" xml:id="page-pb-9"/>
+                <pb facs="#page-surface-10" n="4" xml:id="page-pb-10"/>
+                <pb facs="#page-surface-11" n="5" xml:id="page-pb-11"/>
+                <pb facs="#page-surface-12" n="6" xml:id="page-pb-12"/>
+                <pb facs="#page-surface-13" n="7" xml:id="page-pb-13"/>
+                <pb facs="#page-surface-14" n="8" xml:id="page-pb-14"/>
+                <pb facs="#page-surface-15" n="9" xml:id="page-pb-15"/>
+                <pb facs="#page-surface-16" n="10" xml:id="page-pb-16"/>
+                <pb facs="#page-surface-17" n="11" xml:id="page-pb-17"/>
+                <pb facs="#page-surface-18" n="12" xml:id="page-pb-18"/>
+                <pb facs="#page-surface-19" n="13" xml:id="page-pb-19"/>
+                <pb facs="#page-surface-20" n="14" xml:id="page-pb-20"/>
+                <pb facs="#page-surface-21" n="15" xml:id="page-pb-21"/>
+                <pb facs="#page-surface-22" n="16" xml:id="page-pb-22"/>
+                <pb facs="#page-surface-23" n="17" xml:id="page-pb-23"/>
+                <pb facs="#page-surface-24" n="18" xml:id="page-pb-24"/>
+                <pb facs="#page-surface-25" n="19" xml:id="page-pb-25"/>
+                <pb facs="#page-surface-26" n="20" xml:id="page-pb-26"/>
+                <pb facs="#page-surface-27" n="21" xml:id="page-pb-27"/>
+                <pb facs="#page-surface-28" n="22" xml:id="page-pb-28"/>
+                <pb facs="#page-surface-29" n="23" xml:id="page-pb-29"/>
+                <pb facs="#page-surface-30" n="24" xml:id="page-pb-30"/>
+                <pb facs="#page-surface-31" n="25" xml:id="page-pb-31"/>
+                <pb facs="#page-surface-32" n="26" xml:id="page-pb-32"/>
+                <pb facs="#page-surface-33" n="27" xml:id="page-pb-33"/>
+                <pb facs="#page-surface-34" n="28" xml:id="page-pb-34"/>
+                <pb facs="#page-surface-35" n="29" xml:id="page-pb-35"/>
+                <pb facs="#page-surface-36" n="30" xml:id="page-pb-36"/>
+                <pb facs="#page-surface-37" n="31" xml:id="page-pb-37"/>
+                <pb facs="#page-surface-38" n="32" xml:id="page-pb-38"/>
+                <pb facs="#page-surface-39" n="33" xml:id="page-pb-39"/>
+                <pb facs="#page-surface-40" n="34" xml:id="page-pb-40"/>
+                <pb facs="#page-surface-41" n="35" xml:id="page-pb-41"/>
+                <pb facs="#page-surface-42" n="36" xml:id="page-pb-42"/>
+                <pb facs="#page-surface-43" n="37" xml:id="page-pb-43"/>
+                <pb facs="#page-surface-44" n="38" xml:id="page-pb-44"/>
+                <pb facs="#page-surface-45" n="39" xml:id="page-pb-45"/>
+                <pb facs="#page-surface-46" n="40" xml:id="page-pb-46"/>
+                <pb facs="#page-surface-47" n="41" xml:id="page-pb-47"/>
+                <pb facs="#page-surface-48" n="42" xml:id="page-pb-48"/>
+                <pb facs="#page-surface-49" n="43" xml:id="page-pb-49"/>
+                <pb facs="#page-surface-50" n="44" xml:id="page-pb-50"/>
+                <pb facs="#page-surface-51" n="45" xml:id="page-pb-51"/>
+                <pb facs="#page-surface-52" n="46" xml:id="page-pb-52"/>
+                <pb facs="#page-surface-53" n="47" xml:id="page-pb-53"/>
+                <pb facs="#page-surface-54" n="48" xml:id="page-pb-54"/>
+                <pb facs="#page-surface-55" n="49" xml:id="page-pb-55"/>
+                <pb facs="#page-surface-56" n="50" xml:id="page-pb-56"/>
+                <pb facs="#page-surface-57" n="51" xml:id="page-pb-57"/>
+                <pb facs="#page-surface-58" n="52" xml:id="page-pb-58"/>
+                <pb facs="#page-surface-59" n="53" xml:id="page-pb-59"/>
+                <pb facs="#page-surface-60" n="54" xml:id="page-pb-60"/>
+                <pb facs="#page-surface-61" n="55" xml:id="page-pb-61"/>
+                <pb facs="#page-surface-62" n="56" xml:id="page-pb-62"/>
+                <pb facs="#page-surface-63" n="57" xml:id="page-pb-63"/>
+                <pb facs="#page-surface-64" n="58" xml:id="page-pb-64"/>
+                <pb facs="#page-surface-65" n="59" xml:id="page-pb-65"/>
+                <pb facs="#page-surface-66" n="60" xml:id="page-pb-66"/>
+                <pb facs="#page-surface-67" n="61" xml:id="page-pb-67"/>
+                <pb facs="#page-surface-68" n="62" xml:id="page-pb-68"/>
+                <pb facs="#page-surface-69" n="63" xml:id="page-pb-69"/>
+                <pb facs="#page-surface-70" n="64" xml:id="page-pb-70"/>
+                <pb facs="#page-surface-71" n="65" xml:id="page-pb-71"/>
+                <pb facs="#page-surface-72" n="66" xml:id="page-pb-72"/>
+                <pb facs="#page-surface-73" n="67" xml:id="page-pb-73"/>
+                <pb facs="#page-surface-74" n="68" xml:id="page-pb-74"/>
+                <pb facs="#page-surface-75" n="69" xml:id="page-pb-75"/>
+                <pb facs="#page-surface-76" n="70" xml:id="page-pb-76"/>
+                <pb facs="#page-surface-77" n="71" xml:id="page-pb-77"/>
+                <pb facs="#page-surface-78" n="72" xml:id="page-pb-78"/>
+                <pb facs="#page-surface-79" n="73" xml:id="page-pb-79"/>
+                <pb facs="#page-surface-80" n="74" xml:id="page-pb-80"/>
+                <pb facs="#page-surface-81" n="75" xml:id="page-pb-81"/>
+                <pb facs="#page-surface-82" n="76" xml:id="page-pb-82"/>
+                <pb facs="#page-surface-83" n="77" xml:id="page-pb-83"/>
+                <pb facs="#page-surface-84" n="78" xml:id="page-pb-84"/>
+                <pb facs="#page-surface-85" n="79" xml:id="page-pb-85"/>
+                <pb facs="#page-surface-86" n="80" xml:id="page-pb-86"/>
+                <pb facs="#page-surface-87" n="81" xml:id="page-pb-87"/>
+                <pb facs="#page-surface-88" n="82" xml:id="page-pb-88"/>
+                <pb facs="#page-surface-89" n="83" xml:id="page-pb-89"/>
+                <pb facs="#page-surface-90" n="84" xml:id="page-pb-90"/>
+                <pb facs="#page-surface-91" n="85" xml:id="page-pb-91"/>
+                <pb facs="#page-surface-92" n="86" xml:id="page-pb-92"/>
+                <pb facs="#page-surface-93" n="87" xml:id="page-pb-93"/>
+                <pb facs="#page-surface-94" n="88" xml:id="page-pb-94"/>
+                <pb facs="#page-surface-95" n="89" xml:id="page-pb-95"/>
+                <pb facs="#page-surface-96" n="90" xml:id="page-pb-96"/>
+                <pb facs="#page-surface-97" n="91" xml:id="page-pb-97"/>
+                <pb facs="#page-surface-98" n="92" xml:id="page-pb-98"/>
+                <pb facs="#page-surface-99" n="93" xml:id="page-pb-99"/>
+                <pb facs="#page-surface-100" n="94" xml:id="page-pb-100"/>
+                <pb facs="#page-surface-101" n="95" xml:id="page-pb-101"/>
+                <pb facs="#page-surface-102" n="96" xml:id="page-pb-102"/>
+                <pb facs="#page-surface-103" n="97" xml:id="page-pb-103"/>
+                <pb facs="#page-surface-104" n="98" xml:id="page-pb-104"/>
+                <pb facs="#page-surface-105" n="99" xml:id="page-pb-105"/>
+                <pb facs="#page-surface-106" n="100" xml:id="page-pb-106"/>
+                <pb facs="#page-surface-107" n="101" xml:id="page-pb-107"/>
+                <pb facs="#page-surface-108" n="102" xml:id="page-pb-108"/>
+                <pb facs="#page-surface-109" n="103" xml:id="page-pb-109"/>
+                <pb facs="#page-surface-110" n="104" xml:id="page-pb-110"/>
+                <pb facs="#page-surface-111" n="105" xml:id="page-pb-111"/>
+                <pb facs="#page-surface-112" n="106" xml:id="page-pb-112"/>
+                <pb facs="#page-surface-113" n="107" xml:id="page-pb-113"/>
+                <pb facs="#page-surface-114" n="108" xml:id="page-pb-114"/>
+                <pb facs="#page-surface-115" n="109" xml:id="page-pb-115"/>
+                <pb facs="#page-surface-116" n="110" xml:id="page-pb-116"/>
+                <pb facs="#page-surface-117" n="111" xml:id="page-pb-117"/>
+                <pb facs="#page-surface-118" n="112" xml:id="page-pb-118"/>
+                <pb facs="#page-surface-119" n="113" xml:id="page-pb-119"/>
+                <pb facs="#page-surface-120" n="114" xml:id="page-pb-120"/>
+                <pb facs="#page-surface-121" n="115" xml:id="page-pb-121"/>
+                <pb facs="#page-surface-122" n="116" xml:id="page-pb-122"/>
+                <pb facs="#page-surface-123" n="117" xml:id="page-pb-123"/>
+                <pb facs="#page-surface-124" n="118" xml:id="page-pb-124"/>
+                <pb facs="#page-surface-125" n="119" xml:id="page-pb-125"/>
+                <pb facs="#page-surface-126" n="120" xml:id="page-pb-126"/>
+                <pb facs="#page-surface-127" n="121" xml:id="page-pb-127"/>
+                <pb facs="#page-surface-128" n="122" xml:id="page-pb-128"/>
+                <pb facs="#page-surface-129" n="123" xml:id="page-pb-129"/>
+                <pb facs="#page-surface-130" n="124" xml:id="page-pb-130"/>
+                <pb facs="#page-surface-131" n="125" xml:id="page-pb-131"/>
+                <pb facs="#page-surface-132" n="126" xml:id="page-pb-132"/>
+                <pb facs="#page-surface-133" n="127" xml:id="page-pb-133"/>
+                <pb facs="#page-surface-134" n="128" xml:id="page-pb-134"/>
+                <pb facs="#page-surface-135" n="129" xml:id="page-pb-135"/>
+                <pb facs="#page-surface-136" n="130" xml:id="page-pb-136"/>
+                <pb facs="#page-surface-137" n="131" xml:id="page-pb-137"/>
+                <pb facs="#page-surface-138" n="132" xml:id="page-pb-138"/>
+                <pb facs="#page-surface-139" n="133" xml:id="page-pb-139"/>
+                <pb facs="#page-surface-140" n="134" xml:id="page-pb-140"/>
+                <pb facs="#page-surface-141" n="135" xml:id="page-pb-141"/>
+                <pb facs="#page-surface-142" n="136" xml:id="page-pb-142"/>
+                <pb facs="#page-surface-143" n="137" xml:id="page-pb-143"/>
+                <pb facs="#page-surface-144" n="138" xml:id="page-pb-144"/>
+                <pb facs="#page-surface-145" n="139" xml:id="page-pb-145"/>
+                <pb facs="#page-surface-146" n="140" xml:id="page-pb-146"/>
+                <pb facs="#page-surface-147" n="141" xml:id="page-pb-147"/>
+                <pb facs="#page-surface-148" n="142" xml:id="page-pb-148"/>
+                <pb facs="#page-surface-149" n="143" xml:id="page-pb-149"/>
+                <pb facs="#page-surface-150" n="144" xml:id="page-pb-150"/>
+                <pb facs="#page-surface-151" n="145" xml:id="page-pb-151"/>
+                <pb facs="#page-surface-152" n="146" xml:id="page-pb-152"/>
+                <pb facs="#page-surface-153" n="147" xml:id="page-pb-153"/>
+                <pb facs="#page-surface-154" n="148" xml:id="page-pb-154"/>
+                <pb facs="#page-surface-155" n="149" xml:id="page-pb-155"/>
+                <pb facs="#page-surface-156" n="150" xml:id="page-pb-156"/>
+                <pb facs="#page-surface-157" n="151" xml:id="page-pb-157"/>
+                <pb facs="#page-surface-158" n="152" xml:id="page-pb-158"/>
+                <pb facs="#page-surface-159" n="153" xml:id="page-pb-159"/>
+                <pb facs="#page-surface-160" n="154" xml:id="page-pb-160"/>
+                <pb facs="#page-surface-161" n="155" xml:id="page-pb-161"/>
+                <pb facs="#page-surface-162" n="156" xml:id="page-pb-162"/>
+                <pb facs="#page-surface-163" n="157" xml:id="page-pb-163"/>
+                <pb facs="#page-surface-164" n="158" xml:id="page-pb-164"/>
+                <pb facs="#page-surface-165" n="159" xml:id="page-pb-165"/>
+                <pb facs="#page-surface-166" n="160" xml:id="page-pb-166"/>
+                <pb facs="#page-surface-167" n="161" xml:id="page-pb-167"/>
+                <pb facs="#page-surface-168" n="162" xml:id="page-pb-168"/>
+                <pb facs="#page-surface-169" n="163" xml:id="page-pb-169"/>
+                <pb facs="#page-surface-170" n="164" xml:id="page-pb-170"/>
+                <pb facs="#page-surface-171" n="165" xml:id="page-pb-171"/>
+                <pb facs="#page-surface-172" n="166" xml:id="page-pb-172"/>
+                <pb facs="#page-surface-173" n="167" xml:id="page-pb-173"/>
+                <pb facs="#page-surface-174" n="168" xml:id="page-pb-174"/>
+                <pb facs="#page-surface-175" n="169" xml:id="page-pb-175"/>
+                <pb facs="#page-surface-176" n="170" xml:id="page-pb-176"/>
+                <pb facs="#page-surface-177" n="171" xml:id="page-pb-177"/>
+                <pb facs="#page-surface-178" n="172" xml:id="page-pb-178"/>
+                <pb facs="#page-surface-179" n="173" xml:id="page-pb-179"/>
+                <pb facs="#page-surface-180" n="174" xml:id="page-pb-180"/>
+                <pb facs="#page-surface-181" n="175" xml:id="page-pb-181"/>
+                <pb facs="#page-surface-182" n="176" xml:id="page-pb-182"/>
+                <pb facs="#page-surface-183" n="177" xml:id="page-pb-183"/>
+                <pb facs="#page-surface-184" n="178" xml:id="page-pb-184"/>
+                <pb facs="#page-surface-185" n="179" xml:id="page-pb-185"/>
+                <pb facs="#page-surface-186" n="180" xml:id="page-pb-186"/>
+                <pb facs="#page-surface-187" n="181" xml:id="page-pb-187"/>
+                <pb facs="#page-surface-188" n="182" xml:id="page-pb-188"/>
+                <pb facs="#page-surface-189" n="183" xml:id="page-pb-189"/>
+                <pb facs="#page-surface-190" n="184" xml:id="page-pb-190"/>
+                <pb facs="#page-surface-191" n="185" xml:id="page-pb-191"/>
+                <pb facs="#page-surface-192" n="186" xml:id="page-pb-192"/>
+                <pb facs="#page-surface-193" n="187" xml:id="page-pb-193"/>
+                <pb facs="#page-surface-194" n="188" xml:id="page-pb-194"/>
+                <pb facs="#page-surface-195" n="189" xml:id="page-pb-195"/>
+                <pb facs="#page-surface-196" n="190" xml:id="page-pb-196"/>
+                <pb facs="#page-surface-197" n="191" xml:id="page-pb-197"/>
+                <pb facs="#page-surface-198" n="192" xml:id="page-pb-198"/>
+                <pb facs="#page-surface-199" n="193" xml:id="page-pb-199"/>
+                <pb facs="#page-surface-200" n="194" xml:id="page-pb-200"/>
+                <pb facs="#page-surface-201" n="195" xml:id="page-pb-201"/>
+                <pb facs="#page-surface-202" n="196" xml:id="page-pb-202"/>
+                <pb facs="#page-surface-203" n="197" xml:id="page-pb-203"/>
+                <pb facs="#page-surface-204" n="198" xml:id="page-pb-204"/>
+                <pb facs="#page-surface-205" n="199" xml:id="page-pb-205"/>
+                <pb facs="#page-surface-206" n="200" xml:id="page-pb-206"/>
+                <pb facs="#page-surface-207" n="201" xml:id="page-pb-207"/>
+                <pb facs="#page-surface-208" n="202" xml:id="page-pb-208"/>
+                <pb facs="#page-surface-209" n="203" xml:id="page-pb-209"/>
+                <pb facs="#page-surface-210" n="204" xml:id="page-pb-210"/>
+                <pb facs="#page-surface-211" n="205" xml:id="page-pb-211"/>
+                <pb facs="#page-surface-212" n="206" xml:id="page-pb-212"/>
+                <pb facs="#page-surface-213" n="207" xml:id="page-pb-213"/>
+                <pb facs="#page-surface-214" n="208" xml:id="page-pb-214"/>
+                <pb facs="#page-surface-215" n="209" xml:id="page-pb-215"/>
+                <pb facs="#page-surface-216" n="210" xml:id="page-pb-216"/>
+                <pb facs="#page-surface-217" n="211" xml:id="page-pb-217"/>
+                <pb facs="#page-surface-218" n="212" xml:id="page-pb-218"/>
+                <pb facs="#page-surface-219" n="213" xml:id="page-pb-219"/>
+                <pb facs="#page-surface-220" n="214" xml:id="page-pb-220"/>
+                <pb facs="#page-surface-221" n="215" xml:id="page-pb-221"/>
+                <pb facs="#page-surface-222" n="216" xml:id="page-pb-222"/>
+                <pb facs="#page-surface-223" n="217" xml:id="page-pb-223"/>
+                <pb facs="#page-surface-224" n="218" xml:id="page-pb-224"/>
+                <pb facs="#page-surface-225" n="219" xml:id="page-pb-225"/>
+                <pb facs="#page-surface-226" n="220" xml:id="page-pb-226"/>
+                <pb facs="#page-surface-227" n="221" xml:id="page-pb-227"/>
+                <pb facs="#page-surface-228" n="222" xml:id="page-pb-228"/>
+                <pb facs="#page-surface-229" n="223" xml:id="page-pb-229"/>
+                <pb facs="#page-surface-230" n="224" xml:id="page-pb-230"/>
+                <pb facs="#page-surface-231" n="225" xml:id="page-pb-231"/>
+                <pb facs="#page-surface-232" n="226" xml:id="page-pb-232"/>
+                <pb facs="#page-surface-233" n="227" xml:id="page-pb-233"/>
+                <pb facs="#page-surface-234" n="228" xml:id="page-pb-234"/>
+                <pb facs="#page-surface-235" n="[v]" xml:id="page-pb-235"/>
+                <pb facs="#page-surface-236" n="[vi]" xml:id="page-pb-236"/>
+                <pb facs="#page-surface-237" n="[vii]" xml:id="page-pb-237"/>
+                <pb facs="#page-surface-238" n="[viii]" xml:id="page-pb-238"/>
+                <pb facs="#page-surface-239" n="rear cover, inner" xml:id="page-pb-239"/>
+                <pb facs="#page-surface-240" n="rear cover, outer" xml:id="page-pb-240"/>
+                <pb facs="#page-surface-241" n="spine" xml:id="page-pb-241"/>
+            </div>
+        </body>
+    </text>
+</TEI>

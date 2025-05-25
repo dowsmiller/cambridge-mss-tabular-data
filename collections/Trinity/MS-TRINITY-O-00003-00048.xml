@@ -1,0 +1,1380 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11986">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, Trinity College, MS O.3.48</title>
+                <funder>The Polonsky Foundation</funder>
+                <principal>Suzanne Paul</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>University Library</publisher>
+
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made
+                        available for download are licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This
+                        metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+
+            <availability xml:id="watermark" status="restricted"><licence>Trinity College, Cambridge (CC BY-NC 4.0)</licence></availability></publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-TRINITY-O-00003-00048" xml:lang="en">
+                    <msIdentifier>
+                        <institution>Trinity College, Cambridge</institution>
+                        <repository>Trinity College Library</repository>
+                        <collection>Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, Trinity College, MS O.3.48</idno>
+                        <altIdentifier type="internal">
+                            <idno type="james">MS 1220</idno>
+                        </altIdentifier>
+                        <altIdentifier type="external">
+                            <idno type="diktyon">Diktyon 11986</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+
+                    <msContents>
+                        <summary>
+                            <seg type="para">This manuscript, probably copied in the 13th century,
+                                contains theological works of <title>Maximos the Confessor</title>,
+                                mainly canonical letters. The author was abbot of a monastery in
+                                Chrysopolis, near Constantinople, who was exiled and mutilated for
+                                his opposition to the doctrine of Monothelitism, introduced by the
+                                Emperor Heraclius I (610-641).</seg>
+                            <seg type="para">Dr Christopher Wright</seg>
+                        </summary>
+
+                        <textLang mainLang="grc">Greek</textLang>
+                    </msContents>
+
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="mixed">
+
+                                <extent>
+                                    <seg type="object">
+                                        <objectType>Codex </objectType>
+                                    </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="3" type="laterEndleaf">iii</measure> +
+                                            <measure quantity="169" type="leaf">169</measure> +
+                                            <measure quantity="1" type="laterEndleaf">i</measure>
+                                    </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height max="235" min="230">230-235</height>
+                                            <width max="170" min="160">160-170</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+
+                                <foliation xml:id="modern">The manuscript is foliated with the
+                                    numbers [a-b], I + 1-3, 3(a), 4-19, 19(a), 20-43, 45, 47-75,
+                                    75(a), 76-139, 141-142, 144-150, 150(a), 150(b), 151-168 + [c],
+                                    in Arabic numerals, in black ink, recto, upper
+                                    right.</foliation>
+
+                                <collation>The manuscript consists of 24 quires: 1<hi rend="superscript">8+1</hi> 2<hi rend="superscript">6-1+2</hi> (1 missing) 3<hi rend="superscript">8-2+2</hi>
+                                    (7 and 8 missing) 4<hi rend="superscript">8-4+4</hi> (1, 3, 6
+                                    and 8 missing) 5<hi rend="superscript">8</hi> 6<hi rend="superscript">8-1</hi> (7 missing) 7<hi rend="superscript">8-2</hi> (1 and 8 missing) 8<hi rend="superscript">eight</hi> (all gone) 9<hi rend="superscript">8-3+2</hi> (2, 7 and 8 missing) 10<hi rend="superscript">8-2</hi> (1 and 8 missing) 11<hi rend="superscript">8+1</hi> (1 inserted) 12-18<hi rend="superscript">8</hi> 19<hi rend="superscript">8-2+1</hi> (3 and 6 missing) 20<hi rend="superscript">8-2</hi> (1 and 8 missing) 21<hi rend="superscript">4</hi>
+                                        22<hi rend="superscript">2</hi> 23<hi rend="superscript">4-1</hi> (1 cancelled) 24<hi rend="superscript">10</hi>
+                                </collation>
+                            </supportDesc>
+                        </objectDesc>
+
+                        <bindingDesc>
+                            <binding calendar="gregorian" notAfter="1799" notBefore="1700">
+                                <p>18th-century binding with grey paper covering over
+                                    couched-laminate boards, with a white parchment spine and plain
+                                    pastedowns. The classmark appears on the spine on patches.</p>
+                                <p>
+                                    <dimensions type="binding" unit="mm">
+                                        <height quantity="243">243</height>
+                                        <width quantity="177">177</width>
+                                        <depth quantity="63">63</depth>
+                                    </dimensions>
+                                </p>
+                            </binding>
+                        </bindingDesc>
+
+                        <accMat>A loose slip of paper is inserted between ff. <locus from="87v-88r" to="87v-88r">87</locus> and <locus from="87v-88r" to="87v-88r">88</locus>, bearing notes on the content of a manuscript in Latin
+                            and Greek.</accMat>
+                    </physDesc>
+
+                    <history>
+                        <acquisition calendar="gregorian" when="1738">Donated by Thomas's son, the
+                            antiquary <name key="person_v62981706">
+                                <persName type="display">Roger Gale (1672-1744)</persName>
+                                <persName type="standard">Gale, Roger, 1672-1744</persName>
+                            </name>, in 1738.</acquisition>
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source/>
+                            </recordHist>
+                            <availability status="restricted">
+                                <p>Visitors to Trinity College who wish to consult Special Collections material
+                                    are required to apply to the Library in advance of their visit. For information
+                                    on eligibility and admission procedures see: <ref target="https://www.trin.cam.ac.uk/library/wren-library/information-for-readers/">Trinity College: Information for Readers</ref>.</p>
+                            </availability>
+                        </adminInfo>
+
+                        <listBibl>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/Q2XTA4BA" type="book" xml:id="James1902">
+                                <monogr>
+                                    <title level="m">The western manuscripts in the library of
+                                        Trinity College: a descriptive catalogue</title>
+                                    <extent>4</extent>
+                                    <author>
+                                        <forename>M.R.</forename>
+                                        <surname>James</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">3</biblScope>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1902</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/RGAWCVM6" type="journalArticle" xml:id="Canart1964">
+                                <analytic>
+                                    <title level="a">La deuzième lettre à Thomas de Saint Maxime le
+                                        Confesseur</title>
+                                    <author>
+                                        <forename>Paul</forename>
+                                        <surname>Canart</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Byzantion</title>
+                                    <imprint>
+                                        <biblScope unit="volume">34</biblScope>
+                                        <biblScope unit="page">415-445</biblScope>
+                                        <date>1964</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>
+
+                    <msPart n="1">
+                        <msIdentifier>
+                            <idno>Part I</idno>
+                        </msIdentifier>
+
+                        <msContents>
+                            <msItem n="1">
+                                <locus from="i verso-1r" to="i verso-1r">f. i verso</locus>
+                                <title xml:lang="eng">Contents list to an Oxford manuscrip of
+                                    Maximos the Confessor</title>
+                                <textLang mainLang="la" otherLangs="grc">Latin and Greek</textLang>
+                                <note>
+                                    <locus from="[b] verso-i recto" to="[b] verso-i recto">f. i
+                                        recto</locus> is blank apart from various notes</note>
+                            </msItem>
+                        </msContents>
+
+                        <physDesc>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>ff. <locus from="[b] verso-i recto" to="[b] verso-i recto">i</locus>, <locus from="3v-3(a) recto" to="3(a) verso-4r">3(a)</locus>, <locus from="8v-9r" to="9v-10r">9-10</locus>, <locus from="16v-17r" to="17v-18r">17</locus>, <locus from="21v-22r" to="22v-23r">22</locus>, <locus from="23v-24r" to="24v-25r">24</locus>, <locus from="26v-27r" to="27v-28r">27</locus>, <locus from="28v-29r" to="29v-30r">29</locus>, <locus from="45v-47r" to="47v-48r">47</locus>, <locus from="53v-54r" to="59v-60r">54-59</locus>, <locus from="60v-61r" to="61v-62r">61</locus>, <locus from="65v-66r" to="66v-67r">66</locus>, <locus from="138v-139r" to="139v-141r">139</locus> Western paper, folded in <measure type="folding">folio</measure>.
+                                                <watermark>Watermark: <term type="watermarkMotif">Pot</term> (<dimensions type="watermark" unit="mm">
+                                                  <height quantity="79">79</height>
+                                                  <width quantity="35">35</width>
+                                                </dimensions>) <note type="watermarkPosition">in the
+                                                  centre of the folio</note>, comparable but not
+                                                identical to <note>Heawood 3611, 3623-3624</note>,
+                                                  <note>Churchill 466</note>. These examples are
+                                                dated to <date calendar="gregorian" cert="low" notAfter="1642" notBefore="1623">c.
+                                                1623-1642</date>.</watermark>
+                                        </material>
+                                    </support>
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="1" writtenLines="41">
+                                        <locus from="i verso-1r" to="i verso-1r">f. i verso</locus>
+                                        A single column of 41 lines. <dimensions type="written" unit="mm">
+                                            <height quantity="210">210</height>
+                                            <width quantity="135">135</width>
+                                        </dimensions>
+                                    </layout>
+
+                                    <layout columns="1" writtenLines="15 35">ff. <locus from="3v-3(a) recto" to="3(a) verso-4r">3(a) recto-3(a)
+                                            verso</locus>, <locus from="8v-9r" to="9v-10r">9r-10v</locus>, <locus from="16v-17r" to="17v-18r">17r-17v</locus>, <locus from="23v-24r" to="24v-25r">24r-24v</locus>, <locus from="26v-27r" to="27v-28r">27r-27v</locus>, <locus from="28v-29r" to="29v-30r">29r-29v</locus>, <locus from="45v-47r" to="47v-48r">47r-47v</locus>, <locus from="53v-54r" to="59v-60r">54r-59v</locus>, <locus from="60v-61r" to="61v-62r">61r-61v</locus>, <locus from="65v-66r" to="66v-67r">66r-66v</locus>, <locus from="138v-139r" to="139v-141r">139r-139v</locus> A single column of 15-35 lines.
+                                            <dimensions type="written" unit="mm">
+                                            <height max="189" min="109">109-189</height>
+                                            <width max="90" min="80">80-90</width>
+                                        </dimensions>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote sameAs="hand-2" scope="minor">
+                                    <p>ff. <locus from="3v-3(a) recto" to="3(a) verso-4r">3(a)
+                                            recto-3(a) verso</locus>, <locus from="8v-9r" to="9v-10r">9r-10v</locus>, <locus from="16v-17r" to="17v-18r">17r-17v</locus>, <locus from="23v-24r" to="24v-25r">24r-24v</locus>, <locus from="26v-27r" to="27v-28r">27r-27v</locus>, <locus from="28v-29r" to="29v-30r">29r-29v</locus>, <locus from="45v-47r" to="47v-48r">47r-47v</locus>, <locus from="53v-54r" to="59v-60r">54r-59v</locus>, <locus from="60v-61r" to="61v-62r">61r-61v</locus>, <locus from="65v-66r" to="66v-67r">66r-66v</locus>, <locus from="138v-139r" to="139v-141r">139r-139v</locus> were copied by Patrick
+                                        Young (Hand B), in a western European <term type="script">mixed minuscule</term> script resembling early
+                                        printing, in brown ink.</p>
+                                </handNote>
+                            </handDesc>
+
+                            <additions>On <locus from="[b]verso-i recto" to="[b] verso-i recto">f. i
+                                    recto</locus> are a series of notes in Latin regarding the use
+                                of the works of Maximos by John the Scot and Photios. Slips of paper
+                                with other notes on the content are pasted to this
+                                folio.</additions>
+                        </physDesc>
+
+                        <history>
+                            <origin> These folios were added to replace losses to the original
+                                manuscript by Patrick Young in the <date calendar="gregorian" notAfter="1652" notBefore="1600">first half of the 17th
+                                    century</date>. </origin>
+                        </history>
+                    </msPart>
+
+                    <msPart n="2">
+                        <msIdentifier>
+                            <idno>Part II</idno>
+                        </msIdentifier>
+
+                        <msContents>
+
+                            <textLang mainLang="grc">Greek</textLang>
+
+                            <msItem n="2">
+                                <locus from="i verso-1r" to="63v-64r">ff. 1r-64r</locus>
+                                <author key="person_v106970843">Maximos the Confessor</author>
+                                <title xml:lang="la">Epistulae XLV</title>
+                                <note>
+                                    <locus from="i verso-1r" to="3v-4r">ff. 1r-4r</locus> Letter 8
+                                    (PG 91, coll 440-445); <locus from="3v-4r" to="7v-8r">ff.
+                                        4r-8r</locus> Letter 6 (PG 91, coll. 424-433); <locus from="7v-8r" to="19v-20r">ff. 8r-19v</locus> Letter 13 (PG
+                                    91, coll. 509-533); <locus from="19v-20r" to="23v-24r">ff.
+                                        19v-23v</locus> Letter 14 (PG 91, coll. 533-544); <locus from="23v-24r" to="63v-64r">ff. 24r-64r</locus> Letter 12
+                                    (PG 91, coll. 460-509)</note>
+                                <rubric>
+                                    <locus from="i verso-1r" to="i verso-1r">f. 1r</locus> Μαξίμου
+                                    μονάχου ἐπιστολὴ πρὸς Σωφρόνιον μονάζοντα, <sic>τὸ</sic> ἐπίκλην
+                                    εὐκρατὰν</rubric>
+                                <incipit>
+                                    <locus from="i verso-1r" to="i verso-1r">f. 1r</locus> Ὁ κατὰ
+                                    σάρκα πόθος· χρόνω μαραίνεσθαι πέφυκεν</incipit>
+                                <explicit>
+                                    <locus from="63v-64r" to="63v-64r">f. 64r</locus> καὶ
+                                    ἀειπαρθένου Μαρίας, καὶ πάντων τῶν ἁγίων ἀμήν</explicit>
+                                <note>TLG 2892.044</note>
+                                <note>CPG 7699</note>
+                                <note>PG 91, coll. 364-649</note>
+                            </msItem>
+
+                            <msItem n="3">
+                                <locus from="63v-64r" to="65v-66r">ff. 64r-65v</locus>
+                                <author key="person_v106970843">Maximos the Confessor</author>
+                                <title xml:lang="la">Epistula ad Iohannem cubicularium</title>
+                                <rubric>
+                                    <locus from="63v-64r" to="64v-65r">f. 64r-64v</locus> Ἴσον
+                                    ἐπιστολῆς Μαξίμου μονάζοντος πρὸς Ἰωάννην κουβικουλάριον+
+                                    Μαξίμου μονάζοντος πρὸς Ἰωάννην</rubric>
+                                <incipit>
+                                    <locus from="64v-65r" to="64v-65r">f. 64v</locus> Ὁ πάντα πρὶν
+                                    γενέσεως ἐπιστάμενος Θεὸς· πᾶσιν ὡς οἴδε συμφερόντως
+                                    μετασοφίας</incipit>
+                                <explicit>
+                                    <locus from="65v-66r" to="65v-66r">f. 65v</locus> Δι' ὃ,
+                                    παρακαλῶ τοὺς εὐλογημένους ὑμᾶς δεχομένους αὐτὸν</explicit>
+                                <note>CPG 7703</note>
+                            </msItem>
+
+                            <msItem n="4">
+                                <locus from="65v-66r" to="116v-117r">ff. 66r-117r</locus>
+                                <author key="person_v106970843">Maximos the Confessor</author>
+                                <title xml:lang="la">Epistulae XLV</title>
+                                <note>
+                                    <locus from="65v-66r" to="88v-89r">ff. 66r-89r</locus> Letter 1
+                                    (PG 91, coll. 364-392); <locus from="89v-90r" to="116v-117r">ff.
+                                        89v-117r</locus> Letter 15 (PG 91, coll. 544-576)</note>
+                                <rubric>
+                                    <locus from="65v-66r" to="65v-66r">f. 66r</locus> Λόγος
+                                    παραινετικὸς πρὸς τὸν δοῦλον τοῦ Θεοῦ Γεώργιον γενόμενον ἔπαρχον
+                                        <sic>Αφρικῆς</sic> παρὰ Μαξίμου</rubric>
+                                <incipit>
+                                    <locus from="65v-66r" to="65v-66r">f. 66r</locus> Ουδεὶς οὕτω
+                                    τῶν φωτὸς, ὡς οἶμαι, καθ' οἷον δήποτε τρόπον
+                                    ἐστερημένων</incipit>
+                                <explicit>
+                                    <locus from="116v-117r" to="116v-117r">f. 117r</locus> ὁ μόνος
+                                    σὺν Πατρὶ καὶ Ἁγίωι Πνεύματι δεδοξασμένος εἰς <sic>τοῦς</sic>
+                                    <sic>αιῶνας,</sic> ἀμήν</explicit>
+                                <note>TLG 2892.044</note>
+                                <note>CPG 7699</note>
+                                <note>PG 91, coll. 364-649</note>
+                            </msItem>
+
+                            <msItem n="5">
+                                <locus from="116v-117r" to="139v-141r">ff. 117r-139v</locus>
+                                <author key="person_v106970843">Maximos the Confessor</author>
+                                <title xml:lang="la">Ambiguorum liber</title>
+                                <note>Ambigua ad Thomam (PG 91, coll. 1032-1060)</note>
+                                <incipit>
+                                    <locus from="116v-117r" to="116v-117r">f. 117r</locus> Τῶ
+                                    ἡγιασμένῳ δούλου τοῦ Θεοῦ πατρὶ πνευματικῷ καὶ διδασκάλω κυρίω
+                                    Θωμᾶ</incipit>
+                                <explicit>
+                                    <locus from="139v-140r" to="139v-140r">f. 139v</locus> τοὺς τὸν
+                                    ἄνω κόσμον πληρώσοντας· αὐτῶ δόξα· μεγαλωσύνη· κράτος· σὺν τῶ
+                                    Πατρὶ καὶ τῶ Ἁγίω Πνεύματι, εἰς τοὺς αἰώνας, ἀμήν</explicit>
+                                <note>TLG 2892.050</note>
+                                <note>CPG 7705</note>
+                                <note>PG 91, coll. 1032-1417</note>
+                            </msItem>
+
+                            <msItem n="6">
+                                <locus from="139v-141r" to="149v-150r">ff. 141r-150r</locus>
+                                <author key="person_v106970843">Maximos the Confessor</author>
+                                <title xml:lang="la">Epistula secunda ad Thomam</title>
+                                <rubric>
+                                    <locus from="140v-141r" to="140v-141r">f. 141r</locus> Τοῦ αὐτοῦ
+                                    πρὸς τὸν αὐτὸν</rubric>
+                                <incipit>
+                                    <locus from="140v-141r" to="140v-141r">f. 141r</locus> Ὑπόστασιν
+                                    μὲν σοφίας, τὴν ἀρετὴν· οὐσίαν δὲ φασὶν ἀρετῆς</incipit>
+                                <explicit>
+                                    <locus from="149v-150r" to="149v-150r">f. 150r</locus> καὶ
+                                        <sic>μὴδὲν</sic> ἡγεῖσθαι πίστεως συγκεχυμένης ἐπιδοζώτερον·
+                                    ὧν τὸ ἀπερρίφθαι Χριστοῦ</explicit>
+                                <note>TLG 2892.045</note>
+                                <note>CPG 7700</note>
+                            </msItem>
+
+                            <msItem n="7">
+                                <locus from="150v-150(a) recto" to="150v-150(a) recto">ff.
+                                    150v-150(a) verso</locus>
+                                <author key="person_v106970843">Maximos the Confessor</author>
+                                <title xml:lang="la">Epistulae XLV</title>
+                                <note>Letter 25</note>
+                                <rubric>
+                                    <locus from="149v-150r" to="149v-150r">f. 150r</locus> Κυρίω
+                                    ἀββὰ Ἰωάννη, πρεσβυτέρω καὶ <sic>ἠγουμένω·</sic> Μάξιμος
+                                    μοναχός</rubric>
+                                <incipit>
+                                    <locus from="149v-150r" to="149v-150r">f. 150r</locus> Πιστεύω
+                                    καθῶς παρέλαβον καὶ ἐδιδάχθην, ὅτι ὁ Θεὸς ἀγάπη ἐστίν</incipit>
+                                <explicit>
+                                    <locus from="150(a) verso-150 (b) recto" to="150(a) verso-150 (b) recto">f. 150(a) verso</locus> οἱ
+                                    τὴν ἀλήθειας τῆς φιλαυτίας προτιμὰν μελετήσαντες</explicit>
+                                <note>TLG 2892.044</note>
+                                <note>CPG 7699</note>
+                                <note>PG 91, coll. 364-649</note>
+                            </msItem>
+
+                            <msItem n="8">
+                                <locus from="150(b) verso-151r" to="168v-[c] recto">ff.
+                                    150(b) recto-168v</locus>
+                                <author key="person_v44435485">John of Damascus</author>
+                                <title xml:lang="la">Dialectica (recensio brevior)</title>
+                                <note>Defective at the beginning, with lacunas: begins ed. Kotter,
+                                    section 5</note>
+                                <incipit defective="true">
+                                    <locus from="150(a) verso-150 (b) recto" to="150(a) verso-150(b) recto">f. 150(b) recto </locus>
+                                    <!-- <supplied reason="damage">διαιρεῖ</supplied> -->ται εἰς
+                                    δύο· εἰς τὴν κοινὸς διαφορὰν, καὶ εἰς τὴν ἰδίως
+                                    διαφορὰν</incipit>
+                                <explicit>
+                                    <locus from="168v-169r" to="168v-169r">f. 168v</locus> τὸ
+                                    ἀνύπαρκτον δηλοὶ ποτὲ δὲ τὸ συμβεβηκός</explicit>
+                                <note>TLG 2934.067</note>
+                                <note>CPG 8041</note>
+                            </msItem>
+                        </msContents>
+
+                        <physDesc>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>ff. <locus from="i verso-1r" to="3v-4r">1-3</locus>, <locus from="3v-4r" to="8v-9r">4-8</locus>, <locus from="10v-11r" to="16v-17r">11-16</locus>, <locus from="17v-18r" to="21v-22r">18-21</locus>, <locus from="22v-23r" to="23v-24r">23</locus>, <locus from="24v-25r" to="26v-27r">25-26</locus>, <locus from="27v-28r" to="28v-29r">28</locus>, <locus from="29v-30r" to="45v-46r">30-45</locus>, <locus from="47v-48r" to="53v-54r">48-53</locus>, <locus from="59v-60r" to="60v-61r">60</locus>, <locus from="61v-62r" to="65v-66r">62-65</locus>, <locus from="66v-67r" to="138v-139r">67-138</locus>, <locus from="140v-141r" to="168v-169r">141-168</locus> Parchment (<term type="disposition">FHHF</term>), quite thick and of
+                                            medium quality.</material>
+                                    </support>
+
+                                    <collation>
+                                        <p>The manuscript consists of 24 quires, of which one is a
+                                            quinion, two are ternia, two are binia, one is a single
+                                            bifolio and the rest are quaternia.</p>
+                                        <p>
+                                            <list>
+                                                <item>Quire 1<hi rend="superscript">8+1</hi> (ff.
+                                                  <locus from="i verso-1r" to="8v-9r">1-8</locus>:
+                                                  2nd leaf and 7th leaf are singletons; leaf added
+                                                  after f. 3).</item>
+                                                <item>Quire 2<hi rend="superscript">6-1+2</hi> (ff.
+                                                  <locus from="8v-9r" to="15v-16r">9-15</locus>: 1st
+                                                  leaf missing before f. 11; two paper leaves added
+                                                  before f. 11).</item>
+                                                <item>Quire 3<hi rend="superscript">8-2+2</hi> (ff.
+                                                  <locus from="15v-16r" to="21v-22r">16-21</locus>:
+                                                  7th and 8th leaves missing after f. 21; one paper
+                                                  leaf added after f. 16)</item>
+                                                <item>Quire 4<hi rend="superscript">8-4+4</hi> (ff.
+                                                  <locus from="21v-22r" to="29v-30r">22-29</locus>:
+                                                  1st leaf missing before f. 22; 3rd leaf missing
+                                                  after f. 23; 6th leaf missing after f. 26; 8th
+                                                  leaf missing after f. 28; four paper leaves added,
+                                                  one each in the same locations).</item>
+                                                <item>Quire 5<hi rend="superscript">8</hi> (ff.
+                                                  <locus from="29v-30r" to="37v-38r">30-37</locus>)</item>
+                                                <item>Quire 6<hi rend="superscript">8-1</hi> (ff.
+                                                  <locus from="37v-38r" to="45v-47r">38-46</locus>:
+                                                  7th leaf, f. 44, missing)</item>
+                                                <item>Quire 7<hi rend="superscript">8-2</hi> (ff.
+                                                  <locus from="45v-47r" to="54v-55r">47-54</locus>:
+                                                  1st and 8th leaves missing, f. 46 and after f. 53;
+                                                  two paper leaves added, one each in the same
+                                                  locations)</item>
+                                                <item>Quire 8<hi rend="superscript">8</hi> (ff.
+                                                  <locus from="54v-55r" to="59v-60r">55-59</locus>:
+                                                  quire of perhaps eight leaves, all gone, and
+                                                  replaced by five added paper leaves)</item>
+                                                <item>Quire 9<hi rend="superscript">8-3+2</hi> (ff.
+                                                  <locus from="59v-60r" to="66v-67r">60-66</locus>:
+                                                  2nd leaf missing after f. 60, 7th and 8th leaves
+                                                  missing after f. 65; two paper leaves added, one
+                                                  each in the same locations. The stub conjoint with
+                                                  the 1st leaf, f. 60, is now bound between ff. 54
+                                                  and 55) </item>
+                                                <item>Quire 10<hi rend="superscript">6</hi> (ff.
+                                                  <locus from="66v-67r" to="72v-73r">67-72</locus>)</item>
+                                                <item>Quire 11<hi rend="superscript">8+1</hi> (ff.
+                                                  <locus from="72v-73r" to="82v-83r">73-82</locus>:
+                                                  1st leaf, f. 73, inserted)</item>
+                                                <item>Quire 12<hi rend="superscript">8</hi> (ff.
+                                                    <locus from="80v-81r-1" to="88v-89r">81-88</locus>:
+                                                  3rd and 7th leaves are singletons)</item>
+                                                <item>Quire 13<hi rend="superscript">8</hi> (ff.
+                                                  <locus from="88v-89r" to="96v-97r">89-96</locus>)</item>
+                                                <item>Quire 14<hi rend="superscript">8</hi> (ff.
+                                                  <locus from="96v-97r" to="104v-105r">97-104</locus>: 3rd and 7th leaves are
+                                                  singletons)</item>
+                                                <item>Quire 15<hi rend="superscript">8</hi> (ff.
+                                                  <locus from="104v-105r" to="112v-113r">105-112</locus>: 2nd and 7th leaves are
+                                                  singletons)</item>
+                                                <item>Quire 16-18<hi rend="superscript">8</hi> (ff.
+                                                  <locus from="112v-113r" to="136v-137r">113-136</locus>)</item>
+                                                <item>Quire 19<hi rend="superscript">8-2+1</hi> (ff.
+                                                  <locus from="136v-137r" to="145v-146r">137-145</locus>: 3rd leaf missing after f. 138;
+                                                  paper leaf added in this location; 6th leaf, f.
+                                                  143, missing)</item>
+                                                <item>Quire 20<hi rend="superscript">8-2</hi> (ff.
+                                                  <locus from="145v-146r" to="150v-150(a) recto">146-150(a)</locus>: 1st leaf cancelled before f.
+                                                  146, 8th leaf missing after f. 150(a))</item>
+                                                <item>Quire 21<hi rend="superscript">4</hi> (ff.
+                                                    <locus from="150(a) verso-150 (b) recto" to="153v-154r">150(b)-153</locus>)</item>
+                                                <item>Quire 22<hi rend="superscript">2</hi> (ff.
+                                                  <locus from="153v-154r" to="155v-156r">154-155</locus>)</item>
+                                                <item>Quire 23<hi rend="superscript">4-1</hi> (ff.
+                                                  <locus from="155v-156r" to="158v-159r">156-158</locus>: 1st leaf missing before f.
+                                                  156)</item>
+                                                <item>Quire 24<hi rend="superscript">10</hi> (ff.
+                                                    <locus from="158v-159r" to="168v-[c] recto">159-168</locus>: 4th and 7th leaves are
+                                                  singletons)</item>
+                                            </list>
+                                        </p>
+                                        <signatures type="quire">There are quire signatures in Greek
+                                            numerals, in black ink, on the first folio of each
+                                            quire, recto in the middle of the lower margin. Many
+                                            have been lost to cropping or the loss of folios. They
+                                            survive on Quires 5-6, 9, 12, 14-19 (εʹ-ϛʹ, θʹ, ιβʹ,
+                                            ιδʹ-ιθʹ). The number 3 (γʹ) appears on Quire
+                                            22.</signatures>
+                                    </collation>
+
+                                    <condition> In average condition. Numerous leaves lost
+                                        throughout the volume. Those that remain have suffered from
+                                        damp and water-staining, especially around the edges, and
+                                        the leaves have become stiff and cockled. The stitching has
+                                        deteriorated and some leaves are beginning to come loose.
+                                        Patches of dirt or discolouration on some leaves (for
+                                        instance, ff. <locus from="37v-38r" to="37v-38r">38r</locus>, <locus from="38v-39r" to="38v-39r">39r</locus>, <locus from="45v-46r" to="45v-46r">45v</locus>, <locus from="47v-48r" to="47v-48r">48r</locus>). A large repair patch in the upper margin and
+                                        upper part of the text block on f. <locus from="166v-167r" to="166v-167v">167</locus>, not affecting the text.
+                                    </condition>
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="1" rulingMedium="hardpoint" topLine="mixed" writtenLines="25 27">ff. <locus from="i verso-1r" to="3v-4r">1r-3v</locus>, <locus from="3v-4r" to="8v-9r">4r-8v</locus>, <locus from="10v-11r" to="16v-17r">11r-16v</locus>, <locus from="17v-18r" to="21v-22r">18r-21v</locus> A single
+                                        column of 25-27 lines. <dimensions type="written" unit="mm">
+                                            <height max="170" min="157">157-170</height>
+                                            <width quantity="105">105</width>
+                                        </dimensions>
+                                        <seg type="pricking">Pricking survives in all three margins,
+                                            but some has been lost to cropping.</seg>
+                                        <seg type="ruling">Ruled in hardpoint, system Leroy 1, type
+                                            Leroy <formula notation="Leroy">20C1s</formula>. The
+                                            relationship of the text to the lines varies, and they
+                                            are sometimes ignored.</seg>
+                                    </layout>
+
+                                    <layout columns="1" rulingMedium="hardpoint" topLine="mixed" writtenLines="20">ff. <locus from="22v-23r" to="23v-24r">23r-23v</locus>, <locus from="24v-25r" to="26v-27r">25r-26v</locus>, <locus from="27v-28r" to="28v-29r">28r-28v</locus>, <locus from="29v-30r" to="45v-46r">30r-45v</locus>, <locus from="47v-48r" to="53v-54r">48r-53v</locus>, <locus from="59v-60r" to="60v-61r">60r-60v</locus>, <locus from="61v-62r" to="65v-66r">62r-65v</locus>, <locus from="66v-67r" to="138v-139r">67r-138v</locus>, <locus from="-140v-141r" to="168v-169r">141r-168v</locus> A single column of 20
+                                        lines. <dimensions type="written" unit="mm">
+                                            <height quantity="155">155</height>
+                                            <width quantity="100">100</width>
+                                        </dimensions>
+                                        <seg type="pricking">Pricking survives in all three margins,
+                                            but some has been lost to cropping.</seg>
+                                        <seg type="ruling">Ruled in hardpoint, system Leroy 1, type
+                                            Leroy <formula notation="Leroy">20C1s</formula>. The
+                                            relationship of the text to the lines varies, and they
+                                            are sometimes ignored.</seg>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote scope="major" xml:id="hand-1">
+                                    <p>ff. <locus from="i verso-1r" to="3v-4r">1r-3v</locus>, <locus from="3v-4r" to="8v-9r">4r-8v</locus>, <locus from="10v-11r" to="16v-17r">11r-16v</locus>, <locus from="17v-18r" to="21v-22r">18r-21v</locus>, <locus from="22v-23r" to="23v-24r">23r-23v</locus>, <locus from="24v-25r" to="26v-27r">25r-26v</locus>, <locus from="27v-28r" to="28v-29r">28r-28v</locus>, <locus from="29v-30r" to="45v-46r">30r-45v</locus>, <locus from="47v-48r" to="53v-54r">48r-53v</locus>, <locus from="61v-60r" to="60v-61r">60r-60v</locus>, <locus from="61v-62r" to="65v-66r">62r-65v</locus>, <locus from="6v-67r" to="138v-139r">67r-138v</locus>, <locus from="140v-141r" to="168v-169r">141r-168v</locus> were
+                                        copied by Hand A, in upright <term type="script">mixed
+                                            minuscule</term> script similar to <term type="script">Perlschrift</term>, in brown ink, with minimal
+                                        variation in letter size and occasional flourishing of tails
+                                        into the margin. There are deletions by expunctuation</p>
+                                    <p>Syllabic abbreviations appear only at the end of lines and
+                                        and superscript word endings are not in use. Breathings are
+                                        both angular and round and mute <hi rend="italic">iota</hi>
+                                        is adscript or absent, or occasionally subscript. There is
+                                        occasional decorative use of the double dot, and
+                                        accentuation of all <foreign xml:lang="la">nomina
+                                            sacra</foreign>. The circumflex appears over breathings,
+                                        and is someimes but not always enlarged when it does. The
+                                        double grave accent and marginal quotation marks are in use.
+                                        Horizontal strokes appear above proper names. The hyphen is
+                                        used to merge words.</p>
+                                    <p>The flat-bottomed <hi rend="italic">omega</hi> is
+                                        present.</p>
+                                    <p>Punctuation used includes the lower, middle and upper points,
+                                        lower and middle commas, question mark and full stop.</p>
+                                    <p>Headings are written in the same style in red ink, in <term type="script">Alexandrine majuscule</term> script in red
+                                        ink, or in <term type="script">Alexandrine majuscule</term>
+                                        script in brown ink.</p>
+                                </handNote>
+                            </handDesc>
+
+                            <decoDesc>
+                                <decoNote type="headpiece">The beginning of the text on <locus from="i verso-1r" to="i verso-1r">f. 1r</locus> is preceded
+                                    by a rectangular headpiece, outlined in brown ink with red
+                                    infill, the text on <locus from="89v-90r" to="89v-90r">f.
+                                        89v</locus> by a <hi rend="italic">pyle</hi> in the same
+                                    style, and that on <locus from="116v-117r" to="116v-117r">f.
+                                        117r</locus> by a <hi rend="italic">pyle</hi> outlined in
+                                    red and brown ink with red infill. Simpler, slender horizontal
+                                    headpieces outlined in brown ink with red infill precede the
+                                    beginning of other texts (e.g. ff. <locus from="7v-8r" to="7v-8r">8r</locus>, <locus from="23v-24r" to="23v-24r">23v</locus>).</decoNote>
+
+                                <decoNote type="decInit">Some texts begin with ornamented initials
+                                    outlined in brown ink with red paint infill (e.g. ff. <locus from="21v-20r" to="21v-20r">20r</locus>, <locus from="64v-65r" to="64v-65r">64v</locus>, <locus from="104v-105r" to="104v-105r">105r</locus>).</decoNote>
+
+                                <decoNote type="colInit">Other texts being with smaller, simple
+                                    initials in red ink (e.g. ff. <locus from="100v-101r" to="100v-101r">100v</locus>, <locus from="116v-117r" to="116v-117r">117r</locus>). The beginnings of sections are
+                                    also marked by simple minor initials in red ink</decoNote>
+                            </decoDesc>
+
+                            <additions>
+                                <p>There are occasional brief marginal notes by various hands, in
+                                    Greek (e.g. ff. <locus from="i verso-1r" to="i verso-1r">1r</locus>, <locus from="145v-146r" to="145v-146r">146r</locus>), including a note on <locus from="12v-13r" to="12v-13r">f. 12v</locus> mentioning the names <name type="person">
+                                        <persName type="display">Andreas Phlebaris</persName>
+                                        <persName type="standard">Phlebaris, Andreas</persName>
+                                    </name> and <name type="person">
+                                        <persName type="display">Andreas Mengoulas</persName>
+                                        <persName type="standard">Mengoulas, Andreas</persName>
+                                    </name>, and in Latin (e.g. <locus from="130v-131r" to="130v-131r">f. 131r</locus>).</p>
+                                <p>There are a number of marginal notes in Latin and Greek by
+                                    Patrick Young (e.g. ff. <locus from="41v-42r" to="41v-42r">42r</locus>, <locus from="51v-52r" to="51v-52r">52r</locus>, <locus from="116v-117r" to="116v-117r">117r</locus>).</p>
+                            </additions>
+                        </physDesc>
+
+                        <history>
+                            <origin>The original body of the manuscript was probably copied in the
+                                    <origDate calendar="gregorian" notAfter="1249" notBefore="1200">first half of the 13th century</origDate>, as suggested by the
+                                style of script. The general appearance of the script and particular
+                                features such as the continued use of angular breathings and
+                                adscript mute <hi rend="italic">iota</hi> would tend to indicate
+                                production in the 12th century, but mute <hi rend="italic">iota</hi>
+                                occasionally also appears in its fully subscript form (e.g. <locus from="18v-19r" to="18v-19r">f. 19r, lines 8, 10</locus>, <locus from="25v-26r" to="25v-26r">f. 25v, line 3</locus>), which does
+                                not generally occur before the 13th century, and these marks do not
+                                appear to be later additions.</origin>
+                        </history>
+                    </msPart>
+                </msDesc>
+            </sourceDesc>
+
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject
+                            Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh2009119491">Christian literature, Early--Greek
+                                authors</term>
+                        </item>
+                        <item>
+                            <term key="subject_sh85134665">Theology</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2021-11-04">
+                <persName>Christopher Wright</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+        <graphic decls="#document-thumbnail" rend="portrait" url="MS-TRINITY-O-00003-00048-000-00001"/>
+        <surface n="left cover, outer" xml:id="i1">
+            <graphic decls="#downloadImageRights #download" height="3117px" rend="portrait" url="MS-TRINITY-O-00003-00048-000-00001" width="2456px"/>
+        </surface>
+        <surface n="left cover, inner-[a] recto" xml:id="i2">
+            <graphic decls="#downloadImageRights #download" height="3126px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00002" width="4376px"/>
+        </surface>
+        <surface n="[a] verso-[b] recto" xml:id="i3">
+            <graphic decls="#downloadImageRights #download" height="3118px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00003" width="4376px"/>
+        </surface>
+        <surface n="[b] verso-i recto" xml:id="i4">
+            <graphic decls="#downloadImageRights #download" height="3103px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00004" width="4363px"/>
+        </surface>
+        <surface n="i verso-1r" xml:id="i5">
+            <graphic decls="#downloadImageRights #download" height="3111px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00006" width="4387px"/>
+        </surface>
+        <surface n="1v-2r" xml:id="i6">
+            <graphic decls="#downloadImageRights #download" height="3086px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00007" width="4408px"/>
+        </surface>
+        <surface n="2v-3r" xml:id="i7">
+            <graphic decls="#downloadImageRights #download" height="3085px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00008" width="4416px"/>
+        </surface>
+        <surface n="3v-3(a) recto" xml:id="i8">
+            <graphic decls="#downloadImageRights #download" height="3125px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00009" width="4408px"/>
+        </surface>
+        <surface n="3(a) verso-4r" xml:id="i9">
+            <graphic decls="#downloadImageRights #download" height="3070px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00010" width="4415px"/>
+        </surface>
+        <surface n="4v-5r" xml:id="i10">
+            <graphic decls="#downloadImageRights #download" height="3125px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00011" width="4392px"/>
+        </surface>
+        <surface n="5v-6r" xml:id="i11">
+            <graphic decls="#downloadImageRights #download" height="3077px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00012" width="4464px"/>
+        </surface>
+        <surface n="6v-7r" xml:id="i12">
+            <graphic decls="#downloadImageRights #download" height="3085px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00013" width="4392px"/>
+        </surface>
+        <surface n="7v-8r" xml:id="i13">
+            <graphic decls="#downloadImageRights #download" height="3061px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00014" width="4392px"/>
+        </surface>
+        <surface n="8v-9r" xml:id="i14">
+            <graphic decls="#downloadImageRights #download" height="3166px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00015" width="4392px"/>
+        </surface>
+        <surface n="9v-10r" xml:id="i15">
+            <graphic decls="#downloadImageRights #download" height="3055px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00016" width="4459px"/>
+        </surface>
+        <surface n="10v-11r" xml:id="i16">
+            <graphic decls="#downloadImageRights #download" height="3086px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00017" width="4360px"/>
+        </surface>
+        <surface n="11v-12r" xml:id="i17">
+            <graphic decls="#downloadImageRights #download" height="3069px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00018" width="4400px"/>
+        </surface>
+        <surface n="12v-13r" xml:id="i18">
+            <graphic decls="#downloadImageRights #download" height="3086px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00019" width="4400px"/>
+        </surface>
+        <surface n="13v-14r" xml:id="i19">
+            <graphic decls="#downloadImageRights #download" height="3101px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00020" width="4440px"/>
+        </surface>
+        <surface n="14v-15r" xml:id="i20">
+            <graphic decls="#downloadImageRights #download" height="3102px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00021" width="4448px"/>
+        </surface>
+        <surface n="15v-16r" xml:id="i21">
+            <graphic decls="#downloadImageRights #download" height="3087px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00022" width="4483px"/>
+        </surface>
+        <surface n="16v-17r" xml:id="i22">
+            <graphic decls="#downloadImageRights #download" height="3110px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00023" width="4416px"/>
+        </surface>
+        <surface n="17v-18r" xml:id="i23">
+            <graphic decls="#downloadImageRights #download" height="3094px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00024" width="4488px"/>
+        </surface>
+        <surface n="18v-19r" xml:id="i24">
+            <graphic decls="#downloadImageRights #download" height="3078px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00025" width="4472px"/>
+        </surface>
+        <surface n="19v-19(a) recto" xml:id="i25">
+            <graphic decls="#downloadImageRights #download" height="3070px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00026" width="4448px"/>
+        </surface>
+        <surface n="19(a) verso-20r" xml:id="i26">
+            <graphic decls="#downloadImageRights #download" height="3094px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00027" width="4445px"/>
+        </surface>
+        <surface n="20v-21r" xml:id="i27">
+            <graphic decls="#downloadImageRights #download" height="3142px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00028" width="4485px"/>
+        </surface>
+        <surface n="21v-22r" xml:id="i28">
+            <graphic decls="#downloadImageRights #download" height="3110px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00029" width="4486px"/>
+        </surface>
+        <surface n="22v-23r" xml:id="i29">
+            <graphic decls="#downloadImageRights #download" height="3102px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00030" width="4414px"/>
+        </surface>
+        <surface n="23v-24r" xml:id="i30">
+            <graphic decls="#downloadImageRights #download" height="3094px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00031" width="4462px"/>
+        </surface>
+        <surface n="24v-25r" xml:id="i31">
+            <graphic decls="#downloadImageRights #download" height="3134px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00032" width="4518px"/>
+        </surface>
+        <surface n="25v-26r" xml:id="i32">
+            <graphic decls="#downloadImageRights #download" height="3094px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00033" width="4478px"/>
+        </surface>
+        <surface n="26v-27r" xml:id="i33">
+            <graphic decls="#downloadImageRights #download" height="3150px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00034" width="4502px"/>
+        </surface>
+        <surface n="27v-28r" xml:id="i34">
+            <graphic decls="#downloadImageRights #download" height="3118px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00035" width="4502px"/>
+        </surface>
+        <surface n="28v-29r" xml:id="i35">
+            <graphic decls="#downloadImageRights #download" height="3150px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00036" width="4534px"/>
+        </surface>
+        <surface n="29v-30r" xml:id="i36">
+            <graphic decls="#downloadImageRights #download" height="3078px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00037" width="4478px"/>
+        </surface>
+        <surface n="30v-31r" xml:id="i37">
+            <graphic decls="#downloadImageRights #download" height="3118px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00038" width="4486px"/>
+        </surface>
+        <surface n="31v-32r" xml:id="i38">
+            <graphic decls="#downloadImageRights #download" height="3110px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00039" width="4502px"/>
+        </surface>
+        <surface n="32v-33r" xml:id="i39">
+            <graphic decls="#downloadImageRights #download" height="3151px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00040" width="4504px"/>
+        </surface>
+        <surface n="33v-34r" xml:id="i40">
+            <graphic decls="#downloadImageRights #download" height="3111px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00041" width="4504px"/>
+        </surface>
+        <surface n="34v-35r" xml:id="i41">
+            <graphic decls="#downloadImageRights #download" height="3143px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00042" width="4512px"/>
+        </surface>
+        <surface n="35v-36r" xml:id="i42">
+            <graphic decls="#downloadImageRights #download" height="3119px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00043" width="4520px"/>
+        </surface>
+        <surface n="36v-37r" xml:id="i43">
+            <graphic decls="#downloadImageRights #download" height="3151px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00044" width="4488px"/>
+        </surface>
+        <surface n="37v-38r" xml:id="i44">
+            <graphic decls="#downloadImageRights #download" height="3167px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00045" width="4568px"/>
+        </surface>
+        <surface n="38v-39r" xml:id="i45">
+            <graphic decls="#downloadImageRights #download" height="3183px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00046" width="4536px"/>
+        </surface>
+        <surface n="39v-40r" xml:id="i46">
+            <graphic decls="#downloadImageRights #download" height="3102px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00047" width="4569px"/>
+        </surface>
+        <surface n="40v-41r" xml:id="i47">
+            <graphic decls="#downloadImageRights #download" height="3103px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00048" width="4560px"/>
+        </surface>
+        <surface n="41v-42r" xml:id="i48">
+            <graphic decls="#downloadImageRights #download" height="3151px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00049" width="4552px"/>
+        </surface>
+        <surface n="42v-43r" xml:id="i49">
+            <graphic decls="#downloadImageRights #download" height="3071px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00050" width="4528px"/>
+        </surface>
+        <surface n="43v-45r" xml:id="i50">
+            <graphic decls="#downloadImageRights #download" height="3143px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00051" width="4528px"/>
+        </surface>
+        <surface n="45v-47r" xml:id="i51">
+            <graphic decls="#downloadImageRights #download" height="3111px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00052" width="4544px"/>
+        </surface>
+        <surface n="47v-48r" xml:id="i52">
+            <graphic decls="#downloadImageRights #download" height="3151px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00053" width="4616px"/>
+        </surface>
+        <surface n="48v-49r" xml:id="i53">
+            <graphic decls="#downloadImageRights #download" height="3151px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00054" width="4544px"/>
+        </surface>
+        <surface n="49v-50r" xml:id="i54">
+            <graphic decls="#downloadImageRights #download" height="3134px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00055" width="4542px"/>
+        </surface>
+        <surface n="50v-51r" xml:id="i55">
+            <graphic decls="#downloadImageRights #download" height="3126px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00056" width="4606px"/>
+        </surface>
+        <surface n="51v-52r" xml:id="i56">
+            <graphic decls="#downloadImageRights #download" height="3198px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00057" width="4606px"/>
+        </surface>
+        <surface n="52v-53r" xml:id="i57">
+            <graphic decls="#downloadImageRights #download" height="3166px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00058" width="4598px"/>
+        </surface>
+        <surface n="53v-54r" xml:id="i58">
+            <graphic decls="#downloadImageRights #download" height="3182px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00059" width="4590px"/>
+        </surface>
+        <surface n="54v-55r" xml:id="i59">
+            <graphic decls="#downloadImageRights #download" height="3118px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00060" width="4590px"/>
+        </surface>
+        <surface n="55v-56r" xml:id="i60">
+            <graphic decls="#downloadImageRights #download" height="3109px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00061" width="4558px"/>
+        </surface>
+        <surface n="56v-57r" xml:id="i61">
+            <graphic decls="#downloadImageRights #download" height="3142px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00062" width="4590px"/>
+        </surface>
+        <surface n="57v-58r" xml:id="i62">
+            <graphic decls="#downloadImageRights #download" height="3153px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00063" width="4575px"/>
+        </surface>
+        <surface n="58v-59r" xml:id="i63">
+            <graphic decls="#downloadImageRights #download" height="3134px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00064" width="4630px"/>
+        </surface>
+        <surface n="59v-60r" xml:id="i64">
+            <graphic decls="#downloadImageRights #download" height="3150px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00065" width="4598px"/>
+        </surface>
+        <surface n="60v-61r" xml:id="i65">
+            <graphic decls="#downloadImageRights #download" height="3174px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00066" width="4606px"/>
+        </surface>
+        <surface n="61v-62r" xml:id="i66">
+            <graphic decls="#downloadImageRights #download" height="3166px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00067" width="4614px"/>
+        </surface>
+        <surface n="62v-63r" xml:id="i67">
+            <graphic decls="#downloadImageRights #download" height="3199px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00068" width="4665px"/>
+        </surface>
+        <surface n="63v-64r" xml:id="i68">
+            <graphic decls="#downloadImageRights #download" height="3126px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00069" width="4574px"/>
+        </surface>
+        <surface n="64v-65r" xml:id="i69">
+            <graphic decls="#downloadImageRights #download" height="3111px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00070" width="4616px"/>
+        </surface>
+        <surface n="65v-66r" xml:id="i70">
+            <graphic decls="#downloadImageRights #download" height="3119px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00071" width="4648px"/>
+        </surface>
+        <surface n="66v-67r" xml:id="i71">
+            <graphic decls="#downloadImageRights #download" height="3143px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00072" width="4688px"/>
+        </surface>
+        <surface n="67v-68r" xml:id="i72">
+            <graphic decls="#downloadImageRights #download" height="3110px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00073" width="4608px"/>
+        </surface>
+        <surface n="68v-69r" xml:id="i73">
+            <graphic decls="#downloadImageRights #download" height="3151px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00074" width="4624px"/>
+        </surface>
+        <surface n="69v-70r" xml:id="i74">
+            <graphic decls="#downloadImageRights #download" height="3127px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00075" width="4635px"/>
+        </surface>
+        <surface n="70v-71r" xml:id="i75">
+            <graphic decls="#downloadImageRights #download" height="3111px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00076" width="4640px"/>
+        </surface>
+        <surface n="71v-72r" xml:id="i76">
+            <graphic decls="#downloadImageRights #download" height="3119px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00077" width="4680px"/>
+        </surface>
+        <surface n="72v-73r" xml:id="i77">
+            <graphic decls="#downloadImageRights #download" height="3127px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00078" width="4600px"/>
+        </surface>
+        <surface n="73v-74r" xml:id="i78">
+            <graphic decls="#downloadImageRights #download" height="3167px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00079" width="4667px"/>
+        </surface>
+        <surface n="74v-75r" xml:id="i79">
+            <graphic decls="#downloadImageRights #download" height="3191px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00080" width="4635px"/>
+        </surface>
+        <surface n="75v-75(a) recto" xml:id="i80">
+            <graphic decls="#downloadImageRights #download" height="3167px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00081" width="4672px"/>
+        </surface>
+        <surface n="75(a) verso-76r" xml:id="i81">
+            <graphic decls="#downloadImageRights #download" height="3159px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00082" width="4664px"/>
+        </surface>
+        <surface n="76v-77r" xml:id="i82">
+            <graphic decls="#downloadImageRights #download" height="3127px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00083" width="4648px"/>
+        </surface>
+        <surface n="77v-78r" xml:id="i83">
+            <graphic decls="#downloadImageRights #download" height="3159px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00084" width="4680px"/>
+        </surface>
+        <surface n="78v-79r" xml:id="i84">
+            <graphic decls="#downloadImageRights #download" height="3159px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00085" width="4632px"/>
+        </surface>
+        <surface n="79v-80r" xml:id="i85">
+            <graphic decls="#downloadImageRights #download" height="3183px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00086" width="4632px"/>
+        </surface>
+        <surface n="80v-81r-1" xml:id="i86">
+            <graphic decls="#downloadImageRights #download" height="3151px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00087" width="4648px"/>
+        </surface>
+        <surface n="80v-81r-2" xml:id="i87">
+            <graphic decls="#downloadImageRights #download" height="3207px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00088" width="4736px"/>
+        </surface>
+        <surface n="81v-82r" xml:id="i88">
+            <graphic decls="#downloadImageRights #download" height="3143px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00089" width="4696px"/>
+        </surface>
+        <surface n="82v-83r" xml:id="i89">
+            <graphic decls="#downloadImageRights #download" height="3198px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00090" width="4667px"/>
+        </surface>
+        <surface n="83v-84r" xml:id="i90">
+            <graphic decls="#downloadImageRights #download" height="3167px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00091" width="4672px"/>
+        </surface>
+        <surface n="84v-85r" xml:id="i91">
+            <graphic decls="#downloadImageRights #download" height="3143px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00092" width="4656px"/>
+        </surface>
+        <surface n="85v-86r" xml:id="i92">
+            <graphic decls="#downloadImageRights #download" height="3153px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00093" width="4696px"/>
+        </surface>
+        <surface n="86v-87r" xml:id="i93">
+            <graphic decls="#downloadImageRights #download" height="3119px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00094" width="4699px"/>
+        </surface>
+        <surface n="87v-88r-1" xml:id="i94">
+            <graphic decls="#downloadImageRights #download" height="3143px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00095" width="4683px"/>
+        </surface>
+        <surface n="87v-88r-2" xml:id="i95">
+            <graphic decls="#downloadImageRights #download" height="3151px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00096" width="4675px"/>
+        </surface>
+        <surface n="87v-88r-3" xml:id="i96">
+            <graphic decls="#downloadImageRights #download" height="3167px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00097" width="4736px"/>
+        </surface>
+        <surface n="87v-88r-4" xml:id="i97">
+            <graphic decls="#downloadImageRights #download" height="3159px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00098" width="4659px"/>
+        </surface>
+        <surface n="88v-89r" xml:id="i98">
+            <graphic decls="#downloadImageRights #download" height="3167px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00099" width="4687px"/>
+        </surface>
+        <surface n="89v-90r" xml:id="i99">
+            <graphic decls="#downloadImageRights #download" height="3191px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00100" width="4704px"/>
+        </surface>
+        <surface n="90v-91r" xml:id="i100">
+            <graphic decls="#downloadImageRights #download" height="3135px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00101" width="4704px"/>
+        </surface>
+        <surface n="91v-92r" xml:id="i101">
+            <graphic decls="#downloadImageRights #download" height="3126px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00102" width="4662px"/>
+        </surface>
+        <surface n="92v-93r" xml:id="i102">
+            <graphic decls="#downloadImageRights #download" height="3111px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00103" width="4680px"/>
+        </surface>
+        <surface n="93v-94r" xml:id="i103">
+            <graphic decls="#downloadImageRights #download" height="3127px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00104" width="4655px"/>
+        </surface>
+        <surface n="94v-95r" xml:id="i104">
+            <graphic decls="#downloadImageRights #download" height="3127px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00105" width="4655px"/>
+        </surface>
+        <surface n="95v-96r" xml:id="i105">
+            <graphic decls="#downloadImageRights #download" height="3128px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00106" width="4656px"/>
+        </surface>
+        <surface n="96v-97r" xml:id="i106">
+            <graphic decls="#downloadImageRights #download" height="3111px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00107" width="4664px"/>
+        </surface>
+        <surface n="97v-98r" xml:id="i107">
+            <graphic decls="#downloadImageRights #download" height="3103px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00108" width="4672px"/>
+        </surface>
+        <surface n="98v-99r" xml:id="i108">
+            <graphic decls="#downloadImageRights #download" height="3094px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00109" width="4638px"/>
+        </surface>
+        <surface n="99v-100r" xml:id="i109">
+            <graphic decls="#downloadImageRights #download" height="3127px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00110" width="4691px"/>
+        </surface>
+        <surface n="100v-101r" xml:id="i110">
+            <graphic decls="#downloadImageRights #download" height="3095px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00111" width="4691px"/>
+        </surface>
+        <surface n="101v-102r" xml:id="i111">
+            <graphic decls="#downloadImageRights #download" height="3175px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00112" width="4675px"/>
+        </surface>
+        <surface n="102v-103r" xml:id="i112">
+            <graphic decls="#downloadImageRights #download" height="3159px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00113" width="4715px"/>
+        </surface>
+        <surface n="103v-104r" xml:id="i113">
+            <graphic decls="#downloadImageRights #download" height="3159px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00114" width="4731px"/>
+        </surface>
+        <surface n="104v-105r" xml:id="i114">
+            <graphic decls="#downloadImageRights #download" height="3136px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00115" width="4667px"/>
+        </surface>
+        <surface n="105v-106r" xml:id="i115">
+            <graphic decls="#downloadImageRights #download" height="3142px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00116" width="4717px"/>
+        </surface>
+        <surface n="106v-107r" xml:id="i116">
+            <graphic decls="#downloadImageRights #download" height="3111px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00117" width="4691px"/>
+        </surface>
+        <surface n="107v-108r" xml:id="i117">
+            <graphic decls="#downloadImageRights #download" height="3159px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00118" width="4763px"/>
+        </surface>
+        <surface n="108v-109r" xml:id="i118">
+            <graphic decls="#downloadImageRights #download" height="3143px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00119" width="4747px"/>
+        </surface>
+        <surface n="109v-110r" xml:id="i119">
+            <graphic decls="#downloadImageRights #download" height="3143px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00120" width="4659px"/>
+        </surface>
+        <surface n="110v-111r" xml:id="i120">
+            <graphic decls="#downloadImageRights #download" height="3151px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00121" width="4731px"/>
+        </surface>
+        <surface n="111v-112r" xml:id="i121">
+            <graphic decls="#downloadImageRights #download" height="3159px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00122" width="4755px"/>
+        </surface>
+        <surface n="112v-113r" xml:id="i122">
+            <graphic decls="#downloadImageRights #download" height="3118px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00123" width="4717px"/>
+        </surface>
+        <surface n="113v-114r" xml:id="i123">
+            <graphic decls="#downloadImageRights #download" height="3094px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00124" width="4693px"/>
+        </surface>
+        <surface n="114v-115r" xml:id="i124">
+            <graphic decls="#downloadImageRights #download" height="3142px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00125" width="4693px"/>
+        </surface>
+        <surface n="115v-116r" xml:id="i125">
+            <graphic decls="#downloadImageRights #download" height="3134px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00126" width="4733px"/>
+        </surface>
+        <surface n="116v-117r" xml:id="i126">
+            <graphic decls="#downloadImageRights #download" height="3134px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00127" width="4701px"/>
+        </surface>
+        <surface n="117v-118r" xml:id="i127">
+            <graphic decls="#downloadImageRights #download" height="3135px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00128" width="4667px"/>
+        </surface>
+        <surface n="118v-119r" xml:id="i128">
+            <graphic decls="#downloadImageRights #download" height="3207px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00129" width="4726px"/>
+        </surface>
+        <surface n="119v-120r" xml:id="i129">
+            <graphic decls="#downloadImageRights #download" height="3174px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00130" width="4749px"/>
+        </surface>
+        <surface n="120v-121r" xml:id="i130">
+            <graphic decls="#downloadImageRights #download" height="3166px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00131" width="4693px"/>
+        </surface>
+        <surface n="121v-122r" xml:id="i131">
+            <graphic decls="#downloadImageRights #download" height="3142px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00132" width="4693px"/>
+        </surface>
+        <surface n="122v-123r" xml:id="i132">
+            <graphic decls="#downloadImageRights #download" height="3158px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00133" width="4709px"/>
+        </surface>
+        <surface n="123v-124r" xml:id="i133">
+            <graphic decls="#downloadImageRights #download" height="3143px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00134" width="4675px"/>
+        </surface>
+        <surface n="124v-125r" xml:id="i134">
+            <graphic decls="#downloadImageRights #download" height="3166px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00135" width="4733px"/>
+        </surface>
+        <surface n="125v-126r" xml:id="i135">
+            <graphic decls="#downloadImageRights #download" height="3119px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00136" width="4723px"/>
+        </surface>
+        <surface n="126v-127r" xml:id="i136">
+            <graphic decls="#downloadImageRights #download" height="3143px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00137" width="4694px"/>
+        </surface>
+        <surface n="127v-128r" xml:id="i137">
+            <graphic decls="#downloadImageRights #download" height="3158px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00138" width="4685px"/>
+        </surface>
+        <surface n="128v-129r" xml:id="i138">
+            <graphic decls="#downloadImageRights #download" height="3142px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00139" width="4693px"/>
+        </surface>
+        <surface n="129v-130r" xml:id="i139">
+            <graphic decls="#downloadImageRights #download" height="3175px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00140" width="4721px"/>
+        </surface>
+        <surface n="130v-131r" xml:id="i140">
+            <graphic decls="#downloadImageRights #download" height="3143px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00141" width="4704px"/>
+        </surface>
+        <surface n="131v-132r" xml:id="i141">
+            <graphic decls="#downloadImageRights #download" height="3103px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00142" width="4673px"/>
+        </surface>
+        <surface n="132v-133r" xml:id="i142">
+            <graphic decls="#downloadImageRights #download" height="3111px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00143" width="4681px"/>
+        </surface>
+        <surface n="133v-134r" xml:id="i143">
+            <graphic decls="#downloadImageRights #download" height="3127px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00144" width="4737px"/>
+        </surface>
+        <surface n="134v-135r" xml:id="i144">
+            <graphic decls="#downloadImageRights #download" height="3175px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00145" width="4689px"/>
+        </surface>
+        <surface n="135v-136r" xml:id="i145">
+            <graphic decls="#downloadImageRights #download" height="3127px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00146" width="4665px"/>
+        </surface>
+        <surface n="136v-137r" xml:id="i146">
+            <graphic decls="#downloadImageRights #download" height="3105px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00147" width="4651px"/>
+        </surface>
+        <surface n="137v-138r" xml:id="i147">
+            <graphic decls="#downloadImageRights #download" height="3087px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00148" width="4665px"/>
+        </surface>
+        <surface n="138v-139r" xml:id="i148">
+            <graphic decls="#downloadImageRights #download" height="3136px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00149" width="4673px"/>
+        </surface>
+        <surface n="139v-141r" xml:id="i149">
+            <graphic decls="#downloadImageRights #download" height="3086px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00150" width="4573px"/>
+        </surface>
+        <surface n="141v-142r" xml:id="i150">
+            <graphic decls="#downloadImageRights #download" height="3094px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00151" width="4573px"/>
+        </surface>
+        <surface n="142v-144r" xml:id="i151">
+            <graphic decls="#downloadImageRights #download" height="3118px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00152" width="4574px"/>
+        </surface>
+        <surface n="144v-145r" xml:id="i152">
+            <graphic decls="#downloadImageRights #download" height="3126px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00153" width="4581px"/>
+        </surface>
+        <surface n="145v-146r" xml:id="i153">
+            <graphic decls="#downloadImageRights #download" height="3070px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00154" width="4613px"/>
+        </surface>
+        <surface n="146v-147r" xml:id="i154">
+            <graphic decls="#downloadImageRights #download" height="3174px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00155" width="4614px"/>
+        </surface>
+        <surface n="147v-148r" xml:id="i155">
+            <graphic decls="#downloadImageRights #download" height="3126px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00156" width="4574px"/>
+        </surface>
+        <surface n="148v-149r" xml:id="i156">
+            <graphic decls="#downloadImageRights #download" height="3110px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00157" width="4622px"/>
+        </surface>
+        <surface n="149v-150r" xml:id="i157">
+            <graphic decls="#downloadImageRights #download" height="3134px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00158" width="4549px"/>
+        </surface>
+        <surface n="150v-150(a) recto" xml:id="i158">
+            <graphic decls="#downloadImageRights #download" height="3094px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00159" width="4589px"/>
+        </surface>
+        <surface n="150(a) verso-150 (b) recto" xml:id="i159">
+            <graphic decls="#downloadImageRights #download" height="3150px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00160" width="4541px"/>
+        </surface>
+        <surface n="150(b) verso-151r" xml:id="i160">
+            <graphic decls="#downloadImageRights #download" height="3078px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00161" width="4565px"/>
+        </surface>
+        <surface n="151v-152r" xml:id="i161">
+            <graphic decls="#downloadImageRights #download" height="3103px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00162" width="4547px"/>
+        </surface>
+        <surface n="152v-153r" xml:id="i162">
+            <graphic decls="#downloadImageRights #download" height="3166px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00163" width="4606px"/>
+        </surface>
+        <surface n="153v-154r" xml:id="i163">
+            <graphic decls="#downloadImageRights #download" height="3102px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00164" width="4558px"/>
+        </surface>
+        <surface n="154v-155r" xml:id="i164">
+            <graphic decls="#downloadImageRights #download" height="3134px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00165" width="4614px"/>
+        </surface>
+        <surface n="155v-156r" xml:id="i165">
+            <graphic decls="#downloadImageRights #download" height="3134px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00166" width="4582px"/>
+        </surface>
+        <surface n="156v-157r" xml:id="i166">
+            <graphic decls="#downloadImageRights #download" height="3135px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00167" width="4483px"/>
+        </surface>
+        <surface n="157v-158r" xml:id="i167">
+            <graphic decls="#downloadImageRights #download" height="3141px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00168" width="4589px"/>
+        </surface>
+        <surface n="158v-159r" xml:id="i168">
+            <graphic decls="#downloadImageRights #download" height="3135px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00169" width="4520px"/>
+        </surface>
+        <surface n="159v-160r" xml:id="i169">
+            <graphic decls="#downloadImageRights #download" height="3167px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00170" width="4520px"/>
+        </surface>
+        <surface n="160v-161r" xml:id="i170">
+            <graphic decls="#downloadImageRights #download" height="3167px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00171" width="4496px"/>
+        </surface>
+        <surface n="161v-162r" xml:id="i171">
+            <graphic decls="#downloadImageRights #download" height="3119px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00172" width="4504px"/>
+        </surface>
+        <surface n="162v-163r" xml:id="i172">
+            <graphic decls="#downloadImageRights #download" height="3214px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00173" width="4542px"/>
+        </surface>
+        <surface n="163v-164r" xml:id="i173">
+            <graphic decls="#downloadImageRights #download" height="3158px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00174" width="4525px"/>
+        </surface>
+        <surface n="164v-165r" xml:id="i174">
+            <graphic decls="#downloadImageRights #download" height="3118px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00175" width="4502px"/>
+        </surface>
+        <surface n="165v-166r" xml:id="i175">
+            <graphic decls="#downloadImageRights #download" height="3142px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00176" width="4566px"/>
+        </surface>
+        <surface n="166v-167r" xml:id="i176">
+            <graphic decls="#downloadImageRights #download" height="3134px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00177" width="4478px"/>
+        </surface>
+        <surface n="167v-168r" xml:id="i177">
+            <graphic decls="#downloadImageRights #download" height="3199px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00178" width="4488px"/>
+        </surface>
+        <surface n="168v-[c] recto" xml:id="i178">
+            <graphic decls="#downloadImageRights #download" height="3142px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00179" width="4544px"/>
+        </surface>
+        <surface n="[c] verso-right cover, inner" xml:id="i179">
+            <graphic decls="#downloadImageRights #download" height="3182px" rend="landscape" url="MS-TRINITY-O-00003-00048-000-00180" width="4454px"/>
+        </surface>
+        <surface n="right cover, outer" xml:id="i180">
+            <graphic decls="#downloadImageRights #download" height="3110px" rend="portrait" url="MS-TRINITY-O-00003-00048-000-00181" width="2343px"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div>
+                <pb facs="#i1" n="left cover, outer" xml:id="pb-leftcover,outer"/>
+                <pb facs="#i2" n="left cover, inner-[a] recto" xml:id="pb-leftcover,inner-arecto"/>
+                <pb facs="#i3" n="[a] verso-[b] recto" xml:id="pb-averso-brecto"/>
+                <pb facs="#i4" n="[b] verso-i recto" xml:id="pb-bverso-irecto"/>
+                <pb facs="#i5" n="i verso-1r" xml:id="pb-iverso-1r"/>
+                <pb facs="#i6" n="1v-2r" xml:id="pb-1v-2r"/>
+                <pb facs="#i7" n="2v-3r" xml:id="pb-2v-3r"/>
+                <pb facs="#i8" n="3v-3(a) recto" xml:id="pb-3v-3arecto"/>
+                <pb facs="#i9" n="3(a) verso-4r" xml:id="pb-3averso-4r"/>
+                <pb facs="#i10" n="4v-5r" xml:id="pb-4v-5r"/>
+                <pb facs="#i11" n="5v-6r" xml:id="pb-5v-6r"/>
+                <pb facs="#i12" n="6v-7r" xml:id="pb-6v-7r"/>
+                <pb facs="#i13" n="7v-8r" xml:id="pb-7v-8r"/>
+                <pb facs="#i14" n="8v-9r" xml:id="pb-8v-9r"/>
+                <pb facs="#i15" n="9v-10r" xml:id="pb-9v-10r"/>
+                <pb facs="#i16" n="10v-11r" xml:id="pb-10v-11r"/>
+                <pb facs="#i17" n="11v-12r" xml:id="pb-11v-12r"/>
+                <pb facs="#i18" n="12v-13r" xml:id="pb-12v-13r"/>
+                <pb facs="#i19" n="13v-14r" xml:id="pb-13v-14r"/>
+                <pb facs="#i20" n="14v-15r" xml:id="pb-14v-15r"/>
+                <pb facs="#i21" n="15v-16r" xml:id="pb-15v-16r"/>
+                <pb facs="#i22" n="16v-17r" xml:id="pb-16v-17r"/>
+                <pb facs="#i23" n="17v-18r" xml:id="pb-17v-18r"/>
+                <pb facs="#i24" n="18v-19r" xml:id="pb-18v-19r"/>
+                <pb facs="#i25" n="19v-19(a) recto" xml:id="pb-19v-19arecto"/>
+                <pb facs="#i26" n="19(a) verso-20r" xml:id="pb-19averso-20r"/>
+                <pb facs="#i27" n="20v-21r" xml:id="pb-20v-21r"/>
+                <pb facs="#i28" n="21v-22r" xml:id="pb-21v-22r"/>
+                <pb facs="#i29" n="22v-23r" xml:id="pb-22v-23r"/>
+                <pb facs="#i30" n="23v-24r" xml:id="pb-23v-24r"/>
+                <pb facs="#i31" n="24v-25r" xml:id="pb-24v-25r"/>
+                <pb facs="#i32" n="25v-26r" xml:id="pb-25v-26r"/>
+                <pb facs="#i33" n="26v-27r" xml:id="pb-26v-27r"/>
+                <pb facs="#i34" n="27v-28r" xml:id="pb-27v-28r"/>
+                <pb facs="#i35" n="28v-29r" xml:id="pb-28v-29r"/>
+                <pb facs="#i36" n="29v-30r" xml:id="pb-29v-30r"/>
+                <pb facs="#i37" n="30v-31r" xml:id="pb-30v-31r"/>
+                <pb facs="#i38" n="31v-32r" xml:id="pb-31v-32r"/>
+                <pb facs="#i39" n="32v-33r" xml:id="pb-32v-33r"/>
+                <pb facs="#i40" n="33v-34r" xml:id="pb-33v-34r"/>
+                <pb facs="#i41" n="34v-35r" xml:id="pb-34v-35r"/>
+                <pb facs="#i42" n="35v-36r" xml:id="pb-35v-36r"/>
+                <pb facs="#i43" n="36v-37r" xml:id="pb-36v-37r"/>
+                <pb facs="#i44" n="37v-38r" xml:id="pb-37v-38r"/>
+                <pb facs="#i45" n="38v-39r" xml:id="pb-38v-39r"/>
+                <pb facs="#i46" n="39v-40r" xml:id="pb-39v-40r"/>
+                <pb facs="#i47" n="40v-41r" xml:id="pb-40v-41r"/>
+                <pb facs="#i48" n="41v-42r" xml:id="pb-41v-42r"/>
+                <pb facs="#i49" n="42v-43r" xml:id="pb-42v-43r"/>
+                <pb facs="#i50" n="43v-45r" xml:id="pb-43v-45r"/>
+                <pb facs="#i51" n="45v-47r" xml:id="pb-45v-47r"/>
+                <pb facs="#i52" n="47v-48r" xml:id="pb-47v-48r"/>
+                <pb facs="#i53" n="48v-49r" xml:id="pb-48v-49r"/>
+                <pb facs="#i54" n="49v-50r" xml:id="pb-49v-50r"/>
+                <pb facs="#i55" n="50v-51r" xml:id="pb-50v-51r"/>
+                <pb facs="#i56" n="51v-52r" xml:id="pb-51v-52r"/>
+                <pb facs="#i57" n="52v-53r" xml:id="pb-52v-53r"/>
+                <pb facs="#i58" n="53v-54r" xml:id="pb-53v-54r"/>
+                <pb facs="#i59" n="54v-55r" xml:id="pb-54v-55r"/>
+                <pb facs="#i60" n="55v-56r" xml:id="pb-55v-56r"/>
+                <pb facs="#i61" n="56v-57r" xml:id="pb-56v-57r"/>
+                <pb facs="#i62" n="57v-58r" xml:id="pb-57v-58r"/>
+                <pb facs="#i63" n="58v-59r" xml:id="pb-58v-59r"/>
+                <pb facs="#i64" n="59v-60r" xml:id="pb-59v-60r"/>
+                <pb facs="#i65" n="60v-61r" xml:id="pb-60v-61r"/>
+                <pb facs="#i66" n="61v-62r" xml:id="pb-61v-62r"/>
+                <pb facs="#i67" n="62v-63r" xml:id="pb-62v-63r"/>
+                <pb facs="#i68" n="63v-64r" xml:id="pb-63v-64r"/>
+                <pb facs="#i69" n="64v-65r" xml:id="pb-64v-65r"/>
+                <pb facs="#i70" n="65v-66r" xml:id="pb-65v-66r"/>
+                <pb facs="#i71" n="66v-67r" xml:id="pb-66v-67r"/>
+                <pb facs="#i72" n="67v-68r" xml:id="pb-67v-68r"/>
+                <pb facs="#i73" n="68v-69r" xml:id="pb-68v-69r"/>
+                <pb facs="#i74" n="69v-70r" xml:id="pb-69v-70r"/>
+                <pb facs="#i75" n="70v-71r" xml:id="pb-70v-71r"/>
+                <pb facs="#i76" n="71v-72r" xml:id="pb-71v-72r"/>
+                <pb facs="#i77" n="72v-73r" xml:id="pb-72v-73r"/>
+                <pb facs="#i78" n="73v-74r" xml:id="pb-73v-74r"/>
+                <pb facs="#i79" n="74v-75r" xml:id="pb-74v-75r"/>
+                <pb facs="#i80" n="75v-75(a) recto" xml:id="pb-75v-75arecto"/>
+                <pb facs="#i81" n="75(a) verso-76r" xml:id="pb-75averso-76r"/>
+                <pb facs="#i82" n="76v-77r" xml:id="pb-76v-77r"/>
+                <pb facs="#i83" n="77v-78r" xml:id="pb-77v-78r"/>
+                <pb facs="#i84" n="78v-79r" xml:id="pb-78v-79r"/>
+                <pb facs="#i85" n="79v-80r" xml:id="pb-79v-80r"/>
+                <pb facs="#i86" n="80v-81r-1" xml:id="pb-80v-81r-1"/>
+                <pb facs="#i87" n="80v-81r-2" xml:id="pb-80v-81r-2"/>
+                <pb facs="#i88" n="81v-82r" xml:id="pb-81v-82r"/>
+                <pb facs="#i89" n="82v-83r" xml:id="pb-82v-83r"/>
+                <pb facs="#i90" n="83v-84r" xml:id="pb-83v-84r"/>
+                <pb facs="#i91" n="84v-85r" xml:id="pb-84v-85r"/>
+                <pb facs="#i92" n="85v-86r" xml:id="pb-85v-86r"/>
+                <pb facs="#i93" n="86v-87r" xml:id="pb-86v-87r"/>
+                <pb facs="#i94" n="87v-88r-1" xml:id="pb-87v-88r-1"/>
+                <pb facs="#i95" n="87v-88r-2" xml:id="pb-87v-88r-2"/>
+                <pb facs="#i96" n="87v-88r-3" xml:id="pb-87v-88r-3"/>
+                <pb facs="#i97" n="87v-88r-4" xml:id="pb-87v-88r-4"/>
+                <pb facs="#i98" n="88v-89r" xml:id="pb-88v-89r"/>
+                <pb facs="#i99" n="89v-90r" xml:id="pb-89v-90r"/>
+                <pb facs="#i100" n="90v-91r" xml:id="pb-90v-91r"/>
+                <pb facs="#i101" n="91v-92r" xml:id="pb-91v-92r"/>
+                <pb facs="#i102" n="92v-93r" xml:id="pb-92v-93r"/>
+                <pb facs="#i103" n="93v-94r" xml:id="pb-93v-94r"/>
+                <pb facs="#i104" n="94v-95r" xml:id="pb-94v-95r"/>
+                <pb facs="#i105" n="95v-96r" xml:id="pb-95v-96r"/>
+                <pb facs="#i106" n="96v-97r" xml:id="pb-96v-97r"/>
+                <pb facs="#i107" n="97v-98r" xml:id="pb-97v-98r"/>
+                <pb facs="#i108" n="98v-99r" xml:id="pb-98v-99r"/>
+                <pb facs="#i109" n="99v-100r" xml:id="pb-99v-100r"/>
+                <pb facs="#i110" n="100v-101r" xml:id="pb-100v-101r"/>
+                <pb facs="#i111" n="101v-102r" xml:id="pb-101v-102r"/>
+                <pb facs="#i112" n="102v-103r" xml:id="pb-102v-103r"/>
+                <pb facs="#i113" n="103v-104r" xml:id="pb-103v-104r"/>
+                <pb facs="#i114" n="104v-105r" xml:id="pb-104v-105r"/>
+                <pb facs="#i115" n="105v-106r" xml:id="pb-105v-106r"/>
+                <pb facs="#i116" n="106v-107r" xml:id="pb-106v-107r"/>
+                <pb facs="#i117" n="107v-108r" xml:id="pb-107v-108r"/>
+                <pb facs="#i118" n="108v-109r" xml:id="pb-108v-109r"/>
+                <pb facs="#i119" n="109v-110r" xml:id="pb-109v-110r"/>
+                <pb facs="#i120" n="110v-111r" xml:id="pb-110v-111r"/>
+                <pb facs="#i121" n="111v-112r" xml:id="pb-111v-112r"/>
+                <pb facs="#i122" n="112v-113r" xml:id="pb-112v-113r"/>
+                <pb facs="#i123" n="113v-114r" xml:id="pb-113v-114r"/>
+                <pb facs="#i124" n="114v-115r" xml:id="pb-114v-115r"/>
+                <pb facs="#i125" n="115v-116r" xml:id="pb-115v-116r"/>
+                <pb facs="#i126" n="116v-117r" xml:id="pb-116v-117r"/>
+                <pb facs="#i127" n="117v-118r" xml:id="pb-117v-118r"/>
+                <pb facs="#i128" n="118v-119r" xml:id="pb-118v-119r"/>
+                <pb facs="#i129" n="119v-120r" xml:id="pb-119v-120r"/>
+                <pb facs="#i130" n="120v-121r" xml:id="pb-120v-121r"/>
+                <pb facs="#i131" n="121v-122r" xml:id="pb-121v-122r"/>
+                <pb facs="#i132" n="122v-123r" xml:id="pb-122v-123r"/>
+                <pb facs="#i133" n="123v-124r" xml:id="pb-123v-124r"/>
+                <pb facs="#i134" n="124v-125r" xml:id="pb-124v-125r"/>
+                <pb facs="#i135" n="125v-126r" xml:id="pb-125v-126r"/>
+                <pb facs="#i136" n="126v-127r" xml:id="pb-126v-127r"/>
+                <pb facs="#i137" n="127v-128r" xml:id="pb-127v-128r"/>
+                <pb facs="#i138" n="128v-129r" xml:id="pb-128v-129r"/>
+                <pb facs="#i139" n="129v-130r" xml:id="pb-129v-130r"/>
+                <pb facs="#i140" n="130v-131r" xml:id="pb-130v-131r"/>
+                <pb facs="#i141" n="131v-132r" xml:id="pb-131v-132r"/>
+                <pb facs="#i142" n="132v-133r" xml:id="pb-132v-133r"/>
+                <pb facs="#i143" n="133v-134r" xml:id="pb-133v-134r"/>
+                <pb facs="#i144" n="134v-135r" xml:id="pb-134v-135r"/>
+                <pb facs="#i145" n="135v-136r" xml:id="pb-135v-136r"/>
+                <pb facs="#i146" n="136v-137r" xml:id="pb-136v-137r"/>
+                <pb facs="#i147" n="137v-138r" xml:id="pb-137v-138r"/>
+                <pb facs="#i148" n="138v-139r" xml:id="pb-138v-139r"/>
+                <pb facs="#i149" n="139v-141r" xml:id="pb-139v-141r"/>
+                <pb facs="#i150" n="141v-142r" xml:id="pb-141v-142r"/>
+                <pb facs="#i151" n="142v-144r" xml:id="pb-142v-144r"/>
+                <pb facs="#i152" n="144v-145r" xml:id="pb-144v-145r"/>
+                <pb facs="#i153" n="145v-146r" xml:id="pb-145v-146r"/>
+                <pb facs="#i154" n="146v-147r" xml:id="pb-146v-147r"/>
+                <pb facs="#i155" n="147v-148r" xml:id="pb-147v-148r"/>
+                <pb facs="#i156" n="148v-149r" xml:id="pb-148v-149r"/>
+                <pb facs="#i157" n="149v-150r" xml:id="pb-149v-150r"/>
+                <pb facs="#i158" n="150v-150(a) recto" xml:id="pb-150v-150arecto"/>
+                <pb facs="#i159" n="150(a) verso-150 (b) recto" xml:id="pb-150averso-150brecto"/>
+                <pb facs="#i160" n="150(b) verso-151r" xml:id="pb-150bverso-151r"/>
+                <pb facs="#i161" n="151v-152r" xml:id="pb-151v-152r"/>
+                <pb facs="#i162" n="152v-153r" xml:id="pb-152v-153r"/>
+                <pb facs="#i163" n="153v-154r" xml:id="pb-153v-154r"/>
+                <pb facs="#i164" n="154v-155r" xml:id="pb-154v-155r"/>
+                <pb facs="#i165" n="155v-156r" xml:id="pb-155v-156r"/>
+                <pb facs="#i166" n="156v-157r" xml:id="pb-156v-157r"/>
+                <pb facs="#i167" n="157v-158r" xml:id="pb-157v-158r"/>
+                <pb facs="#i168" n="158v-159r" xml:id="pb-158v-159r"/>
+                <pb facs="#i169" n="159v-160r" xml:id="pb-159v-160r"/>
+                <pb facs="#i170" n="160v-161r" xml:id="pb-160v-161r"/>
+                <pb facs="#i171" n="161v-162r" xml:id="pb-161v-162r"/>
+                <pb facs="#i172" n="162v-163r" xml:id="pb-162v-163r"/>
+                <pb facs="#i173" n="163v-164r" xml:id="pb-163v-164r"/>
+                <pb facs="#i174" n="164v-165r" xml:id="pb-164v-165r"/>
+                <pb facs="#i175" n="165v-166r" xml:id="pb-165v-166r"/>
+                <pb facs="#i176" n="166v-167r" xml:id="pb-166v-167r"/>
+                <pb facs="#i177" n="167v-168r" xml:id="pb-167v-168r"/>
+                <pb facs="#i178" n="168v-[c] recto" xml:id="pb-168v-crecto"/>
+                <pb facs="#i179" n="[c] verso-right cover, inner" xml:id="pb-cverso-rightcover,inner"/>
+                <pb facs="#i180" n="right cover, outer" xml:id="pb-rightcover,outer"/>
+            </div>
+        </body>
+    </text>
+</TEI>

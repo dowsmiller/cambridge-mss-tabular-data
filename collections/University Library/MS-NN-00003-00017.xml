@@ -1,0 +1,2665 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_12247">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, University Library, MS Nn.3.17</title>
+                <funder>The Polonsky Foundation</funder>
+                <principal>Suzanne Paul</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>University Library</publisher>
+
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made
+                        available for download are licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This
+                        metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+
+            <availability status="restricted" xml:id="watermark">
+               <licence>Cambridge University Library (CC BY-NC 4.0)</licence>
+            </availability>
+         </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-NN-00003-00017" xml:lang="en">
+                    <msIdentifier>
+                        <institution>University of Cambridge</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Medieval Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, University Library, MS Nn.3.17</idno>
+                        <altIdentifier type="external">
+                            <idno type="diktyon">
+                                Diktyon 12247</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+
+                    <msContents>
+                        <summary>
+                            <seg type="para">Nn.3.17 is a composite manuscript made up of two
+                                originally separate parts, each of which contains the text of three
+                                tragedies by <title>Aeschylus</title> (b. c. 525/524, d. c. 456/455
+                                BC), the first of the three great Greek tragedians. The three
+                                tragedies <hi rend="italic">Prometheus Bound, The Seven against
+                                    Thebes</hi> and <hi rend="italic">The Persians</hi> constitute
+                                the so-called 'Byzantine triad', a selections of plays among the
+                                'canonical' ones regularly copied for studying in Byzantine
+                                schools.</seg>
+                            <seg type="para">The first part, sometimes referred to as Nn.3.17.1 or
+                                Nn.3.17.A was written in the 14th century; the second (Nn.3.17.2 or
+                                Nn.3.17.B) dates from the 15th. The Greek text is cited in the
+                                editions of Aeschylus as Lc for Parts I, and as Lh for Part II. </seg>
+                            <seg type="para">Dr Matteo Di Franco</seg>
+                        </summary>
+                        <textLang mainLang="grc">Greek</textLang>
+                    </msContents>
+
+
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc material="mixed">
+                                <extent>
+                                    <seg type="object">
+                              <objectType>Codex </objectType>
+                           </seg>
+                                    <seg type="leaf">
+                                        <num type="laterEndleaf" value="2">ii</num> + <num type="leaf" value="244">166</num> + <num type="laterEndleaf" value="2">ii</num>
+                                    </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height quantity="200">200</height>
+                                            <width quantity="140">140</width>
+                                        </dimensions>
+                                        <note>The lower edge of Part I <locus from="1:60r" to="1:60v">f. 60</locus> is folded to conform with
+                                            the present size of the manuscript (see also <bibl subtype="internal" type="MS">CUL Nn.3.14.1</bibl>,
+                                            ff. 121 and 154).</note>
+                                    </seg>
+                                </extent>
+
+                                <foliation xml:id="modern">
+                                    <p>i-ii + 1-72, 72bis, 73-88 | 1-78 + iii-iv</p>
+                                    <p>Two modern independent foliations in pencil in Arabic
+                                        numerals in the top right-hand corner, recto, restarting at
+                                        the beginning of Part II.</p>
+                                </foliation>
+                                <foliation xml:id="early">
+                                    <p>A foliation in brown ink in Greek numerals in the lower
+                                        margin, recto (but α on <locus from="2:1v" to="2:1v">f. 1v</locus>), starts at the beginning of
+                                        Part II, from α to οη, coherently with the foliation in
+                                        Arabic numerals.</p>
+                                </foliation>
+
+                                <collation>
+                                    <p>Nn.3.17.1 consists of 17 quires, Nn.3.17.2 of 12: 1<hi rend="superscript">8-4</hi>, 2-3<hi rend="superscript">8</hi>, 4<hi rend="superscript">8-2</hi>, 5<hi rend="superscript">2</hi>, 6-8<hi rend="superscript">8</hi>, 9<hi rend="superscript">8-2</hi>, 10-15<hi rend="superscript">4</hi>, 16<hi rend="superscript">4-1</hi>, 17<hi rend="superscript">4</hi> | 18<hi rend="superscript">6</hi>, 19-20<hi rend="superscript">10</hi>, 21<hi rend="superscript">6</hi>, 22<hi rend="superscript">10-1</hi>, 23<hi rend="superscript">2</hi>, 24<hi rend="superscript">4</hi>, 25<hi rend="superscript">2</hi>, 26<hi rend="superscript">8</hi>, 27-28<hi rend="superscript">8</hi>, 29<hi rend="superscript">8-1</hi>.</p>
+                                </collation>
+                            </supportDesc>
+                        </objectDesc>
+
+                        <bindingDesc>
+                            <binding calendar="gregorian" notAfter="1899" notBefore="1785">
+                                <p>Binding with pale brown full skin covering over couched-laminate
+                                    boards. The covering of the previous binding has been glued to
+                                    the new. A gold rectangle is tooled on both boards and there is
+                                    decorative tooling on the board edge. The title (<hi rend="italic">Aeschylus</hi>) and the classmark are tooled
+                                    in gold on the <locus from="spine" to="spine">spine</locus> on two portions of leather painted black;
+                                    the classmark is tooled on the left board as well. Marbled
+                                    papers is used as pastedowns with blank leaves.</p>
+                                <p>The binding was repaired by Douglas Cockerell and Son,
+                                    Grantchester, December, 1964 
+                                    (see <locus from="[a] verso)" to="[a] verso)">f. [a] verso)</locus>.</p>
+                                <p>
+                           <dimensions type="binding" unit="mm">
+                                        <height quantity="210">210</height>
+                                        <width quantity="160">160</width>
+                                        <depth quantity="45">45</depth>
+                                    </dimensions>
+                        </p>
+                            </binding>
+                        </bindingDesc>
+
+                    </physDesc>
+
+                    <history>
+                        <provenance>
+                            <p>The three manuscripts CUL Nn.3.14, <bibl subtype="internal" type="MS">CUL Nn.3.15</bibl>, and <bibl subtype="internal" type="MS">CUL
+                                    Nn.3.17</bibl> belonged to the collection of the physician <name key="person_v45083556" ref=" http://viaf.org/viaf/45083556" role="fmo">
+                                    <persName type="display">Richard Mead</persName>
+                                    <persName type="standard">Mead, Richard,
+                                    1673-1754</persName>
+                        </name> (b. 1673, d. 1754), who bought them
+                                on <placeName key="place_g7002722" ref="http://vocab.getty.edu/page/tgn/7002722">Mount Athos</placeName> or from a dealer
+                                with access to Mt Athos monasteries (see CUL Nn.3.15). </p>
+                            <p>They later entered into the library of <name key="person_v60017882" ref="http://viaf.org/viaf/60017882" role="fmo">
+                                    <persName type="display">Anthony Askew</persName>
+                                    <persName type="standard">Askew, Anthony,
+                                    1722-1774</persName>
+                        </name> (b. 1722, d. 1774), physician and
+                                book collector, who described Nn.3.17.1 and Nn.3.17.2 in <bibl subtype="internal" type="MS">CUL Nn.1.17</bibl> (readings and
+                                notes on Aeschylus transcribed on Stanley's edition, 1663) as
+                                follows: <hi rend="italic">Codex MS. chartaceus in 4to. penes cels. medicum Ricardum
+                                Mead, quem ipse ab aliquot ex Monte Athos emerat. Continent
+                                Prometheum Vinctum, Persas, et Septem contra Thebas; videtur habere
+                                circiter 400 annos. Alius codex MS. chartaceus in 4to. repositus in
+                                Bibliotheca splendidissima Ricardi Mead. Continet tres priores
+                                Tragoedias, et habet circiter 30</hi> [sic] <hi rend="italic">anno. Hujus autem codicis et
+                                M 1. collactionem confecimus, AD 1744-5 Mense Februarii.</hi>
+                     </p>
+                        </provenance>
+
+                        <acquisition notBefore="1785"> 
+                            <p>After Askew's death, the manuscripts were
+                            sold by G. Leigh and J. Sotheby in the auction of his library in 1785
+                            (Nn.3.17 Lot. n. 545), and eventually bought by Richard Farmer for
+                            Cambridge University Library. The University of Cambridge general
+                            bookplate (engraved by William Jackson in 1706-1707) was added on 
+                            <locus from="left cover, inner" to="left cover, inner">inside front board</locus>.</p>
+                        </acquisition>
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source> Description (2019) draws on <hi rend="italic">A catalogue
+                                        of the Manuscripts preserved in the Library of the
+                                        University of Cambridge</hi>, vol. 4, Cambridge University
+                                    Press, Cambridge, 1861, p. 487-489.</source>
+                            </recordHist>
+
+                            <availability>
+                                <p>Entry to read in the Library is permitted only on presentation of a valid reader's card. For information on
+                                    eligibility and admissions procedures, see <ref target="https://www.lib.cam.ac.uk/using-library/joining-library">Joining the Library</ref>). For further information on the availability of the manuscript, please contact the
+                                    <ref target="mss@lib.cam.ac.uk">Manuscripts Reading Room</ref>.</p>
+                            </availability>
+                        </adminInfo>
+
+                        <listBibl>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/RW25UZ5S" type="journalArticle" xml:id="Stubbings1976">
+                                <analytic>
+                                    <title level="a">Anthony Askew's "Liber amicorum"</title>
+                                    <author>
+                              <forename>Frank</forename>
+                              <surname>Stubbings</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Transactions of the Cambridge Bibliographical
+                                        Society</title>
+                                    <imprint>
+                                        <biblScope unit="volume">6</biblScope>
+                                        <biblScope unit="issue">5</biblScope>
+                                        <biblScope unit="page">306-321</biblScope>
+                                        <date>1976</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/75KCMDC5" type="bookSection" xml:id="Heller1974">
+                                <analytic>
+                                    <title level="a">Notes on manuscripts of Aeschylus</title>
+                                    <author>
+                              <forename>Denys</forename>
+                              <surname>Page</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Serta Turyniana: studies in Greek literature
+                                        and palaeography in honor of Alexander Turyn</title>
+                                    <editor>
+                              <forename>John
+                                        Lewis</forename>
+                              <surname>Heller</surname>
+                           </editor>
+                                    <editor>
+                              <forename>John
+                                        Kevin</forename>
+                              <surname>Newman</surname>
+                           </editor>
+                                    <imprint>
+                                        <pubPlace>Urbana</pubPlace>
+                                        <biblScope unit="page">227-238</biblScope>
+                                        <publisher>University of Illinois Press</publisher>
+                                        <date>1974</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/XF7E8IRT" type="journalArticle" xml:id="Smith1976">
+                                <analytic>
+                                    <title level="a">On the Problem of a Thoman Recension of
+                                        Aristophanes</title>
+                                    <author>
+                              <forename>Ole
+                                            Langwitz</forename>
+                              <surname>Smith</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Greek, Roman, and Byzantine Studies</title>
+                                    <imprint>
+                                        <biblScope unit="volume">17</biblScope>
+                                        <biblScope unit="issue">1</biblScope>
+                                        <biblScope unit="page">75-80</biblScope>
+                                        <date>1976</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/6ZA6V6EV" type="journalArticle" xml:id="Smith1970">
+                                <analytic>
+                                    <title level="a">Notes and observations on some manuscripts of
+                                        the scholia on Aeschylus</title>
+                                    <author>
+                              <forename>O.
+                                        L.</forename>
+                              <surname>Smith</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Classica et mediaevalia</title>
+                                    <imprint>
+                                        <biblScope unit="volume">31</biblScope>
+                                        <biblScope unit="page">14-48</biblScope>
+                                        <date>1970</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/K4RCCRRQ" type="bookSection" xml:id="Easterling2000">
+                                <analytic>
+                                    <title level="a">From Britain to Byzantium: the study of Greek
+                                        manuscripts</title>
+                                    <author>
+                              <forename>P.
+                                        E.</forename>
+                              <surname>Easterling</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Through the looking glass: Byzantium through
+                                        British eyes: papers from the twenty-ninth Spring Symposium
+                                        of Byzantine Studies, London, March 1995</title>
+                                    <editor>
+                              <forename>Robin</forename>
+                              <surname>Cormack</surname>
+                           </editor>
+                                    <editor>
+                              <forename>Elizabeth</forename>
+                              <surname>Jeffreys</surname>
+                           </editor>
+                                    <imprint>
+                                        <pubPlace>Aldershot</pubPlace>
+
+                                        <publisher>Ashgate</publisher>
+                                        <date>2000</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                           <title level="s">Society for the Promotion of Byzantine
+                                        Studies publications</title>
+                                    <biblScope unit="volume">7</biblScope>
+                        </series>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/NDGFGJ84" type="book" xml:id="Hardwick1861">
+                                <monogr>
+                                    <title level="m">A catalogue of the manuscripts preserved in the
+                                        library of the University of Cambridge</title>
+
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">4</biblScope>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1861</date>
+                                    </imprint>
+                                </monogr>
+
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/MIYNBUHK" type="book" xml:id="Turyn1957">
+                                <monogr>
+                                    <title level="m">The Byzantine manuscript tradition of the
+                                        tragedies of Euripides</title>
+                                    <author>
+                              <forename>Alexander</forename>
+                              <surname>Turyn</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Urbana</pubPlace>
+                                        <publisher>University of Illinois Press</publisher>
+                                        <date>1957</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/WAZCNBZV" type="book" xml:id="Polish_Institute_of_Arts_and_Sciences_of_America1943">
+                                <monogr>
+                                    <title level="m">The manuscript tradition of the tragedies of
+                                        Aeschylus</title>
+                                    <author>
+                              <forename>Alexander</forename>
+                              <surname>Turyn</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>New York City</pubPlace>
+                                        <publisher>Polish Institute of Arts and Sciences in
+                                            America</publisher>
+                                        <date>1943</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/KKBWM753" type="book" xml:id="Günther1995">
+                                <monogr>
+                                    <title level="m">The manuscripts and the transmission of the
+                                        Paleologan scholia on the Euripidean triad</title>
+                                    <author>
+                              <forename>Hans
+                                            Christian</forename>
+                              <surname>Günther</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Stuttgart</pubPlace>
+                                        <publisher>Franz Steiner Verlag</publisher>
+                                        <date>1995</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/QGRSGKCA" type="book" xml:id="Dawe1964">
+                                <monogr>
+                                    <title level="m">The collation and investigation of manuscripts
+                                        of Aeschylus.</title>
+                                    <author>
+                              <forename>R.
+                                        D.</forename>
+                              <surname>Dawe</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>Cambridge University Pres</publisher>
+                                        <date>1964</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/GKNTLMG2" type="book" xml:id="Smith1982">
+                                <monogr>
+                                    <title level="m">Scholia graeca in Aeschylum quae exstant omnia.
+                                        Pars 2. Fasc. 2, Scholia in Septem adversus Thebas
+                                        continens</title>
+                                    <author>
+                              <forename>Ole
+                                            Langwitz</forename>
+                              <surname>Smith</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Leipzig</pubPlace>
+                                        <publisher>Teubner</publisher>
+                                        <date>1982</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/LVM5T66Y" type="journalArticle" xml:id="Smith1992">
+                                <analytic>
+                                    <title level="a">Tricliniana II</title>
+                                    <author>
+                              <forename>O.
+                                        L.</forename>
+                              <surname>Smith</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Classica et mediaevalia</title>
+                                    <imprint>
+                                        <biblScope unit="volume">43</biblScope>
+                                        <biblScope unit="page">187-229</biblScope>
+                                        <date>1992</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/5Q2SXWNN" type="journalArticle" xml:id="Smyth1933">
+                                <analytic>
+                                    <title level="a">Catalogue of the Manuscripts of
+                                        Aeschylus</title>
+                                    <author>
+                              <forename>Herbert
+                                            Weir</forename>
+                              <surname>Smyth</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Harvard Studies in Classical Philology</title>
+                                    <imprint>
+                                        <biblScope unit="volume">44</biblScope>
+                                        <biblScope unit="page">1-62</biblScope>
+                                        <date>1933</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/RFBBN59P" type="book" xml:id="Herington1972">
+                                <monogr>
+                                    <title level="m">The older scholia on the Prometheus
+                                        Bound</title>
+                                    <author>
+                              <forename>C.
+                                        J</forename>
+                              <surname>Herington</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Leiden</pubPlace>
+                                        <publisher>E.J. Brill</publisher>
+                                        <date>1972</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                        </listBibl>
+
+                    </additional>
+
+                    <!-- msPart I -->
+                    <msPart n="1">
+                        <msIdentifier>
+                            
+                                <idno type="part-1">Part I, Nn.3.17.1 ff. 1r-88v</idno>
+                            
+                        </msIdentifier>
+
+                        <msContents>
+                            <summary>
+                                <seg type="para">Nn.3.17.1 contains the text of the three tragedies
+                                    by Aeschylus <hi rend="italic">Prometheus Bound, The Seven
+                                        against Thebes</hi> and <hi rend="italic">The Persians</hi>,
+                                    along with the scholia by the Byzantine grammarians Thomas
+                                    Magistros and Demetrius Triclinius (13th-14th century).</seg>
+                                <seg type="para"> This part belonged to a larger volume combining
+                                    the so-called 'late Byzantine triads' (some selections of plays
+                                    among the 'canonical' ones for studying purpose in Byzantine
+                                    schools) of comedies of Aristophanes (now <bibl subtype="internal" type="MS">Nn.3.15</bibl>, ff. 50r-114v),
+                                    tragedies of Euripides (now <bibl subtype="internal" type="MS">Nn.3.14</bibl>, ff. 1r-121v) and Aeschylus. A
+                                    hypothesis of the original structure of the manuscript was made
+                                    by Smith 1970, pp. 29-32.</seg>
+                                <seg type="para">These manuscripts are regarded as representatives
+                                    of the recensions (i.e. redactions) of Aristophanes, Euripides
+                                    and Aeschylus by the Byzantine grammarian <name key="person_v3830086" ref="http://viaf.org/viaf/3830086">
+                                        <persName type="display">Thomas Magistros</persName>
+                                        <persName type="standard">Thomas, Magistros, active
+                                            1310-1327</persName>
+                           </name> (13th-14th century).</seg>
+                                <seg type="para">The original manuscript was initially completed by
+                                    the texts of Sophocles and Pindar in the recension by Thomas
+                                    Magistros in what is now <bibl subtype="external" type="MS">Vatican City, Bibliotheca Apostolica Vaticana, Vat. gr. 1333</bibl> (+
+                                    <bibl subtype="external" type="MS">
+                              <ref target="https://digi.vatlib.it/view/MSS_Vat.gr.1823">
+                                        Vat. gr. 1823</ref>
+                           </bibl>, ff. 29r-37v).</seg>
+                                <seg type="para"/>
+                            </summary>
+                            <textLang mainLang="grc">Greek</textLang>
+
+                            <!-- VITA AESCHYLIS -->
+                            <msItem n="1">
+                                <locus from="1:1r" to="1:1r">f. 1r</locus>
+                                <title xml:lang="eng">Vita Aeschylis <note>(ed. Page
+                                    1972)</note>
+                        </title>
+                                <rubric>
+                           <locus from="1:1r" to="1:1r">f. 1r</locus> Γένος
+                                    Αἰσχύλου</rubric>
+                                <incipit defective="true">
+                           <locus from="1:1r" to="1:1r">f. 1r</locus>
+                                    πρὸς Ἱέρωνα τὸν Σικελίας τύραννον· κατά τινας μὲν ὑπὸ Ἀθηναίων
+                                    κατασπουδασθεὶς, καὶ ἡσσηθεὶς νέω ὄντι τῷ Σοφοκλεῖ</incipit>
+                                <explicit defective="true">
+                           <locus from="1:1r" to="1:1r">f.
+                                        1r</locus> ἐποίησε δὲ δράματα ἐβδομήκοντα· ἐπὶ τούτοις
+                                    σατυρικὰ ἀμφὶ τὰ πέντε· νίκας δὲ τὰς πάσας εἴληφε τρεισκαίδεκα·
+                                    οὐκ ὀλίγας δὲ μετὰ τελευτὴν νίκας ἀπηνέγκατο</explicit>
+                                <note>The text start on <bibl subtype="internal" type="MS">CUL
+                                        Nn.3.14</bibl> f. 121v.</note>
+                                <note>TLG 4141.001</note>
+                            </msItem>
+
+                            <!-- PROMETHEUS -->
+                            <msItem n="2.1">
+                                <locus from="1:1r" to="1:1v">ff. 1r-1v</locus>
+                                <author key="person_v3830086" ref="http://viaf.org/viaf/3830086">
+                                    Thomas, Magistros, active 1310-1327 </author>
+                                <title xml:lang="eng">Hypothesis on Prometheus Bound </title>
+                                <title type="alt" xml:lang="eng">Thoman Argumentum Promethei Vincti
+                                        <note>(ed. Smyth 1921)</note>
+                        </title>
+                                <rubric>
+                           <locus from="1:1r" to="1:1r">f. 1r</locus> ὑπόθεσις τοῦ
+                                    δράματος</rubric>
+                                <incipit>
+                           <locus from="1:1r" to="1:1r">f. 1r</locus> Προμηθέως ὡς
+                                    φιλανθρώπου ἐκ Διὸς κεκλοφότος τὸ πῦρ, καὶ δεδωκότος ἀνθρώποις
+                                    δι’ οὗ τέχνας πάσας ἄνθρωποι εὕροντο</incipit>
+                                <explicit>
+                           <locus from="1:1v" to="1:1v">f. 1v</locus> εἰ μὴ τὰ
+                                    μέλλοντα συμβήσεσθαι τῶ Διὶ εἴπη καὶ μὴ βουλόμενον βροντὴ
+                                    καταρραγεῖσα αὐτὸν ἀφανίζει. ἡ μὲν σκηνὴ τοῦ δράματος ὑπόκειται
+                                    ἐν Σκυθία ὑπὸ τὸ Καυκάσιον ὄρος. ἡ δὲ ἐπιγραφὴ τούτου Προμηθεὺς
+                                    δεσμώτης</explicit>
+                                <note>TLG 5014.005</note>
+                                <note>followed by the list of characters of the play</note>
+                            </msItem>
+
+                            <msItem n="2.2">
+                                <locus from="1:2r" to="1:30v">ff. 2r-30v</locus>
+                                <author key="person_v268526195" ref="http://viaf.org/viaf/268526195"> Aeschylus </author>
+                                <title xml:lang="eng">Prometheus Bound</title>
+                                <title type="alt" xml:lang="lat">Prometheus Vinctus</title>
+                                <incipit>
+                           <locus from="1:2r" to="1:2r">f. 2r</locus> Χθονὸς μὲν εἰς
+                                    τηλουρὸν ἥκομεν πέδον Σκύθην ἐς οἶμον, ἄβροτον εἰς
+                                    ἐρημίαν</incipit>
+                                <explicit>
+                           <locus from="1:30v" to="1:30v">f. 30v</locus> ὦ πάντων
+                                    θέμι· αἰθὴρ κοινὸν φάος εἱλίσσων, ἐσορᾶς μ’ ὡς ἔκδικα
+                                    πάσχω</explicit>
+                                <finalRubric>
+                           <locus from="1:30v" to="1:30v">f. 30v</locus> Προμηθέως
+                                    δράματος Αἰσχύλου τέλος</finalRubric>
+                                <note>TLG 0085.018</note>
+                                <note>extensive scholia and interlinear glosses in red ink accompany
+                                    the text</note>
+                            </msItem>
+
+                            <msItem n="2.3">
+                                <locus from="1:30v" to="1:30v">f. 30v</locus>
+                                <author cert="low" key="person_v79040075" ref="http://viaf.org/viaf/79040075"> Tzetzes, John </author>
+                                <title xml:lang="eng">Verse on Prometheus</title>
+                                <title type="alt" xml:lang="lat">In Prometheum <note>(epigr. 1a ed. Herington
+                                        1972, p. 240 = Anthologiae Graecae Appendix IV.83, ll. 1-9,
+                                        ed. Cougny 1890)</note>
+                        </title>
+                                <incipit>
+                           <locus from="1:30v" to="1:30v">f. 30v</locus> Ἀνθ’ ὧν τὸ
+                                    πῦρ δέδωκας ἀνθρώπων γένει τρύχη βία φάραγγι
+                                    προσπεπηγμένος</incipit>
+                                <explicit>
+                           <locus from="1:30v" to="1:30v">f. 30v</locus> θεοὺς
+                                    σεβάζων τοὺς παθητοὺς τὴν φύσιν, καὶ μὴ δυνατοὺς ἐκφυγεῖν
+                                    τιμωρίας</explicit>
+                                <note>TLG 5010.005</note>
+                                <note>cf. DBBE <ref target="https://www.dbbe.ugent.be/types/3434">Type 3434 </ref>
+                        </note>
+                                <note>the first two lines are repeated in cryptography on margin of
+                                    <locus from="1:33v" to="1:33v">f. 33v</locus> by a later
+                                    hand, that also transcribed the cryptographic correspondence on
+                                    <locus from="1:85v" to="1:85b">f. 85v</locus>.</note>
+                            </msItem>
+
+                            <!-- SEPTEM CONTRA THEBAS -->
+                            <msItem n="3.1">
+                                <locus from="1:31r" to="1:31r">f. 31r</locus>
+                                <title xml:lang="eng">Hypothesis on The Seven Against Thebes
+                                        <note>(hyp. IV, ed. Smith 1982)</note>
+                                </title>
+                                <rubric>
+                           <locus from="1:31r" to="1:31r">f. 31r</locus> ἡ
+                                    ὑπόθεσις</rubric>
+                                <incipit>
+                           <locus from="1:31r" to="1:31r">f. 31r</locus> Οἰδίπους
+                                    μαθὼν ὡς ἀθέσμως συνῆν τῇ μητρὶ ἐτύφλωσεν ἑαυτόν· οἱ δὲ παῖδες
+                                    αὐτοῦ Ἐτεοκλῆς καὶ Πολυνείκης</incipit>
+                                <explicit>
+                           <locus from="1:31r" to="1:31r">f. 31r</locus> Αἰσχύλος δὲ
+                                    ἕτερον τῶν ἑπτὰ Ἐτέοκλον ἀντὶ Ἀδράστου προσθείς· ἐγράφη δὲ ἡ
+                                    ἱστορία αὕτη ἐξ ἀρχῆς κατὰ λεπτὸν ἐν Φοινίσσαις
+                                    Εὐριπίδου</explicit>
+                                <note>TLG 5010.001</note>
+                                <note>followed by the list of characters of the play</note>
+                            </msItem>
+
+                            <msItem n="3.2">
+                                <locus from="1:32r" to="1:60v">ff. 32r-60v</locus>
+                                <author key="person_v268526195" ref="http://viaf.org/viaf/268526195"> Aeschylus </author>
+                                <title xml:lang="eng">The Seven Against Thebes</title>
+                                <title type="alt" xml:lang="lat">Septem contra Thebes</title>
+                                <rubric>
+                           <locus from="1:32r" to="1:32r">f. 32r</locus> Αἰσχύλου τῶν ἑπτὰ ἐπὶ Θήβαις</rubric>
+                                <incipit>
+                           <locus from="1:32r" to="1:32r">f. 32r</locus> Κάδμου
+                                    πολῖται χρὴ λέγειν τὰ καίρια ὅστις φυλάσσει πρᾶγος ἐν πρύμνη
+                                    πόλεως</incipit>
+                                <explicit>
+                           <locus from="1:60v" to="1:60v">f. 60v</locus> κύματι φωτῶν
+                                    κατακλυσθῆναι τὰ μάλιστα</explicit>
+                                <finalRubric>
+                           <locus from="1:60v" to="1:60v">f. 60v</locus> τέλος
+                                    Αἰσχύλου τῶν ἑπτὰ ἐπὶ Θήβαις</finalRubric>
+                                <note>TLG 0085.013</note>
+                                <note>extensive scholia and interlinear glosses in red and brown ink
+                                    accompany the text.</note>
+                            </msItem>
+
+                            <msItem n="3.3">
+                                <locus from="1:60v" to="1:60v">f. 60v</locus>
+                                <title xml:lang="eng">Verse on The Seven Against Thebes <note>(=
+                                        Anthologiae Graecae Appendix IV.84, ll. 3-4, ed. Cougny
+                                        1890)</note>
+                        </title>
+                                <incipit>
+                           <locus from="1:60v" to="1:60v">f. 60v</locus>
+                                    δεινοπροσωπήσασα τέμνεται ξίφει δυὰς ἀδελφῶν ἡ
+                                    μιαιφονωτάτη</incipit>
+                                <note>TLG 7052.004</note>
+                            </msItem>
+
+                            <!-- PERSAE -->
+                            <msItem n="4.1">
+                                <locus from="1:61r" to="1:61v">ff. 61r-61v</locus>
+                                <author key="person_v3830086" ref="http://viaf.org/viaf/3830086">
+                                    Thomas, Magistros, active 1310-1327 </author>
+                                <title xml:lang="eng">Hypothesis on The Persians</title>
+                                <title type="alt" xml:lang="eng">Thoman Argumentum in Persas
+                                        <note>(ed. Massa Positano 1963)</note>
+                        </title>
+                                <rubric>
+                           <locus from="1:61r" to="1:61r">f. 61r</locus> Ἡ τούτου τοῦ
+                                    δράματος ὑπόθεσίς ἐστιν ἡ κατὰ τῆς Ἑλλάδος ἐπιστρατεία τοῦ
+                                    Ξέρξου καὶ αἱ ἐκεῖθεν δυστυχίαι καὶ ἀποχώρησις. τὰ δὲ πρόσωπα
+                                    χορὸς γερόντων περὶ τὰ βασίλεια τοῦ Ξέρξου, Ἄτοσσα ἡ τοῦ Ξέρξου
+                                    μήτηρ ἡ καὶ προφοιβασθεῖσα δι’ ὀνειράτων τὴν τούτου ἥτταν·
+                                    ἄγγελος πάντα διασαφῶν, εἴδωλον Δαρείου καὶ Ξέρξης. πᾶσα δὲ ἡ
+                                    ἱστορία τοῦ Ξέρξου ἔχει οὕτως</rubric>
+                                <incipit>
+                           <locus from="1:61r" to="1:61r">f. 61r</locus> Ἱππίας ὁ
+                                    Πεισιστράτου τύραννος ὢν Ἀθηναίων ἐξέπεσε τῆς τυραννίδος. ἐλθὼν
+                                    οὖν παρὰ Πέρσας ἱκετεύει Δαρεῖον στρατεύειν κατ’ Ἀθηνῶν, καὶ ὃς
+                                    πείθεται, ὡς Ἀριστείδης φησίν</incipit>
+                                <explicit>
+                           <locus from="1:61v" to="1:61v">f. 61v</locus> ἔσχε δὲ τὴν
+                                    μὲν ἐν Σαλαμῖνι τῆς ναυμαχίας νίκην Θεμιστοκλῆς· τὴν δὲ ἐν
+                                    Πλαταία τοῦ πεζοῦ νίκην, Παυσανίας ὁ Λακεδαιμονίων στρατηγός. </explicit>
+                                <note>TLG 5010.006</note>
+                            </msItem>
+
+                            <msItem n="4.2">
+                                <locus from="1:62r" to="1:88v">ff. 62r-88v</locus>
+                                <author key="person_v268526195" ref="http://viaf.org/viaf/268526195"> Aeschylus </author>
+                                <title xml:lang="eng">The Persians (ll. 1-1065)</title>
+                                <title type="alt" xml:lang="lat">Persae</title>
+                                <rubric>
+                           <locus from="1:62r" to="1:62r">f. 62r</locus> Αἰσχύλου
+                                    Πέρσαι</rubric>
+                                <incipit>
+                           <locus from="1:62r" to="1:62r">f. 62r</locus> Τάδε μὲν
+                                    Περσῶν τῶν οἰχομένων Ἑλλάδ’ ἐς αἶαν πιστὰ καλεῖται</incipit>
+                                <explicit defective="true">
+                           <locus from="1:88v" to="1:88v">f.
+                                        88v</locus> ἄπριγδ’ ἄπριγδα <supplied reason="damage">μά</supplied>λα γοεδνά. <supplied reason="damage">δι</supplied>αίνου δ’ ὄσσε</explicit>
+                                <note>TLG 0085.012</note>
+                                <note>extensive scholia and interlinear glosses in brown ink
+                                    accompany the text</note>
+                            </msItem>
+
+                        </msContents>
+
+                        <physDesc>
+                            <objectDesc form="codex">
+                                <supportDesc material="paper">
+                                    <support>
+                                        <material>ff. <locus from="1:1r" to="1:88v">1r-88v</locus>
+                                            Western paper, folded in <measure type="folding">quarto</measure>. Watermark: <watermark>
+                                    <term type="watermarkMotif">Crown</term> (<dimensions type="watermark" unit="mm">
+                                                  <height quantity="40">40</height>
+                                                  <width quantity="60">60</width>
+                                                </dimensions>) <note type="watermarkPosition">near
+                                                  the gutter</note> comparable to
+                                                  <note>Mošin-Traljić 1957, <hi rend="italic">Filigranes des XIIIe et
+                                                  XIVe ss</hi>, Couronne <ref>3200-5</ref> dated
+                                                  1319-1324</note>.</watermark>
+                                        </material>
+                                    </support>
+
+                                    <collation>
+                                        <p>Part I is now made up of 8 quaternions, one bifolium and
+                                            8 binions, with different folios cut or replaced without
+                                            any loss of text. This condition is due to the breaking
+                                            up of the original manuscript and the further
+                                            interventions of binding and conservation. <list>
+                                                <item>Quire 1<hi rend="superscript">8-4</hi> 
+                                       <locus from="1:1r" to="1:4v">ff. 1r-4v</locus> 
+                                       <note>(the first 
+                                                        half of this quaterion is made up of Nn.3.14.1, ff. 118-121, 
+                                                        without any loss of text between Nn.3.14.1, f. 121v and Nn.3.17.1, f. 1r)</note>
+                                    </item>
+                                                <item>Quires 2-3<hi rend="superscript">8</hi> 
+                                       <locus from="1:5r" to="20v">ff. 5r-20v</locus>
+                                    </item>
+                                                <item>Quire 4<hi rend="superscript">8-2</hi>  
+                                       <locus from="1:21r" to="26v">ff. 21r-26v</locus>
+                                    </item>
+                                                <item>Quire 5<hi rend="superscript">2</hi>  
+                                       <locus from="1:27r" to="28v">ff. 27r-28v</locus>
+                                    </item>
+                                                <item>Quires 6-8<hi rend="superscript">8</hi>  
+                                       <locus from="1:29r" to="52v">ff. 29r-52v</locus>
+                                    </item>
+                                                <item>Quire 9<hi rend="superscript">8-2</hi>  
+                                       <locus from="1:53r" to="58v">ff. 53r-58v</locus>
+                                    </item>
+                                                <item>Quires 10-15<hi rend="superscript">4</hi>  
+                                       <locus from="1:59r" to="81v">ff. 59r-81v</locus>
+                                    </item>
+                                                <item>Quire 16<hi rend="superscript">4-1</hi>  
+                                       <locus from="1:82r" to="84v">ff. 82r-84v</locus>
+                                    </item>
+                                                <item>Quire 17<hi rend="superscript">4</hi>  
+                                       <locus from="1:85r" to="88v">ff. 85r-88v</locus>
+                                    </item>
+                                            </list>
+                              </p>
+                                        <signatures type="quire">
+                                            <p>A quire signature in Greek numerals in brown ink from
+                                                the original manuscript (Nn.3.15.1 Part Ib + Nn.3.14
+                                                Part I + Nn.3.17.1) remains on the lower margin of
+                                                  <locus from="1:60v" to="1:60v">f. 60v</locus>: λϛ.
+                                                This signature survives on the lower margin of the
+                                                folio along with a drawing (Arabic?). It seems that
+                                                the margin was folded rather than cut to conform
+                                                with the present size of the manuscript when the
+                                                manuscript was bound, in order to preserve the
+                                                drawing and the signature (cf. Smith 1970). </p>
+                                        </signatures>
+                                    </collation>
+
+                                    <condition>
+                                        <p>In fair general condition. Leaves are yellow with age;
+                                            there are stains, extended worm holes in the upper
+                                            margins. The last folios (ff. 85-88) have lost
+                                            considerable portions of the margins, which have been
+                                            reconstructed.</p>
+                           </condition>
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="1" writtenLines="20">
+                                        <locus from="1:1r" scheme="folios" to="1:88v">ff.
+                                            1r-88v</locus>: <dimensions type="written" unit="mm">
+                                            <height quantity="160">160</height>
+                                            <width quantity="65">65</width>
+                                        </dimensions>
+                                        <note>Scholia and prefatory materials that accompany the
+                                            main texts have a very variable number of lines per
+                                            page, and are arranged in an orderly manner.</note>
+                                    </layout>
+                                </layoutDesc>
+
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote scope="major" xml:id="hand-1">
+                                    <p>Hand A: <locus from="1:2r" to="1:30v">ff. 2r-30v</locus>,
+                                            <locus from="1:32r" to="1:60v">ff. 32r-60v</locus>, and
+                                            <locus from="1:62r" to="1:88v">ff. 62r-88v</locus>
+                           </p>
+                                    <p>The main texts are written in a <term type="script">mixed
+                                            minuscule</term> in an upright, scribal hand, in brown
+                                        ink script.</p>
+                                    <p>There is a marked variation in letter size. Syllabic
+                                        abbreviations and superscript word endings are rare, and
+                                        usually appearing only at the end of lines. Breathings are
+                                        curved and mute <hi rend="italic">iota</hi> is rarely
+                                        used.</p>
+                                    <p>The small majuscules <hi rend="italic">beta, gamma, eta,
+                                            kappa phi</hi> are present. <hi rend="italic">Gamma</hi>
+                                        and <hi rend="italic">tau</hi> are often high. The
+                                        majuscule <hi rend="italic">beta</hi> has often a curled
+                                        bilobate shape and unlike the other parts of the original
+                                        manuscript (see below), here it presents, especially if in
+                                        the first line of text, an extremely enlarged shape in the
+                                        upper margin, with inclusions of the following letters (e.g.
+                                            <locus from="1:27v" to="1:27v">f. 27v</locus>). <hi rend="italic">Epsilon</hi> is both regular minuscule and
+                                        lunate. The <hi rend="italic">sigma telikon</hi> is not
+                                        present.</p>
+                                    <p>
+                              <hi rend="italic">Phi-rho</hi> ligature is in two strokes and
+                                        overlapping. Ligatures of <hi rend="italic">tau</hi> with
+                                            <hi rend="italic">alpha</hi> or <hi rend="italic">omicron</hi> are from the bottom, in a characteristic
+                                        Z-shape.</p>
+                                    <p>Punctuation used includes the middle and upper point, lower
+                                        comma and full stop.</p>
+                                    <p>Tails are frequently flourished into the lower and upper
+                                        margins.</p>
+                                    <p>This hand is present in <bibl subtype="internal" type="MS">CUL Nn.3.14</bibl> (ff. 1r-121v) and <bibl subtype="internal" type="MS">CUL Nn.3.17.1</bibl> (ff.
+                                        1r-88v), and designated as Hand B of the original manuscript
+                                        (see Günther 1995).</p>
+                                </handNote>
+
+                                <handNote scope="minor" xml:id="hand-2">
+                                    <p>Hand B: Ioannes Zeianos: scholia.</p>
+                                    <p>The names of Ioannes Zeianos (PLP n. 6516) appears on <locus from="1:60v" to="1:60v">f. 60v</locus> in a
+                                        monocondylion and within a tail on the lower margin of <bibl subtype="internal" type="MS">CUL Nn.3.15.1</bibl>, f.
+                                        89r, as owner of the original manuscript: ἰωάννης ὁ ζειανὸς
+                                        ὁ κτήτωρ τοῦδε τοῦ βιβλίου. He also designated as Hand C of
+                                        the original manuscript (see Günther 1995)</p>
+                                    <p>His hand presents the main characteristics of the Fettaugen
+                                        mode, performed with order and clarity, with numerous
+                                        inclusions, large letters combined with others of smaller
+                                        module.</p>
+                                    <p>On the identity of Ioannes Zeianos, see Smith 1992, p.
+                                        223-225.</p>
+                                </handNote>
+
+                                <handNote scope="minor" xml:id="hand-3">
+                                    <p>Hand C: Vita Aeschylis and hypothesis ff. <locus from="1:1r" to="1:1v">1r-1v</locus>, <locus from="1:31r" to="1:31r">31r</locus>, <locus from="1:61r" to="1:61r">61r</locus>, and the interlinear
+                                        glosses in red ink</p>
+                                    <p>The hypotesis and the Vita Aeschylis are written in a <term type="script">mixed minuscule</term> in an upright,
+                                        scribal hand, in brown ink script.</p>
+                                    <p>There is a marked variation in letter size. Syllabic
+                                        abbreviations and superscript word endings are common.
+                                        Breathings are curved and mute <hi rend="italic">iota</hi>
+                                        is rarely used.</p>
+                                    <p>It seems to follow the same model as Zeianos, but in a very
+                                        small size and with a much smaller number of ligatures. The
+                                        transcribed folios have a yellow grid above the writing.</p>
+                                    <p>This hand is present in <bibl subtype="internal" type="MS">CUL Nn.3.14</bibl>, and <bibl subtype="internal" type="MS">CUL Nn.3.15.1</bibl>, and designated as Hand D
+                                        of the original manuscript (see Günther 1995).</p>
+                                </handNote>
+                            </handDesc>
+
+                            <decoDesc>
+                                <decoNote type="headpiece">
+                                    <p>The beginning of the texts on ff. <locus from="1:1r" to="1:1r">1r</locus>, <locus from="1:2r" to="1:2r">2r</locus>, <locus from="1:31r" to="1:31r">31r</locus>,
+                                            <locus from="1:32r" to="1:32r">32r</locus>, <locus from="1:61r" to="1:61r">61r</locus> and <locus from="1:62r" to="1:62r">62r</locus> are preceded by
+                                        headpieces in red ink with weave decoration, or rectangular
+                                        shape with small palms. The headpiece on f. 2r is made up of
+                                        interwoven circles with bird figures and floral motifs
+                                        inside. The headpiece of f. 62r has been copied by a reader
+                                        on the margin.</p>
+                                    <p>Some small tailpieces have been added in brown ink by a
+                                        different hand: <locus from="1:30v" to="1:30v">30v</locus>,
+                                            <locus from="1:60v" to="1:60v">60v</locus> (a
+                                        snake).</p>
+                                </decoNote>
+
+                                <decoNote type="decInit"> The texts on ff. <locus from="1:1r" to="1:1r">1r</locus>, <locus from="1:2r" to="1:2r">2r</locus>, <locus from="1:32r" to="1:32r">32r</locus>,
+                                        <locus from="1:62r" to="1:62r">62r</locus>, begin with
+                                    ornate initials, outlined in red ink. </decoNote>
+                            </decoDesc>
+
+                            <additions>
+                                <p>One or more readers have added some sketches: Orestes on <locus from="1:71v" to="1:71v">71v</locus>, <locus from="1:72bis r" to="1:72bis r">72bis r</locus>, <locus from="1:83v" to="1:83v">83v</locus>, and a ship on <locus from="1:5r" to="1:5r">f. 5r</locus>.</p>
+                            </additions>
+
+                        </physDesc>
+
+                        <history>
+                            <origin>
+                        <p>The manuscript can be located at the Monastery of the
+                                    Dionysiou of <placeName key="place_g7002722" ref="http://vocab.getty.edu/page/tgn/7002722">Mount Athos</placeName>, and thanks to
+                                    the name of Zeianos and the textual characteristics, it is
+                                    possible to assume that it arrived there from <origPlace key="place_g7011182" ref="http://vocab.getty.edu/page/tgn/7011182">Thessaloniki</origPlace>, and that it
+                                    was set up in the scriptorium of <name key="person_v22939744" ref="http://viaf.org/viaf/22939744">
+                                        <persName type="display">Demetrius Triclinius</persName>
+                                        <persName type="standard">Triclinius,
+                                        Demetrius</persName>
+                           </name>, or in a scriptorium connected
+                                    with him.</p>
+                                <p>The characteristics of the script and the watermarks suggest that
+                                    it was produced during the <origDate calendar="gregorian" notAfter="1325" notBefore="1300">early 14th century,
+                                        probably before 1325.</origDate>
+                        </p>
+                            </origin>
+                        </history>
+                    </msPart>
+
+                    <!-- msPart II -->
+                    <msPart n="2">
+                        <msIdentifier>
+                            
+                                <idno type="part-2">Part II, Nn.3.17.2 ff. 1r-78v</idno>
+                            
+                        </msIdentifier>
+
+                        <msContents>
+                            <summary>
+                                <seg type="para">Part II was written probably in the second half of
+                                    15th century and added to Part I before Mead's purchase without
+                                    any manifest intention of supplementing the text: the three
+                                    tragedies of Part I are repeated. The scholia are in
+                                    thomano-triclinian recension.</seg>
+                                <seg type="para">The foliation stars again from 1r.</seg>
+                            </summary>
+                            <textLang mainLang="grc">Greek</textLang>
+
+                            <!-- 2 VITA AESCHYLIS -->
+                            <msItem n="5">
+                                <locus from="2:1r" to="2:1v">ff. 1r-1v</locus>
+                                <title xml:lang="eng">Vita Aeschylis <note>(ed. Page
+                                    1972)</note>
+                        </title>
+                                <incipit>
+                           <locus from="2:1r" to="2:1r">f. 1r</locus> Αἰσχύλος ὁ
+                                    τραγικὸς γένει μὲν ἦν Ἀθηναῖος· Ἐλευσίνιος τῶν δήμων· υἱὸς
+                                    Εὐφορίωνος· Κυναιγείρου ἀδελφός καὶ Ἀμεινίου</incipit>
+                                <explicit defective="true">
+                           <locus from="2:1v" to="2:1v">f.
+                                        1v</locus> ἐποίησε δὲ δράματα ἐβδομήκοντα· ἐπὶ τούτοις
+                                    σατυρικὰ ἀμφὶ τὰ πέντε· νίκας δὲ τὰς πάσας εἴληφε τρεισκαίδεκα·
+                                    οὐκ ὀλίγας δὲ μετὰ τελευτὴν νίκας ἀπηνέγκατο</explicit>
+                                <note>TLG 4141.001</note>
+                            </msItem>
+
+                            <!-- 2 PROMETHEUS -->
+                            <msItem n="6.1">
+                                <locus from="2:1v" to="2:1v">f. 1v</locus>
+                                <author key="person_v3830086" ref="http://viaf.org/viaf/3830086">
+                                    Thomas, Magistros, active 1310-1327 </author>
+                                <title xml:lang="eng">Hypothesis on Prometheus Bound</title>
+                                <title type="alt" xml:lang="eng">Thoman Argumentum Promethei Vincti
+                                        <note>(ed. Smyth 1921)</note>
+                        </title>
+                                <rubric>
+                           <locus from="2:1v" to="2:1v">f. 1v</locus> ὑπόθεσις τοῦ
+                                    παρόντος δράματος</rubric>
+                                <incipit>
+                           <locus from="1:1r" to="1:1r">f. 1r</locus> Προμηθέως ἐκ
+                                    Διὸς κεκλοφότος τὸ πῦρ καὶ δεδωκότος ἀνθρώποις δι’ οὗ τέχνας
+                                    πάσας ἄνθρωποι εὕροντο</incipit>
+                                <explicit defective="true">
+                           <locus from="2:1v" to="2:1v">f.
+                                        1v</locus> εἰ μὴ τὰ μέλλοντα συμβήσεσθαι τῶ Διὶ εἴπη· καὶ μὴ
+                                    βουλόμενον βροντὴ καταρραγεῖσα αὐτὸν ἀφανίζει</explicit>
+                                <note>TLG 5014.005</note>
+                            </msItem>
+
+                            <msItem n="6.2">
+                                <locus from="2:2r" to="2:29r">ff. 2r-29r</locus>
+                                <author key="person_v268526195" ref="http://viaf.org/viaf/268526195"> Aeschylus </author>
+                                <title xml:lang="eng">Prometheus Bound </title>
+                                <title type="alt" xml:lang="lat">Prometheus Vinctus</title>
+                                <incipit>
+                           <locus from="2:2r" to="2:2r">f. 2r</locus> Χθονὸς μὲν εἰς
+                                    τηλουρὸν ἥκομεν πέδον Σκύθην ἐς οἶμον, ἄβροτον εἰς
+                                    ἐρημίαν</incipit>
+                                <explicit>
+                           <locus from="2:29r" to="2:29r">f. 29r</locus> ὦ πάντων
+                                    αἰθὴρ κοινὸν φάος εἱλίσσων, ἐσορᾶις μ’ ὡς ἔκδικα
+                                    πάσχω</explicit>
+                                <finalRubric>
+                           <locus from="2:29r" to="2:29r">f. 29v</locus> Προμηθέως
+                                    δράματος Αἰσχύλου τέλος</finalRubric>
+                                <note>TLG 0085.018</note>
+                                <note>preceded by the list of characters of the play</note>
+                                <note>extensive scholia and interlinear glosses accompany the
+                                    text</note>
+                            </msItem>
+
+                            <!-- 2 SEPTEM CONTRA THEBAS -->
+                            <msItem n="7.1">
+                                <locus from="2:29v" to="2:29v">f. 29v</locus>
+                                <title xml:lang="eng">Hypothesis on The Seven Against Thebes
+                                        <note>(hyp. II, ed. Smith 1982, p. 1 l. 10 - p. 11 l.
+                                        20)</note>
+                        </title>
+                                <incipit>
+                           <locus from="2:29v" to="2:29v">f. 29v</locus> Λ<supplied reason="faded-ink">άιος ἐβασίλευσε ἐν Θήβαις· ἔσχε δὲ τὴν
+                                        Ἰοκάστην γυναῖκα, παῖδα δὲ οὐκ ἐποίει. ἀγανακτῶν τοίνυν ἐπὶ
+                                        τῇ ἀτεκνίᾳ ἀ</supplied>πῆλθεν εἰς Πυθὼ ἐρωτήσων τί ἂν
+                                    ποιήσας παιδοποιήση ἐξήνεγκε δὲ τὸ <supplied reason="faded-ink">χρηστήριον· μὴ</supplied> σπεῖρε τέκνων ἄλοκα Λάιε βία
+                                    δαιμόνων. λαβὼν δὲ τὸν χρησμὸν καὶ ἀπελθὼν <note>The beginnig of
+                                        the text is partly illegible</note>
+                        </incipit>
+                                <explicit defective="true">
+                           <locus from="2:29v" to="2:29v">f.
+                                        29v</locus> ὕστερον δὲ μαθὼν καὶ νοήσας τὸ ἀνόμημα ὃ ἔδρασεν
+                                    ἐτύφλωσεν ἑαυτόν τοῖς δὲ εἰρημένοις παισὶν αὐτοῦ ὁ γοῦν
+                                        Πο<supplied>λυνείκης</supplied>
+                        </explicit>
+                                <note>TLG 5010.001</note>
+                            </msItem>
+
+                            <msItem n="7.2">
+                                <locus from="2:30r" to="2:55r">ff. 30r-55r</locus>
+                                <author key="person_v268526195" ref="http://viaf.org/viaf/268526195"> Aeschylus </author>
+                                <title xml:lang="eng">The Seven Against Thebes </title>
+                                <title type="alt" xml:lang="lat">Septem contra Thebes</title>
+                                <rubric>
+                           <locus from="2:30r" to="2:30r">f. 30r</locus> προλογίζει
+                                    Ἐτεοκλῆς παρασκευάζωντον τὸν δῆμον τῶν Θηβαίων εἰς φρουρὰν τῆς
+                                    πόλεως</rubric>
+                                <incipit>
+                           <locus from="2:30r" to="2:30r">f. 30r</locus> Κάδμου
+                                    πολῖται· χρὴ λέγειν τὰ καίρια ὅς, τις φυλάσσει πρᾶγος ἐν πρύμνη
+                                    πόλεως</incipit>
+                                <explicit>
+                           <locus from="2:55r" to="2:55r">f. 55r</locus> κύματι φωτῶν
+                                    κατακλυσθῆναι τὰ μάλιστα</explicit>
+                                <note>TLG 0085.013</note>
+                                <note>preceded by the list of characters of the play</note>
+                                <note>extensive scholia and interlinear glosses accompany the
+                                    text</note>
+                            </msItem>
+
+                            <!-- 2 PERSAE -->
+                            <msItem n="8.1">
+                                <locus from="2:56r" to="2:78v">ff. 56r-78v</locus>
+                                <author key="person_v268526195" ref="http://viaf.org/viaf/268526195"> Aeschylus </author>
+                                <title xml:lang="eng">The Persians (ll. 1-938) </title>
+                                <title type="alt" xml:lang="lat">Persae</title>
+                                <incipit>
+                           <locus from="2:56r" to="2:56r">f. 56r</locus> Τάδε μὲν
+                                    Περσῶν τῶν οἰχομένων Ἑλλάδ’ ἐς αἶαν πιστὰ καλεῖται</incipit>
+                                <explicit defective="true">
+                           <locus from="2:78v" to="2:78v">f.
+                                        78v</locus> πρόσφθογγόν σοι νόστου ταύταν κακοφάτιδα βοάν
+                                    κακομέλετον ἰὰν Μαριανδυνοῦ</explicit>
+                                <note>TLG 0085.012</note>
+                                <note>preceded by the list of characters of the play</note>
+                                <note>etensive scholia and interlinear glosses accompany the
+                                    text</note>
+                            </msItem>
+
+                        </msContents>
+
+                        <physDesc>
+                            <objectDesc form="codex">
+                                <supportDesc material="paper">
+                                    <support>
+                                        <material>ff. <locus from="2:1r" to="2:78v">1r-78v</locus>.
+                                            Non-watermarked paper, folded in <measure type="folding">quarto</measure>. </material>
+                                    </support>
+
+                                    <collation>
+                                        <p>Part II of the manuscript consists of one binion, 2
+                                            ternions, 4 quaternions, 3 quinions and 2 bifolia: <list>
+                                                <item>Quire 18<hi rend="superscript">6</hi>
+                                                  <locus from="2:1r" to="2:6v"> ff.
+                                                  1r-6v</locus>
+                                    </item>
+                                                <item>Quires 19-20<hi rend="superscript">10</hi>
+                                                  <locus from="2:7r"> ff. 7r-24v</locus>
+                                    </item>
+                                                <item>Quire 21<hi rend="superscript">6</hi>
+                                                  <locus from="2:25r" to="2:30v"> ff.
+                                                  25r-30v</locus>
+                                    </item>
+                                                <item>Quire 22<hi rend="superscript">10-1</hi>
+                                                  <locus from="2:31r" to="2:39v"> ff.
+                                                  31r-39v</locus>
+                                    </item>
+                                                <item>Quire 23<hi rend="superscript">2</hi>
+                                                  <locus from="2:40r" to="2:41v"> ff.
+                                                  40r-41v</locus>
+                                    </item>
+                                                <item>Quire 24<hi rend="superscript">4</hi>
+                                                  <locus from="2:42r" to="45v"> ff.
+                                                  42r-45v</locus>
+                                    </item>
+                                                <item>Quire 25<hi rend="superscript">2</hi>
+                                                  <locus from="2:46r" to="2:47v"> ff.
+                                                  46r-47v</locus>
+                                    </item>
+                                                <item>Quire 26<hi rend="superscript">8</hi>
+                                                  <locus from="2:48r" to="2:55v"> ff.
+                                                  48r-55v</locus>
+                                    </item>
+                                                <item>Quires 27-28<hi rend="superscript">8</hi>
+                                                  <locus from="2:56r" to="2:71v"> ff.
+                                                  56r-71v</locus>
+                                    </item>
+                                                <item>Quire 29<hi rend="superscript">8-1</hi>
+                                                  <locus from="2:72r" to="2:78v"> ff.
+                                                  72r-78v</locus>
+                                    </item>
+                                            </list>
+                              </p>
+                                        <signatures type="leaf">
+                                            <p>There is a folio signature in Greek numerals from α
+                                                to οη in brown ink in the lower margin of the rectos
+                                                (except for the first α on <locus from="2:1v" to="2:1v">f. 1v</locus>)</p>
+                                        </signatures>
+                                    </collation>
+
+                                    <condition>
+                                        <p>In fair general condition. Leaves are yellow with age;
+                                            there are stains, extended wormholes in the upper
+                                            margins. The outer margin of <locus from="2:67r" to="2:67v">f. 67</locus> have been cut and
+                                            reconstructed.</p>
+                           </condition>
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="1" writtenLines="19">
+                                        <locus from="2:1r" scheme="folios" to="2:78v">Ff.
+                                            1r-78v</locus>: <dimensions type="written" unit="mm">
+                                            <height quantity="160">160</height>
+                                            <width quantity="70">70</width>
+                                        </dimensions>
+                                        <note>Scholia and prefatory materials that accompany the
+                                            main texts have a very variable number of lines per
+                                            page, and are arranged in an orderly manner.</note>
+                                    </layout>
+                                </layoutDesc>
+
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote scope="major" xml:id="hand-4">
+                                    <p>Hand D: <locus from="2:1r" to="2:78v">ff. 1r-78v</locus>
+                           </p>
+                                    <p>The main texts and the scholia are written in a <term type="script">mixed minuscule</term> upright or slanting
+                                        slightly to the right, in dark brown ink. The ductus is
+                                        cursive.</p>
+                                    <p>The variation in letter size is not marked. Syllabic abbreviations and
+                                        superscript word endings are rare, and usually appear only
+                                        at the end of lines. Breathings are curved and mute iota is
+                                        rarely used.</p>
+                                    <p>The small majuscules <hi rend="italic">beta, gamma, eta,
+                                            kappa, lambda, pi phi</hi> are present. <hi rend="italic">Gamma</hi> and <hi rend="italic">tau</hi>
+                                        are often high. <hi rend="italic">Alpha</hi> is often
+                                        enlarged; <hi rend="italic">epsilon</hi> is both regular
+                                        minuscule and lunate. The open shape of <hi rend="italic">theta</hi> is present only if ligated. The <hi rend="italic">sigma</hi> has both lunate and regular
+                                        shapes, but the <hi rend="italic">sigma telikon</hi> is not
+                                        present. <hi rend="italic">Omega</hi> is closed and often
+                                        ligated to the previous letter from below.</p>
+                                    <p>Double <hi rend="italic">lambda</hi> ligature is overlapping.
+                                        Ligatures of <hi rend="italic">rho</hi> with <hi rend="italic">alpha</hi> or <hi rend="italic">omicron</hi> are from the bottom.</p>
+                                    <p>Punctuation used includes the middle and upper point, lower
+                                        comma and full stop.</p>
+                                    <p>The same hand has written the interlinear glosses in smaller
+                                        size.</p>
+                                </handNote>
+                            </handDesc>
+
+                            <decoDesc>
+                                <decoNote type="headpiece">
+                                    <p>The beginning of the texts on ff. <locus from="2:1r" to="2:1r">1r</locus>, <locus from="2:2r" to="2:2r">2r</locus> are preceded by weave decorations, or
+                                        rectangular shape in red ink with floral motifs. The lists
+                                        of characters on ff. <locus from="2:30r" to="2:30r">30r</locus> and <locus from="2:56r" to="2:56r">56r</locus> are surrounded by a frame with stylized
+                                        leaves in red ink.</p>
+                                    <p>Two tailpieces in black and brown ink by two different hands
+                                        are present on <locus from="2:55r" to="2:55r">f.
+                                        55r</locus>.</p>
+                                </decoNote>
+
+                                <decoNote type="decInit">Enlarged ornamental initials, outlined in
+                                    red ink on ff. <locus from="2:1r" to="2:1r">1r</locus>, <locus from="2:1v" to="2:1v">1v</locus>, <locus from="2:2r" to="2:2r">2r</locus>, <locus from="2:30r" to="2:30r">30r</locus> and <locus from="2:56r" to="2:56r">56r</locus>.</decoNote>
+                            </decoDesc>
+
+                            <additions>
+                                <p>One or more readers have added two small sketches: a dog on
+                                        <locus from="2:7v" to="2:7v">f. 7v</locus>, a face on <locus from="2:55v" to="2:55v">f. 55v</locus>.</p>
+                            </additions>
+
+                        </physDesc>
+
+                        <history>
+                            <origin>
+                                <p>The characteristics of the script suggest that it was produced in
+                                    the <origDate calendar="gregorian" notAfter="1499" notBefore="1450">second half of 15th century, probably after
+                                        1475.</origDate>
+                        </p>
+                            </origin>
+                        </history>
+                    </msPart>
+
+                </msDesc>
+            </sourceDesc>
+
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject
+                            Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85057171">Greek literature</term>
+                        </item>
+                        <item>
+                            <term key="subject_sh85057144">Greek drama (Tragedy)</term>
+                        </item>
+                        <item>
+                            <ref target="https://lccn.loc.gov/n79055702">Aeschylus</ref>
+                        </item>
+
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2019-08-13">
+                <persName>Matteo Di Franco</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+        <graphic decls="#document-thumbnail" rend="portrait" url="MS-NN-00003-00017-000-00001"/>
+        <surface n="left cover, outer" xml:id="i1">
+            <graphic decls="#downloadImageRights #download" height="6662px" rend="portrait" url="MS-NN-00003-00017-000-00001" width="4517px"/>
+        </surface>
+        <surface n="left cover, inner" xml:id="i2">
+            <graphic decls="#downloadImageRights #download" height="6549px" rend="portrait" url="MS-NN-00003-00017-000-00002" width="4152px"/>
+        </surface>
+        <surface n="[a] recto" xml:id="i3">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00003" width="4018px"/>
+        </surface>
+        <surface n="[a] verso" xml:id="i4">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00004" width="4018px"/>
+        </surface>
+        <surface n="i recto" xml:id="i5">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00005" width="4018px"/>
+        </surface>
+        <surface n="i verso" xml:id="i6">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00006" width="4018px"/>
+        </surface>
+        <surface n="ii recto" xml:id="i7">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00007" width="4018px"/>
+        </surface>
+        <surface n="ii verso" xml:id="i8">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00008" width="4018px"/>
+        </surface>
+        <surface n="1:1r" xml:id="i9">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00009" width="3813px"/>
+        </surface>
+        <surface n="1:1v" xml:id="i10">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00010" width="3843px"/>
+        </surface>
+        <surface n="1:2r" xml:id="i11">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00011" width="3813px"/>
+        </surface>
+        <surface n="1:2v" xml:id="i12">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00012" width="3843px"/>
+        </surface>
+        <surface n="1:3r" xml:id="i13">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00013" width="3813px"/>
+        </surface>
+        <surface n="1:3v" xml:id="i14">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00014" width="3843px"/>
+        </surface>
+        <surface n="1:4r" xml:id="i15">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00015" width="3813px"/>
+        </surface>
+        <surface n="1:4v" xml:id="i16">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00016" width="3843px"/>
+        </surface>
+        <surface n="1:5r" xml:id="i17">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00017" width="3813px"/>
+        </surface>
+        <surface n="1:5v" xml:id="i18">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00018" width="3843px"/>
+        </surface>
+        <surface n="1:6r" xml:id="i19">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00019" width="3813px"/>
+        </surface>
+        <surface n="1:6v" xml:id="i20">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00020" width="3843px"/>
+        </surface>
+        <surface n="1:7r" xml:id="i21">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00021" width="3813px"/>
+        </surface>
+        <surface n="1:7v" xml:id="i22">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00022" width="3843px"/>
+        </surface>
+        <surface n="1:8r" xml:id="i23">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00023" width="3813px"/>
+        </surface>
+        <surface n="1:8v" xml:id="i24">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00024" width="3843px"/>
+        </surface>
+        <surface n="1:9r" xml:id="i25">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00025" width="3813px"/>
+        </surface>
+        <surface n="1:9v" xml:id="i26">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00026" width="3843px"/>
+        </surface>
+        <surface n="1:10r" xml:id="i27">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00027" width="3813px"/>
+        </surface>
+        <surface n="1:10v" xml:id="i28">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00028" width="3843px"/>
+        </surface>
+        <surface n="1:11r" xml:id="i29">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00029" width="3813px"/>
+        </surface>
+        <surface n="1:11v" xml:id="i30">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00030" width="3843px"/>
+        </surface>
+        <surface n="1:12r" xml:id="i31">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00031" width="3813px"/>
+        </surface>
+        <surface n="1:12v" xml:id="i32">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00032" width="3764px"/>
+        </surface>
+        <surface n="1:13r" xml:id="i33">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00033" width="3813px"/>
+        </surface>
+        <surface n="1:13v" xml:id="i34">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00034" width="3764px"/>
+        </surface>
+        <surface n="1:14r" xml:id="i35">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00035" width="3813px"/>
+        </surface>
+        <surface n="1:14v" xml:id="i36">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00036" width="3764px"/>
+        </surface>
+        <surface n="1:15r" xml:id="i37">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00037" width="3813px"/>
+        </surface>
+        <surface n="1:15v" xml:id="i38">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00038" width="3764px"/>
+        </surface>
+        <surface n="1:16r" xml:id="i39">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00039" width="3813px"/>
+        </surface>
+        <surface n="1:16v" xml:id="i40">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00040" width="3764px"/>
+        </surface>
+        <surface n="1:17r" xml:id="i41">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00041" width="3813px"/>
+        </surface>
+        <surface n="1:17v" xml:id="i42">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00042" width="3764px"/>
+        </surface>
+        <surface n="1:18r" xml:id="i43">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00043" width="3813px"/>
+        </surface>
+        <surface n="1:18v" xml:id="i44">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00044" width="3764px"/>
+        </surface>
+        <surface n="1:19r" xml:id="i45">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00045" width="3813px"/>
+        </surface>
+        <surface n="1:19v" xml:id="i46">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00046" width="3764px"/>
+        </surface>
+        <surface n="1:20r" xml:id="i47">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00047" width="3813px"/>
+        </surface>
+        <surface n="1:20v" xml:id="i48">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00048" width="3764px"/>
+        </surface>
+        <surface n="1:21r" xml:id="i49">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00049" width="3813px"/>
+        </surface>
+        <surface n="1:21v" xml:id="i50">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00050" width="3764px"/>
+        </surface>
+        <surface n="1:22r" xml:id="i51">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00051" width="3813px"/>
+        </surface>
+        <surface n="1:22v" xml:id="i52">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00052" width="3764px"/>
+        </surface>
+        <surface n="1:23r" xml:id="i53">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00053" width="3813px"/>
+        </surface>
+        <surface n="1:23v" xml:id="i54">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00054" width="3764px"/>
+        </surface>
+        <surface n="1:24r" xml:id="i55">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00055" width="3813px"/>
+        </surface>
+        <surface n="1:24v" xml:id="i56">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00056" width="3764px"/>
+        </surface>
+        <surface n="1:25r" xml:id="i57">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00057" width="3813px"/>
+        </surface>
+        <surface n="1:25v" xml:id="i58">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00058" width="3737px"/>
+        </surface>
+        <surface n="1:26r" xml:id="i59">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00059" width="3813px"/>
+        </surface>
+        <surface n="1:26v" xml:id="i60">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00060" width="3737px"/>
+        </surface>
+        <surface n="1:27r" xml:id="i61">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00061" width="3813px"/>
+        </surface>
+        <surface n="1:27v" xml:id="i62">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00062" width="3737px"/>
+        </surface>
+        <surface n="1:28r" xml:id="i63">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00063" width="3813px"/>
+        </surface>
+        <surface n="1:28v" xml:id="i64">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00064" width="3737px"/>
+        </surface>
+        <surface n="1:29r" xml:id="i65">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00065" width="3813px"/>
+        </surface>
+        <surface n="1:29v" xml:id="i66">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00066" width="3737px"/>
+        </surface>
+        <surface n="1:30r" xml:id="i67">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00067" width="3813px"/>
+        </surface>
+        <surface n="1:30v" xml:id="i68">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00068" width="3781px"/>
+        </surface>
+        <surface n="1:31r" xml:id="i69">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00069" width="3813px"/>
+        </surface>
+        <surface n="1:31v" xml:id="i70">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00070" width="3781px"/>
+        </surface>
+        <surface n="1:32r" xml:id="i71">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00071" width="3813px"/>
+        </surface>
+        <surface n="1:32v" xml:id="i72">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00072" width="3781px"/>
+        </surface>
+        <surface n="1:33r" xml:id="i73">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00073" width="3813px"/>
+        </surface>
+        <surface n="1:33v" xml:id="i74">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00074" width="3781px"/>
+        </surface>
+        <surface n="1:34r" xml:id="i75">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00075" width="3813px"/>
+        </surface>
+        <surface n="1:34v" xml:id="i76">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00076" width="3781px"/>
+        </surface>
+        <surface n="1:35r" xml:id="i77">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00077" width="3769px"/>
+        </surface>
+        <surface n="1:35v" xml:id="i78">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00078" width="3781px"/>
+        </surface>
+        <surface n="1:36r" xml:id="i79">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00079" width="3769px"/>
+        </surface>
+        <surface n="1:36v" xml:id="i80">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00080" width="3781px"/>
+        </surface>
+        <surface n="1:37r" xml:id="i81">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00081" width="3769px"/>
+        </surface>
+        <surface n="1:37v" xml:id="i82">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00082" width="3781px"/>
+        </surface>
+        <surface n="1:38r" xml:id="i83">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00083" width="3769px"/>
+        </surface>
+        <surface n="1:38v" xml:id="i84">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00084" width="3781px"/>
+        </surface>
+        <surface n="1:39r" xml:id="i85">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00085" width="3769px"/>
+        </surface>
+        <surface n="1:39v" xml:id="i86">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00086" width="3781px"/>
+        </surface>
+        <surface n="1:40r" xml:id="i87">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00087" width="3769px"/>
+        </surface>
+        <surface n="1:40v" xml:id="i88">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00088" width="3781px"/>
+        </surface>
+        <surface n="1:41r" xml:id="i89">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00089" width="3769px"/>
+        </surface>
+        <surface n="1:41v" xml:id="i90">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00090" width="3781px"/>
+        </surface>
+        <surface n="1:42r" xml:id="i91">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00091" width="3769px"/>
+        </surface>
+        <surface n="1:42v" xml:id="i92">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00092" width="3781px"/>
+        </surface>
+        <surface n="1:43r" xml:id="i93">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00093" width="3769px"/>
+        </surface>
+        <surface n="1:43v" xml:id="i94">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00094" width="3781px"/>
+        </surface>
+        <surface n="1:44r" xml:id="i95">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00095" width="3769px"/>
+        </surface>
+        <surface n="1:44v" xml:id="i96">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00096" width="3781px"/>
+        </surface>
+        <surface n="1:45r" xml:id="i97">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00097" width="3769px"/>
+        </surface>
+        <surface n="1:45v" xml:id="i98">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00098" width="3781px"/>
+        </surface>
+        <surface n="1:46r" xml:id="i99">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00099" width="3769px"/>
+        </surface>
+        <surface n="1:46v" xml:id="i100">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00100" width="3781px"/>
+        </surface>
+        <surface n="1:47r" xml:id="i101">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00101" width="3769px"/>
+        </surface>
+        <surface n="1:47v" xml:id="i102">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00102" width="3781px"/>
+        </surface>
+        <surface n="1:48r" xml:id="i103">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00103" width="3769px"/>
+        </surface>
+        <surface n="1:48v" xml:id="i104">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00104" width="3781px"/>
+        </surface>
+        <surface n="1:49r" xml:id="i105">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00105" width="3769px"/>
+        </surface>
+        <surface n="1:49v" xml:id="i106">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00106" width="3781px"/>
+        </surface>
+        <surface n="1:50r" xml:id="i107">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00107" width="3769px"/>
+        </surface>
+        <surface n="1:50v" xml:id="i108">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00108" width="3781px"/>
+        </surface>
+        <surface n="1:51r" xml:id="i109">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00109" width="3769px"/>
+        </surface>
+        <surface n="1:51v" xml:id="i110">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00110" width="3759px"/>
+        </surface>
+        <surface n="1:52r" xml:id="i111">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00111" width="3769px"/>
+        </surface>
+        <surface n="1:52v" xml:id="i112">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00112" width="3759px"/>
+        </surface>
+        <surface n="1:53r" xml:id="i113">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00113" width="3769px"/>
+        </surface>
+        <surface n="1:53v" xml:id="i114">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00114" width="3759px"/>
+        </surface>
+        <surface n="1:54r" xml:id="i115">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00115" width="3769px"/>
+        </surface>
+        <surface n="1:54v" xml:id="i116">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00116" width="3759px"/>
+        </surface>
+        <surface n="1:55r" xml:id="i117">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00117" width="3769px"/>
+        </surface>
+        <surface n="1:55v" xml:id="i118">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00118" width="3759px"/>
+        </surface>
+        <surface n="1:56r" xml:id="i119">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00119" width="3769px"/>
+        </surface>
+        <surface n="1:56v" xml:id="i120">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00120" width="3759px"/>
+        </surface>
+        <surface n="1:57r" xml:id="i121">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00121" width="3769px"/>
+        </surface>
+        <surface n="1:57v" xml:id="i122">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00122" width="3759px"/>
+        </surface>
+        <surface n="1:58r" xml:id="i123">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00123" width="3769px"/>
+        </surface>
+        <surface n="1:58v" xml:id="i124">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00124" width="3759px"/>
+        </surface>
+        <surface n="1:59r" xml:id="i125">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00125" width="3769px"/>
+        </surface>
+        <surface n="1:59v" xml:id="i126">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00126" width="3759px"/>
+        </surface>
+        <surface n="1:60r" xml:id="i127">
+            <graphic decls="#downloadImageRights #download" height="6894px" rend="portrait" url="MS-NN-00003-00017-000-00127" width="3813px"/>
+        </surface>
+        <surface n="1:60v" xml:id="i128">
+            <graphic decls="#downloadImageRights #download" height="6894px" rend="portrait" url="MS-NN-00003-00017-000-00128" width="3813px"/>
+        </surface>
+        <surface n="1:61r" xml:id="i129">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00129" width="3769px"/>
+        </surface>
+        <surface n="1:61v" xml:id="i130">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00130" width="3789px"/>
+        </surface>
+        <surface n="1:62r" xml:id="i131">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00131" width="3839px"/>
+        </surface>
+        <surface n="1:62v" xml:id="i132">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00132" width="3789px"/>
+        </surface>
+        <surface n="1:63r" xml:id="i133">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00133" width="3839px"/>
+        </surface>
+        <surface n="1:63v" xml:id="i134">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00134" width="3789px"/>
+        </surface>
+        <surface n="1:64r" xml:id="i135">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00135" width="3839px"/>
+        </surface>
+        <surface n="1:64v" xml:id="i136">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00136" width="3789px"/>
+        </surface>
+        <surface n="1:65r" xml:id="i137">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00137" width="3839px"/>
+        </surface>
+        <surface n="1:65v" xml:id="i138">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00138" width="3789px"/>
+        </surface>
+        <surface n="1:66r" xml:id="i139">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00139" width="3839px"/>
+        </surface>
+        <surface n="1:66v" xml:id="i140">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00140" width="3789px"/>
+        </surface>
+        <surface n="1:67r" xml:id="i141">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00141" width="3839px"/>
+        </surface>
+        <surface n="1:67v" xml:id="i142">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00142" width="3789px"/>
+        </surface>
+        <surface n="1:68r" xml:id="i143">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00143" width="3839px"/>
+        </surface>
+        <surface n="1:68v" xml:id="i144">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00144" width="3789px"/>
+        </surface>
+        <surface n="1:69r" xml:id="i145">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00145" width="3839px"/>
+        </surface>
+        <surface n="1:69v" xml:id="i146">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00146" width="3789px"/>
+        </surface>
+        <surface n="1:70r" xml:id="i147">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00147" width="3839px"/>
+        </surface>
+        <surface n="1:70v" xml:id="i148">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00148" width="3789px"/>
+        </surface>
+        <surface n="1:71r" xml:id="i149">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00149" width="3839px"/>
+        </surface>
+        <surface n="1:71v" xml:id="i150">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00150" width="3789px"/>
+        </surface>
+        <surface n="1:72r" xml:id="i151">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00151" width="3839px"/>
+        </surface>
+        <surface n="1:72v" xml:id="i152">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00152" width="3789px"/>
+        </surface>
+        <surface n="1:72bis r" xml:id="i153">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00153" width="3839px"/>
+        </surface>
+        <surface n="1:72bis v" xml:id="i154">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00154" width="3789px"/>
+        </surface>
+        <surface n="1:73r" xml:id="i155">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00155" width="3839px"/>
+        </surface>
+        <surface n="1:73v" xml:id="i156">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00156" width="3789px"/>
+        </surface>
+        <surface n="1:74r" xml:id="i157">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00157" width="3839px"/>
+        </surface>
+        <surface n="1:74v" xml:id="i158">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00158" width="3789px"/>
+        </surface>
+        <surface n="1:75r" xml:id="i159">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00159" width="3839px"/>
+        </surface>
+        <surface n="1:75v" xml:id="i160">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00160" width="3789px"/>
+        </surface>
+        <surface n="1:76r" xml:id="i161">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00161" width="3839px"/>
+        </surface>
+        <surface n="1:76v" xml:id="i162">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00162" width="3789px"/>
+        </surface>
+        <surface n="1:77r" xml:id="i163">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00163" width="3839px"/>
+        </surface>
+        <surface n="1:77v" xml:id="i164">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00164" width="3789px"/>
+        </surface>
+        <surface n="1:78r" xml:id="i165">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00165" width="3839px"/>
+        </surface>
+        <surface n="1:78v" xml:id="i166">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00166" width="3789px"/>
+        </surface>
+        <surface n="1:79r" xml:id="i167">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00167" width="3839px"/>
+        </surface>
+        <surface n="1:79v" xml:id="i168">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00168" width="3789px"/>
+        </surface>
+        <surface n="1:80r" xml:id="i169">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00169" width="3839px"/>
+        </surface>
+        <surface n="1:80v" xml:id="i170">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00170" width="3789px"/>
+        </surface>
+        <surface n="1:81r" xml:id="i171">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00171" width="3839px"/>
+        </surface>
+        <surface n="1:81v" xml:id="i172">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00172" width="3789px"/>
+        </surface>
+        <surface n="1:82r" xml:id="i173">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00173" width="3839px"/>
+        </surface>
+        <surface n="1:82v" xml:id="i174">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00174" width="3789px"/>
+        </surface>
+        <surface n="1:83r" xml:id="i175">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00175" width="3839px"/>
+        </surface>
+        <surface n="1:83v" xml:id="i176">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00176" width="3789px"/>
+        </surface>
+        <surface n="1:84r" xml:id="i177">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00177" width="3839px"/>
+        </surface>
+        <surface n="1:84v" xml:id="i178">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00178" width="3789px"/>
+        </surface>
+        <surface n="1:85r" xml:id="i179">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00179" width="3839px"/>
+        </surface>
+        <surface n="1:85v" xml:id="i180">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00180" width="3789px"/>
+        </surface>
+        <surface n="1:86r" xml:id="i181">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00181" width="3839px"/>
+        </surface>
+        <surface n="1:86v" xml:id="i182">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00182" width="3789px"/>
+        </surface>
+        <surface n="1:87r" xml:id="i183">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00183" width="3839px"/>
+        </surface>
+        <surface n="1:87v" xml:id="i184">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00184" width="3789px"/>
+        </surface>
+        <surface n="1:88r" xml:id="i185">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00185" width="3839px"/>
+        </surface>
+        <surface n="1:88v" xml:id="i186">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00186" width="3789px"/>
+        </surface>
+        <surface n="2:1r" xml:id="i187">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00187" width="3839px"/>
+        </surface>
+        <surface n="2:1v" xml:id="i188">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00188" width="3789px"/>
+        </surface>
+        <surface n="2:2r" xml:id="i189">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00189" width="3839px"/>
+        </surface>
+        <surface n="2:2v" xml:id="i190">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00190" width="3789px"/>
+        </surface>
+        <surface n="2:3r" xml:id="i191">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00191" width="3839px"/>
+        </surface>
+        <surface n="2:3v" xml:id="i192">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00192" width="3789px"/>
+        </surface>
+        <surface n="2:4r" xml:id="i193">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00193" width="3839px"/>
+        </surface>
+        <surface n="2:4v" xml:id="i194">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00194" width="3789px"/>
+        </surface>
+        <surface n="2:5r" xml:id="i195">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00195" width="3839px"/>
+        </surface>
+        <surface n="2:5v" xml:id="i196">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00196" width="3789px"/>
+        </surface>
+        <surface n="2:6r" xml:id="i197">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00197" width="3839px"/>
+        </surface>
+        <surface n="2:6v" xml:id="i198">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00198" width="3789px"/>
+        </surface>
+        <surface n="2:7r" xml:id="i199">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00199" width="3839px"/>
+        </surface>
+        <surface n="2:7v" xml:id="i200">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00200" width="3789px"/>
+        </surface>
+        <surface n="2:8r" xml:id="i201">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00201" width="3839px"/>
+        </surface>
+        <surface n="2:8v" xml:id="i202">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00202" width="3789px"/>
+        </surface>
+        <surface n="2:9r" xml:id="i203">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00203" width="3839px"/>
+        </surface>
+        <surface n="2:9v" xml:id="i204">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00204" width="3789px"/>
+        </surface>
+        <surface n="2:10r" xml:id="i205">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00205" width="3839px"/>
+        </surface>
+        <surface n="2:10v" xml:id="i206">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00206" width="3789px"/>
+        </surface>
+        <surface n="2:11r" xml:id="i207">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00207" width="3839px"/>
+        </surface>
+        <surface n="2:11v" xml:id="i208">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00208" width="3789px"/>
+        </surface>
+        <surface n="2:12r" xml:id="i209">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00209" width="3839px"/>
+        </surface>
+        <surface n="2:12v" xml:id="i210">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00210" width="3789px"/>
+        </surface>
+        <surface n="2:13r" xml:id="i211">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00211" width="3839px"/>
+        </surface>
+        <surface n="2:13v" xml:id="i212">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00212" width="3789px"/>
+        </surface>
+        <surface n="2:14r" xml:id="i213">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00213" width="3839px"/>
+        </surface>
+        <surface n="2:14v" xml:id="i214">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00214" width="3789px"/>
+        </surface>
+        <surface n="2:15r" xml:id="i215">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00215" width="3839px"/>
+        </surface>
+        <surface n="2:15v" xml:id="i216">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00216" width="3789px"/>
+        </surface>
+        <surface n="2:16r" xml:id="i217">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00217" width="3839px"/>
+        </surface>
+        <surface n="2:16v" xml:id="i218">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00218" width="3789px"/>
+        </surface>
+        <surface n="2:17r" xml:id="i219">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00219" width="3839px"/>
+        </surface>
+        <surface n="2:17v" xml:id="i220">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00220" width="3789px"/>
+        </surface>
+        <surface n="2:18r" xml:id="i221">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00221" width="3839px"/>
+        </surface>
+        <surface n="2:18v" xml:id="i222">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00222" width="3789px"/>
+        </surface>
+        <surface n="2:19r" xml:id="i223">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00223" width="3839px"/>
+        </surface>
+        <surface n="2:19v" xml:id="i224">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00224" width="3789px"/>
+        </surface>
+        <surface n="2:20r" xml:id="i225">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00225" width="3839px"/>
+        </surface>
+        <surface n="2:20v" xml:id="i226">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00226" width="3789px"/>
+        </surface>
+        <surface n="2:21r" xml:id="i227">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00227" width="3839px"/>
+        </surface>
+        <surface n="2:21v" xml:id="i228">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00228" width="3789px"/>
+        </surface>
+        <surface n="2:22r" xml:id="i229">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00229" width="3839px"/>
+        </surface>
+        <surface n="2:22v" xml:id="i230">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00230" width="3822px"/>
+        </surface>
+        <surface n="2:23r" xml:id="i231">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00231" width="3839px"/>
+        </surface>
+        <surface n="2:23v" xml:id="i232">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00232" width="3822px"/>
+        </surface>
+        <surface n="2:24r" xml:id="i233">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00233" width="3839px"/>
+        </surface>
+        <surface n="2:24v" xml:id="i234">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00234" width="3822px"/>
+        </surface>
+        <surface n="2:25r" xml:id="i235">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00235" width="3839px"/>
+        </surface>
+        <surface n="2:25v" xml:id="i236">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00236" width="3822px"/>
+        </surface>
+        <surface n="2:26r" xml:id="i237">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00237" width="3839px"/>
+        </surface>
+        <surface n="2:26v" xml:id="i238">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00238" width="3822px"/>
+        </surface>
+        <surface n="2:27r" xml:id="i239">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00239" width="3839px"/>
+        </surface>
+        <surface n="2:27v" xml:id="i240">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00240" width="3822px"/>
+        </surface>
+        <surface n="2:28r" xml:id="i241">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00241" width="3839px"/>
+        </surface>
+        <surface n="2:28v" xml:id="i242">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00242" width="3822px"/>
+        </surface>
+        <surface n="2:29r" xml:id="i243">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00243" width="3839px"/>
+        </surface>
+        <surface n="2:29v" xml:id="i244">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00244" width="3822px"/>
+        </surface>
+        <surface n="2:30r" xml:id="i245">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00245" width="3839px"/>
+        </surface>
+        <surface n="2:30v" xml:id="i246">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00246" width="3822px"/>
+        </surface>
+        <surface n="2:31r" xml:id="i247">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00247" width="3839px"/>
+        </surface>
+        <surface n="2:31v" xml:id="i248">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00248" width="3822px"/>
+        </surface>
+        <surface n="2:32r" xml:id="i249">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00249" width="3909px"/>
+        </surface>
+        <surface n="2:32v" xml:id="i250">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00250" width="3822px"/>
+        </surface>
+        <surface n="2:33r" xml:id="i251">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00251" width="3941px"/>
+        </surface>
+        <surface n="2:33v" xml:id="i252">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00252" width="3822px"/>
+        </surface>
+        <surface n="2:34r" xml:id="i253">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00253" width="3941px"/>
+        </surface>
+        <surface n="2:34v" xml:id="i254">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00254" width="3822px"/>
+        </surface>
+        <surface n="2:35r" xml:id="i255">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00255" width="3941px"/>
+        </surface>
+        <surface n="2:35v" xml:id="i256">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00256" width="3822px"/>
+        </surface>
+        <surface n="2:36r" xml:id="i257">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00257" width="3941px"/>
+        </surface>
+        <surface n="2:36v" xml:id="i258">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00258" width="3822px"/>
+        </surface>
+        <surface n="2:37r" xml:id="i259">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00259" width="3941px"/>
+        </surface>
+        <surface n="2:37v" xml:id="i260">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00260" width="3822px"/>
+        </surface>
+        <surface n="2:38r" xml:id="i261">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00261" width="3941px"/>
+        </surface>
+        <surface n="2:38v" xml:id="i262">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00262" width="3822px"/>
+        </surface>
+        <surface n="2:39r" xml:id="i263">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00263" width="3838px"/>
+        </surface>
+        <surface n="2:39v" xml:id="i264">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00264" width="3829px"/>
+        </surface>
+        <surface n="2:40r" xml:id="i265">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00265" width="3838px"/>
+        </surface>
+        <surface n="2:40v" xml:id="i266">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00266" width="3822px"/>
+        </surface>
+        <surface n="2:41r" xml:id="i267">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00267" width="3838px"/>
+        </surface>
+        <surface n="2:41v" xml:id="i268">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00268" width="3774px"/>
+        </surface>
+        <surface n="2:42r" xml:id="i269">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00269" width="3838px"/>
+        </surface>
+        <surface n="2:42v" xml:id="i270">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00270" width="3774px"/>
+        </surface>
+        <surface n="2:43r" xml:id="i271">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00271" width="3838px"/>
+        </surface>
+        <surface n="2:43v" xml:id="i272">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00272" width="3774px"/>
+        </surface>
+        <surface n="2:44r" xml:id="i273">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00273" width="3838px"/>
+        </surface>
+        <surface n="2:44v" xml:id="i274">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00274" width="3774px"/>
+        </surface>
+        <surface n="2:45r" xml:id="i275">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00275" width="3838px"/>
+        </surface>
+        <surface n="2:45v" xml:id="i276">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00276" width="3774px"/>
+        </surface>
+        <surface n="2:46r" xml:id="i277">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00277" width="3838px"/>
+        </surface>
+        <surface n="2:46v" xml:id="i278">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00278" width="3774px"/>
+        </surface>
+        <surface n="2:47r" xml:id="i279">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00279" width="3838px"/>
+        </surface>
+        <surface n="2:47v" xml:id="i280">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00280" width="3774px"/>
+        </surface>
+        <surface n="2:48r" xml:id="i281">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00281" width="3838px"/>
+        </surface>
+        <surface n="2:48v" xml:id="i282">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00282" width="3774px"/>
+        </surface>
+        <surface n="2:49r" xml:id="i283">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00283" width="3838px"/>
+        </surface>
+        <surface n="2:49v" xml:id="i284">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00284" width="3774px"/>
+        </surface>
+        <surface n="2:50r" xml:id="i285">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00285" width="3838px"/>
+        </surface>
+        <surface n="2:50v" xml:id="i286">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00286" width="3774px"/>
+        </surface>
+        <surface n="2:51r" xml:id="i287">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00287" width="3838px"/>
+        </surface>
+        <surface n="2:51v" xml:id="i288">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00288" width="3774px"/>
+        </surface>
+        <surface n="2:52r" xml:id="i289">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00289" width="3838px"/>
+        </surface>
+        <surface n="2:52v" xml:id="i290">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00290" width="3774px"/>
+        </surface>
+        <surface n="2:53r" xml:id="i291">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00291" width="3783px"/>
+        </surface>
+        <surface n="2:53v" xml:id="i292">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00292" width="3774px"/>
+        </surface>
+        <surface n="2:54r" xml:id="i293">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00293" width="3783px"/>
+        </surface>
+        <surface n="2:54v" xml:id="i294">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00294" width="3774px"/>
+        </surface>
+        <surface n="2:55r" xml:id="i295">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00295" width="3849px"/>
+        </surface>
+        <surface n="2:55v" xml:id="i296">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00296" width="3774px"/>
+        </surface>
+        <surface n="2:56r" xml:id="i297">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00297" width="3849px"/>
+        </surface>
+        <surface n="2:56v" xml:id="i298">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00298" width="3774px"/>
+        </surface>
+        <surface n="2:57r" xml:id="i299">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00299" width="3849px"/>
+        </surface>
+        <surface n="2:57v" xml:id="i300">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00300" width="3774px"/>
+        </surface>
+        <surface n="2:58r" xml:id="i301">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00301" width="3849px"/>
+        </surface>
+        <surface n="2:58v" xml:id="i302">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00302" width="3774px"/>
+        </surface>
+        <surface n="2:59r" xml:id="i303">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00303" width="3849px"/>
+        </surface>
+        <surface n="2:59v" xml:id="i304">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00304" width="3774px"/>
+        </surface>
+        <surface n="2:60r" xml:id="i305">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00305" width="3849px"/>
+        </surface>
+        <surface n="2:60v" xml:id="i306">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00306" width="3774px"/>
+        </surface>
+        <surface n="2:61r" xml:id="i307">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00307" width="3849px"/>
+        </surface>
+        <surface n="2:61v" xml:id="i308">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00308" width="3774px"/>
+        </surface>
+        <surface n="2:62r" xml:id="i309">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00309" width="3849px"/>
+        </surface>
+        <surface n="2:62v" xml:id="i310">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00310" width="3774px"/>
+        </surface>
+        <surface n="2:63r" xml:id="i311">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00311" width="3849px"/>
+        </surface>
+        <surface n="2:63v" xml:id="i312">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00312" width="3774px"/>
+        </surface>
+        <surface n="2:64r" xml:id="i313">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00313" width="3838px"/>
+        </surface>
+        <surface n="2:64v" xml:id="i314">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00314" width="3774px"/>
+        </surface>
+        <surface n="2:65r" xml:id="i315">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00315" width="3838px"/>
+        </surface>
+        <surface n="2:65v" xml:id="i316">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00316" width="3774px"/>
+        </surface>
+        <surface n="2:66r" xml:id="i317">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00317" width="3838px"/>
+        </surface>
+        <surface n="2:66v" xml:id="i318">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00318" width="3774px"/>
+        </surface>
+        <surface n="2:67r" xml:id="i319">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00319" width="3838px"/>
+        </surface>
+        <surface n="2:67v" xml:id="i320">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00320" width="3774px"/>
+        </surface>
+        <surface n="2:68r" xml:id="i321">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00321" width="3838px"/>
+        </surface>
+        <surface n="2:68v" xml:id="i322">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00322" width="3774px"/>
+        </surface>
+        <surface n="2:69r" xml:id="i323">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00323" width="3838px"/>
+        </surface>
+        <surface n="2:69v" xml:id="i324">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00324" width="3774px"/>
+        </surface>
+        <surface n="2:70r" xml:id="i325">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00325" width="3838px"/>
+        </surface>
+        <surface n="2:70v" xml:id="i326">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00326" width="3774px"/>
+        </surface>
+        <surface n="2:71r" xml:id="i327">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00327" width="3838px"/>
+        </surface>
+        <surface n="2:71v" xml:id="i328">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00328" width="3774px"/>
+        </surface>
+        <surface n="2:72r" xml:id="i329">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00329" width="3838px"/>
+        </surface>
+        <surface n="2:72v" xml:id="i330">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00330" width="3774px"/>
+        </surface>
+        <surface n="2:73r" xml:id="i331">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00331" width="3838px"/>
+        </surface>
+        <surface n="2:73v" xml:id="i332">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00332" width="3774px"/>
+        </surface>
+        <surface n="2:74r" xml:id="i333">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00333" width="3838px"/>
+        </surface>
+        <surface n="2:74v" xml:id="i334">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00334" width="3774px"/>
+        </surface>
+        <surface n="2:75r" xml:id="i335">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00335" width="3838px"/>
+        </surface>
+        <surface n="2:75v" xml:id="i336">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00336" width="3774px"/>
+        </surface>
+        <surface n="2:76r" xml:id="i337">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00337" width="3838px"/>
+        </surface>
+        <surface n="2:76v" xml:id="i338">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00338" width="3774px"/>
+        </surface>
+        <surface n="2:77r" xml:id="i339">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00339" width="3838px"/>
+        </surface>
+        <surface n="2:77v" xml:id="i340">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00340" width="3774px"/>
+        </surface>
+        <surface n="2:78r" xml:id="i341">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00341" width="3838px"/>
+        </surface>
+        <surface n="2:78v" xml:id="i342">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00342" width="3774px"/>
+        </surface>
+        <surface n="[iii] recto" xml:id="i343">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00343" width="4003px"/>
+        </surface>
+        <surface n="[iii] verso" xml:id="i344">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00344" width="3893px"/>
+        </surface>
+        <surface n="[iv] recto" xml:id="i345">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00345" width="4003px"/>
+        </surface>
+        <surface n="[iv] verso" xml:id="i346">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00346" width="3893px"/>
+        </surface>
+        <surface n="[b] recto" xml:id="i347">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-NN-00003-00017-000-00347" width="4003px"/>
+        </surface>
+        <surface n="[b] verso" xml:id="i348">
+            <graphic decls="#downloadImageRights #download" height="6355px" rend="portrait" url="MS-NN-00003-00017-000-00348" width="3893px"/>
+        </surface>
+        <surface n="right cover, inner" xml:id="i349">
+            <graphic decls="#downloadImageRights #download" height="6549px" rend="portrait" url="MS-NN-00003-00017-000-00349" width="4152px"/>
+        </surface>
+        <surface n="right cover, outer" xml:id="i350">
+            <graphic decls="#downloadImageRights #download" height="6592px" rend="portrait" url="MS-NN-00003-00017-000-00350" width="4185px"/>
+        </surface>
+        <surface n="spine" xml:id="i351">
+            <graphic decls="#downloadImageRights #download" height="6639px" rend="portrait" url="MS-NN-00003-00017-000-00351" width="1702px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#i1" n="left cover, outer" xml:id="pb-leftcover,outer"/>
+                <pb facs="#i2" n="left cover, inner" xml:id="pb-leftcover,inner"/>
+                <pb facs="#i3" n="[a] recto" xml:id="pb-arecto"/>
+                <pb facs="#i4" n="[a] verso" xml:id="pb-averso"/>
+                <pb facs="#i5" n="i recto" xml:id="pb-irecto"/>
+                <pb facs="#i6" n="i verso" xml:id="pb-iverso"/>
+                <pb facs="#i7" n="ii recto" xml:id="pb-iirecto"/>
+                <pb facs="#i8" n="ii verso" xml:id="pb-iiverso"/>
+                <pb facs="#i9" n="1:1r" xml:id="pb-1:1r"/>
+                <pb facs="#i10" n="1:1v" xml:id="pb-1:1v"/>
+                <pb facs="#i11" n="1:2r" xml:id="pb-1:2r"/>
+                <pb facs="#i12" n="1:2v" xml:id="pb-1:2v"/>
+                <pb facs="#i13" n="1:3r" xml:id="pb-1:3r"/>
+                <pb facs="#i14" n="1:3v" xml:id="pb-1:3v"/>
+                <pb facs="#i15" n="1:4r" xml:id="pb-1:4r"/>
+                <pb facs="#i16" n="1:4v" xml:id="pb-1:4v"/>
+                <pb facs="#i17" n="1:5r" xml:id="pb-1:5r"/>
+                <pb facs="#i18" n="1:5v" xml:id="pb-1:5v"/>
+                <pb facs="#i19" n="1:6r" xml:id="pb-1:6r"/>
+                <pb facs="#i20" n="1:6v" xml:id="pb-1:6v"/>
+                <pb facs="#i21" n="1:7r" xml:id="pb-1:7r"/>
+                <pb facs="#i22" n="1:7v" xml:id="pb-1:7v"/>
+                <pb facs="#i23" n="1:8r" xml:id="pb-1:8r"/>
+                <pb facs="#i24" n="1:8v" xml:id="pb-1:8v"/>
+                <pb facs="#i25" n="1:9r" xml:id="pb-1:9r"/>
+                <pb facs="#i26" n="1:9v" xml:id="pb-1:9v"/>
+                <pb facs="#i27" n="1:10r" xml:id="pb-1:10r"/>
+                <pb facs="#i28" n="1:10v" xml:id="pb-1:10v"/>
+                <pb facs="#i29" n="1:11r" xml:id="pb-1:11r"/>
+                <pb facs="#i30" n="1:11v" xml:id="pb-1:11v"/>
+                <pb facs="#i31" n="1:12r" xml:id="pb-1:12r"/>
+                <pb facs="#i32" n="1:12v" xml:id="pb-1:12v"/>
+                <pb facs="#i33" n="1:13r" xml:id="pb-1:13r"/>
+                <pb facs="#i34" n="1:13v" xml:id="pb-1:13v"/>
+                <pb facs="#i35" n="1:14r" xml:id="pb-1:14r"/>
+                <pb facs="#i36" n="1:14v" xml:id="pb-1:14v"/>
+                <pb facs="#i37" n="1:15r" xml:id="pb-1:15r"/>
+                <pb facs="#i38" n="1:15v" xml:id="pb-1:15v"/>
+                <pb facs="#i39" n="1:16r" xml:id="pb-1:16r"/>
+                <pb facs="#i40" n="1:16v" xml:id="pb-1:16v"/>
+                <pb facs="#i41" n="1:17r" xml:id="pb-1:17r"/>
+                <pb facs="#i42" n="1:17v" xml:id="pb-1:17v"/>
+                <pb facs="#i43" n="1:18r" xml:id="pb-1:18r"/>
+                <pb facs="#i44" n="1:18v" xml:id="pb-1:18v"/>
+                <pb facs="#i45" n="1:19r" xml:id="pb-1:19r"/>
+                <pb facs="#i46" n="1:19v" xml:id="pb-1:19v"/>
+                <pb facs="#i47" n="1:20r" xml:id="pb-1:20r"/>
+                <pb facs="#i48" n="1:20v" xml:id="pb-1:20v"/>
+                <pb facs="#i49" n="1:21r" xml:id="pb-1:21r"/>
+                <pb facs="#i50" n="1:21v" xml:id="pb-1:21v"/>
+                <pb facs="#i51" n="1:22r" xml:id="pb-1:22r"/>
+                <pb facs="#i52" n="1:22v" xml:id="pb-1:22v"/>
+                <pb facs="#i53" n="1:23r" xml:id="pb-1:23r"/>
+                <pb facs="#i54" n="1:23v" xml:id="pb-1:23v"/>
+                <pb facs="#i55" n="1:24r" xml:id="pb-1:24r"/>
+                <pb facs="#i56" n="1:24v" xml:id="pb-1:24v"/>
+                <pb facs="#i57" n="1:25r" xml:id="pb-1:25r"/>
+                <pb facs="#i58" n="1:25v" xml:id="pb-1:25v"/>
+                <pb facs="#i59" n="1:26r" xml:id="pb-1:26r"/>
+                <pb facs="#i60" n="1:26v" xml:id="pb-1:26v"/>
+                <pb facs="#i61" n="1:27r" xml:id="pb-1:27r"/>
+                <pb facs="#i62" n="1:27v" xml:id="pb-1:27v"/>
+                <pb facs="#i63" n="1:28r" xml:id="pb-1:28r"/>
+                <pb facs="#i64" n="1:28v" xml:id="pb-1:28v"/>
+                <pb facs="#i65" n="1:29r" xml:id="pb-1:29r"/>
+                <pb facs="#i66" n="1:29v" xml:id="pb-1:29v"/>
+                <pb facs="#i67" n="1:30r" xml:id="pb-1:30r"/>
+                <pb facs="#i68" n="1:30v" xml:id="pb-1:30v"/>
+                <pb facs="#i69" n="1:31r" xml:id="pb-1:31r"/>
+                <pb facs="#i70" n="1:31v" xml:id="pb-1:31v"/>
+                <pb facs="#i71" n="1:32r" xml:id="pb-1:32r"/>
+                <pb facs="#i72" n="1:32v" xml:id="pb-1:32v"/>
+                <pb facs="#i73" n="1:33r" xml:id="pb-1:33r"/>
+                <pb facs="#i74" n="1:33v" xml:id="pb-1:33v"/>
+                <pb facs="#i75" n="1:34r" xml:id="pb-1:34r"/>
+                <pb facs="#i76" n="1:34v" xml:id="pb-1:34v"/>
+                <pb facs="#i77" n="1:35r" xml:id="pb-1:35r"/>
+                <pb facs="#i78" n="1:35v" xml:id="pb-1:35v"/>
+                <pb facs="#i79" n="1:36r" xml:id="pb-1:36r"/>
+                <pb facs="#i80" n="1:36v" xml:id="pb-1:36v"/>
+                <pb facs="#i81" n="1:37r" xml:id="pb-1:37r"/>
+                <pb facs="#i82" n="1:37v" xml:id="pb-1:37v"/>
+                <pb facs="#i83" n="1:38r" xml:id="pb-1:38r"/>
+                <pb facs="#i84" n="1:38v" xml:id="pb-1:38v"/>
+                <pb facs="#i85" n="1:39r" xml:id="pb-1:39r"/>
+                <pb facs="#i86" n="1:39v" xml:id="pb-1:39v"/>
+                <pb facs="#i87" n="1:40r" xml:id="pb-1:40r"/>
+                <pb facs="#i88" n="1:40v" xml:id="pb-1:40v"/>
+                <pb facs="#i89" n="1:41r" xml:id="pb-1:41r"/>
+                <pb facs="#i90" n="1:41v" xml:id="pb-1:41v"/>
+                <pb facs="#i91" n="1:42r" xml:id="pb-1:42r"/>
+                <pb facs="#i92" n="1:42v" xml:id="pb-1:42v"/>
+                <pb facs="#i93" n="1:43r" xml:id="pb-1:43r"/>
+                <pb facs="#i94" n="1:43v" xml:id="pb-1:43v"/>
+                <pb facs="#i95" n="1:44r" xml:id="pb-1:44r"/>
+                <pb facs="#i96" n="1:44v" xml:id="pb-1:44v"/>
+                <pb facs="#i97" n="1:45r" xml:id="pb-1:45r"/>
+                <pb facs="#i98" n="1:45v" xml:id="pb-1:45v"/>
+                <pb facs="#i99" n="1:46r" xml:id="pb-1:46r"/>
+                <pb facs="#i100" n="1:46v" xml:id="pb-1:46v"/>
+                <pb facs="#i101" n="1:47r" xml:id="pb-1:47r"/>
+                <pb facs="#i102" n="1:47v" xml:id="pb-1:47v"/>
+                <pb facs="#i103" n="1:48r" xml:id="pb-1:48r"/>
+                <pb facs="#i104" n="1:48v" xml:id="pb-1:48v"/>
+                <pb facs="#i105" n="1:49r" xml:id="pb-1:49r"/>
+                <pb facs="#i106" n="1:49v" xml:id="pb-1:49v"/>
+                <pb facs="#i107" n="1:50r" xml:id="pb-1:50r"/>
+                <pb facs="#i108" n="1:50v" xml:id="pb-1:50v"/>
+                <pb facs="#i109" n="1:51r" xml:id="pb-1:51r"/>
+                <pb facs="#i110" n="1:51v" xml:id="pb-1:51v"/>
+                <pb facs="#i111" n="1:52r" xml:id="pb-1:52r"/>
+                <pb facs="#i112" n="1:52v" xml:id="pb-1:52v"/>
+                <pb facs="#i113" n="1:53r" xml:id="pb-1:53r"/>
+                <pb facs="#i114" n="1:53v" xml:id="pb-1:53v"/>
+                <pb facs="#i115" n="1:54r" xml:id="pb-1:54r"/>
+                <pb facs="#i116" n="1:54v" xml:id="pb-1:54v"/>
+                <pb facs="#i117" n="1:55r" xml:id="pb-1:55r"/>
+                <pb facs="#i118" n="1:55v" xml:id="pb-1:55v"/>
+                <pb facs="#i119" n="1:56r" xml:id="pb-1:56r"/>
+                <pb facs="#i120" n="1:56v" xml:id="pb-1:56v"/>
+                <pb facs="#i121" n="1:57r" xml:id="pb-1:57r"/>
+                <pb facs="#i122" n="1:57v" xml:id="pb-1:57v"/>
+                <pb facs="#i123" n="1:58r" xml:id="pb-1:58r"/>
+                <pb facs="#i124" n="1:58v" xml:id="pb-1:58v"/>
+                <pb facs="#i125" n="1:59r" xml:id="pb-1:59r"/>
+                <pb facs="#i126" n="1:59v" xml:id="pb-1:59v"/>
+                <pb facs="#i127" n="1:60r" xml:id="pb-1:60r"/>
+                <pb facs="#i128" n="1:60v" xml:id="pb-1:60v"/>
+                <pb facs="#i129" n="1:61r" xml:id="pb-1:61r"/>
+                <pb facs="#i130" n="1:61v" xml:id="pb-1:61v"/>
+                <pb facs="#i131" n="1:62r" xml:id="pb-1:62r"/>
+                <pb facs="#i132" n="1:62v" xml:id="pb-1:62v"/>
+                <pb facs="#i133" n="1:63r" xml:id="pb-1:63r"/>
+                <pb facs="#i134" n="1:63v" xml:id="pb-1:63v"/>
+                <pb facs="#i135" n="1:64r" xml:id="pb-1:64r"/>
+                <pb facs="#i136" n="1:64v" xml:id="pb-1:64v"/>
+                <pb facs="#i137" n="1:65r" xml:id="pb-1:65r"/>
+                <pb facs="#i138" n="1:65v" xml:id="pb-1:65v"/>
+                <pb facs="#i139" n="1:66r" xml:id="pb-1:66r"/>
+                <pb facs="#i140" n="1:66v" xml:id="pb-1:66v"/>
+                <pb facs="#i141" n="1:67r" xml:id="pb-1:67r"/>
+                <pb facs="#i142" n="1:67v" xml:id="pb-1:67v"/>
+                <pb facs="#i143" n="1:68r" xml:id="pb-1:68r"/>
+                <pb facs="#i144" n="1:68v" xml:id="pb-1:68v"/>
+                <pb facs="#i145" n="1:69r" xml:id="pb-1:69r"/>
+                <pb facs="#i146" n="1:69v" xml:id="pb-1:69v"/>
+                <pb facs="#i147" n="1:70r" xml:id="pb-1:70r"/>
+                <pb facs="#i148" n="1:70v" xml:id="pb-1:70v"/>
+                <pb facs="#i149" n="1:71r" xml:id="pb-1:71r"/>
+                <pb facs="#i150" n="1:71v" xml:id="pb-1:71v"/>
+                <pb facs="#i151" n="1:72r" xml:id="pb-1:72r"/>
+                <pb facs="#i152" n="1:72v" xml:id="pb-1:72v"/>
+                <pb facs="#i153" n="1:72bis r" xml:id="pb-1:72bisr"/>
+                <pb facs="#i154" n="1:72bis v" xml:id="pb-1:72bisv"/>
+                <pb facs="#i155" n="1:73r" xml:id="pb-1:73r"/>
+                <pb facs="#i156" n="1:73v" xml:id="pb-1:73v"/>
+                <pb facs="#i157" n="1:74r" xml:id="pb-1:74r"/>
+                <pb facs="#i158" n="1:74v" xml:id="pb-1:74v"/>
+                <pb facs="#i159" n="1:75r" xml:id="pb-1:75r"/>
+                <pb facs="#i160" n="1:75v" xml:id="pb-1:75v"/>
+                <pb facs="#i161" n="1:76r" xml:id="pb-1:76r"/>
+                <pb facs="#i162" n="1:76v" xml:id="pb-1:76v"/>
+                <pb facs="#i163" n="1:77r" xml:id="pb-1:77r"/>
+                <pb facs="#i164" n="1:77v" xml:id="pb-1:77v"/>
+                <pb facs="#i165" n="1:78r" xml:id="pb-1:78r"/>
+                <pb facs="#i166" n="1:78v" xml:id="pb-1:78v"/>
+                <pb facs="#i167" n="1:79r" xml:id="pb-1:79r"/>
+                <pb facs="#i168" n="1:79v" xml:id="pb-1:79v"/>
+                <pb facs="#i169" n="1:80r" xml:id="pb-1:80r"/>
+                <pb facs="#i170" n="1:80v" xml:id="pb-1:80v"/>
+                <pb facs="#i171" n="1:81r" xml:id="pb-1:81r"/>
+                <pb facs="#i172" n="1:81v" xml:id="pb-1:81v"/>
+                <pb facs="#i173" n="1:82r" xml:id="pb-1:82r"/>
+                <pb facs="#i174" n="1:82v" xml:id="pb-1:82v"/>
+                <pb facs="#i175" n="1:83r" xml:id="pb-1:83r"/>
+                <pb facs="#i176" n="1:83v" xml:id="pb-1:83v"/>
+                <pb facs="#i177" n="1:84r" xml:id="pb-1:84r"/>
+                <pb facs="#i178" n="1:84v" xml:id="pb-1:84v"/>
+                <pb facs="#i179" n="1:85r" xml:id="pb-1:85r"/>
+                <pb facs="#i180" n="1:85v" xml:id="pb-1:85v"/>
+                <pb facs="#i181" n="1:86r" xml:id="pb-1:86r"/>
+                <pb facs="#i182" n="1:86v" xml:id="pb-1:86v"/>
+                <pb facs="#i183" n="1:87r" xml:id="pb-1:87r"/>
+                <pb facs="#i184" n="1:87v" xml:id="pb-1:87v"/>
+                <pb facs="#i185" n="1:88r" xml:id="pb-1:88r"/>
+                <pb facs="#i186" n="1:89v" xml:id="pb-1:88v"/>
+                <pb facs="#i187" n="2:1r" xml:id="pb-2:1r"/>
+                <pb facs="#i188" n="2:1v" xml:id="pb-2:1v"/>
+                <pb facs="#i189" n="2:2r" xml:id="pb-2:2r"/>
+                <pb facs="#i190" n="2:2v" xml:id="pb-2:2v"/>
+                <pb facs="#i191" n="2:3r" xml:id="pb-2:3r"/>
+                <pb facs="#i192" n="2:3v" xml:id="pb-2:3v"/>
+                <pb facs="#i193" n="2:4r" xml:id="pb-2:4r"/>
+                <pb facs="#i194" n="2:4v" xml:id="pb-2:4v"/>
+                <pb facs="#i195" n="2:5r" xml:id="pb-2:5r"/>
+                <pb facs="#i196" n="2:5v" xml:id="pb-2:5v"/>
+                <pb facs="#i197" n="2:6r" xml:id="pb-2:6r"/>
+                <pb facs="#i198" n="2:6v" xml:id="pb-2:6v"/>
+                <pb facs="#i199" n="2:7r" xml:id="pb-2:7r"/>
+                <pb facs="#i200" n="2:7v" xml:id="pb-2:7v"/>
+                <pb facs="#i201" n="2:8r" xml:id="pb-2:8r"/>
+                <pb facs="#i202" n="2:8v" xml:id="pb-2:8v"/>
+                <pb facs="#i203" n="2:9r" xml:id="pb-2:9r"/>
+                <pb facs="#i204" n="2:9v" xml:id="pb-2:9v"/>
+                <pb facs="#i205" n="2:10r" xml:id="pb-2:10r"/>
+                <pb facs="#i206" n="2:10v" xml:id="pb-2:10v"/>
+                <pb facs="#i207" n="2:11r" xml:id="pb-2:11r"/>
+                <pb facs="#i208" n="2:11v" xml:id="pb-2:11v"/>
+                <pb facs="#i209" n="2:12r" xml:id="pb-2:12r"/>
+                <pb facs="#i210" n="2:12v" xml:id="pb-2:12v"/>
+                <pb facs="#i211" n="2:13r" xml:id="pb-2:13r"/>
+                <pb facs="#i212" n="2:13v" xml:id="pb-2:13v"/>
+                <pb facs="#i213" n="2:14r" xml:id="pb-2:14r"/>
+                <pb facs="#i214" n="2:14v" xml:id="pb-2:14v"/>
+                <pb facs="#i215" n="2:15r" xml:id="pb-2:15r"/>
+                <pb facs="#i216" n="2:15v" xml:id="pb-2:15v"/>
+                <pb facs="#i217" n="2:16r" xml:id="pb-2:16r"/>
+                <pb facs="#i218" n="2:16v" xml:id="pb-2:16v"/>
+                <pb facs="#i219" n="2:17r" xml:id="pb-2:17r"/>
+                <pb facs="#i220" n="2:17v" xml:id="pb-2:17v"/>
+                <pb facs="#i221" n="2:18r" xml:id="pb-2:18r"/>
+                <pb facs="#i222" n="2:18v" xml:id="pb-2:18v"/>
+                <pb facs="#i223" n="2:19r" xml:id="pb-2:19r"/>
+                <pb facs="#i224" n="2:19v" xml:id="pb-2:19v"/>
+                <pb facs="#i225" n="2:20r" xml:id="pb-2:20r"/>
+                <pb facs="#i226" n="2:20v" xml:id="pb-2:20v"/>
+                <pb facs="#i227" n="2:21r" xml:id="pb-2:21r"/>
+                <pb facs="#i228" n="2:21v" xml:id="pb-2:21v"/>
+                <pb facs="#i229" n="2:22r" xml:id="pb-2:22r"/>
+                <pb facs="#i230" n="2:22v" xml:id="pb-2:22v"/>
+                <pb facs="#i231" n="2:23r" xml:id="pb-2:23r"/>
+                <pb facs="#i232" n="2:23v" xml:id="pb-2:23v"/>
+                <pb facs="#i233" n="2:24r" xml:id="pb-2:24r"/>
+                <pb facs="#i234" n="2:24v" xml:id="pb-2:24v"/>
+                <pb facs="#i235" n="2:25r" xml:id="pb-2:25r"/>
+                <pb facs="#i236" n="2:25v" xml:id="pb-2:25v"/>
+                <pb facs="#i237" n="2:26r" xml:id="pb-2:26r"/>
+                <pb facs="#i238" n="2:26v" xml:id="pb-2:26v"/>
+                <pb facs="#i239" n="2:27r" xml:id="pb-2:27r"/>
+                <pb facs="#i240" n="2:27v" xml:id="pb-2:27v"/>
+                <pb facs="#i241" n="2:28r" xml:id="pb-2:28r"/>
+                <pb facs="#i242" n="2:28v" xml:id="pb-2:28v"/>
+                <pb facs="#i243" n="2:29r" xml:id="pb-2:29r"/>
+                <pb facs="#i244" n="2:29v" xml:id="pb-2:29v"/>
+                <pb facs="#i245" n="2:30r" xml:id="pb-2:30r"/>
+                <pb facs="#i246" n="2:30v" xml:id="pb-2:30v"/>
+                <pb facs="#i247" n="2:31r" xml:id="pb-2:31r"/>
+                <pb facs="#i248" n="2:31v" xml:id="pb-2:31v"/>
+                <pb facs="#i249" n="2:32r" xml:id="pb-2:32r"/>
+                <pb facs="#i250" n="2:32v" xml:id="pb-2:32v"/>
+                <pb facs="#i251" n="2:33r" xml:id="pb-2:33r"/>
+                <pb facs="#i252" n="2:33v" xml:id="pb-2:33v"/>
+                <pb facs="#i253" n="2:34r" xml:id="pb-2:34r"/>
+                <pb facs="#i254" n="2:34v" xml:id="pb-2:34v"/>
+                <pb facs="#i255" n="2:35r" xml:id="pb-2:35r"/>
+                <pb facs="#i256" n="2:35v" xml:id="pb-2:35v"/>
+                <pb facs="#i257" n="2:36r" xml:id="pb-2:36r"/>
+                <pb facs="#i258" n="2:36v" xml:id="pb-2:36v"/>
+                <pb facs="#i259" n="2:37r" xml:id="pb-2:37r"/>
+                <pb facs="#i260" n="2:37v" xml:id="pb-2:37v"/>
+                <pb facs="#i261" n="2:38r" xml:id="pb-2:38r"/>
+                <pb facs="#i262" n="2:38v" xml:id="pb-2:38v"/>
+                <pb facs="#i263" n="2:39r" xml:id="pb-2:39r"/>
+                <pb facs="#i264" n="2:39v" xml:id="pb-2:39v"/>
+                <pb facs="#i265" n="2:40r" xml:id="pb-2:40r"/>
+                <pb facs="#i266" n="2:40v" xml:id="pb-2:40v"/>
+                <pb facs="#i267" n="2:41r" xml:id="pb-2:41r"/>
+                <pb facs="#i268" n="2:41v" xml:id="pb-2:41v"/>
+                <pb facs="#i269" n="2:42r" xml:id="pb-2:42r"/>
+                <pb facs="#i270" n="2:42v" xml:id="pb-2:42v"/>
+                <pb facs="#i271" n="2:43r" xml:id="pb-2:43r"/>
+                <pb facs="#i272" n="2:43v" xml:id="pb-2:43v"/>
+                <pb facs="#i273" n="2:44r" xml:id="pb-2:44r"/>
+                <pb facs="#i274" n="2:44v" xml:id="pb-2:44v"/>
+                <pb facs="#i275" n="2:45r" xml:id="pb-2:45r"/>
+                <pb facs="#i276" n="2:45v" xml:id="pb-2:45v"/>
+                <pb facs="#i277" n="2:46r" xml:id="pb-2:46r"/>
+                <pb facs="#i278" n="2:46v" xml:id="pb-2:46v"/>
+                <pb facs="#i279" n="2:47r" xml:id="pb-2:47r"/>
+                <pb facs="#i280" n="2:47v" xml:id="pb-2:47v"/>
+                <pb facs="#i281" n="2:48r" xml:id="pb-2:48r"/>
+                <pb facs="#i282" n="2:48v" xml:id="pb-2:48v"/>
+                <pb facs="#i283" n="2:49r" xml:id="pb-2:49r"/>
+                <pb facs="#i284" n="2:49v" xml:id="pb-2:49v"/>
+                <pb facs="#i285" n="2:50r" xml:id="pb-2:50r"/>
+                <pb facs="#i286" n="2:50v" xml:id="pb-2:50v"/>
+                <pb facs="#i287" n="2:51r" xml:id="pb-2:51r"/>
+                <pb facs="#i288" n="2:51v" xml:id="pb-2:51v"/>
+                <pb facs="#i289" n="2:52r" xml:id="pb-2:52r"/>
+                <pb facs="#i290" n="2:52v" xml:id="pb-2:52v"/>
+                <pb facs="#i291" n="2:53r" xml:id="pb-2:53r"/>
+                <pb facs="#i292" n="2:53v" xml:id="pb-2:53v"/>
+                <pb facs="#i293" n="2:54r" xml:id="pb-2:54r"/>
+                <pb facs="#i294" n="2:54v" xml:id="pb-2:54v"/>
+                <pb facs="#i295" n="2:55r" xml:id="pb-2:55r"/>
+                <pb facs="#i296" n="2:55v" xml:id="pb-2:55v"/>
+                <pb facs="#i297" n="2:56r" xml:id="pb-2:56r"/>
+                <pb facs="#i298" n="2:56v" xml:id="pb-2:56v"/>
+                <pb facs="#i299" n="2:57r" xml:id="pb-2:57r"/>
+                <pb facs="#i300" n="2:57v" xml:id="pb-2:57v"/>
+                <pb facs="#i301" n="2:58r" xml:id="pb-2:58r"/>
+                <pb facs="#i302" n="2:58v" xml:id="pb-2:58v"/>
+                <pb facs="#i303" n="2:59r" xml:id="pb-2:59r"/>
+                <pb facs="#i304" n="2:59v" xml:id="pb-2:59v"/>
+                <pb facs="#i305" n="2:60r" xml:id="pb-2:60r"/>
+                <pb facs="#i306" n="2:60v" xml:id="pb-2:60v"/>
+                <pb facs="#i307" n="2:61r" xml:id="pb-2:61r"/>
+                <pb facs="#i308" n="2:61v" xml:id="pb-2:61v"/>
+                <pb facs="#i309" n="2:62r" xml:id="pb-2:62r"/>
+                <pb facs="#i310" n="2:62v" xml:id="pb-2:62v"/>
+                <pb facs="#i311" n="2:63r" xml:id="pb-2:63r"/>
+                <pb facs="#i312" n="2:63v" xml:id="pb-2:63v"/>
+                <pb facs="#i313" n="2:64r" xml:id="pb-2:64r"/>
+                <pb facs="#i314" n="2:64v" xml:id="pb-2:64v"/>
+                <pb facs="#i315" n="2:65r" xml:id="pb-2:65r"/>
+                <pb facs="#i316" n="2:65v" xml:id="pb-2:65v"/>
+                <pb facs="#i317" n="2:66r" xml:id="pb-2:66r"/>
+                <pb facs="#i318" n="2:66v" xml:id="pb-2:66v"/>
+                <pb facs="#i319" n="2:67r" xml:id="pb-2:67r"/>
+                <pb facs="#i320" n="2:67v" xml:id="pb-2:67v"/>
+                <pb facs="#i321" n="2:68r" xml:id="pb-2:68r"/>
+                <pb facs="#i322" n="2:68v" xml:id="pb-2:68v"/>
+                <pb facs="#i323" n="2:69r" xml:id="pb-2:69r"/>
+                <pb facs="#i324" n="2:69v" xml:id="pb-2:69v"/>
+                <pb facs="#i325" n="2:70r" xml:id="pb-2:70r"/>
+                <pb facs="#i326" n="2:70v" xml:id="pb-2:70v"/>
+                <pb facs="#i327" n="2:71r" xml:id="pb-2:71r"/>
+                <pb facs="#i328" n="2:71v" xml:id="pb-2:71v"/>
+                <pb facs="#i329" n="2:72r" xml:id="pb-2:72r"/>
+                <pb facs="#i330" n="2:72v" xml:id="pb-2:72v"/>
+                <pb facs="#i331" n="2:73r" xml:id="pb-2:73r"/>
+                <pb facs="#i332" n="2:73v" xml:id="pb-2:73v"/>
+                <pb facs="#i333" n="2:74r" xml:id="pb-2:74r"/>
+                <pb facs="#i334" n="2:74v" xml:id="pb-2:74v"/>
+                <pb facs="#i335" n="2:75r" xml:id="pb-2:75r"/>
+                <pb facs="#i336" n="2:75v" xml:id="pb-2:75v"/>
+                <pb facs="#i337" n="2:76r" xml:id="pb-2:76r"/>
+                <pb facs="#i338" n="2:76v" xml:id="pb-2:76v"/>
+                <pb facs="#i339" n="2:77r" xml:id="pb-2:77r"/>
+                <pb facs="#i340" n="2:77v" xml:id="pb-2:77v"/>
+                <pb facs="#i341" n="2:78r" xml:id="pb-2:78r"/>
+                <pb facs="#i342" n="2:78v" xml:id="pb-2:78v"/>
+                <pb facs="#i343" n="[iii] recto" xml:id="pb-iiirecto"/>
+                <pb facs="#i344" n="[iii] verso" xml:id="pb-iiiverso"/>
+                <pb facs="#i345" n="[iv] recto" xml:id="pb-ivrecto"/>
+                <pb facs="#i346" n="[iv] verso" xml:id="pb-ivverso"/>
+                <pb facs="#i347" n="[b] recto" xml:id="pb-brecto"/>
+                <pb facs="#i348" n="[b] verso" xml:id="pb-bverso"/>
+                <pb facs="#i349" n="right cover, inner" xml:id="pb-rightcover,inner"/>
+                <pb facs="#i350" n="right cover, outer" xml:id="pb-rightcover,outer"/>
+                <pb facs="#i351" n="spine" xml:id="pb-spine"/>
+            </div>
+        </body>
+    </text>
+
+</TEI>

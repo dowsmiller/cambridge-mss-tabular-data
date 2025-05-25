@@ -1,0 +1,1253 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, University Library, MS Dd.6.9</title>
+                <funder>Wellcome</funder>
+                <principal>James Freeman</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+                <availability default="false" status="restricted" xml:id="displayImageRights">
+                    <p part="N">Zooming image © Cambridge University Library, All rights reserved.</p>
+                </availability>
+                <availability default="false" status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability default="false" status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+            <availability xml:id="watermark" status="restricted"><licence>Cambridge University Library (CC BY-NC 4.0)</licence></availability></publicationStmt>
+            <sourceDesc>
+                <msDesc status="draft" xml:id="MS-DD-00006-00009" xml:lang="en">
+                    <msIdentifier>
+                        <institution>University of Cambridge</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Medieval Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, University Library, MS Dd.6.9</idno>
+                    </msIdentifier>
+                    <head>Collection of medical, cosmetic, culinary and household recipes</head>
+                    <msContents>
+                        <summary>
+                            <seg type="para"> This manuscript contains a large collection of medical recipes, including ones for poultices, powders,
+                                decoctions, oils, waters, syrups, balms, plasters, ointments, and pills, interspersed by cosmetic and household
+                                recipes. Among the latter are recipes for conserving nuts and fruits, for making spiced wine ('Hippocras'), and for
+                                making ink and pigments.</seg>
+                            <seg type="para">The headers of the medical recipes often feature words that have been written in Greek letters. At first,
+                                Greek letters were routinely used in rubrics in this manuscript, including medical terms for diseases and treatments,
+                                and for innocuous culinary recipes such as making white or red jelly or how to preserve walnuts. However, in later
+                                sections they appear to have been especially applied to taboo words: e.g. <q>Winchester geese</q> (for venereal
+                                disease, f. <locus from="48v" to="48v">48v</locus>), <q>swelling in the testicles</q> and <q>swelling of the yard</q>
+                                (i.e. in the penis, f. <locus from="68r" to="68r">68r</locus>), and <q>neather partes</q> (f. <locus from="71r" to="71r">71r</locus>). </seg>
+                            <seg type="para">While the manuscript has been dated to the 15th century by the <hi rend="italic">Catalogue of the
+                                    Manuscripts preserved in the Library of the University of Cambridge</hi>, 5 vols (Cambridge, 1856-1867) and
+                                Margaret Connolly, <hi rend="italic">Manuscripts in the University Library, Cambridge (Dd-Oo)</hi>, The Index of
+                                Middle English Prose, 17 (Cambridge: Brewer, 2009), references to sources such as <hi rend="italic">An antidotarie
+                                    chyrurgicall containing great varietie and choice of all sorts of medicines that commonly fal into the chyrurgions
+                                    use</hi> (London: Orwin, 1589) by the anatomist and surgeon John Banister (1533-1610) (see ff. <locus from="54v" to="55r">54v-55r</locus>) and <hi rend="italic">A right profitable booke for all disseases Called The pathway to
+                                    health</hi> (London: White, 1587) by the physician Peter Levens (fl. 1587) (see ff. <locus from="23r" to="24r">23r-24r</locus>) indicate that the manuscript was produced at the end of the sixteenth century with possible
+                                additions from the beginning of the seventeenth century. This much later date is also suggested by the contents of the
+                                recipes. Among these is a previously unnoticed selection of medical recipes (see ff. <locus from="67r" to="68r">67r-68r</locus>) that are attributed to King Henry VIII (r. 1509–1547) and his Royal physicians in <bibl subtype="external" type="MS"><ref target="http://searcharchives-beta.bl.uk/permalink/f/ja42l1/IAMS040-002113399">London, British Library, Sloane MS 1047</ref></bibl> (c. 1540-c. 1545). </seg>
+                            <seg type="para">Although the manuscript's compilers and intended users are unknown, the earliest owner of the manuscript
+                                appears to have been a 'John Troutbeck' who has signed his name in a 17th-century hand on f. <locus from="55v" to="55v">55v</locus>. This may have been <name role="fmo"><persName type="display">John Troutbeck (bap. 1612, d.
+                                        1683)</persName><persName type="standard">Troutbeck, John (bap. 1612, d. 1683)</persName></name>, a physician
+                                and chemist, who probably fought for Parliament during the civil wars, serving as a surgeon in Yorkshire (on
+                                Troutbeck's life, see <bibl>Peter Elmer, 'Troutbeck, John (bap. 1612, d. 1684)', in the <ref target="https://doi.org/10.1093/ref:odnb/109506">Oxford Dictionary of National Bibliography</ref> (2016)
+                                    [accessed 1 February 2023]</bibl>). A clue for this identification may be a draft letter by the same John
+                                Troutbeck who has signed his name addressing a 'Captain John Daniell'.</seg>
+                            <seg type="para">Moreover, it is possible that John Troubeck's father, Edmund Troutbeck (d. 1659) of Hope Hall, Bramham,
+                                Yorkshire, owned or accessed the manuscript as well. Edmund, who was known as a surgeon and physician in his lifetime,
+                                may have been responsible for signing various recipes in the manuscript with his initials 'E.T.', in order to indicate
+                                that he had used them: for example on f. <locus from="8r" to="8r">8r</locus>, <q>tried ET</q> and <q>good
+                                ET</q>.</seg>
+                            <seg type="para">Dr Clarck Drieshen<lb/> Project Cataloguer<lb/> Cambridge University Library</seg>
+                        </summary>
+                        <textLang mainLang="en" otherLangs="la">English and Latin</textLang>
+
+                        <msItem n="1">
+                            <locus from="6r" to="22v">6r-22v</locus>
+                            <title key="">Collection of medical, cosmetic, and culinary recipes</title>
+                            <textLang mainLang="en" otherLangs="la">English and Latin</textLang>
+                            <note>The collection begins with a recipe for a powder called <q>Alexipharmacon</q>.</note>
+                            <note>The collection mainly included medical recipes but there are also a few culinary recipes for conserving nuts and
+                                fruits and making spiced wine called <q>Hippocras</q> (f. <locus from="19r" to="19r">19r</locus>).</note>
+                            <note>The collection contains one recipe with a reference to an unidentified physician: <q>aprovide G.L.</q> (f. <locus from="22v" to="22v">22v</locus>).</note>
+                        </msItem>
+                        <msItem n="2">
+                            <locus from="23r" to="24r">23r-24r</locus>
+                            <title key="">Recipes extraced out of <hi rend="italic">A right profitable booke for all disseases Called The pathway to
+                                    health</hi> (London: White, 1587)</title>
+                            <author key="person_v76663038">Peter Levens (fl. 1587)</author>
+                            <textLang mainLang="en">English</textLang>
+                            <rubric><locus from="23r" to="23r">23r</locus> Out of the Pathe waye to healthe</rubric>
+                        </msItem>
+                        <msItem n="3">
+                            <locus from="26r" to="33v">26r-33v</locus>
+                            <title key="">Collection of medical recipes</title>
+                            <textLang mainLang="en" otherLangs="la">English and Latin</textLang>
+                            <note>The collection contains various references to physicians or other medical practitioners: <q>Mr Andrews black
+                                    salve</q> (f. <locus facs="26r" to="26r">26r</locus>) and <q>Mr Andrew</q> (f. <locus from="26v" to="26v">26v</locus>) [not identified]; <q>Mr Frese his plaster</q> (f. <locus from="27r" to="27r">27r</locus>) and <q>Mr
+                                    freces his plaster</q> (f. <locus from="28v" to="28v">28v</locus>) [possibly James Frise/Friis, royal physician to
+                                Edward IV]; <q>Mistris Comes [? Gomez] hirr sweete water</q> (f. <locus from="31v" to="31v">31v</locus>) [not
+                                identified]; <q>Docter Steavnes [sic: Stevens] water</q> (f. <locus from="31v" to="31v">31v</locus>) [not
+                                identified but this recipe occurs in various sixteenth- and seventeenth-century medical manuscripts and printed books].</note>
+                        </msItem>
+                        <msItem n="4">
+                            <locus from="34r" to="34v">34r-34v</locus>
+                            <title key="">Syrups and waters for digesting phlegm</title>
+                            <textLang mainLang="en" otherLangs="la">English and Latin</textLang>
+                            <rubric><locus from="34r" to="34r">34r</locus> Tabula Secunda: Off Syrupes and Waters appropriat vnto euerye member to
+                                digeste flegme </rubric>
+                            <note>ff. 34r-37v have been copied by the same hand, and the items contained in them appear to belong together.</note>
+                        </msItem>
+                        <msItem n="5">
+                            <locus from="35r" to="35v">35r-35v</locus>
+                            <title key="">Syrups and waters for digesting choleric</title>
+                            <textLang mainLang="en" otherLangs="la">English and Latin</textLang>
+                            <rubric><locus from="35r" to="35r">35r</locus> Syrrupes and Waters appropriate vnto euery member to digeste Choler </rubric>
+                            <note>ff. 34r-37v have been copied by the same hand, and the items contained in them appear to belong together.</note>
+                        </msItem>
+                        <msItem n="6">
+                            <locus from="36r" to="36v">36r-36v</locus>
+                            <title key="">Liquids for purging humours</title>
+                            <textLang mainLang="en" otherLangs="la">English and Latin</textLang>
+                            <rubric><locus from="36r" to="36r">36r</locus> Off medicines purging in Liquide forme euerye eche humoure</rubric>
+                            <note>ff. 34r-37v have been copied by the same hand, and the items contained in them appear to belong together.</note>
+                        </msItem>
+                        <msItem n="7">
+                            <locus from="36v" to="37v">36v-37v</locus>
+                            <title key="">Pills for purging humours</title>
+                            <textLang mainLang="en" otherLangs="la">English and Latin</textLang>
+                            <rubric><locus from="36r" to="36r">36r</locus> Off purging medicines of solide substaunce, and made into forme of
+                                Pilles</rubric>
+                            <note>ff. 34r-37v have been copied by the same hand, and the items contained in them appear to belong together.</note>
+                        </msItem>
+                        <msItem n="8">
+                            <locus from="37v" to="38v">37v-38v</locus>
+                            <title key="">Collection of seven medical recipes</title>
+                            <textLang mainLang="en">English</textLang>
+                            <note>The collection includes a references to a physician: <q>John Woodes method in curinge ould ulcers</q> (f. <locus from="38r" to="38r">38r</locus>) [not identified].</note>
+                        </msItem>
+                        <msItem n="9">
+                            <locus from="39r" to="46v">39r-46v</locus>
+                            <title key="">Formulary for medical prescriptions</title>
+                            <textLang mainLang="en">English</textLang>
+                            <rubric><locus from="39r" to="39r">39r</locus> Dyuerse formes of prescribinge meanes of remedies</rubric>
+                            <note>Collection of medical recipes copied by a single hand, including pills ('tabullas' or 'morsellos') and dietary
+                            instructions.</note>
+                        </msItem>
+                        <msItem n="10">
+                            <locus from="43v" to="46v">43v-46v</locus>
+                            <title key="">Dietary</title>
+                            <textLang mainLang="en">English</textLang>
+                            <rubric><locus from="43v" to="43v">43v</locus> Off such as engender good and evill Juice and proruith good and evill digestive</rubric>
+                            <incipit><locus from="43v" to="43v">43v</locus> Theise meates followinge are easie of digestive and make good Juice</incipit>
+                            <explicit><locus from="46v" to="46v">46v</locus> meates of evill digestione, sheep, in the day, and after supper, for, the space, of two howers, Travill of mynde, speaciallye after dynner as musinge readinge wryhtinge and such like</explicit>
+                        </msItem>
+                        <msItem n="11">
+                            <locus from="47r" to="54r">47r-54r</locus>
+                            <title key="">Collection of medical recipes</title>
+                            <textLang mainLang="en">English</textLang>
+                            <note>The collection includes <q>Oyle of Exeter</q> and a references to a physicians: <q>John Brinser agaynst the same</q>
+                            (f. <locus from="51r" to="51r">51r</locus>) [not identified].</note>
+                        </msItem>
+                        <msItem n="12">
+                            <locus from="54v" to="55r">54v-55r</locus>
+                            <title key="">Four recipes extracted from <hi rend="italic">An antidotarie chyrurgicall containing great varietie and
+                                    choice of all sorts of medicines that commonly fal into the chyrurgions use</hi> (London: Orwin, 1589)</title>
+                            <author key="person_v76663038">John Banister</author>
+                            <textLang mainLang="en" otherLangs="la">English and Latin</textLang>
+                            <note>With three additional recipes for poultices and powders in a differen hand that do not originate from Banister's
+                                work.</note>
+                        </msItem>
+                        <msItem n="13">
+                            <locus from="55v" to="55v">55r</locus>
+                            <title key="">Draft letters and pen trails</title>
+                            <textLang mainLang="en">English</textLang>
+                            <note>Draft letters addressed to <q>John Daniell Captain</q> and <q>To his very loving son [?George] Elli[s] in
+                                    Edenbourow</q></note>
+                            <note>Added by a 17th-century owner, probably John Troutbeck, who has signed his name three times on the page.</note>
+                        </msItem>
+                        <msItem n="14">
+                            <locus from="56r" to="56r">56r</locus>
+                            <title key="">Notes based on a work on chirurgy by Hieronymus Brunschwig (c. 1450-c. 1512)</title>
+                            <author key="person_v66670059">Hieronymus Brunschwig</author>
+                            <textLang mainLang="en">English</textLang>
+                            <rubric><locus from="56r" to="56r">56r</locus> Principale notes gathered in redinge ouer Jherome of Brunswike</rubric>
+                            <incipit><locus from="56r" to="56r">56r</locus> Imprimis never attempte to consolidate ane wounde befor all tofalles or
+                                symptomates be removede</incipit>
+                            <explicit><locus from="56r" to="56r">56r</locus> ffor a splent of a horse legg [...] Take euphorbium and
+                                cantharides</explicit>
+                        </msItem>
+                        <msItem n="15">
+                            <locus from="57r" to="57v">57r-57v</locus>
+                            <title key="">List of medical equipment required for treating penetration and gunshot wounds, contusions, and carrying out
+                                amputations</title>
+                            <textLang mainLang="en">English</textLang>
+                            <rubric><locus from="57r" to="57r">57r</locus> The names of suche thinges as oughte to be had in redines abought curinge,
+                                woundes made by sharpe weapones, blunte called contuced woundes, and for woundes made with gunne shote yea and for the
+                                takinge of deplorate members</rubric>
+                            <incipit><locus from="57r" to="57r">57r</locus> flaxe: Imprimis flax for smale woundes to applie</incipit>
+                            <explicit><locus from="57v" to="57v">57v</locus> lynte to applye uppon reciptes in woundes</explicit>
+                        </msItem>
+                        <msItem n="16">
+                            <locus from="58v" to="59r">58v-59r</locus>
+                            <title key="">Medical treatment for ruptures</title>
+                            <textLang mainLang="en">English</textLang>
+                            <rubric><locus from="58v" to="58v">58v</locus> The order of dressinge Ruptures </rubric>
+                            <incipit><locus from="58v" to="58v">58v</locus> In the firste three dayse or vntill the wounde be digested or yeldethe
+                                matter, Take of our Emplastrum Digestivum</incipit>
+                            <explicit><locus from="59r" to="59r">59r</locus> warme weather greatlye profiteth to the digestione of the wound and for
+                                mittigatinge of sornes and payne and inflammationes etcaetera Aphoris lib 5 Apho. 22</explicit>
+                        </msItem>
+                        <msItem n="17">
+                            <locus from="60r" to="60v">60r-60v</locus>
+                            <title key="">Table with dietary advice and treatments for a rupture</title>
+                            <textLang mainLang="en" otherLangs="la">English and Latin</textLang>
+                            <rubric><locus from="60r" to="60r">60r</locus> The core of the rupture</rubric>
+                            <incipit><locus from="60r" to="60r">60r</locus> Diete: Mutton of a yeare olde</incipit>
+                            <explicit><locus from="60v" to="60v">60v</locus> Oft of the Cerote: Spreade it vppon leather, and tye it toe with a trusse
+                                chaunginge yt euerye weeke, Thuse procede every weecke, vntill fortie dayes be passsede, countinge the dayes afore
+                                sayde</explicit>
+                        </msItem>
+                        <msItem n="18">
+                            <locus from="61r" to="61v">61r-61v</locus>
+                            <title key="">Medical recipe for rupture</title>
+                            <author key="">Richard Burrell</author>
+                            <textLang mainLang="en">English</textLang>
+                            <rubric><locus from="61r" to="61r">61r</locus> ffor Rupture</rubric>
+                            <incipit><locus from="61r" to="61r">61r</locus> ffirst laye the opartye [sic] on his backe in his bedd , and reduce his
+                                rupture</incipit>
+                            <explicit><locus from="61v" to="61v">61v</locus> he muste lye vppon his backe xxj or thirtye dayes for this meate
+                                ingendereth a humoure moste agreable to the panicles and partlye of his owne substaunce</explicit>
+                            <finalRubric><locus from="61v" to="61v">61v</locus> Richard Burrell Magister in Chyrurgia</finalRubric>
+                            <note>Richard Burrell has not been identified.</note>
+                        </msItem>
+                        <msItem n="19">
+                            <locus from="62r" to="73r">62r-73r</locus>
+                            <title key="">Collection of medical recipes</title>
+                            <textLang mainLang="en" otherLangs="la">English and Latin</textLang>
+                            <note><p>The collection contains references to various physicians or other medical practitioners: <q>Christopher Grayes
+                                        his plaster</q> (f. <locus from="62r" to="62r">62r</locus>) [not identified]; <q>Mr Nicholas plaster</q> (f.
+                                        <locus from="62r" to="62r">62r</locus>) and <q>Nicholas sweete oyntmente for mal morb.</q> (f. <locus from="64v" to="64v">64v</locus> [not identified] <q>Jo. Bru.</q> (f. <locus from="66r" to="66r">66r</locus>)
+                                    [not identified].</p></note>
+                            <note><p>The collection contains a cataplasm that is said to have been devised for King Henry VIII: <q>A Cataplasme or
+                                        Pultas devised for the kinges Maiestie to mitigate payne and agaynste inflamationes and to resolue hardnes</q>
+                                    (f. <locus from="67r" to="67r">67r</locus>). The very same recipe occurs in <bibl subtype="external" type="MS"><ref target="http://searcharchives-beta.bl.uk/permalink/f/ja42l1/IAMS040-002113399">London, British
+                                            Library, Sloane MS 1047</ref></bibl>, ff. 89v-90r, where it is attributed to Henry VIII himself, who is
+                                    said to have devised it at Hampton Court. The untitled cataplasm on ff. <locus from="67r" to="67v">67r-67v</locus>
+                                    also features in Sloane MS 1047, ff. 90r-90v (with a slight variation at the end), where it is said to have been
+                                    devised by Henry VIII at St James's Palace. Another untitled cataplasm on ff. <locus from="67v" to="68r">67v-68r</locus> can be found in Sloane MS 1047, f. 91r, where it is said to have been devised by William
+                                    Butts (c. 1486–1545), one of Henry VIII's physicians.</p>
+                            </note>
+                        </msItem>
+                        <msItem n="20">
+                            <locus from="73r" to="74r">73r-74r</locus>
+                            <title key="">Treatments for burning heat and putrefaction</title>
+                            <textLang mainLang="en">English</textLang>
+                            <rubric><locus from="73r" to="73r">73r</locus> Receiptes to allaye the Burninge and raginge heate of choler in simple
+                                distemperat[um] and to resiste contagis or putrifaction in feuers, pestelente and other putrefacte feuers and affectes
+                                or deseases </rubric>
+                            <incipit><locus from="73r" to="73r">73r</locus> In vehemente thirst cominge of a vehemente distemper minister good springe
+                                water beinge firste boyled with a peece of leavened breade in it</incipit>
+                            <explicit><locus from="74r" to="74r">74r</locus> Recipe: honye a pynte, water a pynte, boyle them easelie on the fyer
+                                together vntill it be cleane from waxe and such other, and then boyle it to the highte of honye or more be it / yf the
+                                partie delighte</explicit>
+                        </msItem>
+                        <msItem n="21">
+                            <locus from="74v" to="76r">74v-76r</locus>
+                            <title key="">Collection of medical recipes</title>
+                            <textLang mainLang="en" otherLangs="la">English and Latin</textLang>
+                        </msItem>
+                        <msItem n="22">
+                            <locus from="76r" to="76v">76r-76v</locus>
+                            <title key="">Names and explanations of diseases</title>
+                            <textLang mainLang="en" otherLangs="la">Latin medical terms with explanations in English</textLang>
+                            <rubric><locus from="76r" to="76r">76r</locus> The names of diseases </rubric>
+                            <incipit><locus from="76r" to="76r">76r</locus> Allopice is the falling of heare, it is also a manner of leperye viz heate
+                                in the brewes and bearde</incipit>
+                            <explicit><locus from="76v" to="76v">76v</locus> Dialetike passione is when one pisseth offten and of greate quantitie and
+                                as sone as he hath droncke he pisseth incontinente, and that cometh of heate of the raynes etcaetera</explicit>
+                        </msItem>
+                        <msItem n="23">
+                            <locus from="77r" to="77r">77r</locus>
+                            <title key="">Fragment of a diagnostic text</title>
+                            <textLang mainLang="en">English</textLang>
+                            <incipit defective="true"><locus from="77r" to="77r">77r</locus> principalle memberes, or other interioure partes (for if
+                                it be fluxible it will redilie yelde vnto medicine the other the contrarie)</incipit>
+                            <explicit><locus from="77r" to="77r">77r</locus> 24: and whether he hath vsed much purginge or bledinge or bothe or little
+                                or none</explicit>
+                            <note>A checklist with points for a physician to consider when examining patients: it begins imperfectly mid-sentence in
+                                point 17 and continues until point 24.</note>
+                        </msItem>
+                        <msItem n="24">
+                            <locus from="77v" to="79r">77v-79r</locus>
+                            <title key="">Medical recipes</title>
+                            <textLang mainLang="en" otherLangs="la">English and Latin</textLang>
+                        </msItem>
+                        <msItem n="25">
+                            <locus from="79v" to="79v">79v</locus>
+                            <title key="">A recipe</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <note>A list of ingredients for a recipe with an unspecified purpose; it appears to have been added by a later
+                                (17th-century) hand.</note>
+                        </msItem>
+                        <msItem n="26">
+                            <locus from="80r" to="80r">80r</locus>
+                            <title key="">Household recipes for washing</title>
+                            <textLang mainLang="en">English</textLang>
+                            <rubric><locus from="80r" to="80r">80r</locus> An excellente receipte to make wash[ing ther]with</rubric>
+                            <note>Three recipes for washing.</note>
+                        </msItem>
+                        <msItem n="27">
+                            <locus from="80v" to="80v">80v</locus>
+                            <title key="">Recipes for making ink and pigments</title>
+                            <textLang mainLang="en">English</textLang>
+                            <note>The recipes are for <q>Redd Incke the true Coppye</q>, <q>Blacke Incke a good Coppie</q>, <q>A verye good grene</q>
+                            (and another recipe for the same), <q>An Emeraulde greene</q>, and <q>To make colour lyke gould</q>.</note>
+                        </msItem>
+                        <msItem n="28">
+                            <locus from="81r" to="83v">83v</locus>
+                            <title key="">Treatment to cure gunshot wounds</title>
+                            <textLang mainLang="en">English</textLang>
+                            <rubric><locus from="81r" to="81r">81r</locus> A Shorte methode or to cure woundes made with gunshote</rubric>
+                            <incipit><locus from="81r" to="81r">81r</locus> Understande all woundes made with gunshott are contuside and are to be
+                                cured as contuside wowndes</incipit>
+                            <explicit><locus from="83v" to="83v">83v</locus> after gyue a draught of aqua vite and dryncke mixede or such other to
+                                comforte the stomake agayne</explicit>
+                            <note>ff. 81r-85v have been copied by the same hand.</note>
+                        </msItem>
+                        <msItem n="29">
+                            <locus from="83v" to="85r">83v-85r</locus>
+                            <title key="">Treatment to cure contused wounds not caused by gunshot</title>
+                            <textLang mainLang="en">English</textLang>
+                            <rubric><locus from="83v" to="83v">83v</locus> The Cure of other woundes contusid or nate made with guneshote</rubric>
+                            <incipit><locus from="83v" to="83v">83v</locus> Understaunde yt that smale woundes made with cuttes and no substaunce
+                                joyne the lippes of the wounde together the bloude beinge staunchede</incipit>
+                            <explicit><locus from="85r" to="85r">85r</locus> In steade of plantayne water yow maye take of the decoction of the mouthe
+                                water or such other</explicit>
+                            <note>ff. 81r-85v have been copied by the same hand.</note>
+                        </msItem>
+                        <msItem n="30">
+                            <locus from="85v" to="85v">85v</locus>
+                            <title key="">Treatment for pulled sinews</title>
+                            <textLang mainLang="en">English</textLang>
+                            <rubric><locus from="85v" to="85v">85v</locus>The Euer of wrestinges of sinewes or joyntes in anye parte of the bodye,
+                                especially in the legges</rubric>
+                            <incipit><locus from="85v" to="85v">85v</locus> ffor the same cure presentlye applye this plaster: Recipe newe hogges
+                                dounge [ounce] iij, the yolkes and whites of eges in number iij, good viniger [ounce] ij , the fyne flower of barlye
+                                and beanes ana [ounce] ij, j Bole [dram] ij to alter the colloure mixe altogether and applye it warme</incipit>
+                            <explicit><locus from="85v" to="85v">85v</locus> Recipe: the meales of fenogrecke, lynsede, and murtilles ana quantum
+                                satis Cromes of rye bread boyle them in water vntill it be thicke then add of viniger quantum satis and laste add of
+                                the powder of bole to colloure it well fiat Emplastum</explicit>
+                            <finalRubric><locus from="85v" to="85v">85v</locus> Finis</finalRubric>
+                            <note>ff. 81r-85v have been copied by the same hand.</note>
+                        </msItem>
+                        <msItem n="31">
+                            <locus from="86r" to="86v">86r</locus>
+                            <title key="">Charm (?)</title>
+                            <textLang mainLang="en" otherLangs="la">English and Latin</textLang>
+                            <note>A partially faded text, largely written in Greek letters, referring to 'parchment' and apparently invoking holy
+                                names, ending: 'the power of the almightie and by his unspekable names as you shall answer at the latter day'.</note>
+                        </msItem>
+                        <msItem n="32">
+                            <locus from="86r" to="86r">86r</locus>
+                            <title key="">Medical poem</title>
+                            <textLang mainLang="en">English</textLang>
+                            <incipit><locus from="81r" to="81r">81r</locus> Wit from the minde / Speache from the tounge / Frome gale proceadith Ire /
+                                From milte is causide laughter / From the lyuer [ludes desier]</incipit>
+                            <note>Full transcription.</note>
+                        </msItem>
+                        <msItem n="32">
+                            <locus from="86r" to="86r">86r</locus>
+                            <title key="">Three medical recipes</title>
+                            <textLang mainLang="en" otherLangs="la">English and Latin</textLang>
+                            <note>The first recipe is entitled: <q>ffor the scratches of a horsse foote</q>.</note>
+                        </msItem>
+                        <msItem n="33">
+                            <locus from="86v" to="86v">86v</locus>
+                            <title key="">Extracts from <hi rend="italic">A Floorish vpon Fancie</hi> (London: Richard Jhones, 1577 and 1582)</title>
+                            <author key="person_v49305446">Nicholas Breton</author>
+                            <textLang mainLang="en">English</textLang>
+                            <incipit><locus from="86v" to="86v">86v</locus> They liue and lacke, they lack and yet they haue  / [And hauing] yet they lacke the thing they craue</incipit>
+                            <explicit><locus from="86v" to="86v">86v</locus> An answere: [But as I judge] madam quoth I it seames appolloes sicknes sure</explicit>
+                            <note>The page contains a couplet from Breton’s <hi rend="italic">A dolorous Discourse, of one that was bewitched with love</hi>; stanzas from <hi rend="italic">A Letter sent by a Gentlewoman, in verse, to her Husband, being ouer sea</hi>,
+                            the poem <hi rend="italic">Two or three prety toyes given to a Gentilman, to set about his Counting-house</hi> (complete), and stanzas from <hi>A pretty toye, written vpon a Ladyes propounding of a Riddle to her friende</hi>.
+                            </note>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <p>
+                            <secFol>
+                                <locus from="5r" to="5r">5r</locus> tan </secFol>
+                            <secFol>
+                                <locus from="6r" to="6r">6r</locus> The makinge </secFol>
+                            <secFol>
+                                <locus from="7r" to="7r">7r</locus> Another decoct </secFol>
+                        </p>
+                        <objectDesc form="codex">
+                            <supportDesc material="chart">
+                                <support>
+                                    <material>Paper, folded in <measure type="folding">quarto</measure>. <watermark>
+                                            <seg type="para">Folios <locus from="1r" to="86v">1r-86v</locus>: <term type="watermarkMotif">Pot</term>
+                                                    (<dimensions type="watermark" unit="mm">
+                                                    <height quantity="60">60</height>
+                                                    <width quantity="20">20</width>
+                                                </dimensions>) <note type="watermarkPosition">in the centre of the folio</note>, comparable to
+                                                    <note>Heawood 3548</note> (but in this case inscribed with the initials 'P V') This example is
+                                                dated to <date calendar="gregorian" notAfter="1570" notBefore="1570">1570</date>.</seg>
+                                        </watermark></material>
+                                </support>
+                                <extent>
+                                    <seg type="object">Codex, comprising 80 leaves in 8 paper quires, including two torn leaves (ff. 1, 5) and
+                                        excluding five paper stubs (ff. 2, 3, 4, 25, 78): </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="80" type="leaf">80</measure> leaves. </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height quantity="200">200</height>
+                                            <width quantity="150">150</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+                                <foliation notAfter="1970" notBefore="1947">
+                                    <p>Mid-20th-century foliation:</p>
+                                    <p>1, [1a]-[1b], 5-24, [24a], 26-77, [77a], 79-86</p>
+                                    <note>Numbering in pencil in the upper right-hand corner of the rectos, perhaps by <name key="person_v29141885"><persName type="display">H.L. Pink</persName><persName type="standard">Pink, H.
+                                        L.</persName></name>.</note>
+                                    <p>The torn leaf that has been foliated as '5' is actually the fourth leaf in the quire.</p>
+                                    <p>ff. [1a], [1b], [24a], and [77a] are paper stubs of missing leaves.</p>
+                                    <note>Folio numbers 2, 3, 4, 25, and 78 assigned to leaves no longer present in the volume (as per historic
+                                        foliation practice at Cambridge University Library).</note>
+                                </foliation>
+                                <collation mainStructures="12 10">
+                                    <p>
+                                        <list>
+                                            <item>Quire 1<hi rend="superscript">10-3</hi> (ff. <locus from="1r" to="10v">1r-10v</locus>: 2nd, 3rd, and
+                                                5th leaves leaves missing)</item>
+                                            <item>Quire 2<hi rend="superscript">12</hi> (ff. <locus from="11r" to="22v">11r-22v</locus>)</item>
+                                            <item>Quire 3<hi rend="superscript">10-1</hi> (ff. <locus from="23r" to="32v">23r-32v</locus>: 3rd leaf
+                                                missing)</item>
+                                            <item>Quire 4<hi rend="superscript">12-1 or 10+1</hi> (ff. <locus from="33r" to="43v">33r-43v</locus>:
+                                                either a sexternion with the 2nd leaf missing or a quinternion with an additional single leaf after
+                                                the 10th leaf)</item>
+                                            <item>Quire 5<hi rend="superscript">12</hi> (ff. <locus from="44r" to="55r">44r-55r</locus>)</item>
+                                            <item>Quire 6<hi rend="superscript">10</hi> (ff. <locus from="56r" to="65v">56r-65v</locus>)</item>
+                                            <item>Quire 7<hi rend="superscript">12</hi> (ff. <locus from="66r" to="77v">66r-77v</locus>)</item>
+                                            <item>Quire 8<hi rend="superscript">10-2 or 8-1+1</hi> (ff. <locus from="78r" to="86v">78r-86v</locus>:
+                                                either a quinternion with the 1st and 2nd leaves missing or a quaternion with the first leaf missing
+                                                and an additional single leaf after the 8th leaf) </item>
+                                        </list>
+                                    </p>
+                                    <formula>1<hi rend="superscript">10-3</hi> (2, 3, 5 excised) 2<hi rend="superscript">12</hi> 3<hi rend="superscript">10-1</hi> (3 excised) 4<hi rend="superscript">12-1/10+1</hi> (2 excised or 11 added)
+                                            5<hi rend="superscript">12</hi> 6<hi rend="superscript">10</hi> 7<hi rend="superscript">12</hi> 8<hi rend="superscript">10-1/8-1+1</hi> (1 excised, 2 excised or 9 added) </formula>
+                                    <catchwords><seg type="para">Catchwords in brown ink in the right corner of lower margins both at the end of
+                                            quires and inside quires</seg></catchwords>
+                                </collation>
+                                <condition> Eight loose quires with conservation binding: ff. 1, 5 are torn leaves; ff. 2, 3, 4, 25, and 78 are paper
+                                    stubs often with conservation paper attached. Torn corners and inner margins (at the folds) have been repaired
+                                    with blank conservation paper. Water damage throughout the manuscript, affecting especially outer margins and
+                                    corners. Possible ink stains in the final quire. The texts on f. 1v and f. 86v have become faded and are now
+                                    difficult to read. </condition>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="1" rulingMedium="none" writtenLines="29 36">
+                                    <dimensions type="written" unit="mm">
+                                        <height max="195" min="185">185-195</height>
+                                        <width quantity="130">130</width>
+                                    </dimensions>
+                                    <seg type="ruling"> No ruling. Single columns. 29-36 lines to the page, written above top line. </seg>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote script="Cursiva">
+                                <p>Copied by various hands in <term type="script">Secretary</term> scripts. </p>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote>The manuscript does not contain any significant forms of decoration.</decoNote>
+                        </decoDesc>
+                        <bindingDesc>
+                            <binding when="2024">
+                                <p>Until 2022, the manuscript had been bound together with CUL MSS Dd.6.8, Dd.6.10, and Dd.6.11, in a brown half
+                                leather binding with paper sides. The manuscript was disbound at the time of photography and cataloguing (2023)
+                                but was bound in a conservation binding in 2024.</p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origDate calendar="Gregorian" cert="high" notAfter="1605" notBefore="1585">Copied between c. 1590 and c. 1600 </origDate>
+                            <origPlace key="place_g7002445">England. </origPlace>
+                        </origin>
+                        <provenance notAfter="1683" notBefore="1612"><p>
+                                <name role="fmo"><persName type="display">John Troutbeck, bap. 1612, d. 1683</persName>
+                                    <persName type="standard">Troutbeck, John (bap. 1612, d. 1683)</persName></name>, physician and chemist: perhaps
+                                owned the manuscript and signed his name on f. <locus from="55v" to="55v">55v</locus>: 'John Troutbeck' (2x) and 'John
+                                Trout'. If so, the 'E.T.' who has marked recipes with their initials throughout the manuscript may be John's father:
+                                Edmund Troutbeck, who was known as a surgeon and doctor.</p>
+                        </provenance>
+                        <acquisition notAfter="" notBefore="">The manuscript has not been identified in the early catalogues of Cambridge University
+                            Library and the date of its accession is not known. </acquisition>
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source>This catalogue entry draws on <bibl>Margaret Connolly, <hi rend="italic">Manuscripts in the University
+                                            Library, Cambridge (Dd-Oo) </hi>, The Index of Middle English Prose, 17 (Cambridge: Brewer, 2009)</bibl>
+                                </source>
+                            </recordHist>
+                            <availability>
+                                <p>Entry to read in the Library is permitted only on presentation of a valid reader's card. For information on
+                                    eligibility and admissions procedures, see <ref target="https://www.lib.cam.ac.uk/using-library/joining-library">Joining the Library</ref>). For further information on the availability of the manuscript, please contact the
+                                        <ref target="mss@lib.cam.ac.uk">Manuscripts Reading Room</ref>.</p>
+                            </availability>
+                        </adminInfo>
+
+                        <listBibl default="false" type="WRAPPER">
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/XAUWNTPB" type="journalArticle" xml:id="Robbins1970">
+                                <analytic>
+                                    <title level="a">Medical Manuscripts in Middle English</title>
+                                    <idno type="DOI">10.2307/2853500</idno>
+                                    <author><forename>Rossell Hope</forename><surname>Robbins</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Speculum</title>
+                                    <imprint>
+                                        <biblScope unit="volume">45</biblScope>
+                                        <biblScope unit="issue">3</biblScope>
+                                        <biblScope unit="page">393-415</biblScope>
+                                        <date>1970</date>
+                                        <note type="accessed">2014-04-15T11:50:20Z</note>
+                                        <note type="url">http://www.jstor.org/stable/2853500</note>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 403 n. 27. </note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/RV9PIVP6" type="book" xml:id="Connolly2009">
+                                <monogr>
+                                    <title level="m">Manuscripts in the University Library, Cambridge (Dd-Oo)</title>
+                                    <author><forename>Margaret</forename><surname>Connolly</surname></author>
+                                    <imprint>
+                                        <pubPlace>Woodbridge</pubPlace>
+                                        <publisher>D.S. Brewer</publisher>
+                                        <date>2009</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">Index of Middle English prose</title><biblScope unit="volume">19</biblScope></series>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass default="false">
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85083064">Medicine</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change status="draft" when="2022-01-31">
+                <persName>Dr Clarck Drieshen, Project Cataloguer, Cambridge University Library</persName>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic decls="#document-thumbnail" url="MS-DD-00006-00009-000-00001"/>
+        <surface n="1r" xml:id="page-surface-1">
+            <graphic decls="#downloadImageRights #download" height="5938px" rend="portrait" url="MS-DD-00006-00009-000-00001" width="2317px"/>
+        </surface>
+        <surface n="1v" xml:id="page-surface-2">
+            <graphic decls="#downloadImageRights #download" height="5898px" rend="portrait" url="MS-DD-00006-00009-000-00002" width="2266px"/>
+        </surface>
+        <surface n="[1a] recto" xml:id="page-surface-3">
+            <graphic decls="#downloadImageRights #download" height="5795px" rend="portrait" url="MS-DD-00006-00009-000-00003" width="1865px"/>
+        </surface>
+        <surface n="[1a] verso" xml:id="page-surface-4">
+            <graphic decls="#downloadImageRights #download" height="5795px" rend="portrait" url="MS-DD-00006-00009-000-00004" width="2018px"/>
+        </surface>
+        <surface n="[1b] recto" xml:id="page-surface-5">
+            <graphic decls="#downloadImageRights #download" height="5972px" rend="portrait" url="MS-DD-00006-00009-000-00005" width="1923px"/>
+        </surface>
+        <surface n="[1b] verso" xml:id="page-surface-6">
+            <graphic decls="#downloadImageRights #download" height="5882px" rend="portrait" url="MS-DD-00006-00009-000-00006" width="2030px"/>
+        </surface>
+        <surface n="5r" xml:id="page-surface-7">
+            <graphic decls="#downloadImageRights #download" height="5932px" rend="portrait" url="MS-DD-00006-00009-000-00007" width="1916px"/>
+        </surface>
+        <surface n="5v" xml:id="page-surface-8">
+            <graphic decls="#downloadImageRights #download" height="5899px" rend="portrait" url="MS-DD-00006-00009-000-00008" width="1965px"/>
+        </surface>
+        <surface n="6r" xml:id="page-surface-9">
+            <graphic decls="#downloadImageRights #download" height="5864px" rend="portrait" url="MS-DD-00006-00009-000-00009" width="4283px"/>
+        </surface>
+        <surface n="6v" xml:id="page-surface-10">
+            <graphic decls="#downloadImageRights #download" height="5879px" rend="portrait" url="MS-DD-00006-00009-000-00010" width="4283px"/>
+        </surface>
+        <surface n="7r" xml:id="page-surface-11">
+            <graphic decls="#downloadImageRights #download" height="5922px" rend="portrait" url="MS-DD-00006-00009-000-00011" width="4079px"/>
+        </surface>
+        <surface n="7v" xml:id="page-surface-12">
+            <graphic decls="#downloadImageRights #download" height="6005px" rend="portrait" url="MS-DD-00006-00009-000-00012" width="4163px"/>
+        </surface>
+        <surface n="8r" xml:id="page-surface-13">
+            <graphic decls="#downloadImageRights #download" height="5992px" rend="portrait" url="MS-DD-00006-00009-000-00013" width="4192px"/>
+        </surface>
+        <surface n="8v" xml:id="page-surface-14">
+            <graphic decls="#downloadImageRights #download" height="5992px" rend="portrait" url="MS-DD-00006-00009-000-00014" width="4255px"/>
+        </surface>
+        <surface n="9r" xml:id="page-surface-15">
+            <graphic decls="#downloadImageRights #download" height="5902px" rend="portrait" url="MS-DD-00006-00009-000-00015" width="4263px"/>
+        </surface>
+        <surface n="9v" xml:id="page-surface-16">
+            <graphic decls="#downloadImageRights #download" height="5922px" rend="portrait" url="MS-DD-00006-00009-000-00016" width="4263px"/>
+        </surface>
+        <surface n="10r" xml:id="page-surface-17">
+            <graphic decls="#downloadImageRights #download" height="5974px" rend="portrait" url="MS-DD-00006-00009-000-00017" width="4211px"/>
+        </surface>
+        <surface n="10v" xml:id="page-surface-18">
+            <graphic decls="#downloadImageRights #download" height="5974px" rend="portrait" url="MS-DD-00006-00009-000-00018" width="4211px"/>
+        </surface>
+        <surface n="11r" xml:id="page-surface-19">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00019" width="4260px"/>
+        </surface>
+        <surface n="11v" xml:id="page-surface-20">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00020" width="4198px"/>
+        </surface>
+        <surface n="12r" xml:id="page-surface-21">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00021" width="4260px"/>
+        </surface>
+        <surface n="12v" xml:id="page-surface-22">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00022" width="4260px"/>
+        </surface>
+        <surface n="13r" xml:id="page-surface-23">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00023" width="4260px"/>
+        </surface>
+        <surface n="13v" xml:id="page-surface-24">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00024" width="4260px"/>
+        </surface>
+        <surface n="14r" xml:id="page-surface-25">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00025" width="4260px"/>
+        </surface>
+        <surface n="14v" xml:id="page-surface-26">
+            <graphic decls="#downloadImageRights #download" height="5996px" rend="portrait" url="MS-DD-00006-00009-000-00026" width="4260px"/>
+        </surface>
+        <surface n="15r" xml:id="page-surface-27">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00027" width="4260px"/>
+        </surface>
+        <surface n="15v" xml:id="page-surface-28">
+            <graphic decls="#downloadImageRights #download" height="5950px" rend="portrait" url="MS-DD-00006-00009-000-00028" width="4260px"/>
+        </surface>
+        <surface n="16r" xml:id="page-surface-29">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00029" width="4260px"/>
+        </surface>
+        <surface n="16v" xml:id="page-surface-30">
+            <graphic decls="#downloadImageRights #download" height="5950px" rend="portrait" url="MS-DD-00006-00009-000-00030" width="4260px"/>
+        </surface>
+        <surface n="17r" xml:id="page-surface-31">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00031" width="4260px"/>
+        </surface>
+        <surface n="17v" xml:id="page-surface-32">
+            <graphic decls="#downloadImageRights #download" height="5950px" rend="portrait" url="MS-DD-00006-00009-000-00032" width="4260px"/>
+        </surface>
+        <surface n="18r" xml:id="page-surface-33">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00033" width="4260px"/>
+        </surface>
+        <surface n="18v" xml:id="page-surface-34">
+            <graphic decls="#downloadImageRights #download" height="5950px" rend="portrait" url="MS-DD-00006-00009-000-00034" width="4260px"/>
+        </surface>
+        <surface n="19r" xml:id="page-surface-35">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00035" width="4260px"/>
+        </surface>
+        <surface n="19v" xml:id="page-surface-36">
+            <graphic decls="#downloadImageRights #download" height="5993px" rend="portrait" url="MS-DD-00006-00009-000-00036" width="4260px"/>
+        </surface>
+        <surface n="20r" xml:id="page-surface-37">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00037" width="4260px"/>
+        </surface>
+        <surface n="20v" xml:id="page-surface-38">
+            <graphic decls="#downloadImageRights #download" height="5993px" rend="portrait" url="MS-DD-00006-00009-000-00038" width="4260px"/>
+        </surface>
+        <surface n="21r" xml:id="page-surface-39">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00039" width="4260px"/>
+        </surface>
+        <surface n="21v" xml:id="page-surface-40">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00040" width="4260px"/>
+        </surface>
+        <surface n="22r" xml:id="page-surface-41">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00041" width="4260px"/>
+        </surface>
+        <surface n="22v" xml:id="page-surface-42">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00042" width="4260px"/>
+        </surface>
+        <surface n="23r" xml:id="page-surface-43">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00043" width="4260px"/>
+        </surface>
+        <surface n="23v" xml:id="page-surface-44">
+            <graphic decls="#downloadImageRights #download" height="5971px" rend="portrait" url="MS-DD-00006-00009-000-00044" width="4201px"/>
+        </surface>
+        <surface n="24r" xml:id="page-surface-45">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00045" width="4260px"/>
+        </surface>
+        <surface n="24v" xml:id="page-surface-46">
+            <graphic decls="#downloadImageRights #download" height="5971px" rend="portrait" url="MS-DD-00006-00009-000-00046" width="4201px"/>
+        </surface>
+        <surface n="[24a] recto" xml:id="page-surface-47">
+            <graphic decls="#downloadImageRights #download" height="5823px" rend="portrait" url="MS-DD-00006-00009-000-00047" width="2158px"/>
+        </surface>
+        <surface n="[24a] verso" xml:id="page-surface-48">
+            <graphic decls="#downloadImageRights #download" height="5823px" rend="portrait" url="MS-DD-00006-00009-000-00048" width="2158px"/>
+        </surface>
+        <surface n="26r" xml:id="page-surface-49">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00049" width="4260px"/>
+        </surface>
+        <surface n="26v" xml:id="page-surface-50">
+            <graphic decls="#downloadImageRights #download" height="5971px" rend="portrait" url="MS-DD-00006-00009-000-00050" width="4201px"/>
+        </surface>
+        <surface n="27r" xml:id="page-surface-51">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00051" width="4260px"/>
+        </surface>
+        <surface n="27v" xml:id="page-surface-52">
+            <graphic decls="#downloadImageRights #download" height="5971px" rend="portrait" url="MS-DD-00006-00009-000-00052" width="4201px"/>
+        </surface>
+        <surface n="28r" xml:id="page-surface-53">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00053" width="4260px"/>
+        </surface>
+        <surface n="28v" xml:id="page-surface-54">
+            <graphic decls="#downloadImageRights #download" height="5971px" rend="portrait" url="MS-DD-00006-00009-000-00054" width="4201px"/>
+        </surface>
+        <surface n="29r" xml:id="page-surface-55">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00055" width="4260px"/>
+        </surface>
+        <surface n="29v" xml:id="page-surface-56">
+            <graphic decls="#downloadImageRights #download" height="5971px" rend="portrait" url="MS-DD-00006-00009-000-00056" width="4201px"/>
+        </surface>
+        <surface n="30r" xml:id="page-surface-57">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00057" width="4260px"/>
+        </surface>
+        <surface n="30v" xml:id="page-surface-58">
+            <graphic decls="#downloadImageRights #download" height="5971px" rend="portrait" url="MS-DD-00006-00009-000-00058" width="4201px"/>
+        </surface>
+        <surface n="31r" xml:id="page-surface-59">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00059" width="4260px"/>
+        </surface>
+        <surface n="31v" xml:id="page-surface-60">
+            <graphic decls="#downloadImageRights #download" height="5971px" rend="portrait" url="MS-DD-00006-00009-000-00060" width="4201px"/>
+        </surface>
+        <surface n="32r" xml:id="page-surface-61">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00061" width="4260px"/>
+        </surface>
+        <surface n="32v" xml:id="page-surface-62">
+            <graphic decls="#downloadImageRights #download" height="5971px" rend="portrait" url="MS-DD-00006-00009-000-00062" width="4201px"/>
+        </surface>
+        <surface n="33r" xml:id="page-surface-63">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00063" width="4260px"/>
+        </surface>
+        <surface n="33v" xml:id="page-surface-64">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00064" width="4201px"/>
+        </surface>
+        <surface n="34r" xml:id="page-surface-65">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00065" width="4260px"/>
+        </surface>
+        <surface n="34v" xml:id="page-surface-66">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00066" width="4201px"/>
+        </surface>
+        <surface n="35r" xml:id="page-surface-67">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00067" width="4260px"/>
+        </surface>
+        <surface n="35v" xml:id="page-surface-68">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00068" width="4201px"/>
+        </surface>
+        <surface n="36r" xml:id="page-surface-69">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00069" width="4260px"/>
+        </surface>
+        <surface n="36v" xml:id="page-surface-70">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00070" width="4201px"/>
+        </surface>
+        <surface n="37r" xml:id="page-surface-71">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00071" width="4260px"/>
+        </surface>
+        <surface n="37v" xml:id="page-surface-72">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00072" width="4201px"/>
+        </surface>
+        <surface n="38r" xml:id="page-surface-73">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00073" width="4260px"/>
+        </surface>
+        <surface n="38v" xml:id="page-surface-74">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00074" width="4201px"/>
+        </surface>
+        <surface n="39r" xml:id="page-surface-75">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00075" width="4260px"/>
+        </surface>
+        <surface n="39v" xml:id="page-surface-76">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00076" width="4201px"/>
+        </surface>
+        <surface n="40r" xml:id="page-surface-77">
+            <graphic decls="#downloadImageRights #download" height="6081px" rend="portrait" url="MS-DD-00006-00009-000-00077" width="4260px"/>
+        </surface>
+        <surface n="40v" xml:id="page-surface-78">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00078" width="4201px"/>
+        </surface>
+        <surface n="41r" xml:id="page-surface-79">
+            <graphic decls="#downloadImageRights #download" height="6081px" rend="portrait" url="MS-DD-00006-00009-000-00079" width="4260px"/>
+        </surface>
+        <surface n="41v" xml:id="page-surface-80">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00080" width="4201px"/>
+        </surface>
+        <surface n="42r" xml:id="page-surface-81">
+            <graphic decls="#downloadImageRights #download" height="6081px" rend="portrait" url="MS-DD-00006-00009-000-00081" width="4260px"/>
+        </surface>
+        <surface n="42v" xml:id="page-surface-82">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00082" width="4201px"/>
+        </surface>
+        <surface n="43r" xml:id="page-surface-83">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00083" width="4260px"/>
+        </surface>
+        <surface n="43v" xml:id="page-surface-84">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00084" width="4247px"/>
+        </surface>
+        <surface n="44r" xml:id="page-surface-85">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00085" width="4260px"/>
+        </surface>
+        <surface n="44v" xml:id="page-surface-86">
+            <graphic decls="#downloadImageRights #download" height="6054px" rend="portrait" url="MS-DD-00006-00009-000-00086" width="4201px"/>
+        </surface>
+        <surface n="45r" xml:id="page-surface-87">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00087" width="4260px"/>
+        </surface>
+        <surface n="45v" xml:id="page-surface-88">
+            <graphic decls="#downloadImageRights #download" height="6054px" rend="portrait" url="MS-DD-00006-00009-000-00088" width="4201px"/>
+        </surface>
+        <surface n="46r" xml:id="page-surface-89">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00089" width="4260px"/>
+        </surface>
+        <surface n="46v" xml:id="page-surface-90">
+            <graphic decls="#downloadImageRights #download" height="6054px" rend="portrait" url="MS-DD-00006-00009-000-00090" width="4201px"/>
+        </surface>
+        <surface n="47r" xml:id="page-surface-91">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00091" width="4260px"/>
+        </surface>
+        <surface n="47v" xml:id="page-surface-92">
+            <graphic decls="#downloadImageRights #download" height="6054px" rend="portrait" url="MS-DD-00006-00009-000-00092" width="4201px"/>
+        </surface>
+        <surface n="48r" xml:id="page-surface-93">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00093" width="4260px"/>
+        </surface>
+        <surface n="48v" xml:id="page-surface-94">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00094" width="4122px"/>
+        </surface>
+        <surface n="49r" xml:id="page-surface-95">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00095" width="4260px"/>
+        </surface>
+        <surface n="49v" xml:id="page-surface-96">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00096" width="4201px"/>
+        </surface>
+        <surface n="50r" xml:id="page-surface-97">
+            <graphic decls="#downloadImageRights #download" height="6123px" rend="portrait" url="MS-DD-00006-00009-000-00097" width="4260px"/>
+        </surface>
+        <surface n="50v" xml:id="page-surface-98">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00098" width="4201px"/>
+        </surface>
+        <surface n="51r" xml:id="page-surface-99">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00099" width="4260px"/>
+        </surface>
+        <surface n="51v" xml:id="page-surface-100">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00100" width="4201px"/>
+        </surface>
+        <surface n="52r" xml:id="page-surface-101">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00101" width="4260px"/>
+        </surface>
+        <surface n="52v" xml:id="page-surface-102">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00102" width="4201px"/>
+        </surface>
+        <surface n="53r" xml:id="page-surface-103">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00103" width="4260px"/>
+        </surface>
+        <surface n="53v" xml:id="page-surface-104">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00104" width="4201px"/>
+        </surface>
+        <surface n="54r" xml:id="page-surface-105">
+            <graphic decls="#downloadImageRights #download" height="6031px" rend="portrait" url="MS-DD-00006-00009-000-00105" width="4260px"/>
+        </surface>
+        <surface n="54v" xml:id="page-surface-106">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00106" width="4201px"/>
+        </surface>
+        <surface n="55r" xml:id="page-surface-107">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00107" width="4216px"/>
+        </surface>
+        <surface n="55v" xml:id="page-surface-108">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00108" width="4275px"/>
+        </surface>
+        <surface n="56r" xml:id="page-surface-109">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00109" width="4216px"/>
+        </surface>
+        <surface n="56v" xml:id="page-surface-110">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00110" width="4275px"/>
+        </surface>
+        <surface n="57r" xml:id="page-surface-111">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00111" width="4216px"/>
+        </surface>
+        <surface n="57v" xml:id="page-surface-112">
+            <graphic decls="#downloadImageRights #download" height="6070px" rend="portrait" url="MS-DD-00006-00009-000-00112" width="4184px"/>
+        </surface>
+        <surface n="58r" xml:id="page-surface-113">
+            <graphic decls="#downloadImageRights #download" height="6042px" rend="portrait" url="MS-DD-00006-00009-000-00113" width="4249px"/>
+        </surface>
+        <surface n="58v" xml:id="page-surface-114">
+            <graphic decls="#downloadImageRights #download" height="6070px" rend="portrait" url="MS-DD-00006-00009-000-00114" width="4184px"/>
+        </surface>
+        <surface n="59r" xml:id="page-surface-115">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00115" width="4216px"/>
+        </surface>
+        <surface n="59v" xml:id="page-surface-116">
+            <graphic decls="#downloadImageRights #download" height="6070px" rend="portrait" url="MS-DD-00006-00009-000-00116" width="4184px"/>
+        </surface>
+        <surface n="60r" xml:id="page-surface-117">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00117" width="4216px"/>
+        </surface>
+        <surface n="60v" xml:id="page-surface-118">
+            <graphic decls="#downloadImageRights #download" height="6070px" rend="portrait" url="MS-DD-00006-00009-000-00118" width="4184px"/>
+        </surface>
+        <surface n="61r" xml:id="page-surface-119">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00119" width="4216px"/>
+        </surface>
+        <surface n="61v" xml:id="page-surface-120">
+            <graphic decls="#downloadImageRights #download" height="6070px" rend="portrait" url="MS-DD-00006-00009-000-00120" width="4184px"/>
+        </surface>
+        <surface n="62r" xml:id="page-surface-121">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00121" width="4216px"/>
+        </surface>
+        <surface n="62v" xml:id="page-surface-122">
+            <graphic decls="#downloadImageRights #download" height="6070px" rend="portrait" url="MS-DD-00006-00009-000-00122" width="4184px"/>
+        </surface>
+        <surface n="63r" xml:id="page-surface-123">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00123" width="4216px"/>
+        </surface>
+        <surface n="63v" xml:id="page-surface-124">
+            <graphic decls="#downloadImageRights #download" height="6070px" rend="portrait" url="MS-DD-00006-00009-000-00124" width="4184px"/>
+        </surface>
+        <surface n="64r" xml:id="page-surface-125">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00125" width="4216px"/>
+        </surface>
+        <surface n="64v" xml:id="page-surface-126">
+            <graphic decls="#downloadImageRights #download" height="6061px" rend="portrait" url="MS-DD-00006-00009-000-00126" width="4233px"/>
+        </surface>
+        <surface n="65r" xml:id="page-surface-127">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00127" width="4179px"/>
+        </surface>
+        <surface n="65v" xml:id="page-surface-128">
+            <graphic decls="#downloadImageRights #download" height="6061px" rend="portrait" url="MS-DD-00006-00009-000-00128" width="4275px"/>
+        </surface>
+        <surface n="66r" xml:id="page-surface-129">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00129" width="4216px"/>
+        </surface>
+        <surface n="66v" xml:id="page-surface-130">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00130" width="4275px"/>
+        </surface>
+        <surface n="67r" xml:id="page-surface-131">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00131" width="4216px"/>
+        </surface>
+        <surface n="67v" xml:id="page-surface-132">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00132" width="4275px"/>
+        </surface>
+        <surface n="68r" xml:id="page-surface-133">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00133" width="4216px"/>
+        </surface>
+        <surface n="68v" xml:id="page-surface-134">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00134" width="4275px"/>
+        </surface>
+        <surface n="69r" xml:id="page-surface-135">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00135" width="4216px"/>
+        </surface>
+        <surface n="69v" xml:id="page-surface-136">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00136" width="4275px"/>
+        </surface>
+        <surface n="70r" xml:id="page-surface-137">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00137" width="4216px"/>
+        </surface>
+        <surface n="70v" xml:id="page-surface-138">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00138" width="4219px"/>
+        </surface>
+        <surface n="71r" xml:id="page-surface-139">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00139" width="4216px"/>
+        </surface>
+        <surface n="71v" xml:id="page-surface-140">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00140" width="4219px"/>
+        </surface>
+        <surface n="72r" xml:id="page-surface-141">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00141" width="4216px"/>
+        </surface>
+        <surface n="72v" xml:id="page-surface-142">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00142" width="4219px"/>
+        </surface>
+        <surface n="73r" xml:id="page-surface-143">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00143" width="4216px"/>
+        </surface>
+        <surface n="73v" xml:id="page-surface-144">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00144" width="4219px"/>
+        </surface>
+        <surface n="74r" xml:id="page-surface-145">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00145" width="4216px"/>
+        </surface>
+        <surface n="74v" xml:id="page-surface-146">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00146" width="4275px"/>
+        </surface>
+        <surface n="75r" xml:id="page-surface-147">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00147" width="4216px"/>
+        </surface>
+        <surface n="75v" xml:id="page-surface-148">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00148" width="4275px"/>
+        </surface>
+        <surface n="76r" xml:id="page-surface-149">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00149" width="4216px"/>
+        </surface>
+        <surface n="76v" xml:id="page-surface-150">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00150" width="4275px"/>
+        </surface>
+        <surface n="77r" xml:id="page-surface-151">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00151" width="4216px"/>
+        </surface>
+        <surface n="77v" xml:id="page-surface-152">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00152" width="4275px"/>
+        </surface>
+        <surface n="[77a] recto" xml:id="page-surface-153">
+            <graphic decls="#downloadImageRights #download" height="5919px" rend="portrait" url="MS-DD-00006-00009-000-00153" width="1957px"/>
+        </surface>
+        <surface n="[77a] verso" xml:id="page-surface-154">
+            <graphic decls="#downloadImageRights #download" height="5890px" rend="portrait" url="MS-DD-00006-00009-000-00154" width="1851px"/>
+        </surface>
+        <surface n="79r" xml:id="page-surface-155">
+            <graphic decls="#downloadImageRights #download" height="6092px" rend="portrait" url="MS-DD-00006-00009-000-00155" width="4279px"/>
+        </surface>
+        <surface n="79v" xml:id="page-surface-156">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00156" width="4113px"/>
+        </surface>
+        <surface n="80r" xml:id="page-surface-157">
+            <graphic decls="#downloadImageRights #download" height="6019px" rend="portrait" url="MS-DD-00006-00009-000-00157" width="4138px"/>
+        </surface>
+        <surface n="80v" xml:id="page-surface-158">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00158" width="4113px"/>
+        </surface>
+        <surface n="81r" xml:id="page-surface-159">
+            <graphic decls="#downloadImageRights #download" height="6019px" rend="portrait" url="MS-DD-00006-00009-000-00159" width="4138px"/>
+        </surface>
+        <surface n="81v" xml:id="page-surface-160">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00160" width="4113px"/>
+        </surface>
+        <surface n="82r" xml:id="page-surface-161">
+            <graphic decls="#downloadImageRights #download" height="6019px" rend="portrait" url="MS-DD-00006-00009-000-00161" width="4138px"/>
+        </surface>
+        <surface n="82v" xml:id="page-surface-162">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00162" width="4113px"/>
+        </surface>
+        <surface n="83r" xml:id="page-surface-163">
+            <graphic decls="#downloadImageRights #download" height="6019px" rend="portrait" url="MS-DD-00006-00009-000-00163" width="4138px"/>
+        </surface>
+        <surface n="83v" xml:id="page-surface-164">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00164" width="4113px"/>
+        </surface>
+        <surface n="84r" xml:id="page-surface-165">
+            <graphic decls="#downloadImageRights #download" height="6019px" rend="portrait" url="MS-DD-00006-00009-000-00165" width="4138px"/>
+        </surface>
+        <surface n="84v" xml:id="page-surface-166">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00166" width="4113px"/>
+        </surface>
+        <surface n="85r" xml:id="page-surface-167">
+            <graphic decls="#downloadImageRights #download" height="6019px" rend="portrait" url="MS-DD-00006-00009-000-00167" width="4138px"/>
+        </surface>
+        <surface n="85v" xml:id="page-surface-168">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00168" width="4113px"/>
+        </surface>
+        <surface n="86r" xml:id="page-surface-169">
+            <graphic decls="#downloadImageRights #download" height="5971px" rend="portrait" url="MS-DD-00006-00009-000-00169" width="4096px"/>
+        </surface>
+        <surface n="86v" xml:id="page-surface-170">
+            <graphic decls="#downloadImageRights #download" height="6001px" rend="portrait" url="MS-DD-00006-00009-000-00170" width="4113px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#page-surface-1" n="1r" xml:id="page-pb-1"/>
+                <pb facs="#page-surface-2" n="1v" xml:id="page-pb-2"/>
+                <pb facs="#page-surface-3" n="[1a] recto" xml:id="page-pb-3"/>
+                <pb facs="#page-surface-4" n="[1a] verso" xml:id="page-pb-4"/>
+                <pb facs="#page-surface-5" n="[1b] recto" xml:id="page-pb-5"/>
+                <pb facs="#page-surface-6" n="[1b] verso" xml:id="page-pb-6"/>
+                <pb facs="#page-surface-7" n="5r" xml:id="page-pb-7"/>
+                <pb facs="#page-surface-8" n="5v" xml:id="page-pb-8"/>
+                <pb facs="#page-surface-9" n="6r" xml:id="page-pb-9"/>
+                <pb facs="#page-surface-10" n="6v" xml:id="page-pb-10"/>
+                <pb facs="#page-surface-11" n="7r" xml:id="page-pb-11"/>
+                <pb facs="#page-surface-12" n="7v" xml:id="page-pb-12"/>
+                <pb facs="#page-surface-13" n="8r" xml:id="page-pb-13"/>
+                <pb facs="#page-surface-14" n="8v" xml:id="page-pb-14"/>
+                <pb facs="#page-surface-15" n="9r" xml:id="page-pb-15"/>
+                <pb facs="#page-surface-16" n="9v" xml:id="page-pb-16"/>
+                <pb facs="#page-surface-17" n="10r" xml:id="page-pb-17"/>
+                <pb facs="#page-surface-18" n="10v" xml:id="page-pb-18"/>
+                <pb facs="#page-surface-19" n="11r" xml:id="page-pb-19"/>
+                <pb facs="#page-surface-20" n="11v" xml:id="page-pb-20"/>
+                <pb facs="#page-surface-21" n="12r" xml:id="page-pb-21"/>
+                <pb facs="#page-surface-22" n="12v" xml:id="page-pb-22"/>
+                <pb facs="#page-surface-23" n="13r" xml:id="page-pb-23"/>
+                <pb facs="#page-surface-24" n="13v" xml:id="page-pb-24"/>
+                <pb facs="#page-surface-25" n="14r" xml:id="page-pb-25"/>
+                <pb facs="#page-surface-26" n="14v" xml:id="page-pb-26"/>
+                <pb facs="#page-surface-27" n="15r" xml:id="page-pb-27"/>
+                <pb facs="#page-surface-28" n="15v" xml:id="page-pb-28"/>
+                <pb facs="#page-surface-29" n="16r" xml:id="page-pb-29"/>
+                <pb facs="#page-surface-30" n="16v" xml:id="page-pb-30"/>
+                <pb facs="#page-surface-31" n="17r" xml:id="page-pb-31"/>
+                <pb facs="#page-surface-32" n="17v" xml:id="page-pb-32"/>
+                <pb facs="#page-surface-33" n="18r" xml:id="page-pb-33"/>
+                <pb facs="#page-surface-34" n="18v" xml:id="page-pb-34"/>
+                <pb facs="#page-surface-35" n="19r" xml:id="page-pb-35"/>
+                <pb facs="#page-surface-36" n="19v" xml:id="page-pb-36"/>
+                <pb facs="#page-surface-37" n="20r" xml:id="page-pb-37"/>
+                <pb facs="#page-surface-38" n="20v" xml:id="page-pb-38"/>
+                <pb facs="#page-surface-39" n="21r" xml:id="page-pb-39"/>
+                <pb facs="#page-surface-40" n="21v" xml:id="page-pb-40"/>
+                <pb facs="#page-surface-41" n="22r" xml:id="page-pb-41"/>
+                <pb facs="#page-surface-42" n="22v" xml:id="page-pb-42"/>
+                <pb facs="#page-surface-43" n="23r" xml:id="page-pb-43"/>
+                <pb facs="#page-surface-44" n="23v" xml:id="page-pb-44"/>
+                <pb facs="#page-surface-45" n="24r" xml:id="page-pb-45"/>
+                <pb facs="#page-surface-46" n="24v" xml:id="page-pb-46"/>
+                <pb facs="#page-surface-47" n="[24a] recto" xml:id="page-pb-47"/>
+                <pb facs="#page-surface-48" n="[24a] verso" xml:id="page-pb-48"/>
+                <pb facs="#page-surface-49" n="26r" xml:id="page-pb-49"/>
+                <pb facs="#page-surface-50" n="26v" xml:id="page-pb-50"/>
+                <pb facs="#page-surface-51" n="27r" xml:id="page-pb-51"/>
+                <pb facs="#page-surface-52" n="27v" xml:id="page-pb-52"/>
+                <pb facs="#page-surface-53" n="28r" xml:id="page-pb-53"/>
+                <pb facs="#page-surface-54" n="28v" xml:id="page-pb-54"/>
+                <pb facs="#page-surface-55" n="29r" xml:id="page-pb-55"/>
+                <pb facs="#page-surface-56" n="29v" xml:id="page-pb-56"/>
+                <pb facs="#page-surface-57" n="30r" xml:id="page-pb-57"/>
+                <pb facs="#page-surface-58" n="30v" xml:id="page-pb-58"/>
+                <pb facs="#page-surface-59" n="31r" xml:id="page-pb-59"/>
+                <pb facs="#page-surface-60" n="31v" xml:id="page-pb-60"/>
+                <pb facs="#page-surface-61" n="32r" xml:id="page-pb-61"/>
+                <pb facs="#page-surface-62" n="32v" xml:id="page-pb-62"/>
+                <pb facs="#page-surface-63" n="33r" xml:id="page-pb-63"/>
+                <pb facs="#page-surface-64" n="33v" xml:id="page-pb-64"/>
+                <pb facs="#page-surface-65" n="34r" xml:id="page-pb-65"/>
+                <pb facs="#page-surface-66" n="34v" xml:id="page-pb-66"/>
+                <pb facs="#page-surface-67" n="35r" xml:id="page-pb-67"/>
+                <pb facs="#page-surface-68" n="35v" xml:id="page-pb-68"/>
+                <pb facs="#page-surface-69" n="36r" xml:id="page-pb-69"/>
+                <pb facs="#page-surface-70" n="36v" xml:id="page-pb-70"/>
+                <pb facs="#page-surface-71" n="37r" xml:id="page-pb-71"/>
+                <pb facs="#page-surface-72" n="37v" xml:id="page-pb-72"/>
+                <pb facs="#page-surface-73" n="38r" xml:id="page-pb-73"/>
+                <pb facs="#page-surface-74" n="38v" xml:id="page-pb-74"/>
+                <pb facs="#page-surface-75" n="39r" xml:id="page-pb-75"/>
+                <pb facs="#page-surface-76" n="39v" xml:id="page-pb-76"/>
+                <pb facs="#page-surface-77" n="40r" xml:id="page-pb-77"/>
+                <pb facs="#page-surface-78" n="40v" xml:id="page-pb-78"/>
+                <pb facs="#page-surface-79" n="41r" xml:id="page-pb-79"/>
+                <pb facs="#page-surface-80" n="41v" xml:id="page-pb-80"/>
+                <pb facs="#page-surface-81" n="42r" xml:id="page-pb-81"/>
+                <pb facs="#page-surface-82" n="42v" xml:id="page-pb-82"/>
+                <pb facs="#page-surface-83" n="43r" xml:id="page-pb-83"/>
+                <pb facs="#page-surface-84" n="43v" xml:id="page-pb-84"/>
+                <pb facs="#page-surface-85" n="44r" xml:id="page-pb-85"/>
+                <pb facs="#page-surface-86" n="44v" xml:id="page-pb-86"/>
+                <pb facs="#page-surface-87" n="45r" xml:id="page-pb-87"/>
+                <pb facs="#page-surface-88" n="45v" xml:id="page-pb-88"/>
+                <pb facs="#page-surface-89" n="46r" xml:id="page-pb-89"/>
+                <pb facs="#page-surface-90" n="46v" xml:id="page-pb-90"/>
+                <pb facs="#page-surface-91" n="47r" xml:id="page-pb-91"/>
+                <pb facs="#page-surface-92" n="47v" xml:id="page-pb-92"/>
+                <pb facs="#page-surface-93" n="48r" xml:id="page-pb-93"/>
+                <pb facs="#page-surface-94" n="48v" xml:id="page-pb-94"/>
+                <pb facs="#page-surface-95" n="49r" xml:id="page-pb-95"/>
+                <pb facs="#page-surface-96" n="49v" xml:id="page-pb-96"/>
+                <pb facs="#page-surface-97" n="50r" xml:id="page-pb-97"/>
+                <pb facs="#page-surface-98" n="50v" xml:id="page-pb-98"/>
+                <pb facs="#page-surface-99" n="51r" xml:id="page-pb-99"/>
+                <pb facs="#page-surface-100" n="51v" xml:id="page-pb-100"/>
+                <pb facs="#page-surface-101" n="52r" xml:id="page-pb-101"/>
+                <pb facs="#page-surface-102" n="52v" xml:id="page-pb-102"/>
+                <pb facs="#page-surface-103" n="53r" xml:id="page-pb-103"/>
+                <pb facs="#page-surface-104" n="53v" xml:id="page-pb-104"/>
+                <pb facs="#page-surface-105" n="54r" xml:id="page-pb-105"/>
+                <pb facs="#page-surface-106" n="54v" xml:id="page-pb-106"/>
+                <pb facs="#page-surface-107" n="55r" xml:id="page-pb-107"/>
+                <pb facs="#page-surface-108" n="55v" xml:id="page-pb-108"/>
+                <pb facs="#page-surface-109" n="56r" xml:id="page-pb-109"/>
+                <pb facs="#page-surface-110" n="56v" xml:id="page-pb-110"/>
+                <pb facs="#page-surface-111" n="57r" xml:id="page-pb-111"/>
+                <pb facs="#page-surface-112" n="57v" xml:id="page-pb-112"/>
+                <pb facs="#page-surface-113" n="58r" xml:id="page-pb-113"/>
+                <pb facs="#page-surface-114" n="58v" xml:id="page-pb-114"/>
+                <pb facs="#page-surface-115" n="59r" xml:id="page-pb-115"/>
+                <pb facs="#page-surface-116" n="59v" xml:id="page-pb-116"/>
+                <pb facs="#page-surface-117" n="60r" xml:id="page-pb-117"/>
+                <pb facs="#page-surface-118" n="60v" xml:id="page-pb-118"/>
+                <pb facs="#page-surface-119" n="61r" xml:id="page-pb-119"/>
+                <pb facs="#page-surface-120" n="61v" xml:id="page-pb-120"/>
+                <pb facs="#page-surface-121" n="62r" xml:id="page-pb-121"/>
+                <pb facs="#page-surface-122" n="62v" xml:id="page-pb-122"/>
+                <pb facs="#page-surface-123" n="63r" xml:id="page-pb-123"/>
+                <pb facs="#page-surface-124" n="63v" xml:id="page-pb-124"/>
+                <pb facs="#page-surface-125" n="64r" xml:id="page-pb-125"/>
+                <pb facs="#page-surface-126" n="64v" xml:id="page-pb-126"/>
+                <pb facs="#page-surface-127" n="65r" xml:id="page-pb-127"/>
+                <pb facs="#page-surface-128" n="65v" xml:id="page-pb-128"/>
+                <pb facs="#page-surface-129" n="66r" xml:id="page-pb-129"/>
+                <pb facs="#page-surface-130" n="66v" xml:id="page-pb-130"/>
+                <pb facs="#page-surface-131" n="67r" xml:id="page-pb-131"/>
+                <pb facs="#page-surface-132" n="67v" xml:id="page-pb-132"/>
+                <pb facs="#page-surface-133" n="68r" xml:id="page-pb-133"/>
+                <pb facs="#page-surface-134" n="68v" xml:id="page-pb-134"/>
+                <pb facs="#page-surface-135" n="69r" xml:id="page-pb-135"/>
+                <pb facs="#page-surface-136" n="69v" xml:id="page-pb-136"/>
+                <pb facs="#page-surface-137" n="70r" xml:id="page-pb-137"/>
+                <pb facs="#page-surface-138" n="70v" xml:id="page-pb-138"/>
+                <pb facs="#page-surface-139" n="71r" xml:id="page-pb-139"/>
+                <pb facs="#page-surface-140" n="71v" xml:id="page-pb-140"/>
+                <pb facs="#page-surface-141" n="72r" xml:id="page-pb-141"/>
+                <pb facs="#page-surface-142" n="72v" xml:id="page-pb-142"/>
+                <pb facs="#page-surface-143" n="73r" xml:id="page-pb-143"/>
+                <pb facs="#page-surface-144" n="73v" xml:id="page-pb-144"/>
+                <pb facs="#page-surface-145" n="74r" xml:id="page-pb-145"/>
+                <pb facs="#page-surface-146" n="74v" xml:id="page-pb-146"/>
+                <pb facs="#page-surface-147" n="75r" xml:id="page-pb-147"/>
+                <pb facs="#page-surface-148" n="75v" xml:id="page-pb-148"/>
+                <pb facs="#page-surface-149" n="76r" xml:id="page-pb-149"/>
+                <pb facs="#page-surface-150" n="76v" xml:id="page-pb-150"/>
+                <pb facs="#page-surface-151" n="77r" xml:id="page-pb-151"/>
+                <pb facs="#page-surface-152" n="77v" xml:id="page-pb-152"/>
+                <pb facs="#page-surface-153" n="[77a] recto" xml:id="page-pb-153"/>
+                <pb facs="#page-surface-154" n="[77a] verso" xml:id="page-pb-154"/>
+                <pb facs="#page-surface-155" n="79r" xml:id="page-pb-155"/>
+                <pb facs="#page-surface-156" n="79v" xml:id="page-pb-156"/>
+                <pb facs="#page-surface-157" n="80r" xml:id="page-pb-157"/>
+                <pb facs="#page-surface-158" n="80v" xml:id="page-pb-158"/>
+                <pb facs="#page-surface-159" n="81r" xml:id="page-pb-159"/>
+                <pb facs="#page-surface-160" n="81v" xml:id="page-pb-160"/>
+                <pb facs="#page-surface-161" n="82r" xml:id="page-pb-161"/>
+                <pb facs="#page-surface-162" n="82v" xml:id="page-pb-162"/>
+                <pb facs="#page-surface-163" n="83r" xml:id="page-pb-163"/>
+                <pb facs="#page-surface-164" n="83v" xml:id="page-pb-164"/>
+                <pb facs="#page-surface-165" n="84r" xml:id="page-pb-165"/>
+                <pb facs="#page-surface-166" n="84v" xml:id="page-pb-166"/>
+                <pb facs="#page-surface-167" n="85r" xml:id="page-pb-167"/>
+                <pb facs="#page-surface-168" n="85v" xml:id="page-pb-168"/>
+                <pb facs="#page-surface-169" n="86r" xml:id="page-pb-169"/>
+                <pb facs="#page-surface-170" n="86v" xml:id="page-pb-170"/>
+            </div>
+        </body>
+    </text>
+</TEI>

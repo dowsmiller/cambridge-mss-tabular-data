@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>MS Ii.6.32</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+
+                <availability xml:id="displayImageRights" status="restricted">
+                    <p>Zooming image © Cambridge University Library, All rights reserved.</p>
+                </availability>
+                <availability xml:id="downloadImageRights" status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability xml:id="metadataRights" status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License.</licence>
+                </availability>
+
+                <availability xml:id="watermark" status="restricted">
+                    <licence>Cambridge University Library (CC BY-NC 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-II-00006-00032" xml:lang="en">
+                    <msIdentifier>
+                        <institution>Cambridge University</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Medieval Manuscripts</collection>
+                        <idno>MS Ii.6.32</idno>
+                        <altIdentifier type="other">
+                            <idno/>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <head>Book of Deer</head>
+                    <msContents>
+                        <!--general titles for works containing more than one item go here
+                        and also any abstract-->
+                        <summary>
+                            <seg type="para"> The <title>Book of Deer</title> (<title type="alt">Evangelia</title>) is a Gospel Book written in a hand
+                                that was current in the period c. 850-1000 and generally dated to the first half of the tenth century. While the
+                                manuscripts to which the Book of Deer is closest in character are all Irish, scholars have tended to argue for a
+                                Scottish origin, and it is widely regarded as the earliest manuscript produced in Scotland. Of the four Gospels only
+                                the text of <locus from="41v" to="84v">St John</locus> is complete. Each Gospel is prefaced by a full-page
+                                illumination (<locus from="1v" to="1v">1v</locus>, <locus from="16v" to="16v">16v</locus>, <locus from="29v" to="29v"
+                                    >29v</locus>, <locus from="41v" to="41v">41v</locus>). The manuscript belongs to the category of 'Irish pocket
+                                Gospel Books', produced for private use rather than for church services.<lb/>
+                                <lb/> The association with Deer is deduced from additions in Gaelic or Middle Irish (<locus from="3r" to="5r"
+                                    >3-5</locus>) including an account of the foundation of a monastery by <name type="person"
+                                    ref="http://viaf.org/viaf/79402324" role="oth" key="person_v79402324">
+                                    <persName type="standard">Columba, Saint, 521-597</persName>
+                                    <persName type="display">Saint Columba</persName>
+                                </name> and <name type="person" role="oth">
+                                    <persName type="standard">Drostan, Saint</persName>
+                                    <persName type="display">Saint Drostan</persName>
+                                </name> and land grants to the house, and a Latin brieve of <name type="person" ref="http://viaf.org/viaf/55013998"
+                                    role="oth" key="person_v55013998">
+                                    <persName type="standard">David I, King of Scotland, ca. 1082-1153</persName>
+                                    <persName type="display">King David I</persName>
+                                </name> in favour of the 'clerics of Deer' (<locus from="40r" to="40r">40</locus>). One entry is dated 8 David I
+                                (1131-32). It is reasonable to assume that the manuscript was at Deer in Aberdeenshire when these additions were made. </seg>
+                            <seg type="para">This item was included in the Library’s 600th anniversary exhibition <ref
+                                    target="https://exhibitions.lib.cam.ac.uk/linesofthought/artifacts/new-materials-parchment/">
+                                    <hi rend="italic">Lines of Thought: Discoveries that changed the world</hi>
+                                </ref>.</seg>
+                        </summary>
+                        <msItem n="1" xml:id="a1">
+                            <!--page or folio range covered by this item (only if more than one)-->
+                            <locus from="1v" to="15v">1v-15</locus>
+                            <title>Excerpts from the Gospel of St Matthew</title>
+                            <title type="alt">Excerpta ex Evangelio secundum Matthaeum</title>
+                            <textLang mainLang="lat" otherLangs="gla">Latin, with additions in Gaelic (or Middle Irish)</textLang>
+                        </msItem>
+                        <msItem n="2" xml:id="a2">
+                            <!--page or folio range covered by this item (only if more than one)-->
+                            <locus from="16v" to="27v">16v-27v</locus>
+                            <title>Gospel of St Mark</title>
+                            <title type="alt">Evangelio secundum Marcum</title>
+                            <textLang mainLang="lat" otherLangs="gla">Latin, with additions in Gaelic (or Middle Irish)</textLang>
+                        </msItem>
+                        <msItem n="3" xml:id="a3">
+                            <!--page or folio range covered by this item (only if more than one)-->
+                            <locus from="28v" to="29r">28v-29</locus>
+                            <title>Office for the visitation of the sick</title>
+                            <title type="alt">Officia divina pro infirmis</title>
+                            <textLang mainLang="lat" otherLangs="gla">Latin, with additions in Gaelic (or Middle Irish)</textLang>
+                        </msItem>
+                        <msItem n="4" xml:id="a4">
+                            <!--page or folio range covered by this item (only if more than one)-->
+                            <locus from="29v" to="40r">29v-40</locus>
+                            <title>Excerpts from the Gospel of St Luke</title>
+                            <title type="alt">Excerpta ex Evangelio secundum Lucam</title>
+                            <textLang mainLang="lat" otherLangs="gla">Latin, with additions in Gaelic (or Middle Irish)</textLang>
+                        </msItem>
+                        <msItem n="5" xml:id="a5">
+                            <!--page or folio range covered by this item (only if more than one)-->
+                            <locus from="41v" to="84v">41v-84v</locus>
+                            <title>Gospel of St John</title>
+                            <title type="alt">Evangelium secundum Iohannem</title>
+                            <textLang mainLang="lat" otherLangs="gla">Latin, with additions in Gaelic (or Middle Irish)</textLang>
+                        </msItem>
+                        <msItem n="6" xml:id="a6">
+                            <!--page or folio range covered by this item (only if more than one)-->
+                            <locus from="85r" to="85r">85</locus>
+                            <title>Apostle's Creed</title>
+                            <title type="alt">Symbolum Apostolorum</title>
+                            <textLang mainLang="lat" otherLangs="gla">Latin, with additions in Gaelic (or Middle Irish)</textLang>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="parchment">
+                                <support>
+                                    <material>Parchment</material>
+                                </support>
+                                <extent>86 fols <dimensions type="leaf" unit="mm">
+                                        <height>157</height>
+                                        <width>108</width>
+                                    </dimensions>
+                                    <dimensions type="written" unit="mm">
+                                        <height>108</height>
+                                        <width>71</width>
+                                    </dimensions>
+                                </extent>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="1" ruledLines="22 26">
+                                    <p>22-26 lines, ruled in hard point, above top line, 2<hi rend="superscript">o</hi> fol. <hi rend="italic"
+                                            >Omnes</hi> (<locus from="3r" to="3r">3</locus>)</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote scope="major" script="other">
+                                <p>Insular minuscule</p>
+                                <!--scribe name would go here-->
+                                <persName/>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote type="miniature">Full-page miniatures: tinted in yellow and orange (now much darkened), and framed by bars,
+                                often filled with geometric patterns and interlace: <list>
+                                    <item>Four figures, lower two with satchels, arranged around cross with star/flower in circle at intersection
+                                            (<locus from="1v" to="1v">1v</locus>)</item>
+                                    <item>Bearded, seated figure (head partially effaced by staining) holding sword and flanked by two small figures
+                                            (<locus from="4v" to="4v">4v</locus>)</item>
+                                    <item>Figure with halo and satchell (<locus from="16v" to="16v">16v</locus>)</item>
+                                    <item>Figure with halo and satchel, his hands reaching out through frame (<locus from="29v" to="29v"
+                                        >29v</locus>)</item>
+                                    <item>Figure with satchel, flanked by six small figures (<locus from="41v" to="41v">41v</locus>)</item>
+                                    <item>Two miniatures of four figures arranged around cross with circle at intersection, first showing three of
+                                        them with their hands outstretched into frame, second including two figures in lower compartments with
+                                        satchels (<locus from="85v" to="85v">85v</locus>, <locus from="86r" to="86r">86</locus>) </item>
+                                </list>
+                            </decoNote>
+
+                            <decoNote type="miniatute"> Half-page miniature: <list>
+                                    <item>Two figures with satchels at end of St John's Gospel (<locus from="84v" to="84v">84v</locus>) </item>
+                                </list>
+                            </decoNote>
+
+                            <decoNote type="miniature">Interpretation of the miniatures varies, and the view that frontispieces to Gospels depict
+                                Evangelists is no longer universally accepted. Henderson’s interpretation <ref type="biblio" target="#Henderson1986"
+                                    >(Henderson 1986)</ref>, is as follows: <list>
+                                    <item>
+                                        <locus from="4v" to="4v">4v</locus>, Abraham</item>
+                                    <item>
+                                        <locus from="29v" to="29v">29v</locus>, Zacharias</item>
+                                    <item>
+                                        <locus from="41v" to="41v">41v</locus>, Christ</item>
+                                    <item>
+                                        <locus from="85v" to="85v">85v</locus>, Ascension.</item>
+                                </list> Geddes’ interpretation <ref type="biblio" target="#Geddes1998">(Geddes 1998)</ref> is: <list>
+                                    <item>
+                                        <locus from="1v" to="1v">1v</locus>, Two Evangelists and two other figures</item>
+                                    <item>
+                                        <locus from="4v" to="4v">4v</locus>, Matthew</item>
+                                    <item>
+                                        <locus from="29v" to="29v">29v</locus>, Zacharias and Luke ‘compressed’</item>
+                                    <item>
+                                        <locus from="41v" to="41v">41v</locus>, Christ</item>
+                                    <item>
+                                        <locus from="85v" to="85v">85v</locus>, Empty cross</item>
+                                    <item>
+                                        <locus from="86r" to="86r">86</locus>, Four Evangelists</item>
+                                </list> Marner’s interpretation <ref type="biblio" target="#Marner2002">(Marner 2002)</ref> is: <list>
+                                    <item>
+                                        <locus from="4v" to="4v">4v</locus>, Christ</item>
+                                    <item>
+                                        <locus from="16v" to="16v">16v</locus>, Crucifixion</item>
+                                    <item>
+                                        <locus from="41v" to="41v">41v</locus>, Resurrected Christ surrounded by angels</item>
+                                </list>
+                            </decoNote>
+
+                            <decoNote type="initial">Ornamental and minor initials: initials (2-5 lines) formed of black interlocking stripes, with
+                                geometric infill, tinted in yellow and orange, and human and animal heads projecting from finials, at beginning of
+                                Gospels and Creed (<locus from="2r" to="2r">2</locus>, <locus from="5r" to="5r">5</locus>, <locus from="17r" to="17r"
+                                    >17</locus>, <locus from="30r" to="30r">30</locus>, <locus from="42r" to="42r">42</locus>); versals tinted in
+                                yellow and orange</decoNote>
+
+                            <decoNote type="border">Border decoration: Full borders, tinted and/or decorated with knotwork, geometric designs, etc.,
+                                to all miniatures and openings of Gospels; numerous drawings of animals, birds, human figures or simple fan-like
+                                shapes in black ink, some tinted in yellow and orange (e.g., <locus from="41v" to="41v">41v</locus>, <locus from="44r"
+                                    to="44r">44</locus>, <locus from="45v" to="45v">45v</locus>, <locus from="51v" to="51v">51v</locus>, <locus
+                                    from="54v" to="54v">54v</locus>, <locus from="67r" to="67r">67</locus>, <locus from="71v" to="71v"
+                                >71v</locus>)</decoNote>
+                        </decoDesc>
+                        <bindingDesc>
+                            <p>Full goatskin (Douglas Cockerell &amp; Son, Letchworth, 1963), replacing sheepskin Bowtell-style binding of 18th-19th
+                                century, which is kept together with the manuscript</p>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origDate calendar="Gregorian" notBefore="0850" notAfter="1000">850-1000 C.E.</origDate>
+                            <origPlace ref="7002444" key="place_g7002444">Scotland?</origPlace>
+                        </origin>
+                        <provenance>The Columban house at Deer, Aberdeenshire; probably at Cistercian monastery of Deer, Aberdeenshire, 13th-14th
+                            century C.E.; <name type="person" ref="http://viaf.org/viaf/46783945" role="fmo" key="person_v46783945">
+                                <persName type="standard">Gale, Thomas, 1635?-1702</persName>
+                                <persName type="display">Thomas Gale</persName>
+                            </name>, 1695; acquired in 1697 from Gale by <name type="person" ref="http://viaf.org/viaf/75019443" role="fmo"
+                                key="person_v75019443">
+                                <persName type="standard">Moore, John, 1646-1714</persName>
+                                <persName type="display">John Moore (d. 1714)</persName>
+                            </name>; presented to University Library by <name type="person" ref="http://viaf.org/viaf/190593" role="fmo"
+                                key="person_v190593">
+                                <persName type="standard">George I, King of Great Britain, 1660-1727</persName>
+                                <persName type="display">George I</persName>
+                            </name>, 1715</provenance>
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source>This catalogue entry derives from <hi rend="italic">Western Illuminated Manuscripts: A Catalogue of the
+                                        Collection in Cambridge University Library</hi> by Paul Binski and Patrick Zutshi, with the collaboration of
+                                    Stella Panayotova, Cambridge, 2011 (used here by kind permission of Cambridge University Press).</source>
+                            </recordHist>
+                            <availability status="restricted">
+                                <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures
+                                    contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library
+                                        Admissions</ref>). Contact the Manuscripts Department for further information on the availability of this
+                                    manuscript</p>
+                            </availability>
+                            <note/>
+                        </adminInfo>
+                        <listBibl>
+                            <biblStruct type="book" xml:id="Stuart1869">
+                                <monogr>
+                                    <title>The Book of Deer</title>
+                                    <author>
+                                        <forename>John</forename>
+                                        <surname>Stuart</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Edinburgh</pubPlace>
+                                        <date>1869</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct type="book" xml:id="Jackson1972">
+                                <monogr>
+                                    <title>The Gaelic notes in the Book of Deer</title>
+                                    <author>
+                                        <forename>Kenneth Hurlstone</forename>
+                                        <surname>Jackson</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1972</date>
+                                    </imprint>
+                                </monogr>
+                                <idno type="ISBN">0521082641 9780521082648</idno>
+                                <idno type="worldcat">http://www.worldcat.org/oclc/252992082</idno>
+                            </biblStruct>
+                            <biblStruct type="book" xml:id="Hughes1980">
+                                <monogr>
+                                    <title>Celtic Britain in the early Middle Ages : studies in Scottish and Welsh sources</title>
+                                    <author>
+                                        <forename>Kathleen</forename>
+                                        <surname>Hughes</surname>
+                                    </author>
+                                    <author>
+                                        <forename>D. N</forename>
+                                        <surname>Dumville</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Woodbridge, Suffolk; Totowa, N.J.</pubPlace>
+                                        <publisher>Boydell Press ; Rowman &amp; Littlefield</publisher>
+                                        <date>1980</date>
+                                    </imprint>
+                                </monogr>
+                                <idno type="ISBN">0847667715 9780847667710 0851151272 9780851151274</idno>
+                                <idno type="worldcat">http://www.worldcat.org/oclc/60048633</idno>
+                            </biblStruct>
+                            <biblStruct type="journalArticle" xml:id="Marner2002">
+                                <analytic>
+                                    <title>The sword of the spirit, the word of God and the Book of Deer</title>
+                                    <author>
+                                        <forename>Dominic</forename>
+                                        <surname>Marner</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title>Medieval Archaeology</title>
+                                    <imprint>
+                                        <biblScope type="vol">46</biblScope>
+                                        <biblScope type="pp">1-28</biblScope>
+                                        <date>2002</date>
+                                    </imprint>
+                                </monogr>
+                                <idno type="callNumber">Marner_2002</idno>
+                                <idno type="worldcat">http://www.worldcat.org/oclc/1607565</idno>
+                            </biblStruct>
+                            <biblStruct type="journalArticle" xml:id="Geddes1998">
+                                <analytic>
+                                    <title>The art of the Book of Deer</title>
+                                    <author>
+                                        <forename>Jane</forename>
+                                        <surname>Geddes</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title>Proceedings of the Society of Antiquaries of Scotland</title>
+                                    <imprint>
+                                        <biblScope type="vol">128</biblScope>
+                                        <biblScope type="pp">537-549</biblScope>
+                                        <date>1998</date>
+                                    </imprint>
+                                </monogr>
+                                <idno type="callNumber">Geddes_1998</idno>
+                                <idno type="worldcat">http://www.worldcat.org/oclc/1589079</idno>
+                            </biblStruct>
+                            <biblStruct type="bookSection" xml:id="Henderson1986">
+                                <analytic>
+                                    <title>Abstracts: the Book of Deer</title>
+                                    <author>
+                                        <forename>I.</forename>
+                                        <surname>Henderson</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title>Proceedings of the Seventh International Congress of Celtic Studies held at Oxford, from 10th to 15th July,
+                                        1983</title>
+                                    <author>
+                                        <name>International Congress of Celtic Studies</name>
+                                    </author>
+                                    <respStmt>
+                                        <resp>contributor</resp>
+                                        <persName>
+                                            <forename>D. Ellis</forename>
+                                            <surname>Evans</surname>
+                                        </persName>
+                                    </respStmt>
+                                    <respStmt>
+                                        <resp>contributor</resp>
+                                        <persName>
+                                            <forename>John</forename>
+                                            <surname>Griffith</surname>
+                                        </persName>
+                                    </respStmt>
+                                    <respStmt>
+                                        <resp>contributor</resp>
+                                        <persName>
+                                            <forename>E. M.</forename>
+                                            <surname>Jope</surname>
+                                        </persName>
+                                    </respStmt>
+                                    <imprint>
+                                        <pubPlace>Oxford</pubPlace>
+                                        <publisher>D.E. Evans</publisher>
+                                        <date>1986</date>
+                                    </imprint>
+                                </monogr>
+                                <idno type="ISBN">0951126903</idno>
+                                <idno type="worldcat">http://www.worldcat.org/oclc/16526590</idno>
+                                <idno type="callNumber">Henderson_1986</idno>
+                            </biblStruct>
+                            <biblStruct type="book" xml:id="Forsyth2008">
+                                <monogr>
+                                    <title>Studies on the Book of Deer</title>
+                                    <respStmt>
+                                        <resp>contributor</resp>
+                                        <persName>
+                                            <forename>Katherine</forename>
+                                            <surname>Forsyth</surname>
+                                        </persName>
+                                    </respStmt>
+                                    <imprint>
+                                        <pubPlace>Dublin</pubPlace>
+                                        <publisher>Four Courts Press</publisher>
+                                        <date>2008</date>
+                                    </imprint>
+                                </monogr>
+                                <idno type="ISBN">185182569X</idno>
+                                <idno type="callNumber">ND3359.D44 S78 2008</idno>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
+                    </bibl>
+                </taxonomy>
+                <taxonomy>
+                    <bibl>Image Role Typology</bibl>
+                    <category xml:id="document-thumbnail">
+                        <catDesc>document-thumbnail</catDesc>
+                    </category>
+                    <category xml:id="download">
+                        <catDesc>download</catDesc>
+                    </category>
+                    <category xml:id="thumbnail">
+                        <catDesc>thumbnail</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85118827">Scotland -- History</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2012-03-05">
+                <persName>Patrick Zutshi</persName>
+            </change>
+            <change when="2012-03-05">
+                <persName>Paul Binski</persName>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <!--this is where you list the image paths-->
+        <!--these are samples-->
+        <graphic decls="#document-thumbnail" rend="portrait" url="MS-II-00006-00032-000-00001"/>
+        <surface n="cover" xml:id="i1">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00001"/>
+        </surface>
+        <surface n="1r" xml:id="i2">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00002"/>
+        </surface>
+        <surface n="1v" xml:id="i3">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00003"/>
+        </surface>
+        <surface n="2r" xml:id="i4">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00004"/>
+        </surface>
+        <surface n="2v" xml:id="i5">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00005"/>
+        </surface>
+        <surface n="3r" xml:id="i6">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00006"/>
+        </surface>
+        <surface n="3v" xml:id="i7">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00007"/>
+        </surface>
+        <surface n="4r" xml:id="i8">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00008"/>
+        </surface>
+        <surface n="4v" xml:id="i9">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00009"/>
+        </surface>
+        <surface n="5r" xml:id="i10">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00010"/>
+        </surface>
+        <surface n="5v" xml:id="i11">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00011"/>
+        </surface>
+        <surface n="6r" xml:id="i12">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00012"/>
+        </surface>
+        <surface n="6v" xml:id="i13">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00013"/>
+        </surface>
+        <surface n="7r" xml:id="i14">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00014"/>
+        </surface>
+        <surface n="7v" xml:id="i15">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00015"/>
+        </surface>
+        <surface n="8r" xml:id="i16">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00016"/>
+        </surface>
+        <surface n="8v" xml:id="i17">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00017"/>
+        </surface>
+        <surface n="9r" xml:id="i18">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00018"/>
+        </surface>
+        <surface n="9v" xml:id="i19">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00019"/>
+        </surface>
+        <surface n="10r" xml:id="i20">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00020"/>
+        </surface>
+        <surface n="10v" xml:id="i21">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00021"/>
+        </surface>
+        <surface n="11r" xml:id="i22">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00022"/>
+        </surface>
+        <surface n="11v" xml:id="i23">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00023"/>
+        </surface>
+        <surface n="12r" xml:id="i24">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00024"/>
+        </surface>
+        <surface n="12v" xml:id="i25">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00025"/>
+        </surface>
+        <surface n="13r" xml:id="i26">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00026"/>
+        </surface>
+        <surface n="13v" xml:id="i27">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00027"/>
+        </surface>
+        <surface n="14r" xml:id="i28">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00028"/>
+        </surface>
+        <surface n="14v" xml:id="i29">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00029"/>
+        </surface>
+        <surface n="15r" xml:id="i30">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00030"/>
+        </surface>
+        <surface n="15v" xml:id="i31">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00031"/>
+        </surface>
+        <surface n="16r" xml:id="i32">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00032"/>
+        </surface>
+        <surface n="16v" xml:id="i33">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00033"/>
+        </surface>
+        <surface n="17r" xml:id="i34">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00034"/>
+        </surface>
+        <surface n="17v" xml:id="i35">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00035"/>
+        </surface>
+        <surface n="18r" xml:id="i36">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00036"/>
+        </surface>
+        <surface n="18v" xml:id="i37">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00037"/>
+        </surface>
+        <surface n="19r" xml:id="i38">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00038"/>
+        </surface>
+        <surface n="19v" xml:id="i39">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00039"/>
+        </surface>
+        <surface n="20r" xml:id="i40">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00040"/>
+        </surface>
+        <surface n="20v" xml:id="i41">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00041"/>
+        </surface>
+        <surface n="21r" xml:id="i42">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00042"/>
+        </surface>
+        <surface n="21v" xml:id="i43">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00043"/>
+        </surface>
+        <surface n="22r" xml:id="i44">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00044"/>
+        </surface>
+        <surface n="22v" xml:id="i45">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00045"/>
+        </surface>
+        <surface n="23r" xml:id="i46">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00046"/>
+        </surface>
+        <surface n="23v" xml:id="i47">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00047"/>
+        </surface>
+        <surface n="24r" xml:id="i48">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00048"/>
+        </surface>
+        <surface n="24v" xml:id="i49">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00049"/>
+        </surface>
+        <surface n="25r" xml:id="i50">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00050"/>
+        </surface>
+        <surface n="25v" xml:id="i51">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00051"/>
+        </surface>
+        <surface n="26r" xml:id="i52">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00052"/>
+        </surface>
+        <surface n="26v" xml:id="i53">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00053"/>
+        </surface>
+        <surface n="27r" xml:id="i54">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00054"/>
+        </surface>
+        <surface n="27v" xml:id="i55">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00055"/>
+        </surface>
+        <surface n="28r" xml:id="i56">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00056"/>
+        </surface>
+        <surface n="28v" xml:id="i57">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00057"/>
+        </surface>
+        <surface n="29r" xml:id="i58">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00058"/>
+        </surface>
+        <surface n="29v" xml:id="i59">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00059"/>
+        </surface>
+        <surface n="30r" xml:id="i60">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00060"/>
+        </surface>
+        <surface n="30v" xml:id="i61">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00061"/>
+        </surface>
+        <surface n="31r" xml:id="i62">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00062"/>
+        </surface>
+        <surface n="31v" xml:id="i63">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00063"/>
+        </surface>
+        <surface n="32r" xml:id="i64">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00064"/>
+        </surface>
+        <surface n="32v" xml:id="i65">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00065"/>
+        </surface>
+        <surface n="33r" xml:id="i66">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00066"/>
+        </surface>
+        <surface n="33v" xml:id="i67">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00067"/>
+        </surface>
+        <surface n="34r" xml:id="i68">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00068"/>
+        </surface>
+        <surface n="34v" xml:id="i69">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00069"/>
+        </surface>
+        <surface n="35r" xml:id="i70">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00070"/>
+        </surface>
+        <surface n="35v" xml:id="i71">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00071"/>
+        </surface>
+        <surface n="36r" xml:id="i72">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00072"/>
+        </surface>
+        <surface n="36v" xml:id="i73">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00073"/>
+        </surface>
+        <surface n="37r" xml:id="i74">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00074"/>
+        </surface>
+        <surface n="37v" xml:id="i75">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00075"/>
+        </surface>
+        <surface n="38r" xml:id="i76">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00076"/>
+        </surface>
+        <surface n="38v" xml:id="i77">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00077"/>
+        </surface>
+        <surface n="39r" xml:id="i78">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00078"/>
+        </surface>
+        <surface n="39v" xml:id="i79">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00079"/>
+        </surface>
+        <surface n="40r" xml:id="i80">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00080"/>
+        </surface>
+        <surface n="40v" xml:id="i81">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00081"/>
+        </surface>
+        <surface n="41r" xml:id="i82">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00082"/>
+        </surface>
+        <surface n="41v" xml:id="i83">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00083"/>
+        </surface>
+        <surface n="42r" xml:id="i84">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00084"/>
+        </surface>
+        <surface n="42v" xml:id="i85">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00085"/>
+        </surface>
+        <surface n="43r" xml:id="i86">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00086"/>
+        </surface>
+        <surface n="43v" xml:id="i87">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00087"/>
+        </surface>
+        <surface n="44r" xml:id="i88">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00088"/>
+        </surface>
+        <surface n="44v" xml:id="i89">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00089"/>
+        </surface>
+        <surface n="45r" xml:id="i90">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00090"/>
+        </surface>
+        <surface n="45v" xml:id="i91">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00091"/>
+        </surface>
+        <surface n="46r" xml:id="i92">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00092"/>
+        </surface>
+        <surface n="46v" xml:id="i93">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00093"/>
+        </surface>
+        <surface n="47r" xml:id="i94">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00094"/>
+        </surface>
+        <surface n="47v" xml:id="i95">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00095"/>
+        </surface>
+        <surface n="48r" xml:id="i96">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00096"/>
+        </surface>
+        <surface n="48v" xml:id="i97">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00097"/>
+        </surface>
+        <surface n="49r" xml:id="i98">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00098"/>
+        </surface>
+        <surface n="49v" xml:id="i99">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00099"/>
+        </surface>
+        <surface n="50r" xml:id="i100">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00100"/>
+        </surface>
+        <surface n="50v" xml:id="i101">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00101"/>
+        </surface>
+        <surface n="51r" xml:id="i102">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00102"/>
+        </surface>
+        <surface n="51v" xml:id="i103">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00103"/>
+        </surface>
+        <surface n="52r" xml:id="i104">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00104"/>
+        </surface>
+        <surface n="52v" xml:id="i105">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00105"/>
+        </surface>
+        <surface n="53r" xml:id="i106">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00106"/>
+        </surface>
+        <surface n="53v" xml:id="i107">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00107"/>
+        </surface>
+        <surface n="54r" xml:id="i108">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00108"/>
+        </surface>
+        <surface n="54v" xml:id="i109">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00109"/>
+        </surface>
+        <surface n="55r" xml:id="i110">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00110"/>
+        </surface>
+        <surface n="55v" xml:id="i111">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00111"/>
+        </surface>
+        <surface n="56r" xml:id="i112">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00112"/>
+        </surface>
+        <surface n="56v" xml:id="i113">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00113"/>
+        </surface>
+        <surface n="57r" xml:id="i114">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00114"/>
+        </surface>
+        <surface n="57v" xml:id="i115">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00115"/>
+        </surface>
+        <surface n="58r" xml:id="i116">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00116"/>
+        </surface>
+        <surface n="58v" xml:id="i117">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00117"/>
+        </surface>
+        <surface n="59r" xml:id="i118">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00118"/>
+        </surface>
+        <surface n="59v" xml:id="i119">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00119"/>
+        </surface>
+        <surface n="60r" xml:id="i120">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00120"/>
+        </surface>
+        <surface n="60v" xml:id="i121">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00121"/>
+        </surface>
+        <surface n="61r" xml:id="i122">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00122"/>
+        </surface>
+        <surface n="61v" xml:id="i123">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00123"/>
+        </surface>
+        <surface n="62r" xml:id="i124">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00124"/>
+        </surface>
+        <surface n="62v" xml:id="i125">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00125"/>
+        </surface>
+        <surface n="63r" xml:id="i126">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00126"/>
+        </surface>
+        <surface n="63v" xml:id="i127">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00127"/>
+        </surface>
+        <surface n="64r" xml:id="i128">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00128"/>
+        </surface>
+        <surface n="64v" xml:id="i129">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00129"/>
+        </surface>
+        <surface n="65r" xml:id="i130">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00130"/>
+        </surface>
+        <surface n="65v" xml:id="i131">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00131"/>
+        </surface>
+        <surface n="66r" xml:id="i132">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00132"/>
+        </surface>
+        <surface n="66v" xml:id="i133">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00133"/>
+        </surface>
+        <surface n="67r" xml:id="i134">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00134"/>
+        </surface>
+        <surface n="67v" xml:id="i135">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00135"/>
+        </surface>
+        <surface n="68r" xml:id="i136">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00136"/>
+        </surface>
+        <surface n="68v" xml:id="i137">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00137"/>
+        </surface>
+        <surface n="69r" xml:id="i138">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00138"/>
+        </surface>
+        <surface n="69v" xml:id="i139">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00139"/>
+        </surface>
+        <surface n="70r" xml:id="i140">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00140"/>
+        </surface>
+        <surface n="70v" xml:id="i141">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00141"/>
+        </surface>
+        <surface n="71r" xml:id="i142">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00142"/>
+        </surface>
+        <surface n="71v" xml:id="i143">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00143"/>
+        </surface>
+        <surface n="72r" xml:id="i144">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00144"/>
+        </surface>
+        <surface n="72v" xml:id="i145">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00145"/>
+        </surface>
+        <surface n="73r" xml:id="i146">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00146"/>
+        </surface>
+        <surface n="73v" xml:id="i147">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00147"/>
+        </surface>
+        <surface n="74r" xml:id="i148">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00148"/>
+        </surface>
+        <surface n="74v" xml:id="i149">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00149"/>
+        </surface>
+        <surface n="75r" xml:id="i150">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00150"/>
+        </surface>
+        <surface n="75v" xml:id="i151">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00151"/>
+        </surface>
+        <surface n="76r" xml:id="i152">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00152"/>
+        </surface>
+        <surface n="76v" xml:id="i153">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00153"/>
+        </surface>
+        <surface n="77r" xml:id="i154">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00154"/>
+        </surface>
+        <surface n="77v" xml:id="i155">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00155"/>
+        </surface>
+        <surface n="78r" xml:id="i156">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00156"/>
+        </surface>
+        <surface n="78v" xml:id="i157">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00157"/>
+        </surface>
+        <surface n="79r" xml:id="i158">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00158"/>
+        </surface>
+        <surface n="79v" xml:id="i159">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00159"/>
+        </surface>
+        <surface n="80r" xml:id="i160">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00160"/>
+        </surface>
+        <surface n="80v" xml:id="i161">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00161"/>
+        </surface>
+        <surface n="81r" xml:id="i162">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00162"/>
+        </surface>
+        <surface n="81v" xml:id="i163">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00163"/>
+        </surface>
+        <surface n="82r" xml:id="i164">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00164"/>
+        </surface>
+        <surface n="82v" xml:id="i165">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00165"/>
+        </surface>
+        <surface n="83r" xml:id="i166">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00166"/>
+        </surface>
+        <surface n="83v" xml:id="i167">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00167"/>
+        </surface>
+        <surface n="84r" xml:id="i168">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00168"/>
+        </surface>
+        <surface n="84v" xml:id="i169">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00169"/>
+        </surface>
+        <surface n="85r" xml:id="i170">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00170"/>
+        </surface>
+        <surface n="85v" xml:id="i171">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00171"/>
+        </surface>
+        <surface n="86r" xml:id="i172">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00172"/>
+        </surface>
+        <surface n="86v" xml:id="i173">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00173"/>
+        </surface>
+        <surface n="back cover" xml:id="i174">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="3480px" rend="portrait" url="MS-II-00006-00032-000-00174"/>
+        </surface>
+        <surface n="spine" xml:id="i175">
+            <graphic decls="#downloadImageRights #download" height="4491px" width="1792px" rend="portrait" url="MS-II-00006-00032-000-00175"/>
+        </surface>
+
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <!--and this is where transcription goes, separated into pages by pb elements, each linked to an image-->
+                <!--these are samples-->
+                <pb n="cover" facs="#i1"/>
+                <pb n="1r" facs="#i2"/>
+                <pb n="1v" facs="#i3"/>
+                <pb n="2r" facs="#i4"/>
+                <pb n="2v" facs="#i5"/>
+                <pb n="3r" facs="#i6"/>
+                <pb n="3v" facs="#i7"/>
+                <pb n="4r" facs="#i8"/>
+                <pb n="4v" facs="#i9"/>
+                <pb n="5r" facs="#i10"/>
+                <pb n="5v" facs="#i11"/>
+                <pb n="6r" facs="#i12"/>
+                <pb n="6v" facs="#i13"/>
+                <pb n="7r" facs="#i14"/>
+                <pb n="7v" facs="#i15"/>
+                <pb n="8r" facs="#i16"/>
+                <pb n="8v" facs="#i17"/>
+                <pb n="9r" facs="#i18"/>
+                <pb n="9v" facs="#i19"/>
+                <pb n="10r" facs="#i20"/>
+                <pb n="10v" facs="#i21"/>
+                <pb n="11r" facs="#i22"/>
+                <pb n="11v" facs="#i23"/>
+                <pb n="12r" facs="#i24"/>
+                <pb n="12v" facs="#i25"/>
+                <pb n="13r" facs="#i26"/>
+                <pb n="13v" facs="#i27"/>
+                <pb n="14r" facs="#i28"/>
+                <pb n="14v" facs="#i29"/>
+                <pb n="15r" facs="#i30"/>
+                <pb n="15v" facs="#i31"/>
+                <pb n="16r" facs="#i32"/>
+                <pb n="16v" facs="#i33"/>
+                <pb n="17r" facs="#i34"/>
+                <pb n="17v" facs="#i35"/>
+                <pb n="18r" facs="#i36"/>
+                <pb n="18v" facs="#i37"/>
+                <pb n="19r" facs="#i38"/>
+                <pb n="19v" facs="#i39"/>
+                <pb n="20r" facs="#i40"/>
+                <pb n="20v" facs="#i41"/>
+                <pb n="21r" facs="#i42"/>
+                <pb n="21v" facs="#i43"/>
+                <pb n="22r" facs="#i44"/>
+                <pb n="22v" facs="#i45"/>
+                <pb n="23r" facs="#i46"/>
+                <pb n="23v" facs="#i47"/>
+                <pb n="24r" facs="#i48"/>
+                <pb n="24v" facs="#i49"/>
+                <pb n="25r" facs="#i50"/>
+                <pb n="25v" facs="#i51"/>
+                <pb n="26r" facs="#i52"/>
+                <pb n="26v" facs="#i53"/>
+                <pb n="27r" facs="#i54"/>
+                <pb n="27v" facs="#i55"/>
+                <pb n="28r" facs="#i56"/>
+                <pb n="28v" facs="#i57"/>
+                <pb n="29r" facs="#i58"/>
+                <pb n="29v" facs="#i59"/>
+                <pb n="30r" facs="#i60"/>
+                <pb n="30v" facs="#i61"/>
+                <pb n="31r" facs="#i62"/>
+                <pb n="31v" facs="#i63"/>
+                <pb n="32r" facs="#i64"/>
+                <pb n="32v" facs="#i65"/>
+                <pb n="33r" facs="#i66"/>
+                <pb n="33v" facs="#i67"/>
+                <pb n="34r" facs="#i68"/>
+                <pb n="34v" facs="#i69"/>
+                <pb n="35r" facs="#i70"/>
+                <pb n="35v" facs="#i71"/>
+                <pb n="36r" facs="#i72"/>
+                <pb n="36v" facs="#i73"/>
+                <pb n="37r" facs="#i74"/>
+                <pb n="37v" facs="#i75"/>
+                <pb n="38r" facs="#i76"/>
+                <pb n="38v" facs="#i77"/>
+                <pb n="39r" facs="#i78"/>
+                <pb n="39v" facs="#i79"/>
+                <pb n="40r" facs="#i80"/>
+                <pb n="40v" facs="#i81"/>
+                <pb n="41r" facs="#i82"/>
+                <pb n="41v" facs="#i83"/>
+                <pb n="42r" facs="#i84"/>
+                <pb n="42v" facs="#i85"/>
+                <pb n="43r" facs="#i86"/>
+                <pb n="43v" facs="#i87"/>
+                <pb n="44r" facs="#i88"/>
+                <pb n="44v" facs="#i89"/>
+                <pb n="45r" facs="#i90"/>
+                <pb n="45v" facs="#i91"/>
+                <pb n="46r" facs="#i92"/>
+                <pb n="46v" facs="#i93"/>
+                <pb n="47r" facs="#i94"/>
+                <pb n="47v" facs="#i95"/>
+                <pb n="48r" facs="#i96"/>
+                <pb n="48v" facs="#i97"/>
+                <pb n="49r" facs="#i98"/>
+                <pb n="49v" facs="#i99"/>
+                <pb n="50r" facs="#i100"/>
+                <pb n="50v" facs="#i101"/>
+                <pb n="51r" facs="#i102"/>
+                <pb n="51v" facs="#i103"/>
+                <pb n="52r" facs="#i104"/>
+                <pb n="52v" facs="#i105"/>
+                <pb n="53r" facs="#i106"/>
+                <pb n="53v" facs="#i107"/>
+                <pb n="54r" facs="#i108"/>
+                <pb n="54v" facs="#i109"/>
+                <pb n="55r" facs="#i110"/>
+                <pb n="55v" facs="#i111"/>
+                <pb n="56r" facs="#i112"/>
+                <pb n="56v" facs="#i113"/>
+                <pb n="57r" facs="#i114"/>
+                <pb n="57v" facs="#i115"/>
+                <pb n="58r" facs="#i116"/>
+                <pb n="58v" facs="#i117"/>
+                <pb n="59r" facs="#i118"/>
+                <pb n="59v" facs="#i119"/>
+                <pb n="60r" facs="#i120"/>
+                <pb n="60v" facs="#i121"/>
+                <pb n="61r" facs="#i122"/>
+                <pb n="61v" facs="#i123"/>
+                <pb n="62r" facs="#i124"/>
+                <pb n="62v" facs="#i125"/>
+                <pb n="63r" facs="#i126"/>
+                <pb n="63v" facs="#i127"/>
+                <pb n="64r" facs="#i128"/>
+                <pb n="64v" facs="#i129"/>
+                <pb n="65r" facs="#i130"/>
+                <pb n="65v" facs="#i131"/>
+                <pb n="66r" facs="#i132"/>
+                <pb n="66v" facs="#i133"/>
+                <pb n="67r" facs="#i134"/>
+                <pb n="67v" facs="#i135"/>
+                <pb n="68r" facs="#i136"/>
+                <pb n="68v" facs="#i137"/>
+                <pb n="69r" facs="#i138"/>
+                <pb n="69v" facs="#i139"/>
+                <pb n="70r" facs="#i140"/>
+                <pb n="70v" facs="#i141"/>
+                <pb n="71r" facs="#i142"/>
+                <pb n="71v" facs="#i143"/>
+                <pb n="72r" facs="#i144"/>
+                <pb n="72v" facs="#i145"/>
+                <pb n="73r" facs="#i146"/>
+                <pb n="73v" facs="#i147"/>
+                <pb n="74r" facs="#i148"/>
+                <pb n="74v" facs="#i149"/>
+                <pb n="75r" facs="#i150"/>
+                <pb n="75v" facs="#i151"/>
+                <pb n="76r" facs="#i152"/>
+                <pb n="76v" facs="#i153"/>
+                <pb n="77r" facs="#i154"/>
+                <pb n="77v" facs="#i155"/>
+                <pb n="78r" facs="#i156"/>
+                <pb n="78v" facs="#i157"/>
+                <pb n="79r" facs="#i158"/>
+                <pb n="79v" facs="#i159"/>
+                <pb n="80r" facs="#i160"/>
+                <pb n="80v" facs="#i161"/>
+                <pb n="81r" facs="#i162"/>
+                <pb n="81v" facs="#i163"/>
+                <pb n="82r" facs="#i164"/>
+                <pb n="82v" facs="#i165"/>
+                <pb n="83r" facs="#i166"/>
+                <pb n="83v" facs="#i167"/>
+                <pb n="84r" facs="#i168"/>
+                <pb n="84v" facs="#i169"/>
+                <pb n="85r" facs="#i170"/>
+                <pb n="85v" facs="#i171"/>
+                <pb n="86r" facs="#i172"/>
+                <pb n="86v" facs="#i173"/>
+                <pb n="back cover" facs="#i174"/>
+                <pb n="spine" facs="#i175"/>
+
+            </div>
+        </body>
+    </text>
+</TEI>

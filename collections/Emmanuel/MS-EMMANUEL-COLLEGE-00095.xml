@@ -1,0 +1,1543 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, Emmanuel College, MS 95</title>
+                <funder>Wellcome</funder>
+                <principal>James Freeman</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+                <availability xml:id="watermark" status="restricted">
+                    <licence>Emmanuel College, Cambridge (CC BY-NC 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-EMMANUEL-COLLEGE-00095" xml:lang="en">
+                    <msIdentifier>
+                        <institution>Emmanuel College, Cambridge</institution>
+                        <repository>Emmanuel College Library</repository>
+                        <collection>Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, Emmanuel College, MS 95</idno>
+                        <altIdentifier type="internal">
+                            <idno type="former">1.4.16</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <head>Medical recipes</head>
+                    <msContents>
+                        <summary>
+                            <seg type="para">There are numerous challenges to the systematic study of medieval medical recipe texts. They are almost
+                                always anonymous, with generic titles that typically specify only the illness to be cured. They are often very short –
+                                rarely more than half a dozen sentences – and highly mutable, with slight variations in the ingredients, quantities,
+                                instructions or prescriptions that are revealed only through close textual comparison. The traditional method of
+                                cataloguing texts – by recording rubrics, incipits and explicits – is thus of limited use, since it is unlikely to
+                                enable their connection to a known author or text and might furthermore disguise important differences between
+                                manuscript witnesses of the 'same' recipe. The variability of the collections in which medical recipes are found also
+                                make problematic any attempt at editing them as group. </seg>
+                            <seg type="para">The digitisation and cataloguing of manuscripts containing medical recipes across fourteen library
+                                collections in Cambridge by the Curious Cures in Cambridge Libraries project aims to address some of these challenges.
+                                It is facilitating researchers' access to the manuscripts in which these important texts are found, and revealing the
+                                intellectual and material contexts in which recipes were recorded and transmitted: cataloguing describes which texts
+                                are found alongside them, while the digitisation shows where and in what way the recipes were copied in manuscripts,
+                                and how they were organised or arranged on the page. This information all provides useful clues towards our
+                                understanding of the reading and reception of this form of medical knowledge in late medieval England. </seg>
+                            <seg type="para">The value of such an approach is illustrated by this example from Emmanuel College. The loss of several
+                                leaves, perhaps a whole quire, from the beginning of this manuscript disguises the fact that it contains much the same
+                                compilation of medical recipes and charms that is found in five other manuscripts covered by the project: <list>
+                                    <item><bibl type="MS" subtype="internal"><ref target="https://cudl.lib.cam.ac.uk/view/MS-ADD-09308/1">Cambridge,
+                                                University Library, MS Add. 9308</ref></bibl></item>
+                                    <item><bibl type="MS" subtype="internal"><ref target="https://cudl.lib.cam.ac.uk/view/MS-ADD-09309/1">Cambridge,
+                                                University Library, MS Add. 9309</ref></bibl></item>
+                                    <item><bibl type="MS" subtype="internal"><ref target="https://cudl.lib.cam.ac.uk/view/MS-DD-00006-00029/1"
+                                                >Cambridge, University Library, MS Dd.6.29</ref></bibl> (ff. 34r-)</item>
+                                    <item><bibl type="MS" subtype="external"><ref target="https://cudl.lib.cam.ac.uk/view/MS-SJC-E-00006/1">Cambridge,
+                                                St John's College, MS E.6</ref></bibl> (ff. 96r-)</item>
+                                    <item><bibl type="MS" subtype="external"><ref target="https://mss-cat.trin.cam.ac.uk/Manuscript/O.1.13">Cambridge,
+                                                Trinity College, MS O.1.13</ref></bibl> (ff. 46r- and 166r-)</item>
+                                </list> Furthermore, with the exception of the Trinity College manuscript, none of these is recorded in the <hi
+                                    rend="italic">Manual of the Writings in Middle English, 1050-1500 </hi> (vol. 10, p. 3839 [264]) (MS Add. 9308 and
+                                two manuscripts from collections outside were subsequently noted by George Keiser (2003)). Making further such
+                                identifications has perhaps been hampered by the limited availability of the text in print, with only one edition
+                                having been published, by Fritz Heinrich in 1896, from a single manuscript witness: <bibl type="MS" subtype="external"
+                                        ><ref target="">London, British Library, Add. MS 33996</ref></bibl>.</seg>
+                            <seg type="para">The text in Emmanuel MS 95 opens part-way through what we know from these other manuscripts to be a cure
+                                for the stone, and continues on the same page with treatments for other genito-urinary complaints: blood in one's
+                                urine, difficulty in passing urine, swollen testicles, and 'apysgalle' or 'scalding' of the penis (probably a urinary
+                                tract infection or symptom of venereal disease). </seg>
+                            <seg type="para">The prescriptions for these terribly uncomfortable ailments are, except for minor variations of wording,
+                                all but identical to one another across this group of manuscripts – and where the leaves of one have been damaged, we
+                                are able infer with reasonable confidence what the missing text might have been from other examples. 'For man þat
+                                pyssyt blode', a handful each of ambrose and sanguinary and half a handful of parsley seed were to be crushed and
+                                tempered with goat's milk and given to the sufferer to drink. A similar concotion was prescribed 'For man þat may nat
+                                wele pysse', using the herbs rue, gromwell and parsley, crushed and tempered with white wine, and served warm. To cure
+                                swollen testicles, powdered cumin, barleymeal and honey are fried together; from this, a plaster is made, which is
+                                kept luke warm and bound around the sore area. For the last of this group, a linen cloth should be cleaned, burned and
+                                ground into a powder and mixed with 'oyle of eggys': the sore should be anointed with this, and the powder put in the
+                                sore holes. </seg>
+                            <seg type="para">On further examination, however, there are differences between these compilations that point to a more
+                                complex history of textual transmission that still awaits detailed study and analysis. For instance, St John's MS E.6
+                                omits the cures for blood in the urine and swollen testicles, but includes an extra cure for 'skaldidd pyntill' that
+                                involves cooking mallows and mercury with 'a mese of pork' (probably minced) and making from that a pottage that the
+                                sick should eat, served with white wine. The first set of recipes in Trinity MS O.1.13 gives only the first two before
+                                moving on to remedies for 'wildfire', dry cough and the white or black morphews; four cures for swollen testicles
+                                appear a few pages later (f. 49r), of which the third is the closest match but with several changes: the same quantity
+                                of wormwood, 'bene mele' and powdered cumin are tempered with white wine and fried to make a plaster, which was to be
+                                applied warm. Apparently, this formulation had a more general purpose application, since 'it is good for alle wykkyd
+                                humours of ballokkis'. A cure for the final ailment is omitted altogether from this set of recipes in this manuscript. </seg>
+                            <seg type="para">The recipes continue in Emmanuel MS 95 with cures for aching or swelling in the thighs or feet, for
+                                aching or swelling in the legs or feet, and two for feet that have become swollen through travelling (one using
+                                mugwort fried in boar's grease to make a plaster, the other using cumin instead of mugwort with the addition of olive
+                                oil for frying). Only in CUL MS Dd.6.29 are all four presented in the same order. In CUL MS Add. 9309, the cure for
+                                legs and feet is entitled 'For all manere swellyng'. The sequence is interrupted after that by a treatment 'For him
+                                þat hath ache oþer swellyng in his brayn', which is out of place in a section dealing with the lower half of the body.
+                                In the second set of recipes in Trinity MS O.1.13, the first remedy is omitted, whereas in CUL MS Add. 9308 it is the
+                                second, and where the last two for swollen feet are given instead under the heading for aching or swelling in the legs
+                                or feet. Only the mugwort cure for swollen feet is found in St John's MS E.6. Altogether different remedies for aches
+                                and swellings in the legs or feet are found in the first set of recipes in Trinity MS O.1.13, not after the first
+                                genito-urinary cures but later, below the four treatments for swollen testicles. </seg>
+                            <seg type="para">These compilations of Middle English recipes are also found in varying manuscript contexts. Perhaps the
+                                most similar in terms of script and layout to Emmanuel MS 95 are CUL MS Add. 9309 and Trinity MS O.1.13 (first set):
+                                both are written on paper in cursive scripts of variable neatness, with a fluctuating number of lines on each page. In
+                                Trinity MS O.1.13, the rubrics are a simply underlined, whereas slightly more formal display scripts are used for the
+                                rubrics in CUL MS Add. 9308 and Emmanuel MS 95 (where they are also underlined in red). The second set in Trinity MS
+                                O.1.13 is also written on paper, but frame ruling and greater scribal care resulted in a more regular layout, and a
+                                semi-formal Anglicana script was used for the text and rubrics alike, the latter marked by a paraph and underlining,
+                                both in red. The production of CUL MS Add. 9308 and CUL MS Dd.6.29 is more polished, and was probably executed by
+                                professional craftsmen. Each page is ruled with a consistent layout, the formal scripts Anglicana formata in the
+                                former and textura in the latter are used for copying the text, and decorated initials mark the beginning of each
+                                recipe; the first of these in CUL MS Dd.6.29 is even in gold leaf. MS Add. 9308 is the smallest, St John's MS E.6 and
+                                Emmanuel MS 95 being slightly larger but both about the same size as each other, and CUL MS Add. 9309 and then CUL MS
+                                Dd.6.29 each larger than the previous. Trinity MS O.1.13 is taller than the largest of these, but narrower. These
+                                differences notwithstanding, the recipes are in each manuscript presented in small and portable formats. </seg>
+                            <seg type="para">Setting aside the other, later additions to Emmanuel MS 95 (catalogued here as Parts 1 and 3), it appears
+                                to have been made as a standalone compilation of medical recipes - like CUL MS Add. 9308 and 9309. So, too, may have
+                                been those found in CUL MS Dd.6.29 and Trinity MS O.1.13, however these were evidently soon integrated into more
+                                wide-ranging compilations. The inclusion in both manuscripts of a number of urinoscopy texts as well as some elements
+                                of astrological medicine resembles the combination of such material in the folding almanacs that were being produced
+                                around the same time, and suggests a possibly more learned readership for this collection of recipes. The outlier in
+                                the group – and the only one for which we have identifiable medieval provenance – is St John's MS E.6, which was
+                                compiled by Thomas Betson (d. 1516), a university educated lawyer and priest who later entered Syon Abbey as a
+                                Bridgettine monk. Its contents reflect Betson's wide range of intellectual interests: medical, but also herbal,
+                                chemical, legal, poetic and devotional. His collection of recipes is the most selective of this set, copied by his own
+                                hand in his commonplace book. He may have had access to an exemplar preserving only part of the collection seen in
+                                these other manuscripts, or made a selection from it based on his own preferences and expertise, but either way it
+                                confirms that vernacular recipes were of interest to learned, Latinate readerships as well as to practitioners of the
+                                healing arts for whom Middle English provided invaluable access to medical knowledge. </seg>
+                            <seg type="para">Evidently, the contents of these manuscipts continued to be valued into the 16th century and beyond.
+                                Bound into Emmanuel MS 95 at the end are four bifolia and a quire of eight leaves, all of paper. Onto the first
+                                leaves, a later owner of the manuscript added a table of contents for the preceding recipes - evidently made after the
+                                loss of the leaves at the beginning of the manuscript, since it opens with the cure for blood in the urine. The
+                                compiler used a simple substitution cipher for words he considered taboo (for another instance of this phenomenon, see
+                                    <bibl type="MS" subtype="internal"><ref target="https://cudl.lib.cam.ac.uk/view/MS-DD-00006-00009/1">Cambridge,
+                                        University Library, MS Dd.6.9</ref></bibl>). Further recipes have then been added by several hands. Where one
+                                or more these owners may have lived is suggested by a sheet of paper from an account book - presumably added as an
+                                endleaf when the other material was bound in - which refers to places near Peterborough and Cambridge.</seg>
+                            <seg type="para">Dr James Freeman<lb/>Medieval Manuscripts Specialist<lb/>Cambridge University Library<lb/></seg>
+                            <seg type="para"><hi rend="italic">Bibliography:</hi>
+                                <list>
+                                    <item><hi rend="italic">Ein mittelenglisches Medizinbuch</hi>, ed. by Fritz Heinrich (Halle: Niemeyer,
+                                        1896)</item>
+                                    <item>George R. Keiser, 'Verse introductions to Middle English medical treatises', <hi rend="italic">English
+                                            Studies</hi> 84, 301-317</item>
+                                </list>
+                            </seg>
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc material="chart">
+                                <support>ff. [a]-[b] | pp. 1:1-1:120 | and ff. 2:1-2:16: all consist of paper leaves</support>
+                                <extent>
+                                    <seg type="object">Codex: </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="2" type="laterEndleaf">ii</measure> + <measure quantity="2" type="endleaf">2</measure> |
+                                            <measure quantity="59" type="leaf">59</measure> | <measure quantity="16" type="leaf">16</measure> +
+                                            <measure quantity="2" type="laterEndleaf">ii</measure> leaves.</seg>
+                                </extent>
+
+                                <foliation>
+                                    <p><hi rend="italic">A note on numbering sequences used in this description:</hi></p>
+                                    <p>The modern endleaves at the front and back of this manuscript have not been numbered, so for the purposes of
+                                        this description they have been assigned the folio numbers i-ii and iii-iv, and (as editorial additions) are
+                                        given in square brackets.</p>
+                                    <p>Similarly, the endleaves added to the manuscript in the 16th century, here designated as Part 1, have not been
+                                        numbered either, so for the purposes of this description they have been assigned the folio numbers a-b, and
+                                        (as editorial additions) are given in square brackets.</p>
+                                    <p>In its main section, here designated as Part 2, this manuscript contains multiple sequences of both foliation
+                                        and pagination, of different dates and different degrees of completeness and consistency. For the sake of
+                                        clarity, for the purposes of this description, the most functional sequence is followed: i.e. the 16th-century
+                                        pagination, 1-75 and 78-118, written in ink in the centre of the upper margin of both the recto and verso
+                                        side, here displayed as 1:1-1:75 and 1:78-1:118, and continued with 1:119-1:120 where the upper part of that
+                                        leaf is missing.</p>
+                                    <p>In the supplementary section, added to the manuscript in the 16th century and here designated as Part 3, this
+                                        description follows the 20th-century foliation, 1r-16v, written in pencil in the lower right-hand corner of
+                                        the recto side only, here displayed as 2:1r-2:16v.</p>
+                                </foliation>
+                                <foliation notAfter="1500" notBefore="1400">
+                                    <p>15th-century foliation:</p>
+                                    <p>30 (pp. <locus from="1:1" to="1:2">1:1-1:2</locus>); 30-42 (pp. <locus from="1:3" to="1:28">1:3-1:28</locus>);
+                                        48-90 (pp. <locus from="1:29" to="1:116">1:29-1:116</locus>); 43 (pp. <locus from="1:117" to="1:118"
+                                            >1:117-1:118</locus>); [?] (pp. <locus from="1:119" to="1:120">1:119-1:120</locus>)</p>
+                                    <note>Numbering in ink in the center of the upper margins of the rectos. From 30 to 48, these numbers have been
+                                        struck through in ink. The folio number on the leaf with pp. <locus from="1:119" to="1:120"
+                                            >1:119-1:120</locus> has been cut off.</note>
+                                </foliation>
+                                <foliation notAfter="1500" notBefore="1400">
+                                    <p>15th-/16th-century foliation:</p>
+                                    <p>10-19 (pp. <locus from="1:9" to="1:28">1:9-1:28</locus>); 25-67 (pp. <locus from="1:29" to="1:116"
+                                            >1:29-1:116</locus>; 20 (pp. <locus from="1:117" to="1:118">1:117-1:118</locus>); [?] (pp. <locus
+                                            from="1:119" to="1:120">1:119-1:120</locus>).</p>
+                                    <note>Numbering in ink in the upper right-hand corner of the rectos. The folio numbers on the first four leaves
+                                        (pp. <locus from="1:1" to="1:8">1:1-1:8</locus>) have been torn off; and the folio number on the final leaf of
+                                        the medieval part (pp. <locus from="1:119" to="1:120">1:119-1:120</locus>) has been cut off. Number 40 has
+                                        been overwritten in pencil, incorrectly, as '30'. </note>
+                                </foliation>
+                                <foliation notAfter="1600" notBefore="1500">
+                                    <p>16th-century pagination:</p>
+                                    <p>1-75, 78-118</p>
+                                    <note>Numbering in ink in the center of the upper margins of the rectos and versos; the paginator accidentally
+                                        jumped from 75 to 78; the page numbers <locus from="1:119" to="1:120">119-120</locus> were cut off with the
+                                        upper part of the final leaf but a modern hand added them again in pencil on what remains. This pagination is
+                                        followed in this record.</note>
+                                </foliation>
+                                <foliation notAfter="2000" notBefore="1900">
+                                    <p>20th-century foliation:</p>
+                                    <p>2:1-2:16, [iii]-[iv]</p>
+                                    <note>Numbering in pencil in the lower right-hand corners of the rectos of ff. <locus from="2:1r" to="2:16r"
+                                            >2:1-2:16</locus>. This foliation is followed in this record.</note>
+                                </foliation>
+                                <collation mainStructures="24">
+                                    <formula> 1<hi rend="superscript">14</hi> 2<hi rend="superscript">24</hi> 3<hi rend="superscript">24-4+1</hi>
+                                        (four leaves missing and one leaf from a missing quire, pp. 1:119-1:120, inserted) 4-7<hi rend="superscript"
+                                            >2</hi> 8<hi rend="superscript">8</hi></formula>
+                                </collation>
+                            </supportDesc>
+                        </objectDesc>
+                        <bindingDesc>
+                            <binding when="2013">
+                                <p>Modern limp vellum binding, replacing a quarter brown leather binding with marbled paper sides over paper boards
+                                        (<locus from="old front cover, outer" to="old rear cover, outer">old front cover-old rear cover</locus>) and a
+                                    gold-stamped title inscription on its spine: <q>Receipts in Physic</q> (<locus from="old spine cover"
+                                        to="old spine cover">old spine</locus>), now kept in a separate envolope with the manuscript inside a box that
+                                    was made using a donation from Bernard Ramsbottom in 2013; the former binding features three unfoliated paper
+                                    flyleaves, as well as two melinex folders: one containing binding materials (<locus from="binding materials recto"
+                                        to="binding materials verso">binding materials</locus>) and the other containing a paper fragment with
+                                    fragments of a 15th-century cursive text (<locus from="fragment recto" to="fragment verso">fragment</locus>),
+                                    probably English and possibly belonging to the original contents of the manuscript.</p>
+                                <p>Binding height: 165mm; width: 120mm; depth: 20mm.</p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <provenance notAfter="1600" notBefore="1500"><p><name key="" role="fmo">
+                                    <persName type="display">Andrew Skinner [Skynner] (fl. 16th century)</persName>
+                                    <persName type="standard">Skinner [Skynner], Andrew, fl. 16th century</persName></name>: may have owned or
+                                accessed the manuscript since his name features in the lower margin of p. <locus from="1:51" to="1:51">1:51</locus>
+                                    (<q>Andru skynner</q>) without a suggestion that it is part of account notes or a memorandum by another owner.
+                            </p>
+                        </provenance>
+                        <provenance notAfter="1600" notBefore="1500"><p><name key="" role="fmo">
+                                    <persName type="display">Robert Hancock (fl. 16th century)</persName>
+                                    <persName type="standard">Hancock, Robert, fl. 16th century</persName></name>: his name inscribed 3x inscribed in
+                                cypher on f. <locus from="2:13v" to="2:13v">2:13v</locus>; and his ownership inscription on f. <locus from="2:16r"
+                                    to="2:16r">2:16r</locus>: <q>Robert Hancock oweth this book</q>. </p>
+                        </provenance>
+                        <acquisition notAfter="1697">Not identified but probably recorded in Bernard's <hi rend="italic">Catalogi Manuscriptorum
+                                Angliae et Hiberniae</hi> (1697). The College's classmarks 'MS 95' inscribed in pencil on f. [i] recto with an early
+                            modern paper pastedown with the College's armorial bookplate. The manuscript is kept in a box that was <q>made using a
+                                generous donation from Bernard Ramsbottom, 2013</q>. This box contains the manuscript's previous binding, which
+                            contains, on its spine, the old College's classmarks printed on three paper labels: '1' '4' '16'. </acquisition>
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source>This catalogue entry draws on the description provided by <bibl><name key="person_v88882890"><persName
+                                                type="display">M.R. James</persName>
+                                            <persName type="standard">James, M.R. (Montague Rhodes), 1862-1936</persName></name>, <hi rend="italic">A
+                                            Descriptive Catalogue of the Western Manuscripts in the Library of Emmanuel College</hi>, (Cambridge:
+                                        Cambridge University Press, 1904)</bibl> and <bibl>Angela M. Lucas, <hi rend="italic">Manuscripts in Christ's
+                                            Church, Emmanuel, Jesus, Selwyn and Sidney Sussex Colleges. Peterhouse and Trinity Hall, Cambridge</hi>,
+                                        The Index of Middle English Prose, Handlist 22 (Cambridge: Brewer, 2016)</bibl>. However, this record does not
+                                    follow the foliation provided by Lucas which initially appears to be based on the modern foliation ('30') but then
+                                    changes to follow the 15th-century foliation in pencil in the upper right corners of the rectos and ignores the
+                                    modern foliation on the additional leaves (ff. <locus from="2:1r" to="2:16v">2:1-2:16</locus>). Consequently, it
+                                    suggests that the manuscript has 84 folios instead of 75 folios (excluding ff. <locus from="[a] recto"
+                                        to="[b] verso">[a]-[b]</locus>).</source>
+                            </recordHist>
+                            <availability status="restricted">
+                                <p>Visitors to Emmanuel College who wish to consult Special Collections material are required to apply to the Library
+                                    in advance of their visit. For information on eligibility and admission procedures see: <ref
+                                        target="https://www.emma.cam.ac.uk/library/special/">Emmanuel College: Special Collections</ref>. </p>
+                            </availability>
+                        </adminInfo>
+                        <listBibl>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/4ZACZ48F" type="book" xml:id="James1904">
+                                <monogr>
+                                    <title level="m">The Western manuscripts in the library of Emmanuel College: a descriptive catalogue</title>
+                                    <author>
+                                        <forename>M.R.</forename>
+                                        <surname>James</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1904</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 84.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/2YQ28XAF" type="journalArticle" xml:id="Smallwood1989">
+                                <analytic>
+                                    <title level="a">God was born in Bethlehem: the tradition of a Middle English Charm'</title>
+                                    <author>
+                                        <forename>T. M.</forename>
+                                        <surname>Smallwood</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Medium Ævum</title>
+                                    <imprint>
+                                        <biblScope unit="volume">58</biblScope>
+                                        <biblScope unit="issue">2</biblScope>
+                                        <biblScope unit="page">206-223</biblScope>
+                                        <date>1989</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/FFRPXBV8" type="book" xml:id="Lucas2016">
+                                <monogr>
+                                    <title level="m">Manuscripts in Christ's, Emmanuel, Jesus, Selwyn and Sidney Colleges, Trinity Hall,
+                                        Cambridge</title>
+                                    <author>
+                                        <forename>Angela M.</forename>
+                                        <surname>Lucas</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>D.S. Brewer</publisher>
+                                        <date>2016</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Index of Middle English prose</title>
+                                    <biblScope unit="volume">Handlist XXII</biblScope>
+                                </series>
+                                <note>pp. 17-20.</note>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>
+                    <msPart>
+                        <msIdentifier>
+                            <idno>Cambridge, Emmanuel College, MS 95, ff. [a]-[b]</idno>
+                            <msName>Part 1</msName>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="en">English</textLang>
+                            <msItem n="1">
+                                <locus from="[a] verso" to="[b] recto">[a] verso-[b] recto</locus>
+                                <title key="">List of names from an (?) account book</title>
+                                <textLang mainLang="en">English</textLang>
+                                <note>This leaf was cut from a a larger document and reused as a flyleaf for this manuscript. For this purpose, the
+                                    document was turned a quarter, which means that the document's text is now in a vertical orientation. The document
+                                    contains a list of names that was perhaps part of an account book. Although the text is cropped, the following
+                                    names are legible: <list>
+                                        <item><q>[...] Thrapston</q></item>
+                                        <item><q>[Will]iam neathercoote</q></item>
+                                        <item><q>[Ma]thew Laurance</q></item>
+                                        <item><q>[Rich]ard Banks</q></item>
+                                        <item><q>William Cols Senior - Peterborow - Henry Tayler</q></item>
+                                        <item><q>William feild</q></item>
+                                        <item><q>[Richa]rd Hitchcock</q></item>
+                                        <item><q>Robert Morton</q></item>
+                                        <item><q>[...] Batson</q></item>
+                                        <item><q>[...] Thurston</q></item>
+                                        <item><q>[...] Comfort</q></item>
+                                        <item><q>Richard Bretine</q></item>
+                                        <item><q>Richard Ekinse</q></item>
+                                        <item><q>St Jues - Thomas Mansfeild</q></item>
+                                        <item><q>Kimbolton - Richard Younge</q></item>
+                                        <item><q>Wim[bl]ington [?] - Mr John ffitz Jeffery</q></item>
+                                        <item><q>Sharnbrook - John Clare and Thomas Clare</q></item>
+                                        <item><q>Atleborow - Thomas Andrew</q></item>
+                                    </list> The places named appear to refer to locations near Peterborough and Cambridge, and may suggest the region
+                                    of origin for the acount book.</note>
+                            </msItem>
+                            <msItem n="2">
+                                <locus from="[b] verso" to="[b] verso">[b] verso</locus>
+                                <title key="">Letter of Thomas Springe from prison</title>
+                                <textLang mainLang="en">English</textLang>
+                                <incipit>Enquire of John ffurbancke of South hastead for one Henry Merinton and bring mee the townes name where he
+                                    dewelleth and whether he keepeth house and cattell and in what fashion he liueth. Likewise for Nicholas Place of
+                                    Colchester and tell him I would entreat him to send mee some money by the bearer hereof Robert Hancocke and tell
+                                    him I had thought he would haue beene honest. I am still in prison and he know the missery of a prisoner and rest.
+                                    Your very loving freind Thomas Springe</incipit>
+                                <note>Full transcription.</note>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <objectDesc form="fragment">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>One sheet of paper (no watermark) that has been taken from another manuscript and has been folded,
+                                            creating one stub (f. <locus from="[a] recto" to="[a] verso">[a]</locus>) and one leaf (f. <locus
+                                                from="[b] recto" to="[b] verso">[b]</locus>).</material>
+                                    </support>
+                                    <extent>
+                                        <seg type="leaf">
+                                            <measure quantity="2" type="leaf">2</measure> leaves.</seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="155">155</height>
+                                                <width quantity="105">105</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout><p>Because the leaf has been taken from another manuscript, its writing is in a vertical position.</p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="cursiva">
+                                    <p> f. <locus from="[a] verso" to="[b] recto">[a] verso-[b] recto</locus> contain text written by a 16th-century
+                                        scribe writing in a <term type="script">secretary</term> hand.</p>
+                                    <p> f. <locus from="[b] verso" to="[b] verso">[b] verso</locus> contains text written by a 16th-century scribe
+                                        writing in a <term type="script">secretary</term> hand.</p>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote>
+                                    <p>This part of the manuscript does not contain any significant forms of decoration.</p>
+                                </decoNote>
+                            </decoDesc>
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1600" notBefore="1500"> Copied in the 16th century century. </origDate>
+                                <origPlace cert="high" key="place_g7002445">England. </origPlace>
+                            </origin>
+                            <provenance notAfter="1600" notBefore="1500"><p><name key="" role="fmo">
+                                        <persName type="display">Thomas Springe (fl. 16th century)</persName>
+                                        <persName type="standard">Springe, Thomas, fl. 16th century</persName></name>: Wrote a letter with his name on
+                                    f. <locus from="[b] verso" to="[b] verso">[b] verso</locus>
+                                </p>
+                            </provenance>
+                        </history>
+                    </msPart>
+                    <msPart>
+                        <msIdentifier>
+                            <idno>Cambridge, Emmanuel College, MS 95, pp. 1:1-1:120</idno>
+                            <msName>Part 2</msName>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                            <msItem n="1">
+                                <locus from="1:1" to="1:120">1:1-1:120</locus>
+                                <title key="">Collection of medical recipes attributed to Hippocrates, Galen, and Socrates</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                                <incipit defective="true"><locus from="1:1" to="1:1">1:1</locus> and put þer to whyt wyne and let hym seþe ouer þe
+                                    fere and so lete yt stonde yn þe same vesselle and y [g]yf yt hym to drynk lewke warme and þat schall make hym
+                                    hole</incipit>
+                                <explicit><locus from="1:120" to="1:120">1:120</locus> and do it in a boxe and strawe above poudre of gyngere and
+                                    þanne is it kendly made</explicit>
+                                <note>The collection includes diagnostic and prognostic recipes, including a: <q>ffor to knowyn whan a man is smetyn
+                                        on þe hede with a staf yif þe þan be brokyn or not and þe flessh not brokyn above</q> (p. <locus from="1:91"
+                                        to="1:91">1:91</locus>); <q>ffor to witte yif a a [sic] man shal lyve or dye that is woundid to yeve hym a
+                                        drynke</q> (pp. <locus from="1:95" to="1:95">1:95</locus>; <q>ffor to witte wheþer a man shal lyve or dye þat
+                                        is seke and not woundid</q> (pp. <locus from="1:96" to="1:97">1:96-1:97</locus>).</note>
+                                <note>The collection contains few recipes with attributions, one of which is attributed to Lady Beauchamp: <q>this
+                                        gracia dei vsed þe lady beachampe þe Erles wife of warewike</q> (p. <locus from="1:99" to="1:102"
+                                        >1:99-1:102</locus>); and the Earl of Hereford <q>Here is anoþer maner of gracia dei þat þe goode erle of
+                                        Hereforde vsed that was calde A noble surgen</q> (pp. <locus from="1:102" to="1:104"
+                                    >1:102-1:104</locus>).</note>
+                                <listBibl>
+                                    <bibl>eVK2 v0074240000</bibl>
+                                    <bibl>Lucas (2016), p. 116</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="2">
+                                <locus from="1:59" to="1:59">1:59</locus>
+                                <title key="">Charm against thieves</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="1:59" to="1:59">1:59</locus> Here is a charme ayenste stevys</rubric>
+                                <incipit><locus from="1:59" to="1:59">1:59</locus> In bedleem god was Borne betwene two bestys to reste he was leyde
+                                    in þat stede was neyþer theef ne man but the holy trinite whom \þylke selue god þat þere was borne/ deffende oure
+                                    bodyes and catell and alle mischiffes and harmes wherso we wende by londe or be watir be nyght or be daye by tyde
+                                    or by tyme Amen</incipit>
+                                <note>Full transcription.</note>
+                                <listBibl>
+                                    <bibl>Smallwood (1989) [without this manuscript]</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="3">
+                                <locus from="1:61" to="1:65">1:61-1:65</locus>
+                                <title key="">Culinary recipes</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="1:61" to="1:61">1:61</locus> ffor to make chare decoynes etcaetera</incipit>
+                                <explicit><locus from="1:65" to="1:65">1:65</locus> þat is frot seye of eche lyche moche and medle hem to
+                                    geder</explicit>
+                            </msItem>
+                            <msItem n="4">
+                                <locus from="1:92" to="1:93">1:92-1:93</locus>
+                                <title key="">Household notes (?)</title>
+                                <textLang mainLang="en">English</textLang>
+                                <note>Added to the lower margins by a 16th-century hand.</note>
+                            </msItem>
+                            <msItem n="5">
+                                <locus from="1:99" to="1:99">1:99</locus>
+                                <title key="">Charm against fever [Sage Leaf Charm]</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="1:99" to="1:99">1:99</locus> A[ls]o here is a medecyne for þe feuers etcaetera</rubric>
+                                <incipit><locus from="1:99" to="1:99">1:99</locus> Take a sauge lef and wryte þeron Christus tonat et lete þe seke ete
+                                    þat \þe/ fyrst day</incipit>
+                                <explicit><locus from="1:99" to="1:99">1:99</locus> Take vp his honde and blisse hym and sey Aue maria</explicit>
+                                <note>A note in the lower margin by a late 16th-century hand refers to the charm: <q>god keepe me from this medicine
+                                        for the ague</q>.</note>
+                            </msItem>
+                            <msItem n="6">
+                                <locus from="1:119" to="1:120">1:119-1:120</locus>
+                                <title key="">Culinary recipe for making (medicinal) gingerbread</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="1:119" to="1:119">1:119</locus> ffor to make Gyngebrede</rubric>
+                                <incipit><locus from="1:119" to="1:119">1:119</locus> Take half a quarte of feyre hony and put it into a brasyn panne
+                                    and boyle it wele oue þe fiere</incipit>
+                                <explicit><locus from="1:120" to="1:120">1:120</locus> and do it in a boxe and strawe above poudre of gyngere and
+                                    þanne is it kendly made</explicit>
+                                <note>Imperfect due to the loss of the upper part of the page.</note>
+                            </msItem>
+                            <msItem n="7">
+                                <locus from="1:120" to="1:120">1:120</locus>
+                                <title key="">Epilogue to the collection of recipes attributed to Hippocrates, Galen, and Socrates</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                                <incipit><locus from="1:120" to="1:120">1:120</locus> This boke hi[g]te ypocras: on of the beste surgeons þat euer was
+                                    and galien his felawe and socrates; to þis þis [sic] booke beryn witnesse for all þey weryn felawes in fere. While
+                                    þey lefde in erþe here and þorough þe grace of hevyn kynge ; þey practiseden medecynes to helpyn [? man] praye we
+                                    al to ihesu hevyn kyng: he yif here soule gode wonyng Amen - Iste liber Johanni Chancis etcetera Constat</incipit>
+                                <note>Full transcription.</note>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="1:4" to="1:4">1:4</locus>: wylde fyre </secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>Paper, folded in <measure type="folding">octavo</measure></material>
+                                        <watermark>
+                                            <seg type="para"><term type="watermarkMotif">Letter ?</term>
+                                                <!--(<dimensions type="watermark" unit="mm">
+                                             <height quantity="62">62</height>
+                                             <width quantity="47">47</width></dimensions>) 
+                                             <note type="watermarkPosition">in the
+                                             centre of the folio</note>, comparable to
+                                             <note>Heawood 1670, 1672</note>, but with a
+                                            different countermark (HD). 
+                                            These examples are dated to
+                                                <date calendar="gregorian" notBefore="1683" notAfter="1688">1683-1688</date>.--></seg>
+                                        </watermark>
+                                    </support>
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="59" type="leaf">59</measure> leaves.</seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="155">155</height>
+                                                <width quantity="105">105</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                    <collation mainStructures="24 14">
+                                        <p>
+                                            <list>
+                                                <item>Quire 1<hi rend="superscript">14</hi> (pp. <locus from="1:1" to="1:28">1:1-1:28</locus>)</item>
+                                                <item>Quire 2<hi rend="superscript">24</hi> (pp. <locus from="1:29" to="1:78"
+                                                    >1:29-1:78</locus>)</item>
+                                                <item>Quire 3<hi rend="superscript">24-4+1</hi> (pp. <locus from="1:79" to="1:120">1:79-1:120</locus>:
+                                                    four leaves missing and one from a missing quire (pp. 119-120) inserted)</item>
+                                            </list>
+                                        </p>
+                                    </collation>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout columns="1" rulingMedium="drypoint" topLine="below" writtenLines="20 21"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height quantity="115">115</height>
+                                                <width max="80" min="75">75-80</width>
+                                            </dimensions>
+                                            <seg type="ruling"> Ruled in drypoint, frame only. Single columns. 20-21 lines to the page, written above
+                                                top line.</seg></p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="cursiva">
+                                    <p>Copied by a single 15th-century scribe in a cursive script with both <term type="script">secretary</term> and
+                                            <term type="script">anglicana</term> features.</p>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote type="rubrication">
+                                    <p>Headings for recipes written and underlined in red ink.</p>
+                                </decoNote>
+                                <decoNote type="other">
+                                    <p>Litterae notabiliores in brown ink and highlighted in red ink.</p>
+                                </decoNote>
+                            </decoDesc>
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1600" notBefore="1400">15th century.</origDate>
+                                <origPlace cert="high" key="place_g7002445"> England.</origPlace>
+                            </origin>
+                        </history>
+                    </msPart>
+
+                    <msPart>
+                        <msIdentifier>
+                            <idno>Cambridge, Emmanuel College, MS 95, ff. 2:1-2:16</idno>
+                            <msName>Part 3</msName>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+
+                            <msItem n="8">
+                                <locus from="2:1r" to="2:5r">2:1r-2:5r</locus>
+                                <title key="">Table of contents for recipes on pp. <locus from="1:1" to="1:120">1:1-1:120</locus></title>
+                                <textLang mainLang="en">English</textLang>
+                                <incipit><locus from="2:1r" to="2:1r">2:1r</locus> P 1 - First for man that pisse bloud</incipit>
+                                <explicit><locus from="2:5r" to="2:5r">2:5r</locus> P. 118 - for the stomack that is incombred for him that spatteth
+                                    bloud</explicit>
+                                <finalRubric><locus from="2:5r" to="2:5r">2:5r</locus> 92c23pt[es] 38 166 th2 b44k2: 160: in all that is herein
+                                    writtne</finalRubric>
+                                <note>Added by a 16th-century hand. The scribe used a cypher (1=a, 2=e, 3=i, 4=o, 5=u, 6=l, 7=m, 8=n, 9=r) for taboo
+                                    words and the final line: <list>
+                                        <item><q>for a b5982d 019d2</q> [for a burned yarde] (<locus from="2:1r" to="2:1r">2:1r</locus>)</item>
+                                        <item><q>for t4 proc592 th2 t29726 4f 554728</q> [for to procure the termes of women] (<locus from="2:3r"
+                                                to="2:3r">2:3r</locus>)</item>
+                                        <item><q>Chi972 f4r th252s</q> [Charme for theues] (<locus from="2:3v" to="2:3v">2:3v</locus>)</item>
+                                        <item><q>ffor sc16d29g 4f your 019d2</q> [ffor scalding of your yarde] (<locus from="2:4r" to="2:4r"
+                                                >2:4r</locus>)</item>
+                                        <item><q>ffor swellinge of the Ballockes</q> [ffor swelling off the Ballockes] (<locus from="2:4r" to="2:4r"
+                                                >2:4r</locus>)</item>
+                                        <item><q>92c23pt[es] 38 166 th2 b44k2: 160</q> [Receiptes in all the booke: 160] (<locus from="2:5r" to="2:5r"
+                                                >2:5r</locus>)</item>
+                                    </list></note>
+                            </msItem>
+                            <msItem n="9">
+                                <locus from="2:5v" to="2:8r">2:5v-2:8r</locus>
+                                <title key="">Collection of medical recipes</title>
+                                <textLang mainLang="en">English</textLang>
+                                <note>Copied in the late 16th century; with a reference to the medieval recipes in this manuscript : <q>ffor a
+                                        Consumption in the great booke p. 92: To make vse of a Cock</q>.</note>
+                                <listBibl>
+                                    <bibl>Lucas (2016)</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="10">
+                                <locus from="2:8v" to="2:8v">2:8v</locus>
+                                <title key="">Draft letter or memorandum</title>
+                                <textLang mainLang="en">English</textLang>
+                                <incipit><locus from="2:8v" to="2:8v">2:8v</locus> Thomas Baxter of harte[...] will sufficid these [...] which was
+                                    [...] of the same [...] that he knewe one Rich[ard] Morr[i]s of Malden who was a shope kepper and that Richard had
+                                    2 Children one sonne and one daughter and he was a yorke shere man borne nere upon the borders of scotland </incipit>
+                                <note>Added in the early 16th century; full transcription attemped.</note>
+                            </msItem>
+                            <msItem n="11">
+                                <locus from="2:9v" to="2:13r">2:9v-2:13r</locus>
+                                <title key="">Collection of medical recipes</title>
+                                <textLang mainLang="en" otherLangs="la">English recipes, some Latin titles</textLang>
+                                <note>Copied in the late 16th century; including a recipe entitled <q>Sigillum Sallamonium</q>.</note>
+                                <listBibl>
+                                    <bibl>Lucas (2016)</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="12">
+                                <locus from="2:13v" to="2:13v">2:13v</locus>
+                                <title key="">Notes</title>
+                                <textLang mainLang="en">English</textLang>
+                                <note>References to names and places, perhaps all added by Robert Hancock whose name is also inscribed on this page
+                                    (see Provenance): <q>Henry Scoll of grantham</q>; <q>Inquire for Appelton in yorkshire</q>; <q>for Henry
+                                        Medington</q>; <q>John Corbyn</q>; <q>John Knight at Stamford</q>; <q>to Madengley</q>; <q>to Childerly</q>;
+                                        <q>to Knapwell</q>; <q> to (?) Elsworth</q>.</note>
+                                <note>Copied in the late 16th century; full transcription attemped.</note>
+                            </msItem>
+                            <msItem n="13">
+                                <locus from="2:14r" to="2:15v">2:14r-2:15v</locus>
+                                <title key="">Collection of medical recipes</title>
+                                <textLang mainLang="en">English</textLang>
+                                <note>Copied in the late 16th century.</note>
+                                <listBibl>
+                                    <bibl>Lucas (2016)</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="14">
+                                <locus from="2:16r" to="2:16r">2:16r</locus>
+                                <title key="">Notes and draft letter or memorandum</title>
+                                <textLang mainLang="en">English</textLang>
+                                <note>This page contains various references to names and places: <q>Henry [...] of Coelchester [...] and Henry
+                                        Scargille his apprentice</q>; <q>Ashborne in darbyshire for John Millers</q>; <q>Belbrough</q>; and draft
+                                    letter or memorandum referring to Richard Morris and Thomas Baxter, who <q>was a [...] border of Scottland</q>. </note>
+                                <note>Copied in the late 16th century; full transcription attemped.</note>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="2:2r" to="2:2r">2:2r</locus>: p 23 for a stinkinge breath</secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>Paper, folded in <measure type="folding">octavo</measure></material>
+                                        <watermark>
+                                            <seg type="para"><term type="watermarkMotif">Grapes</term>
+                                                <!--(<dimensions type="watermark" unit="mm">
+                                             <height quantity="62">62</height>
+                                             <width quantity="47">47</width></dimensions>) 
+                                             <note type="watermarkPosition">in the
+                                             centre of the folio</note>, comparable to
+                                             <note>Heawood 1670, 1672</note>, but with a
+                                            different countermark (HD). 
+                                            These examples are dated to
+                                                <date calendar="gregorian" notBefore="1683" notAfter="1688">1683-1688</date>.--></seg>
+                                        </watermark>
+                                    </support>
+                                    <extent>
+                                        <seg type="object"> Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="8" type="leaf">16</measure> leaves. </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="155">155</height>
+                                                <width quantity="105">105</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                    <collation mainStructures="2 24">
+                                        <p>
+                                            <list>
+                                                <item>Quires 4-7<hi rend="superscript">2</hi> (ff. <locus from="2:1r" to="2:8v"
+                                                    >2:1-2:8</locus>)</item>
+                                                <item>Quire 8<hi rend="superscript">8</hi> (ff. <locus from="2:8v" to="2:16v">2:8-2:16</locus>)</item>
+                                            </list>
+                                        </p>
+                                    </collation>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout columns="1" rulingMedium="drypoint" topLine="below" writtenLines="20 21"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height quantity="115">115</height>
+                                                <width max="80" min="75">75-80</width>
+                                            </dimensions>
+                                            <seg type="ruling"> Ruled in drypoint, frame only. Single columns. 20-21 lines to the page, written above
+                                                top line.</seg></p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="cursiva">
+                                    <p>Copied by various 16th-century scribes in <term type="script">secretary</term> hands. </p>
+                                </handNote>
+                            </handDesc>
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1600" notBefore="1400">16th century.</origDate>
+                                <origPlace cert="high" key="place_g7002445"> England.</origPlace>
+                            </origin>
+                        </history>
+                    </msPart>
+
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85083064">Medicine</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change status="draft" when="20230824">
+                <persName>Dr Clarck Drieshen, Project Cataloguer, Cambridge University Library</persName>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic decls="#document-thumbnail" url="MS-EMMANUEL-COLLEGE-00095-000-00001"/>
+        <surface n="front cover, outer" xml:id="page-surface-1">
+            <graphic decls="#downloadImageRights #download" height="5718px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00001" width="4028px"/>
+        </surface>
+        <surface n="front cover, inner" xml:id="page-surface-2">
+            <graphic decls="#downloadImageRights #download" height="5655px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00002" width="3684px"/>
+        </surface>
+        <surface n="[i] recto" xml:id="page-surface-3">
+            <graphic decls="#downloadImageRights #download" height="5355px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00003" width="3414px"/>
+        </surface>
+        <surface n="[i] verso" xml:id="page-surface-4">
+            <graphic decls="#downloadImageRights #download" height="5384px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00004" width="3462px"/>
+        </surface>
+        <surface n="[ii] recto" xml:id="page-surface-5">
+            <graphic decls="#downloadImageRights #download" height="5355px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00005" width="3414px"/>
+        </surface>
+        <surface n="[ii] verso" xml:id="page-surface-6">
+            <graphic decls="#downloadImageRights #download" height="5384px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00006" width="3441px"/>
+        </surface>
+        <surface n="[a] recto" xml:id="page-surface-7">
+            <graphic decls="#downloadImageRights #download" height="5346px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00007" width="1846px"/>
+        </surface>
+        <surface n="[a] verso" xml:id="page-surface-8">
+            <graphic decls="#downloadImageRights #download" height="5131px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00008" width="1859px"/>
+        </surface>
+        <surface n="[b] recto" xml:id="page-surface-9">
+            <graphic decls="#downloadImageRights #download" height="5428px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00009" width="3228px"/>
+        </surface>
+        <surface n="[b] verso" xml:id="page-surface-10">
+            <graphic decls="#downloadImageRights #download" height="5285px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00010" width="3137px"/>
+        </surface>
+        <surface n="1:1" xml:id="page-surface-11">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00011" width="3218px"/>
+        </surface>
+        <surface n="1:2" xml:id="page-surface-12">
+            <graphic decls="#downloadImageRights #download" height="5269px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00012" width="3256px"/>
+        </surface>
+        <surface n="1:3" xml:id="page-surface-13">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00013" width="3218px"/>
+        </surface>
+        <surface n="1:4" xml:id="page-surface-14">
+            <graphic decls="#downloadImageRights #download" height="5269px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00014" width="3256px"/>
+        </surface>
+        <surface n="1:5" xml:id="page-surface-15">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00015" width="3218px"/>
+        </surface>
+        <surface n="1:6" xml:id="page-surface-16">
+            <graphic decls="#downloadImageRights #download" height="5269px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00016" width="3256px"/>
+        </surface>
+        <surface n="1:7" xml:id="page-surface-17">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00017" width="3218px"/>
+        </surface>
+        <surface n="1:8" xml:id="page-surface-18">
+            <graphic decls="#downloadImageRights #download" height="5269px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00018" width="3256px"/>
+        </surface>
+        <surface n="1:9" xml:id="page-surface-19">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00019" width="3218px"/>
+        </surface>
+        <surface n="1:10" xml:id="page-surface-20">
+            <graphic decls="#downloadImageRights #download" height="5498px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00020" width="3335px"/>
+        </surface>
+        <surface n="1:11" xml:id="page-surface-21">
+            <graphic decls="#downloadImageRights #download" height="5459px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00021" width="3202px"/>
+        </surface>
+        <surface n="1:12" xml:id="page-surface-22">
+            <graphic decls="#downloadImageRights #download" height="5498px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00022" width="3335px"/>
+        </surface>
+        <surface n="1:13" xml:id="page-surface-23">
+            <graphic decls="#downloadImageRights #download" height="5367px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00023" width="3230px"/>
+        </surface>
+        <surface n="1:14" xml:id="page-surface-24">
+            <graphic decls="#downloadImageRights #download" height="5360px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00024" width="3223px"/>
+        </surface>
+        <surface n="1:15" xml:id="page-surface-25">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00025" width="3218px"/>
+        </surface>
+        <surface n="1:16" xml:id="page-surface-26">
+            <graphic decls="#downloadImageRights #download" height="5360px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00026" width="3223px"/>
+        </surface>
+        <surface n="1:17" xml:id="page-surface-27">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00027" width="3218px"/>
+        </surface>
+        <surface n="1:18" xml:id="page-surface-28">
+            <graphic decls="#downloadImageRights #download" height="5360px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00028" width="3223px"/>
+        </surface>
+        <surface n="1:19" xml:id="page-surface-29">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00029" width="3218px"/>
+        </surface>
+        <surface n="1:20" xml:id="page-surface-30">
+            <graphic decls="#downloadImageRights #download" height="5396px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00030" width="3141px"/>
+        </surface>
+        <surface n="1:21" xml:id="page-surface-31">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00031" width="3218px"/>
+        </surface>
+        <surface n="1:22" xml:id="page-surface-32">
+            <graphic decls="#downloadImageRights #download" height="5396px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00032" width="3141px"/>
+        </surface>
+        <surface n="1:23" xml:id="page-surface-33">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00033" width="3218px"/>
+        </surface>
+        <surface n="1:24" xml:id="page-surface-34">
+            <graphic decls="#downloadImageRights #download" height="5396px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00034" width="3141px"/>
+        </surface>
+        <surface n="1:25" xml:id="page-surface-35">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00035" width="3218px"/>
+        </surface>
+        <surface n="1:26" xml:id="page-surface-36">
+            <graphic decls="#downloadImageRights #download" height="5396px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00036" width="3141px"/>
+        </surface>
+        <surface n="1:27" xml:id="page-surface-37">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00037" width="3218px"/>
+        </surface>
+        <surface n="1:28" xml:id="page-surface-38">
+            <graphic decls="#downloadImageRights #download" height="5396px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00038" width="3141px"/>
+        </surface>
+        <surface n="1:29" xml:id="page-surface-39">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00039" width="3203px"/>
+        </surface>
+        <surface n="1:30" xml:id="page-surface-40">
+            <graphic decls="#downloadImageRights #download" height="5396px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00040" width="3141px"/>
+        </surface>
+        <surface n="1:31" xml:id="page-surface-41">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00041" width="3203px"/>
+        </surface>
+        <surface n="1:32" xml:id="page-surface-42">
+            <graphic decls="#downloadImageRights #download" height="5362px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00042" width="3256px"/>
+        </surface>
+        <surface n="1:33" xml:id="page-surface-43">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00043" width="3203px"/>
+        </surface>
+        <surface n="1:34" xml:id="page-surface-44">
+            <graphic decls="#downloadImageRights #download" height="5362px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00044" width="3256px"/>
+        </surface>
+        <surface n="1:35" xml:id="page-surface-45">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00045" width="3203px"/>
+        </surface>
+        <surface n="1:36" xml:id="page-surface-46">
+            <graphic decls="#downloadImageRights #download" height="5362px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00046" width="3221px"/>
+        </surface>
+        <surface n="1:37" xml:id="page-surface-47">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00047" width="3203px"/>
+        </surface>
+        <surface n="1:38" xml:id="page-surface-48">
+            <graphic decls="#downloadImageRights #download" height="5362px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00048" width="3221px"/>
+        </surface>
+        <surface n="1:39" xml:id="page-surface-49">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00049" width="3203px"/>
+        </surface>
+        <surface n="1:40" xml:id="page-surface-50">
+            <graphic decls="#downloadImageRights #download" height="5362px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00050" width="3221px"/>
+        </surface>
+        <surface n="1:41" xml:id="page-surface-51">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00051" width="3203px"/>
+        </surface>
+        <surface n="1:42" xml:id="page-surface-52">
+            <graphic decls="#downloadImageRights #download" height="5362px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00052" width="3221px"/>
+        </surface>
+        <surface n="1:43" xml:id="page-surface-53">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00053" width="3203px"/>
+        </surface>
+        <surface n="1:44" xml:id="page-surface-54">
+            <graphic decls="#downloadImageRights #download" height="5215px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00054" width="3171px"/>
+        </surface>
+        <surface n="1:45" xml:id="page-surface-55">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00055" width="3203px"/>
+        </surface>
+        <surface n="1:46" xml:id="page-surface-56">
+            <graphic decls="#downloadImageRights #download" height="5215px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00056" width="3171px"/>
+        </surface>
+        <surface n="1:47" xml:id="page-surface-57">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00057" width="3203px"/>
+        </surface>
+        <surface n="1:48" xml:id="page-surface-58">
+            <graphic decls="#downloadImageRights #download" height="5215px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00058" width="3171px"/>
+        </surface>
+        <surface n="1:49" xml:id="page-surface-59">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00059" width="3203px"/>
+        </surface>
+        <surface n="1:50" xml:id="page-surface-60">
+            <graphic decls="#downloadImageRights #download" height="5215px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00060" width="3171px"/>
+        </surface>
+        <surface n="1:51" xml:id="page-surface-61">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00061" width="3203px"/>
+        </surface>
+        <surface n="1:52" xml:id="page-surface-62">
+            <graphic decls="#downloadImageRights #download" height="5215px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00062" width="3171px"/>
+        </surface>
+        <surface n="1:53" xml:id="page-surface-63">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00063" width="3203px"/>
+        </surface>
+        <surface n="1:54" xml:id="page-surface-64">
+            <graphic decls="#downloadImageRights #download" height="5215px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00064" width="3171px"/>
+        </surface>
+        <surface n="1:55" xml:id="page-surface-65">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00065" width="3203px"/>
+        </surface>
+        <surface n="1:56" xml:id="page-surface-66">
+            <graphic decls="#downloadImageRights #download" height="5215px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00066" width="3171px"/>
+        </surface>
+        <surface n="1:57" xml:id="page-surface-67">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00067" width="3203px"/>
+        </surface>
+        <surface n="1:58" xml:id="page-surface-68">
+            <graphic decls="#downloadImageRights #download" height="5215px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00068" width="3171px"/>
+        </surface>
+        <surface n="1:59" xml:id="page-surface-69">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00069" width="3203px"/>
+        </surface>
+        <surface n="1:60" xml:id="page-surface-70">
+            <graphic decls="#downloadImageRights #download" height="5215px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00070" width="3171px"/>
+        </surface>
+        <surface n="1:61" xml:id="page-surface-71">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00071" width="3203px"/>
+        </surface>
+        <surface n="1:62" xml:id="page-surface-72">
+            <graphic decls="#downloadImageRights #download" height="5215px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00072" width="3171px"/>
+        </surface>
+        <surface n="1:63" xml:id="page-surface-73">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00073" width="3203px"/>
+        </surface>
+        <surface n="1:64" xml:id="page-surface-74">
+            <graphic decls="#downloadImageRights #download" height="5215px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00074" width="3099px"/>
+        </surface>
+        <surface n="1:65" xml:id="page-surface-75">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00075" width="3203px"/>
+        </surface>
+        <surface n="1:66" xml:id="page-surface-76">
+            <graphic decls="#downloadImageRights #download" height="5228px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00076" width="3163px"/>
+        </surface>
+        <surface n="1:67" xml:id="page-surface-77">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00077" width="3203px"/>
+        </surface>
+        <surface n="1:68" xml:id="page-surface-78">
+            <graphic decls="#downloadImageRights #download" height="5228px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00078" width="3163px"/>
+        </surface>
+        <surface n="1:69" xml:id="page-surface-79">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00079" width="3203px"/>
+        </surface>
+        <surface n="1:70" xml:id="page-surface-80">
+            <graphic decls="#downloadImageRights #download" height="5228px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00080" width="3163px"/>
+        </surface>
+        <surface n="1:71" xml:id="page-surface-81">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00081" width="3203px"/>
+        </surface>
+        <surface n="1:72" xml:id="page-surface-82">
+            <graphic decls="#downloadImageRights #download" height="5228px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00082" width="3163px"/>
+        </surface>
+        <surface n="1:73" xml:id="page-surface-83">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00083" width="3203px"/>
+        </surface>
+        <surface n="1:74" xml:id="page-surface-84">
+            <graphic decls="#downloadImageRights #download" height="5228px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00084" width="3163px"/>
+        </surface>
+        <surface n="1:75" xml:id="page-surface-85">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00085" width="3203px"/>
+        </surface>
+        <surface n="1:78" xml:id="page-surface-86">
+            <graphic decls="#downloadImageRights #download" height="5291px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00086" width="3078px"/>
+        </surface>
+        <surface n="1:79" xml:id="page-surface-87">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00087" width="3203px"/>
+        </surface>
+        <surface n="1:80" xml:id="page-surface-88">
+            <graphic decls="#downloadImageRights #download" height="5245px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00088" width="3235px"/>
+        </surface>
+        <surface n="1:81" xml:id="page-surface-89">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00089" width="3241px"/>
+        </surface>
+        <surface n="1:82" xml:id="page-surface-90">
+            <graphic decls="#downloadImageRights #download" height="5245px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00090" width="3235px"/>
+        </surface>
+        <surface n="1:83" xml:id="page-surface-91">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00091" width="3241px"/>
+        </surface>
+        <surface n="1:84" xml:id="page-surface-92">
+            <graphic decls="#downloadImageRights #download" height="5245px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00092" width="3235px"/>
+        </surface>
+        <surface n="1:85" xml:id="page-surface-93">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00093" width="3241px"/>
+        </surface>
+        <surface n="1:86" xml:id="page-surface-94">
+            <graphic decls="#downloadImageRights #download" height="5245px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00094" width="3235px"/>
+        </surface>
+        <surface n="1:87" xml:id="page-surface-95">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00095" width="3241px"/>
+        </surface>
+        <surface n="1:88" xml:id="page-surface-96">
+            <graphic decls="#downloadImageRights #download" height="5245px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00096" width="3235px"/>
+        </surface>
+        <surface n="1:89" xml:id="page-surface-97">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00097" width="3241px"/>
+        </surface>
+        <surface n="1:90" xml:id="page-surface-98">
+            <graphic decls="#downloadImageRights #download" height="5245px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00098" width="3235px"/>
+        </surface>
+        <surface n="1:91" xml:id="page-surface-99">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00099" width="3241px"/>
+        </surface>
+        <surface n="1:92" xml:id="page-surface-100">
+            <graphic decls="#downloadImageRights #download" height="5245px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00100" width="3235px"/>
+        </surface>
+        <surface n="1:93" xml:id="page-surface-101">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00101" width="3241px"/>
+        </surface>
+        <surface n="1:94" xml:id="page-surface-102">
+            <graphic decls="#downloadImageRights #download" height="5245px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00102" width="3235px"/>
+        </surface>
+        <surface n="1:95" xml:id="page-surface-103">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00103" width="3241px"/>
+        </surface>
+        <surface n="1:96" xml:id="page-surface-104">
+            <graphic decls="#downloadImageRights #download" height="5307px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00104" width="3201px"/>
+        </surface>
+        <surface n="1:97" xml:id="page-surface-105">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00105" width="3241px"/>
+        </surface>
+        <surface n="1:98" xml:id="page-surface-106">
+            <graphic decls="#downloadImageRights #download" height="5307px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00106" width="3201px"/>
+        </surface>
+        <surface n="1:99" xml:id="page-surface-107">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00107" width="3241px"/>
+        </surface>
+        <surface n="1:100" xml:id="page-surface-108">
+            <graphic decls="#downloadImageRights #download" height="5307px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00108" width="3201px"/>
+        </surface>
+        <surface n="1:101" xml:id="page-surface-109">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00109" width="3241px"/>
+        </surface>
+        <surface n="1:102" xml:id="page-surface-110">
+            <graphic decls="#downloadImageRights #download" height="5307px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00110" width="3201px"/>
+        </surface>
+        <surface n="1:103" xml:id="page-surface-111">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00111" width="3241px"/>
+        </surface>
+        <surface n="1:104" xml:id="page-surface-112">
+            <graphic decls="#downloadImageRights #download" height="5307px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00112" width="3201px"/>
+        </surface>
+        <surface n="1:105" xml:id="page-surface-113">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00113" width="3241px"/>
+        </surface>
+        <surface n="1:106" xml:id="page-surface-114">
+            <graphic decls="#downloadImageRights #download" height="5289px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00114" width="3201px"/>
+        </surface>
+        <surface n="1:107" xml:id="page-surface-115">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00115" width="3241px"/>
+        </surface>
+        <surface n="1:108" xml:id="page-surface-116">
+            <graphic decls="#downloadImageRights #download" height="5289px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00116" width="3201px"/>
+        </surface>
+        <surface n="1:109" xml:id="page-surface-117">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00117" width="3241px"/>
+        </surface>
+        <surface n="1:110" xml:id="page-surface-118">
+            <graphic decls="#downloadImageRights #download" height="5289px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00118" width="3201px"/>
+        </surface>
+        <surface n="1:111" xml:id="page-surface-119">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00119" width="3241px"/>
+        </surface>
+        <surface n="1:112" xml:id="page-surface-120">
+            <graphic decls="#downloadImageRights #download" height="5289px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00120" width="3201px"/>
+        </surface>
+        <surface n="1:113" xml:id="page-surface-121">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00121" width="3241px"/>
+        </surface>
+        <surface n="1:114" xml:id="page-surface-122">
+            <graphic decls="#downloadImageRights #download" height="5289px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00122" width="3201px"/>
+        </surface>
+        <surface n="1:115" xml:id="page-surface-123">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00123" width="3241px"/>
+        </surface>
+        <surface n="1:116" xml:id="page-surface-124">
+            <graphic decls="#downloadImageRights #download" height="5289px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00124" width="3201px"/>
+        </surface>
+        <surface n="1:117" xml:id="page-surface-125">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00125" width="3241px"/>
+        </surface>
+        <surface n="1:118" xml:id="page-surface-126">
+            <graphic decls="#downloadImageRights #download" height="5289px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00126" width="3201px"/>
+        </surface>
+        <surface n="1:119" xml:id="page-surface-127">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00127" width="3241px"/>
+        </surface>
+        <surface n="1:120" xml:id="page-surface-128">
+            <graphic decls="#downloadImageRights #download" height="5314px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00128" width="3100px"/>
+        </surface>
+        <surface n="2:1r" xml:id="page-surface-129">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00129" width="3241px"/>
+        </surface>
+        <surface n="2:1v" xml:id="page-surface-130">
+            <graphic decls="#downloadImageRights #download" height="5259px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00130" width="3234px"/>
+        </surface>
+        <surface n="2:2r" xml:id="page-surface-131">
+            <graphic decls="#downloadImageRights #download" height="5365px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00131" width="3241px"/>
+        </surface>
+        <surface n="2:2v" xml:id="page-surface-132">
+            <graphic decls="#downloadImageRights #download" height="5259px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00132" width="3234px"/>
+        </surface>
+        <surface n="2:3r" xml:id="page-surface-133">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00133" width="3218px"/>
+        </surface>
+        <surface n="2:3v" xml:id="page-surface-134">
+            <graphic decls="#downloadImageRights #download" height="5259px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00134" width="3234px"/>
+        </surface>
+        <surface n="2:4r" xml:id="page-surface-135">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00135" width="3218px"/>
+        </surface>
+        <surface n="2:4v" xml:id="page-surface-136">
+            <graphic decls="#downloadImageRights #download" height="5259px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00136" width="3234px"/>
+        </surface>
+        <surface n="2:5r" xml:id="page-surface-137">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00137" width="3218px"/>
+        </surface>
+        <surface n="2:5v" xml:id="page-surface-138">
+            <graphic decls="#downloadImageRights #download" height="5259px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00138" width="3234px"/>
+        </surface>
+        <surface n="2:6r" xml:id="page-surface-139">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00139" width="3218px"/>
+        </surface>
+        <surface n="2:6v" xml:id="page-surface-140">
+            <graphic decls="#downloadImageRights #download" height="5242px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00140" width="3276px"/>
+        </surface>
+        <surface n="2:7r" xml:id="page-surface-141">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00141" width="3218px"/>
+        </surface>
+        <surface n="2:7v" xml:id="page-surface-142">
+            <graphic decls="#downloadImageRights #download" height="5242px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00142" width="3276px"/>
+        </surface>
+        <surface n="2:8r" xml:id="page-surface-143">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00143" width="3218px"/>
+        </surface>
+        <surface n="2:8v" xml:id="page-surface-144">
+            <graphic decls="#downloadImageRights #download" height="5251px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00144" width="3305px"/>
+        </surface>
+        <surface n="2:9r" xml:id="page-surface-145">
+            <graphic decls="#downloadImageRights #download" height="5316px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00145" width="3021px"/>
+        </surface>
+        <surface n="2:9v" xml:id="page-surface-146">
+            <graphic decls="#downloadImageRights #download" height="5200px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00146" width="3067px"/>
+        </surface>
+        <surface n="2:10r" xml:id="page-surface-147">
+            <graphic decls="#downloadImageRights #download" height="5316px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00147" width="3021px"/>
+        </surface>
+        <surface n="2:10v" xml:id="page-surface-148">
+            <graphic decls="#downloadImageRights #download" height="5200px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00148" width="3067px"/>
+        </surface>
+        <surface n="2:11r" xml:id="page-surface-149">
+            <graphic decls="#downloadImageRights #download" height="5316px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00149" width="3021px"/>
+        </surface>
+        <surface n="2:11v" xml:id="page-surface-150">
+            <graphic decls="#downloadImageRights #download" height="5200px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00150" width="3067px"/>
+        </surface>
+        <surface n="2:12r" xml:id="page-surface-151">
+            <graphic decls="#downloadImageRights #download" height="5316px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00151" width="3021px"/>
+        </surface>
+        <surface n="2:12v" xml:id="page-surface-152">
+            <graphic decls="#downloadImageRights #download" height="5200px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00152" width="3067px"/>
+        </surface>
+        <surface n="2:13r" xml:id="page-surface-153">
+            <graphic decls="#downloadImageRights #download" height="5316px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00153" width="3021px"/>
+        </surface>
+        <surface n="2:13v" xml:id="page-surface-154">
+            <graphic decls="#downloadImageRights #download" height="5200px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00154" width="3067px"/>
+        </surface>
+        <surface n="2:14r" xml:id="page-surface-155">
+            <graphic decls="#downloadImageRights #download" height="5316px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00155" width="3021px"/>
+        </surface>
+        <surface n="2:14v" xml:id="page-surface-156">
+            <graphic decls="#downloadImageRights #download" height="5200px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00156" width="3067px"/>
+        </surface>
+        <surface n="2:15r" xml:id="page-surface-157">
+            <graphic decls="#downloadImageRights #download" height="5316px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00157" width="3021px"/>
+        </surface>
+        <surface n="2:15v" xml:id="page-surface-158">
+            <graphic decls="#downloadImageRights #download" height="5200px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00158" width="3067px"/>
+        </surface>
+        <surface n="2:16r" xml:id="page-surface-159">
+            <graphic decls="#downloadImageRights #download" height="5332px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00159" width="3162px"/>
+        </surface>
+        <surface n="2:16v" xml:id="page-surface-160">
+            <graphic decls="#downloadImageRights #download" height="5304px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00160" width="3051px"/>
+        </surface>
+        <surface n="[iii] recto" xml:id="page-surface-161">
+            <graphic decls="#downloadImageRights #download" height="5369px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00161" width="3530px"/>
+        </surface>
+        <surface n="[iii] verso" xml:id="page-surface-162">
+            <graphic decls="#downloadImageRights #download" height="5419px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00162" width="3441px"/>
+        </surface>
+        <surface n="[iv] recto" xml:id="page-surface-163">
+            <graphic decls="#downloadImageRights #download" height="5369px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00163" width="3485px"/>
+        </surface>
+        <surface n="[iv] verso" xml:id="page-surface-164">
+            <graphic decls="#downloadImageRights #download" height="5419px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00164" width="3441px"/>
+        </surface>
+        <surface n="rear cover, inner" xml:id="page-surface-165">
+            <graphic decls="#downloadImageRights #download" height="5621px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00165" width="3763px"/>
+        </surface>
+        <surface n="rear cover, outer" xml:id="page-surface-166">
+            <graphic decls="#downloadImageRights #download" height="5621px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00166" width="3763px"/>
+        </surface>
+        <surface n="spine" xml:id="page-surface-167">
+            <graphic decls="#downloadImageRights #download" height="4884px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00167" width="2175px"/>
+        </surface>
+        <surface n="old front cover, outer" xml:id="page-surface-168">
+            <graphic decls="#downloadImageRights #download" height="6368px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00168" width="4212px"/>
+        </surface>
+        <surface n="old front cover, inner" xml:id="page-surface-169">
+            <graphic decls="#downloadImageRights #download" height="6399px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00169" width="4108px"/>
+        </surface>
+        <surface n="old flyleaf [i] recto" xml:id="page-surface-170">
+            <graphic decls="#downloadImageRights #download" height="6169px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00170" width="3973px"/>
+        </surface>
+        <surface n="old flyleaf [i] verso" xml:id="page-surface-171">
+            <graphic decls="#downloadImageRights #download" height="6190px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00171" width="4064px"/>
+        </surface>
+        <surface n="old flyleaf [ii] recto" xml:id="page-surface-172">
+            <graphic decls="#downloadImageRights #download" height="6117px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00172" width="4005px"/>
+        </surface>
+        <surface n="old flyleaf [ii] verso" xml:id="page-surface-173">
+            <graphic decls="#downloadImageRights #download" height="6117px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00173" width="4005px"/>
+        </surface>
+        <surface n="old flyleaf [iii] recto" xml:id="page-surface-174">
+            <graphic decls="#downloadImageRights #download" height="6117px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00174" width="4118px"/>
+        </surface>
+        <surface n="old flyleaf [iii] verso" xml:id="page-surface-175">
+            <graphic decls="#downloadImageRights #download" height="6205px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00175" width="4140px"/>
+        </surface>
+        <surface n="old flyleaf [iv] recto" xml:id="page-surface-176">
+            <graphic decls="#downloadImageRights #download" height="6117px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00176" width="4005px"/>
+        </surface>
+        <surface n="old flyleaf [iv] verso" xml:id="page-surface-177">
+            <graphic decls="#downloadImageRights #download" height="6117px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00177" width="4005px"/>
+        </surface>
+        <surface n="old rear cover, inner" xml:id="page-surface-178">
+            <graphic decls="#downloadImageRights #download" height="6419px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00178" width="4361px"/>
+        </surface>
+        <surface n="old rear cover, outer" xml:id="page-surface-179">
+            <graphic decls="#downloadImageRights #download" height="6464px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00179" width="4294px"/>
+        </surface>
+        <surface n="old spine cover" xml:id="page-surface-180">
+            <graphic decls="#downloadImageRights #download" height="5640px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00180" width="2378px"/>
+        </surface>
+        <surface n="old spine lining" xml:id="page-surface-181">
+            <graphic decls="#downloadImageRights #download" height="5640px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00181" width="2158px"/>
+        </surface>
+        <surface n="fragment recto" xml:id="page-surface-182">
+            <graphic decls="#downloadImageRights #download" height="4775px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00182" width="2388px"/>
+        </surface>
+        <surface n="fragment verso" xml:id="page-surface-183">
+            <graphic decls="#downloadImageRights #download" height="4775px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00183" width="2388px"/>
+        </surface>
+        <surface n="binding materials recto" xml:id="page-surface-184">
+            <graphic decls="#downloadImageRights #download" height="5406px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00184" width="2545px"/>
+        </surface>
+        <surface n="binding materials verso" xml:id="page-surface-185">
+            <graphic decls="#downloadImageRights #download" height="5406px" rend="portrait" url="MS-EMMANUEL-COLLEGE-00095-000-00185" width="2545px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#page-surface-1" n="front cover, outer" xml:id="page-pb-1"/>
+                <pb facs="#page-surface-2" n="front cover, inner" xml:id="page-pb-2"/>
+                <pb facs="#page-surface-3" n="[i] recto" xml:id="page-pb-3"/>
+                <pb facs="#page-surface-4" n="[i] verso" xml:id="page-pb-4"/>
+                <pb facs="#page-surface-5" n="[ii] recto" xml:id="page-pb-5"/>
+                <pb facs="#page-surface-6" n="[ii] verso" xml:id="page-pb-6"/>
+                <pb facs="#page-surface-7" n="[a] recto" xml:id="page-pb-7"/>
+                <pb facs="#page-surface-8" n="[a] verso" xml:id="page-pb-8"/>
+                <pb facs="#page-surface-9" n="[b] recto" xml:id="page-pb-9"/>
+                <pb facs="#page-surface-10" n="[b] verso" xml:id="page-pb-10"/>
+                <pb facs="#page-surface-11" n="1:1" xml:id="page-pb-11"/>
+                <pb facs="#page-surface-12" n="1:2" xml:id="page-pb-12"/>
+                <pb facs="#page-surface-13" n="1:3" xml:id="page-pb-13"/>
+                <pb facs="#page-surface-14" n="1:4" xml:id="page-pb-14"/>
+                <pb facs="#page-surface-15" n="1:5" xml:id="page-pb-15"/>
+                <pb facs="#page-surface-16" n="1:6" xml:id="page-pb-16"/>
+                <pb facs="#page-surface-17" n="1:7" xml:id="page-pb-17"/>
+                <pb facs="#page-surface-18" n="1:8" xml:id="page-pb-18"/>
+                <pb facs="#page-surface-19" n="1:9" xml:id="page-pb-19"/>
+                <pb facs="#page-surface-20" n="1:10" xml:id="page-pb-20"/>
+                <pb facs="#page-surface-21" n="1:11" xml:id="page-pb-21"/>
+                <pb facs="#page-surface-22" n="1:12" xml:id="page-pb-22"/>
+                <pb facs="#page-surface-23" n="1:13" xml:id="page-pb-23"/>
+                <pb facs="#page-surface-24" n="1:14" xml:id="page-pb-24"/>
+                <pb facs="#page-surface-25" n="1:15" xml:id="page-pb-25"/>
+                <pb facs="#page-surface-26" n="1:16" xml:id="page-pb-26"/>
+                <pb facs="#page-surface-27" n="1:17" xml:id="page-pb-27"/>
+                <pb facs="#page-surface-28" n="1:18" xml:id="page-pb-28"/>
+                <pb facs="#page-surface-29" n="1:19" xml:id="page-pb-29"/>
+                <pb facs="#page-surface-30" n="1:20" xml:id="page-pb-30"/>
+                <pb facs="#page-surface-31" n="1:21" xml:id="page-pb-31"/>
+                <pb facs="#page-surface-32" n="1:22" xml:id="page-pb-32"/>
+                <pb facs="#page-surface-33" n="1:23" xml:id="page-pb-33"/>
+                <pb facs="#page-surface-34" n="1:24" xml:id="page-pb-34"/>
+                <pb facs="#page-surface-35" n="1:25" xml:id="page-pb-35"/>
+                <pb facs="#page-surface-36" n="1:26" xml:id="page-pb-36"/>
+                <pb facs="#page-surface-37" n="1:27" xml:id="page-pb-37"/>
+                <pb facs="#page-surface-38" n="1:28" xml:id="page-pb-38"/>
+                <pb facs="#page-surface-39" n="1:29" xml:id="page-pb-39"/>
+                <pb facs="#page-surface-40" n="1:30" xml:id="page-pb-40"/>
+                <pb facs="#page-surface-41" n="1:31" xml:id="page-pb-41"/>
+                <pb facs="#page-surface-42" n="1:32" xml:id="page-pb-42"/>
+                <pb facs="#page-surface-43" n="1:33" xml:id="page-pb-43"/>
+                <pb facs="#page-surface-44" n="1:34" xml:id="page-pb-44"/>
+                <pb facs="#page-surface-45" n="1:35" xml:id="page-pb-45"/>
+                <pb facs="#page-surface-46" n="1:36" xml:id="page-pb-46"/>
+                <pb facs="#page-surface-47" n="1:37" xml:id="page-pb-47"/>
+                <pb facs="#page-surface-48" n="1:38" xml:id="page-pb-48"/>
+                <pb facs="#page-surface-49" n="1:39" xml:id="page-pb-49"/>
+                <pb facs="#page-surface-50" n="1:40" xml:id="page-pb-50"/>
+                <pb facs="#page-surface-51" n="1:41" xml:id="page-pb-51"/>
+                <pb facs="#page-surface-52" n="1:42" xml:id="page-pb-52"/>
+                <pb facs="#page-surface-53" n="1:43" xml:id="page-pb-53"/>
+                <pb facs="#page-surface-54" n="1:44" xml:id="page-pb-54"/>
+                <pb facs="#page-surface-55" n="1:45" xml:id="page-pb-55"/>
+                <pb facs="#page-surface-56" n="1:46" xml:id="page-pb-56"/>
+                <pb facs="#page-surface-57" n="1:47" xml:id="page-pb-57"/>
+                <pb facs="#page-surface-58" n="1:48" xml:id="page-pb-58"/>
+                <pb facs="#page-surface-59" n="1:49" xml:id="page-pb-59"/>
+                <pb facs="#page-surface-60" n="1:50" xml:id="page-pb-60"/>
+                <pb facs="#page-surface-61" n="1:51" xml:id="page-pb-61"/>
+                <pb facs="#page-surface-62" n="1:52" xml:id="page-pb-62"/>
+                <pb facs="#page-surface-63" n="1:53" xml:id="page-pb-63"/>
+                <pb facs="#page-surface-64" n="1:54" xml:id="page-pb-64"/>
+                <pb facs="#page-surface-65" n="1:55" xml:id="page-pb-65"/>
+                <pb facs="#page-surface-66" n="1:56" xml:id="page-pb-66"/>
+                <pb facs="#page-surface-67" n="1:57" xml:id="page-pb-67"/>
+                <pb facs="#page-surface-68" n="1:58" xml:id="page-pb-68"/>
+                <pb facs="#page-surface-69" n="1:59" xml:id="page-pb-69"/>
+                <pb facs="#page-surface-70" n="1:60" xml:id="page-pb-70"/>
+                <pb facs="#page-surface-71" n="1:61" xml:id="page-pb-71"/>
+                <pb facs="#page-surface-72" n="1:62" xml:id="page-pb-72"/>
+                <pb facs="#page-surface-73" n="1:63" xml:id="page-pb-73"/>
+                <pb facs="#page-surface-74" n="1:64" xml:id="page-pb-74"/>
+                <pb facs="#page-surface-75" n="1:65" xml:id="page-pb-75"/>
+                <pb facs="#page-surface-76" n="1:66" xml:id="page-pb-76"/>
+                <pb facs="#page-surface-77" n="1:67" xml:id="page-pb-77"/>
+                <pb facs="#page-surface-78" n="1:68" xml:id="page-pb-78"/>
+                <pb facs="#page-surface-79" n="1:69" xml:id="page-pb-79"/>
+                <pb facs="#page-surface-80" n="1:70" xml:id="page-pb-80"/>
+                <pb facs="#page-surface-81" n="1:71" xml:id="page-pb-81"/>
+                <pb facs="#page-surface-82" n="1:72" xml:id="page-pb-82"/>
+                <pb facs="#page-surface-83" n="1:73" xml:id="page-pb-83"/>
+                <pb facs="#page-surface-84" n="1:74" xml:id="page-pb-84"/>
+                <pb facs="#page-surface-85" n="1:75" xml:id="page-pb-85"/>
+                <pb facs="#page-surface-86" n="1:78" xml:id="page-pb-86"/>
+                <pb facs="#page-surface-87" n="1:79" xml:id="page-pb-87"/>
+                <pb facs="#page-surface-88" n="1:80" xml:id="page-pb-88"/>
+                <pb facs="#page-surface-89" n="1:81" xml:id="page-pb-89"/>
+                <pb facs="#page-surface-90" n="1:82" xml:id="page-pb-90"/>
+                <pb facs="#page-surface-91" n="1:83" xml:id="page-pb-91"/>
+                <pb facs="#page-surface-92" n="1:84" xml:id="page-pb-92"/>
+                <pb facs="#page-surface-93" n="1:85" xml:id="page-pb-93"/>
+                <pb facs="#page-surface-94" n="1:86" xml:id="page-pb-94"/>
+                <pb facs="#page-surface-95" n="1:87" xml:id="page-pb-95"/>
+                <pb facs="#page-surface-96" n="1:88" xml:id="page-pb-96"/>
+                <pb facs="#page-surface-97" n="1:89" xml:id="page-pb-97"/>
+                <pb facs="#page-surface-98" n="1:90" xml:id="page-pb-98"/>
+                <pb facs="#page-surface-99" n="1:91" xml:id="page-pb-99"/>
+                <pb facs="#page-surface-100" n="1:92" xml:id="page-pb-100"/>
+                <pb facs="#page-surface-101" n="1:93" xml:id="page-pb-101"/>
+                <pb facs="#page-surface-102" n="1:94" xml:id="page-pb-102"/>
+                <pb facs="#page-surface-103" n="1:95" xml:id="page-pb-103"/>
+                <pb facs="#page-surface-104" n="1:96" xml:id="page-pb-104"/>
+                <pb facs="#page-surface-105" n="1:97" xml:id="page-pb-105"/>
+                <pb facs="#page-surface-106" n="1:98" xml:id="page-pb-106"/>
+                <pb facs="#page-surface-107" n="1:99" xml:id="page-pb-107"/>
+                <pb facs="#page-surface-108" n="1:100" xml:id="page-pb-108"/>
+                <pb facs="#page-surface-109" n="1:101" xml:id="page-pb-109"/>
+                <pb facs="#page-surface-110" n="1:102" xml:id="page-pb-110"/>
+                <pb facs="#page-surface-111" n="1:103" xml:id="page-pb-111"/>
+                <pb facs="#page-surface-112" n="1:104" xml:id="page-pb-112"/>
+                <pb facs="#page-surface-113" n="1:105" xml:id="page-pb-113"/>
+                <pb facs="#page-surface-114" n="1:106" xml:id="page-pb-114"/>
+                <pb facs="#page-surface-115" n="1:107" xml:id="page-pb-115"/>
+                <pb facs="#page-surface-116" n="1:108" xml:id="page-pb-116"/>
+                <pb facs="#page-surface-117" n="1:109" xml:id="page-pb-117"/>
+                <pb facs="#page-surface-118" n="1:110" xml:id="page-pb-118"/>
+                <pb facs="#page-surface-119" n="1:111" xml:id="page-pb-119"/>
+                <pb facs="#page-surface-120" n="1:112" xml:id="page-pb-120"/>
+                <pb facs="#page-surface-121" n="1:113" xml:id="page-pb-121"/>
+                <pb facs="#page-surface-122" n="1:114" xml:id="page-pb-122"/>
+                <pb facs="#page-surface-123" n="1:115" xml:id="page-pb-123"/>
+                <pb facs="#page-surface-124" n="1:116" xml:id="page-pb-124"/>
+                <pb facs="#page-surface-125" n="1:117" xml:id="page-pb-125"/>
+                <pb facs="#page-surface-126" n="1:118" xml:id="page-pb-126"/>
+                <pb facs="#page-surface-127" n="1:119" xml:id="page-pb-127"/>
+                <pb facs="#page-surface-128" n="1:120" xml:id="page-pb-128"/>
+                <pb facs="#page-surface-129" n="2:1r" xml:id="page-pb-129"/>
+                <pb facs="#page-surface-130" n="2:1v" xml:id="page-pb-130"/>
+                <pb facs="#page-surface-131" n="2:2r" xml:id="page-pb-131"/>
+                <pb facs="#page-surface-132" n="2:2v" xml:id="page-pb-132"/>
+                <pb facs="#page-surface-133" n="2:3r" xml:id="page-pb-133"/>
+                <pb facs="#page-surface-134" n="2:3v" xml:id="page-pb-134"/>
+                <pb facs="#page-surface-135" n="2:4r" xml:id="page-pb-135"/>
+                <pb facs="#page-surface-136" n="2:4v" xml:id="page-pb-136"/>
+                <pb facs="#page-surface-137" n="2:5r" xml:id="page-pb-137"/>
+                <pb facs="#page-surface-138" n="2:5v" xml:id="page-pb-138"/>
+                <pb facs="#page-surface-139" n="2:6r" xml:id="page-pb-139"/>
+                <pb facs="#page-surface-140" n="2:6v" xml:id="page-pb-140"/>
+                <pb facs="#page-surface-141" n="2:7r" xml:id="page-pb-141"/>
+                <pb facs="#page-surface-142" n="2:7v" xml:id="page-pb-142"/>
+                <pb facs="#page-surface-143" n="2:8r" xml:id="page-pb-143"/>
+                <pb facs="#page-surface-144" n="2:8v" xml:id="page-pb-144"/>
+                <pb facs="#page-surface-145" n="2:9r" xml:id="page-pb-145"/>
+                <pb facs="#page-surface-146" n="2:9v" xml:id="page-pb-146"/>
+                <pb facs="#page-surface-147" n="2:10r" xml:id="page-pb-147"/>
+                <pb facs="#page-surface-148" n="2:10v" xml:id="page-pb-148"/>
+                <pb facs="#page-surface-149" n="2:11r" xml:id="page-pb-149"/>
+                <pb facs="#page-surface-150" n="2:11v" xml:id="page-pb-150"/>
+                <pb facs="#page-surface-151" n="2:12r" xml:id="page-pb-151"/>
+                <pb facs="#page-surface-152" n="2:12v" xml:id="page-pb-152"/>
+                <pb facs="#page-surface-153" n="2:13r" xml:id="page-pb-153"/>
+                <pb facs="#page-surface-154" n="2:13v" xml:id="page-pb-154"/>
+                <pb facs="#page-surface-155" n="2:14r" xml:id="page-pb-155"/>
+                <pb facs="#page-surface-156" n="2:14v" xml:id="page-pb-156"/>
+                <pb facs="#page-surface-157" n="2:15r" xml:id="page-pb-157"/>
+                <pb facs="#page-surface-158" n="2:15v" xml:id="page-pb-158"/>
+                <pb facs="#page-surface-159" n="2:16r" xml:id="page-pb-159"/>
+                <pb facs="#page-surface-160" n="2:16v" xml:id="page-pb-160"/>
+                <pb facs="#page-surface-161" n="[iii] recto" xml:id="page-pb-161"/>
+                <pb facs="#page-surface-162" n="[iii] verso" xml:id="page-pb-162"/>
+                <pb facs="#page-surface-163" n="[iv] recto" xml:id="page-pb-163"/>
+                <pb facs="#page-surface-164" n="[iv] verso" xml:id="page-pb-164"/>
+                <pb facs="#page-surface-165" n="rear cover, inner" xml:id="page-pb-165"/>
+                <pb facs="#page-surface-166" n="rear cover, outer" xml:id="page-pb-166"/>
+                <pb facs="#page-surface-167" n="spine" xml:id="page-pb-167"/>
+                <pb facs="#page-surface-168" n="old front cover, outer" xml:id="page-pb-168"/>
+                <pb facs="#page-surface-169" n="old front cover, inner" xml:id="page-pb-169"/>
+                <pb facs="#page-surface-170" n="old flyleaf [i] recto" xml:id="page-pb-170"/>
+                <pb facs="#page-surface-171" n="old flyleaf [i] verso" xml:id="page-pb-171"/>
+                <pb facs="#page-surface-172" n="old flyleaf [ii] recto" xml:id="page-pb-172"/>
+                <pb facs="#page-surface-173" n="old flyleaf [ii] verso" xml:id="page-pb-173"/>
+                <pb facs="#page-surface-174" n="old flyleaf [iii] recto" xml:id="page-pb-174"/>
+                <pb facs="#page-surface-175" n="old flyleaf [iii] verso" xml:id="page-pb-175"/>
+                <pb facs="#page-surface-176" n="old flyleaf [iv] recto" xml:id="page-pb-176"/>
+                <pb facs="#page-surface-177" n="old flyleaf [iv] verso" xml:id="page-pb-177"/>
+                <pb facs="#page-surface-178" n="old rear cover, inner" xml:id="page-pb-178"/>
+                <pb facs="#page-surface-179" n="old rear cover, outer" xml:id="page-pb-179"/>
+                <pb facs="#page-surface-180" n="old spine cover" xml:id="page-pb-180"/>
+                <pb facs="#page-surface-181" n="old spine lining" xml:id="page-pb-181"/>
+                <pb facs="#page-surface-182" n="fragment recto" xml:id="page-pb-182"/>
+                <pb facs="#page-surface-183" n="fragment verso" xml:id="page-pb-183"/>
+                <pb facs="#page-surface-184" n="binding materials recto" xml:id="page-pb-184"/>
+                <pb facs="#page-surface-185" n="binding materials verso" xml:id="page-pb-185"/>
+            </div>
+        </body>
+    </text>
+</TEI>

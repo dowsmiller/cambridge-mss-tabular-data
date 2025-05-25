@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11817">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, Christ's College, Fragment A</title>
+                <funder>The Polonsky Foundation</funder>
+                <principal>Suzanne Paul</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>University Library</publisher>
+
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made
+                        available for download are licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This
+                        metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+
+            <availability status="restricted" xml:id="watermark">
+               <licence>Christ's College, Cambridge (CC BY-NC 4.0)</licence>
+            </availability>
+         </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-CHRISTS-COLLEGE-FRAGMENT-A" xml:lang="en">
+                    <msIdentifier>
+                        <institution>Christ's College, Cambridge</institution>
+                        <repository>Christ's College Library</repository>
+                        <collection>Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, Christ's College, Fragment A</idno>
+                        <altIdentifier type="internal">
+                            <idno type="former">GG.2.13</idno>
+                        </altIdentifier>
+                        <altIdentifier type="external">
+                            <idno type="diktyon">Diktyon 11817</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+
+                    <msContents>
+                        <summary>
+                     <seg type="para">This fragment is an incomplete folio from a
+                                    <title>Gospel lectionary</title> manuscript, probably copied in
+                                the 12th century.</seg>
+                            <seg type="para">Dr Christopher Wright</seg>
+                        </summary>
+
+                        <textLang mainLang="grc">Greek</textLang>
+
+                        <msItem n="1">
+                            <title xml:lang="eng">Gospel lectionary (synaxarion)</title>
+                            <note>The folio contains parts of the lection for the first Tuesday
+                                after Easter (Lk 24:19-30, 31-35) and the beginning of that for
+                                Wednesday (Jn 1:37-41). Discontinuous due to the loss of the upper
+                                part of the folio</note>
+                            <note>Gregory-Aland <hi rend="italic">l</hi> 2360</note>
+                            <incipit defective="true">
+                        <locus from="1r" to="1r">f. 1r</locus> τοῦ
+                                λαοῦ· ὅπως παρέδωκαν αὐτὸν οἱ ἀρχιερεῖς</incipit>
+                            <explicit defective="true">
+                        <locus from="1v" to="1v">f. 1v</locus> καὶ
+                                ἀκολουθησάντων αὐτῶ· εὑρίσκει οὗτος</explicit>
+                        </msItem>
+                    </msContents>
+
+
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="perg">
+                                <support>
+                                    <material>Parchment, of medium thickness and
+                                        quality.</material>
+                                </support>
+
+                                <extent>
+                                    <seg type="object">
+                              <objectType>Fragment </objectType>
+                                        (leaf) </seg>
+                                    <seg type="leaf">
+                                        <num type="leaf" value="1">1</num>
+                           </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="fragment" unit="mm">
+                                            <height quantity="218">218</height>
+                                            <width quantity="179">179</width>
+                                        </dimensions>
+                                        <dimensions type="leaf" unit="mm">
+                                            <height cert="low" quantity="280">c. 280</height>
+                                            <width quantity="179">179</width>
+                                        </dimensions>
+                                        <note>The dimensions of the original leaf have been inferred
+                                            from the amount of text remaining in each column and the
+                                            likely space required to copy the intervening text
+                                            between the end of each column and the beginning of the
+                                            surviving portion of the following column.</note>
+                                    </seg>
+                                </extent>
+
+                                <condition>There are substantial losses from the edges of the folio,
+                                    with loss of text at the upper edge, and a number of small
+                                    holes, mainly in the centre of the leaf. There is significant
+                                    discoloration and staining, and much of the text is
+                                    faded.</condition>
+                            </supportDesc>
+
+                            <layoutDesc>
+                                <layout columns="2" rulingMedium="hardpoint" topLine="below" writtenLines="24">Two columns of 24 surviving lines each, with
+                                    probably at least 6 more lines lost at the upper end of the
+                                    folio, given the amount of missing text. 
+                                    <dimensions type="written" unit="mm">
+                                        <height quantity="170">170</height>
+                                        <width quantity="150">150</width>
+                                    </dimensions>
+                                    <seg type="pricking">Pricking does not survive. </seg>
+                                    <seg type="ruling">Ruled in hardpoint. Text hangs from the
+                                        lines.</seg>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <handDesc>
+                            <handNote scope="sole" xml:id="hand-1">
+                                <p>The text has been copied in an upright <term type="script">mixed
+                                        minuscule</term> script, in black ink, with modest variation
+                                    in letter size.</p>
+                                <p>Syllabic abbreviations appear only at the end of lines and there
+                                    are no superscript word endings. Breathings are curved and mute
+                                        <hi rend="italic">iota</hi> is absent. There is accentuation
+                                    of all <foreign xml:lang="la">nomina sacra</foreign>. The double
+                                    grave accent is in use.</p>
+                                <p>Punctuation used includes the lower, middle and upper points and
+                                    lower comma. Upper points are accompanied by a cross in red
+                                    ink.</p>
+                            </handNote>
+                        </handDesc>
+
+                        <additions>On the <locus from="1v" to="1v">verso</locus>, a later hand has
+                            written the name <q xml:lang="grc">Γερασιμος
+                                    Μηραντηνως
+                     </q>. Another hand has written <q xml:lang="grc">
+                        χεφανος
+                     </q>, and a third <q xml:lang="grc">εις</q>, <q xml:lang="grc">ἱππ</q> and <q xml:lang="grc">ἱπποβλα</q>. The number 1 in blue crayon indicates
+                            this item's place in the sequence of Christ's College Library
+                            fragments.</additions>
+
+                        <bindingDesc>
+                            
+                                <p>Sewing holes and a fragment of thread survive.</p>
+                            
+                        </bindingDesc>
+
+                        <accMat>The fragment is accompanied by a sheet of paper recording the
+                            content (with errors), by William Elliott, dated <date calendar="gregorian" when="1987-12-02">2 December
+                            1987</date>.</accMat>
+
+                    </physDesc>
+
+                    <history>
+                        <origin>The style of script suggests that the manuscript from which this
+                            came was copied in the <origDate calendar="gregorian" notAfter="1199" notBefore="1100">12th century</origDate>.</origin>
+
+                        <provenance>Possibly owned by one <name type="person">
+                        <persName type="display">Gerasimos Merantenos</persName>
+                        <persName type="standard">Merantenos, Gerasimos</persName>
+                     </name>.
+                            Previously stored together with <bibl subtype="internal" type="MS">MS
+                                Rouse 298</bibl>, and perhaps acquired along with it by their former
+                            owner, the classicist and teacher <name key="person_v34546383" ref="http://viaf.org/viaf/34546383" role="fmo" type="person">
+                        <persName type="display">W.H.D.
+                                    Rouse (1863-1950)</persName>
+                        <persName type="standard">Rouse,
+                                    W.H.D. (William Henry Denham), 1863-1950</persName>
+                     </name>,
+                            Honorary Fellow of Christ's, who bought that manuscript on <placeName key="place_g7012054" ref="http://vocab.getty.edu/page/tgn/7012054">Kos</placeName> in
+                                <date calendar="gregorian" when="1906">1906</date>.</provenance>
+
+                        <acquisition when="1940-07-03">Presented to Christ's College by Rouse on 3
+                            July 1940.</acquisition>
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <p/>
+                            </recordHist>
+                            <availability status="restricted">
+                                <p>Visitors to Christ's who wish to consult Special Collections material
+                                    are required to apply to the Library in advance of their visit. For information
+                                    on eligibility and admission procedures see: <ref target="https://www.christs.cam.ac.uk/student-life/library-archives/researchers">Christ's College 
+                                        Old Library</ref>.</p>
+                            </availability>
+                        </adminInfo>
+
+                        <listBibl>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/ZR5AGAWB" type="journalArticle" xml:id="Easterling1966">
+                                <analytic>
+                                    <title level="a">Greek manuscripts in Cambridge: recent
+                                        acquisitions by college libraries, the Fitzwilliam Museum
+                                        and private collectors.</title>
+                                    <author>
+                              <forename>P. E.</forename>
+                              <surname>Easterling</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Transactions of the Cambridge Bibliographical
+                                        Society</title>
+                                    <imprint>
+                                        <biblScope unit="volume">4</biblScope>
+                                        <biblScope unit="page">179-191</biblScope>
+                                        <date>1966</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <bibl>
+                                <ref target="http://www.csntm.org/Manuscript/View/GA_lect_2360">The
+                                    Centre for the Study of New Testament Manuscripts</ref>
+                            </bibl>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject
+                            Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <term key="subject_sh85013576">Bible</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2022-03-17">
+                <persName>Christopher Wright</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+      <graphic decls="#document-thumbnail" rend="portrait" url="MS-CHRISTS-COLLEGE-FRAGMENT-A-000-00001"/>
+      <surface n="1r" xml:id="i1">
+            <graphic decls="#downloadImageRights #download" height="6801px" rend="portrait" url="MS-CHRISTS-COLLEGE-FRAGMENT-A-000-00001" width="5002px"/>
+      </surface>
+      <surface n="1v" xml:id="i2">
+            <graphic decls="#downloadImageRights #download" height="6801px" rend="portrait" url="MS-CHRISTS-COLLEGE-FRAGMENT-A-000-00002" width="5002px"/>
+      </surface>
+   </facsimile>
+    
+    <text>
+      <body>
+         <div>
+            <pb facs="#i1" n="1r" xml:id="pb-1r"/>
+            <pb facs="#i2" n="1v" xml:id="pb-1v"/>
+         </div>
+      </body>
+   </text>
+
+</TEI>

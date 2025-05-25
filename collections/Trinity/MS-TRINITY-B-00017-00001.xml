@@ -1,0 +1,1859 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_11948">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, Trinity College, MS B.17.1</title>
+                <funder>The Polonsky Foundation</funder>
+                <principal>Suzanne Paul</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>University Library</publisher>
+
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made
+                        available for download are licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This
+                        metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+
+            <availability xml:id="watermark" status="restricted"><licence>Trinity College, Cambridge (CC BY-NC 4.0)</licence></availability></publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-TRINITY-B-00017-00001" xml:lang="en">
+                    <msIdentifier>
+                        <institution>Trinity College, Cambridge</institution>
+                        <repository>Trinity College Library</repository>
+                        <collection>Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, Trinity College, MS B.17.1</idno>
+                        <msName>Codex Augiensis</msName>
+                        <altIdentifier type="internal">
+                            <idno type="james">MS 412</idno>
+                        </altIdentifier>
+                        <altIdentifier type="external">
+                            <idno type="diktyon">Diktyon 11948</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+
+                    <msContents>
+                        <summary>
+                            <seg type="para">This manuscript is a bilingual copy of the Pauline
+                                Epistles, with parallel text in Greek and Latin, probably produced
+                                in the 9th century in the Carolingian Empire. It is known as the
+                                Codex Augiensis due to its former ownership by the monastery of
+                                Augia Major on the island of Reichenau in <placeName key="place_g7007542">Lake Constance</placeName>.</seg>
+                            <seg type="para">The text is written in two columns, the Greek appearing
+                                on the inner side of the page and the Latin on the outer. Its date
+                                and place of origin have been identified on the basis of the
+                                Carolingian minuscule style of its script, while the Greek text is
+                                written in majuscule script of a western European type. The scribe
+                                has separated the words of the Greek text, rather than writing them
+                                continuously as in early Greek majuscule manuscripts, and has
+                                unusually emphasised the word divisions by placing middle points
+                                between each word. Reflecting the scribe's limited familiarity with
+                                Greek, single words have frequently been erroneously divided. Such
+                                errors have subsequently been corrected by erasing the dividing
+                                point and using a curved hyphen below the line to link the parts of
+                                the word (e.g. <locus from="left board, inside-7r" to="left board, inside-7r">f. 7r, col. a, lines 25-26</locus>,
+                                    <q xml:lang="grc">δικαιοσύνης</q>).</seg>
+                            <seg type="para">The opening folios, containing part of the Epistle to
+                                the Romans, have been lost. There are other lacunas in the Greek
+                                text, where a gap has been left, indicating that this text was
+                                apparently missing from the exemplar from which the manuscript was
+                                copied. The Latin text is complete at these points. For the same
+                                reason of incompleteness in the exemplar, the Greek text of the
+                                penultimate epistle, the Letter to Philemon, ends imperfectly
+                                    (<locus from="130v-131r" to="130v-131r">f. 131r</locus>). The
+                                final Epistle to the Hebrews is written in Latin only.</seg>
+                            <seg type="para">Unlike the other letters, Hebrews is provided with a
+                                prefatory text, excerpted from the commentary on the epistle by
+                                Rabanus Maurus (c. 784-856), Archbishop of Mainz. It is also
+                                followed by another text excerpted from the works of the same
+                                author, comments by an abbot which he had drawn on in his treatise
+                                on penance and added to the end of that text as an appendix. Its
+                                intended relevance here is unclear.</seg>
+                            <seg type="para">The text is closely related to that of the Codex
+                                Boernerianus (<bibl subtype="MS" type="external">
+                           <ref target="https://digital.slub-dresden.de/werkansicht/dlf/134296/1">Dresden, Sächsische Landesbibliothek Staats- und
+                                        Universitätsbibliothek Dresden (SLUB), MS
+                                    A.145b</ref>
+                        </bibl>), which contains identical lacunae
+                                (excepting that caused by the mutilation of the beginning of
+                                Augienses), but in its case applying to the Latin text as well as
+                                the Greek. Each have in the past been supposed to be a copy of the
+                                other, but the present consensus is that both are derived directly
+                                or indirectly from the same source manuscript, whose losses account
+                                for the lacunae. Evidently the copyist of Augiensis, or of an
+                                intermediate exemplar, supplied the missing Latin text from another
+                                source, while Boernerianus received only the text present in the
+                                principal exemplar.</seg>
+                            <seg type="para">The manuscript retains a 15th-century binding, added
+                                during or prior to its time at Augia Major.</seg>
+                            <seg type="para">Dr Christopher Wright</seg>
+                        </summary>
+
+                        <msItem n="1">
+                            <title xml:lang="eng">Pauline Epistles</title>
+                            <note>Gregory-Aland Fp/010; Von Soden α 1029 (Ia1); Scrivener Paul.
+                                F</note>
+                            <filiation>The Greek text is derived from the same source as <ref target="https://digital.slub-dresden.de/werkansicht/dlf/134296/1">Dresden, Sächsische Landesbibliothek Staats- und
+                                    Universitätsbibliothek Dresden (SLUB), MS A.145b (Codex
+                                    Boernerianus)</ref>. The text has been placed by Aland in
+                                category C.</filiation>
+                            <note>Occasional passages have been omitted from the Greek text, with
+                                space left for them to be added, due to losses to the examplar (e.g.
+                                ff. <locus from="14v-15r" to="14v-15r">15r</locus>, <locus from="34v-35r" to="35v-36r">35r-35v</locus>, <locus from="93v-94r" to="94v-95r">94r-94v</locus>); in other cases
+                                this applies to both the Latin and Greek text (e.g. ff. <locus from="77v-78r" to="77v-78r">78r</locus>, <locus from="123v-124r" to="123v-124r">f. 124r</locus>)</note>
+
+                            <msItem n="1.1">
+                                <locus from="left board, inside-7r" to="31v-32r">ff. 7r-31v</locus>
+                                <title xml:lang="eng">Letter to the Romans</title>
+                                <textLang mainLang="grc" otherLangs="la">Greek and Latin</textLang>
+                                <note>Defective at the beginning (begins during Rom 3:19)</note>
+                                <incipit defective="true">(Greek) <locus from="left board, inside-7r" to="left board, inside-7r">f.
+                                        7r</locus>
+                                    <supplied reason="damage">νό</supplied>μω· λεγει· ινα· παν·
+                                    στομα· φραγη</incipit>
+                                <incipit defective="true">(Latin) <locus from="left board, inside-7r" to="left board, inside-7r">f.
+                                        7r</locus> dicit· in omne os obstruatur</incipit>
+                                <explicit>(Greek) <locus from="31v-32r" to="31v-32r">f. 31v</locus>
+                                    Η· χαρις· του· Κυριου· ημων· μετα· παντων· υμων· αμην</explicit>
+                                <explicit>(Latin) <locus from="31v-32r" to="31v-32r">f. 31v</locus>
+                                    per Iesum Christum honor et gloria in saecula saeculorum·
+                                    amen</explicit>
+                                <note>TLG 0031.006</note>
+                            </msItem>
+
+                            <msItem n="1.2">
+                                <locus from="31v-32r" to="55v-56r">ff. 32r-55v, 103r-104v</locus>
+                                <!--<locus from="102v-103r" to="104v-105r">103r-104v</locus>-->
+                                <title xml:lang="eng">First Letter to the Corinthians</title>
+                                <textLang mainLang="grc" otherLangs="la">Greek and Latin</textLang>
+                                <note>The last folio of this text has been bound out of
+                                    position</note>
+                                <rubric>(Greek) <locus from="31v-32r" to="31v-32r">f. 32r</locus>
+                                    Προς Κορινθιους· αρχεται· α</rubric>
+                                <rubric>(Latin) <locus from="31v-32r" to="31v-32r">f. 32r</locus> Ad
+                                    Corinthios prior incipit</rubric>
+                                <incipit>(Greek) <locus from="31v-32r" to="31v-32r">f. 32r</locus>
+                                    Παυλος κλητος· αποστολος· Χριστου· Ιησου· δια· θεληματος·
+                                    Θεου</incipit>
+                                <incipit>(Latin) <locus from="31v-32r" to="31v-32r">f. 32r</locus>
+                                    Paulus vocatus apostolus Christi Iesu· per voluntatem
+                                    Dei</incipit>
+                                <explicit>(Greek) <locus from="104v-105r" to="104v-105r">f.
+                                        104v</locus> Η· αγαπη· μου· μετα· παντων· υμων· εν· Χριστω·
+                                    Ιησου</explicit>
+                                <explicit>(Latin) <locus from="104v-105r" to="104v-105r">f.
+                                        104v</locus> Caritas mea cum omnibus vobis in Christo
+                                    Iesu</explicit>
+                                <finalRubric>(Greek) <locus from="104v-105r" to="104v-105r">f.
+                                        104v</locus> Ετελεσθη· προς Κορινθιους· α</finalRubric>
+                                <finalRubric>(Latin) Explicit ad Corinthios prior<locus from="104v-105r" to="104v-105r">f.
+                                    104v</locus>
+                        </finalRubric>
+                                <note>TLG 0031.007</note>
+                            </msItem>
+
+                            <msItem n="1.3">
+                                <locus from="104v-105r" to="110v-111r">104v-110v, 56r-67r</locus>
+                                <!--<locus from="55v-56r" to="66v-67r">56r-67r</locus>-->
+                                <title xml:lang="eng">Second Letter to the Corinthians</title>
+                                <textLang mainLang="grc" otherLangs="la">Greek and Latin</textLang>
+                                <note>The early folios of this text have been bound out of
+                                    position</note>
+                                <rubric>(Greek) <locus from="104v-105r" to="104v-105r">f.
+                                        104v</locus> Αρχεται προς Κορινθιους· δευτερη</rubric>
+                                <rubric>(Latin) <locus from="104v-105r" to="104v-105r">f.
+                                        104v</locus> Incipit ad Corinthios secunda</rubric>
+                                <incipit>(Greek) <locus from="104v-105r" to="104v-105r">f.
+                                        104v</locus> Παυλος· αποστολος· δια· θεληματος·
+                                    Θεου</incipit>
+                                <incipit>(Latin) <locus from="104v-105r" to="104v-105r">f.
+                                        104v</locus> Paulus apostolus per voluntatem Dei</incipit>
+                                <explicit>(Greek) <locus from="66v-67r" to="66v-67r">f. 67r</locus>
+                                    και· η κοινωνια· του Αγειου· Πνευματος μετα παντων·
+                                    υμων</explicit>
+                                <explicit>(Latin) <locus from="66v-67r" to="66v-67r">f. 67r</locus>
+                                    et communicatio Sancti Spiritus sit cum omnibus vobis</explicit>
+                                <finalRubric> (Greek)<locus from="66v-67r" to="66v-67r">f.
+                                        67r</locus> Ετελεσθη προς Κορινθιους· β</finalRubric>
+                                <finalRubric> (Latin)<locus from="66v-67r" to="66v-67r">f.
+                                        67r</locus> Explicit ad Corinthios II</finalRubric>
+                                <note>TLG 0031.008</note>
+                            </msItem>
+
+                            <msItem n="1.4">
+                                <locus from="66v-67r" to="75v-76r">ff. 67r-76r</locus>
+                                <title xml:lang="eng">Letter to the Galatians</title>
+                                <textLang mainLang="grc" otherLangs="la">Greek and Latin</textLang>
+                                <rubric>(Greek) <locus from="66v-67r" to="66v-67r">f. 67r</locus>
+                                    Αρχεται προς Γαλατας</rubric>
+                                <rubric>(Latin) <locus from="66v-67r" to="66v-67r">f. 67r</locus>
+                                    Incipit ad Galatas</rubric>
+                                <incipit>(Greek) <locus from="66v-67r" to="66v-67r">f. 67r</locus>
+                                    Παυλος αποστολος· ουκ απ·ανθρωπων· ουδε· δια ανθρωπου</incipit>
+                                <incipit>(Latin) <locus from="66v-67r" to="66v-67r">f. 67r</locus>
+                                    Paulus apostolus· non ab hominibus neque per hominem</incipit>
+                                <explicit>(Greek) <locus from="75v-76r" to="75v-76r">f. 76r</locus>
+                                    Η χαρις· του <sic>Χριστου</sic> ημων Ιησου Χριστου μετα του
+                                    πνευματος υμων αδελφοι· αμην</explicit>
+                                <explicit>(Latin) <locus from="75v-76r" to="75v-76r">f. 76r</locus>
+                                    Η χαρις· του <sic>Χριστου</sic> ημων Ιησου Χριστου μετα του
+                                    πνευματος υμων αδελφοι· αμην</explicit>
+                                <finalRubric>(Greek) <locus from="75v-76r" to="75v-76r">f.
+                                        76r</locus> Ετελεσθη επιστολη προς Γαλατας</finalRubric>
+                                <finalRubric>(Latin) <locus from="75v-76r" to="75v-76r">f.
+                                        76r</locus> Explicit epistola ad Galatas</finalRubric>
+                                <note>TLG 0031.009</note>
+                            </msItem>
+
+                            <msItem n="1.5">
+                                <locus from="75v-76r" to="84v-85r">ff. 76r-85r</locus>
+                                <title xml:lang="eng">Letter to the Ephesians</title>
+                                <textLang mainLang="grc" otherLangs="la">Greek and Latin</textLang>
+                                <rubric>(Greek) <locus from="75v-76r" to="75v-76r">f. 76r</locus>
+                                    Αρχεται προς Εφεσιους</rubric>
+                                <rubric>(Latin) <locus from="75v-76r" to="75v-76r">f. 76r</locus>
+                                    Incipit ad Efesios</rubric>
+                                <incipit>(Greek) <locus from="75v-76r" to="75v-76r">f. 76r</locus>
+                                    Παυλος αποστολος Ιησου Χριστου· δια· θεληματος· Θεου· τοις·
+                                    αγιοις· τοις· ουσιν· εν· Εφεσω·</incipit>
+                                <incipit>(Latin) <locus from="75v-76r" to="75v-76r">f. 76r</locus>
+                                    Paulus apostolus Iesu Christi per voluntatem Dei sanctis omnibus
+                                    quis Ephesi</incipit>
+                                <explicit>(Greek) <locus from="84v-85r" to="84v-85r">f. 85r</locus>
+                                    Η· χαρις· μετα· παντων· των·<sic> ἀγαπων· των·</sic> Κυριον·
+                                    ημων· Ιησον· Χριστον· εν αφθαρσια</explicit>
+                                <explicit>(Latin) <locus from="84v-85r" to="84v-85r">f. 85r</locus>
+                                    Gratia cum omnibus qui diligunt dominum nostrum Iesum Christum
+                                    in incorruptione</explicit>
+                                <finalRubric>(Greek) <locus from="84v-85r" to="84v-85r">f.
+                                        85r</locus> Ετελεσθη· επιστολη· προς· Εφεσιους</finalRubric>
+                                <finalRubric>(Latin) <locus from="84v-85r" to="84v-85r">f.
+                                        85r</locus> Explicit epistola ad Ephesios</finalRubric>
+                                <note>TLG 0031.010</note>
+                            </msItem>
+
+                            <msItem n="1.6">
+                                <locus from="85v-86r" to="91v-92r">ff. 85v-91v</locus>
+                                <title xml:lang="eng">Letter to the Philippians</title>
+                                <textLang mainLang="grc" otherLangs="la">Greek and Latin</textLang>
+                                <rubric>(Greek) <locus from="85v-86r" to="85v86r-">f. 85v</locus>
+                                    Αρχεται προς Φιλιππησιους</rubric>
+                                <rubric>(Latin) <locus from="85v-86r" to="85v-86r">f. 85v</locus>
+                                    Incipit ad Philippensis</rubric>
+                                <incipit>(Greek) <locus from="85v-86r" to="85v-86r">f. 85v</locus>
+                                    Παυλος και Τιμοθεος δουλοι Ιησου Χριστου πασιν· τοις· αγιοις·
+                                    εν· Χριστω· Ιησου· τοις· ουσιν· εν· Φιλιπποις</incipit>
+                                <incipit>(Latin) <locus from="85v-86r" to="85v-86r">f. 85v</locus>
+                                    Paulus et Timotheus servi Iesu Christi· omnibus sanctis in
+                                    Christo iesu qui sunt Philippis</incipit>
+                                <explicit>(Greek) <locus from="91v-92r" to="91v-92r">f. 91v</locus>
+                                    μαλιστα· δε· οι· εκ· της Καισαρος· οικίας· Η· χαρις· του·
+                                    Κυριου· Ιησου· Χριστου· μετα· του· πνευματος· ὑμῶν</explicit>
+                                <explicit>(Latin) <locus from="91v-92r" to="91v-92r">f. 91v</locus>
+                                    maxime aut qui de Cesaris domo sunt Gratia Domini nostri Iesu
+                                    Christi cum spiritu vestro</explicit>
+                                <finalRubric>(Greek) <locus from="91v-92r" to="91v-92r">f.
+                                        91v</locus> Ετελεσθη προς Φιλιππησιους</finalRubric>
+                                <finalRubric>(Latin) <locus from="91v-92r" to="91v-92r">f.
+                                        91v</locus> Explicit ad Philippenses</finalRubric>
+                                <note>TLG 0031.011</note>
+                            </msItem>
+
+                            <msItem n="1.7">
+                                <locus from="91v-92r" to="98v-99r">ff. 92r-98v</locus>
+                                <title xml:lang="eng">Letter to the Colossians</title>
+                                <textLang mainLang="grc" otherLangs="la">Greek and Latin</textLang>
+                                <rubric>(Greek) <locus from="91v-92r" to="91v-92r">f. 92r</locus>
+                                    Αρχεται προς Κολοσσαις</rubric>
+                                <rubric>(Latin) <locus from="91v-92r" to="91v-92r">f. 92r</locus>
+                                    Incipit ad Colosenses</rubric>
+                                <incipit>(Greek) <locus from="91v-92r" to="91v-92r">f. 92r</locus>
+                                    Παυλος αποστολος Χριστου· Ιησου· δια· θεληματος· Θεου· και·
+                                    Τιμοθεος· ο· αδελφος</incipit>
+                                <incipit>(Latin) <locus from="91v-92r" to="91v-92r">f. 92r</locus>
+                                    Paulus apostolus Christi Iesu per voluntatem Dei· et Timotheus
+                                    frater</incipit>
+                                <explicit>(Greek) <locus from="98v-99r" to="98v-99r">f. 98v</locus>
+                                    <sic>μνημον· ευετε·</sic> μου· τον· δεσμων· Χαρις·
+                                        <sic>μεθυμων</sic>
+                        </explicit>
+                                <explicit>(Latin) <locus from="98v-99r" to="98v-99r">f. 98v</locus>
+                                    Memores esto te vinculorum meorum· Gratia vobiscum</explicit>
+                                <finalRubric>(Greek) <locus from="98v-99r" to="98v-99r">f.
+                                        98v</locus> Ετελεσθη· προς· Κολοσσαεις</finalRubric>
+                                <finalRubric>(Latin) <locus from="98v-99r" to="98v-99r">f.
+                                        98v</locus> Explicit ad Colosenses</finalRubric>
+                                <note>TLG 0031.012</note>
+                            </msItem>
+
+                            <msItem n="1.8">
+                                <locus from="98v-99r" to="102v-103r">ff. 98v-102v, 111r-112v</locus>
+                                <!--<locus from="110v-111r" to="112v-113r">111r-112v</locus>-->
+                                <title xml:lang="eng">First Letter to the Thessalonians</title>
+                                <textLang mainLang="grc" otherLangs="la">Greek and Latin</textLang>
+                                <rubric>(Greek) <locus from="98v-99r" to="98v-99r">f. 98v</locus>
+                                    Αρχεται προς Θεσσαλονικαιους προτη</rubric>
+                                <rubric>(Latin) <locus from="98v-99r" to="98v-99r">f. 98v</locus>
+                                    Incipit ad Thesalonicenses</rubric>
+                                <incipit>(Greek) <locus from="98v-99r" to="98v-99r">f. 98v</locus>
+                                    Παυλος· και Σιλβανος· και· <sic>Τιμωθεος</sic>· τη· εκκλησία
+                                        <sic>Θεσσαλνικαιον</sic>
+                        </incipit>
+                                <incipit>(Latin) <locus from="98v-99r" to="98v-99r">f. 98v</locus>
+                                    Paulus et Silvanus et Timotheus· ecclesiae
+                                    Thessalonicensium</incipit>
+                                <explicit>(Greek) <locus from="112v-113r" to="112v-113r">f.
+                                        112v</locus> αναγνωθηναι· την· επιστολην· πασιν·
+                                        <sic>τους·</sic> αδελφοις· Η· χαρις· του· Κυριου· ημων·
+                                    Ιησου· Χριστου· <sic>μεθυμων</sic>
+                        </explicit>
+                                <explicit>(Latin) <locus from="112v-113r" to="112v-113r">f.
+                                        112v</locus> ut legatur aepistola hec omnibus· fratribus·
+                                    Gratia Domini nostri Iesu Christi vobiscum</explicit>
+                                <finalRubric>(Greek) <locus from="112v-113r" to="112v-113r">f.
+                                        112v</locus> Ετελεσθη· προς· Θεσσαλονικαιων· α</finalRubric>
+                                <finalRubric>(Latin) <locus from="112v-113r" to="112v-113r">f.
+                                        112v</locus> Explicit ad Thessalonicenses epistola· Pauli·
+                                    apostoli· I</finalRubric>
+                                <note>TLG 0031.013</note>
+                            </msItem>
+
+                            <msItem n="1.9">
+                                <locus from="112v-113r" to="115v-116r">ff. 112v-115v</locus>
+                                <title xml:lang="eng">Second Letter to the Thessalonians</title>
+                                <textLang mainLang="grc" otherLangs="la">Greek and Latin</textLang>
+                                <rubric>(Greek) <locus from="112v-113r" to="112v-113r">f.
+                                        112v</locus> Αρχεται προς <sic>Θεσσαλονικαιων</sic>
+                                    δευτερη</rubric>
+                                <rubric>(Latin) <locus from="112v-113r" to="112v-113r">f.
+                                        112v</locus> Incipit ad Thesalonicenses· secunda</rubric>
+                                <incipit>(Greek) <locus from="112v-113r" to="112v-113r">f.
+                                        112v</locus> Παυλος και· Σιλβανος· και· Τιμοθεος· τη·
+                                        <sic>εκκλησεία·</sic> Θεσσαλονικαιων</incipit>
+                                <incipit>(Latin) <locus from="112v-113r" to="112v-113r">f.
+                                        112v</locus> Paulus et Silvanus et Timotheus· ecclesiae
+                                    Thessalonicensium</incipit>
+                                <explicit>(Greek) <locus from="115v-116r" to="115v-116r">f.
+                                        115v</locus> ουτως γραφω· Η· χαρεις· του Κυριου Ιησου
+                                    Χριστου μετα· παντων υμων· αμην</explicit>
+                                <explicit>(Latin) <locus from="115v-116r" to="115v-116r">f.
+                                        115v</locus> ita scribo· Gratia Domini nostri Iesu Christi
+                                    cum omnibus vobis amen</explicit>
+                                <finalRubric>(Greek) <locus from="115v-116r" to="115v-116r">f.
+                                        115v</locus> Ετελεσθαι προς Θεσσαλονικαιων· β</finalRubric>
+                                <finalRubric>(Latin) <locus from="115v--16r" to="115v-116r">f.
+                                        115v</locus> Explicit ad Thessalonicenses· II</finalRubric>
+                                <note>TLG 0031.014</note>
+                            </msItem>
+
+                            <msItem n="1.10">
+                                <locus from="115v-116r" to="122v-123r">ff. 115v-122v</locus>
+                                <title xml:lang="eng">First Letter to Timothy</title>
+                                <textLang mainLang="grc" otherLangs="la">Greek and Latin</textLang>
+                                <rubric>(Greek) <locus from="115v-116r" to="115v-116r">f.
+                                        115v</locus> Αρχεται προς Τιμοθεον· α</rubric>
+                                <rubric>(Latin) <locus from="115v-116r" to="115v-116r">f.
+                                        115v</locus> Incipit ad Timotheum· I</rubric>
+                                <incipit>(Greek) <locus from="115v-116r" to="115v-116r">f.
+                                        115v</locus> Παυλος αποστολος Χριστου Ιησου·
+                                        <sic>κατεπιταγην·</sic> Θεου· Σωτηρος· ημων</incipit>
+                                <incipit>(Latin) <locus from="115v-116r" to="115v-116r">f.
+                                        115v</locus> Paulus apostolus Christi Iesu secundum imperium
+                                    Dei salvatoris nostrae</incipit>
+                                <explicit>(Greek) <locus from="122v-123r" to="122v-213r">f.
+                                        122v</locus> Hν· τινες· επαγγελλομενοι· περι· την· πιστιν·
+                                    ηστοχησαν· η· χαρις· <sic>μεθυμοων</sic>
+                        </explicit>
+                                <explicit>(Latin) <locus from="122v-123r" to="122v-123r">f.
+                                        122v</locus> quam quidum permittentes· circa fidem
+                                    exciderunt· Gratia tecum amen</explicit>
+                                <finalRubric>(Greek) <locus from="122v-123r" to="122v-123r">f.
+                                        122v</locus> Επληρωθη· προς Τιμοθεον· α</finalRubric>
+                                <finalRubric>(Latin) <locus from="122v-123r" to="122v-213r">f.
+                                        122v</locus> Explicit epistola ad Timotheum· I</finalRubric>
+                                <note>TLG 0031.015</note>
+                            </msItem>
+
+                            <msItem n="1.11">
+                                <locus from="122v-123r" to="127v-127ar">ff. 122v-127v</locus>
+                                <title xml:lang="eng">Second Letter to Timothy</title>
+                                <textLang mainLang="grc" otherLangs="la">Greek and Latin</textLang>
+                                <rubric>(Greek) <locus from="122v-123r" to="122v-123r">f.
+                                        122v</locus> Αρχεται προς· εαυτον· β</rubric>
+                                <rubric>(Latin) <locus from="122v-123r" to="122v-123r">f.
+                                        122v</locus> Incipit ad eundem· II</rubric>
+                                <incipit>(Greek) <locus from="122v-123r" to="122v-123r">f.
+                                        122v</locus> Παυλος· αποστολος· Χριστου· Ιησου· δια·
+                                    θεληματος· Θεου· κατεπαγγελιαν· ζωης· της· εν· Χριστω·
+                                    Ιησου</incipit>
+                                <incipit>(Latin) <locus from="122v-123r" to="122v-123r">f.
+                                        122v</locus> Paulus apostolus Christi Iesu per voluntatem
+                                    Dei secundum permissionem vitae quae est in Christo
+                                    Iesu</incipit>
+                                <explicit>(Greek) <locus from="127v-128r" to="127v-128r">f.
+                                        127v</locus> Ο Κυριος· μετα· του· πνευματος· σου· Η· χαρις·
+                                        <sic>μεθυμων</sic> ἀμήν</explicit>
+                                <explicit>(Latin) <locus from="127v-128r" to="127v-128r">f.
+                                        127v</locus> Dominus Iesus Christus cum spiritu tuo· Gratia
+                                    vobiscum</explicit>
+                                <finalRubric>(Greek) <locus from="127v-128r" to="127v-128r">f.
+                                        127v</locus> Ετελεσθη· προς· Τιμοθεον· β</finalRubric>
+                                <finalRubric>(Latin) <locus from="127v-128r" to="127v-128r">f.
+                                        127v</locus> Explicit ad Timotheum· II</finalRubric>
+                                <note>TLG 0031.016</note>
+                            </msItem>
+
+                            <msItem n="1.12">
+                                <locus from="127v-127ar" to="129v-130r">ff. 127v-129v</locus>
+                                <title xml:lang="eng">Second Letter to Timothy</title>
+                                <textLang mainLang="grc" otherLangs="la">Greek and Latin</textLang>
+                                <rubric>(Greek) <locus from="127v-128r" to="127v-128r">f.
+                                        127v</locus> Αρχεται προς Τιτον</rubric>
+                                <rubric>(Latin) <locus from="127v-128r" to="127v-128r">f.
+                                        127v</locus> Incipit ad Titum</rubric>
+                                <incipit>(Greek) <locus from="127v-128r" to="127v-128r">f.
+                                        127v</locus> Παυλος δουλος· Θεου· αποστολος· δε· Ιησου·
+                                    Χριστου· κατα· πιστιν· εκλεκτων· Θεου</incipit>
+                                <incipit>(Latin) <locus from="127v-128r" to="127v-128r">f.
+                                        127v</locus> Paulus servus Dei· apostolus autem Iesu Christi
+                                    secundum fidem electorum Dei</incipit>
+                                <explicit>(Greek) <locus from="129v-130r" to="129v-130r">f.
+                                        129v</locus>
+                                    <sic>ασπασε</sic> τους· φιλουντας· ημας· εν· <sic>πιστι·</sic> Η
+                                        <sic>χαρεις·</sic> του· Θεου· μετα· παντων· υμων·
+                                    αμην</explicit>
+                                <explicit>(Latin) <locus from="129v-130r" to="129v-130r">f.
+                                        129v</locus> Saluta qui nos amant in fide· Gratia Dei cum
+                                    omnibus vobis amen</explicit>
+                                <finalRubric>(Greek) <locus from="129v-130r" to="129v-130r">f.
+                                        129v</locus> Ετελεσθη επιστολη προς Τιτον</finalRubric>
+                                <finalRubric>(Latin) <locus from="129v-130r" to="129v-130r">f.
+                                        129v</locus> Explicit epistola ad Titum</finalRubric>
+                                <note>TLG 0031.017</note>
+                            </msItem>
+
+                            <msItem n="1.13">
+                                <locus from="129v-130r" to="130v-131r">ff. 130r-131r</locus>
+                                <title xml:lang="eng">Letter to Philemon</title>
+                                <textLang mainLang="grc" otherLangs="la">Greek and Latin</textLang>
+                                <note>The Greek text ends incomplete, having never been finished
+                                    (ends at Phm 1:20)</note>
+                                <rubric>(Greek) <locus from="129v-130r" to="129v-130r">f.
+                                        130r</locus> Αρχεται προς Φιλημονα</rubric>
+                                <rubric>(Latin) <locus from="129v-130r" to="129v-130r">f.
+                                        130r</locus> Incipit ad Philemonem</rubric>
+                                <incipit>(Greek) <locus from="129v-130r" to="129v-130r">f.
+                                        130r</locus> Παυλος <sic>δεσμειος·</sic> Χριστου· Ιησου·
+                                    και· <sic>Τειμοθει·</sic> ἀδελφος· <sic>Φιλημονει·</sic> τω·
+                                    αγαπητω</incipit>
+                                <incipit>(Latin) <locus from="129v-130r" to="129v-130r">f.
+                                        130r</locus> Paulus vinctus Christi Iesu et Timotheus frater
+                                    Filemoni dilecto</incipit>
+                                <explicit defective="true">(Greek) <locus from="130v-131r" to="130v-131r">f. 131r</locus> εν· κυριω· αναπαυσον· μου τα·
+                                        <sic>σπανχνα·</sic> εν· Χριστω</explicit>
+                                <explicit>(Latin) <locus from="130v-131r" to="130v-131r">f.
+                                        131r</locus> Marcus· Aristarchus· Demas· et Lucas· adiutores
+                                    mei· Gratia Domini nostri Iesu Christi cum spiritu vestro
+                                    amen</explicit>
+                                <note>TLG 0031.018</note>
+                            </msItem>
+
+                            <msItem n="1.14">
+                                <locus from="131v-132r" to="131v-132r">f. 131v, col. a, lines
+                                    1-24</locus>
+                                <author key="person_v95147534">Rabanus Maurus</author>
+                                <title xml:lang="la">Expositio in epistolam ad Habraeos</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <note>Excerpt: the Argumentum (PL 112, col. 711)</note>
+                                <rubric>
+                           <locus from="131v-132r" to="131v-132r">f. 131v</locus>
+                                    Incipit argumentum in epistolam ad Hebraeos</rubric>
+                                <incipit>
+                           <locus from="131v-132r" to="131v-132r">f. 131v</locus> In
+                                    primis dicendum est· cur apostolus Paulus in hac epistola
+                                    scribendo non servaverit morem suum</incipit>
+                                <explicit>
+                           <locus from="131v-132r" to="131v-132r">f. 131v</locus>
+                                    Lucas evangelista post discensum beati apostoli Pauli Greco
+                                    sermone composuit</explicit>
+                                <finalRubric>
+                           <locus from="131v-132r" to="131v-132r">f. 131v</locus>
+                                    Explicit argumentum</finalRubric>
+                                <note>PL 112, coll. 711-834</note>
+                            </msItem>
+
+                            <msItem n="1.15">
+                                <locus from="131v-132r" to="131v-132r">f. 131v, col. a, line 25-f.
+                                    139v, col. b, line 13</locus>
+                                <title xml:lang="eng">Letter to the Hebrews</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric>
+                           <locus from="131v-132r" to="131v-132r">f. 131v</locus>
+                                    Incipit ipsa epistola ad Hebraeos</rubric>
+                                <incipit>
+                           <locus from="131v-132r" to="131v-132r">f. 131v</locus>
+                                    Multifaria multisque modis olim Dominus loquens patribus in
+                                    prophetis</incipit>
+                                <explicit>
+                           <locus from="139v-140r" to="139v-140r">f. 139v</locus>
+                                    Salutent vos de Italia· fratres gratia cum omnibus· vobis
+                                    amen</explicit>
+                            </msItem>
+
+                            <msItem n="1.16">
+                                <locus from="139v-140r" to="141v-right board, inside">f. 139v, col. b, line 14-f.
+                                    141v</locus>
+                                <author key="person_v95147534">Rabanus Maurus</author>
+                                <title xml:lang="la">De modo paenitentiae</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <note>Excerpt: Chapter 23, Dicta abbatis Pinophi: (PL 112, coll.
+                                    1329-1332); the text here diverges from the PL edition after
+                                        <locus from="140v-141r" to="140v-141r">f. 141r, col. 2, line
+                                        1</locus>: <q xml:lang="la">non recordabor</q> (PL 112, col.
+                                    1331)</note>
+                                <incipit>
+                           <locus from="139v-140r" to="139v-140r">f. 139v</locus> Post
+                                    illam generalem baptismi gratiam</incipit>
+                                <explicit>
+                           <locus from="141v-142r" to="141v-142r">f. 141v</locus> hoc
+                                    est <sic>spiritalia</sic> dona atque virtutes</explicit>
+                                <note>PL 112, coll. 1304-1332</note>
+                            </msItem>
+                        </msItem>
+                    </msContents>
+
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="perg">
+                                <support>
+                                    <material>Parchment (<term type="disposition">HFFH</term>),
+                                        quite thin and of good quality.</material>
+                                </support>
+
+                                <extent>
+                                    <seg type="object">
+                                        <objectType>Codex </objectType>
+                                    </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="136" type="leaf">136</measure>
+                                    </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height quantity="226">226</height>
+                                            <width quantity="187">187</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+
+                                <foliation xml:id="modern">The manuscript is foliated with the
+                                    numbers 7-127, 127a, 128-141, in black ink, in Arabic numerals,
+                                    recto, upper right.</foliation>
+
+                                <collation>
+                                    <p>The manuscript consists of 18 quires, all quaternia.</p>
+                                    <p>
+                                        <list>
+                                            <item>Quire 1<hi rend="superscript">8-7</hi>
+                                                <locus from="left board, inside-7r" to="7v-8r">f.
+                                                  7</locus>
+                                                <note>This quire is a quaternion, whose first,
+                                                  originally blank folio, was pierced and ruled for
+                                                  copying but is employed as the left pastedown. The
+                                                  following six folios have been lost, with loss of
+                                                  text, leaving only the conjoint leaf of the
+                                                  pastedown</note>
+                                 </item>
+                                            <item>Quires 2-12<hi rend="superscript">8</hi>
+                                                <locus from="8v-9r" to="95v-96r">ff. 8-95</locus>
+                                            </item>
+                                            <item>Quire 13<hi rend="superscript">8</hi>
+                                                <locus from="95v-96r" to="102v-103r">ff.
+                                                  96-102</locus>, <locus from="110v-111r" to="111v-112r">111</locus>
+                                                <note>Quire 14 has been erroneously inserted between
+                                                  the seventh and eighth folios of this quire</note>
+                                            </item>
+                                            <item>Quire 14<hi rend="superscript">8</hi>
+                                                <locus from="102v-103r" to="110v-111r">ff.
+                                                  103-110</locus>
+                                                <note>This is the original eighth quire, which
+                                                  should appear after <locus from="55v-56r" to="55v-56r">f. 55</locus>
+                                    </note>
+                                            </item>
+                                            <item>Quires 15-17<hi rend="superscript">8</hi>
+                                                <locus from="111v-112r" to="134v-135r">ff.
+                                                  112-134</locus>
+                                 </item>
+                                            <item>Quire 18<hi rend="superscript">8-1</hi>
+                                                <locus from="134v-135r" to="141v-right board, inside">ff. 135-141</locus>
+                                                <note>The last folio has been cancelled, without
+                                                  loss of text</note>
+                                 </item>
+                                        </list>
+                                    </p>
+                                    <signatures type="quire">There are early quire signatures in
+                                        Greek numerals, in brown ink, with decorative borders, on
+                                        the last folio of some quires, verso, lower centre. They
+                                        survive on Quires 12-13 and 15-16 (ιγʹ-ιϛʹ). The numbers are
+                                        out of step with the present situation due to the
+                                        misplacement of the present Quire 14. The location of the
+                                        signatures suggests that their absence from the remaining
+                                        quires is not a result of cropping.</signatures>
+                                    <signatures type="quire">There are also modern quire signatures
+                                        in Arabic numerals, in pencil, on the first folio of each
+                                        quire, recto, lower right. These survive on Quires 1-13 and
+                                        15-18 (1-17). Quires 13 and 14 are treated as a single quire
+                                        for the purposes of this sequence.</signatures>
+                                </collation>
+
+                                <condition>There is a tear from the edge of <locus from="140v-141r" to="141v-right board, inside">f. 141</locus> at the tail of
+                                    the gutter. Some of the folios are creased. There is some water
+                                    staining, and a line of spilt ink across the corner of <locus from="135v-136r" to="135v-136r">ff.
+                                    135v-136r</locus>.</condition>
+                            </supportDesc>
+
+                            <layoutDesc>
+                                <layout columns="1" rulingMedium="hardpoint" topLine="above" writtenLines="28">Two columns of 28 lines. <dimensions type="written" unit="mm">
+                                        <height quantity="162">162</height>
+                                        <width quantity="130">130</width>
+                                    </dimensions>
+                                    <seg type="pricking">Pricking survives in all three
+                                        margins.</seg>
+                                    <seg type="ruling">Ruled in hardpoint, system Leroy 3 (ruled on
+                                        the hair side), type Leroy <formula notation="Leroy">20D2</formula>. Text stands on the lines, but is often
+                                        slightly above them. The Greek text appears in the inner
+                                        column, the Latin text in the outer.</seg>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <handDesc>
+                            <handNote scope="sole" xml:id="hand-1">
+                                <p>The main text was copied in brown ink. The Latin text is written
+                                    in <term type="script">Carolingian minuscule</term>, the Greek
+                                    in a western European <term type="script">majuscule</term>
+                                    script, without superscriptions of word endings or abbreviations
+                                    apart from <foreign xml:lang="la">nomina sacra</foreign>, which
+                                    often appear in a longer form than usual, e.g. <q xml:lang="grc">χρς</q> instead of <q xml:lang="grc">χς</q>. Headings are
+                                    written in the same style in red ink.</p>
+                                <p>The Greek text contains numerous spelling errors and corrections,
+                                    while there are few in the Latin. There are deletions by
+                                    expunctuation and erasure. Common spelling errors include
+                                    confusion between <hi rend="italic">eta</hi> and <hi rend="italic">epsilon</hi>, reflecting non-native
+                                    pronunciation.</p>
+                                <p>Diacritics are not used, apart from occasional acute accents,
+                                    hooked at the upper end, and the occasional use of the double
+                                    dot on <hi rend="italic">iota</hi> and <hi rend="italic">upsilon</hi>, not determined by function but appearing
+                                    recurrently particular words such as ἵνα (e.g. <locus from="10v-11r" to="10v-11r">f. 11r</locus>) and forms of
+                                    ὑμεῖς (e.g. <locus from="11v-12r" to="11v-12r">f.
+                                    12r</locus>).</p>
+                                <p>Punctuation used includes the middle and upper points. A large
+                                    proportion of Greek words are followed by a middle point,
+                                    probably to indicate word division. There are errors in word
+                                    division. Some words appear with gaps within them, perhaps due
+                                    to an erroneous word division, but joined with a curved line
+                                    below, similar to a hyphen.</p>
+                            </handNote>
+                        </handDesc>
+
+                        <decoDesc>
+                            <decoNote type="collInit">
+                                <p>The beginnings of books and some sections are marked by plain
+                                    enlarged initials in red ink.</p>
+                            </decoNote>
+
+                            <decoNote type="plainInit">The beginnings of other sections are marked
+                                by enlarged initials in brown ink.</decoNote>
+                        </decoDesc>
+
+                        <additions>
+                            <p>There are various interlinear Latin glosses in the Greek text, by a
+                                medieval hand. Extensive marginal and interlinear annotations in
+                                Latin have been added to the Latin text of <locus from="12v-13r" to="43v-44r">ff. 13r-44r</locus>, by a later hand. There is a
+                                marginal note in Latin by Mieg, added to by a later hand, on <locus from="139v-140r" to="139v-140r">f. 139v</locus>.</p>
+                            <p>Running heads indicating the present epistle have been added in the
+                                upper margin of each folio, recto. The beginning of some chapters
+                                has been noted in the margin. There are notes of omissions of text
+                                and the misplacement of a quire by Richard Bentley (e.g. ff. <locus from="34v-35r" to="34v-35r">35r</locus>, <locus from="55v-56r" to="55v-56r">55v</locus>).</p>
+                            <p>There is a series of notes of ownership on <locus from="left board, inside-7r" to="left board, inside-7r">the left
+                                    pastedown</locus>, by Georg Michael Wepfer, Ludwig Christian
+                                Mieg and Richard Bentley: <q xml:lang="la">Georgii Michaelis Wepfer
+                                    Schaphusiani</q>; <q xml:lang="la">Iam Ludovici Christiani
+                                    Miegii</q>; <q xml:lang="la">Emptus hic codex Richardo Bentleio
+                                    Anno Domini MDCCXVIII</q>.</p>
+                            <p>Another note on this pastedown has been rendered partially illegible:
+                                    <q xml:lang="la">Tempus ad huc v...t ..ph......</q>. There are a
+                                number of other notes here on the manuscript and its scholarly use:
+                                    <q xml:lang="eng">This MS. is not written in Anglo-Saxon
+                                    characters, as has been described, but in the renovated
+                                    minuscule of the Caroline period (saec. ix vel x).I. O. W.</q>;
+                                    <q xml:lang="la">Collatus et transcriptus hic codex integer. F.
+                                    H. Scrivener, 1855</q>; <q xml:lang="eng">Codex Augiensis
+                                    (supposed to have been written in the ninth century) noted F in
+                                    the second part of Wetstein's NT. Vid Martis Michaelis Chap VIII
+                                    Sect VI. 4</q>; <q xml:lang="la">Wetstein's Prolegom Vol I. p
+                                    153. Vol II p 6 Monti's Life of Bentley. II p 121. Hunc Codicem
+                                    parvo aestimavit Wetstenius plurimi Bentleius. vid qui not. MS
+                                    ad initium Novi Testamenti Oxoniensis 1675 octavo (B.17.8
+                                    inscripti) quocum Codicem contulit. J. W. 1839</q>. The
+                                classmark and M.R. James catalogue number also appear here.</p>
+                            <p>On <locus from="141v-right board, inside" to="141v-right board, inside">f. 141v</locus> is an ownership
+                                note of the monastery of Augia Major, Reichenau by a <date calendar="gregorian" notAfter="1599" notBefore="1500">16th-century</date> hand: <q xml:lang="la">Hic liber est
+                                    monasterii Augie Maioris qui per dominum de Wildenstain abbatem
+                                    accomodatus fuit magistro Georgio Schoentin de Schorndorff
+                                    decretorum doctor canoinico in Sindelfingen tempore
+                                    Basiliensis</q>. Other notes here include a Greek alphabet with
+                                alternative letter-forms and a table of the forms of the definite
+                                article.</p>
+                            <p>Notes and pen-trials on <locus from="141v-right board, inside" to="141v-right board, inside">the right pastedown</locus>
+                                include a note by Bentley on the monastery of Augia Major: <q xml:lang="la">Monasteriu Augiae, in Belgio, ubi institutus est
+                                    Goddeschalcus</q>.</p>
+                        </additions>
+
+                        <bindingDesc>
+                            <binding calendar="gregorian" notAfter="1499" notBefore="1400">
+                                <p>15th-century binding with wooden boards, with the spine and
+                                    roughly one third of the boards covered with white skin
+                                    decorated with a stamped design. The stub of a leather and
+                                    fabric strap fastening is fixed to the outside of the right
+                                    board by a brass plate, with a brass clasp attachment on the
+                                    outside of the left board. The covering of the left board is
+                                    marked with Wepfer's initials, G. M. W., and the title <q xml:lang="la">Epistole Pauli Grece et Latine</q> is written
+                                    on the front board in a <date calendar="gregorian" notAfter="1499" notBefore="1400">15th-century</date>
+                                    hand.</p>
+                                <p>
+                                    <dimensions type="binding" unit="mm">
+                                        <height quantity="260">260</height>
+                                        <width quantity="195">195</width>
+                                        <depth quantity="55">55</depth>
+                                    </dimensions>
+                                </p>
+                            </binding>
+                        </bindingDesc>
+
+                        <accMat>While the <locus from="left board, inside-7r" to="left board, inside-7r">left pastedown</locus> is the first folio
+                            of the first quire, which was ruled but left blank, the <locus from="141v-right board, inside" to="141v-right board, inside">right
+                                pastedown</locus> is a separate, unruled parchment leaf.</accMat>
+                    </physDesc>
+
+                    <history>
+                        <origin>The characteristics of the Latin script suggest that the manuscript
+                            was copied within the <origPlace key="place_g7024343">Carolingian
+                                Empire</origPlace> in the <origDate calendar="gregorian" notAfter="0899" notBefore="0800">9th century</origDate>, later than
+                            the composition of the works of Rabanus Maurus contained in it.</origin>
+
+                        <provenance>
+                            <p>Owned by the monastery of <name key="org_v121841532">
+                                    <orgName type="display">Augia Major</orgName>
+                                    <orgName type="standard">Abtei Reichenau</orgName>
+                                </name>, <placeName key="place_g7005185">Reichenau</placeName>, as
+                                indicated by the note on <locus from="141v" to="141v">f.
+                                    141v</locus>.</p>
+                        </provenance>
+
+                        <provenance calendar="gregorian" notAfter="1774" notBefore="1710">
+                            <p>Owned by <name key="person_v29884652" role="fmo">
+                           <persName type="display">Georg Michael Wepfer
+                                        (1692-1774)</persName>
+                           <persName type="standard">Wepfer,
+                                        Georg Michael, 1692-1774</persName>
+                        </name> of Schaffhausen,
+                                as indicated by his note on <locus from="left board, inside-7r" to="left board, inside-7r">the left pastedown</locus>.</p>
+                        </provenance>
+
+                        <provenance calendar="gregorian" notAfter="1740" notBefore="1686">
+                            <p>Owned by <name key="person_v27837734" role="fmo">
+                           <persName type="display">Ludwig Christian Mieg
+                                        (1668-1740)</persName>
+                           <persName type="standard">Mieg, Ludwig
+                                        Christian, 1668-1740</persName>
+                        </name>, as indicated by his
+                                note on <locus from="left board, inside-7r" to="left board, inside-7r">the left pastedown</locus>.</p>
+                        </provenance>
+
+                        <provenance calendar="gregorian" when="1718">
+                            <p>Bought from Mieg in 1718 by <name key="person_v27862472" role="fmo">
+                           <persName type="display">Richard Bentley
+                                        (1662-1742)</persName>
+                           <persName type="standard">Bentley,
+                                        Richard, 1662-1742</persName>
+                        </name>, Master of Trinity.</p>
+                        </provenance>
+
+                        <acquisition calendar="gregorian" when="1742">Bequeathed to Trinity college
+                            by Bentley in 1742.</acquisition>
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <p/>
+                            </recordHist>
+
+                            <availability status="restricted">
+                                <p>Visitors to Trinity College who wish to consult Special Collections material
+                                    are required to apply to the Library in advance of their visit. For information
+                                    on eligibility and admission procedures see: <ref target="https://www.trin.cam.ac.uk/library/wren-library/information-for-readers/">Trinity College: Information for Readers</ref>.</p>
+                            </availability>
+
+                        </adminInfo>
+
+                        <listBibl>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/3XZFMIVE" type="book" xml:id="Scrivener1859a">
+                                <monogr>
+                                    <title level="m">An exact transcript of the Codex Augiensis: a
+                                        Græco-Latin manuscript of S. Paul's Epistles, deposited in
+                                        the Library of Trinity College, Cambridge</title>
+                                    <author>
+                                        <forename>Frederick Henry Ambrose</forename>
+                                        <surname>Scrivener</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge; London</pubPlace>
+                                        <publisher>Deighton, Bell, and Co.</publisher>
+                                        <date>1859</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/HAHGYW7M" type="book" xml:id="Scrivener1859b">
+                                <monogr>
+                                    <title level="m">Contributions to the criticism of the Greek New
+                                        Testament : being the introduction to an edition of the
+                                        Codex Augiensis and fifty other manuscripts</title>
+                                    <author>
+                                        <forename>Frederick Henry Ambrose</forename>
+                                        <surname>Scrivener</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>Deighton, Bell, and Co.</publisher>
+                                        <date>1859</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/8QCYDT67" type="book" xml:id="Tischendorf1861">
+                                <monogr>
+                                    <title level="m">Anecdota sacra et profana ex Oriente et
+                                        Occidente allata, sive, Notitia codicum Graecorum,
+                                        Arabicorum, Syriacorum, Copticorum, Hebraicorum,
+                                        Aethiopicorum, Latinorum : cum excerptis multis maximam
+                                        partem Graecis et triginta quinque Scripturarum
+                                        antiquissimarum exemplis</title>
+                                    <author>
+                                        <forename>Constantin von</forename>
+                                        <surname>Tischendorf</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Leipzig</pubPlace>
+                                        <publisher>Hermann Fries</publisher>
+                                        <date>1861</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/EIZMW9WE" type="journalArticle" xml:id="Lightfoot1869">
+                                <analytic>
+                                    <title level="a"/>
+                                    <author>
+                                        <forename>J. B.</forename>
+                                        <surname>Lightfoot</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Journal of Philology</title>
+                                    <imprint>
+                                        <biblScope unit="volume">2</biblScope>
+                                        <date>1869</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/5QHA2DA3" type="journalArticle" xml:id="Hort1871">
+                                <analytic>
+                                    <title level="a"/>
+                                    <author>
+                                        <forename>Fenton John Anthony</forename>
+                                        <surname>Hort</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Journal of Philology</title>
+                                    <imprint>
+                                        <biblScope unit="volume">3</biblScope>
+                                        <date>1871</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/QBY49A7Y" type="journalArticle" xml:id="Lightfoot1871">
+                                <analytic>
+                                    <title level="a"/>
+                                    <author>
+                                        <forename>J. B.</forename>
+                                        <surname>Lightfoot</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Journal of Philology</title>
+                                    <imprint>
+                                        <biblScope unit="volume">3</biblScope>
+                                        <date>1871</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/CAHB3JRL" type="book" xml:id="Palaeographical_Society.1873">
+                                <monogr>
+                                    <title level="m">Facsimiles of manuscripts and
+                                        inscriptions</title>
+                                    <extent>3</extent>
+                                    <author>
+                                        <name>Palaeographical Society.</name>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <biblScope unit="volume">1</biblScope>
+                                        <publisher>The Palaeographical Society</publisher>
+                                        <date>1873</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">First series</title>
+                                </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/KHXZX8A3" type="book" xml:id="Lightfoot1886">
+                                <monogr>
+                                    <title level="m">Saint Paul's Epistles to the Colossians and to
+                                        Philemon : a revised text with introductions, notes, and
+                                        dissertations</title>
+                                    <author>
+                                        <forename>J. B. (Joseph Barber)</forename>
+                                        <surname>Lightfoot</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>Macmillan</publisher>
+                                        <date>1886</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/C2V65RNC" type="book" xml:id="Corssen1887b">
+                                <monogr>
+                                    <title level="m">Epistularum paulinarum codices graece et latine
+                                        scriptos : augiensem boernerianum claromontanum examinavit
+                                        inter se comparavit ad communem originem revocavit</title>
+                                    <extent>2</extent>
+                                    <author>
+                                        <forename>Peter</forename>
+                                        <surname>Corssen</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Kiel</pubPlace>
+                                        <biblScope unit="volume">1</biblScope>
+                                        <publisher>Heinrich Fiencke</publisher>
+                                        <date>1887</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/QAA2Q242" type="book" xml:id="Corssen1887a">
+                                <monogr>
+                                    <title level="m">Epistularum paulinarum codices graece et latine
+                                        scriptos : augiensem boernerianum claromontanum examinavit
+                                        inter se comparavit ad communem originem revocavit</title>
+                                    <extent>2</extent>
+                                    <author>
+                                        <forename>Peter</forename>
+                                        <surname>Corssen</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Kiel</pubPlace>
+                                        <biblScope unit="volume">2</biblScope>
+                                        <publisher>Heinrich Fiencke</publisher>
+                                        <date>1887</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/7QMLFK8W" type="journalArticle" xml:id="Zimmer1887">
+                                <analytic>
+                                    <title level="a"/>
+                                    <author>
+                                        <forename>Friedrich</forename>
+                                        <surname>Zimmer</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Zeitschrift fur Wissenschaftliche
+                                        Theologie</title>
+                                    <imprint>
+                                        <biblScope unit="volume">30</biblScope>
+                                        <date>1887</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/M6K4KXG4" type="journalArticle" xml:id="Zimmer1890">
+                                <analytic>
+                                    <title level="a"/>
+                                    <author>
+                                        <forename>Friedrich</forename>
+                                        <surname>Zimmer</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">TLZ</title>
+                                    <imprint>
+                                        <biblScope unit="volume">15</biblScope>
+                                        <biblScope unit="page">59-62</biblScope>
+                                        <date>1890</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/8NRJI29C" type="book" xml:id="James1900">
+                                <monogr>
+                                    <title level="m">The western manuscripts in the library of
+                                        Trinity College: a descriptive catalogue</title>
+                                    <extent>4</extent>
+                                    <author>
+                                        <forename>M.R.</forename>
+                                        <surname>James</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">1</biblScope>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1900</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/TDP6TCKR" type="journalArticle" xml:id="Smith1903">
+                                <analytic>
+                                    <title level="a">The Pauline Manuscripts F and G: a
+                                        text-critical study</title>
+                                    <author>
+                                        <forename>William B.</forename>
+                                        <surname>Smith</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">American Journal of Theology</title>
+                                    <imprint>
+                                        <biblScope unit="volume">7</biblScope>
+                                        <biblScope unit="page">452-485, 662-688</biblScope>
+                                        <date>1903</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/42HS83HR" type="book" xml:id="Pallēs1920">
+                                <monogr>
+                                    <title level="m">To the Romans : a commentary</title>
+                                    <author>
+                                        <forename>Alexandros</forename>
+                                        <surname>Pallēs</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Liverpool</pubPlace>
+                                        <publisher>Liverpool Booksellers' Co.</publisher>
+                                        <date>1920</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/J6K5H2RE" type="book" xml:id="Hatch1939">
+                                <monogr>
+                                    <title level="m">The Principal Uncial Manuscripts of the New
+                                        Testament</title>
+                                    <author>
+                                        <forename>W.H.P.</forename>
+                                        <surname>Hatch</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Chicago</pubPlace>
+                                        <publisher>University of Chicago Press</publisher>
+                                        <date>1939</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/XAJXXGKG" type="journalArticle" xml:id="Hatch1951">
+                                <analytic>
+                                    <title level="a">On the relationship of Codex Augiensis and
+                                        Codex Boernerianus of the Pauline epistles</title>
+                                    <author>
+                                        <forename>William Henry Paine</forename>
+                                        <surname>Hatch</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Harvard Studies in Classical Philology</title>
+                                    <imprint>
+                                        <biblScope unit="volume">60</biblScope>
+                                        <biblScope unit="page">188-199</biblScope>
+                                        <date>1951</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/GNFVM43C" type="journalArticle" xml:id="Schwank1961">
+                                <analytic>
+                                    <title level="a">Zur Neuausgabe von « Contra Varimadum » nach
+                                        dem Codex Paris B. N. lat. 12217 im Corpus Christianorum
+                                        Series latina XC</title>
+                                    <author>
+                                        <forename>Benedikt</forename>
+                                        <surname>Schwank</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Sacris Erudiri: A Journal on the Inheritance of
+                                        Early and Medieval Christianity</title>
+                                    <imprint>
+                                        <biblScope unit="volume">12</biblScope>
+                                        <biblScope unit="page">112-196</biblScope>
+                                        <date>1961</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/S7UGJQZN" type="book" xml:id="Frede1964">
+                                <monogr>
+                                    <title level="m">Altlateinische Paulus-Handschriften.</title>
+                                    <author>
+                                        <forename>Hermann Josef</forename>
+                                        <surname>Frede</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Freiburg</pubPlace>
+                                        <publisher>Herder</publisher>
+                                        <date>1964</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/H9RACG84" type="bookSection" xml:id="Daniels1967">
+                                <analytic>
+                                    <title level="a">La provenance athonite des manuscrits grecs
+                                        legues par R. Bentley a Trinity College, Cambridge et en
+                                        particulier de l'oncial 0131 du Nouveau Testament</title>
+                                    <author>
+                                        <forename>Jean</forename>
+                                        <surname>Duplacy</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Studies in the history and text of the New
+                                        Testament in honor of Kenneth Willis Clark</title>
+                                    <editor>
+                                        <forename>Boyd L</forename>
+                                        <surname>Daniels</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>M. Jack</forename>
+                                        <surname>Suggs</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Salt Lake City</pubPlace>
+                                        <biblScope unit="page">113-126</biblScope>
+                                        <publisher>University of Utah Press</publisher>
+                                        <date>1967</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/6ZJSVBBY" type="journalArticle" xml:id="Dubois1974">
+                                <analytic>
+                                    <title level="a">Ephesians IV 15. On the use of Coptic versions
+                                        for New Testament textual criticism</title>
+                                    <author>
+                                        <forename>Jean-Daniel</forename>
+                                        <surname>Dubois</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Novum Testamentum</title>
+                                    <imprint>
+                                        <biblScope unit="volume">16</biblScope>
+                                        <biblScope unit="page">31-34</biblScope>
+                                        <date>1974</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/69N6HMGL" type="bookSection" xml:id="Löwe1982">
+                                <analytic>
+                                    <title level="a">Irische Hand-schriftenùberlieferung auf der
+                                        Reichenau</title>
+                                    <author>
+                                        <forename>Johanne</forename>
+                                        <surname>Autenrieth</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Die Iren und Europa im frùheren
+                                        Mittelalter</title>
+                                    <editor>
+                                        <forename>Heinz</forename>
+                                        <surname>Löwe</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Stuttgart</pubPlace>
+                                        <biblScope unit="page">903-915</biblScope>
+                                        <publisher>Klett-Kotta</publisher>
+                                        <date>1982</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/CZ9W4XDQ" type="journalArticle" xml:id="Radiciotti1998">
+                                <analytic>
+                                    <title level="a">Manoscritti digrafici grecolatini e latinogreci
+                                        nell'alto medioevo</title>
+                                    <author>
+                                        <forename>P.</forename>
+                                        <surname>Radiciotti</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Römische Historische Mitteilungen</title>
+                                    <imprint>
+                                        <biblScope unit="volume">40</biblScope>
+                                        <biblScope unit="page">49-118</biblScope>
+                                        <date>1998</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/SXIBEQHK" type="journalArticle" xml:id="von_Euw2004">
+                                <analytic>
+                                    <title level="a">St.Gallen und Rei-chenau im 9. und 10.
+                                        Jahrhundert. Übergnäge zu einer neuen Kunst</title>
+                                    <author>
+                                        <forename>Anton</forename>
+                                        <surname>von Euw</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Zeitschrift des Deutschen Verreins für
+                                        Kunstwissenschaft</title>
+                                    <imprint>
+                                        <biblScope unit="volume">58</biblScope>
+                                        <biblScope unit="page">147-169</biblScope>
+                                        <date>2004</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/KWCR8QUD" type="journalArticle" xml:id="Berschin2007">
+                                <analytic>
+                                    <title level="a">Die griechisch-lateinische Paulus-Handschrift
+                                        der Reichenau "Codex Paulinus Augiensis" (Cambridge, Trinity
+                                        College B.17.1)</title>
+                                    <author>
+                                        <forename>Walter</forename>
+                                        <surname>Berschin</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Zeitschrift für Geschichte des
+                                        Oberrheins</title>
+                                    <imprint>
+                                        <biblScope unit="volume">155</biblScope>
+                                        <biblScope unit="page">1-17</biblScope>
+                                        <date>2007</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject
+                            Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85013576">Bible</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2022-02-02">
+                <persName>Christopher Wright</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+      <graphic decls="#document-thumbnail" rend="portrait" url="MS-TRINITY-B-00017-00001-000-00001"/>
+      <surface n="left board, outside" xml:id="i1">
+            <graphic decls="#downloadImageRights #download" height="3019px" rend="portrait" url="MS-TRINITY-B-00017-00001-000-00001" width="2440px"/>
+      </surface>
+      <surface n="left board, inside-7r" xml:id="i2">
+            <graphic decls="#downloadImageRights #download" height="3001px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00002" width="4859px"/>
+      </surface>
+      <surface n="7v-8r" xml:id="i3">
+            <graphic decls="#downloadImageRights #download" height="3007px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00003" width="4799px"/>
+      </surface>
+      <surface n="8v-9r" xml:id="i4">
+            <graphic decls="#downloadImageRights #download" height="3001px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00004" width="4854px"/>
+      </surface>
+      <surface n="9v-10r" xml:id="i5">
+            <graphic decls="#downloadImageRights #download" height="3001px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00005" width="4854px"/>
+      </surface>
+      <surface n="10v-11r" xml:id="i6">
+            <graphic decls="#downloadImageRights #download" height="2995px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00006" width="4787px"/>
+      </surface>
+      <surface n="11v-12r" xml:id="i7">
+            <graphic decls="#downloadImageRights #download" height="3019px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00007" width="4860px"/>
+      </surface>
+      <surface n="12v-13r" xml:id="i8">
+            <graphic decls="#downloadImageRights #download" height="3001px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00008" width="4884px"/>
+      </surface>
+      <surface n="13v-14r" xml:id="i9">
+            <graphic decls="#downloadImageRights #download" height="3032px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00009" width="4890px"/>
+      </surface>
+      <surface n="14v-15r" xml:id="i10">
+            <graphic decls="#downloadImageRights #download" height="3061px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00010" width="4860px"/>
+      </surface>
+      <surface n="15v-16r" xml:id="i11">
+            <graphic decls="#downloadImageRights #download" height="3067px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00011" width="4853px"/>
+      </surface>
+      <surface n="16v-17r" xml:id="i12">
+            <graphic decls="#downloadImageRights #download" height="3049px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00012" width="4848px"/>
+      </surface>
+      <surface n="17v-18r" xml:id="i13">
+            <graphic decls="#downloadImageRights #download" height="3037px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00013" width="4884px"/>
+      </surface>
+      <surface n="18v-19r" xml:id="i14">
+            <graphic decls="#downloadImageRights #download" height="3019px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00014" width="4859px"/>
+      </surface>
+      <surface n="19v-20r" xml:id="i15">
+            <graphic decls="#downloadImageRights #download" height="3001px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00015" width="4877px"/>
+      </surface>
+      <surface n="20v-21r" xml:id="i16">
+            <graphic decls="#downloadImageRights #download" height="3019px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00016" width="4883px"/>
+      </surface>
+      <surface n="21v-22r" xml:id="i17">
+            <graphic decls="#downloadImageRights #download" height="3055px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00017" width="4974px"/>
+      </surface>
+      <surface n="22v-23r" xml:id="i18">
+            <graphic decls="#downloadImageRights #download" height="3013px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00018" width="4878px"/>
+      </surface>
+      <surface n="23v-24r" xml:id="i19">
+            <graphic decls="#downloadImageRights #download" height="3007px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00019" width="4853px"/>
+      </surface>
+      <surface n="24v-25r" xml:id="i20">
+            <graphic decls="#downloadImageRights #download" height="3043px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00020" width="4895px"/>
+      </surface>
+      <surface n="25v-26r" xml:id="i21">
+            <graphic decls="#downloadImageRights #download" height="3031px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00021" width="4871px"/>
+      </surface>
+      <surface n="26v-27r" xml:id="i22">
+            <graphic decls="#downloadImageRights #download" height="3031px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00022" width="4919px"/>
+      </surface>
+      <surface n="27v-28r" xml:id="i23">
+            <graphic decls="#downloadImageRights #download" height="3012px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00023" width="4872px"/>
+      </surface>
+      <surface n="28v-29r" xml:id="i24">
+            <graphic decls="#downloadImageRights #download" height="3037px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00024" width="4907px"/>
+      </surface>
+      <surface n="29v-30r" xml:id="i25">
+            <graphic decls="#downloadImageRights #download" height="3025px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00025" width="4925px"/>
+      </surface>
+      <surface n="30v-31r" xml:id="i26">
+            <graphic decls="#downloadImageRights #download" height="3001px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00026" width="4913px"/>
+      </surface>
+      <surface n="31v-32r" xml:id="i27">
+            <graphic decls="#downloadImageRights #download" height="3025px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00027" width="4937px"/>
+      </surface>
+      <surface n="32v-33r" xml:id="i28">
+            <graphic decls="#downloadImageRights #download" height="3025px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00028" width="4932px"/>
+      </surface>
+      <surface n="33v-34r" xml:id="i29">
+            <graphic decls="#downloadImageRights #download" height="3024px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00029" width="4914px"/>
+      </surface>
+      <surface n="34v-35r" xml:id="i30">
+            <graphic decls="#downloadImageRights #download" height="3000px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00030" width="4920px"/>
+      </surface>
+      <surface n="35v-36r" xml:id="i31">
+            <graphic decls="#downloadImageRights #download" height="3049px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00031" width="4926px"/>
+      </surface>
+      <surface n="36v-37r" xml:id="i32">
+            <graphic decls="#downloadImageRights #download" height="2976px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00032" width="4974px"/>
+      </surface>
+      <surface n="37v-38r" xml:id="i33">
+            <graphic decls="#downloadImageRights #download" height="3024px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00033" width="4962px"/>
+      </surface>
+      <surface n="38v-39r" xml:id="i34">
+            <graphic decls="#downloadImageRights #download" height="2983px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00034" width="4937px"/>
+      </surface>
+      <surface n="39v-40r" xml:id="i35">
+            <graphic decls="#downloadImageRights #download" height="3037px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00035" width="4950px"/>
+      </surface>
+      <surface n="40v-41r" xml:id="i36">
+            <graphic decls="#downloadImageRights #download" height="3037px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00036" width="4926px"/>
+      </surface>
+      <surface n="41v-42r" xml:id="i37">
+            <graphic decls="#downloadImageRights #download" height="3079px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00037" width="4962px"/>
+      </surface>
+      <surface n="42v-43r" xml:id="i38">
+            <graphic decls="#downloadImageRights #download" height="3067px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00038" width="4938px"/>
+      </surface>
+      <surface n="43v-44r" xml:id="i39">
+            <graphic decls="#downloadImageRights #download" height="3056px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00039" width="4998px"/>
+      </surface>
+      <surface n="44v-45r" xml:id="i40">
+            <graphic decls="#downloadImageRights #download" height="3055px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00040" width="4931px"/>
+      </surface>
+      <surface n="45v-46r" xml:id="i41">
+            <graphic decls="#downloadImageRights #download" height="3043px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00041" width="5015px"/>
+      </surface>
+      <surface n="46v-47r" xml:id="i42">
+            <graphic decls="#downloadImageRights #download" height="3073px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00042" width="4961px"/>
+      </surface>
+      <surface n="47v-48r" xml:id="i43">
+            <graphic decls="#downloadImageRights #download" height="3037px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00043" width="4961px"/>
+      </surface>
+      <surface n="48v-49r" xml:id="i44">
+            <graphic decls="#downloadImageRights #download" height="3031px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00044" width="4961px"/>
+      </surface>
+      <surface n="49v-50r" xml:id="i45">
+            <graphic decls="#downloadImageRights #download" height="3019px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00045" width="4937px"/>
+      </surface>
+      <surface n="50v-51r" xml:id="i46">
+            <graphic decls="#downloadImageRights #download" height="3008px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00046" width="4961px"/>
+      </surface>
+      <surface n="51v-52r" xml:id="i47">
+            <graphic decls="#downloadImageRights #download" height="3049px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00047" width="4979px"/>
+      </surface>
+      <surface n="52v-53r" xml:id="i48">
+            <graphic decls="#downloadImageRights #download" height="3085px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00048" width="4961px"/>
+      </surface>
+      <surface n="53v-54r" xml:id="i49">
+            <graphic decls="#downloadImageRights #download" height="3025px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00049" width="4943px"/>
+      </surface>
+      <surface n="54v-55r" xml:id="i50">
+            <graphic decls="#downloadImageRights #download" height="3025px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00050" width="4919px"/>
+      </surface>
+      <surface n="55v-56r" xml:id="i51">
+            <graphic decls="#downloadImageRights #download" height="3013px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00051" width="4931px"/>
+      </surface>
+      <surface n="56v-57r" xml:id="i52">
+            <graphic decls="#downloadImageRights #download" height="2990px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00052" width="4980px"/>
+      </surface>
+      <surface n="57v-58r" xml:id="i53">
+            <graphic decls="#downloadImageRights #download" height="3055px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00053" width="4956px"/>
+      </surface>
+      <surface n="58v-59r" xml:id="i54">
+            <graphic decls="#downloadImageRights #download" height="3043px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00054" width="4980px"/>
+      </surface>
+      <surface n="59v-60r" xml:id="i55">
+            <graphic decls="#downloadImageRights #download" height="3037px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00055" width="4986px"/>
+      </surface>
+      <surface n="60v-61r" xml:id="i56">
+            <graphic decls="#downloadImageRights #download" height="2995px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00056" width="4986px"/>
+      </surface>
+      <surface n="61v-62r" xml:id="i57">
+            <graphic decls="#downloadImageRights #download" height="3025px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00057" width="4962px"/>
+      </surface>
+      <surface n="62v-63r" xml:id="i58">
+            <graphic decls="#downloadImageRights #download" height="3012px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00058" width="4926px"/>
+      </surface>
+      <surface n="63v-64r" xml:id="i59">
+            <graphic decls="#downloadImageRights #download" height="2989px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00059" width="4926px"/>
+      </surface>
+      <surface n="64v-65r" xml:id="i60">
+            <graphic decls="#downloadImageRights #download" height="3018px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00060" width="4992px"/>
+      </surface>
+      <surface n="65v-66r" xml:id="i61">
+            <graphic decls="#downloadImageRights #download" height="3025px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00061" width="5009px"/>
+      </surface>
+      <surface n="66v-67r" xml:id="i62">
+            <graphic decls="#downloadImageRights #download" height="3019px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00062" width="5058px"/>
+      </surface>
+      <surface n="67v-68r" xml:id="i63">
+            <graphic decls="#downloadImageRights #download" height="2989px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00063" width="4991px"/>
+      </surface>
+      <surface n="68v-69r" xml:id="i64">
+            <graphic decls="#downloadImageRights #download" height="3053px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00064" width="4962px"/>
+      </surface>
+      <surface n="69v-70r" xml:id="i65">
+            <graphic decls="#downloadImageRights #download" height="3013px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00065" width="4997px"/>
+      </surface>
+      <surface n="70v-71r" xml:id="i66">
+            <graphic decls="#downloadImageRights #download" height="3013px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00066" width="4956px"/>
+      </surface>
+      <surface n="71v-72r" xml:id="i67">
+            <graphic decls="#downloadImageRights #download" height="3007px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00067" width="4986px"/>
+      </surface>
+      <surface n="72v-73r" xml:id="i68">
+            <graphic decls="#downloadImageRights #download" height="3001px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00068" width="4949px"/>
+      </surface>
+      <surface n="73v-74r" xml:id="i69">
+            <graphic decls="#downloadImageRights #download" height="2965px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00069" width="5003px"/>
+      </surface>
+      <surface n="74v-75r" xml:id="i70">
+            <graphic decls="#downloadImageRights #download" height="3001px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00070" width="4967px"/>
+      </surface>
+      <surface n="75v-76r" xml:id="i71">
+            <graphic decls="#downloadImageRights #download" height="2989px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00071" width="4991px"/>
+      </surface>
+      <surface n="76v-77r" xml:id="i72">
+            <graphic decls="#downloadImageRights #download" height="3030px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00072" width="4980px"/>
+      </surface>
+      <surface n="77v-78r" xml:id="i73">
+            <graphic decls="#downloadImageRights #download" height="2995px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00073" width="4991px"/>
+      </surface>
+      <surface n="78v-79r" xml:id="i74">
+            <graphic decls="#downloadImageRights #download" height="2996px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00074" width="4961px"/>
+      </surface>
+      <surface n="79v-80r" xml:id="i75">
+            <graphic decls="#downloadImageRights #download" height="3013px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00075" width="4943px"/>
+      </surface>
+      <surface n="80v-81r" xml:id="i76">
+            <graphic decls="#downloadImageRights #download" height="3007px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00076" width="4931px"/>
+      </surface>
+      <surface n="81v-82r" xml:id="i77">
+            <graphic decls="#downloadImageRights #download" height="2971px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00077" width="4967px"/>
+      </surface>
+      <surface n="82v-83r" xml:id="i78">
+            <graphic decls="#downloadImageRights #download" height="3037px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00078" width="4949px"/>
+      </surface>
+      <surface n="83v-84r" xml:id="i79">
+            <graphic decls="#downloadImageRights #download" height="3043px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00079" width="5004px"/>
+      </surface>
+      <surface n="84v-85r" xml:id="i80">
+            <graphic decls="#downloadImageRights #download" height="2971px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00080" width="4949px"/>
+      </surface>
+      <surface n="85v-86r" xml:id="i81">
+            <graphic decls="#downloadImageRights #download" height="2983px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00081" width="4979px"/>
+      </surface>
+      <surface n="86v-87r" xml:id="i82">
+            <graphic decls="#downloadImageRights #download" height="3043px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00082" width="4956px"/>
+      </surface>
+      <surface n="87v-88r" xml:id="i83">
+            <graphic decls="#downloadImageRights #download" height="3025px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00083" width="4944px"/>
+      </surface>
+      <surface n="88v-89r" xml:id="i84">
+            <graphic decls="#downloadImageRights #download" height="3037px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00084" width="5016px"/>
+      </surface>
+      <surface n="89v-90r" xml:id="i85">
+            <graphic decls="#downloadImageRights #download" height="3013px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00085" width="4961px"/>
+      </surface>
+      <surface n="90v-91r" xml:id="i86">
+            <graphic decls="#downloadImageRights #download" height="3013px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00086" width="5094px"/>
+      </surface>
+      <surface n="91v-92r" xml:id="i87">
+            <graphic decls="#downloadImageRights #download" height="3001px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00087" width="4986px"/>
+      </surface>
+      <surface n="92v-93r" xml:id="i88">
+            <graphic decls="#downloadImageRights #download" height="2995px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00088" width="4943px"/>
+      </surface>
+      <surface n="93v-94r" xml:id="i89">
+            <graphic decls="#downloadImageRights #download" height="2994px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00089" width="4956px"/>
+      </surface>
+      <surface n="94v-95r" xml:id="i90">
+            <graphic decls="#downloadImageRights #download" height="3037px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00090" width="4961px"/>
+      </surface>
+      <surface n="95v-96r" xml:id="i91">
+            <graphic decls="#downloadImageRights #download" height="3035px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00091" width="5021px"/>
+      </surface>
+      <surface n="96v-97r" xml:id="i92">
+            <graphic decls="#downloadImageRights #download" height="3048px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00092" width="4967px"/>
+      </surface>
+      <surface n="97v-98r" xml:id="i93">
+            <graphic decls="#downloadImageRights #download" height="3060px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00093" width="4944px"/>
+      </surface>
+      <surface n="98v-99r" xml:id="i94">
+            <graphic decls="#downloadImageRights #download" height="3055px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00094" width="5033px"/>
+      </surface>
+      <surface n="99v-100r" xml:id="i95">
+            <graphic decls="#downloadImageRights #download" height="3073px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00095" width="4997px"/>
+      </surface>
+      <surface n="100v-101r" xml:id="i96">
+            <graphic decls="#downloadImageRights #download" height="3005px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00096" width="4943px"/>
+      </surface>
+      <surface n="101v-102r" xml:id="i97">
+            <graphic decls="#downloadImageRights #download" height="3036px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00097" width="4968px"/>
+      </surface>
+      <surface n="102v-103r" xml:id="i98">
+            <graphic decls="#downloadImageRights #download" height="3073px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00098" width="4944px"/>
+      </surface>
+      <surface n="103v-104r" xml:id="i99">
+            <graphic decls="#downloadImageRights #download" height="3072px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00099" width="4962px"/>
+      </surface>
+      <surface n="104v-105r" xml:id="i100">
+            <graphic decls="#downloadImageRights #download" height="3025px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00100" width="4956px"/>
+      </surface>
+      <surface n="105v-106r" xml:id="i101">
+            <graphic decls="#downloadImageRights #download" height="3054px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00101" width="4980px"/>
+      </surface>
+      <surface n="106v-107r" xml:id="i102">
+            <graphic decls="#downloadImageRights #download" height="3043px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00102" width="4962px"/>
+      </surface>
+      <surface n="107v-108r" xml:id="i103">
+            <graphic decls="#downloadImageRights #download" height="3013px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00103" width="4949px"/>
+      </surface>
+      <surface n="108v-109r" xml:id="i104">
+            <graphic decls="#downloadImageRights #download" height="3007px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00104" width="4938px"/>
+      </surface>
+      <surface n="109v-110r" xml:id="i105">
+            <graphic decls="#downloadImageRights #download" height="3037px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00105" width="4980px"/>
+      </surface>
+      <surface n="110v-111r" xml:id="i106">
+            <graphic decls="#downloadImageRights #download" height="3007px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00106" width="4980px"/>
+      </surface>
+      <surface n="111v-112r" xml:id="i107">
+            <graphic decls="#downloadImageRights #download" height="3013px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00107" width="4949px"/>
+      </surface>
+      <surface n="112v-113r" xml:id="i108">
+            <graphic decls="#downloadImageRights #download" height="2995px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00108" width="4932px"/>
+      </surface>
+      <surface n="113v-114r" xml:id="i109">
+            <graphic decls="#downloadImageRights #download" height="3025px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00109" width="4956px"/>
+      </surface>
+      <surface n="114v-115r" xml:id="i110">
+            <graphic decls="#downloadImageRights #download" height="3013px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00110" width="4979px"/>
+      </surface>
+      <surface n="115v-116r" xml:id="i111">
+            <graphic decls="#downloadImageRights #download" height="2989px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00111" width="4931px"/>
+      </surface>
+      <surface n="116v-117r" xml:id="i112">
+            <graphic decls="#downloadImageRights #download" height="3024px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00112" width="4944px"/>
+      </surface>
+      <surface n="117v-118r" xml:id="i113">
+            <graphic decls="#downloadImageRights #download" height="3030px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00113" width="4986px"/>
+      </surface>
+      <surface n="118v-119r" xml:id="i114">
+            <graphic decls="#downloadImageRights #download" height="3013px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00114" width="4985px"/>
+      </surface>
+      <surface n="119v-120r" xml:id="i115">
+            <graphic decls="#downloadImageRights #download" height="3031px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00115" width="4967px"/>
+      </surface>
+      <surface n="120v-121r" xml:id="i116">
+            <graphic decls="#downloadImageRights #download" height="3018px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00116" width="4968px"/>
+      </surface>
+      <surface n="121v-122r" xml:id="i117">
+            <graphic decls="#downloadImageRights #download" height="3061px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00117" width="4961px"/>
+      </surface>
+      <surface n="122v-123r" xml:id="i118">
+            <graphic decls="#downloadImageRights #download" height="3043px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00118" width="4901px"/>
+      </surface>
+      <surface n="123v-124r" xml:id="i119">
+            <graphic decls="#downloadImageRights #download" height="3037px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00119" width="4956px"/>
+      </surface>
+      <surface n="124v-125r" xml:id="i120">
+            <graphic decls="#downloadImageRights #download" height="3031px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00120" width="4956px"/>
+      </surface>
+      <surface n="125v-126r" xml:id="i121">
+            <graphic decls="#downloadImageRights #download" height="3013px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00121" width="4950px"/>
+      </surface>
+      <surface n="126v-127r" xml:id="i122">
+            <graphic decls="#downloadImageRights #download" height="3049px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00122" width="4956px"/>
+      </surface>
+      <surface n="127v-127ar" xml:id="i123">
+            <graphic decls="#downloadImageRights #download" height="3048px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00123" width="4950px"/>
+      </surface>
+      <surface n="127av-128r" xml:id="i124">
+            <graphic decls="#downloadImageRights #download" height="3025px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00124" width="4955px"/>
+      </surface>
+      <surface n="128v-129r" xml:id="i125">
+            <graphic decls="#downloadImageRights #download" height="3043px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00125" width="4884px"/>
+      </surface>
+      <surface n="129v-130r" xml:id="i126">
+            <graphic decls="#downloadImageRights #download" height="3055px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00126" width="4926px"/>
+      </surface>
+      <surface n="130v-131r" xml:id="i127">
+            <graphic decls="#downloadImageRights #download" height="3025px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00127" width="4997px"/>
+      </surface>
+      <surface n="131v-132r" xml:id="i128">
+            <graphic decls="#downloadImageRights #download" height="3019px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00128" width="4931px"/>
+      </surface>
+      <surface n="132v-133r" xml:id="i129">
+            <graphic decls="#downloadImageRights #download" height="3079px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00129" width="4877px"/>
+      </surface>
+      <surface n="133v-134r" xml:id="i130">
+            <graphic decls="#downloadImageRights #download" height="3007px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00130" width="4943px"/>
+      </surface>
+      <surface n="134v-135r" xml:id="i131">
+            <graphic decls="#downloadImageRights #download" height="3067px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00131" width="4944px"/>
+      </surface>
+      <surface n="135v-136r" xml:id="i132">
+            <graphic decls="#downloadImageRights #download" height="3066px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00132" width="4944px"/>
+      </surface>
+      <surface n="136v-137r" xml:id="i133">
+            <graphic decls="#downloadImageRights #download" height="3114px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00133" width="4968px"/>
+      </surface>
+      <surface n="137v-138r" xml:id="i134">
+            <graphic decls="#downloadImageRights #download" height="3049px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00134" width="4944px"/>
+      </surface>
+      <surface n="138v-139r" xml:id="i135">
+            <graphic decls="#downloadImageRights #download" height="3085px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00135" width="4938px"/>
+      </surface>
+      <surface n="139v-140r" xml:id="i136">
+            <graphic decls="#downloadImageRights #download" height="3067px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00136" width="4944px"/>
+      </surface>
+      <surface n="140v-141r" xml:id="i137">
+            <graphic decls="#downloadImageRights #download" height="3090px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00137" width="4955px"/>
+      </surface>
+      <surface n="141v-right board, inside" xml:id="i138">
+            <graphic decls="#downloadImageRights #download" height="3096px" rend="landscape" url="MS-TRINITY-B-00017-00001-000-00138" width="4980px"/>
+      </surface>
+      <surface n="right board, outside" xml:id="i139">
+            <graphic decls="#downloadImageRights #download" height="2996px" rend="portrait" url="MS-TRINITY-B-00017-00001-000-00139" width="2472px"/>
+      </surface>
+   </facsimile>
+
+    <text>
+      <body>
+         <div>
+            <pb facs="#i1" n="left board, outside" xml:id="pb-leftboard,outside"/>
+            <pb facs="#i2" n="left board, inside-7r" xml:id="pb-leftboard,inside-7r"/>
+            <pb facs="#i3" n="7v-8r" xml:id="pb-7v-8r"/>
+            <pb facs="#i4" n="8v-9r" xml:id="pb-8v-9r"/>
+            <pb facs="#i5" n="9v-10r" xml:id="pb-9v-10r"/>
+            <pb facs="#i6" n="10v-11r" xml:id="pb-10v-11r"/>
+            <pb facs="#i7" n="11v-12r" xml:id="pb-11v-12r"/>
+            <pb facs="#i8" n="12v-13r" xml:id="pb-12v-13r"/>
+            <pb facs="#i9" n="13v-14r" xml:id="pb-13v-14r"/>
+            <pb facs="#i10" n="14v-15r" xml:id="pb-14v-15r"/>
+            <pb facs="#i11" n="15v-16r" xml:id="pb-15v-16r"/>
+            <pb facs="#i12" n="16v-17r" xml:id="pb-16v-17r"/>
+            <pb facs="#i13" n="17v-18r" xml:id="pb-17v-18r"/>
+            <pb facs="#i14" n="18v-19r" xml:id="pb-18v-19r"/>
+            <pb facs="#i15" n="19v-20r" xml:id="pb-19v-20r"/>
+            <pb facs="#i16" n="20v-21r" xml:id="pb-20v-21r"/>
+            <pb facs="#i17" n="21v-22r" xml:id="pb-21v-22r"/>
+            <pb facs="#i18" n="22v-23r" xml:id="pb-22v-23r"/>
+            <pb facs="#i19" n="23v-24r" xml:id="pb-23v-24r"/>
+            <pb facs="#i20" n="24v-25r" xml:id="pb-24v-25r"/>
+            <pb facs="#i21" n="25v-26r" xml:id="pb-25v-26r"/>
+            <pb facs="#i22" n="26v-27r" xml:id="pb-26v-27r"/>
+            <pb facs="#i23" n="27v-28r" xml:id="pb-27v-28r"/>
+            <pb facs="#i24" n="28v-29r" xml:id="pb-28v-29r"/>
+            <pb facs="#i25" n="29v-30r" xml:id="pb-29v-30r"/>
+            <pb facs="#i26" n="30v-31r" xml:id="pb-30v-31r"/>
+            <pb facs="#i27" n="31v-32r" xml:id="pb-31v-32r"/>
+            <pb facs="#i28" n="32v-33r" xml:id="pb-32v-33r"/>
+            <pb facs="#i29" n="33v-34r" xml:id="pb-33v-34r"/>
+            <pb facs="#i30" n="34v-35r" xml:id="pb-34v-35r"/>
+            <pb facs="#i31" n="35v-36r" xml:id="pb-35v-36r"/>
+            <pb facs="#i32" n="36v-37r" xml:id="pb-36v-37r"/>
+            <pb facs="#i33" n="37v-38r" xml:id="pb-37v-38r"/>
+            <pb facs="#i34" n="38v-39r" xml:id="pb-38v-39r"/>
+            <pb facs="#i35" n="39v-40r" xml:id="pb-39v-40r"/>
+            <pb facs="#i36" n="40v-41r" xml:id="pb-40v-41r"/>
+            <pb facs="#i37" n="41v-42r" xml:id="pb-41v-42r"/>
+            <pb facs="#i38" n="42v-43r" xml:id="pb-42v-43r"/>
+            <pb facs="#i39" n="43v-44r" xml:id="pb-43v-44r"/>
+            <pb facs="#i40" n="44v-45r" xml:id="pb-44v-45r"/>
+            <pb facs="#i41" n="45v-46r" xml:id="pb-45v-46r"/>
+            <pb facs="#i42" n="46v-47r" xml:id="pb-46v-47r"/>
+            <pb facs="#i43" n="47v-48r" xml:id="pb-47v-48r"/>
+            <pb facs="#i44" n="48v-49r" xml:id="pb-48v-49r"/>
+            <pb facs="#i45" n="49v-50r" xml:id="pb-49v-50r"/>
+            <pb facs="#i46" n="50v-51r" xml:id="pb-50v-51r"/>
+            <pb facs="#i47" n="51v-52r" xml:id="pb-51v-52r"/>
+            <pb facs="#i48" n="52v-53r" xml:id="pb-52v-53r"/>
+            <pb facs="#i49" n="53v-54r" xml:id="pb-53v-54r"/>
+            <pb facs="#i50" n="54v-55r" xml:id="pb-54v-55r"/>
+            <pb facs="#i51" n="55v-56r" xml:id="pb-55v-56r"/>
+            <pb facs="#i52" n="56v-57r" xml:id="pb-56v-57r"/>
+            <pb facs="#i53" n="57v-58r" xml:id="pb-57v-58r"/>
+            <pb facs="#i54" n="58v-59r" xml:id="pb-58v-59r"/>
+            <pb facs="#i55" n="59v-60r" xml:id="pb-59v-60r"/>
+            <pb facs="#i56" n="60v-61r" xml:id="pb-60v-61r"/>
+            <pb facs="#i57" n="61v-62r" xml:id="pb-61v-62r"/>
+            <pb facs="#i58" n="62v-63r" xml:id="pb-62v-63r"/>
+            <pb facs="#i59" n="63v-64r" xml:id="pb-63v-64r"/>
+            <pb facs="#i60" n="64v-65r" xml:id="pb-64v-65r"/>
+            <pb facs="#i61" n="65v-66r" xml:id="pb-65v-66r"/>
+            <pb facs="#i62" n="66v-67r" xml:id="pb-66v-67r"/>
+            <pb facs="#i63" n="67v-68r" xml:id="pb-67v-68r"/>
+            <pb facs="#i64" n="68v-69r" xml:id="pb-68v-69r"/>
+            <pb facs="#i65" n="69v-70r" xml:id="pb-69v-70r"/>
+            <pb facs="#i66" n="70v-71r" xml:id="pb-70v-71r"/>
+            <pb facs="#i67" n="71v-72r" xml:id="pb-71v-72r"/>
+            <pb facs="#i68" n="72v-73r" xml:id="pb-72v-73r"/>
+            <pb facs="#i69" n="73v-74r" xml:id="pb-73v-74r"/>
+            <pb facs="#i70" n="74v-75r" xml:id="pb-74v-75r"/>
+            <pb facs="#i71" n="75v-76r" xml:id="pb-75v-76r"/>
+            <pb facs="#i72" n="76v-77r" xml:id="pb-76v-77r"/>
+            <pb facs="#i73" n="77v-78r" xml:id="pb-77v-78r"/>
+            <pb facs="#i74" n="78v-79r" xml:id="pb-78v-79r"/>
+            <pb facs="#i75" n="79v-80r" xml:id="pb-79v-80r"/>
+            <pb facs="#i76" n="80v-81r" xml:id="pb-80v-81r"/>
+            <pb facs="#i77" n="81v-82r" xml:id="pb-81v-82r"/>
+            <pb facs="#i78" n="82v-83r" xml:id="pb-82v-83r"/>
+            <pb facs="#i79" n="83v-84r" xml:id="pb-83v-84r"/>
+            <pb facs="#i80" n="84v-85r" xml:id="pb-84v-85r"/>
+            <pb facs="#i81" n="85v-86r" xml:id="pb-85v-86r"/>
+            <pb facs="#i82" n="86v-87r" xml:id="pb-86v-87r"/>
+            <pb facs="#i83" n="87v-88r" xml:id="pb-87v-88r"/>
+            <pb facs="#i84" n="88v-89r" xml:id="pb-88v-89r"/>
+            <pb facs="#i85" n="89v-90r" xml:id="pb-89v-90r"/>
+            <pb facs="#i86" n="90v-91r" xml:id="pb-90v-91r"/>
+            <pb facs="#i87" n="91v-92r" xml:id="pb-91v-92r"/>
+            <pb facs="#i88" n="92v-93r" xml:id="pb-92v-93r"/>
+            <pb facs="#i89" n="93v-94r" xml:id="pb-93v-94r"/>
+            <pb facs="#i90" n="94v-95r" xml:id="pb-94v-95r"/>
+            <pb facs="#i91" n="95v-96r" xml:id="pb-95v-96r"/>
+            <pb facs="#i92" n="96v-97r" xml:id="pb-96v-97r"/>
+            <pb facs="#i93" n="97v-98r" xml:id="pb-97v-98r"/>
+            <pb facs="#i94" n="98v-99r" xml:id="pb-98v-99r"/>
+            <pb facs="#i95" n="99v-100r" xml:id="pb-99v-100r"/>
+            <pb facs="#i96" n="100v-101r" xml:id="pb-100v-101r"/>
+            <pb facs="#i97" n="101v-102r" xml:id="pb-101v-102r"/>
+            <pb facs="#i98" n="102v-103r" xml:id="pb-102v-103r"/>
+            <pb facs="#i99" n="103v-104r" xml:id="pb-103v-104r"/>
+            <pb facs="#i100" n="104v-105r" xml:id="pb-104v-105r"/>
+            <pb facs="#i101" n="105v-106r" xml:id="pb-105v-106r"/>
+            <pb facs="#i102" n="106v-107r" xml:id="pb-106v-107r"/>
+            <pb facs="#i103" n="107v-108r" xml:id="pb-107v-108r"/>
+            <pb facs="#i104" n="108v-109r" xml:id="pb-108v-109r"/>
+            <pb facs="#i105" n="109v-110r" xml:id="pb-109v-110r"/>
+            <pb facs="#i106" n="110v-111r" xml:id="pb-110v-111r"/>
+            <pb facs="#i107" n="111v-112r" xml:id="pb-111v-112r"/>
+            <pb facs="#i108" n="112v-113r" xml:id="pb-112v-113r"/>
+            <pb facs="#i109" n="113v-114r" xml:id="pb-113v-114r"/>
+            <pb facs="#i110" n="114v-115r" xml:id="pb-114v-115r"/>
+            <pb facs="#i111" n="115v-116r" xml:id="pb-115v-116r"/>
+            <pb facs="#i112" n="116v-117r" xml:id="pb-116v-117r"/>
+            <pb facs="#i113" n="117v-118r" xml:id="pb-117v-118r"/>
+            <pb facs="#i114" n="118v-119r" xml:id="pb-118v-119r"/>
+            <pb facs="#i115" n="119v-120r" xml:id="pb-119v-120r"/>
+            <pb facs="#i116" n="120v-121r" xml:id="pb-120v-121r"/>
+            <pb facs="#i117" n="121v-122r" xml:id="pb-121v-122r"/>
+            <pb facs="#i118" n="122v-123r" xml:id="pb-122v-123r"/>
+            <pb facs="#i119" n="123v-124r" xml:id="pb-123v-124r"/>
+            <pb facs="#i120" n="124v-125r" xml:id="pb-124v-125r"/>
+            <pb facs="#i121" n="125v-126r" xml:id="pb-125v-126r"/>
+            <pb facs="#i122" n="126v-127r" xml:id="pb-126v-127r"/>
+            <pb facs="#i123" n="127v-127ar" xml:id="pb-127v-127ar"/>
+            <pb facs="#i124" n="127av-128r" xml:id="pb-127av-128r"/>
+            <pb facs="#i125" n="128v-129r" xml:id="pb-128v-129r"/>
+            <pb facs="#i126" n="129v-130r" xml:id="pb-129v-130r"/>
+            <pb facs="#i127" n="130v-131r" xml:id="pb-130v-131r"/>
+            <pb facs="#i128" n="131v-132r" xml:id="pb-131v-132r"/>
+            <pb facs="#i129" n="132v-133r" xml:id="pb-132v-133r"/>
+            <pb facs="#i130" n="133v-134r" xml:id="pb-133v-134r"/>
+            <pb facs="#i131" n="134v-135r" xml:id="pb-134v-135r"/>
+            <pb facs="#i132" n="135v-136r" xml:id="pb-135v-136r"/>
+            <pb facs="#i133" n="136v-137r" xml:id="pb-136v-137r"/>
+            <pb facs="#i134" n="137v-138r" xml:id="pb-137v-138r"/>
+            <pb facs="#i135" n="138v-139r" xml:id="pb-138v-139r"/>
+            <pb facs="#i136" n="139v-140r" xml:id="pb-139v-140r"/>
+            <pb facs="#i137" n="140v-141r" xml:id="pb-140v-141r"/>
+            <pb facs="#i138" n="141v-right board, inside" xml:id="pb-141v-rightboard,inside"/>
+            <pb facs="#i139" n="right board, outside" xml:id="pb-rightboard,outside"/>
+         </div>
+      </body>
+   </text>
+
+</TEI>

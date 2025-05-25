@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_12128">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Cambridge, University Library, MS Add. 4490</title>
+            <funder>The Polonsky Foundation</funder>
+            <principal>Suzanne Paul</principal>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>University Library</publisher>
+
+            <availability default="false" status="restricted" xml:id="displayImageRights">
+               <p>Zooming image © University Library, All rights reserved.</p>
+            </availability>
+            <availability default="false" status="restricted" xml:id="downloadImageRights">
+               <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for
+            download are licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported
+            License (CC BY-NC 3.0)</licence>
+            </availability>
+            <availability default="false" status="restricted" xml:id="metadataRights">
+               <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is
+            licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported
+            License.</licence>
+            </availability>
+
+            <availability status="restricted" xml:id="watermark">
+               <licence>Cambridge University Library (CC BY-NC 4.0)</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc default="false">
+            <msDesc status="draft" xml:id="MS-ADD-04490" xml:lang="en">
+
+               <msIdentifier>
+                  <institution>University of Cambridge</institution>
+                  <repository>Cambridge University Library</repository>
+                  <collection>Medieval Manuscripts</collection>
+                  <idno type="shelfmark">Cambridge, University Library, MS Add. 4490</idno>
+                  <altIdentifier type="external">
+                     <idno type="diktyon">Diktyon 12128</idno>
+                  </altIdentifier>
+               </msIdentifier>
+
+               <msContents>
+                  <summary>
+                     <seg type="para">This fragment consists of two separate folios from a manuscript,
+                copied in the late 10th or 11th century, containing a commentary on the Gospel of
+                Matthew traditionally attributed to the Late Antique bishop Peter of Laodikeia. The
+                manuscript was quite a high-quality production, elegantly written with its initials
+                and original marginal annotations gilded.</seg>
+                     <seg type="para">Dr Christopher Wright</seg>
+                  </summary>
+
+                  <textLang mainLang="grc">Greek</textLang>
+
+                  <msItem n="1">
+                     <author key="person_v89311082">Pseudo-Peter of Laodikeia</author>
+                     <title xml:lang="eng">Commentary on the Gospel of Matthew</title>
+                     <note>Ed. G. Heinrici, <hi rend="italic">Beiträge zur Geschichte und Erklärung des
+                  Neuen Testamentes</hi>, vol. 5 (Leipzig 1894)</note>
+                     <note anchored="true">Defective at the beginning and end, with a lacuna. Text on
+                  <locus from="1r" to="1v">f. 1r-v</locus> begins during the commentary on Mt 27:3-10
+                and ends during that on Mt 27:11 (ed. Heinrici, pp. 321-322); text on <locus from="2r" to="2v">f. 2r-v</locus> begins during the commentary on Mt 27:19-23 and
+                ends during that on Mt 27:24-26 (ed. Heinrici, p. 324).</note>
+                     <filiation>The text appears to be similar to that in <bibl subtype="external" type="MS">Moscow, Gosudarstvennyj Istoričeskij Musej (GIM), MS 48</bibl>,
+                which contains passages present here but absent from many other copies.</filiation>
+                     <incipit defective="true">
+                        <locus from="1r" to="1r">f. 1r</locus> ἀγχόνηι δὲ ἀπέθανεν·
+                ἀλλὰ νόσωι περιπεσὼν ἐλάκισεν</incipit>
+                     <explicit defective="true">
+                        <locus from="2v" to="2v">f. 2v</locus> ἀτιμασθέντος ὑπὲρ ἡμῶν τοῦ Κυρίου τῆς δόξης·
+                διὰ τὴν</explicit>
+                  </msItem>
+               </msContents>
+
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>
+                           <material>Parchment, of medium thickness and good quality.</material>
+                        </support>
+
+                        <extent>
+                           <seg type="object">
+                              <objectType>Fragment </objectType>(leaves) </seg>
+                           <seg type="leaf">
+                              <num type="laterEndleaf" value="3">iii</num> + <num type="leaf" value="3">3</num> + <num type="laterEndleaf" value="2">ii</num>
+                           </seg>
+                           <seg type="dimensions">
+                              <dimensions type="leaf" unit="mm">
+                                 <height quantity="322">322</height>
+                                 <width quantity="237">237</width>
+                              </dimensions>
+                           </seg>
+                        </extent>
+
+                        <foliation>The fragment and modern leaves have been foliated with the numbers
+                  [i-iii] + 1, [1a], 2 + [iv-v] in pencil, in Arabic numerals, recto, upper
+                  right.</foliation>
+
+                        <condition>The folios have slight tears and cuts to the edges, which have been
+                  repaired with paper patches. Each folio has been folded horizontally in the
+                  middle, and pairs of cuts either side of this fold on <locus from="1r" to="1v">f.
+                    1</locus> perhaps relate to former reuse. There is slight water staining,
+                  creases and areas of dirt.</condition>
+                     </supportDesc>
+
+                     <layoutDesc>
+                        <layout columns="1" rulingMedium="hardpoint" topLine="below" writtenLines="29">A
+                  single column of 29 lines. <dimensions type="written" unit="mm">
+                              <height quantity="212">212</height>
+                              <width quantity="135">135</width>
+                           </dimensions>
+                           <seg type="pricking">Pricking survives in the upper margin, but most has been lost
+                    to cropping. </seg>
+                           <seg type="ruling">Ruled in hardpoint, type Leroy <formula notation="Leroy">12D1</formula>. Text hangs from the lines.</seg>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+
+                  <handDesc>
+                     <handNote scope="sole" xml:id="hand-1">
+                        <p>The text was copied in an upright <term type="script">mixed minuscule
+                    Perlschrift</term>, in brown ink, with modest variation in letter size and some
+                  flourishing of tails into the lower margin.</p>
+                        <p>The only syllabic abbreviation present is the horizontal stroke for <hi rend="italic">nu</hi>, appearing only at the end of lines. Superscript word
+                  endings are not in use. Breathings are both angular and round, and mute <hi rend="italic">iota</hi> is adscript. <foreign xml:lang="la">Nomina
+                    sacra</foreign> are unaccentuated. Circumflexes appear over breathings. Marginal
+                  quotation marks are in use.</p>
+                        <p>Majuscule forms present include <hi rend="italic">alpha</hi>, <hi rend="italic">beta</hi>, <hi rend="italic">epsilon</hi>, <hi rend="italic">eta</hi>, <hi rend="italic">kappa</hi>, <hi rend="italic">lambda</hi>, <hi rend="italic">pi</hi>.</p>
+                        <p>Punctuation used includes the lower and upper points, lower comma and question
+                  mark.</p>
+                        <p>Quotations from the Gospel are written in <term type="script">Alexandrine
+                    majuscule</term> script, in brown ink.</p>
+                     </handNote>
+                  </handDesc>
+
+                  <decoDesc>
+                     <decoNote type="colInit">The beginnings of sections are marked by simple minor
+                initials in red ink, with gilding.</decoNote>
+
+                     <decoNote type="chrysography">The orginal annotations are gilded.</decoNote>
+                  </decoDesc>
+
+                  <additions>
+                     <p>As part of the original production of the manuscript, marginal notes of
+                the word ἀπολ<supplied>ογούμενος</supplied> (?) have been added by the beginning of
+                some sub-sections.</p>
+                     <p>Notes in pencil on <locus from="1r" to="1r">f. 1r</locus> record citations to
+                  <bibl>Erwin Preuschen, <hi rend="italic">Antilegomena: Die Reste der
+                    ausserkanonischen Evangelien und urchristlichen Ueberlieferungen</hi> (Berlin
+                  1901)</bibl> and Constantin von Tischendorf, <hi rend="italic">Novum Testamentum
+                  Graece : ad antiquissimos testes denuo recensuit apparatum criticum apposuit</hi>,
+                vol. 3: <hi rend="italic">Prolegomena</hi> (Leipzig 1894).</p>
+                     <p>The name Ιωασάφα<unclear>ι</unclear> has been written in pencil on <locus from="2r" to="2r">f. 2r</locus>.</p>
+                  </additions>
+
+                  <bindingDesc>
+                     <binding calendar="gregorian" notAfter="1999" notBefore="1900">
+                        <p>20th-century board pamphlet binding with paper covering and plain pastedowns. The
+                  classmark, the letter C and the name St Matthew are tooled in gold on the left
+                  board.</p>
+                        <p>
+                           <dimensions type="binding" unit="mm">
+                              <height quantity="327">327</height>
+                              <width quantity="242">242</width>
+                              <depth quantity="10">10</depth>
+                           </dimensions>
+                        </p>
+                     </binding>
+                  </bindingDesc>
+
+                  <accMat>The binding incorporates three paper endleaves at the left-hand end and two at
+              the right, while another blank leaf of the same kind appears between the two original
+              folios, which are attached to paper stubs.</accMat>
+               </physDesc>
+
+               <history>
+                  <origin>The manuscript from which the fragment came was probably copied in the <origDate calendar="gregorian" notAfter="1099" notBefore="0975">last quarter of the 10th or
+                the 11th century</origDate>, as suggested by the style of script.</origin>
+
+                  <provenance>
+                     <p>Probably owned by <name key="person_v315943940" role="fmo" type="person">
+                           <persName type="display">Baroness Angela Burdett-Coutts
+                    (1814-1906)</persName>
+                           <persName type="standard">Burdett-Coutts, Angela Georgina,
+                    1814-1906</persName>
+                        </name>.</p>
+                     <p>Owned by <name key="person_v75300714" role="fmo" type="person">
+                           <persName type="display">Frederick H. A. Scrivener (1813-1891)</persName>
+                           <persName type="standard">Scrivener, Frederick Henry Ambrose,
+                1813-1891</persName>
+                        </name>.</p>
+                  </provenance>
+
+                  <acquisition calendar="gregorian" when="1909">Purchased in 1909 from Scrivener's daughter <name role="fmo" type="person">
+                        <persName type="display">Frances Emily Scrivener</persName>
+                        <persName type="standard">Scrivener, Frances Emily</persName>
+                     </name>.</acquisition>
+               </history>
+
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <p/>
+                     </recordHist>
+
+                     <availability>
+                        <p>Entry to read in the Library is permitted only on presentation of a valid reader's card. For information on
+                           eligibility and admissions procedures, see <ref target="https://www.lib.cam.ac.uk/using-library/joining-library">Joining the Library</ref>). For further information on the availability of the manuscript, please contact the
+                           <ref target="mss@lib.cam.ac.uk">Manuscripts Reading Room</ref>.</p>
+                     </availability>
+
+                  </adminInfo>
+                  <listBibl>
+                     <biblStruct corresp="http://zotero.org/groups/276440/items/SG2KA299" type="journalArticle" xml:id="Easterling1962">
+                        <analytic>
+                           <title level="a">Hand-list of the additional Greek manuscripts in the University
+                    Library, Cambridge</title>
+                           <author>
+                              <forename>Patricia E.</forename>
+                              <surname>Easterling</surname>
+                           </author>
+                        </analytic>
+                        <monogr>
+                           <title level="j">Scriptorium</title>
+                           <imprint>
+                              <biblScope unit="volume">16</biblScope>
+                              <biblScope unit="issue">2</biblScope>
+                              <biblScope unit="page">302-323</biblScope>
+                              <date>1962</date>
+                           </imprint>
+                        </monogr>
+                     </biblStruct>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="LCSH">
+               <bibl default="false" status="draft">
+                  <ref target="https://authorities.loc.gov/">Library of Congress Subject Headings</ref>
+               </bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass default="false">
+            <keywords scheme="#LCSH">
+               <list>
+                  <item>
+                     <term key="subject_sh85013576">Bible</term>
+                  </item>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-03-17">
+            <persName>Christopher Wright</persName>
+         </change>
+
+      </revisionDesc>
+  </teiHeader>
+
+  <facsimile>
+      <graphic decls="#document-thumbnail" rend="portrait" url="MS-ADD-04490-000-00001"/>
+      <surface n="left cover, outside" xml:id="i1">
+         <graphic decls="#downloadImageRights #download" height="9116px" rend="portrait" url="MS-ADD-04490-000-00001" width="6425px"/>
+      </surface>
+      <surface n="left cover, inside" xml:id="i2">
+         <graphic decls="#downloadImageRights #download" height="9152px" rend="portrait" url="MS-ADD-04490-000-00002" width="6402px"/>
+      </surface>
+      <surface n="[i] recto" xml:id="i3">
+         <graphic decls="#downloadImageRights #download" height="8975px" rend="portrait" url="MS-ADD-04490-000-00003" width="6265px"/>
+      </surface>
+      <surface n="[i] verso" xml:id="i4">
+         <graphic decls="#downloadImageRights #download" height="9152px" rend="portrait" url="MS-ADD-04490-000-00004" width="6378px"/>
+      </surface>
+      <surface n="[ii] recto" xml:id="i5">
+         <graphic decls="#downloadImageRights #download" height="8898px" rend="portrait" url="MS-ADD-04490-000-00005" width="6233px"/>
+      </surface>
+      <surface n="[ii] verso" xml:id="i6">
+         <graphic decls="#downloadImageRights #download" height="9075px" rend="portrait" url="MS-ADD-04490-000-00006" width="6067px"/>
+      </surface>
+      <surface n="[iii] recto" xml:id="i7">
+         <graphic decls="#downloadImageRights #download" height="8898px" rend="portrait" url="MS-ADD-04490-000-00007" width="6083px"/>
+      </surface>
+      <surface n="[iii] verso" xml:id="i8">
+         <graphic decls="#downloadImageRights #download" height="9059px" rend="portrait" url="MS-ADD-04490-000-00008" width="6262px"/>
+      </surface>
+      <surface n="1r" xml:id="i9">
+         <graphic decls="#downloadImageRights #download" height="8962px" rend="portrait" url="MS-ADD-04490-000-00009" width="6321px"/>
+      </surface>
+      <surface n="1v" xml:id="i10">
+         <graphic decls="#downloadImageRights #download" height="8966px" rend="portrait" url="MS-ADD-04490-000-00010" width="6262px"/>
+      </surface>
+      <surface n="[1a] recto" xml:id="i11">
+         <graphic decls="#downloadImageRights #download" height="8962px" rend="portrait" url="MS-ADD-04490-000-00011" width="6321px"/>
+      </surface>
+      <surface n="[1a] verso" xml:id="i12">
+         <graphic decls="#downloadImageRights #download" height="8933px" rend="portrait" url="MS-ADD-04490-000-00012" width="6330px"/>
+      </surface>
+      <surface n="2r" xml:id="i13">
+         <graphic decls="#downloadImageRights #download" height="8962px" rend="portrait" url="MS-ADD-04490-000-00013" width="6261px"/>
+      </surface>
+      <surface n="2v" xml:id="i14">
+         <graphic decls="#downloadImageRights #download" height="8933px" rend="portrait" url="MS-ADD-04490-000-00014" width="6297px"/>
+      </surface>
+      <surface n="[iv] recto" xml:id="i15">
+         <graphic decls="#downloadImageRights #download" height="8938px" rend="portrait" url="MS-ADD-04490-000-00015" width="6301px"/>
+      </surface>
+      <surface n="[iv] verso" xml:id="i16">
+         <graphic decls="#downloadImageRights #download" height="8933px" rend="portrait" url="MS-ADD-04490-000-00016" width="6358px"/>
+      </surface>
+      <surface n="[v] recto" xml:id="i17">
+         <graphic decls="#downloadImageRights #download" height="8966px" rend="portrait" url="MS-ADD-04490-000-00017" width="6433px"/>
+      </surface>
+      <surface n="[v] verso" xml:id="i18">
+         <graphic decls="#downloadImageRights #download" height="8933px" rend="portrait" url="MS-ADD-04490-000-00018" width="6326px"/>
+      </surface>
+      <surface n="right cover, inside" xml:id="i19">
+         <graphic decls="#downloadImageRights #download" height="9539px" rend="portrait" url="MS-ADD-04490-000-00019" width="6525px"/>
+      </surface>
+      <surface n="right cover, outside" xml:id="i20">
+         <graphic decls="#downloadImageRights #download" height="9109px" rend="portrait" url="MS-ADD-04490-000-00020" width="6415px"/>
+      </surface>
+  </facsimile>
+  <text>
+      <body>
+         <div>
+            <pb facs="#i1" n="left cover, outside" xml:id="pb-leftcover,outside"/>
+            <pb facs="#i2" n="left cover, inside" xml:id="pb-leftcover,inside"/>
+            <pb facs="#i3" n="[i] recto" xml:id="pb-irecto"/>
+            <pb facs="#i4" n="[i] verso" xml:id="pb-iverso"/>
+            <pb facs="#i5" n="[ii] recto" xml:id="pb-iirecto"/>
+            <pb facs="#i6" n="[ii] verso" xml:id="pb-iiverso"/>
+            <pb facs="#i7" n="[iii] recto" xml:id="pb-iiirecto"/>
+            <pb facs="#i8" n="[iii] verso" xml:id="pb-iiiverso"/>
+            <pb facs="#i9" n="1r" xml:id="pb-1r"/>
+            <pb facs="#i10" n="1v" xml:id="pb-1v"/>
+            <pb facs="#i11" n="[1a] recto" xml:id="pb-1arecto"/>
+            <pb facs="#i12" n="[1a] verso" xml:id="pb-1averso"/>
+            <pb facs="#i13" n="2r" xml:id="pb-2r"/>
+            <pb facs="#i14" n="2v" xml:id="pb-2v"/>
+            <pb facs="#i15" n="[iv] recto" xml:id="pb-ivrecto"/>
+            <pb facs="#i16" n="[iv] verso" xml:id="pb-ivverso"/>
+            <pb facs="#i17" n="[v] recto" xml:id="pb-vrecto"/>
+            <pb facs="#i18" n="[v] verso" xml:id="pb-vverso"/>
+            <pb facs="#i19" n="right cover, inside" xml:id="pb-rightcover,inside"/>
+            <pb facs="#i20" n="right cover, outside" xml:id="pb-rightcover,outside"/>
+         </div>
+      </body>
+  </text>
+
+</TEI>

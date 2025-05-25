@@ -1,0 +1,1599 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, Corpus Christi College, MS 388</title>
+                <funder>Wellcome</funder>
+                <principal>James Freeman</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+                <availability default="false" status="restricted" xml:id="displayImageRights">
+                    <p part="N">Zooming image © Cambridge University Library, All rights reserved.</p>
+                </availability>
+                <availability default="false" status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability default="false" status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+                <availability status="restricted" xml:id="watermark">
+                    <licence>Corpus Christi College, Cambridge (CC BY-NC 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc status="draft" xml:id="MS-CCCC-00388" xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+                    <msIdentifier>
+                        <institution>Corpus Christi College, Cambridge</institution>
+                        <repository>Parker Library</repository>
+                        <collection>Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, Corpus Christi College, MS 388</idno>
+                    </msIdentifier>
+                    <head>Trilingual collections of medical recipes</head>
+                    <msContents>
+                        <summary>
+                            <seg type="para"/>
+                            <!-- Source or write introduction-->
+                            <!--<seg type="para">NAME<lb/> JOB TITLE<lb/> EMPLOYER</seg>-->
+                        </summary>
+                        <textLang mainLang="xno" otherLangs="enm la">Anglo-Norman, Middle English [Ely/West Norfolk dialect] and Latin</textLang>
+                        <msItem n="1">
+                            <locus from="1r" to="1r">1r</locus>
+                            <title key="">Verse prologue to the <hi rend="italic">Lettre d'Hippocrate</hi>]</title>
+                            <textLang mainLang="la" otherLangs="enm">Latin, Anglo-Norman, and Middle Englsih</textLang>
+                            <rubric><locus from="1r" to="1r">1r</locus> Hic incipit liber yocrasii galieni et sclepei</rubric>
+                            <incipit><locus from="1r" to="1r">1r</locus> Ypocras se liuere fyt / Ale emperour cesar myt / Demandant si vol[e]z viuere
+                                / Entendez ben a moun liuere</incipit>
+                            <explicit><locus from="1r" to="1r">1r</locus> Voit humme lez jugemens / De mettrez e de sage gens</explicit>
+                            <note>The text features English glosses and recipes in Latin and Anglo-Norman.</note>
+                            <listBibl>
+                                <bibl>Dean and Boulton (1999), no. 408</bibl>
+                                <bibl>Hunt (1990), p. 109 [other copy]</bibl>
+                                <bibl>Hunt (2001), pp. 88-89 [edition]</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="2">
+                            <locus from="1r" to="2v">1r-2v</locus>
+                            <title key="">Uroscopic treatise and recipes</title>
+                            <textLang mainLang="la" otherLangs="enm">Latin with a few Middle English plant names</textLang>
+                            <rubric><locus from="1r" to="1r">1r</locus> De vrinis secundum Magol</rubric>
+                            <incipit><locus from="1r" to="1r">1r</locus> Vrina viri laui est pura et aurei coloris</incipit>
+                            <explicit><locus from="2v" to="2v">2v</locus> et [...] bibat</explicit>
+                            <listBibl>
+                                <bibl>Hunt (2001), pp. 89-92 [edition]</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="3">
+                            <locus from="2r" to="3r">2r-3r</locus>
+                            <title key="">Uroscopic treatise from the <hi rend="italic">Lettre d'Hippocrate</hi></title>
+                            <textLang mainLang="xno" otherLangs="la">Anglo-Norman text with a Latin heading</textLang>
+                            <rubric><locus from="2r" to="2r">2r</locus> Item de urinis</rubric>
+                            <incipit><locus from="2r" to="2r">2r</locus> Si le urine seyt blanche de tut le matyn e ruge aprés manger, signifiet
+                                sainté</incipit>
+                            <explicit><locus from="3r" to="3r">3r</locus> E pu[r] ce ky hummez sunt de diverse humurez e de qualitez, encountre checun
+                                qualité plusurs averés medicinez, a comenssement a cheif e pus a tous autrez menbres</explicit>
+                            <note/>
+                            <listBibl>
+                                <bibl>Hunt (1990), p. 109 [other copy]</bibl>
+                                <bibl>Hunt (1997), p. 259</bibl>
+                                <bibl>Hunt (2001), pp. 92-93</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="2">
+                            <locus from="3r" to="35v">3r-35v</locus>
+                            <title key="">Collection of medical recipes (recipe section of the <hi rend="italic">Lettre d'Hippocrate</hi>)</title>
+                            <textLang mainLang="la" otherLangs="xno enm">Latin, Anglo-Norman, and Middle English</textLang>
+                            <incipit><locus from="3r" to="3r">3r</locus> Pur le chef. Pernés .ii. unces de betoyne e .iii. unces de here te[re]stre
+                                þat is heyhowe e .viii. unces de puliole þat ys hulwrt e les fettis brayer en une morter</incipit>
+                            <explicit><locus from="35r" to="35v">35r-35v</locus> For boystynge. Item de fleobotomia in tempore idonio facta mentem
+                                sincerat vesicam purificat serebrum temperet medullum [...] depellit angustiam bonum sanguinem alit et malum destruit
+                                et longiorem lucem in vita tua tenet</explicit>
+                            <note>This collection of c. 225 medical recipes, Hunt's 'First Corpus Compendium', contains groups of recipes that Hunt
+                                (2001) categories as recipes for the head, ears, eyes, mouth, throat, teeth, facial blemishes, staunching blood,
+                                limbs, and against poisons. The collection contains charms (see below) and prognostic texts that will tell whether a
+                                patient will be cured. These instructions involve a drink with the herb <q>mushere</q> (f. <locus from="29r" to="29r"
+                                    >29r</locus>); a drink with the herb pimpernel (f. <locus from="31r" to="31r">31r</locus>); a drink with lettuce
+                                (f. <locus from="31r" to="31r">31r</locus>); a hen's egg laid on the first day of the patient's sickness that needs to
+                                be inscribed with magical characters (f. <locus from="34v" to="34v">34v</locus>); and bread or lard that needs to
+                                rubbed on the patient's chest and subsequently given to dogs (f. <locus from="34v" to="34v">34v</locus>).</note>
+                            <listBibl>
+                                <bibl>eVK2 2131.00</bibl>
+                                <bibl>Dean and Boulton (1999), no. 408</bibl>
+                                <bibl>Hunt (2001), pp. 89-152 [edition]</bibl>
+                                <bibl>Rand (2009), pp. 101-103 (other copies)</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="3.1">
+                            <locus from="8v" to="8v">8v</locus>
+                            <title key="">Charm for eye ailments involving an amulet invoking the Trinity for help</title>
+                            <textLang mainLang="xno">Anglo-Norman</textLang>
+                        </msItem>
+                        <msItem n="3.2">
+                            <locus from="12v" to="12v">12v</locus>
+                            <title key="">Charm for staunching blood with magical names that need to be written on the patient's forehead with their
+                                own blood</title>
+                            <textLang mainLang="la">Latin</textLang>
+                        </msItem>
+                        <msItem n="3.3">
+                            <locus from="12v" to="12v">12v</locus>
+                            <title key="">Charm for staunching blood by invoking the Virgin Mary and Christ</title>
+                            <textLang mainLang="xno">Anglo-Norman</textLang>
+                        </msItem>
+                        <msItem n="3.4">
+                            <locus from="13r" to="13r">13r</locus>
+                            <title key="">Charm for staunching blood invoking the River Jordan (variant of the <q>Flum Jordan</q> charm)</title>
+                            <textLang mainLang="xno" otherLangs="enm">Anglo-Norman and Middle English</textLang>
+                            <listBibl>
+                                <bibl>Rand (2009), p. 148 [other copies]</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="3.5">
+                            <locus from="15v" to="15v">15v</locus>
+                            <title key="">Charm for indigestion requiring a cross to be made on the patient with an ointment of grain</title>
+                            <textLang mainLang="xno">Anglo-Norman</textLang>
+                        </msItem>
+                        <msItem n="3.6">
+                            <locus from="19r" to="19r">19r</locus>
+                            <title key="">Charm for staunching blood in a woman with magical characters</title>
+                            <textLang mainLang="la">Latin</textLang>
+                        </msItem>
+                        <msItem n="3.7">
+                            <locus from="19r" to="19r">19r</locus>
+                            <title key="">Charm for staunching blood invoking Christ's baptism in the River Jordan</title>
+                            <textLang mainLang="la">Latin</textLang>
+                        </msItem>
+                        <msItem n="3.8">
+                            <locus from="26r" to="26v">26r-26v</locus>
+                            <title key="">Charms for ulcers invoking the story of the <q>tres boni fratres</q> on the Mount of Olives</title>
+                            <textLang mainLang="la">Latin</textLang>
+                        </msItem>
+                        <msItem n="3.9">
+                            <locus from="28v" to="29r">28v-29r</locus>
+                            <title key="">Charm for wounds that invokes the bodies of the Virgin Mary and Christ</title>
+                            <textLang mainLang="la">Latin</textLang>
+                        </msItem>
+                        <msItem n="3.10">
+                            <locus from="29v" to="29v">29v</locus>
+                            <title key="">Charm for wounds using a lead plate with crosses (attributed to <q>Ypocras</q>)</title>
+                            <textLang mainLang="la">Latin</textLang>
+                        </msItem>
+                        <msItem n="3.11">
+                            <locus from="31v" to="31v">31v</locus>
+                            <title key="">Charm for wounds with a lead plate with crosses</title>
+                            <textLang mainLang="la">Latin</textLang>
+                        </msItem>
+                        <msItem n="3.12">
+                            <locus from="32v" to="32v">32v</locus>
+                            <title key="">Charm for Falling Evil invoking the Three Magi</title>
+                        </msItem>
+                        <msItem n="3.13">
+                            <locus from="32v" to="33r">32v-33r</locus>
+                            <title key="">Charm for Falling Evil involving an amulet with magical words</title>
+                            <textLang mainLang="la">Latin</textLang>
+                        </msItem>
+                        <msItem n="3.14">
+                            <locus from="34r" to="34r">34r</locus>
+                            <title key="">Charm for staunching blood with magical names that need to be written on the patient's forehead with their
+                                own blood</title>
+                            <textLang mainLang="la">Latin</textLang>
+                        </msItem>
+                        <msItem n="4">
+                            <locus from="35r" to="35r">35r</locus>
+                            <title>Health recommendations</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="35r" to="35r">35r</locus> Item qui curabilis est dura et acetosa vitet carnes procinas, dulcia poma
+                                cocta, et mel comedat et magnos labores non faciat</incipit>
+                            <note>Full transcription as in Hunt (2001), p. 151.</note>
+                            <listBibl>
+                                <bibl>Hunt (2001), p. 151 [edition]</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="5">
+                            <locus from="35r" to="35r">35r</locus>
+                            <title key="">Note on bloodletting</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="35r" to="35r">35r</locus> Item cave ne minuas ultra modum et oram vir[um] vel mulier[em] quia
+                                quisque minuit sibi sanguinem ultra mensuram isti morbi inde venient: Interiora efficit frigida et facit deesse
+                                calorem et morbus glaucus inde pervenit et debilitat cerebrum et facit manus tremere gutteque multe inde veniunt et
+                                inde venit tussis cordis et morbus capitis et multa alia mala inde emergunt</incipit>
+                            <note>Full transcription as in Hunt (2001), p. 152.</note>
+                            <listBibl>
+                                <bibl>Hunt (2001), p. 152 [edition]</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="6">
+                            <locus from="35v" to="35v">35v</locus>
+                            <title key="">Health regimen by months</title>
+                            <author key="person_v163576513">Pseudo-Galen</author>
+                            <textLang mainLang="la">Latin</textLang>
+                            <rubric><locus from="35v" to="35v">35v</locus> De temporibus comestionum est</rubric>
+                            <incipit><locus from="35v" to="35v">35v</locus> Item hic docet gallilenus medicus tempora comestionum et potacionum et
+                                sanguinis municionum. In mense ianuarii ieiunio stomaco album vinum est bonum potare</incipit>
+                            <explicit defective="true"><locus from="35v" to="35v">35v</locus> Item in mense octobri mustum est bonum ad
+                                potandum</explicit>
+                            <note>The text ends abruptly due to the loss of the next folio. As Tavormina (2019), p. xxxiv notes, this is a Latin
+                                equivalent to the text in <bibl>Linne R. Mooney, 'Diet and Bloodletting: A Monthly Regimen', in <hi rend="italic"
+                                        >Practical and Popular Science of Medieval England</hi>, ed. by Lister M. Matheson (East Lansing, MI:
+                                    Colleagues Press, 1994), pp. 245-262</bibl>.</note>
+                            <listBibl>
+                                <bibl>Hunt (2013), pp. 243-244 [edition]</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="7">
+                            <locus from="36r" to="36v">36r-36v</locus>
+                            <title key="">List of contents for the <q>Second Corpus Compendium</q></title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="36r" to="36r">36r</locus> For werk of hefed</incipit>
+                            <explicit><locus from="36v" to="36v">36v</locus> Ȝif a man be frenetik</explicit>
+                            <listBibl>
+                                <bibl>Hunt (2001), pp. 161-162 [edition]</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="8">
+                            <locus from="36v" to="48v">36r-48v</locus>
+                            <title key="">Collection of medical recipes (<q>Second Corpus Compendium</q>)</title>
+                            <textLang mainLang="enm" otherLangs="la xno">Middle English with a few phrases in Latin and one recipe in
+                                Anglo-Norman</textLang>
+                            <rubric><locus from="36r" to="36r">36r</locus> Here bygennes mani a god medecine þat leches han drawn out of þe bokes of
+                                Galion and Sclepius and Ypocras</rubric>
+                            <incipit><locus from="36r" to="36r">36r</locus> For werk [and] turning braynus. Quo so haues werk and turning in his hed
+                                mack leye of verueyne or of betoyne or of filles or of wirmod and þarwit wasse þin hed þries in þe woke</incipit>
+                            <explicit><locus from="48v" to="48v">48v</locus> And quan it is cold tempur ful a saucer of þat water wit als mychel of
+                                eld ale mad of barly malt and drinck it</explicit>
+                            <finalRubric><locus from="48v" to="48v">48v</locus> Expliciunt medicine de tractatibus Ypocracii, Gallieni et Sclepeii
+                                etcaetera</finalRubric>
+                            <note>This collection of c. 185 medical recipes, Hunt's 'Second Corpus Compendium', features many different categories of
+                                recipes. Unlike the previous collection, this one does not contain any charms but it does feature three prognostic
+                                texts for determining whether patients will be cured or not on f. <locus from="48r" to="48r">48r</locus>. These texts
+                                involve analysis of the patient's physical features as well as treatment of their urine with breast milk. </note>
+                            <note>This is the earliest known version of the <title key="work_12791"><hi rend="italic">Liber de Diversis
+                                    Medicinis</hi></title>. </note>
+                            <listBibl>
+                                <bibl>eVK2 3464.00 [medical recipes]</bibl>
+                                <bibl>eVK2 2556.00 [prognostic]</bibl>
+                                <bibl>Hunt (2001), pp. 163-185 [edition]</bibl>
+                                <bibl>Rand (2009), pp. 105-114 [further details]</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="9">
+                            <locus from="48v" to="48v">48v</locus>
+                            <title key="">Recipe for a medical ointment against a fistula</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <rubric><locus from="48v" to="48v">48v</locus> Vngwentum ad fistulam</rubric>
+                            <incipit><locus from="48v" to="48v">48v</locus> Item vngwentum ad fistulam accipe de radice altee et centauria et edera
+                                terestri equaliter</incipit>
+                            <explicit><locus from="48v" to="48v">48v</locus> et a lacte a coitij se abstineat</explicit>
+                        </msItem>
+                        <msItem n="10">
+                            <locus from="48v" to="48v">48v</locus>
+                            <title key="">Medical recipe for treating chest pain</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="48v" to="48v">48v</locus> Item ad infirmitatem pecurum [sic] tolle corticem ?quartimum et fac
+                                cinerem inde postea ?lescinam quam des pecori bibere et ieiunet ?qualenicum habuit et sanabitur sine dubio</incipit>
+                            <note>Full transcription.</note>
+                        </msItem>
+                        <msItem n="11">
+                            <locus from="48v" to="48v">48v</locus>
+                            <title key="">Recipe to make a dark horse white</title>
+                            <textLang mainLang="la" otherLangs="enm">Latin recipe with a Middle English heading</textLang>
+                            <incipit defective="true"><locus from="48v" to="48v">48v</locus> Item for to maken a black hors qwyt accipe talpam et pone
+                                in aqua et dimitte eam stare in ea .iiij.<hi rend="superscript">or</hi> diebus et post ea</incipit>
+                            <note>Full transcription. The text ends abruptly due to the loss of the next folio.</note>
+                        </msItem>
+                        <msItem n="12">
+                            <locus from="49r" to="49r">49r</locus>
+                            <title key="">Glossary of the names of herbs and trees (Latin-English)</title>
+                            <textLang mainLang="la" otherLangs="enm">Latin and Middle English</textLang>
+                            <incipit defective="true"><locus from="49r" to="49r">49r</locus> Millefolium anglice Milefolye</incipit>
+                            <explicit><locus from="49r" to="49r">49r</locus> Girrus anglice hawetre</explicit>
+                            <note>The text probably begins imperfectly as other items from the glossare were probably contained on the preceding
+                                (missing) leaf.</note>
+                        </msItem>
+                        <msItem n="13">
+                            <locus from="49r" to="49r">49r</locus>
+                            <title key="">Three medical recipes for treating haemorrhoids</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="49r" to="49r">49r</locus> ffor emeraudes</rubric>
+                            <incipit><locus from="49r" to="49r">49r</locus> tack muleyn and wellit in sqwet mylck and ley it hoyt to þe sor</incipit>
+                            <explicit><locus from="49r" to="49r">49r</locus> Or take herbe benet and spires of þe redde docke onyounes and galt smere
+                                and stamp alle to gedere and ley on þe sore</explicit>
+                            <listBibl>
+                                <bibl>eVK2 5252.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="14">
+                            <locus from="49r" to="49r">49r</locus>
+                            <title key="">Glossary of the names of herbs and trees (Latin-English)</title>
+                            <textLang mainLang="la" otherLangs="enm">Latin and Middle English</textLang>
+                            <incipit><locus from="49r" to="49r">49r</locus> Atramentum id est incaustum</incipit>
+                            <explicit><locus from="49r" to="49r">49r</locus> Burnet anglice tunhoue</explicit>
+                        </msItem>
+                        <msItem n="15">
+                            <locus from="49r" to="49r">49r</locus>
+                            <title key="">Medical recipe for treating constipation</title>
+                            <textLang mainLang="la" otherLangs="xno">Latin with one Anglo-Norman word</textLang>
+                            <incipit><locus from="49r" to="49r">49r</locus> Cene bonum ad potandum pro scilicet costiuesoun . portat siliqueras ad
+                                modum pisarum</incipit>
+                            <note>Full transcription.</note>
+                        </msItem>
+                        <msItem n="16">
+                            <locus from="49v" to="49v">49v</locus>
+                            <title key="">Poem on bloodletting in relation to the twelve signs of the Zodiac from the <hi rend="italic">Regimen
+                                    sanitatis Salernitanum</hi></title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="49v" to="49v">49v</locus> Nil capiti facies aries dum luna refulget - Aries</incipit>
+                            <explicit><locus from="49v" to="49v">49v</locus> Carpe viam tutus sit pocio supra salubris - Pissis</explicit>
+                            <finalRubric><locus from="49v" to="49v">49v</locus> Expliciunt virtutes .xij. singnorum lunacionum</finalRubric>
+                            <listBibl>
+                                <bibl>Walter, Initia carminum (1959), no. 11780</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="17">
+                            <locus from="50r" to="50v">50r-50v</locus>
+                            <title key="">Collection of medical recipes</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="50r" to="50r">50r</locus> Item contra cancrum in virga virili</incipit>
+                            <explicit><locus from="50v" to="50v">50v</locus> cum aqua calida et albumine oui reddit faciem et manus albas et molles et
+                                suaues</explicit>
+                        </msItem>
+                        <msItem n="18">
+                            <locus from="50v" to="51r">50v-51r</locus>
+                            <title key="">'Secret Medicine'</title>
+                            <author key="">'H. Sampsonis de Clouburnel'</author>
+                            <textLang mainLang="xno">Anglo-Norman</textLang>
+                            <rubric><locus from="50v" to="50v">50v</locus> Secreta medicine H. Sampsonis de Clouburnel</rubric>
+                            <incipit><locus from="50v" to="50v">50v</locus> Seus sunt lez erbes quy sunt appele lez .v. launces quy menoit a le
+                                playe</incipit>
+                            <note>The location <q>Clouburnel</q> refers to Clos Bruneau, Paris [see Tavormina (2019), p. xxxiv].</note>
+                            <listBibl>
+                                <bibl>Dean and Boulton (1999), no. 412</bibl>
+                                <bibl>Hunt (2001), p. 86 fn. 3 [other copies]</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="19">
+                            <locus from="51r" to="51r">51r</locus>
+                            <title key="">Medical recipe for joint pain</title>
+                            <textLang mainLang="xno">Anglo-Norman</textLang>
+                            <incipit><locus from="51r" to="51r">51r</locus> Item \a/ gute ep<hi rend="superscript">o</hi> dolour en les
+                                iount[o]us</incipit>
+                        </msItem>
+                        <msItem n="20">
+                            <locus from="51r" to="51v">51r-51v</locus>
+                            <title key="">Charm for healing that St Gabriel brought to Susanna</title>
+                            <textLang mainLang="xno" otherLangs="la">Anglo-Norman and Latin</textLang>
+                            <rubric><locus from="51r" to="51r">51r</locus> Ce est le charme seynt gabriel le portat par nostre seygnour pur charmer
+                                crestienes de verm . de gute . de kancie . de festre . de gute rauncle . de gute en ossee . e de tut manere de gute
+                                prime ueriment faites chaunter vn messe del seynte Espirite e pus dites sette charme</rubric>
+                            <incipit><locus from="51r" to="51r">51r</locus> In nomine patris et </incipit>
+                            <explicit><locus from="51v" to="51v">51v</locus> il en leccherunt saun fayl.</explicit>
+                            <listBibl>
+                                <bibl>Hunt (1990), pp. 90-91 [other copy]</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="21">
+                            <locus from="51v" to="52r">51v-52r</locus>
+                            <title key="">Collection of medical recipes and charms</title>
+                            <textLang mainLang="xno" otherLangs="la">Anglo-Norman and Latin</textLang>
+                            <note>The collection ends with an Anglo-Norman charm (with Latin formula) to aid pregnant women in childbirth and another
+                                one for women to (?) become pregnant.</note>
+                        </msItem>
+                        <msItem n="22">
+                            <locus from="52r" to="53v">52r-53v</locus>
+                            <title key="">On the names and virtues of herbs</title>
+                            <textLang mainLang="la" otherLangs="enm">Latin with some Middle English plant names</textLang>
+                            <rubric><locus from="52r" to="52r">52r</locus> Nomina herbarum et earum virtutes</rubric>
+                            <incipit><locus from="52r" to="52r">52r</locus> Gariofila latine Romanice gariofle anglice erbe mauen</incipit>
+                            <explicit><locus from="53v" to="53v">53v</locus> de naturis earum</explicit>
+                            <finalRubric><locus from="53v" to="53v">53v</locus> Expliciunt nomina herbarum etcaetera</finalRubric>
+                        </msItem>
+                        <msItem n="23">
+                            <locus from="53v" to="54r">53v-54r</locus>
+                            <title key="">Urine White and Brown</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="53v" to="53v">53v</locus> Her mayst þou knowen vrines be coloures</rubric>
+                            <incipit><locus from="53v" to="53v">53v</locus> Vrine qwyt at morwen and brown after mete þat is signe of god
+                                hele</incipit>
+                            <explicit><locus from="54r" to="54r">54r</locus> Vrine qwit and broun abouen signe of werl[e]z in þe leindes [sic] and þat
+                                þe matrice is ful of wateres and of wicke humores of cold</explicit>
+                            <note>As Tavormina (2019), p. xxxv notes, this is the earliest version of a Middle English uroscopic text.</note>
+                            <listBibl>
+                                <bibl>eVK2 7835.00</bibl>
+                                <bibl>Rand (2009), p. 115 [other copies]</bibl>
+                                <bibl>Tavormina (2014), p. 43 (5.2.1)</bibl>
+                                <bibl>Tavormina (2019, pp. xvi, xxxii-xxxv (as ‘Cc’)</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="24">
+                            <locus from="54r" to="54r">54r</locus>
+                            <title key="">Latin verse</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit defective="true"><locus from="54r" to="54r">54r</locus> Omnibus est notum quod multum diligo</incipit>
+                            <note>Full transcription; unfinished version of the verse: <q>Omnibus est notum quod multum diligo potum</q> (for this
+                                verse, see <bibl>Joanna Bellis and Venetia Bridges, '"What shalt thou do when thou hast an english to make into
+                                    Latin?" The Proverb Collection of Cambridge, St John's College, MS F.26', <hi rend="italic">Studies in
+                                        Philology</hi>, 112:1 (2015), 68-92 (p. 75 fn. 26) [without this manuscript]</bibl>). Added by a (?) late
+                                14th-century or 15th-century hand.</note>
+                        </msItem>
+                        <msItem n="25">
+                            <locus from="54v" to="54v">54v</locus>
+                            <title key="">Erased inscription</title>
+                            <textLang mainLang="en">? English</textLang>
+                            <incipit><locus from="54v" to="54v">54v</locus> ffalls [? ffalis] [...]yng</incipit>
+                            <note>Added in the (?) 15th century. The inscription has either been erased or damaged from having been glued onto the
+                                inside of the rear cover of the previous binding. It may be an owner's name, referring to a member of the <q>Falls</q>
+                                family, but the inscription could be something else as well. Tavormina (2019), p. xxxv reads <q>ffa??S
+                                fflemyng</q>.</note>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <p>
+                            <secFol>
+                                <locus from="2r" to="2r">2r</locus> infirmum </secFol>
+                        </p>
+                        <objectDesc form="codex">
+                            <supportDesc material="perg">
+                                <support>
+                                    <material>Parchment (<term type="disposition">HFFH</term>)</material>
+                                </support>
+                                <extent>
+                                    <seg type="object">Codex: </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="3" type="laterEndleaf">iii</measure> + <measure quantity="54" type="leaf">54</measure> +
+                                            <measure quantity="3" type="laterEndleaf">iii</measure> leaves. </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height quantity="235">235</height>
+                                            <width max="155" min="150">150-155</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+                                <foliation notAfter="2000" notBefore="1900">
+                                    <p>20th-century foliation:</p>
+                                    <p>i-iii + 1-35, 35a, 36-54 + iv-vi</p>
+                                    <note>Numbering in pencil in the upper right-hand corner of the rectos. </note>
+                                    <note>f. 35a is a triangular remnant of a leaf, incorporated into a longer stub formed of modern parchment.
+                                    </note>
+                                </foliation>
+                                <collation mainStructures="8">
+                                    <p>
+                                        <list>
+                                            <item>Quires 1-4<hi rend="superscript">8</hi> (ff. <locus from="1r" to="32v">1-32</locus>)</item>
+                                            <item>Quire 5<hi rend="superscript">6-3</hi> (ff. <locus from="33r" to="35a verso">33-35a verso</locus>:
+                                                4th, 5th and 6th leaves missing; only a small portion remains of the 6th leaf)</item>
+                                            <item>Quire 6<hi rend="superscript">8</hi> (ff. <locus from="36r" to="43v">36r-43v</locus>)</item>
+                                            <item>Quire 7<hi rend="superscript">8-2</hi> (ff. <locus from="44r" to="49v">44-49</locus>: 6th and 7th
+                                                leaves missing, after f. 48)</item>
+                                            <item>Quire 8<hi rend="superscript">6-2+1</hi> (ff. <locus from="50r" to="54v">50-54</locus>: 1st and 2nd
+                                                leaves missing; 1 leaf inserted at the end, f. 54)</item>
+                                        </list>
+                                    </p>
+                                    <p><formula>1-4<hi rend="superscript">8</hi> 5<hi rend="superscript">6-3</hi> (3rd, 5th and 6th missing) 6<hi
+                                                rend="superscript">8</hi> 7<hi rend="superscript">8-2</hi> (6th-7th missing) 8<hi rend="superscript"
+                                                >6-2+1</hi> (1st-2nd missing; 1 added after 6th) </formula></p>
+                                    <signatures type="leaf"><p>Roman numerals in red ink in the upper margins of the first halves of quires, but
+                                            mostly cropped off.</p></signatures>
+                                    <catchwords><seg type="para">Catchwords in brown ink in the right-hand lower corners of the last versos of
+                                            quires.</seg></catchwords>
+                                </collation>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="2" rulingMedium="leadpoint" topLine="below" writtenLines="40">
+                                    <dimensions type="written" unit="mm">
+                                        <height quantity="185">185</height>
+                                        <width quantity="110">110</width>
+                                    </dimensions>
+                                    <seg type="ruling">Ruled in leadpoint, frame only. Double columns. 40 lines to the page, written below top line.
+                                    </seg>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote script="NorthernTextualis">
+                                <p>Folios 1r-48v, 49r (upper left and right columns), 49v have been copied by a single scribe in an informal <term
+                                        type="script">Gothic textura</term> script. </p>
+                            </handNote>
+                            <handNote script="cursivaAntiquior">
+                                <p>Folios 49v (lower left column), 52r-54r have been copied by a (?) single scribe, perhaps the same scribe who copied
+                                    ff. 1r-49v, in a script that can be identified as <term type="script">Anglicana</term>. </p>
+                            </handNote>
+                            <handNote script="cursivaAntiquior">
+                                <p>Folios 50r-52r have been copied by a single hand, perhaps the same hand that copied ff. 1r-49v, in an informal
+                                        <term type="script">Gothic textura</term> script. </p>
+                            </handNote>
+
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote type="flourInit"><p>Large (2-line) initials in blue with penwork decoration and pen-flourishing in red ink.
+                                </p></decoNote>
+                            <decoNote type="rubrication"><p>Headers written in red ink. </p></decoNote>
+                            <decoNote type="lifeFill"><p>Line-fillers in red ink. </p></decoNote>
+                            <decoNote type="other"><p>One-line capitals higlighted in red ink. </p></decoNote>
+                            <decoNote type="other"><p>Paraphs in blue or red ink. </p></decoNote>
+                            <decoNote type="other"><p>Underlining in red ink. </p></decoNote>
+                            <decoNote type="cadel"><p>Long decorative ascenders on the top lines highlighted in red ink, but not the long decorative
+                            descenders on the lower lines. </p></decoNote>
+                        </decoDesc>
+                        <additions>
+                            <note><p>20th-century quire numbers in pencil.</p></note>
+                        </additions>
+                        <bindingDesc>
+                            <binding when="1996">
+                                <p>20th-century white leather over wooden boards with the spine on 8 raised bands; the manuscript was disbound and
+                                    restored in 1996 with a grant from SmithKline Beecham (according to a paper label pasted on the <locus
+                                        from="front cover, inner" to="front cover, inner"> inside of the upper cover</locus>) by the book conservator
+                                    Nicholas Hadgraft (1955-2004) as stated on a paper label on the<locus from="rear cover, inner"
+                                        to="rear cover, inner">inside of the rear cover</locus>. </p>
+                                <p>Red-speckled fore-edge. </p>
+                                <p>Current binding height: 246mm; width: 160mm; depth: 30mm. </p>
+                                <p>The manuscript's previous binding is kept separately and concerns a (?) 17th-century half brown leather binding
+                                    with white vellum over pasterboards. Inside the old binding are three unfoliated modern paper flyleaves, the first
+                                    of which bears the College's stamp and is inscribed with the classmark: <q>MS 388</q>. </p>
+                                <p>On the front cover of the old binding is a cropped (?) 17th-century inscription: <q>Wardall his</q>. This may be a
+                                    title written on the reverse of an older legal document from Corpus Christi College with the text of that document
+                                    pasted onto the outsides of the front and rear covers. (For example, a John Wardall of Cambridge, brewer, features
+                                    in a copy of a bond to the Master and Fellows of Cambridge, Corpus Christi College dated 1485 [Cambridge,
+                                    University Archives, GBR/0268/CCCC09/06/1Ka]; but members of the <q>Wardall</q> family also feature in
+                                    16th-century legal documents from Corpus Christi College). </p>
+                                <p>Binding height: 245mm; width: 15mm. </p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origDate calendar="Gregorian" cert="high" notAfter="1335" notBefore="1315">c. 1320-1330. </origDate>
+                            <origPlace key="place_g7002445">England. </origPlace>
+                            <listBibl>
+                                <bibl>Hunt (2001), p. 85.</bibl>
+                            </listBibl>
+                        </origin>
+                        <provenance notAfter="1574"><p>
+                                <name key="person_49234661" role="fmo">
+                                    <persName type="display">Matthew Parker (1504-1575)</persName>
+                                    <persName type="standard">Parker, Matthew, 1504-1575</persName></name>, archbishop of Canterbury: the manuscript
+                                is recorded as <q>Medicinis in olde Englishe</q> among the <q>Libri in minore Bibliotheca</q> on f. 61r of his
+                                register of books, now <bibl subtype="external" type="MS"><ref
+                                        target="https://parker.stanford.edu/parker/catalog/ww741yn5061">Cambridge, Corpus Christi College, MS
+                                        575</ref></bibl> [see M.R. James (1912), I, p. xxxvi].</p>
+                        </provenance>
+                        <acquisition when="1574"><p>Presented to Corpus Christi College by <name key="person_v49234661" role="dnr">
+                                    <persName type="display">Matthew Parker (1504-1575)</persName>
+                                    <persName type="standard">Parker, Matthew, 1504-1575</persName></name>: The number <q>388</q> inscribed in pencil
+                                on f. <locus from="1r" to="1r">1r</locus>. Listed as no. 161 in Thomas James's <hi rend="italic">Ecloga
+                                    Oxonio-Catabrigiensis</hi>, printed in London in 1600; no. R.8 in William Stanley, <hi rend="italic">Catalogus
+                                    librorum manuscriptorum in Bibliotheca Collegiis Corporis Christi in Cantabrigia: Quos legauit Matthaeus Parkerus
+                                    Archiepiscopus Cantuariensis</hi>, printed in London in 1722 (see also the inscription <q>R.8</q> on f. <locus
+                                    from="1r" to="1r">ii recto</locus>); and no. 388 in James Nasmith, <hi rend="italic">Catalogus librorum
+                                    manuscriptorum quos Collegio Corporis Christi et B. Mariae Virginis in Academia Cantabrigiensis legauit
+                                    Reverendissimus in Christo Pater Matthaeus Parker, Archiepiscopus Cantuariensis</hi> printed in Cambridge in
+                                1777.</p>
+                        </acquisition>
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source>This catalogue entry draws on <bibl>M.R. James, <hi rend="italic">A Descriptive Catalogue of the Manuscripts
+                                            in the Library of Corpus Christi College, Cambridge, 2 vols</hi> (Cambridge, 1912)</bibl>, no. 388; and
+                                        <bibl>Kari Anne Rand, <hi rend="italic">Manuscripts in the Library of Corpus Christi College, Cambridge</hi>,
+                                        The Index of Middle English Prose, Handlist XX (Cambridge: Brewer, 2009)</bibl>, pp. 101-116. Images and a
+                                    description of the manuscript are also available on the Parker Library website: the online catalogue entry for the
+                                    item published at Parker on the Web <ref target="https://parker.stanford.edu/parker/catalog/qb778vp9705">Corpus
+                                        Christi College, MS 388</ref>. </source>
+                            </recordHist>
+                            <availability status="restricted">
+                                <p>Visitors to Corpus Christi College who wish to consult Special Collections material are required to apply to the
+                                    Parker Library in advance of their visit. For information on eligibility and admission procedures see: <ref
+                                        target="https://www.corpus.cam.ac.uk/parker-library/information-readers">Parker Library: Information for
+                                        Readers</ref>.</p>
+                            </availability>
+                        </adminInfo>
+                        <listBibl>
+                            <bibl>For a bibliography for this item maintained by Corpus Christi College Cambridge see: <ref
+                                    target="https://www.zotero.org/groups/1051392/parkerlibrary/tags/dh967mz5785/">Cambridge, Corpus Christi College,
+                                    MS 388: Zotero Bibliography</ref>
+                            </bibl>
+                        </listBibl>
+                        <listBibl>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/5LGX9BNZ" type="book" xml:id="James1600">
+                                <monogr>
+                                    <title level="m">Ecloga Oxonio-Cantabrigiensis, tributa in libros duos; quorum prior continet catalogum confusum
+                                        librorum manuscriptorum in illustrissimis bibliothecis, duarum florentissimarum Academiarum, Oxoniae et
+                                        Cantabrigiae. Posterior, catalogum eorundem distinctum et dispositum secundum quatuor facultates, obseruato
+                                        tam in nominibus, quam in operibus ipsis, alphabetico literarum ordine</title>
+                                    <author>
+                                        <forename>Thomas</forename>
+                                        <surname>James</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>George Bishop &amp; John Norton</publisher>
+                                        <date>1600</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 82 (no. 161).</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/NM9MWZ5K" type="book" xml:id="Stanley1722">
+                                <monogr>
+                                    <title level="m">Catalogus librorum manuscriptorum in bibliotheca Collegii Corporis Christi in Cantabrigia: quos
+                                        legavit Matthæus Parkerus Archiepiscopus Cantuariensis</title>
+                                    <author>
+                                        <forename>W.</forename>
+                                        <surname>Stanley</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <date>1722</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Catalogus librorum manuscriptorum in bibliotheca Collegii Corporis Christi in Cantabrigia</title>
+                                </series>
+                                <note>p. 54 (R.8).</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/6VSVAUQ7" type="book" xml:id="Nasmith1777">
+                                <monogr>
+                                    <title level="m">Catalogus librorum manuscriptorum quos Collegio Corporis Christi et B. Mariæ Virginis in Academia
+                                        Cantabrigiensi legavit reverendissimus Matthæus Parker, archiepiscopus Cantuariensis</title>
+                                    <editor>
+                                        <forename>James</forename>
+                                        <surname>Nasmith</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>Typis Academicis</publisher>
+                                        <date>1777</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 375.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/KUZZFSWG" type="book" xml:id="James1899">
+                                <monogr>
+                                    <title level="m">The Sources of Archbishop Parker's Collection of MSS at Corpus Christi College, Cambridge, with a
+                                        Reprint of the Catalogue of Thomas Markaunt’s Library</title>
+                                    <author>
+                                        <forename>Montague Rhodes</forename>
+                                        <surname>James</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>Cambridge Antiquarian Society</publisher>
+                                        <date>1899</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 65.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/T8NKULXR" type="book" xml:id="James1912a">
+                                <monogr>
+                                    <title level="m">A Descriptive Catalogue of the Manuscripts in the Library of Corpus Christi College, Cambridge,
+                                        vol. I</title>
+                                    <extent>2</extent>
+                                    <author>
+                                        <forename>M. R. (Montague Rhodes)</forename>
+                                        <surname>James</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">1</biblScope>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1912</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. xxxvi.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/ZZ63K2JM" type="book" xml:id="James1912b">
+                                <monogr>
+                                    <title level="m">A Descriptive Catalogue of the Manuscripts in the Library of Corpus Christi College Cambridge,
+                                        vol. II</title>
+                                    <extent>2</extent>
+                                    <author>
+                                        <forename>M. R.</forename>
+                                        <surname>James</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">2</biblScope>
+                                        <publisher>Cambridge University Library</publisher>
+                                        <date>1912</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 238-239 (no. 388).</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/KK73Z39J" type="book" xml:id="Vising1923">
+                                <monogr>
+                                    <title level="m">Anglo-Norman Language and Literature</title>
+                                    <author>
+                                        <forename>Johan</forename>
+                                        <surname>Vising</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>Oxford University Press</publisher>
+                                        <date>1923</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 68, no. 319 (as ‘MS 254’).</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/R29VLB26" type="book" xml:id="Thorndike1963">
+                                <monogr>
+                                    <title level="m">A Catalogue of Incipits of Medieval Scientific Writings in Latin: Revised and Augmented
+                                        Edition</title>
+                                    <author>
+                                        <forename>Lynn</forename>
+                                        <surname>Thorndike</surname>
+                                    </author>
+                                    <author>
+                                        <forename>Pearl</forename>
+                                        <surname>Kibre</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>The Mediaeval Academy of America</publisher>
+                                        <date>1963</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Mediaeval Academy of America Publication</title>
+                                    <biblScope unit="volume">29</biblScope>
+                                </series>
+                                <note>col. 1610.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/CWLTHGXJ" type="book" xml:id="Tony_Hunt1990">
+                                <monogr>
+                                    <title level="m">Popular Medicine in Thirteenth-Century England: Introduction and Texts</title>
+                                    <author>
+                                        <forename>Tony</forename>
+                                        <surname>Hunt</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>Brewer</publisher>
+                                        <date>1990</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 90, 109.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/KRW33GLS" type="thesis" xml:id="Valentine1990">
+                                <monogr>
+                                    <title level="m">An Edition of the Anglo-Norman Content of Five Medical Manuscripts of the Fourteenth and
+                                        Fifteenth Centuries</title>
+                                    <author>
+                                        <forename>Elizabeth Anne</forename>
+                                        <surname>Valentine</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Exeter</pubPlace>
+                                        <date>1990</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 22-23.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/ALC8L9DI" type="book"
+                                xml:id="Corpus_Christi_College_Cambridge_1993">
+                                <monogr>
+                                    <title level="m">Catalogue des manuscrits français de la Bibliothèque Parker (Parker Library), Corpus Christi
+                                        College, Cambridge</title>
+                                    <editor>
+                                        <name>Corpus Christi College (Cambridge)</name>
+                                    </editor>
+                                    <author>
+                                        <forename>Nigel E</forename>
+                                        <surname>Wilkins</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>Corpus Christi College</publisher>
+                                        <date>1993</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 103-105.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/BH6QJ5W4" type="book" xml:id="Hunt1997">
+                                <monogr>
+                                    <title level="m">Anglo-Norman Medicine. Vol. 2: Shorter Treatises.</title>
+                                    <author>
+                                        <forename>Tony</forename>
+                                        <surname>Hunt</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>Brewer</publisher>
+                                        <date>1997</date>
+                                    </imprint>
+                                </monogr>
+                                <note/>
+                                <note>p. 259.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/ZPGG9QD6" type="book" xml:id="Dean1999">
+                                <monogr>
+                                    <title level="m">Anglo-Norman literature: A Guide to Texts and Manuscripts</title>
+                                    <author>
+                                        <forename>Ruth J.</forename>
+                                        <surname>Dean</surname>
+                                    </author>
+                                    <author>
+                                        <forename>Maureen Barry McCann</forename>
+                                        <surname>Boulton</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>Anglo-Norman Text Society</publisher>
+                                        <date>1999</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Anglo-Norman Text Society Occasional Publications Series</title>
+                                    <biblScope unit="volume">3</biblScope>
+                                </series>
+                                <note>nos 408 and 412.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/GBH7GTSZ" type="bookSection" xml:id="Hunt2000">
+                                <analytic>
+                                    <title level="a">Code-Switching in Medical Texts</title>
+                                    <author>
+                                        <forename>Tony</forename>
+                                        <surname>Hunt</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Multilingualism in Later Medieval Britain</title>
+                                    <editor>
+                                        <forename>D. A.</forename>
+                                        <surname>Trotter</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="page">131–147</biblScope>
+                                        <publisher>Brewer</publisher>
+                                        <date>2000</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 133, 139-42.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/7RAIGUFX" type="book" xml:id="Hunt2001">
+                                <monogr>
+                                    <title level="m">Three Receptaria from Medieval England: The Languages of Medicine in the Fourteenth
+                                        Century</title>
+                                    <author>
+                                        <forename>Tony</forename>
+                                        <surname>Hunt</surname>
+                                    </author>
+                                    <author>
+                                        <forename>Michael</forename>
+                                        <surname>Benskin</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Oxford</pubPlace>
+                                        <publisher>The Society for the Study of Medieval Languages and Literature</publisher>
+                                        <date>2001</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Medium Ævum Monographs</title>
+                                    <biblScope unit="volume">21</biblScope>
+                                </series>
+                                <note>pp. 85-88.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/33P437VR" type="bookSection" xml:id="Hunt2003">
+                                <analytic>
+                                    <title level="a">Anglo-Norman: Past and Future</title>
+                                    <author>
+                                        <forename>Anthony</forename>
+                                        <surname>Hunt</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">The Dawn of the Written Vernacular in Western Europe</title>
+                                    <editor>
+                                        <forename>Michèle</forename>
+                                        <surname>Goyens</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>Werner</forename>
+                                        <surname>Verbeke</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Leuven</pubPlace>
+                                        <biblScope unit="page">379-390</biblScope>
+                                        <publisher>Leuven University Press</publisher>
+                                        <date>2003</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Mediaevalia Lovaniensia</title>
+                                    <biblScope unit="volume">33</biblScope>
+                                </series>
+                                <note>p. 385.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/6TALVKP7" type="bookSection" xml:id="Keiser2004">
+                                <analytic>
+                                    <title level="a">Scientific, Medical and Utilitarian Prose</title>
+                                    <author>
+                                        <forename>George R.</forename>
+                                        <surname>Keiser</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">A Companion to Middle English Prose</title>
+                                    <editor>
+                                        <forename>A. S. G.</forename>
+                                        <surname>Edwards</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Woodbridge</pubPlace>
+                                        <biblScope unit="page">231–247</biblScope>
+                                        <publisher>Brewer</publisher>
+                                        <date>2004</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 243.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/FIZHVIIJ" type="journalArticle" xml:id="Tavormina2007">
+                                <analytic>
+                                    <title level="a">The Middle English Letter of Ipocras</title>
+                                    <idno type="DOI">10.1080/00138380701706526</idno>
+                                    <author>
+                                        <forename>M. Teresa</forename>
+                                        <surname>Tavormina</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">English Studies</title>
+                                    <idno type="ISSN">0013-838X</idno>
+                                    <imprint>
+                                        <biblScope unit="volume">88</biblScope>
+                                        <biblScope unit="issue">6</biblScope>
+                                        <biblScope unit="page">632-652</biblScope>
+                                        <date>2007</date>
+                                        <note type="url">http://dx.doi.org/10.1080/00138380701706526</note>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 367.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/BXIR6I3H" type="journalArticle" xml:id="Hunt">
+                                <analytic>
+                                    <title level="a">The ’Novele cirurgerie’ in MS London, British Library HarIey 2558</title>
+                                    <author>
+                                        <forename>Tony</forename>
+                                        <surname>Hunt</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Zeitschrift für Romanische Philologie</title>
+                                    <imprint>
+                                        <biblScope unit="volume">103</biblScope>
+                                        <biblScope unit="page">271-299</biblScope>
+                                        <date>2009</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 274.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/QNMQTR9K" type="book" xml:id="Rand2009">
+                                <monogr>
+                                    <title level="m">Manuscripts in the Library of Corpus Christi College, Cambridge</title>
+                                    <author>
+                                        <forename>Kari Anne</forename>
+                                        <surname>Rand</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Woodbridge</pubPlace>
+                                        <publisher>Brewer</publisher>
+                                        <date>2009</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">The Index of Middle English Prose</title>
+                                    <biblScope unit="volume">20</biblScope>
+                                </series>
+                                <note>pp. 101-116.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/3DBX3YCY" type="book" xml:id="Hunt2013">
+                                <monogr>
+                                    <title level="m">Writing the Future: Prognostic Texts of Medieval England</title>
+                                    <author>
+                                        <forename>Tony</forename>
+                                        <surname>Hunt</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Paris</pubPlace>
+                                        <publisher>Classiques Garnier</publisher>
+                                        <date>2013</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Textes littéraires du Moyen Âge / Divinatoria</title>
+                                    <biblScope unit="volume">24 / 2</biblScope>
+                                </series>
+                                <note>pp. 243-244.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/3K5PZ7M4" type="book" xml:id="Tavormina2014">
+                                <monogr>
+                                    <title level="m">Uroscopy in Middle English: A Guide to the Texts and Manuscripts</title>
+                                    <author>
+                                        <forename>M. Teresa</forename>
+                                        <surname>Tavormina</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>[Michigan?]</pubPlace>
+                                        <date>2014</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Studies in medieval and renaissance history</title>
+                                    <biblScope unit="volume">3rd series, 11</biblScope>
+                                </series>
+                                <note>pp. 40, 43 (no. 5.2.1), 149.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/2M7AUAR7" type="thesis" xml:id="Guidi2019">
+                                <monogr>
+                                    <title level="m">Due manoscritti veneti inediti del XIV secolo di argomento medico. Analisi comparativa ed
+                                        edizioni della Lettera di Ippocrate a Cesare e delle ricette del Thesaurus pauperum</title>
+                                    <author>
+                                        <forename>Flavia</forename>
+                                        <surname>Guidi</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Pisa</pubPlace>
+                                        <date>2019</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/DJCU8IRM" type="book" xml:id="Tavormina2019">
+                                <monogr>
+                                    <title level="m">The Dome of Uryne: A Reading Edition of Nine Middle English Uroscopies</title>
+                                    <author>
+                                        <forename>M. Teresa</forename>
+                                        <surname>Tavormina</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Oxford</pubPlace>
+                                        <publisher>Oxford University Press</publisher>
+                                        <date>2019</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Early English Text Society, Original Series</title>
+                                    <biblScope unit="volume">354</biblScope>
+                                </series>
+                                <note>pp. xvi, xxxii-xxxv (as ‘Cc’)</note>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass default="false">
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85083064">Medicine</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change status="draft" when="2024-10-31">
+                <persName>Dr Clarck Drieshen, Project Cataloguer in Curious Cures in Cambridge Libraries, Cambridge University Library</persName>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+
+
+    <facsimile>
+        <graphic decls="#document-thumbnail" url="MS-CCCC-00388-000-00001"/>
+        <surface n="front cover, outer" xml:id="page-surface-1">
+            <graphic decls="#downloadImageRights #download" height="6581px" rend="portrait" url="MS-CCCC-00388-000-00001" width="4452px"/>
+        </surface>
+        <surface n="front cover, inner" xml:id="page-surface-2">
+            <graphic decls="#downloadImageRights #download" height="6564px" rend="portrait" url="MS-CCCC-00388-000-00002" width="4162px"/>
+        </surface>
+        <surface n="i recto" xml:id="page-surface-3">
+            <graphic decls="#downloadImageRights #download" height="6339px" rend="portrait" url="MS-CCCC-00388-000-00003" width="4051px"/>
+        </surface>
+        <surface n="i verso" xml:id="page-surface-4">
+            <graphic decls="#downloadImageRights #download" height="6330px" rend="portrait" url="MS-CCCC-00388-000-00004" width="3963px"/>
+        </surface>
+        <surface n="ii recto" xml:id="page-surface-5">
+            <graphic decls="#downloadImageRights #download" height="6321px" rend="portrait" url="MS-CCCC-00388-000-00005" width="4009px"/>
+        </surface>
+        <surface n="ii verso" xml:id="page-surface-6">
+            <graphic decls="#downloadImageRights #download" height="6318px" rend="portrait" url="MS-CCCC-00388-000-00006" width="3987px"/>
+        </surface>
+        <surface n="iii recto" xml:id="page-surface-7">
+            <graphic decls="#downloadImageRights #download" height="6314px" rend="portrait" url="MS-CCCC-00388-000-00007" width="4015px"/>
+        </surface>
+        <surface n="iii verso" xml:id="page-surface-8">
+            <graphic decls="#downloadImageRights #download" height="6318px" rend="portrait" url="MS-CCCC-00388-000-00008" width="4018px"/>
+        </surface>
+        <surface n="1r" xml:id="page-surface-9">
+            <graphic decls="#downloadImageRights #download" height="6123px" rend="portrait" url="MS-CCCC-00388-000-00009" width="3944px"/>
+        </surface>
+        <surface n="1v" xml:id="page-surface-10">
+            <graphic decls="#downloadImageRights #download" height="6162px" rend="portrait" url="MS-CCCC-00388-000-00010" width="3784px"/>
+        </surface>
+        <surface n="2r" xml:id="page-surface-11">
+            <graphic decls="#downloadImageRights #download" height="6183px" rend="portrait" url="MS-CCCC-00388-000-00011" width="3843px"/>
+        </surface>
+        <surface n="2v" xml:id="page-surface-12">
+            <graphic decls="#downloadImageRights #download" height="6162px" rend="portrait" url="MS-CCCC-00388-000-00012" width="3844px"/>
+        </surface>
+        <surface n="3r" xml:id="page-surface-13">
+            <graphic decls="#downloadImageRights #download" height="6177px" rend="portrait" url="MS-CCCC-00388-000-00013" width="3836px"/>
+        </surface>
+        <surface n="3v" xml:id="page-surface-14">
+            <graphic decls="#downloadImageRights #download" height="6180px" rend="portrait" url="MS-CCCC-00388-000-00014" width="3838px"/>
+        </surface>
+        <surface n="4r" xml:id="page-surface-15">
+            <graphic decls="#downloadImageRights #download" height="6189px" rend="portrait" url="MS-CCCC-00388-000-00015" width="3878px"/>
+        </surface>
+        <surface n="4v" xml:id="page-surface-16">
+            <graphic decls="#downloadImageRights #download" height="6198px" rend="portrait" url="MS-CCCC-00388-000-00016" width="3844px"/>
+        </surface>
+        <surface n="5r" xml:id="page-surface-17">
+            <graphic decls="#downloadImageRights #download" height="6233px" rend="portrait" url="MS-CCCC-00388-000-00017" width="3891px"/>
+        </surface>
+        <surface n="5v" xml:id="page-surface-18">
+            <graphic decls="#downloadImageRights #download" height="6239px" rend="portrait" url="MS-CCCC-00388-000-00018" width="3868px"/>
+        </surface>
+        <surface n="6r" xml:id="page-surface-19">
+            <graphic decls="#downloadImageRights #download" height="6200px" rend="portrait" url="MS-CCCC-00388-000-00019" width="3926px"/>
+        </surface>
+        <surface n="6v" xml:id="page-surface-20">
+            <graphic decls="#downloadImageRights #download" height="6204px" rend="portrait" url="MS-CCCC-00388-000-00020" width="3886px"/>
+        </surface>
+        <surface n="7r" xml:id="page-surface-21">
+            <graphic decls="#downloadImageRights #download" height="6236px" rend="portrait" url="MS-CCCC-00388-000-00021" width="3920px"/>
+        </surface>
+        <surface n="7v" xml:id="page-surface-22">
+            <graphic decls="#downloadImageRights #download" height="6240px" rend="portrait" url="MS-CCCC-00388-000-00022" width="3868px"/>
+        </surface>
+        <surface n="8r" xml:id="page-surface-23">
+            <graphic decls="#downloadImageRights #download" height="6248px" rend="portrait" url="MS-CCCC-00388-000-00023" width="3944px"/>
+        </surface>
+        <surface n="8v" xml:id="page-surface-24">
+            <graphic decls="#downloadImageRights #download" height="6227px" rend="portrait" url="MS-CCCC-00388-000-00024" width="3880px"/>
+        </surface>
+        <surface n="9r" xml:id="page-surface-25">
+            <graphic decls="#downloadImageRights #download" height="6189px" rend="portrait" url="MS-CCCC-00388-000-00025" width="3883px"/>
+        </surface>
+        <surface n="9v" xml:id="page-surface-26">
+            <graphic decls="#downloadImageRights #download" height="6179px" rend="portrait" url="MS-CCCC-00388-000-00026" width="3742px"/>
+        </surface>
+        <surface n="10r" xml:id="page-surface-27">
+            <graphic decls="#downloadImageRights #download" height="6213px" rend="portrait" url="MS-CCCC-00388-000-00027" width="3890px"/>
+        </surface>
+        <surface n="10v" xml:id="page-surface-28">
+            <graphic decls="#downloadImageRights #download" height="6228px" rend="portrait" url="MS-CCCC-00388-000-00028" width="3784px"/>
+        </surface>
+        <surface n="11r" xml:id="page-surface-29">
+            <graphic decls="#downloadImageRights #download" height="6147px" rend="portrait" url="MS-CCCC-00388-000-00029" width="3848px"/>
+        </surface>
+        <surface n="11v" xml:id="page-surface-30">
+            <graphic decls="#downloadImageRights #download" height="6167px" rend="portrait" url="MS-CCCC-00388-000-00030" width="3845px"/>
+        </surface>
+        <surface n="12r" xml:id="page-surface-31">
+            <graphic decls="#downloadImageRights #download" height="6195px" rend="portrait" url="MS-CCCC-00388-000-00031" width="3865px"/>
+        </surface>
+        <surface n="12v" xml:id="page-surface-32">
+            <graphic decls="#downloadImageRights #download" height="6223px" rend="portrait" url="MS-CCCC-00388-000-00032" width="3826px"/>
+        </surface>
+        <surface n="13r" xml:id="page-surface-33">
+            <graphic decls="#downloadImageRights #download" height="6237px" rend="portrait" url="MS-CCCC-00388-000-00033" width="3853px"/>
+        </surface>
+        <surface n="13v" xml:id="page-surface-34">
+            <graphic decls="#downloadImageRights #download" height="6252px" rend="portrait" url="MS-CCCC-00388-000-00034" width="3803px"/>
+        </surface>
+        <surface n="14r" xml:id="page-surface-35">
+            <graphic decls="#downloadImageRights #download" height="6177px" rend="portrait" url="MS-CCCC-00388-000-00035" width="3836px"/>
+        </surface>
+        <surface n="14v" xml:id="page-surface-36">
+            <graphic decls="#downloadImageRights #download" height="6186px" rend="portrait" url="MS-CCCC-00388-000-00036" width="3796px"/>
+        </surface>
+        <surface n="15r" xml:id="page-surface-37">
+            <graphic decls="#downloadImageRights #download" height="6231px" rend="portrait" url="MS-CCCC-00388-000-00037" width="3794px"/>
+        </surface>
+        <surface n="15v" xml:id="page-surface-38">
+            <graphic decls="#downloadImageRights #download" height="6234px" rend="portrait" url="MS-CCCC-00388-000-00038" width="3766px"/>
+        </surface>
+        <surface n="16r" xml:id="page-surface-39">
+            <graphic decls="#downloadImageRights #download" height="6201px" rend="portrait" url="MS-CCCC-00388-000-00039" width="3854px"/>
+        </surface>
+        <surface n="16v" xml:id="page-surface-40">
+            <graphic decls="#downloadImageRights #download" height="6216px" rend="portrait" url="MS-CCCC-00388-000-00040" width="3796px"/>
+        </surface>
+        <surface n="17r" xml:id="page-surface-41">
+            <graphic decls="#downloadImageRights #download" height="6183px" rend="portrait" url="MS-CCCC-00388-000-00041" width="3799px"/>
+        </surface>
+        <surface n="17v" xml:id="page-surface-42">
+            <graphic decls="#downloadImageRights #download" height="6185px" rend="portrait" url="MS-CCCC-00388-000-00042" width="3748px"/>
+        </surface>
+        <surface n="18r" xml:id="page-surface-43">
+            <graphic decls="#downloadImageRights #download" height="6206px" rend="portrait" url="MS-CCCC-00388-000-00043" width="3836px"/>
+        </surface>
+        <surface n="18v" xml:id="page-surface-44">
+            <graphic decls="#downloadImageRights #download" height="6211px" rend="portrait" url="MS-CCCC-00388-000-00044" width="3760px"/>
+        </surface>
+        <surface n="19r" xml:id="page-surface-45">
+            <graphic decls="#downloadImageRights #download" height="6189px" rend="portrait" url="MS-CCCC-00388-000-00045" width="3824px"/>
+        </surface>
+        <surface n="19v" xml:id="page-surface-46">
+            <graphic decls="#downloadImageRights #download" height="6210px" rend="portrait" url="MS-CCCC-00388-000-00046" width="3784px"/>
+        </surface>
+        <surface n="20r" xml:id="page-surface-47">
+            <graphic decls="#downloadImageRights #download" height="6207px" rend="portrait" url="MS-CCCC-00388-000-00047" width="3830px"/>
+        </surface>
+        <surface n="20v" xml:id="page-surface-48">
+            <graphic decls="#downloadImageRights #download" height="6239px" rend="portrait" url="MS-CCCC-00388-000-00048" width="3803px"/>
+        </surface>
+        <surface n="21r" xml:id="page-surface-49">
+            <graphic decls="#downloadImageRights #download" height="6213px" rend="portrait" url="MS-CCCC-00388-000-00049" width="3866px"/>
+        </surface>
+        <surface n="21v" xml:id="page-surface-50">
+            <graphic decls="#downloadImageRights #download" height="6222px" rend="portrait" url="MS-CCCC-00388-000-00050" width="3797px"/>
+        </surface>
+        <surface n="22r" xml:id="page-surface-51">
+            <graphic decls="#downloadImageRights #download" height="6213px" rend="portrait" url="MS-CCCC-00388-000-00051" width="3860px"/>
+        </surface>
+        <surface n="22v" xml:id="page-surface-52">
+            <graphic decls="#downloadImageRights #download" height="6228px" rend="portrait" url="MS-CCCC-00388-000-00052" width="3815px"/>
+        </surface>
+        <surface n="23r" xml:id="page-surface-53">
+            <graphic decls="#downloadImageRights #download" height="6249px" rend="portrait" url="MS-CCCC-00388-000-00053" width="3841px"/>
+        </surface>
+        <surface n="23v" xml:id="page-surface-54">
+            <graphic decls="#downloadImageRights #download" height="6264px" rend="portrait" url="MS-CCCC-00388-000-00054" width="3809px"/>
+        </surface>
+        <surface n="24r" xml:id="page-surface-55">
+            <graphic decls="#downloadImageRights #download" height="6231px" rend="portrait" url="MS-CCCC-00388-000-00055" width="3788px"/>
+        </surface>
+        <surface n="24v" xml:id="page-surface-56">
+            <graphic decls="#downloadImageRights #download" height="6246px" rend="portrait" url="MS-CCCC-00388-000-00056" width="3767px"/>
+        </surface>
+        <surface n="25r" xml:id="page-surface-57">
+            <graphic decls="#downloadImageRights #download" height="6219px" rend="portrait" url="MS-CCCC-00388-000-00057" width="3824px"/>
+        </surface>
+        <surface n="25v" xml:id="page-surface-58">
+            <graphic decls="#downloadImageRights #download" height="6240px" rend="portrait" url="MS-CCCC-00388-000-00058" width="3737px"/>
+        </surface>
+        <surface n="26r" xml:id="page-surface-59">
+            <graphic decls="#downloadImageRights #download" height="6201px" rend="portrait" url="MS-CCCC-00388-000-00059" width="3818px"/>
+        </surface>
+        <surface n="26v" xml:id="page-surface-60">
+            <graphic decls="#downloadImageRights #download" height="6186px" rend="portrait" url="MS-CCCC-00388-000-00060" width="3737px"/>
+        </surface>
+        <surface n="27r" xml:id="page-surface-61">
+            <graphic decls="#downloadImageRights #download" height="6201px" rend="portrait" url="MS-CCCC-00388-000-00061" width="3829px"/>
+        </surface>
+        <surface n="27v" xml:id="page-surface-62">
+            <graphic decls="#downloadImageRights #download" height="6211px" rend="portrait" url="MS-CCCC-00388-000-00062" width="3797px"/>
+        </surface>
+        <surface n="28r" xml:id="page-surface-63">
+            <graphic decls="#downloadImageRights #download" height="6237px" rend="portrait" url="MS-CCCC-00388-000-00063" width="3842px"/>
+        </surface>
+        <surface n="28v" xml:id="page-surface-64">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-CCCC-00388-000-00064" width="3791px"/>
+        </surface>
+        <surface n="29r" xml:id="page-surface-65">
+            <graphic decls="#downloadImageRights #download" height="6189px" rend="portrait" url="MS-CCCC-00388-000-00065" width="3829px"/>
+        </surface>
+        <surface n="29v" xml:id="page-surface-66">
+            <graphic decls="#downloadImageRights #download" height="6216px" rend="portrait" url="MS-CCCC-00388-000-00066" width="3835px"/>
+        </surface>
+        <surface n="30r" xml:id="page-surface-67">
+            <graphic decls="#downloadImageRights #download" height="6225px" rend="portrait" url="MS-CCCC-00388-000-00067" width="3799px"/>
+        </surface>
+        <surface n="30v" xml:id="page-surface-68">
+            <graphic decls="#downloadImageRights #download" height="6228px" rend="portrait" url="MS-CCCC-00388-000-00068" width="3791px"/>
+        </surface>
+        <surface n="31r" xml:id="page-surface-69">
+            <graphic decls="#downloadImageRights #download" height="6231px" rend="portrait" url="MS-CCCC-00388-000-00069" width="3835px"/>
+        </surface>
+        <surface n="31v" xml:id="page-surface-70">
+            <graphic decls="#downloadImageRights #download" height="6240px" rend="portrait" url="MS-CCCC-00388-000-00070" width="3808px"/>
+        </surface>
+        <surface n="32r" xml:id="page-surface-71">
+            <graphic decls="#downloadImageRights #download" height="6207px" rend="portrait" url="MS-CCCC-00388-000-00071" width="3811px"/>
+        </surface>
+        <surface n="32v" xml:id="page-surface-72">
+            <graphic decls="#downloadImageRights #download" height="6210px" rend="portrait" url="MS-CCCC-00388-000-00072" width="3802px"/>
+        </surface>
+        <surface n="33r" xml:id="page-surface-73">
+            <graphic decls="#downloadImageRights #download" height="6231px" rend="portrait" url="MS-CCCC-00388-000-00073" width="3817px"/>
+        </surface>
+        <surface n="33v" xml:id="page-surface-74">
+            <graphic decls="#downloadImageRights #download" height="6246px" rend="portrait" url="MS-CCCC-00388-000-00074" width="3809px"/>
+        </surface>
+        <surface n="34r" xml:id="page-surface-75">
+            <graphic decls="#downloadImageRights #download" height="6213px" rend="portrait" url="MS-CCCC-00388-000-00075" width="3769px"/>
+        </surface>
+        <surface n="34v" xml:id="page-surface-76">
+            <graphic decls="#downloadImageRights #download" height="6240px" rend="portrait" url="MS-CCCC-00388-000-00076" width="3766px"/>
+        </surface>
+        <surface n="35a recto" xml:id="page-surface-77">
+            <graphic decls="#downloadImageRights #download" height="6087px" rend="portrait" url="MS-CCCC-00388-000-00077" width="3883px"/>
+        </surface>
+        <surface n="35a verso" xml:id="page-surface-78">
+            <graphic decls="#downloadImageRights #download" height="6090px" rend="portrait" url="MS-CCCC-00388-000-00078" width="3749px"/>
+        </surface>
+        <surface n="35r" xml:id="page-surface-79">
+            <graphic decls="#downloadImageRights #download" height="6254px" rend="portrait" url="MS-CCCC-00388-000-00079" width="3823px"/>
+        </surface>
+        <surface n="35v" xml:id="page-surface-80">
+            <graphic decls="#downloadImageRights #download" height="6301px" rend="portrait" url="MS-CCCC-00388-000-00080" width="3798px"/>
+        </surface>
+        <surface n="36r" xml:id="page-surface-81">
+            <graphic decls="#downloadImageRights #download" height="6189px" rend="portrait" url="MS-CCCC-00388-000-00081" width="3811px"/>
+        </surface>
+        <surface n="36v" xml:id="page-surface-82">
+            <graphic decls="#downloadImageRights #download" height="6234px" rend="portrait" url="MS-CCCC-00388-000-00082" width="3766px"/>
+        </surface>
+        <surface n="37r" xml:id="page-surface-83">
+            <graphic decls="#downloadImageRights #download" height="6214px" rend="portrait" url="MS-CCCC-00388-000-00083" width="3829px"/>
+        </surface>
+        <surface n="37v" xml:id="page-surface-84">
+            <graphic decls="#downloadImageRights #download" height="6198px" rend="portrait" url="MS-CCCC-00388-000-00084" width="3833px"/>
+        </surface>
+        <surface n="38r" xml:id="page-surface-85">
+            <graphic decls="#downloadImageRights #download" height="6219px" rend="portrait" url="MS-CCCC-00388-000-00085" width="3805px"/>
+        </surface>
+        <surface n="38v" xml:id="page-surface-86">
+            <graphic decls="#downloadImageRights #download" height="6216px" rend="portrait" url="MS-CCCC-00388-000-00086" width="3809px"/>
+        </surface>
+        <surface n="39r" xml:id="page-surface-87">
+            <graphic decls="#downloadImageRights #download" height="6159px" rend="portrait" url="MS-CCCC-00388-000-00087" width="3865px"/>
+        </surface>
+        <surface n="39v" xml:id="page-surface-88">
+            <graphic decls="#downloadImageRights #download" height="6162px" rend="portrait" url="MS-CCCC-00388-000-00088" width="3845px"/>
+        </surface>
+        <surface n="40r" xml:id="page-surface-89">
+            <graphic decls="#downloadImageRights #download" height="6171px" rend="portrait" url="MS-CCCC-00388-000-00089" width="3870px"/>
+        </surface>
+        <surface n="40v" xml:id="page-surface-90">
+            <graphic decls="#downloadImageRights #download" height="6180px" rend="portrait" url="MS-CCCC-00388-000-00090" width="3851px"/>
+        </surface>
+        <surface n="41r" xml:id="page-surface-91">
+            <graphic decls="#downloadImageRights #download" height="6189px" rend="portrait" url="MS-CCCC-00388-000-00091" width="3858px"/>
+        </surface>
+        <surface n="41v" xml:id="page-surface-92">
+            <graphic decls="#downloadImageRights #download" height="6175px" rend="portrait" url="MS-CCCC-00388-000-00092" width="3815px"/>
+        </surface>
+        <surface n="42r" xml:id="page-surface-93">
+            <graphic decls="#downloadImageRights #download" height="6235px" rend="portrait" url="MS-CCCC-00388-000-00093" width="3828px"/>
+        </surface>
+        <surface n="42v" xml:id="page-surface-94">
+            <graphic decls="#downloadImageRights #download" height="6228px" rend="portrait" url="MS-CCCC-00388-000-00094" width="3845px"/>
+        </surface>
+        <surface n="43r" xml:id="page-surface-95">
+            <graphic decls="#downloadImageRights #download" height="6200px" rend="portrait" url="MS-CCCC-00388-000-00095" width="3841px"/>
+        </surface>
+        <surface n="43v" xml:id="page-surface-96">
+            <graphic decls="#downloadImageRights #download" height="6216px" rend="portrait" url="MS-CCCC-00388-000-00096" width="3857px"/>
+        </surface>
+        <surface n="44r" xml:id="page-surface-97">
+            <graphic decls="#downloadImageRights #download" height="6194px" rend="portrait" url="MS-CCCC-00388-000-00097" width="3828px"/>
+        </surface>
+        <surface n="44v" xml:id="page-surface-98">
+            <graphic decls="#downloadImageRights #download" height="6198px" rend="portrait" url="MS-CCCC-00388-000-00098" width="3815px"/>
+        </surface>
+        <surface n="45r" xml:id="page-surface-99">
+            <graphic decls="#downloadImageRights #download" height="6235px" rend="portrait" url="MS-CCCC-00388-000-00099" width="3791px"/>
+        </surface>
+        <surface n="45v" xml:id="page-surface-100">
+            <graphic decls="#downloadImageRights #download" height="6234px" rend="portrait" url="MS-CCCC-00388-000-00100" width="3766px"/>
+        </surface>
+        <surface n="46r" xml:id="page-surface-101">
+            <graphic decls="#downloadImageRights #download" height="6270px" rend="portrait" url="MS-CCCC-00388-000-00101" width="3799px"/>
+        </surface>
+        <surface n="46v" xml:id="page-surface-102">
+            <graphic decls="#downloadImageRights #download" height="6269px" rend="portrait" url="MS-CCCC-00388-000-00102" width="3798px"/>
+        </surface>
+        <surface n="47r" xml:id="page-surface-103">
+            <graphic decls="#downloadImageRights #download" height="6224px" rend="portrait" url="MS-CCCC-00388-000-00103" width="3829px"/>
+        </surface>
+        <surface n="47v" xml:id="page-surface-104">
+            <graphic decls="#downloadImageRights #download" height="6197px" rend="portrait" url="MS-CCCC-00388-000-00104" width="3798px"/>
+        </surface>
+        <surface n="48r" xml:id="page-surface-105">
+            <graphic decls="#downloadImageRights #download" height="6201px" rend="portrait" url="MS-CCCC-00388-000-00105" width="3853px"/>
+        </surface>
+        <surface n="48v" xml:id="page-surface-106">
+            <graphic decls="#downloadImageRights #download" height="6216px" rend="portrait" url="MS-CCCC-00388-000-00106" width="3871px"/>
+        </surface>
+        <surface n="49r" xml:id="page-surface-107">
+            <graphic decls="#downloadImageRights #download" height="6178px" rend="portrait" url="MS-CCCC-00388-000-00107" width="3756px"/>
+        </surface>
+        <surface n="49v" xml:id="page-surface-108">
+            <graphic decls="#downloadImageRights #download" height="6189px" rend="portrait" url="MS-CCCC-00388-000-00108" width="3889px"/>
+        </surface>
+        <surface n="50r" xml:id="page-surface-109">
+            <graphic decls="#downloadImageRights #download" height="6152px" rend="portrait" url="MS-CCCC-00388-000-00109" width="3828px"/>
+        </surface>
+        <surface n="50v" xml:id="page-surface-110">
+            <graphic decls="#downloadImageRights #download" height="6167px" rend="portrait" url="MS-CCCC-00388-000-00110" width="3846px"/>
+        </surface>
+        <surface n="51r" xml:id="page-surface-111">
+            <graphic decls="#downloadImageRights #download" height="6172px" rend="portrait" url="MS-CCCC-00388-000-00111" width="3865px"/>
+        </surface>
+        <surface n="51v" xml:id="page-surface-112">
+            <graphic decls="#downloadImageRights #download" height="6174px" rend="portrait" url="MS-CCCC-00388-000-00112" width="3978px"/>
+        </surface>
+        <surface n="52r" xml:id="page-surface-113">
+            <graphic decls="#downloadImageRights #download" height="6159px" rend="portrait" url="MS-CCCC-00388-000-00113" width="3942px"/>
+        </surface>
+        <surface n="52v" xml:id="page-surface-114">
+            <graphic decls="#downloadImageRights #download" height="6174px" rend="portrait" url="MS-CCCC-00388-000-00114" width="3979px"/>
+        </surface>
+        <surface n="53r" xml:id="page-surface-115">
+            <graphic decls="#downloadImageRights #download" height="6087px" rend="portrait" url="MS-CCCC-00388-000-00115" width="3919px"/>
+        </surface>
+        <surface n="53v" xml:id="page-surface-116">
+            <graphic decls="#downloadImageRights #download" height="6072px" rend="portrait" url="MS-CCCC-00388-000-00116" width="3958px"/>
+        </surface>
+        <surface n="54r" xml:id="page-surface-117">
+            <graphic decls="#downloadImageRights #download" height="6010px" rend="portrait" url="MS-CCCC-00388-000-00117" width="3961px"/>
+        </surface>
+        <surface n="54v" xml:id="page-surface-118">
+            <graphic decls="#downloadImageRights #download" height="6025px" rend="portrait" url="MS-CCCC-00388-000-00118" width="4007px"/>
+        </surface>
+        <surface n="iv recto" xml:id="page-surface-119">
+            <graphic decls="#downloadImageRights #download" height="6332px" rend="portrait" url="MS-CCCC-00388-000-00119" width="3997px"/>
+        </surface>
+        <surface n="iv verso" xml:id="page-surface-120">
+            <graphic decls="#downloadImageRights #download" height="6342px" rend="portrait" url="MS-CCCC-00388-000-00120" width="3977px"/>
+        </surface>
+        <surface n="v recto" xml:id="page-surface-121">
+            <graphic decls="#downloadImageRights #download" height="6296px" rend="portrait" url="MS-CCCC-00388-000-00121" width="3895px"/>
+        </surface>
+        <surface n="v verso" xml:id="page-surface-122">
+            <graphic decls="#downloadImageRights #download" height="6318px" rend="portrait" url="MS-CCCC-00388-000-00122" width="4037px"/>
+        </surface>
+        <surface n="vi recto" xml:id="page-surface-123">
+            <graphic decls="#downloadImageRights #download" height="6291px" rend="portrait" url="MS-CCCC-00388-000-00123" width="3961px"/>
+        </surface>
+        <surface n="vi verso" xml:id="page-surface-124">
+            <graphic decls="#downloadImageRights #download" height="6349px" rend="portrait" url="MS-CCCC-00388-000-00124" width="4015px"/>
+        </surface>
+        <surface n="rear cover, inner" xml:id="page-surface-125">
+            <graphic decls="#downloadImageRights #download" height="6584px" rend="portrait" url="MS-CCCC-00388-000-00125" width="4147px"/>
+        </surface>
+        <surface n="rear cover, outer" xml:id="page-surface-126">
+            <graphic decls="#downloadImageRights #download" height="6588px" rend="portrait" url="MS-CCCC-00388-000-00126" width="4390px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#page-surface-1" n="front cover, outer" xml:id="page-pb-1"/>
+                <pb facs="#page-surface-2" n="front cover, inner" xml:id="page-pb-2"/>
+                <pb facs="#page-surface-3" n="i recto" xml:id="page-pb-3"/>
+                <pb facs="#page-surface-4" n="i verso" xml:id="page-pb-4"/>
+                <pb facs="#page-surface-5" n="ii recto" xml:id="page-pb-5"/>
+                <pb facs="#page-surface-6" n="ii verso" xml:id="page-pb-6"/>
+                <pb facs="#page-surface-7" n="iii recto" xml:id="page-pb-7"/>
+                <pb facs="#page-surface-8" n="iii verso" xml:id="page-pb-8"/>
+                <pb facs="#page-surface-9" n="1r" xml:id="page-pb-9"/>
+                <pb facs="#page-surface-10" n="1v" xml:id="page-pb-10"/>
+                <pb facs="#page-surface-11" n="2r" xml:id="page-pb-11"/>
+                <pb facs="#page-surface-12" n="2v" xml:id="page-pb-12"/>
+                <pb facs="#page-surface-13" n="3r" xml:id="page-pb-13"/>
+                <pb facs="#page-surface-14" n="3v" xml:id="page-pb-14"/>
+                <pb facs="#page-surface-15" n="4r" xml:id="page-pb-15"/>
+                <pb facs="#page-surface-16" n="4v" xml:id="page-pb-16"/>
+                <pb facs="#page-surface-17" n="5r" xml:id="page-pb-17"/>
+                <pb facs="#page-surface-18" n="5v" xml:id="page-pb-18"/>
+                <pb facs="#page-surface-19" n="6r" xml:id="page-pb-19"/>
+                <pb facs="#page-surface-20" n="6v" xml:id="page-pb-20"/>
+                <pb facs="#page-surface-21" n="7r" xml:id="page-pb-21"/>
+                <pb facs="#page-surface-22" n="7v" xml:id="page-pb-22"/>
+                <pb facs="#page-surface-23" n="8r" xml:id="page-pb-23"/>
+                <pb facs="#page-surface-24" n="8v" xml:id="page-pb-24"/>
+                <pb facs="#page-surface-25" n="9r" xml:id="page-pb-25"/>
+                <pb facs="#page-surface-26" n="9v" xml:id="page-pb-26"/>
+                <pb facs="#page-surface-27" n="10r" xml:id="page-pb-27"/>
+                <pb facs="#page-surface-28" n="10v" xml:id="page-pb-28"/>
+                <pb facs="#page-surface-29" n="11r" xml:id="page-pb-29"/>
+                <pb facs="#page-surface-30" n="11v" xml:id="page-pb-30"/>
+                <pb facs="#page-surface-31" n="12r" xml:id="page-pb-31"/>
+                <pb facs="#page-surface-32" n="12v" xml:id="page-pb-32"/>
+                <pb facs="#page-surface-33" n="13r" xml:id="page-pb-33"/>
+                <pb facs="#page-surface-34" n="13v" xml:id="page-pb-34"/>
+                <pb facs="#page-surface-35" n="14r" xml:id="page-pb-35"/>
+                <pb facs="#page-surface-36" n="14v" xml:id="page-pb-36"/>
+                <pb facs="#page-surface-37" n="15r" xml:id="page-pb-37"/>
+                <pb facs="#page-surface-38" n="15v" xml:id="page-pb-38"/>
+                <pb facs="#page-surface-39" n="16r" xml:id="page-pb-39"/>
+                <pb facs="#page-surface-40" n="16v" xml:id="page-pb-40"/>
+                <pb facs="#page-surface-41" n="17r" xml:id="page-pb-41"/>
+                <pb facs="#page-surface-42" n="17v" xml:id="page-pb-42"/>
+                <pb facs="#page-surface-43" n="18r" xml:id="page-pb-43"/>
+                <pb facs="#page-surface-44" n="18v" xml:id="page-pb-44"/>
+                <pb facs="#page-surface-45" n="19r" xml:id="page-pb-45"/>
+                <pb facs="#page-surface-46" n="19v" xml:id="page-pb-46"/>
+                <pb facs="#page-surface-47" n="20r" xml:id="page-pb-47"/>
+                <pb facs="#page-surface-48" n="20v" xml:id="page-pb-48"/>
+                <pb facs="#page-surface-49" n="21r" xml:id="page-pb-49"/>
+                <pb facs="#page-surface-50" n="21v" xml:id="page-pb-50"/>
+                <pb facs="#page-surface-51" n="22r" xml:id="page-pb-51"/>
+                <pb facs="#page-surface-52" n="22v" xml:id="page-pb-52"/>
+                <pb facs="#page-surface-53" n="23r" xml:id="page-pb-53"/>
+                <pb facs="#page-surface-54" n="23v" xml:id="page-pb-54"/>
+                <pb facs="#page-surface-55" n="24r" xml:id="page-pb-55"/>
+                <pb facs="#page-surface-56" n="24v" xml:id="page-pb-56"/>
+                <pb facs="#page-surface-57" n="25r" xml:id="page-pb-57"/>
+                <pb facs="#page-surface-58" n="25v" xml:id="page-pb-58"/>
+                <pb facs="#page-surface-59" n="26r" xml:id="page-pb-59"/>
+                <pb facs="#page-surface-60" n="26v" xml:id="page-pb-60"/>
+                <pb facs="#page-surface-61" n="27r" xml:id="page-pb-61"/>
+                <pb facs="#page-surface-62" n="27v" xml:id="page-pb-62"/>
+                <pb facs="#page-surface-63" n="28r" xml:id="page-pb-63"/>
+                <pb facs="#page-surface-64" n="28v" xml:id="page-pb-64"/>
+                <pb facs="#page-surface-65" n="29r" xml:id="page-pb-65"/>
+                <pb facs="#page-surface-66" n="29v" xml:id="page-pb-66"/>
+                <pb facs="#page-surface-67" n="30r" xml:id="page-pb-67"/>
+                <pb facs="#page-surface-68" n="30v" xml:id="page-pb-68"/>
+                <pb facs="#page-surface-69" n="31r" xml:id="page-pb-69"/>
+                <pb facs="#page-surface-70" n="31v" xml:id="page-pb-70"/>
+                <pb facs="#page-surface-71" n="32r" xml:id="page-pb-71"/>
+                <pb facs="#page-surface-72" n="32v" xml:id="page-pb-72"/>
+                <pb facs="#page-surface-73" n="33r" xml:id="page-pb-73"/>
+                <pb facs="#page-surface-74" n="33v" xml:id="page-pb-74"/>
+                <pb facs="#page-surface-75" n="34r" xml:id="page-pb-75"/>
+                <pb facs="#page-surface-76" n="34v" xml:id="page-pb-76"/>
+                <pb facs="#page-surface-77" n="35a recto" xml:id="page-pb-77"/>
+                <pb facs="#page-surface-78" n="35a verso" xml:id="page-pb-78"/>
+                <pb facs="#page-surface-79" n="35r" xml:id="page-pb-79"/>
+                <pb facs="#page-surface-80" n="35v" xml:id="page-pb-80"/>
+                <pb facs="#page-surface-81" n="36r" xml:id="page-pb-81"/>
+                <pb facs="#page-surface-82" n="36v" xml:id="page-pb-82"/>
+                <pb facs="#page-surface-83" n="37r" xml:id="page-pb-83"/>
+                <pb facs="#page-surface-84" n="37v" xml:id="page-pb-84"/>
+                <pb facs="#page-surface-85" n="38r" xml:id="page-pb-85"/>
+                <pb facs="#page-surface-86" n="38v" xml:id="page-pb-86"/>
+                <pb facs="#page-surface-87" n="39r" xml:id="page-pb-87"/>
+                <pb facs="#page-surface-88" n="39v" xml:id="page-pb-88"/>
+                <pb facs="#page-surface-89" n="40r" xml:id="page-pb-89"/>
+                <pb facs="#page-surface-90" n="40v" xml:id="page-pb-90"/>
+                <pb facs="#page-surface-91" n="41r" xml:id="page-pb-91"/>
+                <pb facs="#page-surface-92" n="41v" xml:id="page-pb-92"/>
+                <pb facs="#page-surface-93" n="42r" xml:id="page-pb-93"/>
+                <pb facs="#page-surface-94" n="42v" xml:id="page-pb-94"/>
+                <pb facs="#page-surface-95" n="43r" xml:id="page-pb-95"/>
+                <pb facs="#page-surface-96" n="43v" xml:id="page-pb-96"/>
+                <pb facs="#page-surface-97" n="44r" xml:id="page-pb-97"/>
+                <pb facs="#page-surface-98" n="44v" xml:id="page-pb-98"/>
+                <pb facs="#page-surface-99" n="45r" xml:id="page-pb-99"/>
+                <pb facs="#page-surface-100" n="45v" xml:id="page-pb-100"/>
+                <pb facs="#page-surface-101" n="46r" xml:id="page-pb-101"/>
+                <pb facs="#page-surface-102" n="46v" xml:id="page-pb-102"/>
+                <pb facs="#page-surface-103" n="47r" xml:id="page-pb-103"/>
+                <pb facs="#page-surface-104" n="47v" xml:id="page-pb-104"/>
+                <pb facs="#page-surface-105" n="48r" xml:id="page-pb-105"/>
+                <pb facs="#page-surface-106" n="48v" xml:id="page-pb-106"/>
+                <pb facs="#page-surface-107" n="49r" xml:id="page-pb-107"/>
+                <pb facs="#page-surface-108" n="49v" xml:id="page-pb-108"/>
+                <pb facs="#page-surface-109" n="50r" xml:id="page-pb-109"/>
+                <pb facs="#page-surface-110" n="50v" xml:id="page-pb-110"/>
+                <pb facs="#page-surface-111" n="51r" xml:id="page-pb-111"/>
+                <pb facs="#page-surface-112" n="51v" xml:id="page-pb-112"/>
+                <pb facs="#page-surface-113" n="52r" xml:id="page-pb-113"/>
+                <pb facs="#page-surface-114" n="52v" xml:id="page-pb-114"/>
+                <pb facs="#page-surface-115" n="53r" xml:id="page-pb-115"/>
+                <pb facs="#page-surface-116" n="53v" xml:id="page-pb-116"/>
+                <pb facs="#page-surface-117" n="54r" xml:id="page-pb-117"/>
+                <pb facs="#page-surface-118" n="54v" xml:id="page-pb-118"/>
+                <pb facs="#page-surface-119" n="iv recto" xml:id="page-pb-119"/>
+                <pb facs="#page-surface-120" n="iv verso" xml:id="page-pb-120"/>
+                <pb facs="#page-surface-121" n="v recto" xml:id="page-pb-121"/>
+                <pb facs="#page-surface-122" n="v verso" xml:id="page-pb-122"/>
+                <pb facs="#page-surface-123" n="vi recto" xml:id="page-pb-123"/>
+                <pb facs="#page-surface-124" n="vi verso" xml:id="page-pb-124"/>
+                <pb facs="#page-surface-125" n="rear cover, inner" xml:id="page-pb-125"/>
+                <pb facs="#page-surface-126" n="rear cover, outer" xml:id="page-pb-126"/>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_77976">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, University Library, MS Add. 1880.2</title>
+                <funder>The Polonsky Foundation</funder>
+                <principal>Suzanne Paul</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>University Library</publisher>
+
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made
+                        available for download are licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This
+                        metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+
+            <availability status="restricted" xml:id="watermark">
+               <licence>Cambridge University Library (CC BY-NC 4.0)</licence>
+            </availability>
+         </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-ADD-01880-00002" xml:lang="en">
+                    <msIdentifier>
+                        <institution>University of Cambridge</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Medieval Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, University Library, MS Add. 1880.2</idno>
+                        <altIdentifier type="external">
+                            <idno type="diktyon">Diktyon 12088</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+
+                    <msContents>
+                        <summary>
+                            <seg type="para">This fragment is a single folio, taken probably from an Oktoechos,
+                                containing the <title>Stichera martyrika</title>, a hymn sung during the morning 
+                                office (<hi rend="italic">orthros</hi>), in alternation with a psalm or scriptural verses (<hi rend="italic">stichoi</hi>).</seg>
+                            <seg type="para">The fragment was acquired by Constantin von Tischendorf 
+                                and bought from his heirs by Cambridge University Library in 1876.</seg>
+                            <seg type="para">Dr Matteo Di Franco</seg>
+                        </summary>
+
+                        <textLang mainLang="grc">Greek</textLang>
+
+                        <msItem n="1">
+                            <!--<locus from="1r" to="1v">f. 1r-1v</locus>-->
+                            <title xml:lang="eng">Stichera Martyrika (fragment)</title>
+                            <incipit defective="true">
+                        <locus from="1r" to="1r">f. 1r</locus>
+                                ἔχοντες οἱ ἅγιοι περιβολὴν <supplied>ἐν</supplied> τῶ κόσμω· τὰς βασάνους 
+                                <supplied>τῶν ἀν</supplied>όμων ὑπέμειναν· καὶ 
+                                <supplied>τὴν</supplied> πλάνην τῶν εἰδώλων</incipit>
+                            <explicit defective="true">
+                        <locus from="1v" to="1v">f. 1v</locus>
+                                Λάμπει σή<supplied>μερον ἡ μνήμη</supplied> τῶν ἀθλοφόρων· <supplied>ἔχει γὰρ</supplied> 
+                                καὶ οὐρανόθεν <supplied>ἀπαύγασμα,</supplied> ὁ χορός τῶν ἀγγέλων πανηγυρίζει· 
+                                καὶ τῶν ἀνθρώπων τὸ γένος συνεορτάζει· 
+                                <supplied>ταῖς ἁγίαις αὐ</supplied>τῶν πρεσβίαις Χρίστε <supplied>ὁ Θεὸς, ἐλέ</supplied>ησον ἡμᾶς.
+                                Μαρτθρικόν ἦχος <gap/> φῶς δικαίοις διὰ παν<supplied>τὸς</supplied> 
+                        <gap/> τε <gap/> φασ<gap/> σβέσαντες ὧ<gap/>
+                     </explicit>
+                        </msItem>
+                        
+                    </msContents>
+
+                    <physDesc> 
+                        <objectDesc form="sheet">
+                            <supportDesc material="paper">
+                                <support>
+                                    <material>
+                              <locus from="1r" to="1v">f. 1</locus> 
+                                        paper, folded in <measure type="folding">quarto</measure>. No watermark is visible.
+                                    </material>
+                                </support>
+
+                                <extent>
+                                    <seg type="object">
+                              <objectType>Fragment </objectType>
+                                        (leaf)</seg>
+                                    <seg type="leaf">
+                                        <num type="leaf" value="1">1</num>
+                           </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height quantity="291">291</height>
+                                            <width quantity="183">183</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+
+                                <condition>
+                                    The paper is brittle and has been severely damaged. 
+                                    There are two large holes, some wormholes and the inner margin and part of the inner columns
+                                    are torn away.</condition>  
+                            </supportDesc>
+
+                            <layoutDesc>
+                                <layout columns="2" writtenLines="30"> Two columns; 30 lines.
+                                    <dimensions type="written" unit="mm">
+                                        <height quantity="200">200</height>
+                                        <width max="140" min="130">130-140</width>
+                                    </dimensions>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <handDesc>
+                            <handNote scope="sole" xml:id="hand-1">
+                                <p>The text has been copied in a calligraphic <term type="script">Hodegon-style mixed minuscule</term> script,
+                                    with variable slant, in brown ink. 
+                                    There is moderate variation in letter size.</p>
+                                <p>Syllabic abbreviations and superscript word endings are in use 
+                                    in the ending of lines.
+                                    Breathings are curved, mute <hi rend="italic">iota</hi> is
+                                    absent, with frequent decorative use of the double dot on <hi rend="italic">ypsilon</hi> 
+                                    and accentuation of all <hi rend="italic">nomina sacra</hi>.</p> 
+                                <p>The modern <hi rend="italic">eta</hi>, <hi rend="italic">sigma telikon</hi> and loop <hi rend="italic">epsilon</hi> are present. The <hi rend="italic">beta</hi>
+                                is mostly in u-shape.</p>
+                                <p>Punctuation used includes the middle and upper points, 
+                                    lower commas and full stop.</p>
+                            </handNote>
+                        </handDesc>
+
+                        <additions>
+                            <p>In outer margin of the <locus from="1v" to="1v">verso</locus> a sketch of a sailing boat has been drawn 
+                                by a reader, along with some other scribbles.</p>
+                            <p>A modern hand has added the current classmark and former classmark "T.24" on the upper margin.</p>
+                  </additions>
+                        
+                        <bindingDesc>
+                            <binding calendar="gregorian" when="2019">
+                                <p> The fragment is housed in melinex.</p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+
+                    <history>
+                        <origin>The style of script  
+                            suggests that the manuscript from which this
+                            came was copied between the <origDate calendar="gregorian" notAfter="1600" notBefore="1475">late 15th and 16th century</origDate>.</origin>
+
+                        <provenance>
+                            The fragment was in the possession of the Biblical scholar 
+                            <name key="person_v56713311" ref="http://viaf.org/viaf/56713311" role="fmo" type="person">
+                                <persName type="display">Constantin von Tischendorf (1815-1874)</persName>
+                                <persName type="standard">Tischendorf, Constantin von, 1815-1874</persName>
+                     </name>.
+                        </provenance>
+
+                        <acquisition calendar="gregorian" when="1876">Bought by the University
+                            Library fromTischendorf's executors in 1876.</acquisition>
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source>P. Easterling, <hi rend="italic">Hand-list of the additional Greek manuscripts 
+                                    in the University Library, Cambridge</hi>, in: Scriptorium 16, 1962, pp. 302-323: 308.</source>
+                            </recordHist>
+                            
+                            <availability>
+                                <p>Entry to read in the Library is permitted only on presentation of a valid reader's card. For information on
+                                    eligibility and admissions procedures, see <ref target="https://www.lib.cam.ac.uk/using-library/joining-library">Joining the Library</ref>). For further information on the availability of the manuscript, please contact the
+                                    <ref target="mss@lib.cam.ac.uk">Manuscripts Reading Room</ref>.</p>
+                            </availability>
+                        </adminInfo>
+
+                            <listBibl>
+                                <biblStruct corresp="http://zotero.org/groups/276440/items/SG2KA299" type="journalArticle" xml:id="Easterling1962">
+                                    <analytic>
+                                        <title level="a">Hand-list of the additional Greek
+                                            manuscripts in the University Library, Cambridge</title>
+                                        <author>
+                              <forename>Patricia
+                                                E.</forename>
+                              <surname>Easterling</surname>
+                           </author>
+                                    </analytic>
+                                    <monogr>
+                                        <title level="j">Scriptorium</title>
+                                        <imprint>
+                                            <biblScope unit="volume">16</biblScope>
+                                            <biblScope unit="issue">2</biblScope>
+                                            <biblScope unit="page">302-323</biblScope>
+                                            <date>1962</date>
+                                        </imprint>
+                                    </monogr>
+                                </biblStruct>
+                            </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject
+                            Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <term key="subject_sh85063621">Hymns, Greek</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2020-09-09">
+                <persName>Matteo Di Franco</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+        <graphic decls="#document-thumbnail" rend="portrait" url="MS-ADD-01880-00002-000-00001"/>
+        <surface n="1r" xml:id="i1">
+            <graphic decls="#downloadImageRights #download" height="7936px" rend="portrait" url="MS-ADD-01880-00002-000-00001" width="5077px"/>
+        </surface>
+        <surface n="1v" xml:id="i2">
+            <graphic decls="#downloadImageRights #download" height="7936px" rend="portrait" url="MS-ADD-01880-00002-000-00002" width="5077px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#i1" n="1r" xml:id="pb-1r"/>
+                <pb facs="#i2" n="1v" xml:id="pb-1v"/>
+            </div>
+        </body>
+    </text>
+
+</TEI>

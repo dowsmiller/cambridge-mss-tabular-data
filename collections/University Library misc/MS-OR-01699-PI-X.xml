@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_12276">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, University Library, MS Or. 1699.Π.X</title>
+                <funder>The Polonsky Foundation</funder>
+                <principal>Suzanne Paul</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>University Library</publisher>
+
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made
+                        available for download are licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This
+                        metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+
+            <availability xml:id="watermark" status="restricted"><licence>Cambridge University Library (CC BY-NC 4.0)</licence></availability></publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-OR-01699-Π-X" xml:lang="en">
+                    <msIdentifier>
+                        <institution>University of Cambridge</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Oriental Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, University Library, MS Or. 1699.Π.X</idno>
+                        <altIdentifier type="external">
+                            <idno type="diktyon">Diktyon 12276</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents>
+                        <summary>
+                            <seg type="para">This fragment, which has been variously dated to
+                                between the 6th and the 9th century, is a bifolium from an Acts and
+                                Epistles book in Coptic and Greek. The bulk of the text is Coptic,
+                                including most of the last two chapters of the Letter to Titus and
+                                all of the Letter to Philemon. However, one column of text and seven
+                                lines of the adjacent column are in Greek, containing part of the
+                                Letter to Titus. The Greek text constitutes only 15% of the total,
+                                leaving most of the Coptic text without a Greek counterpart, while
+                                the arrangement does not divide up into corresponding columns
+                                respectively in the two langauges.</seg>
+                            <seg type="para">It has been argued that the Greek text was copied into
+                                the manuscript in error (<bibl>Elliott, 'Greek-Coptic (Sahidic)
+                                    fragment', pp. 183-184</bibl>). However, the fragment has
+                                subsequently been identified as belonging to the same source
+                                manuscript as three other small fragments (<bibl>Aland, <hi rend="italic">Kurzgefasste Liste</hi>, p. 314</bibl>). These
+                                also include Greek text as well as Coptic, from other Epistles,
+                                though again less extensive than the Coptic text.</seg>
+                            <seg type="para">Dr Christopher Wright</seg>
+                        </summary>
+
+                        <textLang mainLang="cop" otherLangs="grc">Coptic and Greek</textLang>
+
+                        <msItem n="1">
+                            <title xml:lang="eng">Acts and Epistles book</title>
+                            <note>The Coptic text of this fragment begins at Titus 2:11 and ends at
+                                Philemon 1:25; the Greek text begins at Titus 2:15 and ends at Titus
+                                3:7</note>
+                            <note>Gregory-Aland 0205 (this fragment); Gregory-Aland <hi rend="italic">l</hi> 1575 (source manuscript)</note>
+                            <filiation>Identified by Aland as belonging to the same original
+                                manuscript as <bibl subtype="external" type="MS">Vienna,
+                                    Österreichische Nationalbibliothek, MS Pap. K. 16.17</bibl>,
+                                    <ref target="https://manuscripts.csntm.org/manuscript/Group/GA_Lect_1575_BNF">Paris, Bibliothèque Nationale de France, MS Copt. 129,11, ff.
+                                    52-53</ref> and <bibl subtype="external" type="MS">London,
+                                    British Library, MS Or. 3579 B (59)</bibl>.</filiation>
+                            <incipit defective="true">Greek: <locus from="1r/2v" to="1r/2v">f. 1r </locus>
+                                <!-- <supplied reason="damage"> -->&lt;περιφρο&gt;<!-- </supplied> -->νε
+                                <!-- <supplied reason="damage"> -->&lt;ίτω.
+                                ὑπομίμν&gt;<!-- </supplied> -->ησκε
+                                αυτου<!-- <supplied reason="damage"> -->&lt;ς
+                                ἀρχαῖ&gt;<!-- </supplied> -->ς εξουσιαις υποτασσεσθαι</incipit>
+                            <explicit defective="true">
+                                <locus from="1r/2v" to="1r/2v">f. 2v</locus> τη εκεινου χαριτι·
+                                κληρονομοι γενηθωμεν κατ’ ελπιδα ζωης αιωνιου. </explicit>
+                        </msItem>
+                    </msContents>
+
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="papyrus">
+                                <support>
+                                    <material>Parchment</material>
+                                </support>
+
+                                <extent>
+                                    <seg type="object">
+                                        <objectType>Fragment </objectType> (bifolium) </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="2" type="leaf">2</measure>
+                                    </seg>
+                                    <seg type="dimensions">
+                                        <dimensions subtype="fullWidth" type="fragment" unit="mm">
+                                            <height quantity="252">252</height>
+                                            <width quantity="229">229</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+
+                                <condition>The upper and lower parts of the bifolium are torn away,
+                                    and the outer edges have also been lost. There is water staining
+                                    and areas of dirt.</condition>
+                            </supportDesc>
+
+                            <layoutDesc>
+                                <layout columns="2" rulingMedium="hardpoint" topLine="along" type="fragment" writtenLines="34">Two columns of 35 lines each.
+                                        <dimensions type="written" unit="mm">
+                                        <height quantity="249">249</height>
+                                        <width quantity="205">205</width>
+                                    </dimensions>
+                                    <seg type="pricking">Pricking does not survive. </seg>
+                                    <seg type="ruling">Ruled in hardpoint. Text is written along the
+                                        lines.</seg>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <handDesc>
+                            <handNote scope="sole" xml:id="hand-1">
+                                <p>The Greek text was copied in <term type="script">Biblical
+                                        majuscule</term> script, with serifs, in brown ink.</p>
+                                <p>Breathings are occasionally present but usually omitted.</p>
+                                <p>Punctuation used includes the middle and upper points.</p>
+                            </handNote>
+                        </handDesc>
+
+                        <decoDesc>
+                            <decoNote type="decInit">The beginnings of sections are marked by
+                                enlarged initials in brown ink, accompanied by small pieces of
+                                ornament, outlined in brown ink with green and red
+                                infill.</decoNote>
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <origin>The manuscript from which the fragment came has been variously dated
+                            to the 9th century (Parker, Aland), the 8th (van Haelst) and tentatively
+                            to the 6th or 7th (Elliott, citing the opinion of J.M. Plumley)</origin>
+
+                        <provenance notAfter="1928" notBefore="1856">Owned by the collector <name key="person_v25444830" role="fmo" type="person">
+                                <persName type="display">Henry Yates Thompson (1838-1928)</persName>
+                                <persName type="standard">Thompson, Henry Yates,
+                                    1838-1928</persName>
+                            </name> (<bibl>van Haelst, <hi rend="italic">Catalogue des papyrus</hi>,
+                                p. 189</bibl>).</provenance>
+
+                        <acquisition>Acquired by <date calendar="gregorian" when="1939-05-29">29
+                                April 1939</date>.</acquisition>
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <p/>
+                            </recordHist>
+                            <availability>
+                                <p>Entry to read in the Library is permitted only on presentation of a valid reader's card. For information on
+                                    eligibility and admissions procedures, see <ref target="https://www.lib.cam.ac.uk/using-library/joining-library">Joining the Library</ref>). For further information on the availability of the manuscript, please contact the
+                                    <ref target="mss@lib.cam.ac.uk">Manuscripts Reading Room</ref>.</p>
+                            </availability>
+                        </adminInfo>
+
+                        <listBibl>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/BDAV2LJK" type="book" xml:id="Haelst1976">
+                                <monogr>
+                                    <title level="m">Catalogue des papyrus littéraires juifs et
+                                        chrétiens</title>
+                                    <author>
+                                        <forename>Joseph van</forename>
+                                        <surname>Haelst</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Paris</pubPlace>
+                                        <publisher>Publications de la Sorbonne</publisher>
+                                        <date>1976</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/732ALNDQ" type="journalArticle" xml:id="Elliott1994">
+                                <analytic>
+                                    <title level="a">A Greek-Coptic (Sahidic) fragment of Titus
+                                        Philemon (0205)</title>
+                                    <author>
+                                        <forename>J. Keith</forename>
+                                        <surname>Elliott</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Novum Testamentum</title>
+                                    <imprint>
+                                        <biblScope unit="volume">36</biblScope>
+                                        <biblScope unit="page">183-195</biblScope>
+                                        <date>1994</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/D45TVTZD" type="bookSection" xml:id="Parker1998">
+                                <analytic>
+                                    <title level="a">Codex Bezae and other Greek New Testament
+                                        Manuscripts in Cambridge University Library</title>
+                                    <author>
+                                        <forename>David</forename>
+                                        <surname>Parker</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Cambridge University Library: The great
+                                        collections</title>
+                                    <editor>
+                                        <forename>Peter</forename>
+                                        <surname>Fox</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="page">33-43</biblScope>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1998</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject
+                            Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85013576">Bible</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2022-02-20">
+                <persName>Christopher Wright</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+        <graphic decls="#document-thumbnail" rend="landscape" url="MS-OR-01699-PI-X-000-00001"/>
+        <surface n="1r/2v" xml:id="i1">
+            <graphic decls="#downloadImageRights #download" height="7220px" rend="landscape" url="MS-OR-01699-PI-X-000-00001" width="8253px"/>
+        </surface>
+        <surface n="1v/2r" xml:id="i2">
+            <graphic decls="#downloadImageRights #download" height="7220px" rend="landscape" url="MS-OR-01699-PI-X-000-00002" width="8253px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#i1" n="1r/2v" xml:id="pb-1r/2v"/>
+                <pb facs="#i2" n="1v/2r" xml:id="pb-1v/2r"/>
+            </div>
+        </body>
+    </text>
+</TEI>

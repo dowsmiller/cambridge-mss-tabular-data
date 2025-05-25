@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_12016">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, Trinity College, MS O.8.7</title>
+                <funder>The Polonsky Foundation</funder>
+                <principal>Suzanne Paul</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>University Library</publisher>
+
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made
+                        available for download are licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This
+                        metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+
+                <availability status="restricted" xml:id="watermark">
+                    <licence>Trinity College, Cambridge (CC BY-NC 4.0)</licence>
+                </availability>
+         </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-TRINITY-O-00008-00007" xml:lang="en">
+                    <msIdentifier>
+                        <institution>Trinity College, Cambridge</institution>
+                        <repository>Trinity College Library</repository>
+                        <collection>Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, Trinity College, MS O.8.7</idno>
+                        <altIdentifier type="internal">
+                            <idno type="james">MS 1382</idno>
+                        </altIdentifier>
+                        <altIdentifier type="external">
+                            <idno type="diktyon">Diktyon 12016</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+
+                    <msContents>
+                        <summary>
+                            <seg type="para">This Greek manuscript contains three texts, by <title>
+                                    Hermias and Julian the Emperor</title>. The first text, Hermias'
+                                    <hi rend="italic">Satire on the Profane Philosophers</hi> (the
+                                date is uncertain, perhaps ca. 200 CE) is an ironical exposition of
+                                the contradictions in the theories of the major ancient philosophers
+                                and philosophical schools. The remaining two texts, by the Roman
+                                emperor Julian (331-363 CE), are the <hi rend="italic">Hymn to king
+                                    Helios dedicated to Sallust</hi>, an oration in praise of the
+                                Sun, and the <hi rend="italic">Misopogon</hi> (literally
+                                "Beard-hater"), a satirical work written against the people of
+                                Antioch, who did not understand Julian's paganism (the beard of the
+                                title being a reference to the "philosophical" beard of the
+                                emperor). </seg>
+                            <seg type="para"> The manuscript was written by one of the more prolific
+                                Greek scribes of the 16th c., Andreas Darmarios. Darmarios, also a
+                                dealer of manuscripts, had his headquarters in Venice, but travelled
+                                frequently in Europe in order to sell and copy manuscripts. During
+                                one of his sojourns in Spain, in 1576, he copied MS Trinity O.8.7,
+                                while he was in prison (see <bibl>T. Martínez Manzano, <hi rend="italic"> Historia del fondo manuscrito griego de la
+                                        Universidad de Salamanca</hi> (Salamanca, 2015)</bibl>, pp.
+                                208-209). In the space of 15 days Darmarios copied these
+                                texts by Hermias and Julian four times over (see <bibl> M.L. Sosower, 
+                                    'Some Manuscripts in the Biblioteca Nacional
+                                        correctly and incorrectly attributed to Camillus
+                                        Venetus, in <hi rend="italic">The legacy of Bernard de Montfaucon: three
+                                    hundred years of studies on Greek handwriting</hi>, ed. by A. Bravo
+                                    García, I. Pérez Martín, J.S. Codoñer (Turnhout, 2010), pp.
+                                    217-232, 791-797</bibl>: 223): he completed <bibl subtype="external" type="MS">El Escorial, Real Biblioteca,
+                                    y.III.12</bibl> on 17th November; Trinity O.8.7 on 20th
+                                November, <bibl subtype="external" type="MS">
+                           <ref target="https://daten.digitale-sammlungen.de/~db/0005/bsb00050977/images/index.html"> Munich, Bayerische Staatsbiliothek, Cod. Gr.
+                                    339</ref>
+                        </bibl> on 26th November, and <bibl subtype="external" type="MS">
+                                    <ref target="https://daten.digitale-sammlungen.de/~db/0005/bsb00050969/images/index.html"> Munich, Bayerische Staatsbiliothek, gr. 305</ref>
+                        </bibl>
+                                (only Julian's texts) on 1st December. </seg>
+                            <seg type="para">Dr Erika Elia</seg>
+                        </summary>
+
+                        <textLang mainLang="grc">Greek</textLang>
+
+                        <msItem n="1">
+                            <locus from="1r" to="11r">ff. 1r-11r</locus>
+                            <author key="person_v161228254">Hermias</author>
+                            <title xml:lang="en">Satire on the Profane Philosophers</title>
+                            <title xml:lang="la">Irrisio gentilium philosophorum</title>
+                            <rubric>
+                        <locus from="1r" to="1">f. 1r</locus> Ἑρμείου τοῦ φιλοσόφου
+                                διασυρμὸς τῶν ἔξω φιλοσόφων</rubric>
+                            <incipit>
+                        <locus from="1r" to="1">f. 1r</locus> Παῦλος ὁ μακάριος
+                                ἀπόστολος τοῖς τὴν Ἑλλάδα τὴν Λακωνικὴν παροικοῦσι Κορινθίοις
+                                γράφων</incipit>
+                            <explicit>
+                        <locus from="11r" to="11r">f. 11r</locus> καὶ λόγῳ σαφεῖ
+                                βεβαιούμενον.</explicit>
+                            <finalRubric>
+                        <locus from="11r" to="11r">f. 11r</locus> Τέλος σὺν
+                                θεῷ</finalRubric>
+                            <note> TLG 0531.001; CPG 1113</note>
+                            <note>
+                        <locus from="11v" to="12v">ff. 11v-12v</locus> are blank</note>
+                        </msItem>
+
+                        <msItem n="2">
+                            <locus from="13r" to="51v">ff. 13r-51v</locus>
+                            <author key="person_v57406701">Julian, Emperor of Rome</author>
+                            <title xml:lang="en">Hymn to king Helios dedicated to Sallust</title>
+                            <title xml:lang="la">De Sole ad Salustium</title>
+                            <rubric>
+                        <locus from="13r" to="13r">f. 13r</locus> Ἰουλιανοῦ καίσαρος εἰς
+                                τὸν βασιλέα Ἥλιον, πρὸς Σαλουστῖνον</rubric>
+                            <incipit>
+                        <locus from="13r" to="13r">f. 13r</locus> Προσήκειν ὑπολαμβάνω
+                                τοῦ λόγου τοῦδε </incipit>
+                            <explicit>
+                        <locus from="51v" to="51v">f. 51v</locus> καὶ πολυτελεῖς
+                                περιόδους</explicit>
+                            <note>TLG 2003.011</note>
+                        </msItem>
+
+                        <msItem n="3">
+                            <locus from="52r" to="74r">ff. 52r-74r</locus>
+                            <author key="person_v57406701">Julian, Emperor of Rome</author>
+                            <title xml:lang="la">Misopogon</title>
+                            <rubric>
+                        <locus from="52r" to="52r">f. 52r</locus> Ἰουλιανοῦ αὐτοκράτορος
+                                καίσαρος Ἀντιοχικός ἢ μισοπώγων</rubric>
+                            <incipit>
+                        <locus from="52r" to="52r">f. 52r</locus> Ἀνακρέοντι τῷ ποιητῇ
+                                πολλὰ <sic> ἐποιήθην</sic> μέλη χαρίεντα</incipit>
+                            <explicit defective="true">
+                        <locus from="74r" to="74r">f. 74r</locus> ὁ
+                                δὲ πολλῶν ἀντάξιος ἑτέρων</explicit>
+                            <note>The text ends incomplete at <bibl>C. Lacombrade (ed.), <hi rend="italic">L'empereur Julien. Oeuvres complètes</hi>,
+                                    2.2 (Paris, 1964)</bibl>, p. 178 l. 3</note>
+                            <note> TLG 2003.012</note>
+                            <note>
+                        <locus from="74v" to="74v">f. 74v</locus> is blank</note>
+                        </msItem>
+
+                        <msItem n="4">
+                            <locus from="74r" to="74r">f. 74r</locus>
+                            <title xml:lang="en">Colophon</title>
+                            <colophon>
+                                <locus from="74r" to="74r">f. 74r</locus> Ὑπὸ Ἀνδρέου Δαρμαρίου τοῦ
+                                Ἐπιδαυρίου σὺν Θεῷ εἴληφε τέρμα ἐν τῷ ἔτει ͵αφοϛ΄ νοεμβρίου
+                                κ<hi rend="superscript">ῃ</hi></colophon>
+                        </msItem>
+
+                        <msItem n="5">
+                            <locus from="[iv] recto" to="[xiii] verso"> ff. [iv] recto-[xiii]
+                                verso</locus>
+                            <title xml:lang="en">Blank leaves</title>
+                        </msItem>
+
+                    </msContents>
+
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="paper">
+                                <support>
+                                    <material>Western paper, folded in <measure type="folding">
+                                            quarto</measure>. Watermarks: <watermark>
+                                            <locus from="[i] recto" to="[iii] verso"> ff. [i]-[iii],
+                                                [xiii]</locus>
+                                            <note> The later endleaves have a watermark in the
+                                                gutter, not clearly visible.</note>
+                              </watermark>
+                                        <watermark>
+                                 <locus from="1r" to="[xiii] verso"> ff. 1-74,
+                                                [iv]-[xiii]</locus>
+                                            <term type="watermarkMotif"> Latin cross</term>
+                                            <note type="watermarkVariation"> in a shield; under it
+                                                letters <q> I<unclear>P</unclear>
+                                    </q>
+                                 </note>
+                                                (<dimensions type="watermark" unit="mm">
+                                                <height quantity="50"> ca. 50</height>
+                                                <width quantity="30">30</width>
+                                            </dimensions>), <note type="watermarkPosition"> in the
+                                                gutter</note>, without exact parallels in the main
+                                            repertoires. This type of watermark, such as <note>
+                                                Sosower <hi rend="italic"> Croix latine</hi>
+                                                <ref> 5-31</ref>
+                                 </note>, are dated to the 8th and 9th
+                                            decade of the 16th c. </watermark>
+                                    </material>
+                                </support>
+
+                                <extent>
+                                    <seg type="object">
+                                        <objectType>Codex </objectType>
+                                    </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="3" type="laterEndleaf">iii</measure> +
+                                            <measure quantity="74" type="leaf">74</measure> +
+                                            <measure quantity="9" type="endleaf">9</measure> +
+                                            <measure quantity="1" type="laterEndleaf">i</measure>
+                                    </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height quantity="217"> 217</height>
+                                            <width quantity="150"> 150</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+
+                                <foliation xml:id="modern">
+                                    <p> Modern pencil foliation, in Arabic numerals, in the upper
+                                        margin right from 1 to 74; three blank leaves at the
+                                        beginning (ff. [ii] and [iii] are still attached to one another
+                                        along the lower edge) and ten at
+                                        the end of the manuscript are unnumbered: [i]-[iii] + 1-74 +
+                                        [iv]-[xiii].</p>
+                                </foliation>
+
+                                <collation>
+                                    <p>The manuscript consists of sexternions. The last quire (7)
+                                        has lost one leaf without loss of text.</p>
+                                    <p>
+                                        <list>
+                                            <item>Quire 1<hi rend="superscript">2</hi>
+                                    <locus from="[i] recto" to="[ii] verso"> ff.
+                                                  [i]-[ii]</locus>
+                                 </item>
+                                            <item>Quires 2-7<hi rend="superscript">12</hi>
+                                    <locus from="1r" to="72v"> ff.
+                                                  1-72</locus></item>
+                                            <item>Quire 8<hi rend="superscript">12-1</hi>
+                                    <locus from="73r" to="[xi] verso"> ff.
+                                                  73-[xi]</locus></item>
+                                            <item>1 endleaf <locus from="[xii] recto" to="[xii] verso"> f. [xii]</locus>
+                                 </item>
+                                        </list>
+                                    </p>
+                                    <signatures type="original"> Greek signatures in brown ink by
+                                        the scribe's hand, in the centre of the lower margin of the
+                                        first leaf recto of the quires, from α΄ (1, <locus from="13r" to="13r">f. 13r</locus>) to ϛ΄ (6, <locus from="73r" to="73r">f. 73r</locus>).</signatures>
+                                    <catchwords> On <locus from="13r" to="72v">ff. 13r-72v</locus>,
+                                        horizontal catchwords by the scribe's hand, in the lower
+                                        margin of the last verso of the quires.</catchwords>
+                                </collation>
+
+                                <condition>The manuscript is in fair condition. On <locus from="37r" to="42v"> ff. 37-42</locus> there is a tear on
+                                    the upper margin of the leaves, near the gutter. Two of the
+                                    three later endleaves at the beginning of the manuscript, ff.
+                                    [ii] and [iii], are still attached one to another along the
+                                    lower edge, having never been cut (in the images only ff.
+                                        <locus from="[ii] recto" to="[ii] recto"> [ii] recto</locus>
+                                    and <locus from="[iii] verso" to="[iii] verso"> [iii]
+                                        verso</locus> are visible). There is a tear on f. [iii].
+                                </condition>
+                            </supportDesc>
+
+                            <layoutDesc>
+                                <layout columns="1" rulingMedium="ink" writtenLines="13">A single
+                                    column of 13 lines. <dimensions type="written" unit="mm">
+                                        <height quantity="135">135</height>
+                                        <width quantity="90">90</width>
+                                    </dimensions>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <handDesc>
+                            <handNote scope="sole" xml:id="hand-1">
+                                <p>
+                           <locus from="1r" to="11r">ff. 1r-11r, 13r-74r</locus> Hand A: the
+                                    texts have been copied by <name key="person_v64845275" role="scr">
+                                        <persName type="standard"> Darmarios, Andreas, active
+                                            1550-1580</persName>
+                                        <persName type="display"> Andreas Darmarios (1540-after
+                                            1587)</persName>
+                           </name>, (Ἀνδρέας Δαρμάριος, <note>RGK
+                                        I, 13 [the manuscript is indicated as Cant. Trin. C. O.3.7].
+                                        See also RGK II, 21; RGK III, 22</note>), who signed the
+                                    copy on 20th November 1576. </p>
+                                <p>The text, as well as titles and initials, are written in a light
+                                    brown ink. Some <hi rend="italic"> marginalia</hi> are in red
+                                    ink.</p>
+                            </handNote>
+                        </handDesc>
+
+                        <decoDesc>
+
+                            <decoNote type="frieze">On ff. <locus from="1r" to="1r">1r</locus> and
+                                    <locus from="13r" to="13r">13r</locus> there are two friezes
+                                with a rope motif in brown ink. On <locus from="52r" to="52r">f.
+                                    52r</locus> there are three small linear undulated friezes, the
+                                central one with clovers at both ends. </decoNote>
+
+                            <decoNote type="decInit">Initials <hi rend="italic">in ekthesis</hi>
+                                are decorated with a vegetal motif, see ff. <locus from="1r" to="1r"> 1r</locus>, <locus from="13r" to="13r">13r</locus> and <locus from="52r" to="52r">52r</locus>. </decoNote>
+
+                            <decoNote type="other">Small crosses are traced after the titles and at
+                                the end of the texts, see e.g. ff. <locus from="1r" to="1r">
+                                    1r</locus> and <locus from="11r" to="11r">
+                                11r</locus>.</decoNote>
+
+                        </decoDesc>
+
+                        <additions>
+                            <p>On the <locus from="left cover, inner" to="left cover, inner">left
+                                    pastedown</locus> is written the present shelfmark of the
+                                manuscript <q> O.8.7.</q>
+                     </p>
+                            <p>On <locus from="1r" to="1r"> f. 1r</locus> in the right margin, are
+                                written in brown ink the number, <q> 155</q>, and older shelfmark,
+                                    <q> C 24</q>, of the Gale collection, and another shelfmark, <q>
+                                    O.14.24</q> which has been erased. </p>                           
+                        </additions>
+
+                        <bindingDesc>
+                            <binding calendar="gregorian" notAfter="1900" notBefore="1700">
+                                <p>Western modern binding. Paper cover over millboard.
+                                    On the spine are pasted three paper labels with the shelfmark.
+                                        <dimensions type="binding" unit="mm">
+                                        <height quantity="223"> 223</height>
+                                        <width quantity="155"> 155</width>
+                                        <depth quantity="16"> 16</depth>
+                                    </dimensions>
+                                </p>
+                                <condition> The spine is damaged, the quires are
+                                    exposed.</condition>
+                            </binding>
+                        </bindingDesc>
+
+                    </physDesc>
+
+                    <history>
+                        <origin>
+                            <p>The manuscript was copied and signed by the Greek scribe Andreas
+                                Darmarios on <origDate calendar="gregorian" when="1576">20th
+                                    November 1576</origDate> in <origPlace key="place_g1000095">
+                                    Spain</origPlace>. In the colophon of the manuscript Darmarios
+                                did not mention the place; three days before, however, he had signed
+                                in Toledo MS <bibl subtype="external" type="MS">El Escorial, Real
+                                    Biblioteca, y.III.12</bibl>, which he had copied from an
+                                exemplar of the library of the Cardinal of Burgos, Francisco
+                                Mendoza, as he wrote on its colophon (see <bibl> M.L. Sosower, 
+                                    'Some Manuscripts in the Biblioteca Nacional
+                                        correctly and incorrectly attributed to Camillus
+                                        Venetus', in <hi rend="italic">The legacy of Bernard de Montfaucon: three
+                                    hundred years of studies on Greek handwriting</hi>, ed. by A. Bravo
+                                    García, I. Pérez Martín, J.S. Codoñer (Turnhout, 2010), pp.
+                                    217-232, 791-797</bibl>, p. 223). </p>
+                        </origin>
+
+                        <provenance>
+                            <p>The manucript is thought to have been sold by Darmarios to <name key="person_v56620173" role="fmo" type="person">
+                                    <persName type="display">Isaac Casaubon (1559-1614)</persName>
+                                    <persName type="standard">Casaubon, Isaac,
+                                        1559-1614.</persName>
+                                </name>, probably in <placeName key="place_g7007279">
+                                    Geneva</placeName>, around 1584 (see <bibl>E. Craster, 
+                                        'Casaubon’s Greek Manuscripts', 
+                                    <hi rend="italic">Bodleian Quarterly Record</hi> 5 (1926-1928),
+                                        pp. 97-100</bibl> (p. 99, no. 22); <bibl>Sosower (2010)</bibl>, p. 225; <bibl>L. Calvié, 
+                                    'Le commerce transalpin du copiste-libraire
+                                        vénitien Andréas Darmarios entre 1582 et 1585, 
+                                    <hi rend="italic">Revue d'Histoire des Textes</hi> 15 (2020), pp. 89-168</bibl>
+                                (pp. 115-119).</p>
+                            <p> It was subsequently part of the collection of the antiquary <name key="person_v4678394" role="fmo">
+                                    <persName type="display">Thomas Gale (ca. 1635-1702)</persName>
+                                    <persName type="standard">Gale, Thomas,
+                                    1635?-1702</persName>
+                        </name> (no. 155). It appears among Thomas
+                                Gale's Greek manuscripts in <bibl>E. Bernard, <hi rend="italic">
+                                        Catalogi librorum manuscriptorum Angliæ et Hiberniæ</hi>,
+                                    (Oxoniæ, 1697)</bibl>, p. 188, where it appears as 2 items: no.
+                                5933 (99) <q xml:lang="la">Hermiae Irrisio Gentilium</q>, and no.
+                                5934 (100) <q xml:lang="la">Juliani Oratio in Solem, Ejusdem Oratio
+                                    qui titulus Misopogon</q>
+                            </p>
+                        </provenance>
+
+                        <acquisition calendar="gregorian" when="1738">It was donated by <name key="person_v62981706" role="dnr" type="person">
+                                <persName type="display">Roger Gale (1672-1744)</persName>
+                                <persName type="standard">Gale, Roger, 1672-1744</persName>
+                     </name>
+                            in 1738. The Trinity College bookplate is glued on the 
+                            lower margin of <locus from="1r" to="1r"> f. 1r</locus>. </acquisition>
+
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source>Description (2020) draws partly on M. R. James, <hi rend="italic"> The Western Manuscripts in the Library of
+                                        Trinity College Cambridge</hi> (Cambridge: Cambridge University
+                                    Press, 1902), vol. 3, p. 394.</source>
+                            </recordHist>
+                            <availability status="restricted">
+                                <p>Visitors to Trinity College who wish to consult Special Collections material
+                                    are required to apply to the Library in advance of their visit. For information
+                                    on eligibility and admission procedures see: <ref target="https://www.trin.cam.ac.uk/library/wren-library/information-for-readers/">Trinity College: Information for Readers</ref>.</p>
+                            </availability>
+                        </adminInfo>
+
+
+                        <listBibl type="PRINT">
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/Q2XTA4BA" type="book" xml:id="James1902">
+                                <monogr>
+                                    <title level="m">The western manuscripts in the library of
+                                        Trinity College: a descriptive catalogue</title>
+                                    <author>
+                              <forename>M.R.</forename>
+                              <surname>James</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">3</biblScope>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1902</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/6C9LQP7L" type="journalArticle" xml:id="Craster1926">
+                                <analytic>
+                                    <title level="a">Casaubon’s Greek Manuscripts</title>
+                                    <author>
+                              <forename>E.</forename>
+                              <surname>Craster</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Bodleian Quarterly Record</title>
+                                    <imprint>
+                                        <biblScope unit="volume">5</biblScope>
+                                        <biblScope unit="page">97-100</biblScope>
+                                        <date>1926</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/553XYE2Q" type="book" xml:id="Bidez1929">
+                                <monogr>
+                                    <title level="m">La tradition manuscrite et les éditions des
+                                        discours de l'empereur Julien</title>
+                                    <author>
+                              <forename>J.</forename>
+                              <surname>Bidez</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Gand; Paris</pubPlace>
+                                        <publisher>Van Rysselberghe and Rombaut,
+                                            Champion</publisher>
+                                        <date>1929</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                           <title level="s">Université de Gand. Recueil de travaux
+                                        publiés par la Faculté de Philosophie et
+                                        Lettres</title>
+                           <biblScope unit="volume">61</biblScope>
+                        </series>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/E3VMKIR9" type="book" xml:id="Julian1964">
+                                <monogr>
+                                    <title level="m">L'Empereur Julien. Œuvres complètes. Tome II -
+                                        2e partie</title>
+                                    <author>
+                              <surname>Julian</surname>
+                           </author>
+                                    <editor>
+                              <forename>C.</forename>
+                              <surname>Lacombrade</surname>
+                           </editor>
+                                    <edition>Première édition.</edition>
+                                    <imprint>
+                                        <pubPlace>Paris</pubPlace>
+                                        <publisher>Sociéte d'édition "Les Belles
+                                            Lettres"</publisher>
+                                        <date>1964</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                           <title level="s">Collection des universités de
+                                        France</title>
+                        </series>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/VCK93XKZ" type="book" xml:id="Gamillscheg1981">
+                                <monogr>
+                                    <title level="m">Repertorium der griechischen Kopisten,
+                                        800-1600. I. Grossbritannien</title>
+                                    <author>
+                              <forename>Ernst</forename>
+                              <surname>Gamillscheg</surname>
+                           </author>
+                                    <author>
+                              <forename>Dieter</forename>
+                              <surname>Harlfinger</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Wien</pubPlace>
+                                        <publisher>Verlag der Österreichischen Akademie der
+                                            Wissenschaften</publisher>
+                                        <date>1981</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Veröffentlichungen der Kommission für
+                                        Byzantinistik</title>
+                                    <biblScope unit="volume">Bd. 3</biblScope>
+                                </series>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/98SPXNII" type="journalArticle" xml:id="Lilla1998">
+                                <analytic>
+                                    <title level="a">Spigolature dagli ultimi codici vaticani
+                                        greci</title>
+                                    <author>
+                              <forename>S.</forename>
+                              <surname>Lilla</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Bollettino della Badia greca di
+                                        Grottaferrata.</title>
+                                    <imprint>
+                                        <biblScope unit="volume">52</biblScope>
+                                        <biblScope unit="page">259-281</biblScope>
+                                        <date>1998</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/ZARC6D62" type="bookSection" xml:id="Sosower2010">
+                                <analytic>
+                                    <title level="a">Some Manuscripts in the Biblioteca Nacional correctly and incorrectly
+                                        attributed to Camillus Venetus</title>
+                                    <author>
+                                        <forename>Mark L.</forename>
+                                        <surname>Sosower</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">The legacy of Bernard de Montfaucon: three hundred years of studies on
+                                        Greek handwriting. Proceedings of the Seventh International Colloquium of Greek
+                                        Palaeography (Madrid-Salamanca, 15-20 September 2008)</title>
+                                    <idno type="callNumber">2016.10.884-885</idno>
+                                    <editor>
+                                        <forename>A. Bravo</forename>
+                                        <surname>García</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>Inmaculada Pérez</forename>
+                                        <surname>Martín</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>Juan Signes</forename>
+                                        <surname>Codoñer</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Turnhout</pubPlace>
+                                        <biblScope unit="page">217-232, 791-797</biblScope>
+                                        <publisher>Brepols</publisher>
+                                        <date>2010</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Bibliologia</title>
+                                    <biblScope unit="volume">31</biblScope>
+                                </series>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/ALIV3R75" type="book" xml:id="Martínez_Manzano2015">
+                                <monogr>
+                                    <title level="m">Historia del fondo manuscrito griego de la
+                                        Universidad de Salamanca</title>
+                                    <author>
+                              <forename>T.</forename>
+                              <surname>Martínez
+                                            Manzano</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Salamanca</pubPlace>
+                                        <publisher>Universidad de Salamanca</publisher>
+                                        <date>2015</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                           <title level="s">Obras de referencia</title>
+                           <biblScope unit="volume">37</biblScope>
+                        </series>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/WTID8RWV" type="journalArticle" xml:id="Calvié2020">
+                                <analytic>
+                                    <title level="a">Le commerce transalpin du copiste-libraire
+                                        vénitien Andréas Darmarios entre 1582 et 1585</title>
+                                    <author>
+                              <forename>L.</forename>
+                              <surname>Calvié</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Revue d'Histoire des Textes</title>
+                                    <imprint>
+                                        <biblScope unit="volume">15</biblScope>
+                                        <biblScope unit="page">89-168</biblScope>
+                                        <date>2020</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                        </listBibl>
+
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject
+                            Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                     <term key="subject_n79067875">Julian, Emperor of Rome,
+                            331-363</term>
+                  </item>
+                        <item>
+                            <term key="subject_n85356768">Hermias. Irrisio gentilium philosophorum.
+                                Latin and Greek</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2020-06-23">
+                <persName>Erika Elia</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+      <graphic decls="#document-thumbnail" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00001"/>
+      <surface n="left cover, outer" xml:id="i1">
+            <graphic decls="#downloadImageRights #download" height="5533px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00001" width="4044px"/>
+      </surface>
+      <surface n="left cover, inner" xml:id="i2">
+            <graphic decls="#downloadImageRights #download" height="5533px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00002" width="4044px"/>
+      </surface>
+      <surface n="[i] recto" xml:id="i3">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00003" width="3968px"/>
+      </surface>
+      <surface n="[i] verso" xml:id="i4">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00004" width="3968px"/>
+      </surface>
+      <surface n="[ii] recto" xml:id="i5">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00005" width="3968px"/>
+      </surface>
+      <surface n="[iii] verso" xml:id="i6">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00006" width="3968px"/>
+      </surface>
+      <surface n="1r" xml:id="i7">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00007" width="3968px"/>
+      </surface>
+      <surface n="1v" xml:id="i8">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00008" width="3968px"/>
+      </surface>
+      <surface n="2r" xml:id="i9">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00009" width="3968px"/>
+      </surface>
+      <surface n="2v" xml:id="i10">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00010" width="3968px"/>
+      </surface>
+      <surface n="3r" xml:id="i11">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00011" width="3968px"/>
+      </surface>
+      <surface n="3v" xml:id="i12">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00012" width="3968px"/>
+      </surface>
+      <surface n="4r" xml:id="i13">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00013" width="3968px"/>
+      </surface>
+      <surface n="4v" xml:id="i14">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00014" width="3968px"/>
+      </surface>
+      <surface n="5r" xml:id="i15">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00015" width="3968px"/>
+      </surface>
+      <surface n="5v" xml:id="i16">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00016" width="3968px"/>
+      </surface>
+      <surface n="6r" xml:id="i17">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00017" width="3968px"/>
+      </surface>
+      <surface n="6v" xml:id="i18">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00018" width="3968px"/>
+      </surface>
+      <surface n="7r" xml:id="i19">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00019" width="3968px"/>
+      </surface>
+      <surface n="7v" xml:id="i20">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00020" width="3968px"/>
+      </surface>
+      <surface n="8r" xml:id="i21">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00021" width="3968px"/>
+      </surface>
+      <surface n="8v" xml:id="i22">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00022" width="3968px"/>
+      </surface>
+      <surface n="9r" xml:id="i23">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00023" width="3968px"/>
+      </surface>
+      <surface n="9v" xml:id="i24">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00024" width="3968px"/>
+      </surface>
+      <surface n="10r" xml:id="i25">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00025" width="3968px"/>
+      </surface>
+      <surface n="10v" xml:id="i26">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00026" width="3968px"/>
+      </surface>
+      <surface n="11r" xml:id="i27">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00027" width="3968px"/>
+      </surface>
+      <surface n="11v" xml:id="i28">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00028" width="3968px"/>
+      </surface>
+      <surface n="12r" xml:id="i29">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00029" width="3968px"/>
+      </surface>
+      <surface n="12v" xml:id="i30">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00030" width="3968px"/>
+      </surface>
+      <surface n="13r" xml:id="i31">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00031" width="3968px"/>
+      </surface>
+      <surface n="13v" xml:id="i32">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00032" width="3968px"/>
+      </surface>
+      <surface n="14r" xml:id="i33">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00033" width="3968px"/>
+      </surface>
+      <surface n="14v" xml:id="i34">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00034" width="3968px"/>
+      </surface>
+      <surface n="15r" xml:id="i35">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00035" width="3968px"/>
+      </surface>
+      <surface n="15v" xml:id="i36">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00036" width="3968px"/>
+      </surface>
+      <surface n="16r" xml:id="i37">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00037" width="3968px"/>
+      </surface>
+      <surface n="16v" xml:id="i38">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00038" width="3968px"/>
+      </surface>
+      <surface n="17r" xml:id="i39">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00039" width="3968px"/>
+      </surface>
+      <surface n="17v" xml:id="i40">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00040" width="3968px"/>
+      </surface>
+      <surface n="18r" xml:id="i41">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00041" width="3968px"/>
+      </surface>
+      <surface n="18v" xml:id="i42">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00042" width="3968px"/>
+      </surface>
+      <surface n="19r" xml:id="i43">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00043" width="3968px"/>
+      </surface>
+      <surface n="19v" xml:id="i44">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00044" width="3968px"/>
+      </surface>
+      <surface n="20r" xml:id="i45">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00045" width="3968px"/>
+      </surface>
+      <surface n="20v" xml:id="i46">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00046" width="3968px"/>
+      </surface>
+      <surface n="21r" xml:id="i47">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00047" width="3968px"/>
+      </surface>
+      <surface n="21v" xml:id="i48">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00048" width="3968px"/>
+      </surface>
+      <surface n="22r" xml:id="i49">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00049" width="3968px"/>
+      </surface>
+      <surface n="22v" xml:id="i50">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00050" width="3968px"/>
+      </surface>
+      <surface n="23r" xml:id="i51">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00051" width="3968px"/>
+      </surface>
+      <surface n="23v" xml:id="i52">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00052" width="3968px"/>
+      </surface>
+      <surface n="24r" xml:id="i53">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00053" width="3968px"/>
+      </surface>
+      <surface n="24v" xml:id="i54">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00054" width="3968px"/>
+      </surface>
+      <surface n="25r" xml:id="i55">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00055" width="3968px"/>
+      </surface>
+      <surface n="25v" xml:id="i56">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00056" width="3968px"/>
+      </surface>
+      <surface n="26r" xml:id="i57">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00057" width="3968px"/>
+      </surface>
+      <surface n="26v" xml:id="i58">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00058" width="3968px"/>
+      </surface>
+      <surface n="27r" xml:id="i59">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00059" width="3968px"/>
+      </surface>
+      <surface n="27v" xml:id="i60">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00060" width="3968px"/>
+      </surface>
+      <surface n="28r" xml:id="i61">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00061" width="3968px"/>
+      </surface>
+      <surface n="28v" xml:id="i62">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00062" width="3968px"/>
+      </surface>
+      <surface n="29r" xml:id="i63">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00063" width="3968px"/>
+      </surface>
+      <surface n="29v" xml:id="i64">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00064" width="3968px"/>
+      </surface>
+      <surface n="30r" xml:id="i65">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00065" width="3968px"/>
+      </surface>
+      <surface n="30v" xml:id="i66">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00066" width="3968px"/>
+      </surface>
+      <surface n="31r" xml:id="i67">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00067" width="3968px"/>
+      </surface>
+      <surface n="31v" xml:id="i68">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00068" width="3968px"/>
+      </surface>
+      <surface n="32r" xml:id="i69">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00069" width="3968px"/>
+      </surface>
+      <surface n="32v" xml:id="i70">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00070" width="3968px"/>
+      </surface>
+      <surface n="33r" xml:id="i71">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00071" width="3968px"/>
+      </surface>
+      <surface n="33v" xml:id="i72">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00072" width="3968px"/>
+      </surface>
+      <surface n="34r" xml:id="i73">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00073" width="3968px"/>
+      </surface>
+      <surface n="34v" xml:id="i74">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00074" width="3968px"/>
+      </surface>
+      <surface n="35r" xml:id="i75">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00075" width="3968px"/>
+      </surface>
+      <surface n="35v" xml:id="i76">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00076" width="3968px"/>
+      </surface>
+      <surface n="36r" xml:id="i77">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00077" width="3968px"/>
+      </surface>
+      <surface n="36v" xml:id="i78">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00078" width="3968px"/>
+      </surface>
+      <surface n="37r" xml:id="i79">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00079" width="3968px"/>
+      </surface>
+      <surface n="37v" xml:id="i80">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00080" width="3968px"/>
+      </surface>
+      <surface n="38r" xml:id="i81">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00081" width="3968px"/>
+      </surface>
+      <surface n="38v" xml:id="i82">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00082" width="3968px"/>
+      </surface>
+      <surface n="39r" xml:id="i83">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00083" width="3968px"/>
+      </surface>
+      <surface n="39v" xml:id="i84">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00084" width="3968px"/>
+      </surface>
+      <surface n="40r" xml:id="i85">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00085" width="3968px"/>
+      </surface>
+      <surface n="40v" xml:id="i86">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00086" width="3968px"/>
+      </surface>
+      <surface n="41r" xml:id="i87">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00087" width="3968px"/>
+      </surface>
+      <surface n="41v" xml:id="i88">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00088" width="3968px"/>
+      </surface>
+      <surface n="42r" xml:id="i89">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00089" width="3968px"/>
+      </surface>
+      <surface n="42v" xml:id="i90">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00090" width="3968px"/>
+      </surface>
+      <surface n="43r" xml:id="i91">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00091" width="3968px"/>
+      </surface>
+      <surface n="43v" xml:id="i92">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00092" width="3968px"/>
+      </surface>
+      <surface n="44r" xml:id="i93">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00093" width="3968px"/>
+      </surface>
+      <surface n="44v" xml:id="i94">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00094" width="3968px"/>
+      </surface>
+      <surface n="45r" xml:id="i95">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00095" width="3968px"/>
+      </surface>
+      <surface n="45v" xml:id="i96">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00096" width="3968px"/>
+      </surface>
+      <surface n="46r" xml:id="i97">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00097" width="3968px"/>
+      </surface>
+      <surface n="46v" xml:id="i98">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00098" width="3968px"/>
+      </surface>
+      <surface n="47r" xml:id="i99">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00099" width="3968px"/>
+      </surface>
+      <surface n="47v" xml:id="i100">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00100" width="3968px"/>
+      </surface>
+      <surface n="48r" xml:id="i101">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00101" width="3968px"/>
+      </surface>
+      <surface n="48v" xml:id="i102">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00102" width="3968px"/>
+      </surface>
+      <surface n="49r" xml:id="i103">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00103" width="3968px"/>
+      </surface>
+      <surface n="49v" xml:id="i104">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00104" width="3968px"/>
+      </surface>
+      <surface n="50r" xml:id="i105">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00105" width="3968px"/>
+      </surface>
+      <surface n="50v" xml:id="i106">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00106" width="3968px"/>
+      </surface>
+      <surface n="51r" xml:id="i107">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00107" width="3968px"/>
+      </surface>
+      <surface n="51v" xml:id="i108">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00108" width="3968px"/>
+      </surface>
+      <surface n="52r" xml:id="i109">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00109" width="3968px"/>
+      </surface>
+      <surface n="52v" xml:id="i110">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00110" width="3968px"/>
+      </surface>
+      <surface n="53r" xml:id="i111">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00111" width="3968px"/>
+      </surface>
+      <surface n="53v" xml:id="i112">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00112" width="3968px"/>
+      </surface>
+      <surface n="54r" xml:id="i113">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00113" width="3968px"/>
+      </surface>
+      <surface n="54v" xml:id="i114">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00114" width="3968px"/>
+      </surface>
+      <surface n="55r" xml:id="i115">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00115" width="3968px"/>
+      </surface>
+      <surface n="55v" xml:id="i116">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00116" width="3968px"/>
+      </surface>
+      <surface n="56r" xml:id="i117">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00117" width="3968px"/>
+      </surface>
+      <surface n="56v" xml:id="i118">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00118" width="3968px"/>
+      </surface>
+      <surface n="57r" xml:id="i119">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00119" width="3968px"/>
+      </surface>
+      <surface n="57v" xml:id="i120">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00120" width="3968px"/>
+      </surface>
+      <surface n="58r" xml:id="i121">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00121" width="3968px"/>
+      </surface>
+      <surface n="58v" xml:id="i122">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00122" width="3968px"/>
+      </surface>
+      <surface n="59r" xml:id="i123">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00123" width="3968px"/>
+      </surface>
+      <surface n="59v" xml:id="i124">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00124" width="3968px"/>
+      </surface>
+      <surface n="60r" xml:id="i125">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00125" width="3968px"/>
+      </surface>
+      <surface n="60v" xml:id="i126">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00126" width="3968px"/>
+      </surface>
+      <surface n="61r" xml:id="i127">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00127" width="3968px"/>
+      </surface>
+      <surface n="61v" xml:id="i128">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00128" width="3968px"/>
+      </surface>
+      <surface n="62r" xml:id="i129">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00129" width="3968px"/>
+      </surface>
+      <surface n="62v" xml:id="i130">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00130" width="3968px"/>
+      </surface>
+      <surface n="63r" xml:id="i131">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00131" width="3968px"/>
+      </surface>
+      <surface n="63v" xml:id="i132">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00132" width="3968px"/>
+      </surface>
+      <surface n="64r" xml:id="i133">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00133" width="3968px"/>
+      </surface>
+      <surface n="64v" xml:id="i134">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00134" width="3968px"/>
+      </surface>
+      <surface n="65r" xml:id="i135">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00135" width="3968px"/>
+      </surface>
+      <surface n="65v" xml:id="i136">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00136" width="3968px"/>
+      </surface>
+      <surface n="66r" xml:id="i137">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00137" width="3968px"/>
+      </surface>
+      <surface n="66v" xml:id="i138">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00138" width="3968px"/>
+      </surface>
+      <surface n="67r" xml:id="i139">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00139" width="3968px"/>
+      </surface>
+      <surface n="67v" xml:id="i140">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00140" width="3968px"/>
+      </surface>
+      <surface n="68r" xml:id="i141">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00141" width="3968px"/>
+      </surface>
+      <surface n="68v" xml:id="i142">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00142" width="3968px"/>
+      </surface>
+      <surface n="69r" xml:id="i143">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00143" width="3968px"/>
+      </surface>
+      <surface n="69v" xml:id="i144">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00144" width="3968px"/>
+      </surface>
+      <surface n="70r" xml:id="i145">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00145" width="3968px"/>
+      </surface>
+      <surface n="70v" xml:id="i146">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00146" width="3968px"/>
+      </surface>
+      <surface n="71r" xml:id="i147">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00147" width="3968px"/>
+      </surface>
+      <surface n="71v" xml:id="i148">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00148" width="3968px"/>
+      </surface>
+      <surface n="72r" xml:id="i149">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00149" width="3968px"/>
+      </surface>
+      <surface n="72v" xml:id="i150">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00150" width="3968px"/>
+      </surface>
+      <surface n="73r" xml:id="i151">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00151" width="3968px"/>
+      </surface>
+      <surface n="73v" xml:id="i152">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00152" width="3968px"/>
+      </surface>
+      <surface n="74r" xml:id="i153">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00153" width="3968px"/>
+      </surface>
+      <surface n="74v" xml:id="i154">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00154" width="3968px"/>
+      </surface>
+      <surface n="[iv] recto" xml:id="i155">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00155" width="3968px"/>
+      </surface>
+      <surface n="[iv] verso" xml:id="i156">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00156" width="3968px"/>
+      </surface>
+      <surface n="[v] recto" xml:id="i157">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00157" width="3968px"/>
+      </surface>
+      <surface n="[v] verso" xml:id="i158">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00158" width="3968px"/>
+      </surface>
+      <surface n="[vi] recto" xml:id="i159">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00159" width="3968px"/>
+      </surface>
+      <surface n="[vi] verso" xml:id="i160">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00160" width="3968px"/>
+      </surface>
+      <surface n="[vii] recto" xml:id="i161">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00161" width="3968px"/>
+      </surface>
+      <surface n="[vii] versi" xml:id="i162">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00162" width="3968px"/>
+      </surface>
+      <surface n="[viii] recto" xml:id="i163">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00163" width="3968px"/>
+      </surface>
+      <surface n="[viii] verso" xml:id="i164">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00164" width="3968px"/>
+      </surface>
+      <surface n="[ix] recto" xml:id="i165">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00165" width="3968px"/>
+      </surface>
+      <surface n="[ix] verso" xml:id="i166">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00166" width="3968px"/>
+      </surface>
+      <surface n="[x] recto" xml:id="i167">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00167" width="3968px"/>
+      </surface>
+      <surface n="[x] verso" xml:id="i168">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00168" width="3968px"/>
+      </surface>
+      <surface n="[xi] recto" xml:id="i169">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00169" width="3968px"/>
+      </surface>
+      <surface n="[xi] verso" xml:id="i170">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00170" width="3968px"/>
+      </surface>
+      <surface n="[xii] recto" xml:id="i171">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00171" width="3968px"/>
+      </surface>
+      <surface n="[xii] verso" xml:id="i172">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00172" width="3968px"/>
+      </surface>
+      <surface n="[xiii] recto" xml:id="i173">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00173" width="3968px"/>
+      </surface>
+      <surface n="[xiii] verso" xml:id="i174">
+            <graphic decls="#downloadImageRights #download" height="5409px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00174" width="3968px"/>
+      </surface>
+      <surface n="right cover, inner" xml:id="i175">
+            <graphic decls="#downloadImageRights #download" height="5533px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00175" width="4044px"/>
+      </surface>
+      <surface n="right cover, outer" xml:id="i176">
+            <graphic decls="#downloadImageRights #download" height="5533px" rend="portrait" url="MS-TRINITY-O-00008-00007-000-00176" width="4044px"/>
+      </surface>
+   </facsimile>
+    
+    <text>
+      <body>
+         <div>
+            <pb facs="#i1" n="left cover, outer" xml:id="pb-leftcover,outer"/>
+            <pb facs="#i2" n="left cover, inner" xml:id="pb-leftcover,inner"/>
+            <pb facs="#i3" n="[i] recto" xml:id="pb-irecto"/>
+            <pb facs="#i4" n="[i] verso" xml:id="pb-iverso"/>
+            <pb facs="#i5" n="[ii] recto" xml:id="pb-iirecto"/>
+            <pb facs="#i6" n="[iii] verso" xml:id="pb-iiiverso"/>
+            <pb facs="#i7" n="1r" xml:id="pb-1r"/>
+            <pb facs="#i8" n="1v" xml:id="pb-1v"/>
+            <pb facs="#i9" n="2r" xml:id="pb-2r"/>
+            <pb facs="#i10" n="2v" xml:id="pb-2v"/>
+            <pb facs="#i11" n="3r" xml:id="pb-3r"/>
+            <pb facs="#i12" n="3v" xml:id="pb-3v"/>
+            <pb facs="#i13" n="4r" xml:id="pb-4r"/>
+            <pb facs="#i14" n="4v" xml:id="pb-4v"/>
+            <pb facs="#i15" n="5r" xml:id="pb-5r"/>
+            <pb facs="#i16" n="5v" xml:id="pb-5v"/>
+            <pb facs="#i17" n="6r" xml:id="pb-6r"/>
+            <pb facs="#i18" n="6v" xml:id="pb-6v"/>
+            <pb facs="#i19" n="7r" xml:id="pb-7r"/>
+            <pb facs="#i20" n="7v" xml:id="pb-7v"/>
+            <pb facs="#i21" n="8r" xml:id="pb-8r"/>
+            <pb facs="#i22" n="8v" xml:id="pb-8v"/>
+            <pb facs="#i23" n="9r" xml:id="pb-9r"/>
+            <pb facs="#i24" n="9v" xml:id="pb-9v"/>
+            <pb facs="#i25" n="10r" xml:id="pb-10r"/>
+            <pb facs="#i26" n="10v" xml:id="pb-10v"/>
+            <pb facs="#i27" n="11r" xml:id="pb-11r"/>
+            <pb facs="#i28" n="11v" xml:id="pb-11v"/>
+            <pb facs="#i29" n="12r" xml:id="pb-12r"/>
+            <pb facs="#i30" n="12v" xml:id="pb-12v"/>
+            <pb facs="#i31" n="13r" xml:id="pb-13r"/>
+            <pb facs="#i32" n="13v" xml:id="pb-13v"/>
+            <pb facs="#i33" n="14r" xml:id="pb-14r"/>
+            <pb facs="#i34" n="14v" xml:id="pb-14v"/>
+            <pb facs="#i35" n="15r" xml:id="pb-15r"/>
+            <pb facs="#i36" n="15v" xml:id="pb-15v"/>
+            <pb facs="#i37" n="16r" xml:id="pb-16r"/>
+            <pb facs="#i38" n="16v" xml:id="pb-16v"/>
+            <pb facs="#i39" n="17r" xml:id="pb-17r"/>
+            <pb facs="#i40" n="17v" xml:id="pb-17v"/>
+            <pb facs="#i41" n="18r" xml:id="pb-18r"/>
+            <pb facs="#i42" n="18v" xml:id="pb-18v"/>
+            <pb facs="#i43" n="19r" xml:id="pb-19r"/>
+            <pb facs="#i44" n="19v" xml:id="pb-19v"/>
+            <pb facs="#i45" n="20r" xml:id="pb-20r"/>
+            <pb facs="#i46" n="20v" xml:id="pb-20v"/>
+            <pb facs="#i47" n="21r" xml:id="pb-21r"/>
+            <pb facs="#i48" n="21v" xml:id="pb-21v"/>
+            <pb facs="#i49" n="22r" xml:id="pb-22r"/>
+            <pb facs="#i50" n="22v" xml:id="pb-22v"/>
+            <pb facs="#i51" n="23r" xml:id="pb-23r"/>
+            <pb facs="#i52" n="23v" xml:id="pb-23v"/>
+            <pb facs="#i53" n="24r" xml:id="pb-24r"/>
+            <pb facs="#i54" n="24v" xml:id="pb-24v"/>
+            <pb facs="#i55" n="25r" xml:id="pb-25r"/>
+            <pb facs="#i56" n="25v" xml:id="pb-25v"/>
+            <pb facs="#i57" n="26r" xml:id="pb-26r"/>
+            <pb facs="#i58" n="26v" xml:id="pb-26v"/>
+            <pb facs="#i59" n="27r" xml:id="pb-27r"/>
+            <pb facs="#i60" n="27v" xml:id="pb-27v"/>
+            <pb facs="#i61" n="28r" xml:id="pb-28r"/>
+            <pb facs="#i62" n="28v" xml:id="pb-28v"/>
+            <pb facs="#i63" n="29r" xml:id="pb-29r"/>
+            <pb facs="#i64" n="29v" xml:id="pb-29v"/>
+            <pb facs="#i65" n="30r" xml:id="pb-30r"/>
+            <pb facs="#i66" n="30v" xml:id="pb-30v"/>
+            <pb facs="#i67" n="31r" xml:id="pb-31r"/>
+            <pb facs="#i68" n="31v" xml:id="pb-31v"/>
+            <pb facs="#i69" n="32r" xml:id="pb-32r"/>
+            <pb facs="#i70" n="32v" xml:id="pb-32v"/>
+            <pb facs="#i71" n="33r" xml:id="pb-33r"/>
+            <pb facs="#i72" n="33v" xml:id="pb-33v"/>
+            <pb facs="#i73" n="34r" xml:id="pb-34r"/>
+            <pb facs="#i74" n="34v" xml:id="pb-34v"/>
+            <pb facs="#i75" n="35r" xml:id="pb-35r"/>
+            <pb facs="#i76" n="35v" xml:id="pb-35v"/>
+            <pb facs="#i77" n="36r" xml:id="pb-36r"/>
+            <pb facs="#i78" n="36v" xml:id="pb-36v"/>
+            <pb facs="#i79" n="37r" xml:id="pb-37r"/>
+            <pb facs="#i80" n="37v" xml:id="pb-37v"/>
+            <pb facs="#i81" n="38r" xml:id="pb-38r"/>
+            <pb facs="#i82" n="38v" xml:id="pb-38v"/>
+            <pb facs="#i83" n="39r" xml:id="pb-39r"/>
+            <pb facs="#i84" n="39v" xml:id="pb-39v"/>
+            <pb facs="#i85" n="40r" xml:id="pb-40r"/>
+            <pb facs="#i86" n="40v" xml:id="pb-40v"/>
+            <pb facs="#i87" n="41r" xml:id="pb-41r"/>
+            <pb facs="#i88" n="41v" xml:id="pb-41v"/>
+            <pb facs="#i89" n="42r" xml:id="pb-42r"/>
+            <pb facs="#i90" n="42v" xml:id="pb-42v"/>
+            <pb facs="#i91" n="43r" xml:id="pb-43r"/>
+            <pb facs="#i92" n="43v" xml:id="pb-43v"/>
+            <pb facs="#i93" n="44r" xml:id="pb-44r"/>
+            <pb facs="#i94" n="44v" xml:id="pb-44v"/>
+            <pb facs="#i95" n="45r" xml:id="pb-45r"/>
+            <pb facs="#i96" n="45v" xml:id="pb-45v"/>
+            <pb facs="#i97" n="46r" xml:id="pb-46r"/>
+            <pb facs="#i98" n="46v" xml:id="pb-46v"/>
+            <pb facs="#i99" n="47r" xml:id="pb-47r"/>
+            <pb facs="#i100" n="47v" xml:id="pb-47v"/>
+            <pb facs="#i101" n="48r" xml:id="pb-48r"/>
+            <pb facs="#i102" n="48v" xml:id="pb-48v"/>
+            <pb facs="#i103" n="49r" xml:id="pb-49r"/>
+            <pb facs="#i104" n="49v" xml:id="pb-49v"/>
+            <pb facs="#i105" n="50r" xml:id="pb-50r"/>
+            <pb facs="#i106" n="50v" xml:id="pb-50v"/>
+            <pb facs="#i107" n="51r" xml:id="pb-51r"/>
+            <pb facs="#i108" n="51v" xml:id="pb-51v"/>
+            <pb facs="#i109" n="52r" xml:id="pb-52r"/>
+            <pb facs="#i110" n="52v" xml:id="pb-52v"/>
+            <pb facs="#i111" n="53r" xml:id="pb-53r"/>
+            <pb facs="#i112" n="53v" xml:id="pb-53v"/>
+            <pb facs="#i113" n="54r" xml:id="pb-54r"/>
+            <pb facs="#i114" n="54v" xml:id="pb-54v"/>
+            <pb facs="#i115" n="55r" xml:id="pb-55r"/>
+            <pb facs="#i116" n="55v" xml:id="pb-55v"/>
+            <pb facs="#i117" n="56r" xml:id="pb-56r"/>
+            <pb facs="#i118" n="56v" xml:id="pb-56v"/>
+            <pb facs="#i119" n="57r" xml:id="pb-57r"/>
+            <pb facs="#i120" n="57v" xml:id="pb-57v"/>
+            <pb facs="#i121" n="58r" xml:id="pb-58r"/>
+            <pb facs="#i122" n="58v" xml:id="pb-58v"/>
+            <pb facs="#i123" n="59r" xml:id="pb-59r"/>
+            <pb facs="#i124" n="59v" xml:id="pb-59v"/>
+            <pb facs="#i125" n="60r" xml:id="pb-60r"/>
+            <pb facs="#i126" n="60v" xml:id="pb-60v"/>
+            <pb facs="#i127" n="61r" xml:id="pb-61r"/>
+            <pb facs="#i128" n="61v" xml:id="pb-61v"/>
+            <pb facs="#i129" n="62r" xml:id="pb-62r"/>
+            <pb facs="#i130" n="62v" xml:id="pb-62v"/>
+            <pb facs="#i131" n="63r" xml:id="pb-63r"/>
+            <pb facs="#i132" n="63v" xml:id="pb-63v"/>
+            <pb facs="#i133" n="64r" xml:id="pb-64r"/>
+            <pb facs="#i134" n="64v" xml:id="pb-64v"/>
+            <pb facs="#i135" n="65r" xml:id="pb-65r"/>
+            <pb facs="#i136" n="65v" xml:id="pb-65v"/>
+            <pb facs="#i137" n="66r" xml:id="pb-66r"/>
+            <pb facs="#i138" n="66v" xml:id="pb-66v"/>
+            <pb facs="#i139" n="67r" xml:id="pb-67r"/>
+            <pb facs="#i140" n="67v" xml:id="pb-67v"/>
+            <pb facs="#i141" n="68r" xml:id="pb-68r"/>
+            <pb facs="#i142" n="68v" xml:id="pb-68v"/>
+            <pb facs="#i143" n="69r" xml:id="pb-69r"/>
+            <pb facs="#i144" n="69v" xml:id="pb-69v"/>
+            <pb facs="#i145" n="70r" xml:id="pb-70r"/>
+            <pb facs="#i146" n="70v" xml:id="pb-70v"/>
+            <pb facs="#i147" n="71r" xml:id="pb-71r"/>
+            <pb facs="#i148" n="71v" xml:id="pb-71v"/>
+            <pb facs="#i149" n="72r" xml:id="pb-72r"/>
+            <pb facs="#i150" n="72v" xml:id="pb-72v"/>
+            <pb facs="#i151" n="73r" xml:id="pb-73r"/>
+            <pb facs="#i152" n="73v" xml:id="pb-73v"/>
+            <pb facs="#i153" n="74r" xml:id="pb-74r"/>
+            <pb facs="#i154" n="74v" xml:id="pb-74v"/>
+            <pb facs="#i155" n="[iv] recto" xml:id="pb-ivrecto"/>
+            <pb facs="#i156" n="[iv] verso" xml:id="pb-ivverso"/>
+            <pb facs="#i157" n="[v] recto" xml:id="pb-vrecto"/>
+            <pb facs="#i158" n="[v] verso" xml:id="pb-vverso"/>
+            <pb facs="#i159" n="[vi] recto" xml:id="pb-virecto"/>
+            <pb facs="#i160" n="[vi] verso" xml:id="pb-viverso"/>
+            <pb facs="#i161" n="[vii] recto" xml:id="pb-viirecto"/>
+            <pb facs="#i162" n="[vii] versi" xml:id="pb-viiversi"/>
+            <pb facs="#i163" n="[viii] recto" xml:id="pb-viiirecto"/>
+            <pb facs="#i164" n="[viii] verso" xml:id="pb-viiiverso"/>
+            <pb facs="#i165" n="[ix] recto" xml:id="pb-ixrecto"/>
+            <pb facs="#i166" n="[ix] verso" xml:id="pb-ixverso"/>
+            <pb facs="#i167" n="[x] recto" xml:id="pb-xrecto"/>
+            <pb facs="#i168" n="[x] verso" xml:id="pb-xverso"/>
+            <pb facs="#i169" n="[xi] recto" xml:id="pb-xirecto"/>
+            <pb facs="#i170" n="[xi] verso" xml:id="pb-xiverso"/>
+            <pb facs="#i171" n="[xii] recto" xml:id="pb-xiirecto"/>
+            <pb facs="#i172" n="[xii] verso" xml:id="pb-xiiverso"/>
+            <pb facs="#i173" n="[xiii] recto" xml:id="pb-xiiirecto"/>
+            <pb facs="#i174" n="[xiii] verso" xml:id="pb-xiiiverso"/>
+            <pb facs="#i175" n="right cover, inner" xml:id="pb-rightcover,inner"/>
+            <pb facs="#i176" n="right cover, outer" xml:id="pb-rightcover,outer"/>
+         </div>
+      </body>
+   </text>
+
+</TEI>

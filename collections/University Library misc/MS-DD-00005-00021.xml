@@ -1,0 +1,2543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, University Library, MS Dd.5.21</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+                <availability default="false" status="restricted" xml:id="displayImageRights">
+                    <p part="N">Zooming image © Cambridge University Library, All rights reserved.</p>
+                </availability>
+                <availability default="false" status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability default="false" status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+                <availability status="restricted" xml:id="watermark">
+                    <licence>Cambridge University Library (CC BY-NC 4.0)</licence>
+                </availability>
+            </publicationStmt>
+
+            <sourceDesc>
+                <msDesc status="draft" xml:id="MS-DD-00005-00021" xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+                    <msIdentifier>
+                        <institution>University of Cambridge</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Music Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, University Library, MS Dd.5.21</idno>
+
+                    </msIdentifier>
+
+                    <head>Matthew Holmes, mixed consort recorder parts</head>
+
+                    <msContents>
+
+                        <summary>
+                            <seg type="para"><hi rend="bold">Introduction:</hi></seg>
+                            <seg type="para">In the 1960s, Ian Harwood established that nine music manuscripts in Cambridge University Library were
+                                all copied by Matthew Holmes, who is recorded as the Precentor at Christ Church in Oxford from 1588, a post with
+                                responsibility for instructing the choristers in singing and playing musical instruments (see Harwood (1963, 1964 and
+                                2005)). In 1597, Holmes moved to London to take up the same job at Westminster Abbey, which he held until his death in
+                                1621. Four of the manuscripts, with the shelf marks <bibl subtype="internal" type="MS"><ref
+                                        target="https://cudl.lib.cam.ac.uk/view/MS-DD-00002-00011/1">MS Dd.2.11</ref></bibl>, <bibl subtype="internal"
+                                    type="MS"><ref target="https://cudl.lib.cam.ac.uk/view/MS-DD-00005-00078-00003/1">MS Dd.5.78(3)</ref></bibl>,
+                                    <bibl subtype="internal" type="MS"><ref target="https://cudl.lib.cam.ac.uk/view/MS-DD-00009-00033/1">MS
+                                        Dd.9.33</ref></bibl> and <bibl subtype="internal" type="MS"><ref
+                                        target="https://cudl.lib.cam.ac.uk/view/MS-NN-00006-00036/1">MS Nn.6.36</ref></bibl>, form an overlapping
+                                chronological series largely devoted to tablature for the solo renaissance lute (MS Dd.2.11 is also a major source of
+                                tablature for solo bandora - over half of the music known for the instrument - and MS Nn.6.36 also includes music for
+                                lyra viol and keyboard). Facsimiles of all four of these manuscripts of lute music are available on the Cambridge
+                                Digital Library. A fifth manuscript of the nine that Holmes copied, with the shelf mark <bibl subtype="internal"
+                                    type="MS">Dd.4.23</bibl>, comprises 86 pieces for solo cittern copied c. 1595 that is the largest and most
+                                important surviving source of English music for this instrument. </seg>
+                            <seg type="para">The remaining four manuscripts by Holmes are books containing parts for four of the six instruments of
+                                the mixed, or English, consort - which comprised lute, cittern, bandora, flute or recorder, treble viol and bass viol
+                                - probably copied when he was in Oxford. These part books bear the shelf marks <bibl subtype="internal" type="MS">MS
+                                    Dd.3.18</bibl>, <bibl subtype="internal" type="MS">MS Dd.5.20</bibl>, <bibl subtype="internal" type="MS">MS
+                                    Dd.5.21</bibl> and <bibl subtype="internal" type="MS">MS Dd.14.24</bibl> and include mixed consort parts for lute,
+                                bass viol, recorder and cittern, respectively. One of these - the recorder part - is reproduced here, and the others
+                                part books will be added to the Digital Library in the future.</seg>
+                            <seg type="para">No part books copied by Holmes are known for bandora and treble viol, the other two instruments of the
+                                mixed consort, but they are presumed to have existed and are now lost. It has been assumed that Holmes used the
+                                consort part books in his teaching of the choristers at Christ Church and then possibly the choristers at Westminster.
+                                Alternatively he may have collected and copied the solo and consort music into the nine manuscripts as a reference
+                                collection and archive as a life-long preoccupation.</seg>
+                            <seg type="para">Although housed together at Cambridge University Library and all copied by Holmes' hand, it is likely
+                                that not all the four part books are from the same set of consort parts. Two of the books match exactly in size and
+                                dimensions (275 x 210 mm) and were bound together at some stage, although they are currently bound separately. The
+                                verso of the first folio of each bears the related inscriptions 'The Recorder P[ar]te' in MS Dd.5.21 and 'The Base
+                                Vyall P[ar]te' in MS Dd.5.20, followed by a short list of the same ten items from amongst the contents of each (plus
+                                an eleventh item added to the list in <locus from="1v" to="1v">MS Dd.5.21</locus>). These similarities suggest that
+                                Dd.5.20 and Dd.5.21 are from the same set of consort parts, even though the music contained in them differ
+                                considerably and is not in the same sequence. Only three-quarters of the consort parts in Dd.5.21 are also in
+                                Dd.5.20.</seg>
+                            <seg type="para">The ninety-four items in MS Dd.5.21 are all mixed consort parts with eighty-eight for recorder plus six
+                                parts for 'treble violan', a term probably referring to either treble viol or treble violin: five are headed 'Treble
+                                Violan' on f. <locus from="2v" to="2v">2v</locus> that are presumed to have been copied into the recorder part book in
+                                error. The sixth is one of two parts for Nightingale on f. <locus from="9v" to="9v">9v</locus>, probably one for
+                                treble viol and the other for recorder. The music for each item in MS Dd.5.21 is mostly preceded by a G2/treble clef
+                                and can be played on a tenor recorder. Sixteen items are preceded by a C clef [on middle C]: five on f. <locus
+                                    from="3v" to="3v">3v</locus>, one on f. <locus from="6r" to="6r">6r</locus>, one on f. <locus from="8v" to="8v"
+                                    >8v</locus>, one on f. <locus from="9r" to="9r">9r</locus>, one on f. <locus from="9v" to="9v">9v</locus>, three
+                                on f. <locus from="10v" to="10v">10v</locus>, one on f. <locus from="11r" to="11r">11r</locus>, two on f. <locus
+                                    from="11v" to="11v">11v</locus> and one on f. <locus from="12v" to="12v">12v</locus>. In these cases, recorder and
+                                flute are given as alternatives in the inventory. The description of the contents of MS Dd.5.21 that accompanies the
+                                digital facsimile shows the range of genres of mixed consort music typical of the English repertory from the 1580s
+                                onwards and includes variations on Italian grounds and street songs [6], pavans [31], galliards [22], almaines [1],
+                                jigs [6] and ballad tunes [14], many also known from settings for lute or other instruments. Warwick Edwards commented
+                                on the accuracy of the consort parts suggesting they were difficult to perform because 'The recorder parts are ... of
+                                poor quality, and are sometimes downright corrupt'. One explanation would be that the parts were arranged from
+                                originals by the student choristers who played them and Holmes collected and copied them into his recorder part book. </seg>
+                            <seg type="para">The music in MS Dd.5.21 is mostly anonymous, although some items bear composer ascriptions, or
+                                ascriptions are found in the parts for the same music in other Holmes part books, or in other sources. The major
+                                figures of the second half of the sixteenth century represented are: Alfonso Ferrabosco the Elder, Nicholas Strogers,
+                                John Johnson, Richard Allison, Anthony Holborne and John Dowland, presumably indicating that they were the composers
+                                of the original compositions rather than the mixed consort settings (apart from Richard Allison, who published a book
+                                of consort lessons in 1609 - see below). In addition, twenty-two items are ascribed to 'R Read'/'R R' (plus two more
+                                in the other Holmes part books as well as four orpharion trios; see Spring (2000)) and three ascribed to 'R
+                                Nicolson'/'Nic'/'N' in Dd.5.21 (plus one more in another Holmes part book). These are presumed to have been composed
+                                or arranged for mixed consort by Richard Read, a singingman at Christ Church, Oxford between 1588 and 1617, graduating
+                                as B. Mus at Christ Church on 7 July 1592 - and Richard Nicholson, organist of Magdalen College, Oxford from 1595
+                                until 1638. Both were at Christ Church at the same time as Holmes, and may have participated in the performance of the
+                                mixed consort music in Holmes' part books.</seg>
+                            <seg type="para">Four other sets of part books for mixed consort are known, all incomplete, and all with parts designated
+                                for a flute instead of recorder. Three are printed collections: <hi rend="italic">The First Book of Consort
+                                    Lessons</hi> by Thomas Morley, published in 1599 [parts for cittern, bandora, flute, treble viol and bass viol
+                                survive], with a revised edition in 1611 [parts for <!--??cittern,--> bandora, flute and treble viol survive], and <hi
+                                    rend="italic">Lessons for Consort</hi> by Philip Rosseter, published in 1609 [parts for cittern and flute, and
+                                fragments of five items for lute survive]. The only manuscript set is the Walsingham Consort manuscripts, copied
+                                around 1588 by a young Daniell Bacheler. Only one other mixed consort part book is known, a book of bandora mixed
+                                consort parts interspersed with solos for lyra viol inscribed 'T B' on the cover, probably indicating Thomas Browne
+                                (d. 1641) as the original owner, and in recent times in the library of Lord Braye but now in the The Robert Spencer
+                                Collection at the Royal Academy of Music. In addition, a number of orphan consort parts for lute are found in a
+                                variety of sources for solo lute.</seg>
+                            <seg type="para">John H. Robinson, Lute Society</seg>
+                            <seg type="para"><hi rend="bold">Note on the description of contents:</hi></seg>
+                            <seg type="para">Each item is accompanied by a list of references to manuscripts containing identical or closely similar
+                                settings of the music, for another instrument. Items, classmarks or lists preceded by 'cf.' refer to manuscripts that
+                                contain settings for solo instruments that are not part of the mixed consort. Classmarks for Cambridge University
+                                Library classmarks (either 'Two-letter' or 'Additional') are given in short form; all others are given in full. Where
+                                an online catalogue record or digital facsimile exists, a link is embedded in the classmark. References in these notes
+                                to Morley, Rosseter and Walsingham relate to the surviving parts of the other three mixed consort sources (some of
+                                which are now available online), as follows: <list>
+                                    <item>Morley: Thomas Morley, <hi rend="italic">The First Booke of Consort Lessons</hi> (London, 1599; 2nd ed.
+                                        1611), for mixed consort <list>
+                                            <item>cittern part (1599): Oxford, Bodleian Library, MS Douce MM 410</item>
+                                            <item>bandora part (1599): <ref target="https://imslp.org/wiki/Special:ReverseLookup/278903">Oxford,
+                                                    Christ Church, MS Mus 806</ref></item>
+                                            <item>flute part (1599): <ref target="https://imslp.org/wiki/Special:ReverseLookup/278904">Oxford, Christ
+                                                    Church, MS Mus 805</ref></item>
+                                            <item>bass viol part (1599): <ref target="https://imslp.org/wiki/Special:ReverseLookup/278902">London,
+                                                    British Library, MS K.1.i.21</ref></item>
+                                            <item>bandora part (1611): San Marino (CA), Huntington Library, MS RB14227 </item>
+                                            <item>flute part (1611): London, British Library, MS K.1.i.7</item>
+                                            <item>treble viol part (1611): <ref
+                                                    target="https://rcm.koha-ptfs.co.uk/cgi-bin/koha/opac-detail.pl?biblionumber=22848">London, Royal
+                                                    College of Music, MS II.E.40</ref> and New York, New York Public Library for the Performing Arts,
+                                                Music Division, MS Drexel 5433.5</item>
+                                            <item>[no copy of lute part known]</item>
+                                        </list>
+                                    </item>
+                                    <item>Rosseter: Philip Rosseter, <hi rend="italic">Lessons for Consort</hi> (London, 1609) <list>
+                                            <item>cittern part: <ref
+                                                    target="https://rcm.koha-ptfs.co.uk/cgi-bin/koha/opac-detail.pl?biblionumber=22861">London, Royal
+                                                    College of Music, MS II.E.43</ref></item>
+                                            <item>flute part: New York, New York Public Library for the Performing Arts, Music Division, MS Drexel
+                                                5433.5</item>
+                                            <item>incomplete lute parts for nos 5-9: Oxford, Bodleian Library, MS Mus. 157.b.1</item>
+                                            <item>[no copies of treble viol, bass viol or bandora parts known]</item>
+                                        </list></item>
+                                    <item>Walsingham: Walsingham consort books copied by Daniel Bacheler, c. 1588: <list>
+                                            <item>flute, bass viol and treble viol parts: Hull, Brynmor Jones Library, MS DD HO 20/1-3</item>
+                                            <item>cittern part (lacking nos 25-6, 28): Oakland, Margaret Prall Music Library, Parton MS</item>
+                                            <item>[no copies of lute or bandora parts known]</item>
+                                        </list>
+                                    </item>
+                                </list></seg>
+                        </summary>
+
+                        <textLang mainLang="eng" otherLangs="">English</textLang>
+
+                        <msItem>
+                            <locus from="1v" to="1v">1v</locus>
+                            <title>Partial table of contents</title>
+                            <rubric><locus from="1v" to="1v">1v</locus>: The Recorder parte</rubric>
+                            <note>List of contents as follows, with links to location in the manuscript: <list>
+                                    <item>Alfonsoes Pauen - <locus from="4r" to="4r">4r</locus></item>
+                                    <item>Reads first Pauen - <locus from="3v" to="3v">3v</locus> and <locus from="4r" to="4r">4r</locus></item>
+                                    <item>Reads 4 Pauen - <locus from="4v" to="4v">4v</locus></item>
+                                    <item>Lachrimae - <locus from="3v" to="3v">3v</locus></item>
+                                    <item>Fortune or Complaint - <locus from="5r" to="5r">5r</locus></item>
+                                    <item>De la tromba - <locus from="5r" to="5r">5r</locus></item>
+                                    <item>Robin to the g - not extant</item>
+                                    <item>Delight Pauen - <locus from="10v" to="10v">10v</locus></item>
+                                    <item>D. R. H. galliarda - <locus from="6r" to="6r">6r</locus></item>
+                                    <item>French Kings Mask - <locus from="4v" to="4v">4v</locus></item>
+                                    <item>K Darcies Galliarde - <locus from="6r" to="6r">?6r</locus></item>
+                                </list>
+                            </note>
+                        </msItem>
+
+                        <msItem n="1">
+                            <locus from="2r" to="2r">2r</locus>
+                            <title>Passmeazures Pauen [recorder part]</title>
+                            <note>Item no. 1; paired with no. 2. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 2r: Passemeasures Pauen [bass viol part]</item>
+                                    <item>cf. MS Dd.14.24, f. 2v: Passmezures Pauen [cittern part or solo] (Nordstrom (1972), no. 114)</item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 143</bibl>
+                                <bibl>Edwards (1974), no. 753</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="2">
+                            <locus from="2r" to="2r">2r</locus>
+                            <title>Passmeasures galliarde [recorder part]</title>
+                            <note>Item no. 2; paired with no. 1. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 6r: Galliard to the Passemeasures [bass viol part]</item>
+                                    <item>cf. MS Dd.14.24, f. 3r: Passm. Galliard [cittern part or solo] (Nordstrom (1972), no. 115)</item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 148</bibl>
+                                <bibl>Edwards (1974), no. 877</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="3">
+                            <locus from="2r" to="2r">2r</locus>
+                            <title>Quadro Pauen [recorder part]</title>
+                            <note>Item no. 3; paired with no. 4. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, ff. 5v-6r: untitled (index: Quadro pauen) [lute part]</item>
+                                    <item>MS Dd.5.20, f. 6r: Quardo Pauen [bass viol part]</item>
+                                    <item>cf. MS Dd.14.24, ff. 1v-2r: Quadro Pauen [cittern part or solo] (Nordstrom (1972), no. 112)</item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 149</bibl>
+                                <bibl>Edwards (1974), no. 683</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="4">
+                            <locus from="2r" to="2r">2r</locus>
+                            <title>Quadro galliarde [recorder part]</title>
+                            <note>Item no. 4; paired with no. 3. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 6r: The Galliard to the Quadro [bass viol part]</item>
+                                    <item>cf. MS Dd.3.18, f. 6v: untitled [index: 'and the galliard'] [lute treble part]</item>
+                                    <item>cf. MS Dd.14.24, f. 2r: Quadro Galliard [cittern part or solo] (Nordstrom (1972), no. 113)</item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 150</bibl>
+                                <bibl>Edwards (1974), no. 836</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="5">
+                            <locus from="2r" to="2r">2r</locus>
+                            <title>Chi passa [recorder part]</title>
+                            <note>Item no. 5. </note>
+                            <note>See also: <list>
+                                    <item>cf. MS Dd.3.18, ff. 7v-8r: Chi passa Jo Johnson [lute treble part] (Burgers (2001), no. 63)</item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Simpson (1966), pp. 101-103</bibl>
+                                <bibl>Nordstrom (1972), no. 12</bibl>
+                                <bibl>Edwards (1974), no. 876</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="6">
+                            <locus from="2r" to="2r">2r</locus>
+                            <title>Spannish Paven [recorder part]</title>
+                            <note>Item no. 6.</note>
+                            <note>See also: <list>
+                                    <item>cf. MS Dd.3.18, ff. 14v-15r: The spannish Pauen [Alfonso Ferrabosco I] [lute treble part] (Charteris (1988),
+                                        no. C215</item>
+                                    <item>cf. 45 lute solos edited for the <hi rend="italic">Lutezine</hi> and <hi rend="italic">Lute News</hi> 112
+                                        (December 2014)</item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Simpson (1966), pp. 678-81</bibl>
+                                <bibl>Nordstrom (1972), no. 22</bibl>
+                                <bibl>Edwards (1974), no. 738</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="7">
+                            <locus from="2r" to="2r">2r</locus>
+                            <title>Fortune [recorder part]</title>
+                            <note>Item no. 7; cf. no. 36.</note>
+                            <note>See also: <list>
+                                    <item>Dublin, Trinity College, MS 408/I, p. 14: fortune my foe to the consort [lute part]</item>
+                                    <item>MS Dd.9.33, f. 51r: fortune [lute part or treble?]</item>
+                                    <item>MS Dd.9.33, f. 89r: fortune [lute part or treble?]</item>
+                                    <item>cf. 45 lute solos edited for the <hi rend="italic">Lutezine</hi> and <hi rend="italic">Lute News</hi> 117
+                                        (April 2016), incl. Poutlon and Lam (1974; repr. 1978 and 1981)</item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Simpson (1966), pp. 225-31</bibl>
+                                <bibl>Nordstrom (1972), no. 125</bibl>
+                                <bibl>Edwards (1974), no. 739</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="8">
+                            <locus from="2v" to="2v">2v</locus>
+                            <title>Mr Knolles galliarde [treble violan part]</title>
+                            <note>Item no. 8; cf. nos 46 and 82.</note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 5v: The Galliard [bass viol part]</item>
+                                    <item>MS Dd.5.20, f. 8r: Crotchet Galliard [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 19r: The galliarde [cittern part]</item>
+                                    <item><ref target="https://lib.ram.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=69647">London, Royal Academy of
+                                            Music, MS 600</ref> [Browne/Braye], f. 11r: Knowles Galliard [bandora part] (Nordstrom (1992), no.
+                                        C31)</item>
+                                </list>
+                            </note>
+                            <note>cf. lute solos: <list>
+                                    <item><ref target="https://cudl.lib.cam.ac.uk/view/MS-ADD-08844/19">MS Add. 8844</ref> [Trumbull], f. 8r: A
+                                        galliard mr Knowles </item>
+                                    <item>Linz, Oberösterreichisches Landesarchiv, MS 475 [Eysertt], f. 24r: Galliarda Englessa</item>
+                                    <item><ref target="https://www.e-manuscripta.ch/bau/doi/10.7891/e-manuscripta-13217">Basel,
+                                            Universitätsbibliothek, Musiksammlung, MS F.IX.70</ref> [Wurstisen], p. 318: Galliarda Anglicana</item>
+                                    <item>Dublin, Marsh's Library, MS Z.3.2.13 [Marsh], p. 319: Knoles Gall</item>
+                                    <item>New Haven, Beinecke Rare Book and Manuscript Library, Music Deposit 1 [Wickhambrook], f. 17r: knowles his
+                                        galiarde</item>
+                                    <!-- check: ?Not Irving S. Gilmore Music Library? -->
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 120</bibl>
+                                <bibl>Edwards (1974), no. 820</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="9">
+                            <locus from="2v" to="2v">2v</locus>
+                            <title>Tanto Brauo [treble violan part]</title>
+                            <note>Item no. 9.</note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 165</bibl>
+                                <bibl>Edwards (1974), no. 837</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="10">
+                            <locus from="2v" to="2v">2v</locus>
+                            <title>Phillips Pauen [treble violan part]</title>
+                            <author key="person_v59270599">Peter Phillips</author>
+                            <note>Item no. 10.</note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, ff. 18v-19r: Phillips Pauen [lute part]</item>
+                                    <item>MS Dd.5.20, f. 2r: Phillips Pauen [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 9v: [P]hillips Pauen [cittern part]</item>
+                                    <item>London, Royal Academy of Music, MS 600, f. 14r: Phillips pauin [bandora part] (Nordstrom (1992), no.
+                                        C5)</item>
+                                    <item>London, British Library, Add. MS 36526A, f. 5r: untitled [tenor and bass viol parts]</item>
+                                    <item>Vilnius, Lietuvos mokslų akademija Vrublevskių biblioteka, MS 285-MF-LXXIX [Königsberg], ff. 38v-39r:
+                                        Paduana Philippi [bandora part]</item>
+                                    <item><!-- check -->Walsingham, no. 7: Phillips Paven [mixed consort]</item>
+                                    <item>Morley, no. 8: Phillips Pauen [mixed consort] (Beck (1959), no. 89)</item>
+                                    <item>Kassel, Landesbibliothek und Murhardsche Bibliothek der Stadt Kassel, MS 4<hi rend="superscript">o</hi> Mus.
+                                        125(1-5), no. 37: untitled [instrumental ensemble à 4]</item>
+                                    <item>Dublin, Trinity College Library, OLs 192.n.40 (mss adds. Tallis and Byrd, 1575), p. 27: phillips pavin
+                                        [instrumental ensemble]</item>
+                                    <item>Oxford, Christ Church Library and Archives, MS 439, f. 117r: untitled [bass part]</item>
+                                    <item>Klossman, <hi rend="italic">Amenoetatum Musicalium Hortulus</hi> (1622), no. 34: Padovana Philippi
+                                        [instrumental ensemble à 4]</item>
+                                    <item>Vallet (1642), III no. 19: Pavanne Philippi [tenor and bass parts]</item>
+                                    <!-- check -->
+                                    <item>cf. 18 solos or duet parts for lute and 1 for cittern edited in PhilipsS, no. 3; keyboard, Brookes no.
+                                        2022</item>
+                                    <!-- check -->
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 29</bibl>
+                                <bibl>Edwards (1974), no. 630</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="11">
+                            <locus from="2v" to="2v">2v</locus>
+                            <title>Mounsieurs Allmaine [treble violan part]</title>
+                            <note>Item no. 11. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 2r: Mounsieurs Allmaine [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 11r: Mons[ieur]s Allmain [cittern part]</item>
+                                    <item>Morley no. 15: Mounsiers Almaine [mixed consort] (Beck (1959), no. 137)</item>
+                                    <item>London, Royal Academy of Music, MS 600, f. 14r: Mounsiers Alman [bandora part] (Nordstrom (1992), no.
+                                        C18)</item>
+                                    <item><ref target="https://cudl.lib.cam.ac.uk/view/MS-ADD-02764-00002/26">Add. 2764(2)</ref>, f. 12v (fragment)
+                                        [incomplete lute part]</item>
+                                    <item><ref target="https://cudl.lib.cam.ac.uk/view/MS-DD-00009-00033/106">Dd.9.33</ref>, ff. 53v-54r-53v:
+                                        Mounsieurs Allmaine [Morley's missing lute part?]</item>
+                                    <item>Hamburg, Staats- und Universitätsbibliothek Carl von Ossietzky, Musiksammlung, MS ND VI 3238 [Schele], pp.
+                                        147-48: untitled [lute part]</item>
+                                    <item>Vilnius, Lietuvos mokslų akademija Vrublevskių biblioteka, MS 285-MF-LXXIX, f. 1r: Monsieurs Allemande. Bass
+                                        [lute part]</item>
+                                    <item>Vilnius, Lietuvos mokslų akademija Vrublevskių biblioteka, MS 285-MF-LXXIX, f. 39v: Monsieurs Almande
+                                        triplici modo 1. Variatio 2. 3. [bandora part]</item>
+                                    <item><ref target="https://catalog.folger.edu/record/228014">Washington, D.C., Folger Shakespeare Library, MS
+                                            V.b.280</ref> [Folger-Dowland], f. 13r: mounsiers Almaine [lute part]</item>
+                                    <item>cf. Dd.3.18, f. 35v: untitled [John Dowland's lute solo setting]</item>
+                                    <item>cf. 30 solos for lute or cittern edited for the <hi rend="italic">Lutezine</hi> and <hi rend="italic">Lute
+                                            News</hi> 110 (July 2014)</item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Simpson (1966), pp. 495-96</bibl>
+                                <bibl>Nordstrom (1972), no. 63</bibl>
+                                <bibl>Edwards (1974), no. 649</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="12">
+                            <locus from="2v" to="2v">2v</locus>
+                            <title>The Erle of Oxefords Marche [treble violan part]</title>
+                            <note>Item no. 12; cf. no. 78. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>Dd.3.18, f. 20r: The March. The Erle of Oxeforde Marche [lute part]</item>
+                                    <item>Morley no. 14: My Lord of Oxenfords maske [mixed consort] (Beck (1959), no. 134)</item>
+                                    <item>cf. 6 lute and cittern solos edited for <hi rend="italic">Lute News</hi> 138 (July 2021); keyboard, Brookes
+                                        no. 1343a [William Byrd]</item>
+                                    <!-- check -->
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 32</bibl>
+                                <bibl>Edwards (1974), no. 648</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="13">
+                            <locus from="3r" to="3r">3r</locus>
+                            <title>The Sprytes songe [recorder 1 part] [The voice of the earth, The ghost]</title>
+                            <note>Item no. 13; cf. no. 16. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 3r: The Sprytes tune [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 9v: Sprite - The Sprites Tune [cittern part]</item>
+                                    <item>Walsingham, no. 27: The Voyce [Richard Allison] [mixed consort] and tune quoted in Walsingham, no. 5</item>
+                                </list>
+                            </note>
+                            <note>cf. lute solos: <list>
+                                    <item>D-BAU, MS 13.4<hi rend="superscript">o</hi>.85, p. 83: Feins Lieb du hast mich gefangen</item>
+                                    <!-- check -->
+                                    <item>D-BAU, MS 13.4<hi rend="superscript">o</hi>.85, p. 85: Feins Lieb du hast mich gefangen Hasl</item>
+                                    <!-- check -->
+                                    <item>Kassel, Landesbibliothek und Murhardsche Bibliothek der Stadt Kassel, MS 4<hi rend="superscript">o</hi>
+                                        108/I [Montbuisson], f. 24r: Besardes Dantz</item>
+                                    <item>Dublin, Trinity College, MS 408/II, f. 113r: The Voice of the Earthe</item>
+                                    <item>Washington, D.C., Folger Shakespeare Library, MS V.b.280, ff. 7v-8r: the voice</item>
+                                    <item>Fuhrmann, <hi rend="italic">Testudo-Gallo Germanica</hi> (1615), p. 101: Spectri euiusdam sonus nocturnus.
+                                        E.M.A. Subplementum. Variatio 1. 2.</item>
+                                </list>
+                            </note>
+                            <note>cf. cittern solo: Holborn, <hi rend="italic">The Cittharn Schoole</hi> (1597), sig/ C1r: The voyce. </note>
+                            <!-- check -->
+                            <note>cf. keyboard: Brookes no. 1400 [William Byrd]</note>
+                            <!-- check -->
+
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 117</bibl>
+                                <bibl>Edwards (1974), no. 654</bibl>
+                                <bibl>Edwards (1977), no. 27 [modern edition]</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="14">
+                            <locus from="3r" to="3r">3r</locus>
+                            <title>Holburnes farewell [recorder part]</title>
+                            <author key="person_v54332700">Anthony Holborne</author>
+                            <note>Item no. 14. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 18r: Holburns farwell - Holburns farewell [lute part]</item>
+                                    <item>MS Dd.5.20, f. 6r: Holburnes farwell [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 10v: Holburnes farwell [cittern part]</item>
+                                    <item>Holborn (1597), sig. P2v: The farewell [cittern and bass viol]</item>
+                                    <item>cf. lute solo in Spring (2001), no. 34</item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 28</bibl>
+                                <bibl>Edwards (1974), no. 821</bibl>
+                                <bibl>Edwards (1977), no. 22 [modern edition]</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="15">
+                            <locus from="3r" to="3r">3r</locus>
+                            <title>Harrisons Galliarde [recorder part]</title>
+                            <note>Item no. 15. </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 166</bibl>
+                                <bibl>Edwards (1974), no. 860</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="16">
+                            <locus from="3r" to="3r">3r</locus>
+                            <title>Sprytes songe [recorder 2 part]</title>
+                            <note>Item no. 16; cf. no. 13. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 3r: The Sprytes tune [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 9v: The Sprites Tune [cittern part]</item>
+                                    <item>Walsingham, no. 27: The Voyce [Richard Allison] [mixed consort] and tune quoted in Walsingham, no. 5</item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 166</bibl>
+                                <bibl>Edwards (1974), no. 860</bibl>
+                                <bibl>Edwards (1977), no. 27 [modern edition]</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="17">
+                            <locus from="3v" to="3v">3v</locus>
+                            <title>Lachrimae [recorder or flute part]</title>
+                            <author key="person_v14744124">John Dowland</author>
+                            <note>Item no. 17. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, ff. 16v-17r: Lacrimae [lute part]</item>
+                                    <item>MS Dd.5.20, f. 3v: Lachrimae [bass viol part]</item>
+                                    <item>MS Dd.5.20, f. 6v: Lachrimae [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 25r: Lachrimae [cittern part]</item>
+                                    <item>London, Royal Academy of Music, MS 600, f. 17v: untitled [bars 1-18 crossed, bandora part] (Nordstrom
+                                        (1992), no. C54)</item>
+                                    <item>London, Royal Academy of Music, MS 600, f. 92r: lachrimae [bandora part] (Nordstrom (1992), no. C54)</item>
+                                    <item>Morley, no. 7: Lachrimae Pavin [mixed consort] (Beck (1959), no. 81)</item>
+                                    <item>cf. lute solos: Poulton and Lamb (1974, repr. 1978 and 1981), no. 15</item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 25</bibl>
+                                <bibl>Edwards (1974), no. 736</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="18">
+                            <locus from="3v" to="3v">3v</locus>
+                            <title>Captein Pipers Pauen [recorder or flute part]</title>
+                            <author key="person_v14744124">John Dowland</author>
+                            <note>Item no. 18. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 3v: Captaine Pipers Pauen [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 32v: Capt. Pipers Pauen [cittern part]</item>
+                                    <item>London, Royal Academy of Music, MS 600, f. 89r: Pipers / pauin [bandora part] (Nordstrom (1992), no.
+                                        C52)</item>
+                                    <item>London, British Library, Add. MS 36484, f. 22v: Daulans paven [bass viol part]</item>
+                                    <item>Kassel, Landesbibliothek und Murhardsche Bibliothek der Stadt Kassel, MS 4<hi rend="superscript">o</hi>
+                                        Mus.125(1-5), no. 49: untitled [instrumental ensemble à 5]</item>
+                                    <item>Morley, no. 4: Captaine Pipers Pavin [mixed consort] (Beck (1959), no. 64)</item>
+                                    <item>Hagius, <hi rend="italic">Newe kunstliche Musicalische</hi> (1616), no. 24: Pypers [P]avan à 5</item>
+                                    <item>Hagius, <hi rend="italic">Newe kunstliche Musicalische</hi> (1616), no. 48: [Pypers] Pavan à 4. Medias voces
+                                        composuit C.H.</item>
+                                    <item>cf. lute solos: Poulton and Lamb (1974, repr. 1978 and 1981), no. 8</item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 135</bibl>
+                                <bibl>Edwards (1974), no. 735</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="19">
+                            <locus from="3v" to="3v">3v</locus>
+                            <title>In Nomine Pauen [recorder or flute part]</title>
+                            <author key="person_v46948476">Nicholas Strogers</author>
+                            <note>Item no. 19; paired with no. 20. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 3v: In nomine Pauen [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 25v: In nomine Pauen [cittern part]</item>
+                                    <item>MS Dd.4.23, f. 24v: Parsons In nomine. for consorte [cittern part]</item>
+                                    <item>London, Royal Academy of Music, MS 600, f. 15r: In nomine Pauin [bandora part] (Nordstrom (1992), no.
+                                        C1)</item>
+                                    <item>Morley, no. 13: In Nomine Pavin [Nicholas Strogers, mixed consort] (Beck (1959), no. 14)</item>
+                                    <item>Kassel, Landesbibliothek und Murhardsche Bibliothek der Stadt Kassel, MS 4<hi rend="superscript">o</hi>
+                                        Mus.125(1-5), no. 20: untitled [instrumental ensemble à 5]</item>
+                                    <item>cf. 3 lute solos edited for <hi rend="italic">Lute News</hi> 55 (September 2000)</item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 127</bibl>
+                                <bibl>Edwards (1974), no. 643</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="20">
+                            <locus from="3v" to="3v">3v</locus>
+                            <title>Galliard In nomine [recorder or flute part]</title>
+                            <author key="person_v46948476">Nicholas Strogers</author>
+                            <note>Item no. 20; paired with no. 19. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 3v: In nomine galliarde [bass viol part]</item>
+                                    <item>MS Dd.14.24, ff. 25v-26r: 2. Galliarde to In nomine [cittern part]</item>
+                                    <item>London, Royal Academy of Music, MS 600, f. 15r: In nomine gallliard [bandora part] (Nordstrom (1992), no.
+                                        C30)</item>
+                                    <item>cf. 6 lute solos edited for <hi rend="italic">Lute News</hi> 55 (September 2000)</item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 128</bibl>
+                                <bibl>Edwards (1974), no. 816</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="21">
+                            <locus from="3v" to="3v">3v</locus>
+                            <title>Reads first Pauen [recorder or flute part]</title>
+                            <note>Item no. 21; cf. no. 24. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, ff. 37r-37v: Reades 1 Pauen [lute part]</item>
+                                    <item>MS Dd.5.20, f. 4r: Reads first Pauen [bass viol part]</item>
+                                    <item>MS Dd.4.24, f. 9r: Reads 1. Pauen [cittern part]</item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 65</bibl>
+                                <bibl>Edwards (1974), no. 631</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="22">
+                            <locus from="4r" to="4r">4r</locus>
+                            <title>Longe Pauen [recorder part]</title>
+                            <note>Item no. 22.</note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 4r: Longe Pauen [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 19v: Lang Pauen J Johnson [cittern part]</item>
+                                    <item>cf. MS Dd.2.11, f. 64v, Long Pauen [bandora solo] (Nordstrom (1992), no. 2)</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 121</bibl>
+                                <bibl>Edwards (1974), no. 623</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="23">
+                            <locus from="4r" to="4r">4r</locus>
+                            <title>Allfonsoes Pauen [recorder part]</title>
+                            <note>Item no. 23. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 36v: Alfonsoes Pauen [lute part]</item>
+                                    <item>MS Dd.5.20, f. 4r: Alfonsoes Pauen [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 22r: Alfonsoes Pauen [cittern part]</item>
+                                    <item>cf. MS Add. 8844, ff. 7v-8r: August[ine] pavan [lute solo] (Charteris (1998), no. C226)</item>
+                                    <item>cf. MS Dd.2.11, ff. 64r and 67r: untitled [bandora solo] (Nordstrom (1992), no. 4)</item>
+                                    <item>keyboard: Brookes (1996), no. 851</item>
+                                    <!-- check -->
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 64</bibl>
+                                <bibl>Edwards (1974), no. 676</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="24">
+                            <locus from="4r" to="4r">4r</locus>
+                            <title>Reads first Pauen [recorder part]</title>
+                            <note>Item no. 24; cf. no. 21. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 36v: Rades 1 Pauen [lute part]</item>
+                                    <item>MS Dd.5.20, f. 4r: Reads first Pauen [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 9r: Reads 1. Pauen [cittern part]</item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 65</bibl>
+                                <bibl>Edwards (1974), no. 631</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="25">
+                            <locus from="4r" to="4r">4r</locus>
+                            <title>Reads 2 Pauen [recorder part]</title>
+                            <note>Item no. 25. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, ff. 37v-38r: Reades 2 Pauen [lute part]</item>
+                                    <item>MS Dd.5.20, f. 4r: Reads 2 Pauen [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 20v: Reads 2 Pauen [cittern part]</item>
+                                    <item>cf. MS Dd.5.20, f. 29v: Pauen 4 [bass viol solo]</item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 66</bibl>
+                                <bibl>Edwards (1974), no. 632</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="26">
+                            <locus from="4r" to="4r">4r</locus>
+                            <title>Reads Galliarde [recorder part]</title>
+                            <note>Item no. 26; cf. no. 51. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 22v: Reads Galliarde [lute part]</item>
+                                    <item>MS Dd.3.18, f. 38v: Reads Galliard [lute part]</item>
+                                    <item>MS Dd.5.20, f. 4r: Reads galliarde [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 21r: Reads galliard [cittern part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), nos 36 and 68</bibl>
+                                <bibl>Edwards (1974), no. 834</bibl>
+                                <bibl>Edwards (1977), no. 17 [modern edition]</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="27">
+                            <locus from="4v" to="4v">4v</locus>
+                            <title>Reads La Volta [crossed out] [recorder part]</title>
+                            <note>Item no. 27; cf. no. 61. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 38r: Reads La volta [lute part]</item>
+                                    <item>MS Dd.5.20, f. 4r: Reads La Volta [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 24r: Reads La volta [cittern part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 67</bibl>
+                                <bibl>Edwards (1974), no. 633</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="28">
+                            <locus from="4v" to="4v">4v</locus>
+                            <title>The french Kings Maske [recorder part]</title>
+                            <note>Item no. 28. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 4r: The french Kings maske [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 23r: The french Kings Maske [cittern part]</item>
+                                    <item>cf. 8 lute solos edited for <hi rend="italic">Lute News</hi> 64 (December 2002)</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 126</bibl>
+                                <bibl>Edwards (1974), no. 655</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="29">
+                            <locus from="4v" to="4v">4v</locus>
+                            <title>Reads flatt [3] Pauen [recorder part]</title>
+                            <note>Item no. 29. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, ff. 39r-38v: Reades Flatt Pauen [lute part]</item>
+                                    <item>MS Dd.5.20, f. 4v: Reads flatt Pauen [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 21r: Reads flatt Pauen [cittern part, crossed out]</item>
+                                    <item>MS Dd.14.24, f. 23v: Reads flatt Pauen [cittern part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 69</bibl>
+                                <bibl>Edwards (1974), no. 723</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="30">
+                            <locus from="4v" to="4v">4v</locus>
+                            <title>Reads 4 Pauen [recorder part]</title>
+                            <note>Item no. 30. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 39v: Reades 4 Pauen [lute part]</item>
+                                    <item>MS Dd.5.20, f. 4v: Reads 4 Pauen [bass viol part]</item>
+                                    <item>MS Dd.5.20, f. 6v: untitled [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 22v: Reads 4 Pauen [cittern part]</item>
+                                    <item>cf. MS Dd.5.20, f. 29v: Pauen 5 [bass viol solo]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 70</bibl>
+                                <bibl>Edwards (1974), no. 634</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="31">
+                            <locus from="4v" to="4v">4v</locus>
+                            <title>Reads Allmaine [recorder part]</title>
+                            <note>Item no. 31. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 19r: Reads Allmaine [lute part]</item>
+                                    <item>MS Dd.5.20, f. 4v: Reads Allmaine [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 23r: Reads Allmayne [cittern part]</item>
+                                    <item>cf. lute solos (Spring (2001), no. 53</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 30</bibl>
+                                <bibl>Edwards (1974), no. 680</bibl>
+                                <bibl>Edwards (1977), no. 18 [modern edition]</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="32">
+                            <locus from="4v" to="4v">4v</locus>
+                            <title>Squiers galliarde [recorder part]</title>
+                            <note>Item no. 32. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 4v: Squiers galliarde [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 21v: Squiers Galliard [cittern part]</item>
+                                    <item>Walsingham no. 17: Squiers Galliard [mixed consort]</item>
+                                    <item>London, Royal Academy of Music, MS 600, f. 14v: Squires galliard [bandora part] (Nordstrom (1992), no.
+                                        C66)</item>
+                                    <item>cf. 16 lute solos and a duet edited for <hi rend="italic">Lute News</hi> and <hi rend="italic">Lutezine</hi>
+                                        122 (July 2017)</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 124</bibl>
+                                <bibl>Edwards (1974), no. 861</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="33">
+                            <locus from="5r" to="5r">5r</locus>
+                            <title>The french volta [recorder part]</title>
+                            <note>Item no. 33. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 8r: Y<hi rend="superscript">e</hi> french Volta [lute part]</item>
+                                    <item>MS Dd.5.20, f. 4v: The French volta [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 24r: The french volta [cittern part]</item>
+                                    <item>Glasgow, University Library, MS Euing 25, f. 23v: untitled [?lute part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Simpson (1966), pp. 237-38</bibl>
+                                <bibl>Nordstrom (1972), no. 13</bibl>
+                                <bibl>Edwards (1974), no. 656</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="34">
+                            <locus from="5r" to="5r">5r</locus>
+                            <title>Go merely Wheele [recorder part]</title>
+                            <note>Item no. 34. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, ff. 40v-41r: Go merely Wheele [lute part]</item>
+                                    <item>MS Dd.5.20, f. 4v: Go merely Wheele [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 22r: go merely wheele [cittern part]</item>
+                                    <item>cf. 11 lute solos edited for the <hi rend="italic">Lutezine</hi> to <hi rend="italic">Lute News</hi> 133
+                                        (April 2020)</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 72</bibl>
+                                <bibl>Edwards (1974), no. 892</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="35">
+                            <locus from="5r" to="5r">5r</locus>
+                            <title>Duncombs galliarde [recorder part]</title>
+                            <note>Item no. 35. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 17r: Duncombs galliarde [lute part]</item>
+                                    <item>MS Dd.5.20, f. 5r: Duncombs galliarde [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 17r: Duncombs Galliard [cittern part]</item>
+                                    <item>London, Royal Academy of Music, MS 602 [Sampson], f. 12r: duncombs galiarde for 2 lutes [lute I]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 26</bibl>
+                                <bibl>Edwards (1974), no. 822</bibl>
+                                <bibl>Edwards (1977), no. 20 [modern edition]</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="36">
+                            <locus from="5r" to="5r">5r</locus>
+                            <title>Complainte or [fortune] [recorder part]</title>
+                            <note>Item no. 36; cf. no. 7. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 5r: Complainte [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 21v: Complainte ali[ud] ffortune [cittern part]</item>
+                                    <item>cf. lute solo in Poulton and Lam (1974; repr. 1978 and 1981), no. 63</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Simpson (1966), pp. 225-31</bibl>
+                                <bibl>Nordstrom (1972), no. 125</bibl>
+                                <bibl>Edwards (1974), no. 740</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="37">
+                            <locus from="5r" to="5r">5r</locus>
+                            <title>Tarletons Jigge [recorder part]</title>
+                            <note>Item no. 37. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 53r: Tarlton Jigg [lute part]</item>
+                                    <item>MS Dd.5.20, f. 5r: Tarletons Jigge [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 17r: Tareltons Jigge Jigg [cittern part]</item>
+                                    <item>cf. lute and cittern solos in Poulton and Lam (1974, repr. 1978 and 1981), no. 81.</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 89</bibl>
+                                <bibl>Edwards (1974), no. 897</bibl>
+                                <bibl>Edwards (1977), no. 23 [modern edition]</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="38">
+                            <locus from="5r" to="5r">5r</locus>
+                            <title>De La Tromba Pauen [recorder part]</title>
+                            <note>Item no. 38; paired with Rosseter (1609), no. 17: Galliard to de la Tromba. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 40r: De la Tromba [lute part]</item>
+                                    <item>MS Dd.3.18, ff. 45v-46r: De la Tromba 2. treble [treble viol part, in tablature]</item>
+                                    <item>MS Dd.5.20, f. 5r: De La Tromba Pauen [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 17v: De la tromba Pauen [cittern part]</item>
+                                    <item>London, Royal Academy of Music, MS 600, f. 18r: De la tromba Pauin [bandora part] (Nordstrom (1992), no.
+                                        C11)</item>
+                                    <item>Walsingham no. 1: The Lady Frances Sidneys Goodmorowe [Richard Allison] [mixed consort]</item>
+                                    <item>Morley no. 3: De la Tromba Pavin [?Richard Allison] [mixed consort] (Beck (1959), no. 57)</item>
+                                </list></note>
+                            <note>cf. also: <list>
+                                    <item>MS Dd.2.11, f. 82v: De la Tromba pauen to the Bandora [bandora solo] (Nordstrom (1992), no. 5)</item>
+                                    <item>London, British Library, Egerton MS 2046 [Pickering], ff. 6v-8r: delatrumba for ii luttes [duet lutes I and
+                                        II]</item>
+                                    <item><ref target="http://hdl.handle.net/10107/4630018">Aberystwyth, National Library of Wales, Brogyntyn MS
+                                            I.27</ref>, pp. 26-27: Pauen Del' tromba [duet lute II]</item>
+                                    <item>London, Royal Academy of Music, MS 602, ff. 10v-11r: delatrumba [duet lute II]</item>
+                                    <item><ref target="http://digital.slub-dresden.de/id454111053">Leipzig, Leipziger Stadtbibliothek, Musikbibliothek
+                                            MS II.6.15</ref>, pp. 96-97: Pauana del'La tromba 13 [lute solo]</item>
+                                    <item><ref target="http://digital.slub-dresden.de/id454111053">Leipzig, Leipziger Stadtbibliothek, Musikbibliothek
+                                            MS II.6.15</ref>, pp. 94-95: Pauana del'La tromba 12 [lute solo]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), nos 71 and 79</bibl>
+                                <bibl>Edwards (1974), no. 601</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="39">
+                            <locus from="5r" to="5r">5r</locus>
+                            <title>Dowlands first galliarde [recorder part]</title>
+                            <note>Item no. 39. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 5r: Dowlands first galliarde [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 34v: Dowlands 1 Galliarde [cittern part]</item>
+                                    <item>cf. lute solos in Poulton and Lam (1974, rep. 1978 and 1981), no. 22</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 137</bibl>
+                                <bibl>Edwards (1974), no. 874</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="40">
+                            <locus from="5v" to="5v">5v</locus>
+                            <title>Dowlands round Battell galliarde [recorder part]</title>
+                            <note>Item no. 40. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 5v: Do: Round Battell galliarde [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 36v: Downaldsn Rounde b[attle] galliarde [cittern part]</item>
+                                    <item>Washington D.C., Folger Shakespeare Library, MS V.b.280, f. 6r: Doulands Rounde Battell Galyarde [lute
+                                        part]</item>
+                                    <item>cf. lute solos in Poulton and Lam (1974, rep. 1978 and 1981), nos 20, 39 and 40</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 139</bibl>
+                                <bibl>Edwards (1974), no. 803</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="41">
+                            <locus from="5v" to="5v">5v</locus>
+                            <title>Primiero [recorder part]</title>
+                            <note>Item no. 41. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, ff. 32v-33r: Primiero [lute part]</item>
+                                    <item>MS Dd.5.20, f. 2v: Primiero [bass viol part]</item>
+                                    <item>MS Dd.14.24, ff. 35v-36r: Primiero [cittern part]</item>
+                                    <item>Walsingham no. 29: Primero [mixed consort]</item>
+                                    <item>Edinburgh, National Library of Scotland, MS 5.2.14, f. 24r: Primero [violin part]</item>
+                                    <item>cf. lute and cittern solos in Robinson, McCoy and Spencer (1994), no. 12</item>
+                                    <item>cf. keyboard in Brookes (1996), no. 859</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 57</bibl>
+                                <bibl>Edwards (1974), no. 645</bibl>
+                                <bibl>Edwards (1977), no. 24 [modern edition]</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="42">
+                            <locus from="5v" to="5v">5v</locus>
+                            <title>La Bergera galliarde [recorder part]</title>
+                            <note>Item no. 42. </note>
+                            <note>Marked by a stylised pointer of unknown significance. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 41r: La Bergera Galliard [lute part]</item>
+                                    <item>MS Dd.5.20, f. 3r: La Bergera Galliarde [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 18r: La bergara Galliarde [cittern part]</item>
+                                    <item>MS Dd.9.33, ff. 46v-47r: Rosseter [lute part]</item>
+                                    <item>London, Royal Academy of Music, MS 603 [Board], f. 23r: The Prince of Prtinggall his gallyard [lute
+                                        part]</item>
+                                    <item>Rosseter (1609), no. 18: Labergere [mixed consort]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 73</bibl>
+                                <bibl>Edwards (1974), no. 862</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="43">
+                            <locus from="5v" to="5v">5v</locus>
+                            <title>Tremento [recorder part]</title>
+                            <note>Item no. 43. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 5v: Tremento [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 46v: Tremento [cittern part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 141</bibl>
+                                <bibl>Edwards (1974), no. 741</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="44">
+                            <locus from="6r" to="6r">6r</locus>
+                            <title>Dowl. Reads H. [K Darcyes] Galliard [recorder part]</title>
+                            <note>Item no. 44. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 5v: Dowl R. H. Galliard [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 20r: Do. Re. Ha. gallia[rd] [cittern part]</item>
+                                    <item>cf. lute in Poulton and Lam (1974, rep. 1978 and 1981), no. 41</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 122</bibl>
+                                <bibl>Edwards (1974), no. 804</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="45">
+                            <locus from="6r" to="6r">6r</locus>
+                            <title>My Lord Chauncellor's Pauen [recorder part]</title>
+                            <note>Item no. 45; paired with no. 46; cf. no. 81. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 5v: My Lord Ch. Pauen [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 18v: My Lo[rd] Chaunc[ellor's] Pauen [cittern part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 119</bibl>
+                                <bibl>Edwards (1974), no. 657</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="46">
+                            <locus from="6r" to="6r">6r</locus>
+                            <title>The Galliard [recorder part]</title>
+                            <note>Item no. 46; paired with no. 45; cf. nos 8 and 82. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 5v: The Galliard [bass viol part]</item>
+                                    <item>MS Dd.5.20, f. 8r: Crotchet Galliard [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 19r: The galliarde [cittern part]</item>
+                                    <item>London, Royal Academy of Music, MS 600, f. 11r: Knowles Galliard [bandora part] (Nordstrom (1992), no.
+                                        C31)</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 120</bibl>
+                                <bibl>Edwards (1974), no. 820</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="47">
+                            <locus from="6r" to="6r">6r</locus>
+                            <title>A Jigge [recorder part]</title>
+                            <note>Item no. 47. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 5v: A Jigge [bass viol part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 147</bibl>
+                                <bibl>Edwards (1974), no. 887</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="48">
+                            <locus from="6v" to="6v">6v</locus>
+                            <title>Cante cantate [recorder part]</title>
+                            <author key="person_v92467999">Robert Parsons</author>
+                            <note>Item no. 48. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 7r: Cante cantate [bass viol part]</item>
+                                    <item>MS Dd.5.20, f. 6v: Cante cantate [bass viol part]</item>
+                                </list></note>
+                            <note>cf. also: <list>
+                                    <item>Aberystwyth, National Library of Wales, MS Brogyntyn I.27, pp. 18-19: Replete for Three Lutes [lower four
+                                        voices of instrumental ensemble à 6]</item>
+                                    <item>London, British Library, Add. MS 31390, f. 60r: A songe of Mr. R. Parsons [bass to BL, Add. MS 31390, f.
+                                        11r, instrumental ensemble à 6]</item>
+                                    <item>London, British Library, Add. MS 47844, f. 15v: Mr. Parsons [one part of instrumental ensemble à 6]</item>
+                                    <item>Oxford, Christ Church, MS 979-983, no. 158 and Oxford, Bodleian Library, MS Tendbury 389: The song called
+                                        trumpetts [instrumental ensemble à 6] </item>
+                                    <!-- check -->
+                                    <item>New York, New York Public Library for the Performing Arts, Music Division, MS 4180-4185: Cante cantate
+                                        [instrumental ensemble à 6]</item>
+                                    <item>See: Ian Davies, 'Replete for Three Lutes - The Missing Parts', <hi rend="italic">The Lute Society
+                                            Journal</hi> 24/1 (1984) pp. 38-43</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), nos 155 and 153</bibl>
+                                <bibl>Edwards (1974), no. 91</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="49">
+                            <locus from="6v" to="6v">6v</locus>
+                            <title>Mr Doctor James his Paven - R Reade [recorder part]</title>
+                            <note>Item no. 49. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 12r: Mr. Doctor James Dean of Christ churchs pauen made by Mr. R. Reade [lute part]</item>
+                                    <item>MS Dd.3.18, ff. 28v-29r: Reades 7 Paven</item>
+                                    <!-- check: instrument missing here -->
+                                    <item>MS Dd.5.20, f. 7r: Doc: James pauin [Read's Pauen 7] [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 30r: Reads 7 Pauen [cittern part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), nos 19 and 48</bibl>
+                                <bibl>Edwards (1974), no. 635</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="50">
+                            <locus from="6v" to="6v">6v</locus>
+                            <title>Mother Watkins Ale [recorder part]</title>
+                            <note>Item no. 50. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 7r: Mother W. A. [bass viol part]</item>
+                                </list></note>
+                            <note>cf. also: <list>
+                                    <item>London, Royal College of Music, MS 2019-loan 1 welde, f. 8r: Watkins ale [lute solo]</item>
+                                    <item>London, British Library, Add. MS 41498, f. 38r: untitled [lute solo]</item>
+                                    <item>GB-CHEr, DLT/B31 [Leycester], f. 52r [119r]: untitled [lyra viol (ffefh)] VdGS 6516 </item>
+                                    <!-- check above item -->
+                                </list></note>
+                            <listBibl>
+                                <bibl>Simpson (1966), pp. 745-46</bibl>
+                                <bibl>Nordstrom (1972), no. 156</bibl>
+                                <bibl>Edwards (1974), no. 893</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="51">
+                            <locus from="7r" to="7r">7r</locus>
+                            <title>Reades Galliarde [recorder part]</title>
+                            <note>Item no. 51; cf. no. 26. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 22v: Reads Galliarde [lute part]</item>
+                                    <item>MS Dd.3.18, f. 38v: Reads Galliard [lute part]</item>
+                                    <item>MS Dd.5.20, f. 4r Reads galliarde. [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 21r Reads galliard. [cittern part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), nos 36 and 68</bibl>
+                                <bibl>Edwards (1974), no. 834</bibl>
+                                <bibl>Edwards (1977), no. 17 [modern edition]</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="52">
+                            <locus from="7r" to="7r">7r</locus>
+                            <title>Where fancy fonde [recorder part]</title>
+                            <note>Item no. 52. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.14.24, ff. 36v-37r Where fancy ?fonde [cittern part]</item>
+                                    <item><bibl>William Byrd, <hi rend="italic">Psalmes Sonnets and Songs</hi> (1588)</bibl>, no. 15: Where fancy fond
+                                        for pleasure pleads</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Not in Nordstrom (1972)</bibl>
+                                <bibl>Edwards (1974), no. 658</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="53">
+                            <locus from="7r" to="7r">7r</locus>
+                            <title>Jigge R. Reade [recorder part]</title>
+                            <note>Item no. 53. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 24r: A Jigge ye first R: Reade [lute part]</item>
+                                    <item>MS Dd.5.20, f. 7v Reads first Jigge. / R: Rea[?] [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 37r Reads Jigge [cittern part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 40</bibl>
+                                <bibl>Edwards (1974), no. 891</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="54">
+                            <locus from="7r" to="7r">7r</locus>
+                            <title>Nutmegs and ginger [The Parliament / Kemp's Jig] [recorder part]</title>
+                            <note>Item no. 54. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 33r: Nuttmigs and Ginger [lute part]</item>
+                                    <item>MS Dd.5.20, f. 7v: Nutmigs and / Ginger [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 37r: Nuttmigs and Ginger [cittern part]</item>
+                                    <item>cf. ten lute and cittern solos edited for <hi rend="italic">Lute News</hi> and <hi rend="italic"
+                                            >Lutezine</hi> 126 (Simpson (1966), pp. 529-530).</item>
+                                    <item>cf. keyboard: Brookes (1996), no. 1565 </item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Simpson (1966), pp. 529-30</bibl>
+                                <bibl>Nordstrom (1972), no. 58</bibl>
+                                <bibl>Edwards (1974), no. 659</bibl>
+                                <bibl>Edwards (1977), no. 26 [modern edition]</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="55">
+                            <locus from="7r" to="7r">7r</locus>
+                            <title>James Galliarde [recorder part]</title>
+                            <note>Item no. 55. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 34r: James Galliarde [lute part]</item>
+                                    <item>MS Dd.3.18, f. 58v: James His Galliard [lute part]</item>
+                                    <item>MS Dd.5.20, f. 8r: J. Gall [bass viol part]</item>
+                                    <item>Oxford, Christ Church College, MS 439, f. 97r: untitled [bass viol part]</item>
+                                    <item>London, British Library, Add. MS 15118, ff. 11v-12r: untitled [treble and bass part]</item>
+                                    <item>London, British Library, Add. MS 17786-91, no. 31: James his galliard [instrumental ensemble à 5]</item>
+                                    <item>London, British Library, Add. MS 30826-8, no. 18: James Hardings Gallyard [3 parts of instrumental ensemble
+                                        à 5]</item>
+                                    <item>New Haven, Yale University Music Library, MS Filmer 2: No 3 galiardo de J H [2 parts of instrumental
+                                        ensemble à5]</item>
+                                    <item>Füllsack and Hildebrand, <hi rend="italic">Ausserlesener Paduanen und Galliarden</hi> (1607), no 14:
+                                        Gaillard Jacobus Harding Eng [instrumental ensemble à 5] </item>
+                                </list></note>
+                            <note>cf. also: <list>
+                                    <item>MS Dd.5.20, f. 30r: Mr. Harding his galliard [bass viol solo]</item>
+                                    <item>MS Dd.5.20, f. 16r: James his galliard [bass viol solo]</item>
+                                    <item>MS Dd.5.20, f. 27r: James his galliard [bass viol solo]</item>
+                                    <item>Ten lute settings edited for <hi rend="italic">Lutezine</hi> 116</item>
+                                    <item>keyboard: Brookes (1996), nos 1393, 1823, 1824</item>
+
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 61</bibl>
+                                <bibl>Edwards (1974), no. 823</bibl>
+                                <bibl>Edwards (1977), no. 21 [modern edition]</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="56">
+                            <locus from="7v" to="7v">7v</locus>
+                            <title>A fancy R Reade [recorder part]</title>
+                            <note>Item no. 56. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, ff. 33v-34r: Reades fancy [lute part]</item>
+                                    <item>MS Dd.14.24, ff. 37v-38r: Reads fancy [cittern part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 59</bibl>
+                                <bibl>Edwards (1974), no. 636</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="57">
+                            <locus from="7v" to="7v">7v</locus>
+                            <title>Dolorosa [recorder part]</title>
+                            <note>Item no. 57. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, ff. 46v-47r: Dolorosa Pauen Ri Allison [lute part]</item>
+                                    <item>MS Dd.5.20, f. 7v: Dolorosa [bass viol part]</item>
+                                    <item>Walsingham, no. 11: Paven Dolorosa [Richard Allison] [mixed consort]</item>
+                                    <item>lute solos in Robinson, McCoy and Spencer (1994), no. 6</item>
+                                </list>
+                            </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), nos 80 and 90</bibl>
+                                <bibl>Edwards (1974), no. 701</bibl>
+                                <bibl>Edwards (1977), no. 3 [modern edition]</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="58">
+                            <locus from="7v" to="7v">7v</locus>
+                            <title>A Northerne Jigge [recorder part]</title>
+                            <author key="person_v30643762">Richard Read</author>
+                            <note>Item no. 58. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 32r: Sweet Bryer, A Northern Jigge R. R. [lute part]</item>
+                                    <item>MS Dd.5.20, f. 8r: A northern / Jigge. [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 33r: Sweet Bryer [cittern part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 56</bibl>
+                                <bibl>Edwards (1974), no. 724</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="59">
+                            <locus from="8r" to="8r">8r</locus>
+                            <title>R. Reade [recorder part]</title>
+                            <note>Item no. 59. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 15r Reades / 2 Jigge. [lute part]</item>
+                                    <item>MS Dd.5.20, f. 8r R: Read [bass viol part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 23</bibl>
+                                <bibl>Edwards (1974), no. 882</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="60">
+                            <locus from="8r" to="8r">8r</locus>
+                            <title>Grimstone [recorder part]</title>
+                            <note>Item no. 60. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 8r: The Recorder parte [recorder part]</item>
+                                    <item>MS Dd.5.20, f. 8r: Grimstone [bass viol part]</item>
+                                    <item>cf. eight lute, bandora and cittern solos edited for <hi rend="italic">Lutezine</hi> 133</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 159</bibl>
+                                <bibl>Edwards (1974), no. 633</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="61">
+                            <locus from="8r" to="8r">8r</locus>
+                            <title>Reads Volta [recorder part]</title>
+                            <note>Item no. 61; cf. no. 27. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 38r: Reads La volta [lute part]</item>
+                                    <item>MS Dd.5.20, f. 4r: Reads La Volta [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 24r: Reads La volta [cittern part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 67</bibl>
+                                <bibl>Edwards (1974), no. 633</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="62">
+                            <locus from="8r" to="8r">8r</locus>
+                            <title>Eglantyne Wostock [crossed out] R Reade [recorder part]</title>
+                            <note>Item no. 62. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 34r: A Jigg Wostock [crossed out] Eglantine [lute part]</item>
+                                    <item>MS Dd.5.20, f. 3r: Wostock. R. Reade [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 38r: Eglantine [cittern part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 60</bibl>
+                                <bibl>Edwards (1974), no. 883</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="63">
+                            <locus from="8r" to="8r">8r</locus>
+                            <title>Reads 6 Pauen [recorder part]</title>
+                            <note>Item no. 63. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 28r: Reades 6. Pauen [lute part]</item>
+                                    <item>MS Dd.5.20, f. 8v: Reads 6 Pauan [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 29v: Reades 6 Pauen. [cittern part]</item>
+                                    <item>Kassel, Landesbibliothek und Murhardsche Bibliothek der Stadt Kassel, MS 125(1-5), no. 39: untitled
+                                        [instrumental ensemble à 5]</item>
+                                    <item>Simpson, <hi rend="italic">Opusculum</hi> (1610), no. 15: Pavan XV Glazers Sett by T. Simpson [instrumental
+                                        ensemble à5]</item>
+                                    <item>cf. MS Dd.5.20, f. 30v: Pavin secondo [bass viol solo]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 47</bibl>
+                                <bibl>Edwards (1974), no. 725</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="64">
+                            <locus from="8v" to="8v">8v</locus>
+                            <title>Reads 8 Pauen [recorder part]</title>
+                            <note>Item no. 64; paired with no. 65. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 29v: Reades 8 Paven [lute part]</item>
+                                    <item>MS Dd.5.20, f. 8v: Reads 8 Pauen [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 30v: Reads 8 Pauen [cittern part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 50</bibl>
+                                <bibl>Edwards (1974), no. 726</bibl>
+                                <bibl>Edwards (1977), no. 16 [modern edition]</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="65">
+                            <locus from="8v" to="8v">8v</locus>
+                            <title>Galliarde to the 8 Pauen [Read] [recorder part]</title>
+                            <note>Item no. 65; paired with no. 64. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 30r: Galliard to the Same [lute part]</item>
+                                    <item>MS Dd.5.20, f. 9r: Galliard to the [8] Pauen [bass viol part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 51</bibl>
+                                <bibl>Edwards (1974), no. 852</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="66">
+                            <locus from="8v" to="8v">8v</locus>
+                            <title>Reades 9 Pauen [recorder or flute part]</title>
+                            <note>Item no. 66; cf. no. 69. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 30v: Reades 9 Paven [lute part]</item>
+                                    <item>MS Dd.5.20, f. 9r: Reades 9 Pauen [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 47v: [Pavan] 9 R Reade [cittern part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 52</bibl>
+                                <bibl>Edwards (1974), no. 637</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="67">
+                            <locus from="9r" to="9r">9r</locus>
+                            <title>Reades 5 Pauen [recorder part]</title>
+                            <note>Item no. 67. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 27v: R: Reade. 5 Pauen [lute part]</item>
+                                    <item>MS Dd.5.20, f. 9r: Reades 5 Paven [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 29r: R[ead's] 5 Pauen [cittern part]</item>
+                                    <item>cf. MS Dd.5.20, f. 30v: Pavin primo [bass viol solo]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 46</bibl>
+                                <bibl>Edwards (1974), no. 638</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="68">
+                            <locus from="9r" to="9r">9r</locus>
+                            <title>Nightingale [recorder or flute part]</title>
+                            <note>Item no. 68; cf. no. 70. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 22v: Nightengale [lute part]</item>
+                                    <item>MS Dd.5.20, f. 9v: Nightingale [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 19r: Nightingale [cittern part]</item>
+                                    <item>Brade, <hi rend="italic">Newe auserlesene Branden</hi> (1617), no. 25: Der Nachtigal [instrumental ensemble
+                                        à 5] (digitised copy of alto part at <ref target="http://diglib.hab.de/drucke/2-6-7-1-mus-3s/start.htm"
+                                            >Wolfenbüttel, Herzog August Bibliothek, 2.6.7.1 Musica (3)</ref>)</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Simpson (1966), pp. 511-13 [not the same melody]</bibl>
+                                <bibl>Nordstrom (1972), no. 37</bibl>
+                                <bibl>Edwards (1974), no. 660</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="69">
+                            <locus from="9r" to="9r">9r</locus>
+                            <title>Reades 9 Pavan [recorder part]</title>
+                            <note>Item no. 69; cf. no. 66. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 30v: Reades 9 Paven [lute part]</item>
+                                    <item>MS Dd.5.20, f. 9r: Reades 9 Pauen [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 47v: [Pavan] 9 R Reade [cittern part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 52</bibl>
+                                <bibl>Edwards (1974), no. 637</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="70">
+                            <locus from="9r" to="9r">9r</locus>
+                            <title>Nightingale [treble violan part]</title>
+                            <note>Item no. 70; cf. no. 68. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 22v: Nightengale [lute part]</item>
+                                    <item>MS Dd.5.20, f. 9v: Nightingale [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 19r Nightingale [cittern part]</item>
+                                    <item>Brade, <hi rend="italic">Newe auserlesene Branden</hi> (1617), no. 25: Der Nachtigal [instrumental ensemble
+                                        à 5] (digitised copy of alto part at <ref target="http://diglib.hab.de/drucke/2-6-7-1-mus-3s/start.htm"
+                                            >Wolfenbüttel, Herzog August Bibliothek, 2.6.7.1 Musica (3)</ref>)</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 37</bibl>
+                                <bibl>Edwards (1974), no. 660</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="71">
+                            <locus from="9v" to="9v">9v</locus>
+                            <title>De la Court i part [recorder part]</title>
+                            <author key="person_v92467999">Robert Parsons</author>
+                            <note>Item no. 71. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 47v: De la Courte 1st Parte [lute part]</item>
+                                    <item>MS Dd.3.18, f. 72v: De la Courte j p[ar]te [lute part?] </item>
+                                    <item>MS Dd.14.24, ff. 48v-49r: De la Court 1 p[ar]te [cittern part]</item>
+                                    <item>cf. Robert Parsons fantasia for instrumental ensemble à 5 (Edwards (1977), no. 70)</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 81</bibl>
+                                <bibl>Edwards (1974), no. 720</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="72">
+                            <locus from="9v" to="9v">9v</locus>
+                            <title>Reades 6 galliard [recorder part]</title>
+                            <note>Item no. 72; cf. no. 73. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 27r: Reads Galliard to the 6 Pauen [lute part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 45</bibl>
+                                <bibl>Edwards (1974), no. 853</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="73">
+                            <locus from="9v" to="9v">9v</locus>
+                            <title>The same [recorder part]</title>
+                            <note>Item no. 73; cf. no. 72. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 27r: Reads Galliard to the 6 Pauen [lute part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 45</bibl>
+                                <bibl>Edwards (1974), no. 853</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="74">
+                            <locus from="10r" to="10r">10r</locus>
+                            <title>Wallsingham gall: [recorder part]</title>
+                            <note>Item no. 74. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 6v: untitled [bass viol part]</item>
+                                    <item>New Haven, Beinecke Rare Book and Manuscript Library, MS Mus. Dep. 1, f. 17r: As I wente to walsinghame
+                                        [lute part and solo?]</item>
+                                    <item>cf. all the lute solos on the Walsingham tune edited for <hi rend="italic">Lutezine</hi> 104</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Simpson (1966), pp. 741-43</bibl>
+                                <bibl>Nordstrom (1972), no. 154</bibl>
+                                <bibl>Edwards (1974), no. 824</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="75">
+                            <locus from="10r" to="10r">10r</locus>
+                            <title>Green sleeues [recorder part]</title>
+                            <note>Item no. 75. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 6r Greene Sleves [bass viol part]</item>
+                                    <item>Vilnius, Lietuvos mokslų akademija Vrublevskių biblioteka, MS 285-MF-LXXIX, f. 40r: Greene slehes [bandora
+                                        part]</item>
+                                </list></note>
+                            <note>cf. also: <list>
+                                    <item>MS Dd.3.18, ff. 8v-9r: Green Sleeues [lute treble] [John Johnson?] (Burgers (2001), no. 70)</item>
+                                    <item>Washington D.C., Folger Shakespeare Library, MS V.b.280, f. 6r: 6r the the terble to grien sliuis - the
+                                        ground to grien sluis [treble and ground]</item>
+                                    <item>all the lute solos edited for <hi rend="italic">Lute News</hi> and <hi rend="italic">Lutezine</hi>
+                                        124</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Simpson (1966), pp. 268-78</bibl>
+                                <bibl>Nordstrom (1972), no. 14</bibl>
+                                <bibl>Edwards (1974), no. 661</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="76">
+                            <locus from="10r" to="10r">10r</locus>
+                            <title>Allisons Knell [recorder part]</title>
+                            <author key="person_v66650956">Richard Allison</author>
+                            <note>Item no. 76. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, ff. 31v-32r: Allisons Knell [lute part]</item>
+                                    <item>MS Dd.5.20, f. 3r Alisons Knell. [bass viol part]</item>
+                                    <item>London, Royal Academy of Music, MS 600, f. 89v: The knell [bandora part] (Nordstrom (1992), no. C8) </item>
+                                    <item>Walsingham, no. 12: Mr. Allisons Knell [mixed consort]</item>
+                                    <item>Morley, no. 11: Allisons Knell [mixed consort] (Beck (1959), no. 106)</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 55</bibl>
+                                <bibl>Edwards (1974), no. 604</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="77">
+                            <locus from="10r" to="10r">10r</locus>
+                            <title>Callinoe [recorder part]</title>
+                            <note>Item no. 77. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 3r: Callinoe [bass viol part]</item>
+                                    <item>MS Dd.5.20, f. 5r: Callinoe [bass viol part]</item>
+                                    <item>MS Dd.5.20, f. 6r: Green Sleeues. [crossed out] Callinoe. [bass viol part]</item>
+                                    <item>MS Dd.14.24, f 9r: Callinoe [cittern part or solo?]</item>
+                                </list></note>
+                            <note>cf. also: <list>
+                                    <item>MS Dd.3.18, f. 3r: Callinoe [lute duet treble]</item>
+                                    <item>lute solos: six lute and cittern solos edited for <hi rend="italic">Lute News</hi> and <hi rend="italic"
+                                            >Lutezine</hi> 125</item>
+                                    <item>keyboard: Brookes (1996), no. 1345 [William Byrd]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Simpson (1966), pp. 79-80</bibl>
+                                <bibl>Nordstrom (1972), no. 4</bibl>
+                                <bibl>Edwards (1974), no. 889</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="78">
+                            <locus from="10r" to="10r">10r</locus>
+                            <title>The [Earl of Oxfords] March [recorder part]</title>
+                            <note>Item no. 78; cf. no. 12. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 20r: The March. The Erle of Oxeforde Marche [lute part]</item>
+                                    <item>Morley, no. 14: My Lord of Oxenfords maske [mixed consort] (Beck (1959), no. 134)</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 32</bibl>
+                                <bibl>Edwards (1974), no. 648</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="79">
+                            <locus from="10v" to="10v">10v</locus>
+                            <title>La Vecchio Pauen [recorder or flute part]</title>
+                            <note>Item no. 79. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 61v: La Vecchio [lute part]</item>
+                                    <item>London, Royal Academy of Music, MS 600, f. 12v: Laveche pavin W: S [bandora part] (Nordstrom (1992), no.
+                                        C15) </item>
+                                    <item>Vilnius, Lietuvos mokslų akademija Vrublevskių biblioteka, MS 285-MF-LXXIX, f. 40r: Lavecche Pavin [bandora
+                                        part]</item>
+                                    <item><ref target="https://nrs.lib.harvard.edu/urn-3:fhcl.hough:4686836">Cambridge (MA), Houghton Library, MS 181
+                                            [Otley]</ref>, ff. 2v-3r: Lavecche paven [cittern part]</item>
+                                    <item>Walsingham, no. 23: Lavecchia [mixed consort]</item>
+                                </list></note>
+                            <note>cf. also: <list>
+                                    <item>lute duet (Burgers (2001), no. 51a)</item>
+                                    <item>13 lute, bandora and cittern solos edited for <hi rend="italic">Lute News</hi> and <hi rend="italic"
+                                            >Lutezine</hi> 135 (including Burgers (2001), no. 11)</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 107</bibl>
+                                <bibl>Edwards (1974), no. 682</bibl>
+                                <bibl>Edwards (1977), no. 15 [modern edition]</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="80">
+                            <locus from="10v" to="10v">10v</locus>
+                            <title>[Pavan?] [recorder part]</title>
+                            <note>Item no. 80. </note>
+                            <listBibl>
+                                <bibl>Not in Nordstrom (1972)</bibl>
+                                <bibl>Edwards (1974), no. 662</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="81">
+                            <locus from="10v" to="10v">10v</locus>
+                            <title>Crachet Pauen [recorder or flute part]</title>
+                            <author>Nicholas Strogers</author>
+                            <note>Item no. 81; paired with no. 82; cf. no. 45. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 7v: Crotchet Pauen Strogers [bass viol part]</item>
+                                    <item>MS Dd.5.20, f. 9v: Crotchet Pauen: [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 3r: Strogers Pauen [cittern part]</item>
+                                    <item>London, Royal Academy of Music, MS 600, f. 14v: Old Crochet Pavin [bandora part] (Nordstrom (1992), no.
+                                        C2)</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 116</bibl>
+                                <bibl>Edwards (1974), no. 644</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="82">
+                            <locus from="10v" to="10v">10v</locus>
+                            <title>Crochet gall [recorder part]</title>
+                            <author cert="low" key="person_v46948476">?Nicholas Strogers</author>
+                            <note>Item no. 82; paired with no. 81; cf. nos 8 and 46. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 5v: untitled [bass viol part]</item>
+                                    <!-- check the above -->
+                                    <item>MS Dd.5.20, f. 8r: Crotchet Galliard [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 19r The Galliarde [cittern part]</item>
+                                    <item><item>London, Royal Academy of Music, MS 600, f. 11r Knowles Galliard [bandora part] (Nordstrom (1992), no.
+                                            C31)</item></item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 120</bibl>
+                                <bibl>Edwards (1974), no. 820</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="83">
+                            <locus from="10v" to="10v">10v</locus>
+                            <title>Delight Pauen [recorder part]</title>
+                            <note>Item no. 83. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, ff. 20v-21r: Johnsons Delight [lute part]</item>
+                                    <item>MS Dd.3.18, ff. 59v-60r: Delight Pauen [lute part]</item>
+                                    <item>MS Dd.5.20, f. 2r: Delight Pauen [bass viol part]</item>
+                                    <item>MS Dd.14.24, f. 10r: Delight Pauen [cittern part]</item>
+                                    <item>MS Add. 8844, ff. 4v-5r: Delight [lute part]</item>
+                                    <item>Walsingham, no. 9: Delight Paven [John Johnson] [mixed consort]</item>
+                                    <item>London, Royal Academy of Music, MS 600, f. 16r: Delight Pauin Johnson [bandora part] (Nordstrom (1992), no.
+                                        C50)</item>
+                                    <item>Aberystwyth, National Library of Wales, MS 27, p. 13: Delig[ht] Pauen [lute part or lute II of duet]</item>
+                                    <item>London, Royal Academy of Music, MS 603, f. 14v: Delyghte Treble - Delighte Pavin for Consorte Jo: Johnson
+                                        [lute part]</item>
+                                    <item>Vilnius, Lietuvos mokslų akademija Vrublevskių biblioteka, MS 285-MF-LXXIX, ff. 62v-63v: untitled [lute
+                                        part]</item>
+                                    <item>Leiden, Universiteitsbibliotheek, MS 1666 [Thysius], f. 147v: Pauyn de Light Rich Machin [lute part]</item>
+                                    <item>Chicago, Art Institute of Chicago, MS Mus. 181, f. 1r: delyghte paven [cittern part]</item>
+                                    <item>Kassel, Landesbibliothek und Murhardsche Bibliothek der Stadt Kassel, MS 4<hi rend="superscript"
+                                        >o</hi>.125(1-5), no. 25: untitled [instrumental ensemble à 5]</item>
+                                    <item>lute solos: Burgers (2001), no. 5</item>
+                                </list></note>
+                            <note>cf. also: <list>
+                                    <item>keyboard: Brookes (1996), nos 1330 [Duncan Burnett] and 1452 [William Byrd]</item>
+                                </list></note>
+
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 33</bibl>
+                                <bibl>Edwards (1974), no. 717</bibl>
+                                <bibl>Edwards (1977), no. 13 [modern edition]</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="84">
+                            <locus from="10v" to="10v">10v</locus>
+                            <title>Green garters [recorder part]</title>
+                            <note>Item no. 84. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, ff. 23v-24r: Greene Garters [lute part or duet treble]</item>
+                                    <item>MS Dd.5.20, f. 6r; Green Garters [bass viol part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 39</bibl>
+                                <bibl>Edwards (1974), no. 663</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="85">
+                            <locus from="11r" to="11r">11r</locus>
+                            <title>Mr Porters Pauen [recorder or flute part]</title>
+                            <note>Item no. 85; paired with no. 86. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, ff. 48v-49r: untitled [lute part]</item>
+                                    <item>[not Dd.2.11, f. 73r: Cutting E Porters Pauen]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 83</bibl>
+                                <bibl>Edwards (1974), no. 664</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="86">
+                            <locus from="11r" to="11r">11r</locus>
+                            <title>Mr Porters galliard [recorder part]</title>
+                            <note>Item no. 86; paired with no. 85. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 49r: Porters galliard [lute part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 84</bibl>
+                                <bibl>Edwards (1974), no. 825</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="87">
+                            <locus from="11r" to="11r">11r</locus>
+                            <title>When Phebus first - R Reade [recorder part]</title>
+                            <note>Item no. 87. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 29r: When phebus First Ri Reade [lute part]</item>
+                                    <item>MS Dd.5.20, f. 9v: When phebus first R: Reade [bass viol part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 49</bibl>
+                                <bibl>Edwards (1974), no. 639</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="88">
+                            <locus from="11r" to="11r">11r</locus>
+                            <title>for iii wives [pavan 3, recorder part - from a different setting to the orpharion trio?]</title>
+                            <note>Item no. 88. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 54v: R. Reade [orpharion? part]</item>
+                                    <item>MS Dd.3.18, f. 55r: W[iers] and V[iols] R. Reade [?orpharion part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 97</bibl>
+                                <bibl>Edwards (1974), no. 640</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="89">
+                            <locus from="11v" to="11v">11v</locus>
+                            <title>Pauen N [recorder or flute part]</title>
+                            <author>Richard Nicholson?</author>
+                            <note>Item no. 89; paired with no. 90. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 10r: Pauen N [bass viol part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 161</bibl>
+                                <bibl>Edwards (1974), no. 719</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="90">
+                            <locus from="11v" to="11v">11v</locus>
+                            <title>Galliard N [recorder part]</title>
+                            <author>?Richard Nicholson</author>
+                            <note>Item no. 90; paired with no. 89. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.5.20, f. 10r: Galliard N [bass viol part]</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 162</bibl>
+                                <bibl>Edwards (1974), no. 851</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="91">
+                            <locus from="11v" to="11v">11v</locus>
+                            <title>Nic<hi rend="superscript">o</hi> Allmaine [recorder part]</title>
+                            <author>?Richard Nicholson</author>
+                            <note>Item no. 91. </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 168</bibl>
+                                <bibl>Edwards (1974), no. 628</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="92">
+                            <locus from="12r" to="12r">12r</locus>
+                            <title>Jewes daunce [recorder part]</title>
+                            <note>Item no. 92. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 48r: The Jewes Dawnce R Nicolson [lute part]</item>
+                                </list>
+                            </note>
+                            <note>cf. also: <list>
+                                    <item>MS Dd.9.33, f. 38r: de Jerr a mort [lute solo]</item>
+                                    <item>Leiden, Universiteitsbibliotheek, MS 1666, f. 419r: Schotsen Dans [lute solo]</item>
+                                </list></note>
+                            <note>See: <bibl>Ian Harwood '"The Jewes Dance" and "De Jerr A Mort": Music from Marlowe's play <hi rend="italic">The Jew
+                                        of Malta</hi>', <hi rend="italic">The Lute</hi> 51 (2011), pp. 40-44</bibl>. </note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 82</bibl>
+                                <bibl>Edwards (1974), no. 629</bibl>
+                                <bibl>Edwards (1977), no. 19 [modern edition]</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="93">
+                            <locus from="12r" to="12r">12r</locus>
+                            <title>T. orpharion pavan 2 - Ri Read [recorder part - from a different setting to the orpharion trio?]</title>
+                            <note>Item no. 93. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, f. 54v untitled [?orpharion part]</item>
+                                    <item>MS Dd.3.18, f. 55r: untitled [?orpharion part] </item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Nordstrom (1972), no. 96</bibl>
+                                <bibl>Edwards (1974), no. 727</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="94">
+                            <locus from="12v" to="12v">12v</locus>
+                            <title>Untitled [go to my window] [recorder or flute part]</title>
+                            <note>Item no. 94. </note>
+                            <note>See also: <list>
+                                    <item>MS Dd.3.18, ff. 34v-35r: Go from my Window Ri: Allison [lute part]</item>
+                                    <item>MS Add. 2764(2), f. 9v: untitled [lute part]</item>
+                                    <item>Walsingham, no. 33: Go from my Windoe [Richard Allison] [mixed consort]</item>
+                                    <item>Morley, no. 12: Goe from my Window [Richard Allison] [mixed consort] (Beck (1959), no. 117)</item>
+                                    <item>cf. 22 lute and cittern solos plus a song [Come gentle heardsman] edited for <hi rend="italic">Lute
+                                            News</hi> and <hi rend="italic">Lutezine</hi> 109 (including Poulton and Lam (1974, repr. 1978 and 1981),
+                                        no. 64)</item>
+                                </list></note>
+                            <listBibl>
+                                <bibl>Simpson (1966), pp. 257-59</bibl>
+                                <bibl>Nordstrom (1972), no. 62</bibl>
+                                <bibl>Edwards (1974), no. 607</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem>
+                            <locus from="13r" to="13r">13r</locus>
+                            <title>Partial table of contents</title>
+                        </msItem>
+
+                    </msContents>
+
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="chart">
+                                <support>
+                                    <material>Paper</material>
+                                </support>
+
+                                <extent>
+                                    <seg type="object">Codex: </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="4" type="laterEndleaf">iv</measure> + <measure quantity="13" type="leaf">13</measure> +
+                                            <measure quantity="4" type="laterEndleaf">iv</measure> leaves. </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height quantity="210">210</height>
+                                            <width quantity="275">275</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+
+                                <foliation notAfter="2000" notBefore="1900">
+                                    <p>20th-century foliation</p>
+                                    <p>[i-iv] + 1-13 + [v-viii]</p>
+                                    <note>Written in pencil, in the upper right-hand corner of the recto side of each leaf, by an unidentified hand of
+                                        the 20th-century.</note>
+                                </foliation>
+
+                                <collation>
+                                    <p>
+                                        <list>
+                                            <item>Quire 1<hi rend="superscript">8</hi> (ff. <locus from="1r" to="8v">1-8</locus>)</item>
+                                            <item>Quire 2<hi rend="superscript">2</hi> (ff. <locus from="9r" to="10v">9-10</locus>)</item>
+                                            <item>Quire 3<hi rend="superscript">4-1</hi> (ff. <locus from="11r" to="13v">11-13</locus>: 1st leaf,
+                                                before f. 11, ?missing/?cancelled)</item>
+                                        </list>
+                                    </p>
+                                    <p><formula>1<hi rend="superscript">8</hi> 2<hi rend="superscript">2</hi> 3<hi rend="superscript">4-1</hi> (1st
+                                            leaf ?missing/?cancelled) </formula></p>
+                                    <signatures type="leaf"><p>No leaf signatures. </p></signatures>
+                                    <signatures type="quire"><p>No quire signatures. </p></signatures>
+                                    <catchwords><seg type="para">No catchwords.</seg></catchwords>
+                                </collation>
+
+                            </supportDesc>
+
+                            <layoutDesc>
+                                <layout>
+                                    <seg type="ruling">Each page is marked with six or seven 5-line staves, ruled in ink, without a rastrum. Vertical
+                                        bounding lines, also in ink, from 7v onwards. </seg>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+
+                        <handDesc>
+                            <handNote>
+                                <p>Rubrics written by one or more hands, in an early modern Italic script. </p>
+                            </handNote>
+                        </handDesc>
+
+                        <bindingDesc>
+                            <binding when="2006">
+                                <p>Rebound in 2006 at Cambridge University Library in an Espinosa limp vellum style binding, sewn on four alum-tawed
+                                    supports laced through limp vellum covers, wih an alum-tawed spine. </p>
+                            </binding>
+
+                            <binding when="1923">
+                                <p>Former binding of 1923 retained and now stored with the manuscript. </p>
+                            </binding>
+
+                        </bindingDesc>
+
+                    </physDesc>
+
+                    <history>
+                        <origin>
+                            <origDate calendar="Gregorian" cert="high" notAfter="1621"> Late 16th-/early 17th-century (not after 1621). </origDate>
+                            <origPlace cert="medium" key="place_g7011931">England, perhaps Oxford. </origPlace>
+                            <p>Ian Harwood identified Matthew Holmes (d. 1621) as the copyist of MS Dd.5.21 and eight other music manuscripts at
+                                Cambridge University Library. This manuscript - one of four that contains parts for four of the six instruments of the
+                                mixed, or English, consort - may have been while Holmes was in Oxford, working as Precentor at Christ Church, post he
+                                held until 1597, when he moved to London for a similar position at Westminster Abbey.</p>
+                            <listBibl>
+                                <bibl>Harwood (1963)</bibl>
+                                <bibl>Harwood (1964)</bibl>
+                                <bibl>Harwood (2005)</bibl>
+                            </listBibl>
+                        </origin>
+
+                        <acquisition notAfter="1753"> It seems likely that all of Holmes's manuscripts were together in Westminster at the time of his
+                            death in 1621. It is not known when or by what means they entered the collections of Cambridge University Library. The
+                            first reference to MS Dd.5.21 is in Cambridge, University Library, MS Oo.7.53, a handwritten catalogue of the manuscripts
+                            compiled c. 1753. </acquisition>
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source>The description of the contents of the manuscripts was provided by John H. Robinson of the Lute Society.
+                                </source>
+                            </recordHist>
+
+                            <availability>
+                                <p>Entry to read in the Library is permitted only on presentation of a valid reader's card. For information on
+                                    eligibility and admissions procedures, see <ref target="https://www.lib.cam.ac.uk/using-library/joining-library"
+                                        >Joining the Library</ref>). For further information on the availability of the manuscript, please contact the
+                                        <ref target="mss@lib.cam.ac.uk">Manuscripts Reading Room</ref>.</p>
+                            </availability>
+                        </adminInfo>
+
+                        <listBibl>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/VURT9BNU" type="book" xml:id="Beck1959">
+                                <monogr>
+                                    <title level="m">The first book of consort lessons, collected by Thomas Morley, 1599 &amp; 1611, reconstructed and
+                                        edited with an introduction and critical notes</title>
+                                    <editor>
+                                        <forename>Sydney</forename>
+                                        <surname>Beck</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>New York; London</pubPlace>
+                                        <publisher>Published for the New York Public Library by C.F. Peters Corporation</publisher>
+                                        <date>1959</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/78QIZ8EG" type="journalArticle" xml:id="Harwood1963">
+                                <analytic>
+                                    <title level="a">The Origins of the Cambridge Lute Manuscripts</title>
+                                    <author>
+                                        <forename>Ian</forename>
+                                        <surname>Harwood</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Lute Society Journal</title>
+                                    <imprint>
+                                        <biblScope unit="volume">5</biblScope>
+                                        <date>1963</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/TKCJUMEW" type="journalArticle" xml:id="Harwood1964">
+                                <analytic>
+                                    <title level="a">The Cambridge Lute Manuscripts: A Postscript</title>
+                                    <author>
+                                        <forename>Ian</forename>
+                                        <surname>Harwood</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Lute Society Journal</title>
+                                    <imprint>
+                                        <biblScope unit="volume">6</biblScope>
+                                        <biblScope unit="page">29-</biblScope>
+                                        <date>1964</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/CP6A3TFR" type="book" xml:id="Simpson1966">
+                                <monogr>
+                                    <title level="m">The British broadside ballad and its music</title>
+                                    <author>
+                                        <forename>Claude M.</forename>
+                                        <surname>Simpson</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>New Brunswick, NJ</pubPlace>
+                                        <publisher>Rutgers University Press</publisher>
+                                        <date>1966</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/J9V5RJMR" type="journalArticle" xml:id="Nordstrom1972">
+                                <analytic>
+                                    <title level="a">The Cambridge consort books</title>
+                                    <author>
+                                        <forename>Lyle</forename>
+                                        <surname>Nordstrom</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Journal of the Lute Society of America</title>
+                                    <imprint>
+                                        <biblScope unit="volume">5</biblScope>
+                                        <biblScope unit="page">70-103</biblScope>
+                                        <date>1972</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/BQSGAFC2" type="book" xml:id="Edwards1974">
+                                <monogr>
+                                    <title level="m">The sources of Elizabethan consort music</title>
+                                    <author>
+                                        <forename>Warwick A.</forename>
+                                        <surname>Edwards</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>University of Cambridge</pubPlace>
+                                        <publisher>unpublished PhD dissertation</publisher>
+                                        <date>1974</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct type="journalArticle" xml:id="Edwards1974" corresp="http://zotero.org/groups/276440/items/EEX2Q65S">
+                                <analytic>
+                                    <title level="a">The Walsingham Consort Books</title>
+                                    <author><forename>Warwick</forename><surname>Edwards</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Music &amp; Letters</title>
+                                    <imprint>
+                                        <biblScope unit="volume">55</biblScope>
+                                        <biblScope unit="issue">2</biblScope>
+                                        <biblScope unit="page">209-214</biblScope>
+                                        <date>1974</date>
+                                        <note type="url">https://www.jstor.org/stable/733855</note>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/4FKT583X" type="book" xml:id="Edwards1977">
+                                <monogr>
+                                    <title level="m">Music for mixed consort</title>
+                                    <author>
+                                        <forename>Warwick</forename>
+                                        <surname>Edwards</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <date>1977</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Musica Britannica</title>
+                                    <biblScope unit="volume">40</biblScope>
+                                </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/ZETGR4NK" type="journalArticle" xml:id="Ward1979">
+                                <analytic>
+                                    <title level="a">Sprightly &amp; Cheerful Musick: notes on the cittern, gittern and guitar in 16th- and
+                                        17th-century England</title>
+                                    <author>
+                                        <forename>John M.</forename>
+                                        <surname>Ward</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Lute Society Journal</title>
+                                    <imprint>
+                                        <biblScope unit="volume">21</biblScope>
+                                        <biblScope unit="page">132-136</biblScope>
+                                        <date>1979</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/X68U9W3N" type="book" xml:id="Poulton1981">
+                                <monogr>
+                                    <title level="m">The collected lute music of John Dowland</title>
+                                    <editor>
+                                        <forename>Diana</forename>
+                                        <surname>Poulton</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>Basil</forename>
+                                        <surname>Lam</surname>
+                                    </editor>
+                                    <edition>3rd</edition>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>Faber &amp; Faber</publisher>
+                                        <date>1981</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/6UH6JFVK" type="book" xml:id="Charteris1988">
+                                <monogr>
+                                    <title level="m">Alfonso Ferrabosco the Elder (1543-1588): Opera omnia, vol. IX Instrumental music</title>
+                                    <idno type="ISBN">3-7751-1331-2</idno>
+                                    <editor>
+                                        <forename>Richard</forename>
+                                        <surname>Charteris</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Neuhausen, Stuttgart</pubPlace>
+                                        <biblScope unit="volume">96</biblScope>
+                                        <publisher>American Institute of Musicology :Hänssler-Verlag</publisher>
+                                        <date>1988</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Corpus mensurabilis musicae</title>
+                                </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/G43A38D7" type="book" xml:id="Nordstrom1992">
+                                <monogr>
+                                    <title level="m">The bandora: its music and sources</title>
+                                    <author>
+                                        <forename>Lyle</forename>
+                                        <surname>Nordstrom</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Warren, MI</pubPlace>
+                                        <publisher>Harmonie Park Press</publisher>
+                                        <date>1992</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Detroit studies in music bibliography ;</title>
+                                    <biblScope unit="volume">66</biblScope>
+                                </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/PM8C9JMK" type="book" xml:id="Robinson1995">
+                                <monogr>
+                                    <title level="m">The solo lute music of Richard Allison: with bandora and cittern arrangements</title>
+                                    <editor>
+                                        <forename>John</forename>
+                                        <surname>Robinson</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>Stewart</forename>
+                                        <surname>McCoy</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>Lute Society Music Editions</publisher>
+                                        <date>1995</date>
+                                    </imprint>
+                                </monogr>
+                                <note>With a biographical sketch by Robert Spencer. </note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/25NR5IWJ" type="book" xml:id="Brookes1996">
+                                <monogr>
+                                    <title level="m">British keyboard music to c.1660: sources and thematic index</title>
+                                    <title type="short">British keyboard music to c.1660</title>
+                                    <idno type="ISBN">0-19-816425-4</idno>
+                                    <author>
+                                        <forename>Virginia</forename>
+                                        <surname>Brookes</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Oxford</pubPlace>
+                                        <publisher>Clarendon Press</publisher>
+                                        <date>1996</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/HS4J9X4I" type="book" xml:id="Burgers2001">
+                                <monogr>
+                                    <title level="m">John Johnson: Collected lute music</title>
+                                    <extent>2</extent>
+                                    <editor>
+                                        <forename>J. W. J.</forename>
+                                        <surname>Burgers</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Lübeck</pubPlace>
+                                        <biblScope unit="volume">1</biblScope>
+                                        <publisher>Tree Edition</publisher>
+                                        <date>2001</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/TM6JEZ5E" type="book" xml:id="Spring2001">
+                                <monogr>
+                                    <title level="m">The lute in Britain: a history of the instrument and its music</title>
+                                    <author>
+                                        <forename>Matthew</forename>
+                                        <surname>Spring</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Oxford</pubPlace>
+                                        <publisher>Oxford University Press</publisher>
+                                        <date>2001</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/U9V4BNGN" type="book" xml:id="Spring2002">
+                                <monogr>
+                                    <title level="m">Anthony Holborne: Music for lute and bandora</title>
+                                    <extent>2</extent>
+                                    <editor>
+                                        <forename>Rainer aus dem</forename>
+                                        <surname>Spring</surname>
+                                    </editor>
+                                    <edition>Rev.</edition>
+                                    <imprint>
+                                        <pubPlace>Guildford</pubPlace>
+                                        <publisher>Lute Society</publisher>
+                                        <date>2002</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/XWJWND4V" type="journalArticle" xml:id="Robinson2019">
+                                <analytic>
+                                    <title level="a">'A perfect-full harmonie': pitch, tuning and instruments in the Elizabethan and Jacobean mixed
+                                        consort</title>
+                                    <idno type="DOI">doi:10.1093/em/caz026</idno>
+                                    <author>
+                                        <forename>Richard</forename>
+                                        <surname>Robinson</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Early Music</title>
+                                    <imprint>
+                                        <biblScope unit="volume">47</biblScope>
+                                        <biblScope unit="issue">2</biblScope>
+                                        <biblScope unit="page">199-223</biblScope>
+                                        <date>2019</date>
+                                    </imprint>
+                                </monogr>
+                                <note>Table 1. </note>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>
+
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass default="false">
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85111914">Recorder music</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change status="draft" when="2024-08-02">
+                <persName>James Freeman</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic decls="#document-thumbnail" url="MS-DD-00005-00021-000-00001"/>
+        <surface n="front cover, outer" xml:id="page-surface-1">
+            <graphic decls="#downloadImageRights #download" height="7364px" rend="landscape" url="MS-DD-00005-00021-000-00001" width="8371px"/>
+        </surface>
+        <surface n="front cover, inner" xml:id="page-surface-2">
+            <graphic decls="#downloadImageRights #download" height="7296px" rend="landscape" url="MS-DD-00005-00021-000-00002" width="8294px"/>
+        </surface>
+        <surface n="[i] recto" xml:id="page-surface-3">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00003" width="7966px"/>
+        </surface>
+        <surface n="[i] verso" xml:id="page-surface-4">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00004" width="7966px"/>
+        </surface>
+        <surface n="[ii] recto" xml:id="page-surface-5">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00005" width="7966px"/>
+        </surface>
+        <surface n="[ii] verso" xml:id="page-surface-6">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00006" width="7966px"/>
+        </surface>
+        <surface n="[iii] recto" xml:id="page-surface-7">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00007" width="7966px"/>
+        </surface>
+        <surface n="[iii] verso" xml:id="page-surface-8">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00008" width="7966px"/>
+        </surface>
+        <surface n="[iv] recto" xml:id="page-surface-9">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00009" width="7966px"/>
+        </surface>
+        <surface n="[iv] verso" xml:id="page-surface-10">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00010" width="7966px"/>
+        </surface>
+        <surface n="1r" xml:id="page-surface-11">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00011" width="7966px"/>
+        </surface>
+        <surface n="1v" xml:id="page-surface-12">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00012" width="7966px"/>
+        </surface>
+        <surface n="2r" xml:id="page-surface-13">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00013" width="7966px"/>
+        </surface>
+        <surface n="2v" xml:id="page-surface-14">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00014" width="7966px"/>
+        </surface>
+        <surface n="3r" xml:id="page-surface-15">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00015" width="7966px"/>
+        </surface>
+        <surface n="3v" xml:id="page-surface-16">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00016" width="7966px"/>
+        </surface>
+        <surface n="4r" xml:id="page-surface-17">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00017" width="7966px"/>
+        </surface>
+        <surface n="4v" xml:id="page-surface-18">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00018" width="7966px"/>
+        </surface>
+        <surface n="5r" xml:id="page-surface-19">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00019" width="7966px"/>
+        </surface>
+        <surface n="5v" xml:id="page-surface-20">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00020" width="7966px"/>
+        </surface>
+        <surface n="6r" xml:id="page-surface-21">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00021" width="7966px"/>
+        </surface>
+        <surface n="6v" xml:id="page-surface-22">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00022" width="7966px"/>
+        </surface>
+        <surface n="7r" xml:id="page-surface-23">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00023" width="7966px"/>
+        </surface>
+        <surface n="7v" xml:id="page-surface-24">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00024" width="7966px"/>
+        </surface>
+        <surface n="8r" xml:id="page-surface-25">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00025" width="7966px"/>
+        </surface>
+        <surface n="8v" xml:id="page-surface-26">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00026" width="7966px"/>
+        </surface>
+        <surface n="9r" xml:id="page-surface-27">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00027" width="7966px"/>
+        </surface>
+        <surface n="9v" xml:id="page-surface-28">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00028" width="7966px"/>
+        </surface>
+        <surface n="10r" xml:id="page-surface-29">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00029" width="7966px"/>
+        </surface>
+        <surface n="10v" xml:id="page-surface-30">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00030" width="7966px"/>
+        </surface>
+        <surface n="11r" xml:id="page-surface-31">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00031" width="7966px"/>
+        </surface>
+        <surface n="11v" xml:id="page-surface-32">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00032" width="7966px"/>
+        </surface>
+        <surface n="12r" xml:id="page-surface-33">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00033" width="7966px"/>
+        </surface>
+        <surface n="12v" xml:id="page-surface-34">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00034" width="7966px"/>
+        </surface>
+        <surface n="13r" xml:id="page-surface-35">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00035" width="7966px"/>
+        </surface>
+        <surface n="13v" xml:id="page-surface-36">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00036" width="7966px"/>
+        </surface>
+        <surface n="[v] recto" xml:id="page-surface-37">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00037" width="7966px"/>
+        </surface>
+        <surface n="[v] verso" xml:id="page-surface-38">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00038" width="7966px"/>
+        </surface>
+        <surface n="[vi] recto" xml:id="page-surface-39">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00039" width="7966px"/>
+        </surface>
+        <surface n="[vi] verso" xml:id="page-surface-40">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00040" width="7966px"/>
+        </surface>
+        <surface n="[vii] recto" xml:id="page-surface-41">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00041" width="7966px"/>
+        </surface>
+        <surface n="[vii] verso" xml:id="page-surface-42">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00042" width="7966px"/>
+        </surface>
+        <surface n="[viii recto]" xml:id="page-surface-43">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00043" width="7966px"/>
+        </surface>
+        <surface n="viii] verso" xml:id="page-surface-44">
+            <graphic decls="#downloadImageRights #download" height="7013px" rend="landscape" url="MS-DD-00005-00021-000-00044" width="7966px"/>
+        </surface>
+        <surface n="rear cover, inner" xml:id="page-surface-45">
+            <graphic decls="#downloadImageRights #download" height="7364px" rend="landscape" url="MS-DD-00005-00021-000-00045" width="8371px"/>
+        </surface>
+        <surface n="rear cover, outer" xml:id="page-surface-46">
+            <graphic decls="#downloadImageRights #download" height="7309px" rend="landscape" url="MS-DD-00005-00021-000-00046" width="8309px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#page-surface-1" n="front cover, outer" xml:id="page-pb-1"/>
+                <pb facs="#page-surface-2" n="front cover, inner" xml:id="page-pb-2"/>
+                <pb facs="#page-surface-3" n="[i] recto" xml:id="page-pb-3"/>
+                <pb facs="#page-surface-4" n="[i] verso" xml:id="page-pb-4"/>
+                <pb facs="#page-surface-5" n="[ii] recto" xml:id="page-pb-5"/>
+                <pb facs="#page-surface-6" n="[ii] verso" xml:id="page-pb-6"/>
+                <pb facs="#page-surface-7" n="[iii] recto" xml:id="page-pb-7"/>
+                <pb facs="#page-surface-8" n="[iii] verso" xml:id="page-pb-8"/>
+                <pb facs="#page-surface-9" n="[iv] recto" xml:id="page-pb-9"/>
+                <pb facs="#page-surface-10" n="[iv] verso" xml:id="page-pb-10"/>
+                <pb facs="#page-surface-11" n="1r" xml:id="page-pb-11"/>
+                <pb facs="#page-surface-12" n="1v" xml:id="page-pb-12"/>
+                <pb facs="#page-surface-13" n="2r" xml:id="page-pb-13"/>
+                <pb facs="#page-surface-14" n="2v" xml:id="page-pb-14"/>
+                <pb facs="#page-surface-15" n="3r" xml:id="page-pb-15"/>
+                <pb facs="#page-surface-16" n="3v" xml:id="page-pb-16"/>
+                <pb facs="#page-surface-17" n="4r" xml:id="page-pb-17"/>
+                <pb facs="#page-surface-18" n="4v" xml:id="page-pb-18"/>
+                <pb facs="#page-surface-19" n="5r" xml:id="page-pb-19"/>
+                <pb facs="#page-surface-20" n="5v" xml:id="page-pb-20"/>
+                <pb facs="#page-surface-21" n="6r" xml:id="page-pb-21"/>
+                <pb facs="#page-surface-22" n="6v" xml:id="page-pb-22"/>
+                <pb facs="#page-surface-23" n="7r" xml:id="page-pb-23"/>
+                <pb facs="#page-surface-24" n="7v" xml:id="page-pb-24"/>
+                <pb facs="#page-surface-25" n="8r" xml:id="page-pb-25"/>
+                <pb facs="#page-surface-26" n="8v" xml:id="page-pb-26"/>
+                <pb facs="#page-surface-27" n="9r" xml:id="page-pb-27"/>
+                <pb facs="#page-surface-28" n="9v" xml:id="page-pb-28"/>
+                <pb facs="#page-surface-29" n="10r" xml:id="page-pb-29"/>
+                <pb facs="#page-surface-30" n="10v" xml:id="page-pb-30"/>
+                <pb facs="#page-surface-31" n="11r" xml:id="page-pb-31"/>
+                <pb facs="#page-surface-32" n="11v" xml:id="page-pb-32"/>
+                <pb facs="#page-surface-33" n="12r" xml:id="page-pb-33"/>
+                <pb facs="#page-surface-34" n="12v" xml:id="page-pb-34"/>
+                <pb facs="#page-surface-35" n="13r" xml:id="page-pb-35"/>
+                <pb facs="#page-surface-36" n="13v" xml:id="page-pb-36"/>
+                <pb facs="#page-surface-37" n="[v] recto" xml:id="page-pb-37"/>
+                <pb facs="#page-surface-38" n="[v] verso" xml:id="page-pb-38"/>
+                <pb facs="#page-surface-39" n="[vi] recto" xml:id="page-pb-39"/>
+                <pb facs="#page-surface-40" n="[vi] verso" xml:id="page-pb-40"/>
+                <pb facs="#page-surface-41" n="[vii] recto" xml:id="page-pb-41"/>
+                <pb facs="#page-surface-42" n="[vii] verso" xml:id="page-pb-42"/>
+                <pb facs="#page-surface-43" n="[viii recto]" xml:id="page-pb-43"/>
+                <pb facs="#page-surface-44" n="viii] verso" xml:id="page-pb-44"/>
+                <pb facs="#page-surface-45" n="rear cover, inner" xml:id="page-pb-45"/>
+                <pb facs="#page-surface-46" n="rear cover, outer" xml:id="page-pb-46"/>
+            </div>
+        </body>
+    </text>
+</TEI>

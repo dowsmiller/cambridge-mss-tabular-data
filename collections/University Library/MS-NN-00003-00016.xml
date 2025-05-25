@@ -1,0 +1,2306 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_12246">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, University Library, MS Nn.3.16</title>
+                <funder>The Polonsky Foundation</funder>
+                <principal>Suzanne Paul</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>University Library</publisher>
+
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made
+                        available for download are licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This
+                        metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+
+            <availability status="restricted" xml:id="watermark">
+               <licence>Cambridge University Library (CC BY-NC 4.0)</licence>
+            </availability>
+         </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-NN-00003-00016" xml:lang="en">
+                    <msIdentifier>
+                        <institution>University of Cambridge</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Medieval Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, University Library, MS Nn.3.16</idno>
+                        <altIdentifier type="external">
+                            <idno type="diktyon">
+                                Diktyon 12246</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+
+                    <msContents>
+                        <summary>
+                            <seg type="para">This Greek manuscript is composed of two separate
+                                parts, each with independent foliation, often referred to in the
+                                literature by two internal classmarks: Nn.3.16.1, as recorded on ff.
+                                    <locus from="1:2r" to="1:2r">2r</locus> and <locus from="1:145v" to="1:145v">145v</locus> of Part I, and Nn.3.16.2
+                                on f. <locus from="2:1r" to="2:1r">1r</locus> of Part II.</seg>
+                            <seg type="para">Nn.3.16.1 contains two comedies by the Athenian writer
+                                    <title>Aristophanes</title> (b. c. 446, d. 385 BCE): <hi rend="italic">Plutus</hi> (known also as <hi rend="italic">Wealth</hi>) and <hi rend="italic">Nubes</hi> (known also as
+                                    <hi rend="italic">Clouds</hi>), along with scholia by the
+                                Byzantine grammarians Thomas Magistros and Demetrius Triclinius
+                                (13th-14th century). The Greek text is cited in the editions of
+                                Aristophanes as Ct4 or Cant. 4, and it was collated by P. Dobree in
+                                the 19th century (<ref target="https://reader.digitale-sammlungen.de/resolve/display/bsb10234392.html">
+                                    <hi rend="italic">Ricardi Porsoni notae in Aristophanem</hi>,
+                                    Cambridge 1820</ref>).</seg>
+                            <seg type="para">Nn.3.16.2 contains the didactic poem <hi rend="italic">Opera et dies</hi> (<hi rend="italic">Works and days</hi>) by
+                                the poet Hesiod, with the scholia by the Byzantine grammarian Manuel
+                                Moschopoulus (13th-14th century), author of the introduction to the
+                                poem on f. <locus from="2:1r" to="2:1r">1r</locus>. The manuscript
+                                was collated by F.A. Paley (<hi rend="italic">The epics of
+                                    Hesiod</hi>, Cambridge 1861).</seg>
+                            <seg type="para">Dr Matteo Di Franco</seg>
+                        </summary>
+                        <textLang mainLang="grc">Greek</textLang>
+                    </msContents>
+
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc material="mixed">
+                                <extent>
+                                    <seg type="object">
+                              <objectType>Codex </objectType>
+                           </seg>
+                                    <seg type="leaf">
+                                        <num type="laterEndleaf" value="3">iii</num> + <num type="leaf" value="178">178</num> + <num type="laterEndleaf" value="2">ii</num>
+                                    </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height quantity="206">206</height>
+                                            <width quantity="135">135</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+
+                                <foliation xml:id="modern">
+                                    <p>[i-iii] + 2-145 | 1-34 + [iv-v]</p>
+                                    <p>Two foliation schemes are present, both restarting at the
+                                        beginning of Part II. 19th-century foliations in pencil in
+                                        Arabic numerals in the top right-hand corner, recto. Folio
+                                        number 1 of Part I was assigned to a leaf no longer present
+                                        in the volume, according to the interpretation of the
+                                        manuscript's collation (as per historic foliation practice
+                                        at Cambridge University Library).</p>
+                                    <p>Previous foliations not original to the manuscript, in pencil
+                                        in Greek numerals in the lower margin of rectos.</p>
+                                </foliation>
+
+                                <collation>
+                                    <p>Nn.3.16.1 consists of 18 quires and a single folio, Nn.3.16.2
+                                        of 4 quires: 1<hi rend="superscript">8-1</hi>, 2-18<hi rend="superscript">8</hi>, 19<hi rend="superscript">1</hi> | 20-22<hi rend="superscript">8</hi>, 23<hi rend="superscript">10</hi>.</p>
+                                    <p>
+                              <name key="person_v37074791" ref="http://viaf.org/viaf/37074791">
+                                            <persName type="display">Henry Bradshaw</persName>
+                                            <persName type="standard">Bradshaw, Henry,
+                                                1831-1886</persName>
+                              </name> added the bifolium
+                                        signatures and a note on collation on f. <locus from="[v] recto" to="[v] recto">[v] recto</locus>, and
+                                        notes throughout the manuscript on the lost and cancelled
+                                        folios.</p>
+                                </collation>
+                            </supportDesc>
+                        </objectDesc>
+
+                        <bindingDesc>
+                            <binding calendar="gregorian" notAfter="1899" notBefore="1700">
+                                <p>Bound with pale brown full skin covering over millboards. There
+                                    is decorative tooling on boards, spine and on the board
+                                    edge. The title (<hi rend="italic">Aristophan Plutus Nubes Hesiodi
+                                        Opera et Dies</hi>) is tooled in gold on the 
+                                    <locus from="spine" to="spine">spine</locus>. Marbled 
+                                    paper is used as pastedowns with blank leaves.</p>
+                                <p>
+                           <dimensions type="binding" unit="mm">
+                                        <height quantity="217">217</height>
+                                        <width quantity="157">157</width>
+                                        <depth quantity="50">50</depth>
+                                    </dimensions>
+                        </p>
+                            </binding>
+                        </bindingDesc>
+
+                    </physDesc>
+
+                    <history>
+                        <provenance>
+                            <p>The manuscript, in all likelihood in both its parts, belonged to the
+                                Monastery of Dionysiou on <placeName key="place_g7002722" ref="http://vocab.getty.edu/page/tgn/7002722">Mount Athos</placeName>: on Nn.3.16.1, f.
+                                    <locus from="1:3v" to="1:3v">3v</locus> an ownership inscription
+                                of the Monastery (<q>κτῆμα μονῆς τοῦ κυρίου Διονυσίου</q>) is
+                                repeated three times by a later hand, probabily the same one that
+                                added the foliation in Greek numerals. The manuscript later belonged
+                                to the collection of the physician <name key="person_v45083556" ref=" http://viaf.org/viaf/45083556" role="fmo">
+                                    <persName type="display">Richard Mead</persName>
+                                    <persName type="standard">Mead, Richard,
+                                    1673-1754</persName>
+                        </name> (b. 1673, d. 1754), and eventually
+                                entered into the library of <name key="person_v60017882" ref="http://viaf.org/viaf/60017882" role="fmo">
+                                    <persName type="display">Anthony Askew</persName>
+                                    <persName type="standard">Askew, Anthony,
+                                    1722-1774</persName>
+                        </name> (b. 1722, d. 1774), physician and
+                                book collector.</p>
+                        </provenance>
+
+                        <acquisition notBefore="1785"> After Askew's death, the manuscripts were
+                            sold by G. Leigh and J. Sotheby in the auction of his library in 1785
+                            (Nn.3.16 Lot. n. 554), and were eventually bought by Richard Farmer for
+                            Cambridge University Library. The University of Cambridge general
+                            bookplate (engraved by William Jackson in 1706-1707) was added 
+                            on <locus from="left cover, inner" to="left cover, inner">inside front board</locus>.</acquisition>
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source> Description (2019) draws on <hi rend="italic">A catalogue
+                                        of the Manuscripts preserved in the Library of the
+                                        University of Cambridge</hi>, vol. 4, Cambridge University
+                                    Press, Cambridge, 1861, p. 486-487.</source>
+                            </recordHist>
+
+                            <availability>
+                                <p>Entry to read in the Library is permitted only on presentation of a valid reader's card. For information on
+                                    eligibility and admissions procedures, see <ref target="https://www.lib.cam.ac.uk/using-library/joining-library">Joining the Library</ref>). For further information on the availability of the manuscript, please contact the
+                                    <ref target="mss@lib.cam.ac.uk">Manuscripts Reading Room</ref>.</p>
+                            </availability>
+                        </adminInfo>
+
+                        <listBibl>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/NDGFGJ84" type="book" xml:id="Hardwick1861">
+                                <monogr>
+                                    <title level="m">A catalogue of the manuscripts preserved in the
+                                        library of the University of Cambridge </title>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">4</biblScope>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1861</date>
+                                    </imprint>
+                                </monogr>
+
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/KGA9EA5K" type="journalArticle" xml:id="White1906">
+                                <analytic>
+                                    <title level="a">The Manuscripts of Aristophanes. I</title>
+                                    <author>
+                              <forename>John
+                                            Williams</forename>
+                              <surname>White</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Classical Philology</title>
+                                    <imprint>
+                                        <biblScope unit="volume">1</biblScope>
+                                        <biblScope unit="issue">1</biblScope>
+                                        <biblScope unit="page">1-20</biblScope>
+                                        <date>1906</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/TKQAI24Y" type="thesis" xml:id="Livadaras1963">
+                                <monogr>
+                                    <title level="m">Historia tēs paradoseōs tou keimenou tou
+                                        Hēsiodou</title>
+                                    <author>
+                              <forename>Nikolaos
+                                            A</forename>
+                              <surname>Livadaras</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Athēnais</pubPlace>
+                                        <date>1963</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/7LL7ECWF" type="journalArticle" xml:id="Derenzini1970">
+                                <analytic>
+                                    <title level="a">Per la storia degli attrezzi agricoli: una
+                                        tradizione iconografia nei codici esiodei?</title>
+
+                                    <author>
+                              <forename>Giovanna</forename>
+                              <surname>Derenzini</surname>
+                           </author>
+                                    <author>
+                              <forename>Carlo</forename>
+                              <surname>Maccagni</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Le Machine: bollettino dell'Istituto italiano
+                                        per la storia della tecnica</title>
+                                    <imprint>
+                                        <biblScope unit="volume">6-7</biblScope>
+                                        <date>1970</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/WDGA9XGY" type="journalArticle" xml:id="West1974">
+                                <analytic>
+                                    <title level="a">The Medieval Manuscripts of the Works and
+                                        Days</title>
+                                    <author>
+                              <forename>M.
+                                        L.</forename>
+                              <surname>West</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">The Classical Quarterly</title>
+                                    <imprint>
+                                        <biblScope unit="volume">24</biblScope>
+                                        <biblScope unit="issue">2</biblScope>
+                                        <biblScope unit="page">161-185</biblScope>
+                                        <date>1974</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/RW25UZ5S" type="journalArticle" xml:id="Stubbings1976">
+                                <analytic>
+                                    <title level="a">Anthony Askew's "Liber amicorum"</title>
+                                    <author>
+                              <forename>Frank</forename>
+                              <surname>Stubbings</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Transactions of the Cambridge Bibliographical
+                                        Society</title>
+                                    <imprint>
+                                        <biblScope unit="volume">6</biblScope>
+                                        <biblScope unit="issue">5</biblScope>
+                                        <biblScope unit="page">306-321</biblScope>
+                                        <date>1976</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/SEFJBN3C" type="book" xml:id="McKitterick1986">
+                                <monogr>
+                                    <title level="m">Cambridge University Library : a history [2],
+                                        The eighteenth and nineteenth centuries</title>
+                                    <author>
+                              <forename>David</forename>
+                              <surname>McKitterick</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1986</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/SP5BSALS" type="book" xml:id="Dover1989">
+                                <monogr>
+                                    <title level="m">Clouds</title>
+                                    <author>
+                              <name>Aristophanes</name>
+                           </author>
+                                    <editor>
+                              <forename>Kenneth
+                                            James</forename>
+                              <surname>Dover</surname>
+                           </editor>
+                                    <imprint>
+                                        <pubPlace>Oxford</pubPlace>
+                                        <publisher>Clarendon</publisher>
+                                        <date>1989</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/K4RCCRRQ" type="bookSection" xml:id="Easterling2000">
+                                <analytic>
+                                    <title level="a">From Britain to Byzantium: the study of Greek
+                                        manuscripts</title>
+                                    <author>
+                              <forename>P.
+                                        E.</forename>
+                              <surname>Easterling</surname>
+                           </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Through the looking glass: Byzantium through
+                                        British eyes: papers from the twenty-ninth Spring Symposium
+                                        of Byzantine Studies, London, March 1995</title>
+                                    <editor>
+                              <forename>Robin</forename>
+                              <surname>Cormack</surname>
+                           </editor>
+                                    <editor>
+                              <forename>Elizabeth</forename>
+                              <surname>Jeffreys</surname>
+                           </editor>
+                                    <imprint>
+                                        <pubPlace>Aldershot</pubPlace>
+                                        <publisher>Ashgate</publisher>
+                                        <date>2000</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                           <title level="s">Society for the Promotion of Byzantine
+                                        Studies publications</title>
+                           <biblScope unit="volume">7</biblScope>
+                        </series>
+                            </biblStruct>
+
+                        </listBibl>
+
+                    </additional>
+
+                    <!-- msPart Ia -->
+                    <msPart n="1">
+                        <msIdentifier>
+                            
+                                <idno type="part-1">Part I, Nn.3.16.1, ff. 2r-145v</idno>
+                            
+                        </msIdentifier>
+
+                        <msContents>
+                            <textLang mainLang="grc">Greek</textLang>
+
+                            <!-- VITA ARISTOPHANIS -->
+                            <msItem n="1">
+                                <locus from="1:2r" to="1:2v">f. 2r-2v</locus>
+                                <author key="person_v3830086" ref="http://viaf.org/viaf/3830086">
+                                    Thomas, Magistros, active 1310-1327 </author>
+                                <title xml:lang="eng">Thoman Life of Aristophanes <note>(Vita XXXIII
+                                        1 Koster 1975, Scholia in Aristophanem I.1.a)</note>
+                        </title>
+                                <rubric>
+                           <locus from="1:2r" to="1:2rr">f. 2r</locus> ἀριστοφάνους
+                                    βίος</rubric>
+                                <incipit>
+                           <locus from="1:2r" to="1:2r">f. 2r</locus> 
+                           <supplied reason="omitted-in-original">Ἀ</supplied>ριστοφάνης 
+                                    ὁ κωμωδοποιὸς γένος μὲν ἦν ἀθηναῖος· πατρὸς δὲ φιλίππου τὸν δὲ
+                                    δῆμον κυδαθηναῖος</incipit>
+                                <explicit>
+                           <locus from="1:2v" to="1:2v">f. 2v</locus> ἀποθανόντα δὲ οὕτω
+                                    Πλάτων· ἐτίμησεν ἐν ἡρωελεγείω· αἱ χάριτες τέμενος ὅπερ οὐχὶ
+                                    πεσεῖται, ζητοῦσαι ψυχὴν εὗρον ἀριστοφάνους</explicit>
+                                <note>TLG 4158.009</note>
+                                <note>on the final epigram, cf. Greek Anthology Appendix III 33 and
+                                    DBBE <ref target="https://www.dbbe.ugent.be/types/5362">type
+                                        5362</ref>
+                        </note>
+                            </msItem>
+
+                            <!-- PLUTUS -->
+                            <msItem n="2.1">
+                                <locus from="1:2v" to="1:3r">ff. 2v-3r</locus>
+                                <author key="person_v3830086" ref="http://viaf.org/viaf/3830086">
+                                    Thomas, Magistros, active 1310-1327 </author>
+                                <title xml:lang="eng">Hypothesis on Plutus </title>
+                                <title type="alt" xml:lang="eng">Thoman Argumentum <note>(ed.
+                                        Chantry 1996, Scholia in Aristophanem
+                                    III.4.b)</note>
+                        </title>
+                                <rubric>
+                           <locus from="1:2v" to="1:2v">f. 2v</locus> ὑπόθεσις τοῦ παρόντος
+                                    δράματος</rubric>
+                                <incipit>
+                           <locus from="1:2v" to="1:2v">f. 2v</locus> 
+                           <supplied reason="omitted-in-original">β</supplied>ουλόμενος
+                                    ἀριστοφάνης σκῶψαι ἀθηναίους ἀδικία καὶ συκοφαντία καὶ τοῖς
+                                    τοιούτοις συνόντας</incipit>
+                                <explicit>
+                           <locus from="1:3r" to="1:3r">f. 3r</locus> οὐκ αὐτοὶ μόνον
+                                    ἀλλὰ καὶ ὅσοι βίου χρηστοῦ πρόσθεν ἀντεχόμενοι πένητες ἦσαν.
+                                    ἐπιγέγραπται δὲ καὶ τὸ δράμα, πλοῦτος ἀριστοφάνους</explicit>
+                                <note>TLG 5014.031</note>
+                                <note>followed by the list of characters of the play</note>
+                            </msItem>
+
+                            <msItem n="2.2">
+                                <locus from="1:4r" to="1:68v">ff. 4r-68v</locus>
+                                <author key="person_v20962036" ref="http://viaf.org/viaf/20962036">
+                                    Aristophanes </author>
+                                <title xml:lang="lat">Plutus</title>
+                                <title type="alt" xml:lang="eng">Wealth</title>
+                                <incipit>
+                           <locus from="1:4r" to="1:4r">f. 4r</locus> 
+                           <supplied reason="omitted-in-original">Ὡ</supplied>ς 
+                                    ἀργαλέον πρᾶγμ’ ἐστίν ὦ ζεῦ καὶ θεοί δοῦλον γενέσθαι παραφρονοῦντος
+                                    δεσπότου</incipit>
+                                <explicit>
+                           <locus from="1:68v" to="1:68v">f. 68v</locus> οὐκ ἔτι
+                                    τοίνυν γ’ εἰκὸς μένειν οὐδ’ ἡμᾶς ἀλλ’ ἀναχωρεῖν εἰς τοὔπισθεν·
+                                    δεῖ γὰρ κατόπιν τούτοις ἄδοντας ἕπεσθαι</explicit>
+                                <finalRubric>
+                           <locus from="1:68v" to="1:68v">f. 68v</locus>
+                                    ἀριστοφάνους πλοῦτος τέλος</finalRubric>
+                                <note>TLG 0019.029</note>
+                                <note>extensive scholia and interlinear glosses by different hand in
+                                    red and faded black ink accompany the text; f. <locus from="1:8v" to="1:8v">8v</locus> left blank without loss of
+                                    text</note>
+                            </msItem>
+
+                            <!-- NUBES -->
+                            <msItem n="3.1">
+                                <locus from="1:69r" to="1:69v">ff. 69r-69v</locus>
+                                <author key="person_v3830086" ref="http://viaf.org/viaf/3830086">
+                                    Thomas, Magistros, active 1310-1327 </author>
+                                <title xml:lang="eng">Hypothesis on Nubes </title>
+                                <title type="alt" xml:lang="eng">Thoman Argumentum Nubium
+                                        <note>(Arg. Ia Koster 1974, Scholia in Aristophanem
+                                        I.3.2)</note>
+                        </title>
+                                <incipit>
+                           <locus from="1:69r" to="1:69r">f. 69r </locus>
+                                    <supplied reason="omitted-in-original">Ἄ</supplied>νυτος καὶ
+                                    Μέλητος Σωκράτει τῶ Σωφρονίσκου βασκήναντες, καὶ αὐτὸν μὴ
+                                    δυνάμενοι βλάψαι, ἀργύριον ἱκανὸν ἀριστοφάνει
+                                    δεδώκασιν</incipit>
+                                <explicit>
+                           <locus from="1:69v" to="1:69v">f. 69v</locus> συνίσταται
+                                    δὲ τὸ δράμα ἐκ χοροῦ νεφελῶν· ἔχει δὲ κατηγορίαν τοῦ σωκράτους·
+                                    ὅτι τοὺς συνήθεις θεοὺς ἀφεὶς, καινὰ ἐνόμιζε δαιμόνια· ἀέρα·
+                                    νεφέλας· καὶ τὰ τοιαῦτα</explicit>
+                                <note>TLG 5014.005</note>
+                                <note>followed by the list of characters of the play</note>
+                            </msItem>
+
+                            <msItem n="3.2">
+                                <locus from="1:70r" to="1:145v">ff. 70r-145v</locus>
+                                <author key="person_v20962036" ref="http://viaf.org/viaf/20962036">
+                                    Aristophanes </author>
+                                <title xml:lang="lat">Nubes</title>
+                                <title type="alt" xml:lang="eng">Clouds</title>
+                                <incipit>
+                           <locus from="1:70r" to="1:70r">f. 70r</locus> ἰοὺ ἰού· ὦ
+                                    ζεῦ βασιλεῦ τὸ χρῆμα τῶν νυκτῶν ὅσον ἀπέραντον· οὐδέποθ’ ἡμέρα
+                                    γενήσεται;</incipit>
+                                <explicit>
+                           <locus from="1:145v" to="1:145v">f. 145v</locus> ἡγεῖσθ’
+                                    ἔξω κεχόρευται γὰρ μετρίως τό γε τήμερον ἡμῖν</explicit>
+                                <finalRubric>
+                           <locus from="1:145v" to="1:145v">f. 145v</locus> τὸ
+                                    τέρμ᾽ ὧδ᾽ ἐστὶ δράματος τοῦ δευτέρου</finalRubric>
+                                <note>TLG 0019.021</note>
+                                <note>final epigram: cf. DBBE <ref target="https://www.dbbe.ugent.be/types/3473">type
+                                        3473</ref>
+                        </note>
+                                <note>f. <locus from="1:143v" to="1:143v">143v</locus>: lines
+                                    1438-1468 omitted (as noted by H. Bradshaw)</note>
+                                <note>extensive scholia and interlinear glosses by different hand in
+                                    red and faded black ink accompany the text.</note>
+                            </msItem>
+
+                        </msContents>
+                        
+                        <physDesc>
+                            <objectDesc form="codex">
+                                <supportDesc material="paper">
+                                    <support>
+                                        <material>ff. <locus from="1:2r" to="1:145v">2r-145v</locus>
+                                            Western paper, folded in <measure type="folding">quarto</measure>. Watermark not visible.</material>
+                                    </support>
+
+                                    <collation>
+                                        <p>Nn.3.16.1 consists of 18 quires and a single folio: <list>
+                                                <item>Quire 1<hi rend="superscript">8-1</hi>
+                                                  <locus from="1:2r" to="1:8v"> ff. 2r-8v</locus>
+                                                  <note>(the first leaf missing)</note>;</item>
+                                                <item>Quires 2-18<hi rend="superscript">8</hi>
+                                                  <locus from="1:9r" to="1:144v"> ff.
+                                                  9r-144v</locus>;</item>
+                                                <item>Single folio <locus from="1:145r" to="1:145v">ff. 145r-145v</locus>.</item>
+                                            </list>
+                              </p>
+                                        <signatures type="leaf">
+                                            <p>A bifolium signature (Latin letters for quires,
+                                                followed by Arabic numerals for bifolios) in pencil
+                                                in the lower right-hand corner of the rectos of the
+                                                first four folios, followed by a cross on the fifth,
+                                                was added by Henry Bradshaw: a-i, k-t.</p>
+                                        </signatures>
+                                    </collation>
+
+                                    <condition>
+                                        <p>In fair condition; leaves are yellow with age. There are
+                                            extensive stains and wormholes, ff. <locus from="1:2r" to="1:8v">2-8</locus> are more damaged than the rest
+                                            of the volume. Small tears have been repaired with glued
+                                            paper that sometimes covers part of the text of the
+                                            scholia. A small tear at f. <locus from="1:41r" to="1:41v">41</locus> near the gutter is unrepaired.
+                                            The lower outer corner of f. <locus from="1:2r" to="1:2v">2</locus> was lost, and with it about a
+                                            third of the text.</p>
+                                    </condition>
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="1" writtenLines="10">
+                                        <locus from="1:4r" scheme="folios" to="1:145v">ff.
+                                            4r-145v</locus>: <dimensions type="written" unit="mm">
+                                            <height quantity="130">130</height>
+                                            <width quantity="80">80</width>
+                                        </dimensions>
+                                        <note>Scholia that accompany the main texts have a very
+                                            variable number of lines per page, and are arranged in a
+                                            orderly manner.</note>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote scope="major" xml:id="hand-1">
+                                    <p>The main text is written in a <term type="script">mixed
+                                            minuscule</term> in an upright slanting slightly to the
+                                        right, in dark brown ink. There is only moderate variation
+                                        in letter size.</p>
+                                    <p>Syllabic abbreviations and superscript word endings are
+                                        nearly absent. Breathings are curved and mute <hi rend="italic">iota</hi> is not used.</p>
+                                    <p>The small majuscules <hi rend="italic">beta, gamma, eta,
+                                            lambda phi</hi> are present. <hi rend="italic">Beta</hi>
+                                        has sometimes a bilobated shape, <hi rend="italic">theta</hi> is both in open and round form, <hi rend="italic">epsilon</hi> is both regular minuscule and
+                                        rarely lunate and enlarged. The <hi rend="italic">sigma
+                                            telikon</hi> is present along with regular shape. <hi rend="italic">Epsilon</hi> in ligature is deformed.</p>
+                                    <p>Punctuation used includes the middle and upper point, lower
+                                        comma and full stop.</p>
+                                </handNote>
+                            </handDesc>
+
+                            <additions>
+                                <p>Ownership notes of the Monastery of Dionysiou (Mount Athos) have
+                                    been added on f. <locus from="1:3v" to="1:3v">f. 3v</locus>:
+                                        <q>κτῆμα μονῆς τοῦ κυρίου Διονυσίου</q>.</p>
+                            </additions>
+
+                        </physDesc>
+
+                        <history>
+                            <origin>
+                                <p>The characteristics of the script suggest that it was produced in
+                                    the <origDate calendar="gregorian" notAfter="1525" notBefore="1475">late 15th or early 16th
+                                    century</origDate>.</p>
+                            </origin>
+                        </history>
+                    </msPart>
+
+                    <!-- msPart II -->
+                    <msPart n="2">
+                        <msIdentifier>
+                            
+                                <idno type="part-2">Part II, Nn.3.16.2, ff. 1r-34v</idno>
+                            
+                        </msIdentifier>
+
+                        <msContents>
+                            <textLang mainLang="grc">Greek</textLang>
+
+                            <!-- HESIOD -->
+                            <msItem n="4.1">
+                                <locus from="2:1r" to="2:1r">f. 1r</locus>
+                                <author key="person_v32075977" ref="http://viaf.org/viaf/32075977">
+                                    Moschopoulos, Manuel, approximately 1265? </author>
+                                <title xml:lang="eng">Introduction to Hesiod's Works and
+                                    days</title>
+                                <incipit>
+                           <locus from="2:1r" to="2:1r">f. 1r</locus> ἰστέον ὅτι πάντα
+                                    οἱ ἕλληνες, ἃ δύναμιν ἔχοντα ἑώρων, οὐκ ἄνευ
+                                    ἐπιστασίας</incipit>
+                                <explicit>
+                           <locus from="2:1r" to="2:1r">f. 1r</locus> ἵνα μὴ τῆς τοῦ
+                                    διὸς ὀργῆς πειραθῆ τὴν πλεονεξίαν ὁρῶντος αὐτοῦ</explicit>
+                                <note>TLG 9025.005</note>
+                                <note>
+                           <locus from="2:1v" to="2:1v">f. 1v</locus> bears scholia by
+                                    Moschopoulus on lines 1-10</note>
+                            </msItem>
+
+                            <msItem n="4.2">
+                                <locus from="2:2r" to="2:34r">ff. 2r-34r</locus>
+                                <author key="person_v122220717" ref="http://viaf.org/viaf/122220717"> Hesiod </author>
+                                <title xml:lang="lat">Opera et dies</title>
+                                <title type="alt" xml:lang="eng">Works and days</title>
+                                <rubric>
+                           <locus from="2:2r" to="2:2r">f. 2r</locus> ἡσιόδου ἔργα καὶ
+                                    ἡμέραι <note>(nearly faded, on the edge of the upper
+                                        margin)</note>
+                        </rubric>
+                                <incipit>
+                           <locus from="2:2r" to="2:2r">f. 2r</locus> Μοῦσαι πιερίηθεν
+                                    ἀειδῇσι κλείουσαι δεῦτε δὴ ἐννέπετε σφέτερον πατέρ’
+                                    ὑμνείουσαι</incipit>
+                                <explicit>
+                           <locus from="2:34r" to="2:34r">f. 34r</locus> εἰδὼς,
+                                    ἐργάζηται ἀναίτιος ἀθανάτοισιν· ὄρνιθας κρίνων· καὶ ὑπερβασίας
+                                    ἀλεείνων</explicit>
+                                <finalRubric>
+                           <locus from="2:34r" to="2:34r">f. 34r</locus> τέλος τῶν
+                                    ἔργων καὶ ἡμερῶν ἡσιόδου</finalRubric>
+                                <note>TLG 0020.002</note>
+                                <note>extensive interlinear glosses in red ink and some scholia in
+                                    brown ink accompany the text</note>
+                            </msItem>
+
+                            <!-- Grammar Note -->
+                            <msItem n="5">
+                                <locus from="2:34v" to="2:34v">f. 34v</locus>
+                                <title xml:lang="eng">Note on conjugation of verbs</title>
+                                <incipit>
+                           <locus from="2:34v" to="2:34v">f. 34v</locus> ἴσθι καὶ
+                                    ὕπαρχε</incipit>
+                                <explicit>
+                           <locus from="2:34v" to="2:34v">f. 34v</locus> τὸ
+                                    προστακτικὸν δέδιθι</explicit>
+                            </msItem>
+
+                        </msContents>
+
+                        <physDesc>
+                            <objectDesc form="codex">
+                                <supportDesc material="paper">
+                                    <support>
+                                        <material>ff. <locus from="2:1r" to="2:34v">1r-34v</locus>
+                                            Western paper, folded in <measure type="folding">quarto</measure>. Watermark: <watermark>
+                                    <term type="watermarkMotif">Shield with pale</term>
+                                                <note> partially visible on ff. <locus from="2:5r" to="2:5v">5</locus>, <locus from="2:9r" to="2:9v">9</locus>, <locus from="2:19r" to="2:19v">19</locus>
+                                    </note> (<dimensions type="watermark" unit="mm">
+                                                  <height atLeast="25" cert="low">25</height>
+                                                  <width quantity="20">30</width>
+                                                </dimensions>) <note type="watermarkPosition">near
+                                                  the gutter</note>.</watermark>
+                                        </material>
+                                    </support>
+
+                                    <collation>
+                                        <p>Part II of the manuscript consists of three quaternions
+                                            and one quinion: <list>
+                                                <item>Quires 20-22<hi rend="superscript">8</hi>
+                                                  <locus from="2:1r" to="2:24v"> ff.
+                                                  1r-24v</locus>;</item>
+                                                <item>Quire 23<hi rend="superscript">10</hi>
+                                                  <locus from="2:25r" to="2:34v"> ff.
+                                                  25r-34v</locus>.</item>
+                                            </list>
+                              </p>
+                                        <signatures type="leaf">
+                                            <p>There is a bifolium signature (Latin letters for
+                                                quires and Arabic numerals for bifolios) by Henry
+                                                Bradshaw in pencil in the lower right-hand corner of
+                                                the rectos: a-d.</p>
+                                        </signatures>
+                                    </collation>
+
+                                    <condition>
+                                        <p>In good condition. Leaves are yellow with age and stains
+                                            are rare.</p>
+                           </condition>
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="1" writtenLines="11 13">
+                                        <locus from="2:2r" scheme="folios" to="2:34r">ff.
+                                            2r-34r</locus>: <dimensions type="written" unit="mm">
+                                            <height quantity="165">165</height>
+                                            <width quantity="85">85</width>
+                                        </dimensions>
+                                        <note>Scholia and prefatory materials that accompany the
+                                            main texts have a very variable number of lines per
+                                            page, and are arranged in a orderly manner.</note>
+                                    </layout>
+                                </layoutDesc>
+
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote scope="major" xml:id="hand-2">
+                                    <p>The main texts are written in a <term type="script">mixed
+                                            minuscule</term> in an upright, scribal hand, in brown
+                                        ink script.</p>
+                                    <p>There is not a marked variation in letter size. Syllabic
+                                        abbreviations and superscript word endings are rare, and
+                                        usually appear only at the end of lines. Breathings are
+                                        curved and mute iota is not used.</p>
+                                    <p>The small majuscules <hi rend="italic">beta, gamma, eta,
+                                            kappa</hi> and <hi rend="italic">phi</hi> are present.
+                                            <hi rend="italic">Gamma</hi> and <hi rend="italic">tau</hi> are oftenly high. The majuscule <hi rend="italic">beta</hi> has a curled bilobate shape, and
+                                            <hi rend="italic">epsilon</hi> is both regular minuscule
+                                        and lunate. The <hi rend="italic">sigma telikon</hi> is not
+                                        present. <hi rend="italic">Omega</hi> is always closed.</p>
+                                    <p>Punctuation used includes the middle and upper point, lower
+                                        comma and full stop.</p>
+                                </handNote>
+                            </handDesc>
+
+                            <decoDesc>
+                                <decoNote type="headpiece">
+                           <p>The beginning of the text on f. <locus from="2:2r" to="2:2r">2r</locus> is preceded by rectangular headpieces in
+                                        brown ink.</p>
+                        </decoNote>
+
+                                <decoNote type="decInit"> An ornated initial, outlined in red ink on
+                                    f. <locus from="2:2r" to="2:2r">2r</locus>. </decoNote>
+                            </decoDesc>
+
+                        </physDesc>
+
+                        <history>
+                            <origin>
+                                <p>The characteristics of the script and the watermarks suggest that
+                                    it was produced in the <origDate calendar="gregorian" notAfter="1499" notBefore="1475">late 15th
+                                        century.</origDate>
+                        </p>
+                            </origin>
+                        </history>
+                    </msPart>
+
+                </msDesc>
+            </sourceDesc>
+
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject
+                            Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85057171">Greek literature</term>
+                        </item>
+
+                        <item>
+                     <term key="subject_n79072756">Aristophanes</term>
+                  </item>
+
+                        <item>
+                            <term key="subject_n83196743">Hesiod. Works and days</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2019-09-25">
+                <persName>Matteo Di Franco</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+        <graphic decls="#document-thumbnail" rend="portrait" url="MS-NN-00003-00016-000-00001"/>
+        <surface n="left cover, outer" xml:id="i1">
+            <graphic decls="#downloadImageRights #download" height="6419px" rend="portrait" url="MS-NN-00003-00016-000-00001" width="4317px"/>
+        </surface>
+        <surface n="left cover, inner" xml:id="i2">
+            <graphic decls="#downloadImageRights #download" height="6320px" rend="portrait" url="MS-NN-00003-00016-000-00002" width="3854px"/>
+        </surface>
+        <surface n="[i] recto" xml:id="i3">
+            <graphic decls="#downloadImageRights #download" height="6320px" rend="portrait" url="MS-NN-00003-00016-000-00003" width="3614px"/>
+        </surface>
+        <surface n="[i] verso" xml:id="i4">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00004" width="3715px"/>
+        </surface>
+        <surface n="[ii] recto" xml:id="i5">
+            <graphic decls="#downloadImageRights #download" height="6320px" rend="portrait" url="MS-NN-00003-00016-000-00005" width="3614px"/>
+        </surface>
+        <surface n="[ii] verso" xml:id="i6">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00006" width="3517px"/>
+        </surface>
+        <surface n="[iii] recto" xml:id="i7">
+            <graphic decls="#downloadImageRights #download" height="6320px" rend="portrait" url="MS-NN-00003-00016-000-00007" width="3614px"/>
+        </surface>
+        <surface n="[iii] verso" xml:id="i8">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00008" width="3517px"/>
+        </surface>
+        <surface n="1:2r" xml:id="i9">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00009" width="3402px"/>
+        </surface>
+        <surface n="1:2v" xml:id="i10">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00010" width="3517px"/>
+        </surface>
+        <surface n="1:3r" xml:id="i11">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00011" width="3402px"/>
+        </surface>
+        <surface n="1:3v" xml:id="i12">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00012" width="3517px"/>
+        </surface>
+        <surface n="1:4r" xml:id="i13">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00013" width="3402px"/>
+        </surface>
+        <surface n="1:4v" xml:id="i14">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00014" width="3517px"/>
+        </surface>
+        <surface n="1:5r" xml:id="i15">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00015" width="3402px"/>
+        </surface>
+        <surface n="1:5v" xml:id="i16">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00016" width="3517px"/>
+        </surface>
+        <surface n="1:6r" xml:id="i17">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00017" width="3402px"/>
+        </surface>
+        <surface n="1:6v" xml:id="i18">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00018" width="3517px"/>
+        </surface>
+        <surface n="1:7r" xml:id="i19">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00019" width="3402px"/>
+        </surface>
+        <surface n="1:7v" xml:id="i20">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00020" width="3517px"/>
+        </surface>
+        <surface n="1:8r" xml:id="i21">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00021" width="3402px"/>
+        </surface>
+        <surface n="1:8v" xml:id="i22">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00022" width="3517px"/>
+        </surface>
+        <surface n="1:9r" xml:id="i23">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00023" width="3402px"/>
+        </surface>
+        <surface n="1:9v" xml:id="i24">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00024" width="3517px"/>
+        </surface>
+        <surface n="1:10r" xml:id="i25">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00025" width="3402px"/>
+        </surface>
+        <surface n="1:10v" xml:id="i26">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00026" width="3517px"/>
+        </surface>
+        <surface n="1:11r" xml:id="i27">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00027" width="3402px"/>
+        </surface>
+        <surface n="1:11v" xml:id="i28">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00028" width="3517px"/>
+        </surface>
+        <surface n="1:12r" xml:id="i29">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00029" width="3402px"/>
+        </surface>
+        <surface n="1:12v" xml:id="i30">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00030" width="3517px"/>
+        </surface>
+        <surface n="1:13r" xml:id="i31">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00031" width="3402px"/>
+        </surface>
+        <surface n="1:13v" xml:id="i32">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00032" width="3517px"/>
+        </surface>
+        <surface n="1:14r" xml:id="i33">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00033" width="3402px"/>
+        </surface>
+        <surface n="1:14v" xml:id="i34">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00034" width="3517px"/>
+        </surface>
+        <surface n="1:15r" xml:id="i35">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00035" width="3402px"/>
+        </surface>
+        <surface n="1:15v" xml:id="i36">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00036" width="3517px"/>
+        </surface>
+        <surface n="1:16r" xml:id="i37">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00037" width="3402px"/>
+        </surface>
+        <surface n="1:16v" xml:id="i38">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00038" width="3517px"/>
+        </surface>
+        <surface n="1:17r" xml:id="i39">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00039" width="3402px"/>
+        </surface>
+        <surface n="1:17v" xml:id="i40">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00040" width="3517px"/>
+        </surface>
+        <surface n="1:18r" xml:id="i41">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00041" width="3402px"/>
+        </surface>
+        <surface n="1:18v" xml:id="i42">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00042" width="3517px"/>
+        </surface>
+        <surface n="1:19r" xml:id="i43">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00043" width="3402px"/>
+        </surface>
+        <surface n="1:19v" xml:id="i44">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00044" width="3517px"/>
+        </surface>
+        <surface n="1:20r" xml:id="i45">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00045" width="3402px"/>
+        </surface>
+        <surface n="1:20v" xml:id="i46">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00046" width="3517px"/>
+        </surface>
+        <surface n="1:21r" xml:id="i47">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00047" width="3402px"/>
+        </surface>
+        <surface n="1:21v" xml:id="i48">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00048" width="3517px"/>
+        </surface>
+        <surface n="1:22r" xml:id="i49">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00049" width="3402px"/>
+        </surface>
+        <surface n="1:22v" xml:id="i50">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00050" width="3517px"/>
+        </surface>
+        <surface n="1:23r" xml:id="i51">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00051" width="3402px"/>
+        </surface>
+        <surface n="1:23v" xml:id="i52">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00052" width="3517px"/>
+        </surface>
+        <surface n="1:24r" xml:id="i53">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00053" width="3402px"/>
+        </surface>
+        <surface n="1:24v" xml:id="i54">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00054" width="3517px"/>
+        </surface>
+        <surface n="1:25r" xml:id="i55">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00055" width="3424px"/>
+        </surface>
+        <surface n="1:25v" xml:id="i56">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00056" width="3517px"/>
+        </surface>
+        <surface n="1:26r" xml:id="i57">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00057" width="3402px"/>
+        </surface>
+        <surface n="1:26v" xml:id="i58">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00058" width="3517px"/>
+        </surface>
+        <surface n="1:27r" xml:id="i59">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00059" width="3402px"/>
+        </surface>
+        <surface n="1:27v" xml:id="i60">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00060" width="3517px"/>
+        </surface>
+        <surface n="1:28r" xml:id="i61">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00061" width="3402px"/>
+        </surface>
+        <surface n="1:28v" xml:id="i62">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00062" width="3517px"/>
+        </surface>
+        <surface n="1:29r" xml:id="i63">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00063" width="3402px"/>
+        </surface>
+        <surface n="1:29v" xml:id="i64">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00064" width="3517px"/>
+        </surface>
+        <surface n="1:30r" xml:id="i65">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00065" width="3402px"/>
+        </surface>
+        <surface n="1:30v" xml:id="i66">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00066" width="3517px"/>
+        </surface>
+        <surface n="1:31r" xml:id="i67">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00067" width="3402px"/>
+        </surface>
+        <surface n="1:31v" xml:id="i68">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00068" width="3517px"/>
+        </surface>
+        <surface n="1:32r" xml:id="i69">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00069" width="3402px"/>
+        </surface>
+        <surface n="1:32v" xml:id="i70">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00070" width="3517px"/>
+        </surface>
+        <surface n="1:33r" xml:id="i71">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00071" width="3402px"/>
+        </surface>
+        <surface n="1:33v" xml:id="i72">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00072" width="3517px"/>
+        </surface>
+        <surface n="1:34r" xml:id="i73">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00073" width="3402px"/>
+        </surface>
+        <surface n="1:34v" xml:id="i74">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00074" width="3517px"/>
+        </surface>
+        <surface n="1:35r" xml:id="i75">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00075" width="3402px"/>
+        </surface>
+        <surface n="1:35v" xml:id="i76">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00076" width="3517px"/>
+        </surface>
+        <surface n="1:36r" xml:id="i77">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00077" width="3402px"/>
+        </surface>
+        <surface n="1:36v" xml:id="i78">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00078" width="3517px"/>
+        </surface>
+        <surface n="1:37r" xml:id="i79">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00079" width="3402px"/>
+        </surface>
+        <surface n="1:37v" xml:id="i80">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00080" width="3517px"/>
+        </surface>
+        <surface n="1:38r" xml:id="i81">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00081" width="3402px"/>
+        </surface>
+        <surface n="1:38v" xml:id="i82">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00082" width="3517px"/>
+        </surface>
+        <surface n="1:39r" xml:id="i83">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00083" width="3402px"/>
+        </surface>
+        <surface n="1:39v" xml:id="i84">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00084" width="3517px"/>
+        </surface>
+        <surface n="1:40r" xml:id="i85">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00085" width="3402px"/>
+        </surface>
+        <surface n="1:40v" xml:id="i86">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00086" width="3517px"/>
+        </surface>
+        <surface n="1:41r" xml:id="i87">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00087" width="3402px"/>
+        </surface>
+        <surface n="1:41v" xml:id="i88">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00088" width="3456px"/>
+        </surface>
+        <surface n="1:42r" xml:id="i89">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00089" width="3402px"/>
+        </surface>
+        <surface n="1:42v" xml:id="i90">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00090" width="3456px"/>
+        </surface>
+        <surface n="1:43r" xml:id="i91">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00091" width="3402px"/>
+        </surface>
+        <surface n="1:43v" xml:id="i92">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00092" width="3456px"/>
+        </surface>
+        <surface n="1:44r" xml:id="i93">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00093" width="3402px"/>
+        </surface>
+        <surface n="1:44v" xml:id="i94">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00094" width="3456px"/>
+        </surface>
+        <surface n="1:45r" xml:id="i95">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00095" width="3402px"/>
+        </surface>
+        <surface n="1:45v" xml:id="i96">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00096" width="3456px"/>
+        </surface>
+        <surface n="1:46r" xml:id="i97">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00097" width="3402px"/>
+        </surface>
+        <surface n="1:46v" xml:id="i98">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00098" width="3456px"/>
+        </surface>
+        <surface n="1:47r" xml:id="i99">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00099" width="3402px"/>
+        </surface>
+        <surface n="1:47v" xml:id="i100">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00100" width="3456px"/>
+        </surface>
+        <surface n="1:48r" xml:id="i101">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00101" width="3402px"/>
+        </surface>
+        <surface n="1:48v" xml:id="i102">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00102" width="3456px"/>
+        </surface>
+        <surface n="1:49r" xml:id="i103">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00103" width="3402px"/>
+        </surface>
+        <surface n="1:49v" xml:id="i104">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00104" width="3456px"/>
+        </surface>
+        <surface n="1:50r" xml:id="i105">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00105" width="3402px"/>
+        </surface>
+        <surface n="1:50v" xml:id="i106">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00106" width="3456px"/>
+        </surface>
+        <surface n="1:51r" xml:id="i107">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00107" width="3402px"/>
+        </surface>
+        <surface n="1:51v" xml:id="i108">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00108" width="3456px"/>
+        </surface>
+        <surface n="1:52r" xml:id="i109">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00109" width="3402px"/>
+        </surface>
+        <surface n="1:52v" xml:id="i110">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00110" width="3456px"/>
+        </surface>
+        <surface n="1:53r" xml:id="i111">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00111" width="3348px"/>
+        </surface>
+        <surface n="1:53v" xml:id="i112">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00112" width="3456px"/>
+        </surface>
+        <surface n="1:54r" xml:id="i113">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00113" width="3324px"/>
+        </surface>
+        <surface n="1:54v" xml:id="i114">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00114" width="3456px"/>
+        </surface>
+        <surface n="1:55r" xml:id="i115">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00115" width="3324px"/>
+        </surface>
+        <surface n="1:55v" xml:id="i116">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00116" width="3456px"/>
+        </surface>
+        <surface n="1:56r" xml:id="i117">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00117" width="3324px"/>
+        </surface>
+        <surface n="1:56v" xml:id="i118">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00118" width="3456px"/>
+        </surface>
+        <surface n="1:57r" xml:id="i119">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00119" width="3324px"/>
+        </surface>
+        <surface n="1:57v" xml:id="i120">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00120" width="3456px"/>
+        </surface>
+        <surface n="1:58r" xml:id="i121">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00121" width="3324px"/>
+        </surface>
+        <surface n="1:58v" xml:id="i122">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00122" width="3456px"/>
+        </surface>
+        <surface n="1:59r" xml:id="i123">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00123" width="3324px"/>
+        </surface>
+        <surface n="1:59v" xml:id="i124">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00124" width="3456px"/>
+        </surface>
+        <surface n="1:60r" xml:id="i125">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00125" width="3324px"/>
+        </surface>
+        <surface n="1:60v" xml:id="i126">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00126" width="3456px"/>
+        </surface>
+        <surface n="1:61r" xml:id="i127">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00127" width="3324px"/>
+        </surface>
+        <surface n="1:61v" xml:id="i128">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00128" width="3456px"/>
+        </surface>
+        <surface n="1:62r" xml:id="i129">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00129" width="3324px"/>
+        </surface>
+        <surface n="1:62v" xml:id="i130">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00130" width="3456px"/>
+        </surface>
+        <surface n="1:63r" xml:id="i131">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00131" width="3324px"/>
+        </surface>
+        <surface n="1:63v" xml:id="i132">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00132" width="3456px"/>
+        </surface>
+        <surface n="1:64r" xml:id="i133">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00133" width="3324px"/>
+        </surface>
+        <surface n="1:64v" xml:id="i134">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00134" width="3456px"/>
+        </surface>
+        <surface n="1:65r" xml:id="i135">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00135" width="3324px"/>
+        </surface>
+        <surface n="1:65v" xml:id="i136">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00136" width="3456px"/>
+        </surface>
+        <surface n="1:66r" xml:id="i137">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00137" width="3324px"/>
+        </surface>
+        <surface n="1:66v" xml:id="i138">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00138" width="3456px"/>
+        </surface>
+        <surface n="1:67r" xml:id="i139">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00139" width="3324px"/>
+        </surface>
+        <surface n="1:67v" xml:id="i140">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00140" width="3456px"/>
+        </surface>
+        <surface n="1:68r" xml:id="i141">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00141" width="3324px"/>
+        </surface>
+        <surface n="1:68v" xml:id="i142">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00142" width="3456px"/>
+        </surface>
+        <surface n="1:69r" xml:id="i143">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00143" width="3324px"/>
+        </surface>
+        <surface n="1:69v" xml:id="i144">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00144" width="3456px"/>
+        </surface>
+        <surface n="1:70r" xml:id="i145">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00145" width="3324px"/>
+        </surface>
+        <surface n="1:70v" xml:id="i146">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00146" width="3456px"/>
+        </surface>
+        <surface n="1:71r" xml:id="i147">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00147" width="3324px"/>
+        </surface>
+        <surface n="1:71v" xml:id="i148">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00148" width="3456px"/>
+        </surface>
+        <surface n="1:72r" xml:id="i149">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00149" width="3324px"/>
+        </surface>
+        <surface n="1:72v" xml:id="i150">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00150" width="3456px"/>
+        </surface>
+        <surface n="1:73r" xml:id="i151">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00151" width="3324px"/>
+        </surface>
+        <surface n="1:73v" xml:id="i152">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00152" width="3456px"/>
+        </surface>
+        <surface n="1:74r" xml:id="i153">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00153" width="3324px"/>
+        </surface>
+        <surface n="1:74v" xml:id="i154">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00154" width="3456px"/>
+        </surface>
+        <surface n="1:75r" xml:id="i155">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00155" width="3324px"/>
+        </surface>
+        <surface n="1:75v" xml:id="i156">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00156" width="3456px"/>
+        </surface>
+        <surface n="1:76r" xml:id="i157">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00157" width="3324px"/>
+        </surface>
+        <surface n="1:76v" xml:id="i158">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00158" width="3456px"/>
+        </surface>
+        <surface n="1:77r" xml:id="i159">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00159" width="3324px"/>
+        </surface>
+        <surface n="1:77v" xml:id="i160">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00160" width="3456px"/>
+        </surface>
+        <surface n="1:78r" xml:id="i161">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00161" width="3324px"/>
+        </surface>
+        <surface n="1:78v" xml:id="i162">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00162" width="3456px"/>
+        </surface>
+        <surface n="1:79r" xml:id="i163">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00163" width="3324px"/>
+        </surface>
+        <surface n="1:79v" xml:id="i164">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00164" width="3456px"/>
+        </surface>
+        <surface n="1:80r" xml:id="i165">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00165" width="3324px"/>
+        </surface>
+        <surface n="1:80v" xml:id="i166">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00166" width="3456px"/>
+        </surface>
+        <surface n="1:81r" xml:id="i167">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00167" width="3324px"/>
+        </surface>
+        <surface n="1:81v" xml:id="i168">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00168" width="3456px"/>
+        </surface>
+        <surface n="1:82r" xml:id="i169">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00169" width="3324px"/>
+        </surface>
+        <surface n="1:82v" xml:id="i170">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00170" width="3456px"/>
+        </surface>
+        <surface n="1:83r" xml:id="i171">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00171" width="3324px"/>
+        </surface>
+        <surface n="1:83v" xml:id="i172">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00172" width="3456px"/>
+        </surface>
+        <surface n="1:84r" xml:id="i173">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00173" width="3324px"/>
+        </surface>
+        <surface n="1:84v" xml:id="i174">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00174" width="3456px"/>
+        </surface>
+        <surface n="1:85r" xml:id="i175">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00175" width="3324px"/>
+        </surface>
+        <surface n="1:85v" xml:id="i176">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00176" width="3456px"/>
+        </surface>
+        <surface n="1:86r" xml:id="i177">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00177" width="3324px"/>
+        </surface>
+        <surface n="1:86v" xml:id="i178">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00178" width="3456px"/>
+        </surface>
+        <surface n="1:87r" xml:id="i179">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00179" width="3324px"/>
+        </surface>
+        <surface n="1:87v" xml:id="i180">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00180" width="3456px"/>
+        </surface>
+        <surface n="1:88r" xml:id="i181">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00181" width="3324px"/>
+        </surface>
+        <surface n="1:88v" xml:id="i182">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00182" width="3456px"/>
+        </surface>
+        <surface n="1:89r" xml:id="i183">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00183" width="3324px"/>
+        </surface>
+        <surface n="1:89v" xml:id="i184">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00184" width="3456px"/>
+        </surface>
+        <surface n="1:90r" xml:id="i185">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00185" width="3324px"/>
+        </surface>
+        <surface n="1:90v" xml:id="i186">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00186" width="3456px"/>
+        </surface>
+        <surface n="1:91r" xml:id="i187">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00187" width="3324px"/>
+        </surface>
+        <surface n="1:91v" xml:id="i188">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00188" width="3456px"/>
+        </surface>
+        <surface n="1:92r" xml:id="i189">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00189" width="3324px"/>
+        </surface>
+        <surface n="1:92v" xml:id="i190">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00190" width="3456px"/>
+        </surface>
+        <surface n="1:93r" xml:id="i191">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00191" width="3324px"/>
+        </surface>
+        <surface n="1:93v" xml:id="i192">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00192" width="3456px"/>
+        </surface>
+        <surface n="1:94r" xml:id="i193">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00193" width="3324px"/>
+        </surface>
+        <surface n="1:94v" xml:id="i194">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00194" width="3456px"/>
+        </surface>
+        <surface n="1:95r" xml:id="i195">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00195" width="3324px"/>
+        </surface>
+        <surface n="1:95v" xml:id="i196">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00196" width="3456px"/>
+        </surface>
+        <surface n="1:96r" xml:id="i197">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00197" width="3324px"/>
+        </surface>
+        <surface n="1:96v" xml:id="i198">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00198" width="3456px"/>
+        </surface>
+        <surface n="1:97r" xml:id="i199">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00199" width="3324px"/>
+        </surface>
+        <surface n="1:97v" xml:id="i200">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00200" width="3456px"/>
+        </surface>
+        <surface n="1:98r" xml:id="i201">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00201" width="3324px"/>
+        </surface>
+        <surface n="1:98v" xml:id="i202">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00202" width="3456px"/>
+        </surface>
+        <surface n="1:99r" xml:id="i203">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00203" width="3324px"/>
+        </surface>
+        <surface n="1:99v" xml:id="i204">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00204" width="3456px"/>
+        </surface>
+        <surface n="1:100r" xml:id="i205">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00205" width="3324px"/>
+        </surface>
+        <surface n="1:100v" xml:id="i206">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00206" width="3456px"/>
+        </surface>
+        <surface n="1:101r" xml:id="i207">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00207" width="3324px"/>
+        </surface>
+        <surface n="1:101v" xml:id="i208">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00208" width="3456px"/>
+        </surface>
+        <surface n="1:102r" xml:id="i209">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00209" width="3324px"/>
+        </surface>
+        <surface n="1:102v" xml:id="i210">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00210" width="3456px"/>
+        </surface>
+        <surface n="1:103r" xml:id="i211">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00211" width="3324px"/>
+        </surface>
+        <surface n="1:103v" xml:id="i212">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00212" width="3456px"/>
+        </surface>
+        <surface n="1:104r" xml:id="i213">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00213" width="3324px"/>
+        </surface>
+        <surface n="1:104v" xml:id="i214">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00214" width="3456px"/>
+        </surface>
+        <surface n="1:105r" xml:id="i215">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00215" width="3324px"/>
+        </surface>
+        <surface n="1:105v" xml:id="i216">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00216" width="3456px"/>
+        </surface>
+        <surface n="1:106r" xml:id="i217">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00217" width="3324px"/>
+        </surface>
+        <surface n="1:106v" xml:id="i218">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00218" width="3456px"/>
+        </surface>
+        <surface n="1:107r" xml:id="i219">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00219" width="3324px"/>
+        </surface>
+        <surface n="1:107v" xml:id="i220">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00220" width="3456px"/>
+        </surface>
+        <surface n="1:108r" xml:id="i221">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00221" width="3324px"/>
+        </surface>
+        <surface n="1:108v" xml:id="i222">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00222" width="3456px"/>
+        </surface>
+        <surface n="1:109r" xml:id="i223">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00223" width="3324px"/>
+        </surface>
+        <surface n="1:109v" xml:id="i224">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00224" width="3456px"/>
+        </surface>
+        <surface n="1:110r" xml:id="i225">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00225" width="3324px"/>
+        </surface>
+        <surface n="1:110v" xml:id="i226">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00226" width="3456px"/>
+        </surface>
+        <surface n="1:111r" xml:id="i227">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00227" width="3324px"/>
+        </surface>
+        <surface n="1:111v" xml:id="i228">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00228" width="3456px"/>
+        </surface>
+        <surface n="1:112r" xml:id="i229">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00229" width="3324px"/>
+        </surface>
+        <surface n="1:112v" xml:id="i230">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00230" width="3456px"/>
+        </surface>
+        <surface n="1:113r" xml:id="i231">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00231" width="3324px"/>
+        </surface>
+        <surface n="1:113v" xml:id="i232">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00232" width="3456px"/>
+        </surface>
+        <surface n="1:114r" xml:id="i233">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00233" width="3324px"/>
+        </surface>
+        <surface n="1:114v" xml:id="i234">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00234" width="3456px"/>
+        </surface>
+        <surface n="1:115r" xml:id="i235">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00235" width="3324px"/>
+        </surface>
+        <surface n="1:115v" xml:id="i236">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00236" width="3456px"/>
+        </surface>
+        <surface n="1:116r" xml:id="i237">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00237" width="3324px"/>
+        </surface>
+        <surface n="1:116v" xml:id="i238">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00238" width="3456px"/>
+        </surface>
+        <surface n="1:117r" xml:id="i239">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00239" width="3324px"/>
+        </surface>
+        <surface n="1:117v" xml:id="i240">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00240" width="3456px"/>
+        </surface>
+        <surface n="1:118r" xml:id="i241">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00241" width="3324px"/>
+        </surface>
+        <surface n="1:118v" xml:id="i242">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00242" width="3456px"/>
+        </surface>
+        <surface n="1:119r" xml:id="i243">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00243" width="3324px"/>
+        </surface>
+        <surface n="1:119v" xml:id="i244">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00244" width="3456px"/>
+        </surface>
+        <surface n="1:120r" xml:id="i245">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00245" width="3324px"/>
+        </surface>
+        <surface n="1:120v" xml:id="i246">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00246" width="3456px"/>
+        </surface>
+        <surface n="1:121r" xml:id="i247">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00247" width="3324px"/>
+        </surface>
+        <surface n="1:121v" xml:id="i248">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00248" width="3456px"/>
+        </surface>
+        <surface n="1:122r" xml:id="i249">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00249" width="3324px"/>
+        </surface>
+        <surface n="1:122v" xml:id="i250">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00250" width="3456px"/>
+        </surface>
+        <surface n="1:123r" xml:id="i251">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00251" width="3324px"/>
+        </surface>
+        <surface n="1:123v" xml:id="i252">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00252" width="3456px"/>
+        </surface>
+        <surface n="1:124r" xml:id="i253">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00253" width="3324px"/>
+        </surface>
+        <surface n="1:124v" xml:id="i254">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00254" width="3456px"/>
+        </surface>
+        <surface n="1:125r" xml:id="i255">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00255" width="3324px"/>
+        </surface>
+        <surface n="1:125v" xml:id="i256">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00256" width="3456px"/>
+        </surface>
+        <surface n="1:126r" xml:id="i257">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00257" width="3324px"/>
+        </surface>
+        <surface n="1:126v" xml:id="i258">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00258" width="3456px"/>
+        </surface>
+        <surface n="1:127r" xml:id="i259">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00259" width="3324px"/>
+        </surface>
+        <surface n="1:127v" xml:id="i260">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00260" width="3456px"/>
+        </surface>
+        <surface n="1:128r" xml:id="i261">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00261" width="3324px"/>
+        </surface>
+        <surface n="1:128v" xml:id="i262">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00262" width="3456px"/>
+        </surface>
+        <surface n="1:129r" xml:id="i263">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00263" width="3324px"/>
+        </surface>
+        <surface n="1:129v" xml:id="i264">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00264" width="3456px"/>
+        </surface>
+        <surface n="1:130r" xml:id="i265">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00265" width="3324px"/>
+        </surface>
+        <surface n="1:130v" xml:id="i266">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00266" width="3456px"/>
+        </surface>
+        <surface n="1:131r" xml:id="i267">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00267" width="3471px"/>
+        </surface>
+        <surface n="1:131v" xml:id="i268">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00268" width="3456px"/>
+        </surface>
+        <surface n="1:132r" xml:id="i269">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00269" width="3471px"/>
+        </surface>
+        <surface n="1:132v" xml:id="i270">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00270" width="3456px"/>
+        </surface>
+        <surface n="1:133r" xml:id="i271">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00271" width="3471px"/>
+        </surface>
+        <surface n="1:133v" xml:id="i272">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00272" width="3456px"/>
+        </surface>
+        <surface n="1:134r" xml:id="i273">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00273" width="3471px"/>
+        </surface>
+        <surface n="1:134v" xml:id="i274">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00274" width="3456px"/>
+        </surface>
+        <surface n="1:135r" xml:id="i275">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00275" width="3471px"/>
+        </surface>
+        <surface n="1:135v" xml:id="i276">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00276" width="3456px"/>
+        </surface>
+        <surface n="1:136r" xml:id="i277">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00277" width="3471px"/>
+        </surface>
+        <surface n="1:136v" xml:id="i278">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00278" width="3456px"/>
+        </surface>
+        <surface n="1:137r" xml:id="i279">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00279" width="3471px"/>
+        </surface>
+        <surface n="1:137v" xml:id="i280">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00280" width="3456px"/>
+        </surface>
+        <surface n="1:138r" xml:id="i281">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00281" width="3514px"/>
+        </surface>
+        <surface n="1:138v" xml:id="i282">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00282" width="3456px"/>
+        </surface>
+        <surface n="1:139r" xml:id="i283">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00283" width="3514px"/>
+        </surface>
+        <surface n="1:139v" xml:id="i284">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00284" width="3456px"/>
+        </surface>
+        <surface n="1:140r" xml:id="i285">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00285" width="3514px"/>
+        </surface>
+        <surface n="1:140v" xml:id="i286">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00286" width="3456px"/>
+        </surface>
+        <surface n="1:141r" xml:id="i287">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00287" width="3514px"/>
+        </surface>
+        <surface n="1:141v" xml:id="i288">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00288" width="3456px"/>
+        </surface>
+        <surface n="1:142r" xml:id="i289">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00289" width="3514px"/>
+        </surface>
+        <surface n="1:142v" xml:id="i290">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00290" width="3456px"/>
+        </surface>
+        <surface n="1:143r" xml:id="i291">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00291" width="3514px"/>
+        </surface>
+        <surface n="1:143v" xml:id="i292">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00292" width="3606px"/>
+        </surface>
+        <surface n="1:144r" xml:id="i293">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00293" width="3514px"/>
+        </surface>
+        <surface n="1:144v" xml:id="i294">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00294" width="3697px"/>
+        </surface>
+        <surface n="1:145r" xml:id="i295">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00295" width="3514px"/>
+        </surface>
+        <surface n="1:145v" xml:id="i296">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00296" width="3697px"/>
+        </surface>
+        <surface n="2:1r" xml:id="i297">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00297" width="3514px"/>
+        </surface>
+        <surface n="2:1v" xml:id="i298">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00298" width="3697px"/>
+        </surface>
+        <surface n="2:2r" xml:id="i299">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00299" width="3514px"/>
+        </surface>
+        <surface n="2:2v" xml:id="i300">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00300" width="3697px"/>
+        </surface>
+        <surface n="2:3r" xml:id="i301">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00301" width="3514px"/>
+        </surface>
+        <surface n="2:3v" xml:id="i302">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00302" width="3697px"/>
+        </surface>
+        <surface n="2:4r" xml:id="i303">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00303" width="3514px"/>
+        </surface>
+        <surface n="2:4v" xml:id="i304">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00304" width="3697px"/>
+        </surface>
+        <surface n="2:5r" xml:id="i305">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00305" width="3514px"/>
+        </surface>
+        <surface n="2:5v" xml:id="i306">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00306" width="3697px"/>
+        </surface>
+        <surface n="2:6r" xml:id="i307">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00307" width="3514px"/>
+        </surface>
+        <surface n="2:6v" xml:id="i308">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00308" width="3697px"/>
+        </surface>
+        <surface n="2:7r" xml:id="i309">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00309" width="3514px"/>
+        </surface>
+        <surface n="2:7v" xml:id="i310">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00310" width="3697px"/>
+        </surface>
+        <surface n="2:8r" xml:id="i311">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00311" width="3514px"/>
+        </surface>
+        <surface n="2:8v" xml:id="i312">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00312" width="3697px"/>
+        </surface>
+        <surface n="2:9r" xml:id="i313">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00313" width="3514px"/>
+        </surface>
+        <surface n="2:9v" xml:id="i314">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00314" width="3697px"/>
+        </surface>
+        <surface n="2:10r" xml:id="i315">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00315" width="3514px"/>
+        </surface>
+        <surface n="2:10v" xml:id="i316">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00316" width="3697px"/>
+        </surface>
+        <surface n="2:11r" xml:id="i317">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00317" width="3514px"/>
+        </surface>
+        <surface n="2:11v" xml:id="i318">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00318" width="3697px"/>
+        </surface>
+        <surface n="2:12r" xml:id="i319">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00319" width="3514px"/>
+        </surface>
+        <surface n="2:12v" xml:id="i320">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00320" width="3697px"/>
+        </surface>
+        <surface n="2:13r" xml:id="i321">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00321" width="3514px"/>
+        </surface>
+        <surface n="2:13v" xml:id="i322">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00322" width="3697px"/>
+        </surface>
+        <surface n="2:14r" xml:id="i323">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00323" width="3514px"/>
+        </surface>
+        <surface n="2:14v" xml:id="i324">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00324" width="3697px"/>
+        </surface>
+        <surface n="2:15r" xml:id="i325">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00325" width="3514px"/>
+        </surface>
+        <surface n="2:15v" xml:id="i326">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00326" width="3697px"/>
+        </surface>
+        <surface n="2:16r" xml:id="i327">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00327" width="3514px"/>
+        </surface>
+        <surface n="2:16v" xml:id="i328">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00328" width="3697px"/>
+        </surface>
+        <surface n="2:17r" xml:id="i329">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00329" width="3514px"/>
+        </surface>
+        <surface n="2:17v" xml:id="i330">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00330" width="3697px"/>
+        </surface>
+        <surface n="2:18r" xml:id="i331">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00331" width="3514px"/>
+        </surface>
+        <surface n="2:18v" xml:id="i332">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00332" width="3697px"/>
+        </surface>
+        <surface n="2:19r" xml:id="i333">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00333" width="3514px"/>
+        </surface>
+        <surface n="2:19v" xml:id="i334">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00334" width="3697px"/>
+        </surface>
+        <surface n="2:20r" xml:id="i335">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00335" width="3514px"/>
+        </surface>
+        <surface n="2:20v" xml:id="i336">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00336" width="3697px"/>
+        </surface>
+        <surface n="2:21r" xml:id="i337">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00337" width="3514px"/>
+        </surface>
+        <surface n="2:21v" xml:id="i338">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00338" width="3697px"/>
+        </surface>
+        <surface n="2:22r" xml:id="i339">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00339" width="3514px"/>
+        </surface>
+        <surface n="2:22v" xml:id="i340">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00340" width="3697px"/>
+        </surface>
+        <surface n="2:23r" xml:id="i341">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00341" width="3514px"/>
+        </surface>
+        <surface n="2:23v" xml:id="i342">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00342" width="3697px"/>
+        </surface>
+        <surface n="2:24r" xml:id="i343">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00343" width="3514px"/>
+        </surface>
+        <surface n="2:24v" xml:id="i344">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00344" width="3697px"/>
+        </surface>
+        <surface n="2:25r" xml:id="i345">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00345" width="3514px"/>
+        </surface>
+        <surface n="2:25v" xml:id="i346">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00346" width="3697px"/>
+        </surface>
+        <surface n="2:26r" xml:id="i347">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00347" width="3514px"/>
+        </surface>
+        <surface n="2:26v" xml:id="i348">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00348" width="3697px"/>
+        </surface>
+        <surface n="2:27r" xml:id="i349">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00349" width="3514px"/>
+        </surface>
+        <surface n="2:27v" xml:id="i350">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00350" width="3697px"/>
+        </surface>
+        <surface n="2:28r" xml:id="i351">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00351" width="3514px"/>
+        </surface>
+        <surface n="2:28v" xml:id="i352">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00352" width="3697px"/>
+        </surface>
+        <surface n="2:29r" xml:id="i353">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00353" width="3514px"/>
+        </surface>
+        <surface n="2:29v" xml:id="i354">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00354" width="3697px"/>
+        </surface>
+        <surface n="2:30r" xml:id="i355">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00355" width="3514px"/>
+        </surface>
+        <surface n="2:30v" xml:id="i356">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00356" width="3697px"/>
+        </surface>
+        <surface n="2:31r" xml:id="i357">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00357" width="3514px"/>
+        </surface>
+        <surface n="2:31v" xml:id="i358">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00358" width="3697px"/>
+        </surface>
+        <surface n="2:32r" xml:id="i359">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00359" width="3514px"/>
+        </surface>
+        <surface n="2:32v" xml:id="i360">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00360" width="3697px"/>
+        </surface>
+        <surface n="2:33r" xml:id="i361">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00361" width="3514px"/>
+        </surface>
+        <surface n="2:33v" xml:id="i362">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00362" width="3697px"/>
+        </surface>
+        <surface n="2:34r" xml:id="i363">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00363" width="3514px"/>
+        </surface>
+        <surface n="2:34v" xml:id="i364">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00364" width="3697px"/>
+        </surface>
+        <surface n="[iv] recto" xml:id="i365">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00365" width="3514px"/>
+        </surface>
+        <surface n="[iv] verso" xml:id="i366">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00366" width="3697px"/>
+        </surface>
+        <surface n="[v] recto" xml:id="i367">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00367" width="3514px"/>
+        </surface>
+        <surface n="[v] verso" xml:id="i368">
+            <graphic decls="#downloadImageRights #download" height="6243px" rend="portrait" url="MS-NN-00003-00016-000-00368" width="3697px"/>
+        </surface>
+        <surface n="right cover, inner" xml:id="i369">
+            <graphic decls="#downloadImageRights #download" height="6277px" rend="portrait" url="MS-NN-00003-00016-000-00369" width="3514px"/>
+        </surface>
+        <surface n="right cover, outer" xml:id="i370">
+            <graphic decls="#downloadImageRights #download" height="6378px" rend="portrait" url="MS-NN-00003-00016-000-00370" width="4142px"/>
+        </surface>
+        <surface n="spine" xml:id="i371">
+            <graphic decls="#downloadImageRights #download" height="6511px" rend="portrait" url="MS-NN-00003-00016-000-00371" width="1709px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#i1" n="left cover, outer" xml:id="pb-leftcover,outer"/>
+                <pb facs="#i2" n="left cover, inner" xml:id="pb-leftcover,inner"/>
+                <pb facs="#i3" n="[i] recto" xml:id="pb-irecto"/>
+                <pb facs="#i4" n="[i] verso" xml:id="pb-iverso"/>
+                <pb facs="#i5" n="[ii] recto" xml:id="pb-iirecto"/>
+                <pb facs="#i6" n="[ii] verso" xml:id="pb-iiverso"/>
+                <pb facs="#i7" n="[iii] recto" xml:id="pb-iiirecto"/>
+                <pb facs="#i8" n="[iii] verso" xml:id="pb-iiiverso"/>
+                <pb facs="#i9" n="1:2r" xml:id="pb-1:2r"/>
+                <pb facs="#i10" n="1:2v" xml:id="pb-1:2v"/>
+                <pb facs="#i11" n="1:3r" xml:id="pb-1:3r"/>
+                <pb facs="#i12" n="1:3v" xml:id="pb-1:3v"/>
+                <pb facs="#i13" n="1:4r" xml:id="pb-1:4r"/>
+                <pb facs="#i14" n="1:4v" xml:id="pb-1:4v"/>
+                <pb facs="#i15" n="1:5r" xml:id="pb-1:5r"/>
+                <pb facs="#i16" n="1:5v" xml:id="pb-1:5v"/>
+                <pb facs="#i17" n="1:6r" xml:id="pb-1:6r"/>
+                <pb facs="#i18" n="1:6v" xml:id="pb-1:6v"/>
+                <pb facs="#i19" n="1:7r" xml:id="pb-1:7r"/>
+                <pb facs="#i20" n="1:7v" xml:id="pb-1:7v"/>
+                <pb facs="#i21" n="1:8r" xml:id="pb-1:8r"/>
+                <pb facs="#i22" n="1:8v" xml:id="pb-1:8v"/>
+                <pb facs="#i23" n="1:9r" xml:id="pb-1:9r"/>
+                <pb facs="#i24" n="1:9v" xml:id="pb-1:9v"/>
+                <pb facs="#i25" n="1:10r" xml:id="pb-1:10r"/>
+                <pb facs="#i26" n="1:10v" xml:id="pb-1:10v"/>
+                <pb facs="#i27" n="1:11r" xml:id="pb-1:11r"/>
+                <pb facs="#i28" n="1:11v" xml:id="pb-1:11v"/>
+                <pb facs="#i29" n="1:12r" xml:id="pb-1:12r"/>
+                <pb facs="#i30" n="1:12v" xml:id="pb-1:12v"/>
+                <pb facs="#i31" n="1:13r" xml:id="pb-1:13r"/>
+                <pb facs="#i32" n="1:13v" xml:id="pb-1:13v"/>
+                <pb facs="#i33" n="1:14r" xml:id="pb-1:14r"/>
+                <pb facs="#i34" n="1:14v" xml:id="pb-1:14v"/>
+                <pb facs="#i35" n="1:15r" xml:id="pb-1:15r"/>
+                <pb facs="#i36" n="1:15v" xml:id="pb-1:15v"/>
+                <pb facs="#i37" n="1:16r" xml:id="pb-1:16r"/>
+                <pb facs="#i38" n="1:16v" xml:id="pb-1:16v"/>
+                <pb facs="#i39" n="1:17r" xml:id="pb-1:17r"/>
+                <pb facs="#i40" n="1:17v" xml:id="pb-1:17v"/>
+                <pb facs="#i41" n="1:18r" xml:id="pb-1:18r"/>
+                <pb facs="#i42" n="1:18v" xml:id="pb-1:18v"/>
+                <pb facs="#i43" n="1:19r" xml:id="pb-1:19r"/>
+                <pb facs="#i44" n="1:19v" xml:id="pb-1:19v"/>
+                <pb facs="#i45" n="1:20r" xml:id="pb-1:20r"/>
+                <pb facs="#i46" n="1:20v" xml:id="pb-1:20v"/>
+                <pb facs="#i47" n="1:21r" xml:id="pb-1:21r"/>
+                <pb facs="#i48" n="1:21v" xml:id="pb-1:21v"/>
+                <pb facs="#i49" n="1:22r" xml:id="pb-1:22r"/>
+                <pb facs="#i50" n="1:22v" xml:id="pb-1:22v"/>
+                <pb facs="#i51" n="1:23r" xml:id="pb-1:23r"/>
+                <pb facs="#i52" n="1:23v" xml:id="pb-1:23v"/>
+                <pb facs="#i53" n="1:24r" xml:id="pb-1:24r"/>
+                <pb facs="#i54" n="1:24v" xml:id="pb-1:24v"/>
+                <pb facs="#i55" n="1:25r" xml:id="pb-1:25r"/>
+                <pb facs="#i56" n="1:25v" xml:id="pb-1:25v"/>
+                <pb facs="#i57" n="1:26r" xml:id="pb-1:26r"/>
+                <pb facs="#i58" n="1:26v" xml:id="pb-1:26v"/>
+                <pb facs="#i59" n="1:27r" xml:id="pb-1:27r"/>
+                <pb facs="#i60" n="1:27v" xml:id="pb-1:27v"/>
+                <pb facs="#i61" n="1:28r" xml:id="pb-1:28r"/>
+                <pb facs="#i62" n="1:28v" xml:id="pb-1:28v"/>
+                <pb facs="#i63" n="1:29r" xml:id="pb-1:29r"/>
+                <pb facs="#i64" n="1:29v" xml:id="pb-1:29v"/>
+                <pb facs="#i65" n="1:30r" xml:id="pb-1:30r"/>
+                <pb facs="#i66" n="1:30v" xml:id="pb-1:30v"/>
+                <pb facs="#i67" n="1:31r" xml:id="pb-1:31r"/>
+                <pb facs="#i68" n="1:31v" xml:id="pb-1:31v"/>
+                <pb facs="#i69" n="1:32r" xml:id="pb-1:32r"/>
+                <pb facs="#i70" n="1:32v" xml:id="pb-1:32v"/>
+                <pb facs="#i71" n="1:33r" xml:id="pb-1:33r"/>
+                <pb facs="#i72" n="1:33v" xml:id="pb-1:33v"/>
+                <pb facs="#i73" n="1:34r" xml:id="pb-1:34r"/>
+                <pb facs="#i74" n="1:34v" xml:id="pb-1:34v"/>
+                <pb facs="#i75" n="1:35r" xml:id="pb-1:35r"/>
+                <pb facs="#i76" n="1:35v" xml:id="pb-1:35v"/>
+                <pb facs="#i77" n="1:36r" xml:id="pb-1:36r"/>
+                <pb facs="#i78" n="1:36v" xml:id="pb-1:36v"/>
+                <pb facs="#i79" n="1:37r" xml:id="pb-1:37r"/>
+                <pb facs="#i80" n="1:37v" xml:id="pb-1:37v"/>
+                <pb facs="#i81" n="1:38r" xml:id="pb-1:38r"/>
+                <pb facs="#i82" n="1:38v" xml:id="pb-1:38v"/>
+                <pb facs="#i83" n="1:39r" xml:id="pb-1:39r"/>
+                <pb facs="#i84" n="1:39v" xml:id="pb-1:39v"/>
+                <pb facs="#i85" n="1:40r" xml:id="pb-1:40r"/>
+                <pb facs="#i86" n="1:40v" xml:id="pb-1:40v"/>
+                <pb facs="#i87" n="1:41r" xml:id="pb-1:41r"/>
+                <pb facs="#i88" n="1:41v" xml:id="pb-1:41v"/>
+                <pb facs="#i89" n="1:42r" xml:id="pb-1:42r"/>
+                <pb facs="#i90" n="1:42v" xml:id="pb-1:42v"/>
+                <pb facs="#i91" n="1:43r" xml:id="pb-1:43r"/>
+                <pb facs="#i92" n="1:43v" xml:id="pb-1:43v"/>
+                <pb facs="#i93" n="1:44r" xml:id="pb-1:44r"/>
+                <pb facs="#i94" n="1:44v" xml:id="pb-1:44v"/>
+                <pb facs="#i95" n="1:45r" xml:id="pb-1:45r"/>
+                <pb facs="#i96" n="1:45v" xml:id="pb-1:45v"/>
+                <pb facs="#i97" n="1:46r" xml:id="pb-1:46r"/>
+                <pb facs="#i98" n="1:46v" xml:id="pb-1:46v"/>
+                <pb facs="#i99" n="1:47r" xml:id="pb-1:47r"/>
+                <pb facs="#i100" n="1:47v" xml:id="pb-1:47v"/>
+                <pb facs="#i101" n="1:48r" xml:id="pb-1:48r"/>
+                <pb facs="#i102" n="1:48v" xml:id="pb-1:48v"/>
+                <pb facs="#i103" n="1:49r" xml:id="pb-1:49r"/>
+                <pb facs="#i104" n="1:49v" xml:id="pb-1:49v"/>
+                <pb facs="#i105" n="1:50r" xml:id="pb-1:50r"/>
+                <pb facs="#i106" n="1:50v" xml:id="pb-1:50v"/>
+                <pb facs="#i107" n="1:51r" xml:id="pb-1:51r"/>
+                <pb facs="#i108" n="1:51v" xml:id="pb-1:51v"/>
+                <pb facs="#i109" n="1:52r" xml:id="pb-1:52r"/>
+                <pb facs="#i110" n="1:52v" xml:id="pb-1:52v"/>
+                <pb facs="#i111" n="1:53r" xml:id="pb-1:53r"/>
+                <pb facs="#i112" n="1:53v" xml:id="pb-1:53v"/>
+                <pb facs="#i113" n="1:54r" xml:id="pb-1:54r"/>
+                <pb facs="#i114" n="1:54v" xml:id="pb-1:54v"/>
+                <pb facs="#i115" n="1:55r" xml:id="pb-1:55r"/>
+                <pb facs="#i116" n="1:55v" xml:id="pb-1:55v"/>
+                <pb facs="#i117" n="1:56r" xml:id="pb-1:56r"/>
+                <pb facs="#i118" n="1:56v" xml:id="pb-1:56v"/>
+                <pb facs="#i119" n="1:57r" xml:id="pb-1:57r"/>
+                <pb facs="#i120" n="1:57v" xml:id="pb-1:57v"/>
+                <pb facs="#i121" n="1:58r" xml:id="pb-1:58r"/>
+                <pb facs="#i122" n="1:58v" xml:id="pb-1:58v"/>
+                <pb facs="#i123" n="1:59r" xml:id="pb-1:59r"/>
+                <pb facs="#i124" n="1:59v" xml:id="pb-1:59v"/>
+                <pb facs="#i125" n="1:60r" xml:id="pb-1:60r"/>
+                <pb facs="#i126" n="1:60v" xml:id="pb-1:60v"/>
+                <pb facs="#i127" n="1:61r" xml:id="pb-1:61r"/>
+                <pb facs="#i128" n="1:61v" xml:id="pb-1:61v"/>
+                <pb facs="#i129" n="1:62r" xml:id="pb-1:62r"/>
+                <pb facs="#i130" n="1:62v" xml:id="pb-1:62v"/>
+                <pb facs="#i131" n="1:63r" xml:id="pb-1:63r"/>
+                <pb facs="#i132" n="1:63v" xml:id="pb-1:63v"/>
+                <pb facs="#i133" n="1:64r" xml:id="pb-1:64r"/>
+                <pb facs="#i134" n="1:64v" xml:id="pb-1:64v"/>
+                <pb facs="#i135" n="1:65r" xml:id="pb-1:65r"/>
+                <pb facs="#i136" n="1:65v" xml:id="pb-1:65v"/>
+                <pb facs="#i137" n="1:66r" xml:id="pb-1:66r"/>
+                <pb facs="#i138" n="1:66v" xml:id="pb-1:66v"/>
+                <pb facs="#i139" n="1:67r" xml:id="pb-1:67r"/>
+                <pb facs="#i140" n="1:67v" xml:id="pb-1:67v"/>
+                <pb facs="#i141" n="1:68r" xml:id="pb-1:68r"/>
+                <pb facs="#i142" n="1:68v" xml:id="pb-1:68v"/>
+                <pb facs="#i143" n="1:69r" xml:id="pb-1:69r"/>
+                <pb facs="#i144" n="1:69v" xml:id="pb-1:69v"/>
+                <pb facs="#i145" n="1:70r" xml:id="pb-1:70r"/>
+                <pb facs="#i146" n="1:70v" xml:id="pb-1:70v"/>
+                <pb facs="#i147" n="1:71r" xml:id="pb-1:71r"/>
+                <pb facs="#i148" n="1:71v" xml:id="pb-1:71v"/>
+                <pb facs="#i149" n="1:72r" xml:id="pb-1:72r"/>
+                <pb facs="#i150" n="1:72v" xml:id="pb-1:72v"/>
+                <pb facs="#i151" n="1:73r" xml:id="pb-1:73r"/>
+                <pb facs="#i152" n="1:73v" xml:id="pb-1:73v"/>
+                <pb facs="#i153" n="1:74r" xml:id="pb-1:74r"/>
+                <pb facs="#i154" n="1:74v" xml:id="pb-1:74v"/>
+                <pb facs="#i155" n="1:75r" xml:id="pb-1:75r"/>
+                <pb facs="#i156" n="1:75v" xml:id="pb-1:75v"/>
+                <pb facs="#i157" n="1:76r" xml:id="pb-1:76r"/>
+                <pb facs="#i158" n="1:76v" xml:id="pb-1:76v"/>
+                <pb facs="#i159" n="1:77r" xml:id="pb-1:77r"/>
+                <pb facs="#i160" n="1:77v" xml:id="pb-1:77v"/>
+                <pb facs="#i161" n="1:78r" xml:id="pb-1:78r"/>
+                <pb facs="#i162" n="1:78v" xml:id="pb-1:78v"/>
+                <pb facs="#i163" n="1:79r" xml:id="pb-1:79r"/>
+                <pb facs="#i164" n="1:79v" xml:id="pb-1:79v"/>
+                <pb facs="#i165" n="1:80r" xml:id="pb-1:80r"/>
+                <pb facs="#i166" n="1:80v" xml:id="pb-1:80v"/>
+                <pb facs="#i167" n="1:81r" xml:id="pb-1:81r"/>
+                <pb facs="#i168" n="1:81v" xml:id="pb-1:81v"/>
+                <pb facs="#i169" n="1:82r" xml:id="pb-1:82r"/>
+                <pb facs="#i170" n="1:82v" xml:id="pb-1:82v"/>
+                <pb facs="#i171" n="1:83r" xml:id="pb-1:83r"/>
+                <pb facs="#i172" n="1:83v" xml:id="pb-1:83v"/>
+                <pb facs="#i173" n="1:84r" xml:id="pb-1:84r"/>
+                <pb facs="#i174" n="1:84v" xml:id="pb-1:84v"/>
+                <pb facs="#i175" n="1:85r" xml:id="pb-1:85r"/>
+                <pb facs="#i176" n="1:85v" xml:id="pb-1:85v"/>
+                <pb facs="#i177" n="1:86r" xml:id="pb-1:86r"/>
+                <pb facs="#i178" n="1:86v" xml:id="pb-1:86v"/>
+                <pb facs="#i179" n="1:87r" xml:id="pb-1:87r"/>
+                <pb facs="#i180" n="1:87v" xml:id="pb-1:87v"/>
+                <pb facs="#i181" n="1:88r" xml:id="pb-1:88r"/>
+                <pb facs="#i182" n="1:88v" xml:id="pb-1:88v"/>
+                <pb facs="#i183" n="1:89r" xml:id="pb-1:89r"/>
+                <pb facs="#i184" n="1:89v" xml:id="pb-1:89v"/>
+                <pb facs="#i185" n="1:90r" xml:id="pb-1:90r"/>
+                <pb facs="#i186" n="1:90v" xml:id="pb-1:90v"/>
+                <pb facs="#i187" n="1:91r" xml:id="pb-1:91r"/>
+                <pb facs="#i188" n="1:91v" xml:id="pb-1:91v"/>
+                <pb facs="#i189" n="1:92r" xml:id="pb-1:92r"/>
+                <pb facs="#i190" n="1:92v" xml:id="pb-1:92v"/>
+                <pb facs="#i191" n="1:93r" xml:id="pb-1:93r"/>
+                <pb facs="#i192" n="1:93v" xml:id="pb-1:93v"/>
+                <pb facs="#i193" n="1:94r" xml:id="pb-1:94r"/>
+                <pb facs="#i194" n="1:94v" xml:id="pb-1:94v"/>
+                <pb facs="#i195" n="1:95r" xml:id="pb-1:95r"/>
+                <pb facs="#i196" n="1:95v" xml:id="pb-1:95v"/>
+                <pb facs="#i197" n="1:96r" xml:id="pb-1:96r"/>
+                <pb facs="#i198" n="1:96v" xml:id="pb-1:96v"/>
+                <pb facs="#i199" n="1:97r" xml:id="pb-1:97r"/>
+                <pb facs="#i200" n="1:97v" xml:id="pb-1:97v"/>
+                <pb facs="#i201" n="1:98r" xml:id="pb-1:98r"/>
+                <pb facs="#i202" n="1:98v" xml:id="pb-1:98v"/>
+                <pb facs="#i203" n="1:99r" xml:id="pb-1:99r"/>
+                <pb facs="#i204" n="1:99v" xml:id="pb-1:99v"/>
+                <pb facs="#i205" n="1:100r" xml:id="pb-1:100r"/>
+                <pb facs="#i206" n="1:100v" xml:id="pb-1:100v"/>
+                <pb facs="#i207" n="1:101r" xml:id="pb-1:101r"/>
+                <pb facs="#i208" n="1:101v" xml:id="pb-1:101v"/>
+                <pb facs="#i209" n="1:102r" xml:id="pb-1:102r"/>
+                <pb facs="#i210" n="1:102v" xml:id="pb-1:102v"/>
+                <pb facs="#i211" n="1:103r" xml:id="pb-1:103r"/>
+                <pb facs="#i212" n="1:103v" xml:id="pb-1:103v"/>
+                <pb facs="#i213" n="1:104r" xml:id="pb-1:104r"/>
+                <pb facs="#i214" n="1:104v" xml:id="pb-1:104v"/>
+                <pb facs="#i215" n="1:105r" xml:id="pb-1:105r"/>
+                <pb facs="#i216" n="1:105v" xml:id="pb-1:105v"/>
+                <pb facs="#i217" n="1:106r" xml:id="pb-1:106r"/>
+                <pb facs="#i218" n="1:106v" xml:id="pb-1:106v"/>
+                <pb facs="#i219" n="1:107r" xml:id="pb-1:107r"/>
+                <pb facs="#i220" n="1:107v" xml:id="pb-1:107v"/>
+                <pb facs="#i221" n="1:108r" xml:id="pb-1:108r"/>
+                <pb facs="#i222" n="1:108v" xml:id="pb-1:108v"/>
+                <pb facs="#i223" n="1:109r" xml:id="pb-1:109r"/>
+                <pb facs="#i224" n="1:109v" xml:id="pb-1:109v"/>
+                <pb facs="#i225" n="1:110r" xml:id="pb-1:110r"/>
+                <pb facs="#i226" n="1:110v" xml:id="pb-1:110v"/>
+                <pb facs="#i227" n="1:111r" xml:id="pb-1:111r"/>
+                <pb facs="#i228" n="1:111v" xml:id="pb-1:111v"/>
+                <pb facs="#i229" n="1:112r" xml:id="pb-1:112r"/>
+                <pb facs="#i230" n="1:112v" xml:id="pb-1:112v"/>
+                <pb facs="#i231" n="1:113r" xml:id="pb-1:113r"/>
+                <pb facs="#i232" n="1:113v" xml:id="pb-1:113v"/>
+                <pb facs="#i233" n="1:114r" xml:id="pb-1:114r"/>
+                <pb facs="#i234" n="1:114v" xml:id="pb-1:114v"/>
+                <pb facs="#i235" n="1:115r" xml:id="pb-1:115r"/>
+                <pb facs="#i236" n="1:115v" xml:id="pb-1:115v"/>
+                <pb facs="#i237" n="1:116r" xml:id="pb-1:116r"/>
+                <pb facs="#i238" n="1:116v" xml:id="pb-1:116v"/>
+                <pb facs="#i239" n="1:117r" xml:id="pb-1:117r"/>
+                <pb facs="#i240" n="1:117v" xml:id="pb-1:117v"/>
+                <pb facs="#i241" n="1:118r" xml:id="pb-1:118r"/>
+                <pb facs="#i242" n="1:118v" xml:id="pb-1:118v"/>
+                <pb facs="#i243" n="1:119r" xml:id="pb-1:119r"/>
+                <pb facs="#i244" n="1:119v" xml:id="pb-1:119v"/>
+                <pb facs="#i245" n="1:120r" xml:id="pb-1:120r"/>
+                <pb facs="#i246" n="1:120v" xml:id="pb-1:120v"/>
+                <pb facs="#i247" n="1:121r" xml:id="pb-1:121r"/>
+                <pb facs="#i248" n="1:121v" xml:id="pb-1:121v"/>
+                <pb facs="#i249" n="1:122r" xml:id="pb-1:122r"/>
+                <pb facs="#i250" n="1:122v" xml:id="pb-1:122v"/>
+                <pb facs="#i251" n="1:123r" xml:id="pb-1:123r"/>
+                <pb facs="#i252" n="1:123v" xml:id="pb-1:123v"/>
+                <pb facs="#i253" n="1:124r" xml:id="pb-1:124r"/>
+                <pb facs="#i254" n="1:124v" xml:id="pb-1:124v"/>
+                <pb facs="#i255" n="1:125r" xml:id="pb-1:125r"/>
+                <pb facs="#i256" n="1:125v" xml:id="pb-1:125v"/>
+                <pb facs="#i257" n="1:126r" xml:id="pb-1:126r"/>
+                <pb facs="#i258" n="1:126v" xml:id="pb-1:126v"/>
+                <pb facs="#i259" n="1:127r" xml:id="pb-1:127r"/>
+                <pb facs="#i260" n="1:127v" xml:id="pb-1:127v"/>
+                <pb facs="#i261" n="1:128r" xml:id="pb-1:128r"/>
+                <pb facs="#i262" n="1:128v" xml:id="pb-1:128v"/>
+                <pb facs="#i263" n="1:129r" xml:id="pb-1:129r"/>
+                <pb facs="#i264" n="1:129v" xml:id="pb-1:129v"/>
+                <pb facs="#i265" n="1:130r" xml:id="pb-1:130r"/>
+                <pb facs="#i266" n="1:130v" xml:id="pb-1:130v"/>
+                <pb facs="#i267" n="1:131r" xml:id="pb-1:131r"/>
+                <pb facs="#i268" n="1:131v" xml:id="pb-1:131v"/>
+                <pb facs="#i269" n="1:132r" xml:id="pb-1:132r"/>
+                <pb facs="#i270" n="1:132v" xml:id="pb-1:132v"/>
+                <pb facs="#i271" n="1:133r" xml:id="pb-1:133r"/>
+                <pb facs="#i272" n="1:133v" xml:id="pb-1:133v"/>
+                <pb facs="#i273" n="1:134r" xml:id="pb-1:134r"/>
+                <pb facs="#i274" n="1:134v" xml:id="pb-1:134v"/>
+                <pb facs="#i275" n="1:135r" xml:id="pb-1:135r"/>
+                <pb facs="#i276" n="1:135v" xml:id="pb-1:135v"/>
+                <pb facs="#i277" n="1:136r" xml:id="pb-1:136r"/>
+                <pb facs="#i278" n="1:136v" xml:id="pb-1:136v"/>
+                <pb facs="#i279" n="1:137r" xml:id="pb-1:137r"/>
+                <pb facs="#i280" n="1:137v" xml:id="pb-1:137v"/>
+                <pb facs="#i281" n="1:138r" xml:id="pb-1:138r"/>
+                <pb facs="#i282" n="1:138v" xml:id="pb-1:138v"/>
+                <pb facs="#i283" n="1:139r" xml:id="pb-1:139r"/>
+                <pb facs="#i284" n="1:139v" xml:id="pb-1:139v"/>
+                <pb facs="#i285" n="1:140r" xml:id="pb-1:140r"/>
+                <pb facs="#i286" n="1:140v" xml:id="pb-1:140v"/>
+                <pb facs="#i287" n="1:141r" xml:id="pb-1:141r"/>
+                <pb facs="#i288" n="1:141v" xml:id="pb-1:141v"/>
+                <pb facs="#i289" n="1:142r" xml:id="pb-1:142r"/>
+                <pb facs="#i290" n="1:142v" xml:id="pb-1:142v"/>
+                <pb facs="#i291" n="1:143r" xml:id="pb-1:143r"/>
+                <pb facs="#i292" n="1:143v" xml:id="pb-1:143v"/>
+                <pb facs="#i293" n="1:144r" xml:id="pb-1:144r"/>
+                <pb facs="#i294" n="1:144v" xml:id="pb-1:144v"/>
+                <pb facs="#i295" n="1:145r" xml:id="pb-1:145r"/>
+                <pb facs="#i296" n="1:145v" xml:id="pb-1:145v"/>
+                <pb facs="#i297" n="2:1r" xml:id="pb-2:1r"/>
+                <pb facs="#i298" n="2:1v" xml:id="pb-2:1v"/>
+                <pb facs="#i299" n="2:2r" xml:id="pb-2:2r"/>
+                <pb facs="#i300" n="2:2v" xml:id="pb-2:2v"/>
+                <pb facs="#i301" n="2:3r" xml:id="pb-2:3r"/>
+                <pb facs="#i302" n="2:3v" xml:id="pb-2:3v"/>
+                <pb facs="#i303" n="2:4r" xml:id="pb-2:4r"/>
+                <pb facs="#i304" n="2:4v" xml:id="pb-2:4v"/>
+                <pb facs="#i305" n="2:5r" xml:id="pb-2:5r"/>
+                <pb facs="#i306" n="2:5v" xml:id="pb-2:5v"/>
+                <pb facs="#i307" n="2:6r" xml:id="pb-2:6r"/>
+                <pb facs="#i308" n="2:6v" xml:id="pb-2:6v"/>
+                <pb facs="#i309" n="2:7r" xml:id="pb-2:7r"/>
+                <pb facs="#i310" n="2:7v" xml:id="pb-2:7v"/>
+                <pb facs="#i311" n="2:8r" xml:id="pb-2:8r"/>
+                <pb facs="#i312" n="2:8v" xml:id="pb-2:8v"/>
+                <pb facs="#i313" n="2:9r" xml:id="pb-2:9r"/>
+                <pb facs="#i314" n="2:9v" xml:id="pb-2:9v"/>
+                <pb facs="#i315" n="2:10r" xml:id="pb-2:10r"/>
+                <pb facs="#i316" n="2:10v" xml:id="pb-2:10v"/>
+                <pb facs="#i317" n="2:11r" xml:id="pb-2:11r"/>
+                <pb facs="#i318" n="2:11v" xml:id="pb-2:11v"/>
+                <pb facs="#i319" n="2:12r" xml:id="pb-2:12r"/>
+                <pb facs="#i320" n="2:12v" xml:id="pb-2:12v"/>
+                <pb facs="#i321" n="2:13r" xml:id="pb-2:13r"/>
+                <pb facs="#i322" n="2:13v" xml:id="pb-2:13v"/>
+                <pb facs="#i323" n="2:14r" xml:id="pb-2:14r"/>
+                <pb facs="#i324" n="2:14v" xml:id="pb-2:14v"/>
+                <pb facs="#i325" n="2:15r" xml:id="pb-2:15r"/>
+                <pb facs="#i326" n="2:15v" xml:id="pb-2:15v"/>
+                <pb facs="#i327" n="2:16r" xml:id="pb-2:16r"/>
+                <pb facs="#i328" n="2:16v" xml:id="pb-2:16v"/>
+                <pb facs="#i329" n="2:17r" xml:id="pb-2:17r"/>
+                <pb facs="#i330" n="2:17v" xml:id="pb-2:17v"/>
+                <pb facs="#i331" n="2:18r" xml:id="pb-2:18r"/>
+                <pb facs="#i332" n="2:18v" xml:id="pb-2:18v"/>
+                <pb facs="#i333" n="2:19r" xml:id="pb-2:19r"/>
+                <pb facs="#i334" n="2:19v" xml:id="pb-2:19v"/>
+                <pb facs="#i335" n="2:20r" xml:id="pb-2:20r"/>
+                <pb facs="#i336" n="2:20v" xml:id="pb-2:20v"/>
+                <pb facs="#i337" n="2:21r" xml:id="pb-2:21r"/>
+                <pb facs="#i338" n="2:21v" xml:id="pb-2:21v"/>
+                <pb facs="#i339" n="2:22r" xml:id="pb-2:22r"/>
+                <pb facs="#i340" n="2:22v" xml:id="pb-2:22v"/>
+                <pb facs="#i341" n="2:23r" xml:id="pb-2:23r"/>
+                <pb facs="#i342" n="2:23v" xml:id="pb-2:23v"/>
+                <pb facs="#i343" n="2:24r" xml:id="pb-2:24r"/>
+                <pb facs="#i344" n="2:24v" xml:id="pb-2:24v"/>
+                <pb facs="#i345" n="2:25r" xml:id="pb-2:25r"/>
+                <pb facs="#i346" n="2:25v" xml:id="pb-2:25v"/>
+                <pb facs="#i347" n="2:26r" xml:id="pb-2:26r"/>
+                <pb facs="#i348" n="2:26v" xml:id="pb-2:26v"/>
+                <pb facs="#i349" n="2:27r" xml:id="pb-2:27r"/>
+                <pb facs="#i350" n="2:27v" xml:id="pb-2:27v"/>
+                <pb facs="#i351" n="2:28r" xml:id="pb-2:28r"/>
+                <pb facs="#i352" n="2:28v" xml:id="pb-2:28v"/>
+                <pb facs="#i353" n="2:29r" xml:id="pb-2:29r"/>
+                <pb facs="#i354" n="2:29v" xml:id="pb-2:29v"/>
+                <pb facs="#i355" n="2:30r" xml:id="pb-2:30r"/>
+                <pb facs="#i356" n="2:30v" xml:id="pb-2:30v"/>
+                <pb facs="#i357" n="2:31r" xml:id="pb-2:31r"/>
+                <pb facs="#i358" n="2:31v" xml:id="pb-2:31v"/>
+                <pb facs="#i359" n="2:32r" xml:id="pb-2:32r"/>
+                <pb facs="#i360" n="2:32v" xml:id="pb-2:32v"/>
+                <pb facs="#i361" n="2:33r" xml:id="pb-2:33r"/>
+                <pb facs="#i362" n="2:33v" xml:id="pb-2:33v"/>
+                <pb facs="#i363" n="2:34r" xml:id="pb-2:34r"/>
+                <pb facs="#i364" n="2:34v" xml:id="pb-2:34v"/>
+                <pb facs="#i365" n="[iv] recto" xml:id="pb-ivrecto"/>
+                <pb facs="#i366" n="[iv] verso" xml:id="pb-ivverso"/>
+                <pb facs="#i367" n="[v] recto" xml:id="pb-vrecto"/>
+                <pb facs="#i368" n="[v] verso" xml:id="pb-vverso"/>
+                <pb facs="#i369" n="right cover, inner" xml:id="pb-rightcover,inner"/>
+                <pb facs="#i370" n="right cover, outer" xml:id="pb-rightcover,outer"/>
+                <pb facs="#i371" n="spine" xml:id="pb-spine"/>
+            </div>
+        </body>
+    </text>
+
+</TEI>

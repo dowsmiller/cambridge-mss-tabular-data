@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_12130">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Cambridge, University Library, MS Add. 4541</title>
+        <funder>The Polonsky Foundation</funder>
+        <principal>Suzanne Paul</principal>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>University Library</publisher>
+
+        <availability default="false" status="restricted" xml:id="displayImageRights">
+          <p>Zooming image © University Library, All rights reserved.</p>
+        </availability>
+        <availability default="false" status="restricted" xml:id="downloadImageRights">
+          <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for
+            download are licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported
+            License (CC BY-NC 3.0)</licence>
+        </availability>
+        <availability default="false" status="restricted" xml:id="metadataRights">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is
+            licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported
+            License.</licence>
+        </availability>
+
+        <availability status="restricted" xml:id="watermark">
+          <licence>Cambridge University Library (CC BY-NC 4.0)</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc default="false">
+        <msDesc xml:id="MS-ADD-04541" xml:lang="en">
+
+          <msIdentifier>
+            <institution>University of Cambridge</institution>
+            <repository>Cambridge University Library</repository>
+            <collection>Medieval Manuscripts</collection>
+            <idno type="shelfmark">Cambridge, University Library, MS Add. 4541</idno>
+            <altIdentifier type="external">
+              <idno type="diktyon">Diktyon 12130</idno>
+            </altIdentifier>
+          </msIdentifier>
+
+          <msContents>
+            <summary>
+              <seg type="para">This fragment is a scrap of parchment retrieved from the endleaves of
+                a Hebrew manuscript, and contains part of the Gospel of Matthew, probably copied in
+                the early 12th century. The manuscript of which it originally formed part was
+                provided with the typical numbering for the Ammonian sections, the standard short
+                subdivisions of the Gospels, and for the Eusebian canons, the system identifying
+                which of these sections corresponded to parallel passages in the other Gospels. It
+                was copied in two narrow columns.</seg>
+              <seg type="para">Dr Christopher Wright</seg>
+            </summary>
+
+            <textLang mainLang="grc">Greek</textLang>
+
+            <msItem n="1">
+              <title xml:lang="eng">Gospel of Matthew</title>
+              <note anchored="true">Gregory-Aland 2489</note>
+              <note anchored="true">Fragment, with lacunas (Mt 1:12-22)</note>
+              <incipit defective="true">
+                <locus from="recto" to="recto">recto </locus>
+                <supplied reason="damage">ἐγέννησ</supplied>εν τὸν Σα<supplied reason="damage">λαθιή</supplied>λ Σαλα<supplied reason="damage">θιὴλ</supplied> δὲ ἐγέννησεν
+                  <supplied reason="damage">τὸν</supplied> Ζοροβάβελ</incipit>
+              <explicit defective="true">
+                <locus from="verso" to="verso">verso</locus> ἀπὸ τῶν <sic>ἀμαρτιῶν</sic> αὐτοῦ·
+                τοῦτο δὲ <supplied reason="damage">ὅλ</supplied>ον γέ<supplied reason="damage">γονεν</supplied>
+              </explicit>
+              <note anchored="true">TLG 0031.001</note>
+            </msItem>
+          </msContents>
+
+          <physDesc>
+            <objectDesc form="codex">
+              <supportDesc material="perg">
+                <support>
+                  <material>Parchment</material>
+                </support>
+
+                <extent>
+                  <seg type="object">
+                    <objectType>Fragment </objectType>(scrap) </seg>
+                  <seg type="leaf">
+                    <num type="leaf" value="1">1</num>
+                  </seg>
+                  <seg type="dimensions">
+                    <dimensions type="fragment" unit="mm">
+                      <height quantity="204">204</height>
+                      <width quantity="149">149</width>
+                    </dimensions>
+                  </seg>
+                </extent>
+
+                <condition>This fragment has some small holes in it, water staining and some faded
+                  text.</condition>
+              </supportDesc>
+
+              <layoutDesc>
+                <layout columns="2" rulingMedium="hardpoint" topLine="below">Two columns. <seg type="ruling">Ruled in hardpoint. Text hangs from the lines. The ruling is very
+                    faint.</seg>
+                </layout>
+              </layoutDesc>
+            </objectDesc>
+
+            <handDesc>
+              <handNote scope="sole" xml:id="hand-1">
+                <p>The text was copied in a <term type="script">mixed minuscule</term> script with
+                  variable slant, in black ink. There is modest variation in letter size.</p>
+                <p>Breathings are both angular and round.</p>
+                <p>Punctuation used includes the middle and upper points.</p>
+              </handNote>
+            </handDesc>
+
+            <decoDesc>
+              <decoNote type="colInit">The beginnings of sections are marked by simple minor
+                initials in red ink.</decoNote>
+            </decoDesc>
+
+            <additions>As part of the original process of production, Ammonian section and Eusebian
+              canon numbers are marked in the margin in red ink.</additions>
+
+            <accMat>The fragment is accompanied by a sheet of paper to which it was formerly
+              attached, with a window cut in it revealing the text and bearing the text missing from
+              partially surviving lines in pencil.</accMat>
+          </physDesc>
+
+          <history>
+            <origin>The manuscript from which the fragment came was probably copied in the <origDate calendar="gregorian" notAfter="1149" notBefore="1100">first half of the 12th
+                century</origDate>, as suggested by the style of script.</origin>
+
+            <acquisition>The fragment was removed from an endleaf of <bibl subtype="internal" type="MS">Or. MS Oo.1.16</bibl>, acquired as part of the Buchanan collection.</acquisition>
+          </history>
+
+          <additional>
+            <adminInfo>
+              <recordHist>
+                <source/>
+              </recordHist>
+
+              <availability>
+                <p>Entry to read in the Library is permitted only on presentation of a valid reader's card. For information on
+                  eligibility and admissions procedures, see <ref target="https://www.lib.cam.ac.uk/using-library/joining-library">Joining the Library</ref>). For further information on the availability of the manuscript, please contact the
+                  <ref target="mss@lib.cam.ac.uk">Manuscripts Reading Room</ref>.</p>
+              </availability>
+
+            </adminInfo>
+            <listBibl>
+              <biblStruct corresp="http://zotero.org/groups/276440/items/SG2KA299" type="journalArticle" xml:id="Easterling1962">
+                <analytic>
+                  <title level="a">Hand-list of the additional Greek manuscripts in the University
+                    Library, Cambridge</title>
+                  <author>
+                    <forename>Patricia E.</forename>
+                    <surname>Easterling</surname>
+                  </author>
+                </analytic>
+                <monogr>
+                  <title level="j">Scriptorium</title>
+                  <imprint>
+                    <biblScope unit="volume">16</biblScope>
+                    <biblScope unit="issue">2</biblScope>
+                    <biblScope unit="page">302-323</biblScope>
+                    <date>1962</date>
+                  </imprint>
+                </monogr>
+              </biblStruct>
+            </listBibl>
+          </additional>
+        </msDesc>
+      </sourceDesc>
+
+    </fileDesc>
+    <encodingDesc>
+      <classDecl>
+        <taxonomy xml:id="LCSH">
+          <bibl default="false" status="draft">
+            <ref target="https://authorities.loc.gov/">Library of Congress Subject Headings</ref>
+          </bibl>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <textClass default="false">
+        <keywords scheme="#LCSH">
+          <list>
+            <item>
+              <term key="subject_no2010164980">Bible. Greek</term>
+            </item>
+          </list>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2022-02-07">
+        <persName>Christopher Wright</persName>
+      </change>
+
+    </revisionDesc>
+  </teiHeader>
+
+  <facsimile>
+    <graphic decls="#document-thumbnail" rend="portrait" url="MS-ADD-04541-000-00001"/>
+    <surface n="[1]r" xml:id="i1">
+      <graphic decls="#downloadImageRights #download" height="6322px" rend="portrait" url="MS-ADD-04541-000-00001" width="4109px"/>
+    </surface>
+    <surface n="[1]v" xml:id="i2">
+      <graphic decls="#downloadImageRights #download" height="6322px" rend="portrait" url="MS-ADD-04541-000-00002" width="4109px"/>
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <div>
+        <pb facs="#i1" n="[1]r" xml:id="pb-1r"/>
+        <pb facs="#i2" n="[1]v" xml:id="pb-1v"/>
+      </div>
+    </body>
+  </text>
+
+</TEI>

@@ -1,0 +1,1591 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, University Library, MS Dd.4.44</title>
+                <funder>Wellcome</funder>
+                <principal>James Freeman</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+                <availability default="false" status="restricted" xml:id="displayImageRights">
+                    <p part="N">Zooming image © Cambridge University Library, All rights reserved.</p>
+                </availability>
+                <availability default="false" status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability default="false" status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+                <availability xml:id="watermark" status="restricted">
+                    <licence>Cambridge University Library (CC BY-NC 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc status="draft" xml:id="MS-DD-00004-00044" xml:lang="en">
+                    <msIdentifier>
+                        <institution>University of Cambridge</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Medieval Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, University Library, MS Dd.4.44</idno>
+                    </msIdentifier>
+                    <head>Medical recipes and charms for horses</head>
+                    <msContents>
+                        <summary>
+                            <seg type="para">While most remedy collections that survive from the late Middle Ages provide ailments for human
+                                conditions (for instance, <bibl type="MS" subtype="internal"><ref
+                                        target="https://cudl.lib.cam.ac.uk/view/MS-ADD-09308/1">Cambridge, University Library, MS Add.
+                                    9308</ref></bibl>), a small but significant number focused on cures for horses, reflecting the importance of these
+                                animals at the time. This manuscript is a composite of several texts largely made up of remedies intended for horses
+                                but with a small number of cures for human illnesses and other procedures in the later sections. Contemporary
+                                horse-care (or hippiatric) treatises – such as the famous <hi rend="italic">On Medicines for Horses</hi> by Jordanus
+                                Ruffus – often included advice for horse owners on breeding, stabling, and training horses, however, this collection
+                                exclusively contains remedies and other materials relating to illnesses or adverse conditions. This likely reflects
+                                that it was intended for horse-doctors rather than stablemasters. This manuscript was principally written in Middle
+                                English with some French and Latin mainly in the names of conditions and in the charms and prayers. </seg>
+                            <seg type="para">The first and largest component of this manuscript is a section of the relatively common <hi
+                                    rend="italic">Boke of Marchalsi</hi>, a fifteenth-century horse-medicine treatise in Middle English (other
+                                examples include <bibl type="MS" subtype="external"><ref target="https://wellcomecollection.org/works/rs9qgwh8"
+                                        >London, Wellcome Library, MS 5650</ref></bibl>, ff. 1r-28v). 'Marshalsi' was the practice associated with
+                                'marshals', a professional class that arose in the later Middle Ages and provided prophylactic and interventionary
+                                veterinary care as well as shoeing horses. The <hi rend="italic">Boke of Marchalsi</hi> was set out as a conversation
+                                between a master and their apprentice. This structure provided the author with opportunities to explain particular
+                                points of pharmacy and medicine as they relate to horse-care such as explaining why a disease is more likely to
+                                afflict one side of a horse's face than the other (f. <locus from="2r" to="2r">2r</locus>) or to explain and justify
+                                particular remedies that at first glance seem contradictory (e.g. 'Master, why should you give the horse either
+                                vinegar or milk, given that one is sour and the other sweet?': f. <locus from="11r" to="11r">11r</locus>). The first
+                                component of this manuscript follows a rough head-to-hoof organisation mirroring the head-to-toe schema that was
+                                common in contemporary remedy collections. </seg>
+                            <seg type="para">The rest of the manuscript is made up of several shorter collections of remedies mainly intended for
+                                horses, and contains cures attributed to several named marshals including William, marshal of Merton Priory in Surrey,
+                                Piers 'the Moor', and 'Hew Saracyn of Spayne' (f. <locus from="19r" to="19r">19r</locus>). Horses were an important
+                                international commodity in late-medieval England, and many were imported from Spain for royal and seigneurial stables.
+                                It was also not unusual for stablemasters from France and Spain to be employed by English aristocrats, so it is quite
+                                possible that Piers and Hew lived and worked in England or that their knowledge and practices were transmitted along
+                                international trade routes. Although this manuscript makes no direct reference to contemporary European horse-medicine
+                                writers, it does refer to the 'great marshals' and a disease which they called 'pynconeys' (f. <locus from="23v"
+                                    to="23v">23v</locus>). This is likely a rendering of 'malum pinsanese', a condition found in the Latin works of
+                                Jordanus Ruffus, Laurentius Rusius and other influential late-medieval writers of horse-medicine treatises and so
+                                suggests that the authors of this manuscript were familiar with the wider world of veterinary medicine.</seg>
+                            <seg type="para">This collection includes remedies targeting a range of conditions: notably contagious diseases such as
+                                glanders (f. <locus from="3r" to="3r">3r</locus>) and farcy (ff. <locus from="5v" to="8v">5v-8v</locus>), wounds and
+                                bleeding (ff. <locus from="18v" to="18v">18v</locus> and <locus from="22v" to="22v">22v</locus>), and diseases of the
+                                eye (ff. <locus from="2r" to="2v">2r-2v</locus>, <locus from="18r" to="18r">18r</locus>), the face (f. <locus
+                                    from="12v" to="12v">12v</locus>), mouth and tongue (ff. <locus from="3v" to="5r">3v-5r</locus>). There is a
+                                particular focus on injuries and conditions of the feet and legs (ff. <locus from="11v" to="14r">11v-14r</locus>,
+                                    <locus from="19r" to="19v">19r-19v</locus>, <locus from="22v" to="22v">22v</locus>) reflecting how vulnerable a
+                                horse was to these sorts of ailments during its working life. This manuscript also contains remedies which reflect the
+                                working demands placed on horses, for instance procedures which corrected errors in a horse's gait (ff. <locus
+                                    from="24r" to="24v">24r-24v</locus>) or issues with a horse's behaviour (ff. <locus from="22r" to="22r"
+                                    >22r</locus>, <locus from="25r" to="25r">25r</locus>). There are also procedures which aided a marshal or
+                                horse-keeper in their work, for instance advice on judging a horse's virtues (f. <locus from="11v" to="11v"
+                                    >11v</locus>), methods for making vinegar for medicines (ff. <locus from="14v" to="15r">14v-15r</locus>), and
+                                charms to make a horse stand still whilst it is being cared for or shod (ff. <locus from="25v" to="26r"
+                                    >25v-26r</locus>). </seg>
+                            <seg type="para">As well as veterinary procedures, the latter parts of this manuscript also include remedies for human
+                                ailments, reflecting the fact that veterinary and medical healing practices were not strictly separated in this
+                                period. These medical remedies offer cures for a range of ailments such as sciatica (f. <locus from="33v" to="33v"
+                                    >33v</locus>), toothache (ff. <locus from="34r" to="34r">34r</locus>, <locus from="37r" to="37r">37r</locus>),
+                                migraine (f. <locus from="34v" to="34v">34v</locus>), and childbirth (f. <locus from="35v" to="35v">35v</locus>).
+                                There are also non-medical instructions, such as an apotropaic procedure to protect a house from fire that involves
+                                placing a written talisman high up in the rafters of the building (f. <locus from="35v" to="35v">35v</locus>). The
+                                breadth of remedies and rituals found in this manuscript is a relatively common feature of late-medieval remedy
+                                collections which tended to attract an admixture of additional procedures, reflecting the needs or interests of the
+                                collections' writers and owners. </seg>
+                            <seg type="para">The veterinary procedures in this collection range from pharmacy, blood-letting and surgical
+                                interventions to rituals involving charms, prayers, and talismans. This is again reflective of the breadth of healing
+                                techniques employed in the late Middle Ages, in which magical and religious healing were equally valued alongside
+                                medical or surgical practices. This manuscript includes a particularly interesting set of veterinary rituals, which
+                                are indicated for a variety of conditions, notably a group of diseases referred to as farcy, glanders, or more
+                                generally 'the worm'. These were dangerous and highly contagious illnesses which could decimate a herd and as such
+                                were particularly feared by medieval horse-doctors and stablemasters. The rituals and charms in this manuscript range
+                                in complexity from a few simple words or a short prayer to procedures with multiple stages, prayers, magical
+                                incantations, and written talismans. Charms and prayers often invoked saints and Biblical figures or narratives that
+                                were perceived as having a particular relevance to the disease or condition under treatment. For instance, there are
+                                ritual remedies against farcy or the worm which use the figure of St Job (ff. <locus from="26v" to="26v">26v</locus>,
+                                    <locus from="31r" to="31r">31r</locus>) who was assaulted by worms as part of his trials, and charms against
+                                bleeding which invoke the figure of Longinus, the centurion who according to legend pierced Jesus's side with a lance
+                                at the crucifixion (ff. <locus from="26r" to="26r">26r-26v</locus>, <locus from="32r" to="32r">32r</locus>). </seg>
+                            <seg type="para">This manuscript also features a set of unusual rituals that were intended to aid a horse afflicted by
+                                farcy, which involved preparing a talisman or magical object and then attaching it to the horse with sutures. In one
+                                ritual the reader is instructed to write magical words and symbols on a lead token and place it under the skin of the
+                                horse's forehead (f. <locus from="35r" to="35r">35r</locus>). In another, the object is made from the roots of red
+                                nettle and red dock twisted together into a cross and tied to crosses made of leather and lead. These three crosses
+                                were perhaps intended to reflect the Trinity or the three crosses at Calvary. The reader is then instructed to stitch
+                                this object to their horse, 'just as Christ joined His precious body to the cross' (f. <locus from="6r" to="6r"
+                                    >6r</locus>). This type of procedure appears to be peculiar to remedies against contagious diseases in horses (for
+                                other examples, see, <bibl type="MS" subtype="external"><ref target="https://wellcomecollection.org/works/rs9qgwh8"
+                                        >London, Wellcome Library, MS 5650</ref></bibl>, ff. 14v-16r and <bibl type="MS" subtype="external"><ref
+                                        target="">London, British Library, MS Harley 6398</ref></bibl>, ff. 28v –29v). Like many charms and magical
+                                healing rituals from this period, it relied on the performer creating an analogical relationship between the patient
+                                (in this case a horse) and a powerful Biblical narrative of redemption and resurrection. </seg>
+                            <seg type="para">Dr Sunny Harrison<lb/>Associate Lecturer<lb/>Open University</seg>
+                        </summary>
+                        <textLang mainLang="enm" otherLangs="la frm">Middle English, Latin, and Middle French</textLang>
+                        <msItem n="1">
+                            <locus from="1r" to="18v">1r-18v</locus>
+                            <title key="work_13215">Collection of medical recipes and charms for the treatment of ailments in horses, the second part
+                            of <hi rend="italic">The Boke of Marchalsie</hi></title>
+                            <textLang mainLang="enm" otherLangs="frm">Middle English recipes, ending with two lines in Middle French</textLang>
+                            <rubric><locus from="1r" to="1r">1r</locus> Here bygynneþ þe maladies þat hors haueþ of her own kynde</rubric>
+                            <incipit><locus from="1r" to="1r">1r</locus> There hors beþ norisched in her [ȝowþe] wiþ hard mete and benes or barly or
+                            hard corailes wiþ suche mete whenne he etiþ wiþ grete wille so wexeþ þe humour of þe hed to muchel and grete undir þe
+                            iȝen and þat makiþ þe iȝen to water and after þat comeþ a goute al ouer þe iȝen</incipit>
+                            <explicit><locus from="18v" to="18v">18v</locus> A plastre to don awey wickide fleish. Take þe white of an ey and quik
+                            sond and tempere hit to gedre til þat hit be þicke Seynt archedelyn en son haut se vij. verge de rounce tyent en sa
+                            mayn sy il beyt quit purson chynal [sic] et sors estoyt</explicit>
+                            <note>The collection contains an elaborate charm-ritual for curing farcy (ff. <locus from="5v" to="7r">5v-7r</locus>), and
+                            a charm to staunch blood (f. <locus from="18r" to="18r">18r</locus>)</note>
+                            <listBibl>
+                                <bibl>For other copies, see Connolly (2009), p. 9.</bibl>
+                                <bibl>Hindley (2023), p. 194 [transcription and translation of charm to staunch blood]</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="6">
+                            <locus from="18v" to="18v">18v</locus>
+                            <title key="">Medical recipes</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="18v" to="18v">18v</locus> ffor swellyng þe necke take barly and seþ yt wel and yeue yt þe hors to etyn and none oþer prouender</incipit>
+                            <explicit defective="true"><locus from="18v" to="18v">18v</locus> ffor þe strangloun Take garlyc</explicit>
+                            <note>Added in the <date notAfter="1500" notBefore="1400">15th century</date>.</note>
+                            <listBibl>
+                                <bibl>For other copies, see Connolly (2009), p. 9.</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="7">
+                            <locus from="19r" to="19r">19r</locus>
+                            <title key="">Collection of charms and a recipe for healing diseases of horses</title>
+                            <textLang mainLang="enm" otherLangs="la">Middle English with a Latin rubric</textLang>
+                            <rubric><locus from="19r" to="19r">19r</locus> Practica Willelmi Marescalli Prioris Mertone de infirmitate
+                            equorum</rubric>
+                            <incipit><locus from="19r" to="19r">19r</locus> Crist hym self was y bore in bemergebyre in benynbyre. Bedleem hit hiȝt</incipit>
+                            <explicit><locus from="19r" to="19r">19r</locus> þis hors be delyuered of wormes. botes. and schurf of skyn. by þe offryng of þes candells in þe worship of seint ffirmyn</explicit>
+                            <note>The collection begins with a charm to staunch blood and ends with a charm to cure farcy that invokes St Fermin and is attributed to <q>Hew sarasyn of spayne</q>.</note>
+                            <listBibl>
+                                <bibl>For other copies, see Connolly (2009), p. 9.</bibl>
+                            </listBibl>
+                        </msItem>
+                       <msItem n="8">
+                            <locus from="19r" to="27v">19r-22v, 23v-27v</locus>
+                            <title key="">Collection of recipes and charms for curing horses</title>
+                            <textLang mainLang="enm" otherLangs="la">Middle English with Latin charms</textLang>
+                            <rubric><locus from="19r" to="19r">19r</locus> þis is þe marchalcie of Piers Moriz good and trewe</rubric>
+                            <incipit><locus from="19r" to="19r">19r</locus> Thus seiþ Piers þe moriz. þat ȝif hit so be ȝat an hors come to hym to be
+                            marchelid at ȝe first he drawiȝ of his schoon forto seche ȝe foot</incipit>
+                            <explicit><locus from="27v" to="27v">27v</locus> ffor the peynes Bynde ther grece of a bore and aftirward boile benes and
+                            ffry hem in shepes talow with salt garlik and arment and lay to the sore and he shall be hole</explicit>
+                            <note>The collection contains a charm for curing farcy in a horse and for shoeing a horse that invokes St Eligius on f. <locus from="25v" to="25v">25v</locus>; and another
+                                charm for curing farcy that invokes St Job on f. <locus from="26v" to="26v">26v</locus>.</note>
+                        </msItem>
+                        <msItem n="9">
+                            <locus from="23r" to="23r">23r</locus>
+                            <title key="">Two medical recipes for treating horses</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="23r" to="23r">23r</locus> ffor þe strangloun take þe garlyc and stampe yt and tempere yt with þe Jus
+                            of syngrene and boyle yt with swyne ys grece in a litel ale and geue yt þe hors to drycnke at hote as he may
+                            souery</incipit>
+                            <explicit><locus from="23r" to="23r">23r</locus> ffor þe stone take pappewort and benet and bappetarde and schaue hem and
+                            seþe hem in white wyn and take þe jus of morelle and of celedoyne and as moche</explicit>
+                            <note>Full transcription. Added by the same <date notAfter="1500" notBefore="1400">15th-century</date> hand that added recipes to f. <locus
+                            from="18v" to="18v">18v</locus>; here, the first recipe continues the third recipe on f. <locus from="18v" to="18v">18v</locus>.</note>
+                        </msItem>
+                            <msItem n="10">
+                                <locus from="23r" to="23r">23r</locus>
+                                <title key="">Charm for an unspecified purpose</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="23r" to="23r">23r</locus> maguba magula mala et ?Jop magula et Pater noster et ave maria</incipit>
+                                <note>Full transcription. Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand.</note>
+                            </msItem>
+                            <msItem n="11">
+                                <locus from="23r" to="23r">23r</locus>
+                                <title key="">Medical recipe for curing a short-winded horse</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="23r" to="23r">23r</locus> ffor an hors þat ys pursyf</rubric>
+                                <incipit><locus from="23r" to="23r">23r</locus> Take an holde dogge of þe same here þat þyn
+                                hors hys and seþ hym here and alle excepte þe guttes and bray hym small in a morter bonys and alle and streyne hem
+                                þerwe a cloth wiþ ys same lycour and let hyt stonde</incipit>
+                                <explicit><locus from="23r" to="23r">23r</locus> Affter þys tyddynge wolwynge a drenche þat ys to sayng i unce of
+                                greynys a i unce of gynger camphur i unce clouis ij unces dragates [ounces] i anixden succ j licorices and [ouncs]
+                                i candall all and rubij and citrium</explicit>
+                                <note>Added by a <date notAfter="1500" notBefore="1450">late 15th-century</date> hand.</note>
+                            </msItem>
+                            <msItem n="12">
+                                <locus from="25v" to="25v">25v</locus>
+                                <title key="">Charm for horseshoeing</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                                <rubric><locus from="25v" to="25v">25v</locus> for to make a hors to stonde still while he ys shoy[?g]</rubric>
+                                <incipit><locus from="25v" to="25v">25v</locus> Benedicite dominus + Nos a deo qui [...] </incipit>
+                                <note>Full transcription attempted. Partly illegible because the text has faded or has been erased; added by a <date notAfter="1500"
+                                notBefore="1400">15th-century</date> hand.</note>
+                            </msItem>
+                            <msItem n="13">
+                                <locus from="26r" to="26r">26r</locus>
+                                <title key="">Charm for horseshoeing invoking St Eligius</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                                <incipit><locus from="26r" to="26r">26r</locus> In nomine patris et filii etcaetera The same charme þat Seynt Loyd
+                                hadde Whan þat he fyrst hors chode Seynt loy</incipit>
+                                <explicit><locus from="26r" to="26r">26r</locus> Also ycharme the by þe same charme þat þou abit to me as þou abit to
+                                Seynt loy in þe worchip of þe v woundes þat god Souffret þe goode fryday Istat etcaetera In nomine Patri et fillii</explicit>
+                                <note>Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand.</note>
+                            </msItem>
+                            <msItem n="14">
+                                <locus from="27r" to="27r">27r</locus>
+                                <title key="">Two charms for curing an unspecified ailment</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="27r" to="27r">27r</locus> Ma tha be o s [...] / Tetragrammaton: prykke the oneres and say the
+                                nethes</incipit>
+                                <explicit><locus from="27r" to="27r">27r</locus> Bure. Burere. Bue . Rere. and in the worschip of god and of oure lady
+                                seint Marie and seint John the Baptist and for his fadur soule and his modur soule p[o]ur cherite Pater noster iij
+                                tymes with iij Aves thries ysaid</explicit>
+                                <note>Full transcription. Added by the same <date notAfter="1500" notBefore="1400">15th-century</date> hand.</note>
+                            </msItem>
+                            <msItem n="15">
+                                <locus from="27v" to="27v">27v</locus>
+                                <title key="">Two charms for curing the farcy</title>
+                                <textLang mainLang="la" otherLangs="enm"> with English rubrics</textLang>
+                                <incipit><locus from="27v" to="27v">27v</locus> A charme for þe fassion +++ Propretia deus destruet de in
+                                finem</incipit>
+                                <explicit><locus from="27v" to="27v">27v</locus> et si fuerit equa ponatur in auricula senystra</explicit>
+                                <note>Added by a <date notAfter="1500" notBefore="1450">late 15th-century</date> hand.</note>
+                            </msItem>
+                            <msItem n="16">
+                                <locus from="28r" to="28r">28r</locus>
+                                <title key="">Charm to staunch blood</title>
+                                <textLang mainLang="la" otherLangs="enm">Latin charm with English rubric</textLang>
+                                <rubric><locus from="28r" to="28r">28r</locus> ffor to stanche blod</rubric>
+                                <explicit><locus from="28r" to="28r">28r</locus> In nomine patris filij et spiritus sancti Amen + Sicud vere credimus
+                                quod sancta maria vere genitt [sic] Christum tu vena reine tuum sanquinem </explicit>
+                                <note>Added by a <date notAfter="1500" notBefore="1450">late 15th-century</date> hand.</note>
+                            </msItem>
+                            <msItem n="17">
+                                <locus from="28r" to="28r">28r</locus>
+                                <title key="">Charm for curing the farcy</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="28r" to="28r">28r</locus> A medycyne for þe farsyoun</rubric>
+                                <incipit><locus from="28r" to="28r">28r</locus> Sey thus Jhesus wente to bethelem mette he with Seynt John þe
+                                ewangelist whi ledest þow þy fole yn þy hand seyde Jhesus to seynt John the Ewangelist lord for he hath þe
+                                ffassye and may not go</incipit>
+                                <explicit><locus from="28r" to="28r">28r</locus> and he shal neuer haue þe ffassyne no non hors þat stant by hym seyde
+                                Jhesus to seynt John þe ewangelist by ix dayes to gedere</explicit>
+                                <note>Added by a <date notAfter="1500" notBefore="1450">late 15th-century</date> hand.</note>
+                            </msItem>
+                            <msItem n="18">
+                                <locus from="28v" to="28v">28v</locus>
+                                <title key="">Charm for curing the farcy that invokes St Nicasius</title>
+                                <textLang mainLang="la" otherLangs="enm">Latin charms with English rubrics</textLang>
+                                <rubric><locus from="28v" to="28v">28v</locus> A charme for þe fassine In þe name of þe fader + and of þe sone + and
+                                þe holy gost + Amen + Seynt Nicase hadde a lidore euel + And he prayde to god + that who so euer bere his name vp
+                                on hym + of þis yvel he shal be delyuered </rubric>
+                                <explicit><locus from="28v" to="28v">28v</locus> And let hit be bounde in þe right ere of an hors in þe saturday afore
+                                sonne goynge downe And lat hit a byde still tille þe Mounday afore sonne risynge and þanne take hit out and he
+                                shal be hole. And if a mere haue þis grevaunce put þis charme in to here lift ere in þe same maner
+                                forsayd</explicit>
+                                <note>Added by a <date notAfter="1500" notBefore="1450">late 15th-century</date> hand.</note>
+                            </msItem>
+                            <msItem n="19">
+                                <locus from="28v" to="28v">28v</locus>
+                                <title key="">Charm for curing the farcy that invokes St Nicasius</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="28v" to="28v">28v</locus> + In nomine patris + et filij + et spiritus sancti. + amen + sanctus
+                                Nigasius habuit minutam bestiolam que vexabatur morbo ffarciaco</incipit>
+                                <explicit><locus from="28v" to="28v">28v</locus> Sanctus Nigasius oret pro te Soror + Opheas + Cleophas + Neophas +
+                                Phendula + Gendula + dracones sunt + In nomine domini mortuus est vermis + Amen + In nomine patris + filij + et
+                                spirits sancti + amen + a + g + l + a + + + e + o + r + a + g + r + a + m + a + t + o + u + Amen +++++ </explicit>
+                                <note>Added by a <date notAfter="1500" notBefore="1450">late 15th-century</date> hand.</note>
+                            </msItem>
+                            <msItem n="20">
+                                <locus from="29r" to="29r">29r</locus>
+                                <title key="">Sage leaf charm for curing fever</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                                <rubric><locus from="29r" to="29r"> 29r</locus> A medicyn ffor þe Axes</rubric>
+                                <incipit><locus from="29r" to="28r">29r</locus> Take a sawge lef þat is not perced and write þer on with a penne with
+                                ynke in principio principio erat verboum angelus nunciat</incipit>
+                                <explicit><locus from="29r" to="29r">29r</locus> And seye þe prayers forseyde and þe þridde day take anoþer lef and
+                                write þer on Et deus erat verbum Cristus tonat and ȝif hit þe seke a[nd] let hym seye þe prayers forseyde And by
+                                goddis grace he shal be hole </explicit>
+                                <note>Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand.</note>
+                                <listBibl>
+                                    <bibl>Connolly (2007), p. 152 [ed. from this manuscript].</bibl>
+                                    <bibl>For other copies, see Connolly (2009), p. 11.</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="21">
+                                <locus from="29r" to="29r">29r</locus>
+                                <title key="">Medical recipe for treating haemorrhoids</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="29r" to="29r">29r</locus> ffor þe emerawdes</rubric>
+                                <incipit><locus from="29r" to="29r">29r</locus> Take lek þat neuer was set: but as hit was sowe oþer ellis take lek
+                                þat was set afore mydsomer</incipit>
+                                <explicit><locus from="29r" to="23r">29r</locus> ad make a plaster þerof and ley þe plaster vpon a clout of scarlet
+                                and as hot as ȝe may ley hit to ȝowre foundement and þis is proued</explicit>
+                                <note>Added by the same <date notAfter="1500" notBefore="1400">15th-century</date> hand that added the charms to f.
+                                <locus from="27r" to="27r">27r</locus>.</note>
+                            </msItem>
+                            <msItem n="22">
+                                <locus from="29r" to="29r">29r</locus>
+                                <title key="">Recipe for making dye</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="29r" to="29r">29r</locus> Take a pynte of paynters oyle and an ounce of red led an ounce of
+                                mastik and an ounce of ȝelow oker and a bene gretnesse of frankencense as muche of spaynyssh grene as much of
+                                coperose put hem in to a pot and sethe hem tille hit reme as brid by [.]ne </incipit>
+                                <note>Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand.</note>
+                            </msItem>
+                            <msItem n="23">
+                                <locus from="29v" to="29v">29v-29v</locus>
+                                <title key="">Six recipes for dyeing cloth</title>
+                                <textLang mainLang="la" otherLangs="enm">Middle English</textLang>
+                                <rubric><locus from="29v" to="29v">29v</locus> A gode medysyn for þe Glaundres</rubric>
+                                <incipit><locus from="29v" to="29v">29v</locus> ffor to make whit cloth of damaske: Take newe whit cloith þer to beþe
+                                a penyworth of blanke plumme and grynde hit on a stoun</incipit>
+                                <explicit><locus from="29v" to="29v">29v</locus> ȝif ȝowre cloith be red ȝowre damaske moste be sadder red and ȝif hit
+                                be blew hit moste be lighter blew etcaetera</explicit>
+                                <note>Added by a single <date notAfter="1500" notBefore="1400">15th-century</date> hand.</note>
+                            </msItem>
+                            <msItem n="24">
+                                <locus from="31r" to="31v">31r-31v</locus>
+                                <title key="">Collection of recipes and charms</title>
+                                <textLang mainLang="enm" otherLangs="la xno">Middle English, Latin, and Anglo-Norman</textLang>
+                                <incipit><locus from="31r" to="31r">31r</locus> ffor pursie of an hors: Make an hors faste iij dayes and iij nyght and
+                                take an olde mastif dogge and sede hym wel in water and ȝif the hors to drynke as hot as he may suffre</incipit>
+                                <explicit><locus from="31v" to="23r">31v</locus> and take out þe pythe with ynne and let sethe hem yn a potell of whit
+                                wyn yn to a quart and vse þis al euen and at morwe with as muche suger as wol make hit lusty to ȝowre taste and
+                                anoynte ȝow with oynement taghte byfore</explicit>
+                                <note>Added by a single <date notAfter="1500" notBefore="1400">15th-century</date> hand; includes two charms for curing
+                                farcy, one against worms, one for curing <q>al maner [of] yveles</q>, and one for treating glanders in horses, invoking Job and St Hippolytus.</note>
+                               <listBibl>
+                                   <bibl>For other copies, see Connolly (2009), pp. 12-13.</bibl>
+                               </listBibl>
+                        </msItem>
+                        <msItem n="25">
+                            <locus from="32r" to="32r">32r</locus>
+                            <title key="">Charm to staunch blood</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="32r" to="32r">32r</locus> Longens Miles Ebreus lancia [added in a different hand: \Christi/] latus
+                            perforauit</incipit>
+                            <explicit><locus from="31v" to="31v">31v</locus> Credimus quod sancta maria est mater dei: et verum Infantem genuit Jhesum
+                            Christum sic resistant tue vene que [added in a different hand: sunt] sangguine plene [added: vt ab eis non exeat
+                            sanguis per virtutem eiusdem patris et filij et spiritus sancti amen]</explicit>
+                            <note>Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand.</note>
+                        </msItem>
+                        <msItem n="26">
+                            <locus from="32r" to="32r">32r</locus>
+                            <title key="">Medical recipe</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="32r" to="32r">32r</locus> Thys is ffor the vivis</rubric>
+                            <incipit><locus from="32r" to="32r">32r</locus> Take hounddis tungge ij honde ffull or iij and pound hem in a morter till
+                            thou haue iij sponfull and pitte hit half in the oene ere</incipit>
+                            <note>Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand. Imperfect due to the removal of the
+                            lower half of the leaf.</note>
+                        </msItem>
+                        <msItem n="27">
+                            <locus from="32v" to="32v">32v</locus>
+                            <title key="">Excerpts from liturgical texts</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="32v" to="32v">32v</locus> Suscipias dominus sacrificium de manibus tuie [sic: tuis] at laudem
+                            et</incipit>
+                            <explicit><locus from="32v" to="32v">32v</locus> ffuit homo missus a deo</explicit>
+                            <note>Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand; similar inscriptions on f. <locus from="32r" to="32r">32r</locus> (fragmentary)
+                            and f. <locus from="37r" to="37r">37r</locus>.</note>
+                        </msItem>
+                        <msItem n="28">
+                            <locus from="33r" to="33r">33r</locus>
+                            <title key="">Prayer-charm for curing farcy</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="33r" to="33r">33r</locus> God and synt Copelyn swych grase as god ȝaf þe send from þe to me for þese
+                            bestys botye to be amen for charite in nomine patris et fili</incipit>
+                            <note>Full transcription. Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand, but later crossed
+                            out. Another copy of this text features on the lower half of the same page but by a different hand.</note>
+                        </msItem>
+                        <msItem n="29">
+                            <locus from="33r" to="33r">33r</locus>
+                            <title key="">Magical formulae</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="33r" to="33r">33r</locus> + zaron + zer[o]nen + zeronem + betonen + astra + lubia +</incipit>
+                            <note>Full transcription. Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand; two other copies of
+                            this charm occur on f. <locus from="35r" to="35r">35r</locus>.</note>
+                        </msItem>
+                        <msItem n="30">
+                            <locus from="33r" to="33r">33r</locus>
+                            <title key="">Medical recipe</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="33r" to="33r">33r</locus> for þe Eretica</rubric>
+                            <incipit><locus from="33r" to="33r">33r</locus> Take hony and oyle olyf and ueneger and white salt smale ygrounde euene
+                            euene porciouns</incipit>
+                            <explicit><locus from="33r" to="33r">33r</locus> And boyle hem til þey be brownne and ley hit to þe maledy with blak
+                            wolle</explicit>
+                            <note>Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand.</note>
+                        </msItem>
+                        <msItem n="31">
+                            <locus from="33r" to="33r">33r</locus>
+                            <title key="">Charm for horseshoeing</title>
+                            <textLang mainLang="la" otherLangs="enm">Latin charm with English heading</textLang>
+                            <rubric><locus from="33r" to="33r">33r</locus> ffor to make a hors to stond still while he is shchod</rubric>
+                            <incipit><locus from="33r" to="33r">33r</locus> Benedicit dominus + Nos a deo qui sumus sumpturi Benedicat dextera Christi
+                            In Nomine patris et filij et spiritus sancti Amen</incipit>
+                            <note>Full transcription. Added by the same <date notAfter="1500" notBefore="1400">15th-century</date> hand that copied the next two items;
+                            another copy of the text was added by a different hand to f. <locus from="25v" to="25v">25v</locus>.</note>
+                        </msItem>
+                        <msItem n="32">
+                            <locus from="33r" to="33r">33r</locus>
+                            <title key="">Prayer-charm for curing farcy</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="33r" to="33r">33r</locus> A prayar ffor þe ffasciun to be seyde with gode deuociun</rubric>
+                            <incipit><locus from="33r" to="33r">33r</locus> God and Synt Copelyn swych grase as god ȝaff þe send ffro þe to me ffor
+                            þese bestis bote bote to be amen for charite in nomine patris et ffilij et spiritus sancti amen</incipit>
+                            <note>Full transcription. Added by the <date notAfter="1500" notBefore="1400">15th-century</date> hand that copied the
+                            previous and next items; another copy of this text features at the top of the page (crossed out), but by a different
+                            hand.</note>
+                        </msItem>
+                        <msItem n="33">
+                            <locus from="33r" to="33r">33r</locus>
+                            <title key="">Latin charm with Middle English heading</title>
+                            <textLang mainLang="la" otherLangs="enm">Latin and Middle English</textLang>
+                            <rubric><locus from="33r" to="33r">33r</locus> A charme for þe trenches</rubric>
+                            <incipit><locus from="33r" to="33r">33r</locus> + vrinem + burnem + baburnen + basion + tetragramaton + repp. +</incipit>
+                            <note>Full transcription. Added by the same <date notAfter="1500" notBefore="1400">15th-century</date> hand that copied the preceding two
+                            items; later crossed out.</note>
+                        </msItem>
+                        <msItem n="34">
+                            <locus from="33v" to="34r">33v-34r</locus>
+                            <title key="">Collection of nine medical recipes and charms</title>
+                            <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                            <incipit><locus from="33v" to="33v">33v</locus> þis potage wull kepe a man lascatyfe: Take þe leuis of smalache or þe þe
+                            Rote venell water cerssis mercuri cliþeryn of eche liche moche and make wortes and put þerto oyle or schepis talowe
+                            and salte</incipit>
+                            <explicit><locus from="34r" to="34r">34r</locus> As þou mayste strayne hem þorow a cloþe and put hit ynto a clene vessell
+                            and þis medycyn haþ ben prouyd</explicit>
+                            <note>Added by a single <date notAfter="1500" notBefore="1400">15th-century hand</date>; the collection includes a Latin charm for the
+                            toothache that invokes Doubting Thomas.</note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="35">
+                            <locus from="34v" to="34v">34v</locus>
+                            <title key="">Medical recipe for curing a head ailment (perhaps headache)</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="34v" to="34v">34v</locus> Take the rotys of the pryme rosyne and stanpe hem smalle and temper hame
+                            to gederys wyth the galle of a nox and anoynte the fore hede ther wyth</incipit>
+                            <note>Full transcription. Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand.</note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="36">
+                            <locus from="34v" to="34v">34v</locus>
+                            <title key="">Medical recipe for curing the eyes</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="34v" to="34v">34v</locus> A powder for a hors yȝen good and treu</rubric>
+                            <incipit><locus from="34v" to="34v">34v</locus> Take the scyllys of hene eggys and brenne hem in a erthen potte and and
+                            [sic] mak poudyr þereoff and putte hyt in hys yȝy</incipit>
+                            <note>Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand.</note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="37">
+                            <locus from="34v" to="34v">34v</locus>
+                            <title key="">Charm against worms in a horse</title>
+                            <textLang mainLang="enm" otherLangs="la">Middle English with Latin formulae</textLang>
+                            <rubric><locus from="34v" to="34v">34v</locus> A charme for the wormys in an hors</rubric>
+                            <incipit><locus from="34v" to="34v">34v</locus> In nomine patris et filij et spiritus sancti amen pater noster aue Maria
+                            lord that sendist vertu in Stone in Worde in Grasse Sende Vertu in my vorde</incipit>
+                            <explicit><locus from="34v" to="34v">34v</locus> Sey thys ffyrst atte nekke then atte mydde side and then atte crowpe wyth
+                            iij tornys j atte eueri time With a pater noster aue maria atte eueri time bende a peny on the hors hede in the
+                            worshypp of seynte loij</explicit>
+                            <note>Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand.</note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                                <bibl>For other copies, see Connolly (2009), p. 15.</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="38">
+                            <locus from="34v" to="34v">34v</locus>
+                            <title key="">Two medical recipes for the eyes and gout</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="34v" to="34v">34v</locus> for to clere a manys syȝt: take eufrasye iiij hanful and ij or red feenel
+                            and stylle yt and wasshe the yen therewith</incipit>
+                            <explicit><locus from="34v" to="34v">34v</locus> for the gowte: ipreuyd by seyn cutbert take mylle of one colowr and the
+                            jusse of merche and barleyme and boyle hit ryȝt welle togedere and al hote ley hit to þe sore</explicit>
+                            <note>The second recipe is attributed to St Cuthbert. Added by the same <date notAfter="1525" notBefore="1475">late 15th-
+                            or early 16th-century</date> hand that copied a recipe for the stomach on f. <locus from="38r" to="38r">38r</locus>.</note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="39">
+                            <locus from="35r" to="35r">35r</locus>
+                            <title key="">Charm for horseshoeing</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="35r" to="35r">35r</locus> Thes wordys scolde be wrete in lede and sette hyt in þe hors hod</rubric>
+                            <incipit><locus from="35r" to="35r">35r</locus> + zaron + zeronen + zeronem + batonent + astra + lubia</incipit>
+                            <note>Full transcription. Added by the same <date notAfter="1500" notBefore="1400">15th-century</date> hand that added the next item; other
+                            copies of this charm occur on f. <locus from="33r" to="33r">33r</locus> and f. <locus from="35r" to="35r">35r</locus>
+                            (lower half).</note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="40">
+                            <locus from="35r" to="35r">35r</locus>
+                            <title key="">Medical recipe for purging the kidneys</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="35r" to="35r">35r</locus> ffor the purgyng off a mannys raynys</rubric>
+                            <incipit><locus from="35r" to="35r">35r</locus> Take saxferage mylfoyle aneyse venelsede of euerych a nownce or ij and
+                            gromylle ysoppe hertistong maydyn here mowsere of euryche a quarter of an hondfulle The rotys of perseli</incipit>
+                            <note>Full transcription of incomplete recipe: a complete version of this recipe can be found on f. <locus from="31v"
+                            to="31v">31v</locus>. Added by the same <date notAfter="1500" notBefore="1400">15th-century</date> hand that added
+                            the preceding item.</note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="41">
+                            <locus from="35r" to="35r">35r</locus>
+                            <title key="">Medical recipe</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="35r" to="35r">35r</locus> Take the rotis of the primrosyin and stanpe hit in a morter and temper hit
+                            withe white wyne and take the juce therof and putte hitte in to his nose and hold hit ther tille he fele hit in the
+                            rofe of his mowthe and he sachall [sic: schall] be sauide </incipit>
+                            <finalRubric><locus from="35r" to="35r">35r</locus> This is ffor the lenatike</finalRubric>
+                            <note>Full transcription. Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand.</note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="42">
+                            <locus from="35r" to="35r">35r</locus>
+                            <title key="">Charm for curing or protecting a horse</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="35r" to="35r">35r</locus> Thes wordys scold be wrte in lede and sette hit in the hors hed</rubric>
+                            <incipit><locus from="35r" to="35r">35r</locus> + zaron + zeronen + zeronem + betonent + astra + lubia</incipit>
+                            <note>Full transcription. Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand, which also copied the charm on f. <locus
+                            from="35r" to="35r">35r</locus> (upper half). A different hand copied the charm on f. <locus from="33r" to="33r"
+                            >33r</locus>.</note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="43">
+                            <locus from="35v" to="35v">35v</locus>
+                            <title key="">Medical recipe for curing sciatica</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="35v" to="35v">35v</locus> Tak the rotys of the rede netel and the rote of the wyldenepe and wylde
+                            sauge and herbente and oyle oleue and maybotter and grued hem al togedere and do ther to a penewort of mastyk for the
+                            syatyk</incipit>
+                            <note>Full transcription. Identical to the next item, but added by a different <date notAfter="1500" notBefore="1400">15th-century</date>
+                            hand.</note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="44">
+                            <locus from="35v" to="35v">35v</locus>
+                            <title key="">Medical recipe for curing sciatica</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="35v" to="35v">35v</locus> ffor the sciatica</rubric>
+                            <incipit><locus from="35v" to="35v">35v</locus> Take the rotis of the rede nettil and the rote of wylde nepe and wylde
+                            sauge and herbe bennet oyle olife and mary butter grynd them smale together qand do therto a pennye worth of
+                            masticke</incipit>
+                            <note>Full transcription. Identical to the previous item, but added by two different <date notAfter="1500" notBefore="1400"
+                            >15th-century</date> hands.</note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="45">
+                            <locus from="35v" to="35v">35v</locus>
+                            <title key="">Medical recipe to strenghten women after childbirth</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="35v" to="35v">35v</locus> To strenghten a woman after her childbirthe</rubric>
+                            <incipit><locus from="35v" to="35v">35v</locus> Take v leuide gras and take nepe and a litile milfoyle and poude hit
+                            samale [sic: smalle] wrynge owte [added: \the iowse/} and medille alle to gedir and dryke [sic: drynke] hit ffurste
+                            afftir thy deliueraunse of þe chylde in warme ale or vine vethyr ȝe wille vithe a litil maye butir warmyde</incipit>
+                            <note>Full transcription. Added by the same <date notAfter="1500" notBefore="1400">15th-century</date> hands that copied the previous
+                            item.</note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="46">
+                            <locus from="35v" to="35v">35v</locus>
+                            <title key="">The epitaph of St Agatha (charm for protection against fire)</title>
+                            <textLang mainLang="la" otherLangs="enm">Latin and Middle Englsh</textLang>
+                            <incipit><locus from="35v" to="35v">35v</locus> Mentem sanctam spontaneam honorem deo et patrie liberacionem</incipit>
+                            <note><p>Full transcription. Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand; the final rubric seems to have been
+                                    added in a different contemporary hand and Connolly (2009), p. 17, lists it as a separate item. Connolly identifies the rubric as the introductory heading for a
+                                    medical charm that has gone missing with the lower section of the leaf, suggesting that it may have been intended
+                                    for curing 'erysipelas' (wildfire). Not only is there no evidence that a text was ever written below the rubric,
+                                    but the rubric also refers to a 'hous', not a 'hors' as Connolly transcribes it. It seems much more likely that
+                                    the rubric refers to the preceding Latin inscription (cited above): this is the epitaph that, according to
+                                    hagiographic sources such as the Legenda Aurea, was inscribed on a marble table that an angel placed at the tomb
+                                    of St Agatha of Catania in Sicily. Subsequently, the cloth that covered her tomb stopped a great fire or eruption
+                                    of Mount Etna that threatened the city of Catania. On this basis, she has historically been invoked for protection
+                                    against fire, sometimes with or solely through the citation of her epitaph.</p>
+                                <p>Evidence of this practice in late medieval England comes from a charm against fire that cites the epitaph on ff.
+                                121v and 136v of 15th-century English manuscript <bibl subtype="external" type="MS"><ref
+                                target="http://searcharchives.bl.uk/IAMS_VU2:LSCOP_BL:IAMS032-002041909">London, British Library, Add MS
+                                12195</ref></bibl> (this manuscript is noted by <bibl>J.G.N., 'Ancient Charm against Fire', <hi rend="italic">The Gentleman's
+                                Magazine</hi>, 180 (1846), 383-384 (p. 383))</bibl>.</p>
+                            </note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="47">
+                            <locus from="37r" to="37r">37r</locus>
+                            <title key="">Charm for curing toothache</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="37r" to="37r">37r</locus> A charme for þe toth ache abraham lay in þe mounte of olyuet</incipit>
+                            <explicit><locus from="37r" to="37r">37r</locus> th[i]s schal be ysayde þre sydys wyth v pater noster and v aue
+                            knelyng</explicit>
+                            <note>Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand.</note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="48">
+                            <locus from="37r" to="37r">37r</locus>
+                            <title key="">Medical recipe (title only)</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="37r" to="37r">37r</locus> ffor ethyk and tysyk boile þe leues</incipit>
+                            <note>Full transcription. Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand.</note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="49">
+                            <locus from="37r" to="37r">37r</locus>
+                            <title key="">Liturgical formulae</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="37r" to="37r">37r</locus> Soror mea hominis [...]</incipit>
+                            <explicit><locus from="37r" to="37r">37r</locus> ffuit homo missus a cui nomen erat</explicit>
+                            <note>Full transcription. Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand; similar to the formulae on f. <locus
+                            from="32v" to="32v">32v</locus>.</note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="50">
+                            <locus from="37r" to="37r">37r</locus>
+                            <title key="">Medical recipe for curing throat ailments</title>
+                            <textLang mainLang="en">English</textLang>
+                            <rubric><locus from="37r" to="37r">37r</locus> for the garget probat</rubric>
+                            <incipit><locus from="37r" to="37r">37r</locus> Garget wort, hartes horne, Rewe pugil., \[...] chopped smale/ boyle them in a quarte
+                            of stronge ale and geve to drinke. my Aunt Greene</incipit>
+                            <note>Full transcription. Added by a <date notAfter="1550" notBefore="1500">late 16th-century</date> hand, perhaps that of <q>Thomas Peapes</q>, who
+                            inscribed his name in the outer margin of f. <locus from="6v" to="6v">6v</locus>.</note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="51">
+                            <locus from="37v" to="38r">37v-38r</locus>
+                            <title key="">Six medical recipes for curing different ailments</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="37v" to="37v">37v</locus> ffor the syatyka: tak ij hanful of wormode and j hanfol of reue and a
+                            quart of rede wyne and a quart of oyle oleve and pyt hym in a pot of newe</incipit>
+                            <explicit><locus from="38r" to="38r">38r</locus> for a felon broune wert lef and ley þerto and sle hym for a
+                            felon</explicit>
+                            <note>Added by a single <date notAfter="1500" notBefore="1400">15th-century</date> hand.</note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="51">
+                            <locus from="38r" to="38r">38r</locus>
+                            <title key="">Medical recipe to ease the stomach</title>
+                            <textLang mainLang="enm" otherLangs="la">Middle English with some Latin</textLang>
+                            <rubric><locus from="38r" to="38r">38r</locus> forto defye a mannys stomake</rubric>
+                            <incipit><locus from="38r" to="38r">38r</locus>Take and by a penyworth of valsyn elys and seþe hem yn sauyre sausse and
+                            ȝete hym bonys and all and hyt most be vsyd iij dayes togeder and an warrantyse he shal be mery yn his hert and lyȝt
+                            yn hys body body [sic] probatum est</incipit>
+                            <note>Full transcription. Added by the same <date notAfter="1525" notBefore="1475">late 15th- or early 16th-century</date> hand that added the
+                            recipes for sight and gout on f. <locus from="34v" to="34v">34v</locus>.</note>
+                            <listBibl>
+                                <bibl>eVK2 6179.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="52">
+                            <locus from="38v" to="39r">38v-39r</locus>
+                            <title key="">Prose treatise on the virtues of rosemary</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="38v" to="38v">38v</locus> Here bethe vertuis of þe rosemarey</rubric>
+                            <incipit><locus from="38v" to="38v">38v</locus> Take þe flouris and bray hem a litill and bynd and sethe hem in vater in
+                                hal wyndell and yif þe sek to drink and þat is gode for al maner euellis</incipit>
+                            <explicit><locus from="39r" to="39r">39r</locus> also mak puder of þe leues and ette þerof and drink þerof wiþ whit vine
+                                and it woll ipourch þe seke stomak</explicit>
+                            <note>Added by the same <date notAfter="1500" notBefore="1400">15th-century</date> hand that added the next text.</note>
+                            <listBibl>
+                                <bibl>Keiser (2008), p. 198 (as ‘AE6’)</bibl>
+                                <bibl>For other copies, see Connolly (2009), pp. 17-18.</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="53">
+                            <locus from="39r" to="39r">39r</locus>
+                            <title key="">Prose treatise on the virtues of betony</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="39r" to="39r">38v</locus> Here bethe vertuis of betoyn</rubric>
+                            <incipit><locus from="39r" to="39r">39r</locus> betoyn ettyn or drynkkyn it wolle brekyn þe ston and mak þe seke
+                                pisse</incipit>
+                            <explicit><locus from="39r" to="39r">39r</locus> betoyn is grassius and foll of vertew and wo so hath aney [else] or aney
+                                othyr ffantissy henge þerof about is nekke [and it s]hall go way</explicit>
+                            <note>Added by the same <date notAfter="1500" notBefore="1400">15th-century</date> hand that added the previous
+                                text.</note>
+                            <listBibl>
+                            <bibl>For other copies, see Connolly (2009), p. 18.</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="54">
+                            <locus from="39v" to="40r">39v-40r</locus>
+                            <title key="">Collection of thirteen recipes and charms</title>
+                            <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                            <incipit><locus from="39v" to="39v">39v</locus> Ad faciendum nerwalt accipe wylsaygh camamelle boteyn verwyn sauge myntyn
+                                sowe herynwod modyrwort warmot water crassyn maluus cheken met sropes of netellis lorelle lewys walwort planteyn
+                                rybwort muser pympernoll tannessey herbe robart anens milfoylle peti consent dicaundy egremon and þe wirt of
+                                orpyn</incipit>
+                            <explicit><locus from="31v" to="23r">40r</locus> for to scle wormus þat is in a hors tak i potell of se coun alle and as
+                                moch alym as ahen ney and melt it and do þerto a porcioun of argollment and seth hem to geder and yf it þe seke to
+                                drinke al cold iij dayes</explicit>
+                            <note>The collection contains a charm against parasites in a horse (<q>ffor to charm a hors of virsaunt</q>).</note>
+                            <note>Added by a single <date notAfter="1500" notBefore="1400">15th-century</date> hand.</note>
+                        </msItem>
+                        <msItem n="55">
+                            <locus from="40r" to="40r">40r</locus>
+                            <title key="">A short medical recipe</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="40r" to="40r">40r</locus> This is for a stubbyng</rubric>
+                            <incipit><locus from="40r" to="40r">40r</locus> Oile balsam, Mercurye, Elisaunder, ffrankencens, Vynegre, þis is for þe
+                            stubbyng</incipit>
+                            <note>Full transcription. Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand.</note>
+                        </msItem>
+                        <msItem n="56">
+                            <locus from="40r" to="40r">40r</locus>
+                            <title key="">Charm against worms in a horse</title>
+                            <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                            <rubric><locus from="40r" to="40r">40r</locus> ffor þe trenchis a charme</rubric>
+                            <incipit><locus from="40r" to="40r">40r</locus> + vrnem + burnem + basion + Tetragramaton + Jepp. + [pentagram] </incipit>
+                            <note>Full transcription. Added by the same <date notAfter="1500" notBefore="1400">15th-century</date> hand that added the next charm.</note>
+                        </msItem>
+                        <msItem n="57">
+                            <locus from="40r" to="40r">40r</locus>
+                            <title key="">Abacadabra charm for curing fever</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <rubric><locus from="40r" to="40r">40r</locus> þis a charme for þe accesse</rubric>
+                            <incipit><locus from="40r" to="40r">40r</locus> Abracalans </incipit>
+                            <explicit><locus from="40r" to="40r">40r</locus> Ab </explicit>
+                            <note>Added by the same <date notAfter="1500" notBefore="1400">15th-century</date> hand that added the previous
+                            charm.</note>
+                        </msItem>
+                        <msItem n="58">
+                            <locus from="40v" to="40v">40v</locus>
+                            <title key="">Medical recipe for dropsy (fragment)</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="40v" to="40v">40v</locus> for the dropesy</rubric>
+                            <incipit><locus from="40v" to="40v">40v</locus> Tak mathagon and grynde hym in ale and dreng hem in ale fast yn
+                            ?etcaetera</incipit>
+                            <note>Full transcription. Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand and repeated twice: the third version
+                                read here because the first version is crossed out and unfinished and the second version is partly cut off (however it
+                                was originally complete, ending slightly differently from the third version: 'in ale ferst and last'). </note>
+                        </msItem>
+                        <msItem n="59">
+                            <locus from="40v" to="40v">40v</locus>
+                            <title key="">Practice alphabet</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="40v" to="40v">40v</locus>+ aabcdeffghijklmnopq</incipit>
+                            <note>Full transcription. Added by a <date notAfter="1500" notBefore="1400">15th-century</date> hand. </note>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <p>
+                            <secFol>
+                                <locus from="2r" to="2r">2r</locus> aclaundre but it ne is non for bysines </secFol>
+                        </p>
+                        <objectDesc form="Codex">
+                            <supportDesc material="perg">
+                                <support>
+                                    <material>Parchment (<term type="disposition">FHHF</term>)</material>
+                                </support>
+                                <extent>
+                                    <seg type="object">Codex: </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="2" type="laterEndleaf">ii</measure> + <measure quantity="36" type="leaf">36</measure> +
+                                            <measure quantity="2" type="laterEndleaf">ii</measure> leaves. </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height quantity="235">235</height>
+                                            <width max="165" min="160">160-165</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+                                <foliation notAfter="1970" notBefore="1947">
+                                    <p>Mid-20th-century foliation:</p>
+                                    <p>[i-ii] + 1-15, 18-29, 31-35, 37-40 + [iii-iv]</p>
+                                    <note>Numbering in pencil in the upper right-hand corner of the rectos. </note>
+                                    <note>Folio numbers 16, 17, 30, 36 assigned to leaves no longer present in the volume (as per historic foliation
+                                        practice at Cambridge University Library).</note>
+                                </foliation>
+                                <collation mainStructures="8">
+                                    <p>
+                                        <list>
+                                            <item>Quire 1<hi rend="superscript">8</hi> (ff. <locus from="1r" to="8v">1-8</locus>)</item>
+                                            <item>Quire 2<hi rend="superscript">8-1</hi> (ff. <locus from="9r" to="15v">9-15</locus>: 8th leaf, f. 16,
+                                                missing)</item>
+                                            <item>Quire 3<hi rend="superscript">8-1</hi> (ff. <locus from="18r" to="24v">18-24</locus>: 1st leaf, f.
+                                                17, missing)</item>
+                                            <item>Quire 4<hi rend="superscript">8-1</hi> (ff. <locus from="25r" to="31v">25-32</locus>: 6th leaf, f.
+                                                30, not present)</item>
+                                            <item>Quire 5<hi rend="superscript">8</hi> (ff. <locus from="33r" to="40v">33-40</locus>: 4th leaf, f. 36,
+                                                not present)</item>
+                                        </list>
+                                    </p>
+                                    <p><formula> 1<hi rend="superscript">8</hi> 2<hi rend="superscript">8-1</hi> (8th leaf excised, probably blank)
+                                                3<hi rend="superscript">8-1</hi> (1st leaf excised, probably blank) 4<hi rend="superscript">8-1</hi>
+                                            (6th leaf not present) 5<hi rend="superscript">8-1</hi> (4th leaf not present) </formula></p>
+                                    <catchwords><seg type="para">A single catchword on f. <locus from="8v" to="8v">8v</locus></seg></catchwords>
+                                </collation>
+                                <condition>Stains on pages, occassionally damaging the text. The final two quires are of thinner parchment with leaves
+                                    that have become much cockled. </condition>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="1" rulingMedium="leadpoint" topLine="below" writtenLines="34">
+                                    <dimensions type="written" unit="mm">
+                                        <height max="185" min="180">180-185</height>
+                                        <width quantity="115">115</width>
+                                    </dimensions>
+                                    <seg type="ruling"> Ruled in leadpoint, frame only, with occasional line ruling. Single columns. 34 lines to the
+                                        page, written below top line. </seg>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote script="cursivaAntiquior">
+                                <p>The manuscript's original texts are written by a single hand in a cursive <term type="script">Anglicana</term>
+                                    script. </p>
+                            </handNote>
+                            <handNote script="cursiva">
+                                <p>The manuscript's added texts are written by various hands in cursive scripts predominantly with <term type="script"
+                                >Anglicana</term> and<term type="script">Secretary</term> features. </p>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote type="plainInit">
+                                <p>Two- and one-line plain initials in blue or red.</p>
+                            </decoNote>
+                            <decoNote type="rubrication">
+                                <p>Titles of recipes have been rubricated in red ink throughout.</p>
+                            </decoNote>
+                            <decoNote type="other">
+                                <p>Paraphs in blue ink throughout.</p>
+                            </decoNote>
+                            <decoNote type="other">
+                                <p>Crosses in charms in blue or red ink.</p>
+                            </decoNote>
+                        </decoDesc>
+                        <additions>
+                            <note><p>'fefty six pound I hath': incomplete marginal note on a payment, added by a hand of the <date notAfter="1700"
+                            notBefore="1500">16th- or 17th-century</date> (f. <locus from="1r" to="1r">1r</locus>).</p></note>
+                            <note><p>'the farcyne': marginal annotation by a <date notAfter="1700" notBefore="1600"> 17th-century</date> hand,
+                            relating to a recipe (f. <locus from="7v" to="7v">7v</locus>). </p></note>
+                            <note><p>'as much sparow gras as came to two ?sh ?peg 4d and 10: incomplete marginal note on a payment added by a hand of
+                            the <date notAfter="1700" notBefore="1600">17th-century</date> (f. <locus from="15r" to="15r"
+                            >15r</locus>).</p></note>
+                            <note><p>'Cresnor + Crespe': a formula, perhaps a charm, perhaps added by a hand of the <date notAfter="1600"
+                            notBefore="1500">16th-century</date> (f. <locus from="15v" to="15v">15v</locus>).</p></note>
+                            <note><p>'Elizabeth ?regina anglie ff': crossed out inscription, added by a hand of the <date notAfter="1600"
+                            notBefore="1550">second half of the 16th century</date> (f. <locus from="18v" to="18v"
+                            >18v</locus>).</p></note>
+                            <note><p>Collation formula by the hand of <persName key="person_v29141885">H.L. Pink</persName>, <date notAfter="1963"
+                            notBefore="1953">c. 1958</date> (<locus from="rear cover, inner" to="rear cover, inner">inside lower
+                            cover</locus>).</p></note>
+                        </additions>
+                        <bindingDesc>
+                            <binding notAfter="1965" notBefore="1965">
+                                <p>Binding by Gray of Cambridge, dated 1965 by a note on the front pastedown. Millboard three-quarter binding with
+                                 marbled cloth covering and brown leather spine. </p>
+                                <p>Binding height: 245 mm, width: 170 mm, depth: 20 mm.</p>
+                                <p>The manuscript was previously bound together with Cambridge, University Library, MSS Dd.4.43, Dd.4.45, and Dd.4.46</p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origDate calendar="Gregorian" cert="high" notAfter="1500" notBefore="1400">First quarter of the 15th century</origDate>
+                            <origPlace key="place_g7002445">England </origPlace>
+                            <p>The original part of the manuscript was copied in the first quarter of the 15th century, but various additions were
+                                made throughout the 15th century (including a few 16th-century additions).</p>
+                            <listBibl>
+                                <bibl> See Connolly (2009), p. 18. </bibl>
+                            </listBibl>
+                        </origin>
+                        <provenance notAfter="1600" notBefore="1500">
+                            <p><name type="fmo">
+                                    <persName type="display">Thomas Hobwood</persName><persName type="standard">Thomas Hobwood</persName></name>: his
+                                unfinished ownership inscription in a <date notBefore="1500" to="1600">16th-century</date> script on f. <locus
+                                    from="1r" to="1r">1r</locus>: 'Thomas Hobwood hys'.</p></provenance>
+                        <provenance notAfter="1700" notBefore="1500">
+                            <p><name type="fmo">
+                                    <persName type="display">Thomas Peapes</persName><persName type="standard">Thomas Peapes</persName></name>: his
+                                name inscribed in a <date notAfter="1600" notBefore="1500">16th-century</date> script in the left margin of <locus
+                                    from="6v" to="6v">6v</locus>: 'by me Thomas Peapes'.</p></provenance>
+                        <provenance notAfter="1765" notBefore="1765">
+                            <p><name type="fmo">
+                                    <persName type="display">John Lane</persName><persName type="standard">John Lane</persName></name>: his name
+                                inscribed in a <date notAfter="1800" notBefore="1600">17th- or 18th-century</date> hand in the upper margin of <locus
+                                    from="1v" to="1v">1v</locus> with the possible date <date notBefore="1765" to="1765">'1765'</date> inscribed in
+                                the upper margin of f. <locus from="2r" to="2r">2r</locus>.</p></provenance>
+                        <provenance notAfter="1714" notBefore="1664"><p><name key="person_v75019443" type="fmo">
+                                    <persName type="display">John Moore (1646-1714), bishop of Ely</persName>
+                                    <persName type="standard">Moore, John, 1646-1714</persName>
+                                </name>: Dd.4.45 (with which Dd.4.43, Dd.4.45, and Dd.4.46 were bound together) is no. 606 in <bibl>Bernard, <hi
+                                        rend="italic">Catalogi librorum manuscriptorum Angliæ et Hiberniæ</hi> (c. 1697)</bibl>.</p></provenance>
+                        <acquisition when="1715"><p>Presented to the University Library in 1715 by <name key="person_v263401905" role="dnr">
+                                    <persName type="display">George I</persName>
+                                    <persName type="standard">George I, King of Great Britain, 1660-1727</persName>
+                                </name>: donation bookplate engraved by <name key="person_v34796690">
+                                    <persName type="display">John Pine</persName>
+                                    <persName type="standard">Pine, John, 1690-1756</persName>
+                                </name> in 1736 on <locus from="front cover, inner" to="front cover, inner">inside upper corner</locus> of CUL MS
+                                Dd.4.43, with which it as previously bound.</p>
+                        </acquisition>
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source>This catalogue entry draws on an unpublished description of the manuscript composed between 1926 and 1930 by
+                                        <name key="person_v88882890"><persName type="display">M.R. James</persName>
+                                        <persName type="standard">James, M.R. (Montague Rhodes), 1862-1936</persName></name>, now held in the
+                                        University Archives (<ref target="https://archivesearch.lib.cam.ac.uk/repositories/2/archival_objects/53125">UA
+                                        ULIB 7/3/74</ref>); and <bibl>Margarget Connolly, <hi rend="italic">Manuscripts in the University Library, Cambridge (Dd-Oo)</hi>, The Index of Middle English Prose (Cambridge: Brewer, 2009)</bibl>.</source>
+                            </recordHist>
+                            <availability>
+                                <p>Entry to read in the Library is permitted only on presentation of a valid reader's card. For information on
+                                    eligibility and admissions procedures, see <ref target="https://www.lib.cam.ac.uk/using-library/joining-library"
+                                        >Joining the Library</ref>). For further information on the availability of the manuscript, please contact the
+                                        <ref target="mss@lib.cam.ac.uk">Manuscripts Reading Room</ref>.</p>
+                            </availability>
+                        </adminInfo>
+                        <listBibl default="false" type="WRAPPER">
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/U5H42LU3" type="book" xml:id="zoteroItem_U5H42LU3">
+                                <monogr>
+                                    <title level="m">A Catalogue of the Manuscripts Preserved in the Library of the University of Cambridge</title>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">1: Dd</biblScope>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1856</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct type="book"
+                                xml:id="Odenstedt1973"
+                                corresp="http://zotero.org/groups/276440/items/DM7TI4IW">
+                                <monogr>
+                                    <title level="m">The Boke of Marchalsi: A 15th Century Treatise on Horse-Breeding and Veterinary Medicine: Edited from MS. Harley 6398</title>
+                                    <author>
+                                        <forename>Bengt</forename>
+                                        <surname>Odenstedt</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Stockholm</pubPlace>
+                                        <publisher>Stockholm University</publisher>
+                                        <date>1973</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Stockholm Theses in English</title>
+                                    <biblScope unit="volume">10</biblScope>
+                                </series>
+                                <note>[without this manuscript]</note>
+                            </biblStruct>
+                            <biblStruct type="journalArticle"
+                                xml:id="Keiser1995"
+                                corresp="http://zotero.org/groups/276440/items/BSUUQNFP">
+                                <analytic>
+                                    <title level="a">Medicines for Horses: The Continuity from Script to Print</title>
+                                    <author>
+                                        <forename>George R.</forename>
+                                        <surname>Keiser</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">The Yale University Library Gazette</title>
+                                    <imprint>
+                                        <biblScope unit="volume">69</biblScope>
+                                        <biblScope unit="issue">3/4</biblScope>
+                                        <biblScope unit="page">111-128</biblScope>
+                                        <date>1995</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 128 n. 10.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/LKA6GYAL" type="journalArticle" xml:id="Connolly2007">
+                                <analytic>
+                                    <title level="a">Practical Reading for Body and Soul in Some Later Medieval Manuscript Miscellanies</title>
+                                    <author>
+                                        <forename>Margaret</forename>
+                                        <surname>Connolly</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Journal of the Early Book Society</title>
+                                    <imprint>
+                                        <biblScope unit="volume">10</biblScope>
+                                        <biblScope unit="page">151-174</biblScope>
+                                        <date>2007</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 152-154, 155, 161, 164-165, 172 fig. 1.</note>
+                            </biblStruct>
+                            <biblStruct type="bookSection"
+                                xml:id="Keiser2008"
+                                corresp="http://zotero.org/groups/276440/items/ZX9RFXML">
+                                <analytic>
+                                    <title level="a">Rosemary: Not Just for Remembrance</title>
+                                    <author>
+                                        <forename>George R.</forename>
+                                        <surname>Keiser</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Health and Healing from the Medieval Garden</title>
+                                    <editor>
+                                        <forename>Peter</forename>
+                                        <surname>Dendle</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>Alain</forename>
+                                        <surname>Touwaide</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Woodbridge</pubPlace>
+                                        <biblScope unit="page">180-204</biblScope>
+                                        <publisher>The Boydell Press</publisher>
+                                        <date>2008</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 198 (as ‘AE6’).</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/RV9PIVP6" type="book" xml:id="Connolly2009">
+                                <monogr>
+                                    <title level="m">Manuscripts in the University Library, Cambridge (Dd-Oo)</title>
+                                    <author><forename>Margaret</forename><surname>Connolly</surname></author>
+                                    <imprint>
+                                        <pubPlace>Woodbridge</pubPlace>
+                                        <publisher>D.S. Brewer</publisher>
+                                        <date>2009</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">Index of Middle English prose</title><biblScope unit="volume">19</biblScope></series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/7VYKPUA2" type="journalArticle" xml:id="Olsan2018">
+                                <analytic>
+                                    <title level="a">Writing on the Hand in Ink: A Late Medieval Innovation in Fever Charms in England</title>
+                                    <author><forename>Lea</forename><surname>Olsan</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Incantatio</title>
+                                    <imprint>
+                                        <biblScope unit="volume">7</biblScope>
+                                        <date>2018</date>
+                                        <note type="url">https://ojs.folklore.ee/incantatio/article/view/68</note>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 34 n. 98, 35, 44. </note>
+                            </biblStruct>
+                            <biblStruct type="book"
+                                xml:id="Clarke2016"
+                                corresp="http://zotero.org/groups/276440/items/6DKZREED">
+                                <monogr>
+                                    <title level="m">&lt;hi rend="italics"&gt;The crafte of lymmyng&lt;/hi&gt; and &lt;hi rend="italics"&gt;The maner of steynyng&lt;/hi&gt;: Middle English Recipes for Painters, Stainers, Scribes and Illuminators</title>
+                                    <editor>
+                                        <forename>Mark</forename>
+                                        <surname>Clarke</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Oxford</pubPlace>
+                                        <publisher>Published for the Early English Text Society by the Oxford University Press</publisher>
+                                        <date>2016</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Early English Text Society (Series). Original series</title>
+                                    <biblScope unit="volume">347</biblScope>
+                                </series>
+                                <note>pp. lxix, 292.</note>
+                            </biblStruct>
+                            <biblStruct type="thesis"
+                                xml:id="Kuipers2020"
+                                corresp="http://zotero.org/groups/276440/items/K8YYIZ3P">
+                                <monogr>
+                                    <title level="m">Dulce et Utile: The (Im)practicality of Agricultural Texts in Middle English Manuscripts and Printed Husbandry Books</title>
+                                    <author>
+                                        <forename>Nadine</forename>
+                                        <surname>Kuipers</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Groningen</pubPlace>
+                                        <date>2020</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 266.</note>
+                            </biblStruct>
+                            <biblStruct type="journalArticle"
+                                xml:id="Reynolds2022"
+                                corresp="http://zotero.org/groups/276440/items/R5B7J7UH">
+                                <analytic>
+                                    <title level="a">How to Cure a Horse, or, the Experience of Knowledge and the Knowledge of Experience</title>
+                                    <author>
+                                        <forename>Melissa</forename>
+                                        <surname>Reynolds</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Historical Studies in the Natural Sciences</title>
+                                    <imprint>
+                                        <biblScope unit="volume">52</biblScope>
+                                        <biblScope unit="issue">4</biblScope>
+                                        <biblScope unit="page">547-553</biblScope>
+                                        <date>2022</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 549 fn. 3 and fn. 4.</note>
+                            </biblStruct>
+                            <biblStruct type="book"
+                                xml:id="Hindley2023"
+                                corresp="http://zotero.org/groups/276440/items/HBQQ2W9A">
+                                <monogr>
+                                    <title level="m">Textual Magic: Charms and Written Amulets in Medieval England</title>
+                                    <author>
+                                        <forename>Katherine Storm</forename>
+                                        <surname>Hindley</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Chicago</pubPlace>
+                                        <publisher>University of Chicago Press</publisher>
+                                        <date>2023</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 17 fn. 47; 194-195; 247 fn. 16.</note>
+                            </biblStruct>
+                            <biblStruct type="book"
+                                xml:id="McGregor2023"
+                                corresp="http://zotero.org/groups/276440/items/2YSNBD74">
+                                <monogr>
+                                    <title level="m">Equine Medicine and Popular Romance in Late Medieval England</title>
+                                    <author>
+                                        <forename>Francine</forename>
+                                        <surname>McGregor</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Leiden ; Boston</pubPlace>
+                                        <publisher>Brill</publisher>
+                                        <date>2023</date>
+                                    </imprint>
+                                </monogr>
+                                <note>132 fn. 34.</note>
+                            </biblStruct>
+                            <biblStruct type="bookSection"
+                                xml:id="Hindley2024"
+                                corresp="http://zotero.org/groups/276440/items/MCRZ3XNR">
+                                <analytic>
+                                    <title level="a">Bodies in the Recipe Collection: Interacting with Manuscript Charms in Late Medieval England</title>
+                                    <author>
+                                        <forename>Katherine Storm</forename>
+                                        <surname>Hindley</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Recipes and Book Culture in England, 1350–1600</title>
+                                    <editor>
+                                        <forename>Carrie</forename>
+                                        <surname>Griffin</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>Hannah</forename>
+                                        <surname>Ryley</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Exeter</pubPlace>
+                                        <biblScope unit="page">197-212</biblScope>
+                                        <publisher>Exeter Studies in Medieval Europe</publisher>
+                                        <date>2024</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 208 fn. 46.</note>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass default="false">
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85143046">Veterinary medicine</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change status="draft" when="20220819">
+                <persName>Dr Clarck Drieshen, Project Cataloguer, Cambridge University Library</persName>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic decls="#document-thumbnail" rend="portrait" url="MS-DD-00004-00044-000-00001"/>
+        <surface n="front cover, outer" xml:id="page-surface-1">
+            <graphic decls="#downloadImageRights #download" height="7289px" rend="portrait" url="MS-DD-00004-00044-000-00001" width="4824px"/>
+        </surface>
+        <surface n="front cover, inner" xml:id="page-surface-2">
+            <graphic decls="#downloadImageRights #download" height="7265px" rend="portrait" url="MS-DD-00004-00044-000-00002" width="4727px"/>
+        </surface>
+        <surface n="[i] recto" xml:id="page-surface-3">
+            <graphic decls="#downloadImageRights #download" height="7096px" rend="portrait" url="MS-DD-00004-00044-000-00003" width="4552px"/>
+        </surface>
+        <surface n="[i] verso" xml:id="page-surface-4">
+            <graphic decls="#downloadImageRights #download" height="7074px" rend="portrait" url="MS-DD-00004-00044-000-00004" width="4661px"/>
+        </surface>
+        <surface n="[ii] recto" xml:id="page-surface-5">
+            <graphic decls="#downloadImageRights #download" height="7096px" rend="portrait" url="MS-DD-00004-00044-000-00005" width="4552px"/>
+        </surface>
+        <surface n="[ii] verso" xml:id="page-surface-6">
+            <graphic decls="#downloadImageRights #download" height="7074px" rend="portrait" url="MS-DD-00004-00044-000-00006" width="4661px"/>
+        </surface>
+        <surface n="1r" xml:id="page-surface-7">
+            <graphic decls="#downloadImageRights #download" height="7096px" rend="portrait" url="MS-DD-00004-00044-000-00007" width="4552px"/>
+        </surface>
+        <surface n="1v" xml:id="page-surface-8">
+            <graphic decls="#downloadImageRights #download" height="7074px" rend="portrait" url="MS-DD-00004-00044-000-00008" width="4661px"/>
+        </surface>
+        <surface n="2r" xml:id="page-surface-9">
+            <graphic decls="#downloadImageRights #download" height="7096px" rend="portrait" url="MS-DD-00004-00044-000-00009" width="4552px"/>
+        </surface>
+        <surface n="2v" xml:id="page-surface-10">
+            <graphic decls="#downloadImageRights #download" height="7074px" rend="portrait" url="MS-DD-00004-00044-000-00010" width="4661px"/>
+        </surface>
+        <surface n="3r" xml:id="page-surface-11">
+            <graphic decls="#downloadImageRights #download" height="7096px" rend="portrait" url="MS-DD-00004-00044-000-00011" width="4552px"/>
+        </surface>
+        <surface n="3v" xml:id="page-surface-12">
+            <graphic decls="#downloadImageRights #download" height="7074px" rend="portrait" url="MS-DD-00004-00044-000-00012" width="4661px"/>
+        </surface>
+        <surface n="4r" xml:id="page-surface-13">
+            <graphic decls="#downloadImageRights #download" height="7096px" rend="portrait" url="MS-DD-00004-00044-000-00013" width="4552px"/>
+        </surface>
+        <surface n="4v" xml:id="page-surface-14">
+            <graphic decls="#downloadImageRights #download" height="7003px" rend="portrait" url="MS-DD-00004-00044-000-00014" width="4442px"/>
+        </surface>
+        <surface n="5r" xml:id="page-surface-15">
+            <graphic decls="#downloadImageRights #download" height="7096px" rend="portrait" url="MS-DD-00004-00044-000-00015" width="4552px"/>
+        </surface>
+        <surface n="5v" xml:id="page-surface-16">
+            <graphic decls="#downloadImageRights #download" height="7003px" rend="portrait" url="MS-DD-00004-00044-000-00016" width="4442px"/>
+        </surface>
+        <surface n="6r" xml:id="page-surface-17">
+            <graphic decls="#downloadImageRights #download" height="7096px" rend="portrait" url="MS-DD-00004-00044-000-00017" width="4552px"/>
+        </surface>
+        <surface n="6v" xml:id="page-surface-18">
+            <graphic decls="#downloadImageRights #download" height="7003px" rend="portrait" url="MS-DD-00004-00044-000-00018" width="4442px"/>
+        </surface>
+        <surface n="7r" xml:id="page-surface-19">
+            <graphic decls="#downloadImageRights #download" height="7096px" rend="portrait" url="MS-DD-00004-00044-000-00019" width="4552px"/>
+        </surface>
+        <surface n="7v" xml:id="page-surface-20">
+            <graphic decls="#downloadImageRights #download" height="7003px" rend="portrait" url="MS-DD-00004-00044-000-00020" width="4442px"/>
+        </surface>
+        <surface n="8r" xml:id="page-surface-21">
+            <graphic decls="#downloadImageRights #download" height="7096px" rend="portrait" url="MS-DD-00004-00044-000-00021" width="4552px"/>
+        </surface>
+        <surface n="8v" xml:id="page-surface-22">
+            <graphic decls="#downloadImageRights #download" height="7003px" rend="portrait" url="MS-DD-00004-00044-000-00022" width="4442px"/>
+        </surface>
+        <surface n="9r" xml:id="page-surface-23">
+            <graphic decls="#downloadImageRights #download" height="7029px" rend="portrait" url="MS-DD-00004-00044-000-00023" width="4552px"/>
+        </surface>
+        <surface n="9v" xml:id="page-surface-24">
+            <graphic decls="#downloadImageRights #download" height="7003px" rend="portrait" url="MS-DD-00004-00044-000-00024" width="4442px"/>
+        </surface>
+        <surface n="10r" xml:id="page-surface-25">
+            <graphic decls="#downloadImageRights #download" height="7029px" rend="portrait" url="MS-DD-00004-00044-000-00025" width="4552px"/>
+        </surface>
+        <surface n="10v" xml:id="page-surface-26">
+            <graphic decls="#downloadImageRights #download" height="7030px" rend="portrait" url="MS-DD-00004-00044-000-00026" width="4475px"/>
+        </surface>
+        <surface n="11r" xml:id="page-surface-27">
+            <graphic decls="#downloadImageRights #download" height="7029px" rend="portrait" url="MS-DD-00004-00044-000-00027" width="4552px"/>
+        </surface>
+        <surface n="11v" xml:id="page-surface-28">
+            <graphic decls="#downloadImageRights #download" height="7030px" rend="portrait" url="MS-DD-00004-00044-000-00028" width="4475px"/>
+        </surface>
+        <surface n="12r" xml:id="page-surface-29">
+            <graphic decls="#downloadImageRights #download" height="7029px" rend="portrait" url="MS-DD-00004-00044-000-00029" width="4552px"/>
+        </surface>
+        <surface n="12v" xml:id="page-surface-30">
+            <graphic decls="#downloadImageRights #download" height="6926px" rend="portrait" url="MS-DD-00004-00044-000-00030" width="4475px"/>
+        </surface>
+        <surface n="13r" xml:id="page-surface-31">
+            <graphic decls="#downloadImageRights #download" height="7029px" rend="portrait" url="MS-DD-00004-00044-000-00031" width="4552px"/>
+        </surface>
+        <surface n="13v" xml:id="page-surface-32">
+            <graphic decls="#downloadImageRights #download" height="6972px" rend="portrait" url="MS-DD-00004-00044-000-00032" width="4459px"/>
+        </surface>
+        <surface n="14r" xml:id="page-surface-33">
+            <graphic decls="#downloadImageRights #download" height="7029px" rend="portrait" url="MS-DD-00004-00044-000-00033" width="4552px"/>
+        </surface>
+        <surface n="14v" xml:id="page-surface-34">
+            <graphic decls="#downloadImageRights #download" height="6928px" rend="portrait" url="MS-DD-00004-00044-000-00034" width="4419px"/>
+        </surface>
+        <surface n="15r" xml:id="page-surface-35">
+            <graphic decls="#downloadImageRights #download" height="7096px" rend="portrait" url="MS-DD-00004-00044-000-00035" width="4552px"/>
+        </surface>
+        <surface n="15v" xml:id="page-surface-36">
+            <graphic decls="#downloadImageRights #download" height="6928px" rend="portrait" url="MS-DD-00004-00044-000-00036" width="4478px"/>
+        </surface>
+        <surface n="18r" xml:id="page-surface-37">
+            <graphic decls="#downloadImageRights #download" height="7096px" rend="portrait" url="MS-DD-00004-00044-000-00037" width="4552px"/>
+        </surface>
+        <surface n="18v" xml:id="page-surface-38">
+            <graphic decls="#downloadImageRights #download" height="6928px" rend="portrait" url="MS-DD-00004-00044-000-00038" width="4419px"/>
+        </surface>
+        <surface n="19r" xml:id="page-surface-39">
+            <graphic decls="#downloadImageRights #download" height="7096px" rend="portrait" url="MS-DD-00004-00044-000-00039" width="4552px"/>
+        </surface>
+        <surface n="19v" xml:id="page-surface-40">
+            <graphic decls="#downloadImageRights #download" height="6928px" rend="portrait" url="MS-DD-00004-00044-000-00040" width="4419px"/>
+        </surface>
+        <surface n="20r" xml:id="page-surface-41">
+            <graphic decls="#downloadImageRights #download" height="7096px" rend="portrait" url="MS-DD-00004-00044-000-00041" width="4552px"/>
+        </surface>
+        <surface n="20v" xml:id="page-surface-42">
+            <graphic decls="#downloadImageRights #download" height="7086px" rend="portrait" url="MS-DD-00004-00044-000-00042" width="4419px"/>
+        </surface>
+        <surface n="21r" xml:id="page-surface-43">
+            <graphic decls="#downloadImageRights #download" height="7096px" rend="portrait" url="MS-DD-00004-00044-000-00043" width="4552px"/>
+        </surface>
+        <surface n="21v" xml:id="page-surface-44">
+            <graphic decls="#downloadImageRights #download" height="7061px" rend="portrait" url="MS-DD-00004-00044-000-00044" width="4390px"/>
+        </surface>
+        <surface n="22r" xml:id="page-surface-45">
+            <graphic decls="#downloadImageRights #download" height="7096px" rend="portrait" url="MS-DD-00004-00044-000-00045" width="4500px"/>
+        </surface>
+        <surface n="22v" xml:id="page-surface-46">
+            <graphic decls="#downloadImageRights #download" height="7061px" rend="portrait" url="MS-DD-00004-00044-000-00046" width="4390px"/>
+        </surface>
+        <surface n="23r" xml:id="page-surface-47">
+            <graphic decls="#downloadImageRights #download" height="7064px" rend="portrait" url="MS-DD-00004-00044-000-00047" width="4492px"/>
+        </surface>
+        <surface n="23v" xml:id="page-surface-48">
+            <graphic decls="#downloadImageRights #download" height="7012px" rend="portrait" url="MS-DD-00004-00044-000-00048" width="4390px"/>
+        </surface>
+        <surface n="24r" xml:id="page-surface-49">
+            <graphic decls="#downloadImageRights #download" height="7064px" rend="portrait" url="MS-DD-00004-00044-000-00049" width="4492px"/>
+        </surface>
+        <surface n="24v" xml:id="page-surface-50">
+            <graphic decls="#downloadImageRights #download" height="7061px" rend="portrait" url="MS-DD-00004-00044-000-00050" width="4390px"/>
+        </surface>
+        <surface n="25r" xml:id="page-surface-51">
+            <graphic decls="#downloadImageRights #download" height="7064px" rend="portrait" url="MS-DD-00004-00044-000-00051" width="4492px"/>
+        </surface>
+        <surface n="25v" xml:id="page-surface-52">
+            <graphic decls="#downloadImageRights #download" height="6954px" rend="portrait" url="MS-DD-00004-00044-000-00052" width="4390px"/>
+        </surface>
+        <surface n="26r" xml:id="page-surface-53">
+            <graphic decls="#downloadImageRights #download" height="7064px" rend="portrait" url="MS-DD-00004-00044-000-00053" width="4492px"/>
+        </surface>
+        <surface n="26v" xml:id="page-surface-54">
+            <graphic decls="#downloadImageRights #download" height="6936px" rend="portrait" url="MS-DD-00004-00044-000-00054" width="4390px"/>
+        </surface>
+        <surface n="27r" xml:id="page-surface-55">
+            <graphic decls="#downloadImageRights #download" height="6984px" rend="portrait" url="MS-DD-00004-00044-000-00055" width="4403px"/>
+        </surface>
+        <surface n="27v" xml:id="page-surface-56">
+            <graphic decls="#downloadImageRights #download" height="6597px" rend="portrait" url="MS-DD-00004-00044-000-00056" width="4419px"/>
+        </surface>
+        <surface n="28r" xml:id="page-surface-57">
+            <graphic decls="#downloadImageRights #download" height="6753px" rend="portrait" url="MS-DD-00004-00044-000-00057" width="4444px"/>
+        </surface>
+        <surface n="28v" xml:id="page-surface-58">
+            <graphic decls="#downloadImageRights #download" height="6597px" rend="portrait" url="MS-DD-00004-00044-000-00058" width="4419px"/>
+        </surface>
+        <surface n="29r" xml:id="page-surface-59">
+            <graphic decls="#downloadImageRights #download" height="6408px" rend="portrait" url="MS-DD-00004-00044-000-00059" width="4436px"/>
+        </surface>
+        <surface n="29v" xml:id="page-surface-60">
+            <graphic decls="#downloadImageRights #download" height="6307px" rend="portrait" url="MS-DD-00004-00044-000-00060" width="4419px"/>
+        </surface>
+        <surface n="31r" xml:id="page-surface-61">
+            <graphic decls="#downloadImageRights #download" height="6633px" rend="portrait" url="MS-DD-00004-00044-000-00061" width="4552px"/>
+        </surface>
+        <surface n="31v" xml:id="page-surface-62">
+            <graphic decls="#downloadImageRights #download" height="6516px" rend="portrait" url="MS-DD-00004-00044-000-00062" width="4419px"/>
+        </surface>
+        <surface n="32r" xml:id="page-surface-63">
+            <graphic decls="#downloadImageRights #download" height="7042px" rend="portrait" url="MS-DD-00004-00044-000-00063" width="4552px"/>
+        </surface>
+        <surface n="32v" xml:id="page-surface-64">
+            <graphic decls="#downloadImageRights #download" height="6955px" rend="portrait" url="MS-DD-00004-00044-000-00064" width="4348px"/>
+        </surface>
+        <surface n="33r" xml:id="page-surface-65">
+            <graphic decls="#downloadImageRights #download" height="7035px" rend="portrait" url="MS-DD-00004-00044-000-00065" width="4552px"/>
+        </surface>
+        <surface n="33v" xml:id="page-surface-66">
+            <graphic decls="#downloadImageRights #download" height="6935px" rend="portrait" url="MS-DD-00004-00044-000-00066" width="4270px"/>
+        </surface>
+        <surface n="34r" xml:id="page-surface-67">
+            <graphic decls="#downloadImageRights #download" height="7044px" rend="portrait" url="MS-DD-00004-00044-000-00067" width="4552px"/>
+        </surface>
+        <surface n="34v" xml:id="page-surface-68">
+            <graphic decls="#downloadImageRights #download" height="6928px" rend="portrait" url="MS-DD-00004-00044-000-00068" width="4419px"/>
+        </surface>
+        <surface n="35r" xml:id="page-surface-69">
+            <graphic decls="#downloadImageRights #download" height="7096px" rend="portrait" url="MS-DD-00004-00044-000-00069" width="4552px"/>
+        </surface>
+        <surface n="35v" xml:id="page-surface-70">
+            <graphic decls="#downloadImageRights #download" height="6908px" rend="portrait" url="MS-DD-00004-00044-000-00070" width="4531px"/>
+        </surface>
+        <surface n="37r" xml:id="page-surface-71">
+            <graphic decls="#downloadImageRights #download" height="6916px" rend="portrait" url="MS-DD-00004-00044-000-00071" width="4552px"/>
+        </surface>
+        <surface n="37v" xml:id="page-surface-72">
+            <graphic decls="#downloadImageRights #download" height="6827px" rend="portrait" url="MS-DD-00004-00044-000-00072" width="4419px"/>
+        </surface>
+        <surface n="38r" xml:id="page-surface-73">
+            <graphic decls="#downloadImageRights #download" height="6725px" rend="portrait" url="MS-DD-00004-00044-000-00073" width="4552px"/>
+        </surface>
+        <surface n="38v" xml:id="page-surface-74">
+            <graphic decls="#downloadImageRights #download" height="6701px" rend="portrait" url="MS-DD-00004-00044-000-00074" width="4442px"/>
+        </surface>
+        <surface n="39r" xml:id="page-surface-75">
+            <graphic decls="#downloadImageRights #download" height="6971px" rend="portrait" url="MS-DD-00004-00044-000-00075" width="4450px"/>
+        </surface>
+        <surface n="39v" xml:id="page-surface-76">
+            <graphic decls="#downloadImageRights #download" height="6928px" rend="portrait" url="MS-DD-00004-00044-000-00076" width="4419px"/>
+        </surface>
+        <surface n="40r" xml:id="page-surface-77">
+            <graphic decls="#downloadImageRights #download" height="6971px" rend="portrait" url="MS-DD-00004-00044-000-00077" width="4249px"/>
+        </surface>
+        <surface n="40v" xml:id="page-surface-78">
+            <graphic decls="#downloadImageRights #download" height="6970px" rend="portrait" url="MS-DD-00004-00044-000-00078" width="4191px"/>
+        </surface>
+        <surface n="[iii] recto" xml:id="page-surface-79">
+            <graphic decls="#downloadImageRights #download" height="7070px" rend="portrait" url="MS-DD-00004-00044-000-00079" width="4613px"/>
+        </surface>
+        <surface n="[iii] verso" xml:id="page-surface-80">
+            <graphic decls="#downloadImageRights #download" height="7026px" rend="portrait" url="MS-DD-00004-00044-000-00080" width="4419px"/>
+        </surface>
+        <surface n="[iv] recto" xml:id="page-surface-81">
+            <graphic decls="#downloadImageRights #download" height="7096px" rend="portrait" url="MS-DD-00004-00044-000-00081" width="4552px"/>
+        </surface>
+        <surface n="[iv] verso" xml:id="page-surface-82">
+            <graphic decls="#downloadImageRights #download" height="7081px" rend="portrait" url="MS-DD-00004-00044-000-00082" width="4556px"/>
+        </surface>
+        <surface n="rear cover, inner" xml:id="page-surface-83">
+            <graphic decls="#downloadImageRights #download" height="7312px" rend="portrait" url="MS-DD-00004-00044-000-00083" width="4735px"/>
+        </surface>
+        <surface n="rear cover, outer" xml:id="page-surface-84">
+            <graphic decls="#downloadImageRights #download" height="7296px" rend="portrait" url="MS-DD-00004-00044-000-00084" width="4953px"/>
+        </surface>
+        <surface n="spine" xml:id="page-surface-85">
+            <graphic decls="#downloadImageRights #download" height="6567px" rend="portrait" url="MS-DD-00004-00044-000-00085" width="1856px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#page-surface-1" n="front cover, outer" xml:id="page-pb-1"/>
+                <pb facs="#page-surface-2" n="front cover, inner" xml:id="page-pb-2"/>
+                <pb facs="#page-surface-3" n="[i] recto" xml:id="page-pb-3"/>
+                <pb facs="#page-surface-4" n="[i] verso" xml:id="page-pb-4"/>
+                <pb facs="#page-surface-5" n="[ii] recto" xml:id="page-pb-5"/>
+                <pb facs="#page-surface-6" n="[ii] verso" xml:id="page-pb-6"/>
+                <pb facs="#page-surface-7" n="1r" xml:id="page-pb-7"/>
+                <pb facs="#page-surface-8" n="1v" xml:id="page-pb-8"/>
+                <pb facs="#page-surface-9" n="2r" xml:id="page-pb-9"/>
+                <pb facs="#page-surface-10" n="2v" xml:id="page-pb-10"/>
+                <pb facs="#page-surface-11" n="3r" xml:id="page-pb-11"/>
+                <pb facs="#page-surface-12" n="3v" xml:id="page-pb-12"/>
+                <pb facs="#page-surface-13" n="4r" xml:id="page-pb-13"/>
+                <pb facs="#page-surface-14" n="4v" xml:id="page-pb-14"/>
+                <pb facs="#page-surface-15" n="5r" xml:id="page-pb-15"/>
+                <pb facs="#page-surface-16" n="5v" xml:id="page-pb-16"/>
+                <pb facs="#page-surface-17" n="6r" xml:id="page-pb-17"/>
+                <pb facs="#page-surface-18" n="6v" xml:id="page-pb-18"/>
+                <pb facs="#page-surface-19" n="7r" xml:id="page-pb-19"/>
+                <pb facs="#page-surface-20" n="7v" xml:id="page-pb-20"/>
+                <pb facs="#page-surface-21" n="8r" xml:id="page-pb-21"/>
+                <pb facs="#page-surface-22" n="8v" xml:id="page-pb-22"/>
+                <pb facs="#page-surface-23" n="9r" xml:id="page-pb-23"/>
+                <pb facs="#page-surface-24" n="9v" xml:id="page-pb-24"/>
+                <pb facs="#page-surface-25" n="10r" xml:id="page-pb-25"/>
+                <pb facs="#page-surface-26" n="10v" xml:id="page-pb-26"/>
+                <pb facs="#page-surface-27" n="11r" xml:id="page-pb-27"/>
+                <pb facs="#page-surface-28" n="11v" xml:id="page-pb-28"/>
+                <pb facs="#page-surface-29" n="12r" xml:id="page-pb-29"/>
+                <pb facs="#page-surface-30" n="12v" xml:id="page-pb-30"/>
+                <pb facs="#page-surface-31" n="13r" xml:id="page-pb-31"/>
+                <pb facs="#page-surface-32" n="13v" xml:id="page-pb-32"/>
+                <pb facs="#page-surface-33" n="14r" xml:id="page-pb-33"/>
+                <pb facs="#page-surface-34" n="14v" xml:id="page-pb-34"/>
+                <pb facs="#page-surface-35" n="15r" xml:id="page-pb-35"/>
+                <pb facs="#page-surface-36" n="15v" xml:id="page-pb-36"/>
+                <pb facs="#page-surface-37" n="18r" xml:id="page-pb-37"/>
+                <pb facs="#page-surface-38" n="18v" xml:id="page-pb-38"/>
+                <pb facs="#page-surface-39" n="19r" xml:id="page-pb-39"/>
+                <pb facs="#page-surface-40" n="19v" xml:id="page-pb-40"/>
+                <pb facs="#page-surface-41" n="20r" xml:id="page-pb-41"/>
+                <pb facs="#page-surface-42" n="20v" xml:id="page-pb-42"/>
+                <pb facs="#page-surface-43" n="21r" xml:id="page-pb-43"/>
+                <pb facs="#page-surface-44" n="21v" xml:id="page-pb-44"/>
+                <pb facs="#page-surface-45" n="22r" xml:id="page-pb-45"/>
+                <pb facs="#page-surface-46" n="22v" xml:id="page-pb-46"/>
+                <pb facs="#page-surface-47" n="23r" xml:id="page-pb-47"/>
+                <pb facs="#page-surface-48" n="23v" xml:id="page-pb-48"/>
+                <pb facs="#page-surface-49" n="24r" xml:id="page-pb-49"/>
+                <pb facs="#page-surface-50" n="24v" xml:id="page-pb-50"/>
+                <pb facs="#page-surface-51" n="25r" xml:id="page-pb-51"/>
+                <pb facs="#page-surface-52" n="25v" xml:id="page-pb-52"/>
+                <pb facs="#page-surface-53" n="26r" xml:id="page-pb-53"/>
+                <pb facs="#page-surface-54" n="26v" xml:id="page-pb-54"/>
+                <pb facs="#page-surface-55" n="27r" xml:id="page-pb-55"/>
+                <pb facs="#page-surface-56" n="27v" xml:id="page-pb-56"/>
+                <pb facs="#page-surface-57" n="28r" xml:id="page-pb-57"/>
+                <pb facs="#page-surface-58" n="28v" xml:id="page-pb-58"/>
+                <pb facs="#page-surface-59" n="29r" xml:id="page-pb-59"/>
+                <pb facs="#page-surface-60" n="29v" xml:id="page-pb-60"/>
+                <pb facs="#page-surface-61" n="31r" xml:id="page-pb-61"/>
+                <pb facs="#page-surface-62" n="31v" xml:id="page-pb-62"/>
+                <pb facs="#page-surface-63" n="32r" xml:id="page-pb-63"/>
+                <pb facs="#page-surface-64" n="32v" xml:id="page-pb-64"/>
+                <pb facs="#page-surface-65" n="33r" xml:id="page-pb-65"/>
+                <pb facs="#page-surface-66" n="33v" xml:id="page-pb-66"/>
+                <pb facs="#page-surface-67" n="34r" xml:id="page-pb-67"/>
+                <pb facs="#page-surface-68" n="34v" xml:id="page-pb-68"/>
+                <pb facs="#page-surface-69" n="35r" xml:id="page-pb-69"/>
+                <pb facs="#page-surface-70" n="35v" xml:id="page-pb-70"/>
+                <pb facs="#page-surface-71" n="37r" xml:id="page-pb-71"/>
+                <pb facs="#page-surface-72" n="37v" xml:id="page-pb-72"/>
+                <pb facs="#page-surface-73" n="38r" xml:id="page-pb-73"/>
+                <pb facs="#page-surface-74" n="38v" xml:id="page-pb-74"/>
+                <pb facs="#page-surface-75" n="39r" xml:id="page-pb-75"/>
+                <pb facs="#page-surface-76" n="39v" xml:id="page-pb-76"/>
+                <pb facs="#page-surface-77" n="40r" xml:id="page-pb-77"/>
+                <pb facs="#page-surface-78" n="40v" xml:id="page-pb-78"/>
+                <pb facs="#page-surface-79" n="[iii] recto" xml:id="page-pb-79"/>
+                <pb facs="#page-surface-80" n="[iii] verso" xml:id="page-pb-80"/>
+                <pb facs="#page-surface-81" n="[iv] recto" xml:id="page-pb-81"/>
+                <pb facs="#page-surface-82" n="[iv] verso" xml:id="page-pb-82"/>
+                <pb facs="#page-surface-83" n="rear cover, inner" xml:id="page-pb-83"/>
+                <pb facs="#page-surface-84" n="rear cover, outer" xml:id="page-pb-84"/>
+                <pb facs="#page-surface-85" n="spine" xml:id="page-pb-85"/>
+            </div>
+        </body>
+    </text>
+</TEI>

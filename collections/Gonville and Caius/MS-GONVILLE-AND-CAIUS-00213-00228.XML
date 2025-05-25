@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, Gonville and Caius College, MS 213/228</title>
+                <funder>Wellcome</funder>
+                <principal>James Freeman</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>University Library</publisher>
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+            <availability xml:id="watermark" status="restricted"><licence>Gonville and Caius College, Cambridge (CC BY-NC 4.0)</licence></availability></publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-GONVILLE-AND-CAIUS-00213-00218" xml:lang="en">
+                    <msIdentifier>
+                        <institution>Gonville and Caius College, Cambridge</institution>
+                        <repository>Gonville and Caius College, Lower Library</repository>
+                        <collection>Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, Gonville and Caius, MS 213/228</idno>
+                    </msIdentifier>
+                    <head>Pseudo-Aristotle, Secreta Secretorum</head>
+                    <msContents>
+                        <summary>
+                            <seg type="para"/>
+                            <!-- Introduction to be written or sourced. Use <seg type="para"></seg>
+                            <seg type="para">Name<lb/>
+                                 Position<lb/>
+                                 Institution</seg>-->
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc material="perg">
+                                <support> </support>
+                                <extent>
+                                    <seg type="object">Codex: </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="4" type="endleaf">4</measure> | <measure quantity="64" type="leaf">64</measure> | <measure quantity="1" type="leaf">1</measure> leaves. </seg>
+                                </extent>
+                                <foliation notAfter="2000" notBefore="1900">
+                                    <p>20th-century foliation</p>
+                                    <p>1-64</p>
+                                    <note>Numbering in pencil in the upper right-hand corner of a select number of rectos: the first rectos of new
+                                        quires (ff. <locus from="9r" to="9r">9r</locus>, <locus from="17r" to="17r">17r</locus>
+                                        <locus from="25r" to="25r">25r</locus>
+                                        <locus from="33r" to="33r">33r</locus>
+                                        <locus from="41r" to="41r">41r</locus>
+                                        <locus from="49r" to="49r">49r</locus>
+                                        <locus from="57r" to="57r">57r</locus>
+                                        <locus from="64r" to="64r">64r</locus>); and the final folio (f. <locus from="64r" to="64r">64r</locus>)</note>
+                                </foliation>
+                                <collation mainStructures="8">
+                                    <formula>1-8<hi rend="superscript">8</hi></formula>
+                                </collation>
+                            </supportDesc>
+                        </objectDesc>
+                        <bindingDesc>
+                            <binding notAfter="1550" notBefore="1400">
+                                <p>Original 15th- or early 16th-century binding: reversed whittawed leather over wooden boards, with the remains of a
+                                    leather strap on the front cover and a hole for a pin on the lower cover</p>
+                                <p>Binding height: 170 mm, width: 110 mm, depth: 25 mm </p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <acquisition notAfter="1659" notBefore="1600">Perhaps given to the Gonville and Caius College by <name key="person_v49234661" role="dnr">
+                                <persName type="display">William Moore (bap. 1590-1659), librarian and collector of manuscripts</persName>
+                                <persName type="standard">Moore, William, bap. 1590-1659</persName></name>, as suggested by M.R. James. The College's
+                            printed armorial bookplate with the classmark number '228' inscribed in red ink, and a separtae paper pastedown with the
+                            number '213' inscribed in brown ink, on the <locus from="front cover, inner" to="front cover, inner">inside of the upper
+                                cover</locus>. </acquisition>
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source> This catalogue entry partly draws on M. R. James, <bibl><hi rend="italic">A descriptive catalogue of the
+                                            manuscripts in the library of Gonville and Caius College</hi>, vol. 1 (Cambridge, 1908)</bibl>, pp.
+                                    250-251. </source>
+                            </recordHist>
+                            <availability status="restricted">
+                                <p>Visitors to Gonville and Caius College who wish to consult Lower Library material are required to apply to the
+                                    Library in advance of their visit. For information on eligibility and admission procedures see: <ref target="https://www.cai.cam.ac.uk/discover/library">Gonville and Caius College: Library Information</ref>.</p>
+                            </availability>
+                        </adminInfo>
+                        <listBibl type="WRAPPER">
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/D5SZ9SKN" type="journalArticle" xml:id="Pouzet2017">
+                                <analytic>
+                                    <title level="a">Towards Reconstructing Manuscript-Collecting in 17th-c. Cambridge: Observations on William
+                                        Moore's Catalogue and Some Manuscripts</title>
+                                    <idno type="DOI">10.3406/bamed.2017.1189</idno>
+                                    <title type="short">Towards Reconstructing Manuscript-Collecting in 17th-c. Cambridge</title>
+                                    <author><forename>Jean-Pascal</forename><surname>Pouzet</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <imprint>
+                                        <biblScope unit="volume">91</biblScope>
+                                        <biblScope unit="issue">1</biblScope>
+                                        <biblScope unit="page">55-70</biblScope>
+                                        <date>2017</date>
+                                        <note type="url">https://www.persee.fr/doc/bamed_0240-8805_2017_num_91_1_1189</note>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s" type="alternative">Bulletin des Anglicistes Médiévistes / Etudes Médiévales
+                                    Anglaises</title></series>
+                                <note>p. 60. </note>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>
+                    <msPart>
+                        <msIdentifier>
+                            <altIdentifier>
+                                <idno>Cambridge, Gonville and Caius College, MS 213/228, ff. [i], [iv], [v]</idno>
+                                <msName>Part 1</msName>
+                            </altIdentifier>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="la">Latin</textLang>
+                            <msItem n="1">
+                                <locus from="[i] recto" to="[iv] verso">[i] recto, [iv] verso</locus>
+                                <title key="">Household accounts (fragment)</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="[iv] verso" to="[iv] verso">[iv] verso</locus> ffeod. et vad.</rubric>
+                                <incipit><locus from="[iv] verso" to="[i] recto">[iv] verso-[i] recto</locus> Idem comput. in denar. solut. Radd[...]
+                                    Botiller milit. dominus de Suedeley Constabular. Castri d[e] Conwy</incipit>
+                                <note>f. [i] and f. [iv] originally formed of a single leaf, but it has been folded in half to create a bifolium of
+                                    flyleaves for the current manuscript. Consequently, the texts on f. [i] recto and f. [iv] verso run continuously
+                                    and the original document begins on f. [iv] verso.</note>
+                            </msItem>
+                            <msItem n="2">
+                                <locus from="[v] verso" to="[v] verso">[v] verso</locus>
+                                <title key="">Household accounts (fragment)</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <note>This leaf is part of the same document as ff. <locus from="[i] recto" to="[i] verso">[i] recto-[i] verso</locus>
+                                    and <locus from="[iv] recto" to="[iv] verso">[iv] recto-[iv] verso</locus>. While the latter leaves form a
+                                    bifolium, f. [v] has lost its counterpart, the preceding folio, which has been excised.</note>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <objectDesc form="Fragment">
+                                <supportDesc material="perg">
+                                    <support>
+                                        <material>Parchment</material>
+                                    </support>
+                                    <extent>
+                                        <seg>This part comprises a <objectType>fragment</objectType>, consisting of three parchment leaves that
+                                            originally were part of a single parchment document, perhaps a charter or roll. These fragments make up a
+                                            single bifolium (ff. [i], [iv]) at the beginnig of the manuscript - with another bifolium (ff. [ii]-[iii])
+                                            bound inside it that comes from another manuscript - and a single leaf at the end (f. v) that was taken of
+                                            the same document and also folded into a bifolium to create flyleaves for this manuscript. However, the
+                                            first leaf of the latter bifolium was cut out, leaving only a stub. </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="3" type="endleaf">3</measure> leaves.
+                                        </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="165">165</height>
+                                                <width max="110" min="105">105-110</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                    <condition>ff. [i] and [v] contain various tears and many small holes, perhaps caused by insects. </condition>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout columns="1">
+                                        <seg type="ruling"> No ruling visible. Since the original document has been cut up, the number of lines to the
+                                            page cannot be established. </seg>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="Cursiva">
+                                    <p>Written in a Gothic cursive script of the <date notAfter="1500" notBefore="1400"> 15th century</date>,
+                                        containing both <term type="script">Anglicana</term> and <term type="script">Secretary</term> features. </p>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote type="plainInit">
+                                    <p>One large brown initial on f. <locus from="[iv] verso" to="[iv] verso">[iv] verso</locus>.</p>
+                                </decoNote>
+                            </decoDesc>
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1461" notBefore="1441"> Copied between 1441 and 1461. </origDate>
+                                <p>The text opens with a payment to Ralph Boteler (c. 1394-1473) [previously unidentified], soldier and administrator,
+                                    who is here referred to as 'Lord of Sudeley' and 'Constable of Conwy Castle'. Since he was created 1st Baron
+                                    Sudeley in 1441 and was Constable of Conwy Castle between 1436 and 1461, the document must have been written
+                                    between 1441 and 1461.</p>
+                                <origPlace cert="high" key="place_g7002445">England </origPlace>
+                            </origin>
+                        </history>
+                    </msPart>
+
+                    <msPart>
+                        <msIdentifier>
+                            <altIdentifier>
+                                <idno>Cambridge, Gonville and Caius College, MS 213/228, ff. [ii]-[iii], 1-64</idno>
+                                <msName>Part 2</msName>
+                            </altIdentifier>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="la" otherLangs="la">Latin and Middle English</textLang>
+                            <msItem n="1">
+                                <locus from="[ii] verso" to="[iii] verso">[ii] verso-[iii] verso</locus>
+                                <title key="">Eight medical recipes</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <note>Four recipes for the stone, three for fevers and one for wind. The first four are identical to the Middle
+                                    English recipes on f. <locus from="58r" to="58v">58r-58v</locus> and the latter three are identical to the Middle
+                                    English recipes on ff. <locus from="61r" to="61v">61r-61v</locus> and may be copied by the same hand. </note>
+                            </msItem>
+                            <msItem n="2">
+                                <locus from="1r" to="58r">1r-58r</locus>
+                                <title key="work_3861">Secreta Secretorum</title>
+                                <author key="person_v2581859">Pseudo-Aristotle</author>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="1r" to="1r">1r</locus> De prohemio cuiusdam doctoris in commemoracione Aristotelis. Incipit
+                                    Secreta Secretroum Aristotelis. </rubric>
+                                <incipit><locus from="1r" to="1r">1r</locus> Deus omnipotens custodiat Regem nostrum</incipit>
+                                <finalRubric><locus from="58r" to="58r">58r</locus> Explicit liber Aristotelis de secretis secretorum in regimine
+                                    sanitatis.</finalRubric>
+                                <explicit><locus from="58r" to="58r">58r</locus> completus est tractatus de signis et moribus naturalibus hominum ad
+                                    regem magnificum Alexandrum qui dominus fuit tocius orbis. </explicit>
+                            </msItem>
+                            <msItem n="3">
+                                <locus from="58r" to="61v">58r-61v</locus>
+                                <title key="">Medical recipes</title>
+                                <textLang mainLang="la" otherLangs="enm">Latin and Middle English</textLang>
+                                <note>This collection contains four Middle English medical recipes for the stone (3) and fever (1) (ff. <locus from="58r" to="58v">58r-58v</locus>), containing the first four recipes of the collection copied on ff. <locus from="[ii] verso" to="[iii] verso">[ii] verso-[iii] verso</locus>, and three Middle English medical recipes
+                                    for wind (1) and fever (3) (ff. <locus from="61r" to="61v">61r-61v</locus>), containing the the last three recipes
+                                    of the collection copied on ff. <locus from="[ii] verso" to="[iii] verso">[ii] verso-[iii] verso</locus>. </note>
+                                <note>The collection includes a recipe by Arnaldus de Villanova on f. <locus from="58v" to="58v">58v</locus>,
+                                    beginning: 'Recipe roris madio collecti de mundissimis herbis'.</note>
+                                <note>The collection includes an 'Unguentum album Magistri Petri de Capella' (f. <locus from="60r" to="60r">60r</locus>).</note>
+                                <listBibl>
+                                    <bibl>Lynn Thorndike, History of Magic and Experimental Science, Vol. III: Fourteenth and Fifteenth Centuries (New
+                                        York: Columbia University Press, 1934), p. 72</bibl>
+                                    <bibl>eTK t0255160000</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="4">
+                                <locus from="61v" to="64r">61v-64r</locus>
+                                <title key="">List of chapters to the Secreta Secretorum</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="61v" to="61v">61v</locus> Hec sunt capitula libri Aristotelis de secretis secretorum </rubric>
+                                <incipit><locus from="61v" to="61v">61v</locus> De prohemio cuiusdam doctoris in commemoracione Aristotelis</incipit>
+                                <explicit><locus from="64r" to="64r">64r</locus> De lege Rege et [?]pecuniam .82.</explicit>
+                                <finalRubric><locus from="64r" to="64r">64r</locus> Explicit Capitula</finalRubric>
+                            </msItem>
+                            <msItem n="5">
+                                <locus from="64r" to="64r">64r</locus>
+                                <title key="">Prayer (fragment)</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="64r" to="64r">64r</locus> to þe ihesu þe sone of god aboue / þat of Marie þe maydyn</incipit>
+                                <note>Full transcription; added in the (?) <date notAfter="1500" notBefore="1400">15th century</date>.</note>
+                            </msItem>
+                            <msItem n="6">
+                                <locus from="64v" to="64v">64v</locus>
+                                <title key="">Gibberish verse</title>
+                                <textLang mainLang="la" otherLangs="en">Latin and English</textLang>
+                                <incipit><locus from="64v" to="64v">64v</locus> In domino confido vit hont parrat is laided / In the coventer[e] and
+                                    cannat get out than cain / [G]rese[n] gag coit hase ba[r]d and hes mabli share / Wit ho[r]er hur legis all bare to
+                                    hem sh[...]</incipit>
+                                <note>Full transcription (attempted); perhaps added in the late <date notBefore="1450" to="1550"> 15th or early 16th
+                                        century</date>.</note>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="2r" to="2r">2r</locus> fama sua </secFol>
+                            </p>
+                            <objectDesc form="Codex">
+                                <supportDesc material="perg">
+                                    <support>
+                                        <material>Parchment (<term type="disposition">HFFH</term>)</material>
+                                    </support>
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="2" type="endLeaf">2</measure> +
+                                            <measure quantity="64" type="Leaf">64</measure> leaves
+                                        </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="165">165</height>
+                                                <width max="110" min="110">110</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                    <collation mainStructures="8">
+                                        <list>
+                                            <item>Bifolium (ff. <locus from="[ii] recto" to="[iii] verso">[ii]-[iii]</locus>)</item>
+                                            <item>Quires 1-8<hi rend="superscript">8</hi> (ff. <locus from="1r" to="64v">1-64</locus>)</item>
+                                        </list>
+                                        <signatures type="leaf"><p>Leaf signatures consisting of letters ('a'-'h') andRoman numerals ('i'-'iiij') on
+                                                the lower right-hand corners of the rectos of the first halves of quires throughout ff. <locus from="1r" to="64v">1r-64v</locus></p></signatures>
+                                        <catchwords><seg type="para">Catchwords on the lower right-hand corners of the last versos of quires
+                                                throughout ff. <locus from="1r" to="64v">1r-64v</locus></seg></catchwords>
+                                    </collation>
+                                    <condition> ff. <locus from="[ii] recto" to="[iii] verso">[ii]-[iii]</locus> feature various small holes, perhaps
+                                        caused by insects. Some minor stains throughout ff. <locus from="1r" to="64v">1-64</locus>, but without
+                                        affecting the text </condition>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout columns="1" rulingMedium="leadpoint" topLine="above" writtenLines="19 21">
+                                        <dimensions type="written" unit="mm">
+                                            <height quantity="115">115</height>
+                                            <width quantity="70">70</width>
+                                        </dimensions>
+                                        <seg type="ruling"> Ruled in leadpoint, frame only. Single columns. 19-21 lines to the page, written above top
+                                            line. </seg>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="cursivaAntiquior">
+                                    <p>Written in <term type="script">Anglicana</term> by a single scribe.</p>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote type="lineFill">
+                                    <p>A line filler consisting of three wavy lines in black ink on f. <locus from="1r" to="1r">1r</locus></p>
+                                </decoNote>
+                                <decoNote type="other">
+                                    <p>Guide letters for large (2- and 3-line) initials throughout ff. <locus from="1r" to="58r">1r-58r</locus></p>
+                                </decoNote>
+                            </decoDesc>
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1500" notBefore="1400"> 15th century. </origDate>
+                                <origPlace cert="high" key="place_g7002445">England</origPlace>
+                            </origin>
+                        </history>
+                    </msPart>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85100849">Philosophy </term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change status="draft" when="20220912">
+                <persName>Dr Clarck Drieshen, Project Cataloguer, Cambridge University Library</persName>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic decls="#document-thumbnail" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00001"/>
+        <surface n="front cover, outer" xml:id="page-surface-1">
+            <graphic decls="#downloadImageRights #download" height="6630px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00001" width="4232px"/>
+        </surface>
+        <surface n="front cover, inner" xml:id="page-surface-2">
+            <graphic decls="#downloadImageRights #download" height="6781px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00002" width="4064px"/>
+        </surface>
+        <surface n="[i] recto" xml:id="page-surface-3">
+            <graphic decls="#downloadImageRights #download" height="6404px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00003" width="3779px"/>
+        </surface>
+        <surface n="[i] verso" xml:id="page-surface-4">
+            <graphic decls="#downloadImageRights #download" height="6482px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00004" width="3903px"/>
+        </surface>
+        <surface n="[ii] recto" xml:id="page-surface-5">
+            <graphic decls="#downloadImageRights #download" height="6267px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00005" width="3926px"/>
+        </surface>
+        <surface n="[ii] verso" xml:id="page-surface-6">
+            <graphic decls="#downloadImageRights #download" height="6339px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00006" width="4045px"/>
+        </surface>
+        <surface n="[iii] recto" xml:id="page-surface-7">
+            <graphic decls="#downloadImageRights #download" height="6201px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00007" width="3886px"/>
+        </surface>
+        <surface n="[iii] verso" xml:id="page-surface-8">
+            <graphic decls="#downloadImageRights #download" height="6240px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00008" width="4037px"/>
+        </surface>
+        <surface n="[iv] recto" xml:id="page-surface-9">
+            <graphic decls="#downloadImageRights #download" height="6312px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00009" width="3849px"/>
+        </surface>
+        <surface n="[iv] verso" xml:id="page-surface-10">
+            <graphic decls="#downloadImageRights #download" height="6405px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00010" width="3943px"/>
+        </surface>
+        <surface n="1r" xml:id="page-surface-11">
+            <graphic decls="#downloadImageRights #download" height="6476px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00011" width="3846px"/>
+        </surface>
+        <surface n="1v" xml:id="page-surface-12">
+            <graphic decls="#downloadImageRights #download" height="6405px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00012" width="3943px"/>
+        </surface>
+        <surface n="2r" xml:id="page-surface-13">
+            <graphic decls="#downloadImageRights #download" height="6509px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00013" width="3822px"/>
+        </surface>
+        <surface n="2v" xml:id="page-surface-14">
+            <graphic decls="#downloadImageRights #download" height="6405px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00014" width="3943px"/>
+        </surface>
+        <surface n="3r" xml:id="page-surface-15">
+            <graphic decls="#downloadImageRights #download" height="6547px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00015" width="3751px"/>
+        </surface>
+        <surface n="3v" xml:id="page-surface-16">
+            <graphic decls="#downloadImageRights #download" height="6405px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00016" width="3943px"/>
+        </surface>
+        <surface n="4r" xml:id="page-surface-17">
+            <graphic decls="#downloadImageRights #download" height="6547px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00017" width="3711px"/>
+        </surface>
+        <surface n="4v" xml:id="page-surface-18">
+            <graphic decls="#downloadImageRights #download" height="6405px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00018" width="3943px"/>
+        </surface>
+        <surface n="5r" xml:id="page-surface-19">
+            <graphic decls="#downloadImageRights #download" height="6547px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00019" width="3711px"/>
+        </surface>
+        <surface n="5v" xml:id="page-surface-20">
+            <graphic decls="#downloadImageRights #download" height="6405px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00020" width="3943px"/>
+        </surface>
+        <surface n="6r" xml:id="page-surface-21">
+            <graphic decls="#downloadImageRights #download" height="6380px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00021" width="3711px"/>
+        </surface>
+        <surface n="6v" xml:id="page-surface-22">
+            <graphic decls="#downloadImageRights #download" height="6405px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00022" width="3943px"/>
+        </surface>
+        <surface n="7r" xml:id="page-surface-23">
+            <graphic decls="#downloadImageRights #download" height="6505px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00023" width="3711px"/>
+        </surface>
+        <surface n="7v" xml:id="page-surface-24">
+            <graphic decls="#downloadImageRights #download" height="6405px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00024" width="3943px"/>
+        </surface>
+        <surface n="8r" xml:id="page-surface-25">
+            <graphic decls="#downloadImageRights #download" height="6547px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00025" width="3711px"/>
+        </surface>
+        <surface n="8v" xml:id="page-surface-26">
+            <graphic decls="#downloadImageRights #download" height="6405px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00026" width="3943px"/>
+        </surface>
+        <surface n="9r" xml:id="page-surface-27">
+            <graphic decls="#downloadImageRights #download" height="6383px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00027" width="3854px"/>
+        </surface>
+        <surface n="9v" xml:id="page-surface-28">
+            <graphic decls="#downloadImageRights #download" height="6405px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00028" width="3943px"/>
+        </surface>
+        <surface n="10r" xml:id="page-surface-29">
+            <graphic decls="#downloadImageRights #download" height="6353px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00029" width="3847px"/>
+        </surface>
+        <surface n="10v" xml:id="page-surface-30">
+            <graphic decls="#downloadImageRights #download" height="6326px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00030" width="3943px"/>
+        </surface>
+        <surface n="11r" xml:id="page-surface-31">
+            <graphic decls="#downloadImageRights #download" height="6337px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00031" width="3812px"/>
+        </surface>
+        <surface n="11v" xml:id="page-surface-32">
+            <graphic decls="#downloadImageRights #download" height="6326px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00032" width="3910px"/>
+        </surface>
+        <surface n="12r" xml:id="page-surface-33">
+            <graphic decls="#downloadImageRights #download" height="6475px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00033" width="3813px"/>
+        </surface>
+        <surface n="12v" xml:id="page-surface-34">
+            <graphic decls="#downloadImageRights #download" height="6361px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00034" width="3954px"/>
+        </surface>
+        <surface n="13r" xml:id="page-surface-35">
+            <graphic decls="#downloadImageRights #download" height="6475px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00035" width="3801px"/>
+        </surface>
+        <surface n="13v" xml:id="page-surface-36">
+            <graphic decls="#downloadImageRights #download" height="6352px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00036" width="3971px"/>
+        </surface>
+        <surface n="14r" xml:id="page-surface-37">
+            <graphic decls="#downloadImageRights #download" height="6475px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00037" width="3813px"/>
+        </surface>
+        <surface n="14v" xml:id="page-surface-38">
+            <graphic decls="#downloadImageRights #download" height="6326px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00038" width="3910px"/>
+        </surface>
+        <surface n="15r" xml:id="page-surface-39">
+            <graphic decls="#downloadImageRights #download" height="6345px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00039" width="3813px"/>
+        </surface>
+        <surface n="15v" xml:id="page-surface-40">
+            <graphic decls="#downloadImageRights #download" height="6326px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00040" width="3910px"/>
+        </surface>
+        <surface n="16r" xml:id="page-surface-41">
+            <graphic decls="#downloadImageRights #download" height="6345px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00041" width="3813px"/>
+        </surface>
+        <surface n="16v" xml:id="page-surface-42">
+            <graphic decls="#downloadImageRights #download" height="6326px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00042" width="3910px"/>
+        </surface>
+        <surface n="17r" xml:id="page-surface-43">
+            <graphic decls="#downloadImageRights #download" height="6354px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00043" width="3813px"/>
+        </surface>
+        <surface n="17v" xml:id="page-surface-44">
+            <graphic decls="#downloadImageRights #download" height="6326px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00044" width="3934px"/>
+        </surface>
+        <surface n="18r" xml:id="page-surface-45">
+            <graphic decls="#downloadImageRights #download" height="6372px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00045" width="3717px"/>
+        </surface>
+        <surface n="18v" xml:id="page-surface-46">
+            <graphic decls="#downloadImageRights #download" height="6326px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00046" width="3910px"/>
+        </surface>
+        <surface n="19r" xml:id="page-surface-47">
+            <graphic decls="#downloadImageRights #download" height="6395px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00047" width="3813px"/>
+        </surface>
+        <surface n="19v" xml:id="page-surface-48">
+            <graphic decls="#downloadImageRights #download" height="6326px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00048" width="3910px"/>
+        </surface>
+        <surface n="20r" xml:id="page-surface-49">
+            <graphic decls="#downloadImageRights #download" height="6348px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00049" width="3642px"/>
+        </surface>
+        <surface n="20v" xml:id="page-surface-50">
+            <graphic decls="#downloadImageRights #download" height="6326px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00050" width="3910px"/>
+        </surface>
+        <surface n="21r" xml:id="page-surface-51">
+            <graphic decls="#downloadImageRights #download" height="6346px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00051" width="3743px"/>
+        </surface>
+        <surface n="21v" xml:id="page-surface-52">
+            <graphic decls="#downloadImageRights #download" height="6349px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00052" width="4064px"/>
+        </surface>
+        <surface n="22r" xml:id="page-surface-53">
+            <graphic decls="#downloadImageRights #download" height="6389px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00053" width="3777px"/>
+        </surface>
+        <surface n="22v" xml:id="page-surface-54">
+            <graphic decls="#downloadImageRights #download" height="6349px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00054" width="4064px"/>
+        </surface>
+        <surface n="23r" xml:id="page-surface-55">
+            <graphic decls="#downloadImageRights #download" height="6389px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00055" width="3739px"/>
+        </surface>
+        <surface n="23v" xml:id="page-surface-56">
+            <graphic decls="#downloadImageRights #download" height="6349px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00056" width="4064px"/>
+        </surface>
+        <surface n="24r" xml:id="page-surface-57">
+            <graphic decls="#downloadImageRights #download" height="6389px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00057" width="3777px"/>
+        </surface>
+        <surface n="24v" xml:id="page-surface-58">
+            <graphic decls="#downloadImageRights #download" height="6349px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00058" width="4064px"/>
+        </surface>
+        <surface n="25r" xml:id="page-surface-59">
+            <graphic decls="#downloadImageRights #download" height="6411px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00059" width="3939px"/>
+        </surface>
+        <surface n="25v" xml:id="page-surface-60">
+            <graphic decls="#downloadImageRights #download" height="6349px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00060" width="4064px"/>
+        </surface>
+        <surface n="26r" xml:id="page-surface-61">
+            <graphic decls="#downloadImageRights #download" height="6323px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00061" width="3758px"/>
+        </surface>
+        <surface n="26v" xml:id="page-surface-62">
+            <graphic decls="#downloadImageRights #download" height="6349px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00062" width="4064px"/>
+        </surface>
+        <surface n="27r" xml:id="page-surface-63">
+            <graphic decls="#downloadImageRights #download" height="6319px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00063" width="3678px"/>
+        </surface>
+        <surface n="27v" xml:id="page-surface-64">
+            <graphic decls="#downloadImageRights #download" height="6349px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00064" width="4030px"/>
+        </surface>
+        <surface n="28r" xml:id="page-surface-65">
+            <graphic decls="#downloadImageRights #download" height="6407px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00065" width="3743px"/>
+        </surface>
+        <surface n="28v" xml:id="page-surface-66">
+            <graphic decls="#downloadImageRights #download" height="6349px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00066" width="4064px"/>
+        </surface>
+        <surface n="29r" xml:id="page-surface-67">
+            <graphic decls="#downloadImageRights #download" height="6318px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00067" width="3730px"/>
+        </surface>
+        <surface n="29v" xml:id="page-surface-68">
+            <graphic decls="#downloadImageRights #download" height="6349px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00068" width="4064px"/>
+        </surface>
+        <surface n="30r" xml:id="page-surface-69">
+            <graphic decls="#downloadImageRights #download" height="6377px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00069" width="3667px"/>
+        </surface>
+        <surface n="30v" xml:id="page-surface-70">
+            <graphic decls="#downloadImageRights #download" height="6349px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00070" width="4064px"/>
+        </surface>
+        <surface n="31r" xml:id="page-surface-71">
+            <graphic decls="#downloadImageRights #download" height="6406px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00071" width="3794px"/>
+        </surface>
+        <surface n="31v" xml:id="page-surface-72">
+            <graphic decls="#downloadImageRights #download" height="6349px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00072" width="4064px"/>
+        </surface>
+        <surface n="32r" xml:id="page-surface-73">
+            <graphic decls="#downloadImageRights #download" height="6475px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00073" width="3829px"/>
+        </surface>
+        <surface n="32v" xml:id="page-surface-74">
+            <graphic decls="#downloadImageRights #download" height="6349px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00074" width="3979px"/>
+        </surface>
+        <surface n="33r" xml:id="page-surface-75">
+            <graphic decls="#downloadImageRights #download" height="6338px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00075" width="3864px"/>
+        </surface>
+        <surface n="33v" xml:id="page-surface-76">
+            <graphic decls="#downloadImageRights #download" height="6349px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00076" width="3979px"/>
+        </surface>
+        <surface n="34r" xml:id="page-surface-77">
+            <graphic decls="#downloadImageRights #download" height="6338px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00077" width="3864px"/>
+        </surface>
+        <surface n="34v" xml:id="page-surface-78">
+            <graphic decls="#downloadImageRights #download" height="6349px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00078" width="3979px"/>
+        </surface>
+        <surface n="35r" xml:id="page-surface-79">
+            <graphic decls="#downloadImageRights #download" height="6338px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00079" width="3864px"/>
+        </surface>
+        <surface n="35v" xml:id="page-surface-80">
+            <graphic decls="#downloadImageRights #download" height="6502px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00080" width="3979px"/>
+        </surface>
+        <surface n="36r" xml:id="page-surface-81">
+            <graphic decls="#downloadImageRights #download" height="6415px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00081" width="3864px"/>
+        </surface>
+        <surface n="36v" xml:id="page-surface-82">
+            <graphic decls="#downloadImageRights #download" height="6502px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00082" width="3979px"/>
+        </surface>
+        <surface n="37r" xml:id="page-surface-83">
+            <graphic decls="#downloadImageRights #download" height="6415px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00083" width="3864px"/>
+        </surface>
+        <surface n="37v" xml:id="page-surface-84">
+            <graphic decls="#downloadImageRights #download" height="6502px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00084" width="3979px"/>
+        </surface>
+        <surface n="38r" xml:id="page-surface-85">
+            <graphic decls="#downloadImageRights #download" height="6415px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00085" width="3864px"/>
+        </surface>
+        <surface n="38v" xml:id="page-surface-86">
+            <graphic decls="#downloadImageRights #download" height="6502px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00086" width="3979px"/>
+        </surface>
+        <surface n="39r" xml:id="page-surface-87">
+            <graphic decls="#downloadImageRights #download" height="6503px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00087" width="3879px"/>
+        </surface>
+        <surface n="39v" xml:id="page-surface-88">
+            <graphic decls="#downloadImageRights #download" height="6502px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00088" width="3979px"/>
+        </surface>
+        <surface n="40r" xml:id="page-surface-89">
+            <graphic decls="#downloadImageRights #download" height="6503px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00089" width="3879px"/>
+        </surface>
+        <surface n="40v" xml:id="page-surface-90">
+            <graphic decls="#downloadImageRights #download" height="6502px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00090" width="3979px"/>
+        </surface>
+        <surface n="41r" xml:id="page-surface-91">
+            <graphic decls="#downloadImageRights #download" height="6503px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00091" width="3879px"/>
+        </surface>
+        <surface n="41v" xml:id="page-surface-92">
+            <graphic decls="#downloadImageRights #download" height="6502px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00092" width="3979px"/>
+        </surface>
+        <surface n="42r" xml:id="page-surface-93">
+            <graphic decls="#downloadImageRights #download" height="6456px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00093" width="3823px"/>
+        </surface>
+        <surface n="42v" xml:id="page-surface-94">
+            <graphic decls="#downloadImageRights #download" height="6502px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00094" width="3979px"/>
+        </surface>
+        <surface n="43r" xml:id="page-surface-95">
+            <graphic decls="#downloadImageRights #download" height="6446px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00095" width="3879px"/>
+        </surface>
+        <surface n="43v" xml:id="page-surface-96">
+            <graphic decls="#downloadImageRights #download" height="6502px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00096" width="3979px"/>
+        </surface>
+        <surface n="44r" xml:id="page-surface-97">
+            <graphic decls="#downloadImageRights #download" height="6503px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00097" width="3879px"/>
+        </surface>
+        <surface n="44v" xml:id="page-surface-98">
+            <graphic decls="#downloadImageRights #download" height="6451px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00098" width="3925px"/>
+        </surface>
+        <surface n="45r" xml:id="page-surface-99">
+            <graphic decls="#downloadImageRights #download" height="6503px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00099" width="3879px"/>
+        </surface>
+        <surface n="45v" xml:id="page-surface-100">
+            <graphic decls="#downloadImageRights #download" height="6431px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00100" width="3872px"/>
+        </surface>
+        <surface n="46r" xml:id="page-surface-101">
+            <graphic decls="#downloadImageRights #download" height="6503px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00101" width="3879px"/>
+        </surface>
+        <surface n="46v" xml:id="page-surface-102">
+            <graphic decls="#downloadImageRights #download" height="6448px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00102" width="3840px"/>
+        </surface>
+        <surface n="47r" xml:id="page-surface-103">
+            <graphic decls="#downloadImageRights #download" height="6454px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00103" width="3882px"/>
+        </surface>
+        <surface n="47v" xml:id="page-surface-104">
+            <graphic decls="#downloadImageRights #download" height="6448px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00104" width="3840px"/>
+        </surface>
+        <surface n="48r" xml:id="page-surface-105">
+            <graphic decls="#downloadImageRights #download" height="6503px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00105" width="3879px"/>
+        </surface>
+        <surface n="48v" xml:id="page-surface-106">
+            <graphic decls="#downloadImageRights #download" height="6448px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00106" width="3840px"/>
+        </surface>
+        <surface n="49r" xml:id="page-surface-107">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00107" width="3879px"/>
+        </surface>
+        <surface n="49v" xml:id="page-surface-108">
+            <graphic decls="#downloadImageRights #download" height="6347px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00108" width="3840px"/>
+        </surface>
+        <surface n="50r" xml:id="page-surface-109">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00109" width="3879px"/>
+        </surface>
+        <surface n="50v" xml:id="page-surface-110">
+            <graphic decls="#downloadImageRights #download" height="6409px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00110" width="3840px"/>
+        </surface>
+        <surface n="51r" xml:id="page-surface-111">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00111" width="3879px"/>
+        </surface>
+        <surface n="51v" xml:id="page-surface-112">
+            <graphic decls="#downloadImageRights #download" height="6399px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00112" width="3840px"/>
+        </surface>
+        <surface n="52r" xml:id="page-surface-113">
+            <graphic decls="#downloadImageRights #download" height="6462px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00113" width="3921px"/>
+        </surface>
+        <surface n="52v" xml:id="page-surface-114">
+            <graphic decls="#downloadImageRights #download" height="6399px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00114" width="3840px"/>
+        </surface>
+        <surface n="53r" xml:id="page-surface-115">
+            <graphic decls="#downloadImageRights #download" height="6524px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00115" width="3921px"/>
+        </surface>
+        <surface n="53v" xml:id="page-surface-116">
+            <graphic decls="#downloadImageRights #download" height="6399px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00116" width="3840px"/>
+        </surface>
+        <surface n="54r" xml:id="page-surface-117">
+            <graphic decls="#downloadImageRights #download" height="6524px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00117" width="3921px"/>
+        </surface>
+        <surface n="54v" xml:id="page-surface-118">
+            <graphic decls="#downloadImageRights #download" height="6399px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00118" width="3840px"/>
+        </surface>
+        <surface n="55r" xml:id="page-surface-119">
+            <graphic decls="#downloadImageRights #download" height="6399px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00119" width="3852px"/>
+        </surface>
+        <surface n="55v" xml:id="page-surface-120">
+            <graphic decls="#downloadImageRights #download" height="6399px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00120" width="3840px"/>
+        </surface>
+        <surface n="56r" xml:id="page-surface-121">
+            <graphic decls="#downloadImageRights #download" height="6442px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00121" width="3852px"/>
+        </surface>
+        <surface n="56v" xml:id="page-surface-122">
+            <graphic decls="#downloadImageRights #download" height="6399px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00122" width="3840px"/>
+        </surface>
+        <surface n="57r" xml:id="page-surface-123">
+            <graphic decls="#downloadImageRights #download" height="6396px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00123" width="3936px"/>
+        </surface>
+        <surface n="57v" xml:id="page-surface-124">
+            <graphic decls="#downloadImageRights #download" height="6399px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00124" width="3840px"/>
+        </surface>
+        <surface n="58r" xml:id="page-surface-125">
+            <graphic decls="#downloadImageRights #download" height="6396px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00125" width="3936px"/>
+        </surface>
+        <surface n="58v" xml:id="page-surface-126">
+            <graphic decls="#downloadImageRights #download" height="6358px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00126" width="3985px"/>
+        </surface>
+        <surface n="59r" xml:id="page-surface-127">
+            <graphic decls="#downloadImageRights #download" height="6396px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00127" width="3936px"/>
+        </surface>
+        <surface n="59v" xml:id="page-surface-128">
+            <graphic decls="#downloadImageRights #download" height="6358px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00128" width="3985px"/>
+        </surface>
+        <surface n="60r" xml:id="page-surface-129">
+            <graphic decls="#downloadImageRights #download" height="6396px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00129" width="3936px"/>
+        </surface>
+        <surface n="60v" xml:id="page-surface-130">
+            <graphic decls="#downloadImageRights #download" height="6358px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00130" width="3985px"/>
+        </surface>
+        <surface n="61r" xml:id="page-surface-131">
+            <graphic decls="#downloadImageRights #download" height="6396px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00131" width="3936px"/>
+        </surface>
+        <surface n="61v" xml:id="page-surface-132">
+            <graphic decls="#downloadImageRights #download" height="6358px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00132" width="3985px"/>
+        </surface>
+        <surface n="62r" xml:id="page-surface-133">
+            <graphic decls="#downloadImageRights #download" height="6396px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00133" width="3936px"/>
+        </surface>
+        <surface n="62v" xml:id="page-surface-134">
+            <graphic decls="#downloadImageRights #download" height="6356px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00134" width="3979px"/>
+        </surface>
+        <surface n="63r" xml:id="page-surface-135">
+            <graphic decls="#downloadImageRights #download" height="6396px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00135" width="3936px"/>
+        </surface>
+        <surface n="63v" xml:id="page-surface-136">
+            <graphic decls="#downloadImageRights #download" height="6356px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00136" width="3979px"/>
+        </surface>
+        <surface n="64r" xml:id="page-surface-137">
+            <graphic decls="#downloadImageRights #download" height="6396px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00137" width="3936px"/>
+        </surface>
+        <surface n="64v" xml:id="page-surface-138">
+            <graphic decls="#downloadImageRights #download" height="6356px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00138" width="3979px"/>
+        </surface>
+        <surface n="[v] recto" xml:id="page-surface-139">
+            <graphic decls="#downloadImageRights #download" height="6396px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00139" width="3936px"/>
+        </surface>
+        <surface n="[v] verso" xml:id="page-surface-140">
+            <graphic decls="#downloadImageRights #download" height="6502px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00140" width="3979px"/>
+        </surface>
+        <surface n="rear cover, inner" xml:id="page-surface-141">
+            <graphic decls="#downloadImageRights #download" height="6659px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00141" width="4025px"/>
+        </surface>
+        <surface n="rear cover, outer" xml:id="page-surface-142">
+            <graphic decls="#downloadImageRights #download" height="6652px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00142" width="4156px"/>
+        </surface>
+        <surface n="spine" xml:id="page-surface-143">
+            <graphic decls="#downloadImageRights #download" height="5851px" rend="portrait" url="MS-GONVILLE-AND-CAIUS-00213-00228-000-00143" width="2680px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#page-surface-1" n="front cover, outer" xml:id="page-pb-1"/>
+                <pb facs="#page-surface-2" n="front cover, inner" xml:id="page-pb-2"/>
+                <pb facs="#page-surface-3" n="[i] recto" xml:id="page-pb-3"/>
+                <pb facs="#page-surface-4" n="[i] verso" xml:id="page-pb-4"/>
+                <pb facs="#page-surface-5" n="[ii] recto" xml:id="page-pb-5"/>
+                <pb facs="#page-surface-6" n="[ii] verso" xml:id="page-pb-6"/>
+                <pb facs="#page-surface-7" n="[iii] recto" xml:id="page-pb-7"/>
+                <pb facs="#page-surface-8" n="[iii] verso" xml:id="page-pb-8"/>
+                <pb facs="#page-surface-9" n="[iv] recto" xml:id="page-pb-9"/>
+                <pb facs="#page-surface-10" n="[iv] verso" xml:id="page-pb-10"/>
+                <pb facs="#page-surface-11" n="1r" xml:id="page-pb-11"/>
+                <pb facs="#page-surface-12" n="1v" xml:id="page-pb-12"/>
+                <pb facs="#page-surface-13" n="2r" xml:id="page-pb-13"/>
+                <pb facs="#page-surface-14" n="2v" xml:id="page-pb-14"/>
+                <pb facs="#page-surface-15" n="3r" xml:id="page-pb-15"/>
+                <pb facs="#page-surface-16" n="3v" xml:id="page-pb-16"/>
+                <pb facs="#page-surface-17" n="4r" xml:id="page-pb-17"/>
+                <pb facs="#page-surface-18" n="4v" xml:id="page-pb-18"/>
+                <pb facs="#page-surface-19" n="5r" xml:id="page-pb-19"/>
+                <pb facs="#page-surface-20" n="5v" xml:id="page-pb-20"/>
+                <pb facs="#page-surface-21" n="6r" xml:id="page-pb-21"/>
+                <pb facs="#page-surface-22" n="6v" xml:id="page-pb-22"/>
+                <pb facs="#page-surface-23" n="7r" xml:id="page-pb-23"/>
+                <pb facs="#page-surface-24" n="7v" xml:id="page-pb-24"/>
+                <pb facs="#page-surface-25" n="8r" xml:id="page-pb-25"/>
+                <pb facs="#page-surface-26" n="8v" xml:id="page-pb-26"/>
+                <pb facs="#page-surface-27" n="9r" xml:id="page-pb-27"/>
+                <pb facs="#page-surface-28" n="9v" xml:id="page-pb-28"/>
+                <pb facs="#page-surface-29" n="10r" xml:id="page-pb-29"/>
+                <pb facs="#page-surface-30" n="10v" xml:id="page-pb-30"/>
+                <pb facs="#page-surface-31" n="11r" xml:id="page-pb-31"/>
+                <pb facs="#page-surface-32" n="11v" xml:id="page-pb-32"/>
+                <pb facs="#page-surface-33" n="12r" xml:id="page-pb-33"/>
+                <pb facs="#page-surface-34" n="12v" xml:id="page-pb-34"/>
+                <pb facs="#page-surface-35" n="13r" xml:id="page-pb-35"/>
+                <pb facs="#page-surface-36" n="13v" xml:id="page-pb-36"/>
+                <pb facs="#page-surface-37" n="14r" xml:id="page-pb-37"/>
+                <pb facs="#page-surface-38" n="14v" xml:id="page-pb-38"/>
+                <pb facs="#page-surface-39" n="15r" xml:id="page-pb-39"/>
+                <pb facs="#page-surface-40" n="15v" xml:id="page-pb-40"/>
+                <pb facs="#page-surface-41" n="16r" xml:id="page-pb-41"/>
+                <pb facs="#page-surface-42" n="16v" xml:id="page-pb-42"/>
+                <pb facs="#page-surface-43" n="17r" xml:id="page-pb-43"/>
+                <pb facs="#page-surface-44" n="17v" xml:id="page-pb-44"/>
+                <pb facs="#page-surface-45" n="18r" xml:id="page-pb-45"/>
+                <pb facs="#page-surface-46" n="18v" xml:id="page-pb-46"/>
+                <pb facs="#page-surface-47" n="19r" xml:id="page-pb-47"/>
+                <pb facs="#page-surface-48" n="19v" xml:id="page-pb-48"/>
+                <pb facs="#page-surface-49" n="20r" xml:id="page-pb-49"/>
+                <pb facs="#page-surface-50" n="20v" xml:id="page-pb-50"/>
+                <pb facs="#page-surface-51" n="21r" xml:id="page-pb-51"/>
+                <pb facs="#page-surface-52" n="21v" xml:id="page-pb-52"/>
+                <pb facs="#page-surface-53" n="22r" xml:id="page-pb-53"/>
+                <pb facs="#page-surface-54" n="22v" xml:id="page-pb-54"/>
+                <pb facs="#page-surface-55" n="23r" xml:id="page-pb-55"/>
+                <pb facs="#page-surface-56" n="23v" xml:id="page-pb-56"/>
+                <pb facs="#page-surface-57" n="24r" xml:id="page-pb-57"/>
+                <pb facs="#page-surface-58" n="24v" xml:id="page-pb-58"/>
+                <pb facs="#page-surface-59" n="25r" xml:id="page-pb-59"/>
+                <pb facs="#page-surface-60" n="25v" xml:id="page-pb-60"/>
+                <pb facs="#page-surface-61" n="26r" xml:id="page-pb-61"/>
+                <pb facs="#page-surface-62" n="26v" xml:id="page-pb-62"/>
+                <pb facs="#page-surface-63" n="27r" xml:id="page-pb-63"/>
+                <pb facs="#page-surface-64" n="27v" xml:id="page-pb-64"/>
+                <pb facs="#page-surface-65" n="28r" xml:id="page-pb-65"/>
+                <pb facs="#page-surface-66" n="28v" xml:id="page-pb-66"/>
+                <pb facs="#page-surface-67" n="29r" xml:id="page-pb-67"/>
+                <pb facs="#page-surface-68" n="29v" xml:id="page-pb-68"/>
+                <pb facs="#page-surface-69" n="30r" xml:id="page-pb-69"/>
+                <pb facs="#page-surface-70" n="30v" xml:id="page-pb-70"/>
+                <pb facs="#page-surface-71" n="31r" xml:id="page-pb-71"/>
+                <pb facs="#page-surface-72" n="31v" xml:id="page-pb-72"/>
+                <pb facs="#page-surface-73" n="32r" xml:id="page-pb-73"/>
+                <pb facs="#page-surface-74" n="32v" xml:id="page-pb-74"/>
+                <pb facs="#page-surface-75" n="33r" xml:id="page-pb-75"/>
+                <pb facs="#page-surface-76" n="33v" xml:id="page-pb-76"/>
+                <pb facs="#page-surface-77" n="34r" xml:id="page-pb-77"/>
+                <pb facs="#page-surface-78" n="34v" xml:id="page-pb-78"/>
+                <pb facs="#page-surface-79" n="35r" xml:id="page-pb-79"/>
+                <pb facs="#page-surface-80" n="35v" xml:id="page-pb-80"/>
+                <pb facs="#page-surface-81" n="36r" xml:id="page-pb-81"/>
+                <pb facs="#page-surface-82" n="36v" xml:id="page-pb-82"/>
+                <pb facs="#page-surface-83" n="37r" xml:id="page-pb-83"/>
+                <pb facs="#page-surface-84" n="37v" xml:id="page-pb-84"/>
+                <pb facs="#page-surface-85" n="38r" xml:id="page-pb-85"/>
+                <pb facs="#page-surface-86" n="38v" xml:id="page-pb-86"/>
+                <pb facs="#page-surface-87" n="39r" xml:id="page-pb-87"/>
+                <pb facs="#page-surface-88" n="39v" xml:id="page-pb-88"/>
+                <pb facs="#page-surface-89" n="40r" xml:id="page-pb-89"/>
+                <pb facs="#page-surface-90" n="40v" xml:id="page-pb-90"/>
+                <pb facs="#page-surface-91" n="41r" xml:id="page-pb-91"/>
+                <pb facs="#page-surface-92" n="41v" xml:id="page-pb-92"/>
+                <pb facs="#page-surface-93" n="42r" xml:id="page-pb-93"/>
+                <pb facs="#page-surface-94" n="42v" xml:id="page-pb-94"/>
+                <pb facs="#page-surface-95" n="43r" xml:id="page-pb-95"/>
+                <pb facs="#page-surface-96" n="43v" xml:id="page-pb-96"/>
+                <pb facs="#page-surface-97" n="44r" xml:id="page-pb-97"/>
+                <pb facs="#page-surface-98" n="44v" xml:id="page-pb-98"/>
+                <pb facs="#page-surface-99" n="45r" xml:id="page-pb-99"/>
+                <pb facs="#page-surface-100" n="45v" xml:id="page-pb-100"/>
+                <pb facs="#page-surface-101" n="46r" xml:id="page-pb-101"/>
+                <pb facs="#page-surface-102" n="46v" xml:id="page-pb-102"/>
+                <pb facs="#page-surface-103" n="47r" xml:id="page-pb-103"/>
+                <pb facs="#page-surface-104" n="47v" xml:id="page-pb-104"/>
+                <pb facs="#page-surface-105" n="48r" xml:id="page-pb-105"/>
+                <pb facs="#page-surface-106" n="48v" xml:id="page-pb-106"/>
+                <pb facs="#page-surface-107" n="49r" xml:id="page-pb-107"/>
+                <pb facs="#page-surface-108" n="49v" xml:id="page-pb-108"/>
+                <pb facs="#page-surface-109" n="50r" xml:id="page-pb-109"/>
+                <pb facs="#page-surface-110" n="50v" xml:id="page-pb-110"/>
+                <pb facs="#page-surface-111" n="51r" xml:id="page-pb-111"/>
+                <pb facs="#page-surface-112" n="51v" xml:id="page-pb-112"/>
+                <pb facs="#page-surface-113" n="52r" xml:id="page-pb-113"/>
+                <pb facs="#page-surface-114" n="52v" xml:id="page-pb-114"/>
+                <pb facs="#page-surface-115" n="53r" xml:id="page-pb-115"/>
+                <pb facs="#page-surface-116" n="53v" xml:id="page-pb-116"/>
+                <pb facs="#page-surface-117" n="54r" xml:id="page-pb-117"/>
+                <pb facs="#page-surface-118" n="54v" xml:id="page-pb-118"/>
+                <pb facs="#page-surface-119" n="55r" xml:id="page-pb-119"/>
+                <pb facs="#page-surface-120" n="55v" xml:id="page-pb-120"/>
+                <pb facs="#page-surface-121" n="56r" xml:id="page-pb-121"/>
+                <pb facs="#page-surface-122" n="56v" xml:id="page-pb-122"/>
+                <pb facs="#page-surface-123" n="57r" xml:id="page-pb-123"/>
+                <pb facs="#page-surface-124" n="57v" xml:id="page-pb-124"/>
+                <pb facs="#page-surface-125" n="58r" xml:id="page-pb-125"/>
+                <pb facs="#page-surface-126" n="58v" xml:id="page-pb-126"/>
+                <pb facs="#page-surface-127" n="59r" xml:id="page-pb-127"/>
+                <pb facs="#page-surface-128" n="59v" xml:id="page-pb-128"/>
+                <pb facs="#page-surface-129" n="60r" xml:id="page-pb-129"/>
+                <pb facs="#page-surface-130" n="60v" xml:id="page-pb-130"/>
+                <pb facs="#page-surface-131" n="61r" xml:id="page-pb-131"/>
+                <pb facs="#page-surface-132" n="61v" xml:id="page-pb-132"/>
+                <pb facs="#page-surface-133" n="62r" xml:id="page-pb-133"/>
+                <pb facs="#page-surface-134" n="62v" xml:id="page-pb-134"/>
+                <pb facs="#page-surface-135" n="63r" xml:id="page-pb-135"/>
+                <pb facs="#page-surface-136" n="63v" xml:id="page-pb-136"/>
+                <pb facs="#page-surface-137" n="64r" xml:id="page-pb-137"/>
+                <pb facs="#page-surface-138" n="64v" xml:id="page-pb-138"/>
+                <pb facs="#page-surface-139" n="[v] recto" xml:id="page-pb-139"/>
+                <pb facs="#page-surface-140" n="[v] verso" xml:id="page-pb-140"/>
+                <pb facs="#page-surface-141" n="rear cover, inner" xml:id="page-pb-141"/>
+                <pb facs="#page-surface-142" n="rear cover, outer" xml:id="page-pb-142"/>
+                <pb facs="#page-surface-143" n="spine" xml:id="page-pb-143"/>
+            </div>
+        </body>
+    </text>
+</TEI>

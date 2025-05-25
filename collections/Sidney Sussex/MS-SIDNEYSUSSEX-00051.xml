@@ -1,0 +1,2032 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, Sidney Sussex College, MS 51</title>
+                <funder>Wellcome</funder>
+                <principal>James Freeman</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+            <availability xml:id="watermark" status="restricted"><licence>Sidney Sussex College, Cambridge (CC BY-NC 4.0)</licence></availability></publicationStmt>
+
+            <sourceDesc>
+                <msDesc xml:id="MS-SIDNEYSUSSEX-00051" xml:lang="en">
+
+                    <msIdentifier>
+                        <institution>Sidney Sussex College, Cambridge</institution>
+                        <repository>Sidney Sussex College Muniment Room</repository>
+                        <collection>Special Collections</collection>
+                        <idno type="shelfmark">Cambridge, Sidney Sussex College, MS 51</idno>
+                        <altIdentifier type="internal">
+                            <idno type="former">MS Δ.3.6</idno>
+                        </altIdentifier>
+
+
+                    </msIdentifier>
+
+                    <head>Hildebertus et alii</head>
+
+                    <msContents>
+                        <summary>
+                            <seg type="para">Cambridge, Sidney Sussex College, MS 51 is a composite manuscript, with all parts probably made in
+                                England (perhaps at the Cathedral Priory in Durham) in the twelfth century. The manuscript contains four parts: Part 1
+                                is a collection of religious poetry attributed to <name key="person_v282035032">
+                                    <persName type="display">Hildebert of Lavardin</persName>
+                                    <persName type="standard">Hildebert of Lavardin</persName>
+                                </name> (c. 1056 - c. 1133); Part 2 is a treatise on the Eucharist once thought to be by Gerbert of Aurillac, but now
+                                more usually attributed to <name key="person_v5725477">
+                                    <persName type="display">Heriger of Lobbes</persName>
+                                    <persName type="standard">Heriger of Lobbes</persName>
+                                </name> (c. 925 - 1007); Part 3 is a collection of medical recipes that also includes a small group of culinary
+                                recipes for sauces; and Part 4 is a gloss on the Psalms. </seg>
+                            <seg type="para">Although the medieval origin of Sidney Sussex MS 51 is harder to establish, evidence within the volume
+                                indicates that all 4 parts were bound together and were part of the Durham library collection by the late 12th or
+                                early 13th centuries. There are two lists of the contents of the volume in Durham hands of this period on the medieval
+                                endleaves, ff. <locus from="[i] recto" to="[i] recto">[i] recto</locus> and <locus from="[iii] verso" to="[iii] verso">[iii] verso</locus>. In addition, the manuscript also appears in the 1391 'Spendement' Catalogue of the books
+                                belonging to the Durham Priory community where it is recorded as follows: 'P. Uersus Hildeberti de Exposicione Missae.
+                                Tractatus de corpore Christi. Regulae de Medicinale. Glosa in Psalterium. II fo. Neve superveniens' (see Botfield, <hi rend="italic">Catalogi Veteres</hi>); the 'P' siglum is present in the manuscript in the upper outer corner on f.
+                                    <locus from="1r" to="1r">1r</locus>. </seg>
+                            <seg type="para">Sidney Sussex MS 51 received renewed attention in 2015 when an article by Professors Giles Gasper and
+                                Faith Wallis described a series of culinary recipies for sauces situated in the midst of the collection of medical
+                                recipes and charms in the third part of this manuscript. The culinary recipes in Sidney Sussex MS 51 are described as
+                                being 'Salsamenta pictavensium', i.e., 'sauces of the Poitevins', or 'sauces from Poitou', essentially a collection of
+                                sauces from a region in western France. The Gasper and Wallis article describes not only the significance of the
+                                culinary recipes in Sidney Sussex MS 51, but also discusses the medical recipe collection which surrounds the culinary
+                                recipes and explores the evidence for medical recipe collection and medical practice in 12th century England. </seg>
+                            <seg type="para"> During the preparation of this catalogue record for the Curious Cures project, further information was
+                                discovered which appears to confirm a theory about the identity of the donor of the manuscript to Sidney Sussex
+                                College. <name cert="med" key="person_v100213869" role="fmo">
+                                    <persName type="display">Samuel Ward</persName>
+                                    <persName type="standard">Samuel Ward</persName>
+                                </name> (b. 1572, d. 1643, master 1610-1643), a former master of Sidney Sussex College and a donor of other books and
+                                manuscripts to the College library, has long been suspected to be the donor of Sidney Sussex 51. However, the book
+                                does not bear any of the typical indications of his ownership, nor is it explicitly described in any of the records of
+                                his donations to the College. Nevertheless, it seems very likely that Sidney Sussex MS 51 can be identified as a book
+                                seen in Ward's possession before 1625 by Ward's friend, the author and Archbishop of Armagh, <name key="person_v68969862">
+                                    <persName type="display">James Ussher</persName>
+                                    <persName type="standard">James Ussher</persName>
+                                </name>. In Ussher's <hi rend="italic">An answer to a challenge made by a Iesuite in Ireland</hi> (1625), Ussher wrote
+                                (abbreviations expanded, spelling modernised): '[i]n the libraries of my worthy friends, Sir Robert Cotton, (that
+                                noble Baronett, so <sic>renowmed</sic> for his great care in collecting and preserving all antiquities) and Dr Ward,
+                                the learned Master of Sidney <sic>Colledge</sic> in Cambridge; I met with an ancient Treatise of the Sacrament
+                                (beginning thus: <hi rend="italic">Sicut ante nos quidam sapiens dixit, cujus sententiam probamus, licet nomen
+                                    ignoremus.) </hi> which is the same with that in the Iesuites <sic>Colledge</sic> at Lovaine, <sic>blindely</sic>
+                                fathered upon Berengarius'. This quotation matches the text of the treatise on the Eucharist in Sidney Sussex MS 51
+                                ff. <locus from="17r" to="26v">17r-26v</locus>.</seg>
+                            <seg type="para">The text that Ussher is referring to is the <hi rend="italic">Dicta Herigeri abbatis de corpore et
+                                    sanguine Domini</hi> now usually attributed to <name key="person_v5725477">
+                                    <persName type="display">Heriger of Lobbes</persName>
+                                    <persName type="standard">Heriger of Lobbes</persName>
+                                </name>, but which was for a long time believed to be by Berengar of Tours. The <hi rend="italic">Dicta Herigeri</hi>
+                                survives in very few manuscript copies, and the likelihood is that the one Ussher saw in Ward's hands is the same
+                                manuscript that came into the possession of Ward's former college. The only difficulty that remains is that Ward is
+                                known to have donated a number of manuscripts and printed books to the College library. A list of these is preserved
+                                in the college archives, but it does not appear to describe a manuscript identifiable as Sidney Sussex MS 51. It may
+                                be that Ward gave the manuscript as a separate donation, or that left Ward's possession and came to Sidney Sussex
+                                indirectly by some other route, as happened with many of Ward's personal papers (see Todd, 1985). The manuscript had
+                                certainly arrived at the College by c. 1697, when its presence was recorded in Bernard's <hi rend="italic">Catalogi
+                                    librorum manuscriptorum Angliæ et Hiberniæ</hi> (c. 1697), p. 104, no. 714. </seg>
+                            <seg type="para">Dr Sarah Gilbert<lb/> Project Cataloguer for the Curious Cures Project<lb/> Cambridge University
+                                Library</seg>
+                            <seg type="para">
+                                <hi rend="bold">References</hi>
+                                <listBibl>
+                                    <bibl>G. E. M. Gasper, and F. Wallis, ‘Salsamenta Pictavensium: Gastronomy and Medicine in Twelfth-Century
+                                        England’, <hi rend="italic">English Historical Review</hi>, 131.553 (2016), 1353–85</bibl>
+                                    <bibl>J. Ussher <hi rend="italic">An answer to a challenge made by a Iesuite in Ireland</hi> (1625)</bibl>
+                                    <bibl>J. Raine, and B. Botfield (eds.), <hi rend="italic">Catalogi Veteres Librorum Ecclesiae Cathedralis Dunelm.
+                                            Catalogues of the Library of Durham Cathedral, at Various Periods, from the Conquest to the Dissolution,
+                                            Including Catalogues of the Library of the Abbey of Hulne, and of the MSs. Preserved in the Library of
+                                            Bishop Cosin, at Durham</hi>, Publications of the Surtees Society 7 (1834)</bibl>
+                                    <bibl>M. Todd, 'The Samuel Ward Papers at Sidney Sussex College, Cambridge', <hi rend="italic">Transactions of the
+                                            Cambridge Bibliographical Society</hi> 8.5 (1985), pp. 582-592</bibl>
+                                </listBibl>
+                            </seg>
+                        </summary>
+
+                    </msContents>
+
+
+
+                    <physDesc>
+                        <p>
+                            <secFol>
+                                <locus from="2r" to="2r">2r</locus>: Neue superueniens </secFol>
+                        </p>
+                        <objectDesc>
+                            <supportDesc material="perg">
+                                <support>Parchment of variable thickness and quality throughout. </support>
+
+                                <extent>
+                                    <seg type="object">Codex: </seg>
+                                    <seg type="leaf">
+                                        <measure type="laterEndleaf">i</measure> + <measure quantity="3" type="endleaf">3</measure>
+                                        <measure quantity="16" type="leaf">16</measure> | <measure quantity="10" type="leaf">10</measure> | <measure quantity="20" type="leaf">20</measure> | <measure quantity="58" type="leaf">58</measure> + <measure quantity="1" type="laterEndleaf">i</measure> leaves. </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height quantity="225">225</height>
+                                            <width quantity="130">130</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+
+                                <foliation notAfter="2000" notBefore="1900">
+                                    <p>20th century foliation sequence. </p>
+                                    <p>[a] + [i]-[iii] + 1-16 | 17-26 | 27-46 | 47-104 + [b]</p>
+                                    <note>Foliated in pencil in Hindu-Arabic numerals in the upper outer corner of the first recto of most quires, and
+                                        occasionally on intermediary leaves. The endleaves that lacked official designations in this foliation
+                                        sequence were assigned temporary folio designations enclosed in [square brackets] in this record in November
+                                        2023 in order to produce a functional TEI-XML catalogue record for this item. </note>
+                                </foliation>
+
+                                <collation mainStructures="8 10 12"> A composite manuscript with the quires and Parts arranged as follows: <list>
+                                        <item>Three medieval parchment flyleaves (ff. [i]-[iii]) +</item>
+                                        <item>Quires 1-2<hi rend="superscript">8</hi> (ff. <locus from="1r" to="16v">1r-16v</locus>) |</item>
+                                        <item>Quire 3<hi rend="superscript">10</hi> (ff. <locus from="17r" to="26v">17-26</locus>) |</item>
+                                        <item>Quires 4-5<hi rend="superscript">10</hi> (ff. <locus from="27r" to="46v">27-46</locus>) |</item>
+                                        <item>Quires 6-9<hi rend="superscript">8</hi> (ff. <locus from="47r" to="78v">47-78</locus>)</item>
+                                        <item>Quire 10<hi rend="superscript">10</hi> (ff. <locus from="79r" to="88v">79-88</locus>)</item>
+                                        <item>Quire 11<hi rend="superscript">12</hi> (ff. <locus from="89r" to="100v">89r-100v</locus>)</item>
+                                        <item>Quire 12<hi rend="superscript">4</hi> (ff. <locus from="101r" to="104v">101-104</locus>)</item>
+                                    </list>
+                                    <formula> Three medieval parchment flyleaves + 1-2<hi rend="superscript">8</hi> | 3<hi rend="superscript">10</hi>
+                                        | 4-5<hi rend="superscript">10</hi> | 6-9<hi rend="superscript">8</hi> 10<hi rend="superscript">10</hi> 11<hi rend="superscript">12</hi> 12<hi rend="superscript">4</hi>
+                                    </formula>
+                                    <signatures type="leaf"><p>No leaf signatures common to the entire manuscript.</p></signatures>
+                                    <signatures type="quire"><p>No quire signatures common to the entire manuscript.</p></signatures>
+                                    <catchwords><seg type="para">No catchwords common to the entire manuscript.</seg></catchwords>
+                                </collation>
+                            </supportDesc>
+                        </objectDesc>
+
+                        <additions>
+                            <note><p>On f. <locus from="[i] recto" to="[i] recto">[i] recto</locus>, a former shelfmark 'K.3.6' in ink, struck out.
+                                </p></note>
+                            <note><p>On f. <locus from="[i] recto" to="[i] recto">[i] recto</locus>, a former shelfmark 'Δ.3.6' in ink. </p></note>
+                            <note><p>On f. <locus from="[i] recto" to="[i] recto">[i] recto</locus>, the M. R. James <hi rend="italic">Catalogue</hi>
+                                    number '51' in pencil. </p></note>
+                            <note><p>On f. <locus from="[iii] verso" to="[iii] verso">[iii] verso</locus>, a former shelfmark 'K.3.6' in ink.
+                                </p></note>
+                            <note><p>On f. <locus from="1r" to="1r">1r</locus> the letter 'P' near the upper outer corner, this letter corresponds to
+                                    the siglum for this manuscript in the Durham 'Spendement' catalogue of 1391. </p></note>
+                        </additions>
+
+                        <bindingDesc>
+                            <binding notAfter="1800" notBefore="1700">
+                                <p>Fully bound in leather over paste- or mill-boards with matching decoration in blind to <locus from="outside left cover" to="outside left cover">left</locus> and <locus from="outside right cover" to="outside right cover">right</locus> covers. Covers are decorated at their perimeters with a narrow
+                                    double-fillet frame, and directly inside that frame, an arcaded roll, with each arcade enclosing a fleur-de-lis. </p>
+                                <p>Three raised bands on <locus from="spine" to="spine">spine</locus>. Spine is almost completely capped at head and
+                                    tail, head and tail bands mostly covered, only a single line of stitching in a cream-brown yarn visible. <locus from="spine" to="spine">Spine</locus> compartments except the one with the title label are decorated with a
+                                    geometric roll of overlapping ovals and diamonds. Leather title label on spine with decorative gold fillets at its
+                                    upper and lower perimeter and a title 'HILDEBERT: ET ALII M.S.' tooled in gold. Small printed paper label '51'
+                                    fixed to the spine with an adhesive.</p>
+                                <p>Cover material over the head, fore, and tail edges of the boards decorated with a hatched roll. </p>
+                                <p>Modern parchment bifolia at each end of the volume used for the pastedowns and the outermost flyleaves (ff. [a] and
+                                    [b]). </p>
+                            </binding>
+                            <binding notAfter="1800">
+                                <p>The present f. 104 was perhaps a pastedown in a former binding or the outermost leaf in an unbound booklet as there
+                                    is significant discoloration on f. <locus from="104v" to="104v">104v</locus>. </p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+
+                    <history>
+
+                        <provenance notAfter="1200" notBefore="1100">
+                            <p>Perhaps made at, and certainly owned from an early stage by the <name key="org_v30145857905323021816" role="fmo"><orgName type="display">Durham Cathedral Priory</orgName><orgName type="standard">Durham
+                                    Priory</orgName></name> community. Sidney Sussex MS 51 is listed in the 'Spendement' Catalogue of <date when="1391">1391</date> and the updated catalogue of <date when="1416">1416</date>where it is described as: '<q>P.
+                                    Uersus Hildeberti de Exposicione Missae. Tractatus de corpore Christi. Regulae de Medicinale. Glosa in Psalterium.
+                                    II fo. Neve superveniens</q>' (see Botfield, <hi rend="italic">Catalogi Veteres</hi>). The 'P' siglum is
+                                recorded in the manuscript in the upper outer corner on f. <locus from="1r" to="1r">1r</locus>. Shrader, in his survey
+                                of the survivng copies of Heriger's works on the Eucharist seems to suggest that this MS (or perhaps the first part
+                                thereof) is among the books listed in the late 12th century catalogue of Durham Cathedral Library preserved in <bibl subtype="external" type="MS">  <ref target="https://n2t.durham.ac.uk/ark:/32150/t1mcr56n0965.html">Durham,
+                                        Cathedral Library, MS B.IV.24 ('The Durham Cantor's Book') ff. 1r-2v</ref>
+                                </bibl> and printed in Botfield, <hi rend="italic">Catalogi Veteres</hi>, pp. 1-10, as the entry 'Epistolæ Hildeberti,
+                                iv paria' in MS B.IV.24, f. 1va (Botfield, <hi rend="italic">Catalogi Veteres</hi>, p. 4), but this idea is considered
+                                independently and rejected by Wallis and Gasper who did not believe Sidney Sussex MS 51 was a close match for any of
+                                the volumes recorded in MS B.IV.24.</p>
+                            <listBibl>
+                                <bibl>B. Botfield (ed.), <hi rend="italic">Catalogi Veteres Librorum Ecclesiae Cathedralis Dunelm</hi>, Surtees
+                                    Society vii (1838), pp. 4 24, 101 </bibl>
+                                <bibl>F. Wallis, and G. E. M. Gasper, ‘Salsamenta Pictavensium: Gastronomy and Medicine in Twelfth-Century England’,
+                                        <hi rend="italic">English Historical Review</hi>, 131.553 (2016), pp. 1353–85, esp. p. 1354 </bibl>
+                            </listBibl>
+                        </provenance>
+
+                        <provenance when="1591">
+                            <p>Owned by <name key="person_v44251134" role="fmo sgn">
+                                    <persName type="display">John Pilkington</persName>
+                                    <persName type="standard">John Pilkington</persName>
+                                </name> who added the inscription '<q>Sum Iohannis Pilkingtoni Dunelmensis 1591</q>' to the volume twice on ff. <locus from="1r" to="1r">1r</locus> and <locus from="47r" to="47r">47r</locus>. John Pilkington was an Archdeacon of
+                                Durham from c. 1563-1602 and was the brother of <name key="person_v42188663">
+                                    <persName type="display">James Pilkington</persName>
+                                    <persName type="standard">James Pilkington</persName>
+                                </name> (1520-1576), Bishop of Durham. In addition to his inscriptions in MS 51, Pilkington also added his name to
+                                Sidney Sussex MSS 30 and 55, and may have encountered MS 92. </p>
+                            <listBibl>
+                                <bibl>M. R. James, <hi rend="italic">A Descriptive Catalogue of the Manuscripts in the Library of Sidney Sussex
+                                        College, Cambridge</hi> (Cambridge: Cambridge University Press, 1895)</bibl>
+                                <bibl>F. Wallis, and G. E. M. Gasper, ‘Salsamenta Pictavensium: Gastronomy and Medicine in Twelfth-Century England’,
+                                        <hi rend="italic">English Historical Review</hi>, 131.553 (2016), pp. 1353–1385</bibl>
+                            </listBibl>
+                        </provenance>
+
+                        <provenance notAfter="1643" notBefore="1591">
+                            <p>Probably owned by former Master of Sidney Sussex (1572–1643, master 1610-1643), <name cert="medium" key="person_v100213869" role="fmo">
+                                    <persName type="display">Samuel Ward</persName>
+                                    <persName type="standard">Samuel Ward</persName>
+                                </name>. It seems very likely that MS Sidney 51 was seen in the possession of Samuel Ward by Ward's friend, the author
+                                and Archbishop of Armagh, <name key="person_v68969862">
+                                    <persName type="display">James Ussher</persName>
+                                    <persName type="standard">James Ussher</persName>
+                                </name>. In Ussher's <hi rend="italic">An answer to a challenge made by a Iesuite in Ireland</hi> (1625), Ussher wrote
+                                (abbreviations expanded, typesetting modernised): '[i]n the libraries of my worthy friends, Sir Robert Cotton, (that
+                                noble Baronett, so <sic>renowmed</sic> for his great care in collecting and preserving all antiquities) and Dr Ward,
+                                the learned Master of Sidney <sic>Colledge</sic> in Cambridge; I met with an ancient Treatise of the Sacrament
+                                (beginning thus: <hi rend="italic">Sicut ante nos quidam sapiens dixit, cujus sententiam probamus, licet nomen
+                                    ignoremus.) </hi> which is the same with that in the Iesuites <sic>Colledge</sic> at Lovaine, <sic>blindely</sic>
+                                fathered upon Berengarius'. The quotation that Ussher gives, 'Sicut ante nos quidam sapiens dixit, cujus sententiam
+                                probamus, licet nomen ignoremus', matches the text of the treatise on the Eucharist in Sidney MS 51, ff. <locus from="17r" to="26v">17r-26v</locus>. The text that Ussher is referring to is the <hi rend="italic">Dicta Herigeri
+                                    abbatis de corpore et sanguine Domini</hi> now usually attributed to <name key="person_v5725477">
+                                    <persName type="display">Heriger of Lobbes</persName>
+                                    <persName type="standard">Heriger of Lobbes</persName>
+                                </name>, but which was for a long time believed to be by Berengar of Tours. The <hi rend="italic">Dicta Herigeri</hi>
+                                survives in very few manuscript copies and the likelihood is that the one Ussher saw in Ward's hands is the same
+                                manuscript that came into the possession of Ward's former college. </p>
+                            <listBibl>
+                                <bibl>J. Ussher, <hi rend="italic">An answer to a challenge made by a Jesuite in Ireland</hi> (1625), pp. 17-18</bibl>
+                            </listBibl>
+                        </provenance>
+
+                        <acquisition notAfter="1697" notBefore="1596">
+                            <p>It has not been established with absolute certainty when or by what means Sidney Sussex College acquired MS 51,
+                                although a plausible argument can be made that the volume was an unrecorded donation by former master <name cert="low" key="person_v100213869" role="dnr">
+                                    <persName type="display">Samuel Ward</persName>
+                                    <persName type="standard">Samuel Ward</persName>
+                                </name>. A list of Ward's donations is preserved in the college archives, but it does not appear to describe a
+                                manuscript identifiable as Sidney Sussex MS 51. It may be that Ward gave the manuscript as a separate donation, or
+                                that left Ward's possession and came to Sidney Sussex indirectly by some other route, as happened with many of Ward's
+                                personal papers (see Todd, 1985). The manuscript had certainly arrived at the College by c. 1697, when its presence
+                                was recorded in Bernard's <hi rend="italic">Catalogi librorum manuscriptorum Angliæ et Hiberniæ</hi> (c. 1697), p.
+                                104, no. 714. For an account of the early history of the library of Sidney Sussex College, see 
+                            Rogers, 'Early History of Sidney Sussex College Library', esp. n. 53; Rogers points out that MS 51 is likely to have been given by Ward
+                            on the strength of MS 51's prior ownership by John Pilkington, who had also owned known Ward donation MS 55. </p>
+                            <listBibl>
+                                <bibl>N. Rogers, 'The Early History of Sidney Sussex College Library', in D. E. D. Beales and H. B. Nisbet (eds.),
+                                    <hi rend="italic">Sidney Sussex College, Cambridge: Historical
+                                        Essays in Commemoration of the Quartercentenary</hi> (Woodbridge, 1996), pp. 75-88</bibl>
+                            </listBibl>                            
+                        </acquisition>
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+
+                            <recordHist>
+                                <source>This catalogue record draws on <bibl>M. R. James, <hi rend="italic">A Descriptive Catalogue of the Manuscripts
+                                            in the Library of Sidney Sussex College, Cambridge</hi> (Cambridge: Cambridge University Press, 1895), no.
+                                        51, pp. 36-37</bibl></source>
+                            </recordHist>
+
+                            <availability status="restricted">
+                                <p>Visitors to Sidney Sussex College who wish to consult Special Collections material are required to apply to the
+                                    Archivist in advance of their visit. For information on eligibility and admission procedures see: <ref target="https://www.sid.cam.ac.uk/life-sidney/library/special-collections">Sidney Sussex College: Special
+                                        Collections</ref>.</p>
+                            </availability>
+
+
+                        </adminInfo>
+
+                        <listBibl type="WRAPPER">
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/NE7UZ6PV" type="book" xml:id="Raine1834">
+                                <monogr>
+                                    <title level="m">Catalogi Veteres Librorum Ecclesiae Cathedralis Dunelm. Catalogues of the Library of Durham
+                                        Cathedral, at Various Periods, from the Conquest to the Dissolution, Including Catalogues of the Library of
+                                        the Abbey of Hulne, and of the MSs. preserved in the Library of Bishop Cosin, at Durham</title>
+                                    <editor>
+                                        <forename>James</forename>
+                                        <surname>Raine</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>Beriah</forename>
+                                        <surname>Botfield</surname>
+                                    </editor>
+                                    <imprint>
+                                        <date>1834</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Publications of the Surtees Society</title>
+                                    <biblScope unit="volume">7</biblScope>
+                                </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/I6BV6ZPR" type="book" xml:id="James1895">
+                                <monogr>
+                                    <title level="m">A descriptive catalogue of the manuscripts in the library of Sidney Sussex College,
+                                        Cambridge</title>
+                                    <author>
+                                        <forename>M.R.</forename>
+                                        <surname>James</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1895</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 36-37 </note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/M5SFQSCG" type="book" xml:id="Mynors1939">
+                                <monogr>
+                                    <title level="m">Durham Cathedral manuscripts to the end of the twelfth century</title>
+                                    <author>
+                                        <forename>R.A.B.</forename>
+                                        <surname>Mynors</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Oxford</pubPlace>
+                                        <publisher>Printed for the Dean and Chapter of Durham Cathedral at the University Press</publisher>
+                                        <date>1939</date>
+                                    </imprint>
+                                </monogr>
+                                <note>no. 83, pp. 59-60 </note>
+                            </biblStruct>
+                            <biblStruct type="book"
+                                xml:id="Ker1964"
+                                corresp="http://zotero.org/groups/276440/items/ZFWWPHCI">
+                                <monogr>
+                                    <title level="m">Medieval libraries of Great Britain: a list of surviving books</title>
+                                    <author>
+                                        <forename>N.R.</forename>
+                                        <surname>Ker</surname>
+                                    </author>
+                                    <edition>2nd</edition>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>Offices of the Royal Historical Society</publisher>
+                                        <date>1964</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Royal Historical Society guides and handbooks</title>
+                                    <biblScope unit="volume">3</biblScope>
+                                </series>
+                                <note>p. 18. </note>
+                            </biblStruct>
+                            <biblStruct type="bookSection"
+                                xml:id="Rogers1996"
+                                corresp="http://zotero.org/groups/276440/items/HX8GGYSB">
+                                <analytic>
+                                    <title level="a">The Early History of Sidney Sussex College Library</title>
+                                    <author>
+                                        <forename>Nicholas</forename>
+                                        <surname>Rogers</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Sidney Sussex College, Cambridge: Historical Essays in Commemoration of
+                                        the Quartercentenary</title>
+                                    <editor>
+                                        <forename>D. E. D.</forename>
+                                        <surname>Beales</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>H. B.</forename>
+                                        <surname>Nisbet</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Woodbridge, Suffolk</pubPlace>
+                                        <biblScope unit="page">75-88</biblScope>
+                                        <publisher>The Boydell Press</publisher>
+                                        <date>1996</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 84, n. 53 </note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/KGB4QNBI" type="bookSection" xml:id="Blumenthal2012">
+                                <analytic>
+                                    <title level="a">Heriger's Treatises on the Eucharist</title>
+                                    <author>
+                                        <forename>Charles R.</forename>
+                                        <surname>Shrader</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Canon Law, Religion, and Politics: Liber Amicorum Robert Somerville</title>
+                                    <editor>
+                                        <forename>Uta-Renate</forename>
+                                        <surname>Blumenthal</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>Dr Anders</forename>
+                                        <surname>Winroth</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>Peter</forename>
+                                        <surname>Landau</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Washington</pubPlace>
+                                        <biblScope unit="page">147-162</biblScope>
+                                        <publisher>Catholic University of America Press</publisher>
+                                        <date>2012</date>
+                                        <note type="accessed">2023-11-08T17:04:02Z</note>
+                                        <note type="url">http://ebookcentral.proquest.com/lib/cam/detail.action?docID=3134984</note>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 155, 161 </note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/E74LJ6DM" type="journalArticle" xml:id="Gasper2016">
+                                <analytic>
+                                    <title level="a">Salsamenta pictavensium: Gastronomy and Medicine in Twelfth-Century England</title>
+                                    <author>
+                                        <forename>Giles E. M.</forename>
+                                        <surname>Gasper</surname>
+                                    </author>
+                                    <author>
+                                        <forename>Faith</forename>
+                                        <surname>Wallis</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">English Historical Review</title>
+                                    <imprint>
+                                        <biblScope unit="volume">131</biblScope>
+                                        <biblScope unit="issue">553</biblScope>
+                                        <biblScope unit="page">1353-1385</biblScope>
+                                        <date>2016</date>
+                                        <note type="url">https://www.jstor.org/stable/26364416</note>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/PVPPPIZ2" type="book" xml:id="Woolgar2016">
+                                <monogr>
+                                    <title level="m">The Culture of Food in England 1200-1500</title>
+                                    <author>
+                                        <forename>C. M.</forename>
+                                        <surname>Woolgar</surname>
+                                    </author>
+                                    <imprint>
+                                        <publisher>Yale University Press</publisher>
+                                        <date>2016</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 264, n. 3 </note>
+                            </biblStruct>
+                        </listBibl>
+
+                    </additional>
+
+
+                    <msPart n="1">
+                        <msIdentifier>
+                            <idno>Cambridge, Sidney Sussex College, MS 51, ff. [i]-[iii] + 1-16</idno>
+                            <msName>Part 1 - Versus Hildeberti</msName>
+                        </msIdentifier>
+
+                        <msContents>
+
+                            <msItem n="1">
+                                <locus from="[i] recto" to="[i] recto">[i] recto</locus>
+                                <title key=""><supplied>Late 12th or early 13th century list of the contents of the volume</supplied></title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <note><p>- Full transcription: Uersus hildeberti in expositione misse <lb/> Tractatus de corpore Christi qui sic
+                                        incipit Sicut ante nos <lb/> Epistole quedam <lb/> Regulae de phisica <lb/> Glose in psalterium</p></note>
+                            </msItem>
+
+                            <msItem n="2">
+                                <locus from="[iii] verso" to="[iii] verso">[iii] verso</locus>
+                                <title key=""><supplied>Late 12th or early 13th century list of the contents of the volume with 15th century
+                                        additions</supplied></title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <note><p>Full transcription:<lb/> In hoc uolumine continentur hec<lb/> Uersus hideberti in expositionem misse
+                                            <add>uersus de eukaristia de baptismo et de gradibus consanguinitatis ectc in eis nulli coniunguntur vt
+                                                <unclear>conatur</unclear></add><lb/> Tractatus de corpore Christi . <lb/>
+                                        <del rend="strikethrough">Corrector ecclesie</del>
+                                        <lb/> Regule de phisica <add>et nomina I<hi rend="superscript">i</hi> et bonas medicinas complect</add><lb/>
+                                        Glose in psalterium <add>compendiose</add></p>
+                                </note>
+                            </msItem>
+
+                            <msItem n="3">
+                                <locus from="1r" to="16v">1r-16v</locus>
+                                <title key="">Versus Hildeberti</title>
+                                <author key="person_v282035032">Hildebert of Tours</author>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric>
+                                    <locus from="1r" to="1r">1r</locus> Incipiunt uersus Hildeberti cennomanensis episcopi </rubric>
+                                <msItem n="3.1">
+                                    <locus from="1r" to="13r">1r-13r</locus>
+                                    <title key="">Versus de explanatione misse</title>
+                                    <author key="person_v282035032">Hildebert of Tours</author>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <rubric>
+                                        <locus from="1r" to="1r">1r</locus> de explanatione misse </rubric>
+                                    <incipit>
+                                        <locus from="1r" to="1r">1r</locus> Scribere proposui quid mystica sacra priorum </incipit>
+                                    <explicit defective="true">
+                                        <locus from="13r" to="13r">13r</locus> Agnus dei qui tollis peccata mundi .miserere. ter.<lb/> Ad christi
+                                        reditura fidem iudea notatur <lb/> Cum pater ad dextram cedit . et explet opus </explicit>
+                                    <finalRubric>
+                                        <locus from="13r" to="13r">13r</locus> Explicit explanatio misse </finalRubric>
+                                    <listBibl>
+                                        <bibl>Edited in PL CLXXI.1177-1193</bibl>
+                                    </listBibl>
+                                </msItem>
+                                <msItem n="3.2">
+                                    <locus from="13r" to="14r">14r</locus>
+                                    <title key="">Uersus de corpore et sanguine domini</title>
+                                    <author key="person_v282035032">Hildebert of Tours</author>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <rubric>
+                                        <locus from="13r" to="13r">13r</locus> Uersus de corpore et sanguine domini </rubric>
+                                    <incipit>
+                                        <locus from="13r" to="13r">13r</locus> Melchisedech domino panem uinumque libauit </incipit>
+                                    <explicit>
+                                        <locus from="14r" to="14r">14r</locus> Ad propriumque caput tria sacramenta redisse </explicit>
+                                    <finalRubric>
+                                        <locus from="14r" to="14r">14r</locus> Explicit </finalRubric>
+                                    <listBibl>
+                                        <bibl>Edited in A. B. Scott (ed.), <hi rend="italic">Hildeberti cenonmannensis episcopi carmina minora</hi>,
+                                            Bibliotheca scriptorum Graecorum et Romanorum Teubneriana: Scriptores Romani (Leipzig, 1969) as 39.IV, pp.
+                                            30-32</bibl>
+                                    </listBibl>
+                                </msItem>
+                                <msItem n="3.3">
+                                    <locus from="14r" to="14r">14r</locus>
+                                    <title key="">Uersus de baptismate</title>
+                                    <author key="person_v282035032">Hildebert of Tours</author>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <rubric>
+                                        <locus from="14r" to="14r">14r</locus> Uersus de baptismate </rubric>
+                                    <incipit>
+                                        <locus from="14r" to="14r">14r</locus> Hostia . coniugium . baptismus . qualia primo <lb/> talia nec . res
+                                        ipsa redit . euanuit umbra </incipit>
+                                    <explicit>
+                                        <locus from="14r" to="14r">14r</locus> Sic ad se baptisma redit cessante figura <lb/> Sic inuoluit aquis sua
+                                        circumcisio iura </explicit>
+                                    <listBibl>
+                                        <bibl>Edited in A. B. Scott (ed.), <hi rend="italic">Hildeberti cenonmannensis episcopi carmina minora</hi>,
+                                            Bibliotheca scriptorum Graecorum et Romanorum Teubneriana: Scriptores Romani (Leipzig, 1969) as 39.II, pp.
+                                            28-29</bibl>
+                                    </listBibl>
+                                </msItem>
+                                <msItem n="3.4">
+                                    <locus from="14r" to="15r">14r-15r</locus>
+                                    <title key="">Uersus quare non copulentur in coniugio consanguinei</title>
+                                    <author key="person_v282035032">Hildebert of Tours</author>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <rubric>
+                                        <locus from="14r" to="14r">14r</locus> Uersus quare non copulentur in coniugio consanguinei </rubric>
+                                    <incipit>
+                                        <locus from="14v" to="14v">14v</locus> Baptismalis quedam forma fuit in diluuio <lb/> Huic successit huic
+                                        cessura carnis circumcisio </incipit>
+                                    <explicit>
+                                        <locus from="15r" to="15r">15r</locus> Ut sacra sub christo dilectio porrigeretur <lb/> Femina sub christo sic
+                                        nubere lege iubetur </explicit>
+                                    <finalRubric>
+                                        <locus from="15r" to="15r">15r</locus> Explicit </finalRubric>
+                                    <listBibl>
+                                        <bibl>Edited in A. B. Scott (ed.), <hi rend="italic">Hildeberti cenonmannensis episcopi carmina minora</hi>,
+                                            Bibliotheca scriptorum Graecorum et Romanorum Teubneriana: Scriptores Romani (Leipzig, 1969) as 39.I and
+                                            39.III, pp. 28-30</bibl>
+                                    </listBibl>
+                                </msItem>
+                                <msItem n="3.5">
+                                    <locus from="15r" to="15v">15r-15v</locus>
+                                    <title key="">Cur bono male uel malo bene</title>
+                                    <author key="person_v282035032">Hildebert of Tours</author>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <incipit>
+                                        <locus from="15r" to="15v">15r-15v</locus> Est aliquando bono bene de grauibus superetur <lb/> Est male . quo
+                                        maculas laue . aduersis <sic>ue</sic> probetur </incipit>
+                                    <explicit>
+                                        <locus from="15v" to="15v">15v</locus> Est aliquando malo bene quo grauius feriatur <lb/> Est male . quo
+                                        redeat . uel ut hic quoque iam patiatur </explicit>
+                                    <note>Folio 16 blank. </note>
+                                    <listBibl>
+                                        <bibl>Edited in A. B. Scott (ed.), <hi rend="italic">Hildeberti cenonmannensis episcopi carmina minora</hi>,
+                                            Bibliotheca scriptorum Graecorum et Romanorum Teubneriana: Scriptores Romani (Leipzig, 1969) as 3, p.
+                                            1</bibl>
+                                    </listBibl>
+                                </msItem>
+                            </msItem>
+
+                        </msContents>
+
+
+
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="2r" to="2r">2r</locus>: Neue superueniens </secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="perg">
+                                    <support>
+                                        <material>Parchment (<term type="disposition">HFFH</term>). </material>
+                                    </support>
+
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="3" type="endleaf">3</measure> + <measure quantity="16" type="leaf">16</measure> leaves.
+                                        </seg>
+                                    </extent>
+
+                                    <collation mainStructures="8">
+                                        <list>
+                                            <item>Three medieval parchment flyleaves (ff. [i]-[iii]) +</item>
+                                            <item>Quires 1-2<hi rend="superscript">8</hi> (ff. <locus from="1r" to="16v">1r-16v</locus>) </item>
+                                        </list>
+                                        <signatures type="leaf"><p>No leaf signatures particular to this Part. </p></signatures>
+                                        <signatures type="quire"><p>No quire signatures particular to this Part. </p></signatures>
+                                        <catchwords><seg type="para">No catchwords particular to this Part. </seg></catchwords>
+                                    </collation>
+
+                                    <condition>All leaves are in good condition. </condition>
+
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout><p>
+                                            <seg type="ruling"> Folios <locus from="i recto" to="iii verso"> have informal layouts.</locus>
+                                            </seg></p>
+                                    </layout>
+
+
+                                    <layout columns="1" rulingMedium="crayon" topLine="above" writtenLines="26"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height quantity="170">170</height>
+                                                <width quantity="80">80</width>
+                                            </dimensions>
+                                            <seg type="ruling">Folios <locus from="1r" to="16v">1-16</locus> are in crayon, frame and lines. Ruled in
+                                                single-column format, the mise-en-page arranged in the typical western European medieval fashion for
+                                                verse, with the opening initial of each line standing slightly apart from the rest of the letters on
+                                                that line. Written above top line and typically 26 lines to the page. </seg></p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote script="protogothic">
+                                    <p>Written in a protogothic minuscule typical of scribal work produced in the 12th century in England and northern
+                                        France</p>
+                                </handNote>
+                            </handDesc>
+
+                            <decoDesc>
+                                <decoNote type="plainInit">
+                                    <p>Plain initials in red at the major and minor divisions of the texts. </p>
+                                </decoNote>
+                                <decoNote type="rubrication">
+                                    <p>Opening and closing rubrics in red. </p>
+                                </decoNote>
+                            </decoDesc>
+
+                        </physDesc>
+
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1200" notBefore="1100"> Written in the 12th century, probably in
+                                    the middle or second half of that century. </origDate>
+                                <origPlace cert="medium" key="place_g7002445"> Probably written in England. </origPlace>
+                            </origin>
+                        </history>
+                    </msPart>
+
+                    <msPart n="2">
+                        <msIdentifier>
+                            <idno>Cambridge, MS Sidney Sussex 51, ff. 17-26 </idno>
+                            <msName>Part 2 - Treatise on the Eucharist</msName>
+                        </msIdentifier>
+
+                        <msContents>
+
+                            <textLang mainLang="la">Latin</textLang>
+
+                            <msItem n="1">
+                                <locus from="17r" to="26v">17r-26v</locus>
+                                <title key="">Dicta Herigeri abbatis de corpore et sanguine Domini</title>
+                                <author key="person_v5725477">Heriger of Lobbes</author>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit>
+                                    <locus from="17r" to="17r">17r</locus>
+                                    <supplied>S</supplied>icut ante nos quidam sapiens dixit cuius sententiam probamus licet nomen ignoremus </incipit>
+                                <explicit>
+                                    <locus from="26v" to="26v">26v</locus> profuturum resuscitandis in generali resurrectione . Liquet igitur non
+                                    obnoxium secessui esse </explicit>
+                                <note>Often attributed to <name key="person_v264422706" role="att">
+                                        <persName type="display">Gerbert of Aurillac (Pope Sylvester II)</persName>
+                                        <persName type="standard">Gerbert of Aurillac (Pope Sylvester II)</persName>
+                                    </name> and printed under his name in PL CXXXIX.179-188, but this text, and other texts on similar subjects and
+                                    with similar titles have circulated with various authorial attributions since the medieval period. This text is
+                                    largely comprised of excerpts from Patristic authors and is, according to Shrader, the later and more
+                                    sophisticated of the two surviving works by Heriger on the eucharist; see Shrader, ‘Heriger’s Treatises on the
+                                    Eucharist’, and footnotes therein for a summary of the various related texts, their surviving manuscripts, their
+                                    likely authors, and directions to further reading. </note>
+                                <note>This manuscript is part of Shrader's 'Group C' in his typology of the transmission of Heriger's eucharistic
+                                    writings, see esp., Shrader, 'Heriger's Treatises', pp. 155-156</note>
+                                <listBibl>
+                                    <bibl>PL CXXXIX.179-188 (attributed to Gerbert of Aurillac, i.e., Pope Sylvester II)</bibl>
+                                    <bibl>C. R. Shrader, ‘Heriger’s Treatises on the Eucharist’, in <hi rend="italic">Canon Law, Religion, and
+                                            Politics: Liber Amicorum Robert Somerville</hi>, ed. by U.-R. Blumenthal, D. A. Winroth, and P. Landau
+                                        (2012), pp. 147–62</bibl>
+                                </listBibl>
+                            </msItem>
+                        </msContents>
+
+
+
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="18r" to="18r">18r</locus>: dignatus fuerit aperire </secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="perg">
+                                    <support>
+                                        <material>Parchment (<term type="disposition">HFFH</term>)</material>
+                                    </support>
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="10" type="leaf">10</measure> leaves. </seg>
+                                    </extent>
+
+                                    <collation mainStructures="10">
+                                        <p><list>
+                                                <item>Quire 3<hi rend="superscript">10</hi> (ff. <locus from="17r" to="26v">17-26</locus>)</item>
+                                            </list>
+                                        </p>
+                                        <signatures type="leaf"><p>No leaf signatures particular to this Part.</p></signatures>
+                                        <signatures type="quire"><p>No quire signatures particular to this Part.</p></signatures>
+                                        <catchwords><seg type="para">No catchwords particular to this Part.</seg></catchwords>
+                                    </collation>
+
+                                    <condition>Leaves are in good condition. </condition>
+
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="1" rulingMedium="leadpoint" topLine="above" writtenLines="26"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height quantity="170">170</height>
+                                                <width quantity="85">85</width>
+                                            </dimensions>
+                                            <seg type="ruling"> Ruled in leadpoint, frame and lines. Ruled in single-column format and written
+                                                typically 26 lines to the page and above top line. </seg></p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote script="protogothic">
+                                    <p>Written in a protogothic minuscule typical of scribal work produced in the 12th century in England and northern
+                                        France</p>
+                                </handNote>
+                            </handDesc>
+
+                            <decoDesc>
+                                <decoNote type="rubrication">
+                                    <p>Names of authorities, e.g., Ambrose, Augustine, Fulgentius written in red. </p>
+                                </decoNote>
+                                <decoNote type="unfilled">Empty space for an opening initial 'S' on f. <locus from="17r" to="17r">17r</locus>.
+                                </decoNote>
+                            </decoDesc>
+                        </physDesc>
+
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1200" notBefore="1100"> Written in the 12th century, probably in
+                                    the middle or second half of that century. </origDate>
+                                <origPlace cert="medium" key="place_g7002445"> Probably written in England </origPlace>
+                            </origin>
+                        </history>
+                    </msPart>
+
+
+                    <msPart n="3">
+                        <msIdentifier>
+                            <idno>Cambridge, Sidney Sussex, MS 51, ff. 27-46</idno>
+                            <msName>Part 3 - Recipes</msName>
+
+                        </msIdentifier>
+
+                        <msContents>
+                            <textLang mainLang="la">Latin</textLang>
+
+                            <msItem n="1">
+                                <locus from="27r" to="46v">27r-46v</locus>
+                                <title key="">Recipes</title>
+                                <textLang mainLang="la" otherLangs="ang ar fro">Latin with occasional words in Old English, Arabic and Old
+                                    French</textLang>
+                                <msItem n="1.1">
+                                    <locus from="27r" to="39r">27r-39r</locus>
+                                    <title key="">Medical recipes</title>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <incipit>
+                                        <locus from="27r" to="27r">27r</locus> Ad caput purgandum uel uocem exclarandum uel uuam exsiccandam uel
+                                        glandulas . absincij fasciculum unum alterum fasciculum marubij </incipit>
+                                    <explicit>
+                                        <locus from="39r" to="39r">39r</locus> da uulerato bibere </explicit>
+                                    <note><p>- 170 medical recipes in top-to-toe order</p></note>
+                                    <listBibl>
+                                        <bibl>F. Wallis, and G. E. M. Gasper, ‘Salsamenta Pictavensium: Gastronomy and Medicine in Twelfth-Century
+                                            England’, <hi rend="italic">English Historical Review</hi>, 131.553 (2016), pp. 1353–1385</bibl>
+                                    </listBibl>
+                                </msItem>
+                                <msItem n="1.2">
+                                    <locus from="39r" to="39r">39r</locus>
+                                    <title key="">Chemical recipes</title>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <incipit>
+                                        <locus from="39r" to="39r">39r</locus> Sal sacerdotale utebantur </incipit>
+                                    <explicit>
+                                        <locus from="39r" to="39r">39r</locus> sit deus usque tui </explicit>
+                                    <note><p>- Three chemical recipes</p></note>
+                                    <listBibl>
+                                        <bibl>F. Wallis, and G. E. M. Gasper, ‘Salsamenta Pictavensium: Gastronomy and Medicine in Twelfth-Century
+                                            England’, <hi rend="italic">English Historical Review</hi>, 131.553 (2016), pp. 1353–1385</bibl>
+                                    </listBibl>
+                                </msItem>
+                                <msItem n="1.3">
+                                    <locus from="39r" to="39v">39r-39v</locus>
+                                    <title key="">Culinary recipes</title>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <rubric>
+                                        <locus from="39r" to="39r">39r</locus> Incipit diuersa genera pictauensium salsamentorum </rubric>
+                                    <incipit>
+                                        <locus from="39r" to="39r">39r</locus> Petrosilini et saluie succum cum aceto distemperatum cum pipere et
+                                        allio temperatum </incipit>
+                                    <explicit>
+                                        <locus from="39v" to="39v">39v</locus> Cinnamomi zedoarii ana equaliter pipperis dupplum </explicit>
+                                    <note>16 culinary recipes.</note>
+                                    <listBibl>
+                                        <bibl>Edited, translated and discussed in F. Wallis, and G. E. M. Gasper, 'Salsamenta Pictavensium: Gastronomy
+                                            and Medicine in Twelfth-Century England', <hi rend="italic">English Historical Review</hi>, 131.553
+                                            (2016), pp. 1353–1385</bibl>
+                                    </listBibl>
+                                </msItem>
+                                <msItem n="1.4">
+                                    <locus from="39v" to="45r">39v-45r</locus>
+                                    <title key="">Medical recipes</title>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <incipit>
+                                        <locus from="39v" to="39v">39v</locus> Unguentum popoleon </incipit>
+                                    <explicit>
+                                        <locus from="45r" to="45r">45r</locus> uinum calidum bibat </explicit>
+                                    <note>57 medical recipes, in miscellaneous order.</note>
+                                    <note>ff. 45v-46v blank</note>
+                                    <listBibl>
+                                        <bibl>F. Wallis, and G. E. M. Gasper, 'Salsamenta Pictavensium: Gastronomy and Medicine in Twelfth-Century
+                                            England', <hi rend="italic">English Historical Review</hi>, 131.553 (2016), pp. 1353–1385</bibl>
+                                    </listBibl>
+                                </msItem>
+                            </msItem>
+                        </msContents>
+
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="28r" to="28r">28r</locus>: </secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="perg">
+                                    <support>
+                                        <material>Parchment (<term type="disposition">HFFH</term>)</material>
+                                    </support>
+
+
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="20" type="leaf">20</measure> leaves. </seg>
+                                    </extent>
+
+                                    <collation mainStructures="10">
+                                        <p>Quires 4-5<hi rend="superscript">10</hi> (ff. <locus from="27r" to="46v">27-46</locus>)</p>
+                                        <signatures type="leaf"><p>No leaf signatures particular to this Part. </p></signatures>
+                                        <signatures type="quire"><p>No quire signatures particular to this Part. </p></signatures>
+                                        <catchwords><seg type="para">No catchwords particular to this Part. </seg></catchwords>
+                                    </collation>
+
+                                    <condition>Leaves are generally in good condition. </condition>
+
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="1" rulingMedium="leadpoint" topLine="above" writtenLines="26"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height quantity="180">180</height>
+                                                <width quantity="85">85</width>
+                                            </dimensions>
+                                            <seg type="ruling"> Ruled in leadpoint, frame and lines. Ruled in single-column format, typically 26 lines
+                                                to the page and written above top line. </seg></p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote script="protogothic">
+                                    <p>Folios <locus from="27r" to="45r">27r-45r l. 4</locus> written in a protogothic minuscule typical of scribal
+                                        work produced in the 12th century in England and northern France. </p>
+                                </handNote>
+                                <handNote script="protogothic">
+                                    <p>Folio <locus from="45r" to="45r">45r ll. 5-8</locus> written by another scribe in a protogothic minuscule
+                                        typical of scribal work produced in the 12th century in England and northern France; M. R. James also noted
+                                        the change of hand, and suggested that the text on f. 45r ll. 5-8 is a 'slightly later addition'.</p>
+                                    <listBibl>
+                                        <bibl>M. R. James, <hi rend="italic">A Descriptive Catalogue of the Manuscripts in the Library of Sidney
+                                                Sussex College, Cambridge</hi> (Cambridge: Cambridge University Press, 1895), no. 51</bibl>
+                                    </listBibl>
+                                </handNote>
+                            </handDesc>
+
+                            <decoDesc>
+                                <decoNote type="none">
+                                    <p>No significant decoration in this Part. </p>
+                                </decoNote>
+                            </decoDesc>
+
+                        </physDesc>
+
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="medium" notAfter="1200" notBefore="1100"> Written in the 12th century. </origDate>
+                                <origPlace cert="medium" key="place_g7002445"> Written in England. </origPlace>
+                                <note><p>Place and date of production assigned based on palaeographical details. </p></note>
+                            </origin>
+                        </history>
+                    </msPart>
+
+                    <msPart n="4">
+                        <msIdentifier>
+                            <idno>Cambridge, Sidney Sussex College, MS 51, ff. 47r-104v</idno>
+                            <msName>Part 4 - Gloss on the Psalter</msName>
+                        </msIdentifier>
+
+                        <msContents>
+                            <textLang mainLang="la">Latin</textLang>
+
+                            <msItem n="1">
+                                <locus from="47r" to="100v">47r-100v</locus>
+                                <title>Commentary on the Psalms</title>
+                                <author key="person_v95230707">Cassiodorus Senator (c. 487 - c. 580)</author>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit>
+                                    <locus from="47r" to="47r">47r</locus> Prophecia est inspiracio diuina </incipit>
+                                <explicit>
+                                    <locus from="100v" to="100v">100v</locus> incarnationem filii futuram non intellegerem michi proFUTURAM
+                                </explicit>
+                            </msItem>
+
+                            <msItem n="2">
+                                <locus from="100v" to="102r">100v-102r</locus>
+                                <title key="">Commentaria in Cantica</title>
+                                <author key="person_v49149353">Haymo, Bishop of Halberstadt (d. c. 853)</author>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit>
+                                    <locus from="100v" to="100v">100v</locus> Confitebor . canticum isaie prophetae . hic <sic>asscribitur</sic>
+                                    titulus . canticum isaiae . quia isaias cum in precedentibus sue prophetiae uerbis casum hominis </incipit>
+                                <explicit defective="true">
+                                    <locus from="102r" to="102r">102r</locus> uel in peccatis perseuerarem . incarnationem filii futuram non
+                                    intellegerem michi proFUTURAM </explicit>
+                                <listBibl>
+                                    <bibl>PL CXVI, cols 695-714</bibl>
+                                </listBibl>
+                            </msItem>
+
+                        </msContents>
+
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="48r" to="48r">48r</locus>: Quare fremuerunt </secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="perg">
+                                    <support>
+                                        <material>Parchment (<term type="disposition">HFFH</term>)</material>
+                                    </support>
+
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="58" type="leaf">58</measure> leaves. </seg>
+                                    </extent>
+
+                                    <collation mainStructures="8 10 12 4">
+                                        <p>
+                                            <list>
+                                                <item>Quires 6-9<hi rend="superscript">8</hi> (ff. <locus from="47r" to="78v">47-78</locus>)</item>
+                                                <item>Quire 10<hi rend="superscript">10</hi> (ff. <locus from="79r" to="88v">79-88</locus>)</item>
+                                                <item>Quire 11<hi rend="superscript">12</hi> (ff. <locus from="89r" to="100v">89r-100v</locus>)</item>
+                                                <item>Quire 12<hi rend="superscript">4</hi> (ff. <locus from="101r" to="104v">101-104</locus>)</item>
+                                            </list>
+                                        </p>
+                                        <signatures type="leaf"><p>No leaf signatures particular to this Part. </p></signatures>
+                                        <signatures type="quire"><p>Quires 6-10 numbered in ink in Roman numerals in the centre of the lower margin of
+                                                the last verso of those quires, each roman numeral framed with small dots and flourishes extending
+                                                from the cardinal points around the number. </p></signatures>
+                                        <catchwords><seg type="para">No catchwords particular to this part. </seg></catchwords>
+                                    </collation>
+
+                                    <condition>In good condition. Some leaves have an irregular size and shape due to the natural shape of the
+                                        parchment selected for preparation as the writing substrate, e.g., f. <locus from="96r" to="96v">96</locus>.
+                                    </condition>
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="2" rulingMedium="hardpoint" topLine="above" writtenLines="39 40"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height quantity="175">175</height>
+                                                <width quantity="90">90</width>
+                                            </dimensions>
+                                            <seg type="ruling"> Ruled in hardpoint, frame and lines. Ruled in double-column format, typically 39 or 40
+                                                lines to the column and written above top line. </seg></p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote script="protogothic">
+                                    <p>Written by a single scribe in a compressed <term type="script">protogothic minuscule</term> typical of scribal
+                                        work in England and northern France in the 12th century. </p>
+                                </handNote>
+                            </handDesc>
+
+                            <decoDesc>
+                                <decoNote type="plainInit">
+                                    <p>Plain initials in red at the major and minor divisions of the text - in several places where the pigment has
+                                        been more thickly applied, some of the pigment has oxidised and there are small patches of the initial that
+                                        are now a dark metallic grey colour, e.g., the initial 'Q' on f. <locus from="59v" to="59v">59v</locus>.</p>
+                                </decoNote>
+                            </decoDesc>
+                        </physDesc>
+
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="medium" notAfter="1200" notBefore="1100"> Written in the 12th century. </origDate>
+                                <origPlace cert="medium" key="place_g7002445"> Written in England, perhaps at the Cathedral Priory in Durham </origPlace>
+                                <note><p>Date and location of production assigned based on palaeographical assessment. </p></note>
+                            </origin>
+                        </history>
+                    </msPart>
+
+                </msDesc>
+
+            </sourceDesc>
+
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh96007025">Cooking, medieval</term>
+                        </item>
+                        <item>
+                            <term key="subject_sh85083152">Medicine, medieval</term>
+                        </item>
+                        <item>
+                            <term key="subject_sh85013597">Commentaries, Biblical</term>
+                        </item>
+                        <item>
+                            <term key="subject_sh85078354">Eucharist</term>
+                        </item>
+                        <item>
+                            <term key="subject_sh87000762">Religious poetry, Latin</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change status="draft" when="20231120">2023-11-20 <persName>Dr Sarah Gilbert, Project Cataloguer for the Curious Cures in Cambridge
+                    Libraries project, Cambridge University Library</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic decls="#document-thumbnail" url="MS-SIDNEYSUSSEX-00051-000-00001"/>
+        <surface n="outside left cover" xml:id="page-surface-1">
+            <graphic decls="#downloadImageRights #download" height="8777px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00001" width="5523px"/>
+        </surface>
+        <surface n="inside left cover" xml:id="page-surface-2">
+            <graphic decls="#downloadImageRights #download" height="8650px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00002" width="5336px"/>
+        </surface>
+        <surface n="[a] recto" xml:id="page-surface-3">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00003" width="5100px"/>
+        </surface>
+        <surface n="[a] verso" xml:id="page-surface-4">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00004" width="5100px"/>
+        </surface>
+        <surface n="[i] recto" xml:id="page-surface-5">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00005" width="5100px"/>
+        </surface>
+        <surface n="[i] verso" xml:id="page-surface-6">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00006" width="5100px"/>
+        </surface>
+        <surface n="[ii] recto" xml:id="page-surface-7">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00007" width="5100px"/>
+        </surface>
+        <surface n="[ii] verso" xml:id="page-surface-8">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00008" width="5100px"/>
+        </surface>
+        <surface n="[iii] recto" xml:id="page-surface-9">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00009" width="5100px"/>
+        </surface>
+        <surface n="[iii] verso" xml:id="page-surface-10">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00010" width="5100px"/>
+        </surface>
+        <surface n="1r" xml:id="page-surface-11">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00011" width="5100px"/>
+        </surface>
+        <surface n="1v" xml:id="page-surface-12">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00012" width="5100px"/>
+        </surface>
+        <surface n="2r" xml:id="page-surface-13">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00013" width="5100px"/>
+        </surface>
+        <surface n="2v" xml:id="page-surface-14">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00014" width="5100px"/>
+        </surface>
+        <surface n="3r" xml:id="page-surface-15">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00015" width="5100px"/>
+        </surface>
+        <surface n="3v" xml:id="page-surface-16">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00016" width="5100px"/>
+        </surface>
+        <surface n="4r" xml:id="page-surface-17">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00017" width="5100px"/>
+        </surface>
+        <surface n="4v" xml:id="page-surface-18">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00018" width="5100px"/>
+        </surface>
+        <surface n="5r" xml:id="page-surface-19">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00019" width="5100px"/>
+        </surface>
+        <surface n="5v" xml:id="page-surface-20">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00020" width="5100px"/>
+        </surface>
+        <surface n="6r" xml:id="page-surface-21">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00021" width="5100px"/>
+        </surface>
+        <surface n="6v" xml:id="page-surface-22">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00022" width="5100px"/>
+        </surface>
+        <surface n="7r" xml:id="page-surface-23">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00023" width="5100px"/>
+        </surface>
+        <surface n="7v" xml:id="page-surface-24">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00024" width="5100px"/>
+        </surface>
+        <surface n="8r" xml:id="page-surface-25">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00025" width="5100px"/>
+        </surface>
+        <surface n="8v" xml:id="page-surface-26">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00026" width="5100px"/>
+        </surface>
+        <surface n="9r" xml:id="page-surface-27">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00027" width="5100px"/>
+        </surface>
+        <surface n="9v" xml:id="page-surface-28">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00028" width="5100px"/>
+        </surface>
+        <surface n="10r" xml:id="page-surface-29">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00029" width="5100px"/>
+        </surface>
+        <surface n="10v" xml:id="page-surface-30">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00030" width="5100px"/>
+        </surface>
+        <surface n="11r" xml:id="page-surface-31">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00031" width="5100px"/>
+        </surface>
+        <surface n="11v" xml:id="page-surface-32">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00032" width="5100px"/>
+        </surface>
+        <surface n="12r" xml:id="page-surface-33">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00033" width="5100px"/>
+        </surface>
+        <surface n="12v" xml:id="page-surface-34">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00034" width="5100px"/>
+        </surface>
+        <surface n="13r" xml:id="page-surface-35">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00035" width="5100px"/>
+        </surface>
+        <surface n="13v" xml:id="page-surface-36">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00036" width="5100px"/>
+        </surface>
+        <surface n="14r" xml:id="page-surface-37">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00037" width="5100px"/>
+        </surface>
+        <surface n="14v" xml:id="page-surface-38">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00038" width="5100px"/>
+        </surface>
+        <surface n="15r" xml:id="page-surface-39">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00039" width="5100px"/>
+        </surface>
+        <surface n="15v" xml:id="page-surface-40">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00040" width="5100px"/>
+        </surface>
+        <surface n="16r" xml:id="page-surface-41">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00041" width="5100px"/>
+        </surface>
+        <surface n="16v" xml:id="page-surface-42">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00042" width="5100px"/>
+        </surface>
+        <surface n="17r" xml:id="page-surface-43">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00043" width="5100px"/>
+        </surface>
+        <surface n="17v" xml:id="page-surface-44">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00044" width="5100px"/>
+        </surface>
+        <surface n="18r" xml:id="page-surface-45">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00045" width="5100px"/>
+        </surface>
+        <surface n="18v" xml:id="page-surface-46">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00046" width="5100px"/>
+        </surface>
+        <surface n="19r" xml:id="page-surface-47">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00047" width="5100px"/>
+        </surface>
+        <surface n="19v" xml:id="page-surface-48">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00048" width="5100px"/>
+        </surface>
+        <surface n="20r" xml:id="page-surface-49">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00049" width="5100px"/>
+        </surface>
+        <surface n="20v" xml:id="page-surface-50">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00050" width="5100px"/>
+        </surface>
+        <surface n="21r" xml:id="page-surface-51">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00051" width="5100px"/>
+        </surface>
+        <surface n="21v" xml:id="page-surface-52">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00052" width="5100px"/>
+        </surface>
+        <surface n="22r" xml:id="page-surface-53">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00053" width="5100px"/>
+        </surface>
+        <surface n="22v" xml:id="page-surface-54">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00054" width="5100px"/>
+        </surface>
+        <surface n="23r" xml:id="page-surface-55">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00055" width="5100px"/>
+        </surface>
+        <surface n="23v" xml:id="page-surface-56">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00056" width="5100px"/>
+        </surface>
+        <surface n="24r" xml:id="page-surface-57">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00057" width="5100px"/>
+        </surface>
+        <surface n="24v" xml:id="page-surface-58">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00058" width="5100px"/>
+        </surface>
+        <surface n="25r" xml:id="page-surface-59">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00059" width="5100px"/>
+        </surface>
+        <surface n="25v" xml:id="page-surface-60">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00060" width="5100px"/>
+        </surface>
+        <surface n="26r" xml:id="page-surface-61">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00061" width="5100px"/>
+        </surface>
+        <surface n="26v" xml:id="page-surface-62">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00062" width="5100px"/>
+        </surface>
+        <surface n="27r" xml:id="page-surface-63">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00063" width="5100px"/>
+        </surface>
+        <surface n="27v" xml:id="page-surface-64">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00064" width="5100px"/>
+        </surface>
+        <surface n="28r" xml:id="page-surface-65">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00065" width="5100px"/>
+        </surface>
+        <surface n="28v" xml:id="page-surface-66">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00066" width="5100px"/>
+        </surface>
+        <surface n="29r" xml:id="page-surface-67">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00067" width="5100px"/>
+        </surface>
+        <surface n="29v" xml:id="page-surface-68">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00068" width="5100px"/>
+        </surface>
+        <surface n="30r" xml:id="page-surface-69">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00069" width="5100px"/>
+        </surface>
+        <surface n="30v" xml:id="page-surface-70">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00070" width="5100px"/>
+        </surface>
+        <surface n="31r" xml:id="page-surface-71">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00071" width="5100px"/>
+        </surface>
+        <surface n="31v" xml:id="page-surface-72">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00072" width="5100px"/>
+        </surface>
+        <surface n="32r" xml:id="page-surface-73">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00073" width="5100px"/>
+        </surface>
+        <surface n="32v" xml:id="page-surface-74">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00074" width="5100px"/>
+        </surface>
+        <surface n="33r" xml:id="page-surface-75">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00075" width="5100px"/>
+        </surface>
+        <surface n="33v" xml:id="page-surface-76">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00076" width="5100px"/>
+        </surface>
+        <surface n="34r" xml:id="page-surface-77">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00077" width="5100px"/>
+        </surface>
+        <surface n="34v" xml:id="page-surface-78">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00078" width="5100px"/>
+        </surface>
+        <surface n="35r" xml:id="page-surface-79">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00079" width="5100px"/>
+        </surface>
+        <surface n="35v" xml:id="page-surface-80">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00080" width="5100px"/>
+        </surface>
+        <surface n="36r" xml:id="page-surface-81">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00081" width="5100px"/>
+        </surface>
+        <surface n="36v" xml:id="page-surface-82">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00082" width="5100px"/>
+        </surface>
+        <surface n="37r" xml:id="page-surface-83">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00083" width="5100px"/>
+        </surface>
+        <surface n="37v" xml:id="page-surface-84">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00084" width="5100px"/>
+        </surface>
+        <surface n="38r" xml:id="page-surface-85">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00085" width="5100px"/>
+        </surface>
+        <surface n="38v" xml:id="page-surface-86">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00086" width="5100px"/>
+        </surface>
+        <surface n="39r" xml:id="page-surface-87">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00087" width="5100px"/>
+        </surface>
+        <surface n="39v" xml:id="page-surface-88">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00088" width="5100px"/>
+        </surface>
+        <surface n="40r" xml:id="page-surface-89">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00089" width="5100px"/>
+        </surface>
+        <surface n="40v" xml:id="page-surface-90">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00090" width="5100px"/>
+        </surface>
+        <surface n="41r" xml:id="page-surface-91">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00091" width="5100px"/>
+        </surface>
+        <surface n="41v" xml:id="page-surface-92">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00092" width="5100px"/>
+        </surface>
+        <surface n="42r" xml:id="page-surface-93">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00093" width="5100px"/>
+        </surface>
+        <surface n="42v" xml:id="page-surface-94">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00094" width="5100px"/>
+        </surface>
+        <surface n="43r" xml:id="page-surface-95">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00095" width="5100px"/>
+        </surface>
+        <surface n="43v" xml:id="page-surface-96">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00096" width="5100px"/>
+        </surface>
+        <surface n="44r" xml:id="page-surface-97">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00097" width="5100px"/>
+        </surface>
+        <surface n="44v" xml:id="page-surface-98">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00098" width="5100px"/>
+        </surface>
+        <surface n="45r" xml:id="page-surface-99">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00099" width="5100px"/>
+        </surface>
+        <surface n="45v" xml:id="page-surface-100">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00100" width="5100px"/>
+        </surface>
+        <surface n="46r" xml:id="page-surface-101">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00101" width="5100px"/>
+        </surface>
+        <surface n="46v" xml:id="page-surface-102">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00102" width="5100px"/>
+        </surface>
+        <surface n="47r" xml:id="page-surface-103">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00103" width="5100px"/>
+        </surface>
+        <surface n="47v" xml:id="page-surface-104">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00104" width="5100px"/>
+        </surface>
+        <surface n="48r" xml:id="page-surface-105">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00105" width="5100px"/>
+        </surface>
+        <surface n="48v" xml:id="page-surface-106">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00106" width="5100px"/>
+        </surface>
+        <surface n="49r" xml:id="page-surface-107">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00107" width="5100px"/>
+        </surface>
+        <surface n="49v" xml:id="page-surface-108">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00108" width="5100px"/>
+        </surface>
+        <surface n="50r" xml:id="page-surface-109">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00109" width="5100px"/>
+        </surface>
+        <surface n="50v" xml:id="page-surface-110">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00110" width="5100px"/>
+        </surface>
+        <surface n="51r" xml:id="page-surface-111">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00111" width="5100px"/>
+        </surface>
+        <surface n="51v" xml:id="page-surface-112">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00112" width="5100px"/>
+        </surface>
+        <surface n="52r" xml:id="page-surface-113">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00113" width="5100px"/>
+        </surface>
+        <surface n="52v" xml:id="page-surface-114">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00114" width="5100px"/>
+        </surface>
+        <surface n="53r" xml:id="page-surface-115">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00115" width="5100px"/>
+        </surface>
+        <surface n="53v" xml:id="page-surface-116">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00116" width="5100px"/>
+        </surface>
+        <surface n="54r" xml:id="page-surface-117">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00117" width="5100px"/>
+        </surface>
+        <surface n="54v" xml:id="page-surface-118">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00118" width="5100px"/>
+        </surface>
+        <surface n="55r" xml:id="page-surface-119">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00119" width="5100px"/>
+        </surface>
+        <surface n="55v" xml:id="page-surface-120">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00120" width="5100px"/>
+        </surface>
+        <surface n="56r" xml:id="page-surface-121">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00121" width="5100px"/>
+        </surface>
+        <surface n="56v" xml:id="page-surface-122">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00122" width="5100px"/>
+        </surface>
+        <surface n="57r" xml:id="page-surface-123">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00123" width="5100px"/>
+        </surface>
+        <surface n="57v" xml:id="page-surface-124">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00124" width="5100px"/>
+        </surface>
+        <surface n="58r" xml:id="page-surface-125">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00125" width="5100px"/>
+        </surface>
+        <surface n="58v" xml:id="page-surface-126">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00126" width="5100px"/>
+        </surface>
+        <surface n="59r" xml:id="page-surface-127">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00127" width="5100px"/>
+        </surface>
+        <surface n="59v" xml:id="page-surface-128">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00128" width="5100px"/>
+        </surface>
+        <surface n="60r" xml:id="page-surface-129">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00129" width="5100px"/>
+        </surface>
+        <surface n="60v" xml:id="page-surface-130">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00130" width="5100px"/>
+        </surface>
+        <surface n="61r" xml:id="page-surface-131">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00131" width="5100px"/>
+        </surface>
+        <surface n="61v" xml:id="page-surface-132">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00132" width="5100px"/>
+        </surface>
+        <surface n="62r" xml:id="page-surface-133">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00133" width="5100px"/>
+        </surface>
+        <surface n="62v" xml:id="page-surface-134">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00134" width="5100px"/>
+        </surface>
+        <surface n="63r" xml:id="page-surface-135">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00135" width="5100px"/>
+        </surface>
+        <surface n="63v" xml:id="page-surface-136">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00136" width="5100px"/>
+        </surface>
+        <surface n="64r" xml:id="page-surface-137">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00137" width="5100px"/>
+        </surface>
+        <surface n="64v" xml:id="page-surface-138">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00138" width="5100px"/>
+        </surface>
+        <surface n="65r" xml:id="page-surface-139">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00139" width="5100px"/>
+        </surface>
+        <surface n="65v" xml:id="page-surface-140">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00140" width="5100px"/>
+        </surface>
+        <surface n="66r" xml:id="page-surface-141">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00141" width="5100px"/>
+        </surface>
+        <surface n="66v" xml:id="page-surface-142">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00142" width="5100px"/>
+        </surface>
+        <surface n="67r" xml:id="page-surface-143">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00143" width="5100px"/>
+        </surface>
+        <surface n="67v" xml:id="page-surface-144">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00144" width="5100px"/>
+        </surface>
+        <surface n="68r" xml:id="page-surface-145">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00145" width="5100px"/>
+        </surface>
+        <surface n="68v" xml:id="page-surface-146">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00146" width="5100px"/>
+        </surface>
+        <surface n="69r" xml:id="page-surface-147">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00147" width="5100px"/>
+        </surface>
+        <surface n="69v" xml:id="page-surface-148">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00148" width="5100px"/>
+        </surface>
+        <surface n="70r" xml:id="page-surface-149">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00149" width="5100px"/>
+        </surface>
+        <surface n="70v" xml:id="page-surface-150">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00150" width="5100px"/>
+        </surface>
+        <surface n="71r" xml:id="page-surface-151">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00151" width="5100px"/>
+        </surface>
+        <surface n="71v" xml:id="page-surface-152">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00152" width="5100px"/>
+        </surface>
+        <surface n="72r" xml:id="page-surface-153">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00153" width="5100px"/>
+        </surface>
+        <surface n="72v" xml:id="page-surface-154">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00154" width="5100px"/>
+        </surface>
+        <surface n="73r" xml:id="page-surface-155">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00155" width="5100px"/>
+        </surface>
+        <surface n="73v" xml:id="page-surface-156">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00156" width="5100px"/>
+        </surface>
+        <surface n="74r" xml:id="page-surface-157">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00157" width="5100px"/>
+        </surface>
+        <surface n="74v" xml:id="page-surface-158">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00158" width="5100px"/>
+        </surface>
+        <surface n="75r" xml:id="page-surface-159">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00159" width="5100px"/>
+        </surface>
+        <surface n="75v" xml:id="page-surface-160">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00160" width="5100px"/>
+        </surface>
+        <surface n="76r" xml:id="page-surface-161">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00161" width="5100px"/>
+        </surface>
+        <surface n="76v" xml:id="page-surface-162">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00162" width="5100px"/>
+        </surface>
+        <surface n="77r" xml:id="page-surface-163">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00163" width="5100px"/>
+        </surface>
+        <surface n="77v" xml:id="page-surface-164">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00164" width="5100px"/>
+        </surface>
+        <surface n="78r" xml:id="page-surface-165">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00165" width="5100px"/>
+        </surface>
+        <surface n="78v" xml:id="page-surface-166">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00166" width="5100px"/>
+        </surface>
+        <surface n="79r" xml:id="page-surface-167">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00167" width="5100px"/>
+        </surface>
+        <surface n="79v" xml:id="page-surface-168">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00168" width="5100px"/>
+        </surface>
+        <surface n="80r" xml:id="page-surface-169">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00169" width="5100px"/>
+        </surface>
+        <surface n="80v" xml:id="page-surface-170">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00170" width="5100px"/>
+        </surface>
+        <surface n="81r" xml:id="page-surface-171">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00171" width="5100px"/>
+        </surface>
+        <surface n="81v" xml:id="page-surface-172">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00172" width="5100px"/>
+        </surface>
+        <surface n="82r" xml:id="page-surface-173">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00173" width="5100px"/>
+        </surface>
+        <surface n="82v" xml:id="page-surface-174">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00174" width="5100px"/>
+        </surface>
+        <surface n="83r" xml:id="page-surface-175">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00175" width="5100px"/>
+        </surface>
+        <surface n="83v" xml:id="page-surface-176">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00176" width="5100px"/>
+        </surface>
+        <surface n="84r" xml:id="page-surface-177">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00177" width="5100px"/>
+        </surface>
+        <surface n="84v" xml:id="page-surface-178">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00178" width="5100px"/>
+        </surface>
+        <surface n="85r" xml:id="page-surface-179">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00179" width="5100px"/>
+        </surface>
+        <surface n="85v" xml:id="page-surface-180">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00180" width="5100px"/>
+        </surface>
+        <surface n="86r" xml:id="page-surface-181">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00181" width="5100px"/>
+        </surface>
+        <surface n="86v" xml:id="page-surface-182">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00182" width="5100px"/>
+        </surface>
+        <surface n="87r" xml:id="page-surface-183">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00183" width="5100px"/>
+        </surface>
+        <surface n="87v" xml:id="page-surface-184">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00184" width="5100px"/>
+        </surface>
+        <surface n="88r" xml:id="page-surface-185">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00185" width="5100px"/>
+        </surface>
+        <surface n="88v" xml:id="page-surface-186">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00186" width="5100px"/>
+        </surface>
+        <surface n="89r" xml:id="page-surface-187">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00187" width="5100px"/>
+        </surface>
+        <surface n="89v" xml:id="page-surface-188">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00188" width="5100px"/>
+        </surface>
+        <surface n="90r" xml:id="page-surface-189">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00189" width="5100px"/>
+        </surface>
+        <surface n="90v" xml:id="page-surface-190">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00190" width="5100px"/>
+        </surface>
+        <surface n="91r" xml:id="page-surface-191">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00191" width="5100px"/>
+        </surface>
+        <surface n="91v" xml:id="page-surface-192">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00192" width="5100px"/>
+        </surface>
+        <surface n="92r" xml:id="page-surface-193">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00193" width="5100px"/>
+        </surface>
+        <surface n="92v" xml:id="page-surface-194">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00194" width="5100px"/>
+        </surface>
+        <surface n="93r" xml:id="page-surface-195">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00195" width="5100px"/>
+        </surface>
+        <surface n="93v" xml:id="page-surface-196">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00196" width="5100px"/>
+        </surface>
+        <surface n="94r" xml:id="page-surface-197">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00197" width="5100px"/>
+        </surface>
+        <surface n="94v" xml:id="page-surface-198">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00198" width="5100px"/>
+        </surface>
+        <surface n="95r" xml:id="page-surface-199">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00199" width="5100px"/>
+        </surface>
+        <surface n="95v" xml:id="page-surface-200">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00200" width="5100px"/>
+        </surface>
+        <surface n="96r" xml:id="page-surface-201">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00201" width="5100px"/>
+        </surface>
+        <surface n="96v" xml:id="page-surface-202">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00202" width="5100px"/>
+        </surface>
+        <surface n="97r" xml:id="page-surface-203">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00203" width="5100px"/>
+        </surface>
+        <surface n="97v" xml:id="page-surface-204">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00204" width="5100px"/>
+        </surface>
+        <surface n="98r" xml:id="page-surface-205">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00205" width="5100px"/>
+        </surface>
+        <surface n="98v" xml:id="page-surface-206">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00206" width="5100px"/>
+        </surface>
+        <surface n="99r" xml:id="page-surface-207">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00207" width="5100px"/>
+        </surface>
+        <surface n="99v" xml:id="page-surface-208">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00208" width="5100px"/>
+        </surface>
+        <surface n="100r" xml:id="page-surface-209">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00209" width="5100px"/>
+        </surface>
+        <surface n="100v" xml:id="page-surface-210">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00210" width="5100px"/>
+        </surface>
+        <surface n="101r" xml:id="page-surface-211">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00211" width="5100px"/>
+        </surface>
+        <surface n="101v" xml:id="page-surface-212">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00212" width="5100px"/>
+        </surface>
+        <surface n="102r" xml:id="page-surface-213">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00213" width="5100px"/>
+        </surface>
+        <surface n="102v" xml:id="page-surface-214">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00214" width="5100px"/>
+        </surface>
+        <surface n="103r" xml:id="page-surface-215">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00215" width="5100px"/>
+        </surface>
+        <surface n="103v" xml:id="page-surface-216">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00216" width="5100px"/>
+        </surface>
+        <surface n="104r" xml:id="page-surface-217">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00217" width="5100px"/>
+        </surface>
+        <surface n="104v" xml:id="page-surface-218">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00218" width="5100px"/>
+        </surface>
+        <surface n="[b] recto" xml:id="page-surface-219">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00219" width="5100px"/>
+        </surface>
+        <surface n="[b] verso" xml:id="page-surface-220">
+            <graphic decls="#downloadImageRights #download" height="8361px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00220" width="5100px"/>
+        </surface>
+        <surface n="inside right cover" xml:id="page-surface-221">
+            <graphic decls="#downloadImageRights #download" height="8724px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00221" width="5424px"/>
+        </surface>
+        <surface n="outside right cover" xml:id="page-surface-222">
+            <graphic decls="#downloadImageRights #download" height="8687px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00222" width="5429px"/>
+        </surface>
+        <surface n="spine" xml:id="page-surface-223">
+            <graphic decls="#downloadImageRights #download" height="7929px" rend="portrait" url="MS-SIDNEYSUSSEX-00051-000-00223" width="2289px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#page-surface-1" n="outside left cover" xml:id="page-pb-1"/>
+                <pb facs="#page-surface-2" n="inside left cover" xml:id="page-pb-2"/>
+                <pb facs="#page-surface-3" n="[a] recto" xml:id="page-pb-3"/>
+                <pb facs="#page-surface-4" n="[a] verso" xml:id="page-pb-4"/>
+                <pb facs="#page-surface-5" n="[i] recto" xml:id="page-pb-5"/>
+                <pb facs="#page-surface-6" n="[i] verso" xml:id="page-pb-6"/>
+                <pb facs="#page-surface-7" n="[ii] recto" xml:id="page-pb-7"/>
+                <pb facs="#page-surface-8" n="[ii] verso" xml:id="page-pb-8"/>
+                <pb facs="#page-surface-9" n="[iii] recto" xml:id="page-pb-9"/>
+                <pb facs="#page-surface-10" n="[iii] verso" xml:id="page-pb-10"/>
+                <pb facs="#page-surface-11" n="1r" xml:id="page-pb-11"/>
+                <pb facs="#page-surface-12" n="1v" xml:id="page-pb-12"/>
+                <pb facs="#page-surface-13" n="2r" xml:id="page-pb-13"/>
+                <pb facs="#page-surface-14" n="2v" xml:id="page-pb-14"/>
+                <pb facs="#page-surface-15" n="3r" xml:id="page-pb-15"/>
+                <pb facs="#page-surface-16" n="3v" xml:id="page-pb-16"/>
+                <pb facs="#page-surface-17" n="4r" xml:id="page-pb-17"/>
+                <pb facs="#page-surface-18" n="4v" xml:id="page-pb-18"/>
+                <pb facs="#page-surface-19" n="5r" xml:id="page-pb-19"/>
+                <pb facs="#page-surface-20" n="5v" xml:id="page-pb-20"/>
+                <pb facs="#page-surface-21" n="6r" xml:id="page-pb-21"/>
+                <pb facs="#page-surface-22" n="6v" xml:id="page-pb-22"/>
+                <pb facs="#page-surface-23" n="7r" xml:id="page-pb-23"/>
+                <pb facs="#page-surface-24" n="7v" xml:id="page-pb-24"/>
+                <pb facs="#page-surface-25" n="8r" xml:id="page-pb-25"/>
+                <pb facs="#page-surface-26" n="8v" xml:id="page-pb-26"/>
+                <pb facs="#page-surface-27" n="9r" xml:id="page-pb-27"/>
+                <pb facs="#page-surface-28" n="9v" xml:id="page-pb-28"/>
+                <pb facs="#page-surface-29" n="10r" xml:id="page-pb-29"/>
+                <pb facs="#page-surface-30" n="10v" xml:id="page-pb-30"/>
+                <pb facs="#page-surface-31" n="11r" xml:id="page-pb-31"/>
+                <pb facs="#page-surface-32" n="11v" xml:id="page-pb-32"/>
+                <pb facs="#page-surface-33" n="12r" xml:id="page-pb-33"/>
+                <pb facs="#page-surface-34" n="12v" xml:id="page-pb-34"/>
+                <pb facs="#page-surface-35" n="13r" xml:id="page-pb-35"/>
+                <pb facs="#page-surface-36" n="13v" xml:id="page-pb-36"/>
+                <pb facs="#page-surface-37" n="14r" xml:id="page-pb-37"/>
+                <pb facs="#page-surface-38" n="14v" xml:id="page-pb-38"/>
+                <pb facs="#page-surface-39" n="15r" xml:id="page-pb-39"/>
+                <pb facs="#page-surface-40" n="15v" xml:id="page-pb-40"/>
+                <pb facs="#page-surface-41" n="16r" xml:id="page-pb-41"/>
+                <pb facs="#page-surface-42" n="16v" xml:id="page-pb-42"/>
+                <pb facs="#page-surface-43" n="17r" xml:id="page-pb-43"/>
+                <pb facs="#page-surface-44" n="17v" xml:id="page-pb-44"/>
+                <pb facs="#page-surface-45" n="18r" xml:id="page-pb-45"/>
+                <pb facs="#page-surface-46" n="18v" xml:id="page-pb-46"/>
+                <pb facs="#page-surface-47" n="19r" xml:id="page-pb-47"/>
+                <pb facs="#page-surface-48" n="19v" xml:id="page-pb-48"/>
+                <pb facs="#page-surface-49" n="20r" xml:id="page-pb-49"/>
+                <pb facs="#page-surface-50" n="20v" xml:id="page-pb-50"/>
+                <pb facs="#page-surface-51" n="21r" xml:id="page-pb-51"/>
+                <pb facs="#page-surface-52" n="21v" xml:id="page-pb-52"/>
+                <pb facs="#page-surface-53" n="22r" xml:id="page-pb-53"/>
+                <pb facs="#page-surface-54" n="22v" xml:id="page-pb-54"/>
+                <pb facs="#page-surface-55" n="23r" xml:id="page-pb-55"/>
+                <pb facs="#page-surface-56" n="23v" xml:id="page-pb-56"/>
+                <pb facs="#page-surface-57" n="24r" xml:id="page-pb-57"/>
+                <pb facs="#page-surface-58" n="24v" xml:id="page-pb-58"/>
+                <pb facs="#page-surface-59" n="25r" xml:id="page-pb-59"/>
+                <pb facs="#page-surface-60" n="25v" xml:id="page-pb-60"/>
+                <pb facs="#page-surface-61" n="26r" xml:id="page-pb-61"/>
+                <pb facs="#page-surface-62" n="26v" xml:id="page-pb-62"/>
+                <pb facs="#page-surface-63" n="27r" xml:id="page-pb-63"/>
+                <pb facs="#page-surface-64" n="27v" xml:id="page-pb-64"/>
+                <pb facs="#page-surface-65" n="28r" xml:id="page-pb-65"/>
+                <pb facs="#page-surface-66" n="28v" xml:id="page-pb-66"/>
+                <pb facs="#page-surface-67" n="29r" xml:id="page-pb-67"/>
+                <pb facs="#page-surface-68" n="29v" xml:id="page-pb-68"/>
+                <pb facs="#page-surface-69" n="30r" xml:id="page-pb-69"/>
+                <pb facs="#page-surface-70" n="30v" xml:id="page-pb-70"/>
+                <pb facs="#page-surface-71" n="31r" xml:id="page-pb-71"/>
+                <pb facs="#page-surface-72" n="31v" xml:id="page-pb-72"/>
+                <pb facs="#page-surface-73" n="32r" xml:id="page-pb-73"/>
+                <pb facs="#page-surface-74" n="32v" xml:id="page-pb-74"/>
+                <pb facs="#page-surface-75" n="33r" xml:id="page-pb-75"/>
+                <pb facs="#page-surface-76" n="33v" xml:id="page-pb-76"/>
+                <pb facs="#page-surface-77" n="34r" xml:id="page-pb-77"/>
+                <pb facs="#page-surface-78" n="34v" xml:id="page-pb-78"/>
+                <pb facs="#page-surface-79" n="35r" xml:id="page-pb-79"/>
+                <pb facs="#page-surface-80" n="35v" xml:id="page-pb-80"/>
+                <pb facs="#page-surface-81" n="36r" xml:id="page-pb-81"/>
+                <pb facs="#page-surface-82" n="36v" xml:id="page-pb-82"/>
+                <pb facs="#page-surface-83" n="37r" xml:id="page-pb-83"/>
+                <pb facs="#page-surface-84" n="37v" xml:id="page-pb-84"/>
+                <pb facs="#page-surface-85" n="38r" xml:id="page-pb-85"/>
+                <pb facs="#page-surface-86" n="38v" xml:id="page-pb-86"/>
+                <pb facs="#page-surface-87" n="39r" xml:id="page-pb-87"/>
+                <pb facs="#page-surface-88" n="39v" xml:id="page-pb-88"/>
+                <pb facs="#page-surface-89" n="40r" xml:id="page-pb-89"/>
+                <pb facs="#page-surface-90" n="40v" xml:id="page-pb-90"/>
+                <pb facs="#page-surface-91" n="41r" xml:id="page-pb-91"/>
+                <pb facs="#page-surface-92" n="41v" xml:id="page-pb-92"/>
+                <pb facs="#page-surface-93" n="42r" xml:id="page-pb-93"/>
+                <pb facs="#page-surface-94" n="42v" xml:id="page-pb-94"/>
+                <pb facs="#page-surface-95" n="43r" xml:id="page-pb-95"/>
+                <pb facs="#page-surface-96" n="43v" xml:id="page-pb-96"/>
+                <pb facs="#page-surface-97" n="44r" xml:id="page-pb-97"/>
+                <pb facs="#page-surface-98" n="44v" xml:id="page-pb-98"/>
+                <pb facs="#page-surface-99" n="45r" xml:id="page-pb-99"/>
+                <pb facs="#page-surface-100" n="45v" xml:id="page-pb-100"/>
+                <pb facs="#page-surface-101" n="46r" xml:id="page-pb-101"/>
+                <pb facs="#page-surface-102" n="46v" xml:id="page-pb-102"/>
+                <pb facs="#page-surface-103" n="47r" xml:id="page-pb-103"/>
+                <pb facs="#page-surface-104" n="47v" xml:id="page-pb-104"/>
+                <pb facs="#page-surface-105" n="48r" xml:id="page-pb-105"/>
+                <pb facs="#page-surface-106" n="48v" xml:id="page-pb-106"/>
+                <pb facs="#page-surface-107" n="49r" xml:id="page-pb-107"/>
+                <pb facs="#page-surface-108" n="49v" xml:id="page-pb-108"/>
+                <pb facs="#page-surface-109" n="50r" xml:id="page-pb-109"/>
+                <pb facs="#page-surface-110" n="50v" xml:id="page-pb-110"/>
+                <pb facs="#page-surface-111" n="51r" xml:id="page-pb-111"/>
+                <pb facs="#page-surface-112" n="51v" xml:id="page-pb-112"/>
+                <pb facs="#page-surface-113" n="52r" xml:id="page-pb-113"/>
+                <pb facs="#page-surface-114" n="52v" xml:id="page-pb-114"/>
+                <pb facs="#page-surface-115" n="53r" xml:id="page-pb-115"/>
+                <pb facs="#page-surface-116" n="53v" xml:id="page-pb-116"/>
+                <pb facs="#page-surface-117" n="54r" xml:id="page-pb-117"/>
+                <pb facs="#page-surface-118" n="54v" xml:id="page-pb-118"/>
+                <pb facs="#page-surface-119" n="55r" xml:id="page-pb-119"/>
+                <pb facs="#page-surface-120" n="55v" xml:id="page-pb-120"/>
+                <pb facs="#page-surface-121" n="56r" xml:id="page-pb-121"/>
+                <pb facs="#page-surface-122" n="56v" xml:id="page-pb-122"/>
+                <pb facs="#page-surface-123" n="57r" xml:id="page-pb-123"/>
+                <pb facs="#page-surface-124" n="57v" xml:id="page-pb-124"/>
+                <pb facs="#page-surface-125" n="58r" xml:id="page-pb-125"/>
+                <pb facs="#page-surface-126" n="58v" xml:id="page-pb-126"/>
+                <pb facs="#page-surface-127" n="59r" xml:id="page-pb-127"/>
+                <pb facs="#page-surface-128" n="59v" xml:id="page-pb-128"/>
+                <pb facs="#page-surface-129" n="60r" xml:id="page-pb-129"/>
+                <pb facs="#page-surface-130" n="60v" xml:id="page-pb-130"/>
+                <pb facs="#page-surface-131" n="61r" xml:id="page-pb-131"/>
+                <pb facs="#page-surface-132" n="61v" xml:id="page-pb-132"/>
+                <pb facs="#page-surface-133" n="62r" xml:id="page-pb-133"/>
+                <pb facs="#page-surface-134" n="62v" xml:id="page-pb-134"/>
+                <pb facs="#page-surface-135" n="63r" xml:id="page-pb-135"/>
+                <pb facs="#page-surface-136" n="63v" xml:id="page-pb-136"/>
+                <pb facs="#page-surface-137" n="64r" xml:id="page-pb-137"/>
+                <pb facs="#page-surface-138" n="64v" xml:id="page-pb-138"/>
+                <pb facs="#page-surface-139" n="65r" xml:id="page-pb-139"/>
+                <pb facs="#page-surface-140" n="65v" xml:id="page-pb-140"/>
+                <pb facs="#page-surface-141" n="66r" xml:id="page-pb-141"/>
+                <pb facs="#page-surface-142" n="66v" xml:id="page-pb-142"/>
+                <pb facs="#page-surface-143" n="67r" xml:id="page-pb-143"/>
+                <pb facs="#page-surface-144" n="67v" xml:id="page-pb-144"/>
+                <pb facs="#page-surface-145" n="68r" xml:id="page-pb-145"/>
+                <pb facs="#page-surface-146" n="68v" xml:id="page-pb-146"/>
+                <pb facs="#page-surface-147" n="69r" xml:id="page-pb-147"/>
+                <pb facs="#page-surface-148" n="69v" xml:id="page-pb-148"/>
+                <pb facs="#page-surface-149" n="70r" xml:id="page-pb-149"/>
+                <pb facs="#page-surface-150" n="70v" xml:id="page-pb-150"/>
+                <pb facs="#page-surface-151" n="71r" xml:id="page-pb-151"/>
+                <pb facs="#page-surface-152" n="71v" xml:id="page-pb-152"/>
+                <pb facs="#page-surface-153" n="72r" xml:id="page-pb-153"/>
+                <pb facs="#page-surface-154" n="72v" xml:id="page-pb-154"/>
+                <pb facs="#page-surface-155" n="73r" xml:id="page-pb-155"/>
+                <pb facs="#page-surface-156" n="73v" xml:id="page-pb-156"/>
+                <pb facs="#page-surface-157" n="74r" xml:id="page-pb-157"/>
+                <pb facs="#page-surface-158" n="74v" xml:id="page-pb-158"/>
+                <pb facs="#page-surface-159" n="75r" xml:id="page-pb-159"/>
+                <pb facs="#page-surface-160" n="75v" xml:id="page-pb-160"/>
+                <pb facs="#page-surface-161" n="76r" xml:id="page-pb-161"/>
+                <pb facs="#page-surface-162" n="76v" xml:id="page-pb-162"/>
+                <pb facs="#page-surface-163" n="77r" xml:id="page-pb-163"/>
+                <pb facs="#page-surface-164" n="77v" xml:id="page-pb-164"/>
+                <pb facs="#page-surface-165" n="78r" xml:id="page-pb-165"/>
+                <pb facs="#page-surface-166" n="78v" xml:id="page-pb-166"/>
+                <pb facs="#page-surface-167" n="79r" xml:id="page-pb-167"/>
+                <pb facs="#page-surface-168" n="79v" xml:id="page-pb-168"/>
+                <pb facs="#page-surface-169" n="80r" xml:id="page-pb-169"/>
+                <pb facs="#page-surface-170" n="80v" xml:id="page-pb-170"/>
+                <pb facs="#page-surface-171" n="81r" xml:id="page-pb-171"/>
+                <pb facs="#page-surface-172" n="81v" xml:id="page-pb-172"/>
+                <pb facs="#page-surface-173" n="82r" xml:id="page-pb-173"/>
+                <pb facs="#page-surface-174" n="82v" xml:id="page-pb-174"/>
+                <pb facs="#page-surface-175" n="83r" xml:id="page-pb-175"/>
+                <pb facs="#page-surface-176" n="83v" xml:id="page-pb-176"/>
+                <pb facs="#page-surface-177" n="84r" xml:id="page-pb-177"/>
+                <pb facs="#page-surface-178" n="84v" xml:id="page-pb-178"/>
+                <pb facs="#page-surface-179" n="85r" xml:id="page-pb-179"/>
+                <pb facs="#page-surface-180" n="85v" xml:id="page-pb-180"/>
+                <pb facs="#page-surface-181" n="86r" xml:id="page-pb-181"/>
+                <pb facs="#page-surface-182" n="86v" xml:id="page-pb-182"/>
+                <pb facs="#page-surface-183" n="87r" xml:id="page-pb-183"/>
+                <pb facs="#page-surface-184" n="87v" xml:id="page-pb-184"/>
+                <pb facs="#page-surface-185" n="88r" xml:id="page-pb-185"/>
+                <pb facs="#page-surface-186" n="88v" xml:id="page-pb-186"/>
+                <pb facs="#page-surface-187" n="89r" xml:id="page-pb-187"/>
+                <pb facs="#page-surface-188" n="89v" xml:id="page-pb-188"/>
+                <pb facs="#page-surface-189" n="90r" xml:id="page-pb-189"/>
+                <pb facs="#page-surface-190" n="90v" xml:id="page-pb-190"/>
+                <pb facs="#page-surface-191" n="91r" xml:id="page-pb-191"/>
+                <pb facs="#page-surface-192" n="91v" xml:id="page-pb-192"/>
+                <pb facs="#page-surface-193" n="92r" xml:id="page-pb-193"/>
+                <pb facs="#page-surface-194" n="92v" xml:id="page-pb-194"/>
+                <pb facs="#page-surface-195" n="93r" xml:id="page-pb-195"/>
+                <pb facs="#page-surface-196" n="93v" xml:id="page-pb-196"/>
+                <pb facs="#page-surface-197" n="94r" xml:id="page-pb-197"/>
+                <pb facs="#page-surface-198" n="94v" xml:id="page-pb-198"/>
+                <pb facs="#page-surface-199" n="95r" xml:id="page-pb-199"/>
+                <pb facs="#page-surface-200" n="95v" xml:id="page-pb-200"/>
+                <pb facs="#page-surface-201" n="96r" xml:id="page-pb-201"/>
+                <pb facs="#page-surface-202" n="96v" xml:id="page-pb-202"/>
+                <pb facs="#page-surface-203" n="97r" xml:id="page-pb-203"/>
+                <pb facs="#page-surface-204" n="97v" xml:id="page-pb-204"/>
+                <pb facs="#page-surface-205" n="98r" xml:id="page-pb-205"/>
+                <pb facs="#page-surface-206" n="98v" xml:id="page-pb-206"/>
+                <pb facs="#page-surface-207" n="99r" xml:id="page-pb-207"/>
+                <pb facs="#page-surface-208" n="99v" xml:id="page-pb-208"/>
+                <pb facs="#page-surface-209" n="100r" xml:id="page-pb-209"/>
+                <pb facs="#page-surface-210" n="100v" xml:id="page-pb-210"/>
+                <pb facs="#page-surface-211" n="101r" xml:id="page-pb-211"/>
+                <pb facs="#page-surface-212" n="101v" xml:id="page-pb-212"/>
+                <pb facs="#page-surface-213" n="102r" xml:id="page-pb-213"/>
+                <pb facs="#page-surface-214" n="102v" xml:id="page-pb-214"/>
+                <pb facs="#page-surface-215" n="103r" xml:id="page-pb-215"/>
+                <pb facs="#page-surface-216" n="103v" xml:id="page-pb-216"/>
+                <pb facs="#page-surface-217" n="104r" xml:id="page-pb-217"/>
+                <pb facs="#page-surface-218" n="104v" xml:id="page-pb-218"/>
+                <pb facs="#page-surface-219" n="[b] recto" xml:id="page-pb-219"/>
+                <pb facs="#page-surface-220" n="[b] verso" xml:id="page-pb-220"/>
+                <pb facs="#page-surface-221" n="inside right cover" xml:id="page-pb-221"/>
+                <pb facs="#page-surface-222" n="outside right cover" xml:id="page-pb-222"/>
+                <pb facs="#page-surface-223" n="spine" xml:id="page-pb-223"/>
+            </div>
+        </body>
+    </text>
+</TEI>

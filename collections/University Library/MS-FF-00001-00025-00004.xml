@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, University Library, MS Ff.1.25(4)</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+                <availability default="false" status="restricted" xml:id="displayImageRights">
+                    <p part="N">Zooming image © Cambridge University Library, All rights reserved.</p>
+                </availability>
+                <availability default="false" status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability default="false" status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-FF-00001-00025-00004" xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+                    <msIdentifier>
+                        <institution>University of Cambridge</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Medieval Manuscripts</collection>
+                        <idno>Cambridge, University Library, MS Ff.1.25(4)</idno>
+                    </msIdentifier>
+
+                    <head>Compilation of crusade texts </head>
+
+                    <msContents>
+
+                        <summary>
+                            <seg type="para">This manuscript contains prose and verse texts relating to the Crusades, written principally by Ricardus
+                                de Templo (fl. 1190-1229), an English crusader and canon and prior of Holy Trinity Augustinian priory in London, as
+                                well as by Geoffrey of Vinsauf (fl. 1200), poet and grammarian, and Oliverus, bishop of Paderborn (c. 1170-1227), a
+                                German crusader and cleric. </seg>
+                            <seg type="para">The first and largest text in the volume, the <hi rend="italic">Itinerarium peregrinorum et gesta regis
+                                    Ricardi</hi>, is an account of the Third Crusade (1187-92) that focuses on the travels and deeds of Richard I
+                                (1157-1199), king of England 1189-1199. It opens with the fall of Jerusalem to Saladin (c. 1137-1193), sultan of Egypt
+                                and Syria, 1174-1193, details the journeys of European crusaders to the East, and recounts the long siege of Acre. It
+                                ends with Richard's departure, after he failed to retake Jerusalem, but defends his heroic reputation. Four different
+                                versions of this text survive in twelve manuscript copies. The original version comprises merely the first part of the
+                                first book, and was written c. 1191-92 by an English crusader drawing on eyewitness accounts, particularly of the
+                                siege of Acre. The longer recension found here was written later, c. 1217-1220, and incorporates the original text as
+                                well as information from several other sources, and its author identified as Ricardus de Templo (though it is
+                                mistakenly attributed to Geoffrey of Vinsauf in this copy). </seg>
+                            <seg type="para">The Latin verses by Geoffrey of Vinsauf that follow the <hi rend="italic">Itinerarium</hi> comprise
+                                extracts from the <hi rend="italic">Poetria nova</hi>, a treatise written in verse designed to teach composition. The
+                                verses in praise of Henry II (1133-1189), king of England 1154-1189, that come after that may have served as a sample
+                                composition, employing the techniques discussed in the <hi rend="italic">Poetria nova</hi>. </seg>
+                            <seg type="para">The final work in the volume, the <hi rend="italic">Historia Damiatina</hi>, is a vivid narrative of the
+                                Fifth Crusade (1217-1222) written by one of its principal participants, Oliverus of Paderborn. Oliverus not only
+                                recruited many of the crusaders through his preaching, but also participated in the design and building of an
+                                innovative floating siege engine which facilitated the capture of the Egyptian port of Damietta. </seg>
+                            <seg type="para">The manuscript shown here was once in the possession of Matthew Parker (1504-1575), archbishop of
+                                Canterbury. Parker was not only a collector of manuscripts: he also used them, annotating and cross-referencing,
+                                rebinding and rearranging the books that he owned. Before donating this manuscript to Cambridge University Library in
+                                1574 (along with 24 others), he augmented it with additional chronicle works, notably by William of Malmesbury,
+                                including copies that he commissioned himself. </seg>
+                            <seg type="para">The description of the manuscript in the <ref target="https://www.lib.cam.ac.uk/collections/departments/manuscripts-university-archives/subject-guides/medieval-manuscripts/early">list of Parker's donations</ref> confirms that these additions were at that time bound together with this copy of
+                                the <hi rend="italic">Gesta pontificum Anglorum</hi> in a single volume. They remained in this state until 1862,
+                                whereupon they were divided into five separate volumes, all of which are now available to view on the Cambridge
+                                Digital Library: <list>
+                                    <item><ref target="https://cudl.lib.cam.ac.uk/view/MS-FF-00001-00025-00001/1">MS Ff.1.25(1)</ref>: William of
+                                        Malmesbury, <hi rend="italic">Gesta pontificum Anglorum (Books 1-4)</hi></item>
+                                    <item><ref target="https://cudl.lib.cam.ac.uk/view/MS-FF-00001-00025-00002/1">MS Ff.1.25(2)</ref>: William of
+                                        Malmesbury, <hi rend="italic">Gesta pontificum Anglorum (Book 5)</hi></item>
+                                    <item><ref target="https://cudl.lib.cam.ac.uk/view/MS-FF-00001-00025-00003/1">MS Ff.1.25(3)</ref>: William of
+                                        Malmesbury, <hi rend="italic">Historia novella</hi></item>
+                                    <item><ref target="https://cudl.lib.cam.ac.uk/view/MS-FF-00001-00025-00005/1">MS Ff.1.25(5)</ref>: Geoffrey of
+                                        Monmouth, <hi rend="italic">Historia regum Britanniae</hi></item>
+                                </list>
+                            </seg>
+                            <seg type="para">Dr Suzanne Paul<lb/>Keeper of Rare Books and Early Manuscripts<lb/>Cambridge University Library</seg>
+                        </summary>
+
+                        <textLang mainLang="la">Latin</textLang>
+
+                        <msItem n="1">
+                            <locus from="1r" to="63v">1r-63v</locus>
+                            <title key="">Itinerarium peregrinorum et gesta regis Ricardi</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <author key="person_v234089238">Ricardus de Templo OSA</author>
+                            <note>Book 2 starts on fol. <locus from="18v" to="18v">18v</locus>, book 3 on fol. <locus from="29v" to="29v">29v</locus>,
+                                book 4 on <locus from="33v" to="33v">33v</locus>, book 5 on fol. <locus from="43v" to="43v">43v</locus> and book 6 on
+                                fol. <locus from="53v" to="53v">53v</locus>. </note>
+                            <note>The <hi rend="italic">Itinerarium</hi> survives in twelve manuscripts, representing four different versions of the
+                                text. Scholars have established that the original version, consisting of only the first part of the first book, was
+                                written c. 1191-92 by an English crusader drawing on eyewitness accounts, particularly of the siege of Acre. The
+                                longer version of the text found in MS Ff.1.25(4) was written later, c. 1217-1220, and incorporates the original
+                                version and several other sources. The rubric in this manuscript attributes the <hi rend="italic">Itinerarium</hi> to
+                                Geoffrey of Vinsauf, but this is a mistake probably caused by the copyist extracting details from the final rubric of
+                                Geoffrey's work which followed the chronicle in his exemplar. The actual author of the longer version has been
+                                identified as Ricardus de Templo, canon and prior of Holy Trinity Augustinian priory in London. </note>
+                            <listBibl>
+                                <bibl>Stubbs (1864)</bibl>
+                                <bibl>Mayer (1962)</bibl>
+                                <bibl>Nicholson (1997) (translation)</bibl>
+                            </listBibl>
+
+                            <msItem n="1.1">
+                                <locus from="1r" to="1r">1r</locus>
+                                <title>Prologue</title>
+                                <rubric><locus from="1r" to="1r">1r</locus>: Prologus in itinerarium peregrinancium in terram sanctam in tempore
+                                    Salahadini et in gesta regis anglie Ricardi et Regis francie et imperatoris alemannie</rubric>
+                                <incipit><locus from="1r" to="1r">1r</locus>: Solet non nunquam accidere ut res quantumlibet notas et eximie gestas
+                                    tractu temporis uel fama languidior minuat uel obliuio posteritatis extinguat</incipit>
+                                <explicit><locus from="1r" to="1r">1r</locus>: saltem secreti sui alliciet auditorem</explicit>
+                            </msItem>
+
+                            <msItem n="1.2">
+                                <locus from="1r" to="63v">1r-63v</locus>
+                                <title>Text</title>
+                                <rubric>
+                                    <locus from="1r" to="1r">1r</locus>: Incipit itinerarium regis Anglie Ricardi in terram sanctam a magistro
+                                    Gaufrido Vinsauf editum. Incipit liber primus capitulum primam</rubric>
+                                <incipit>
+                                    <locus from="1r" to="1r">1r</locus>: Anno incarnationis dominice M<hi rend="superscript">o</hi>. C<hi rend="superscript">o</hi>. lxxx<hi rend="superscript">o</hi> apostolice sedis apicem obtinente Vrbano
+                                    tertio</incipit>
+                                <explicit><locus from="63v" to="63v">63v</locus>: Cuius est impetus crebris reiciens repulsionibus alienatum ius suum
+                                    cum augmento quoque potenti in hasta recuperauit et gladio</explicit>
+                                <finalRubric><locus from="63v" to="63v">63v</locus>: Explicit liber de expedicione regis Ricardi in terram
+                                    Jerosolimorum. Si teneatur opus non deroget auctor utrique / Si quid opus meruit gratia non minuat. </finalRubric>
+                            </msItem>
+                        </msItem>
+
+                        <msItem n="2">
+                            <locus from="63v" to="64v">63v-64v</locus>
+                            <title key="work_1679">Poetria nova (extract)</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <author key="person_v82793219">Geoffrey of Vinsauf</author>
+                            <rubric><locus from="63v" to="63v">63v</locus>: Versus Magistri Gaufridi vin est saufh de eodem rege Glorioso Ricardo </rubric>
+                            <incipit><locus from="63v" to="63v">63v</locus>: Mense delicias orditur lactis ad instar / Culta Ceres Bachusque senex
+                                iuuescit in auro</incipit>
+                            <explicit><locus from="64v" to="64v">64v</locus>: Quam breuis est risus. quam longa est lacrima mundi</explicit>
+                            <note>The text consists of two extracts from the <hi rend="italic">Poetria nova</hi>, a verse treatise on the art of
+                                poetry, representing lines 625-664 (Faral's edition; 630-669 of Gallo's edition) and 326-430, with an occasional line
+                                added, adapted or omitted. </note>
+                            <listBibl>
+                                <bibl>WIC 10924</bibl>
+                                <bibl>Faral (1924)</bibl>
+                                <bibl>Gallo (1971)</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="3">
+                            <locus from="64v" to="65r">64v-65r</locus>
+                            <title>Verses in praise of the king</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <author key="person_v82793219">Geoffrey of Vinsauf</author>
+                            <rubric><locus from="64v" to="64v">64v</locus>: Versus eiusdem de eode rege</rubric>
+                            <incipit><locus from="64v" to="64v">64v</locus>: Uexillum pacis, belli sera, purpura regum</incipit>
+                            <explicit><locus from="65r" to="65r">65r</locus>: In tria diuiditur unus, qui plus erat vno</explicit>
+                            <note>An almost identical copy of the same poem is found in <bibl subtype="external" type="MS">Glasgow, University
+                                    Library, MS Hunter 511 (V.8.14)</bibl>. Despite the reference here to 'eode rege' which would suggest that the
+                                poem concerned Richard I, the poem clearly alludes to the events of 1173-74 and celebrates Henry II (Faral (1936);
+                                Harbert (1975)).</note>
+                            <listBibl>
+                                <bibl>WIC 20287</bibl>
+                                <bibl>Faral (1936), 26-29</bibl>
+                                <bibl>Harbert (1975), 19-20</bibl>
+                                <bibl>Camargo (2012)</bibl>
+                            </listBibl>
+                        </msItem>
+
+                        <msItem n="4">
+                            <locus from="65r" to="71v">65r-71v</locus>
+                            <title key="work_3374">Historia Damiatina</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <author key="person_v18259511">Oliverus, bishop of Paderborn</author>
+                            <rubric><locus from="65r" to="65r">65r</locus>: Incipit historia captionis Damiete</rubric>
+                            <note>
+                                <p>The <hi rend="italic">Historia Damiatina</hi>, based on letters written during the crusade itself and completed
+                                    soon after, survives in more than twenty manuscripts in three recensions. According to its editor, MS Ff.1.25(4)
+                                    is a copy of the first redaction (Hoogeweg (1894), pp. lxiv-lxv). </p>
+                            </note>
+                            <note>The text is incomplete, ending at chapter 40 of the edition (Hoogeweg (1894), p. 244), lacking chapters 41-89 and
+                                the Appendix. </note>
+
+                            <listBibl>
+                                <bibl>Gale (1687), vol. 2, p. 435ff</bibl>
+                                <bibl>Hoogeweg (1894), pp. 159-282</bibl>
+                                <bibl>Gavigan (1948) (translation)</bibl>
+                            </listBibl>
+
+                            <msItem n="4.1">
+                                <locus from="65r" to="65r">65r</locus>
+                                <title>Prologue</title>
+                                <rubric><locus from="65r" to="65r">65r</locus>: Capitulum primum</rubric>
+                                <incipit><locus from="65r" to="65r">65r</locus>: Letetur mons syon et exultent filie jude propter iudicia
+                                    domini</incipit>
+                                <explicit><locus from="65r" to="65r">65r</locus>: assurgat in laudem dei et gratiarum actiones</explicit>
+                                <finalRubric><locus from="65r" to="65r">65r</locus>: Explicit prologus</finalRubric>
+                            </msItem>
+
+                            <msItem n="4.2">
+                                <locus from="65r" to="71v">65r-71v</locus>
+                                <title>Text</title>
+                                <rubric><locus from="65r" to="65r">65r</locus>: Capitulum secundum</rubric>
+                                <incipit><locus from="65r" to="65r">65r</locus>: Anno igitur gratie M<hi rend="superscript">o</hi>. cc<hi rend="superscript">o</hi>. xvii<hi rend="superscript">o</hi> exspirante Treuga Christianorum et Sarracenorum
+                                    in primo passagio generali post concilium Lateranense</incipit>
+                                <explicit><locus from="71v" to="71v">71v</locus>: multum eis oportuno recedere non volent. Finit.</explicit>
+                            </msItem>
+                        </msItem>
+
+                    </msContents>
+
+                    <physDesc>
+                        <p>
+                            <secFol><locus from="2r" to="2r">2r</locus>: suo Saracuno</secFol>
+                        </p>
+                        <objectDesc form="codex">
+                            <supportDesc material="perg">
+                                <support>
+                                    <material>Parchment (<term type="disposition">FHHF</term>)</material>
+                                </support>
+                                <extent>
+                                    <seg type="object">Codex: </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="9" type="laterEndleaf">ix</measure> + <measure quantity="71" type="leaf">71</measure> +
+                                            <measure quantity="9" type="laterEndleaf">ix</measure> leaves. </seg>
+                                    <note>The nine modern paper endleaves at the front and rear have not been photographed. </note>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height quantity="270">270</height>
+                                            <width quantity="190">190</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+
+                                <foliation notAfter="1886" notBefore="1856">
+                                    <p>19th-century foliation</p>
+                                    <p>[a-i] + 1-71 + [k-s]</p>
+                                    <note>Written in pencil in the upper right-hand corner of the recto side of each leaf, probably by <name key="person_v37074791"><persName type="display">Henry Bradshaw</persName><persName type="standard">Bradshaw, Henry, 1831-1886</persName></name>, University Librarian 1867-1886. </note>
+                                </foliation>
+
+                                <foliation notAfter="1600" notBefore="1500">
+                                    <p>16th-century pagination</p>
+                                    <p>237-375</p>
+                                    <note>Page numbers written in Parkerian red/orange crayon in the upper right-hand corner of the recto side of each
+                                        leaf only (see Provenance for further details). </note>
+                                </foliation>
+
+
+                                <collation mainStructures="8">
+                                    <p>
+                                        <list>
+                                            <item>Quire 1<hi rend="superscript">8</hi> (ff. <locus from="1r" to="8v">1-8</locus>)</item>
+                                            <item>Quire 2<hi rend="superscript">8-1</hi> (ff. <locus from="9r" to="15v">9-15</locus>: 1st leaf
+                                                cancelled) </item>
+                                            <item>Quire 3-9<hi rend="superscript">8</hi> (ff. <locus from="16r" to="71v">16-71</locus>)</item>
+                                        </list>
+                                    </p>
+                                    <formula>1<hi rend="superscript">8</hi> 2<hi rend="superscript">8-1</hi> (1st cancelled) 3-9<hi rend="superscript">8</hi>
+                                    </formula>
+                                    <signatures type="leaf"><p>No leaf signatures. </p></signatures>
+                                    <signatures type="quire"><p>Quire signatures in Roman numerals, on the verso of the last leaf of the quire.
+                                        </p></signatures>
+                                    <catchwords><seg type="para">Catchwords (those on ff. 8v and 15v added by a later hand). </seg></catchwords>
+                                </collation>
+
+                                <condition>
+                                    <p>Folios <locus from="7r" to="7v">7</locus>, <locus from="27r" to="27v">27</locus> and <locus from="43r" to="43v">43</locus> have tears, and many of the leaves have holes or are irregularly shaped. The verso of f.
+                                            <locus from="27v" to="27v">27</locus> has been left blank: as M. R. James comments, 'it was a bad piece of
+                                        vellum', and the text shows through extensively from the recto. In the first quire, rubrics are often given in
+                                        the side or lower margins and many have been trimmed. </p>
+                                </condition>
+
+                            </supportDesc>
+
+                            <layoutDesc>
+                                <layout columns="2" ruledLines="36 45" rulingMedium="leadpoint" topLine="above">
+                                    <dimensions type="written" unit="mm">
+                                        <height quantity="190">190</height>
+                                        <width quantity="150">150</width>
+                                    </dimensions>
+                                    <seg type="ruling">Ruled in leadpoint, frame and line. Two columns, 36-45 lines to the page, written above top
+                                        line. </seg>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <handDesc>
+                            <handNote script="textualisNorthern">
+                                <p>Written in <term type="script">littera textualis</term> script.</p>
+                            </handNote>
+                        </handDesc>
+
+                        <decoDesc>
+                            <decoNote type="flourInit">
+                                <p>Four-line initial in blue with infill and marginal flourishing in red at the opening of the text. </p>
+                                <p>Two-line initials alternating in red and green, with infill and marginal flourishing in contrasting blue or green,
+                                    at the beginning of each chapter. On ff. <locus from="69r" to="71r">69r-71r</locus>, the flourishing is executed
+                                    in brown rather than red. </p>
+                            </decoNote>
+                        </decoDesc>
+
+                        <additions>
+                            <note><p>Quire numbers added to lower right-hand corner of the first recto of each quire, and '+' sign added to the lower
+                                    right-hand corner of the first recto in the second half of each quire. Written in pencil by a modern hand.
+                                </p></note>
+                        </additions>
+
+                        <bindingDesc>
+                            <binding when="1862">
+                                <p>Bound in brown calfskin over pasteboards with blind stamped and rolled decoration, by <name key="org_v" role="bnd"><orgName type="display">Wiseman</orgName><orgName type="standard">Wiseman</orgName></name>, 1862. </p>
+                            </binding>
+
+                            <binding notAfter="1862" notBefore="1574">
+                                <p>Evidence preserved in MSS Ff.1.25(1) and MS Ff.1.25(5) (recycled endleaf bearing four friction-holes and rust
+                                    stains, suggesting the presence formerly of four corner-bosses and a chain staple) indicates that all five volumes
+                                    were previously bound together in similar style to that of the binding on other manuscripts donated to the
+                                    University Library by Matthew Parker (for an example, see: <ref target="https://cudl.lib.cam.ac.uk/view/MS-II-00002-00004/1">MS Ii.2.4</ref>). See Provenance and Acquisition
+                                    for further details. </p>
+                                <p>Thomas James's catalogue, <hi rend="italic">Ecloga Oxonio-Cantabrigiensis</hi> (1600) allocates two numbers to MS
+                                    Ff.1.25: <list>
+                                        <item>244: 1. Gu. Malmesbury de pontificum gestis, lib. 59, vltimus liber scriptus est a neoterico ... 2.
+                                            Nouella historia Anglorum ...</item>
+                                        <item>245: 1. Liber cum hac inscriptione. Itinerarium peregrinantium in terram sanctam ... 2. Galfridu
+                                            Monumetensis ... </item>
+                                    </list></p>
+                                <p>This implies that the manuscript was bound in two volumes at this time. However, in the list of manuscripts donated
+                                    by Parker to the University Library in 1574, the manuscript is described as containing 460 pages. Such statements
+                                    of extent were given for each of Parker's donations and were also written onto one of the opening leaves of the
+                                    manuscripts themselves (see <ref target="https://cudl.lib.cam.ac.uk/view/MS-FF-00001-00025-00001/11">MS
+                                        Ff.1.25(1), f. 3r</ref>). None of the other manuscripts within the Ff.1.25 classmark contain such an
+                                    inscription, and the total number of pages amounts to 460, by the Parkerian pagination (see Foliation for further
+                                    details). </p>
+                                <p>Furthermore, as described above, Parker's donations were (with the odd exception) bound in a consistent format, and
+                                    where the manuscripts have been rebound since that time this evidence is often preserved within the new binding.
+                                    In MS Ff.1.25(1), only the recycled endleaves at the front of the volume have been preserved. Only Ff.1.25(5)
+                                    contains similar endleaves, and only at the rear; they are found in none of the other volumes. The material
+                                    evidence thus points to the manuscripts that are now Ff.1.25(1)-(5) having arrived bound as a single volume.
+                                    Furthermore, each of these volumes bear evidence of having had the author(s) and title(s) of their contents inked
+                                    onto the fore-edges of their leaves, presumably by <name key="person_v66476673">
+                                        <persName type="standard">Wheelocke, Abraham, 1593-1653</persName>
+                                        <persName type="display">Abraham Wheelocke</persName>
+                                    </name>, who treated other manuscripts in a similar manner (see, for example, <ref target="https://cudl.lib.cam.ac.uk/view/MS-FF-00001-00028/544">MS Ff.1.28</ref>. This indicates moreover that
+                                    the manuscript remained as a single volume in the mid-17th century. </p>
+                                <p>In his <hi rend="italic">History</hi> of the University Library, David McKitterick recounts that the part of this
+                                    manuscript containing the <hi rend="italic">Historia regum Britanniae</hi> (now MS Ff.1.25(5)) was discovered to
+                                    be missing when the manuscripts in the Old Library were inspected in 1732 and again in 1748: the number '245'
+                                    assigned by James in 1600 is in both lists, in the first with the partial title 'Galfrid: monumethensis etc'
+                                    (see <bibl subtype="internal" type="MS"><ref target="">Cambridge, University Library, MS Add. 4451</ref></bibl>, ff. 18r and 19r). The
+                                    implication is that by this stage Ff.1.25 had been rebound into two volumes. However, a more probable explanation
+                                    is that James's assigning of two numbers to the manuscript misled the compilers of these lists of missing books,
+                                    who were searching fruitlessly for Geoffrey of Monmouth and other texts bound into a discrete volume, when in fact
+                                    they remained in place in the same volume as what James has designated '244'. Indeed, that no mention is made in
+                                    the <hi rend="italic">Catalogue of manuscripts preserved in the Library of the University of Cambridge</hi>, vol.
+                                    2 (1857) means that it is almost certain that it was not divided into separate volumes until 1862. </p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+
+                    <history>
+                        <origin>
+                            <origDate calendar="Gregorian" notAfter="1260" notBefore="1240">Mid-13th century. </origDate>
+                            <origPlace key="place_g7002445">England. </origPlace>
+                        </origin>
+
+                        <provenance>
+                            <p>Erased inscription, perhaps the name of a former owner, on f. <locus from="1r" to="1r">1r</locus>. </p>
+                        </provenance>
+
+                        <provenance notAfter="1574" notBefore="1536">
+                            <p>
+                                <name key="person_v88874512" role="fmo">
+                                    <persName type="display">Matthew Parker (1504-1575)</persName>
+                                    <persName type="standard">Parker, Matthew, 1504-1575</persName>
+                                </name>, archbishop of Canterbury: partial pagination in characteristic red/orange crayon. </p>
+                        </provenance>
+
+                        <acquisition notAfter="1574" notBefore="1574">Presented to the University Library in 1574 by <name key="person_v88874512" role="fmo">
+                                <persName type="display">Matthew Parker (1504-1575)</persName>
+                                <persName type="standard">Parker, Matthew, 1504-1575</persName>
+                            </name>. No. 22 in the list of 25 'Libri Scripti in pergameno' published to commemorate Parker's gift (see <ref target="https://www.lib.cam.ac.uk/collections/departments/manuscripts-university-archives/subject-guides/medieval-manuscripts/early">Early catalogues of manuscripts, up to c. 1600</ref>).</acquisition>
+
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source>This catalogue entry draws on an unpublished description of the manuscript composed between 1926 and 1930 by
+                                        <name key="person_v88882890"><persName type="display">M.R. James</persName>
+                                        <persName type="standard">James, M.R. (Montague Rhodes), 1862-1936</persName></name>, now held in the
+                                    University Archives (<ref target="https://archivesearch.lib.cam.ac.uk/repositories/2/archival_objects/53125">UA
+                                        ULIB 7/3/74</ref>), and an unpublished description of the manuscript composed between 1948 and 1970 by <name key="person_v29141885"><persName type="display">H.L. Pink</persName>
+                                        <persName type="standard">Pink, H. L.</persName></name>, now held in the University Archives (<ref target="https://archivesearch.lib.cam.ac.uk/repositories/2/archival_objects/821022">UA ULIB 7/3/75</ref>).
+                                </source>
+                            </recordHist>
+                            <availability>
+                                <p>Entry to read in the Library is permitted only on presentation of a valid reader's card. For information on
+                                    eligibility and admissions procedures, see <ref target="https://www.lib.cam.ac.uk/using-library/joining-library">Joining the Library</ref>). For further information on the availability of the manuscript, please contact the
+                                        <ref target="mss@lib.cam.ac.uk">Manuscripts Reading Room</ref>.</p>
+                            </availability>
+                        </adminInfo>
+
+                        <listBibl xmlns="http://www.tei-c.org/ns/1.0">
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/AM3NRHRD" type="book" xml:id="Bongars1611">
+                                <monogr>
+                                    <title level="m">Gesta Dei per Francos, siue Orientalium expeditionum, et regni Francorum Hierosolimitani
+                                        historia</title>
+                                    <extent>2</extent>
+                                    <editor>
+                                        <forename>Jacques</forename>
+                                        <surname>Bongars</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Hanouiæ</pubPlace>
+                                        <publisher>Typis Wechelianis, apud heredes Ioan. Aubrii</publisher>
+                                        <date>1611</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/WSF8JPND" type="book" xml:id="Gale1687">
+                                <monogr>
+                                    <title level="m">Historiæ Anglicanæ scriptores quinque: ex vetustis codicibus Mss. nunc primum in lucem editi.
+                                        Vol. II. Accessit rerum &amp; verborum index locupletissimus</title>
+                                    <editor>
+                                        <forename>Thomas</forename>
+                                        <surname>Gale</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Oxoniae</pubPlace>
+                                        <publisher>E Theatro Sheldoniano</publisher>
+                                        <date>1687</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/IX53P8KI" type="book" xml:id="zoteroItem_IX53P8KI">
+                                <monogr>
+                                    <title level="m">A catalogue of the manuscripts preserved in the library of the University of Cambridge</title>
+                                    <extent>6</extent>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">2: Ee-Ff</biblScope>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1857</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 315-18. </note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/GZHU7MDS" type="book" xml:id="Hardy1862">
+                                <monogr>
+                                    <title level="m">Descriptive catalogue of materials relating to the history of Great Britain and Ireland: to the
+                                        end of the reign of Henry VII</title>
+                                    <extent>3</extent>
+                                    <author>
+                                        <forename>Thomas Duffus</forename>
+                                        <surname>Hardy</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>Longman, Green, Longman, and Roberts</publisher>
+                                        <date>1862</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Rerum Britannicarum medii aevi scriptores</title>
+                                    <biblScope unit="volume">26</biblScope>
+                                </series>
+                                <note>vol. 2, pp. 500-506. </note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/FSGUDWGX" type="book" xml:id="Stubbs1864">
+                                <monogr>
+                                    <title level="m">Chronicles and memorials of the reign of Richard I. Vol.1, Itinerarium peregrinorum et gesta
+                                        regis Ricardi; auctore, ut videtur, Ricardo, canonico santæ trinitatis londoniensis</title>
+                                    <editor>
+                                        <forename>William</forename>
+                                        <surname>Stubbs</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>Longman, Green, Longman, Roberts, and Green</publisher>
+                                        <date>1864</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Rerum Britannicarum medii ævi scriptores</title>
+                                </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/Y482DEIG" type="book" xml:id="Hoogeweg1894">
+                                <monogr>
+                                    <title level="m">Die Schriften des Kölner Domscholasters, späteren Bischofs von Paderborn und Kardinal-Bischofs
+                                        von S. Sabina, Oliverus</title>
+                                    <editor>
+                                        <forename>H.</forename>
+                                        <surname>Hoogeweg</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Tübingen</pubPlace>
+                                        <publisher>Litterarischer Verein in Stuttgart</publisher>
+                                        <date>1894</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Bibliothek des Literarischen Vereins in Stuttgart</title>
+                                    <biblScope unit="volume">202</biblScope>
+                                </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/S2QEMPHU" type="book" xml:id="Faral1924">
+                                <monogr>
+                                    <title level="m">Les arts poétiques du XIIe et du XIIIe siècle: recherches et documents sur la technique
+                                        littéraire du moyen age</title>
+                                    <author>
+                                        <forename>Edmond</forename>
+                                        <surname>Faral</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Paris</pubPlace>
+                                        <publisher>É. Champion</publisher>
+                                        <date>1924</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Bibliothèque de l'École des hautes études. IVe section, Sciences historiques et
+                                        philologiques</title>
+                                    <biblScope unit="volume">238</biblScope>
+                                </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/3KFW5WT5" type="journalArticle" xml:id="Faral1936">
+                                <analytic>
+                                    <title level="a">Le manuscrit 511 du Hunterian Museum</title>
+                                    <author>
+                                        <forename>Edmond</forename>
+                                        <surname>Faral</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Studi medievali</title>
+                                    <imprint>
+                                        <biblScope unit="volume">n.s. 9</biblScope>
+                                        <biblScope unit="page">18-121</biblScope>
+                                        <date>1936</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/SBKY9QVQ" type="book" xml:id="Oliver_of_Paderborn1948">
+                                <monogr>
+                                    <title level="m">The capture of Damietta</title>
+                                    <author>
+                                        <name>Oliver of Paderborn</name>
+                                    </author>
+                                    <respStmt>
+                                        <resp>contributor</resp>
+                                        <persName>
+                                            <forename>John J.</forename>
+                                            <surname>Gavigan</surname>
+                                        </persName>
+                                    </respStmt>
+                                    <imprint>
+                                        <pubPlace>Philadelphia</pubPlace>
+                                        <publisher>Univiversity of Pennsylvania Press</publisher>
+                                        <date>1948</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Translations and reprints from the original sources of history</title>
+                                    <biblScope unit="volume">3rd ser., vol. 2</biblScope>
+                                </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/KE7XZCXZ" type="book" xml:id="Mayer1962">
+                                <monogr>
+                                    <title level="m">Das Itinerarium peregrinorum: eine zeitgenössische englische Chronik zum dritten Kreuzzug in
+                                        ursprünglicher Gestatt</title>
+                                    <editor>
+                                        <forename>H. E.</forename>
+                                        <surname>Mayer</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Stuttgart</pubPlace>
+                                        <publisher>A. Hiersemann</publisher>
+                                        <date>1962</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Schriften der Monumenta Germaniae Historica, deutsches Institut für Erforschung des
+                                        Mittelalters</title>
+                                    <biblScope unit="volume">18</biblScope>
+                                </series>
+                                <note>MS A; pp. 224-27. </note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/4F7RBG8Q" type="journalArticle" xml:id="Bulst-Thiele1964">
+                                <analytic>
+                                    <title level="a">Noch einmal das Itinerarium peregrinorum</title>
+                                    <author>
+                                        <forename>Marie-Luise</forename>
+                                        <surname>Bulst-Thiele</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Historisches Zeitschrift</title>
+                                    <imprint>
+                                        <biblScope unit="volume">168</biblScope>
+                                        <biblScope unit="page">593-606</biblScope>
+                                        <date>1964</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/HCDG9S4N" type="book" xml:id="Nims1967">
+                                <monogr>
+                                    <title level="m">&lt;hi rend="italics"&gt;Poetria nova&lt;/hi&gt; of Geoffrey of Vinsauf</title>
+                                    <respStmt>
+                                        <resp>translator</resp>
+                                        <persName>
+                                            <forename>Margaret F.</forename>
+                                            <surname>Nims</surname>
+                                        </persName>
+                                    </respStmt>
+                                    <imprint>
+                                        <pubPlace>Toronto</pubPlace>
+                                        <publisher>Pontifical Institute of Mediaeval Studies</publisher>
+                                        <date>1967</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/6HZ7W6E5" type="book" xml:id="Gallo1971">
+                                <monogr>
+                                    <title level="m">The &lt;hi rend="italics"&gt;Poetria nova&lt;/hi&gt; and its sources in early rhetorical
+                                        doctrine</title>
+                                    <author>
+                                        <forename>Ernest</forename>
+                                        <surname>Gallo</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>The Hague</pubPlace>
+                                        <publisher>Mouton</publisher>
+                                        <date>1971</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">De proprietatibus litterarum. Series maior</title>
+                                    <biblScope unit="volume">10</biblScope>
+                                </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/E4IKRKVH" type="book" xml:id="Harbert1975">
+                                <monogr>
+                                    <title level="m">A thirteenth-century anthology of rhetorical poems: Glasgow Ms. Hunterian V. 8. 14</title>
+                                    <author>
+                                        <forename>Bruce</forename>
+                                        <surname>Harbert</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Toronto</pubPlace>
+                                        <publisher>Published for the Centre for Medieval Studies by the Pontifical Institute of Mediaeval
+                                            Studies</publisher>
+                                        <date>1975</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Toronto medieval Latin texts</title>
+                                    <biblScope unit="volume">4</biblScope>
+                                </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/MVCHFX4K" type="journalArticle" xml:id="Möhring1982">
+                                <analytic>
+                                    <title level="a">Eine Chronik aus der Zeit des Dritten Kreuzzugs: das sogenannte &lt;hi
+                                        rend="italics"&gt;Itinerarium peregrinorum&lt;/hi&gt; 1</title>
+                                    <author>
+                                        <forename>Hannes</forename>
+                                        <surname>Möhring</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Innsbrucker historische Studien</title>
+                                    <imprint>
+                                        <biblScope unit="volume">5</biblScope>
+                                        <biblScope unit="page">149-167</biblScope>
+                                        <date>1982</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/KSTEB9NK" type="journalArticle" xml:id="Hinnebusch1997">
+                                <analytic>
+                                    <title level="a">Extant manuscripts of the writings of Jacques de Vitry</title>
+                                    <author>
+                                        <forename>J. F.</forename>
+                                        <surname>Hinnebusch</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Scriptorium</title>
+                                    <imprint>
+                                        <biblScope unit="volume">51</biblScope>
+                                        <biblScope unit="page">156-164</biblScope>
+                                        <date>1997</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 159. </note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/NAKDNQHF" type="book" xml:id="Nicholson1997">
+                                <monogr>
+                                    <title level="m">Chronicle of the Third Crusade: a translation of the &lt;hi rend="italics"&gt;Itinerarium
+                                        peregrinorum et gesta Regis Ricardi&lt;/hi&gt;</title>
+                                    <author>
+                                        <forename>Helen J.</forename>
+                                        <surname>Nicholson</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Aldershot</pubPlace>
+                                        <publisher>Ashgate</publisher>
+                                        <date>1997</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Crusade texts in translation</title>
+                                    <biblScope unit="volume">3</biblScope>
+                                </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/AZHM9KFZ" type="journalArticle" xml:id="Nicholson2000">
+                                <analytic>
+                                    <title level="a">Following the path of the Lionheart: the &lt;hi rend="italics"&gt;De ortu Walwanii&lt;/hi&gt; and
+                                        the &lt;hi rend="italics"&gt;Itinerarium peregrinorum et gesta regis Ricardi&lt;/hi&gt;</title>
+                                    <author>
+                                        <forename>Helen J.</forename>
+                                        <surname>Nicholson</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Medium Ævum</title>
+                                    <imprint>
+                                        <biblScope unit="volume">69</biblScope>
+                                        <biblScope unit="issue">1</biblScope>
+                                        <biblScope unit="page">21-33</biblScope>
+                                        <date>2000</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/799QGXKG" type="book" xml:id="Murphy2001">
+                                <monogr>
+                                    <title level="m">Three medieval rhetorical arts</title>
+                                    <editor>
+                                        <forename>James Jerome</forename>
+                                        <surname>Murphy</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Tempe</pubPlace>
+                                        <publisher>ACMRS (Arizona Center for Medieval and Renaissance Studies)</publisher>
+                                        <date>2001</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Medieval and Renaissance texts and studies</title>
+                                    <biblScope unit="volume">228</biblScope>
+                                </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/BUX6U3PA" type="dictionaryEntry" xml:id="Tyerman2004">
+                                <analytic>
+                                    <title level="a">Richard (fl. 1216-1222), Augustinian canon and historian</title>
+                                    <author>
+                                        <forename>Christopher J.</forename>
+                                        <surname>Tyerman</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">The Oxford Dictionary of National Biography</title>
+                                    <imprint>
+                                        <pubPlace>Oxford</pubPlace>
+                                        <publisher>Oxford University Press</publisher>
+                                        <date>2004</date>
+                                        <note type="url">http://www.oxforddnb.com/view/article/23519</note>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/XTMXJR7P" type="bookSection" xml:id="Vieillard2005">
+                                <analytic>
+                                    <title level="a">L'utilisation de l'&lt;hi rend="italics"&gt;Itinerarium perigrinorum&lt;/hi&gt; par l'Estoire de
+                                        la guerre sainte: traduction et adaptation</title>
+                                    <author>
+                                        <forename>P.</forename>
+                                        <surname>Vieillard</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Par les mots et les textes. Mélanges de langue, de littérature et d'histoire des sciences offerts
+                                        à Claude Thomasset</title>
+                                    <editor>
+                                        <forename>Danielle</forename>
+                                        <surname>Jacquart</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>Danièle</forename>
+                                        <surname>James-Raoul</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>Olivier</forename>
+                                        <surname>Soutet</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Paris</pubPlace>
+                                        <biblScope unit="page">807-818</biblScope>
+                                        <publisher>Presses de l'Université Paris-Sorbonne</publisher>
+                                        <date>2005</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Travaux de stylistique et de linguistique françaises. Série Etudes linguistiques</title>
+                                </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/DC4IJE5C" type="book" xml:id="Nims2010">
+                                <monogr>
+                                    <title level="m">Geoffrey of Vinsauf, &lt;hi rend="italics"&gt;Poetria nova&lt;/hi&gt;</title>
+                                    <respStmt>
+                                        <resp>translator</resp>
+                                        <persName>
+                                            <forename>Margaret F.</forename>
+                                            <surname>Nims</surname>
+                                        </persName>
+                                    </respStmt>
+                                    <edition>Revised ed.</edition>
+                                    <imprint>
+                                        <pubPlace>Toronto</pubPlace>
+                                        <publisher>Pontifical Institute of Mediaeval Studies</publisher>
+                                        <date>2010</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Mediaeval sources in translation</title>
+                                    <biblScope unit="volume">49</biblScope>
+                                </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/B48NXUK3" type="bookSection" xml:id="Dunphy2010">
+                                <analytic>
+                                    <title level="a">&lt;hi rend="italics"&gt;Itinerarium peregrinorum et gesta regis Ricardi&lt;/hi&gt;</title>
+                                    <author>
+                                        <forename>Helen J.</forename>
+                                        <surname>Nicholson</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Encyclopaedia of the medieval chronicle</title>
+                                    <extent>2</extent>
+                                    <editor>
+                                        <forename>R. Graeme</forename>
+                                        <surname>Dunphy</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Leiden</pubPlace>
+                                        <biblScope unit="volume">1</biblScope>
+                                        <biblScope unit="page">890-891</biblScope>
+                                        <publisher>Brill</publisher>
+                                        <date>2010</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/DDDXSCQM" type="journalArticle" xml:id="Camargo2012">
+                                <analytic>
+                                    <title level="a">Geoffrey of Vinsauf's memorial verses</title>
+                                    <author>
+                                        <forename>Martin</forename>
+                                        <surname>Camargo</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Nottingham Medieval Studies</title>
+                                    <imprint>
+                                        <biblScope unit="volume">56</biblScope>
+                                        <biblScope unit="page">81-119</biblScope>
+                                        <date>2012</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/PI6W7D86" type="bookSection" xml:id="Schubert2017">
+                                <analytic>
+                                    <title level="a">Richard de Templo, &lt;hi rend="italics"&gt;Itinerarium peregrinorum et gesta regis
+                                        Ricardi&lt;/hi&gt;</title>
+                                    <author>
+                                        <forename>James</forename>
+                                        <surname>Freeman</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Richard Löwenherz: König - Ritter - Gefangener</title>
+                                    <editor>
+                                        <forename>Alexander</forename>
+                                        <surname>Schubert</surname>
+                                    </editor>
+                                    <editor>
+                                        <name>Historisches Museum der Pfalz (Speyer, Germany)</name>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Regensburg</pubPlace>
+                                        <biblScope unit="page">138-139</biblScope>
+                                        <publisher>Schnell + Steiner</publisher>
+                                        <date>2017</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 138-39; no. 35. </note>
+                            </biblStruct>
+                        </listBibl>
+
+
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85034383">Crusades. Third, 1189-1192</term>
+                        </item>
+                        <item>
+                            <term key="subject_sh85034386">Crusades. Fifth, 1218-1221</term>
+                        </item>
+                        <item>
+                            <term key="subject_sh95002036">Damietta (Egypt). History. Siege, 1218-1219</term>
+                        </item>
+                        <item>
+                            <term key="subject_sh2008109403">Poetics. Early works to 1800</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2014-06-12">
+                <persName>Suzanne Paul</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic decls="#document-thumbnail" url="MS-FF-00001-00025-00004-000-00001"/>
+        <surface n="front cover, outer" xml:id="page-surface-1">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00001" width="5673px"/>
+        </surface>
+        <surface n="front cover, inner" xml:id="page-surface-2">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00002" width="5459px"/>
+        </surface>
+        <surface n="1r" xml:id="page-surface-3">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00003" width="4995px"/>
+        </surface>
+        <surface n="1v" xml:id="page-surface-4">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00004" width="5459px"/>
+        </surface>
+        <surface n="2r" xml:id="page-surface-5">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00005" width="4995px"/>
+        </surface>
+        <surface n="2v" xml:id="page-surface-6">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00006" width="5459px"/>
+        </surface>
+        <surface n="3r" xml:id="page-surface-7">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00007" width="4995px"/>
+        </surface>
+        <surface n="3v" xml:id="page-surface-8">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00008" width="5459px"/>
+        </surface>
+        <surface n="4r" xml:id="page-surface-9">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00009" width="4995px"/>
+        </surface>
+        <surface n="4v" xml:id="page-surface-10">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00010" width="5459px"/>
+        </surface>
+        <surface n="5r" xml:id="page-surface-11">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00011" width="4995px"/>
+        </surface>
+        <surface n="5v" xml:id="page-surface-12">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00012" width="5459px"/>
+        </surface>
+        <surface n="6r" xml:id="page-surface-13">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00013" width="4995px"/>
+        </surface>
+        <surface n="6v" xml:id="page-surface-14">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00014" width="5459px"/>
+        </surface>
+        <surface n="7r" xml:id="page-surface-15">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00015" width="4995px"/>
+        </surface>
+        <surface n="7v" xml:id="page-surface-16">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00016" width="5459px"/>
+        </surface>
+        <surface n="8r" xml:id="page-surface-17">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00017" width="4995px"/>
+        </surface>
+        <surface n="8v" xml:id="page-surface-18">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00018" width="5459px"/>
+        </surface>
+        <surface n="9r" xml:id="page-surface-19">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00019" width="4995px"/>
+        </surface>
+        <surface n="9v" xml:id="page-surface-20">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00020" width="5459px"/>
+        </surface>
+        <surface n="10r" xml:id="page-surface-21">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00021" width="4995px"/>
+        </surface>
+        <surface n="10v" xml:id="page-surface-22">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00022" width="5459px"/>
+        </surface>
+        <surface n="11r" xml:id="page-surface-23">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00023" width="4995px"/>
+        </surface>
+        <surface n="11v" xml:id="page-surface-24">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00024" width="5459px"/>
+        </surface>
+        <surface n="12r" xml:id="page-surface-25">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00025" width="4995px"/>
+        </surface>
+        <surface n="12v" xml:id="page-surface-26">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00026" width="5459px"/>
+        </surface>
+        <surface n="13r" xml:id="page-surface-27">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00027" width="4995px"/>
+        </surface>
+        <surface n="13v" xml:id="page-surface-28">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00028" width="5459px"/>
+        </surface>
+        <surface n="14r" xml:id="page-surface-29">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00029" width="4995px"/>
+        </surface>
+        <surface n="14v" xml:id="page-surface-30">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00030" width="5459px"/>
+        </surface>
+        <surface n="15r" xml:id="page-surface-31">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00031" width="4995px"/>
+        </surface>
+        <surface n="15v" xml:id="page-surface-32">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00032" width="5459px"/>
+        </surface>
+        <surface n="16r" xml:id="page-surface-33">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00033" width="4995px"/>
+        </surface>
+        <surface n="16v" xml:id="page-surface-34">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00034" width="5459px"/>
+        </surface>
+        <surface n="17r" xml:id="page-surface-35">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00035" width="4995px"/>
+        </surface>
+        <surface n="17v" xml:id="page-surface-36">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00036" width="5459px"/>
+        </surface>
+        <surface n="18r" xml:id="page-surface-37">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00037" width="4995px"/>
+        </surface>
+        <surface n="18v" xml:id="page-surface-38">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00038" width="5459px"/>
+        </surface>
+        <surface n="19r" xml:id="page-surface-39">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00039" width="4995px"/>
+        </surface>
+        <surface n="19v" xml:id="page-surface-40">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00040" width="5459px"/>
+        </surface>
+        <surface n="20r" xml:id="page-surface-41">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00041" width="4995px"/>
+        </surface>
+        <surface n="20v" xml:id="page-surface-42">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00042" width="5459px"/>
+        </surface>
+        <surface n="21r" xml:id="page-surface-43">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00043" width="4995px"/>
+        </surface>
+        <surface n="21v" xml:id="page-surface-44">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00044" width="5459px"/>
+        </surface>
+        <surface n="22r" xml:id="page-surface-45">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00045" width="4995px"/>
+        </surface>
+        <surface n="22v" xml:id="page-surface-46">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00046" width="5459px"/>
+        </surface>
+        <surface n="23r" xml:id="page-surface-47">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00047" width="4995px"/>
+        </surface>
+        <surface n="23v" xml:id="page-surface-48">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00048" width="5459px"/>
+        </surface>
+        <surface n="24r" xml:id="page-surface-49">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00049" width="4995px"/>
+        </surface>
+        <surface n="24v" xml:id="page-surface-50">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00050" width="5459px"/>
+        </surface>
+        <surface n="25r" xml:id="page-surface-51">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00051" width="4995px"/>
+        </surface>
+        <surface n="25v" xml:id="page-surface-52">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00052" width="5459px"/>
+        </surface>
+        <surface n="26r" xml:id="page-surface-53">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00053" width="4995px"/>
+        </surface>
+        <surface n="26v" xml:id="page-surface-54">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00054" width="5459px"/>
+        </surface>
+        <surface n="27r" xml:id="page-surface-55">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00055" width="4995px"/>
+        </surface>
+        <surface n="27v" xml:id="page-surface-56">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00056" width="5459px"/>
+        </surface>
+        <surface n="28r" xml:id="page-surface-57">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00057" width="4995px"/>
+        </surface>
+        <surface n="28v" xml:id="page-surface-58">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00058" width="5459px"/>
+        </surface>
+        <surface n="29r" xml:id="page-surface-59">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00059" width="4995px"/>
+        </surface>
+        <surface n="29v" xml:id="page-surface-60">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00060" width="5459px"/>
+        </surface>
+        <surface n="30r" xml:id="page-surface-61">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00061" width="4995px"/>
+        </surface>
+        <surface n="30v" xml:id="page-surface-62">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00062" width="5459px"/>
+        </surface>
+        <surface n="31r" xml:id="page-surface-63">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00063" width="4995px"/>
+        </surface>
+        <surface n="31v" xml:id="page-surface-64">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00064" width="5459px"/>
+        </surface>
+        <surface n="32r" xml:id="page-surface-65">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00065" width="4995px"/>
+        </surface>
+        <surface n="32v" xml:id="page-surface-66">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00066" width="5459px"/>
+        </surface>
+        <surface n="33r" xml:id="page-surface-67">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00067" width="4995px"/>
+        </surface>
+        <surface n="33v" xml:id="page-surface-68">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00068" width="5459px"/>
+        </surface>
+        <surface n="34r" xml:id="page-surface-69">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00069" width="4995px"/>
+        </surface>
+        <surface n="34v" xml:id="page-surface-70">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00070" width="5459px"/>
+        </surface>
+        <surface n="35r" xml:id="page-surface-71">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00071" width="4995px"/>
+        </surface>
+        <surface n="35v" xml:id="page-surface-72">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00072" width="5459px"/>
+        </surface>
+        <surface n="36r" xml:id="page-surface-73">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00073" width="4995px"/>
+        </surface>
+        <surface n="36v" xml:id="page-surface-74">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00074" width="5459px"/>
+        </surface>
+        <surface n="37r" xml:id="page-surface-75">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00075" width="4995px"/>
+        </surface>
+        <surface n="37v" xml:id="page-surface-76">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00076" width="5459px"/>
+        </surface>
+        <surface n="38r" xml:id="page-surface-77">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00077" width="4995px"/>
+        </surface>
+        <surface n="38v" xml:id="page-surface-78">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00078" width="5459px"/>
+        </surface>
+        <surface n="39r" xml:id="page-surface-79">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00079" width="4995px"/>
+        </surface>
+        <surface n="39v" xml:id="page-surface-80">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00080" width="5459px"/>
+        </surface>
+        <surface n="40r" xml:id="page-surface-81">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00081" width="4995px"/>
+        </surface>
+        <surface n="40v" xml:id="page-surface-82">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00082" width="5459px"/>
+        </surface>
+        <surface n="41r" xml:id="page-surface-83">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00083" width="4995px"/>
+        </surface>
+        <surface n="41v" xml:id="page-surface-84">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00084" width="5459px"/>
+        </surface>
+        <surface n="42r" xml:id="page-surface-85">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00085" width="4995px"/>
+        </surface>
+        <surface n="42v" xml:id="page-surface-86">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00086" width="5459px"/>
+        </surface>
+        <surface n="43r" xml:id="page-surface-87">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00087" width="4995px"/>
+        </surface>
+        <surface n="43v" xml:id="page-surface-88">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00088" width="5459px"/>
+        </surface>
+        <surface n="44r" xml:id="page-surface-89">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00089" width="4995px"/>
+        </surface>
+        <surface n="44v" xml:id="page-surface-90">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00090" width="5459px"/>
+        </surface>
+        <surface n="45r" xml:id="page-surface-91">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00091" width="4995px"/>
+        </surface>
+        <surface n="45v" xml:id="page-surface-92">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00092" width="5459px"/>
+        </surface>
+        <surface n="46r" xml:id="page-surface-93">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00093" width="4995px"/>
+        </surface>
+        <surface n="46v" xml:id="page-surface-94">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00094" width="5459px"/>
+        </surface>
+        <surface n="47r" xml:id="page-surface-95">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00095" width="4995px"/>
+        </surface>
+        <surface n="47v" xml:id="page-surface-96">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00096" width="5459px"/>
+        </surface>
+        <surface n="48r" xml:id="page-surface-97">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00097" width="4995px"/>
+        </surface>
+        <surface n="48v" xml:id="page-surface-98">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00098" width="5459px"/>
+        </surface>
+        <surface n="49r" xml:id="page-surface-99">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00099" width="4995px"/>
+        </surface>
+        <surface n="49v" xml:id="page-surface-100">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00100" width="5459px"/>
+        </surface>
+        <surface n="50r" xml:id="page-surface-101">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00101" width="4995px"/>
+        </surface>
+        <surface n="50v" xml:id="page-surface-102">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00102" width="5459px"/>
+        </surface>
+        <surface n="51r" xml:id="page-surface-103">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00103" width="4995px"/>
+        </surface>
+        <surface n="51v" xml:id="page-surface-104">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00104" width="5459px"/>
+        </surface>
+        <surface n="52r" xml:id="page-surface-105">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00105" width="4995px"/>
+        </surface>
+        <surface n="52v" xml:id="page-surface-106">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00106" width="5459px"/>
+        </surface>
+        <surface n="53r" xml:id="page-surface-107">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00107" width="4995px"/>
+        </surface>
+        <surface n="53v" xml:id="page-surface-108">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00108" width="5459px"/>
+        </surface>
+        <surface n="54r" xml:id="page-surface-109">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00109" width="4995px"/>
+        </surface>
+        <surface n="54v" xml:id="page-surface-110">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00110" width="5459px"/>
+        </surface>
+        <surface n="55r" xml:id="page-surface-111">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00111" width="4995px"/>
+        </surface>
+        <surface n="55v" xml:id="page-surface-112">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00112" width="5459px"/>
+        </surface>
+        <surface n="56r" xml:id="page-surface-113">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00113" width="4995px"/>
+        </surface>
+        <surface n="56v" xml:id="page-surface-114">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00114" width="5459px"/>
+        </surface>
+        <surface n="57r" xml:id="page-surface-115">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00115" width="4995px"/>
+        </surface>
+        <surface n="57v" xml:id="page-surface-116">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00116" width="5459px"/>
+        </surface>
+        <surface n="58r" xml:id="page-surface-117">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00117" width="4995px"/>
+        </surface>
+        <surface n="58v" xml:id="page-surface-118">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00118" width="5459px"/>
+        </surface>
+        <surface n="59r" xml:id="page-surface-119">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00119" width="4995px"/>
+        </surface>
+        <surface n="59v" xml:id="page-surface-120">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00120" width="5459px"/>
+        </surface>
+        <surface n="60r" xml:id="page-surface-121">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00121" width="4995px"/>
+        </surface>
+        <surface n="60v" xml:id="page-surface-122">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00122" width="5459px"/>
+        </surface>
+        <surface n="61r" xml:id="page-surface-123">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00123" width="4995px"/>
+        </surface>
+        <surface n="61v" xml:id="page-surface-124">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00124" width="5459px"/>
+        </surface>
+        <surface n="62r" xml:id="page-surface-125">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00125" width="4995px"/>
+        </surface>
+        <surface n="62v" xml:id="page-surface-126">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00126" width="5459px"/>
+        </surface>
+        <surface n="63r" xml:id="page-surface-127">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00127" width="4995px"/>
+        </surface>
+        <surface n="63v" xml:id="page-surface-128">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00128" width="5459px"/>
+        </surface>
+        <surface n="64r" xml:id="page-surface-129">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00129" width="4995px"/>
+        </surface>
+        <surface n="64v" xml:id="page-surface-130">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00130" width="5459px"/>
+        </surface>
+        <surface n="65r" xml:id="page-surface-131">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00131" width="4995px"/>
+        </surface>
+        <surface n="65v" xml:id="page-surface-132">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00132" width="5459px"/>
+        </surface>
+        <surface n="66r" xml:id="page-surface-133">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00133" width="4995px"/>
+        </surface>
+        <surface n="66v" xml:id="page-surface-134">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00134" width="5459px"/>
+        </surface>
+        <surface n="67r" xml:id="page-surface-135">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00135" width="4995px"/>
+        </surface>
+        <surface n="67v" xml:id="page-surface-136">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00136" width="5459px"/>
+        </surface>
+        <surface n="68r" xml:id="page-surface-137">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00137" width="4995px"/>
+        </surface>
+        <surface n="68v" xml:id="page-surface-138">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00138" width="5459px"/>
+        </surface>
+        <surface n="69r" xml:id="page-surface-139">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00139" width="4995px"/>
+        </surface>
+        <surface n="69v" xml:id="page-surface-140">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00140" width="5459px"/>
+        </surface>
+        <surface n="70r" xml:id="page-surface-141">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00141" width="4995px"/>
+        </surface>
+        <surface n="70v" xml:id="page-surface-142">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00142" width="5459px"/>
+        </surface>
+        <surface n="71r" xml:id="page-surface-143">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00143" width="4995px"/>
+        </surface>
+        <surface n="71v" xml:id="page-surface-144">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00144" width="5459px"/>
+        </surface>
+        <surface n="rear cover, inner" xml:id="page-surface-145">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00145" width="5459px"/>
+        </surface>
+        <surface n="rear cover, outer" xml:id="page-surface-146">
+            <graphic decls="#downloadImageRights #download" height="7814px" rend="portrait" url="MS-FF-00001-00025-00004-000-00146" width="5459px"/>
+        </surface>
+        <surface n="spine" xml:id="page-surface-147">
+            <graphic decls="#downloadImageRights #download" height="7876px" rend="portrait" url="MS-FF-00001-00025-00004-000-00147" width="3104px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#page-surface-1" n="front cover, outer" xml:id="page-pb-1"/>
+                <pb facs="#page-surface-2" n="front cover, inner" xml:id="page-pb-2"/>
+                <pb facs="#page-surface-3" n="1r" xml:id="page-pb-3"/>
+                <pb facs="#page-surface-4" n="1v" xml:id="page-pb-4"/>
+                <pb facs="#page-surface-5" n="2r" xml:id="page-pb-5"/>
+                <pb facs="#page-surface-6" n="2v" xml:id="page-pb-6"/>
+                <pb facs="#page-surface-7" n="3r" xml:id="page-pb-7"/>
+                <pb facs="#page-surface-8" n="3v" xml:id="page-pb-8"/>
+                <pb facs="#page-surface-9" n="4r" xml:id="page-pb-9"/>
+                <pb facs="#page-surface-10" n="4v" xml:id="page-pb-10"/>
+                <pb facs="#page-surface-11" n="5r" xml:id="page-pb-11"/>
+                <pb facs="#page-surface-12" n="5v" xml:id="page-pb-12"/>
+                <pb facs="#page-surface-13" n="6r" xml:id="page-pb-13"/>
+                <pb facs="#page-surface-14" n="6v" xml:id="page-pb-14"/>
+                <pb facs="#page-surface-15" n="7r" xml:id="page-pb-15"/>
+                <pb facs="#page-surface-16" n="7v" xml:id="page-pb-16"/>
+                <pb facs="#page-surface-17" n="8r" xml:id="page-pb-17"/>
+                <pb facs="#page-surface-18" n="8v" xml:id="page-pb-18"/>
+                <pb facs="#page-surface-19" n="9r" xml:id="page-pb-19"/>
+                <pb facs="#page-surface-20" n="9v" xml:id="page-pb-20"/>
+                <pb facs="#page-surface-21" n="10r" xml:id="page-pb-21"/>
+                <pb facs="#page-surface-22" n="10v" xml:id="page-pb-22"/>
+                <pb facs="#page-surface-23" n="11r" xml:id="page-pb-23"/>
+                <pb facs="#page-surface-24" n="11v" xml:id="page-pb-24"/>
+                <pb facs="#page-surface-25" n="12r" xml:id="page-pb-25"/>
+                <pb facs="#page-surface-26" n="12v" xml:id="page-pb-26"/>
+                <pb facs="#page-surface-27" n="13r" xml:id="page-pb-27"/>
+                <pb facs="#page-surface-28" n="13v" xml:id="page-pb-28"/>
+                <pb facs="#page-surface-29" n="14r" xml:id="page-pb-29"/>
+                <pb facs="#page-surface-30" n="14v" xml:id="page-pb-30"/>
+                <pb facs="#page-surface-31" n="15r" xml:id="page-pb-31"/>
+                <pb facs="#page-surface-32" n="15v" xml:id="page-pb-32"/>
+                <pb facs="#page-surface-33" n="16r" xml:id="page-pb-33"/>
+                <pb facs="#page-surface-34" n="16v" xml:id="page-pb-34"/>
+                <pb facs="#page-surface-35" n="17r" xml:id="page-pb-35"/>
+                <pb facs="#page-surface-36" n="17v" xml:id="page-pb-36"/>
+                <pb facs="#page-surface-37" n="18r" xml:id="page-pb-37"/>
+                <pb facs="#page-surface-38" n="18v" xml:id="page-pb-38"/>
+                <pb facs="#page-surface-39" n="19r" xml:id="page-pb-39"/>
+                <pb facs="#page-surface-40" n="19v" xml:id="page-pb-40"/>
+                <pb facs="#page-surface-41" n="20r" xml:id="page-pb-41"/>
+                <pb facs="#page-surface-42" n="20v" xml:id="page-pb-42"/>
+                <pb facs="#page-surface-43" n="21r" xml:id="page-pb-43"/>
+                <pb facs="#page-surface-44" n="21v" xml:id="page-pb-44"/>
+                <pb facs="#page-surface-45" n="22r" xml:id="page-pb-45"/>
+                <pb facs="#page-surface-46" n="22v" xml:id="page-pb-46"/>
+                <pb facs="#page-surface-47" n="23r" xml:id="page-pb-47"/>
+                <pb facs="#page-surface-48" n="23v" xml:id="page-pb-48"/>
+                <pb facs="#page-surface-49" n="24r" xml:id="page-pb-49"/>
+                <pb facs="#page-surface-50" n="24v" xml:id="page-pb-50"/>
+                <pb facs="#page-surface-51" n="25r" xml:id="page-pb-51"/>
+                <pb facs="#page-surface-52" n="25v" xml:id="page-pb-52"/>
+                <pb facs="#page-surface-53" n="26r" xml:id="page-pb-53"/>
+                <pb facs="#page-surface-54" n="26v" xml:id="page-pb-54"/>
+                <pb facs="#page-surface-55" n="27r" xml:id="page-pb-55"/>
+                <pb facs="#page-surface-56" n="27v" xml:id="page-pb-56"/>
+                <pb facs="#page-surface-57" n="28r" xml:id="page-pb-57"/>
+                <pb facs="#page-surface-58" n="28v" xml:id="page-pb-58"/>
+                <pb facs="#page-surface-59" n="29r" xml:id="page-pb-59"/>
+                <pb facs="#page-surface-60" n="29v" xml:id="page-pb-60"/>
+                <pb facs="#page-surface-61" n="30r" xml:id="page-pb-61"/>
+                <pb facs="#page-surface-62" n="30v" xml:id="page-pb-62"/>
+                <pb facs="#page-surface-63" n="31r" xml:id="page-pb-63"/>
+                <pb facs="#page-surface-64" n="31v" xml:id="page-pb-64"/>
+                <pb facs="#page-surface-65" n="32r" xml:id="page-pb-65"/>
+                <pb facs="#page-surface-66" n="32v" xml:id="page-pb-66"/>
+                <pb facs="#page-surface-67" n="33r" xml:id="page-pb-67"/>
+                <pb facs="#page-surface-68" n="33v" xml:id="page-pb-68"/>
+                <pb facs="#page-surface-69" n="34r" xml:id="page-pb-69"/>
+                <pb facs="#page-surface-70" n="34v" xml:id="page-pb-70"/>
+                <pb facs="#page-surface-71" n="35r" xml:id="page-pb-71"/>
+                <pb facs="#page-surface-72" n="35v" xml:id="page-pb-72"/>
+                <pb facs="#page-surface-73" n="36r" xml:id="page-pb-73"/>
+                <pb facs="#page-surface-74" n="36v" xml:id="page-pb-74"/>
+                <pb facs="#page-surface-75" n="37r" xml:id="page-pb-75"/>
+                <pb facs="#page-surface-76" n="37v" xml:id="page-pb-76"/>
+                <pb facs="#page-surface-77" n="38r" xml:id="page-pb-77"/>
+                <pb facs="#page-surface-78" n="38v" xml:id="page-pb-78"/>
+                <pb facs="#page-surface-79" n="39r" xml:id="page-pb-79"/>
+                <pb facs="#page-surface-80" n="39v" xml:id="page-pb-80"/>
+                <pb facs="#page-surface-81" n="40r" xml:id="page-pb-81"/>
+                <pb facs="#page-surface-82" n="40v" xml:id="page-pb-82"/>
+                <pb facs="#page-surface-83" n="41r" xml:id="page-pb-83"/>
+                <pb facs="#page-surface-84" n="41v" xml:id="page-pb-84"/>
+                <pb facs="#page-surface-85" n="42r" xml:id="page-pb-85"/>
+                <pb facs="#page-surface-86" n="42v" xml:id="page-pb-86"/>
+                <pb facs="#page-surface-87" n="43r" xml:id="page-pb-87"/>
+                <pb facs="#page-surface-88" n="43v" xml:id="page-pb-88"/>
+                <pb facs="#page-surface-89" n="44r" xml:id="page-pb-89"/>
+                <pb facs="#page-surface-90" n="44v" xml:id="page-pb-90"/>
+                <pb facs="#page-surface-91" n="45r" xml:id="page-pb-91"/>
+                <pb facs="#page-surface-92" n="45v" xml:id="page-pb-92"/>
+                <pb facs="#page-surface-93" n="46r" xml:id="page-pb-93"/>
+                <pb facs="#page-surface-94" n="46v" xml:id="page-pb-94"/>
+                <pb facs="#page-surface-95" n="47r" xml:id="page-pb-95"/>
+                <pb facs="#page-surface-96" n="47v" xml:id="page-pb-96"/>
+                <pb facs="#page-surface-97" n="48r" xml:id="page-pb-97"/>
+                <pb facs="#page-surface-98" n="48v" xml:id="page-pb-98"/>
+                <pb facs="#page-surface-99" n="49r" xml:id="page-pb-99"/>
+                <pb facs="#page-surface-100" n="49v" xml:id="page-pb-100"/>
+                <pb facs="#page-surface-101" n="50r" xml:id="page-pb-101"/>
+                <pb facs="#page-surface-102" n="50v" xml:id="page-pb-102"/>
+                <pb facs="#page-surface-103" n="51r" xml:id="page-pb-103"/>
+                <pb facs="#page-surface-104" n="51v" xml:id="page-pb-104"/>
+                <pb facs="#page-surface-105" n="52r" xml:id="page-pb-105"/>
+                <pb facs="#page-surface-106" n="52v" xml:id="page-pb-106"/>
+                <pb facs="#page-surface-107" n="53r" xml:id="page-pb-107"/>
+                <pb facs="#page-surface-108" n="53v" xml:id="page-pb-108"/>
+                <pb facs="#page-surface-109" n="54r" xml:id="page-pb-109"/>
+                <pb facs="#page-surface-110" n="54v" xml:id="page-pb-110"/>
+                <pb facs="#page-surface-111" n="55r" xml:id="page-pb-111"/>
+                <pb facs="#page-surface-112" n="55v" xml:id="page-pb-112"/>
+                <pb facs="#page-surface-113" n="56r" xml:id="page-pb-113"/>
+                <pb facs="#page-surface-114" n="56v" xml:id="page-pb-114"/>
+                <pb facs="#page-surface-115" n="57r" xml:id="page-pb-115"/>
+                <pb facs="#page-surface-116" n="57v" xml:id="page-pb-116"/>
+                <pb facs="#page-surface-117" n="58r" xml:id="page-pb-117"/>
+                <pb facs="#page-surface-118" n="58v" xml:id="page-pb-118"/>
+                <pb facs="#page-surface-119" n="59r" xml:id="page-pb-119"/>
+                <pb facs="#page-surface-120" n="59v" xml:id="page-pb-120"/>
+                <pb facs="#page-surface-121" n="60r" xml:id="page-pb-121"/>
+                <pb facs="#page-surface-122" n="60v" xml:id="page-pb-122"/>
+                <pb facs="#page-surface-123" n="61r" xml:id="page-pb-123"/>
+                <pb facs="#page-surface-124" n="61v" xml:id="page-pb-124"/>
+                <pb facs="#page-surface-125" n="62r" xml:id="page-pb-125"/>
+                <pb facs="#page-surface-126" n="62v" xml:id="page-pb-126"/>
+                <pb facs="#page-surface-127" n="63r" xml:id="page-pb-127"/>
+                <pb facs="#page-surface-128" n="63v" xml:id="page-pb-128"/>
+                <pb facs="#page-surface-129" n="64r" xml:id="page-pb-129"/>
+                <pb facs="#page-surface-130" n="64v" xml:id="page-pb-130"/>
+                <pb facs="#page-surface-131" n="65r" xml:id="page-pb-131"/>
+                <pb facs="#page-surface-132" n="65v" xml:id="page-pb-132"/>
+                <pb facs="#page-surface-133" n="66r" xml:id="page-pb-133"/>
+                <pb facs="#page-surface-134" n="66v" xml:id="page-pb-134"/>
+                <pb facs="#page-surface-135" n="67r" xml:id="page-pb-135"/>
+                <pb facs="#page-surface-136" n="67v" xml:id="page-pb-136"/>
+                <pb facs="#page-surface-137" n="68r" xml:id="page-pb-137"/>
+                <pb facs="#page-surface-138" n="68v" xml:id="page-pb-138"/>
+                <pb facs="#page-surface-139" n="69r" xml:id="page-pb-139"/>
+                <pb facs="#page-surface-140" n="69v" xml:id="page-pb-140"/>
+                <pb facs="#page-surface-141" n="70r" xml:id="page-pb-141"/>
+                <pb facs="#page-surface-142" n="70v" xml:id="page-pb-142"/>
+                <pb facs="#page-surface-143" n="71r" xml:id="page-pb-143"/>
+                <pb facs="#page-surface-144" n="71v" xml:id="page-pb-144"/>
+                <pb facs="#page-surface-145" n="rear cover, inner" xml:id="page-pb-145"/>
+                <pb facs="#page-surface-146" n="rear cover, outer" xml:id="page-pb-146"/>
+                <pb facs="#page-surface-147" n="spine" xml:id="page-pb-147"/>
+            </div>
+        </body>
+    </text>
+</TEI>

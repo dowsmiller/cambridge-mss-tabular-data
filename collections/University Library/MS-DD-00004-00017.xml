@@ -1,0 +1,2433 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, University Library, MS Dd.4.17</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="pdfRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">PDF made available for download is licensed under a Creative
+                        Commons Attribution-NonCommercial 4.0 Unported License (CC BY-NC 4.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License.</licence>
+                </availability>
+
+                <availability status="restricted" xml:id="watermark">
+                    <licence>Cambridge University Library (CC BY-NC 4.0)</licence>
+                </availability>
+            </publicationStmt>
+
+            <sourceDesc>
+                <msDesc xml:id="MS-DD-00004-00017" xml:lang="en">
+                    <msIdentifier>
+                        <institution>University of Cambridge</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Medieval Manuscripts</collection>
+                        <idno>Cambridge, University Library, MS Dd.4.17</idno>
+                    </msIdentifier>
+
+                    <head>Book of Hours (Use of Sarum)</head>
+                    <msContents>
+
+                        <summary>
+                            <seg type="para">This fourteenth-century English Book of Hours is illustrated with several full-page portraits of saints
+                                at the beginning of the book, with the main text frequently accompanied by illuminated borders, marginalia and
+                                initials. The inclusion in the calendar of St Botulph (17 June) and St Hugh (17 November and his translation on 6
+                                October, both written in red) suggests that the book was produced originally for use in the East Midlands, perhaps
+                                Lincoln. However, additions to the calendar in the early fourteenth century of Winwaloe (3 March) and Ethelbert (21
+                                May) point to East Anglia - and the Litany (ff. <locus from="87r" to="92r">87r-92r</locus> has stronger Fenland (and
+                                in particular Diocese of Ely and Huntingdonshire) features: Edmund is placed high among the martyrs; Felix, Neot,
+                                Botulph, Ivo and Brendan among the confessors; and Etheldreda, Withburga and Sexburga among the virgins. These and
+                                other discrepancies suggest a development from Lincoln/East Midlands usage to Fenland usage, the miniatures and
+                                Calendar coming from the first stage of completion, and the remainder from the last, with the Litany dating to after
+                                1320. The addition to the calendar of the names of the book's owners, Alice de Reydon, and John and Matilda Stranle,
+                                with their birth and/or death dates, tells a story of continual spiritual practice and personal devotion as the
+                                manuscript was passed from hand to hand. </seg>
+                            <seg type="para">This item was included in the Library’s 600th anniversary exhibition <ref target="https://exhibitions.lib.cam.ac.uk/linesofthought/artifacts/personalising-a-prayer-book/">
+                                    <hi rend="italic">Lines of Thought: Discoveries that changed the world</hi>
+                                </ref>.</seg>
+                            <seg type="para">Revised and expanded by<lb/> Dr James Freeman<lb/> Medieval Manuscripts Specialist<lb/> Cambridge
+                                University Library</seg>
+                        </summary>
+                    </msContents>
+
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="perg">
+                                <support>
+                                    <material>Parchment</material>
+                                </support>
+                                <extent>
+                                    <seg type="object">Codex: </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="1" type="laterEndleaf">i</measure> + <measure quantity="1" type="endleaf">1</measure> +
+                                            <measure quantity="135" type="leaf">135</measure> + <measure quantity="1" type="endleaf">1</measure> +
+                                            <measure quantity="1" type="laterEndleaf">i</measure> leaves.
+                                    </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height quantity="215">215</height>
+                                            <width quantity="155">155</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+
+                                <foliation notAfter="1970" notBefore="1947">
+                                    <p>Mid-20th-century foliation:</p>
+                                    <p>[a] + i + 1-135 + ii + [b]</p>
+                                    <note>Numbering in pencil in the upper right-hand corner of the rectos, by <name key="person_v29141885"><persName type="display">H.L. Pink</persName><persName type="standard">Pink, H. L.</persName></name>.</note>
+                                </foliation>
+
+                                <collation mainStructures="12 10 8 6">
+                                    <p>The manuscript comprises 12 quires, formed of three principal codicological units: Quires 1-2 (suffrage
+                                        miniatures and calendar), Quires 3-6 (Hours of the Virgin and Holy Spirit) and Quires 7-12 (Penitential
+                                        Psalms, Litany, Office of the Dead). In two places, leaves have been lost from the volume and later replaced;
+                                        these are described separately.</p>
+                                    <formula>1<hi rend="superscript">6</hi> 2<hi rend="superscript">12</hi>; 3-6<hi rend="superscript">12</hi>; 7<hi rend="superscript">10</hi> 8<hi rend="superscript">14-2+2</hi> (7th-8th leaves lost and later replaced)
+                                            9<hi rend="superscript">10-1+1</hi> (1st leaf lost and later replaced) 10<hi rend="superscript">10</hi>
+                                            11<hi rend="superscript">8</hi> 12<hi rend="superscript">8-3</hi> (6th-8th leaves excised)</formula>
+                                </collation>
+
+
+                                <condition>Generally very good condition. Some staining on ff. <locus from="132v" to="135v">132v-135v</locus>. Some of
+                                    the marginal borders, vine stems and grotesques have been lost through trimming of the edges of the leaves when
+                                    the manuscript was rebound. </condition>
+
+                            </supportDesc>
+
+
+                        </objectDesc>
+
+                        <bindingDesc>
+                            <binding when="1962-12">
+                                <p>Rebound by Douglas Cockerell and Son, Letchworth, December 1962. Red leather over wooden boards, sewn on three
+                                    bands. Title and classmark tooled in gold on the spine.</p>
+                            </binding>
+                            <binding notAfter="1962" notBefore="1700">
+                                <p>Detached boards from eighteenth-century binding are preserved with the manuscript (but have not been digitised).
+                                    Reverse brown calf, with centre panel and fleurons at the corners.</p>
+                            </binding>
+                            <binding cert="medium" notAfter="1700">
+                                <p>Damage to the fore-edge of f. <locus from="i recto" to="i verso">i</locus> indicates the presence of two clasps on
+                                    a former earlier binding.</p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+
+                    <history>
+
+
+
+                        <acquisition notAfter="1756">
+                            <p>The manuscript is first recorded among the collections of Cambridge University Library in a catalogue compiled 1754-56
+                                (now <bibl subtype="internal" type="MS">MS Oo.7.53</bibl>).</p>
+                        </acquisition>
+
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source>This catalogue entry draws on the description provided by <bibl>Paul Binski and Patrick Zutshi, with the
+                                        collaboration of Stella Panayotova, <hi rend="italic">Western Illuminated Manuscripts: A Catalogue of the
+                                            Collection in Cambridge University Library</hi> (Cambridge: Cambridge University Press, 2011)</bibl> (used
+                                    here by kind permission of Cambridge University Press). </source>
+                            </recordHist>
+                            <availability status="restricted">
+                                <p>Entry to read in the Library is permitted only on presentation of a valid reader's card for admissions procedures
+                                    contact <ref target="http://www.lib.cam.ac.uk/cgi-bin/eligibility.cgi/">Cambridge University Library
+                                        Admissions</ref>). Contact the Manuscripts Department for further information on the availability of this
+                                    manuscript</p>
+                            </availability>
+                            <note/>
+                        </adminInfo>
+
+                        <listBibl>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/U5H42LU3" type="book" xml:id="zoteroItem_U5H42LU3">
+                                <monogr>
+                                    <title level="m">A catalogue of the manuscripts preserved in the library of the University of Cambridge</title>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">1: Dd</biblScope>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1856</date>
+                                    </imprint>
+                                </monogr>
+                                <note/>
+                                <note>pp. 225-226. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/CF3SZIEA" type="book" xml:id="Frere1894">
+                                <monogr>
+                                    <title level="m">Bibliotheca musico-liturgica: a descriptive handlist of the musical and Latin-liturgical MSS. of
+                                        the Middle Ages preserved in the libraries of Great Britain and Ireland</title>
+                                    <extent>2</extent>
+                                    <author><forename>W.H.</forename><surname>Frere</surname></author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <biblScope unit="volume">2</biblScope>
+                                        <date>1894</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 120 </note>
+                            </biblStruct>
+
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/IN59MZ6W" type="journalArticle" xml:id="Raimes1908">
+                                <analytic>
+                                    <title level="a">Robert de Reymes of Bolam, Shortflat and Aydon Castle, and his connections with Suffolk</title>
+                                    <author><forename>F.</forename><surname>Raimes</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Archaeologia Aeliana</title>
+                                    <imprint>
+                                        <biblScope unit="volume">4</biblScope>
+                                        <biblScope unit="page">313-18</biblScope>
+                                        <date>1908</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">3rd series</title></series>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/HRVE7MKE" type="book" xml:id="Millar1928">
+                                <monogr>
+                                    <title level="m">English illuminated manuscripts from the XIVth to the XVth centuries</title>
+                                    <author><forename>Eric George</forename><surname>Millar</surname></author>
+                                    <imprint>
+                                        <pubPlace>Paris, Brussels</pubPlace>
+                                        <publisher>G. van Oest</publisher>
+                                        <date>1928</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 12. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/5B8GSNWC" type="journalArticle" xml:id="Raimes1939">
+                                <analytic>
+                                    <title level="a">The family of Reymes of Wherstead in Suffolk</title>
+                                    <author><forename>A. L.</forename><surname>Raimes</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Proceedings of the Suffolk Institute of Archaeology</title>
+                                    <imprint>
+                                        <biblScope unit="volume">23</biblScope>
+                                        <biblScope unit="page">89-115</biblScope>
+                                        <date>1939</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 103-104, 106-107. </note>
+                            </biblStruct>
+
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/BGRJ3VVV" type="book" xml:id="Victoria_and_Albert_Museum1952">
+                                <monogr>
+                                    <title level="m">English medieval silver</title>
+                                    <author><name>Victoria and Albert Museum</name></author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>HMSO</publisher>
+                                        <date>1952</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">Victoria and Albert Museum Small Picture Books</title><biblScope unit="volume">27</biblScope></series>
+                                <note>Traces connection of MS with Swinburne Pyx and CCCC MS 53. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/DJCZ5C5D" type="book" xml:id="Rickert1965">
+                                <monogr>
+                                    <title level="m">Painting in Britain: the Middle Ages</title>
+                                    <author><forename>Margaret</forename><surname>Rickert</surname></author>
+                                    <edition>2nd</edition>
+                                    <imprint>
+                                        <pubPlace>Harmondsworth</pubPlace>
+                                        <publisher>Penguin</publisher>
+                                        <date>1965</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">Pelican history of art</title><biblScope unit="volume">5</biblScope></series>
+                                <note>p. 240 n. 19. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/7JAEA7VF" type="journalArticle" xml:id="Montpetit1972">
+                                <analytic>
+                                    <title level="a">Canada's first exhibition of mediaeval art: France and England (1259-1328)</title>
+                                    <author><forename>Marie</forename><surname>Montpetit</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Connoisseur</title>
+                                    <imprint>
+                                        <biblScope unit="volume">179</biblScope>
+                                        <biblScope unit="issue">4</biblScope>
+                                        <biblScope unit="page">266-72</biblScope>
+                                        <date>1972</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/A5WRKX3V" type="book" xml:id="Verdier1972">
+                                <monogr>
+                                    <title level="m">Art and the courts: France and England from 1259 to 1328</title>
+                                    <extent>2</extent>
+                                    <author><forename>Philippe</forename><surname>Verdier</surname></author>
+                                    <author><forename>Peter H.</forename><surname>Brieger</surname></author>
+                                    <author><forename>Marie</forename><surname>Farquhar Montpetit</surname></author>
+                                    <imprint>
+                                        <pubPlace>Ottawa</pubPlace>
+                                        <publisher>National Gallery of Canada</publisher>
+                                        <date>1972</date>
+                                    </imprint>
+                                </monogr>
+                                <note>no. 29. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/37CIBNRM" type="book" xml:id="Lasko1973">
+                                <monogr>
+                                    <title level="m">Medieval art in East Anglia, 1300-1520</title>
+                                    <author><forename>Peter</forename><surname>Lasko</surname></author>
+                                    <author><forename>Nigel J.</forename><surname>Morgan</surname></author>
+                                    <imprint>
+                                        <pubPlace>Norwich</pubPlace>
+                                        <publisher>Jarrold &amp; Sons</publisher>
+                                        <date>1973</date>
+                                    </imprint>
+                                </monogr>
+                                <note>no. 8. </note>
+                            </biblStruct>
+
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/K5477HIR" type="book" xml:id="Jenni1976">
+                                <monogr>
+                                    <title level="m">Das Skizzenbuch der Internationalen Gotik in den Uffizien: der Übergang vom Musterbuch zum
+                                        Skizzenbuch</title>
+                                    <author><forename>Ulrike</forename><surname>Jenni</surname></author>
+                                    <imprint>
+                                        <pubPlace>Wien</pubPlace>
+                                        <publisher>Holzhausen</publisher>
+                                        <date>1976</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">Wiener kunstgeschichtliche Forschungen</title><biblScope unit="volume">4</biblScope></series>
+                                <note>Vol. 1, p. 37, n. 171. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/PUKASPB7" type="journalArticle" xml:id="Watson1979">
+                                <analytic>
+                                    <title level="a">The artists of the Tiptoft Missal and the court style. Perspectives from the techniques of the
+                                        book.</title>
+                                    <author><forename>Bruce</forename><surname>Watson</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Scriptorium: Revue internationale des études relatives aux manuscrits / International Review of
+                                        Manuscript Studies</title>
+                                    <imprint>
+                                        <biblScope unit="volume">33</biblScope>
+                                        <biblScope unit="issue">1</biblScope>
+                                        <biblScope unit="page">25-39</biblScope>
+                                        <date>1979</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/TS8FU6H7" type="journalArticle" xml:id="Yapp1979">
+                                <analytic>
+                                    <title level="a">The birds of English medieval manuscripts</title>
+                                    <idno type="DOI">10.1016/0304-4181(79)90005-8</idno>
+                                    <author><forename>W.B.</forename><surname>Yapp</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Journal of Medieval History</title>
+                                    <imprint>
+                                        <biblScope unit="volume">5</biblScope>
+                                        <biblScope unit="issue">4</biblScope>
+                                        <biblScope unit="page">315-349</biblScope>
+                                        <date>1979</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/XN3PSIQ8" type="thesis" xml:id="Harris-Matthews1980">
+                                <monogr>
+                                    <title level="m">Lay devotions in late medieval English manuscripts</title>
+                                    <author><forename>Jane Mary</forename><surname>Harris-Matthews</surname></author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <date>1980</date>
+                                        <note type="thesisType">M.Litt.</note>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 79; apps. I, II. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/MK5RDZJM" type="journalArticle" xml:id="Michael1981">
+                                <analytic>
+                                    <title level="a">The Harnhulle psalter-hours: an early fourteenth-century English illuminated manuscript at
+                                        Downside Abbey.</title>
+                                    <author><forename>Michael A.</forename><surname>Michael</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Journal of the British Archaeological Association</title>
+                                    <imprint>
+                                        <biblScope unit="volume">134</biblScope>
+                                        <biblScope unit="page">81-99</biblScope>
+                                        <date>1981</date>
+                                    </imprint>
+                                </monogr>
+                                <note>Reproduction of f.10r </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/NGE225PA" type="book" xml:id="Sinclair1982">
+                                <monogr>
+                                    <title level="m">French devotional texts of the Middle Ages: a bibliographic manuscript guide</title>
+                                    <author><forename>Keith Val</forename><surname>Sinclair</surname></author>
+                                    <imprint>
+                                        <pubPlace>Westport, Conn.</pubPlace>
+                                        <publisher>Greenwood Press</publisher>
+                                        <date>1982</date>
+                                    </imprint>
+                                </monogr>
+                                <note>Nos 4000, 4276, 4369, 5028, 5155 </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/4277JAKG" type="book" xml:id="Sandler1986">
+                                <monogr>
+                                    <title level="m">Gothic manuscripts 1285-1385</title>
+                                    <extent>2</extent>
+                                    <author><forename>Lucy Freeman</forename><surname>Sandler</surname></author>
+                                    <imprint>
+                                        <pubPlace>London: Oxford</pubPlace>
+                                        <publisher>Harvey Miller; Oxford University Press</publisher>
+                                        <date>1986</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">A survey of manuscripts illuminated in the British Isles</title><biblScope unit="volume">5</biblScope></series>
+                                <note>I: p. 31. II: pp. 13, 73, 77, 78. Ill. 168, 169, 171, 172. No. 67 </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/G2BAGV38" type="book" xml:id="Alexander1987">
+                                <monogr>
+                                    <title level="m">Age of chivalry: art in Plantagenet England 1200-1400</title>
+                                    <editor><forename>J. J. G.</forename><surname>Alexander</surname></editor>
+                                    <editor><forename>Paul</forename><surname>Binski</surname></editor>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>Royal Academy of Arts in association with Weidenfeld &amp; Nicolson</publisher>
+                                        <date>1987</date>
+                                    </imprint>
+                                </monogr>
+                                <note>Catalogue of an exhibition held 6 November 1987-6 March 1988</note>
+                                <note>no. 570; pp. 237, 443, 452-53. Also mentioned in prefatory essays: pp. 34, 52, 156. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/JCH2KWDM" type="thesis" xml:id="Michael1987">
+                                <monogr>
+                                    <title level="m">The artists of the treatise of Walter Milmete and the Holkham Secretum</title>
+                                    <author><forename>Michael A.</forename><surname>Michael</surname></author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <date>1987</date>
+                                        <note type="thesisType">PhD</note>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 131-140. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/V5DTHDAQ" type="book" xml:id="Morgan1988">
+                                <monogr>
+                                    <title level="m">Early Gothic manuscripts. 2, 1250-1285</title>
+                                    <extent>2</extent>
+                                    <author><forename>N. J.</forename><surname>Morgan</surname></author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <biblScope unit="volume">2</biblScope>
+                                        <publisher>Harvey Miller</publisher>
+                                        <date>1988</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">A survey of manuscripts illuminated in the British Isles</title><biblScope unit="volume">4</biblScope><editor><forename>J. J. G.</forename><surname>Alexander</surname></editor></series>
+                                <note>p. 186. </note>
+                            </biblStruct>
+
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/QPS7HWZ9" type="book" xml:id="Robinson1988">
+                                <monogr>
+                                    <title level="m">Catalogue of dated and datable manuscripts c. 737-1600 in Cambridge libraries</title>
+                                    <extent>2</extent>
+                                    <author><forename>P.R.</forename><surname>Robinson</surname></author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>D.S. Brewer</publisher>
+                                        <date>1988</date>
+                                    </imprint>
+                                </monogr>
+                                <note>no. 2, pl. 137. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/T75KQEPH" type="bookSection" xml:id="Dennison1990">
+                                <analytic>
+                                    <title level="a">Liber Horn, Liber Custumarum and other manuscripts of the Queen Mary Psalter workshop</title>
+                                    <author><forename>Lynda</forename><surname>Dennison</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Medieval Art, Architecture and Archaeology in London</title>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <biblScope unit="page">118-39</biblScope>
+                                        <date>1990</date>
+                                    </imprint>
+                                </monogr>
+                                <series><title level="s">British Archaeological Association Conference Transactions</title><biblScope unit="volume">10</biblScope></series>
+                                <note>pp. 132 n. 64, 133 n. 66. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/PSM9S3ZA" type="journalArticle" xml:id="Michael1990">
+                                <analytic>
+                                    <title level="a">Destruction, reconstruction and invention: the Hungerford Hours and English manuscript
+                                        illumination of the early fourteenth century</title>
+                                    <author><forename>M.A.</forename><surname>Michael</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">English Manuscript Studies: 1100-1700</title>
+                                    <imprint>
+                                        <biblScope unit="volume">2</biblScope>
+                                        <biblScope unit="page">33-108</biblScope>
+                                        <date>1990</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 40. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/734488II" type="journalArticle" xml:id="Stanton2001">
+                                <analytic>
+                                    <title level="a">The Queen Mary Psalter: A Study of Affect and Audience</title>
+                                    <idno type="DOI">10.2307/3655114</idno>
+                                    <author><forename>Anne Rudloff</forename><surname>Stanton</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Transactions of the American Philosophical Society</title>
+                                    <imprint>
+                                        <biblScope unit="volume">91</biblScope>
+                                        <biblScope unit="issue">6</biblScope>
+                                        <biblScope unit="page">i-287</biblScope>
+                                        <date>2001</date>
+                                        <note type="url">http://www.jstor.org/stable/3655114</note>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 15, 20, 142 n. 47, 196. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/FASN2R9E" type="book" xml:id="Gee2002">
+                                <monogr>
+                                    <title level="m">Women, art and patronage from Henry III to Edward III, 1216-1377</title>
+                                    <author><forename>Loveday Lewes</forename><surname>Gee</surname></author>
+                                    <imprint>
+                                        <pubPlace>Woodbridge</pubPlace>
+                                        <publisher>Boydell Press</publisher>
+                                        <date>2002</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 41-44, 139. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/XXE65PVU" type="journalArticle" xml:id="Manzari2002">
+                                <analytic>
+                                    <title level="a">“Rudes autem erudiri debent in libris laycorum, id est in picturis”. Il ciclo biblico di uno
+                                        Speculum humanae salvationis avignonese</title>
+                                    <author><forename>Francesca</forename><surname>Manzari</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Rivista di storia della miniatura</title>
+                                    <imprint>
+                                        <biblScope unit="volume">6-7</biblScope>
+                                        <biblScope unit="page">145-156</biblScope>
+                                        <date>2002</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/9UT8BNNV" type="book" xml:id="Smith2003">
+                                <monogr>
+                                    <title level="m">Art, identity and devotion in fourteenth-century England: three women and their books of
+                                        hours</title>
+                                    <author><forename>Kathryn A.</forename><surname>Smith</surname></author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>British Library and University of Toronto Press</publisher>
+                                        <date>2003</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 17. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/FQBLJ528" type="book" xml:id="Binski2005">
+                                <monogr>
+                                    <title level="m">The Cambridge Illuminations: ten centuries of book production in the medieval west</title>
+                                    <editor><forename>Paul</forename><surname>Binski</surname></editor>
+                                    <editor><forename>Stella</forename><surname>Panayotova</surname></editor>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>Harvey Miller</publisher>
+                                        <date>2005</date>
+                                    </imprint>
+                                </monogr>
+                                <note>no. 80 [by N.J. Morgan, with further bibliography]. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/7EC9NRWD" type="bookSection" xml:id="Panayotova2007">
+                                <analytic>
+                                    <title level="a">Seeing-in: the Macclesfield Psalter</title>
+                                    <author><forename>M.A.</forename><surname>Michael</surname></author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">The Cambridge illuminations: the conference papers</title>
+                                    <idno type="callNumber">Oxf</idno>
+                                    <editor><forename>Stella</forename><surname>Panayotova</surname></editor>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <biblScope unit="page">115-128</biblScope>
+                                        <publisher>Harvey Miller</publisher>
+                                        <date>2007</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 120. </note>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/7WTSZQ8H" type="book" xml:id="Binski2011">
+                                <monogr>
+                                    <title level="m">Western illuminated manuscripts: a catalogue of the collection in Cambridge University
+                                        Library</title>
+                                    <title type="short">Western illuminated manuscripts</title>
+                                    <author><forename>Paul</forename><surname>Binski</surname></author>
+                                    <author><forename>Patrick</forename><surname>Zutshi</surname></author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>2011</date>
+                                        <note type="url">https://doi-org.ezp.lib.cam.ac.uk/10.1017/CBO9780511780479</note>
+                                    </imprint>
+                                </monogr>
+                                <note>no. 141 (pp. 132-32) </note>
+                            </biblStruct>
+
+                        </listBibl>
+                    </additional>
+
+                    <msPart n="1">
+                        <msIdentifier>
+
+                            <idno>Cambridge, University Library, MS Dd.4.17, binding fragments</idno>
+                            <msName>Binding fragments adhered to front pastedown</msName>
+
+                        </msIdentifier>
+
+
+                        <msContents>
+                            <textLang mainLang="frm">Middle French</textLang>
+
+                            <msItem n="1.1">
+                                <locus from="front cover, inner" to="fragments, rear">Fragments</locus>
+                                <title>Unknown prose text, in French (fragments)</title>
+                            </msItem>
+                        </msContents>
+
+                        <physDesc>
+
+                            <objectDesc form="codex">
+                                <supportDesc material="perg">
+                                    <support>
+                                        <material>Parchment</material>
+                                    </support>
+
+                                    <extent>
+                                        <seg type="object"><objectType>Fragments</objectType>, comprising two small strips of parchment, formerly used
+                                            in repairs to ff. <locus from="1r" to="2v">1-2</locus>, now attached by paper hinges to the <locus from="front cover, inner" to="front cover, inner">front pastedown</locus>.</seg>
+                                        <seg type="item">
+                                            <measure quantity="2" type="item">2</measure> fragments.
+                                        </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height max="75" min="70">70-75</height>
+                                                <width max="24" min="23">23-24</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                </supportDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote script="textualisNorthern"><p>Written in <term type="script">littera textualis</term>.</p>
+                                </handNote>
+                            </handDesc>
+                        </physDesc>
+                    </msPart>
+
+                    <msPart n="2">
+                        <msIdentifier>
+
+                            <idno>Cambridge, University Library, MS Dd.4.17, ff. 1-94, 97-102, 104-135</idno>
+                            <msName>Book of Hours</msName>
+
+                        </msIdentifier>
+
+                        <msContents>
+
+                            <textLang mainLang="la" otherLangs="frm">Latin, with some Middle French</textLang>
+
+
+                            <msItem n="2">
+                                <title>Hymn (extract)</title>
+                                <textLang mainLang="frm">Middle French</textLang>
+                                <note>Me gardez cors e alme . de mal e dencumbrer. Fetes moy tre duz sire . bon fin aver. e par vostre grace de enfern
+                                    eschaper e venir a la ioye ke sanz . fin deit durer amen</note>
+                                <note>Added by a 14th-century hand.</note>
+                            </msItem>
+
+                            <msItem n="3">
+                                <locus from="4r" to="4r">4r</locus>
+                                <title>Collect for St Christopher</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="4r" to="4r">4r</locus>: Deus qui beato christoforo seruo tuo filium tuum in speciem</incipit>
+                                <explicit><locus from="4r" to="4r">4r</locus>: confidentibus ut ad quietem ecertina te <damage>...</damage></explicit>
+                                <note>Inscription treated with reagent.</note>
+                            </msItem>
+
+                            <msItem n="4">
+                                <title key="work_10579" xml:lang="eng">Book of Hours (Use of Sarum)</title>
+
+                                <msItem n="4.1">
+                                    <locus from="13r" to="18v">13r-18v</locus>
+                                    <title xml:lang="eng">Calendar</title>
+                                    <note>'Pape' erased throughout.</note>
+                                </msItem>
+
+                                <msItem n="4.2">
+                                    <locus from="19r" to="135v">19r-135v</locus>
+                                    <title xml:lang="eng">Book of Hours</title>
+
+                                    <msItem n="4.2.1">
+                                        <locus from="19r" to="68r">19r-68r</locus>
+                                        <title xml:lang="eng">Hours of the Virgin</title>
+
+                                        <msItem n="4.2.1.1">
+                                            <locus from="19r" to="25v">19r-25v</locus>
+                                            <title>Matins</title>
+                                        </msItem>
+
+                                        <msItem n="4.2.1.2">
+                                            <locus from="25v" to="37r">25v-37r</locus>
+                                            <title>Lauds</title>
+                                        </msItem>
+
+                                        <msItem n="4.2.1.3">
+                                            <locus from="37v" to="41r">37v-41r</locus>
+                                            <title>Prime</title>
+                                        </msItem>
+
+                                        <msItem n="4.2.1.4">
+                                            <locus from="41r" to="43v">41r-43v</locus>
+                                            <title>Terce</title>
+                                        </msItem>
+
+                                        <msItem n="4.2.1.5">
+                                            <locus from="43v" to="45v">43v-45v</locus>
+                                            <title>Sext</title>
+                                        </msItem>
+
+                                        <msItem n="4.2.1.6">
+                                            <locus from="45v" to="47v">45v-47v</locus>
+                                            <title>None</title>
+                                        </msItem>
+
+                                        <msItem n="4.2.1.7">
+                                            <locus from="48r" to="52r">48r-52r</locus>
+                                            <title>Vespers</title>
+                                        </msItem>
+
+                                        <msItem n="4.2.1.8">
+                                            <locus from="52r" to="61r">52r-61r</locus>
+                                            <title>Compline</title>
+                                        </msItem>
+
+                                        <msItem n="4.2.1.9">
+                                            <locus from="61v" to="68r">61v-68v</locus>
+                                            <title>Hours of the Virgin during Advent</title>
+                                            <textLang mainLang="la" otherLangs="frm">Latin, with rubrics in Middle French</textLang>
+                                            <note>Rubrics written over erasures.</note>
+                                        </msItem>
+                                    </msItem>
+
+                                    <msItem n="4.2.2">
+                                        <locus from="68r" to="75r">68r-75r</locus>
+                                        <title>Long Hours of the Holy Spirit</title>
+                                        <textLang mainLang="la" otherLangs="frm">Latin, with rubrics in Middle French</textLang>
+                                        <note>Rubrics written over erasures.</note>
+
+                                        <msItem n="4.2.2.1">
+                                            <locus from="68r" to="71r">68r-71r</locus>
+                                            <title>Matins</title>
+                                        </msItem>
+
+                                        <msItem n="4.2.2.2">
+                                            <locus from="71r" to="71v">71r-71v</locus>
+                                            <title>Lauds</title>
+                                        </msItem>
+
+                                        <msItem n="4.2.2.3">
+                                            <locus from="71v" to="72v">71v-72v</locus>
+                                            <title>Prime</title>
+                                        </msItem>
+
+                                        <msItem n="4.2.2.4">
+                                            <locus from="72v" to="74r">72v-74r</locus>
+                                            <title>Terce</title>
+                                        </msItem>
+
+                                        <msItem n="4.2.2.5">
+                                            <locus from="74r" to="74v">74r-74v</locus>
+                                            <title>Vespers</title>
+                                        </msItem>
+
+                                        <msItem n="4.2.2.6">
+                                            <locus from="74v" to="75r">74v-75r</locus>
+                                            <title>Compline</title>
+                                        </msItem>
+
+                                    </msItem>
+
+                                    <msItem n="4.2.3">
+                                        <locus from="75v" to="78r">75v-78r</locus>
+                                        <title xml:lang="eng">Prayers</title>
+                                        <textLang mainLang="frm">Middle French</textLang>
+                                        <note>Prayers added by two later hands: ff. <locus from="75v" to="77v">75v-77v</locus> and f. <locus from="78r" to="78r">78r</locus>.</note>
+                                    </msItem>
+
+                                    <msItem n="4.2.4">
+                                        <locus from="79r" to="87r">79r-87r</locus>
+                                        <title>Penitential Psalms</title>
+                                    </msItem>
+
+                                    <msItem n="4.2.5">
+                                        <locus from="87r" to="94v">87r-94v</locus>
+                                        <title xml:lang="eng">Litany and prayers</title>
+                                        <note>Ends imperfectly</note>
+                                    </msItem>
+
+                                    <msItem n="4.2.6">
+                                        <locus from="97r" to="135r">97r-135r</locus>
+                                        <title>Office of the Dead</title>
+                                        <note>Begins imperfectly</note>
+                                    </msItem>
+
+                                    <msItem n="4.2.7">
+                                        <locus from="135v" to="135v">135v</locus>
+                                        <title>Prayer</title>
+                                    </msItem>
+
+                                </msItem>
+
+                            </msItem>
+
+                        </msContents>
+
+                        <physDesc>
+                            <objectDesc form="codex">
+                                <supportDesc material="perg">
+                                    <support>
+                                        <material>Parchment (disposition of hair and flesh sides uncertain)</material>
+                                    </support>
+
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="135" type="leaf">135</measure> leaves.
+                                        </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="215">215</height>
+                                                <width quantity="155">155</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                    <collation>
+                                        <list>
+                                            <item>Quire 1<hi rend="superscript">6</hi> (ff. <locus from="1r" to="6v">1-6</locus>)</item>
+                                            <item>Quires 2-6<hi rend="superscript">12</hi> (ff. <locus from="7r" to="78v">7-78</locus>)</item>
+                                            <item>Quire 7<hi rend="superscript">10</hi> (ff. <locus from="79r" to="88v">79-88</locus>)</item>
+                                            <item>Quire 8<hi rend="superscript">14-2+2</hi> (ff. <locus from="89r" to="102v">89-102</locus>: 7th and
+                                                8th leaves lost, after f. 94; later replaced by two leaves, now ff. 95-96)</item>
+                                            <item>Quire 9<hi rend="superscript">10-1+1</hi> (ff. <locus from="103r" to="122v">103-112</locus>: 1st
+                                                leaf missing, before f. 104; later replaced by a single leaf, now f. 103)</item>
+                                            <item>Quire 10<hi rend="superscript">10</hi> (ff. <locus from="113r" to="122v">113-122</locus>)</item>
+                                            <item>Quire 11<hi rend="superscript">8</hi> (ff. <locus from="123r" to="130v">123-130</locus>)</item>
+                                            <item>Quire 12<hi rend="superscript">8-3</hi> (ff. <locus from="131r" to="135v">131-135</locus>: 6th-8th
+                                                leaves excised, probably blank)</item>
+                                        </list>
+                                    </collation>
+                                </supportDesc>
+
+
+
+
+                                <layoutDesc>
+                                    <layout columns="1" ruledLines="16" rulingMedium="ink" topLine="below" type="text">
+                                        <dimensions type="written" unit="mm">
+                                            <height quantity="150">150</height>
+                                            <width quantity="105">105</width>
+                                        </dimensions>
+                                        <seg type="ruling">Text ruled in ink, frame and line. Single columns, 16 lines to the page, written below top
+                                            line.</seg>
+                                    </layout>
+
+                                    <layout columns="4" ruledLines="33" rulingMedium="ink" topLine="below" type="calendar">
+                                        <locus from="13r" to="18v">13r-18v</locus>
+                                        <dimensions type="written" unit="mm">
+                                            <height quantity="150">150</height>
+                                            <width quantity="105">105</width>
+                                        </dimensions>
+                                        <seg type="ruling">Calendar ruled in ink, frame and line. Four columns, 33 lines, written below top
+                                            line.</seg>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote script="textualisNorthern">
+                                    <p>Written in <term type="script">textura quadrata</term>.</p>
+                                </handNote>
+                            </handDesc>
+
+                            <decoDesc>
+                                <decoNote type="miniature">
+                                    <p>Twelve full-page suffrage miniatures, framed and on tooled gold or diapered pink and blue ground, in pairs at
+                                        alternating openings before the Calendar. Their style is associated with the Queen Mary Psalter workshop
+                                            (<bibl subtype="external" type="MS">
+                                            <ref target="http://searcharchives.bl.uk/IAMS_VU2:LSCOP_BL:IAMS040-002105818">London, British Library,
+                                                Royal MS 2.B.vii</ref></bibl>). The same artist worked on a Psalter made for a patron in the Norwich
+                                        diocese, which later passed to Peterborough Abbey (<bibl subtype="external" type="MS">
+                                            <ref target="https://parker.stanford.edu/parker/catalog/gs233db8425"> Cambridge, Corpus Christi College,
+                                                MS 53</ref></bibl>). <list>
+                                            <item>
+                                                <locus from="1v" to="1v">1v</locus>: woman (perhaps intended to represent the commissioner or an early
+                                                owner of the manuscript) kneeling in veneration before a sainted archbishop. The archbishop (?St
+                                                Thomas, ?St Edmund) was altered from being a bishop (perhaps originally St Hugh, as in the Calendar)
+                                                by the substitution of a cross for a crozier and the addition of a pallium. The arms of the Reymes
+                                                family also appear to have been added to the woman's mantle. </item>
+                                            <item>
+                                                <locus from="2r" to="2r">2r</locus>: <term ref="https://iconclass.org/11HH(CATHERINE)" type="iconography">St Catherine</term> and <term ref="https://iconclass.org/11HH(MARGARET)" type="iconography">St Margaret</term></item>
+                                            <item>
+                                                <locus from="3v" to="3v">3v</locus>: <term ref="https://iconclass.org/11H(GEORGE)" type="iconography">St George</term></item>
+                                            <item>
+                                                <locus from="4r" to="4r">4r</locus>: <term ref="https://iconclass.org/11H(CHRISTOPHER)" type="iconography">St Christopher</term>
+                                            </item>
+                                            <item>
+                                                <locus from="5v" to="5v">5v</locus>: <term ref="https://iconclass.org/73A521" type="iconography">Annunciation</term>
+                                            </item>
+                                            <item>
+                                                <locus from="6r" to="6r">6r</locus>: <term ref="https://iconclass.org/73B13" type="iconography">Nativity</term></item>
+                                            <item>
+                                                <locus from="7v" to="7v">7v</locus>: <term ref="https://iconclass.org/73E123" type="iconography">Resurrection</term></item>
+                                            <item>
+                                                <locus from="8r" to="8r">8r</locus>: <term ref="https://iconclass.org/73E425" type="iconography">Ascension</term></item>
+                                            <item>
+                                                <locus from="9v" to="9v">9v</locus>: <term ref="https://iconclass.org/73E791" type="iconography">Coronation of Virgin</term></item>
+                                            <item>
+                                                <locus from="10r" to="10r">10r</locus>: <term ref="https://iconclass.org/11D322(%2B0)" type="iconography">Christ in Majesty, with Evangelists' symbols</term></item>
+                                            <item>
+                                                <locus from="11v" to="11v">11v</locus>: <term ref="https://iconclass.org/11F412" type="iconography">Virgin and Child</term>
+                                            </item>
+                                            <item>
+                                                <locus from="12r" to="12r">12r</locus>: <term ref="https://iconclass.org/73D641" type="iconography">Crucifixion</term>
+                                            </item>
+                                        </list>
+                                    </p>
+                                </decoNote>
+
+                                <decoNote type="sketch">
+                                    <p>
+                                        <locus from="12v" to="12v">12v</locus> Rough drawing of <term ref="https://iconclass.org/11H(JOHN%20THE%20BAPTIST)" type="iconography">St John the Baptist with
+                                            Lamb</term>, probably added in the 14th century.</p>
+                                </decoNote>
+
+                                <decoNote type="miniature">
+                                    <p>Calendar miniatures comprising labours of the months and zodiac signs, on punched gold ground under canopies,
+                                        in outer margins. Executed by a second artist, related to that of the prefatory suffrage miniatures.<list>
+                                            <item>
+                                                <locus from="13r" to="13r">13r</locus>: January: <term ref="https://iconclass.org/96A128(JANUS'%20HEAD)(%2B0)" type="iconography">Janus</term>
+                                                <term ref="https://iconclass.org/23K11(%2B112)" type="iconography">feasting</term>; <term ref="https://iconclass.org/23O12" type="iconography">Aquarius</term>
+                                            </item>
+                                            <item>
+                                                <locus from="13v" to="13v">13v</locus>: February: <term ref="https://iconclass.org/23K12(%2B113)" type="iconography">man warming himself by fire</term>; <term ref="https://iconclass.org/23O13" type="iconography">Pisces</term></item>
+                                            <item>
+                                                <locus from="14r" to="14r">14r</locus>: March: <term ref="https://iconclass.org/23K13(%2B121)" type="iconography">pruning</term>; <term ref="https://iconclass.org/23O21" type="iconography">Aries</term></item>
+                                            <item>
+                                                <locus from="14v" to="14v">14v</locus>: April: <term ref="https://iconclass.org/23K21(%2B122)" type="iconography">hawking</term>; <term ref="https://iconclass.org/23O22" type="iconography">Taurus</term></item>
+                                            <item>
+                                                <locus from="15r" to="15r">15r</locus>: May: <term ref="https://iconclass.org/23K22(%2B123)" type="iconography">Maying</term>; <term ref="https://iconclass.org/23O23" type="iconography">Gemini</term></item>
+                                            <item>
+                                                <locus from="15v" to="15v">15v</locus>: June: <term ref="https://iconclass.org/23K23(%2B131)" type="iconography">mowing</term>; <term ref="https://iconclass.org/23O31" type="iconography">Cancer</term></item>
+                                            <item>
+                                                <locus from="16r" to="16r">16r</locus>: July: <term ref="https://iconclass.org/23K31(%2B132)" type="iconography">reaping</term>; <term ref="https://iconclass.org/23O32" type="iconography">Leo</term></item>
+                                            <item>
+                                                <locus from="16v" to="16v">16v</locus>: August: <term ref="https://iconclass.org/23K32(%2B133)" type="iconography">threshing</term>; <term ref="https://iconclass.org/23O33" type="iconography">Virgo</term></item>
+                                            <item>
+                                                <locus from="17r" to="17r">17r</locus>: September: <term ref="https://iconclass.org/23K33(%2B141)" type="iconography">harvesting grapes</term>; <term ref="https://iconclass.org/23O41" type="iconography">Libra</term></item>
+                                            <item>
+                                                <locus from="17v" to="17v">17v</locus>: October: <term ref="https://iconclass.org/23K41(%2B142)" type="iconography">sowing</term>; <term ref="https://iconclass.org/23O42" type="iconography">Scorpio</term></item>
+                                            <item>
+                                                <locus from="18r" to="18r">18r</locus>: November: <term ref="https://iconclass.org/23K42(%2B143)" type="iconography">beating for acorns</term>; <term ref="https://iconclass.org/23O43" type="iconography">Sagittarius</term></item>
+                                            <item>
+                                                <locus from="18v" to="18v">18v</locus>: December: <term ref="https://iconclass.org/23K43(%2B111)" type="iconography">slaughtering pig</term>; <term ref="https://iconclass.org/23O11" type="iconography">Capricorn</term></item>
+                                        </list>
+                                    </p>
+                                </decoNote>
+
+                                <decoNote type="border">
+                                    <p>Border decoration of rich foliage in blue, red, green and gold extending from letter finials and forming full
+                                        or partial frames, with marginal grotesques and drolleries. The border decoration relates to the Howard
+                                        Psalter possibly made for John Fitton of Wiggenhall St German's, Norfolk (<bibl subtype="external" type="MS"><ref target="http://searcharchives.bl.uk/IAMS_VU2:LSCOP_BL:IAMS041-002405108">London, British
+                                                Library, Arundel MS 83, part I</ref></bibl>), the Gorleston Psalter (<bibl subtype="external" type="MS"><ref target="http://searcharchives.bl.uk/IAMS_VU2:LSCOP_BL:IAMS032-002016448">London, British
+                                                Library, Add. MS 49622</ref></bibl>), and the fourteenth-century part of the Alfonso Psalter (<bibl subtype="external" type="MS"><ref target="http://searcharchives.bl.uk/IAMS_VU2:LSCOP_BL:IAMS032-002031972">London, British Library, Add. MS 24686</ref></bibl>).</p>
+                                    <p>On f. <locus from="19r" to="19r">19r</locus>, heraldic shields suspended from vine sprays projecting inwards
+                                        from the border, showing the coats of arms of: <list>
+                                            <item>England (gules, three lions passant guardant in pale or)</item>
+                                            <item>Unknown (shield defaced, but formerly azure)</item>
+                                            <item><name key="person_v220363664">
+                                                    <persName type="display">Aymer de Valence, earl of Pembroke (c. 1270-1324)</persName>
+                                                    <persName type="standard">Pembroke, Aymer de Valence, ca. 1270-1324, earl
+                                                of</persName></name></item>
+                                        </list>
+                                    </p>
+                                    <p>A further three heraldic shields were once included, suspended from corresponding vine sprays projecting
+                                        outwards from the border, however all have since been wholly or almost entirely cropped.</p>
+                                    <p>Also on this page, a decorated initial contains the arms of the Reymes family (gules a cross or engraved or)
+                                        .</p>
+                                </decoNote>
+
+                                <decoNote type="histInit">
+                                    <p><locus from="19r" to="19r">19r</locus>: at the opening of the Hours of the Virgin: a nine-line historiated
+                                        initial D, executed by a third artistic hand. The figure style of this artist is related to the Bardolf-Vaux
+                                        Psalter (<bibl subtype="external" type="MS">London, Lambeth Palace Library, MS 233</bibl>). Letter formed of
+                                        interlaced vine stems, on coloured ground divided into quarters, formed alternately of red or blue chequered
+                                        patterns. Contains scene depicting a woman (perhaps intended to represent the commissioner or an early owner
+                                        of the manuscript) praying to <term ref="https://iconclass.org/11F4221(%2B5)" type="iconography">seated Virgin
+                                            and Child</term>, on punched gold ground. </p>
+                                    <p><locus from="79r" to="79r">79r</locus>: at the opening of the Penitential Psalms, a seven-line historiated
+                                        initial D, executed by a fourth artistic hand. Letter formed of interlaced vine stems, on coloured ground
+                                        divided into quarters, formed alternately of red or blue chequered patterns, which extend into the interstice
+                                        of the letter. Contains <term ref="https://iconclass.org/11D322" type="iconography">Christ in Majesty</term>,
+                                        seated and holding a book, on a burnished, oval-shaped gold ground. </p>
+                                </decoNote>
+
+                                <decoNote type="decInit">
+                                    <p>Three- to six-line figural initials, filled with foliated and zoomorphic spirals, on tooled gold ground, to the
+                                        Hours of the Virgin (ff. <locus from="25v" to="25v">25v</locus>, <locus from="37v" to="37v">37v</locus>,
+                                            <locus from="41r" to="41r">41r</locus>, <locus from="43v" to="43v">43v</locus>, <locus from="45v" to="45v">45v</locus>, <locus from="48r" to="48r">48r</locus>, <locus from="52r" to="52r">52r</locus>) and at the
+                                        beginning of the Hours of the Holy Spirit (f. <locus from="68r" to="68r">68r</locus>).</p>
+                                    <p>Two- to seven-line initials in blue, filled with foliage, human heads or grotesques, on burnished gold
+                                        ground.</p>
+                                    <p>Four-line initials in blue in the Calendar, filled with red and green foliage, on gold ground.</p>
+                                </decoNote>
+
+                                <decoNote type="flourInit">
+                                    <p>One-line initials at the beginning of verses, alternating in gold and blue, with contrasting blue and red
+                                        penwork flourishing.</p>
+                                </decoNote>
+
+                                <decoNote type="lineFill">
+                                    <p>Line-fillers comprising vegetation, geometric and zoomorphic designs in blue or turquoise and red, some forming
+                                        frames.</p>
+                                </decoNote>
+                            </decoDesc>
+
+                            <additions>
+                                <note><p>Under the illustration on <locus from="4r" to="4r">4r</locus>, a Latin collect has been added.</p></note>
+                                <note><p>On folios <locus from="61r" to="74r">61r-74r</locus>, the rubrics have been erased and written over in
+                                    French.</p></note>
+                                <note><p>Folios <locus from="95r" to="96v">95r-96v</locus> were added later, written in a 16th-century hand, presumably
+                                    due to loss of these folios in the original.</p></note>
+                                <note><p>Additions have been made to the calendar, <locus from="13r" to="18v">13r-18v</locus>, by several hands dating
+                                    variously to the early fourteenth to the fifteenth century. These include obits and saints' days (see Provenance
+                                    for further details) and notes by two hands that mark the beginning and end of the 'dies caniculares' (or 'dog
+                                    days'; <locus from="16r" to="16r">16r</locus>, <locus from="17r" to="17r">17r</locus>), the hottest period of the
+                                    year.</p></note>
+                            </additions>
+                        </physDesc>
+
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" notAfter="1323" notBefore="1300">First quarter of the 14th century (perhaps not before
+                                    1320; not after 1323)</origDate>, <origPlace key="place_g7002445">England</origPlace>. <p>The manuscript may be
+                                    datable to after 1320: since Thomas Becket is among the martyrs, the Thomas among the confessors in the Litany (f.
+                                        <locus from="90r" to="90r">90r</locus>) is probably <name key="person_v120738161"><persName type="display">Thomas de Cantilupe</persName>
+                                        <persName type="standard">Thomas, de Cantelupe, Saint, approximately 1218-1282</persName></name>, who was
+                                    canonized in 1320.</p>
+                                <p>For explanation of the terminus post quem non, see Provenance.</p>
+                                <p>The manuscript may have been made in <placeName key="place_g7012973">East Anglia</placeName>, as were other
+                                    manuscripts with which it bears artistic affinities (see Decoration).</p>
+                            </origin>
+
+                            <provenance notAfter="1323" notBefore="1300">
+                                <p>Probably owned by <name role="fmo"><persName type="display">Alice de Reydon</persName>
+                                        <persName type="standard">Reydon, Alice de</persName></name>, <hi rend="italic">née</hi> Reymes, wife of
+                                    Robert de Reydon. Her obituary is added to the Calendar in a contemporary hand, on the 5th July (fol. <locus from="16r" to="16r">16r</locus>): 'Obitus Alicie de Reidon anno domini M<hi rend="superscript">o</hi> ccc<hi rend="superscript">o</hi>
+                                    <damage>x</damage>...'. The year is uncertain, but must be after 1310 (the first limb of 'x' is visible; if any
+                                    number followed, it has been cropped) but before 1323: the <hi rend="italic">Inquisitions Post Mortem</hi> held in
+                                    that year on Alice's husband gives the name of his widow as Margaret. The manuscript may have been produced for
+                                    her prior to her marriage, since her family's coat of arms features on f. <locus from="19r" to="19r">19r</locus>.
+                                    The female figures on ff. <locus from="1v" to="1v">1v</locus> and <locus from="19r" to="19r">19r</locus> may have
+                                    been intended to represent her: the mantle of the former figure has had the Reymes family coat of arms painted
+                                    over it (the cross or has been divided in two vertically and painted along each edge).</p>
+                                <listBibl>
+                                    <bibl><hi rend="italic">Calendar of Inquisitions Post Mortem</hi>, vol. 6, Edward II (1910), no. 419</bibl>
+                                    <bibl>Raimes (1939)</bibl>
+                                </listBibl>
+                            </provenance>
+
+                            <provenance notAfter="1360" notBefore="1300">
+                                <p>Two early fourteenth century hands have inserted additional feast days that confirm an East Anglian provenance: St
+                                    Winwaloe ('Sancti Winewaloei') on 3rd March (f. <locus from="14r" to="14r">14r</locus>) and St Ethelbert on 21st
+                                    May (usually 20th; f. <locus from="15r" to="15r">15r</locus>). Winwaloe is more commonly patron saint of
+                                    foundations in the south-west, his reputed homeland, however a Benedictine priory dedicated to him was founded at
+                                    Wereham in 1199; it was later dissolved in 1321 and given to nearby abbey of West Dereham.</p>
+                            </provenance>
+
+                            <provenance cert="medium" notAfter="1450" notBefore="1380">
+                                <p>Stranle family: the birth dates of John Stranle (17th February) (f. <locus from="13v" to="13v">13v</locus>) and
+                                    Matilda Stranle (9th April) (f. <locus from="14v" to="14v">14v</locus>) were inserted in the calendar, by perhaps
+                                    the same hand. Another, later hand glossed the entry for John Stranle with the year of his birth: 'anno Regis
+                                    Ricardi secundi quarto' (1380/81).</p>
+                            </provenance>
+
+                        </history>
+
+                    </msPart>
+
+                    <msPart n="3">
+                        <msIdentifier>
+
+                            <idno>Cambridge, University Library, MS Dd.4.17, ff. 95-96</idno>
+                            <msName>Replacement leaves</msName>
+
+                        </msIdentifier>
+
+                        <msContents>
+
+                            <textLang mainLang="la">Latin</textLang>
+
+                            <msItem n="5">
+                                <locus from="95r" to="96v">95r-96v</locus>
+                                <title>Five prayers</title>
+                            </msItem>
+                        </msContents>
+
+                        <physDesc>
+                            <objectDesc form="codex">
+                                <supportDesc material="perg">
+                                    <support>
+                                        <material>Parchment</material>
+                                    </support>
+
+                                    <extent>
+                                        <seg type="object"><objectType>Bifolium</objectType>, added to replace two leaves lost after f. 94, but
+                                            providing different text to that lost. </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="2" type="leaf">2</measure> leaves.
+                                        </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="215">215</height>
+                                                <width quantity="155">155</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="1" ruledLines="16" rulingMedium="ink" topLine="below">
+                                        <dimensions type="written" unit="mm">
+                                            <height quantity="140">140</height>
+                                            <width quantity="105">105</width>
+                                        </dimensions>
+                                        <seg type="ruling">Ruled in ink, frame and line. Single columns, 16 lines to the page, written below top
+                                            line.</seg>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote script="textualisNorthern">
+                                    <p>Written in an uneven <term type="script">textura quadrata</term> of the 16th century.</p>
+                                </handNote>
+                            </handDesc>
+
+                            <decoDesc>
+                                <decoNote type="lineFill"> Line-fillers sketched in ink.</decoNote>
+                            </decoDesc>
+                        </physDesc>
+                    </msPart>
+
+                    <msPart n="4">
+                        <msIdentifier>
+
+                            <idno>Cambridge, University Library, MS Dd.4.17, f. 103</idno>
+                            <msName>Replacement leaf</msName>
+
+                        </msIdentifier>
+
+                        <msContents>
+
+                            <textLang mainLang="la">Latin</textLang>
+
+                            <msItem n="6">
+                                <locus from="103r" to="103v">103r-103v</locus>
+                                <title>Office of the Dead</title>
+                            </msItem>
+                        </msContents>
+
+                        <physDesc>
+                            <objectDesc form="codex">
+                                <supportDesc material="perg">
+                                    <support>
+                                        <material>Parchment</material>
+                                    </support>
+
+                                    <extent>
+                                        <seg type="object"><objectType>Single leaf</objectType>, added to replace a leaf lost after f. 102.</seg>
+                                        <seg type="leaf">
+                                            <measure quantity="1" type="leaf">1</measure> leaf.
+                                        </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="215">215</height>
+                                                <width quantity="155">155</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="1" ruledLines="16" rulingMedium="ink" topLine="below">
+                                        <dimensions type="written" unit="mm">
+                                            <height quantity="150">150</height>
+                                            <width quantity="105">105</width>
+                                        </dimensions>
+                                        <seg type="ruling">Ruled in ink, frame and line. Single columns, 16 lines to the page, written below top
+                                            line.</seg>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote script="textualisNorthern">
+                                    <p>Written in <term type="script">textura quadrata</term>, in brown ink. The hand is different to that responsible
+                                        for the rest of the text (compare the execution of marks above the letter i and the occasionally rounded
+                                        execution of lower serifs). </p>
+                                </handNote>
+                            </handDesc>
+
+                            <decoDesc>
+                                <decoNote type="flourInit">
+                                    <p>Two-line puzzle initial in red and blue, with internal void decoration, enclosing animal grosteque in red ink,
+                                        and supporting marginal flourishing in red and blue ink.</p>
+                                    <p>One-line initials, alternating in red or blue, with contrasting penwork infill and marginal flourishing in blue
+                                        or red.</p>
+                                </decoNote>
+
+                                <decoNote type="lineFill">
+                                    <p>Line-fillers comprising geometric and zoomorphic designs, executed in red and blue.</p>
+                                </decoNote>
+                            </decoDesc>
+
+                        </physDesc>
+                    </msPart>
+
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="http://id.loc.gov/authorities/about.html#lcsh">Library of Congress Subject Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85062530">Books of Hours</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2016-02-17">Arthur Westwell, Suzanne Paul, James Freeman</change>
+            <change when="2022-08-06">
+                <persName>Original description by Arthur Westwell and Suzanne Paul (2016); current description revised, updated and expanded by James
+                    Freeman (2022 and 2023)</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic decls="#document-thumbnail" rend="portrait" url="MS-DD-00004-00017-000-00001"/>
+        <surface n="front cover, outer" xml:id="page-surface-1">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00001" width="4612px"/>
+        </surface>
+        <surface n="front cover, inner" xml:id="page-surface-2">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00002" width="4612px"/>
+        </surface>
+        <surface n="fragments, rear" xml:id="page-surface-3">
+            <graphic decls="#downloadImageRights #download" height="7705px" rend="portrait" url="MS-DD-00004-00017-000-00003" width="5302px"/>
+        </surface>
+        <surface n="[a] recto" xml:id="page-surface-4">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00004" width="4505px"/>
+        </surface>
+        <surface n="[a] verso" xml:id="page-surface-5">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00005" width="4612px"/>
+        </surface>
+        <surface n="i recto" xml:id="page-surface-6">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00006" width="4505px"/>
+        </surface>
+        <surface n="i verso" xml:id="page-surface-7">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00007" width="4612px"/>
+        </surface>
+        <surface n="1r" xml:id="page-surface-8">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00008" width="4505px"/>
+        </surface>
+        <surface n="1v" xml:id="page-surface-9">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00009" width="4612px"/>
+        </surface>
+        <surface n="2r" xml:id="page-surface-10">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00010" width="4505px"/>
+        </surface>
+        <surface n="2v" xml:id="page-surface-11">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00011" width="4612px"/>
+        </surface>
+        <surface n="3r" xml:id="page-surface-12">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00012" width="4505px"/>
+        </surface>
+        <surface n="3v" xml:id="page-surface-13">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00013" width="4612px"/>
+        </surface>
+        <surface n="4r" xml:id="page-surface-14">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00014" width="4311px"/>
+        </surface>
+        <surface n="4v" xml:id="page-surface-15">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00015" width="4612px"/>
+        </surface>
+        <surface n="5r" xml:id="page-surface-16">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00016" width="4505px"/>
+        </surface>
+        <surface n="5v" xml:id="page-surface-17">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00017" width="4612px"/>
+        </surface>
+        <surface n="6r" xml:id="page-surface-18">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00018" width="4211px"/>
+        </surface>
+        <surface n="6v" xml:id="page-surface-19">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00019" width="4612px"/>
+        </surface>
+        <surface n="7r" xml:id="page-surface-20">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00020" width="4505px"/>
+        </surface>
+        <surface n="7v" xml:id="page-surface-21">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00021" width="4612px"/>
+        </surface>
+        <surface n="8r" xml:id="page-surface-22">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00022" width="4228px"/>
+        </surface>
+        <surface n="8v" xml:id="page-surface-23">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00023" width="4612px"/>
+        </surface>
+        <surface n="9r" xml:id="page-surface-24">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00024" width="4505px"/>
+        </surface>
+        <surface n="9v" xml:id="page-surface-25">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00025" width="4612px"/>
+        </surface>
+        <surface n="10r" xml:id="page-surface-26">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00026" width="4383px"/>
+        </surface>
+        <surface n="10v" xml:id="page-surface-27">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00027" width="4612px"/>
+        </surface>
+        <surface n="11r" xml:id="page-surface-28">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00028" width="4241px"/>
+        </surface>
+        <surface n="11v" xml:id="page-surface-29">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00029" width="4612px"/>
+        </surface>
+        <surface n="12r" xml:id="page-surface-30">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00030" width="4080px"/>
+        </surface>
+        <surface n="12v" xml:id="page-surface-31">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00031" width="4612px"/>
+        </surface>
+        <surface n="13r" xml:id="page-surface-32">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00032" width="4241px"/>
+        </surface>
+        <surface n="13v" xml:id="page-surface-33">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00033" width="4612px"/>
+        </surface>
+        <surface n="14r" xml:id="page-surface-34">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00034" width="4241px"/>
+        </surface>
+        <surface n="14v" xml:id="page-surface-35">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00035" width="4612px"/>
+        </surface>
+        <surface n="15r" xml:id="page-surface-36">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00036" width="4241px"/>
+        </surface>
+        <surface n="15v" xml:id="page-surface-37">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00037" width="4612px"/>
+        </surface>
+        <surface n="16r" xml:id="page-surface-38">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00038" width="4241px"/>
+        </surface>
+        <surface n="16v" xml:id="page-surface-39">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00039" width="4518px"/>
+        </surface>
+        <surface n="17r" xml:id="page-surface-40">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00040" width="4241px"/>
+        </surface>
+        <surface n="17v" xml:id="page-surface-41">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00041" width="4574px"/>
+        </surface>
+        <surface n="18r" xml:id="page-surface-42">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00042" width="4241px"/>
+        </surface>
+        <surface n="18v" xml:id="page-surface-43">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00043" width="4612px"/>
+        </surface>
+        <surface n="19r" xml:id="page-surface-44">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00044" width="4241px"/>
+        </surface>
+        <surface n="19v" xml:id="page-surface-45">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00045" width="4612px"/>
+        </surface>
+        <surface n="20r" xml:id="page-surface-46">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00046" width="4241px"/>
+        </surface>
+        <surface n="20v" xml:id="page-surface-47">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00047" width="4612px"/>
+        </surface>
+        <surface n="21r" xml:id="page-surface-48">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00048" width="4241px"/>
+        </surface>
+        <surface n="21v" xml:id="page-surface-49">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00049" width="4612px"/>
+        </surface>
+        <surface n="22r" xml:id="page-surface-50">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00050" width="4241px"/>
+        </surface>
+        <surface n="22v" xml:id="page-surface-51">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00051" width="4612px"/>
+        </surface>
+        <surface n="23r" xml:id="page-surface-52">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00052" width="4241px"/>
+        </surface>
+        <surface n="23v" xml:id="page-surface-53">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00053" width="4612px"/>
+        </surface>
+        <surface n="24r" xml:id="page-surface-54">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00054" width="4241px"/>
+        </surface>
+        <surface n="24v" xml:id="page-surface-55">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00055" width="4612px"/>
+        </surface>
+        <surface n="25r" xml:id="page-surface-56">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00056" width="4241px"/>
+        </surface>
+        <surface n="25v" xml:id="page-surface-57">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00057" width="4612px"/>
+        </surface>
+        <surface n="26r" xml:id="page-surface-58">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00058" width="4241px"/>
+        </surface>
+        <surface n="26v" xml:id="page-surface-59">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00059" width="4612px"/>
+        </surface>
+        <surface n="27r" xml:id="page-surface-60">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00060" width="4241px"/>
+        </surface>
+        <surface n="27v" xml:id="page-surface-61">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00061" width="4612px"/>
+        </surface>
+        <surface n="28r" xml:id="page-surface-62">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00062" width="4241px"/>
+        </surface>
+        <surface n="28v" xml:id="page-surface-63">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00063" width="4612px"/>
+        </surface>
+        <surface n="29r" xml:id="page-surface-64">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00064" width="4241px"/>
+        </surface>
+        <surface n="29v" xml:id="page-surface-65">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00065" width="4612px"/>
+        </surface>
+        <surface n="30r" xml:id="page-surface-66">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00066" width="4241px"/>
+        </surface>
+        <surface n="30v" xml:id="page-surface-67">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00067" width="4612px"/>
+        </surface>
+        <surface n="31r" xml:id="page-surface-68">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00068" width="4241px"/>
+        </surface>
+        <surface n="31v" xml:id="page-surface-69">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00069" width="4612px"/>
+        </surface>
+        <surface n="32r" xml:id="page-surface-70">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00070" width="4241px"/>
+        </surface>
+        <surface n="32v" xml:id="page-surface-71">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00071" width="4612px"/>
+        </surface>
+        <surface n="33r" xml:id="page-surface-72">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00072" width="4241px"/>
+        </surface>
+        <surface n="33v" xml:id="page-surface-73">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00073" width="4612px"/>
+        </surface>
+        <surface n="34r" xml:id="page-surface-74">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00074" width="4241px"/>
+        </surface>
+        <surface n="34v" xml:id="page-surface-75">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00075" width="4612px"/>
+        </surface>
+        <surface n="35r" xml:id="page-surface-76">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00076" width="4241px"/>
+        </surface>
+        <surface n="35v" xml:id="page-surface-77">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00077" width="4612px"/>
+        </surface>
+        <surface n="36r" xml:id="page-surface-78">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00078" width="4241px"/>
+        </surface>
+        <surface n="36v" xml:id="page-surface-79">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00079" width="4612px"/>
+        </surface>
+        <surface n="37r" xml:id="page-surface-80">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00080" width="4241px"/>
+        </surface>
+        <surface n="37v" xml:id="page-surface-81">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00081" width="4612px"/>
+        </surface>
+        <surface n="38r" xml:id="page-surface-82">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00082" width="4241px"/>
+        </surface>
+        <surface n="38v" xml:id="page-surface-83">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00083" width="4612px"/>
+        </surface>
+        <surface n="39r" xml:id="page-surface-84">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00084" width="4241px"/>
+        </surface>
+        <surface n="39v" xml:id="page-surface-85">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00085" width="4612px"/>
+        </surface>
+        <surface n="40r" xml:id="page-surface-86">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00086" width="4241px"/>
+        </surface>
+        <surface n="40v" xml:id="page-surface-87">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00087" width="4612px"/>
+        </surface>
+        <surface n="41r" xml:id="page-surface-88">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00088" width="4241px"/>
+        </surface>
+        <surface n="41v" xml:id="page-surface-89">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00089" width="4612px"/>
+        </surface>
+        <surface n="42r" xml:id="page-surface-90">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00090" width="4241px"/>
+        </surface>
+        <surface n="42v" xml:id="page-surface-91">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00091" width="4612px"/>
+        </surface>
+        <surface n="43r" xml:id="page-surface-92">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00092" width="4241px"/>
+        </surface>
+        <surface n="43v" xml:id="page-surface-93">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00093" width="4612px"/>
+        </surface>
+        <surface n="44r" xml:id="page-surface-94">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00094" width="4241px"/>
+        </surface>
+        <surface n="44v" xml:id="page-surface-95">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00095" width="4612px"/>
+        </surface>
+        <surface n="45r" xml:id="page-surface-96">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00096" width="4241px"/>
+        </surface>
+        <surface n="45v" xml:id="page-surface-97">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00097" width="4612px"/>
+        </surface>
+        <surface n="46r" xml:id="page-surface-98">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00098" width="4241px"/>
+        </surface>
+        <surface n="46v" xml:id="page-surface-99">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00099" width="4612px"/>
+        </surface>
+        <surface n="47r" xml:id="page-surface-100">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00100" width="4241px"/>
+        </surface>
+        <surface n="47v" xml:id="page-surface-101">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00101" width="4612px"/>
+        </surface>
+        <surface n="48r" xml:id="page-surface-102">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00102" width="4241px"/>
+        </surface>
+        <surface n="48v" xml:id="page-surface-103">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00103" width="4612px"/>
+        </surface>
+        <surface n="49r" xml:id="page-surface-104">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00104" width="4241px"/>
+        </surface>
+        <surface n="49v" xml:id="page-surface-105">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00105" width="4612px"/>
+        </surface>
+        <surface n="50r" xml:id="page-surface-106">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00106" width="4241px"/>
+        </surface>
+        <surface n="50v" xml:id="page-surface-107">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00107" width="4612px"/>
+        </surface>
+        <surface n="51r" xml:id="page-surface-108">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00108" width="4241px"/>
+        </surface>
+        <surface n="51v" xml:id="page-surface-109">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00109" width="4612px"/>
+        </surface>
+        <surface n="52r" xml:id="page-surface-110">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00110" width="4241px"/>
+        </surface>
+        <surface n="52v" xml:id="page-surface-111">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00111" width="4612px"/>
+        </surface>
+        <surface n="53r" xml:id="page-surface-112">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00112" width="4241px"/>
+        </surface>
+        <surface n="53v" xml:id="page-surface-113">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00113" width="4612px"/>
+        </surface>
+        <surface n="54r" xml:id="page-surface-114">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00114" width="4241px"/>
+        </surface>
+        <surface n="54v" xml:id="page-surface-115">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00115" width="4612px"/>
+        </surface>
+        <surface n="55r" xml:id="page-surface-116">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00116" width="4241px"/>
+        </surface>
+        <surface n="55v" xml:id="page-surface-117">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00117" width="4612px"/>
+        </surface>
+        <surface n="56r" xml:id="page-surface-118">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00118" width="4241px"/>
+        </surface>
+        <surface n="56v" xml:id="page-surface-119">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00119" width="4612px"/>
+        </surface>
+        <surface n="57r" xml:id="page-surface-120">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00120" width="4241px"/>
+        </surface>
+        <surface n="57v" xml:id="page-surface-121">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00121" width="4612px"/>
+        </surface>
+        <surface n="58r" xml:id="page-surface-122">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00122" width="4241px"/>
+        </surface>
+        <surface n="58v" xml:id="page-surface-123">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00123" width="4612px"/>
+        </surface>
+        <surface n="59r" xml:id="page-surface-124">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00124" width="4241px"/>
+        </surface>
+        <surface n="59v" xml:id="page-surface-125">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00125" width="4612px"/>
+        </surface>
+        <surface n="60r" xml:id="page-surface-126">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00126" width="4241px"/>
+        </surface>
+        <surface n="60v" xml:id="page-surface-127">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00127" width="4612px"/>
+        </surface>
+        <surface n="61r" xml:id="page-surface-128">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00128" width="4241px"/>
+        </surface>
+        <surface n="61v" xml:id="page-surface-129">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00129" width="4612px"/>
+        </surface>
+        <surface n="62r" xml:id="page-surface-130">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00130" width="4241px"/>
+        </surface>
+        <surface n="62v" xml:id="page-surface-131">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00131" width="4612px"/>
+        </surface>
+        <surface n="63r" xml:id="page-surface-132">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00132" width="4241px"/>
+        </surface>
+        <surface n="63v" xml:id="page-surface-133">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00133" width="4612px"/>
+        </surface>
+        <surface n="64r" xml:id="page-surface-134">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00134" width="4241px"/>
+        </surface>
+        <surface n="64v" xml:id="page-surface-135">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00135" width="4612px"/>
+        </surface>
+        <surface n="65r" xml:id="page-surface-136">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00136" width="4241px"/>
+        </surface>
+        <surface n="65v" xml:id="page-surface-137">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00137" width="4612px"/>
+        </surface>
+        <surface n="66r" xml:id="page-surface-138">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00138" width="4241px"/>
+        </surface>
+        <surface n="66v" xml:id="page-surface-139">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00139" width="4612px"/>
+        </surface>
+        <surface n="67r" xml:id="page-surface-140">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00140" width="4241px"/>
+        </surface>
+        <surface n="67v" xml:id="page-surface-141">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00141" width="4612px"/>
+        </surface>
+        <surface n="68r" xml:id="page-surface-142">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00142" width="4241px"/>
+        </surface>
+        <surface n="68v" xml:id="page-surface-143">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00143" width="4504px"/>
+        </surface>
+        <surface n="69r" xml:id="page-surface-144">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00144" width="4241px"/>
+        </surface>
+        <surface n="69v" xml:id="page-surface-145">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00145" width="4612px"/>
+        </surface>
+        <surface n="70r" xml:id="page-surface-146">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00146" width="4241px"/>
+        </surface>
+        <surface n="70v" xml:id="page-surface-147">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00147" width="4612px"/>
+        </surface>
+        <surface n="71r" xml:id="page-surface-148">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00148" width="4241px"/>
+        </surface>
+        <surface n="71v" xml:id="page-surface-149">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00149" width="4612px"/>
+        </surface>
+        <surface n="72r" xml:id="page-surface-150">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00150" width="4241px"/>
+        </surface>
+        <surface n="72v" xml:id="page-surface-151">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00151" width="4612px"/>
+        </surface>
+        <surface n="73r" xml:id="page-surface-152">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00152" width="4241px"/>
+        </surface>
+        <surface n="73v" xml:id="page-surface-153">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00153" width="4612px"/>
+        </surface>
+        <surface n="74r" xml:id="page-surface-154">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00154" width="4241px"/>
+        </surface>
+        <surface n="74v" xml:id="page-surface-155">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00155" width="4612px"/>
+        </surface>
+        <surface n="75r" xml:id="page-surface-156">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00156" width="4241px"/>
+        </surface>
+        <surface n="75v" xml:id="page-surface-157">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00157" width="4612px"/>
+        </surface>
+        <surface n="76r" xml:id="page-surface-158">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00158" width="4241px"/>
+        </surface>
+        <surface n="76v" xml:id="page-surface-159">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00159" width="4612px"/>
+        </surface>
+        <surface n="77r" xml:id="page-surface-160">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00160" width="4241px"/>
+        </surface>
+        <surface n="77v" xml:id="page-surface-161">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00161" width="4612px"/>
+        </surface>
+        <surface n="78r" xml:id="page-surface-162">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00162" width="4241px"/>
+        </surface>
+        <surface n="78v" xml:id="page-surface-163">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00163" width="4612px"/>
+        </surface>
+        <surface n="79r" xml:id="page-surface-164">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00164" width="4241px"/>
+        </surface>
+        <surface n="79v" xml:id="page-surface-165">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00165" width="4612px"/>
+        </surface>
+        <surface n="80r" xml:id="page-surface-166">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00166" width="4241px"/>
+        </surface>
+        <surface n="80v" xml:id="page-surface-167">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00167" width="4612px"/>
+        </surface>
+        <surface n="81r" xml:id="page-surface-168">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00168" width="4241px"/>
+        </surface>
+        <surface n="81v" xml:id="page-surface-169">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00169" width="4612px"/>
+        </surface>
+        <surface n="82r" xml:id="page-surface-170">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00170" width="4241px"/>
+        </surface>
+        <surface n="82v" xml:id="page-surface-171">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00171" width="4612px"/>
+        </surface>
+        <surface n="83r" xml:id="page-surface-172">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00172" width="4241px"/>
+        </surface>
+        <surface n="83v" xml:id="page-surface-173">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00173" width="4372px"/>
+        </surface>
+        <surface n="84r" xml:id="page-surface-174">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00174" width="4241px"/>
+        </surface>
+        <surface n="84v" xml:id="page-surface-175">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00175" width="4612px"/>
+        </surface>
+        <surface n="85r" xml:id="page-surface-176">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00176" width="4241px"/>
+        </surface>
+        <surface n="85v" xml:id="page-surface-177">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00177" width="4563px"/>
+        </surface>
+        <surface n="86r" xml:id="page-surface-178">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00178" width="4241px"/>
+        </surface>
+        <surface n="86v" xml:id="page-surface-179">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00179" width="4612px"/>
+        </surface>
+        <surface n="87r" xml:id="page-surface-180">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00180" width="4241px"/>
+        </surface>
+        <surface n="87v" xml:id="page-surface-181">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00181" width="4564px"/>
+        </surface>
+        <surface n="88r" xml:id="page-surface-182">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00182" width="4241px"/>
+        </surface>
+        <surface n="88v" xml:id="page-surface-183">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00183" width="4512px"/>
+        </surface>
+        <surface n="89r" xml:id="page-surface-184">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00184" width="4241px"/>
+        </surface>
+        <surface n="89v" xml:id="page-surface-185">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00185" width="4487px"/>
+        </surface>
+        <surface n="90r" xml:id="page-surface-186">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00186" width="4241px"/>
+        </surface>
+        <surface n="90v" xml:id="page-surface-187">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00187" width="4543px"/>
+        </surface>
+        <surface n="91r" xml:id="page-surface-188">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00188" width="4241px"/>
+        </surface>
+        <surface n="91v" xml:id="page-surface-189">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00189" width="4442px"/>
+        </surface>
+        <surface n="92r" xml:id="page-surface-190">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00190" width="4241px"/>
+        </surface>
+        <surface n="92v" xml:id="page-surface-191">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00191" width="4200px"/>
+        </surface>
+        <surface n="93r" xml:id="page-surface-192">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00192" width="4241px"/>
+        </surface>
+        <surface n="93v" xml:id="page-surface-193">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00193" width="4612px"/>
+        </surface>
+        <surface n="94r" xml:id="page-surface-194">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00194" width="4241px"/>
+        </surface>
+        <surface n="94v" xml:id="page-surface-195">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00195" width="4612px"/>
+        </surface>
+        <surface n="95r" xml:id="page-surface-196">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00196" width="4241px"/>
+        </surface>
+        <surface n="95v" xml:id="page-surface-197">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00197" width="4612px"/>
+        </surface>
+        <surface n="96r" xml:id="page-surface-198">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00198" width="4241px"/>
+        </surface>
+        <surface n="96v" xml:id="page-surface-199">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00199" width="4612px"/>
+        </surface>
+        <surface n="97r" xml:id="page-surface-200">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00200" width="4241px"/>
+        </surface>
+        <surface n="97v" xml:id="page-surface-201">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00201" width="4491px"/>
+        </surface>
+        <surface n="98r" xml:id="page-surface-202">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00202" width="4241px"/>
+        </surface>
+        <surface n="98v" xml:id="page-surface-203">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00203" width="4381px"/>
+        </surface>
+        <surface n="99r" xml:id="page-surface-204">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00204" width="4241px"/>
+        </surface>
+        <surface n="99v" xml:id="page-surface-205">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00205" width="4443px"/>
+        </surface>
+        <surface n="100r" xml:id="page-surface-206">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00206" width="4241px"/>
+        </surface>
+        <surface n="100v" xml:id="page-surface-207">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00207" width="4563px"/>
+        </surface>
+        <surface n="101r" xml:id="page-surface-208">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00208" width="4241px"/>
+        </surface>
+        <surface n="101v" xml:id="page-surface-209">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00209" width="4542px"/>
+        </surface>
+        <surface n="102r" xml:id="page-surface-210">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00210" width="4241px"/>
+        </surface>
+        <surface n="102v" xml:id="page-surface-211">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00211" width="4612px"/>
+        </surface>
+        <surface n="103r" xml:id="page-surface-212">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00212" width="4241px"/>
+        </surface>
+        <surface n="103v" xml:id="page-surface-213">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00213" width="4612px"/>
+        </surface>
+        <surface n="104r" xml:id="page-surface-214">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00214" width="4241px"/>
+        </surface>
+        <surface n="104v" xml:id="page-surface-215">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00215" width="4463px"/>
+        </surface>
+        <surface n="105r" xml:id="page-surface-216">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00216" width="4241px"/>
+        </surface>
+        <surface n="105v" xml:id="page-surface-217">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00217" width="4421px"/>
+        </surface>
+        <surface n="106r" xml:id="page-surface-218">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00218" width="4241px"/>
+        </surface>
+        <surface n="106v" xml:id="page-surface-219">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00219" width="4342px"/>
+        </surface>
+        <surface n="107r" xml:id="page-surface-220">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00220" width="4241px"/>
+        </surface>
+        <surface n="107v" xml:id="page-surface-221">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00221" width="4446px"/>
+        </surface>
+        <surface n="108r" xml:id="page-surface-222">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00222" width="4241px"/>
+        </surface>
+        <surface n="108v" xml:id="page-surface-223">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00223" width="4129px"/>
+        </surface>
+        <surface n="109r" xml:id="page-surface-224">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00224" width="4241px"/>
+        </surface>
+        <surface n="109v" xml:id="page-surface-225">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00225" width="4355px"/>
+        </surface>
+        <surface n="110r" xml:id="page-surface-226">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00226" width="4241px"/>
+        </surface>
+        <surface n="110v" xml:id="page-surface-227">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00227" width="4483px"/>
+        </surface>
+        <surface n="111r" xml:id="page-surface-228">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00228" width="4241px"/>
+        </surface>
+        <surface n="111v" xml:id="page-surface-229">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00229" width="4612px"/>
+        </surface>
+        <surface n="112r" xml:id="page-surface-230">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00230" width="4241px"/>
+        </surface>
+        <surface n="112v" xml:id="page-surface-231">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00231" width="4612px"/>
+        </surface>
+        <surface n="113r" xml:id="page-surface-232">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00232" width="4241px"/>
+        </surface>
+        <surface n="113v" xml:id="page-surface-233">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00233" width="4612px"/>
+        </surface>
+        <surface n="114r" xml:id="page-surface-234">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00234" width="4241px"/>
+        </surface>
+        <surface n="114v" xml:id="page-surface-235">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00235" width="4366px"/>
+        </surface>
+        <surface n="115r" xml:id="page-surface-236">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00236" width="4241px"/>
+        </surface>
+        <surface n="115v" xml:id="page-surface-237">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00237" width="4512px"/>
+        </surface>
+        <surface n="116r" xml:id="page-surface-238">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00238" width="4241px"/>
+        </surface>
+        <surface n="116v" xml:id="page-surface-239">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00239" width="4093px"/>
+        </surface>
+        <surface n="117r" xml:id="page-surface-240">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00240" width="4241px"/>
+        </surface>
+        <surface n="117v" xml:id="page-surface-241">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00241" width="4377px"/>
+        </surface>
+        <surface n="118r" xml:id="page-surface-242">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00242" width="4241px"/>
+        </surface>
+        <surface n="118v" xml:id="page-surface-243">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00243" width="4403px"/>
+        </surface>
+        <surface n="119r" xml:id="page-surface-244">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00244" width="4241px"/>
+        </surface>
+        <surface n="119v" xml:id="page-surface-245">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00245" width="4307px"/>
+        </surface>
+        <surface n="120r" xml:id="page-surface-246">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00246" width="4241px"/>
+        </surface>
+        <surface n="120v" xml:id="page-surface-247">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00247" width="4612px"/>
+        </surface>
+        <surface n="121r" xml:id="page-surface-248">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00248" width="4241px"/>
+        </surface>
+        <surface n="121v" xml:id="page-surface-249">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00249" width="4365px"/>
+        </surface>
+        <surface n="122r" xml:id="page-surface-250">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00250" width="4241px"/>
+        </surface>
+        <surface n="122v" xml:id="page-surface-251">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00251" width="4458px"/>
+        </surface>
+        <surface n="123r" xml:id="page-surface-252">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00252" width="4241px"/>
+        </surface>
+        <surface n="123v" xml:id="page-surface-253">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00253" width="4612px"/>
+        </surface>
+        <surface n="124r" xml:id="page-surface-254">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00254" width="4241px"/>
+        </surface>
+        <surface n="124v" xml:id="page-surface-255">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00255" width="4612px"/>
+        </surface>
+        <surface n="125r" xml:id="page-surface-256">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00256" width="4241px"/>
+        </surface>
+        <surface n="125v" xml:id="page-surface-257">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00257" width="4612px"/>
+        </surface>
+        <surface n="126r" xml:id="page-surface-258">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00258" width="4241px"/>
+        </surface>
+        <surface n="126v" xml:id="page-surface-259">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00259" width="4612px"/>
+        </surface>
+        <surface n="127r" xml:id="page-surface-260">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00260" width="4241px"/>
+        </surface>
+        <surface n="127v" xml:id="page-surface-261">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00261" width="4612px"/>
+        </surface>
+        <surface n="128r" xml:id="page-surface-262">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00262" width="4241px"/>
+        </surface>
+        <surface n="128v" xml:id="page-surface-263">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00263" width="4612px"/>
+        </surface>
+        <surface n="129r" xml:id="page-surface-264">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00264" width="4241px"/>
+        </surface>
+        <surface n="129v" xml:id="page-surface-265">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00265" width="4612px"/>
+        </surface>
+        <surface n="130r" xml:id="page-surface-266">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00266" width="4241px"/>
+        </surface>
+        <surface n="130v" xml:id="page-surface-267">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00267" width="4612px"/>
+        </surface>
+        <surface n="131r" xml:id="page-surface-268">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00268" width="4241px"/>
+        </surface>
+        <surface n="131v" xml:id="page-surface-269">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00269" width="4612px"/>
+        </surface>
+        <surface n="132r" xml:id="page-surface-270">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00270" width="4241px"/>
+        </surface>
+        <surface n="132v" xml:id="page-surface-271">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00271" width="4612px"/>
+        </surface>
+        <surface n="133r" xml:id="page-surface-272">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00272" width="4241px"/>
+        </surface>
+        <surface n="133v" xml:id="page-surface-273">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00273" width="4612px"/>
+        </surface>
+        <surface n="134r" xml:id="page-surface-274">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00274" width="4241px"/>
+        </surface>
+        <surface n="134v" xml:id="page-surface-275">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00275" width="4612px"/>
+        </surface>
+        <surface n="135r" xml:id="page-surface-276">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00276" width="4241px"/>
+        </surface>
+        <surface n="135v" xml:id="page-surface-277">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00277" width="4612px"/>
+        </surface>
+        <surface n="ii recto" xml:id="page-surface-278">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00278" width="4241px"/>
+        </surface>
+        <surface n="ii verso" xml:id="page-surface-279">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00279" width="4612px"/>
+        </surface>
+        <surface n="[b] recto" xml:id="page-surface-280">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00280" width="4241px"/>
+        </surface>
+        <surface n="[b] verso" xml:id="page-surface-281">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00281" width="4612px"/>
+        </surface>
+        <surface n="rear cover, inner" xml:id="page-surface-282">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00282" width="4612px"/>
+        </surface>
+        <surface n="rear cover, outer" xml:id="page-surface-283">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00283" width="4612px"/>
+        </surface>
+        <surface n="spine" xml:id="page-surface-284">
+            <graphic decls="#downloadImageRights #download" height="6949px" rend="portrait" url="MS-DD-00004-00017-000-00284" width="2972px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#page-surface-1" n="front cover, outer" xml:id="page-pb-1"/>
+                <pb facs="#page-surface-2" n="front cover, inner" xml:id="page-pb-2"/>
+                <pb facs="#page-surface-3" n="fragments, rear" xml:id="page-pb-3"/>
+                <pb facs="#page-surface-4" n="[a] recto" xml:id="page-pb-4"/>
+                <pb facs="#page-surface-5" n="[a] verso" xml:id="page-pb-5"/>
+                <pb facs="#page-surface-6" n="i recto" xml:id="page-pb-6"/>
+                <pb facs="#page-surface-7" n="i verso" xml:id="page-pb-7"/>
+                <pb facs="#page-surface-8" n="1r" xml:id="page-pb-8"/>
+                <pb facs="#page-surface-9" n="1v" xml:id="page-pb-9"/>
+                <pb facs="#page-surface-10" n="2r" xml:id="page-pb-10"/>
+                <pb facs="#page-surface-11" n="2v" xml:id="page-pb-11"/>
+                <pb facs="#page-surface-12" n="3r" xml:id="page-pb-12"/>
+                <pb facs="#page-surface-13" n="3v" xml:id="page-pb-13"/>
+                <pb facs="#page-surface-14" n="4r" xml:id="page-pb-14"/>
+                <pb facs="#page-surface-15" n="4v" xml:id="page-pb-15"/>
+                <pb facs="#page-surface-16" n="5r" xml:id="page-pb-16"/>
+                <pb facs="#page-surface-17" n="5v" xml:id="page-pb-17"/>
+                <pb facs="#page-surface-18" n="6r" xml:id="page-pb-18"/>
+                <pb facs="#page-surface-19" n="6v" xml:id="page-pb-19"/>
+                <pb facs="#page-surface-20" n="7r" xml:id="page-pb-20"/>
+                <pb facs="#page-surface-21" n="7v" xml:id="page-pb-21"/>
+                <pb facs="#page-surface-22" n="8r" xml:id="page-pb-22"/>
+                <pb facs="#page-surface-23" n="8v" xml:id="page-pb-23"/>
+                <pb facs="#page-surface-24" n="9r" xml:id="page-pb-24"/>
+                <pb facs="#page-surface-25" n="9v" xml:id="page-pb-25"/>
+                <pb facs="#page-surface-26" n="10r" xml:id="page-pb-26"/>
+                <pb facs="#page-surface-27" n="10v" xml:id="page-pb-27"/>
+                <pb facs="#page-surface-28" n="11r" xml:id="page-pb-28"/>
+                <pb facs="#page-surface-29" n="11v" xml:id="page-pb-29"/>
+                <pb facs="#page-surface-30" n="12r" xml:id="page-pb-30"/>
+                <pb facs="#page-surface-31" n="12v" xml:id="page-pb-31"/>
+                <pb facs="#page-surface-32" n="13r" xml:id="page-pb-32"/>
+                <pb facs="#page-surface-33" n="13v" xml:id="page-pb-33"/>
+                <pb facs="#page-surface-34" n="14r" xml:id="page-pb-34"/>
+                <pb facs="#page-surface-35" n="14v" xml:id="page-pb-35"/>
+                <pb facs="#page-surface-36" n="15r" xml:id="page-pb-36"/>
+                <pb facs="#page-surface-37" n="15v" xml:id="page-pb-37"/>
+                <pb facs="#page-surface-38" n="16r" xml:id="page-pb-38"/>
+                <pb facs="#page-surface-39" n="16v" xml:id="page-pb-39"/>
+                <pb facs="#page-surface-40" n="17r" xml:id="page-pb-40"/>
+                <pb facs="#page-surface-41" n="17v" xml:id="page-pb-41"/>
+                <pb facs="#page-surface-42" n="18r" xml:id="page-pb-42"/>
+                <pb facs="#page-surface-43" n="18v" xml:id="page-pb-43"/>
+                <pb facs="#page-surface-44" n="19r" xml:id="page-pb-44"/>
+                <pb facs="#page-surface-45" n="19v" xml:id="page-pb-45"/>
+                <pb facs="#page-surface-46" n="20r" xml:id="page-pb-46"/>
+                <pb facs="#page-surface-47" n="20v" xml:id="page-pb-47"/>
+                <pb facs="#page-surface-48" n="21r" xml:id="page-pb-48"/>
+                <pb facs="#page-surface-49" n="21v" xml:id="page-pb-49"/>
+                <pb facs="#page-surface-50" n="22r" xml:id="page-pb-50"/>
+                <pb facs="#page-surface-51" n="22v" xml:id="page-pb-51"/>
+                <pb facs="#page-surface-52" n="23r" xml:id="page-pb-52"/>
+                <pb facs="#page-surface-53" n="23v" xml:id="page-pb-53"/>
+                <pb facs="#page-surface-54" n="24r" xml:id="page-pb-54"/>
+                <pb facs="#page-surface-55" n="24v" xml:id="page-pb-55"/>
+                <pb facs="#page-surface-56" n="25r" xml:id="page-pb-56"/>
+                <pb facs="#page-surface-57" n="25v" xml:id="page-pb-57"/>
+                <pb facs="#page-surface-58" n="26r" xml:id="page-pb-58"/>
+                <pb facs="#page-surface-59" n="26v" xml:id="page-pb-59"/>
+                <pb facs="#page-surface-60" n="27r" xml:id="page-pb-60"/>
+                <pb facs="#page-surface-61" n="27v" xml:id="page-pb-61"/>
+                <pb facs="#page-surface-62" n="28r" xml:id="page-pb-62"/>
+                <pb facs="#page-surface-63" n="28v" xml:id="page-pb-63"/>
+                <pb facs="#page-surface-64" n="29r" xml:id="page-pb-64"/>
+                <pb facs="#page-surface-65" n="29v" xml:id="page-pb-65"/>
+                <pb facs="#page-surface-66" n="30r" xml:id="page-pb-66"/>
+                <pb facs="#page-surface-67" n="30v" xml:id="page-pb-67"/>
+                <pb facs="#page-surface-68" n="31r" xml:id="page-pb-68"/>
+                <pb facs="#page-surface-69" n="31v" xml:id="page-pb-69"/>
+                <pb facs="#page-surface-70" n="32r" xml:id="page-pb-70"/>
+                <pb facs="#page-surface-71" n="32v" xml:id="page-pb-71"/>
+                <pb facs="#page-surface-72" n="33r" xml:id="page-pb-72"/>
+                <pb facs="#page-surface-73" n="33v" xml:id="page-pb-73"/>
+                <pb facs="#page-surface-74" n="34r" xml:id="page-pb-74"/>
+                <pb facs="#page-surface-75" n="34v" xml:id="page-pb-75"/>
+                <pb facs="#page-surface-76" n="35r" xml:id="page-pb-76"/>
+                <pb facs="#page-surface-77" n="35v" xml:id="page-pb-77"/>
+                <pb facs="#page-surface-78" n="36r" xml:id="page-pb-78"/>
+                <pb facs="#page-surface-79" n="36v" xml:id="page-pb-79"/>
+                <pb facs="#page-surface-80" n="37r" xml:id="page-pb-80"/>
+                <pb facs="#page-surface-81" n="37v" xml:id="page-pb-81"/>
+                <pb facs="#page-surface-82" n="38r" xml:id="page-pb-82"/>
+                <pb facs="#page-surface-83" n="38v" xml:id="page-pb-83"/>
+                <pb facs="#page-surface-84" n="39r" xml:id="page-pb-84"/>
+                <pb facs="#page-surface-85" n="39v" xml:id="page-pb-85"/>
+                <pb facs="#page-surface-86" n="40r" xml:id="page-pb-86"/>
+                <pb facs="#page-surface-87" n="40v" xml:id="page-pb-87"/>
+                <pb facs="#page-surface-88" n="41r" xml:id="page-pb-88"/>
+                <pb facs="#page-surface-89" n="41v" xml:id="page-pb-89"/>
+                <pb facs="#page-surface-90" n="42r" xml:id="page-pb-90"/>
+                <pb facs="#page-surface-91" n="42v" xml:id="page-pb-91"/>
+                <pb facs="#page-surface-92" n="43r" xml:id="page-pb-92"/>
+                <pb facs="#page-surface-93" n="43v" xml:id="page-pb-93"/>
+                <pb facs="#page-surface-94" n="44r" xml:id="page-pb-94"/>
+                <pb facs="#page-surface-95" n="44v" xml:id="page-pb-95"/>
+                <pb facs="#page-surface-96" n="45r" xml:id="page-pb-96"/>
+                <pb facs="#page-surface-97" n="45v" xml:id="page-pb-97"/>
+                <pb facs="#page-surface-98" n="46r" xml:id="page-pb-98"/>
+                <pb facs="#page-surface-99" n="46v" xml:id="page-pb-99"/>
+                <pb facs="#page-surface-100" n="47r" xml:id="page-pb-100"/>
+                <pb facs="#page-surface-101" n="47v" xml:id="page-pb-101"/>
+                <pb facs="#page-surface-102" n="48r" xml:id="page-pb-102"/>
+                <pb facs="#page-surface-103" n="48v" xml:id="page-pb-103"/>
+                <pb facs="#page-surface-104" n="49r" xml:id="page-pb-104"/>
+                <pb facs="#page-surface-105" n="49v" xml:id="page-pb-105"/>
+                <pb facs="#page-surface-106" n="50r" xml:id="page-pb-106"/>
+                <pb facs="#page-surface-107" n="50v" xml:id="page-pb-107"/>
+                <pb facs="#page-surface-108" n="51r" xml:id="page-pb-108"/>
+                <pb facs="#page-surface-109" n="51v" xml:id="page-pb-109"/>
+                <pb facs="#page-surface-110" n="52r" xml:id="page-pb-110"/>
+                <pb facs="#page-surface-111" n="52v" xml:id="page-pb-111"/>
+                <pb facs="#page-surface-112" n="53r" xml:id="page-pb-112"/>
+                <pb facs="#page-surface-113" n="53v" xml:id="page-pb-113"/>
+                <pb facs="#page-surface-114" n="54r" xml:id="page-pb-114"/>
+                <pb facs="#page-surface-115" n="54v" xml:id="page-pb-115"/>
+                <pb facs="#page-surface-116" n="55r" xml:id="page-pb-116"/>
+                <pb facs="#page-surface-117" n="55v" xml:id="page-pb-117"/>
+                <pb facs="#page-surface-118" n="56r" xml:id="page-pb-118"/>
+                <pb facs="#page-surface-119" n="56v" xml:id="page-pb-119"/>
+                <pb facs="#page-surface-120" n="57r" xml:id="page-pb-120"/>
+                <pb facs="#page-surface-121" n="57v" xml:id="page-pb-121"/>
+                <pb facs="#page-surface-122" n="58r" xml:id="page-pb-122"/>
+                <pb facs="#page-surface-123" n="58v" xml:id="page-pb-123"/>
+                <pb facs="#page-surface-124" n="59r" xml:id="page-pb-124"/>
+                <pb facs="#page-surface-125" n="59v" xml:id="page-pb-125"/>
+                <pb facs="#page-surface-126" n="60r" xml:id="page-pb-126"/>
+                <pb facs="#page-surface-127" n="60v" xml:id="page-pb-127"/>
+                <pb facs="#page-surface-128" n="61r" xml:id="page-pb-128"/>
+                <pb facs="#page-surface-129" n="61v" xml:id="page-pb-129"/>
+                <pb facs="#page-surface-130" n="62r" xml:id="page-pb-130"/>
+                <pb facs="#page-surface-131" n="62v" xml:id="page-pb-131"/>
+                <pb facs="#page-surface-132" n="63r" xml:id="page-pb-132"/>
+                <pb facs="#page-surface-133" n="63v" xml:id="page-pb-133"/>
+                <pb facs="#page-surface-134" n="64r" xml:id="page-pb-134"/>
+                <pb facs="#page-surface-135" n="64v" xml:id="page-pb-135"/>
+                <pb facs="#page-surface-136" n="65r" xml:id="page-pb-136"/>
+                <pb facs="#page-surface-137" n="65v" xml:id="page-pb-137"/>
+                <pb facs="#page-surface-138" n="66r" xml:id="page-pb-138"/>
+                <pb facs="#page-surface-139" n="66v" xml:id="page-pb-139"/>
+                <pb facs="#page-surface-140" n="67r" xml:id="page-pb-140"/>
+                <pb facs="#page-surface-141" n="67v" xml:id="page-pb-141"/>
+                <pb facs="#page-surface-142" n="68r" xml:id="page-pb-142"/>
+                <pb facs="#page-surface-143" n="68v" xml:id="page-pb-143"/>
+                <pb facs="#page-surface-144" n="69r" xml:id="page-pb-144"/>
+                <pb facs="#page-surface-145" n="69v" xml:id="page-pb-145"/>
+                <pb facs="#page-surface-146" n="70r" xml:id="page-pb-146"/>
+                <pb facs="#page-surface-147" n="70v" xml:id="page-pb-147"/>
+                <pb facs="#page-surface-148" n="71r" xml:id="page-pb-148"/>
+                <pb facs="#page-surface-149" n="71v" xml:id="page-pb-149"/>
+                <pb facs="#page-surface-150" n="72r" xml:id="page-pb-150"/>
+                <pb facs="#page-surface-151" n="72v" xml:id="page-pb-151"/>
+                <pb facs="#page-surface-152" n="73r" xml:id="page-pb-152"/>
+                <pb facs="#page-surface-153" n="73v" xml:id="page-pb-153"/>
+                <pb facs="#page-surface-154" n="74r" xml:id="page-pb-154"/>
+                <pb facs="#page-surface-155" n="74v" xml:id="page-pb-155"/>
+                <pb facs="#page-surface-156" n="75r" xml:id="page-pb-156"/>
+                <pb facs="#page-surface-157" n="75v" xml:id="page-pb-157"/>
+                <pb facs="#page-surface-158" n="76r" xml:id="page-pb-158"/>
+                <pb facs="#page-surface-159" n="76v" xml:id="page-pb-159"/>
+                <pb facs="#page-surface-160" n="77r" xml:id="page-pb-160"/>
+                <pb facs="#page-surface-161" n="77v" xml:id="page-pb-161"/>
+                <pb facs="#page-surface-162" n="78r" xml:id="page-pb-162"/>
+                <pb facs="#page-surface-163" n="78v" xml:id="page-pb-163"/>
+                <pb facs="#page-surface-164" n="79r" xml:id="page-pb-164"/>
+                <pb facs="#page-surface-165" n="79v" xml:id="page-pb-165"/>
+                <pb facs="#page-surface-166" n="80r" xml:id="page-pb-166"/>
+                <pb facs="#page-surface-167" n="80v" xml:id="page-pb-167"/>
+                <pb facs="#page-surface-168" n="81r" xml:id="page-pb-168"/>
+                <pb facs="#page-surface-169" n="81v" xml:id="page-pb-169"/>
+                <pb facs="#page-surface-170" n="82r" xml:id="page-pb-170"/>
+                <pb facs="#page-surface-171" n="82v" xml:id="page-pb-171"/>
+                <pb facs="#page-surface-172" n="83r" xml:id="page-pb-172"/>
+                <pb facs="#page-surface-173" n="83v" xml:id="page-pb-173"/>
+                <pb facs="#page-surface-174" n="84r" xml:id="page-pb-174"/>
+                <pb facs="#page-surface-175" n="84v" xml:id="page-pb-175"/>
+                <pb facs="#page-surface-176" n="85r" xml:id="page-pb-176"/>
+                <pb facs="#page-surface-177" n="85v" xml:id="page-pb-177"/>
+                <pb facs="#page-surface-178" n="86r" xml:id="page-pb-178"/>
+                <pb facs="#page-surface-179" n="86v" xml:id="page-pb-179"/>
+                <pb facs="#page-surface-180" n="87r" xml:id="page-pb-180"/>
+                <pb facs="#page-surface-181" n="87v" xml:id="page-pb-181"/>
+                <pb facs="#page-surface-182" n="88r" xml:id="page-pb-182"/>
+                <pb facs="#page-surface-183" n="88v" xml:id="page-pb-183"/>
+                <pb facs="#page-surface-184" n="89r" xml:id="page-pb-184"/>
+                <pb facs="#page-surface-185" n="89v" xml:id="page-pb-185"/>
+                <pb facs="#page-surface-186" n="90r" xml:id="page-pb-186"/>
+                <pb facs="#page-surface-187" n="90v" xml:id="page-pb-187"/>
+                <pb facs="#page-surface-188" n="91r" xml:id="page-pb-188"/>
+                <pb facs="#page-surface-189" n="91v" xml:id="page-pb-189"/>
+                <pb facs="#page-surface-190" n="92r" xml:id="page-pb-190"/>
+                <pb facs="#page-surface-191" n="92v" xml:id="page-pb-191"/>
+                <pb facs="#page-surface-192" n="93r" xml:id="page-pb-192"/>
+                <pb facs="#page-surface-193" n="93v" xml:id="page-pb-193"/>
+                <pb facs="#page-surface-194" n="94r" xml:id="page-pb-194"/>
+                <pb facs="#page-surface-195" n="94v" xml:id="page-pb-195"/>
+                <pb facs="#page-surface-196" n="95r" xml:id="page-pb-196"/>
+                <pb facs="#page-surface-197" n="95v" xml:id="page-pb-197"/>
+                <pb facs="#page-surface-198" n="96r" xml:id="page-pb-198"/>
+                <pb facs="#page-surface-199" n="96v" xml:id="page-pb-199"/>
+                <pb facs="#page-surface-200" n="97r" xml:id="page-pb-200"/>
+                <pb facs="#page-surface-201" n="97v" xml:id="page-pb-201"/>
+                <pb facs="#page-surface-202" n="98r" xml:id="page-pb-202"/>
+                <pb facs="#page-surface-203" n="98v" xml:id="page-pb-203"/>
+                <pb facs="#page-surface-204" n="99r" xml:id="page-pb-204"/>
+                <pb facs="#page-surface-205" n="99v" xml:id="page-pb-205"/>
+                <pb facs="#page-surface-206" n="100r" xml:id="page-pb-206"/>
+                <pb facs="#page-surface-207" n="100v" xml:id="page-pb-207"/>
+                <pb facs="#page-surface-208" n="101r" xml:id="page-pb-208"/>
+                <pb facs="#page-surface-209" n="101v" xml:id="page-pb-209"/>
+                <pb facs="#page-surface-210" n="102r" xml:id="page-pb-210"/>
+                <pb facs="#page-surface-211" n="102v" xml:id="page-pb-211"/>
+                <pb facs="#page-surface-212" n="103r" xml:id="page-pb-212"/>
+                <pb facs="#page-surface-213" n="103v" xml:id="page-pb-213"/>
+                <pb facs="#page-surface-214" n="104r" xml:id="page-pb-214"/>
+                <pb facs="#page-surface-215" n="104v" xml:id="page-pb-215"/>
+                <pb facs="#page-surface-216" n="105r" xml:id="page-pb-216"/>
+                <pb facs="#page-surface-217" n="105v" xml:id="page-pb-217"/>
+                <pb facs="#page-surface-218" n="106r" xml:id="page-pb-218"/>
+                <pb facs="#page-surface-219" n="106v" xml:id="page-pb-219"/>
+                <pb facs="#page-surface-220" n="107r" xml:id="page-pb-220"/>
+                <pb facs="#page-surface-221" n="107v" xml:id="page-pb-221"/>
+                <pb facs="#page-surface-222" n="108r" xml:id="page-pb-222"/>
+                <pb facs="#page-surface-223" n="108v" xml:id="page-pb-223"/>
+                <pb facs="#page-surface-224" n="109r" xml:id="page-pb-224"/>
+                <pb facs="#page-surface-225" n="109v" xml:id="page-pb-225"/>
+                <pb facs="#page-surface-226" n="110r" xml:id="page-pb-226"/>
+                <pb facs="#page-surface-227" n="110v" xml:id="page-pb-227"/>
+                <pb facs="#page-surface-228" n="111r" xml:id="page-pb-228"/>
+                <pb facs="#page-surface-229" n="111v" xml:id="page-pb-229"/>
+                <pb facs="#page-surface-230" n="112r" xml:id="page-pb-230"/>
+                <pb facs="#page-surface-231" n="112v" xml:id="page-pb-231"/>
+                <pb facs="#page-surface-232" n="113r" xml:id="page-pb-232"/>
+                <pb facs="#page-surface-233" n="113v" xml:id="page-pb-233"/>
+                <pb facs="#page-surface-234" n="114r" xml:id="page-pb-234"/>
+                <pb facs="#page-surface-235" n="114v" xml:id="page-pb-235"/>
+                <pb facs="#page-surface-236" n="115r" xml:id="page-pb-236"/>
+                <pb facs="#page-surface-237" n="115v" xml:id="page-pb-237"/>
+                <pb facs="#page-surface-238" n="116r" xml:id="page-pb-238"/>
+                <pb facs="#page-surface-239" n="116v" xml:id="page-pb-239"/>
+                <pb facs="#page-surface-240" n="117r" xml:id="page-pb-240"/>
+                <pb facs="#page-surface-241" n="117v" xml:id="page-pb-241"/>
+                <pb facs="#page-surface-242" n="118r" xml:id="page-pb-242"/>
+                <pb facs="#page-surface-243" n="118v" xml:id="page-pb-243"/>
+                <pb facs="#page-surface-244" n="119r" xml:id="page-pb-244"/>
+                <pb facs="#page-surface-245" n="119v" xml:id="page-pb-245"/>
+                <pb facs="#page-surface-246" n="120r" xml:id="page-pb-246"/>
+                <pb facs="#page-surface-247" n="120v" xml:id="page-pb-247"/>
+                <pb facs="#page-surface-248" n="121r" xml:id="page-pb-248"/>
+                <pb facs="#page-surface-249" n="121v" xml:id="page-pb-249"/>
+                <pb facs="#page-surface-250" n="122r" xml:id="page-pb-250"/>
+                <pb facs="#page-surface-251" n="122v" xml:id="page-pb-251"/>
+                <pb facs="#page-surface-252" n="123r" xml:id="page-pb-252"/>
+                <pb facs="#page-surface-253" n="123v" xml:id="page-pb-253"/>
+                <pb facs="#page-surface-254" n="124r" xml:id="page-pb-254"/>
+                <pb facs="#page-surface-255" n="124v" xml:id="page-pb-255"/>
+                <pb facs="#page-surface-256" n="125r" xml:id="page-pb-256"/>
+                <pb facs="#page-surface-257" n="125v" xml:id="page-pb-257"/>
+                <pb facs="#page-surface-258" n="126r" xml:id="page-pb-258"/>
+                <pb facs="#page-surface-259" n="126v" xml:id="page-pb-259"/>
+                <pb facs="#page-surface-260" n="127r" xml:id="page-pb-260"/>
+                <pb facs="#page-surface-261" n="127v" xml:id="page-pb-261"/>
+                <pb facs="#page-surface-262" n="128r" xml:id="page-pb-262"/>
+                <pb facs="#page-surface-263" n="128v" xml:id="page-pb-263"/>
+                <pb facs="#page-surface-264" n="129r" xml:id="page-pb-264"/>
+                <pb facs="#page-surface-265" n="129v" xml:id="page-pb-265"/>
+                <pb facs="#page-surface-266" n="130r" xml:id="page-pb-266"/>
+                <pb facs="#page-surface-267" n="130v" xml:id="page-pb-267"/>
+                <pb facs="#page-surface-268" n="131r" xml:id="page-pb-268"/>
+                <pb facs="#page-surface-269" n="131v" xml:id="page-pb-269"/>
+                <pb facs="#page-surface-270" n="132r" xml:id="page-pb-270"/>
+                <pb facs="#page-surface-271" n="132v" xml:id="page-pb-271"/>
+                <pb facs="#page-surface-272" n="133r" xml:id="page-pb-272"/>
+                <pb facs="#page-surface-273" n="133v" xml:id="page-pb-273"/>
+                <pb facs="#page-surface-274" n="134r" xml:id="page-pb-274"/>
+                <pb facs="#page-surface-275" n="134v" xml:id="page-pb-275"/>
+                <pb facs="#page-surface-276" n="135r" xml:id="page-pb-276"/>
+                <pb facs="#page-surface-277" n="135v" xml:id="page-pb-277"/>
+                <pb facs="#page-surface-278" n="ii recto" xml:id="page-pb-278"/>
+                <pb facs="#page-surface-279" n="ii verso" xml:id="page-pb-279"/>
+                <pb facs="#page-surface-280" n="[b] recto" xml:id="page-pb-280"/>
+                <pb facs="#page-surface-281" n="[b] verso" xml:id="page-pb-281"/>
+                <pb facs="#page-surface-282" n="rear cover, inner" xml:id="page-pb-282"/>
+                <pb facs="#page-surface-283" n="rear cover, outer" xml:id="page-pb-283"/>
+                <pb facs="#page-surface-284" n="spine" xml:id="page-pb-284"/>
+            </div>
+        </body>
+    </text>
+</TEI>

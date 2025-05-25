@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_12250">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, University Library, MS Nn.4.2</title>
+                <funder>The Polonsky Foundation</funder>
+                <principal>Suzanne Paul</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>University Library</publisher>
+
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made
+                        available for download are licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This
+                        metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+
+            <availability status="restricted" xml:id="watermark">
+               <licence>Cambridge University Library (CC BY-NC 4.0)</licence>
+            </availability>
+         </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-NN-00004-00002" xml:lang="en">
+                    <msIdentifier>
+                        <institution>University of Cambridge</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Medieval Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, University Library, MS Nn.4.2</idno>
+                        <altIdentifier type="external">
+                            <idno type="diktyon">Diktyon 12250</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+
+                    <msContents>
+
+                        <summary>
+                            <seg type="para">This small parchment manuscript contains the <hi rend="italic">Epitaphius</hi> (The Funeral Oration), 
+                                for the fallen of the battle of Chaeronea (338 BCE),    
+                                ascribed to the Athenian orator <title>Demosthenes</title> (b. 384, d. 322 BCE).
+                            The authorship of this speech is not certain, and it was first questioned 
+                                by Dionysios of Halicarnassus.</seg>
+                            <seg type="para">The codex was written for the humanist scholar Guillaume Budé (b. 1468, d. 1540) 
+                                by Georgios Hermonymos (b. c. 1430, d. c. 1511), who in addition to being a copyist, was a diplomat (he was sent to England by Pope Sixtus IV)
+                                and the first lecturer of Greek at the Collège de Sorbonne in Paris.</seg>
+                            <seg type="para">Hermonymos also copied CUL 
+                                <bibl subtype="internal" type="MS">Kk.5.35</bibl>,
+                                <bibl subtype="internal" type="MS">Kk.6.23</bibl>,
+                                <bibl subtype="internal" type="MS">Ll.2.13</bibl> and
+                                <bibl subtype="external" type="MS">Corpus Christi College, Parker Library, Cambridge, MS 224</bibl>.
+                            </seg>
+                           
+                            <seg type="para">Dr Matteo Di Franco</seg>
+                        </summary>
+                        <textLang mainLang="grc">Greek</textLang>
+
+                        <msItem n="1">
+                            <locus from="1r" to="14v">ff. 1r-14v</locus>
+                            <author cert="medium" key="person_v268302412" ref="http://viaf.org/viaf/268302412">
+                                Demosthenes</author>
+                            <title xml:lang="eng">Funeral Oration</title>
+                            <title type="alt" xml:lang="la">Epitaphius <note>(or. 60)</note>
+                     </title>
+                            <rubric>
+                        <locus from="1r" to="1r">f. 1r</locus>
+                                δημοσθένους ἐπιτάφιος λόγος εἰς τοὺς ἐν πολέμῳ ἀποθανόντας</rubric>
+                            <incipit>
+                        <locus from="1r" to="1r">f. 1r</locus> 
+                                Ἐπειδὴ ἐν τῷδε τῷ τάφῳ κειμένους ἄνδρας 
+                                ἀγαθοὺς ἐν τῶδε τῶ πολέμῳ γεγενημένους</incipit>
+                            <explicit>
+                        <locus from="14v" to="14v">f. 14v</locus> 
+                                ὑμεῖς δ’ ἀποδυράμενοι καὶ τὰ προσήκονθ’ ὡς 
+                                χρὴ, καὶ νόμιμα ποιήσαντες ἄπιτε</explicit>
+                            <note>TLG 0014.060</note>
+                        </msItem>
+
+                    </msContents>
+
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="perg">
+                                <support>
+                                    <material>Parchment (<term type="disposition">FHHF</term>),
+                                        medium thickness, good quality.</material>
+                                </support>
+
+                                <extent>
+                                    <seg type="object">
+                              <objectType>Codex </objectType>
+                           </seg>
+                                    <seg type="leaf">
+                                        <num type="leaf" value="14">14</num>
+                           </seg>, 
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                        <height quantity="200">200</height>
+                                        <width quantity="141">141</width>
+                                    </dimensions>
+                                    </seg>
+                                </extent>
+
+                                <foliation xml:id="modern">1-14. Modern foliation in pencil in Arabic numerals in the top right-hand corner, recto.</foliation> 
+                           
+                                <collation>
+                                    <p>The manuscript consists of one quaternion and a ternion:
+                                        <list>
+                                 <item>Quire 1<hi rend="superscript">8</hi> 
+                                    <locus from="1r" to="8v"> ff. 1-8</locus>
+                                 </item>
+                                        <item>Quire 2<hi rend="superscript">6</hi> 
+                                    <locus from="9r" to="14v"> ff. 9-14</locus>
+                                 </item>
+                                        </list>
+                           </p>
+                                    <signatures type="quire">A Quire signature in Greek numerals in red ink remains
+                                        on the lower margin of <locus from="1r" to="1r">f. 1r</locus>: α<hi rend="superscript">ον</hi>. 
+                                    </signatures>
+                                </collation>
+                               
+                                <condition>
+                                    The folios are mutilated in the lower right corner.
+                                </condition>                       
+
+                            </supportDesc>
+
+                            <layoutDesc>
+                                <layout columns="1" rulingMedium="hardpoint" topLine="below" writtenLines="18">
+                                    <locus from="1r" scheme="folios" to="14v">ff. 1r-14v</locus>:
+                                    A single column of 18 lines. 
+                                    Written space <dimensions type="written" unit="mm">
+                                        <height quantity="135">135</height>
+                                        <width quantity="75">75</width>
+                           </dimensions>
+                                    <seg type="pricking">Pricking does not survive.</seg>
+                                    <seg type="ruling">Ruled in hardpoint, system Leroy 1, 
+                                        type Leroy <formula notation="Leroy">22D1</formula>. 
+                                        Text hangs mostly from the lines.</seg>
+                                </layout>
+                            </layoutDesc>
+
+                        </objectDesc>
+
+                        <handDesc>
+                            <handNote scope="major" xml:id="hand-1">
+                                <p>Written by the 15th-century Greek scholar and scribe <name key="person_v121608929" ref="http://viaf.org/viaf/121608929" role="scr">
+                                    <persName type="display">Georgios Hermonymos</persName>
+                                    <persName type="standard">Hermonymos, Georgios, active 15th century</persName>
+                           </name> (RGK I 61) in a <term type="script">minuscule</term> script in pale brown ink.</p>
+                                <p>Slanting slightly to the right, Hermonymos' hand shows cursive-like <hi rend="italic">ductus</hi> 
+                                    without variation in letter size. Ligatures and abbreviations are rare. 
+                                    His script is characterized by the minuscules <hi rend="italic">gamma, eta, xi, rho. Sigma telikon</hi> is in Z-shape and  
+                                    is found sometimes in the middle of the word. Breathings are curved; accents do not join to letters or breathings.</p>
+                                <p>For further details on Georgios Hermonymos' script, see Kalatzi 2009, p. 111-132.</p>
+                            </handNote>
+                            
+                            <handNote scope="minor" xml:id="hand-2">
+                                <p>Guillaume Budé added some marginal corrections to the text
+                                    on ff. 
+                                    <locus from="2v" to="2v">2v</locus>, <locus from="3v" to="3v">3v</locus>, 
+                                    <locus from="4v" to="4v">4v</locus>, <locus from="5v" to="5v">5v</locus>, 
+                                    <locus from="6r" to="6r">6r</locus>, <locus from="6v" to="6v">6v</locus>, 
+                                    <locus from="7r" to="7r">7r</locus>, <locus from="8r" to="8r">8r</locus>, 
+                                    <locus from="8v" to="8v">8v</locus>, <locus from="9r" to="9r">9r</locus>,
+                                    <locus from="9v" to="9v">9v</locus>, <locus from="10r" to="10r">10r</locus>, 
+                                    <locus from="12v" to="12v">12v</locus>.</p>
+                            </handNote>
+                            
+                        </handDesc>
+                                                
+                        <bindingDesc>
+                            <binding calendar="gregorian" notAfter="1518" notBefore="1490">
+                                <p>The manuscript was bound by 
+                                    <name key="person_v149420615" ref="http://viaf.org/viaf/149420615"> 
+                                        <persName type="standard">Marnef, Geoffroy de, active 1489-1518</persName>
+                                        <persName type="display">Geoffroy de Marnef</persName>
+                           </name>, 
+                                    active in <placeName key="place_g7002980" ref="http://vocab.getty.edu/page/tgn/7002980">Paris</placeName>
+                                    between 1490 and 1518.
+                                    Bound in brown calfskin, stamped on both boards: a rectangle containing five
+                                    rows decorated with flowers and vines. 
+                                    The border around the inner rectangle is decorated with vegetative motifs, 
+                                    birds, dragons and lettered scrolls. On the top left the legend (readable on the back cover) is
+                                    <hi rend="italic">par le mieulx</hi>; on the top right <hi rend="italic">in deum confido</hi>. 
+                                    In the lower right corner the binder's name is
+                                    embossed: <hi rend="italic">G. De Marnef</hi>.</p>
+                                <p>The cover is in poor condition, almost detached.</p>
+                                <p>The pasteboards are delaminanting and made of printed waste from an edition (1484?) of the 
+                                    <hi rend="italic">Quaestiones in quattuor libros sententiarum</hi>
+                                    by <name key="person_v32388870" ref="http://viaf.org/viaf/32388870">
+                                        <persName type="standard">Baconthorpe, John, -1346</persName>
+                                        <persName type="display">Johannes Baconthorpe</persName>
+                           </name>.</p> 
+                                <p>The fore-, head- and tail-edges are gilded.</p>
+                                <p>
+                                    <seg type="dimensions">
+                                        <dimensions type="binding" unit="mm">
+                                            <height quantity="204">204</height>
+                                            <width quantity="144">144</width>
+                                            <depth quantity="15">15</depth>
+                                        </dimensions>
+                                    </seg>
+                                </p>
+                            </binding>
+                        </bindingDesc>
+                        
+                    </physDesc>
+
+                    <history>
+                        <origin>
+                            <p>The codex was copied by Georgios Hermonymos during his stay in 
+                                <origPlace cert="high">
+                                    <placeName key="place_g7002980" ref="http://vocab.getty.edu/page/tgn/7002980">Paris</placeName>
+                        </origPlace> for
+                                <name key="person_v105878228" ref="http://viaf.org/viaf/105878228" role="fmo">
+                                    <persName type="standard">Budé, Guillaume, 1468-1540</persName>
+                                    <persName type="display">Guillaume Budé</persName>
+                        </name> (see Kalatzi 2009, p. 77)
+                                between the <origDate calendar="gregorian" notAfter="1510" notBefore="1475">
+                                    last quarter of 15th century and the early 16th century</origDate>.</p>
+                        </origin>
+
+                        <provenance>
+                            <p>It later entered into the library of 
+                                <name key="person_v60017882" ref="http://viaf.org/viaf/60017882" role="fmo">
+                                    <persName type="display">Anthony Askew</persName>
+                                    <persName type="standard">Askew, Anthony, 1722-1774</persName>
+                        </name> (b. 1722, d. 1774), 
+                                physician and book collector.</p>
+                        </provenance>
+                        
+                        <acquisition notBefore="1785">
+                            After Askew's death, the manuscript was sold by G. Leigh and J. Sotheby in the auction of his library in 1785 
+                            (Nn.4.2 Lot. n. 616), and eventually bought by Richard Farmer for Cambridge University Library. 
+                            The University of Cambridge general bookplate 
+                            (engraved by William Jackson in 1706-1707) was added on <locus from="14v" to="14v">f. 14v</locus>. </acquisition>
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+                            
+                            <recordHist>
+                                <source>
+                                    Description (2019) draws on <hi rend="italic">A catalogue of the Manuscripts preserved
+                                        in the Library of the University of Cambridge</hi>, vol. 4,
+                                    Cambridge University Press, Cambridge, 1861, p. 492
+                                    and on <bibl>M.P. Kalatzi, Hermonymos: a study in scribal, literary and teaching activities in the fifteenth and early sixteenth centuries,
+                                        Cultural Foundation of the National Bank of Greece, 2009, pp. 190-191</bibl>.</source>
+                                
+                            </recordHist>
+                            
+                            <availability>
+                                <p>Entry to read in the Library is permitted only on presentation of a valid reader's card. For information on
+                                    eligibility and admissions procedures, see <ref target="https://www.lib.cam.ac.uk/using-library/joining-library">Joining the Library</ref>). For further information on the availability of the manuscript, please contact the
+                                    <ref target="mss@lib.cam.ac.uk">Manuscripts Reading Room</ref>.</p>
+                            </availability>
+                            
+                        </adminInfo>
+                        
+                        <listBibl>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/VCK93XKZ" type="book" xml:id="Gamillscheg1981">
+                                <monogr>
+                                    <title level="m">Repertorium der griechischen Kopisten, 800-1600. I.
+                                        Grossbritannien</title>
+                                    <author>
+                              <forename>Ernst</forename>
+                              <surname>Gamillscheg</surname>
+                           </author>
+                                    <author>
+                              <forename>Dieter</forename>
+                              <surname>Harlfinger</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Wien</pubPlace>
+                                        <biblScope unit="volume">Bd. 3</biblScope>
+                                        <publisher>Verlag der Österreichischen Akademie der Wissenschaften</publisher>
+                                        <date>1981</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                           <title level="s">Veröffentlichungen der Kommission für Byzantinistik
+                                    ;</title>
+                        </series>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/5JNXIXVH" type="thesis" xml:id="Kalatzi1998">
+                                <monogr>
+                                    <title level="m">Georgios Hermonymos, a 15th-century scribe scholar: an examination of
+                                        his life, activities and manuscripts</title>
+                                    <author>
+                              <forename>Maria P.</forename>
+                              <surname>Kalatzi</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <date>1998</date>
+                                        <note type="thesisType">PhD</note>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/27FR2WFU" type="book" xml:id="Kalatzi2009">
+                                <monogr>
+                                    <title level="m">Hermonymos: a study in scribal, literary and teaching activities in the
+                                        fifteenth and early sixteenth centuries</title>
+                                    <title type="short">Hermonymos</title>
+                                    <author>
+                              <forename>Maria P.</forename>
+                              <surname>Kalatzi</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Athens</pubPlace>
+                                        <publisher>Cultural Foundation of the National Bank of Greece</publisher>
+                                        <date>2009</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                           <title level="s">Studies in palaeography</title>
+                        </series>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/NDGFGJ84" type="book" xml:id="Hardwick1861">
+                                <monogr>
+                                    <title level="m">A catalogue of the manuscripts preserved in the library of the
+                                        University of Cambridge </title>
+                                    
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">4</biblScope>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1861</date>
+                                    </imprint>
+                                </monogr>
+                             
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/M3FBD2EM" type="book" xml:id="Canfora1968">
+                                <monogr>
+                                    <title level="m">Inventario dei manoscritti greci di Demostene.</title>
+                                    <author>
+                              <forename>Luciano</forename>
+                              <surname>Canfora</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Padova</pubPlace>
+                                        <publisher>Antenore</publisher>
+                                        <date>1968</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/RYMVYFY8" type="book" xml:id="Maillard2010">
+                                <monogr>
+                                    <title level="m">La France des humanistes. Hellénistes II</title>
+                                    <author>
+                              <forename>Jean-François</forename>
+                              <surname>Maillard</surname>
+                           </author>
+                                    <author>
+                              <forename>Jean-Marie</forename>
+                              <surname>Flamand</surname>
+                           </author>
+                                    <imprint>
+                                        <pubPlace>Turnhout</pubPlace>
+                                        <publisher>Brepols</publisher>
+                                        <date>2010</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                        </listBibl>
+                      
+                    </additional>
+                    
+                </msDesc>
+                
+            </sourceDesc>
+            
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of
+                            Congress Subject Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <ref key="subject_sh85113634">Rhetoric, Ancient</ref>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2019-10-11">
+                <persName>Matteo Di Franco</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+        <graphic decls="#document-thumbnail" rend="portrait" url="MS-NN-00004-00002-000-00001"/>
+        <surface n="left cover, outer" xml:id="i1">
+            <graphic decls="#downloadImageRights #download" height="5772px" rend="portrait" url="MS-NN-00004-00002-000-00001" width="3787px"/>
+        </surface>
+        <surface n="left cover, inner" xml:id="i2">
+            <graphic decls="#downloadImageRights #download" height="5757px" rend="portrait" url="MS-NN-00004-00002-000-00002" width="3753px"/>
+        </surface>
+        <surface n="1r" xml:id="i3">
+            <graphic decls="#downloadImageRights #download" height="5575px" rend="portrait" url="MS-NN-00004-00002-000-00003" width="3650px"/>
+        </surface>
+        <surface n="1v" xml:id="i4">
+            <graphic decls="#downloadImageRights #download" height="5631px" rend="portrait" url="MS-NN-00004-00002-000-00004" width="3601px"/>
+        </surface>
+        <surface n="2r" xml:id="i5">
+            <graphic decls="#downloadImageRights #download" height="5575px" rend="portrait" url="MS-NN-00004-00002-000-00005" width="3650px"/>
+        </surface>
+        <surface n="2v" xml:id="i6">
+            <graphic decls="#downloadImageRights #download" height="5565px" rend="portrait" url="MS-NN-00004-00002-000-00006" width="3566px"/>
+        </surface>
+        <surface n="3r" xml:id="i7">
+            <graphic decls="#downloadImageRights #download" height="5559px" rend="portrait" url="MS-NN-00004-00002-000-00007" width="3594px"/>
+        </surface>
+        <surface n="3v" xml:id="i8">
+            <graphic decls="#downloadImageRights #download" height="5578px" rend="portrait" url="MS-NN-00004-00002-000-00008" width="3601px"/>
+        </surface>
+        <surface n="4r" xml:id="i9">
+            <graphic decls="#downloadImageRights #download" height="5559px" rend="portrait" url="MS-NN-00004-00002-000-00009" width="3594px"/>
+        </surface>
+        <surface n="4v" xml:id="i10">
+            <graphic decls="#downloadImageRights #download" height="5586px" rend="portrait" url="MS-NN-00004-00002-000-00010" width="3543px"/>
+        </surface>
+        <surface n="5r" xml:id="i11">
+            <graphic decls="#downloadImageRights #download" height="5559px" rend="portrait" url="MS-NN-00004-00002-000-00011" width="3594px"/>
+        </surface>
+        <surface n="5v" xml:id="i12">
+            <graphic decls="#downloadImageRights #download" height="5583px" rend="portrait" url="MS-NN-00004-00002-000-00012" width="3601px"/>
+        </surface>
+        <surface n="6r" xml:id="i13">
+            <graphic decls="#downloadImageRights #download" height="5601px" rend="portrait" url="MS-NN-00004-00002-000-00013" width="3542px"/>
+        </surface>
+        <surface n="6v" xml:id="i14">
+            <graphic decls="#downloadImageRights #download" height="5603px" rend="portrait" url="MS-NN-00004-00002-000-00014" width="3601px"/>
+        </surface>
+        <surface n="7r" xml:id="i15">
+            <graphic decls="#downloadImageRights #download" height="5614px" rend="portrait" url="MS-NN-00004-00002-000-00015" width="3540px"/>
+        </surface>
+        <surface n="7v" xml:id="i16">
+            <graphic decls="#downloadImageRights #download" height="5564px" rend="portrait" url="MS-NN-00004-00002-000-00016" width="3601px"/>
+        </surface>
+        <surface n="8r" xml:id="i17">
+            <graphic decls="#downloadImageRights #download" height="5559px" rend="portrait" url="MS-NN-00004-00002-000-00017" width="3594px"/>
+        </surface>
+        <surface n="8v" xml:id="i18">
+            <graphic decls="#downloadImageRights #download" height="5564px" rend="portrait" url="MS-NN-00004-00002-000-00018" width="3601px"/>
+        </surface>
+        <surface n="9r" xml:id="i19">
+            <graphic decls="#downloadImageRights #download" height="5559px" rend="portrait" url="MS-NN-00004-00002-000-00019" width="3650px"/>
+        </surface>
+        <surface n="9v" xml:id="i20">
+            <graphic decls="#downloadImageRights #download" height="5589px" rend="portrait" url="MS-NN-00004-00002-000-00020" width="3554px"/>
+        </surface>
+        <surface n="10r" xml:id="i21">
+            <graphic decls="#downloadImageRights #download" height="5513px" rend="portrait" url="MS-NN-00004-00002-000-00021" width="3656px"/>
+        </surface>
+        <surface n="10v" xml:id="i22">
+            <graphic decls="#downloadImageRights #download" height="5542px" rend="portrait" url="MS-NN-00004-00002-000-00022" width="3535px"/>
+        </surface>
+        <surface n="11r" xml:id="i23">
+            <graphic decls="#downloadImageRights #download" height="5496px" rend="portrait" url="MS-NN-00004-00002-000-00023" width="3637px"/>
+        </surface>
+        <surface n="11v" xml:id="i24">
+            <graphic decls="#downloadImageRights #download" height="5516px" rend="portrait" url="MS-NN-00004-00002-000-00024" width="3554px"/>
+        </surface>
+        <surface n="12r" xml:id="i25">
+            <graphic decls="#downloadImageRights #download" height="5478px" rend="portrait" url="MS-NN-00004-00002-000-00025" width="3635px"/>
+        </surface>
+        <surface n="12v" xml:id="i26">
+            <graphic decls="#downloadImageRights #download" height="5493px" rend="portrait" url="MS-NN-00004-00002-000-00026" width="3658px"/>
+        </surface>
+        <surface n="13r" xml:id="i27">
+            <graphic decls="#downloadImageRights #download" height="5577px" rend="portrait" url="MS-NN-00004-00002-000-00027" width="3594px"/>
+        </surface>
+        <surface n="13v" xml:id="i28">
+            <graphic decls="#downloadImageRights #download" height="5589px" rend="portrait" url="MS-NN-00004-00002-000-00028" width="3554px"/>
+        </surface>
+        <surface n="14r" xml:id="i29">
+            <graphic decls="#downloadImageRights #download" height="5602px" rend="portrait" url="MS-NN-00004-00002-000-00029" width="3622px"/>
+        </surface>
+        <surface n="14v" xml:id="i30">
+            <graphic decls="#downloadImageRights #download" height="5589px" rend="portrait" url="MS-NN-00004-00002-000-00030" width="3645px"/>
+        </surface>
+        <surface n="right cover, inner" xml:id="i31">
+            <graphic decls="#downloadImageRights #download" height="5757px" rend="portrait" url="MS-NN-00004-00002-000-00031" width="3753px"/>
+        </surface>
+        <surface n="right cover, outer" xml:id="i32">
+            <graphic decls="#downloadImageRights #download" height="5753px" rend="portrait" url="MS-NN-00004-00002-000-00032" width="3798px"/>
+        </surface>
+        <surface n="spine" xml:id="i33">
+            <graphic decls="#downloadImageRights #download" height="5320px" rend="portrait" url="MS-NN-00004-00002-000-00033" width="1217px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#i1" n="left cover, outer" xml:id="pb-leftcover,outer"/>
+                <pb facs="#i2" n="left cover, inner" xml:id="pb-leftcover,inner"/>
+                <pb facs="#i3" n="1r" xml:id="pb-1r"/>
+                <pb facs="#i4" n="1v" xml:id="pb-1v"/>
+                <pb facs="#i5" n="2r" xml:id="pb-2r"/>
+                <pb facs="#i6" n="2v" xml:id="pb-2v"/>
+                <pb facs="#i7" n="3r" xml:id="pb-3r"/>
+                <pb facs="#i8" n="3v" xml:id="pb-3v"/>
+                <pb facs="#i9" n="4r" xml:id="pb-4r"/>
+                <pb facs="#i10" n="4v" xml:id="pb-4v"/>
+                <pb facs="#i11" n="5r" xml:id="pb-5r"/>
+                <pb facs="#i12" n="5v" xml:id="pb-5v"/>
+                <pb facs="#i13" n="6r" xml:id="pb-6r"/>
+                <pb facs="#i14" n="6v" xml:id="pb-6v"/>
+                <pb facs="#i15" n="7r" xml:id="pb-7r"/>
+                <pb facs="#i16" n="7v" xml:id="pb-7v"/>
+                <pb facs="#i17" n="8r" xml:id="pb-8r"/>
+                <pb facs="#i18" n="8v" xml:id="pb-8v"/>
+                <pb facs="#i19" n="9r" xml:id="pb-9r"/>
+                <pb facs="#i20" n="9v" xml:id="pb-9v"/>
+                <pb facs="#i21" n="10r" xml:id="pb-10r"/>
+                <pb facs="#i22" n="10v" xml:id="pb-10v"/>
+                <pb facs="#i23" n="11r" xml:id="pb-11r"/>
+                <pb facs="#i24" n="11v" xml:id="pb-11v"/>
+                <pb facs="#i25" n="12r" xml:id="pb-12r"/>
+                <pb facs="#i26" n="12v" xml:id="pb-12v"/>
+                <pb facs="#i27" n="13r" xml:id="pb-13r"/>
+                <pb facs="#i28" n="13v" xml:id="pb-13v"/>
+                <pb facs="#i29" n="14r" xml:id="pb-14r"/>
+                <pb facs="#i30" n="14v" xml:id="pb-14v"/>
+                <pb facs="#i31" n="right cover, inner" xml:id="pb-rightcover,inner"/>
+                <pb facs="#i32" n="right cover, outer" xml:id="pb-rightcover,outer"/>
+                <pb facs="#i33" n="spine" xml:id="pb-spine"/>
+            </div>
+        </body>
+    </text>
+</TEI>

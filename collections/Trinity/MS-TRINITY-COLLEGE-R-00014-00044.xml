@@ -1,0 +1,1469 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, Trinity College, MS R.14.44</title>
+                <funder>Wellcome</funder>
+                <principal>James Freeman</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+                <availability status="restricted" xml:id="watermark">
+                    <licence>Trinity College, Cambridge (CC BY-NC 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-TRINITY-COLLEGE-R-00014-00044" xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+                    <msIdentifier>
+                        <institution>Trinity College, Cambridge</institution>
+                        <repository>Trinity College Library</repository>
+                        <collection>Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, Trinity College, MS R.14.44</idno>
+                        <altIdentifier type="internal">
+                            <idno type="james">MS 915</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <head>Alchemical treatises and recipes</head>
+                    <msContents>
+                        <summary>
+                            <!--Introduction to be written or sourced-->
+                            <!--<seg type="para">NAME<lb/> JOB TITLE<lb/> EMPLOYER</seg>-->
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc material="chart">
+                                <support> A composite manuscript of four parts consisting of paper leaves. </support>
+                                <extent>
+                                    <seg type="object">Codex: </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="4" type="laterFlyleaf">iv</measure> + <measure quantity="57" type="leaf">57</measure> |
+                                            <measure quantity="7" type="leaf">7</measure> | <measure quantity="32" type="leaf">32</measure> | <measure quantity="18" type="leaf">18</measure> + <measure quantity="4" type="laterFlyleaf">iv</measure> leaves. </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height max="220" min="210">210-220</height>
+                                            <width max="145" min="140">140-145</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+                                <foliation notAfter="1700" notBefore="1600">
+                                    <p>(?)17th-century pagination in Parts 1-3, occasionally supplied by a modern hand:</p>
+                                    <p>[i]-[iv] + 1-52, 55-116 | 117-130 | 131-194 [continued below]</p>
+                                    <note>Numbering in dark ink in the upper right-hand corners of the rectos. Consequenty, only the uneven numbers of
+                                        the pagination sequence are inscribed in the manuscript. However, a modern hand has added the number '110' in
+                                        pencil to the upper outer corner of the relevant page.</note>
+                                    <note><p>The numbers 53-54 are missing from the pagination sequence due to the loss of a leaf.</p>
+                                        <p>This pagination sequence is followed in this catalogue record, ignoring the old foliation in Part 2 (see
+                                            below) and modern foliation in Parts 1 and 3 (see below).</p>
+                                        <p>For reference purposes in this electronic catalogue record, the unfoliated flyleaves at the beginning and
+                                            end of the manuscript have been allocated Roman numerals. In order to indicate that these are supplied
+                                            numbers, they have been placed between square brackets.</p></note>
+                                </foliation>
+                                <foliation notAfter="2000" notBefore="1800">
+                                    <p>19th- or 20th-century foliation for Part 4:</p>
+                                    <p>[continue from above] 1-18 + [v]-[viii]</p>
+                                    <note>Numbering in pencil in the upper right-hand corners of the rectos.</note>
+                                    <note><p>The numbers 53-54 are missing from the pagination sequence due to the loss of a leaf.</p>
+                                        <p>This foliation sequence is followed in this catalogue record.</p>
+                                        <p>For reference purposes in this electronic catalogue record, the unfoliated flyleaves at the beginning and
+                                            end of the manuscript have been allocated Roman numerals. In order to indicate that these are supplied
+                                            numbers, they have been placed between square brackets.</p></note>
+                                </foliation>
+                                <foliation notAfter="1550" notBefore="1400">
+                                    <p>15th- or 16th-century foliation in Part 2:</p>
+                                    <p>1-7 for pp. <locus from="117" to="130">130</locus>.</p>
+                                    <note>Numbering in brown ink in the lower right-hand corners of the rectos.</note>
+                                    <note>This foliation sequence is ignored in this catalogue record.</note>
+                                </foliation>
+                                <foliation notAfter="2000" notBefore="1800">
+                                    <p>Two 19th- or 20th-century foliation sequences, one for Part 1 and another for Part 3:</p>
+                                    <p>'26'-'27' (pp. <locus from="51" to="51">51</locus>, <locus from="55" to="55">55</locus>) and '54' (p. <locus from="109" to="109">109</locus>) [Part 1]; and 1 (p. <locus from="131" to="131">131</locus>), 4 (p. <locus from="137" to="137">137</locus>), 7 (p. <locus from="143" to="143">143</locus>), 10 (p. <locus from="149" to="149">149</locus>), 11 (p. <locus from="151" to="151">151</locus>), 14 (p. <locus from="157" to="157">157</locus>, 20 (p. <locus from="169" to="169">169</locus>), 30 (p. <locus from="189" to="189">189</locus>), 32 (p. <locus from="193" to="193">193</locus>) in Part 3.</p>
+                                    <note>Numbering in pencil in the upper right-hand corners of the rectos (largely crossed out).</note>
+                                    <note>These two foliation sequences are ignored in this catalogue record.</note>
+                                </foliation>
+
+                                <collation mainStructures="4 8 16">
+                                    <formula> 1<hi rend="superscript">26</hi> 2<hi rend="superscript">?16-1</hi> (1st missing) 3<hi rend="superscript">16</hi> | 4<hi rend="superscript">?4+3 or 10-3</hi> (three added at the quire's end or three missing at
+                                        the quire's beinning) | 5<hi rend="superscript">2</hi> 6<hi rend="superscript">?8</hi> 7<hi rend="superscript">?2</hi> 8<hi rend="superscript">20</hi> | 9<hi rend="superscript">8</hi> 10<hi rend="superscript">4</hi>
+                                            11<hi rend="superscript">?4</hi> 12<hi rend="superscript">?2</hi>
+                                    </formula>
+                                </collation>
+                            </supportDesc>
+                        </objectDesc>
+                        <bindingDesc>
+                            <binding notAfter="2000" notBefore="1800">
+                                <p>19th- or 20th-century half leather binding with marbled paper sides over pasteboards; the spine with four raised
+                                    bands and three paper labels with the separate alpha-numerical elements of the manuscript's current classmark
+                                        (<q>R</q>, <q>14</q>, <q>44</q>) printed on them.</p>
+                                <p>Binding height: 225mm; width: 150mm; depth: 35mm.</p>
+                                <p>This book was previously bound with <bibl subtype="external" type="MS"><ref target="https://mss-cat.trin.cam.ac.uk/Manuscript/R.14.45">Cambridge, Trinity College, MS
+                                        R.14.45</ref></bibl>, which contains a note in an 18th- or 19th-century hand to that effect on f. [i] verso:
+                                        <q>The were in this book some other chymicall Tretise wole on paper which are taken out and bound by
+                                        themselves vid. R. 8. 25</q>. </p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <provenance notAfter="1550" notBefore="1400"><p>According to Mooney (1995), f. [i] recto of <bibl subtype="external" type="MS"><ref target="https://mss-cat.trin.cam.ac.uk/Manuscript/R.14.45">Cambridge, Trinity College, MS
+                                    R.14.45</ref></bibl> - with which Cambridge, Trinity College, MS R.14.44 was bound when it arrived at Trinity
+                                College - contains 15th-century notes <q>relating to ownership</q>. Since these notes occur on a leaf that, according
+                                to M.R. James (1901), served as a cover for part of Cambridge, Trinity College, MS R.14.44, any ownership information
+                                on it is relevant for both manuscripts. Nevertheless, these notes (read with UV light as follows: <q>Robert
+                                    Charlton</q>; <q>John Leynton with my […] of Cromwell</q>; <q>Peter stacey [? stakey] […] of de ordine […]</q>;
+                                    <q>Thomas ffounteyn besyde levys [? Lewes, East Sussex]</q>; <q>ballyscote besyde woodstoke [Balscote,
+                                    Oxfordshire]</q>; <q>Thomas Hawe det [?quyntynys]</q>; <q>Mayster Rychard Hall parson of dray[…] [? Drayton]</q>;
+                                    <q>Thomas Coolys of Hyndon besyde Watforde</q>; <q>Rychard Moyne of [?C]ale[?y]</q>) seem to concern accounts of
+                                the sort that can be found in Cambridge, Trinity College, MS R.14.44 at pp. <locus from="185" to="186">185-186</locus>
+                                and f. <locus from="18r" to="18r">18r</locus>. The geographic spread of the topographical references in these notes
+                                appears to be too wide to suggest a likely location of writing, and it has not been possible to identify any of the
+                                individuals named.</p>
+                        </provenance>
+
+                        <provenance notBefore="1500"><p><name key="" role="fmo">
+                                    <persName type="display">'Elizabeth' (fl. 16th century)</persName>
+                                    <persName type="standard">Elizabeth, fl. 16th century</persName></name>: perhaps owned or accessed this
+                                manuscript. The name <q>Elizabeth</q> is inscribed in a (?) 16th-century script on f. [ii] recto of <bibl subtype="external" type="MS"><ref target="https://mss-cat.trin.cam.ac.uk/Manuscript/R.14.45">Cambridge, Trinity
+                                        College, MS R.14.45</ref></bibl> with which this manuscript was bound together when it arrived at Trinity
+                                College. According to James (1901), p. 331, f. [ii] is one of the two parchment leaves that formerly formed the cover
+                                of part of Cambridge, Trinity College, MS R.14.44.</p>
+                        </provenance>
+
+                        <provenance notBefore="1500"><p><name key="" role="fmo">
+                                    <persName type="display">'James R.' (fl. 16th or 17th century)</persName>
+                                    <persName type="standard">R., James, fl. 16th or 17th century</persName></name>: perhaps owned or accessed this
+                                manuscript. The name <q>James R</q> is inscribed in a (?) 16th- or 17th-century script on f. [ii] verso of <bibl subtype="external" type="MS"><ref target="https://mss-cat.trin.cam.ac.uk/Manuscript/R.14.45">Cambridge, Trinity
+                                        College, MS R.14.45</ref></bibl> with which this manuscript was bound together when it arrived at Trinity
+                                College. According to James (1901), p. 331, f. [ii] is one of the two parchment leaves that formerly formed the cover
+                                of part of Cambridge, Trinity College, MS R.14.44.</p>
+                        </provenance>
+
+                        <provenance notAfter="1637" notBefore="1628"><p><name key="" role="fmo">
+                                    <persName type="display">Laurence [Lawrence] Sadler (fl. 1628)</persName>
+                                    <persName type="standard">Sadler, Laurence [Lawrence], fl. 1628</persName></name>: probably owned this manuscript.
+                                This manuscript was previously bound together with <bibl subtype="external" type="MS"><ref target="https://mss-cat.trin.cam.ac.uk/Manuscript/R.14.45">Cambridge, Trinity College, MS
+                                R.14.45</ref></bibl>, which contains Sadler's name inscription with a note on his purchase of the manuscript on f. [i]
+                                recto: <q>Lawrence Sadler - Empt. Lond. Feb. 24 Anno 1629 pritium 4<hi rend="superscript">s</hi></q>. Unidentified,
+                                but perhaps the London bookseller who was active at the Golden Lion in Little Britain, 1631-64.</p>
+                        </provenance>
+
+                        <provenance notAfter="1637" notBefore="1628"><p>Perhaps owned by <name cert="medium" key="person_v44240582" role="fmo">
+                                    <persName type="display">Thomas Whalley (c. 1584-1637)</persName>
+                                    <persName type="standard">Whalley, Thomas, c. 1584-1637</persName></name>, Vice-Master of Trinity College, cleric,
+                                priest, and bibliophile (see Acquisition for further discussion). </p></provenance>
+
+                        <acquisition notBefore="1637">
+                            <p>Perhaps bequeathed to Cambridge, Trinity College, by <name cert="medium" key="person_v44240582" role="dnr">
+                                    <persName type="display">Thomas Whalley</persName>
+                                    <persName type="standard">Whalley, Thomas, c. 1584-1637</persName></name> in 1637: see the ex-dono label on f.
+                                [ii] verso of <bibl subtype="external" type="MS"><ref target="https://mss-cat.trin.cam.ac.uk/Manuscript/R.14.45">Cambridge, Trinity College, MS R.14.45</ref></bibl>, with which the present manuscript was bound together
+                                when it arrived at Trinity College: <q>Ex dono ornatissimi Viri, THOMÆ WHALLEY, sacræ Theologiæ Professoris, et
+                                    Collegii Trinitatis Vicemagistri. 1637</q>. According to James (1901), p. 331, f. [ii] is one of the two parchment
+                                leaves that formerly formed the cover of part of Cambridge, Trinity College, MS R.14.44. Listed as no. 496 in the
+                                College's library in <bibl>Edward Bernard and Humfrey Wanley, <hi rend="italic">Catalogi librorum manuscriptorum
+                                        Angliæ et Hiberniæ, in unum collecti, cum indice alphabetico</hi>, 2 volumes in 1 (Oxford: e Theatro
+                                    Sheldoniano, 1697)</bibl>. The College's current classmark (<q>R.14.44</q>) is inscribed in pencil on f. <locus from="[i] recto" to="[i] recto">[i] recto</locus>. The separate alpha-numerical elements of its classmark
+                                    (<q>R</q>, <q>14</q>, <q>44</q>) are printed onto three paper labels that have been pasted onto the spine (not
+                                photographed). An ? old classmark <q>B.7.31</q> is inscribed in the lower margin of f. <locus from="1r" to="1r">1r</locus> (Part 4). The college's ex libris, featuring an engraving of its heraldic arms, motto (<q>Virtus Vera
+                                    Nobilitas</q>), and name (<q>Coll: Trin: Cant:</q>) by William Stephens, fl. c. 1740-c. 1760 (<q>W. Stephens
+                                    sculp.</q>) is pasted onto the <locus from="front cover, inner" to="front cover, inner">inside of the front
+                                    cover</locus>. Its library stamps on pp. <locus from="1" to="1">1</locus>, <locus from="116" to="116">116</locus>,
+                                    <locus from="117" to="117">117</locus>, <locus from="18r" to="18r">18r</locus>.</p>
+                        </acquisition>
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source>This catalogue entry draws on <bibl>M.R. James, <hi rend="italic">The Western Manuscripts in the Library of
+                                            Trinity College, Cambridge: A Descriptive Catalogue</hi>, 2 (1901)</bibl>; <bibl>Linne R. Mooney, <hi rend="italic">Manuscripts in the Library of Trinity College, Cambridge</hi> The Index of Middle English
+                                        Prose, Handlist XI (Woodbridge: Brewer, 1995)</bibl>; and <bibl>Anke Timmermann, 'Alchemy in Cambridge: An
+                                        Annotated Catalogue of Alchemical Texts and Illustrations in Cambridge Repositories', <hi rend="italic">Nuncius: Journal of the Material and Visual History of Science</hi>, 30:2 (2015). </bibl>.</source>
+                            </recordHist>
+                            <availability status="restricted">
+                                <p>Visitors to Trinity College who wish to consult Special Collections material are required to apply to the Library
+                                    in advance of their visit. For information on eligibility and admission procedures see: <ref target="https://www.trin.cam.ac.uk/library/wren-library/information-for-readers/">Trinity College: Information
+                                        for Readers</ref>.</p>
+                            </availability>
+                        </adminInfo>
+                        <listBibl type="WRAPPER">
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/W785UEVP" type="book" xml:id="James1901">
+                                <monogr>
+                                    <title level="m">The Western Manuscripts in the Library of Trinity College, Cambridge: A Descriptive
+                                        Catalogue</title>
+                                    <extent>4</extent>
+                                    <author>
+                                        <forename>M.R.</forename>
+                                        <surname>James</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">2</biblScope>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1901</date>
+                                    </imprint>
+                                </monogr>
+                                <note/>
+                                <note>pp. 329-331 (no. 915).</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/HN4SHGKX" type="book" xml:id="Singer1928">
+                                <monogr>
+                                    <title level="m">Catalogue of Latin and Vernacular Alchemical Manuscripts in Great Britain and Ireland: Dating
+                                        from before the XVI Century</title>
+                                    <author>
+                                        <forename>Dorothea Waley</forename>
+                                        <surname>Singer</surname>
+                                    </author>
+                                    <respStmt>
+                                        <resp>contributor</resp>
+                                        <persName>
+                                            <forename>Annie</forename>
+                                            <surname>Anderson</surname>
+                                        </persName>
+                                    </respStmt>
+                                    <respStmt>
+                                        <resp>contributor</resp>
+                                        <persName>
+                                            <forename>Robina</forename>
+                                            <surname>Addis</surname>
+                                        </persName>
+                                    </respStmt>
+                                    <imprint>
+                                        <pubPlace>Brussels</pubPlace>
+                                        <publisher>Maurice Lamertin</publisher>
+                                        <date>1928</date>
+                                    </imprint>
+                                </monogr>
+                                <note>nos 177 xx; 194 ii; 211; 226 xix; 226 xx; 385; 497; 622; 726; 741; 1111 xxxi; 1111 xxxiii; 1112 xvi.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/S4HUGHTI" type="journalArticle" xml:id="Robbins1966">
+                                <analytic>
+                                    <title level="a">Alchemical Texts in Middle English Verse: Corrigenda and Addenda</title>
+                                    <author>
+                                        <forename>Rossell Hope</forename>
+                                        <surname>Robbins</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Ambix</title>
+                                    <imprint>
+                                        <biblScope unit="volume">13</biblScope>
+                                        <biblScope unit="page">62-73</biblScope>
+                                        <date>1966</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 64.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/9C8WHDG5" type="book" xml:id="McIntosh1986">
+                                <monogr>
+                                    <title level="m">A Linguistic Atlas of Late Mediaeval English</title>
+                                    <extent>4</extent>
+                                    <author>
+                                        <forename>Angus</forename>
+                                        <surname>McIntosh</surname>
+                                    </author>
+                                    <author>
+                                        <forename>M.L.</forename>
+                                        <surname>Samuels</surname>
+                                    </author>
+                                    <author>
+                                        <forename>Michael</forename>
+                                        <surname>Benskin</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Aberdeen</pubPlace>
+                                        <publisher>Aberdeen University Press</publisher>
+                                        <date>1986</date>
+                                    </imprint>
+                                </monogr>
+                                <note>Vol. III, p. 327 (LP 669).</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/HNTFRWIP" type="book" xml:id="Mooney1995">
+                                <monogr>
+                                    <title level="m">Manuscripts in the Library of Trinity College, Cambridge</title>
+                                    <author>
+                                        <forename>Linne R.</forename>
+                                        <surname>Mooney</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Woodbridge</pubPlace>
+                                        <publisher>D.S. Brewer</publisher>
+                                        <date>1995</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Index of Middle English prose</title>
+                                    <biblScope unit="volume">11</biblScope>
+                                </series>
+                                <note/>
+                                <note/>
+                                <note>pp. 41-46.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/T7NJ6YAZ" type="book" xml:id="Gross1996">
+                                <monogr>
+                                    <title level="m">The Dissolution of the Lancastrian Kingship: Sir John Fortescue and the Crisis of Monarchy in
+                                        Fifteenth-Century England</title>
+                                    <author>
+                                        <forename>Anthony</forename>
+                                        <surname>Gross</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Stamford</pubPlace>
+                                        <publisher>Watkins</publisher>
+                                        <date>1996</date>
+                                    </imprint>
+                                </monogr>
+                                <note> p. 117 fn. 74.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/88GDWLWG" type="book" xml:id="Keiser1998">
+                                <monogr>
+                                    <title level="m">Works of Science and Information</title>
+                                    <author>
+                                        <forename>George R.</forename>
+                                        <surname>Keiser</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>New Haven, CT</pubPlace>
+                                        <publisher>The Connecticut Academy of Arts and Sciences</publisher>
+                                        <date>1998</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">A Manual of the Writings in Middle English 1050-1500</title>
+                                    <biblScope unit="volume">10</biblScope>
+                                </series>
+                                <note>p. 3791.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/NCUFDXEJ" type="journalArticle" xml:id="Grund2004">
+                                <analytic>
+                                    <title level="a">Albertus Magnus and the Queen of Elves: A 15th-Century English Verse Dialogue on Alchemy</title>
+                                    <author>
+                                        <forename>Peter</forename>
+                                        <surname>Grund</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Anglia</title>
+                                    <imprint>
+                                        <biblScope unit="volume">122</biblScope>
+                                        <biblScope unit="issue">4</biblScope>
+                                        <biblScope unit="page">640-662</biblScope>
+                                        <date>2004</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 655-666 [discussion of manuscript]; 657-658 [edition of Part 4, ff. ff. 15v-18r].</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/B7WMXVFS" type="book" xml:id="Timmermann2013">
+                                <monogr>
+                                    <title level="m">Verse and Transmutation: A Corpus of Middle English Alchemical Poetry (Critical Editions and
+                                        Studies)</title>
+                                    <author>
+                                        <forename>Anke</forename>
+                                        <surname>Timmermann</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Leiden</pubPlace>
+                                        <publisher>Brill</publisher>
+                                        <date>2013</date>
+                                        <note type="accessed">2023-01-19T09:55:37Z</note>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 148 fn. 19.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/INMDXRYZ" type="journalArticle" xml:id="Timmermann2015">
+                                <analytic>
+                                    <title level="a">Alchemy in Cambridge: An Annotated Catalogue of Alchemical Texts and Illustrations in Cambridge
+                                        Repositories</title>
+                                    <author>
+                                        <forename>Anke</forename>
+                                        <surname>Timmermann</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Nuncius: Journal of the Material and Visual History of Science</title>
+                                    <imprint>
+                                        <biblScope unit="volume">30</biblScope>
+                                        <biblScope unit="issue">2</biblScope>
+                                        <biblScope unit="page">345-511</biblScope>
+                                        <date>2015</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 441-444.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/6DKZREED" type="book" xml:id="Clarke2016">
+                                <monogr>
+                                    <title level="m">&lt;hi rend="italics"&gt;The crafte of lymmyng&lt;/hi&gt; and &lt;hi rend="italics"&gt;The maner
+                                        of steynyng&lt;/hi&gt;: Middle English Recipes for Painters, Stainers, Scribes and Illuminators</title>
+                                    <editor>
+                                        <forename>Mark</forename>
+                                        <surname>Clarke</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Oxford</pubPlace>
+                                        <publisher>Published for the Early English Text Society by the Oxford University Press</publisher>
+                                        <date>2016</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Early English Text Society (Series). Original series</title>
+                                    <biblScope unit="volume">347</biblScope>
+                                </series>
+                                <note>pp. lxviii, 290.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/D2N78PMS" type="thesis" xml:id="Runstedler2018">
+                                <monogr>
+                                    <title level="m">Alchemy and Exemplary Narrative in Middle English Poetry</title>
+                                    <author>
+                                        <name>Runstedler</name>
+                                    </author>
+                                    <imprint>
+                                        <date>2018</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 171 fn. 7; 190; 191 fn. 68; 193 fn. 77.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/ITB9UV48" type="thesis" xml:id="Norja2021">
+                                <monogr>
+                                    <title level="m">Alchemy in the Vernacular: An Edition and Study of Early English Witnesses of The Mirror of
+                                        Alchemy</title>
+                                    <author>
+                                        <forename>Sara</forename>
+                                        <surname>Norja</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Turku</pubPlace>
+                                        <date>2021</date>
+                                        <note type="accessed">2023-03-10T18:09:25Z</note>
+                                        <note type="url">https://www.utupub.fi/handle/10024/151694</note>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 72, 76, 77, 146, 150, 154, 155, 156-157, 158 fn. 179 160, 174, 240, 241, 242, 283, 296, 297, 362, 363, 365,
+                                    366, 475.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/333S6K73" type="book" xml:id="Runstedler2023">
+                                <monogr>
+                                    <title level="m">Alchemy and Exemplary Poetry in Middle English Literature</title>
+                                    <author>
+                                        <forename>Curtis</forename>
+                                        <surname>Runstedler</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Basingstoke</pubPlace>
+                                        <publisher>Palgrave Macmillan</publisher>
+                                        <date>2023</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 159-191.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/6RGLI3XF" type="book" xml:id="Ingham2915">
+                                <monogr>
+                                    <title level="m">The Medieval New: Ambivalence in an Age of Innovation</title>
+                                    <author>
+                                        <forename>Patricia Clare</forename>
+                                        <surname>Ingham</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Philadelphia</pubPlace>
+                                        <publisher>University of Pennsylvania Press</publisher>
+                                        <date>2915</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">The Middle Ages Series</title>
+                                </series>
+                                <note>pp. 156-157.</note>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>
+                    <msPart n="1">
+                        <msIdentifier>
+                            <idno>Cambridge, Trinity College, MS R.14.44, pp. 1-116</idno>
+                            <msName>Part 1</msName>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <msItem n="1">
+                                <locus from="1" to="109">1-109</locus>
+                                <title key="">Medical treatise on temperatures</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="1" to="1">1</locus> Preysyng be to god þe fadyre þe voche yevythe vysdome or cunyng to vysemen
+                                    for he ys of all þe fyrst vhan he ys withoute begynnyng . last of all whan none hende ys to hym he thys ys þe
+                                    makere of all thyngys . whoys wyll eueryvere ys all whan þer ys none þat may ayensey hym</incipit>
+                                <explicit><locus from="109" to="109">109</locus> And in thys ys the most secrete of secreteys of kynde þe voche ys
+                                    above all the presyuste of the vorlde moste presyus deo gracias</explicit>
+                                <note>The treatise consists of a prologue (pp. <locus from="1" to="3">1-3</locus>, a list of temperatures (<locus from="3" to="4">3-4</locus>, after which the treatise begins with the words: <q>Qualyteys contrary be remyttyd
+                                        after greys and be namyd aftyr þe more qualyte in gre of þe qualyteys brekyng from aftyr degre of grete
+                                        invardnes hoolde here strenkthys and sende ayen þe ferther greys aftermenntes</q></note>
+                                <listBibl>
+                                    <bibl>eVK2 4026.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="2">
+                                <locus from="110" to="114">110-114</locus>
+                                <title key="">Semita semitae [anonymous Middle English translation]</title>
+                                <author key="person_2154">Pseudo-Arnold of Villanova</author>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="110" to="110">110</locus> Worschypfull fadyr now I schall turn ayen vnto the thyngys that I
+                                    before seyde remenynge phylesopherys woordys vnto ham and here mysty wordys hyd in parabyllys soo þat þou shaltte
+                                    deme aforne thysylfe þat I have ryȝthe vndyrstode the mysty vordys of thyse oolde phylesopherys</incipit>
+                                <explicit><locus from="114" to="114">114</locus> And than soluythe the norsschyng tyll he be voxyn vondyre moche with
+                                    hys ovnce mylk þat ys to sey mercory ofte and ofte euer tyll he have dronkyn þat suffysythe inowe</explicit>
+                                <note/>
+                                <listBibl>
+                                    <bibl>eVK2 8211.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 226 xix</bibl>
+                                    <bibl>Mooney (1995), p. 42 [other copies]</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="3">
+                                <locus from="115" to="116">115-116</locus>
+                                <title key="">Collection of five alchemical recipes</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="115" to="115">115</locus> Take sal armonyak sal niter sal comyn off iche lyche moche that ys to
+                                    sey off yche hall j li.</incipit>
+                                <explicit><locus from="116" to="116">116</locus> and put all thyse togedyr small grovnde in a glas well lateyd and
+                                    make good ffyre vndyr hyt tyll yt be brente inowe etcaetera</explicit>
+                                <note>The second recipee is said to have been devised <q>By Magister R.W. off Cambryge</q> [Mooney (1995) transcribes
+                                        <q>M. Rids off Cambryge</q>; but see Timmermann (2013), p. 441. The final recipe is <q>ffor to make aurvm
+                                        mvsicum</q>.</note>
+                                <listBibl>
+                                    <bibl>eVK2 5939.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 1111 xxxi</bibl>
+                                </listBibl>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="2r" to="2r">2r</locus>: into fyre </secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>Paper</material>, folded in <measure type="folding">octavo</measure>. <watermark>
+                                            <seg type="para">Folios <locus from="1" to="116">1-116</locus>: <term type="watermarkMotif">scissors</term>. </seg></watermark>
+                                    </support>
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="57" type="leaf">57</measure> leaves. </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="215">215</height>
+                                                <width quantity="140">140</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                    <collation mainStructures="16">
+                                        <p>
+                                            <list>
+                                                <item>Quire 1<hi rend="superscript">26</hi> (pp. <locus from="1" to="52">1-52</locus>)</item>
+                                                <item>Quire 2<hi rend="superscript">? 16-1</hi> (pp. <locus from="55" to="84">55-84</locus>: 1st leaf
+                                                    missing)</item>
+                                                <item>Quire 3<hi rend="superscript">16</hi> (pp. <locus from="85" to="116">85-116</locus>)</item>
+                                            </list>
+                                        </p>
+                                    </collation>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout columns=" 1" rulingMedium="leadpoint" topLine="above" writtenLines="25 27"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height quantity="160">160</height>
+                                                <width quantity="95">95</width>
+                                            </dimensions>
+                                            <seg type="ruling">Ruled in leadpoint, frame only. Single columns. 25-27 lines to the page, written above
+                                                top line. </seg></p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="cursiva">
+                                    <p>Pages <locus from="1" to="109">1-109</locus> have been copied by a single 15th-century scribe writing in a
+                                        cursive script with both <term type="script">anglicana</term> and <term type="script">secretary</term>
+                                        features.</p>
+                                </handNote>
+                                <handNote script="cursiva">
+                                    <p>Pages <locus from="115" to="116">115-116</locus> have been copied by a different 15th-century scribes writing
+                                        in cursive scripts with both <term type="script">anglicana</term> and <term type="script">secretary</term>
+                                        features.</p>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote type="plainInit">
+                                    <p>Large (2-3 lines) plain initials in red ink.</p>
+                                </decoNote>
+                                <decoNote type="rubrication">
+                                    <p>Marginal notae and subheadings written in red ink.</p>
+                                </decoNote>
+                                <decoNote type="other">
+                                    <p>Small initials highlighted with red ink.</p>
+                                </decoNote>
+                            </decoDesc>
+
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1500" notBefore="1400">15th century.</origDate>
+                                <origPlace cert="high" key="place_g7002445">England. </origPlace>
+                            </origin>
+                        </history>
+                    </msPart>
+                    <msPart n="2">
+                        <msIdentifier>
+                            <idno>Cambridge, Trinity College, MS R.14.44, pp. 117-130</idno>
+                            <msName>Part 2</msName>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="la">Latin</textLang>
+                            <msItem n="1">
+                                <locus from="117" to="130">130</locus>
+                                <title key="work_v175019305">Speculum alchemiae</title>
+                                <author key="person_2184">Pseudo-Roger Bacon</author>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="117" to="117">117</locus> Multiphariam multisque modis loquebantur olim philosophi</incipit>
+                                <explicit defective="true"><locus from="130" to="130">130</locus> Nam precussores istius artis qui per suam
+                                    philosophiam ipsam inuenerunt demonstrauerunt sibi digitis satis manifeste viam lunarem deundatam cum dicunt
+                                    natura natura letatur</explicit>
+                                <note><p>The copy has been left unfinished in Chapter 7</p>
+                                    <p>A (?) 17th-century hand has added the following title to the upper margin of f. <locus from="117r" to="117r">117r</locus>: <q>Hic liber est Speculum Alchemiæ Rog. Baconis</q>.</p></note>
+                                <listBibl>
+                                    <bibl>eTK 0702E</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 194 ii</bibl>
+                                </listBibl>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="119r" to="119r">119r</locus>: fieri debent </secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>Paper</material>, folded in <measure type="folding">folio or octavo [vertical chainlines]</measure>. <watermark>
+                                            <seg type="para">Folios <locus from="117" to="130">117-130</locus>: <term type="watermarkMotif">[no
+                                                    watermark]</term>. </seg></watermark>
+                                    </support>
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="7" type="leaf">7</measure> leaves. </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="210">210</height>
+                                                <width quantity="140">140</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                    <collation mainStructures="4 10">
+                                        <p>
+                                            <list>
+                                                <item>Quire 4<hi rend="superscript">?4+3 or 10-3</hi> (pp. <locus from="117" to="130">117-130</locus>:
+                                                    three added at the quire's end or three missing at the quire's beginning)</item>
+                                            </list>
+                                        </p>
+                                    </collation>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout columns="1" rulingMedium="leadpoint" topLine="below" writtenLines="31"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height quantity="160">160</height>
+                                                <width quantity="95">95</width>
+                                            </dimensions>
+                                            <seg type="ruling">Ruled in leadpoint, frames and line ruling. Single columns. lines to the page, written
+                                                below top line. </seg></p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="cursivaAntiquior">
+                                    <p>Pages <locus from="117" to="118">117-118</locus> have been copied in an <term type="script">anglicana
+                                            formata</term> script influenced by <term type="script">secretary</term> script. </p>
+                                </handNote>
+                                <handNote script="">
+                                    <p>Pages <locus from="119" to="130">119-130</locus> have been copied in a <term type="script">bastard
+                                            secretary</term> script. </p>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote>
+                                    <p>This part of the manuscript does not contain any significant forms of decoration.</p>
+                                </decoNote>
+                            </decoDesc>
+                            <additions> </additions>
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1550" notBefore="1400">15th or early 16th century century. </origDate>
+                                <origPlace cert="high" key="place_g7002445">England. </origPlace>
+                            </origin>
+                        </history>
+                    </msPart>
+                    <msPart n="3">
+                        <msIdentifier>
+                            <idno>Cambridge, Trinity College, MS R.14.44, pp. 131-194</idno>
+                            <msName>Part 3</msName>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                            <msItem n="1">
+                                <locus from="131" to="136">131-136</locus>
+                                <title key="">Collection of four alchemical recipes (<q>Fyx Fugetyfe</q>)</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="131" to="131">131</locus> Take in the name of god j parte of golde that ys fynyd and vj partys
+                                    of mercory that ys purgyd and malgam ham togedyr as sotylly as thov kanst and than put yt into a body of glas and
+                                    sette þeron a hede and lute ham togedyr</incipit>
+                                <explicit><locus from="136" to="136">133</locus> as longe as þou wyll bothe in qualyte and quantyte and thus þou may
+                                    make fyx fugetyfe and þat þat ys fugetyfe to be fyx ayen</explicit>
+                                <note>The recipes are for <q>fyx fugetyfe</q>, <q>ffyxacio lune</q>, <q>ffor to make boras</q>, and <q>ffixacio
+                                        lune</q>.</note>
+                                <listBibl>
+                                    <bibl>eVK2 5558.00</bibl>
+                                    <bibl>eVK2 5755.00</bibl>
+                                    <bibl>eVK2 6417.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 1112 xvi</bibl>
+                                    <bibl>Mooney (1995) [on recipes in this manuscript that have similarities with the first recipe in this
+                                        collection]</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="2">
+                                <locus from="137" to="140">137-140</locus>
+                                <title key="">Alchemical treatise on making colours</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="137" to="137">137</locus> Rosary</rubric>
+                                <incipit><locus from="137" to="137">137</locus> This tretis shewith how ye shall gouerne youre fire in all maner of
+                                    operaciouns that longith vnto this science therfor in euery degre loke how thi ferste water congelith himself and
+                                    how thi water turneth fro colour to colour</incipit>
+                                <explicit><locus from="140" to="140">140</locus> and rede that we seke with þe which we teyne all bodies and turne hem
+                                    into profiter golde and seluer than ony odir brought out of the myne</explicit>
+                                <note/>
+                                <listBibl>
+                                    <bibl>eVK2 7490.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 497</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="3">
+                                <locus from="140" to="142">140-142</locus>
+                                <title key="">Alchemical recipe</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English recipe with a Latin heading</textLang>
+                                <rubric><locus from="140" to="140">140</locus> Ne cupias</rubric>
+                                <incipit><locus from="140" to="140">140</locus> Take lymayle of ffyne golde as much as thou wilte then take vj so much
+                                    of Mercury as thi golde weith and that thy mercury be wele wasshen and clensid and seith hem to gedir as the maner
+                                    is and eftirwarde sublyme it in alembike kouered</incipit>
+                                <explicit><locus from="142" to="142">142</locus> and every peny weight of that powdir wille turne a [half] peny weight
+                                    of comyn mercury into fyne golde and thus do for it is sothe and certayne as god is in heuen for it is proued
+                                    etcaetera</explicit>
+                            </msItem>
+                            <msItem n="4">
+                                <locus from="143" to="150">143-150</locus>
+                                <title key="">Collection of four alchemical recipes</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English recipes with Latin titles</textLang>
+                                <incipit><locus from="143" to="143">143</locus> Now to make water of corosyue which whater hath power to dissolue
+                                    siluer into clene water and quike seluer. Take a pounde of vitriole vomane grene and a pounde of alom glasse and a
+                                    pounde of salt peter and mole tham all togedig into a smalle poudir</incipit>
+                                <explicit><locus from="150" to="150">150</locus> and kast a lytill of this poudir theron and it shal be malliable for
+                                    this mater I haue ofte tymes proued and it is trewe as god is in heuen etcaetera</explicit>
+                                <note>The collection contains recipes for <q>water corosyue</q>, <q>liquifacio spiritum</q>, called <q>the grettest
+                                        priuite that John Tebalde hath</q>, <q>sal preparate</q>, and <q>mundificacio cupri</q>.</note>
+                                <listBibl>
+                                    <bibl>eVK2 1444.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 741</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="5">
+                                <locus from="151" to="151">151</locus>
+                                <title key="">Untitled alchemical recipe</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="151" to="151">151</locus> Sume capillos bene letos et incide cum forpicile ad modum ungius et
+                                    fuit capilli recentes</incipit>
+                                <explicit><locus from="151" to="151">151</locus> nota quod illud est acetum in quo Mourius debet coqui et non aliter
+                                    etcaetera</explicit>
+                                <note/>
+                                <listBibl>
+                                    <bibl>eTK 0733K</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 726</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="6">
+                                <locus from="152" to="152">152</locus>
+                                <title key="">Alchemical recipe</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="152" to="152">152</locus> Maister Thomas apud Westminster</rubric>
+                                <incipit><locus from="152" to="152">152</locus> Recipe aluminis .j. bb. salis patri .demi lb. ex quibus extracte aquam
+                                    corosiuam</incipit>
+                                <explicit><locus from="152" to="152">152</locus> Tunc fina illum cuprum in testa cum plumbo et post est abile pro
+                                    medicina etcaetera</explicit>
+                                <listBibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 726</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="7">
+                                <locus from="152" to="160">152-160</locus>
+                                <title key="">Collection of eight alchemical recipes</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="152" to="152">152</locus> Here ys cunyng to drave houte þe quintsence of antemony þat ys a ledyn
+                                    markesyte god of hevyn he ys wytnes that I schal scheve soo grete a priuyte and experyence to youre knovleche the
+                                    whyche was nevyr schevyt noþer knovyn but to full feve men</incipit>
+                                <explicit><locus from="160" to="160">160</locus> passythe the swetnes of hony or of sugyre or any othyr</explicit>
+                                <note><p>The recipes are for making antimony; shiny jewelery by combining gold, silver, and copper; copper that is
+                                        bright as gold; iron that is like silver; a <q>lyxor upon coper</q>; white metal from coopper and silver with
+                                        instructions on how to sublime mercury [called <q>Opus osbern de westmestyr</q>]; <q>lambyr</q>; gold from
+                                        mercury and gold.</p></note>
+                                <listBibl>
+                                    <bibl>eVK2 2049.00</bibl>
+                                    <bibl>eVK2 5060.00</bibl>
+                                    <bibl>eVK2 5423.00</bibl>
+                                    <bibl>eVK2 5249.00</bibl>
+                                    <bibl>eVK2 5589.00</bibl>
+                                    <bibl>eVK2 5727.00</bibl>
+                                    <bibl>eVK2 5764.00</bibl>
+                                    <bibl>eVK2 5433.00</bibl>
+                                    <bibl>eVK2 5738.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 726</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="8">
+                                <locus from="161" to="162">161-162</locus>
+                                <title key="">Recipe for changing the appearance of cloth</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="161" to="161">161</locus> ffor to make a thynge seme weluet in clothe or ffor to make worstede to
+                                    seme damaske</rubric>
+                                <incipit><locus from="161" to="161">161</locus> ffyrst take j li. off þe oldes wernysche and putte yt in a neve potte
+                                    off erthe and take half j pound off ffyne mastyk and make yt into small poudyr and putte þat mastyk into þe
+                                    wermysche in þe potte and the mastyk to gedyr</incipit>
+                                <explicit><locus from="162" to="162">162</locus> And yff ye make damask werk grynde with youre syse before sayde wat
+                                    colour that ye wyll have and than werk with youre ploppe and make as ys affore sayde in eueryche maner accepte the
+                                    ffleckys etcaetera</explicit>
+                                <note/>
+                                <listBibl>
+                                    <bibl>eVK2 5758.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 726</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="9">
+                                <locus from="163" to="164">163-164</locus>
+                                <title key="">Four alchemical recipes</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="163" to="163">163</locus> ffor to make þe perfyte werk off wermelion afther .l. draper</incipit>
+                                <explicit><locus from="164" to="164">164</locus> and qvenchyd þerin yt schal be tove and soffte</explicit>
+                                <note>The recipes are for making boras (2x) [the first one is attributed to <q>Gundi salvus de Portugalia</q> who
+                                    Mooney (1995) identifies as the 12th-century Toledan translator of Arabic scientific works Domingo Gondisalvi or
+                                    Dominicus Gundissalinus]; vermillion [attributed to <q>L. Draper</q>]; and water of lead.</note>
+                                <listBibl>
+                                    <bibl>eVK2 5748.00</bibl>
+                                    <bibl>eVK2 5311.00</bibl>
+                                    <bibl>eVK2 6322.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 726</bibl>
+                                    <bibl>Mooney (1995), p. 44 [other copies]</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="10">
+                                <locus from="165" to="165">165</locus>
+                                <title key="">Alchemical recipe (fragmentary)</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit defective="true"><locus from="165" to="165">165</locus> put ham in a pott and set yt in the grownd a fote the
+                                    psae of j day naturell</incipit>
+                                <explicit><locus from="165" to="165">165</locus> and than set yt in a serkyll fyre and so contenew yt ij
+                                    days</explicit>
+                                <listBibl>
+                                    <bibl>eVK2 0413.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 726</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="11">
+                                <locus from="165" to="166">165-166</locus>
+                                <title key="">Collection of four alchemical recipes</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="165" to="165">165</locus> Si vis affinare metallum vt efficiatur optimum argentum</incipit>
+                                <explicit><locus from="166" to="166">166</locus> funde semiliter et erit purum argentum</explicit>
+                                <note>The recipes are for <q>Si vis affinare metallum ut efficatur optimum argentum</q>; <q>Cuprum sic dealbatur ad
+                                        modum argenti</q>; <q>Si vis ut saturnus fiat semile lune</q>; <q>Ut acias die vna vncia Argente .iij<hi rend="superscript">a</hi></q>.</note>
+                                <listBibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 726</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="12">
+                                <locus from="167" to="171">167-171</locus>
+                                <title key="">Tract on twelve alchemical waters</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="167" to="167">167</locus> Hic incipit libellum 12 aquarum ad alkamiam pertinencium </incipit>
+                                <explicit><locus from="171" to="171">171</locus> et erit aurum purum si semel intingnatur</explicit>
+                                <note>Timmermann (2015) suggests that this text may be a version of the <hi rend="italic">Liber aquarum</hi>.</note>
+                                <listBibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 726</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="13">
+                                <locus from="171" to="175">171-175</locus>
+                                <title key="">Collection of eight alchemical recipes</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="171" to="171">171</locus> for to translat stang from sulphurte by kyndly ratefyyng</incipit>
+                                <explicit><locus from="175" to="175">175</locus> and vj of mercory to j part of soll tyll all the soll by sublimacyun
+                                    be turnyd into mercury</explicit>
+                                <note>The recipes are <q>for to translat stang fromh is sulphurite by kyndly ratefyyng</q>; <q>To make a good quencher
+                                        to blanche and to thonge [? thoughe] jvbiter</q>; <q>To make metall towe</q>; <q>To hardyn eny metall</q>;
+                                        <q>for to make a cetrinaciun</q>; <q>To wyrk a malgam upon styng</q>; <q>To make good lune</q>; <q>To make
+                                        full artefissiall solebliall</q>. The final recipe requires human blood and hair as ingredients.</note>
+                                <listBibl>
+                                    <bibl>eVK2 5891.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 726</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="14">
+                                <locus from="176" to="177">176-177</locus>
+                                <title key="">Alchemical tract</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="176" to="176">176</locus> Incipit opus bonifacij ix cum sequentibus capitulis albi et
+                                    rubre</incipit>
+                                <explicit><locus from="177" to="177">177</locus> ad pondus cum pixide supra argentum vinum congelatur</explicit>
+                                <listBibl>
+                                    <bibl>eTK 0733K</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 726</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="15">
+                                <locus from="177" to="184">177-184</locus>
+                                <title key="">Collection of four alchemical recipes</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="177" to="177">177</locus> De lapide albo</incipit>
+                                <explicit defective="true"><locus from="184" to="184">184</locus> sicut sitis et postmodum laua bene cum cum aqua
+                                    calida et postmodum cum nove</explicit>
+                                <note>The final recipe appears to be incomplete. The recipe are entitled or begin: <q>De lapide albo</q>; <q>Item alia
+                                        tinctura bona et preciosa</q>; <q>Item alia tinctura preciosa</q>; <q>lapis rubeus</q>.</note>
+                                <listBibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 726</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="16">
+                                <locus from="185" to="186">185-186</locus>
+                                <title key="">Accounts, datable to 1463-64</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="185" to="185">185</locus> dane Thomas pryor off levys - xx li</incipit>
+                                <explicit><locus from="186" to="186">186</locus> Master wylliam dunthorne executor off John ffroste mercer</explicit>
+                                <note>
+                                    <p>The accounts refer to persons situated in (in order of appearance) Lewis (<q>levys</q>), London
+                                        (<q>london</q>), Nottinghamshire (<q>notynghamschyre</q>), Cardiff (<q>kerdyffe in Walys</q>),
+                                        Henley-on-Thames (<q>henele uppon temse</q>), and Wycombe (<q>Wycombe</q>). They are typically named with
+                                        their titles and occupations: <q>pryor</q>, <q>knyȝt</q>, <q>squyer</q>, <q>draper</q>, <q>mercer</q>,
+                                            <q>grocer</q>, <q>habyrdasscher</q>, <q>brever</q>, <q>talov chavndeler</q>, <q>pevterer</q>, <q>dyer</q>,
+                                            <q>ffyschemonger</q>, <q>wolpacker</q>, <q>taylour</q>, <q>tavyer</q>. While the aforementioned titles and
+                                        roles all concern men, the accounts include two women: 1. a silkwoman (<q>sylkwoman</q>) who is only
+                                        identified by her surname: <q>langeton</q>. There were (at least) three silkwomen with that surname: Jane
+                                        Langton, a silkwoman and merchant in London, who drew up her will in 1475; and her two daughters-in-law Agnes
+                                        Langton and Elizabeth Langton. The latter supplied the royal wardrobe with silk in 1503 [on them, see
+                                            <bibl>Marian K. Dale, 'The London Silkwomen of the Fifteenth Century', <hi rend="italic">The Economic
+                                                History Review</hi>, 4:3 (1933), 324-335 (pp. 327-328)</bibl>]. 2. A woman who is (again) only
+                                        identified by her surname <q>Helmys of Henele uppon temse</q> and who is described as the executrix of <q>John
+                                            Helmys merchant</q>. She has not been identified. </p>
+                                    <p>The evidence for the dating of the accounts to 1463-64 comes from three entries: 1. An entry for <q>Thomas
+                                            Cooke</q> who is identified as <q>knyȝt and aldyrman of london</q>. He must be Sir Thomas Cooke
+                                        (c. 1410-1478), who was alderman of the City of London from 1456 onwards, knighted in 1465, and Lord Mayor in
+                                        1462-63 (for him, see also <bibl subtype="internal" type="MS">Cambridge, Trinity College, MS O.3.11</bibl> and
+                                            <bibl subtype="internal" type="MS">Cambridge, Trinity College, MS R.14.52</bibl>). 2. An entry that names
+                                            <q>John</q> as the prior of Lewis Priory. Given the identification of Sir Thomas Cooke, this prior John
+                                        cannot be John Burghersh, who was prior from 1409 until 1414, or John Ashdowne who occurs as prior in 1506. He
+                                        can only be John Danyel, who was prior from 1445 until 1464. 3. The final entry that refers to John Frost,
+                                        mercer, who drew up his will, which identifies William Dunthorn as his executor, dated to 2 July 1463 (see
+                                            <bibl subtype="external" type="MS"><ref target="https://discovery.nationalarchives.gov.uk/details/r/D969398">Kew, The National Archives, PROB
+                                                11/5/211</ref></bibl>).</p></note>
+                            </msItem>
+                            <msItem n="17">
+                                <locus from="187" to="189">187-189</locus>
+                                <title key="">Teaching on the philosopher's stone</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="187" to="187">187</locus> O fili mi infans carissimi ob metv mortis mei ne moriar antequam
+                                    pervenies ad etatem et propter puerilitatem quamvis te docerem a memoria tua ars deponeretur in obliuionem et sic
+                                    penitus disparatus esses a composissione lapidis philosophorum</incipit>
+                                <explicit><locus from="188" to="189">188-189</locus> sicut te docui superius facere corpora incorporia quia numquam
+                                    pervenies ad perfecionem composicionis lapidis philosophorum nisi sis facere fixum fugiens et fuguens fixum et si
+                                    hoc sis tunc habes totum magisterium</explicit>
+                                <listBibl>
+                                    <bibl>eTK 0970I</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 622</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="18">
+                                <locus from="189" to="193">189-193</locus>
+                                <title key="">Collection of sixteen medical recipes</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English and Latin&gt;</textLang>
+                                <note>The collection includes a recipe that is said to have been proved by a medical practitioners named Perrin Ferby
+                                    [unidentified]: <q>ffor þe govte provyd per peryn fferby</q>.</note>
+                                <listBibl>
+                                    <bibl>eTK 1459M</bibl>
+                                    <bibl>eVK2 6153.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 1111 xxxi</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="19">
+                                <locus from="193" to="193">193</locus>
+                                <title key="">Charm to staunch blood</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="193" to="193">193</locus> Si cateracciones sequenter scribantur et suspendantur ad collum vel
+                                    brachium alicuius sangguinantis sito restringet pro ferto p. x. b. c. o. p. q. x. a. b. q. A. et si non credas
+                                    esse verum scribe hoc predicta in manubrio cultelli et interfice porcellum vel porculum et videbis quod non exibit
+                                    sanguis sepius probatum est</incipit>
+                                <note>Full transcription. Includes a method to authenticate its veracity. </note>
+                                <listBibl>
+                                    <bibl>eVK2 6153.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 1111 xxxi</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="20">
+                                <locus from="193" to="193">193</locus>
+                                <title key="">Charm to staunch blood</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="193" to="193">193</locus> Pro eodem ad sessandum sangvinem</rubric>
+                                <incipit><locus from="193" to="193">193</locus> scribe has caracteras in pergameno et liga supera pectus sanguinantis
+                                    et statim sessabit sanguis / d. c. p. o. d. x. A. x. y. j. r. et si non credas scribe supra manubrium cultelli has
+                                    caretras et proba sicut prius</incipit>
+                                <note>Refers to a method to authenticate its veracity described in the previous item. </note>
+                                <listBibl>
+                                    <bibl>eVK2 6153.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 1111 xxxi</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="21">
+                                <locus from="193" to="193">193</locus>
+                                <title key="">Note on properties of magical characters used in blood-staunching charm</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit>
+                                    <locus from="193" to="193">193</locus> Nota esiam si quis has litteras honeste secrete et reuerenter portauerit
+                                    non erit oppressatus nec captus nec in carcere clausus nec retentus</incipit>
+                                <listBibl>
+                                    <bibl>eVK2 6153.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 1111 xxxi</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="21">
+                                <locus from="194" to="194">194</locus>
+                                <title key="">Notes on the value of litmus (blue pigment) by the barrel</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="194" to="194">194</locus> xij<hi rend="superscript">C</hi> off lytmose þat ys good wwyll make
+                                    xviij kyldyrkynys off kork and euery kyldyrkyn contenyng ix stone / And euery stone weyyng xvj li. and euery stone
+                                    ys worthe xij d þat dravythe euery barell to þe summa off xviij s. </incipit>
+                                <note>Full transcription.</note>
+                            </msItem>
+                            <msItem n="22">
+                                <locus from="194" to="194">194</locus>
+                                <title key="">Prayer for the blessing of medicine</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="194" to="194">194</locus> Medicus discretus debet dicere mente deuota hanc oracionem in
+                                    exibicionem alicuius medicine et melori modo operabitur</rubric>
+                                <incipit><locus from="194" to="194">194</locus> Deus sempiternus omnipotens qui mirabeliter [sic] hominem creasti et
+                                    mirabelius [sic] reformasti qui dedisti medisinam [sic] ad recuperandum sanitatem humanorum corporum da
+                                    benediccionem tuam de celis super hanc medisinam vt cuius corpus intrauerit sanitatem mentis et corporis recipere
+                                    mereatur per Christum dominum nostrum Amen. Et potest recepcionem medicine item dicutur In nomine domini nostri
+                                    Jhesu Christi nazareni crucifixi fili dei viui et benedicti qui surrexit et sedet ad dexteram dei patris et per
+                                    singnum sancte crucis sanet te in corpore et anima viuens deus pater eiusdem domini nostri Jhesus Christi
+                                    Amen</incipit>
+                                <note>Full transcription.</note>
+                                <listBibl>
+                                    <bibl>eVK2 6153.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 1111 xxxi</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="23">
+                                <locus from="194" to="194">194</locus>
+                                <title key="">Charm against spasms</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="194" to="194">194</locus> Pro spasmo fiat carmen de quo fiat men hoc modo</rubric>
+                                <incipit><locus from="194" to="194">194</locus> Accipe vnam cedulam pergameni et scribe primo singnum + Theball +
+                                    guthe + guthani + in nomine patris + et filij + et spiritus + sancti Amen + jhesus nazarenus + Maria + Johannes +
+                                    Michael + Gabriel + Raphael + verbum caro factum est + postea claudatur ista sedula bene et honeste et qui vero
+                                    carmen istud super se portauerit reuerenter in dei omnipotentis nomine et credederit sine dubio spasmus ei non
+                                    gravabit</incipit>
+                                <note>Full transcription.</note>
+                                <listBibl>
+                                    <bibl>eVK2 6153.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 1111 xxxi</bibl>
+                                </listBibl>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="133r" to="133r">133r</locus>: with a softe </secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>Paper</material>, folded in <measure type="folding"/>. <watermark>
+                                            <seg type="para">Folios <locus from="131" to="194">131-194</locus>: <term type="watermarkMotif">?
+                                                    crown</term>, <term type="watermarkMotif">scales</term>, <term type="watermarkMotif">bull</term>.
+                                            </seg></watermark>
+                                    </support>
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="32" type="leaf">32</measure> leaves. </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="220">220</height>
+                                                <width quantity="145">145</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                    <collation mainStructures="2 8 20">
+                                        <p>NB: This catalogue record disagrees with the division in parts proposed by M.R. James (1901) and Timmermann
+                                            (2015) who state that Part 3 starts at p. <locus from="137" to="137">137</locus>. Instead, this catalogue
+                                            record - following the part division that a modern hand as indicated in pencil in the manuscript - places
+                                            its beginning at p. <locus from="131" to="131">131</locus>.</p>
+                                        <p>Quires 6 and 7 are separate quires but possibly comprise a single quaternion with two leaves added at the
+                                            end.</p>
+                                        <p>
+                                            <list>
+                                                <item>Quire 5<hi rend="superscript">2</hi> (pp. <locus from="131" to="134">131-134</locus>)</item>
+                                                <item>Quire 6<hi rend="superscript">?8</hi> (pp. <locus from="135" to="150">135-150</locus>)</item>
+                                                <item>Quire 7<hi rend="superscript">?2</hi> (pp. <locus from="151" to="154">151-154</locus>)</item>
+                                                <item>Quire 8<hi rend="superscript">20</hi> (pp. <locus from="155" to="194">155-194</locus>)</item>
+                                            </list>
+                                        </p>
+                                    </collation>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout columns="1" writtenLines="24 38"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height max="180" min="160">160-180</height>
+                                                <width max="125" min="100">100-125</width>
+                                            </dimensions>
+                                            <seg type="ruling">No ruling. Single columns. 24-38 lines to the page. </seg></p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="cursiva">
+                                    <p>Copied by several scribes working in cursive hands with both <term type="script">anglicana</term> and <term type="script">secretary</term> features. </p>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote type="drawing">
+                                    <p>Drawing of an alembic within the text, and specifically surrounding the word <q>elembicus</q>, on p. <locus from="143" to="143">143</locus>.</p>
+                                </decoNote>
+                            </decoDesc>
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1470" notBefore="1460">1460s. </origDate>
+                                <origPlace cert="high" key="place_g7002445">England. </origPlace>
+                                <p>The accounts on f. <locus from="185" to="186">185-186</locus> contain evidence that they were written around 1463-4
+                                    and have been written in the hand that has copied a large portion of this part of the manuscript; see Mooney
+                                    (1995) for further details on the hands.</p>
+                            </origin>
+                            <provenance notAfter="1466"><p><name key="" role="fmo">
+                                        <persName type="display">John Frost (fl. c. 1460)</persName>
+                                        <persName type="standard">Frost, John, fl. c. 1460</persName></name>, mercer of Saint Mary Aldermanbury, City
+                                    of London: possibly copied and/or owned part of this manuscript. As Gross (1996), p. 117 fn. 74 points out, the
+                                    accounts on pp. <locus from="185" to="186">185-186</locus> contain an entry for Sir Thomas Cooke (c. 1410-1478),
+                                    draper, knight, and Lord Mayor of London, who appears to have had a family connection with Frost although their
+                                    exact relationship is unclear. In Frost's will of 1463-4 (see <bibl subtype="external" type="MS"><ref target="https://discovery.nationalarchives.gov.uk/details/r/D969398">Kew, The National Archives, PROB
+                                            11/5/211</ref></bibl>; ? proved on 9 April 1466), he bequeathed twenty shillings to a certain <q>Thomas
+                                        Cooke my cousyn in Cambrigge if he þat tyme continue at scole to augmentacioun of lernyng</q>. The latter may
+                                    be the son and namesake of Sir Thomas Cooke, who was born in 1452. The will suggests that Frost knew Sir Thomas
+                                    Cooke through his sister, to whom he refers as <q>Isabell Cooke my suster</q>. However, no further information
+                                    appears to be available on her marriage. The final entry on p. <locus from="186" to="186">186</locus> concerns a
+                                    reference to William Dunthorn as the executor of John Frost's will, which is indeed confirmed by the
+                                    aforementioned will.</p>
+                            </provenance>
+                        </history>
+                    </msPart>
+                    <msPart n="4">
+                        <msIdentifier>
+                            <idno>Cambridge, Trinity College, MS R.14.44, ff. 1-18</idno>
+                            <msName>Part 4</msName>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="enm" otherLangs="la">Middle English [LALME, LP 669: Norfolk dialect] and Latin</textLang>
+                            <msItem n="1">
+                                <locus from="1r" to="8r">1r-8r</locus>
+                                <title key="">Semita semitae</title>
+                                <author key="person_v100189814">Arnold of Villanova</author>
+                                <rubric><locus from="1r" to="1r">1r</locus> Hic inicpit Epistola transmissa ad papa per magistrum Arnaldum de villa
+                                    noua et est verissima epistola</rubric>
+                                <textLang mainLang="enm" otherLangs="la">Middle English text with Latin title</textLang>
+                                <incipit><locus from="1r" to="1r">1r</locus> Worschepeful ffadyr j sey þe forsothe þat þe ffelysophyres han left in
+                                    here bokys .2. maner of werkynges . þe ton ys [crossed out: <q>fas</q>] fals þe toþer ys trewe . the trewe is set
+                                    in mysty wordis . the false in lytere wordys so þat noun xuld vnderstonde here craft but only fylysopherys and
+                                    wyse men</incipit>
+                                <explicit><locus from="8r" to="8r">8r</locus> and als he puttyth awey euel humores yt maketh a man to han hardynes and
+                                    þe victorye qwerfore yt may clepyd a precyows stoun</explicit>
+                                <finalRubric><locus from="8r" to="8r">8r</locus> Explicit iste liber et sertissime quod non est aliqua alia uia in hoc
+                                    opere nisi isto modo ut omnes philosophi testantur licet multa loquantur per parabolas tamen omnes habent vnum
+                                    opus et vnam iter ut omnes sapientes vnum intelligunt ergo omnes vos operandum per istum modum et non per alium et
+                                    ueritatem inuenientes auxilio domini nostri ihesu cristi qui uos ad finem bonum perducat. amen.</finalRubric>
+                                <listBibl>
+                                    <bibl>eVK2 8209.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no 226 xx</bibl>
+                                    <bibl>Mooney (1995), p. 45 [other copies in this manuscript]</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="2">
+                                <locus from="8v" to="14v">8v-14v</locus>
+                                <title key="">The Mirror of Alchemy</title>
+                                <author key="">Pseudo-Roger Bacon</author>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="8v" to="8v">8v</locus> Bakon</rubric>
+                                <incipit><locus from="8v" to="8v">8v</locus> There is on thyng alone to hom no strong thyng ys added bu only hys
+                                    superfluyte don awey . þe qweche is .vigetall. out of þe qwech we make to renne þe spryȝt of þe .quintescens. for
+                                    with owtyn hym may not þe phelisopheres stoun be mad </incipit>
+                                <explicit><locus from="14v" to="14v">14v</locus> yf þou wele ocupye þe in ony ryGt whyle wel for to spede loke þou
+                                    knowe wel þin .A.B.C. þin Pater noster . and þin Crede. Amen.</explicit>
+                                <note>The text features mirrored handwriting on f. <locus from="12v" to="12v">12v</locus>.</note>
+                                <listBibl>
+                                    <bibl>eVK2 7224.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 211</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="3">
+                                <locus from="12v" to="12v">12v (lower margin)</locus>
+                                <title key="">Note on the three parts of an egg [written in mirrored handwriting]</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="12v" to="12v">12v (lower margin)</locus> Sunt oui partes albumen testa vitellus</incipit>
+                            </msItem>
+                            <msItem n="4">
+                                <locus from="14v" to="14v">14v</locus>
+                                <title key="">Rules for understanding the properties of sun (gold), moon (silver, and mercury</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English text with some Latin</textLang>
+                                <rubric><locus from="14v" to="14v">14v</locus> alia regula</rubric>
+                                <incipit><locus from="14v" to="14v">14v</locus> Now trewly þe sunne is most worthy planete . The sunne þei take for
+                                    gold and clepyn yt masculyn actyf hed and kyng of þis scyeus the mone þei vnderstande syulver and is clepyd
+                                    ffemina passif and lady of þis sciens quyk syluer ys a mene to joyne tynctures hauyng a name þat is seyd aqua
+                                    permanens</incipit>
+                                <explicit><locus from="14v" to="14v">14v</locus> but yt may be turnyd into cler water with þe whech þou mayst wasche
+                                    þe and anoynte þe etcaetera quere ista regula in alio libro</explicit>
+                                <listBibl>
+                                    <bibl>eVK2 3792.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="5">
+                                <locus from="15r" to="15v">15r-15v</locus>
+                                <title key="">Dialogue on alchemy</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English text with a Latin title</textLang>
+                                <rubric><locus from="15r" to="15r">15r</locus> Dixit filius patri suo</rubric>
+                                <incipit><locus from="15r" to="15r">15r</locus> Now ffadyr j wele Gow schewe þe preuyte and þe praktyf of þis sciens
+                                    ȝeue tent þerto now and vndyrstone wel myn techyng. Tak .Osmura. or .Alnunga. j. [ounce]. and make þer of
+                                    .Elamytael.</incipit>
+                                <explicit><locus from="15v" to="15v">15v</locus> þe wech ne myȝt not be before for here felthe and bustusnesse and
+                                    growyth in hem and waxeth and multiplyeth wonderly meche</explicit>
+                                <listBibl>
+                                    <bibl>eVK2 3711.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 385</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="6">
+                                <locus from="15v" to="17r">15r-17r</locus>
+                                <title key="">Semita Recta (poem)</title>
+                                <author key="person_v104113324">Pseudo-Albertus Magnus</author>
+                                <textLang mainLang="enm" otherLangs="la">Middle English poem with a Latin title</textLang>
+                                <rubric><locus from="15v" to="15v">15v</locus> Semita Recta Albertus peribet testimonium</rubric>
+                                <incipit><locus from="15v" to="16r">15v-16r</locus> Off all þe weys þat I knowe be est or be weste / Euere holde I þis
+                                    path for on of þe beste / ffor þis is þe ryȝt path good and sure / A lixer made of 2 thynges be kende of nature /
+                                    It makyth good lune of mercurye yf o part be put þerto / A part vpon an 100 of mercury ys sol ryȝt good also / And
+                                    of lune þe same yf þou welt wele do / on part of 300 yf yt be cast þerto / In þe cyte of Damaske was Albert
+                                    dwellyng / And as he wente be weldernesse in a somery morwenyng / There he mette wyth Elchyȝel fayre and fre / þe
+                                    queen of elphys lond vndyr an ev tre</incipit>
+                                <explicit><locus from="16v" to="17r">16v-17r</locus> qyod elchiȝel Tyl yt ys waxe nere whyȝth / Take þanne Animul good
+                                    and pure / and dyssolue hym in ȝour water sure / half an vnce and 3 ȝ of erucaem þerto / and Ioyne hem all togedre
+                                    so </explicit>
+                                <note>This is one of two copies of a poem which imagines a dialogue between Albertus Magnus and Elchyȝell, the Queen
+                                    of Elves, in which she teaches him a recipe with which mercury can be turned into silver and gold and silver
+                                    turned into gold. The other copy can be found in <bibl subtype="external" type="MS"><ref target="">London, British
+                                    Library, Sloane MS 3580B</ref></bibl> (ff. 183v-184v) [see Grund (2004), passim]. This poem is different
+                                    from the Latin prose text with the title <hi rend="italic">Semita Recta</hi> (also associated with Pseudo-Albertus
+                                    Magnus). Another hand has addex <q>extractum</q> (or <q>exemplum</q>) <q>Doweld</q> at the end of the poem.</note>
+                                <listBibl>
+                                    <bibl>eVK2 3860.00</bibl>
+                                    <bibl>IMEV 2614</bibl>
+                                    <bibl>NIMEV 2614</bibl>
+                                    <bibl>DIMEV 4141-1</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 177 xx</bibl>
+                                    <bibl>Grund (2004), pp. 657-658 [edition]</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="7">
+                                <locus from="17r" to="17v">17r-17v</locus>
+                                <title key="">Collection of six alchemical recipes</title>
+                                <textLang mainLang="la" otherLangs="enm">Latin and Middle English</textLang>
+                                <incipit><locus from="17r" to="17r">17r</locus> De balneo philosophi . Ignis fumi sic fit</incipit>
+                                <explicit><locus from="17v" to="17v">17v</locus> quan yt is congellyd to a ston take it fro þe feere and breke þi glas
+                                    etcaetera</explicit>
+                                <note>The fourth recipe contains cypher for some of its ingredients (e.g. <q>Sblpfater</q> for <q>Salpater</q>); the
+                                    fifth recipe is accompanied by a chart of numbers.</note>
+                                <listBibl>
+                                    <bibl>eVK2 8090.00</bibl>
+                                    <bibl>Singer and Anderson (1928-1931), no. 1111 xxxiii</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="8">
+                                <locus from="17v" to="17v">17v</locus>
+                                <title key="">A list of names or invocation of angelic or demonic spirits</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="17v" to="17v">17v</locus> Oberyon Ascaryel Bletthe ssybbylla</incipit>
+                                <note>Full transcription. A previously unnoticed and untranscribed (?) 15th-century addition. Their names can all be
+                                    found in early modern necromantic rituals. For example, the so-called <hi rend="italic">Folger Book of Magic</hi>
+                                        (<bibl subtype="external" type="MS"><ref target=" https://digitalcollections.folger.edu/bib228887-238418">Washington, Folger Shakespeare Library, V.b.26, Part 1</ref></bibl> and <bibl subtype="external" type="MS"><ref target="https://digitalcollections.folger.edu/bib228887-260972">Part 2</ref></bibl>), a late
+                                    16th-century grimoire, features descriptions and conjurations of the spirits <q>Oberyon</q> (I, pp. 76, 113,
+                                    115-116, 185, 190-200); <q>Ascariell</q> [<q>Askariell</q>] (I, pp. 169-170); <q>Byleth</q> (I, pp. 78, 87); and
+                                        <q>Sibilla</q> (II, p. 228). What is especially interesting is that the <hi rend="italic">Folger Book of
+                                        Magic</hi>, identifies <q>Oberyon</q> [Oberon] as 'kinge of the fayries' who can reveal hidden treasure and
+                                    how it can be obtained. His name in Cambridge, Trinity College, MS R.14.44 then resonates with the alchemical poem
+                                    on <locus from="15v" to="18r">15r-17r</locus> in which Elchizel, Queen of Fairies, provides instructions on how to
+                                    make silver and gold. Ultimately, all the spirits listed on f. <locus from="17v" to="17v">17v</locus> may have
+                                    been invoked for obtaining wealth.</note>
+                            </msItem>
+                            <msItem n="9">
+                                <locus from="17v" to="17v">17v</locus>
+                                <title key="">Note with reference to Bastwick and Repps, Norfolk</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="17v" to="17v">17v</locus> Notum sit j omnibus quod quidam fabricatur de bastwek in comitatu
+                                    norffolcensis littera pacis optauit contra curatum de repps et quidem curatus nuncquam occacionem ei dedi pulicum
+                                    sit vobis quis [...] ius fecit</incipit>
+                                <note>Full transcription attempted.</note>
+                            </msItem>
+                            <msItem n="10">
+                                <locus from="18r" to="18r">18r</locus>
+                                <title key="">Account notes</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="18r" to="18r">18r</locus> Item John Sobeney of Saham </incipit>
+                                <explicit><locus from="18r" to="18r">18r</locus> Item þe seyd iohn for a mattocke - viijd</explicit>
+                                <note>The list refers to persons from <q>Saham</q> [M.R. James (1901): Soham, Cambridgeshire; LALME: Saham Toney,
+                                    Norfolk]; <q>ffordam</q> [Fordham, Cambridgeshire], <q>Ely</q> [Ely, Cambrdidgeshire], <q>Hadenham</q> [Haddenham,
+                                    Cambridgeshire], <q>Nectwn</q> [Necton, Norfolk]; and <q>þe parkez of Cartelynge</q>. The latter is not identified
+                                    in Mooney (1995) but probably refers to Kirtling, Cambridgeshire.</note>
+                            </msItem>
+                            <msItem n="11">
+                                <locus from="18v" to="18v">18v</locus>
+                                <title key="">Notes relating to a recipe</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <note>Mooney (199), p. 46 gives a full transcription: <q>A pownd of sanfyre ij pound of vitreol and a vnce of alum and
+                                        a vnce of sal petre</q>. The recipe is probably a second attempt, with the first one (above it) erased [but
+                                    still legible with UV light].</note>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="2r" to="2r">2r</locus>: as þe philisophers </secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>Paper</material>, folded in <measure type="folding">folio</measure>. <watermark>
+                                            <seg type="para">Folios <locus from="1r" to="18v">1-18</locus>: <term type="watermarkMotif">?
+                                                cross</term>, <term type="watermarkMotif">? tun</term>, <term type="watermarkMotif">grapes</term>.
+                                            </seg></watermark>
+                                    </support>
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="18" type="leaf">18</measure> leaves. </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="215">215</height>
+                                                <width quantity="145">145</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                    <collation mainStructures="4">
+                                        <p>Quires 11 and 12 may be a single quire of four leaves with two leaves added at the end.</p>
+                                        <p>
+                                            <list>
+                                                <item>Quire 9<hi rend="superscript">8</hi> (pp. <locus from="1r" to="8v">1-8</locus>)</item>
+                                                <item>Quire 10<hi rend="superscript">4</hi> (pp. <locus from="9r" to="12v">9-12</locus>)</item>
+                                                <item>Quire 11<hi rend="superscript">4</hi> (pp. <locus from="13r" to="16v">13-16</locus>)</item>
+                                                <item>Quire 12<hi rend="superscript">two</hi> (pp. <locus from="17r" to="18v">17-18</locus>)</item>
+                                            </list>
+                                        </p>
+                                        <signatures type="leaf"><p>Roman numerals in brown ink in the lower outer corners of the rectos of the first
+                                                halves of Quires 9-12. </p></signatures>
+                                        <catchwords><seg type="para">Catchwords in frames of brown ink in the lower inner corners of the last versos
+                                                of Quires 9-10. </seg></catchwords>
+                                    </collation>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout columns="1" rulingMedium="ink" topLine="below" writtenLines="24 28"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height max="170" min="160">160-170</height>
+                                                <width max="120" min="105">105-120</width>
+                                            </dimensions>
+                                            <seg type="ruling">Ruled in ink, frame only. Single columns. lines to the page, written below top line.
+                                            </seg></p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="cursivaAntiquior">
+                                    <p>Folios <locus from="1r" to="17v">1r-17v</locus> have been copied by a single scribe working in a cursive hand
+                                        with <term type="script">anglicana</term> features. </p>
+                                </handNote>
+                                <handNote script="cursiva">
+                                    <p>Folios <locus from="17v" to="18v">17v-18v</locus> feature additions by a few scribes working in a cursive hands
+                                        with both <term type="script">anglicana</term> and <term type="script">secretary</term> features. </p>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote type="plainInit">
+                                    <p>Large (2 lines) plain initials in red ink.</p>
+                                </decoNote>
+                                <decoNote type="rubrication">
+                                    <p>Titles written in brown and red ink; names of authorities within the text, sub-headings and numbers in margins
+                                        written in red ink.</p>
+                                </decoNote>
+                                <decoNote type="lifeFil">
+                                    <p>Linefilllers in red ink.</p>
+                                </decoNote>
+                                <decoNote type="other">
+                                    <p>Initials (1 line) occasionally higlighted in red ink (especially in the alchemical poem on ff. <locus from="15v" to="17r">15v-17r</locus>).</p>
+                                </decoNote>
+                                <decoNote type="other">
+                                    <p>Paraphs in red ink.</p>
+                                </decoNote>
+                                <decoNote type="other">
+                                    <p>Underlining in red ink.</p>
+                                </decoNote>
+                            </decoDesc>
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1500" notBefore="1400">15th century (probably the second half of the century). </origDate>
+                                <origPlace cert="high" key="place_g7002445">England. </origPlace>
+                            </origin>
+                        </history>
+                    </msPart>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85003265">Alchemy</term>
+                            <term key="subject_sh85083064">Medicine</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change status="draft" when="2024-11-14">
+                <persName>Dr Clarck Drieshen, Project Cataloguer in Curious Cures in Cambridge Libraries, Cambridge University Library</persName>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+
+
+<facsimile><graphic decls="#document-thumbnail" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00001"/><surface n="front cover, outer" xml:id="page-surface-1"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00001" width="3252px"/></surface><surface n="front cover, inner" xml:id="page-surface-2"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00002" width="3252px"/></surface><surface n="[i] recto" xml:id="page-surface-3"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00003" width="3196px"/></surface><surface n="[i] verso" xml:id="page-surface-4"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00004" width="3196px"/></surface><surface n="[ii] ecto" xml:id="page-surface-5"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00005" width="3196px"/></surface><surface n="[ii] verso" xml:id="page-surface-6"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00006" width="3196px"/></surface><surface n="[iii] recto" xml:id="page-surface-7"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00007" width="3196px"/></surface><surface n="[iii] verso" xml:id="page-surface-8"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00008" width="3196px"/></surface><surface n="[iv] recto" xml:id="page-surface-9"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00009" width="3196px"/></surface><surface n="[iv] verso" xml:id="page-surface-10"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00010" width="3196px"/></surface><surface n="1" xml:id="page-surface-11"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00011" width="3196px"/></surface><surface n="2" xml:id="page-surface-12"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00012" width="3196px"/></surface><surface n="3" xml:id="page-surface-13"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00013" width="3196px"/></surface><surface n="4" xml:id="page-surface-14"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00014" width="3196px"/></surface><surface n="5" xml:id="page-surface-15"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00015" width="3196px"/></surface><surface n="6" xml:id="page-surface-16"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00016" width="3196px"/></surface><surface n="7" xml:id="page-surface-17"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00017" width="3196px"/></surface><surface n="8" xml:id="page-surface-18"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00018" width="3196px"/></surface><surface n="9" xml:id="page-surface-19"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00019" width="3196px"/></surface><surface n="10" xml:id="page-surface-20"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00020" width="3196px"/></surface><surface n="11" xml:id="page-surface-21"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00021" width="3196px"/></surface><surface n="12" xml:id="page-surface-22"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00022" width="3196px"/></surface><surface n="13" xml:id="page-surface-23"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00023" width="3196px"/></surface><surface n="14" xml:id="page-surface-24"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00024" width="3196px"/></surface><surface n="15" xml:id="page-surface-25"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00025" width="3196px"/></surface><surface n="16" xml:id="page-surface-26"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00026" width="3196px"/></surface><surface n="17" xml:id="page-surface-27"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00027" width="3196px"/></surface><surface n="18" xml:id="page-surface-28"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00028" width="3196px"/></surface><surface n="19" xml:id="page-surface-29"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00029" width="3196px"/></surface><surface n="20" xml:id="page-surface-30"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00030" width="3196px"/></surface><surface n="21" xml:id="page-surface-31"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00031" width="3196px"/></surface><surface n="22" xml:id="page-surface-32"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00032" width="3196px"/></surface><surface n="23" xml:id="page-surface-33"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00033" width="3196px"/></surface><surface n="24" xml:id="page-surface-34"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00034" width="3196px"/></surface><surface n="25" xml:id="page-surface-35"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00035" width="3196px"/></surface><surface n="26" xml:id="page-surface-36"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00036" width="3196px"/></surface><surface n="27" xml:id="page-surface-37"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00037" width="3196px"/></surface><surface n="28" xml:id="page-surface-38"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00038" width="3196px"/></surface><surface n="29" xml:id="page-surface-39"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00039" width="3196px"/></surface><surface n="30" xml:id="page-surface-40"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00040" width="3196px"/></surface><surface n="31" xml:id="page-surface-41"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00041" width="3196px"/></surface><surface n="32" xml:id="page-surface-42"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00042" width="3196px"/></surface><surface n="33" xml:id="page-surface-43"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00043" width="3196px"/></surface><surface n="34" xml:id="page-surface-44"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00044" width="3196px"/></surface><surface n="35" xml:id="page-surface-45"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00045" width="3196px"/></surface><surface n="36" xml:id="page-surface-46"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00046" width="3196px"/></surface><surface n="37" xml:id="page-surface-47"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00047" width="3196px"/></surface><surface n="38" xml:id="page-surface-48"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00048" width="3196px"/></surface><surface n="39" xml:id="page-surface-49"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00049" width="3196px"/></surface><surface n="40" xml:id="page-surface-50"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00050" width="3196px"/></surface><surface n="41" xml:id="page-surface-51"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00051" width="3196px"/></surface><surface n="42" xml:id="page-surface-52"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00052" width="3196px"/></surface><surface n="43" xml:id="page-surface-53"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00053" width="3196px"/></surface><surface n="44" xml:id="page-surface-54"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00054" width="3196px"/></surface><surface n="45" xml:id="page-surface-55"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00055" width="3196px"/></surface><surface n="46" xml:id="page-surface-56"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00056" width="3196px"/></surface><surface n="47" xml:id="page-surface-57"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00057" width="3196px"/></surface><surface n="48" xml:id="page-surface-58"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00058" width="3196px"/></surface><surface n="49" xml:id="page-surface-59"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00059" width="3196px"/></surface><surface n="50" xml:id="page-surface-60"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00060" width="3196px"/></surface><surface n="51" xml:id="page-surface-61"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00061" width="3196px"/></surface><surface n="52" xml:id="page-surface-62"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00062" width="3196px"/></surface><surface n="55" xml:id="page-surface-63"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00063" width="3196px"/></surface><surface n="56" xml:id="page-surface-64"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00064" width="3196px"/></surface><surface n="57" xml:id="page-surface-65"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00065" width="3196px"/></surface><surface n="58" xml:id="page-surface-66"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00066" width="3196px"/></surface><surface n="59" xml:id="page-surface-67"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00067" width="3196px"/></surface><surface n="60" xml:id="page-surface-68"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00068" width="3196px"/></surface><surface n="61" xml:id="page-surface-69"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00069" width="3196px"/></surface><surface n="62" xml:id="page-surface-70"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00070" width="3196px"/></surface><surface n="63" xml:id="page-surface-71"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00071" width="3196px"/></surface><surface n="64" xml:id="page-surface-72"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00072" width="3196px"/></surface><surface n="65" xml:id="page-surface-73"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00073" width="3196px"/></surface><surface n="66" xml:id="page-surface-74"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00074" width="3196px"/></surface><surface n="67" xml:id="page-surface-75"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00075" width="3196px"/></surface><surface n="68" xml:id="page-surface-76"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00076" width="3196px"/></surface><surface n="69" xml:id="page-surface-77"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00077" width="3196px"/></surface><surface n="70" xml:id="page-surface-78"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00078" width="3196px"/></surface><surface n="71" xml:id="page-surface-79"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00079" width="3196px"/></surface><surface n="72" xml:id="page-surface-80"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00080" width="3196px"/></surface><surface n="73" xml:id="page-surface-81"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00081" width="3196px"/></surface><surface n="74" xml:id="page-surface-82"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00082" width="3196px"/></surface><surface n="75" xml:id="page-surface-83"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00083" width="3196px"/></surface><surface n="76" xml:id="page-surface-84"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00084" width="3196px"/></surface><surface n="77" xml:id="page-surface-85"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00085" width="3196px"/></surface><surface n="78" xml:id="page-surface-86"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00086" width="3196px"/></surface><surface n="79" xml:id="page-surface-87"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00087" width="3196px"/></surface><surface n="80" xml:id="page-surface-88"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00088" width="3196px"/></surface><surface n="81" xml:id="page-surface-89"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00089" width="3196px"/></surface><surface n="82" xml:id="page-surface-90"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00090" width="3196px"/></surface><surface n="83" xml:id="page-surface-91"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00091" width="3196px"/></surface><surface n="84" xml:id="page-surface-92"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00092" width="3196px"/></surface><surface n="85" xml:id="page-surface-93"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00093" width="3196px"/></surface><surface n="86" xml:id="page-surface-94"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00094" width="3196px"/></surface><surface n="87" xml:id="page-surface-95"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00095" width="3196px"/></surface><surface n="88" xml:id="page-surface-96"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00096" width="3196px"/></surface><surface n="89" xml:id="page-surface-97"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00097" width="3196px"/></surface><surface n="90" xml:id="page-surface-98"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00098" width="3196px"/></surface><surface n="91" xml:id="page-surface-99"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00099" width="3196px"/></surface><surface n="92" xml:id="page-surface-100"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00100" width="3196px"/></surface><surface n="93" xml:id="page-surface-101"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00101" width="3196px"/></surface><surface n="94" xml:id="page-surface-102"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00102" width="3196px"/></surface><surface n="95" xml:id="page-surface-103"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00103" width="3196px"/></surface><surface n="96" xml:id="page-surface-104"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00104" width="3196px"/></surface><surface n="97" xml:id="page-surface-105"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00105" width="3196px"/></surface><surface n="98" xml:id="page-surface-106"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00106" width="3196px"/></surface><surface n="99" xml:id="page-surface-107"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00107" width="3196px"/></surface><surface n="100" xml:id="page-surface-108"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00108" width="3196px"/></surface><surface n="101" xml:id="page-surface-109"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00109" width="3196px"/></surface><surface n="102" xml:id="page-surface-110"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00110" width="3196px"/></surface><surface n="103" xml:id="page-surface-111"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00111" width="3196px"/></surface><surface n="104" xml:id="page-surface-112"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00112" width="3196px"/></surface><surface n="105" xml:id="page-surface-113"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00113" width="3196px"/></surface><surface n="106" xml:id="page-surface-114"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00114" width="3196px"/></surface><surface n="107" xml:id="page-surface-115"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00115" width="3196px"/></surface><surface n="108" xml:id="page-surface-116"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00116" width="3196px"/></surface><surface n="109" xml:id="page-surface-117"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00117" width="3196px"/></surface><surface n="110" xml:id="page-surface-118"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00118" width="3196px"/></surface><surface n="111" xml:id="page-surface-119"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00119" width="3196px"/></surface><surface n="112" xml:id="page-surface-120"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00120" width="3196px"/></surface><surface n="113" xml:id="page-surface-121"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00121" width="3196px"/></surface><surface n="114" xml:id="page-surface-122"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00122" width="3196px"/></surface><surface n="115" xml:id="page-surface-123"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00123" width="3196px"/></surface><surface n="116" xml:id="page-surface-124"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00124" width="3196px"/></surface><surface n="117" xml:id="page-surface-125"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00125" width="3196px"/></surface><surface n="118" xml:id="page-surface-126"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00126" width="3196px"/></surface><surface n="119" xml:id="page-surface-127"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00127" width="3196px"/></surface><surface n="120" xml:id="page-surface-128"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00128" width="3252px"/></surface><surface n="121" xml:id="page-surface-129"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00129" width="3196px"/></surface><surface n="122" xml:id="page-surface-130"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00130" width="3196px"/></surface><surface n="123" xml:id="page-surface-131"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00131" width="3196px"/></surface><surface n="124" xml:id="page-surface-132"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00132" width="3252px"/></surface><surface n="125" xml:id="page-surface-133"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00133" width="3196px"/></surface><surface n="126" xml:id="page-surface-134"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00134" width="3196px"/></surface><surface n="127" xml:id="page-surface-135"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00135" width="3196px"/></surface><surface n="128" xml:id="page-surface-136"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00136" width="3196px"/></surface><surface n="129" xml:id="page-surface-137"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00137" width="3196px"/></surface><surface n="130" xml:id="page-surface-138"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00138" width="3196px"/></surface><surface n="131" xml:id="page-surface-139"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00139" width="3196px"/></surface><surface n="132" xml:id="page-surface-140"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00140" width="3196px"/></surface><surface n="133" xml:id="page-surface-141"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00141" width="3196px"/></surface><surface n="134" xml:id="page-surface-142"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00142" width="3196px"/></surface><surface n="135" xml:id="page-surface-143"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00143" width="3196px"/></surface><surface n="136" xml:id="page-surface-144"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00144" width="3196px"/></surface><surface n="137" xml:id="page-surface-145"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00145" width="3196px"/></surface><surface n="138" xml:id="page-surface-146"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00146" width="3196px"/></surface><surface n="139" xml:id="page-surface-147"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00147" width="3196px"/></surface><surface n="140" xml:id="page-surface-148"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00148" width="3196px"/></surface><surface n="141" xml:id="page-surface-149"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00149" width="3196px"/></surface><surface n="142" xml:id="page-surface-150"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00150" width="3196px"/></surface><surface n="143" xml:id="page-surface-151"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00151" width="3196px"/></surface><surface n="144" xml:id="page-surface-152"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00152" width="3196px"/></surface><surface n="145" xml:id="page-surface-153"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00153" width="3196px"/></surface><surface n="146" xml:id="page-surface-154"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00154" width="3196px"/></surface><surface n="147" xml:id="page-surface-155"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00155" width="3196px"/></surface><surface n="148" xml:id="page-surface-156"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00156" width="3196px"/></surface><surface n="149" xml:id="page-surface-157"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00157" width="3196px"/></surface><surface n="150" xml:id="page-surface-158"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00158" width="3196px"/></surface><surface n="151" xml:id="page-surface-159"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00159" width="3196px"/></surface><surface n="152" xml:id="page-surface-160"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00160" width="3196px"/></surface><surface n="153" xml:id="page-surface-161"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00161" width="3196px"/></surface><surface n="154" xml:id="page-surface-162"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00162" width="3196px"/></surface><surface n="155" xml:id="page-surface-163"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00163" width="3196px"/></surface><surface n="156" xml:id="page-surface-164"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00164" width="3196px"/></surface><surface n="157" xml:id="page-surface-165"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00165" width="3196px"/></surface><surface n="158" xml:id="page-surface-166"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00166" width="3196px"/></surface><surface n="159" xml:id="page-surface-167"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00167" width="3196px"/></surface><surface n="160" xml:id="page-surface-168"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00168" width="3196px"/></surface><surface n="161" xml:id="page-surface-169"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00169" width="3196px"/></surface><surface n="162" xml:id="page-surface-170"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00170" width="3196px"/></surface><surface n="163" xml:id="page-surface-171"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00171" width="3196px"/></surface><surface n="164" xml:id="page-surface-172"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00172" width="3196px"/></surface><surface n="165" xml:id="page-surface-173"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00173" width="3196px"/></surface><surface n="166" xml:id="page-surface-174"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00174" width="3196px"/></surface><surface n="167" xml:id="page-surface-175"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00175" width="3196px"/></surface><surface n="168" xml:id="page-surface-176"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00176" width="3196px"/></surface><surface n="169" xml:id="page-surface-177"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00177" width="3196px"/></surface><surface n="170" xml:id="page-surface-178"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00178" width="3196px"/></surface><surface n="171" xml:id="page-surface-179"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00179" width="3196px"/></surface><surface n="172" xml:id="page-surface-180"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00180" width="3196px"/></surface><surface n="173" xml:id="page-surface-181"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00181" width="3196px"/></surface><surface n="174" xml:id="page-surface-182"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00182" width="3196px"/></surface><surface n="175" xml:id="page-surface-183"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00183" width="3196px"/></surface><surface n="176" xml:id="page-surface-184"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00184" width="3196px"/></surface><surface n="177" xml:id="page-surface-185"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00185" width="3196px"/></surface><surface n="178" xml:id="page-surface-186"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00186" width="3196px"/></surface><surface n="179" xml:id="page-surface-187"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00187" width="3196px"/></surface><surface n="180" xml:id="page-surface-188"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00188" width="3196px"/></surface><surface n="181" xml:id="page-surface-189"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00189" width="3196px"/></surface><surface n="182" xml:id="page-surface-190"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00190" width="3196px"/></surface><surface n="183" xml:id="page-surface-191"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00191" width="3196px"/></surface><surface n="184" xml:id="page-surface-192"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00192" width="3196px"/></surface><surface n="185" xml:id="page-surface-193"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00193" width="3196px"/></surface><surface n="186" xml:id="page-surface-194"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00194" width="3196px"/></surface><surface n="187" xml:id="page-surface-195"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00195" width="3196px"/></surface><surface n="188" xml:id="page-surface-196"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00196" width="3196px"/></surface><surface n="189" xml:id="page-surface-197"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00197" width="3196px"/></surface><surface n="190" xml:id="page-surface-198"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00198" width="3196px"/></surface><surface n="191" xml:id="page-surface-199"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00199" width="3196px"/></surface><surface n="192" xml:id="page-surface-200"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00200" width="3196px"/></surface><surface n="193" xml:id="page-surface-201"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00201" width="3196px"/></surface><surface n="194" xml:id="page-surface-202"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00202" width="3196px"/></surface><surface n="1r" xml:id="page-surface-203"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00203" width="3196px"/></surface><surface n="1v" xml:id="page-surface-204"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00204" width="3196px"/></surface><surface n="2r" xml:id="page-surface-205"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00205" width="3196px"/></surface><surface n="2v" xml:id="page-surface-206"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00206" width="3196px"/></surface><surface n="3r" xml:id="page-surface-207"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00207" width="3196px"/></surface><surface n="3v" xml:id="page-surface-208"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00208" width="3196px"/></surface><surface n="4r" xml:id="page-surface-209"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00209" width="3196px"/></surface><surface n="4v" xml:id="page-surface-210"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00210" width="3196px"/></surface><surface n="5r" xml:id="page-surface-211"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00211" width="3196px"/></surface><surface n="5v" xml:id="page-surface-212"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00212" width="3196px"/></surface><surface n="6r" xml:id="page-surface-213"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00213" width="3196px"/></surface><surface n="6v" xml:id="page-surface-214"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00214" width="3196px"/></surface><surface n="7r" xml:id="page-surface-215"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00215" width="3196px"/></surface><surface n="7v" xml:id="page-surface-216"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00216" width="3196px"/></surface><surface n="8r" xml:id="page-surface-217"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00217" width="3196px"/></surface><surface n="8v" xml:id="page-surface-218"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00218" width="3196px"/></surface><surface n="9r" xml:id="page-surface-219"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00219" width="3196px"/></surface><surface n="9v" xml:id="page-surface-220"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00220" width="3196px"/></surface><surface n="10r" xml:id="page-surface-221"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00221" width="3196px"/></surface><surface n="10v" xml:id="page-surface-222"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00222" width="3196px"/></surface><surface n="11r" xml:id="page-surface-223"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00223" width="3196px"/></surface><surface n="11v" xml:id="page-surface-224"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00224" width="3196px"/></surface><surface n="12r" xml:id="page-surface-225"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00225" width="3196px"/></surface><surface n="12v" xml:id="page-surface-226"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00226" width="3196px"/></surface><surface n="13r" xml:id="page-surface-227"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00227" width="3196px"/></surface><surface n="13v" xml:id="page-surface-228"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00228" width="3196px"/></surface><surface n="14r" xml:id="page-surface-229"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00229" width="3196px"/></surface><surface n="14v" xml:id="page-surface-230"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00230" width="3196px"/></surface><surface n="15r" xml:id="page-surface-231"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00231" width="3196px"/></surface><surface n="15v" xml:id="page-surface-232"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00232" width="3196px"/></surface><surface n="16r" xml:id="page-surface-233"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00233" width="3196px"/></surface><surface n="16v" xml:id="page-surface-234"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00234" width="3196px"/></surface><surface n="17r" xml:id="page-surface-235"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00235" width="3196px"/></surface><surface n="17v" xml:id="page-surface-236"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00236" width="3196px"/></surface><surface n="18r" xml:id="page-surface-237"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00237" width="3196px"/></surface><surface n="18v" xml:id="page-surface-238"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00238" width="3196px"/></surface><surface n="[v] recto" xml:id="page-surface-239"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00239" width="3196px"/></surface><surface n="[v] verso" xml:id="page-surface-240"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00240" width="3196px"/></surface><surface n="[vi] recto" xml:id="page-surface-241"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00241" width="3196px"/></surface><surface n="[vi] verso" xml:id="page-surface-242"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00242" width="3196px"/></surface><surface n="[vii] recto" xml:id="page-surface-243"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00243" width="3196px"/></surface><surface n="[vii] verso" xml:id="page-surface-244"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00244" width="3196px"/></surface><surface n="[viii] recto" xml:id="page-surface-245"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00245" width="3196px"/></surface><surface n="[viii] verso" xml:id="page-surface-246"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00246" width="3196px"/></surface><surface n="rear cover, inner" xml:id="page-surface-247"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00247" width="3252px"/></surface><surface n="rear cover, outer" xml:id="page-surface-248"><graphic decls="#downloadImageRights #download" height="4672px" rend="portrait" url="MS-TRINITY-COLLEGE-R-00014-00044-000-00248" width="3252px"/></surface></facsimile><text><body><div><pb facs="#page-surface-1" n="front cover, outer" xml:id="page-pb-1"/><pb facs="#page-surface-2" n="front cover, inner" xml:id="page-pb-2"/><pb facs="#page-surface-3" n="[i] recto" xml:id="page-pb-3"/><pb facs="#page-surface-4" n="[i] verso" xml:id="page-pb-4"/><pb facs="#page-surface-5" n="[ii] ecto" xml:id="page-pb-5"/><pb facs="#page-surface-6" n="[ii] verso" xml:id="page-pb-6"/><pb facs="#page-surface-7" n="[iii] recto" xml:id="page-pb-7"/><pb facs="#page-surface-8" n="[iii] verso" xml:id="page-pb-8"/><pb facs="#page-surface-9" n="[iv] recto" xml:id="page-pb-9"/><pb facs="#page-surface-10" n="[iv] verso" xml:id="page-pb-10"/><pb facs="#page-surface-11" n="1" xml:id="page-pb-11"/><pb facs="#page-surface-12" n="2" xml:id="page-pb-12"/><pb facs="#page-surface-13" n="3" xml:id="page-pb-13"/><pb facs="#page-surface-14" n="4" xml:id="page-pb-14"/><pb facs="#page-surface-15" n="5" xml:id="page-pb-15"/><pb facs="#page-surface-16" n="6" xml:id="page-pb-16"/><pb facs="#page-surface-17" n="7" xml:id="page-pb-17"/><pb facs="#page-surface-18" n="8" xml:id="page-pb-18"/><pb facs="#page-surface-19" n="9" xml:id="page-pb-19"/><pb facs="#page-surface-20" n="10" xml:id="page-pb-20"/><pb facs="#page-surface-21" n="11" xml:id="page-pb-21"/><pb facs="#page-surface-22" n="12" xml:id="page-pb-22"/><pb facs="#page-surface-23" n="13" xml:id="page-pb-23"/><pb facs="#page-surface-24" n="14" xml:id="page-pb-24"/><pb facs="#page-surface-25" n="15" xml:id="page-pb-25"/><pb facs="#page-surface-26" n="16" xml:id="page-pb-26"/><pb facs="#page-surface-27" n="17" xml:id="page-pb-27"/><pb facs="#page-surface-28" n="18" xml:id="page-pb-28"/><pb facs="#page-surface-29" n="19" xml:id="page-pb-29"/><pb facs="#page-surface-30" n="20" xml:id="page-pb-30"/><pb facs="#page-surface-31" n="21" xml:id="page-pb-31"/><pb facs="#page-surface-32" n="22" xml:id="page-pb-32"/><pb facs="#page-surface-33" n="23" xml:id="page-pb-33"/><pb facs="#page-surface-34" n="24" xml:id="page-pb-34"/><pb facs="#page-surface-35" n="25" xml:id="page-pb-35"/><pb facs="#page-surface-36" n="26" xml:id="page-pb-36"/><pb facs="#page-surface-37" n="27" xml:id="page-pb-37"/><pb facs="#page-surface-38" n="28" xml:id="page-pb-38"/><pb facs="#page-surface-39" n="29" xml:id="page-pb-39"/><pb facs="#page-surface-40" n="30" xml:id="page-pb-40"/><pb facs="#page-surface-41" n="31" xml:id="page-pb-41"/><pb facs="#page-surface-42" n="32" xml:id="page-pb-42"/><pb facs="#page-surface-43" n="33" xml:id="page-pb-43"/><pb facs="#page-surface-44" n="34" xml:id="page-pb-44"/><pb facs="#page-surface-45" n="35" xml:id="page-pb-45"/><pb facs="#page-surface-46" n="36" xml:id="page-pb-46"/><pb facs="#page-surface-47" n="37" xml:id="page-pb-47"/><pb facs="#page-surface-48" n="38" xml:id="page-pb-48"/><pb facs="#page-surface-49" n="39" xml:id="page-pb-49"/><pb facs="#page-surface-50" n="40" xml:id="page-pb-50"/><pb facs="#page-surface-51" n="41" xml:id="page-pb-51"/><pb facs="#page-surface-52" n="42" xml:id="page-pb-52"/><pb facs="#page-surface-53" n="43" xml:id="page-pb-53"/><pb facs="#page-surface-54" n="44" xml:id="page-pb-54"/><pb facs="#page-surface-55" n="45" xml:id="page-pb-55"/><pb facs="#page-surface-56" n="46" xml:id="page-pb-56"/><pb facs="#page-surface-57" n="47" xml:id="page-pb-57"/><pb facs="#page-surface-58" n="48" xml:id="page-pb-58"/><pb facs="#page-surface-59" n="49" xml:id="page-pb-59"/><pb facs="#page-surface-60" n="50" xml:id="page-pb-60"/><pb facs="#page-surface-61" n="51" xml:id="page-pb-61"/><pb facs="#page-surface-62" n="52" xml:id="page-pb-62"/><pb facs="#page-surface-63" n="55" xml:id="page-pb-63"/><pb facs="#page-surface-64" n="56" xml:id="page-pb-64"/><pb facs="#page-surface-65" n="57" xml:id="page-pb-65"/><pb facs="#page-surface-66" n="58" xml:id="page-pb-66"/><pb facs="#page-surface-67" n="59" xml:id="page-pb-67"/><pb facs="#page-surface-68" n="60" xml:id="page-pb-68"/><pb facs="#page-surface-69" n="61" xml:id="page-pb-69"/><pb facs="#page-surface-70" n="62" xml:id="page-pb-70"/><pb facs="#page-surface-71" n="63" xml:id="page-pb-71"/><pb facs="#page-surface-72" n="64" xml:id="page-pb-72"/><pb facs="#page-surface-73" n="65" xml:id="page-pb-73"/><pb facs="#page-surface-74" n="66" xml:id="page-pb-74"/><pb facs="#page-surface-75" n="67" xml:id="page-pb-75"/><pb facs="#page-surface-76" n="68" xml:id="page-pb-76"/><pb facs="#page-surface-77" n="69" xml:id="page-pb-77"/><pb facs="#page-surface-78" n="70" xml:id="page-pb-78"/><pb facs="#page-surface-79" n="71" xml:id="page-pb-79"/><pb facs="#page-surface-80" n="72" xml:id="page-pb-80"/><pb facs="#page-surface-81" n="73" xml:id="page-pb-81"/><pb facs="#page-surface-82" n="74" xml:id="page-pb-82"/><pb facs="#page-surface-83" n="75" xml:id="page-pb-83"/><pb facs="#page-surface-84" n="76" xml:id="page-pb-84"/><pb facs="#page-surface-85" n="77" xml:id="page-pb-85"/><pb facs="#page-surface-86" n="78" xml:id="page-pb-86"/><pb facs="#page-surface-87" n="79" xml:id="page-pb-87"/><pb facs="#page-surface-88" n="80" xml:id="page-pb-88"/><pb facs="#page-surface-89" n="81" xml:id="page-pb-89"/><pb facs="#page-surface-90" n="82" xml:id="page-pb-90"/><pb facs="#page-surface-91" n="83" xml:id="page-pb-91"/><pb facs="#page-surface-92" n="84" xml:id="page-pb-92"/><pb facs="#page-surface-93" n="85" xml:id="page-pb-93"/><pb facs="#page-surface-94" n="86" xml:id="page-pb-94"/><pb facs="#page-surface-95" n="87" xml:id="page-pb-95"/><pb facs="#page-surface-96" n="88" xml:id="page-pb-96"/><pb facs="#page-surface-97" n="89" xml:id="page-pb-97"/><pb facs="#page-surface-98" n="90" xml:id="page-pb-98"/><pb facs="#page-surface-99" n="91" xml:id="page-pb-99"/><pb facs="#page-surface-100" n="92" xml:id="page-pb-100"/><pb facs="#page-surface-101" n="93" xml:id="page-pb-101"/><pb facs="#page-surface-102" n="94" xml:id="page-pb-102"/><pb facs="#page-surface-103" n="95" xml:id="page-pb-103"/><pb facs="#page-surface-104" n="96" xml:id="page-pb-104"/><pb facs="#page-surface-105" n="97" xml:id="page-pb-105"/><pb facs="#page-surface-106" n="98" xml:id="page-pb-106"/><pb facs="#page-surface-107" n="99" xml:id="page-pb-107"/><pb facs="#page-surface-108" n="100" xml:id="page-pb-108"/><pb facs="#page-surface-109" n="101" xml:id="page-pb-109"/><pb facs="#page-surface-110" n="102" xml:id="page-pb-110"/><pb facs="#page-surface-111" n="103" xml:id="page-pb-111"/><pb facs="#page-surface-112" n="104" xml:id="page-pb-112"/><pb facs="#page-surface-113" n="105" xml:id="page-pb-113"/><pb facs="#page-surface-114" n="106" xml:id="page-pb-114"/><pb facs="#page-surface-115" n="107" xml:id="page-pb-115"/><pb facs="#page-surface-116" n="108" xml:id="page-pb-116"/><pb facs="#page-surface-117" n="109" xml:id="page-pb-117"/><pb facs="#page-surface-118" n="110" xml:id="page-pb-118"/><pb facs="#page-surface-119" n="111" xml:id="page-pb-119"/><pb facs="#page-surface-120" n="112" xml:id="page-pb-120"/><pb facs="#page-surface-121" n="113" xml:id="page-pb-121"/><pb facs="#page-surface-122" n="114" xml:id="page-pb-122"/><pb facs="#page-surface-123" n="115" xml:id="page-pb-123"/><pb facs="#page-surface-124" n="116" xml:id="page-pb-124"/><pb facs="#page-surface-125" n="117" xml:id="page-pb-125"/><pb facs="#page-surface-126" n="118" xml:id="page-pb-126"/><pb facs="#page-surface-127" n="119" xml:id="page-pb-127"/><pb facs="#page-surface-128" n="120" xml:id="page-pb-128"/><pb facs="#page-surface-129" n="121" xml:id="page-pb-129"/><pb facs="#page-surface-130" n="122" xml:id="page-pb-130"/><pb facs="#page-surface-131" n="123" xml:id="page-pb-131"/><pb facs="#page-surface-132" n="124" xml:id="page-pb-132"/><pb facs="#page-surface-133" n="125" xml:id="page-pb-133"/><pb facs="#page-surface-134" n="126" xml:id="page-pb-134"/><pb facs="#page-surface-135" n="127" xml:id="page-pb-135"/><pb facs="#page-surface-136" n="128" xml:id="page-pb-136"/><pb facs="#page-surface-137" n="129" xml:id="page-pb-137"/><pb facs="#page-surface-138" n="130" xml:id="page-pb-138"/><pb facs="#page-surface-139" n="131" xml:id="page-pb-139"/><pb facs="#page-surface-140" n="132" xml:id="page-pb-140"/><pb facs="#page-surface-141" n="133" xml:id="page-pb-141"/><pb facs="#page-surface-142" n="134" xml:id="page-pb-142"/><pb facs="#page-surface-143" n="135" xml:id="page-pb-143"/><pb facs="#page-surface-144" n="136" xml:id="page-pb-144"/><pb facs="#page-surface-145" n="137" xml:id="page-pb-145"/><pb facs="#page-surface-146" n="138" xml:id="page-pb-146"/><pb facs="#page-surface-147" n="139" xml:id="page-pb-147"/><pb facs="#page-surface-148" n="140" xml:id="page-pb-148"/><pb facs="#page-surface-149" n="141" xml:id="page-pb-149"/><pb facs="#page-surface-150" n="142" xml:id="page-pb-150"/><pb facs="#page-surface-151" n="143" xml:id="page-pb-151"/><pb facs="#page-surface-152" n="144" xml:id="page-pb-152"/><pb facs="#page-surface-153" n="145" xml:id="page-pb-153"/><pb facs="#page-surface-154" n="146" xml:id="page-pb-154"/><pb facs="#page-surface-155" n="147" xml:id="page-pb-155"/><pb facs="#page-surface-156" n="148" xml:id="page-pb-156"/><pb facs="#page-surface-157" n="149" xml:id="page-pb-157"/><pb facs="#page-surface-158" n="150" xml:id="page-pb-158"/><pb facs="#page-surface-159" n="151" xml:id="page-pb-159"/><pb facs="#page-surface-160" n="152" xml:id="page-pb-160"/><pb facs="#page-surface-161" n="153" xml:id="page-pb-161"/><pb facs="#page-surface-162" n="154" xml:id="page-pb-162"/><pb facs="#page-surface-163" n="155" xml:id="page-pb-163"/><pb facs="#page-surface-164" n="156" xml:id="page-pb-164"/><pb facs="#page-surface-165" n="157" xml:id="page-pb-165"/><pb facs="#page-surface-166" n="158" xml:id="page-pb-166"/><pb facs="#page-surface-167" n="159" xml:id="page-pb-167"/><pb facs="#page-surface-168" n="160" xml:id="page-pb-168"/><pb facs="#page-surface-169" n="161" xml:id="page-pb-169"/><pb facs="#page-surface-170" n="162" xml:id="page-pb-170"/><pb facs="#page-surface-171" n="163" xml:id="page-pb-171"/><pb facs="#page-surface-172" n="164" xml:id="page-pb-172"/><pb facs="#page-surface-173" n="165" xml:id="page-pb-173"/><pb facs="#page-surface-174" n="166" xml:id="page-pb-174"/><pb facs="#page-surface-175" n="167" xml:id="page-pb-175"/><pb facs="#page-surface-176" n="168" xml:id="page-pb-176"/><pb facs="#page-surface-177" n="169" xml:id="page-pb-177"/><pb facs="#page-surface-178" n="170" xml:id="page-pb-178"/><pb facs="#page-surface-179" n="171" xml:id="page-pb-179"/><pb facs="#page-surface-180" n="172" xml:id="page-pb-180"/><pb facs="#page-surface-181" n="173" xml:id="page-pb-181"/><pb facs="#page-surface-182" n="174" xml:id="page-pb-182"/><pb facs="#page-surface-183" n="175" xml:id="page-pb-183"/><pb facs="#page-surface-184" n="176" xml:id="page-pb-184"/><pb facs="#page-surface-185" n="177" xml:id="page-pb-185"/><pb facs="#page-surface-186" n="178" xml:id="page-pb-186"/><pb facs="#page-surface-187" n="179" xml:id="page-pb-187"/><pb facs="#page-surface-188" n="180" xml:id="page-pb-188"/><pb facs="#page-surface-189" n="181" xml:id="page-pb-189"/><pb facs="#page-surface-190" n="182" xml:id="page-pb-190"/><pb facs="#page-surface-191" n="183" xml:id="page-pb-191"/><pb facs="#page-surface-192" n="184" xml:id="page-pb-192"/><pb facs="#page-surface-193" n="185" xml:id="page-pb-193"/><pb facs="#page-surface-194" n="186" xml:id="page-pb-194"/><pb facs="#page-surface-195" n="187" xml:id="page-pb-195"/><pb facs="#page-surface-196" n="188" xml:id="page-pb-196"/><pb facs="#page-surface-197" n="189" xml:id="page-pb-197"/><pb facs="#page-surface-198" n="190" xml:id="page-pb-198"/><pb facs="#page-surface-199" n="191" xml:id="page-pb-199"/><pb facs="#page-surface-200" n="192" xml:id="page-pb-200"/><pb facs="#page-surface-201" n="193" xml:id="page-pb-201"/><pb facs="#page-surface-202" n="194" xml:id="page-pb-202"/><pb facs="#page-surface-203" n="1r" xml:id="page-pb-203"/><pb facs="#page-surface-204" n="1v" xml:id="page-pb-204"/><pb facs="#page-surface-205" n="2r" xml:id="page-pb-205"/><pb facs="#page-surface-206" n="2v" xml:id="page-pb-206"/><pb facs="#page-surface-207" n="3r" xml:id="page-pb-207"/><pb facs="#page-surface-208" n="3v" xml:id="page-pb-208"/><pb facs="#page-surface-209" n="4r" xml:id="page-pb-209"/><pb facs="#page-surface-210" n="4v" xml:id="page-pb-210"/><pb facs="#page-surface-211" n="5r" xml:id="page-pb-211"/><pb facs="#page-surface-212" n="5v" xml:id="page-pb-212"/><pb facs="#page-surface-213" n="6r" xml:id="page-pb-213"/><pb facs="#page-surface-214" n="6v" xml:id="page-pb-214"/><pb facs="#page-surface-215" n="7r" xml:id="page-pb-215"/><pb facs="#page-surface-216" n="7v" xml:id="page-pb-216"/><pb facs="#page-surface-217" n="8r" xml:id="page-pb-217"/><pb facs="#page-surface-218" n="8v" xml:id="page-pb-218"/><pb facs="#page-surface-219" n="9r" xml:id="page-pb-219"/><pb facs="#page-surface-220" n="9v" xml:id="page-pb-220"/><pb facs="#page-surface-221" n="10r" xml:id="page-pb-221"/><pb facs="#page-surface-222" n="10v" xml:id="page-pb-222"/><pb facs="#page-surface-223" n="11r" xml:id="page-pb-223"/><pb facs="#page-surface-224" n="11v" xml:id="page-pb-224"/><pb facs="#page-surface-225" n="12r" xml:id="page-pb-225"/><pb facs="#page-surface-226" n="12v" xml:id="page-pb-226"/><pb facs="#page-surface-227" n="13r" xml:id="page-pb-227"/><pb facs="#page-surface-228" n="13v" xml:id="page-pb-228"/><pb facs="#page-surface-229" n="14r" xml:id="page-pb-229"/><pb facs="#page-surface-230" n="14v" xml:id="page-pb-230"/><pb facs="#page-surface-231" n="15r" xml:id="page-pb-231"/><pb facs="#page-surface-232" n="15v" xml:id="page-pb-232"/><pb facs="#page-surface-233" n="16r" xml:id="page-pb-233"/><pb facs="#page-surface-234" n="16v" xml:id="page-pb-234"/><pb facs="#page-surface-235" n="17r" xml:id="page-pb-235"/><pb facs="#page-surface-236" n="17v" xml:id="page-pb-236"/><pb facs="#page-surface-237" n="18r" xml:id="page-pb-237"/><pb facs="#page-surface-238" n="18v" xml:id="page-pb-238"/><pb facs="#page-surface-239" n="[v] recto" xml:id="page-pb-239"/><pb facs="#page-surface-240" n="[v] verso" xml:id="page-pb-240"/><pb facs="#page-surface-241" n="[vi] recto" xml:id="page-pb-241"/><pb facs="#page-surface-242" n="[vi] verso" xml:id="page-pb-242"/><pb facs="#page-surface-243" n="[vii] recto" xml:id="page-pb-243"/><pb facs="#page-surface-244" n="[vii] verso" xml:id="page-pb-244"/><pb facs="#page-surface-245" n="[viii] recto" xml:id="page-pb-245"/><pb facs="#page-surface-246" n="[viii] verso" xml:id="page-pb-246"/><pb facs="#page-surface-247" n="rear cover, inner" xml:id="page-pb-247"/><pb facs="#page-surface-248" n="rear cover, outer" xml:id="page-pb-248"/></div></body></text></TEI>

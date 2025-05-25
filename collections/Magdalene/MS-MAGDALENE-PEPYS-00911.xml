@@ -1,0 +1,1615 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, Magdalene College, MS Pepys 911</title>
+                <funder>Wellcome</funder>
+                <principal>James Freeman</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+            <availability xml:id="watermark" status="restricted"><licence>Magdalene College, Cambridge (CC BY-NC 4.0)</licence></availability></publicationStmt>
+
+            <sourceDesc>
+                <msDesc xml:id="MS-MAGDALENE-PEPYS-00911" xml:lang="en">
+
+                    <msIdentifier>
+                        <institution>Magdalene College, Cambridge</institution>
+                        <repository>Pepys Library</repository>
+                        <collection>Medieval Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, Magdalene College, MS Pepys 911</idno>
+                    </msIdentifier>
+
+                    <head>A 'Sortes' manuscript including the Experimentarius attributed to Bernardus Silvestris</head>
+
+                    <msContents>
+                        <summary>
+                            <seg type="para">Cambridge, Magdalene College, MS Pepys 911 (hereafter Pepys 911) is a beautifully illustrated example of
+                                a type of medieval book known as a '<hi rend="italic">sortes</hi>' manuscript, essentially a genre of medieval book
+                                concerned with various aspects of what we now describe as divination, prognostication, and fortune-telling. <hi rend="italic">Sortes</hi> manuscripts seem to have been quite a popular genre of medieval book, and among those
+                                that were made in medieval north-western Europe the majority of the surviving <hi rend="italic">sortes</hi>
+                                manuscripts contain various combinations of a core group of texts attributed (spuriously) to illustrious Classical
+                                figures such as Pythagoras and Cicero.</seg>
+                            <seg type="para">The various <hi rend="italic">sortes</hi> texts popular in medieval north-western Europe follow a similar
+                                pattern for use. They typically begin with a list of questions, for example: Should the reader get married? Will a
+                                pregnant woman give birth to a boy or a girl? Or will a missing item be found? The reader is then guided into choosing
+                                a random number (typically between 1-10) by throwing dice or turning a wheel or another specified method. That number
+                                directs the reader to a numbered table or list of answers. Some <hi rend="italic">sortes</hi> texts require readers to
+                                chain questions together or to add up several randomly chosen numbers, but the question -&gt; random number -&gt; answer
+                                format is consistent across the majority of the surviving <hi rend="italic">sortes</hi> texts. </seg>
+                            <seg type="para"> The <hi rend="italic">sortes</hi> genre of texts seems to have been known in western Europe since late
+                                Antiquity, but it experienced a renewed popularity north-western Europe in the 13th century through newly available
+                                Latin translations of Hebrew and Arabic <hi rend="italic">sortes</hi> texts (Iafrate, 2015). The 13th-century revival
+                                of interest in <hi rend="italic">sortes</hi> texts in north-western Europe is typically discussed in relation to the
+                                oldest surviving example of the genre, a manuscript now at the Bodleian Library: <bibl><ref target="https://medieval.bodleian.ox.ac.uk/catalog/manuscript_317">Oxford, Bodleian Library, MS Ashmole
+                                        304</ref>
+                                </bibl> (hereafter Ashmole 304). Ashmole 304 was copied by the writer, scribe and illustrator <name key="person_v34451801">
+                                    <persName type="display">Matthew Paris (d. 1259)</persName>
+                                    <persName type="standard">Matthew Paris</persName>
+                                </name> a monk belonging to the Benedictine Abbey of <name key="org_v148894515"><orgName type="display">St
+                                        Albans</orgName><orgName type="standard">St. Albans Abbey</orgName></name> in England. Neil Ker seems to have
+                                been the first scholar to notice that Pepys 911 is closely related to Ashmole 304, since both contain copies of some
+                                of the same <hi rend="italic">sortes</hi> texts and they have very similar programmes of illustration. Pepys 911 was
+                                copied in England in the second half of the 13th century, and such is the similarity of the text and illustrations
+                                between the two manuscripts that Charles Burnett in his study of the manuscripts containing the 'Experimentarius'
+                                attributed to Bernardus Silvestris suggested that this manuscript (Burnett's MS 'B') and Ashmole 304 (Burnett's MS
+                                'A') are 'sister' manuscripts copied from the same (lost) exemplar, and placed them in a 'St Albans group'. There is
+                                no suggestion that Matthew Paris was either the scribe or the artist of Pepys 911, and although both manuscripts
+                                contain a shared core of texts, they each preserve <hi rend="italic">sortes</hi> texts not found in the other;
+                                nevertheless the shared texts (and the shared organisation of those texts) and the similarity of their illustrations
+                                (compare e.g., the Pythagoras portraits and the portraits of the 12 sons of Jacob in both volumes) demonstrates a
+                                close relationship between the two books. </seg>
+                            <seg type="para"> There are six substantial <hi rend="italic">sortes</hi> texts in MS Pepys 911: <list>
+                                    <item>- The 'Experimentarius' attributed to Bernardus Silvestris and extensively discussed by C. Burnett (<locus from="2r" to="18v">2r-18v</locus>)</item>
+                                    <item>- A <hi rend="italic">sortes</hi> text attributed to Pythagoras called the 'Prenostica pitagorice' in some
+                                        manuscripts (<locus from="19r" to="29v">19r-29v</locus>) - in this manuscript the text is accompanied by an
+                                        author-portrait of Pythagoras ('Pitagoras' in the MS), and the questions and answers in the textare
+                                        accompanied by illustrations of various birds, most with names that probably derive from an original source in
+                                        Hebrew.</item>
+                                    <item>- A <hi rend="italic">sortes</hi> text attributed to the wisdom of the 12 sons of Jacob, the founders of the
+                                        Twelve Tribes of Israel - in this manuscript the text is accompanied by a half-page miniature of Jacob's 12
+                                        sons (<locus from="30r" to="33v">30r-33v</locus>)</item>
+                                    <item>- A metrical <hi rend="italic">sortes</hi> text sometimes attributed to Pythagoras in other copies of the
+                                        text (ff. <locus from="34r" to="44v">34r-44v</locus>)</item>
+                                    <item>- A <hi rend="italic">sortes</hi> text arranged around dialogues between birds and celestial figures,
+                                        accompanied by diagrams describing the relationships of the two groups (ff. <locus from="47r" to="58v">47r-58v</locus> )</item>
+                                    <item>- A <hi rend="italic">sortes</hi> text supposedly based on the wisdom of Socrates accompanied in this
+                                        manuscript by several 'wheel of fortune' diagrams presenting the answers to various questions and topics (ff.
+                                            <locus from="59r" to="68r">59r-68r</locus>)</item>
+                                </list>
+                            </seg>
+                            <seg type="para">
+                                <hi rend="bold">References </hi>
+                                <listBibl>
+                                    <bibl>C. Burnett, 'What is the "Experimentarius" of Bernardus Silvestris? A Preliminary Survey of the Material',
+                                            <hi rend="italic">Archives d'histoire doctrinale et littéraire du Moyen Age</hi> 44 (1977), pp. 79-125,
+                                        esp. n. 42 and pp. 101-102</bibl>
+                                    <bibl>M. Heiles, 'Sortes' in M. Heiduk, K. Herbers, H.-C. Lehner (eds.), <hi rend="italic">Prognostication in the
+                                            Medieval World</hi> (Berlin and Boston, 2021), pp. 960-964</bibl>
+                                    <bibl>A. Iafrate, 'The Workshop of Fortune: St Albans and the <hi rend="italic">sortes</hi> manuscripts', <hi rend="italic">Scriptorium</hi> 66.1 (2012), pp. 55-87</bibl>
+                                    <bibl>A. Iafrate (ed.), <hi rend="italic">Matthieu Paris, Le moine et le hazard: Bodleian Library MS Ashmole
+                                            304</hi>, Textes littéraires du Moyen Âge, 39 / Divinatoria, 5 (Paris, 2015)</bibl>
+                                    <bibl>N. Ker, <hi rend="italic">Medieval Manuscripts in British Libraries</hi>, 5 vols (1977), vol. II, pp.
+                                        233-234</bibl>
+                                </listBibl>
+                            </seg>
+                            <seg type="para">Dr Sarah Gilbert<lb/> Project Cataloguer for Curious Cures in Cambridge Libraries<lb/> Cambridge
+                                University Library</seg>
+                        </summary>
+
+                    </msContents>
+
+
+
+                    <physDesc>
+                        <p>
+                            <secFol>Secundo folio <locus from="3r" to="3r">3r</locus>: Tabula questionum</secFol></p>
+                        <objectDesc>
+                            <supportDesc material="perg">
+                                <support> The majority of the manuscript is formed of parchment leaves. Parchment endleaves reused from another
+                                    manuscript, and paper endleaves added during a (re)-binding of the volume. </support>
+
+                                <extent>
+                                    <seg type="object">Codex: </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="2" type="laterEndleaf">ii</measure> + <measure quantity="3" type="endleaf">3</measure> |
+                                            <measure quantity="67" type="leaf">67</measure> | <measure quantity="1" type="endleaf">1</measure> +
+                                            <measure quantity="1" type="laterEndleaf">i</measure> leaves. </seg>
+                                </extent>
+
+                                <foliation notAfter="2000" notBefore="1900">
+                                    <p>20th century foliation. </p>
+                                    <p> i (left pastedown) - iii + iv-vii | 2-68 | viii + [ix] </p>
+                                    <note>Foliated in pencil in Hindu-Arabic numerals the upper outer corner of each recto. Researchers should note
+                                        the following details about the foliation sequence: <list>
+                                            <item>- The <locus from="inside_left_cover" to="inside_left_cover">left pastedown (i verso)</locus> has
+                                                the folio designation 'i'. </item>
+                                            <item>- The two paper flyleaves at the beginning of the volume are ff. ii-iii. The final paper flyleaf at
+                                                the end of the volume lacks a designation in the manuscript, but has been assigned the designation f.
+                                                [ix] for the preparation of an online catalogue record for this item in April 2023 as part of the
+                                                Curious Cures in Cambridge Libraries Project - the unofficial status of this designation is indicated
+                                                by the [square brackets] around the designation in this catalogue record. </item>
+                                            <item>- There are fragments of another manuscript at either end of the volume, these leaves have the
+                                                designations ff. iv-vi and viii.</item>
+                                            <item>- The foliation sequence for the main Part of the manuscript begins at f. 2, there is no leaf
+                                                designated f. 1.</item>
+                                        </list></note>
+                                </foliation>
+
+
+                                <collation mainStructures="8"><p> The main Part of this manuscript is comprised of quires of mostly 8 leaves,
+                                        surrounded by various endleaves from other sources. The collation of this manuscript can be described as
+                                        follows: <list>
+                                            <item>Two paper flyleaves (ff. ii-iii) + </item>
+                                            <item>Three parchment flyleaves (ff. iv-vii) |</item>
+                                            <item>Quire 1<hi rend="superscript">8-1</hi> (1st leaf cancelled; ff. 2-8)</item>
+                                            <item>Quires 2-3<hi rend="superscript">8</hi> (ff. 9-24)</item>
+                                            <item>Quire 4<hi rend="superscript">6-1</hi> (6th leaf cancelled; ff. 25-29)</item>
+                                            <item>Quire 5<hi rend="superscript">8+1</hi> (a singleton added before the first leaf of the quire; ff.
+                                                30-38)</item>
+                                            <item>Quire 6<hi rend="superscript">8</hi> (ff. 39-46 )</item>
+                                            <item>Quire 7<hi rend="superscript">2</hi> (ff. 47-48)</item>
+                                            <item>Quires 8-9<hi rend="superscript">10</hi> (ff. 49-68) |</item>
+                                            <item>One parchment flyleaf (f. viii) +</item>
+                                            <item>One paper flyleaf (f. [ix])</item>
+                                        </list>
+                                    </p>
+                                    <p>Ker's collation in <hi rend="italic">MMBL: V</hi> describes the 3rd and 6th leaves of Quire 3 as half sheets,
+                                        and the stubs of each may be seen between ff. 19-20 and 22-23. </p>
+                                    <formula>1<hi rend="superscript">8-1</hi> (1st leaf cancelled) 2-3<hi rend="superscript">8</hi> 4<hi rend="superscript">6-1</hi> (6th cancelled) 5<hi rend="superscript">8+1</hi> (a singleton added before the
+                                        first leaf) 6<hi rend="superscript">8</hi> 7<hi rend="superscript">2</hi> 8-9<hi rend="superscript">10</hi></formula>
+                                    <signatures type="leaf"><p>No leaf signatures common to the whole volume. </p></signatures>
+                                    <signatures type="quire"><p>Quires are numbered in pencil in Hindu-Arabic numerals in the lower outer corner of
+                                            the first recto of each quire. The first visible number in this quire numbering sequence is a '4' visible
+                                            on f. 25r, the first leaf of Quire 4.</p></signatures>
+                                    <catchwords><seg type="para">No catchwords common to the whole volume.</seg></catchwords>
+                                </collation>
+                            </supportDesc>
+                        </objectDesc>
+
+                        <bindingDesc>
+                            <binding notAfter="1700" notBefore="1600">
+                                <p>17th-century binding. Armorial binding in sprinked calf over paste- or mill- boards with gilded armorial stamps on
+                                    left and right covers. The armorial stamp on the <locus from="outside_left_cover" to="outside_left_cover">left
+                                        cover</locus> displays Pepys' armorial crest (camel's head erased bridled and lined ducally gorged), helmet
+                                    (esquire), and mantling, with the words 'SAM. PEPYS CAR. ET IAC. ANGL.REGIBUS A SECRETIS ADMIRALIÆ' replacing the
+                                    typical charges in the escutcheon. The armorial stamp on the <locus from="outside_right_cover" to="outside_right_cover">right cover</locus> replaces the text in the escutcheon with the arms of the Pepys
+                                        family:<heraldry> Quarterly 1st and 4th on a bend between two horses heads erased three fleurs-de-lis, 2nd and
+                                        3rd a lion rampant within a bordure engrailed</heraldry>. </p>
+                                <p> Five raised bands and two half bands on the spine. Decorative head and tail bands in alternate pink and blue
+                                    segments. Unlabelled spine compartments stamped with a gilded floral design. Title label of red leather fixed to a
+                                    single spine compartment with the text 'DE VERT. PLANE MSS' gilded. Gilded decorative roll applied to the covers
+                                    along the head, fore, and tail edges of the boards. Head, fore, and tail edges of the book block sprinkled with
+                                    red.</p>
+                                <p>Paper pastedowns at both ends of the volume pasted over the turn ins. The left pastedown has the designation f. i,
+                                    the right pastedown does not have a designation. Two paper endleaves at the opening of the volume (ff. ii-iii) and
+                                    one paper endleaf at the close of the volume f. [ix]. </p>
+                                <p>The contents of the paper endleaves are as follows: <list>
+                                        <item>- <locus from="inside_left_cover" to="inside_left_cover">left pastdown (f. i):</locus> the current
+                                            shelfmark, 'No. 911' recorded in red ink</item>
+                                        <item>- <locus from="ii recto" to="ii recto">ii recto</locus>: a former shelfmark '543.D.' in ink, struck out. </item>
+                                        <item>- <locus from="ii recto" to="ii recto">ii recto</locus>: a former shelfmark '583' in ink, struck out. </item>
+                                        <item>- <locus from="ii recto" to="ii recto">ii recto</locus>: a note in ink about the contents of the volume,
+                                            'Bernardus Silvestris, ultrajectensis clericus, floruit circa A.d. 1110. Oudin. Tom. ii. p. 1005'. </item>
+                                        <item>- <locus from="ii verso" to="ii verso">ii verso</locus>: a title page in ink in a large early modern
+                                            hand, 'De Virtute Efficaci<unclear>o</unclear> Planetarum ac Constellationum'. </item>
+                                        <item>- <locus from="iii recto" to="iii recto">iii recto</locus>: a bookplate bearing a portrait of Pepys, his
+                                            motto 'Mens cujusque is est Quisque' and the text found in the escutcheon stamp on the left cover of the
+                                            volume. </item>
+                                    </list></p>
+                                <p>See H. M. Nixon, <hi rend="italic">Catalogue of the Pepys Library at Magdalene College Cambridge</hi>, Volume VI
+                                    (Cambridge, 1984), style 'FL'.</p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+
+                    <history>
+                        <provenance>
+                            <p>Owned by a <name key="person_" role="sgn fmo">
+                                    <persName type="display">John Beak</persName>
+                                    <persName type="standard">Iohannis Beak</persName>
+                                </name> who added his name (in a ?15th or ?16th century hand) to f. <locus from="iv recto" to="iv recto">iv
+                                    recto</locus>, now very faint.</p>
+                        </provenance>
+
+                        <provenance>
+                            <p>Owned by a <name key="person_" role="sgn fmo">
+                                    <persName type="display">Rees Thomas</persName>
+                                    <persName type="standard">Rees Thomas</persName>
+                                </name> who added his name (in a ?sixteenth century hand) to f. <locus from="62v" to="62v">62v</locus> where he styled
+                                himself 'Master Rees Thomas Esquire'.</p>
+                        </provenance>
+
+                        <provenance notAfter="1621">
+                            <p>Owned by the mathematician <name key="person_v76366848" role="fmo">
+                                    <persName type="display">Thomas Harriott</persName>
+                                    <persName type="standard">Thomas Harriott</persName></name>, b. 1560, d. 1621. Harriot wrote his name on ff.
+                                    <locus from="iv recto" to="v recto">iv and v recto</locus>. </p>
+                        </provenance>
+
+                        <provenance notAfter="1682">
+                            <p>Owned by <name key="person_v89752029" role="fmo">
+                                    <persName type="display">John Maitland, 1st Duke of Lauderdale (b. 1616, d. 1682)</persName>
+                                    <persName type="standard">John Maitland, duke of Lauderdale, 1616-1682</persName>
+                                </name>. Parts of Lauderdale's estate were sold in 1684 after his death in 1682, and the manuscript was purchased from
+                                that sale by <name key="person_v29602261" role="fmo dnr">
+                                    <persName type="display">Samuel Pepys</persName>
+                                    <persName type="standard">Samuel Pepys</persName></name>.</p>
+                        </provenance>
+
+                        <provenance notAfter="1703" notBefore="1692">
+                            <p>Owned by <name key="person_v29602261" role="fmo dnr">
+                                    <persName type="display">Samuel Pepys</persName>
+                                    <persName type="standard">Samuel Pepys</persName>
+                                </name> the famous diarist, MP, and administrator of the Royal Navy. Pepys was a collector of fine books and
+                                manuscripts and at the time of his death his library numbered approximately 3000 volumes. Pepys bequeathed his library
+                                to his alma mater, Magdalene College in Cambridge, along with strict instructions for how the volumes should be
+                                arranged and maintained. See Venn:ACAD PPS650S. Pepys purchased the manuscript (as lot 84) <date when="1692-01-25">25
+                                    January 1692</date> at a sale of items from the Lauderdale estate.</p>
+                        </provenance>
+
+                        
+                        <acquisition when="1724">
+                            <p>Acquired by Magdalene College, Cambridge upon the death of <name key="" role="dnr">
+                                <persName type="display">John Jackson (d. 1724)</persName>
+                                <persName type="standard">Jackson, John, d. 1724</persName>
+                            </name>: in his will (The National Archives, PROB 1/9, Will of Samuel Pepys, Codicil, 13th May 1703), <name key="person_v29602261">
+                                <persName type="display">Pepys</persName>
+                                <persName type="standard">Samuel Pepys</persName>
+                            </name> left a bequest of approximately 3000 manuscripts and printed books to Magdalene College and instructed his nephew John
+                                Jackson to arrange for this but they only came to the college after Jackson died. Jackson respected the instructions
+                                given in the codicil to the will as can be evidenced from Magdalene College Archives A/41/1: an indenture between Anne
+                                Jackson, widow and executrix of John Jackson (nephew and residuary legatee of Samuel Pepys), and the Master and
+                                Fellows being a deed of covenant as to providing a Library at the College for the reception of the collection of the
+                                books and papers bequeathed to the College by Samuel Pepys, 1 June 1724. It is here that the manuscript's current
+                                shelfmark <q>N.<hi rend="superscript">o</hi> 911</q> was added in red ink to the <locus from="i verso" to="i verso">inside of the front cover</locus>, replacing two older shelfmarks both in brown ink,
+                                <q>543.D.</q> (struck out with brown ink) and <q>583.</q> (struck out
+                                with red ink) on f. <locus from="ii recto" to="ii recto">ii recto</locus>. </p>
+                        </acquisition>
+                        
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source> This catalogue entry draws on N. Ker, <hi rend="italic">Medieval Manuscripts in British Libraries</hi>, 5
+                                    vols (1977), vol. II, pp. 233-234 and R. McKitterick and R. Beadle, <hi rend="italic">Catalogue of the Pepys
+                                        Library at Magdalene College, Cambridge: Manuscripts. Part I Medieval</hi>, Catalogue of the Pepys Library at
+                                    Magdalene College, Cambridge, 7 vols (Woodbridge, 1992), vol. V, pp. 5-8. </source>
+                            </recordHist>
+
+                            <availability status="restricted">
+                                <p>Visitors to Magdalene College who wish to consult Special Collections material are required to apply to the Pepys
+                                    Library in advance of their visit. For information on eligibility and admission procedures see: <ref target="https://www.magd.cam.ac.uk/pepys">Magdalene College: Pepys Library</ref>.</p>
+                            </availability>
+
+                        </adminInfo>
+
+                        <listBibl>
+                            <bibl>N. Ker, <hi rend="italic">Medieval Manuscripts in British Libraries</hi>, 5 vols (1977), vol. II, pp. 233-235</bibl>
+                            <bibl>R. McKitterick and R. Beadle, <hi rend="italic">Catalogue of the Pepys Library at Magdalene College, Cambridge:
+                                    Manuscripts. Part I Medieval</hi>, Catalogue of the Pepys Library at Magdalene College, Cambridge, 7 vols
+                                (Woodbridge, 1992), vol. 5, pp. 5-8 .</bibl>
+                        </listBibl>
+
+
+                    </additional>
+
+                    <msPart n="1">
+                        <msIdentifier>
+                            <idno>Cambridge, Magdalene College, MS Pepys 911, ff. iv-vi, viii</idno>
+                            <msName>Part 1 - Fragments of the Compilatio Prima Bk 3</msName>
+
+                        </msIdentifier>
+
+                        <msContents>
+                            <textLang mainLang="la">Latin</textLang>
+
+                            <msItem n="1">
+                                <locus from="iv recto" to="viii verso">iv recto-vii verso, viii recto-verso</locus>
+                                <title key="">Compilatio Prima (Breviarium extravagantium)</title>
+                                <author key="person_v15126540">Bernardus Papiensis (Bernard of Pavia)</author>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit defective="true">
+                                    <locus from="iv recto" to="iv recto">iv recto</locus> sumptibus quos bono </incipit>
+                                <explicit defective="true">
+                                    <locus from="viii verso" to="viii verso">viii verso</locus> et compellas ut res <sic>ipas</sic> pigno </explicit>
+                                <note>Text identified by N. R. Ker. Ker described the arrangment of the leaves and text as follows: 'Fragments of bk.
+                                    3. The leaves at the beginning contain parts of XI.4,5; XI,8: XII,1,2; XIV,3,4; XVI,2.3; XVII.3; XVIII.1,2;
+                                    XVIII.4,5; XX.2,3. The leaf at the end has XVII.1-3 on the verso and XVIII.2-4 on the recto.'</note>
+                                <listBibl>
+                                    <bibl>See E. Friedberg (ed.), <hi rend="italic">Quinque compilationes antiquae: nec non Collectio canonum
+                                            Lipsiensis</hi> (Leipzig, 1897), pp. 30-32</bibl>
+                                    <bibl>N. Ker, <hi rend="italic">Medieval Manuscripts in British Libraries</hi>, 5 vols (1977), vol. II, pp.
+                                        233-235</bibl>
+                                </listBibl>
+                            </msItem>
+
+                            <msItem n="vii verso">
+                                <locus from="vii verso" to="vii verso">vii verso</locus>
+                                <title key="">Volvelle</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <note>Volvelle added in the 15th century. The volvelle is designed for use with the <hi rend="italic">sortes</hi>
+                                    texts on ff. 2r-68r. The volvelle is sewn through the conjoined leaves ff. vi-vii and consists of a lower round
+                                    disc of paper (100mm diameter) and an upper indented disc of paper (65mm diameter point-to-point).</note>
+                            </msItem>
+                        </msContents>
+
+
+
+                        <physDesc>
+                            <p><secFol>Secundo folio <locus from="v recto" to="v recto">v recto</locus>: eum uinculo anathematis</secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="perg">
+
+                                    <support>
+                                        <material>Parchment. A bifolium cut in half horizontally , the lower half used for the endleaves at the
+                                            beginning of the volume (f. iv-vi), and a portion of the upper part used for an endleaf at the close of
+                                            the volume (f. viii)</material>
+                                    </support>
+
+                                    <extent>
+                                        <seg type="object"><objectType>Fragment</objectType> deriving from the lower part of a bifolium, cut in half
+                                            horizontally. The lower half of the original bifolium was folded to make four leaves at the beginning (ff.
+                                            iv-vi, the final two leaves folded double and presented as a single leaf (f. vi)), and a portion of the
+                                            upper part of the original bifolium was used for the leaf at the end of the volume (f. viii). The leaf at
+                                            the back of the volume (f. viii) is inserted upside down relative to the rest of the volume. </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="4" type="endleaf">4</measure> leaves </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="160">160</height>
+                                                <width quantity="110">110</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+
+                                    <collation> Four tangible leaves, ff. iv-vi at the opening of the volume and f. viii at the close of the volume.
+                                        The leaf f. vi is of double thickness <signatures type="leaf"><p>No leaf signatures particular to this
+                                                Part.</p></signatures>
+                                        <signatures type="quire"><p>No quire signatures particular to this Part. </p></signatures>
+                                        <catchwords><seg type="para">No catchwords particular to this Part.</seg></catchwords>
+                                    </collation>
+
+                                    <condition> The leaves ff. vi and vii are attached along their fore edge and so only f. vi recto and f. vii verso
+                                        are visible to the reader. The lower disc of the volvelle on f. <locus from="vii verso" to="vii verso">vii
+                                            verso</locus> has some folds along the circumference of the shape, but the volvelle is in relatively good
+                                        condition. </condition>
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="1" rulingMedium="ink" writtenLines="11 12">
+                                        <p>
+                                            <dimensions type="written" unit="mm">
+                                                <height quantity="40">40</height>
+                                                <width quantity="40">40</width>
+                                            </dimensions>
+                                            <seg type="ruling"> Fragment cut down from a larger leaf and folded in such a way that the original
+                                                mise-en-page is difficult to determine. Ruled in ink, ruling visible on f. viii. Leaves were probably
+                                                arranged in a multi-column format, each column approximately 40mm. 11-12 lines visible in each column
+                                                of ff. iv-vii, 33 lines visible on f. viii. </seg></p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote script="textualisNorthern">
+                                    <p>The main text is written in a small <term type="script">northern textualis libraria</term>.</p>
+                                </handNote>
+                            </handDesc>
+
+                            <decoDesc>
+                                <decoNote type="flourInit">
+                                    <p>Flourished initials in red and blue (red intiials with blue pen flourishing or the reverse) at the minor
+                                        divisions of the text.</p>
+                                </decoNote>
+                                <decoNote type="plainInit">
+                                    <p>Plain initials in red or blue at minor divisions of the text such as new paragraphs or sub-sections.</p>
+                                </decoNote>
+                                <decoNote type="rubrication">
+                                    <p>Section headings in red.</p>
+                                </decoNote>
+                                <decoNote type="other">Volvelle consisting of two discs of paper added to f. <locus from="vii verso" to="vii verso">vii verso</locus>. </decoNote>
+                            </decoDesc>
+
+
+                            <additions>
+                                <note><p>The name 'Thomas Harriot' and 'Thomas Harriotus' added to f. <locus from="iv recto" to="v recto">iv recto, v
+                                            recto</locus> in ink, see the Provenance section for further information. Harriot also seems to have added
+                                        descriptive titles for the volume in ink to f. <locus from="v recto" to="v recto">v recto</locus>.</p></note>
+                                <note><p>The name 'John Beak' added to f. <locus from="iv recto" to="iv recto">iv recto</locus> in ink, see the
+                                        Provenance section for further information.</p></note>
+                                <note><p>Volvelle consisting of two discs of paper added to f. <locus from="vii verso" to="vii verso">vii
+                                            verso</locus> in the 15th century. The volvelle is designed for use with the text on ff. <locus from="2r" to="68r">2r-68r</locus>.</p></note>
+                            </additions>
+                        </physDesc>
+
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="medium" notAfter="1300" notBefore="1250"> The main text was probably written in
+                                    the second half of the 13th century. </origDate>
+                                <origPlace cert="medium" key="place_g7002445"> The main text was probably copied in England. </origPlace>
+                            </origin>
+
+                            <provenance>
+                                <p>Both Parts of the volume were together by the end of the 15th century as the 15th century volvelle added to f.
+                                        <locus from="vii verso" to="vii verso">vii verso</locus> is designed for use with the text on ff. <locus from="2r" to="68r">2r-68r</locus>.</p>
+                            </provenance>
+                        </history>
+                    </msPart>
+
+                    <msPart n="2">
+                        <msIdentifier>
+                            <idno>Cambridge, Magdalene College, MS Pepys 911, ff. 2r-68v</idno>
+                            <msName>Part 2 - The Experimentarius attributed to Bernardus Silvestris and other prognostic texts</msName>
+                        </msIdentifier>
+
+                        <msContents>
+                            <textLang mainLang="la" otherLangs="fro">Latin and medieval French</textLang>
+
+                            <msItem n="1">
+                                <locus from="2r" to="18v">2r-18v</locus>
+                                <title key="work_1076">Liber experimentarius</title>
+                                <author key="person_v88800528">Bernardus Silvestris (attrib.)</author>
+                                <textLang mainLang="la">Latin</textLang>
+                                <msItem n="1.1">
+                                    <locus from="2r" to="2r">2r</locus>
+                                    <title key="work_1076">Preface to the Liber experimentarius</title>
+                                    <author key="person_v88800528">Bernardus Silvestris (attrib.)</author>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <rubric>
+                                        <locus from="2r" to="2r">2r</locus> Euidencia operis subsequentis </rubric>
+                                    <incipit>
+                                        <locus from="2r" to="2r">2r</locus> Matria huius libelli est <hi rend="superscript">uirtus</hi> efficacia lune </incipit>
+                                    <explicit>
+                                        <locus from="2r" to="2r">2r</locus> reuelat euidenciam </explicit>
+                                    <note>Rubric added in small text in the upper margin.</note>
+                                    <note>This is Burnett's 'preface to the Experimentarius' of this text.</note>
+                                    <listBibl>
+                                        <bibl>Edited and discussed in C. Burnett, 'What is the "Experimentarius" of Bernardus Silvestris? A
+                                            Preliminary Survey of the Material', Archives d'histoire doctrinale et littéraire du Moyen Age 44 (1977),
+                                            pp. 79-125, esp. n. 42 and pp. 123-124</bibl>
+                                    </listBibl>
+                                </msItem>
+                                <msItem n="1.2">
+                                    <locus from="2r" to="2v">2r-2v</locus>
+                                    <title key="work_1076">Prologue to the Liber experimentarius</title>
+                                    <author key="person_v88800528">Bernardus Silvestris (attrib.)</author>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <incipit>
+                                        <locus from="2r" to="2r">2r</locus> Utilitas autem huius libelli est </incipit>
+                                    <explicit>
+                                        <locus from="2r" to="2v">2r-2v</locus> per stellam indicem inuenerunt </explicit>
+                                    <note>This is also part of Burnett's 'preface to the Experimentarius' of this text.</note>
+                                    <listBibl>
+                                        <bibl>eTK 1627B (t0310370000)</bibl>
+                                        <bibl>Edited and discussed in C. Burnett, 'What is the "Experimentarius" of Bernardus Silvestris? A
+                                            Preliminary Survey of the Material', Archives d'histoire doctrinale et littéraire du Moyen Age 44 (1977),
+                                            pp. 79-125, esp. n. 42 and pp. 123-124</bibl>
+                                    </listBibl>
+                                </msItem>
+                                <msItem n="1.3">
+                                    <locus from="2v" to="18v">2v-2v</locus>
+                                    <title key="work_1076">Introduction to the Liber experimentarius</title>
+                                    <author key="person_v88800528">Bernardus Silvestris (attrib.)</author>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <rubric>
+                                        <locus from="2v" to="2v">2v</locus> Hic incipit experimentarius Bernardi Siluestris in astronomia . Titulo
+                                        uero talis est . </rubric>
+                                    <incipit>
+                                        <locus from="2v" to="2v">2v</locus> Experimentarius bernardi siluestris . Non quia inuentor fuit sed fidelis
+                                        ab arabico in latinum interpres </incipit>
+                                    <explicit>
+                                        <locus from="2v" to="2v">2v</locus> inuocato semper spiritu sancto </explicit>
+                                    <note>This is Burnett's 'Regula I C' of this text.</note>
+                                    <listBibl>
+                                        <bibl>Edited and discussed in C. Burnett, 'What is the "Experimentarius" of Bernardus Silvestris? A
+                                            Preliminary Survey of the Material', Archives d'histoire doctrinale et littéraire du Moyen Age 44 (1977),
+                                            pp. 79-125, esp. n. 42 and p. 111</bibl>
+                                    </listBibl>
+                                </msItem>
+                                <msItem n="1.4">
+                                    <locus from="5r" to="18v">5r-18v</locus>
+                                    <title key="work_1076">The 'Almazane' of the Liber experimentarius</title>
+                                    <author key="person_v88800528">Bernardus Silvestris (attrib.)</author>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <rubric>
+                                        <locus from="5r" to="5r">5r</locus> Almazane </rubric>
+                                    <incipit>
+                                        <locus from="5r" to="5r">5r</locus> Tuum indumentum durabit tempore longo </incipit>
+                                    <explicit>
+                                        <locus from="18v" to="18v">18v</locus> Opta que dei sunt fauebit dominus ipse </explicit>
+                                    <finalRubric>
+                                        <locus from="18v" to="18v">18v</locus> explicit </finalRubric>
+                                    <note>Mise-en-page for verse - single-column of text with a majuscule first letter of each line slightly separate
+                                        from the rest of the text on the line. </note>
+                                    <note>This is Burnett's 'Versio I' of this text.</note>
+                                    <listBibl>
+                                        <bibl>Edited and discussed in C. Burnett, 'What is the "Experimentarius" of Bernardus Silvestris? A
+                                            Preliminary Survey of the Material', Archives d'histoire doctrinale et littéraire du Moyen Age 44 (1977),
+                                            pp. 79-125, esp. n. 42 and pp. 108-109</bibl>
+                                    </listBibl>
+                                </msItem>
+                                <note> There are four tables that accompany this text: <list>
+                                        <item><locus from="3r" to="3r">3r</locus>: Tabula questionum</item>
+                                        <item><locus from="3v" to="3v">3v</locus>: Tabula secunda responsionum</item>
+                                        <item><locus from="4r" to="4r">4r</locus>: Tabula tercia</item>
+                                        <item><locus from="4v" to="4v">4v</locus>: Tabula quarto legationum</item>
+                                    </list>
+                                </note>
+                            </msItem>
+
+                            <msItem n="2">
+                                <locus from="19r" to="29v">19r-29v</locus>
+                                <title key=""><supplied>Prenostica pitagorice</supplied></title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit>
+                                    <locus from="19v" to="19v">19v</locus> Si puer uiuit . Uade ad columbam </incipit>
+                                <explicit>
+                                    <locus from="29v" to="29v">29v</locus> supleat eclipsim series capitalis obortam </explicit>
+                                <note> Several surviving copies of this text are (spuriously) attributed to the Greek mathematician Pythagoras.
+                                    Portrait of Pythagoras ('Pitagoras') on f. <locus from="19r" to="19r">19r</locus>.</note>
+                                <note> McKitterick and Beadle separate this Item into two separate Items i.e., ff. 19v-20r - the <hi rend="italic">questionum</hi>; ff. 20v-29v the <hi rend="italic">responsa</hi>. </note>
+                                <note> The text is accompanied by small illustrations of birds. See Decoration below.</note>
+                                <note> As noted by Ker, this text (with the exception of f. 29v can also be found in <bibl subtype="external" type="MS"><ref target="https://medieval.bodleian.ox.ac.uk/catalog/manuscript_317">Oxford, Bodleian Library, MS
+                                            Ashmole 304, ff. 42v-52r</ref>
+                                    </bibl>.</note>
+                            </msItem>
+
+                            <msItem n="3">
+                                <locus from="30r" to="33v">30r-33v</locus>
+                                <title key=""><supplied>Duodecim filii Iacob qui et Israel dicitur</supplied></title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric>
+                                    <locus from="30v" to="30v">30v</locus> Duodecim filii Iacob qui et Israel dicitur </rubric>
+                                <incipit>
+                                    <locus from="31r" to="31r">31r</locus> Iudas iudex primus Regalis confitens ueritatem . Uelle dei nosse casit </incipit>
+                                <explicit>
+                                    <locus from="33v" to="33v">33v</locus> Sors bene succedet adertit quod mens tua credit </explicit>
+                                <note>The leaf f. 30r is blank.</note>
+                                <note>Illustration of the 12 sons of Jacob on f. <locus from="30v" to="30v">30v</locus>. The twelve sons are named as:
+                                    Iudas, Ruben, Gad, Aser, Neptalin, Manasses, Symeon, Levy, Ysakar, Zabulon, Ioseph, Beniamin. </note>
+                                <note> As noted by Ker, this text can also be found in <bibl subtype="external" type="MS"><ref target="https://medieval.bodleian.ox.ac.uk/catalog/manuscript_317">Oxford, Bodleian Library, MS Ashmole
+                                            304, ff. 52v-55v</ref>
+                                    </bibl>.</note>
+                            </msItem>
+
+                            <msItem n="4">
+                                <locus from="34v" to="44v">34v-44v</locus>
+                                <title key=""><supplied>Pronosticorum Pythagorum uersio metrica and tables</supplied></title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <msItem n="4.1">
+                                    <locus from="34v" to="35r">34v-35r</locus>
+                                    <title key=""><supplied>Tabula Almadati</supplied></title>
+                                    <textLang mainLang="ka">Latin</textLang>
+                                    <rubric>
+                                        <locus from="34v" to="34v">34v</locus>
+                                        <supplied> T</supplied>abula almadati </rubric>
+                                    <incipit>
+                                        <locus from="34v" to="34v">34v</locus> De infante si uiuit | Quid erit dic | Quere in | primo gradu | Ariertis </incipit>
+                                    <explicit>
+                                        <locus from="35r" to="35r">35r</locus> gradus | tertius | redii | responde | uade ad iudicem questionis | Oreb
+                                        | xxxvi </explicit>
+                                    <note>Folio 34r is blank.</note>
+                                    <note> As noted by Ker, these tables are not in <bibl subtype="external" type="MS"><ref target="https://medieval.bodleian.ox.ac.uk/catalog/manuscript_317">Oxford, Bodleian Library, MS
+                                                Ashmole 304</ref>
+                                        </bibl>.</note>
+                                </msItem>
+                                <msItem n="4.2">
+                                    <locus from="35v" to="44r">35v-44r</locus>
+                                    <title key=""><supplied>Pronosticorum Pythagorum uersio metrica</supplied></title>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <rubric>
+                                        <locus from="35v" to="35v">35v</locus> Gosal iudex primus . Qui presagus uel primicerius interpretatur </rubric>
+                                    <incipit>
+                                        <locus from="35v" to="35v">35v</locus> Sub fatis uita fiet diuturna beata </incipit>
+                                    <explicit>
+                                        <locus from="44r" to="44r">44r</locus> Eger erit sanus scias quamuis ueteranus </explicit>
+                                    <note> As noted by Ker, this text can also be found in <bibl subtype="external" type="MS">  <ref target="https://medieval.bodleian.ox.ac.uk/catalog/manuscript_317">Oxford, Bodleian Library, MS
+                                                Ashmole 304, ff. 56a recto - 63v</ref>
+                                        </bibl>.</note>
+                                    <note>The words 'Non computentur . rubrice' in red ink in the outer margin of f. <locus from="35v" to="35v">35v</locus>.</note>
+                                </msItem>
+                                <msItem n="4.3">
+                                    <locus from="44v" to="44v">44v</locus>
+                                    <title key="">Documentum experimeniti retrogradi</title>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <rubric>
+                                        <locus from="44v" to="44v">44v</locus> Documentum experimeniti retrogradi </rubric>
+                                    <incipit>
+                                        <locus from="44v" to="44v">44v</locus> Dato numero primitiuo qui non excedit </incipit>
+                                    <explicit>
+                                        <locus from="44v" to="44v">44v</locus> quod in capite pagine est </explicit>
+                                    <note> As noted by Ker, this section of text is not in <bibl subtype="external" type="MS"><ref target="https://medieval.bodleian.ox.ac.uk/catalog/manuscript_317">Oxford, Bodleian Library, MS
+                                                Ashmole 304</ref>
+                                        </bibl>.</note>
+                                </msItem>
+                            </msItem>
+
+
+                            <msItem n="5">
+                                <locus from="45r" to="45r">45r</locus>
+                                <title key=""><supplied>?Prognostic schema</supplied></title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <note>A list of 20 words (Lucrum ... Captus) each followed by a number (i-xx) and then the numbers i-xx arranged in 4
+                                    groups of 5 numbers.</note>
+                            </msItem>
+
+                            <msItem n="6">
+                                <locus from="45r" to="46v">45r-46v</locus>
+                                <title key=""><supplied>Explanations of divination through palmistry</supplied></title>
+                                <textLang mainLang="la" otherLangs="fro">Latin and Medieval French</textLang>
+                                <note>A sketch of a hand added to each leaf ff. <locus from="45r" to="46v">45r-46v</locus> with explanations of
+                                    various types of palmistry techniques in Latin and Medieval French. The hand diagrams and accompanying texts were
+                                    probably added to the leaves in the late-13th or early 14th century.</note>
+                            </msItem>
+
+                            <msItem n="7">
+                                <locus from="46v" to="46v">46v</locus>
+                                <title key=""><supplied>Medical recipe for 'Glist'</supplied></title>
+                                <textLang mainLang="la">Latin</textLang>
+                            </msItem>
+
+                            <msItem n="8">
+                                <locus from="47r" to="58v">47r-58v</locus>
+                                <title key=""><supplied>Prognostic diagrams and text</supplied></title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <msItem n="8.1">
+                                    <locus from="47r" to="48v">47r-48v</locus>
+                                    <title key=""><supplied>Prognostic relational diagrams</supplied></title>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <incipit>
+                                        <locus from="47r" to="47r">47r</locus> .i. Pauo mittit te ad solem </incipit>
+                                    <explicit>
+                                        <locus from="48v" to="48v">48v</locus> .xx. Dugo te mittit ad pisces </explicit>
+                                </msItem>
+                                <msItem n="8.2">
+                                    <locus from="49r" to="58v">49r-58v</locus>
+                                    <title key="la"><supplied>Prognostica quorum indices sunt septem planetae et duodecim signa
+                                        zodiaci</supplied></title>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <rubric>
+                                        <locus from="49r" to="49r">49r</locus> Mittam te ad amicum et dicet tibi uerum . Sol </rubric>
+                                    <incipit>
+                                        <locus from="49r" to="49r">49r</locus> certe tibi dico prope est </incipit>
+                                    <explicit>
+                                        <locus from="58v" to="58v">58v</locus> In bona hora te mutabis a deo paratum est </explicit>
+                                    <note>This is a series of dialogues presented as a line spoken by a bird and then 20 lines of a response by the
+                                        personification of a celestial or zodiacal figure.</note>
+                                </msItem>
+                                <note>This item is also in <bibl subtype="external" type="MS"><ref target="https://medieval.bodleian.ox.ac.uk/catalog/manuscript_317">Oxford, Bodleian Library, MS Ashmole
+                                            304, ff. 64r-70v</ref>
+                                    </bibl>, but lacks the bird diagrams on ff. <locus from="47r" to="48v">47r-48v</locus> and the last six dialogues.
+                                        <bibl subtype="external" type="MS"><ref target="https://medieval.bodleian.ox.ac.uk/catalog/manuscript_4383">Oxford, Bodleian Library, MS Digby 46</ref>
+                                    </bibl> is a direct copy of Ashmole 304 made before that manuscript was mutilated, and the Digby copy contains the
+                                    bird-celestial figure roundels and the final six dialogues.</note>
+                                <listBibl>
+                                    <bibl>See L. Brandin, 'Les prognostica du MS Ashmole 304 de la Bodléienne' in M. Williams and J. A. de Rothschild
+                                        (eds.), <hi rend="italic">A Miscellany of studies in Romance languages and literatures presented to Léon E.
+                                            Kastner</hi> (Cambridge, 1932), pp. 57-67</bibl>
+                                    <bibl>Ker <hi rend="italic">MMBL:II</hi>, pp. 234-235</bibl>
+                                </listBibl>
+                            </msItem>
+
+                            <msItem n="9">
+                                <locus from="59r" to="68r">59r-68r</locus>
+                                <title key="work_16043"><supplied>Prenosticon Socratis Basilei</supplied></title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <msItem n="9.1">
+                                    <locus from="59r" to="60r">59r-60r</locus>
+                                    <title key=""><supplied>Prenosticon Socratis Basilei - Tables</supplied></title>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <incipit>
+                                        <locus from="59r" to="59r">59r</locus> An erit bonum ire extra donum uel non </incipit>
+                                    <explicit>
+                                        <locus from="60r" to="60r">60r</locus> Bacce lauri <add>flos</add>
+                                    </explicit>
+                                </msItem>
+                                <msItem n="9.2">
+                                    <locus from="60v" to="60v">60v</locus>
+                                    <title key=""><supplied>Prenosticon Socratis Basilei - Text</supplied></title>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <incipit>
+                                        <locus from="60v" to="60v">60v</locus> Puncta saxas tibi fige decem pro limite summo </incipit>
+                                    <explicit>
+                                        <locus from="60v" to="60v">60v</locus> Hic de socraticis constant excerpta libellis </explicit>
+                                </msItem>
+                                <msItem n="9.3">
+                                    <locus from="61r" to="66v">61r-66v</locus>
+                                    <title key=""><supplied>Prenosticon Socratis Basilei - Spheres</supplied></title>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <note>12 Spheres described as follows: <list>
+                                            <item>Spera specierum (f. 61r)</item>
+                                            <item>Spera florum (f. 61v)</item>
+                                            <item>Spera fructuum (ff. 62r-62v)</item>
+                                            <item>Spera bestarum (f. 63r)</item>
+                                            <item>Spera uolatilium (ff. 63v-64v</item>
+                                            <item>Spera ciuiutatum (ff. 65r-66v)</item>
+                                        </list></note>
+                                    <listBibl>
+                                        <bibl>eTK 0093J (t0018130000)</bibl>
+                                    </listBibl>
+                                </msItem>
+                                <msItem n="9.4">
+                                    <locus from="67r" to="68r">67r-68r</locus>
+                                    <title key=""><supplied>Responsa of the 16 Kings</supplied></title>
+                                    <textLang mainLang="la">Latin</textLang>
+                                    <incipit>
+                                        <locus from="67r" to="67r">67r</locus> Rex turcorum . Quod uis erit <sic>erit</sic> et bonum tibi eueniet </incipit>
+                                    <explicit>
+                                        <locus from="68r" to="68r">68r</locus> Grauida pariet filiam de qua bonum erit </explicit>
+                                    <listBibl>
+                                        <bibl>eTK 1256G (t0240880000)</bibl>
+                                    </listBibl>
+                                </msItem>
+                                <note>This is the 'B' version of this text.</note>
+                                <note> As noted by Ker, most of this Item can also be found in <bibl subtype="external" type="MS"><ref target="https://medieval.bodleian.ox.ac.uk/catalog/manuscript_317">Oxford, Bodleian Library, MS Ashmole
+                                            304, ff. 32r-40v</ref>
+                                    </bibl>. Ker also draws attention to a similar text in <bibl subtype="external" type="MS"><ref target="https://catalogue.etoncollege.com/B50089">Windsor, Eton College Library, MS 132, ff.
+                                            188r-190v</ref>
+                                    </bibl> which has similar tables.</note>
+
+                                <listBibl>
+                                    <bibl>See R. McKitterick and R. Beadle, <hi rend="italic">Catalogue of the Pepys Library at Magdalene College,
+                                            Cambridge: Manuscripts. Part I Medieval</hi>, Catalogue of the Pepys Library at Magdalene College,
+                                        Cambridge, 7 vols (Woodbridge, 1992), vol. 5, p. 6 for additional information.</bibl>
+                                </listBibl>
+                            </msItem>
+
+                            <msItem n="10">
+                                <locus from="68r" to="68v">68r-68v</locus>
+                                <title key=""><supplied>Recipes to make pigments</supplied></title>
+                                <textLang mainLang="fro">Medieval French</textLang>
+                                <rubric><locus from="68r" to="68r">68r</locus> Ki uout saucer e conoytre la ma<hi rend="superscript">ne</hi>re des
+                                    colours ici les pora saucer </rubric>
+                                <incipit>
+                                    <locus from="68r" to="68r">68r</locus> Si tou uoys fere blaunk de plumb </incipit>
+                                <explicit defective="true">
+                                    <locus from="68v" to="68v">68v</locus> fere si aueitre chuz de </explicit>
+                            </msItem>
+                        </msContents>
+
+                        <physDesc>
+                            <p><secFol>Secundo folio <locus from="3r" to="3r">3r</locus>: Tabula questionum</secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="perg">
+                                    <support>
+                                        <material>Parchment (<term type="disposition">HFFH</term>).</material>
+                                    </support>
+
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="67" type="leaf">67</measure> leaves. </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="165">165</height>
+                                                <width quantity="120">120</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+
+                                    <collation mainStructures="8"><p>
+                                            <list>
+                                                <item>Quire 1<hi rend="superscript">8-1</hi> (1st leaf cancelled; ff. 2-8)</item>
+                                                <item>Quires 2-3<hi rend="superscript">8</hi> (ff. 9-24)</item>
+                                                <item>Quire 4<hi rend="superscript">6-1</hi> (6th cancelled; ff. 25-29)</item>
+                                                <item>Quire 5<hi rend="superscript">8+1</hi> (a singleton added before the first leaf of the quire;
+                                                    ff. 30-38)</item>
+                                                <item>Quire 6<hi rend="superscript">8</hi> (ff. 39-46 )</item>
+                                                <item>Quire 7<hi rend="superscript">2</hi> (ff. 47-48)</item>
+                                                <item>Quires 8-9<hi rend="superscript">10</hi> (ff. 49-68) </item>
+                                            </list>
+                                        </p>
+                                        <p>Ker's collation in <hi rend="italic">MMBL: V</hi> describes the 3rd and 6th leaves of Quire 3 as half
+                                            sheets, and the stubs of each may be seen between ff. 19-20 and 22-23.</p>
+                                        <formula>1<hi rend="superscript">8-1</hi> (1st leaf cancelled) 2-3<hi rend="superscript">8</hi> 4<hi rend="superscript">6-1</hi> (6th cancelled) 5<hi rend="superscript">8+1</hi> (a singleton added before
+                                            the first leaf) 6<hi rend="superscript">8</hi> 7<hi rend="superscript">2</hi> 8-9<hi rend="superscript">10</hi></formula>
+                                        <signatures type="leaf"><p>No leaf signatures particular to this Part. </p></signatures>
+                                        <signatures type="quire"><p>No quire signatures particular to this Part. </p></signatures>
+                                        <catchwords><seg type="para">Catchwords in ink in the lower inner corner of the last recto of some quires,
+                                                e.g., <locus from="16v" to="16v">16v</locus>, some catchwords obscured due to
+                                            rebinding.</seg></catchwords>
+                                    </collation>
+
+                                    <condition> In generally good condition. Some leaves have small stains and minor rubbing damage. Loss of some
+                                        (?red and ?gold) pigment on f. <locus from="59r" to="59r">59r</locus>. </condition>
+                                </supportDesc>
+
+                                <layoutDesc>
+                                    <layout columns="1" rulingMedium="leadpoint" topLine="below" writtenLines="21 28"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height quantity="135">135</height>
+                                                <width quantity="75">75</width>
+                                            </dimensions>
+                                            <seg type="ruling"> Non tabulated or diagrammatic leaves ruled in leadpoint in single-column format, frame
+                                                and lines. Non tabulated or diagrammatic leaves have typically 21-28 lines to the leaf and are written
+                                                below top line. Folios 67-68 are ruled in double-column format and have 30 lines to the column.
+                                            </seg></p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+
+                            <handDesc>
+                                <handNote script="textualisNorthern">
+                                    <p>Written in a <term type="script">northern textualis formata</term> typical of the second half of the 13th
+                                        century. </p>
+                                </handNote>
+                            </handDesc>
+
+                            <decoDesc>
+                                <decoNote type="miniature">
+                                    <p>Miniatures in the volume as follows: <list>
+                                            <item><locus from="19r" to="19r">19r</locus>: Full page miniature of Pythagoras seated and writing on a
+                                                punched gold ground. Similar illustration in <bibl subtype="external" type="MS">  <ref target="https://medieval.bodleian.ox.ac.uk/catalog/manuscript_317">Oxford, Bodleain Library,
+                                                        MS Ashmole 304, f. 14r</ref>
+                                                </bibl>.</item>
+                                            <item><locus from="45r" to="46v">45r-46v</locus>: Full page diagrammatic miniatures of hands (palms up and
+                                                with palm-creases shown) to illustrate different fortune-telling techniques using various anatomical
+                                                features of the palms. Instructive notes added to the fingers and various segments of the palm. Note
+                                                that these illustrations are a later addition to the volume, probably added in the ?14th century, and
+                                                apart from f. 45r, all of the other leaves were blank at the time the hand illustrations were
+                                                added.</item>
+                                            <item><locus from="30v" to="30v">30v</locus>: Half page miniature of the heads of the 12 sons of Jacob on
+                                                a punched gold ground. Similar illustration in <bibl subtype="external" type="MS">  <ref target="https://medieval.bodleian.ox.ac.uk/catalog/manuscript_317">Oxford, Bodleain Library,
+                                                        MS Ashmole 304, f. 52v</ref>
+                                                </bibl>.</item>
+                                            <item><locus from="3r" to="3r">3r</locus>: Illustration of a 'turris astrorum' in the lower margin. </item>
+                                            <item><locus from="3v" to="3v">3v</locus>: Illustration of seven different towers in the outer margin. </item>
+                                            <item><locus from="20v" to="29r">20v-29r</locus>: Illustration of birds accompanying passages of text in
+                                                the 'Prenosticum pitagorice', typically two birds to a leaf in the following order: <list>
+                                                    <item>Columba (dove)</item>
+                                                    <item>Filius columbe</item>
+                                                    <item>Coccinus ('scarlet bird')</item>
+                                                    <item>Anser (goose)</item>
+                                                    <item>Guiza (?)</item>
+                                                    <item>Turtur (turtle-dove)</item>
+                                                    <item>Gallus (cockerel)</item>
+                                                    <item>Uespa (?)</item>
+                                                    <item>Arquia (?heron)</item>
+                                                    <item>Pauo (peacock)</item>
+                                                    <item>Coturnix (quail)</item>
+                                                    <item>Arbe (?)</item>
+                                                    <item>Alia (?)</item>
+                                                    <item>Effroa (?)</item>
+                                                    <item>Coruus (crow)</item>
+                                                    <item>Agauf (?magpie)</item>
+                                                    <item>Bathaiana (?)</item>
+                                                    <item>Uespertilio (bat)</item>
+                                                    <item>Zerzir (?)</item>
+                                                    <item>Rahaham (?)</item>
+                                                    <item>Peret (?)</item>
+                                                    <item>Haziza (?)</item>
+                                                    <item>Nisus (hawk)</item>
+                                                    <item>Zahamat ?)</item>
+                                                    <item>Aquila (eagle)</item>
+                                                    <item>Ozina (?kingfisher)</item>
+                                                    <item>Daa (?)</item>
+                                                    <item>Saaf (?)</item>
+                                                    <item>Cooz (?)</item>
+                                                    <item>Salac (?)</item>
+                                                    <item>Sesuf (?)</item>
+                                                    <item>Tinsemet (?)</item>
+                                                    <item>Anapha (?)</item>
+                                                    <item>Diquifat (?)</item>
+                                                    <item>Coaz (?)</item>
+                                                    <item>Arphaperet (?)</item>
+                                                </list></item>
+                                            <item><locus from="47r" to="48v">47r-48v</locus>: Illustrations in round frames of 20 birds, 9
+                                                personifications of celestial bodies (sun, moon, Saturn, Jupiter, Mars, Venus, Mercury, and the
+                                                Serpent constellation), and 12 zodiac symbols. The illustrations are arranged in five pairs per leaf,
+                                                each bird paired with either a celestial personification, or a zodiac symbol. Each illustration is set
+                                                on a gold or a blue ground in a pink or green frame.</item>
+                                        </list></p>
+                                </decoNote>
+                                <decoNote type="flourInit">
+                                    <p>Red and blue flourished initials at the major and minor divisions of the texts throughout the Part.</p>
+                                </decoNote>
+                                <decoNote type="plainInit">
+                                    <p>Plain initials in red or blue (sometimes arranged in an alternating pattern) at minor divisions of the texts
+                                        and for information presented in a list format.</p>
+                                </decoNote>
+                                <decoNote type="rubrication">
+                                    <p>Rubrics and minor headings in red ink throughout the Part.</p>
+                                </decoNote>
+                            </decoDesc>
+
+
+                            <additions> See Provenance for the names of former owners or users of the volume present on various leaves in this Part.
+                            </additions>
+                        </physDesc>
+
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="medium" notAfter="1300" notBefore="1250"> Written in the second half of the 13th
+                                    century. </origDate>
+                                <origPlace><country key="place_g7002445">Written in England. </country></origPlace>
+                            </origin>
+
+                            <provenance>
+                                <p>This manuscript is closely related to <bibl subtype="external" type="MS">  <ref target="https://medieval.bodleian.ox.ac.uk/catalog/manuscript_317">Oxford, Bodleian Library, MS Ashmole
+                                            304</ref>
+                                    </bibl>, a very similar manuscript copied almost entirely by <name key="person_v34451801">
+                                        <persName type="display">Matthew Paris (d. 1259)</persName>
+                                        <persName type="standard">Matthew Paris</persName>
+                                    </name> a monk belonging to the Benedictine Abbey of <orgName key="org_v148894515">St Albans</orgName> in England.
+                                    Charles Burnett in his study of the manuscripts containing the 'Experimentarius' attributed to Bernardus
+                                    Silvestris suggested that this manuscript (Burnett's MS 'B') and Ashmole 304 (Burnett's MS 'A') are 'sister'
+                                    manuscripts copied from the same (lost) exemplar, and placed them in a 'St Albans group'. See <listBibl>
+                                        <bibl>C. Burnett, 'What is the "Experimentarius" of Bernardus Silvestris? A Preliminary Survey of the
+                                            Material', Archives d'histoire doctrinale et littéraire du Moyen Age 44 (1977), pp. 79-125, esp. n. 42 and
+                                            pp. 101-102</bibl>
+                                    </listBibl></p>
+                            </provenance>
+                        </history>
+                    </msPart>
+
+                </msDesc>
+
+
+            </sourceDesc>
+
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh2007100969"> Astrology, Early Works to 1800</term>
+                            <term key="subject_sh85008893"> Astrology</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change status="draft" when="20230503"><persName>Dr Sarah Gilbert, Project Cataloguer, Curious Cures in Cambridge Libraries
+                    Project</persName>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic decls="#document-thumbnail" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00001"/>
+        <surface n="outside_left_cover" xml:id="page-surface-1">
+            <graphic decls="#downloadImageRights #download" height="6913px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00001" width="4649px"/>
+        </surface>
+        <surface n="i verso" xml:id="page-surface-2">
+            <graphic decls="#downloadImageRights #download" height="6884px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00002" width="4371px"/>
+        </surface>
+        <surface n="ii recto" xml:id="page-surface-3">
+            <graphic decls="#downloadImageRights #download" height="6618px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00003" width="4160px"/>
+        </surface>
+        <surface n="ii verso" xml:id="page-surface-4">
+            <graphic decls="#downloadImageRights #download" height="6790px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00004" width="4295px"/>
+        </surface>
+        <surface n="iii recto" xml:id="page-surface-5">
+            <graphic decls="#downloadImageRights #download" height="6495px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00005" width="4162px"/>
+        </surface>
+        <surface n="iii verso" xml:id="page-surface-6">
+            <graphic decls="#downloadImageRights #download" height="6604px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00006" width="4075px"/>
+        </surface>
+        <surface n="iv recto" xml:id="page-surface-7">
+            <graphic decls="#downloadImageRights #download" height="6392px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00007" width="3973px"/>
+        </surface>
+        <surface n="iv verso" xml:id="page-surface-8">
+            <graphic decls="#downloadImageRights #download" height="6544px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00008" width="3945px"/>
+        </surface>
+        <surface n="v recto" xml:id="page-surface-9">
+            <graphic decls="#downloadImageRights #download" height="6346px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00009" width="3880px"/>
+        </surface>
+        <surface n="v verso" xml:id="page-surface-10">
+            <graphic decls="#downloadImageRights #download" height="6514px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00010" width="3945px"/>
+        </surface>
+        <surface n="vi recto" xml:id="page-surface-11">
+            <graphic decls="#downloadImageRights #download" height="6346px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00011" width="3880px"/>
+        </surface>
+        <surface n="vii verso" xml:id="page-surface-12">
+            <graphic decls="#downloadImageRights #download" height="6580px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00012" width="3762px"/>
+        </surface>
+        <surface n="2r" xml:id="page-surface-13">
+            <graphic decls="#downloadImageRights #download" height="6634px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00013" width="3945px"/>
+        </surface>
+        <surface n="2v" xml:id="page-surface-14">
+            <graphic decls="#downloadImageRights #download" height="6712px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00014" width="4115px"/>
+        </surface>
+        <surface n="3r" xml:id="page-surface-15">
+            <graphic decls="#downloadImageRights #download" height="6563px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00015" width="3928px"/>
+        </surface>
+        <surface n="3v" xml:id="page-surface-16">
+            <graphic decls="#downloadImageRights #download" height="6709px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00016" width="3950px"/>
+        </surface>
+        <surface n="4r" xml:id="page-surface-17">
+            <graphic decls="#downloadImageRights #download" height="6752px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00017" width="4119px"/>
+        </surface>
+        <surface n="4v" xml:id="page-surface-18">
+            <graphic decls="#downloadImageRights #download" height="6682px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00018" width="3863px"/>
+        </surface>
+        <surface n="5r" xml:id="page-surface-19">
+            <graphic decls="#downloadImageRights #download" height="6757px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00019" width="4067px"/>
+        </surface>
+        <surface n="5v" xml:id="page-surface-20">
+            <graphic decls="#downloadImageRights #download" height="6704px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00020" width="4039px"/>
+        </surface>
+        <surface n="6r" xml:id="page-surface-21">
+            <graphic decls="#downloadImageRights #download" height="6757px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00021" width="4067px"/>
+        </surface>
+        <surface n="6v" xml:id="page-surface-22">
+            <graphic decls="#downloadImageRights #download" height="6704px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00022" width="4039px"/>
+        </surface>
+        <surface n="7r" xml:id="page-surface-23">
+            <graphic decls="#downloadImageRights #download" height="6757px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00023" width="4036px"/>
+        </surface>
+        <surface n="7v" xml:id="page-surface-24">
+            <graphic decls="#downloadImageRights #download" height="6704px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00024" width="4039px"/>
+        </surface>
+        <surface n="8r" xml:id="page-surface-25">
+            <graphic decls="#downloadImageRights #download" height="6757px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00025" width="4036px"/>
+        </surface>
+        <surface n="8v" xml:id="page-surface-26">
+            <graphic decls="#downloadImageRights #download" height="6704px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00026" width="4039px"/>
+        </surface>
+        <surface n="9r" xml:id="page-surface-27">
+            <graphic decls="#downloadImageRights #download" height="6757px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00027" width="4036px"/>
+        </surface>
+        <surface n="9v" xml:id="page-surface-28">
+            <graphic decls="#downloadImageRights #download" height="6641px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00028" width="3939px"/>
+        </surface>
+        <surface n="10r" xml:id="page-surface-29">
+            <graphic decls="#downloadImageRights #download" height="6757px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00029" width="4036px"/>
+        </surface>
+        <surface n="10v" xml:id="page-surface-30">
+            <graphic decls="#downloadImageRights #download" height="6641px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00030" width="3939px"/>
+        </surface>
+        <surface n="11r" xml:id="page-surface-31">
+            <graphic decls="#downloadImageRights #download" height="6757px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00031" width="4036px"/>
+        </surface>
+        <surface n="11v" xml:id="page-surface-32">
+            <graphic decls="#downloadImageRights #download" height="6641px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00032" width="3939px"/>
+        </surface>
+        <surface n="12r" xml:id="page-surface-33">
+            <graphic decls="#downloadImageRights #download" height="6757px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00033" width="4036px"/>
+        </surface>
+        <surface n="12v" xml:id="page-surface-34">
+            <graphic decls="#downloadImageRights #download" height="6652px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00034" width="3939px"/>
+        </surface>
+        <surface n="13r" xml:id="page-surface-35">
+            <graphic decls="#downloadImageRights #download" height="6757px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00035" width="4036px"/>
+        </surface>
+        <surface n="13v" xml:id="page-surface-36">
+            <graphic decls="#downloadImageRights #download" height="6730px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00036" width="4019px"/>
+        </surface>
+        <surface n="14r" xml:id="page-surface-37">
+            <graphic decls="#downloadImageRights #download" height="6757px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00037" width="4036px"/>
+        </surface>
+        <surface n="14v" xml:id="page-surface-38">
+            <graphic decls="#downloadImageRights #download" height="6730px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00038" width="4019px"/>
+        </surface>
+        <surface n="15r" xml:id="page-surface-39">
+            <graphic decls="#downloadImageRights #download" height="6750px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00039" width="4018px"/>
+        </surface>
+        <surface n="15v" xml:id="page-surface-40">
+            <graphic decls="#downloadImageRights #download" height="6730px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00040" width="4019px"/>
+        </surface>
+        <surface n="16r" xml:id="page-surface-41">
+            <graphic decls="#downloadImageRights #download" height="6750px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00041" width="4018px"/>
+        </surface>
+        <surface n="16v" xml:id="page-surface-42">
+            <graphic decls="#downloadImageRights #download" height="6730px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00042" width="4019px"/>
+        </surface>
+        <surface n="17r" xml:id="page-surface-43">
+            <graphic decls="#downloadImageRights #download" height="6750px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00043" width="4018px"/>
+        </surface>
+        <surface n="17v" xml:id="page-surface-44">
+            <graphic decls="#downloadImageRights #download" height="6730px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00044" width="4019px"/>
+        </surface>
+        <surface n="18r" xml:id="page-surface-45">
+            <graphic decls="#downloadImageRights #download" height="6750px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00045" width="4018px"/>
+        </surface>
+        <surface n="18v" xml:id="page-surface-46">
+            <graphic decls="#downloadImageRights #download" height="6730px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00046" width="4019px"/>
+        </surface>
+        <surface n="19r" xml:id="page-surface-47">
+            <graphic decls="#downloadImageRights #download" height="6750px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00047" width="4018px"/>
+        </surface>
+        <surface n="19v" xml:id="page-surface-48">
+            <graphic decls="#downloadImageRights #download" height="6730px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00048" width="4019px"/>
+        </surface>
+        <surface n="20r" xml:id="page-surface-49">
+            <graphic decls="#downloadImageRights #download" height="6750px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00049" width="4018px"/>
+        </surface>
+        <surface n="20v" xml:id="page-surface-50">
+            <graphic decls="#downloadImageRights #download" height="6730px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00050" width="4019px"/>
+        </surface>
+        <surface n="21r" xml:id="page-surface-51">
+            <graphic decls="#downloadImageRights #download" height="6750px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00051" width="4018px"/>
+        </surface>
+        <surface n="21v" xml:id="page-surface-52">
+            <graphic decls="#downloadImageRights #download" height="6730px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00052" width="4019px"/>
+        </surface>
+        <surface n="22r" xml:id="page-surface-53">
+            <graphic decls="#downloadImageRights #download" height="6750px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00053" width="4018px"/>
+        </surface>
+        <surface n="22v" xml:id="page-surface-54">
+            <graphic decls="#downloadImageRights #download" height="6719px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00054" width="4052px"/>
+        </surface>
+        <surface n="23r" xml:id="page-surface-55">
+            <graphic decls="#downloadImageRights #download" height="6750px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00055" width="4018px"/>
+        </surface>
+        <surface n="23v" xml:id="page-surface-56">
+            <graphic decls="#downloadImageRights #download" height="6715px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00056" width="3992px"/>
+        </surface>
+        <surface n="24r" xml:id="page-surface-57">
+            <graphic decls="#downloadImageRights #download" height="6750px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00057" width="4018px"/>
+        </surface>
+        <surface n="24v" xml:id="page-surface-58">
+            <graphic decls="#downloadImageRights #download" height="6715px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00058" width="3992px"/>
+        </surface>
+        <surface n="25r" xml:id="page-surface-59">
+            <graphic decls="#downloadImageRights #download" height="6750px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00059" width="4018px"/>
+        </surface>
+        <surface n="25v" xml:id="page-surface-60">
+            <graphic decls="#downloadImageRights #download" height="6715px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00060" width="3992px"/>
+        </surface>
+        <surface n="26r" xml:id="page-surface-61">
+            <graphic decls="#downloadImageRights #download" height="6750px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00061" width="4018px"/>
+        </surface>
+        <surface n="26v" xml:id="page-surface-62">
+            <graphic decls="#downloadImageRights #download" height="6715px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00062" width="3992px"/>
+        </surface>
+        <surface n="27r" xml:id="page-surface-63">
+            <graphic decls="#downloadImageRights #download" height="6750px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00063" width="4018px"/>
+        </surface>
+        <surface n="27v" xml:id="page-surface-64">
+            <graphic decls="#downloadImageRights #download" height="6715px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00064" width="3992px"/>
+        </surface>
+        <surface n="28r" xml:id="page-surface-65">
+            <graphic decls="#downloadImageRights #download" height="6750px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00065" width="4018px"/>
+        </surface>
+        <surface n="28v" xml:id="page-surface-66">
+            <graphic decls="#downloadImageRights #download" height="6715px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00066" width="3992px"/>
+        </surface>
+        <surface n="29r" xml:id="page-surface-67">
+            <graphic decls="#downloadImageRights #download" height="6750px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00067" width="4018px"/>
+        </surface>
+        <surface n="29v" xml:id="page-surface-68">
+            <graphic decls="#downloadImageRights #download" height="6677px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00068" width="3892px"/>
+        </surface>
+        <surface n="30r" xml:id="page-surface-69">
+            <graphic decls="#downloadImageRights #download" height="6750px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00069" width="4018px"/>
+        </surface>
+        <surface n="30v" xml:id="page-surface-70">
+            <graphic decls="#downloadImageRights #download" height="6715px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00070" width="3992px"/>
+        </surface>
+        <surface n="31r" xml:id="page-surface-71">
+            <graphic decls="#downloadImageRights #download" height="6797px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00071" width="4062px"/>
+        </surface>
+        <surface n="31v" xml:id="page-surface-72">
+            <graphic decls="#downloadImageRights #download" height="6781px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00072" width="4200px"/>
+        </surface>
+        <surface n="32r" xml:id="page-surface-73">
+            <graphic decls="#downloadImageRights #download" height="6779px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00073" width="4106px"/>
+        </surface>
+        <surface n="32v" xml:id="page-surface-74">
+            <graphic decls="#downloadImageRights #download" height="6715px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00074" width="3992px"/>
+        </surface>
+        <surface n="33r" xml:id="page-surface-75">
+            <graphic decls="#downloadImageRights #download" height="6744px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00075" width="4061px"/>
+        </surface>
+        <surface n="33v" xml:id="page-surface-76">
+            <graphic decls="#downloadImageRights #download" height="6705px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00076" width="4155px"/>
+        </surface>
+        <surface n="34r" xml:id="page-surface-77">
+            <graphic decls="#downloadImageRights #download" height="6744px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00077" width="4061px"/>
+        </surface>
+        <surface n="34v" xml:id="page-surface-78">
+            <graphic decls="#downloadImageRights #download" height="6705px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00078" width="4155px"/>
+        </surface>
+        <surface n="35r" xml:id="page-surface-79">
+            <graphic decls="#downloadImageRights #download" height="6744px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00079" width="4061px"/>
+        </surface>
+        <surface n="35v" xml:id="page-surface-80">
+            <graphic decls="#downloadImageRights #download" height="6705px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00080" width="4155px"/>
+        </surface>
+        <surface n="36r" xml:id="page-surface-81">
+            <graphic decls="#downloadImageRights #download" height="6744px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00081" width="4061px"/>
+        </surface>
+        <surface n="36v" xml:id="page-surface-82">
+            <graphic decls="#downloadImageRights #download" height="6705px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00082" width="4155px"/>
+        </surface>
+        <surface n="37r" xml:id="page-surface-83">
+            <graphic decls="#downloadImageRights #download" height="6744px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00083" width="4061px"/>
+        </surface>
+        <surface n="37v" xml:id="page-surface-84">
+            <graphic decls="#downloadImageRights #download" height="6705px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00084" width="4114px"/>
+        </surface>
+        <surface n="38r" xml:id="page-surface-85">
+            <graphic decls="#downloadImageRights #download" height="6744px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00085" width="4061px"/>
+        </surface>
+        <surface n="38v" xml:id="page-surface-86">
+            <graphic decls="#downloadImageRights #download" height="6710px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00086" width="4035px"/>
+        </surface>
+        <surface n="39r" xml:id="page-surface-87">
+            <graphic decls="#downloadImageRights #download" height="6744px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00087" width="4061px"/>
+        </surface>
+        <surface n="39v" xml:id="page-surface-88">
+            <graphic decls="#downloadImageRights #download" height="6766px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00088" width="4115px"/>
+        </surface>
+        <surface n="40r" xml:id="page-surface-89">
+            <graphic decls="#downloadImageRights #download" height="6744px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00089" width="4061px"/>
+        </surface>
+        <surface n="40v" xml:id="page-surface-90">
+            <graphic decls="#downloadImageRights #download" height="6766px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00090" width="4115px"/>
+        </surface>
+        <surface n="41r" xml:id="page-surface-91">
+            <graphic decls="#downloadImageRights #download" height="6744px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00091" width="4061px"/>
+        </surface>
+        <surface n="41v" xml:id="page-surface-92">
+            <graphic decls="#downloadImageRights #download" height="6766px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00092" width="4055px"/>
+        </surface>
+        <surface n="42r" xml:id="page-surface-93">
+            <graphic decls="#downloadImageRights #download" height="6744px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00093" width="4061px"/>
+        </surface>
+        <surface n="42v" xml:id="page-surface-94">
+            <graphic decls="#downloadImageRights #download" height="6766px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00094" width="4055px"/>
+        </surface>
+        <surface n="43r" xml:id="page-surface-95">
+            <graphic decls="#downloadImageRights #download" height="6744px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00095" width="4061px"/>
+        </surface>
+        <surface n="43v" xml:id="page-surface-96">
+            <graphic decls="#downloadImageRights #download" height="6769px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00096" width="4066px"/>
+        </surface>
+        <surface n="44r" xml:id="page-surface-97">
+            <graphic decls="#downloadImageRights #download" height="6744px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00097" width="4061px"/>
+        </surface>
+        <surface n="44v" xml:id="page-surface-98">
+            <graphic decls="#downloadImageRights #download" height="6732px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00098" width="4153px"/>
+        </surface>
+        <surface n="45r" xml:id="page-surface-99">
+            <graphic decls="#downloadImageRights #download" height="6744px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00099" width="4061px"/>
+        </surface>
+        <surface n="45v" xml:id="page-surface-100">
+            <graphic decls="#downloadImageRights #download" height="6732px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00100" width="4153px"/>
+        </surface>
+        <surface n="46r" xml:id="page-surface-101">
+            <graphic decls="#downloadImageRights #download" height="6744px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00101" width="4061px"/>
+        </surface>
+        <surface n="46v" xml:id="page-surface-102">
+            <graphic decls="#downloadImageRights #download" height="6684px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00102" width="4237px"/>
+        </surface>
+        <surface n="47r" xml:id="page-surface-103">
+            <graphic decls="#downloadImageRights #download" height="6731px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00103" width="4226px"/>
+        </surface>
+        <surface n="47v" xml:id="page-surface-104">
+            <graphic decls="#downloadImageRights #download" height="6684px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00104" width="4237px"/>
+        </surface>
+        <surface n="48r" xml:id="page-surface-105">
+            <graphic decls="#downloadImageRights #download" height="6720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00105" width="4306px"/>
+        </surface>
+        <surface n="48v" xml:id="page-surface-106">
+            <graphic decls="#downloadImageRights #download" height="6680px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00106" width="4189px"/>
+        </surface>
+        <surface n="49r" xml:id="page-surface-107">
+            <graphic decls="#downloadImageRights #download" height="6720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00107" width="4203px"/>
+        </surface>
+        <surface n="49v" xml:id="page-surface-108">
+            <graphic decls="#downloadImageRights #download" height="6680px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00108" width="4159px"/>
+        </surface>
+        <surface n="50r" xml:id="page-surface-109">
+            <graphic decls="#downloadImageRights #download" height="11519px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00109" width="8641px"/>
+        </surface>
+        <surface n="50v" xml:id="page-surface-110">
+            <graphic decls="#downloadImageRights #download" height="6680px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00110" width="4159px"/>
+        </surface>
+        <surface n="51r" xml:id="page-surface-111">
+            <graphic decls="#downloadImageRights #download" height="6720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00111" width="4203px"/>
+        </surface>
+        <surface n="51v" xml:id="page-surface-112">
+            <graphic decls="#downloadImageRights #download" height="6680px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00112" width="4122px"/>
+        </surface>
+        <surface n="52r" xml:id="page-surface-113">
+            <graphic decls="#downloadImageRights #download" height="6720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00113" width="4203px"/>
+        </surface>
+        <surface n="52v" xml:id="page-surface-114">
+            <graphic decls="#downloadImageRights #download" height="6680px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00114" width="4122px"/>
+        </surface>
+        <surface n="53r" xml:id="page-surface-115">
+            <graphic decls="#downloadImageRights #download" height="6720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00115" width="4203px"/>
+        </surface>
+        <surface n="53v" xml:id="page-surface-116">
+            <graphic decls="#downloadImageRights #download" height="6677px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00116" width="4172px"/>
+        </surface>
+        <surface n="54r" xml:id="page-surface-117">
+            <graphic decls="#downloadImageRights #download" height="6720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00117" width="4203px"/>
+        </surface>
+        <surface n="54v" xml:id="page-surface-118">
+            <graphic decls="#downloadImageRights #download" height="6677px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00118" width="4172px"/>
+        </surface>
+        <surface n="55r" xml:id="page-surface-119">
+            <graphic decls="#downloadImageRights #download" height="6720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00119" width="4203px"/>
+        </surface>
+        <surface n="55v" xml:id="page-surface-120">
+            <graphic decls="#downloadImageRights #download" height="6677px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00120" width="4115px"/>
+        </surface>
+        <surface n="56r" xml:id="page-surface-121">
+            <graphic decls="#downloadImageRights #download" height="6720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00121" width="4203px"/>
+        </surface>
+        <surface n="56v" xml:id="page-surface-122">
+            <graphic decls="#downloadImageRights #download" height="6677px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00122" width="4115px"/>
+        </surface>
+        <surface n="57r" xml:id="page-surface-123">
+            <graphic decls="#downloadImageRights #download" height="6720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00123" width="4203px"/>
+        </surface>
+        <surface n="57v" xml:id="page-surface-124">
+            <graphic decls="#downloadImageRights #download" height="6677px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00124" width="4115px"/>
+        </surface>
+        <surface n="58r" xml:id="page-surface-125">
+            <graphic decls="#downloadImageRights #download" height="6720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00125" width="4203px"/>
+        </surface>
+        <surface n="58v" xml:id="page-surface-126">
+            <graphic decls="#downloadImageRights #download" height="6677px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00126" width="4115px"/>
+        </surface>
+        <surface n="59r" xml:id="page-surface-127">
+            <graphic decls="#downloadImageRights #download" height="6720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00127" width="4203px"/>
+        </surface>
+        <surface n="59v" xml:id="page-surface-128">
+            <graphic decls="#downloadImageRights #download" height="6677px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00128" width="4115px"/>
+        </surface>
+        <surface n="60r" xml:id="page-surface-129">
+            <graphic decls="#downloadImageRights #download" height="6720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00129" width="4203px"/>
+        </surface>
+        <surface n="60v" xml:id="page-surface-130">
+            <graphic decls="#downloadImageRights #download" height="6677px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00130" width="4115px"/>
+        </surface>
+        <surface n="61r" xml:id="page-surface-131">
+            <graphic decls="#downloadImageRights #download" height="6666px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00131" width="4022px"/>
+        </surface>
+        <surface n="61v" xml:id="page-surface-132">
+            <graphic decls="#downloadImageRights #download" height="6677px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00132" width="4115px"/>
+        </surface>
+        <surface n="62r" xml:id="page-surface-133">
+            <graphic decls="#downloadImageRights #download" height="6666px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00133" width="4022px"/>
+        </surface>
+        <surface n="62v" xml:id="page-surface-134">
+            <graphic decls="#downloadImageRights #download" height="6691px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00134" width="4070px"/>
+        </surface>
+        <surface n="63r" xml:id="page-surface-135">
+            <graphic decls="#downloadImageRights #download" height="6666px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00135" width="4022px"/>
+        </surface>
+        <surface n="63v" xml:id="page-surface-136">
+            <graphic decls="#downloadImageRights #download" height="6691px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00136" width="4070px"/>
+        </surface>
+        <surface n="64r" xml:id="page-surface-137">
+            <graphic decls="#downloadImageRights #download" height="6719px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00137" width="3872px"/>
+        </surface>
+        <surface n="64v" xml:id="page-surface-138">
+            <graphic decls="#downloadImageRights #download" height="6691px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00138" width="4070px"/>
+        </surface>
+        <surface n="65r" xml:id="page-surface-139">
+            <graphic decls="#downloadImageRights #download" height="6719px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00139" width="3991px"/>
+        </surface>
+        <surface n="65v" xml:id="page-surface-140">
+            <graphic decls="#downloadImageRights #download" height="6691px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00140" width="4070px"/>
+        </surface>
+        <surface n="66r" xml:id="page-surface-141">
+            <graphic decls="#downloadImageRights #download" height="6649px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00141" width="3991px"/>
+        </surface>
+        <surface n="66v" xml:id="page-surface-142">
+            <graphic decls="#downloadImageRights #download" height="6713px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00142" width="4123px"/>
+        </surface>
+        <surface n="67r" xml:id="page-surface-143">
+            <graphic decls="#downloadImageRights #download" height="6649px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00143" width="3991px"/>
+        </surface>
+        <surface n="67v" xml:id="page-surface-144">
+            <graphic decls="#downloadImageRights #download" height="6698px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00144" width="4090px"/>
+        </surface>
+        <surface n="68r" xml:id="page-surface-145">
+            <graphic decls="#downloadImageRights #download" height="6655px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00145" width="3841px"/>
+        </surface>
+        <surface n="68v" xml:id="page-surface-146">
+            <graphic decls="#downloadImageRights #download" height="6698px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00146" width="4045px"/>
+        </surface>
+        <surface n="viii recto" xml:id="page-surface-147">
+            <graphic decls="#downloadImageRights #download" height="6655px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00147" width="3952px"/>
+        </surface>
+        <surface n="viii verso" xml:id="page-surface-148">
+            <graphic decls="#downloadImageRights #download" height="6635px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00148" width="4026px"/>
+        </surface>
+        <surface n="[ix] recto" xml:id="page-surface-149">
+            <graphic decls="#downloadImageRights #download" height="6655px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00149" width="4349px"/>
+        </surface>
+        <surface n="[ix] verso" xml:id="page-surface-150">
+            <graphic decls="#downloadImageRights #download" height="6685px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00150" width="4179px"/>
+        </surface>
+        <surface n="inside_right_cover" xml:id="page-surface-151">
+            <graphic decls="#downloadImageRights #download" height="6859px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00151" width="4500px"/>
+        </surface>
+        <surface n="outside_right_cover" xml:id="page-surface-152">
+            <graphic decls="#downloadImageRights #download" height="6995px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00152" width="4659px"/>
+        </surface>
+        <surface n="spine" xml:id="page-surface-153">
+            <graphic decls="#downloadImageRights #download" height="6113px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00911-000-00153" width="1918px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#page-surface-1" n="outside_left_cover" xml:id="page-pb-1"/>
+                <pb facs="#page-surface-2" n="i verso" xml:id="page-pb-2"/>
+                <pb facs="#page-surface-3" n="ii recto" xml:id="page-pb-3"/>
+                <pb facs="#page-surface-4" n="ii verso" xml:id="page-pb-4"/>
+                <pb facs="#page-surface-5" n="iii recto" xml:id="page-pb-5"/>
+                <pb facs="#page-surface-6" n="iii verso" xml:id="page-pb-6"/>
+                <pb facs="#page-surface-7" n="iv recto" xml:id="page-pb-7"/>
+                <pb facs="#page-surface-8" n="iv verso" xml:id="page-pb-8"/>
+                <pb facs="#page-surface-9" n="v recto" xml:id="page-pb-9"/>
+                <pb facs="#page-surface-10" n="v verso" xml:id="page-pb-10"/>
+                <pb facs="#page-surface-11" n="vi recto" xml:id="page-pb-11"/>
+                <pb facs="#page-surface-12" n="vii verso" xml:id="page-pb-12"/>
+                <pb facs="#page-surface-13" n="2r" xml:id="page-pb-13"/>
+                <pb facs="#page-surface-14" n="2v" xml:id="page-pb-14"/>
+                <pb facs="#page-surface-15" n="3r" xml:id="page-pb-15"/>
+                <pb facs="#page-surface-16" n="3v" xml:id="page-pb-16"/>
+                <pb facs="#page-surface-17" n="4r" xml:id="page-pb-17"/>
+                <pb facs="#page-surface-18" n="4v" xml:id="page-pb-18"/>
+                <pb facs="#page-surface-19" n="5r" xml:id="page-pb-19"/>
+                <pb facs="#page-surface-20" n="5v" xml:id="page-pb-20"/>
+                <pb facs="#page-surface-21" n="6r" xml:id="page-pb-21"/>
+                <pb facs="#page-surface-22" n="6v" xml:id="page-pb-22"/>
+                <pb facs="#page-surface-23" n="7r" xml:id="page-pb-23"/>
+                <pb facs="#page-surface-24" n="7v" xml:id="page-pb-24"/>
+                <pb facs="#page-surface-25" n="8r" xml:id="page-pb-25"/>
+                <pb facs="#page-surface-26" n="8v" xml:id="page-pb-26"/>
+                <pb facs="#page-surface-27" n="9r" xml:id="page-pb-27"/>
+                <pb facs="#page-surface-28" n="9v" xml:id="page-pb-28"/>
+                <pb facs="#page-surface-29" n="10r" xml:id="page-pb-29"/>
+                <pb facs="#page-surface-30" n="10v" xml:id="page-pb-30"/>
+                <pb facs="#page-surface-31" n="11r" xml:id="page-pb-31"/>
+                <pb facs="#page-surface-32" n="11v" xml:id="page-pb-32"/>
+                <pb facs="#page-surface-33" n="12r" xml:id="page-pb-33"/>
+                <pb facs="#page-surface-34" n="12v" xml:id="page-pb-34"/>
+                <pb facs="#page-surface-35" n="13r" xml:id="page-pb-35"/>
+                <pb facs="#page-surface-36" n="13v" xml:id="page-pb-36"/>
+                <pb facs="#page-surface-37" n="14r" xml:id="page-pb-37"/>
+                <pb facs="#page-surface-38" n="14v" xml:id="page-pb-38"/>
+                <pb facs="#page-surface-39" n="15r" xml:id="page-pb-39"/>
+                <pb facs="#page-surface-40" n="15v" xml:id="page-pb-40"/>
+                <pb facs="#page-surface-41" n="16r" xml:id="page-pb-41"/>
+                <pb facs="#page-surface-42" n="16v" xml:id="page-pb-42"/>
+                <pb facs="#page-surface-43" n="17r" xml:id="page-pb-43"/>
+                <pb facs="#page-surface-44" n="17v" xml:id="page-pb-44"/>
+                <pb facs="#page-surface-45" n="18r" xml:id="page-pb-45"/>
+                <pb facs="#page-surface-46" n="18v" xml:id="page-pb-46"/>
+                <pb facs="#page-surface-47" n="19r" xml:id="page-pb-47"/>
+                <pb facs="#page-surface-48" n="19v" xml:id="page-pb-48"/>
+                <pb facs="#page-surface-49" n="20r" xml:id="page-pb-49"/>
+                <pb facs="#page-surface-50" n="20v" xml:id="page-pb-50"/>
+                <pb facs="#page-surface-51" n="21r" xml:id="page-pb-51"/>
+                <pb facs="#page-surface-52" n="21v" xml:id="page-pb-52"/>
+                <pb facs="#page-surface-53" n="22r" xml:id="page-pb-53"/>
+                <pb facs="#page-surface-54" n="22v" xml:id="page-pb-54"/>
+                <pb facs="#page-surface-55" n="23r" xml:id="page-pb-55"/>
+                <pb facs="#page-surface-56" n="23v" xml:id="page-pb-56"/>
+                <pb facs="#page-surface-57" n="24r" xml:id="page-pb-57"/>
+                <pb facs="#page-surface-58" n="24v" xml:id="page-pb-58"/>
+                <pb facs="#page-surface-59" n="25r" xml:id="page-pb-59"/>
+                <pb facs="#page-surface-60" n="25v" xml:id="page-pb-60"/>
+                <pb facs="#page-surface-61" n="26r" xml:id="page-pb-61"/>
+                <pb facs="#page-surface-62" n="26v" xml:id="page-pb-62"/>
+                <pb facs="#page-surface-63" n="27r" xml:id="page-pb-63"/>
+                <pb facs="#page-surface-64" n="27v" xml:id="page-pb-64"/>
+                <pb facs="#page-surface-65" n="28r" xml:id="page-pb-65"/>
+                <pb facs="#page-surface-66" n="28v" xml:id="page-pb-66"/>
+                <pb facs="#page-surface-67" n="29r" xml:id="page-pb-67"/>
+                <pb facs="#page-surface-68" n="29v" xml:id="page-pb-68"/>
+                <pb facs="#page-surface-69" n="30r" xml:id="page-pb-69"/>
+                <pb facs="#page-surface-70" n="30v" xml:id="page-pb-70"/>
+                <pb facs="#page-surface-71" n="31r" xml:id="page-pb-71"/>
+                <pb facs="#page-surface-72" n="31v" xml:id="page-pb-72"/>
+                <pb facs="#page-surface-73" n="32r" xml:id="page-pb-73"/>
+                <pb facs="#page-surface-74" n="32v" xml:id="page-pb-74"/>
+                <pb facs="#page-surface-75" n="33r" xml:id="page-pb-75"/>
+                <pb facs="#page-surface-76" n="33v" xml:id="page-pb-76"/>
+                <pb facs="#page-surface-77" n="34r" xml:id="page-pb-77"/>
+                <pb facs="#page-surface-78" n="34v" xml:id="page-pb-78"/>
+                <pb facs="#page-surface-79" n="35r" xml:id="page-pb-79"/>
+                <pb facs="#page-surface-80" n="35v" xml:id="page-pb-80"/>
+                <pb facs="#page-surface-81" n="36r" xml:id="page-pb-81"/>
+                <pb facs="#page-surface-82" n="36v" xml:id="page-pb-82"/>
+                <pb facs="#page-surface-83" n="37r" xml:id="page-pb-83"/>
+                <pb facs="#page-surface-84" n="37v" xml:id="page-pb-84"/>
+                <pb facs="#page-surface-85" n="38r" xml:id="page-pb-85"/>
+                <pb facs="#page-surface-86" n="38v" xml:id="page-pb-86"/>
+                <pb facs="#page-surface-87" n="39r" xml:id="page-pb-87"/>
+                <pb facs="#page-surface-88" n="39v" xml:id="page-pb-88"/>
+                <pb facs="#page-surface-89" n="40r" xml:id="page-pb-89"/>
+                <pb facs="#page-surface-90" n="40v" xml:id="page-pb-90"/>
+                <pb facs="#page-surface-91" n="41r" xml:id="page-pb-91"/>
+                <pb facs="#page-surface-92" n="41v" xml:id="page-pb-92"/>
+                <pb facs="#page-surface-93" n="42r" xml:id="page-pb-93"/>
+                <pb facs="#page-surface-94" n="42v" xml:id="page-pb-94"/>
+                <pb facs="#page-surface-95" n="43r" xml:id="page-pb-95"/>
+                <pb facs="#page-surface-96" n="43v" xml:id="page-pb-96"/>
+                <pb facs="#page-surface-97" n="44r" xml:id="page-pb-97"/>
+                <pb facs="#page-surface-98" n="44v" xml:id="page-pb-98"/>
+                <pb facs="#page-surface-99" n="45r" xml:id="page-pb-99"/>
+                <pb facs="#page-surface-100" n="45v" xml:id="page-pb-100"/>
+                <pb facs="#page-surface-101" n="46r" xml:id="page-pb-101"/>
+                <pb facs="#page-surface-102" n="46v" xml:id="page-pb-102"/>
+                <pb facs="#page-surface-103" n="47r" xml:id="page-pb-103"/>
+                <pb facs="#page-surface-104" n="47v" xml:id="page-pb-104"/>
+                <pb facs="#page-surface-105" n="48r" xml:id="page-pb-105"/>
+                <pb facs="#page-surface-106" n="48v" xml:id="page-pb-106"/>
+                <pb facs="#page-surface-107" n="49r" xml:id="page-pb-107"/>
+                <pb facs="#page-surface-108" n="49v" xml:id="page-pb-108"/>
+                <pb facs="#page-surface-109" n="50r" xml:id="page-pb-109"/>
+                <pb facs="#page-surface-110" n="50v" xml:id="page-pb-110"/>
+                <pb facs="#page-surface-111" n="51r" xml:id="page-pb-111"/>
+                <pb facs="#page-surface-112" n="51v" xml:id="page-pb-112"/>
+                <pb facs="#page-surface-113" n="52r" xml:id="page-pb-113"/>
+                <pb facs="#page-surface-114" n="52v" xml:id="page-pb-114"/>
+                <pb facs="#page-surface-115" n="53r" xml:id="page-pb-115"/>
+                <pb facs="#page-surface-116" n="53v" xml:id="page-pb-116"/>
+                <pb facs="#page-surface-117" n="54r" xml:id="page-pb-117"/>
+                <pb facs="#page-surface-118" n="54v" xml:id="page-pb-118"/>
+                <pb facs="#page-surface-119" n="55r" xml:id="page-pb-119"/>
+                <pb facs="#page-surface-120" n="55v" xml:id="page-pb-120"/>
+                <pb facs="#page-surface-121" n="56r" xml:id="page-pb-121"/>
+                <pb facs="#page-surface-122" n="56v" xml:id="page-pb-122"/>
+                <pb facs="#page-surface-123" n="57r" xml:id="page-pb-123"/>
+                <pb facs="#page-surface-124" n="57v" xml:id="page-pb-124"/>
+                <pb facs="#page-surface-125" n="58r" xml:id="page-pb-125"/>
+                <pb facs="#page-surface-126" n="58v" xml:id="page-pb-126"/>
+                <pb facs="#page-surface-127" n="59r" xml:id="page-pb-127"/>
+                <pb facs="#page-surface-128" n="59v" xml:id="page-pb-128"/>
+                <pb facs="#page-surface-129" n="60r" xml:id="page-pb-129"/>
+                <pb facs="#page-surface-130" n="60v" xml:id="page-pb-130"/>
+                <pb facs="#page-surface-131" n="61r" xml:id="page-pb-131"/>
+                <pb facs="#page-surface-132" n="61v" xml:id="page-pb-132"/>
+                <pb facs="#page-surface-133" n="62r" xml:id="page-pb-133"/>
+                <pb facs="#page-surface-134" n="62v" xml:id="page-pb-134"/>
+                <pb facs="#page-surface-135" n="63r" xml:id="page-pb-135"/>
+                <pb facs="#page-surface-136" n="63v" xml:id="page-pb-136"/>
+                <pb facs="#page-surface-137" n="64r" xml:id="page-pb-137"/>
+                <pb facs="#page-surface-138" n="64v" xml:id="page-pb-138"/>
+                <pb facs="#page-surface-139" n="65r" xml:id="page-pb-139"/>
+                <pb facs="#page-surface-140" n="65v" xml:id="page-pb-140"/>
+                <pb facs="#page-surface-141" n="66r" xml:id="page-pb-141"/>
+                <pb facs="#page-surface-142" n="66v" xml:id="page-pb-142"/>
+                <pb facs="#page-surface-143" n="67r" xml:id="page-pb-143"/>
+                <pb facs="#page-surface-144" n="67v" xml:id="page-pb-144"/>
+                <pb facs="#page-surface-145" n="68r" xml:id="page-pb-145"/>
+                <pb facs="#page-surface-146" n="68v" xml:id="page-pb-146"/>
+                <pb facs="#page-surface-147" n="viii recto" xml:id="page-pb-147"/>
+                <pb facs="#page-surface-148" n="viii verso" xml:id="page-pb-148"/>
+                <pb facs="#page-surface-149" n="[ix] recto" xml:id="page-pb-149"/>
+                <pb facs="#page-surface-150" n="[ix] verso" xml:id="page-pb-150"/>
+                <pb facs="#page-surface-151" n="inside_right_cover" xml:id="page-pb-151"/>
+                <pb facs="#page-surface-152" n="outside_right_cover" xml:id="page-pb-152"/>
+                <pb facs="#page-surface-153" n="spine" xml:id="page-pb-153"/>
+            </div>
+        </body>
+    </text>
+</TEI>

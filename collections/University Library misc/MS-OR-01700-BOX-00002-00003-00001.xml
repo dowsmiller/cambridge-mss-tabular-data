@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_12273">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, University Library, MS Or. 1700.2.3.1</title>
+                <funder>The Polonsky Foundation</funder>
+                <principal>Suzanne Paul</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>University Library</publisher>
+
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made
+                        available for download are licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This
+                        metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+
+            <availability xml:id="watermark" status="restricted"><licence>Cambridge University Library (CC BY-NC 4.0)</licence></availability></publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-OR-01700-BOX-00002-00003-00001" xml:lang="en">
+                    <msIdentifier>
+                        <institution>University of Cambridge</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Oriental Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, University Library, MS Or. 1700.2.3.1</idno>
+                        <altIdentifier type="external">
+                            <idno type="diktyon">Diktyon 12273</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+
+                    <msContents>
+                        <summary>
+                            <seg type="para">This fragment is a scrap of parchment containing part
+                                of the Gospel of Mark, in a script perhaps dating to the 7th
+                                century.</seg>
+                            <seg type="para">Dr Christopher Wright</seg>
+                        </summary>
+
+                        <textLang mainLang="grc">Greek</textLang>
+
+                        <msItem n="1">
+                            <title xml:lang="eng">Gospel of Mark</title>
+                            <note>This fragment contains parts of Mk 14:52-53 and Mk 14:61-62</note>
+                            <note>Gregory-Aland 0317</note>
+                            <incipit defective="true">
+                                <locus from="[1] recto" to="[1] recto">Recto </locus>
+                                <!-- <supplied reason="damage">εφυ</supplied> -->γεν και
+                                    απηγαγο<supplied reason="damage">ν</supplied>
+                     </incipit>
+                            <explicit defective="true">
+                                <locus from="[1] verso" to="[1] verso">Verso</locus> εκ
+                                δεξιων καθημενον <supplied reason="damage">τ</supplied>ης
+                                    δυναμεω<supplied reason="damage">ς</supplied> κα<supplied reason="damage">ι</supplied>
+                                ερχο<!-- <supplied reason="damage">μενον</supplied> --></explicit>
+                            <note>TLG 0031.002</note>
+                        </msItem>
+                    </msContents>
+
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="perg">
+                                <support>
+                                    <material>Parchment</material>
+                                </support>
+
+                                <extent>
+                                    <seg type="object">
+                              <objectType>Fragment </objectType> (scrap) </seg>
+                                    <seg type="leaf">
+                                        <num type="leaf" value="1">1</num>
+                           </seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="fragment" unit="mm">
+                                            <height quantity="85">85</height>
+                                            <width quantity="108">108</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+
+                                <condition>There is water staining and areas of dirt.</condition>
+                            </supportDesc>
+                        </objectDesc>
+
+                        <handDesc>
+                            <handNote scope="sole" xml:id="hand-1">
+                                <p>The text was copied in <term type="script">Biblical
+                                        majuscule</term> script, with serifs, in brown ink. Letters
+                                    at the end of lines are often reduced in size.</p>
+                                <p> Breathings and accents are not present.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+
+                    <history>
+                        <origin>The manuscript to which this fragment belonged may date to around
+                            the <origDate calendar="gregorian" notAfter="0699" notBefore="0600">7th
+                                century</origDate>, as suggested by the style of script.</origin>
+
+                        <acquisition calendar="gregorian" when="1939">The fragment was donated by
+                            the scholar of Coptic <name key="person_v15544039" role="fmo" type="person">
+                        <persName type="display">Herbert Thompson
+                                    (1859-1944)</persName>
+                        <persName type="standard">Thompson,
+                                    Herbert, Sir, 1859-1944</persName>
+                     </name> in 1939, as part of a
+                            collection of fragments.</acquisition>
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <p/>
+                            </recordHist>
+                            <availability>
+                                <p>Entry to read in the Library is permitted only on presentation of a valid reader's card. For information on
+                                    eligibility and admissions procedures, see <ref target="https://www.lib.cam.ac.uk/using-library/joining-library">Joining the Library</ref>). For further information on the availability of the manuscript, please contact the
+                                    <ref target="mss@lib.cam.ac.uk">Manuscripts Reading Room</ref>.</p>
+                            </availability>
+                        </adminInfo>
+
+                        <listBibl> </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject
+                            Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85013576 ">Bible</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2021-01-12">
+                <persName>Christopher Wright</persName>
+            </change>
+
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+      <graphic decls="#document-thumbnail" rend="portrait" url="MS-OR-01700-BOX-00002-00003-00001-000-00001"/>
+      <surface n="[1] recto" xml:id="i1">
+            <graphic decls="#downloadImageRights #download" height="3769px" rend="portrait" url="MS-OR-01700-BOX-00002-00003-00001-000-00001" width="3052px"/>
+      </surface>
+      <surface n="[1] verso" xml:id="i2">
+            <graphic decls="#downloadImageRights #download" height="3768px" rend="portrait" url="MS-OR-01700-BOX-00002-00003-00001-000-00002" width="3052px"/>
+      </surface>
+   </facsimile>
+    <text>
+      <body>
+         <div>
+            <pb facs="#i1" n="[1] recto" xml:id="pb-1recto"/>
+            <pb facs="#i2" n="[1] verso" xml:id="pb-1verso"/>
+         </div>
+      </body>
+   </text>
+    
+</TEI>

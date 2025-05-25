@@ -1,0 +1,2244 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, Trinity College, MS O.1.65</title>
+                <funder>Wellcome</funder>
+                <principal>James Freeman</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+                <availability status="restricted" xml:id="displayImageRights">
+                    <p>Zooming image © University Library, All rights reserved.</p>
+                </availability>
+                <availability status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+                <availability status="restricted" xml:id="watermark">
+                    <licence>Trinity College, Cambridge (CC BY-NC 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="MS-TRINITY-COLLEGE-O-00001-00065" xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+                    <msIdentifier>
+                        <institution>Trinity College, Cambridge</institution>
+                        <repository>Trinity College Library</repository>
+                        <collection>Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, Trinity College, MS O.1.65</idno>
+                        <altIdentifier type="internal">
+                            <idno type="james">MS 1089</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <head>Medical and alchemical recipes</head>
+                    <msContents>
+                        <summary>
+                            <!-- Introduction to be written or sourced-->
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc material="chart">
+                                <support>A manuscript of four separate parts, each consisting of paper leaves. </support>
+                                <extent>
+                                    <seg type="object">Codex: </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="2" type="laterFlyleaf">ii</measure> + <measure quantity="59" type="leaf">59</measure> |
+                                            <measure quantity="76" type="leaf">76</measure> | <measure quantity="127" type="leaf">127</measure> |
+                                            <measure quantity="28" type="leaf">28</measure> + <measure quantity="2" type="laterFlyleaf">ii</measure>
+                                        leaves.</seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height max="170" min="95">95-170</height>
+                                            <width max="130" min="105">105-130</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+                                <foliation>
+                                    <p>This catalogue record contains several early modern and modern foliation and pagination sequences. These are
+                                        each described in turn below as Foliation Sequences 1-3. In order to produce a useable sequence for the
+                                        present digital catalogue record (for which unique folio numbers are required), some of these sequences are
+                                        followed (wholly or in part), while others are ignored. The prefatory numbers (i.e. '1:', '2:', etc) refer not
+                                        to the relevant Foliation Sequence, however, but to the Part of the manuscript in which they are found. </p>
+                                    <p>The resulting, amalgamated foliation sequence is as follows: [i]-[ii] + 1:1-1:57, [1:57a], 1:58-1:59 [cf.
+                                        Foliation Sequence 2 below] | 2:i-2:iv, [2:v] [cf. Foliation Sequence 2 below], 2:1-2:32 [cf. Foliation
+                                        Sequence 3 below], 2:33 [not written out in any sequence but implied], 2:34-2:68 [cf. Foliation Sequence 2
+                                        below], 2:69 [cf. Foliation Sequence 3 below], 2:70-2:71 [cf. Foliation Sequence 2 below] | 3:129, [3:129a],
+                                        3:130-3:135 [cf. Foliation Sequence 1 below], 3:i-3:viii [cf. Foliation Sequence 2 below], 3:136-3:187,
+                                        3:187a, 3:188-3:196, [3:196a], 3:197-3:207, [3:207a], 3:208-3:210, [3:210a], 3:211-3:215, 3:215a, 3:216-3:224,
+                                        3:224a, 3:225-3:226, 3:226a-3:226b, 3:227-3:242, 3:242a [cf. Foliation Sequence 1 below] | 4:243-3:266,
+                                        4:266a, 4:267-4:269 [cf. Foliation Sequence 1 below] + [iii]-[iv]</p>
+                                    <p>Folios [i]-[ii] and [iii]-[iv] are unfoliated early modern paper flyleaves at the beginning and end of the
+                                        manuscript that have been allocated Roman numerals between square brackets for reference purposes in this
+                                        electronic catalogue record. </p>
+                                </foliation>
+                                <foliation n="1" notAfter="1800" notBefore="1600">
+                                    <p>Sequence 1: 17th- or 18th-century continous foliation throughout Parts 1, 2, 3, and 4:</p>
+                                    <p>'1'-'32', '32', '33'-'50' (for ff. <locus from="1:7r" to="1:57v">1:7-1:57</locus>) [=Part 1]; '51'-'109' (for
+                                        ff. <locus from="2:1r" to="2:59v">2:1-2:59</locus>), and '120'-'128' (for ff. <locus from="2:60r" to="2:68v"
+                                            >2:60-2:68</locus>) [=Part 2]; '129', [129a], '130'-'196', [196a], '197'-'207', [207a], '208'-'210',
+                                        [210a], '211'-'215', '215', '216'-'224', '224', '225'-'226', '226', '226', '227'-'242' (for ff. <locus
+                                            from="3:129r" to="3:187v">3:129, [3:129a], 3:130, 3:131-3:187v</locus> and <locus from="3:188r"
+                                            to="3:242v">3:188-3:196, [3:196a], 3:197-3:207, [3:207a], 3:208-3:210, [3:210a], 3:211-3:215, 3:215a,
+                                            3:216-3:224, 3:224a, 3:225-3:226, 3:226a-3:226b, 3:227-3:242</locus>) [=Part 3]; '243'-'266', '267' (for
+                                            <locus from="4:243r" to="4:266v">4:243-4:266</locus>, and <locus from="4:267r" to="4:267v">4:267</locus>)
+                                        [=Part 4].</p>
+                                    <note>Numbering in dark ink in the upper left-hand and right-hand corners or centre of the upper margins of the
+                                        rectos. The numbers '51'-'82' have been largely crossed out, although some have been partly crossed so that
+                                        remaining numbers could be reused for a new foliation sequence (see below)</note>
+                                    <note><p>Folio [129a] is an unfoliated stub with (some) writing and ff. [196a], [207a], and [210a] are unfoliated
+                                            fragments of leaves with writing that have been allocated a number between square brackets for reference
+                                            purposes in this electronic catalogue record.</p>
+                                        <p>This foliation is supplemented in pencil by a modern hand: letters <q>a</q> and <q>b</q> for duplicate
+                                            numbers, and numbers and letters for unfoliated pages: <q>187a</q>, <q>242a</q>, <q>266a</q>, <q>268</q>,
+                                            and <q>269</q>.</p>
+                                        <p>This foliation sequence is partially followed in this catalogue record, which ignores it for Parts 1 and 2,
+                                            but follows it (with its modern supplements) for Parts 3 and 4.</p>
+                                    </note>
+                                </foliation>
+                                <foliation n="2" notAfter="2000" notBefore="1800">
+                                    <p>Sequence 2: 20th-century foliation in sections of Parts 1, 2, and 3:</p>
+                                    <p>'1'-'57', [57a], '58'-'59' (for ff. <locus from="1:1r" to="1:158v">1:1-1:57, [1:57a], 1:58-1:59</locus>) [=Part
+                                        1]; '(i)'-'(iv)' (for <locus from="2:i recto" to="2:iv verso">2:i-2:iv</locus>, [2:v], '34'-'68' (for ff.
+                                            <locus from="2:34r" to="2:68v">2:34-2:68</locus>), '70'-'71' (for ff. <locus from="2:70r" to="2:71v"
+                                            >2:70-2:71</locus> [=Part 2]; '(i)'-'(viii)' (for ff. <locus from="3:i recto" to="3:viii verso"
+                                            >3:i-3:viii</locus>), '187a' (for f. <locus from="3:187a recto" to="3:187a verso">3:187a</locus> [=Part
+                                        3].</p>
+                                    <note>Numbering in pencil in the upper right-hand and left-hand corners of the rectos.</note>
+                                    <note>Folio [57a] is an unfoliated paper stub with (some) writing on it and f. [1:v] is a blank unfoliated leaf
+                                        that have been allocated numbers between square brackets for reference purposes in this electronic catalogue
+                                        record.</note>
+                                    <p>This foliation sequence is entirely followed in this catalogued record.</p>
+                                </foliation>
+                                <foliation n="3" notAfter="1800" notBefore="1600">
+                                    <p>Sequence 3: 17th- or 18th-century foliation for Part 2:</p>
+                                    <p>'1'-'32' (for ff. <locus from="2:1r" to="2:32">2:1-2:32</locus>), '60'-'69' (for ff. <locus from="2:60r"
+                                            to="2:69v">2:60-2:69</locus> [=Part 2]</p>
+                                    <note>Numbering in dark ink in the upper left-hand corner of the rectos. The foliator has created the numbers
+                                        '1'-'9' by crossing out part of the 17th-century foliation sequence that is continuous for Parts 1-4 (see
+                                        above).</note>
+                                    <note>The numbers '60'-'68' have been crossed out by the 17th-century continuous foliator (see above) and the
+                                        modern foliator (see above), although the latter seem to have accepted and integrated its number '69' (f.
+                                            <locus from="2:69r" to="2:69v">2:69</locus>) into their sequence.</note>
+                                    <note>This foliation sequence is partially followed in this catalogue record: it follows the number sequence
+                                        '1'-'32', and '69'.</note>
+                                </foliation>
+                                <foliation n="4" notAfter="1800" notBefore="1600">
+                                    <p>Sequence 4: 17th- or 18th-century sequence seemingly alternating between pagination and foliation in Part
+                                        3:</p>
+                                    <p>Page numbers '6'-'10' (for ff. <locus from="3:130r" to="3:132v">3:130r-3:132v</locus>); Folio numbers '3'-'4'
+                                        (for ff. <locus from="3:133r" to="3:134v">3:133-3:134</locus>); Folio number '11' (for f. <locus from="3:135v"
+                                            to="3:135v">3:135r-3:135v</locus>) [but written on the verso side of the leaf]; Page numbers '12'-'31'
+                                        (for ff. <locus from="3:136r" to="3:145v">3:136-3:145</locus>); Folio numbers '32'-'35' (for ff. <locus
+                                            from="3:146r" to="3:149v">3:146-3:149</locus>; Page numbers '36'-'43' (for ff. <locus from="3:150r"
+                                            to="3:153v">3:150r-3:153v</locus>); Folio number '44' (f. <locus from="154r" to="154v">154</locus>); Page
+                                        numbers '44'-'69' (for ff. <locus from="3:154" to="3:167v">3:154-3:167</locus>); Folio number '70' (for f.
+                                            <locus from="3:168r" to="3:168v">3:168</locus>; Page numbers '71'-'118' (for <locus from="3:169r"
+                                            to="3:191v">3:169v-3:191v</locus>; Folio number '119' (for <locus from="3:192r" to="3:192v">3:192</locus>;
+                                        Page numbers '120'-'151' (for ff. <locus from="3:193r" to="3:208v">3:193r-3:208v</locus>); Folio numbers
+                                        '152'-'153' (for f. <locus from="3:209r" to="3:210r">3:209-3:210</locus>); Page numbers '154'-'189' (for ff.
+                                            <locus from="3:211r" to="3:226v">3:211-3:226</locus>, Folio number '190' (for f. <locus from="226a recto"
+                                            to="226a verso">226a</locus>) [but written on the verso side of the leaf]; Page numbers '191'-'196' (for
+                                        ff. <locus from="3:226b recto" to="3:228v">3:226b recto-3:228v</locus>; Folio number '197' (for ff. <locus
+                                            from="3:229r" to="3:229v">3:229</locus>); Page numbers '198'-'213' (for ff. <locus from="3:230r"
+                                            to="3:237v">3:230r-3:237v</locus>; Folio number '214' [not physically numbered but implied] (for f. <locus
+                                            from="3:238r" to="3:238v">3:238</locus>; Page numbers '215'-'218' (for ff. <locus from="3:239r"
+                                            to="3:240v">3:239-3:240</locus>.</p>
+                                    <note>Numbering in dark ink in the upper left-hand corners of the rectos and upper right-hand corners of the
+                                        versos of leaves.</note>
+                                    <note>This numbering sequence has been entirely ignored in this catalogue record.</note>
+                                </foliation>
+                                <foliation n="5" notAfter="1600" notBefore="1500">
+                                    <p>Sequence 5: (?) 16th-century foliation:</p>
+                                    <p>'16'-'18', '31'-'34', '61'-'68', '130'-'132', '168'-'175' (for ff. <locus from="1:244r" to="1:268v"
+                                            >1:244-1:268</locus></p>
+                                    <note>Numbering in light brown ink in the upper right-hand corners of the rectos of leaves.</note>
+                                    <note>This numbering sequence has been entirely ignored in this catalogue record.</note>
+                                </foliation>
+                                <collation mainStructures="8">
+                                    <p>Due to the complexity of this manuscript and tightness of the current biding, it has not been possible to
+                                        propose a plausible collation for Parts 1, 2, and 3. The collation summary below is for Part 4 only.</p>
+                                    <p><formula> 1<hi rend="superscript">?8-4</hi>: ?1-2, and ?7-8 missing; 2<hi rend="superscript">?8-5</hi>: 1 and 2
+                                            and three leaves missing in the quire's second half 3<hi rend="superscript">8</hi>; three leaves; 4<hi
+                                                rend="superscript">8</hi>; three leaves </formula></p>
+                                    <note><p>This catalogue record deviates from the collation provided by M.R. James (1902), which is followed by
+                                            Mooney (1995) and Timmermann (2015), in that it does not divide the manuscript into three parts but
+                                            identifies four separate parts. It also suggests that Part 3 may consist of further parts. However, due to
+                                            the tightness of the current binding it has not been possible to securely identify their
+                                        ranges.</p></note>
+                                </collation>
+                            </supportDesc>
+                        </objectDesc>
+                        <bindingDesc>
+                            <binding notAfter="1700" notBefore="1600">
+                                <p>(?)17th-century binding of brown leather; the spine re-backed with three paper labels containing the separate
+                                    alpha-numerical elements of the manuscript's classmark: <q>O</q>, <q>1</q>, <q>65</q>.</p>
+                                <p>Binding height: 185mm; width: 130mm; 45mm.</p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <provenance notAfter="1702" notBefore="1635" type="fmo">
+                            <p>One of the manuscripts of <name key="person_v46783945" role="fmo">
+                                    <persName type="display">Thomas Gale (1635/6-1702)</persName>
+                                    <persName type="standard">Gale, Thomas, 1635/6-1702</persName></name>, dean of York, antiquary and fellow of
+                                Trinity College Cambridge.</p>
+                        </provenance>
+                        <provenance notAfter="1738" notBefore="1702" type="fmo">
+                            <p>One of the manuscripts of <name key="person_v62981706" role="fmo">
+                                    <persName type="display">Roger Gale (1672-1744)</persName>
+                                    <persName type="standard">Gale, Roger, 1672-1744</persName></name>, antiquary and scholar, son of Thomas Gale.
+                                Inherited from his father.</p>
+                        </provenance>
+                        <acquisition when="1739">
+                            <p>Donated to Trinity College by <name key="person_v62981706" role="dnr"><persName type="display">Roger Gale
+                                        (1672-1744)</persName><persName type="standard">Gale, Roger, 1672-1744</persName></name>, son of Thomas Gale
+                                (1635/6-1702), in 1738. The alpha-numerical elements of its classmark are printed on three paper tabs on the damaged
+                                spine: <q>O</q>, <q>1</q>, <q>65</q>. The classmark <q>O.1.65</q> inscribed in red ink on the <locus
+                                    from="front cover, inner" to="front cover, inner">inside of the front cover</locus> and in brown ink on f. <locus
+                                    from="1:1r" to="1:1r">1:1r</locus>. The College's ex libris, featuring its armorial coat of arms, motto (<q>Virtus
+                                    Vera Nobilitas</q>), name (<q>Coll: Trin: Cantab:</q>), and portrait of King Henry VIII, engraved by William
+                                Stephens, fl. c. 1740-c. 1760 (<q>W. Stephens sculp.</q>) is pasted on the <locus from="front cover, inner"
+                                    to="front cover, inner"> inside of the front cover</locus>; another simpler ex libris, also engraved by William
+                                Stephens, is pasted on f. <locus from="1:1v" to="1:1v">1:1v</locus>. The College's bookstamp occurs on f. <locus
+                                    from="1:1r" to="1:1r">1:1r</locus> and f. <locus from="1:269v" to="1:269v">1:269v</locus>
+                            </p>
+                        </acquisition>
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source>This catalogue entry draws on <bibl>M.R. James, <hi rend="italic">The western manuscripts in the library of
+                                            Trinity College, Cambridge: a descriptive catalogue</hi>, 2 (1902)</bibl>; <bibl>Linne R. Mooney, <hi
+                                            rend="italic">Manuscripts in the Library of Trinity College, Cambridge</hi> The Index of Middle English
+                                        Prose, Handlist XI (Woodbridge: Brewer, 1995)</bibl>; and <bibl>Anke Timmermann, 'Alchemy in Cambridge: An
+                                        Annotated Catalogue of Alchemical Texts and Illustrations in Cambridge Repositories', <hi rend="italic"
+                                            >Nuncius</hi>, 30 (2015), 345-511</bibl>.</source>
+                            </recordHist>
+                            <availability status="restricted">
+                                <p>Visitors to Trinity College who wish to consult Special Collections material are required to apply to the Library
+                                    in advance of their visit. For information on eligibility and admission procedures see: <ref
+                                        target="https://www.trin.cam.ac.uk/library/wren-library/information-for-readers/">Trinity College: Information
+                                        for Readers</ref>.</p>
+                            </availability>
+                        </adminInfo>
+                        <listBibl type="WRAPPER">
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/KES8G4PP" type="book" xml:id="James1902">
+                                <monogr>
+                                    <title level="m">The Western Manuscripts in the Library of Trinity College, Cambridge: A Descriptive
+                                        Catalogue</title>
+                                    <extent>4</extent>
+                                    <author>
+                                        <forename>M.R.</forename>
+                                        <surname>James</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">3</biblScope>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>1902</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 67 (no. 1089).</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/HN4SHGKX" type="book" xml:id="Singer1928">
+                                <monogr>
+                                    <title level="m">Catalogue of Latin and Vernacular Alchemical Manuscripts in Great Britain and Ireland: Dating
+                                        from before the XVI Century</title>
+                                    <extent>3</extent>
+                                    <author>
+                                        <forename>Dorothea Waley</forename>
+                                        <surname>Singer</surname>
+                                    </author>
+                                    <respStmt>
+                                        <resp>contributor</resp>
+                                        <persName>
+                                            <forename>Annie</forename>
+                                            <surname>Anderson</surname>
+                                        </persName>
+                                    </respStmt>
+                                    <respStmt>
+                                        <resp>contributor</resp>
+                                        <persName>
+                                            <forename>Robina</forename>
+                                            <surname>Addis</surname>
+                                        </persName>
+                                    </respStmt>
+                                    <imprint>
+                                        <pubPlace>Brussels</pubPlace>
+                                        <publisher>Maurice Lamertin</publisher>
+                                        <date>1928</date>
+                                    </imprint>
+                                </monogr>
+                                <note>II (1930), p. 743 (no. 1111.xxxiv).</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/HNTFRWIP" type="book" xml:id="Mooney1995">
+                                <monogr>
+                                    <title level="m">Manuscripts in the Library of Trinity College, Cambridge</title>
+                                    <author>
+                                        <forename>Linne R.</forename>
+                                        <surname>Mooney</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Woodbridge</pubPlace>
+                                        <publisher>D.S. Brewer</publisher>
+                                        <date>1995</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Index of Middle English prose</title>
+                                    <biblScope unit="volume">11</biblScope>
+                                </series>
+                                <note>pp. 76-81.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/EQIKBS9X" type="bookSection" xml:id="Pahta2004">
+                                <analytic>
+                                    <title level="a">Code-Switching in Medieval Medical Writing</title>
+                                    <author>
+                                        <forename>Päivi</forename>
+                                        <surname>Pahta</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Medical and Scientific Writing in Late Medieval English</title>
+                                    <editor>
+                                        <forename>Irma</forename>
+                                        <surname>Taavitsainen</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>Päivi</forename>
+                                        <surname>Pahta</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="page">73-99</biblScope>
+                                        <publisher>Cambridge University Press</publisher>
+                                        <date>2004</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 77.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/LIFI87IG" type="journalArticle" xml:id="Tavormina2005">
+                                <analytic>
+                                    <title level="a">The Twenty-Jordan Series: An Illustrated Middle English Uroscopy Text</title>
+                                    <idno type="DOI">10.3200/ANQQ.18.3.43</idno>
+                                    <author>
+                                        <forename>M. Teresa</forename>
+                                        <surname>Tavormina</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">ANQ: A Quarterly Journal of Short Articles, Notes and Reviews</title>
+                                    <imprint>
+                                        <biblScope unit="volume">18</biblScope>
+                                        <biblScope unit="issue">3</biblScope>
+                                        <biblScope unit="page">43-67</biblScope>
+                                        <date>2005</date>
+                                        <note type="url">https://doi.org/10.3200/ANQQ.18.3.43</note>
+                                    </imprint>
+                                </monogr>
+                                <note>no. 57.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/CXRFXDN2" type="thesis" xml:id="Mitchell2011">
+                                <monogr>
+                                    <title level="m">The Cultural Uses of Magic in Fifteenth-Century England</title>
+                                    <author>
+                                        <forename>Laura</forename>
+                                        <surname>Mitchell</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Toronto</pubPlace>
+                                        <date>2011</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 76 fn.197; 157 fn. 68; 249.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/3K5PZ7M4" type="book" xml:id="Tavormina2014">
+                                <monogr>
+                                    <title level="m">Uroscopy in Middle English: A Guide to the Texts and Manuscripts</title>
+                                    <author>
+                                        <forename>M. Teresa</forename>
+                                        <surname>Tavormina</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>[Michigan?]</pubPlace>
+                                        <date>2014</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Studies in medieval and renaissance history</title>
+                                    <biblScope unit="volume">3rd series, 11</biblScope>
+                                </series>
+                                <note>pp. 16 (no. 1.1.1); 34 (no. 3.3.3); 114.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/44M4NWR5" type="webpage" xml:id="Mitchell2014">
+                                <analytic>
+                                    <title level="a">Cambridge, Trinity College Library MS O.1.65 (1089)</title>
+                                    <author>
+                                        <forename>Laura</forename>
+                                        <surname>Mitchell</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Late Medieval English Magic: English Manuscripts Containing 15th-Century Magical Texts</title>
+                                    <imprint>
+                                        <date>2014</date>
+                                        <note type="url">https://magicalmedieval.wordpress.com/2014/04/12/tcc1089/</note>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/INMDXRYZ" type="journalArticle" xml:id="Timmermann2015">
+                                <analytic>
+                                    <title level="a">Alchemy in Cambridge: An Annotated Catalogue of Alchemical Texts and Illustrations in Cambridge
+                                        Repositories</title>
+                                    <author>
+                                        <forename>Anke</forename>
+                                        <surname>Timmermann</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Nuncius: Journal of the Material and Visual History of Science</title>
+                                    <imprint>
+                                        <biblScope unit="volume">30</biblScope>
+                                        <biblScope unit="issue">2</biblScope>
+                                        <biblScope unit="page">345-511</biblScope>
+                                        <date>2015</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 367-368.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/FE8PZE3A" type="book" xml:id="Burgers2020">
+                                <monogr>
+                                    <title level="m">Three Lute Books from the Dutch Golden Age: Adriaen Valerius Nederlantsche Gedenck-clank (1626),
+                                        Leiden BPL 2792 (c.1620), Enkhuizen 1667-1 (1659)</title>
+                                    <author>
+                                        <forename>Jan W. J.</forename>
+                                        <surname>Burgers</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Lübeck</pubPlace>
+                                        <publisher>Tree Edition</publisher>
+                                        <date>2020</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. xix (no. 39); xxxviii.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/CI2N2B36" type="book" xml:id="Bower2022">
+                                <monogr>
+                                    <title level="m">Middle English Medical Recipes and Literary Play, 1375-1500</title>
+                                    <author>
+                                        <forename>Hannah</forename>
+                                        <surname>Bower</surname>
+                                    </author>
+                                    <imprint>
+                                        <publisher>Oxford University Press</publisher>
+                                        <date>2022</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 47-48, 51-53, 58-59, 152 fn. 37, 187 fn. 29.</note>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>
+                    <msPart n="1">
+                        <msIdentifier>
+                            <idno>Cambridge, Trinity College, MS O.1.65, ff. 1:1-1:57, [1:57a], 1:58-1:59</idno>
+                            <msName>Part 1</msName>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="en" otherLangs="">English</textLang>
+                            <msItem n="1">
+                                <locus from="1:1r" to="1:2v">1:1r, 1:2r-1:2v</locus>
+                                <title key="">Instructions for making a windmill</title>
+                                <textLang mainLang="en">English</textLang>
+                                <incipit><locus from="1:1r" to="1:1r">1:1r</locus> On [...]ayer standing on the other</incipit>
+                                <explicit><locus from="1:2v" to="1:2v">1:2v</locus> and the vper end of the rey thus</explicit>
+                                <note>The instructions are accompanied by detailed mechanical drawings of components of the mill, including the brake
+                                    wheel, windshaft, and fantail, in brown ink.</note>
+                                <listBibl>
+                                    <bibl>eVK2 3685.00</bibl>
+                                </listBibl>
+                            </msItem>
+
+                            <msItem n="2.1">
+                                <locus from="1:3r" to="1:4r">1:3r-1:4r</locus>
+                                <title>Alphabetical index</title>
+                                <note>Relates to recipes in this part of the manuscript. Added by a 17th-century hand, the same responsible for adding
+                                    an index to Part 2 (see ff. <locus from="2:i recto" to="2:iv verso">2:i recto-2:iv verso</locus>). </note>
+                            </msItem>
+
+                            <msItem n="2.2">
+                                <locus from="1:7r" to="1:24v">1:7r-1:24v</locus>
+                                <title key="">Collection of medical and alchemical recipes</title>
+                                <textLang mainLang="fr" otherLangs="it">French and Italian</textLang>
+                                <note>The recipes refer to various medical practitioners: <list>
+                                        <item><q>M[onsieur]r de la Pierre</q> (ff. <locus from="1:3r" to="1:3r">1:3r</locus>[2x], <locus from="1:8r"
+                                                to="1:8r">1:8r</locus> [2x], <locus from="1:9r" to="1:9r">1:9r</locus>, <locus from="1:9v" to="1:9v"
+                                                >1:9v</locus>, <locus from="1:11v" to="1:11v">1:11v</locus>)</item>
+                                        <item><q>Mr Cast:</q> (f. <locus from="1:8r" to="1:8r">1:8r</locus> [2x]</item>
+                                        <item><q>JB</q> (f. <locus from="1:8v" to="1:8v">1:8v</locus> [2x], <locus from="1:9v" to="1:9v"
+                                            >1:9v</locus></item>
+                                        <item><q>M<hi rend="superscript">r</hi> Burry d'Angier</q> (f. <locus from="1:10v" to="1:10v"
+                                            >1:10v</locus></item>
+                                        <item><q>counte de ?Trevue</q> (f. <locus from="1:13v" to="1:13v">1:13v</locus>)</item>
+                                    </list> Many of these practitioners also occur in Part 2 of <bibl subtype="external" type="MS"><ref
+                                            target="https://cudl.lib.cam.ac.uk/view/MS-TRINITY-COLLEGE-O-00001-00013/165">Cambridge, Trinity College,
+                                            MS O.1.13</ref></bibl>, which was copied by the same hand. </note>
+                            </msItem>
+                            <msItem n="3">
+                                <locus from="1:25r" to="1:25v">1:25r-1:25v</locus>
+                                <title key="">Instructions for making a (?)windmill</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="1:25r" to="1:25r">1:25r</locus> othe [...] castind water [...]</incipit>
+                                <explicit><locus from="1:25v" to="1:25v">1:25v</locus> [...]</explicit>
+                                <note>The instructions are accompanied by detailed mechanical drawings, including wheels and pulleys, drawn in brown
+                                    ink.</note>
+                            </msItem>
+                            <msItem n="4">
+                                <locus from="1:27r" to="1:27r">1:27r</locus>
+                                <title key="">Medical recipes</title>
+                                <textLang mainLang="fr">French</textLang>
+                            </msItem>
+                            <msItem n="5">
+                                <locus from="1:27r" to="1:28r">1:27r-1:28r</locus>
+                                <title key="">(?) Lute music</title>
+                                <textLang mainLang="fr">French</textLang>
+                                <explicit><locus from="1:27r" to="1:27r">1:27r</locus> P[er] ?Sillis</explicit>
+                                <note>Music notation on bars of six staves; written upside down.</note>
+                            </msItem>
+                            <msItem n="6">
+                                <locus from="1:31v" to="1:49r">1:31v-1:49r</locus>
+                                <title key="">Collection of medical and alchemical recipes</title>
+                                <textLang mainLang="fr" otherLangs="en">French with some English</textLang>
+                                <note><p>The manuscript contains various references to practitioners: <list>
+                                            <item><q>Mons[ieu]r de Castelmont</q> (f. <locus from="1:33r" to="1:33r">1:33r</locus>)</item>
+                                            <item><q>De la Chaffe</q> (f. <locus from="1:33r" to="1:33r">1:33r</locus>)</item>
+                                            <item><q>Jb</q> (f. <locus from="1:33v" to="1:33v">1:33v</locus>)</item>
+                                            <item><q>Monsieur Malkean:</q> (f. <locus from="1:37r" to="1:37r">1:37r</locus>)</item>
+                                            <item><q>Aqua domini Malkan</q> (f. <locus from="1:38r" to="1:38r">1:38r</locus>)</item>
+                                            <item><q>Monsieur Augustin</q> (f. <locus from="1:41r" to="1:41r">1:41r</locus>, <locus from="1:44r"
+                                                    to="1:44r">1:44r</locus> [2x])</item>
+                                            <item><q>D<hi rend="superscript">s</hi> Bernard.</q> (f. <locus from="1:49r" to="1:49r"
+                                                >1:49r</locus>)</item>
+                                        </list> Many of these practitioners also occur in the collection of recipes in Part 2 of this manuscript, and
+                                        in Part 2 of <bibl subtype="external" type="MS"><ref
+                                                target="https://cudl.lib.cam.ac.uk/view/MS-TRINITY-COLLEGE-O-00001-00013/165">Cambridge, Trinity
+                                                College, MS O.1.13</ref></bibl>.</p>
+                                    <p>On f. <locus from="1:38v" to="1:38v">1:38v</locus> occurs the following (?) reference: <q>Xenophon
+                                            ed[iti]on</q>. </p>
+                                    <p>On f. <locus from="1:41r" to="1:41r">1:41r</locus> are two drawings of a chalice in brown ink which contains
+                                        labels in English added by a 17th-century hand: <q>gould enamiled</q>, <q>concave</q>, and <q>Emerauld</q>. </p>
+                                    <p>Small alchemical drawings in brown ink feature on ff. <locus from="1:43v" to="1:43v">1:43v (lower
+                                            margin)</locus>, and f. <locus from="1:45r" to="1:45r">1:45r (upper left-hand corner)</locus>. </p>
+                                </note>
+                            </msItem>
+                            <msItem n="7">
+                                <locus from="1:50r" to="1:50v">1:50r-1:50v</locus>
+                                <title key="">Alchemical notes</title>
+                                <textLang mainLang="en">English</textLang>
+                                <incipit><locus from="1:50r" to="1:50r">1:50r</locus> Not that in 1.1.i. is a box to open: as in A/A</incipit>
+                                <explicit><locus from="1:50v" to="1:50v">1:50v</locus> The appoticari of Montpellieur sayed þat the gentlewoman þat
+                                    vseth this kind of distil[a]tion did first light on math, and then the other and last of al the .3. giuing each
+                                    o[ne] lower . so þat the mad degrees of fier but the apoticary of [blank], did light al togeathere, and prsently
+                                    in the space [of] two howers did draw water and oyle.</explicit>
+                                <note>The pages feature drawings of three alchemical vessels in dark ink.</note>
+                                <listBibl>
+                                    <bibl>eVK2 3687.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="8">
+                                <locus from="1:50v" to="1:51v">1:50v-1:51v</locus>
+                                <title key="">La Boree [Bouree de Ballard or Bourée D’Avignons]</title>
+                                <author key="">Robert Ballard II (c.1572–c.1650)</author>
+                                <textLang mainLang="fr">French</textLang>
+                                <finalRubric><locus from="1:51v" to="1:51v">1:51v</locus> Bouree de Ballar[d]</finalRubric>
+                                <note>Music notation for a lute consisting of notation on bars of six staves. </note>
+                                <listBibl>
+                                    <bibl>Burgers (2020), p. xix (no. 39)</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="9">
+                                <locus from="1:52v" to="1:55r">1:52v-1:55r</locus>
+                                <title key="">Alchemical recipes</title>
+                                <textLang mainLang="fr">French</textLang>
+                                <note><p>The recipe collection refers to two practitioner: <q>Dom: Bernard.</q> and <q>M<hi rend="superscript">r</hi>
+                                            Bernard:</q> (f. <locus from="1:53r" to="1:53r">1:53r</locus>, <locus from="1:55r" to="1:55r"
+                                            >1:55r</locus>). These pratitioners also occur in Part 2 of this manuscript and Part 2 of <bibl
+                                            subtype="external" type="MS"><ref
+                                                target="https://cudl.lib.cam.ac.uk/view/MS-TRINITY-COLLEGE-O-00001-00013/165">Cambridge, Trinity
+                                                College, MS O.1.13</ref></bibl>.</p>
+                                    <p>A drawing of an alchemical (?) vessel in brown ink in the upper half of f. <locus from="1:53r" to="1:53r"
+                                            >1:53r</locus>.</p></note>
+                            </msItem>
+                            <msItem n="10">
+                                <locus from="1:55v" to="1:56r">1:55v-1:56r</locus>
+                                <title key="">Accounts about miraculous creatures seen in Southern France</title>
+                                <textLang mainLang="en">English</textLang>
+                                <incipit><locus from="1:55v" to="1:56r">1:55v-1:56r</locus> [...]ost at midnight about .1[?1]. years since a fiery
+                                    dragon flying close by him as he stood on a monteyne, which had two piked eares the mouth open flaming with fier
+                                    the eyes al fiery, and great winges making with his wing[es] a great brut before he came at them . it had two
+                                    leggs which it claped close to the belly It came from the mountayne of Baux with many dead lakes and inhabitable
+                                    plenes and rocky caves [...] and it flewe over the place Pugeol and descended into a forest caled mou[...] it had
+                                    the tayle al in a knot. At Bederide herd by a vegneor [? vigneron] he was at the killing of a huge adder as big as
+                                    my thye about .8. speces long, which killed the doges and resisted the strookes of the ?heraguet[...] but at last
+                                    he was killed and it raging at the point of death pust forth such venoumes vapours that .3. or .4 died incontinent
+                                    after. By Bayon a cruell serpent was killed that was engendred in an old ruinous castell . it had 3 heades and
+                                    euery head cast forth such abondance of fier that it burne al that cam[e] agaynst it to combat it : at last it was
+                                    kil[led] In Bayon in the chef church it is yet to [be] seen. In Pugeol lack a great eele taken and sould in
+                                    Auignion, the serpent [...] and coniunction dayly with this eel was enraged to mis hir comagnion, swom vp and
+                                    downe the pond in a rage for .3. days space hissing and raginge . The eele was sould to cardinal armoniac and if
+                                    the fisherman had not come to aduertise the master of the castel, that he feared that it was the compagnion of the
+                                    serpent, the cardinal had ben possoned, for it being ready betwen two dishes to be served in, by the cardina[ls]
+                                    commandment it was cast to a dog which eatinge it swelled incontinent and died. The serpent was as great as the
+                                    eel, whom the fishermen took raging in the lake in a net and kiled it.</incipit>
+                                <note>Full transcription. Four accounts about monstrous creatures as told by eye-witnesses to the author (who is
+                                    probably also the scribe). According to Timmermann (2015), these accounts are alchemical allegories. The first
+                                    account tells about a winged dragon from the mountain of <q>Baux</q>, perhaps Les-Baux-de-Provence, that was seen
+                                    flying over <q>Pugeol</q>, perhaps Pujols, Southwestern France. The second account is about a huge adder at
+                                        <q>Bederide</q>, probably Bedarrides near Avignon in Southeastern France. The third account is about a
+                                    three-headed serpent that was killed at a castle at <q>Bayon</q>, perhaps Bayonne in Southwestern France. The
+                                    fourth and final account tells about a great eel and his serpent compagnon and is partly set in Avignon,
+                                    Southeastern France, referring to a cardinal <q>Armoniac</q>, perhaps Georges d'Armagnac (b. c. 1501, d. 1585),
+                                    who was appointed cardinal in 1544.</note>
+                                <listBibl>
+                                    <bibl>eVK2 0281.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="11">
+                                <locus from="1:56v" to="1:56v">1:56v</locus>
+                                <title key="">Medical recipe</title>
+                                <textLang mainLang="fr">French</textLang>
+                            </msItem>
+                            <msItem n="12">
+                                <locus from="1:58r" to="1:58r">1:58r</locus>
+                                <title key="">Medical recipe</title>
+                                <textLang mainLang="fr">French</textLang>
+                            </msItem>
+                            <msItem n="13">
+                                <locus from="1:58r" to="1:58r">1:58r</locus>
+                                <title key="">(?)Note on crystals</title>
+                                <textLang mainLang="fr">French</textLang>
+                                <rubric><locus from="1:58r" to="1:58r">1:58r</locus> Past pro[...]</rubric>
+                                <incipit><locus from="1:58r" to="1:58r">1:58r</locus> On il puis acc[en]ter de cristal / Ou il travailler le cristal
+                                    pour [morter] / Le moyen pour faire past pour les perles</incipit>
+                            </msItem>
+                            <msItem n="14">
+                                <locus from="1:59r" to="1:59r">1:59r</locus>
+                                <title key="">Memorandum about persons and locations in France</title>
+                                <textLang mainLang="fr">French</textLang>
+                                <incipit><locus from="1:59r" to="1:59r">1:59r</locus> Memorandum de la Roussi[s] [...] dans le rue du f[...] a
+                                    l'ostilerie o[n] pe[u]d [...] la beaume - a rue de la harpe [...]</incipit>
+                            </msItem>
+                            <msItem n="15">
+                                <locus from="1:59r" to="1:59r">1:59r</locus>
+                                <title key="">List of names of rulers of France</title>
+                                <textLang mainLang="fr">French</textLang>
+                                <incipit><locus from="1:59r" to="1:59r">1:59r</locus> Charles : Ducle / Claude : Prince de Genvil / Lewes archevecq de
+                                    duc de reins p[crossed out: <q>rior</q>] \abbe/ de <!--[...]--> et premieur [crossed out: <q>prieur de</q>] pere
+                                    de france / François : chevalier</incipit>
+                                <note>The list may refer to: Louis III (1575-1621), Archbishop of Reims (1605), and Abbot of Cluny (1612-1621).
+                                </note>
+                            </msItem>
+                            <msItem n="16">
+                                <locus from="1:59r" to="1:59r">1:59r</locus>
+                                <title key="">Memorandum about a Mayaud of Poitiers</title>
+                                <textLang mainLang="fr">French</textLang>
+                                <incipit><locus from="1:59r" to="1:59r">1:59r</locus> Mr Mayaud [...] de poigters - de [?] maitant a la ruse du
+                                    plastre pres les blancs Manteaux au [...]Seual blanc</incipit>
+                                <note><q>Les Blancs-Manteaux</q> refers to the white cloaks of the Augustinian Order of the Servites. </note>
+                            </msItem>
+                            <msItem n="17">
+                                <locus from="1:59r" to="1:59r">1:59r</locus>
+                                <title key="">Memorandum about an address in France</title>
+                                <textLang mainLang="fr">French</textLang>
+                                <incipit><locus from="1:59r" to="1:59r">1:59r</locus> J[...] deueux maintenant a la rue dauphine pres le peut neuf du
+                                    cesti des Augustins chez vng [?] espissutt</incipit>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="1:8r" to="1:8r">1:8r</locus>: Pour la Collique </secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>Paper</material>, folded in <measure type="folding">quarto</measure>. <watermark>
+                                            <seg type="para">Folio <locus from="1:6r" to="1:6v">1:6</locus>: <term type="watermarkMotif">Jug</term>.
+                                            </seg></watermark>
+                                    </support>
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="59" type="leaf">59</measure> leaves. </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="170">170</height>
+                                                <width quantity="115">115</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                    <collation>
+                                        <p>The collation for this part of the manuscript has not been established.</p>
+                                    </collation>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout columns="1" writtenLines="20 34"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height max="170" min="145">145-170</height>
+                                                <width max="115" min="90">90-115</width>
+                                            </dimensions>
+                                            <seg type="ruling">No ruling. Single columns (except for ff. <locus from="1:3r" to="1:6v"
+                                                    >1:3r-1:6v</locus> which have two columns). 20-34 lines to the page.</seg></p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="humanisticaCursiva">
+                                    <p>Copied by several <term type="script">humanistic cursive</term> hands, but one that has copied most of the
+                                        French recipes has also copied the larger part of Part 2 of this manuscript; and Part 2 of <bibl
+                                            subtype="external" type="MS"><ref
+                                                target="https://cudl.lib.cam.ac.uk/view/MS-TRINITY-COLLEGE-O-00001-00013/165">Cambridge, Trinity
+                                                College, MS O.1.13</ref></bibl>. </p>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote type="drawing">
+                                    <p>Mechanical drawings in brown ink on ff. <locus from="1:1r" to="1:2r">1:1r, 1:2r-1:2v</locus> and <locus
+                                            from="1:25r" to="1:25v">1:25r-1:25v</locus>. </p>
+                                </decoNote>
+                                <decoNote type="drawing">
+                                    <p>Drawings of alchemical vessels in brown and dark ink on ff. <locus from="1:50r" to="1:50r">1:50r</locus> and
+                                            <locus from="1:53r" to="1:53r">1:53r</locus>.</p>
+                                </decoNote>
+                            </decoDesc>
+
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1625" notBefore="1575">Late 16th or early 17th century. </origDate>
+                                <origPlace cert="high" key="place_g1000070">?France. </origPlace>
+                            </origin>
+                        </history>
+                    </msPart>
+                    <msPart n="2">
+                        <msIdentifier>
+                            <idno>Cambridge, Trinity College, MS O.1.65, ff. 2:i-2:iv, [2:v], 2:1-2:71</idno>
+                            <msName>Part 2</msName>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="fr" otherLangs="it la en">French, Italian, Latin, and English</textLang>
+                            <msItem n="1.1">
+                                <locus from="2:i recto" to="2:iv verso">2:i recto-2:iv verso</locus>
+                                <title>Alphabetical index</title>
+                                <note>Relates to recipes in this part of the manuscript. Added by a 17th-century hand, the same hand responsible for
+                                    adding an index to Part 1 (see ff. <locus from="1:3r" to="1:4r">1:3r-1:4r</locus>). </note>
+                            </msItem>
+
+                            <msItem n="1.2">
+                                <locus from="2:1r" to="2:65r">2:1r-2:65r</locus>
+                                <title key="">Collection of alchemical-medical recipes</title>
+                                <textLang mainLang="fr" otherLangs="it la en">French, Italian, Latin, and English</textLang>
+                                <note>
+                                    <p>This collection of medical recipes is largely written in French but also features recipes in Italian, Latin,
+                                        and English. It contains various references to locations and alchemical and medical practitioners:<list>
+                                            <item><q>Nymes</q> [Nîmes, Southeastern France] (f. <locus from="2:1r" to="2:1r">2:1r</locus>)</item>
+                                            <item><q>Puluis domini d'Ampvilij (iam grand canestable de France)</q> [probably referring to Henri de
+                                                Montmorency (1534-1614)), 3rd Duke of Montmorency, Seigneur of Damville, Governer of Languedoc, who
+                                                was Constable of France between 1593 and 1614] (f. <locus from="2:1v" to="2:1v">2:1v</locus>)</item>
+                                            <item><q>Verole - Mal de Naples</q> (f. <locus from="2:2v" to="2:2v">2:2v</locus>)</item>
+                                            <item><q>morbum Neapolitanum</q> (ff. <locus from="2:5r" to="2:5r">2:5r</locus>)</item>
+                                            <item><q>D<hi rend="superscript">us</hi> Castel.</q> [also abbreviated as <q>Castell.</q>] (ff. <locus
+                                                    from="2:18r" to="2:18r">2:18r</locus>, <locus from="2:18v" to="2:18v">2:18v</locus>, <locus
+                                                    from="2:19r" to="2:19r">2:19r</locus>, <locus from="2:21r" to="2:21r">2:21r</locus>, <locus
+                                                    from="2:22r" to="2:22r">2:22r</locus>, <locus from="2:22v" to="2:22v">2:22v</locus> [2x], <locus
+                                                    from="2:24r" to="2:24r">2:24r</locus>, <locus from="2:24v" to="2:24v">2:24v</locus>, <locus
+                                                    from="2:26r" to="2:26r">2:26r</locus>, <locus from="2:27r" to="2:27r">2:27r</locus>, <locus
+                                                    from="2:27v" to="2:27v">2:27v</locus> [crossed out], <locus from="2:33r" to="2:33r">2:33r</locus>,
+                                                    <locus from="2:37v" to="2:37v">2:37v</locus>, <locus from="2:42r" to="2:42r">2:42r</locus>)</item>
+                                            <item><q>le cheveux ou Barb. [...] est venu de Aleppo du Levant</q> (f. <locus from="2:18r" to="2:18r"
+                                                    >2:18r</locus>)</item>
+                                            <item><q>M<hi rend="superscript">r</hi> de la Pierre</q> or <q>Dominus de la Pierre</q> (ff. <locus
+                                                    from="2:18r" to="2:18r">2:18r</locus>, <locus from="2:27v" to="2:27v">2:27v</locus>, <locus
+                                                    from="2:37r" to="2:37r">2:37r</locus>, <locus from="2:43v" to="2:43v">2:43v</locus>, <locus
+                                                    from="2:44r" to="2:44r">2:44r</locus>, <locus from="2:44v" to="2:44v">2:44v</locus>, <locus
+                                                    from="2:45r" to="2:45r">2:45r</locus>, <locus from="2:46r" to="2:46r">2:46r</locus>, <locus
+                                                    from="2:46v" to="2:46v">2:46v</locus> [2x], <locus from="2:47r" to="2:47r">2:47r</locus> [2x],
+                                                    <locus from="2:48v" to="2:48v">2:48v</locus>, <locus from="2:49v" to="2:49v">2:49v</locus>, <locus
+                                                    from="2:50r" to="2:50r">2:50r</locus>, <locus from="2:50v" to="2:50v">2:50v</locus> [2x], <locus
+                                                    from="2:51r" to="2:51r">2:51r</locus>, <locus from="2:52r" to="2:52r">2:52r</locus>)</item>
+                                            <item><q>M<hi rend="superscript">r</hi> de Castlemount</q> or <q>Dominus de Castelmont</q>, often
+                                                abbreviated to <q>D<hi rend="superscript">s</hi> Castel.</q> (ff. <locus from="2:21r" to="2:21r"
+                                                    >2:21r</locus>, <locus from="2:22r" to="2:22r">2:22r</locus>, <locus from="2:37r" to="2:37r"
+                                                    >2:37r</locus>, <locus from="2:37v" to="2:37v">2:37v</locus>, <locus from="2:42r" to="2:42r"
+                                                    >2:42r</locus>, <locus from="2:44r" to="2:44r">2:44r</locus>, <locus from="2:44v" to="2:44v"
+                                                    >2:44v</locus>, <locus from="2:45r" to="2:45r">2:45r</locus>, <locus from="2:46r" to="2:46r"
+                                                    >2:46r</locus>, <locus from="2:46v" to="2:46v">2:46v</locus> [2x], <locus from="2:47r" to="2:47r"
+                                                    >2:47r</locus> [2x], <locus from="2:48v" to="2:48v">2:48v</locus>, <locus from="2:49v" to="2:49v"
+                                                    >2:49v</locus>, <locus from="2:50r" to="2:50r">2:50r</locus>, <locus from="2:50v" to="2:50v"
+                                                    >2:50v</locus> [2x], <locus from="2:51r" to="2:51r">2:51r</locus>)</item>
+                                            <item><q>M<hi rend="superscript">r</hi> Renauld</q> (f. <locus from="2:21r" to="2:21r"
+                                                >2:21r</locus>)</item>
+                                            <item><q>Hb</q> (f. <locus from="2:25r" to="2:25r">2:25r</locus>)</item>
+                                            <item><q>D<hi rend="superscript">s</hi> Chamb:</q> (f. <locus from="2:27r" to="2:27r">2:27r</locus>,
+                                                    <locus from="2:27v" to="2:27v">2:27v</locus>, <locus from="2:34r" to="2:34r">2:34r</locus> [2x],
+                                                    <locus from="2:34v" to="2:34v">2:34v</locus>, <locus from="2:35r" to="2:35r">2:35r</locus>, <locus
+                                                    from="2:45r" to="2:45r">2:45r</locus>)</item>
+                                            <item><q>Pomatum domini Petri</q> (f. <locus from="2:36v" to="2:36v">2:36v</locus>); <q>M<hi
+                                                        rend="superscript">r</hi> Lunelli</q> (f. <locus from="2:43r" to="2:43r">2:43r</locus>)</item>
+                                            <item><q>M<hi rend="superscript">r</hi> Sceic</q> (f. <locus from="2:43v" to="2:43v">2:43v</locus>)</item>
+                                            <item><q>M<hi rend="superscript">r</hi> Danuge [Daunge]</q> (f. <locus from="2:43r" to="2:43r"
+                                                    >2:43r</locus>)</item>
+                                            <item><q>Augustin Maulnoyr [or <q>Mauluoyr</q> de Romorantin de Sologne</q> (f. <locus from="2:52r"
+                                                    to="2:52r">2:52r</locus>) [the name <q>Maulnoyr</q> or <q>Mauluoyr</q> also occurs on f. <locus
+                                                    from="2:58v" to="2:58v">2:58v</locus>]</item>
+                                            <item><q>Hollerius</q> [most likely referring to Jacques Houllier (b. ?1504, d. 1562), known as Jacobus
+                                                Hollerius Stampani, Professor of Medicine at the University of Paris] (f. <locus from="2:63v"
+                                                    to="2:63v">2:63v</locus>)</item>
+                                        </list></p>
+                                    <p>On f. <locus from="2:4r" to="2:4r">2:4r</locus> is an account about a medicine used at an unidentified
+                                        monastery: <q>Hoc expe[ri]mento monachus nutriuit totum conventum in [crossed out: <q>Al</q>] A[...] cum quo
+                                            mirabilia fecit, et quando nimia confectus [...]it aetate vendidit tribus sacerdotibus de suo convent[o]
+                                            pro decem aureis</q>.</p>
+                                    <p>Some of the recipes feature titles and words that are written in a cypher. In the usual encryption method,
+                                        vowels have been replaced for their preceding or successive letters in the alphabet (e.g. <q>opxr ifs fscrpfs
+                                            - jf xngxfnt</q> [=pour les escroet - le unguent] on f. <locus from="2:7r" to="2:7r">2:7r</locus>); and
+                                            <q>Dfs fscrpfis encancarides</q> [=Des escrofit encancarides] on f. <locus from="2:8v" to="2:8v"
+                                            >2:8v</locus>). In another encryption method, vowels have been replaced with the letter <q>q</q> where the
+                                        number of horizontal strokes through its descender represents the numerical value of a vowel (e.g.
+                                            <q>[q2]mpl[q1]str[q2] p[q4][q5]r t[q4][q5]t[q4]s [q5][q4][q2]g[...] vlceros</q> [=emplastre pour toutos
+                                        voeg[...] ulceros] on f. <locus from="2:14r" to="2:14r">2:14r</locus>). In a third and more unusual encryption
+                                        method, both consonants and vowels appear to have been scrambled with their preceding and/or successive
+                                        letters in the alphabet, and a selection of letters has been replaced with symbols. This cypher, which can be
+                                        found on f. <locus from="2:12r" to="2:12r">2:12r</locus> of this manuscript but also occurs in <bibl
+                                            subtype="external" type="MS"><ref
+                                                target="https://cudl.lib.cam.ac.uk/view/MS-TRINITY-COLLEGE-O-00001-00013/167">Cambridge, Trinity
+                                                College, MS O.1.13</ref></bibl> (see ff. 84r, 120v, 121r).</p>
+                                    <p>The recipes are accompanied by a drawing of a flask in brown ink on f. <locus from="2:33r" to="2:33r"
+                                            >2:33r</locus>; and several alchemical vessels in brown ink on ff. <locus from="2:64r" to="2:64v"
+                                            >2:64r-2:64v</locus>.</p></note>
+                            </msItem>
+                            <msItem n="2">
+                                <locus from="2:15r" to="2:15v">2:15r-2:15v</locus>
+                                <title key="">Recipe for making (medicinal) wine</title>
+                                <textLang mainLang="it">Italian</textLang>
+                                <rubric><locus from="2:15r" to="2:15r">2:15r</locus>Ricepta del vino</rubric>
+                                <incipit><locus from="2:15r" to="2:15r">2:15r</locus> si pilglia ℥4 demi [alchemical symbol for antimony]
+                                    crudo</incipit>
+                                <explicit><locus from="2:15v" to="2:15v">2:15v</locus> poi se pot audare a le sue faciende</explicit>
+                                <finalRubric><locus from="2:15v" to="2:15v">2:15v</locus> Du seigneur Emanuel de Marin greco fauconier du Roy
+                                    1602</finalRubric>
+                                <note>Dated to 1602. </note>
+                            </msItem>
+                            <msItem n="3">
+                                <locus from="2:68r" to="2:69r">2:68r-2:69r</locus>
+                                <title key="">List of recipes</title>
+                                <textLang mainLang="la" otherLangs="fr">Latin and French</textLang>
+                                <incipit><locus from="2:68r" to="2:68r">2:68r</locus> Aqua [...] ad hydropisem</incipit>
+                                <explicit><locus from="2:69r" to="2:69r">2:69r</locus> Oleum ad surdi[...]tem</explicit>
+                                <note>The text has been written sideways on these pages.</note>
+                            </msItem>
+                            <msItem n="4">
+                                <locus from="2:69v" to="2:69v">2:69v</locus>
+                                <title key="">List of recipes (unfinished)</title>
+                                <textLang mainLang="en">English</textLang>
+                                <incipit><locus from="2:69v" to="2:69v">2:69v</locus> To procure appetit / To provock vrin</incipit>
+                                <note>Full transcription.</note>
+                            </msItem>
+                            <msItem n="5">
+                                <locus from="2:70r" to="2:70r">2:70r</locus>
+                                <title key="">'Si c'est pour mon pucellage' (from the song-cycle <hi rend="italic">Airs de cour et chansons au
+                                        Luth</hi>)</title>
+                                <author key="person_v69114877">Jean-Baptiste Besard (c. 1567-c. 1617)</author>
+                                <textLang mainLang="fr">French</textLang>
+                                <rubric><locus from="2:70r" to="2:70r">2:70r</locus> Si c'est pour mon pucellage</rubric>
+                                <incipit><locus from="2:70r" to="2:70r">2:70r</locus> Que vous me faicez l'amour</incipit>
+                                <explicit><locus from="2:70r" to="2:70r">2:70r</locus> Et mon pouvre pucellage .Vous.</explicit>
+                            </msItem>
+                            <msItem n="6">
+                                <locus from="2:70v" to="2:71v">2:70v-2:71v</locus>
+                                <title key="">Explanation of encryption method with MERCURY as cypher key</title>
+                                <textLang mainLang="en">English</textLang>
+                                <incipit><locus from="2:70r" to="2:70v">2:70v</locus> Tak any wach word and as MERCVRY. - great letters .SVLPHVR. vpon
+                                    that wach word wrighten the begining of the letter al the caracters are by taking the opposit decyphred. As the
+                                    word Mercury: I wright gould thus . thlsz . decipher thus . look in great M .t. sit opposit it : g : look in great
+                                    E .h. his opposit it o etcaetera </incipit>
+                                <note>The instructions are accompanied by an encryption table on f. <locus from="2:70v" to="2:70v"
+                                    >2:70v</locus>.</note>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="2:2r" to="2:2r">2:2r</locus>: In Nephritico </secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>Paper</material>, folded in <measure type="folding">? quarto</measure>. <watermark>
+                                            <seg type="para">Folios <locus from="2:2r" to="2:2r">2:2r</locus>: No watermarks observed but the
+                                                horizontal chainlines suggest a quarto format. </seg></watermark>
+                                    </support>
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="76" type="leaf">76</measure> leaves. </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="95">95</height>
+                                                <width quantity="130">130</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                    <collation>
+                                        <p>The collation for this part of the manuscript has not been established.</p>
+                                    </collation>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout columns="1" writtenLines="14 18"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height max="85" min="75">75-85</height>
+                                                <width max="125" min="115">115-125</width>
+                                            </dimensions>
+                                            <seg type="ruling">No ruling. Single columns. c. 14-18 lines to the page. </seg></p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="humanisticaCursiva">
+                                    <p>Copied by several <term type="script">humanistic cursive</term> hands, but one that has copied most of the
+                                        French recipes has also copied the larger part of Part 1 of this manuscript; and Part 2 of <bibl
+                                            type="external"><ref target="https://cudl.lib.cam.ac.uk/view/MS-TRINITY-COLLEGE-O-00001-00013/165"
+                                                >Cambridge, Trinity College, MS O.1.13, Cambridge, Trinity College, MS O.1.13</ref>.</bibl>
+                                    </p>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote type="drawing">
+                                    <p>Drawings of vessels in brown ink on ff. <locus from="2:33r" to="2:33r">2:33r</locus>, and <locus from="2:64r"
+                                            to="2:64v">2:64r-2:64v</locus>.</p>
+                                </decoNote>
+                            </decoDesc>
+
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1625" notBefore="1575">Late 16th or early 17th century. </origDate>
+                                <origPlace cert="high" key="place_g1000070">? France. </origPlace>
+                            </origin>
+                        </history>
+                    </msPart>
+                    <msPart n="3">
+                        <msIdentifier>
+                            <idno>Cambridge, Trinity College, MS O.1.65, ff. 3:i-3:viii, 3:129, [3:129a], 3:130, 3:131-3:196, [3:196a], 3:197-3:207,
+                                [3:207a], 3:208-3:210, [3:210a], 3:211-3:215, 3:215a, 3:216-3:224, 3:224a, 3:225-3:226, 3:226a-3:226b, 3:227-3:242,
+                                3:242a</idno>
+                            <msName>Part 3</msName>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="la" otherLangs="enm frm">Latin, Middle English, Middle French</textLang>
+                            <msItem n="1">
+                                <locus from="3:129r" to="3:129r">3:129r</locus>
+                                <title key="">Verse recipe for making ink</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="3:129r" to="3:129r">3:129r</locus> Pro incausto versus</rubric>
+                                <incipit><locus from="3:129r" to="3:129r">3:129r</locus> Vncia gallarum media sit vncia gummi / Tercia vitriolli super
+                                    addas octo valerni</incipit>
+                                <note>Full transcription. The letter <q>.G.</q> has been written in the upper margin of the page in dark ink.</note>
+                                <listBibl>
+                                    <bibl>Singer, Anderson, and Addis, II (1930), p. 743 (no. 1111.xxxiv)</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="2">
+                                <locus from="3:129r" to="3:129r">3:129r</locus>
+                                <title key="">Charm for protecting a house against rats invoking St Gertrude of Nivelles</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit>
+                                    <locus from="3:129r" to="3:129r">3:129r</locus> Girissibus qdis fugam Sancta geretrudis / Hijs domibus dones
+                                    nullus nocere Ratones</incipit>
+                                <finalRubric><locus from="3:129r" to="3:129r">3:129r</locus> Pro Ratonibus</finalRubric>
+                                <note>Full transcription.</note>
+                            </msItem>
+                            <msItem n="3">
+                                <locus from="3:129r" to="3:129v">3:129r-3:129r-3:129v</locus>
+                                <title key="work_1791">Extract from the (?) Glosulae super Viaticum Constantini</title>
+                                <author key="person_v5171792373512172776">Gerardus Bituricensis</author>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="3:129r" to="3:129r">3:129r</locus> Secundum Gerardum super viaticum</rubric>
+                                <incipit><locus from="3:129r" to="3:129r">3:129r</locus> ffrumentum id est masticatum ab homine</incipit>
+                                <explicit><locus from="3:129v" to="3:129v">3:129v</locus> scilicet illo qui mordet</explicit>
+                            </msItem>
+                            <msItem n="4">
+                                <locus from="3:129v" to="3:129v">3:129v</locus>
+                                <title key="">Medical recipe</title>
+                                <author key="">John of Milan (here attributed)</author>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="3:129v" to="3:129v">3:129v</locus> Pulius ducis secundum Magistrum Johennis [sic] de
+                                    Melano</rubric>
+                            </msItem>
+                            <msItem n="5">
+                                <locus from="3:129v" to="3:129v">3:129v</locus>
+                                <title key="">Proverb</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="3:129v" to="3:129v">3:129v</locus> Vir videas quid tu jubeas dum magnus haberis / Et caueas ne
+                                    forte ruas dum stare vid[e]ris</incipit>
+                            </msItem>
+                            <msItem n="6">
+                                <locus from="3:129v" to="3:129v">3:129v</locus>
+                                <title key="">Alchemical recipe</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="3:129v" to="3:129v">3:129v</locus> Calcus [...] [sic: <q>Calcanthum</q>] id est es vstum Pro
+                                    rector de honilane</rubric>
+                                <note>The title may refer to All Hallows, Honey Lane, in the City of London.</note>
+                            </msItem>
+                            <msItem n="7">
+                                <locus from="3:130r" to="3:130v">3:130r-3:130v</locus>
+                                <title key="">Four medical recipes</title>
+                                <textLang mainLang="enm" otherLangs="frm">Middle English recipes, one with a title in French</textLang>
+                                <note>One recipe has a title in French: <q>[crossed out: <q>ffo</q> Pour le piere</q>].</note>
+                                <listBibl>
+                                    <bibl>eVK2 6499.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="8">
+                                <locus from="3:131r" to="3:131v">3:131r-3:131v</locus>
+                                <title key="">Glossary for names of herbs (Latin, French, English)</title>
+                                <textLang mainLang="la" otherLangs="frm enm">Latin, Middle French, Middle English</textLang>
+                                <incipit><locus from="3:131r" to="3:131r">3:131r</locus> Gravium solis id est milium solis idem idem [sic] gallice
+                                    Gromyl</incipit>
+                                <explicit><locus from="3:131v" to="3:131v">3:131v</locus> Citimallus diagridium anglica s[por]ge or laureol or
+                                    faytouresherbe</explicit>
+                            </msItem>
+                            <msItem n="9">
+                                <locus from="3:132r" to="3:135v">3:132r-3:135v</locus>
+                                <title key="">Collection of medical recipes</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                                <note>The collection contains one charm on f. <locus from="135v" to="135v">135v</locus> (see below).</note>
+                                <listBibl>
+                                    <bibl>eVK2 5805.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="10">
+                                <locus from="3:135v" to="3:135v">3:135v</locus>
+                                <title key="">Charm against poison</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="3:135v" to="3:135v">3:135v</locus> Contra toxicaciones</rubric>
+                                <incipit><locus from="3:135v" to="3:135v">3:135v</locus> ista verba super panem vel aute prandium + aigyos + otheos +
+                                    yskiros / Et probatur fuit multociens </incipit>
+                            </msItem>
+
+                            <msItem n="10.1">
+                                <locus from="3:i recto" to="3:viii verso">3:i recto-3:viii verso</locus>
+                                <title>Alphabetical index</title>
+                                <note>Relates to recipes in this part of the manuscript. Added by a 17th-century hand, but apparently not the same as
+                                    that responsible for adding an index to Parts 1 and 2. </note>
+                            </msItem>
+
+                            <msItem n="11">
+                                <locus from="3:136r" to="3:136r">3:136r</locus>
+                                <title key="work_14525">Recipes for making ink from the <hi rend="italic">Secretum philosophorum</hi></title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="3:136r" to="3:136r">3:136r</locus> Cum volueris facere incaustum lumbarde est incaustum optimum
+                                    et leue</rubric>
+                                <incipit><locus from="3:136r" to="3:136r">3:136r</locus> Recipe [crossed out: <q>M</q>] Gallarum ll. J. et tere in
+                                    subtilem puluerem</incipit>
+                                <explicit><locus from="3:136r" to="3:136r">3:136r</locus> Item alio modo Recipe nigrum factum de carbone vitis siue de
+                                    fumo candele et distempera cum albumine ovi rarificato [sic: <q>clarificato</q>] et scribe cum eo
+                                    etcaetera</explicit>
+                                <note>The recipes are part of the same collection as those in the next items (recipes for making pigments and glue). A
+                                    previously unidentified copy of a collection of recipes from the <hi rend="italic">Secretum philosophorum</hi>, a
+                                    treatise on the seven liberal arts that was most likely compiled in England in the first half of the 14th century.
+                                    For the treatise's manuscript tradition, see <bibl>Mark Clark, 'Writing recipes for non-specialists c.1300: the
+                                        Anglo-Latin Secretum philosophorum, Glasgow MS Hunterian 110', in <hi rend="italic">Sources and Serendipity:
+                                            Testimonies of Artists' Practice</hi>, ed. by Emma Hermens and Joyce H. Townsend (London: Archetype
+                                        Publications, 2009), pp. 50-65) (p. 51) [without this manuscript]</bibl>.</note>
+                            </msItem>
+                            <msItem n="12">
+                                <locus from="3:136v" to="3:140r">3:136v-3:140r</locus>
+                                <title key="work_14525">Recipes for making pigments and glue for illuminating and repairing parchment from the <hi
+                                        rend="italic">Secretum philosophorum</hi></title>
+                                <textLang mainLang="la" otherLangs="enm">Latin with ingredients in Middle English</textLang>
+                                <note>The recipes are part of the same collection as those in the previous item (recipes for making ink). A previously
+                                    unidentified copy of a collection of recipes from the <hi rend="italic">Secretum philosophorum</hi>, a treatise on
+                                    the seven liberal arts that was most likely compiled in England in the first half of the 14th century. For the
+                                    treatise's manuscript tradition, see <bibl>Mark Clark, 'Writing Recipes for Non-Specialists c.1300: The
+                                        Anglo-Latin Secretum philosophorum, Glasgow MS Hunterian 110', in <hi rend="italic">Sources and Serendipity:
+                                            Testimonies of Artists' Practice</hi>, ed. Emma Hermens and Joyce H. Townsend (London: Archetype
+                                        Publications, 2009), pp. 50-65) (p. 51) [without this manuscript]</bibl>. The recipes have the following
+                                    titles: <list>
+                                        <item><q>Cum fade volueris optimum nigrum</q></item>
+                                        <item><q>Ad faciendum viscum ad consolidandum folia pergamini [sic: <q>pergameni</q>]</q> (requiring the
+                                            ingredient: <q>Sounde de Stokfisshe</q></item>
+                                        <item><q>Cum rubium colorem volueris facere</q></item>
+                                        <item><q>Cum facere volueris album de plumbo</q></item>
+                                        <item><q>ffit autam alius color que vocatur carminium et obscurus aliquantulum quam minium et sis
+                                            fit</q></item>
+                                        <item><q>Ad faciendum vermeleum</q> [sic: <q>vermiculum</q>]</item>
+                                        <item><q>Cum viride grecum facere volueris</q></item>
+                                        <item><q>Rubius color Sarasenorum sic fit</q></item>
+                                        <item><q>Roseus color sic fit</q></item>
+                                        <item><q>Ad faciendum rosuum [sic: <q>roseum</q>] colorem</q></item>
+                                        <item><q>Vernisa fit mediante oleo lune et mediante gumma formius qui romano eloquio dicitur clistera hic sic
+                                                fit</q></item>
+                                        <item><q>Dicto de invencione colorum. Et modo dicamus de distemperacionem colorum secundum ordinem</q></item>
+                                    </list> The treatise ends: <q>Explicit de coloribus</q>.</note>
+                            </msItem>
+                            <msItem n="13">
+                                <locus from="3:140r" to="3:143v">3:140r-3:143v</locus>
+                                <title key="">Collection of medical and chemical recipes (with notes on medicinal properties of herbs)</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <note><p>The recipes feature various encrypted words in their titles and lists of ingredients, e.g. <q>Mpdxs
+                                            cpnfkckfdk zxcbrxm cbndk. R. zxto rxm blbkssksskmx et dxrxm et clbrkfkcb [etc.]</q> [=Modus conficiendi
+                                        zucarum candidissimum Recipe zucarum albassissimum et durum et clorifica] (f. <locus from="3:141v" to="3:141v"
+                                            >3:141v</locus>). Further encrypted recipes follow for making <q>zucarum album</q> (<q>zxcbrxm blbxm</q>),
+                                            <q>amarum</q> (<q>bmbrbm</q>), <q>opium tebaicum</q> (<q>ppkum tfbbicum</q>), <q>Campira sic fit alio
+                                            modo</q> (<q>Cbmphrb skc fkt blkp m<hi rend="superscript">p</hi></q>), and <q>amaru sic fit alio modo</q>
+                                            (<q>bmbrb skc fkt blkp m<hi rend="superscript">p</hi></q>).</p>
+                                    <p>One recipe on f. <locus from="3:141r" to="3:141r">3:141r</locus> is accompanied by the drawing of a vessel in
+                                        brown ink in the inner margin of the page.</p></note>
+                            </msItem>
+                            <msItem n="14">
+                                <locus from="3:143v" to="3:143v">3:143v</locus>
+                                <title key="">Saying</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="3:143v" to="3:143v">3:143v</locus> Si michi seruieris promittas quatuor / ista quod non sis
+                                    logicus \verbosus/ medicus propheta sacerdos</incipit>
+                                <note>Full transcription.</note>
+                            </msItem>
+                            <msItem n="15">
+                                <locus from="3:143v" to="3:145v">3:143v-3:145v</locus>
+                                <title key="">Collection of medical recipes</title>
+                                <textLang mainLang="enm" otherLangs="la">Latin and Middle English</textLang>
+                                <note>The collection includes two recipes in Latin and nine in Middle English.</note>
+                                <listBibl>
+                                    <bibl>eVK2 5262.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="20">
+                                <locus from="3:145r" to="3:145r">3:145r</locus>
+                                <title key="">Charm against the Falling Evil (epilepsy)</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="3:145r" to="3:145r">3:145r</locus> ffor the ffallyng euell</rubric>
+                                <incipit><locus from="3:145r" to="3:145r">3:145r</locus> Take a lytill puerse of lethre and mak a nothir purse sumwhat
+                                    lasse o\f/ lynon clooth and take a quentite of smerwort and vj braunchis of violettes vj vnces of mastik vj vnces
+                                    myrre iij stonys of olibanum all this most be brayd to gidyr in a mortyr And þan put it in to \t/he poirse of
+                                    lynon and put ther to gold as mych weys a ferdyng of Cyluer and than ȝe moust begge of ix dyuers men of eche an
+                                    halpennyng and of do most be mad an h[...]t with a tong and ther apon wroton the iij kyngis namys of kolayn Jaspar
+                                    baltasar melchesar and hange all this abute his nek in the sayde purse</incipit>
+                                <note>Full transcription.</note>
+                            </msItem>
+                            <msItem n="21">
+                                <locus from="3:146r" to="3:146r">3:146r</locus>
+                                <title key="">Regimen of diet for the months of the year (last section of the <hi rend="italic">Dieta
+                                    Galeni</hi>)</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit defective="true"><locus from="3:146r" to="3:146r">3:146r</locus> In december vse hot mete blode letyng is
+                                    gode msyrable kepe the warm from the norden wynt and est wynt thorwe all the ȝere fore lyke as \a/ tre or fryces
+                                    ben coroupt so ben men coroupt in seknesse ther ben iij days of perle the xv the xvj and xvij</incipit>
+                                <note>The text is incomplete due to the loss of a preceding folio or folios.</note>
+                                <listBibl>
+                                    <bibl>eVK2 0351.00</bibl>
+                                    <bibl>Mooney (1995), p. 77 (other copies)</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="22">
+                                <locus from="3:146r" to="3:147v">3:146r-3:147v</locus>
+                                <title key="">Collection of seven recipes for making soap</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="3:146r" to="3:146r">3:146r</locus> Here is the makynge of sope whyte and blake</rubric>
+                                <incipit><locus from="3:146r" to="3:146r">3:146r</locus> In the begynnynge make a gode stronge lye and when the lye is
+                                    ronne hete þat lye agayne and let it renne þorow mo asschen </incipit>
+                                <explicit><locus from="3:147v" to="3:147v">3:147v</locus> in a lytyl molton talow wenne the lye is cold and ȝif it
+                                    waste therin þanne is the lye good and ȝif it melte noght than make þi lye stronger</explicit>
+                                <listBibl>
+                                    <bibl>eVK2 2864.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="23">
+                                <locus from="3:148r" to="3:148r">3:148r</locus>
+                                <title key="">Medical recipe for treating stone</title>
+                                <textLang mainLang="enm" otherLangs="frm">Middle English and Middle French</textLang>
+                            </msItem>
+                            <msItem n="24">
+                                <locus from="3:148v" to="3:148v">3:148v</locus>
+                                <title key="">Alchemical recipe</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="3:148v" to="3:148v">3:148v</locus> Take comun salte vnsletted lyme an<hi rend="superscript"
+                                        >a</hi> calcene hem in a lytill potte of erthe well luted then dissolue that mater in vynegre and filter it
+                                    and in that vyneger so filtred quenche thy vynegre mercure or as moche as þou wolte</incipit>
+                                <note>Full transcription, as in Mooney (1995), p. 77. The recipe has been crossed out but is still legible.</note>
+                            </msItem>
+                            <msItem n="25">
+                                <locus from="3:149r" to="3:149r">3:149r</locus>
+                                <title key="">Unidentified (? legal) text</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <note>Not enough of the text has been transcribed for interpretation, but it seems to concern a legal document
+                                    referring to parcels of land.</note>
+                            </msItem>
+                            <msItem n="26">
+                                <locus from="3:149v" to="3:152v">3:149v-3:152v</locus>
+                                <title key="">Collection of medical recipes</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                                <note>The fourth recipe, beginning: <q>Tormentilla herbe valet contra dese[...]em visa</q>, and the final recipe,
+                                    beginning <q>Take commone salte and lym and late ham boille togider thenn putte yn vynagir after ar[...]
+                                    [...]</q>, are (?) incomplete.</note>
+                                <listBibl>
+                                    <bibl>eVK2 5948.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="27">
+                                <locus from="3:149v" to="3:150r">3:149v-3:150r</locus>
+                                <title key="">Medical recipes</title>
+                                <textLang mainLang="en">English</textLang>
+                                <note>Two medical recipes added by a 16th-century hand.</note>
+                                <listBibl>
+                                    <bibl>eVK2 5948.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="28">
+                                <locus from="3:150v" to="3:150v">3:150v</locus>
+                                <title key="">Calculation of the number of hours passed since the birth of Christ in the year 1440 or 1449</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="3:150v" to="3:150v">3:150v</locus> After þe noumbre of oure lord god m<hi rend="superscript"
+                                        >l</hi> CCCC lx ix here beþe þe nombre of þe oures xij melions viij C m<hi rend="superscript">l . lx m<hi
+                                            rend="superscript">l</hi> et viij | CCCC . xl</hi></incipit>
+                                <note>Full transcription.</note>
+                            </msItem>
+                            <msItem n="29">
+                                <locus from="3:151r" to="3:151r">3:151r</locus>
+                                <title key="">Two medical recipe</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <listBibl>
+                                    <bibl>eVK2 5948.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="30">
+                                <locus from="3:151r" to="3:151r">3:151r</locus>
+                                <title key="">Memorandum about the bailiff of 'Shepiswold' (modern-day Shepherdswell, Kent)</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="3:151r" to="3:151r">3:151r</locus> Remembr[e] Shepiswolde .v.mile of þe side of dover . þe
+                                    godeman is þe Bailluy of þat hundred</incipit>
+                                <note>Full transcription. Probably added by a la 15th- or early 16th-century hand. According to <bibl>J.W. Horsley,
+                                            <hi rend="italic">Place Names in Kent</hi> (Maidstone: 'South Eastern Gazette' Newspaper, 1921)</bibl>,
+                                    the placename <q>Shepherdswell</q> is a corruption of <q>Sibertswalt</q>, first recorded in the Domesday Book.
+                                    Still referred to as <q>Sybersysweld</q> and <q>Sybberdiswold</q> in legal documents from the 1480s, it is called
+                                        <q>Shipriswold</q> in 1501, <q>Shepswold</q> in 1506, and <q>Sheperterwold</q> in 1522. Another hand has
+                                    repeated the word <q>Remembr[e]</q> [sic] various times in darker ink.</note>
+                            </msItem>
+                            <msItem n="31">
+                                <locus from="3:152v" to="3:152v">3:152v</locus>
+                                <title key="">Medical recipe to treat chest ailments and stone</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <note>Perhaps missing the beginning, as no title is present and the recipe's opening (<q>Also</q>) suggests that
+                                    preceding material for the same ailments has been omitted.</note>
+                                <listBibl>
+                                    <bibl>eVK2 5948.00</bibl>
+                                    <bibl>Mooney (1995), p. 78 [full transcription]</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="32">
+                                <locus from="3:153r" to="3:153r">3:153r</locus>
+                                <title key="">Recipe for an unspecified purpose</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="3:153r" to="3:153r">3:153r</locus> veniet fructus et his flores suis longi admodum digiti. Hos
+                                    flores collige et desicca ad ignem </incipit>
+                                <explicit><locus from="3:153r" to="3:153r">3:153r</locus> et permitte desiccare et habebis propositum</explicit>
+                                <listBibl>
+                                    <bibl>eVK2 5948.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="33">
+                                <locus from="3:153r" to="3:153v">3:153r-3:153v</locus>
+                                <title key="">[?] Alchemical recipes attributed to a prior of [?] Rochester</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="3:153r" to="3:153r">3:153v</locus> Item Prior quidam Refensis dixit se probasse quod [?] suauis
+                                    panis [...] congelabit</incipit>
+                                <explicit><locus from="3:153v" to="3:153v">3:153v</locus> Item idem Prior dixit quod saporem [...] omnes medicinas
+                                    fac[...] profundar</explicit>
+                                <note/>
+                                <listBibl>
+                                    <bibl>eVK2 5948.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="34">
+                                <locus from="3:154r" to="3:154v">3:154r-3:154v</locus>
+                                <title key="">Collection of medical recipes</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <note>The first recipe, entitled: <q>ffor to make A B</q>, has been crossed out. The second one <q>for þe raynes</q>
+                                    is attributed to Aristotle (<q>Arristotil</q>).</note>
+                                <listBibl>
+                                    <bibl>eVK2 5948.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="35">
+                                <locus from="3:154r" to="3:154r">3:154r</locus>
+                                <title key="">Note on Sal Armoniak</title>
+                                <textLang mainLang="frm">Middle French</textLang>
+                                <note>Added by a 15th-century hand that is different from the medical recipes on this page.</note>
+                            </msItem>
+                            <msItem n="36">
+                                <locus from="3:154v" to="3:155v">3:154v-3:155v</locus>
+                                <title key="">On the medicinal properties of herbs</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="3:154v" to="3:154v">3:154v</locus> Scabious ys colde and moiste in þe ij<hi rend="superscript"
+                                        >de</hi> degre and erbe of good vertue stampe it and setthe it in wyn þat drinke ys good for þe liuere and to
+                                    distroie wykked humours in þe stomake</incipit>
+                                <explicit><locus from="3:155v" to="3:155v">3:155v</locus> Also stampe garlyk and butter to gider and tempere hym with
+                                    wyne and boille hem in a panne and gif hem to drinke that ys narrowe brested welle warme and it schal make hym
+                                    solible and deliuere the breste of glette and of filthe</explicit>
+                                <listBibl>
+                                    <bibl>eVK2 5948.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="37">
+                                <locus from="3:156r" to="3:156v">3:156r-3:156v</locus>
+                                <title key="">Medical recipe for treating headaches</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="3:156r" to="3:156r">3:156r</locus> Migrem [added title]</rubric>
+                                <incipit><locus from="3:156r" to="3:156r">3:156r</locus> ffor the mygrayn in the hede a medesyne proved and for
+                                    enpostum in þe hede and for þe hedache and many oþer eveles in þe hede</incipit>
+                                <explicit><locus from="3:156r" to="3:156r">3:156r</locus> and lyfte hit hi and it wol rope as it were
+                                    bredlyme</explicit>
+                                <listBibl>
+                                    <bibl>eVK2 5948.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="38">
+                                <locus from="3:156v" to="3:156v">3:156v</locus>
+                                <title key="">Address to a woman (?)</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="3:156v" to="3:156v">3:156v</locus> O sapient woman and and prud[...] creature exilent and not
+                                    exilyng bet with godly gouernan[s] a meke kydyng a cosdiyng to youre humylyte</incipit>
+                                <note>Full transcription. Added by a later 15th-century hand.</note>
+                            </msItem>
+                            <msItem n="39">
+                                <locus from="3:157r" to="3:157v">3:157r-3:157v</locus>
+                                <title key="">Collection of medical notes and recipes</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <listBibl>
+                                    <bibl>eVK2 5948.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="40">
+                                <locus from="3:158r" to="3:159r">3:158r-3:159r</locus>
+                                <title key="">Copy of a legal document addressed to George Norwich, archdeacon of Westminster</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit>
+                                    <locus from="3:158r" to="3:158r">3:158r</locus> Venerabili viro Magistro Johanni D vtriusque uiris doctori Offic.
+                                    Contestor Episcopalis london Georgius Norwich Arch[edecan]us Mon. Westmonasterij sedi apostolice</incipit>
+                                <explicit><locus from="3:158r" to="3:158r">3:158r</locus> Dat. apud West. [...] sigillato [...] M CCCC
+                                    [...]</explicit>
+                                <note>The addressee may be George Norwich, abbot of Westminster from 1463 until 1469. He is not known to have been
+                                    Archdeacon of Westminster and it is unclear from the document when he held this office.</note>
+                            </msItem>
+                            <msItem n="41">
+                                <locus from="3:159v" to="3:159v">3:159v</locus>
+                                <title key="">Medical recipe (incomplete)</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="3:159v" to="3:159v">3:159v</locus> for the stone</rubric>
+                                <incipit defective="true"><locus from="3:159v" to="3:159v">3:159v</locus> Take lekesed and mustrad and the Juise
+                                    of</incipit>
+                                <note>Added in the 16th century. The last line of the recipe is largely rubbed out and seems to end incomplete as
+                                    well.</note>
+                                <listBibl>
+                                    <bibl>eVK2 5948.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="42">
+                                <locus from="3:160r" to="3:167v">3:160r-3:167v</locus>
+                                <title key="">Collection of twenty medical recipes</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <listBibl>
+                                    <bibl>eVK2 5948.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="43">
+                                <locus from="3:168r" to="3:170r">3:168r-3:170r</locus>
+                                <title key="">A long recipe called <hi rend="italic">Confectio pulueris siue pare</hi></title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="3:168r" to="3:168r">3:168r</locus> Confectio pulueris siue pare [added title]</rubric>
+                                <incipit><locus from="3:168r" to="3:168r">3:168r</locus> Confectio pulueris siue pare. Recipe orpyment partem vnam
+                                    verdegres tantum vitriole combuste . id est coprose albe vnc. ij<hi rend="superscript">as</hi></incipit>
+                                <explicit><locus from="3:170r" to="3:170r">3:170r</locus> expedit propter multas causas racionabiles</explicit>
+                            </msItem>
+                            <msItem n="44">
+                                <locus from="3:170r" to="3:170r">3:170r</locus>
+                                <title key="">Notes on canon law</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="3:170r" to="3:170r">3:170r</locus> Nota quod appellacio ad sedem apostolicam est ab omnibus
+                                    deferendum</incipit>
+                                <explicit><locus from="3:170r" to="3:170r">3:170r</locus> Si mechatus fuerit quis cum uxore alterius et adulterium
+                                    perpetrauerit morte morietur mechatus et adulterium</explicit>
+                                <note>Copied by a single 15th-century hand in light brown ink.</note>
+                            </msItem>
+                            <msItem n="45">
+                                <locus from="3:170v" to="3:170v">3:170v</locus>
+                                <title key="">Legal note</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="3:170v" to="3:170v">3:170v</locus> [...] pro [...] ad opt[...]endum pro de [...] litleram
+                                    Constabularij Turris London [...] indebitatus</incipit>
+                                <note>Full transcription attempted. Added by a (?) 15th-century hand but now poorly legible due to fading and
+                                    smudging.</note>
+                            </msItem>
+                            <msItem n="46">
+                                <locus from="3:170v" to="3:170v">3:170v</locus>
+                                <title key="">Stipulation about annual distribution of payments during Christmas</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="3:170v" to="3:170v">3:170v</locus> Et sis de anno in annum ad predicta quatuor festa natal[is]
+                                    domini xxj solid. hijs testibus tribus personis</incipit>
+                                <note>Full transcription. Added by a 15th-century hand.</note>
+                            </msItem>
+                            <msItem n="47">
+                                <locus from="3:170v" to="3:170v">3:170v</locus>
+                                <title key="">Religious expression</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="3:170v" to="3:170v">3:170v</locus> Trustyng in god</incipit>
+                                <note>Full transcription. Added by a late 15th- or early 16th-century hand (on a page with various scribbles).</note>
+                            </msItem>
+                            <msItem n="48">
+                                <locus from="3:171r" to="3:185r">3:171r-3:185r</locus>
+                                <title key="">Collection of medical and alchemical recipes</title>
+                                <textLang mainLang="la" otherLangs="enm">Latin with some Middle English</textLang>
+                                <note><p>The collection includes instrucions for treating corrupted wine on f. <locus To="3:176r" from="3:176r"
+                                            >3:176r</locus>, and a recipe entitled <q>confeccio sanguinis veneris</q>, requiring the blood of a young
+                                        woman who is a virgin, on f. <locus from="3:179r" to="3:179v">3:179r-3:179v</locus>. This recipe, as well as
+                                        the <q>Emplastrum quod vocatur Neyrbon sic fiet</q> on ff. <locus from="3:180r" to="3:180v"
+                                            >3:180r-3:180v</locus> may have been extracted from John Arderne's <hi rend="italic">Practica</hi> of
+                                        fistula in ano [see his <q>Pulvis sanguis veneris</q>].</p>
+                                    <p>Some of the recipes have encrypted titles, e.g. <q>Bprbczs pulcrvm</q> (f. <locus from="3:174r" to="3:174r"
+                                            >3:174r</locus>).</p>
+                                    <p>Several of the recipes in this collection are associated with medical practitioners: <list>
+                                            <item><q>Pro Gomorria secundum M W. Castelle</q> (f. <locus from="3:172v" to="3:172v"
+                                                >3:172v</locus>)</item>
+                                            <item><q>Pro Vlceracione Reins faict per Apultrewyk per M. W. Castell</q> (f. <locus from="3:173r"
+                                                    to="3:173r">3:173r</locus>)</item>
+                                            <item><q>Vnguentum Terbentius secundum ffratrem W. Holm</q> (f. <locus from="3:177v" to="3:177v"
+                                                    >3:177v</locus>)</item>
+                                            <item><q>Contra [...] Pro Thoma lopham</q> (f. <locus from="3:177v" to="3:177v">3:177v</locus>)</item>
+                                            <item><q>Emplastrum pro Lumbis rembz per R. K.</q> (f. <locus from="3:183r" to="3:183r"
+                                                >3:183r</locus>)</item>
+                                            <item><q>Emplastrum pro Epate secundum W. Holm</q> (f. <locus from="3:183v" to="3:183v"
+                                                >3:183v</locus>)</item>
+                                            <item><q>Pro calculo et pro stranguria per S. Robert ffille Capell secundum M.</q> (f. <locus
+                                                    from="3:184v" to="3:184v">3:184v</locus>)</item>
+                                        </list></p>
+                                    <p>None of the aforementioned practitioners have been identified, except for <q>frater W. Holm</q> who must be the
+                                        Franciscan friar William Holme (fl. c. 1380-1415) whose recipes are frequently cited in the <hi rend="italic"
+                                            >Tabula medicine</hi> and who compiled two medical works (see <bibl>Peter Murray Jones <hi rend="italic"
+                                                >The Medicine of the Friars in Medieval England</hi>, Health and Healing in the Middle Ages, 5
+                                            (Woodbridge: Boydell and Brewer, 2024), pp. 74-96)</bibl>.</p></note>
+                            </msItem>
+                            <msItem n="49">
+                                <locus from="3:177r" to="3:177r">3:177r</locus>
+                                <title key="">Motto of the Order of the Garter</title>
+                                <textLang mainLang="frm">Middle French</textLang>
+                                <incipit><locus from="3:177r" to="3:177r">3:177r</locus> Hony soit quy mall y pense - Je mercy deu de [ce]</incipit>
+                                <note>Full transcription. Added by a 15th century hand. The motto of the Order of the Garter (Honi soit qui mal y
+                                    pense), followed by an incomplete line in Frehcn.</note>
+                            </msItem>
+                            <msItem n="50">
+                                <locus from="3:181r" to="3:181r">3:181r</locus>
+                                <title key="">Childbirth charm or prayer</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="3:181r" to="3:181r">3:181r</locus> Ad pariendum</rubric>
+                                <incipit><locus from="3:181r" to="3:181r">3:181r</locus> Sancta maria peperit matrix eius non doluit Christum Regem
+                                    genuit quo suo sanguinem nos redemit</incipit>
+                                <note>Full transcription.</note>
+                            </msItem>
+                            <msItem n="51">
+                                <locus from="3:183r" to="3:183v">3:183r-3:183v</locus>
+                                <title key="">Charm for protection against fire, invoking the epitaph of St Agatha, and St Columcille (Columba and
+                                    Columkill)</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="3:183r" to="3:183r">3:183r</locus> Pro Incendia domus scribe sequens et iacta in ignem</rubric>
+                                <incipit><locus from="3:183v" to="3:183v">3:183v</locus> Mentem stans spontaneam honorem deo et patrie liberacionem /
+                                    Sancte columquille remoue mala dampna fam\i/lle atque columquillus salues ab igne domus Christi vincit + Christus
+                                    regnat Christu imperat Christus nos ab incendio ignis defendat Amen</incipit>
+                                <note>Full transcription. For another charm for protection against fire that invokes both St Agatha and St Columcille,
+                                    see <bibl subtype="external" type="MS"><ref target="">London, British Library, Royal MS 12 B XXV</ref></bibl>, f.
+                                    283v.</note>
+                            </msItem>
+                            <msItem n="52">
+                                <locus from="3:185v" to="3:185v">3:185v</locus>
+                                <title key="">On the influence of the planets on metals</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="3:185v" to="3:185v">3:185v</locus> Saturnus gaudet ferrum </incipit>
+                                <explicit><locus from="3:185v" to="3:185v">3:185v</locus> Luna gaudet Argentum secundum Sarazenis</explicit>
+                            </msItem>
+                            <msItem n="53">
+                                <locus from="3:185v" to="3:185v">3:185v</locus>
+                                <title key="">Recipe to harden steel</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="3:185v" to="3:185v">3:185v</locus> Aqua</rubric>
+                                <incipit><locus from="3:185v" to="3:185v">3:185v</locus> Aqua indurans ferrum quod potest aliud ferrum cum eo
+                                    incidere</incipit>
+                                <explicit><locus from="3:185v" to="3:185v">3:185v</locus> et ex radicibus porrorum fac Aquam similiter et in istis
+                                    aquis equis porcionibus [crossed out: <q>sib</q>] mixtis</explicit>
+                            </msItem>
+                            <msItem n="54">
+                                <locus from="3:186r" to="3:187r">3:186r-3:187r</locus>
+                                <title key="">On the virtues of Rosemary</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="3:186r" to="3:186r">3:186r</locus> Hee sunt virtutes Roris Marini</rubric>
+                                <incipit><locus from="3:186r" to="3:186r">3:186r</locus> liga ipsum in panno et fac decoquere in aqua ad medium et
+                                    valet ad omnes egritudines nitra corpus</incipit>
+                                <explicit><locus from="3:187r" to="3:187r">3:187r</locus> et viueres dencium interficiunt et ab omni infirmitate
+                                    custodit</explicit>
+                            </msItem>
+                            <msItem n="55">
+                                <locus from="3:187r" to="3:187v">3:187r-3:187v</locus>
+                                <title key="">Collection of medical recipes</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <note>The last recipe is attributed to a certain Robert Benham: <q>Per Magistrum Robertum Benham ord.</q></note>
+                            </msItem>
+                            <msItem n="56">
+                                <locus from="3:187a recto" to="3:187a verso">3:187a recto-3:187a verso</locus>
+                                <title key="">Two alchemical recipes</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="3:187a recto" to="3:187a recto">3:187a recto</locus> ffor to morter - Tak 15 marter crewe and j
+                                    ounce of fyne sylver</incipit>
+                                <explicit><locus from="3:187a verso" to="3:187a verso">3:187a verso</locus> melte it with thy malgam it shall be fyne
+                                    lune at alle assayes deo gracias quod W C<hi rend="superscript">et</hi> [Mooney: <q>quod iak T<hi
+                                            rend="superscript">et</hi></q>]</explicit>
+                                <listBibl>
+                                    <bibl>eVK2 5747.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="57">
+                                <locus from="3:188r" to="3:188r">3:188r</locus>
+                                <title key="">Charm to be welcomed by all</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                                <incipit><locus from="3:188r" to="3:188r">3:188r</locus> Yf þou wilte be wellecome to alle men / write this psalme in
+                                    parchemyn / Domine ne virtute tua letabitur</incipit>
+                                <note>Full transcription.</note>
+                                <listBibl>
+                                    <bibl>eVK2 5747.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="58">
+                                <locus from="3:188r" to="3:192r">3:188r-3:192r</locus>
+                                <title key="">Collection of twelve medical recipes</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <note>The fifth recipes describes the medicinal virtues of the <q>Mangnes</q>, which is described as <q>a
+                                        schipmanstone</q> that comes from <q>Jude</q>.</note>
+                                <listBibl>
+                                    <bibl>eVK2 5747.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="59">
+                                <locus from="3:192r" to="3:192r">3:192r</locus>
+                                <title key="">Charm to staunch blood</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="3:192r" to="3:192r">3:192r</locus> Ad stringendum sanguinem</rubric>
+                                <incipit><locus from="3:192r" to="3:192r">3:192r</locus> Si carecteres sequentes scribantur et suspendantur ad collum
+                                    vel brachium sanguinentis de naso vel plaga cito restringetur sanguis pro certo p.r.v.c.p.o.q.x.a.b.q.a. et si non
+                                    crederis esse veris scribe hoc predicta in manubrio cultelli et interfice cum illo porcum vel porcellum et non
+                                    exibit sanguis / Item ad idem scribe in fronte pas hes verba sequiter + buro + berto + berneta + consumatis est +
+                                    gria de de cessa sanguis</incipit>
+                                <note>Full transcription.</note>
+                            </msItem>
+                            <msItem n="60">
+                                <locus from="3:193r" to="3:194r">3:193r-3:194r</locus>
+                                <title key="">Health regimen</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="3:193r" to="3:193r">3:193r</locus> Regimen tuo peticioni condescendens scribo tibi qualiter
+                                    regere te debeat vt sanitat</incipit>
+                                <explicit><locus from="3:194r" to="3:194r">3:194r</locus> et fuge ab eo velud ab inimico</explicit>
+                            </msItem>
+                            <msItem n="61">
+                                <locus from="3:194v" to="3:194v">3:194v</locus>
+                                <title key="">On gathering hyssop</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="3:194v" to="3:194v">3:!94v</locus> Sinde Isopum inmediate post festum Natalis dum recte per
+                                    terram et asperge terram desuper et tu habebis satis de Isopo per iij vel quatuor annos sis ad tempus antedictis
+                                    sinditis quolibet anno et sis non indiges seminare ysopum omni anno</incipit>
+                                <note>Full transcription.</note>
+                            </msItem>
+                            <msItem n="62">
+                                <locus from="3:194v" to="3:194v">3:194v</locus>
+                                <title key="">Note on times to sow seeds and plant</title>
+                                <author key="">Mildred ?Miter (attributed)</author>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="3:194v" to="3:194v">3:194v</locus> Item sowe sede of caboches þe first friday of marche and set
+                                    þy plantes in forewys þe nexte friday after John de Baptist per milrede miter</incipit>
+                                <note>Full transcription.</note>
+                            </msItem>
+                            <msItem n="63">
+                                <locus from="3:194v" to="3:202v">3:194v-3:202v</locus>
+                                <title key="">Collection of medical and alchemical recipes</title>
+                                <textLang mainLang="la" otherLangs="enm">Latin and Middle English</textLang>
+                                <note>The collection includes one recipe that is attributed to <q>maister Thomas ffres</q> (f. <locus from="3:194v"
+                                        to="3:194v">3:194v</locus>); one recipe that is attributed to Mesue: <q>Electuarium de gemmys secundum
+                                        Mesue</q> (f. <locus from="3:196r" to="3:196r">3:196r</locus>); and an recipe that is attributed to
+                                        <q>maystere Reber[t]</q> (f. <locus from="3:202v" to="3:202v">3:202v</locus>).</note>
+                                <listBibl>
+                                    <bibl>eVK2 7856.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="64">
+                                <locus from="3:203r" to="3:204r">3:203r-3:204r</locus>
+                                <title key="">Tract on the different times of the year that are suitable for phlebotomy (bloodletting)</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="3:203r" to="3:203r">3:203r</locus> Estas</rubric>
+                                <incipit><locus from="3:203r" to="3:203r">3:203r</locus> Notandum quod in medio ffebruarij incipit veer. Et dicitur
+                                    ver a vireo et est calidum et humidum</incipit>
+                                <explicit><locus from="3:204r" to="3:204r">3:204r</locus> Et que velit flebotomar[e] xvj<hi rend="superscript">o</hi>
+                                    die mensi Marcij de brachie dextro non erit vexatus illo mense infirmitate</explicit>
+                            </msItem>
+                            <msItem n="65">
+                                <locus from="3:204v" to="3:204v">3:204v</locus>
+                                <title key="">On the virtues of bloodletting</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="3:204v" to="3:204v">3:204v</locus> Notandum quod fflebotoma mentem sincerat memoriam probet
+                                    vesicam purgat cerebrum temperat</incipit>
+                                <explicit>
+                                    <locus from="3:204v" to="3:204v">3:204v</locus> largioris vite sanitatem ministrat vt galienus dicit in libro
+                                    suo</explicit>
+                            </msItem>
+                            <msItem n="66">
+                                <locus from="3:204v" to="3:205r">3:204v-3:205r</locus>
+                                <title key="">Tract on phlebotomy (ending with a verse)</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="3:204v" to="3:204v">3:204v</locus> Ista prosunt fflebotomatis. Dent[?es] [?]usdem oua sorbilis
+                                    caro porcina pullina</incipit>
+                                <explicit>
+                                    <locus from="3:205r" to="3:205r">3:205r</locus> Quintum detur [sic: <q>datur</q>] nem[ori] si tu vis sanus
+                                    haberi</explicit>
+                            </msItem>
+                            <msItem n="67">
+                                <locus from="3:205r" to="3:205r">3:205r</locus>
+                                <title key="">Glossary of meteorological and astronomical terms (Latin-English)</title>
+                                <textLang mainLang="la" otherLangs="enm">Latin and Middle English</textLang>
+                                <incipit><locus from="3:205r" to="3:205r">3:205r</locus> Crepusculus Anglice dawonynge / Gallicant[u] Anglice
+                                    cokorowynge / Aurora Anglice / Mars Anglice</incipit>
+                                <note>Full transcription. English names are only provided for the first two entries. Not recorded in the <bibl><hi
+                                            rend="italic">Index of Middle English Prose</hi></bibl>.</note>
+                            </msItem>
+                            <msItem n="68">
+                                <locus from="3:205v" to="3:205v">3:205v</locus>
+                                <title key="">Note on bloodletting on three feastdays</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="3:205v" to="3:205v">3:205v</locus> Minue - die sancti Lambert[i] / die sancti Stephani / die
+                                    sancti Valentini</incipit>
+                                <note>Full transcription.</note>
+                            </msItem>
+                            <msItem n="69">
+                                <locus from="3:205v" to="3:205v">3:205v</locus>
+                                <title key="">Notes on three evil days for bloodletting</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="3:205v" to="3:205v">3:205v</locus> Nota - viij kal. Aprilis / J kal. Augusti / kal. decembri -
+                                    quicumque minuerit aliquo istarum dierum ipsa die morietur vel cito post</incipit>
+                                <note>Full transcription.</note>
+                            </msItem>
+                            <msItem n="70">
+                                <locus from="3:205v" to="3:205v">3:205v</locus>
+                                <title key="">Notes on good days for curing diseases through bloodletting</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="3:205v" to="3:205v">3:205v</locus> Nota die sancti lamberti pro morbo caduco xj<hi
+                                        rend="superscript">o</hi> die aprilis de sinistro</incipit>
+                                <explicit><locus from="3:205v" to="3:205v">3:205v</locus> iiij<hi rend="superscript">to</hi> vel v<hi
+                                        rend="superscript">to</hi> die in exitu May pro febre et pro visu</explicit>
+                                <note>Full transcription.</note>
+                            </msItem>
+                            <msItem n="71">
+                                <locus from="3:205v" to="3:205v">3:205v</locus>
+                                <title key="">Mnemonic verse for bloodletting</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="3:205v" to="3:205v">3:205v</locus> Estas ver dextras autumpnus yems que sinistras</incipit>
+                                <note>Full transcription.</note>
+                            </msItem>
+                            <msItem n="72">
+                                <locus from="3:206r" to="3:206r">3:206r</locus>
+                                <title key="">Recipe for removing spots from cloth of gold</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="3:206r" to="3:206r">3:206r</locus> Yf þow [sic] a cloth of golde and it be defouled take þe
+                                    cromes of an hote lof frete þe fowle spottys þerwith and it shall be as bright as euere it was</incipit>
+                            </msItem>
+                            <msItem n="73">
+                                <locus from="3:206r" to="3:206r">3:206r</locus>
+                                <title key="">On thirty-two evil days in the year</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="3:206r" to="3:206r">3:206r</locus> Sciendum quod in anno fuit xxxij dies mali et
+                                    periculosi</incipit>
+                                <explicit><locus from="3:206r" to="3:206r">3:206r</locus> Et ab hijs xxxij diebus vnusquis[que] discretus sit
+                                    p[?renuntius]</explicit>
+                            </msItem>
+                            <msItem n="74">
+                                <locus from="3:207r" to="3:207v">3:207r-3:207v</locus>
+                                <title key="">Tract on the virtues of betony</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="3:207r" to="3:207r">3:207r</locus> Beteyne soden with hony is good for the dropesye a plaster of
+                                    Beteyne ys good for the smyte in a mannys / The Juys of Beteyn putte in a mannes ere / it comfortes his herynge </incipit>
+                                <explicit><locus from="3:207v" to="3:207v">3:207r</locus> whoso berys beteyne on hym the palasie schal not come to hym
+                                    yf y ete beteyne fastynge þou schalt doute no venim nor palasie</explicit>
+                                <note>The tract may begin incomplete (the first line is partly cropped off at the top of the page).</note>
+                                <listBibl>
+                                    <bibl>eVK2 1282.00</bibl>
+                                    <bibl>Mooney (1995), pp. 79-80 [other copies]</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="75">
+                                <locus from="3:207v" to="3:207v">3:207v</locus>
+                                <title key="">Doodles or draft text</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="3:207v" to="3:207v">3:207v</locus> he that wyll nott when he may when he wolde he shall not hym
+                                    then h h abram - Q d S [? <q>Quod S</q>]</incipit>
+                                <note>Full transcription. Added by a late 15th- or early 16th-century hand (perhaps the same hand that copied the next
+                                    item). The inscription <q>Q[uo]d S</q> seems to relate to the <q>S.R.</q> initials that are written next to it in
+                                    the form of a merchant's mark.</note>
+                            </msItem>
+                            <msItem n="76">
+                                <locus from="3:207v" to="3:207v">3:207v</locus>
+                                <title key="">Doodles or draft text</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="3:207v" to="3:207v">3:207v</locus> And I weyre a mayd as many other be for all the
+                                    gold</incipit>
+                                <note>Full transcription. Added by a late 15th- or early 16th-century hand (perhaps the same hand that copied the
+                                    previous item).</note>
+                            </msItem>
+                            <msItem n="77">
+                                <locus from="3:208r" to="3:209v">3:208r-3:209v</locus>
+                                <title key="">Collection of medical recipes</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <note><p>One of the recipes is attributed to Mesue: <q>[Un]guentum laxatiuum secundum Mesue</q> (f. <locus from="208r"
+                                            to="208r">208r</locus>).</p>
+                                    <p>One of the recipes is devised for the poor: <q>Potus contra ydropasm pro pauperibus</q> (f. <locus from="209r"
+                                            to="209r">209r</locus>.</p></note>
+                            </msItem>
+                            <msItem n="78">
+                                <locus from="3:209v" to="3:209v">3:209v</locus>
+                                <title key="">Musical notation</title>
+                                <textLang mainLang="en">[none]</textLang>
+                                <note>Staves with music notation added to the inner and lower margins of the page.</note>
+                            </msItem>
+                            <msItem n="79">
+                                <locus from="3:209v" to="3:209v">3:209v</locus>
+                                <title key="">(?) Doodle</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <note>The word or name <q>Woodewyne</q> twice repeated; added by a 15th-century hand.</note>
+                            </msItem>
+                            <msItem n="80">
+                                <locus from="3:210r" to="3:210v">3:210r-3:210v</locus>
+                                <title key="">Alchemical recipe</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="3:210r" to="3:210r">3:210r</locus> Sal Alkali sic fit</rubric>
+                            </msItem>
+                            <msItem n="81">
+                                <locus from="3:211r" to="3:212r">3:211r-3:212r</locus>
+                                <title key="">Collection of medical recipes</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <listBibl>
+                                    <bibl>eVK2 6162.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="82">
+                                <locus from="3:212v" to="3:212v">212v</locus>
+                                <title key="">Recipe for making ink</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <rubric><locus from="3:212v" to="3:212v">3:212v</locus> Ad faciendi incaustum</rubric>
+                                <incipit><locus from="3:212v" to="3:212v">3:212v</locus> Recipe J lb pomorum de gallis</incipit>
+                                <explicit><locus from="3:212v" to="3:212v">3:212v</locus> et pone in eadem dimidiam libram vitriolli puluerizat et
+                                    copore viride cum steterit per modicum tempus littere erit optimum incaustum</explicit>
+                            </msItem>
+                            <msItem n="83">
+                                <locus from="3:212v" to="3:212v">3:212v (outer margin)</locus>
+                                <title key="">Draft of a letter</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="3:212v" to="3:212v">3:212v (outer margin)</locus> To his welbelouyd brothar thomas pekeryng this
+                                    letter be delyueryd</incipit>
+                                <note>Added by a late 15th- or early 16th-century hand.</note>
+                            </msItem>
+                            <msItem n="84">
+                                <locus from="3:213r" to="3:213r">3:212r</locus>
+                                <title key="">Collection of medical recipes</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                            </msItem>
+                            <msItem n="85">
+                                <locus from="3:213v" to="3:213v">3:213v</locus>
+                                <title key="">Account of personal expenses in Westminster in 1466</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                                <rubric><locus from="3:213v" to="3:213v">3:213v</locus> Expences facta apud West. anno domini millesimo cccc<hi
+                                        rend="superscript">mo</hi> lxvj<hi rend="superscript">to</hi></rubric>
+                                <incipit><locus from="3:213v" to="3:213v">3:213v</locus> ffirst - paied for a brousshe - iij d</incipit>
+                                <explicit><locus from="3:213v" to="3:213v">3:213v</locus> Item for ij Chaynes pork - vij<hi rend="superscript">d</hi>
+                                    ob.</explicit>
+                            </msItem>
+                            <msItem n="86">
+                                <locus from="3:214r" to="3:223r">3:214r-3:223r</locus>
+                                <title key="">Treatise on herbs (Tabula herbarum)</title>
+                                <textLang mainLang="la" otherLangs="enm frm">Latin, Middle English, Middle French</textLang>
+                                <rubric><locus from="3:214r" to="3:214r">3:214r</locus> Hic Incipit tabula herbarum</rubric>
+                                <incipit><locus from="3:214r" to="3:214r">3:214r</locus> Alleluia habet tria folia aliquantulum in superiori per
+                                    divisam</incipit>
+                                <explicit><locus from="3:223r" to="3:223r">3:223r</locus> pollipodion sed caret mascle galice cetwale ȝodoaria[?m]
+                                    ?ffeu ?idem</explicit>
+                                <finalRubric><locus from="3:223r" to="3:223r">3:223r</locus> Explicit tabula herbarum</finalRubric>
+                                <note>The treatise provides alternative names of herbs in French and English.</note>
+                            </msItem>
+                            <msItem n="87">
+                                <locus from="3:223r" to="3:225r">3:223r-3:225r</locus>
+                                <title key="">Treatise on gathering and storing herbs for making medicines</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="3:223r" to="3:223r">3:223r</locus> Medicines been doon some be leves some by sedys some by rotes
+                                    sum by yerdes some by floures and some by fruytes when leves goon to medicines þey schulle be gedered when þey
+                                    been at her fulle wexinge or that her colour chaunge and or that they welowe or fade</incipit>
+                                <explicit><locus from="3:225r" to="3:225r">3:225r</locus> and þan kepe it in þe shadowe ffloure delice schulde be
+                                    gadered in þe ende of veer and ere it in þe sonne and it wol laste ij yere</explicit>
+                                <listBibl>
+                                    <bibl>eVK2 3569.00</bibl>
+                                    <bibl>Mooney (1995), p. 80</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="88">
+                                <locus from="3:224v" to="3:224v">3:224v (outer margin)</locus>
+                                <title>Reference to the Tomb of the Three Magi (unfinished)</title>
+                                <incipit defective="true"><locus from="3:224v" to="3:224v">3:224v (outer margin)</locus> The Kynges of co</incipit>
+                                <note>Added by 15th-century hand.</note>
+                            </msItem>
+                            <msItem n="89">
+                                <locus from="3:225r" to="3:232v">3:232v</locus>
+                                <title key="">Collection of medical recipes</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                                <note><p>The collection includes instructions for repelling flies (<q>Contra muscas</q>) on ff. <locus from="3:225v"
+                                            to="3:226r">3:225v-3:226r</locus>, for capturing birds (<q>Ad aves Capiendas</q>), and for killing mice
+                                        and rats (<q>Ad mures atque Ratones interficiendum</q>) on f. <locus from="3:226a recto" to="3:226a recto"
+                                            >3:226a recto</locus>.</p>
+                                    <p>One recipe is attributed to <q>Haly</q>, referring to Abū l-Ḥasan 'Alī ibn Abī l-Rijāl al-Shaybani (f. <locus
+                                            from="3:232r" to="3:232r">3:232r</locus>).</p></note>
+                                <listBibl>
+                                    <bibl>eVK2 1513.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="90">
+                                <locus from="3:232v" to="3:232v">3:232v</locus>
+                                <title key="">Love poem</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="3:232v" to="3:232v">3:232v</locus> My harte ys yours to kepe yt fast withowte your gras my Joy
+                                    ys past</incipit>
+                                <note>The text has been written sideways, added by a later 15th- or early 16th-century hand.</note>
+                            </msItem>
+                            <msItem n="91">
+                                <locus from="3:233r" to="3:241r">3:233r-3:241r</locus>
+                                <title key="">Collection of 33 medical recipes</title>
+                                <textLang mainLang="en">Middle English</textLang>
+                                <listBibl>
+                                    <bibl>eVK2 1513.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="92">
+                                <locus from="3:241v" to="3:241v">3:241v</locus>
+                                <title key="">Medical recipe</title>
+                                <textLang mainLang="la">Latin</textLang>
+                            </msItem>
+                            <msItem n="93">
+                                <locus from="3:241v" to="3:241v">3:241v</locus>
+                                <title key="">Memorandum</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <note>A note on (?) the value of money, referring to <q>an Inglysh peny</q>.</note>
+                            </msItem>
+                            <msItem n="94">
+                                <locus from="3:241v" to="3:241v">3:241v</locus>
+                                <title key="">Reference to a monk</title>
+                                <textLang mainLang="la">Latin</textLang>
+                                <incipit><locus from="3:241v" to="3:241v">3:241v</locus> Astoun Monachus</incipit>
+                            </msItem>
+                            <msItem n="95">
+                                <locus from="3:241v" to="3:241v">3:241v</locus>
+                                <title key="">(?) Motto</title>
+                                <textLang mainLang="frm">Middle French</textLang>
+                                <incipit><locus from="3:241v" to="3:241v">3:241v</locus> Je mercy deu de ce</incipit>
+                            </msItem>
+                            <msItem n="96">
+                                <locus from="3:242r" to="3:242r">3:242r</locus>
+                                <title key="">Conclusion of an unidentified work</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <explicit><locus from="3:242r" to="3:242r">3:242r</locus> þey schall haue ij dayes togedir or iij atte þe laste þat
+                                    may be called miracle [Mooney: <q>miracte</q>]</explicit>
+                                <note>The rest of this work is missing due to the loss of the preceding folio or folios.</note>
+                            </msItem>
+                            <msItem n="97">
+                                <locus from="3:242r" to="3:242v">3:242r-3:242v</locus>
+                                <title key="">Treatise on virtues of and use of the herb Saturne for inspiring lechery or causing a woman to conceive
+                                    a child</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="3:242r" to="3:242r">3:242r</locus> Saturne ys an erbe full welle knowen gadere of þe rotes þerof
+                                    pounds x in the monthe of janyuer in the x houre of the day and stampe it smal and putte it in a potte of latoun
+                                    with x holys in the couerynge as smalle as notes</incipit>
+                                <explicit defective="true"><locus from="3:242v" to="3:242v">3:242v</locus> it schal deliuere þe fro alle sorsere and
+                                    alle enchantementz yef þou be wireyd þerwith Item yf þou yeue dragme j and half with</explicit>
+                                <note>According to Mooney (1995), the text is <q>apparently corrupt at the end, where it dissolves into scribbles and
+                                        pentrials</q>.</note>
+                                <listBibl>
+                                    <bibl>eVK2 4465.00</bibl>
+                                    <bibl>Mooney (1995), p. 81 [other copies]</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="98">
+                                <locus from="3:242a verso" to="3:242a verso">3:242a verso</locus>
+                                <title key="">Recipe for making green ginger</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="3:242a verso" to="3:242a verso">3:242a verso</locus> To make gren gynger</rubric>
+                                <incipit><locus from="3:242a verso" to="3:242a verso">3:242a verso</locus> Take gyngyr and make it clene and kast it
+                                    in a pot and put clene water theron and kast opon an hont full of calc and let it stone x days or xij and eury
+                                    therde day take nyewe water and pour away the olde water</incipit>
+                                <explicit><locus from="3:242a verso" to="3:242a verso">3:242a verso</locus> and set it from the fere and let kele and
+                                    put it in a cleen vessel or pot and put the sorop above vpon and stop fast the vessell</explicit>
+                                <listBibl>
+                                    <bibl>eVK2 5410.00</bibl>
+                                </listBibl>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="3:130r" to="3:130r">3:130r</locus>: ffor brosour </secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>Paper</material>, folded in <measure type="folding">? octavo</measure>. <watermark>
+                                            <seg type="para">No watermark observed (it has not been possible to inspect all leaves completely due to
+                                                the tight binding) but the vertical chainlines and small size of the leaves suggest an octavo format.
+                                            </seg></watermark>
+                                    </support>
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="127" type="leaf">127</measure> leaves. </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="150">150</height>
+                                                <width quantity="110">110</width>
+                                            </dimensions>
+                                            <note>ff. 3:i-3:viii is a set of small paper leaves (115 x 85mm).</note>
+                                        </seg>
+                                    </extent>
+                                    <collation mainStructures="10">
+                                        <p>
+                                            <list>
+                                                <item>Quire 1<hi rend="superscript">10-3</hi> (ff. <locus from="3:129v" to="3:135v"
+                                                        >3:129-3:136</locus>: 2nd-4th leaves missing)</item>
+                                                <item>The collation for ff. <locus from="3:136r" to="3:242a verso">3:136-3:242a</locus> has not been
+                                                    established.</item>
+                                            </list>
+                                        </p>
+                                    </collation>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout columns="1" writtenLines="20 25"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height max="135" min="120">120-135</height>
+                                                <width max="95" min="80">80-95</width>
+                                            </dimensions>
+                                            <seg type="ruling">No ruling visible (? blindpoint). Single columns. c. 20-c. 25 lines to the page.
+                                            </seg></p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="cursivaAntiquior">
+                                    <p>Copied by various hands, including ones that have produced cursive <term type="script">anglicana</term>
+                                        scripts.</p>
+                                </handNote>
+                                <handNote script="cursiva">
+                                    <p>Copied by various hands in cursive scripts, including ones that have mixed both <term type="script"
+                                            >anglicana</term> and <term type="script">secretary</term> features.</p>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote type="drawing">
+                                    <p>A drawing of a vessel in brown ink in the inner margin of f. <locus from="3:141r" to="3:141r"
+                                        >3:141r</locus>.</p>
+                                </decoNote>
+                            </decoDesc>
+
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1500" notBefore="1475">Late 15th century. </origDate>
+                                <origPlace cert="high" key="place_g7002445">England. </origPlace>
+                            </origin>
+                            <provenance cert="high" notAfter="1600" notBefore="1475"><p>
+                                    <name cert="medium" key="" role="fmo"><persName type="standard">R.S.P.</persName><persName type="display"
+                                            >R.S.P.</persName></name>: owned or accessed the manuscript. Their initials <p>R.S.P.</p> and <q>R.S.</q>
+                                    inscribed in different designs for merchant marks in brown ink on ff. <locus from="185v" to="185v">185v</locus>,
+                                        <locus from="207v" to="207v">207v</locus>, <locus from="211v" to="211v">211v</locus> [4x], and <locus
+                                        from="212r" to="212r">212r</locus> [3x], once inside an escutcheon.</p>
+                            </provenance>
+                        </history>
+                    </msPart>
+                    <msPart n="4">
+                        <msIdentifier>
+                            <idno>Cambridge, Trinity College, MS O.1.65, ff. 4:243-4:266, 4:266a, 4:267-4:269</idno>
+                            <msName>Part 4</msName>
+                        </msIdentifier>
+                        <msContents>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <msItem n="1">
+                                <locus from="4:243r" to="4:269v">4:243r-4:269v</locus>
+                                <title key="">Collection of medical recipes</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit defective="true"><locus from="4:243r" to="4:243r">4:243r</locus> and mak a plaister and ley yt to þine
+                                    templu[...] and in þin nekke also tak a sponeful of þe ius of beteyne and anoþer of wyn and anoþer of hony and ix
+                                    pepercornes and medele hem togedere and Xif þe syke to drynk iiij dayes and he schal be hool</incipit>
+                                <explicit defective="true"><locus from="4:269v" to="4:269v">4:269v</locus> þe meysyn þerfor lett hym bledyn vndire þe
+                                    ancle wiþinne oþer in þe veyne in þe arm and mak þis drynk tak whit wyn and pynte and oyle</explicit>
+                                <note>Roughly organised in head to toe order, followed by a section on <q>fundement</q> and uroscopy.</note>
+                                <listBibl>
+                                    <bibl>eVK2 0263.00</bibl>
+                                    <bibl>Mooney (1995)</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="2">
+                                <locus from="4:247v" to="4:248r">4:247v-4:248r</locus>
+                                <title key="">Charm to staunch blood invoking the healing blood from Christ's side</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="4:247v" to="4:247v">4:247v</locus> ffor þe same</rubric>
+                                <incipit><locus from="4:247v" to="4:248r">4:247v-4:248r</locus> where euer a man be Xif þou haue his name / fferst axe
+                                    þe mannes name and whan þou knowest hys name go to cherche and sey þere þe charm with þat here foloweþ and loke
+                                    þat þou ne spare not beyt for man or for womman Sey on þus ferst . In nomine patris et . filii . et . spiritus .
+                                    sancti. Amen . Whanne oure lord was doon on þe cros þanne cam longius þe knyth þidure and smot hym in þe syde wiþ
+                                    his spere and blood and water acam owt of þat wounde to his ye and þerwiþ he wyped his eye and þorou þe holy vertu
+                                    þat god schewed þere þorow þat blod . he saw a non . j. coniure þe blod þat þou no come not out of þis cristene
+                                    man .N. In nomine patris et filii. et spiritus. sancti. Amen wiþ þis charm thries rehersyd ne þar þou neuere
+                                    recche where þe man be so þou knowe his name</incipit>
+                                <note>Full transcription.</note>
+                                <listBibl>
+                                    <bibl>eVK2 0263.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="3">
+                                <locus from="4:248r" to="4:248r">4:248r</locus>
+                                <title key="">Charm to staunch blood invoking the River Jordan at Christ's baptism</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="4:248r" to="4:248r">4:248r</locus> ffor þe same [blood]</rubric>
+                                <incipit><locus from="4:248r" to="4:248r">4:248r</locus> Sey þus so þou haue his name . Crist was born in bedleem and
+                                    baptizud in flemiurdon also þe flom stood so stonde þi blood and neme þe name N. seyyng In nomine patris et
+                                    caetera </incipit>
+                                <note>Full transcription.</note>
+                                <listBibl>
+                                    <bibl>eVK2 0263.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="4">
+                                <locus from="4:248r" to="4:248v">4:248r-4:248v</locus>
+                                <title key="">Charm to staunch blood invoking Christ's birth and baptism</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="4:248r" to="4:248r">4:248r</locus> ffor þe same [blood]</rubric>
+                                <incipit><locus from="4:248r" to="4:248v">4:248r-4:248v</locus> so þou haue his name sey þus . Ihesu crist þat was
+                                    born in bedlem thries aftirward sey þus also thryes . Jhesu crist þat þe water of flomiurdon wiþstod . wiþstond
+                                    þis blood name þe neme N. and whan þou hast seid þus .iij. tymes . Sey a pater noster and an Aue and .j. credo .
+                                    and he stancheþ anoon</incipit>
+                                <note>Full transcription.</note>
+                                <listBibl>
+                                    <bibl>eVK2 0263.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="5">
+                                <locus from="4:249v" to="4:250r">4:249v-4:250r</locus>
+                                <title key="">Charm to staunch blood invoking Longinus and St Damian</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="4:249v" to="4:249v">4:249v</locus> ffor þe same - A charm</rubric>
+                                <incipit><locus from="4:249v" to="4:250r">4:249v-4:250r</locus> fferst knowe þe name of þe syke and sey ouer hym + In
+                                    nomine patris et filij et spiritus sancti . Amen In þe name of þe holy trinite Alleluia longius et scholphaton
+                                    slow oure lord and oure lord seide þese woundes noþer þese veynes ne aken nowt noþer festre not . derabyn . sesse
+                                    dessuram . derabyn sesse dessuram . derabyn sesse dessuram . Seynt damyan staunche þis wounde or þese woundes þis
+                                    veyne oþer þese veynes þis senewe or þese senewes where so þei bleden Xif þer be but on wounde on veyn oþer on
+                                    senewe þou schalt seyn staunche þis wounde and so of þe veyne and so of þe senewe and Xif þere be mo woundes þan
+                                    on þou schalt seyn staunche þese woundes þese veynes and þe senewes of þis man or of þis womman and sey .iij.
+                                    pater noster wiþ þis charm . fest þe charm . aftirwared a pater noster</incipit>
+                                <note>Full transcription.</note>
+                                <listBibl>
+                                    <bibl>eVK2 0263.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="6">
+                                <locus from="4:264v" to="4:264v">4:264v</locus>
+                                <title key="">Prognostic</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <rubric><locus from="4:264v" to="4:264v">4:264v</locus> ffor to wete Xif þe syke schal lyfe or deye</rubric>
+                                <note>Full transcription.</note>
+                                <listBibl>
+                                    <bibl>eVK2 0263.00</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="7">
+                                <locus from="4:265v" to="4:266v">4:265v-4:266v</locus>
+                                <title key="">The Twenty-Jordan Series [I]</title>
+                                <textLang mainLang="enm" otherLangs="la">Middle English with some Latin</textLang>
+                                <incipit><locus from="4:265v" to="4:265v">4:265v</locus> iiij. colouris be in vryne to juggen cerclys</incipit>
+                                <explicit><locus from="4:266v" to="4:266v">4:266v</locus> And scalys as arn onfyssches . betokeneþ of womain [? sic]
+                                    stoppynges of here flowris Sabbe in þe moder</explicit>
+                                <listBibl>
+                                    <bibl>eVK2 3779.00</bibl>
+                                    <bibl>Tavormina (2005), no. 57</bibl>
+                                    <bibl>Tavormina (2014), p. 16 (no. 1.1.1)</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="8">
+                                <locus from="4:266v" to="4:266a recto">4:266v-4:266a recto</locus>
+                                <title key="">Cleansing of blood [unique variant]</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="266v" to="266v">266v</locus> Now knowe wel þat alle manere vrynys ben in to þingges . þat is to
+                                    synyfye as in þe lyuere and in þe veynys or in þe bladdere and in þe reynes . ffor þes ben propyr and oþer ben in
+                                    propre</incipit>
+                                <explicit><locus from="266a recto" to="266a recto">266a recto</locus> And þe forthe partye is þe botme þe ground of þe
+                                    vryne IN þat schewen þe grevance in þe bladdere and in þe mareys and in þe genitras and in alle þe membris wiþe
+                                    jnne þe body</explicit>
+                                <listBibl>
+                                    <bibl>eVK2 3779.00</bibl>
+                                    <bibl>Tavormina (2014), p. 34 (no. 3.3.3)</bibl>
+                                </listBibl>
+                            </msItem>
+                            <msItem n="9">
+                                <locus from="4:266a verso" to="4:269v">4:266a verso-4:269v</locus>
+                                <title key="">The Twenty-Jordan Series [II]</title>
+                                <textLang mainLang="enm">Middle English</textLang>
+                                <incipit><locus from="4:266a verso" to="4:267r">4:266a verso-4:267r</locus> Water as a clere horn betokenyth aposteme
+                                    in þe ryXt syde afestre be tyme a tysyk a bladdere on þe longys</incipit>
+                                <explicit defective="true"><locus from="4:269v" to="4:269v">4:269v</locus> lett hym bledyn vndire þe ancle wiþ inne
+                                    oþer in þe veyne in þe arm and mak þis drynk tak whit wyn a pynte and oyle</explicit>
+                                <note>The text ends abruptly due to the loss of the next folio.</note>
+                                <listBibl>
+                                    <bibl>eVK2 3779.00</bibl>
+                                    <bibl>Tavormina (2005), no. 57</bibl>
+                                    <bibl>Tavormina (2014), p. 16 (no. 1.1.1)</bibl>
+                                </listBibl>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <p><secFol>
+                                    <locus from="4:244r" to="4:244r">4:244r</locus>: Escamonie </secFol>
+                            </p>
+                            <objectDesc form="codex">
+                                <supportDesc material="chart">
+                                    <support>
+                                        <material>Paper</material>, folded in <measure type="folding">? octavo</measure>. <watermark>
+                                            <seg type="para">Folios <locus from="4:243" to="4:269">4:243-4:266, 4:266a, 4:267-4:269</locus>: No
+                                                watermark observed (it has not been possible to inspect all leaves completely due to the tight
+                                                binding) but the vertical chainlines and small size of the leaves suggest an octavo format.
+                                            </seg></watermark>
+                                    </support>
+                                    <extent>
+                                        <seg type="object">Codex: </seg>
+                                        <seg type="leaf">
+                                            <measure quantity="28" type="leaf">28</measure> leaves. </seg>
+                                        <seg type="dimensions">
+                                            <dimensions type="leaf" unit="mm">
+                                                <height quantity="155">155</height>
+                                                <width quantity="105">105</width>
+                                            </dimensions>
+                                        </seg>
+                                    </extent>
+                                    <collation mainStructures="8">
+                                        <p>
+                                            <list>
+                                                <item>Quire 1<hi rend="superscript">?8-4</hi> (ff. <locus from="4:243r" to="4:246v"
+                                                        >4:243-4:246</locus>: ?1st-2nd, and ?7th-8th leaves missing)</item>
+                                                <item>Quire 2<hi rend="superscript">?8-5</hi> (ff. <locus from="4:247r" to="4:250v"
+                                                        >4:247-4:250</locus>: 1st and 2nd leaves, and three other leaves in the quire's second half,
+                                                    all missing)</item>
+                                                <item>Quire 3<hi rend="superscript">8</hi> (ff. <locus from="4:251r" to="4:258v"
+                                                    >4:251-4:258</locus>)</item>
+                                                <item>Three leaves (ff. <locus from="4:259r" to="4:261v">4:259-4:261</locus>)</item>
+                                                <item>Quire 4<hi rend="superscript">8</hi> (ff. <locus from="4:262r" to="4:268v"
+                                                    >4:262-4:268</locus>)</item>
+                                                <item>A single leaf (ff. <locus from="4:269r" to="4:269v">4:269</locus>)</item>
+                                            </list>
+                                        </p>
+                                        <signatures type="leaf"><p>Leaf signatures consisting of combinations of letters and Roman numerals in the
+                                                lower outer corners of the first halves of quires (sometimes obscured due to folded corners). The
+                                                following signatures have been observed: <q>biiij</q> on f. <locus from="4:244r" to="4:244r"
+                                                    >4:244r</locus>; <q>diij</q>-<q>diiij</q> on ff. <locus from="247r" to="248r">247-248</locus>;
+                                                    <q>hj</q>-<q>hiiij</q> on ff. <locus from="4:251r" to="4:254r">4:251-4:254</locus>; and
+                                                    <q>vj</q>-<q>viiij</q> on ff. <locus from="262r" to="265r">262-265</locus>.</p></signatures>
+                                        <catchwords><seg type="para"/>Catchwords between (?) three-petalled leaves in brown ink in the inner lower
+                                            corners of the last versos of quires at ff. <locus from="258v" to="258v">258v</locus>, <locus from="268v"
+                                                to="268v">268v</locus></catchwords>
+                                    </collation>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <layout columns="1" writtenLines="19 23"><p>
+                                            <dimensions type="written" unit="mm">
+                                                <height max="125" min="120">120-125</height>
+                                                <width max="85" min="80">80-85</width>
+                                            </dimensions>
+                                            <seg type="ruling">No ruling visible. Single columns. 19-23 lines to the page.</seg></p>
+                                    </layout>
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote script="cursivaAntiquior">
+                                    <p>Copied by a single scribe in a cursive hand with <term type="script">anglicana</term> features. </p>
+                                </handNote>
+                            </handDesc>
+                            <decoDesc>
+                                <decoNote type="drawing">
+                                    <p>Drawing of two eyes in brown ink in the outer margin of f. <locus from="4:247r" to="4:247r">4:247r</locus>,
+                                        illustrating two recipes for eye ailments; a drawing of an eye in red ink in the outer margin of f. <locus
+                                            from="4:262v" to="4:262v">4:262v</locus>, illustrating a recipe <q>ffor sore yen</q>.</p>
+                                </decoNote>
+                                <decoNote type="drawing">
+                                    <p>Drawing of a cylindrical jordan in brown ink in the lower half of f. <locus from="4:265v" to="265v"
+                                            >4:265v</locus> with instructions on how to analyse colours in different parts.</p>
+                                </decoNote>
+                                <decoNote type="plainInit">
+                                    <p>Drawings of small (1-2 lines) initials in dark ink on ff. <locus from="4:247v" to="4:247v">4:247v</locus>,
+                                            <locus from="4:253r" to="4:253r">4:253</locus>, and <locus from="4:254v" to="4:254v">4:254v</locus>.</p>
+                                </decoNote>
+                                <decoNote type="rubrication">
+                                    <p>Headings of recipes written in red ink.</p>
+                                </decoNote>
+                                <decoNote tye="lineFil">
+                                    <p>Line-fillers in red and brown ink.</p>
+                                </decoNote>
+                                <decoNote type="other">
+                                    <p>Regular initials highlighted with red ink.</p>
+                                </decoNote>
+                                <decoNote type="other">
+                                    <p>Paraphs in red ink.</p>
+                                </decoNote>
+                                <decoNote type="other">
+                                    <p>Virgula suspensiva in red ink.</p>
+                                </decoNote>
+                            </decoDesc>
+                        </physDesc>
+                        <history>
+                            <origin>
+                                <origDate calendar="Gregorian" cert="high" notAfter="1500" notBefore="1450">Late 15th century. </origDate>
+                                <origPlace cert="high" key="place_g7002445">England. </origPlace>
+                            </origin>
+                        </history>
+                    </msPart>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="LCSH">
+                    <bibl>
+                        <ref target="https://authorities.loc.gov/">Library of Congress Subject Headings</ref>
+                    </bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85083064">Medicine</term>
+                            <term key="subject_sh85003265">Alchemy</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change status="draft" when="20241119">
+                <persName>Dr Clarck Drieshen, Project Cataloguer in Curious Cures in Cambridge Libraries, Cambridge University Library</persName>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+</TEI>

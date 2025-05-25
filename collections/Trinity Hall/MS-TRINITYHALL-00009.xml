@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/bodleian/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MS 9</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Cambridge University Library</publisher>
+            <availability default="false" status="restricted" xml:id="displayImageRights">
+               <p part="N">Zooming image © Trinity Hall, Cambridge, All rights
+                        reserved.</p>
+            </availability>
+            <availability default="false" status="restricted" xml:id="downloadImageRights">
+               <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made
+                        available for download are licensed under a Creative Commons
+                        Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+            </availability>
+            <availability default="false" status="restricted" xml:id="metadataRights">
+               <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This
+                        metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+            </availability>
+         <availability xml:id="watermark" status="restricted"><licence>Trinity Hall, Cambridge (CC BY-NC 4.0)</licence></availability></publicationStmt>
+         <sourceDesc default="false">
+            <msDesc status="draft" xml:id="MS9" xml:lang="en">
+                    <!-- INSERT CLASSMARK IN XML:ID ATTRIBUTE ABOVE: e.g. MS-FF-00004-00042  -->
+               <msIdentifier>
+                  <institution>Trinity Hall, Cambridge</institution>
+                  <repository>Trinity Hall Library</repository>
+                  <collection>Trinity Hall</collection>
+                  <idno type="shelfmark">MS 9</idno>
+               </msIdentifier>
+               <head>De legibus et consuetudinibus Angliae</head>
+               <msContents>
+                  <summary>
+                     <seg type="para">
+                        <hi rend="italic">De Legibus et Consuetudinibus Angliae</hi> is a treatise on English common law. It is traditionally attributed to Henry de Bracton (Henricus de Brattona or Bractona, c. 1210-1268). However recent scholarship has suggested that Bracton was at most a part-author and final editor of the text.</seg>
+                     <seg type="para">The main topics covered are the acquisition and transmission of property rights, criminal law, and rights and actions associated with land and other forms of real property, supported by contemporary cases. </seg>
+                     <seg type="para">Trinity Hall’s manuscript dates from the late 13th century and is an abridgement of Bracton with 60 folios which are divided into 7 books.  Some of the writs and cases are contained within the body of the main text, while others have been put in the margins. It has numerous contemporary marginal notes in Latin, some in the hand of the main scribe.</seg>
+                  </summary>
+                  <msItem n="1">
+                     <title key="work_306098320">De legibus et consuetudinibus Angliae
+                             </title>
+                     <author key="person_v47555925" role="aut">Bracton, Henry, died 1268</author>
+                     <textLang mainLang="la">Latin</textLang>
+                     <rubric>
+                        <locus from="1r" to="1r">1r</locus> Breton (sic) liber primus incipit de Juribus Anglie</rubric>
+                     <incipit>
+                        <locus from="1r" to="1r">1r</locus> [C]um a justice quasi a quadam fonte omnia jura emanant videamus quid sit justica</incipit>
+                     <explicit>N/A (ends imperfectly)</explicit>
+                     <note>Contains Lib. ii, f. 8. Lib. iii, f. ii. Lib. iv, f. 12 b. Lib. v, f. 22. Lib. vi, f. 3o. Lib. vii, f. 42.</note>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <p>
+                     <secFol>
+                        <locus from="2r" to="2r">2r</locus> non est mea
+                            </secFol>
+                  </p>
+                  <objectDesc form="codex">
+                     <supportDesc material="perg">
+                        <support>
+                           <material>Parchment</material>
+                        </support>
+                        <extent>
+                           <seg type="leaf">
+                              <measure quantity="2" type="laterEndleaf">ii modern flyleaves</measure> +
+                                            <measure quantity="60" type="leaf">60 folios</measure> +
+                                            <measure quantity="2" type="laterEndleaf">ii modern flyleaves</measure>
+                           </seg>
+                           <seg type="dimensions">
+                              <dimensions type="leaf" unit="mm">
+                                 <height quantity="290">290</height>
+                                 <width quantity="205">205</width>
+                              </dimensions>
+                           </seg>
+                        </extent>
+                        <foliation>Modern foliation in pencil in the top right corner.</foliation>
+                        <collation>
+                           <p>
+                              <formula>1<hi rend="superscript">8</hi>; 2 <hi rend="superscript">8</hi>; 3 <hi rend="superscript">8</hi> (wants 1,2); 4<hi rend="superscript">8</hi>; 5<hi rend="superscript">8</hi>; 6<hi rend="superscript">10</hi>; 7<hi rend="superscript">6</hi>; 8<hi rend="superscript">8</hi> (wants 8).</formula>
+                           </p>
+                        </collation>
+                        <condition>MS very worn</condition>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2" rulingMedium="crayon" writtenLines="56">
+                                    <!-- Use @quantity for a specific measurement, or @min/@max for 
+                                    a range.  Round to the nearest 5mm. -->
+                           <dimensions type="written" unit="mm">
+                              <height quantity="238">228–238</height>
+                              <width quantity="149">149</width>
+                           </dimensions>
+                           <seg part="Y" type="ruling">
+                                       Double columns of 56–58 lines, ruled in crayon, catchwords, quire signatures, (start of quire) running headers. 
+                                         
+                                    </seg>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote script="gothicoAntiqua">
+                        <term type="script">Gothic
+                                    bookhand</term>(cursive)</handNote>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote type="flourishing">
+                        <p>Ornamental initials [2 l.] in alternate red with blue pen-flourishing and blue with red pen-flourishing for sub-divisions of text, fols. 49v–50r; red penwork initials [2 l.] for sub-divisions of text in remainder of MS; red penwork paragraph marks [1 l.] for minor text divisions</p>
+                        <p>Space left for 4 l. decorated initials for Books (main divisions of text).</p>
+                     </decoNote>
+                  </decoDesc>
+                  <additions>
+                             Numerous contemporary marginal notes, some in the hand of the main scribe.
+                        </additions>
+                  <bindingDesc>
+                     <binding notAfter="1999" notBefore="1990">
+                        <p>Late 20th century native dyed red Nigerian <material>goatskin</material>, over over bevelled wooden boards, white endbands by Cambridge Colleges Conservation Consortium. 
+                                                                      </p>
+                     </binding>
+                     <binding notAfter="1899" notBefore="1890">
+                        <p>Preserved 19th century previous binding, of brown <material>calf</material> over pasteboards.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate calendar="Gregorian" notAfter="1300" notBefore="1270">
+                                13th century, ca. 1275 – 1300
+                            </origDate>
+                     <origPlace key="place_142995804">England</origPlace>
+                  </origin>
+                  <provenance notAfter="1830" notBefore="1500">
+                     <locus from="1r" to="1r">1r</locus>: 
+                            ‘Sub: de: Re : Le : Le:’, ‘J.H.’ below, 16th century. Possibly Haenel no. 12
+                        </provenance>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source> Description draws on <bibl>
+                              <persName key="person_v88882890">M.R. James</persName>(1907). <hi rend="italic">A descriptive catalogue of the manuscripts in the library
+                                        of Trinity Hall</hi>.</bibl>
+                        </source>
+                     </recordHist>
+                  </adminInfo>
+                  <listBibl type="WRAPPER">
+                     <bibl> Baker, J. H. (1996) <hi rend="italic">A Catalogue of English Legal Manuscripts in Cambridge University Library</hi> (Woodbridge, 1996), 68 no. 106</bibl>
+                     <bibl>Bracton, Henry <hi rend="italic">De Legibus Et Consuetudinibus Angliae</hi> Cambridge: Cambridge University Press, 2012.</bibl>
+                     <bibl>Brand, Paul. "Bratton , Henry of (d. 1268)." <hi rend="italic">Oxford Dictionary of National Biography</hi>. Oxford University Press, 2004; online edn, Jan 2008 [http://www.oxforddnb.com/view/article/3163, accessed 2 May 2022]</bibl>
+                     <bibl>Brand, Paul (2010). ‘The Date and Authorship of Bracton: A Response’, <hi rend="italic">The Journal of Legal History</hi> 31, pp. 217-44.</bibl>
+                     <bibl>James, M. R. (1907) <hi rend="italic">A descriptive catalogue of the manuscripts in the library of Trinity Hall</hi>. Cambridge: Cambridge University Press, p. 10.</bibl>
+                  </listBibl>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <textClass default="false">
+            <keywords scheme="#LCSH">
+               <list>
+                  <item>
+                     <term key="subject_sh85026344">Civil law</term>
+                  </item>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change when="20220112">
+            <persName>Jenni Lecky-Thompson</persName>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic decls="#document-thumbnail" rend="portrait" url="MS-TRINITYHALL-00009-000-00001"/>
+      <surface n="left cover" xml:id="i1">
+         <graphic decls="#downloadImageRights #download" height="9393px" rend="portrait" url="MS-TRINITYHALL-00009-000-00001" width="6596px"/>
+      </surface>
+      <surface n="left cover, inner" xml:id="i2">
+         <graphic decls="#downloadImageRights #download" height="9393px" rend="portrait" url="MS-TRINITYHALL-00009-000-00002" width="6596px"/>
+      </surface>
+      <surface n="[i] recto" xml:id="i3">
+         <graphic decls="#downloadImageRights #download" height="9393px" rend="portrait" url="MS-TRINITYHALL-00009-000-00003" width="6308px"/>
+      </surface>
+      <surface n="[i] verso" xml:id="i4">
+         <graphic decls="#downloadImageRights #download" height="9393px" rend="portrait" url="MS-TRINITYHALL-00009-000-00004" width="6308px"/>
+      </surface>
+      <surface n="[ii] recto" xml:id="i5">
+         <graphic decls="#downloadImageRights #download" height="9393px" rend="portrait" url="MS-TRINITYHALL-00009-000-00005" width="6308px"/>
+      </surface>
+      <surface n="[ii] verso" xml:id="i6">
+         <graphic decls="#downloadImageRights #download" height="9393px" rend="portrait" url="MS-TRINITYHALL-00009-000-00006" width="6308px"/>
+      </surface>
+      <surface n="1r" xml:id="i7">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00007" width="5988px"/>
+      </surface>
+      <surface n="1v" xml:id="i8">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00008" width="5988px"/>
+      </surface>
+      <surface n="2r" xml:id="i9">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00009" width="5988px"/>
+      </surface>
+      <surface n="2v" xml:id="i10">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00010" width="5988px"/>
+      </surface>
+      <surface n="3r" xml:id="i11">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00011" width="5988px"/>
+      </surface>
+      <surface n="3v" xml:id="i12">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00012" width="5988px"/>
+      </surface>
+      <surface n="4r" xml:id="i13">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00013" width="5988px"/>
+      </surface>
+      <surface n="4v" xml:id="i14">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00014" width="5988px"/>
+      </surface>
+      <surface n="5r" xml:id="i15">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00015" width="5988px"/>
+      </surface>
+      <surface n="5v" xml:id="i16">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00016" width="5988px"/>
+      </surface>
+      <surface n="6r" xml:id="i17">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00017" width="5988px"/>
+      </surface>
+      <surface n="6v" xml:id="i18">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00018" width="5988px"/>
+      </surface>
+      <surface n="7r" xml:id="i19">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00019" width="5988px"/>
+      </surface>
+      <surface n="7v" xml:id="i20">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00020" width="5988px"/>
+      </surface>
+      <surface n="8r" xml:id="i21">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00021" width="5988px"/>
+      </surface>
+      <surface n="8v" xml:id="i22">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00022" width="5988px"/>
+      </surface>
+      <surface n="9r" xml:id="i23">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00023" width="5988px"/>
+      </surface>
+      <surface n="9v" xml:id="i24">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00024" width="5988px"/>
+      </surface>
+      <surface n="10r" xml:id="i25">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00025" width="5988px"/>
+      </surface>
+      <surface n="10v" xml:id="i26">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00026" width="5988px"/>
+      </surface>
+      <surface n="11r" xml:id="i27">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00027" width="5988px"/>
+      </surface>
+      <surface n="11v" xml:id="i28">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00028" width="5988px"/>
+      </surface>
+      <surface n="12r" xml:id="i29">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00029" width="5988px"/>
+      </surface>
+      <surface n="12v" xml:id="i30">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00030" width="5988px"/>
+      </surface>
+      <surface n="13r" xml:id="i31">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00031" width="5988px"/>
+      </surface>
+      <surface n="13v" xml:id="i32">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00032" width="5988px"/>
+      </surface>
+      <surface n="14r" xml:id="i33">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00033" width="5988px"/>
+      </surface>
+      <surface n="14v" xml:id="i34">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00034" width="5988px"/>
+      </surface>
+      <surface n="15r" xml:id="i35">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00035" width="5988px"/>
+      </surface>
+      <surface n="15v" xml:id="i36">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00036" width="5988px"/>
+      </surface>
+      <surface n="16r" xml:id="i37">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00037" width="5988px"/>
+      </surface>
+      <surface n="16v" xml:id="i38">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00038" width="5988px"/>
+      </surface>
+      <surface n="17r" xml:id="i39">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00039" width="5988px"/>
+      </surface>
+      <surface n="17v" xml:id="i40">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00040" width="5988px"/>
+      </surface>
+      <surface n="18r" xml:id="i41">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00041" width="5988px"/>
+      </surface>
+      <surface n="18v" xml:id="i42">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00042" width="5988px"/>
+      </surface>
+      <surface n="19r" xml:id="i43">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00043" width="5988px"/>
+      </surface>
+      <surface n="19v" xml:id="i44">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00044" width="5988px"/>
+      </surface>
+      <surface n="20r" xml:id="i45">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00045" width="5988px"/>
+      </surface>
+      <surface n="20v" xml:id="i46">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00046" width="5988px"/>
+      </surface>
+      <surface n="21r" xml:id="i47">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00047" width="5988px"/>
+      </surface>
+      <surface n="21v" xml:id="i48">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00048" width="5988px"/>
+      </surface>
+      <surface n="22r" xml:id="i49">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00049" width="5988px"/>
+      </surface>
+      <surface n="22v" xml:id="i50">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00050" width="5988px"/>
+      </surface>
+      <surface n="23r" xml:id="i51">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00051" width="5988px"/>
+      </surface>
+      <surface n="23v" xml:id="i52">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00052" width="5988px"/>
+      </surface>
+      <surface n="24r" xml:id="i53">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00053" width="5988px"/>
+      </surface>
+      <surface n="24v" xml:id="i54">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00054" width="5988px"/>
+      </surface>
+      <surface n="25r" xml:id="i55">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00055" width="5988px"/>
+      </surface>
+      <surface n="25v" xml:id="i56">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00056" width="5988px"/>
+      </surface>
+      <surface n="26r" xml:id="i57">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00057" width="5988px"/>
+      </surface>
+      <surface n="26v" xml:id="i58">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00058" width="5988px"/>
+      </surface>
+      <surface n="27r" xml:id="i59">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00059" width="5988px"/>
+      </surface>
+      <surface n="27v" xml:id="i60">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00060" width="5988px"/>
+      </surface>
+      <surface n="28r" xml:id="i61">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00061" width="5988px"/>
+      </surface>
+      <surface n="28v" xml:id="i62">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00062" width="5988px"/>
+      </surface>
+      <surface n="29r" xml:id="i63">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00063" width="5988px"/>
+      </surface>
+      <surface n="29v" xml:id="i64">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00064" width="5988px"/>
+      </surface>
+      <surface n="30r" xml:id="i65">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00065" width="5988px"/>
+      </surface>
+      <surface n="30v" xml:id="i66">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00066" width="5988px"/>
+      </surface>
+      <surface n="31r" xml:id="i67">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00067" width="5988px"/>
+      </surface>
+      <surface n="31v" xml:id="i68">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00068" width="5988px"/>
+      </surface>
+      <surface n="32r" xml:id="i69">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00069" width="5988px"/>
+      </surface>
+      <surface n="32v" xml:id="i70">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00070" width="5988px"/>
+      </surface>
+      <surface n="33r" xml:id="i71">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00071" width="5988px"/>
+      </surface>
+      <surface n="33v" xml:id="i72">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00072" width="5988px"/>
+      </surface>
+      <surface n="34r" xml:id="i73">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00073" width="5988px"/>
+      </surface>
+      <surface n="34v" xml:id="i74">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00074" width="5988px"/>
+      </surface>
+      <surface n="35r" xml:id="i75">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00075" width="5988px"/>
+      </surface>
+      <surface n="35v" xml:id="i76">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00076" width="5988px"/>
+      </surface>
+      <surface n="36r" xml:id="i77">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00077" width="5988px"/>
+      </surface>
+      <surface n="36v" xml:id="i78">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00078" width="5988px"/>
+      </surface>
+      <surface n="37r" xml:id="i79">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00079" width="5988px"/>
+      </surface>
+      <surface n="37v" xml:id="i80">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00080" width="5988px"/>
+      </surface>
+      <surface n="38r" xml:id="i81">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00081" width="5988px"/>
+      </surface>
+      <surface n="38v" xml:id="i82">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00082" width="5988px"/>
+      </surface>
+      <surface n="39r" xml:id="i83">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00083" width="5988px"/>
+      </surface>
+      <surface n="39v" xml:id="i84">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00084" width="5988px"/>
+      </surface>
+      <surface n="40r" xml:id="i85">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00085" width="5988px"/>
+      </surface>
+      <surface n="40v" xml:id="i86">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00086" width="5988px"/>
+      </surface>
+      <surface n="41r" xml:id="i87">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00087" width="5988px"/>
+      </surface>
+      <surface n="41v" xml:id="i88">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00088" width="5988px"/>
+      </surface>
+      <surface n="42r" xml:id="i89">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00089" width="5988px"/>
+      </surface>
+      <surface n="42v" xml:id="i90">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00090" width="5988px"/>
+      </surface>
+      <surface n="43r" xml:id="i91">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00091" width="5988px"/>
+      </surface>
+      <surface n="43v" xml:id="i92">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00092" width="5988px"/>
+      </surface>
+      <surface n="44r" xml:id="i93">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00093" width="5988px"/>
+      </surface>
+      <surface n="44v" xml:id="i94">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00094" width="5988px"/>
+      </surface>
+      <surface n="45r" xml:id="i95">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00095" width="5988px"/>
+      </surface>
+      <surface n="45v" xml:id="i96">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00096" width="5988px"/>
+      </surface>
+      <surface n="46r" xml:id="i97">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00097" width="5988px"/>
+      </surface>
+      <surface n="46v" xml:id="i98">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00098" width="5988px"/>
+      </surface>
+      <surface n="47r" xml:id="i99">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00099" width="5988px"/>
+      </surface>
+      <surface n="47v" xml:id="i100">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00100" width="5988px"/>
+      </surface>
+      <surface n="48r" xml:id="i101">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00101" width="5988px"/>
+      </surface>
+      <surface n="48v" xml:id="i102">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00102" width="5988px"/>
+      </surface>
+      <surface n="49r" xml:id="i103">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00103" width="5988px"/>
+      </surface>
+      <surface n="49v" xml:id="i104">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00104" width="5988px"/>
+      </surface>
+      <surface n="50r" xml:id="i105">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00105" width="5988px"/>
+      </surface>
+      <surface n="50v" xml:id="i106">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00106" width="5988px"/>
+      </surface>
+      <surface n="51r" xml:id="i107">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00107" width="5988px"/>
+      </surface>
+      <surface n="51v" xml:id="i108">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00108" width="5988px"/>
+      </surface>
+      <surface n="52r" xml:id="i109">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00109" width="5988px"/>
+      </surface>
+      <surface n="52v" xml:id="i110">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00110" width="5988px"/>
+      </surface>
+      <surface n="53r" xml:id="i111">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00111" width="5988px"/>
+      </surface>
+      <surface n="53v" xml:id="i112">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00112" width="5988px"/>
+      </surface>
+      <surface n="54r" xml:id="i113">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00113" width="5988px"/>
+      </surface>
+      <surface n="54v" xml:id="i114">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00114" width="5988px"/>
+      </surface>
+      <surface n="55r" xml:id="i115">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00115" width="5988px"/>
+      </surface>
+      <surface n="55v" xml:id="i116">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00116" width="5988px"/>
+      </surface>
+      <surface n="56r" xml:id="i117">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00117" width="5988px"/>
+      </surface>
+      <surface n="56v" xml:id="i118">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00118" width="5988px"/>
+      </surface>
+      <surface n="57r" xml:id="i119">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00119" width="5988px"/>
+      </surface>
+      <surface n="57v" xml:id="i120">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00120" width="5988px"/>
+      </surface>
+      <surface n="58r" xml:id="i121">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00121" width="5988px"/>
+      </surface>
+      <surface n="58v" xml:id="i122">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00122" width="5988px"/>
+      </surface>
+      <surface n="59r" xml:id="i123">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00123" width="5988px"/>
+      </surface>
+      <surface n="59v" xml:id="i124">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00124" width="5988px"/>
+      </surface>
+      <surface n="60r" xml:id="i125">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00125" width="5988px"/>
+      </surface>
+      <surface n="60v" xml:id="i126">
+         <graphic decls="#downloadImageRights #download" height="9265px" rend="portrait" url="MS-TRINITYHALL-00009-000-00126" width="5988px"/>
+      </surface>
+      <surface n="[iii] recto" xml:id="i127">
+         <graphic decls="#downloadImageRights #download" height="9393px" rend="portrait" url="MS-TRINITYHALL-00009-000-00127" width="6596px"/>
+      </surface>
+      <surface n="[iii] verso" xml:id="i128">
+         <graphic decls="#downloadImageRights #download" height="9393px" rend="portrait" url="MS-TRINITYHALL-00009-000-00128" width="6308px"/>
+      </surface>
+      <surface n="[iv] recto" xml:id="i129">
+         <graphic decls="#downloadImageRights #download" height="9393px" rend="portrait" url="MS-TRINITYHALL-00009-000-00129" width="6596px"/>
+      </surface>
+      <surface n="[iv] verso" xml:id="i130">
+         <graphic decls="#downloadImageRights #download" height="9393px" rend="portrait" url="MS-TRINITYHALL-00009-000-00130" width="6308px"/>
+      </surface>
+      <surface n="right cover, inner" xml:id="i131">
+         <graphic decls="#downloadImageRights #download" height="9393px" rend="portrait" url="MS-TRINITYHALL-00009-000-00131" width="6596px"/>
+      </surface>
+      <surface n="right cover" xml:id="i132">
+         <graphic decls="#downloadImageRights #download" height="9393px" rend="portrait" url="MS-TRINITYHALL-00009-000-00132" width="6596px"/>
+      </surface>
+      <surface n="spine" xml:id="i133">
+         <graphic decls="#downloadImageRights #download" height="9443px" rend="portrait" url="MS-TRINITYHALL-00009-000-00133" width="2944px"/>
+      </surface>
+      <surface n="former left cover" xml:id="i134">
+         <graphic decls="#downloadImageRights #download" height="9480px" rend="portrait" url="MS-TRINITYHALL-00009-000-00134" width="6387px"/>
+      </surface>
+      <surface n="former left cover, inner" xml:id="i135">
+         <graphic decls="#downloadImageRights #download" height="9480px" rend="portrait" url="MS-TRINITYHALL-00009-000-00135" width="6387px"/>
+      </surface>
+      <surface n="former right cover, inner" xml:id="i136">
+         <graphic decls="#downloadImageRights #download" height="9480px" rend="portrait" url="MS-TRINITYHALL-00009-000-00136" width="6387px"/>
+      </surface>
+      <surface n="former right cover" xml:id="i137">
+         <graphic decls="#downloadImageRights #download" height="9480px" rend="portrait" url="MS-TRINITYHALL-00009-000-00137" width="6387px"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div>
+            <pb facs="#i1" n="left cover" xml:id="pb-leftcover"/>
+            <pb facs="#i2" n="left cover, inner" xml:id="pb-leftcoverinner"/>
+            <pb facs="#i3" n="[i] recto" xml:id="pb-irecto"/>
+            <pb facs="#i4" n="[i] verso" xml:id="pb-iverso"/>
+            <pb facs="#i5" n="[ii] recto" xml:id="pb-iirecto"/>
+            <pb facs="#i6" n="[ii] verso" xml:id="pb-iiverso"/>
+            <pb facs="#i7" n="1r" xml:id="pb-1r"/>
+            <pb facs="#i8" n="1v" xml:id="pb-1v"/>
+            <pb facs="#i9" n="2r" xml:id="pb-2r"/>
+            <pb facs="#i10" n="2v" xml:id="pb-2v"/>
+            <pb facs="#i11" n="3r" xml:id="pb-3r"/>
+            <pb facs="#i12" n="3v" xml:id="pb-3v"/>
+            <pb facs="#i13" n="4r" xml:id="pb-4r"/>
+            <pb facs="#i14" n="4v" xml:id="pb-4v"/>
+            <pb facs="#i15" n="5r" xml:id="pb-5r"/>
+            <pb facs="#i16" n="5v" xml:id="pb-5v"/>
+            <pb facs="#i17" n="6r" xml:id="pb-6r"/>
+            <pb facs="#i18" n="6v" xml:id="pb-6v"/>
+            <pb facs="#i19" n="7r" xml:id="pb-7r"/>
+            <pb facs="#i20" n="7v" xml:id="pb-7v"/>
+            <pb facs="#i21" n="8r" xml:id="pb-8r"/>
+            <pb facs="#i22" n="8v" xml:id="pb-8v"/>
+            <pb facs="#i23" n="9r" xml:id="pb-9r"/>
+            <pb facs="#i24" n="9v" xml:id="pb-9v"/>
+            <pb facs="#i25" n="10r" xml:id="pb-10r"/>
+            <pb facs="#i26" n="10v" xml:id="pb-10v"/>
+            <pb facs="#i27" n="11r" xml:id="pb-11r"/>
+            <pb facs="#i28" n="11v" xml:id="pb-11v"/>
+            <pb facs="#i29" n="12r" xml:id="pb-12r"/>
+            <pb facs="#i30" n="12v" xml:id="pb-12v"/>
+            <pb facs="#i31" n="13r" xml:id="pb-13r"/>
+            <pb facs="#i32" n="13v" xml:id="pb-13v"/>
+            <pb facs="#i33" n="14r" xml:id="pb-14r"/>
+            <pb facs="#i34" n="14v" xml:id="pb-14v"/>
+            <pb facs="#i35" n="15r" xml:id="pb-15r"/>
+            <pb facs="#i36" n="15v" xml:id="pb-15v"/>
+            <pb facs="#i37" n="16r" xml:id="pb-16r"/>
+            <pb facs="#i38" n="16v" xml:id="pb-16v"/>
+            <pb facs="#i39" n="17r" xml:id="pb-17r"/>
+            <pb facs="#i40" n="17v" xml:id="pb-17v"/>
+            <pb facs="#i41" n="18r" xml:id="pb-18r"/>
+            <pb facs="#i42" n="18v" xml:id="pb-18v"/>
+            <pb facs="#i43" n="19r" xml:id="pb-19r"/>
+            <pb facs="#i44" n="19v" xml:id="pb-19v"/>
+            <pb facs="#i45" n="20r" xml:id="pb-20r"/>
+            <pb facs="#i46" n="20v" xml:id="pb-20v"/>
+            <pb facs="#i47" n="21r" xml:id="pb-21r"/>
+            <pb facs="#i48" n="21v" xml:id="pb-21v"/>
+            <pb facs="#i49" n="22r" xml:id="pb-22r"/>
+            <pb facs="#i50" n="22v" xml:id="pb-22v"/>
+            <pb facs="#i51" n="23r" xml:id="pb-23r"/>
+            <pb facs="#i52" n="23v" xml:id="pb-23v"/>
+            <pb facs="#i53" n="24r" xml:id="pb-24r"/>
+            <pb facs="#i54" n="24v" xml:id="pb-24v"/>
+            <pb facs="#i55" n="25r" xml:id="pb-25r"/>
+            <pb facs="#i56" n="25v" xml:id="pb-25v"/>
+            <pb facs="#i57" n="26r" xml:id="pb-26r"/>
+            <pb facs="#i58" n="26v" xml:id="pb-26v"/>
+            <pb facs="#i59" n="27r" xml:id="pb-27r"/>
+            <pb facs="#i60" n="27v" xml:id="pb-27v"/>
+            <pb facs="#i61" n="28r" xml:id="pb-28r"/>
+            <pb facs="#i62" n="28v" xml:id="pb-28v"/>
+            <pb facs="#i63" n="29r" xml:id="pb-29r"/>
+            <pb facs="#i64" n="29v" xml:id="pb-29v"/>
+            <pb facs="#i65" n="30r" xml:id="pb-30r"/>
+            <pb facs="#i66" n="30v" xml:id="pb-30v"/>
+            <pb facs="#i67" n="31r" xml:id="pb-31r"/>
+            <pb facs="#i68" n="31v" xml:id="pb-31v"/>
+            <pb facs="#i69" n="32r" xml:id="pb-32r"/>
+            <pb facs="#i70" n="32v" xml:id="pb-32v"/>
+            <pb facs="#i71" n="33r" xml:id="pb-33r"/>
+            <pb facs="#i72" n="33v" xml:id="pb-33v"/>
+            <pb facs="#i73" n="34r" xml:id="pb-34r"/>
+            <pb facs="#i74" n="34v" xml:id="pb-34v"/>
+            <pb facs="#i75" n="35r" xml:id="pb-35r"/>
+            <pb facs="#i76" n="35v" xml:id="pb-35v"/>
+            <pb facs="#i77" n="36r" xml:id="pb-36r"/>
+            <pb facs="#i78" n="36v" xml:id="pb-36v"/>
+            <pb facs="#i79" n="37r" xml:id="pb-37r"/>
+            <pb facs="#i80" n="37v" xml:id="pb-37v"/>
+            <pb facs="#i81" n="38r" xml:id="pb-38r"/>
+            <pb facs="#i82" n="38v" xml:id="pb-38v"/>
+            <pb facs="#i83" n="39r" xml:id="pb-39r"/>
+            <pb facs="#i84" n="39v" xml:id="pb-39v"/>
+            <pb facs="#i85" n="40r" xml:id="pb-40r"/>
+            <pb facs="#i86" n="40v" xml:id="pb-40v"/>
+            <pb facs="#i87" n="41r" xml:id="pb-41r"/>
+            <pb facs="#i88" n="41v" xml:id="pb-41v"/>
+            <pb facs="#i89" n="42r" xml:id="pb-42r"/>
+            <pb facs="#i90" n="42v" xml:id="pb-42v"/>
+            <pb facs="#i91" n="43r" xml:id="pb-43r"/>
+            <pb facs="#i92" n="43v" xml:id="pb-43v"/>
+            <pb facs="#i93" n="44r" xml:id="pb-44r"/>
+            <pb facs="#i94" n="44v" xml:id="pb-44v"/>
+            <pb facs="#i95" n="45r" xml:id="pb-45r"/>
+            <pb facs="#i96" n="45v" xml:id="pb-45v"/>
+            <pb facs="#i97" n="46r" xml:id="pb-46r"/>
+            <pb facs="#i98" n="46v" xml:id="pb-46v"/>
+            <pb facs="#i99" n="47r" xml:id="pb-47r"/>
+            <pb facs="#i100" n="47v" xml:id="pb-47v"/>
+            <pb facs="#i101" n="48r" xml:id="pb-48r"/>
+            <pb facs="#i102" n="48v" xml:id="pb-48v"/>
+            <pb facs="#i103" n="49r" xml:id="pb-49r"/>
+            <pb facs="#i104" n="49v" xml:id="pb-49v"/>
+            <pb facs="#i105" n="50r" xml:id="pb-50r"/>
+            <pb facs="#i106" n="50v" xml:id="pb-50v"/>
+            <pb facs="#i107" n="51r" xml:id="pb-51r"/>
+            <pb facs="#i108" n="51v" xml:id="pb-51v"/>
+            <pb facs="#i109" n="52r" xml:id="pb-52r"/>
+            <pb facs="#i110" n="52v" xml:id="pb-52v"/>
+            <pb facs="#i111" n="53r" xml:id="pb-53r"/>
+            <pb facs="#i112" n="53v" xml:id="pb-53v"/>
+            <pb facs="#i113" n="54r" xml:id="pb-54r"/>
+            <pb facs="#i114" n="54v" xml:id="pb-54v"/>
+            <pb facs="#i115" n="55r" xml:id="pb-55r"/>
+            <pb facs="#i116" n="55v" xml:id="pb-55v"/>
+            <pb facs="#i117" n="56r" xml:id="pb-56r"/>
+            <pb facs="#i118" n="56v" xml:id="pb-56v"/>
+            <pb facs="#i119" n="57r" xml:id="pb-57r"/>
+            <pb facs="#i120" n="57v" xml:id="pb-57v"/>
+            <pb facs="#i121" n="58r" xml:id="pb-58r"/>
+            <pb facs="#i122" n="58v" xml:id="pb-58v"/>
+            <pb facs="#i123" n="59r" xml:id="pb-59r"/>
+            <pb facs="#i124" n="59v" xml:id="pb-59v"/>
+            <pb facs="#i125" n="60r" xml:id="pb-60r"/>
+            <pb facs="#i126" n="60v" xml:id="pb-60v"/>
+            <pb facs="#i127" n="[iii] recto" xml:id="pb-iiirecto"/>
+            <pb facs="#i128" n="[iii] verso" xml:id="pb-iiiverso"/>
+            <pb facs="#i129" n="[iv] recto" xml:id="pb-ivrecto"/>
+            <pb facs="#i130" n="[iv] verso" xml:id="pb-ivverso"/>
+            <pb facs="#i131" n="right cover, inner" xml:id="pb-rightcoverinner"/>
+            <pb facs="#i132" n="right cover" xml:id="pb-rightcover"/>
+            <pb facs="#i133" n="spine" xml:id="pb-spine"/>
+            <pb facs="#i134" n="former left cover" xml:id="pb-formerleftcover"/>
+            <pb facs="#i135" n="former left cover, inner" xml:id="pb-formerleftcoverinner"/>
+            <pb facs="#i136" n="former right cover, inner" xml:id="pb-formerrightcoverinner"/>
+            <pb facs="#i137" n="former right cover" xml:id="pb-formerrightcover"/>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, University Library, MS Add. 9309</title>
+                <funder>Wellcome</funder>
+                <principal>James Freeman</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+                <availability default="false" status="restricted" xml:id="displayImageRights">
+                    <p part="N">Zooming image © Cambridge University Library, All rights reserved.</p>
+                </availability>
+                <availability default="false" status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability default="false" status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+                <availability xml:id="watermark" status="restricted">
+                    <licence>Cambridge University Library (CC BY-NC 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc status="draft" xml:id="MS-ADD-09309" xml:lang="en">
+                    <msIdentifier>
+                        <institution>University of Cambridge</institution>
+                        <repository>Cambridge University Library</repository>
+                        <collection>Medieval Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, University Library, MS Add. 9309</idno>
+                    </msIdentifier>
+                    <head>Medical recipes and charms</head>
+                    <msContents>
+                        <summary>
+                            <seg type="para">The contents of the manuscript comprise simple, practical medicine: somewhat more than two hundred
+                                recipes, written in Middle English, as well as some charms in Middle English or Latin (see ff. <locus from="28r"
+                                    to="29r">28r-29r</locus>), including a Latin charm for making an apotropaic amulet called the Seal of Solomon
+                                ('Sigillum Salamonis'). In numerous instances, these correspond - though not always precisely - with recipes and
+                                charms found in other compilations made in the 15th century, pointing not only to their widespread circulation in a
+                                number of manuscript forms, but also to a complex history of textual transmission, selection and emendation (for
+                                example comparisons and further discussion, see the introduction to <bibl><ref
+                                        target="https://cudl.lib.cam.ac.uk/view/MS-EMMANUEL-COLLEGE-00095/1">Cambridge, Emmanuel College, MS
+                                    95</ref></bibl>). The first complete recipe in the present manuscript (preceding 'For a man þat spekyth in his
+                                slepe' on f. <locus from="3r" to="3r">3r</locus>) lacks its rubric, but reading the text it is clear that it concerns
+                                dental care. The reader is instructed to burn a green branch of broom, grind the results into a powder and mix it with
+                                a powder of burned alum 'the fourth part' (meaning, perhaps, to use a quarter of the quantity of the broom powder).
+                                They should be mixed well and tempered with fresh water: 'Frote ofte the teþe þerwith' and any blackness shall be
+                                removed, it concludes. It must have been preceded by another recipe for the same issue, since it begins 'Also'. Only
+                                the last three words of the preceding recipe remain - '[and] þe felth' - but this is enough for us to locate the
+                                recipe in other collections of this kind, such as <bibl type="MS" subtype="internal"><ref
+                                        target="https://cudl.lib.cam.ac.uk/view/MS-ADD-09308/65">Cambridge, University Library, MS Add.
+                                    9308</ref></bibl>, f. 26r, and <bibl type="MS" subtype="internal"><ref
+                                        target="https://cudl.lib.cam.ac.uk/view/MS-DD-00006-00029/105">Cambridge, University Library, MS
+                                    Dd.6.29</ref></bibl>, f. 54r. The latter seems to provide the closest match, and there the two recipes are
+                                introduced by the rubric: 'For to make teth white þat arn blake or ȝolowe' (i.e. black or yellow). </seg>
+                            <seg type="para">MS Add. 9309 is especially worthy of note, however, on account of the survival of its medieval, and
+                                probably original, binding. It comprises a rigid spine made from a thick strip of leather, attached to which is a
+                                rectangular piece of thinner, flexible leather held together in numerous places and along tears by rough stitching.
+                                Through this cover and through the spine were punched numerous holes, grouped in rough clusters at four stations.
+                                Through these holes have been looped fine leather tackets that were then tied closed with knots. Onto these tackets
+                                were then sewn the two quires of paper that comprise this manuscript. Thin strips of parchment, placed along the fold
+                                on the outside of the quire and at its centre, and through which the stitching passes, provided the leaves with some
+                                additional reinforcement. The leather wrapper was then folded along its short edges, in order to enclose the paper
+                                quires. The fold on the part of the wrapper at the back of the manuscript then went around the right-hand part of the
+                                front cover. A looped leather thong attached to this flap would have then been placed around a simple toggle or
+                                button, probably made also of leather or perhaps bone, attached to the front cover (this has since been lost and only
+                                the leather tie remains, now split into two halves). </seg>
+                            <seg type="para">This constituted a practical, and cost-effective, form of binding: it comprised cheap materials, and
+                                provided the book with good protection against the elements. The survival of such 'limp' or flexible covers is rare,
+                                especially since they were more vulnerable to wear and tear than 'hard' bindings made from wooden boards, and (like
+                                those) were also at risk of being disbound and placed into more attractive or robust covers by later collectors and
+                                libraries. The quires may have been written on and held together in some temporary way before being bound together in
+                                this wrapper. However, we know from other surviving examples that such books could be made up and sold as blanks, a
+                                phenomenon that appears to have become increasingly common in the later medieval period, in response to growing demand
+                                for the documentation of land holdings, financial accounts and the like, a demand fed by the increasing importation of
+                                paper to 15th-century England. Either way, a remarkable characteristic of this binding was its expandability: once all
+                                available space had been used up, its owner could purchase further quires and have them sewn onto additional tackets
+                                attached to the stiff leather spine, enabling the book to function something like a modern-day ring binder file. </seg>
+                            <seg type="para">Information about the makers, owners and readers of these books is often frustratingly elusive. We might
+                                infer that they were owned by practitioners of the healing arts, or 'leeches', who learned medicine not through
+                                academic study but empirical experience, perhaps as a sort of apprentice at the side of a master. The use of the
+                                vernacular instead of Latin would have made the contents more accessible to such readers. The practical, portable
+                                format of the binding suggests that it was intended to be carried around, perhaps on visits to patients. There are
+                                examples that appear to have been made professionally (for example, Cambridge, University Library, MS Add. 9308),
+                                suggesting the existence of a commercial market for such books - though in the case of the present manuscript it seems
+                                more likely that it was made by its intended user. It is written in a cursive script, with almost no decoration (only
+                                minor flourishes in the same ink as the text), on pages that have not been ruled for a regular layout. There are some
+                                tantalising clues as to who its owners might have been in the form of three, very faded inscriptions: one referring to
+                                someone not necessarily the volume's copyist ('Iste liber constant [...] scriptoris', f. <locus from="35v" to="35v"
+                                    >35v</locus>), another similarly recording ownership but where the name is no longer legible ('Iste liber constant
+                                [...], <locus from="front cover, inner" to="front cover, inner">inside of the front cover</locus>), and a third
+                                mentioning the name 'Thomas Wortis leche' (<locus from="rear cover, inner" to="rear cover, inner">inside of the rear
+                                    cover</locus>, about an inch from the top edge). All three were first noticed in 2023 by Clarck Drieshen, Project
+                                Cataloguer for the Curious Cures in Cambridge Libraries Project. Advanced imaging techniques undertaken by Cambridge
+                                University Library's Cultural Heritage Imaging Laboratory have helped to reveal these inscriptions further, and future
+                                analysis may provide further insights. Whether Thomas Wortis may be identified with any individual known in other
+                                records remains to be seen.</seg>
+                            <seg type="para">Dr James Freeman<lb/>Medieval Manuscripts Specialist<lb/>Cambridge University Library</seg>
+                        </summary>
+                        <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                        <msItem n="1">
+                            <locus from="2r" to="35r">2r-35r</locus>
+                            <title key="work_13201">Medical recipes</title>
+                            <textLang mainLang="enm">Middle English recipes, including a title in Latin on f. <locus from="28r" to="28r">28r</locus>
+                                (<q>hec est medicina bona pro morbo caduco</q>) and two Latin charms on f. <locus from="28v" to="28v"
+                                >28v</locus></textLang>
+                            <incipit defective="true"><locus from="3r" to="3r">3r</locus> and þe felth Also take a grene branche of brome and bren him
+                                and make þerof powdur and do to þat poudur \powdyr/ of brent alyme þe fourþe part and medyll ham well to gedur and
+                                temper ham with fayr watur and frote ofte þi teþe þerwith and hit schall do awey al þe blakmites of ham</incipit>
+                            <explicit defective="false"><locus from="35r" to="35r">35r</locus> ffor bytynge of an eddyr: Take lylly rote and pouer hit
+                                and drinke hit oþer drinke pympernolle and hit wolle þe hole</explicit>
+                            <note>
+                                <p>The collection contains three charms: 1. an abracadabra-type of charm in Latin for protection against evil that is called <q>Sigillum Salamonis</q>
+                                (f. <locus from="28v" to="28v">28v</locus>). 2. A Latin charm for curing epilepsy (<q>gutta caduca</q>) that involves the Pater Noster and Ave Maria.
+                                3. A charm against <q>Crampe</q> that involves the formula <q>Ananizapta</q> (ff. <locus from="28v" to="29r">28v-29r</locus>).</p>
+                                <p>One or two users have marked the recipes in different ways: with crosses and with the astronomical symbol for Cancer
+                                (♋).</p></note>
+                            <listBibl>
+                                <bibl>eVK2 5989.00</bibl>
+                                <bibl>eVK2 1260.00</bibl>
+                                <bibl>eVK2 2363.00</bibl>
+                                <bibl>eVK2 4063.00</bibl>
+                                <bibl>eVK2 5463.00</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="2">
+                            <locus from="35r" to="35r">35r</locus>
+                            <title key="">Account of a soul's seven-day journey after death</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="35r" to="35r">35r</locus> De exitu anime per septem dies primo quidam die quando exit a corpore
+                                tendit ad hierusalem ubi Christus passus pro se</incipit>
+                            <explicit><locus from="35r" to="35r">35r</locus> septa die ad habitaculum proprium si vixerit male ad pena si bona ad
+                                requiem</explicit>
+                            <note>Added in the <date notAfter="1500" notBefore="1450">second half of the 15th century</date> by a different hand than
+                                that of the medical recipes. The text appears to be unique, but probably derives from the <hi rend="italic">Visio Sancti Pauli</hi>, which
+                                describes a similar seven-day journey of a soul after death: <q>Si quidem quando vadit anima de corpore primo ad
+                                orientem, diende ad Iherusalem, deinde ad domum quam edificavit Adam, deinde ad Iordanem, deinde ad templum Salomonis,
+                                deinde ad Bethleem Iuda, deinde ad montem Oliveti, deinde ascendit scalam ad superna, ubi conveniunt ei quatuor milia
+                                angelorum et archangelorum de tartaris preliantes circa anima hominis. Deinde venit ad Ierusalem celestum in septem
+                                diebus et die VII iudicatur in conspectu troni, prout gessit sive bonum sive malum</q> (see <bibl>Lenka Jiroušková, <hi
+                                    rend="italic">Die Visio Pauli: Wege und Wandlungen einer orientalischen Apokryphe im lateinischen Mittelalter.
+                                    Unter Einschluß der alttsechischen und deutschsprachigen Textzeugen</hi>, Mittellateinische Studien und Text,
+                                XXXIV (Leiden: Brill, 2006), p. 538</bibl>. </note>
+                        </msItem>
+                        <msItem n="3">
+                            <locus from="35r" to="35r">35r</locus>
+                            <title key="">Poem against women</title>
+                            <author key="person_v24561532">Guido Faba</author>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="35r" to="35r">35r</locus> Femina fax sathane fetens rosa dulce venenum / Si tanges tangit si tanget
+                                cederes [?]nes</incipit>
+                            <note>Full transcription. Added in the <date notAfter="1500" notBefore="1450">second half of the 15th century</date> by
+                                the same hand that copied the previous item. The first line is an extract from <author key="person_v24561532">Guido
+                                    Faba</author>, <title key="">Summa de vitiis et virtutibus</title> (1.10.4). </note>
+                            <listBibl>
+                                <bibl>Virgilio Pini, 'La <hi rend="italic">Summa de vitiis et virtutibus</hi> di Guido Faba', <hi rend="italic"
+                                        >Quadrivium</hi> 1 (1956), 41-152 (p. 124) </bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="3">
+                            <locus from="rear cover, inner" to="rear cover, inner">inside lower cover</locus>
+                            <title key="">Note</title>
+                            <textLang mainLang="enm" otherLangs="la">Latin and Middle English</textLang>
+                            <incipit><locus from="35r" to="35r">35r</locus> Hoc ornamentum for a dranc</incipit>
+                            <note>The note is twice repeated, perhaps referring to the concentric circles above the inscriptions.</note>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <p>
+                            <secFol>
+                                <locus from="4r" to="4r">4r</locus> be closed with a clothe downe to þe erthe þat þe hete may passe</secFol>
+                        </p>
+                        <objectDesc form="codex">
+                            <supportDesc material="chart">
+                                <support>
+                                    <material>Paper</material>, folded in <measure type="folding">quarto</measure>: <watermark><seg type="para"><term
+                                                type="watermarkMotif">Tête de bœuf</term> (ff. <locus from="2r" to="19v">2-19</locus>) (<dimensions
+                                                type="watermark" unit="mm">
+                                                <height>50</height>
+                                                <width>30</width>
+                                            </dimensions>) <note type="watermarkPosition">in the centre of the inner margin of the folio. </note>
+                                            <note>Bull's head with eyes and nostrils, surmounted with a line topped with a star in the shape of an X:
+                                                Bull's head similar to Briquet nos 15096-15097, but with longer straight muzzle, which are dated to
+                                                    <date calendar="gregorian" notAfter="1455" notBefore="1455">1455</date> and <date
+                                                    calendar="gregorian" notAfter="1470" notBefore="1470">1470</date>. </note></seg>
+                                    </watermark>
+                                    <watermark><seg type="para"><term type="watermarkMotif">Tête de bœuf</term> (ff. <locus from="20r" to="25v"
+                                                >20-25</locus>) (<dimensions type="watermark" unit="mm">
+                                                <height>50-55</height>
+                                                <width>25-30</width>
+                                            </dimensions>) <note type="watermarkPosition">in the centre of the inner margin of the folio. </note>
+                                            <note>Different types of bull's heads with eyes and nostrils, surmounted with a line topped with a star in
+                                                the shape of an X: similar to Briquet nos 15096-1509, and 15098, which are dated to <date
+                                                    calendar="gregorian" notAfter="1455" notBefore="1455">1455</date>, <date calendar="gregorian"
+                                                    notAfter="1470" notBefore="1470">1470</date>, and <date calendar="gregorian" notAfter="1478"
+                                                    notBefore="1478">1478</date>. </note></seg>
+                                    </watermark>
+                                    <watermark><seg type="para"><term type="watermarkMotif">Bœuf</term> (ff. <locus from="27r" to="28v">27-28</locus>)
+                                                (<dimensions type="watermark" unit="mm">
+                                                <height>50</height>
+                                                <width>55</width>
+                                            </dimensions>) <note type="watermarkPosition">in the centre of the inner margin of the folio. </note>
+                                            <note>Bull with long tail with three ends, head turned and face visible, similar to Briquet nos 2782 and
+                                                2783, which are dated to <date calendar="gregorian" notAfter="1448" notBefore="1446">1446-1448</date>
+                                                and <date calendar="gregorian" notAfter="1447" notBefore="1447">1447</date>.</note></seg>
+                                    </watermark>
+                                </support>
+                                <extent>
+                                    <seg type="object">Codex: </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="34" type="leaf">34</measure> leaves. <note>Only small portions of the second leaf (f.
+                                                <locus from="2r" to="2v">2r-2v</locus> and f. <locus from="[2a] recto" to="[2a] verso">[2a]</locus>)
+                                            remain. A single fragment of another missing leaf features after f. 19 (f. <locus from="[19a] recto"
+                                                to="[19a] verso">[19a]</locus>). </note></seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height quantity="175">175</height>
+                                            <width max="145" min="135">135-145</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+                                <foliation notAfter="1500" notBefore="1475">
+                                    <p>Added in the 15th century:</p>
+                                    <p>iii-xxxv (for ff. <locus from="3r" to="35r">3-35</locus>)</p>
+                                    <note>Written in brown ink in the upper margin of each recto.</note>
+                                </foliation>
+                                <foliation notAfter="2013" notBefore="1995">
+                                    <p>Late 20th/early 21st-century foliation:</p>
+                                    <p>2, [2a], 3-19, [19a], 20-35 (for ff. <locus from="2r" to="35r">2-35</locus>)</p>
+                                    <note>Written in pencil in the upper right corner of each recto by Jayne Ringrose.</note>
+                                </foliation>
+                                <collation mainStructures="20 16">
+                                    <p>
+                                        <list>
+                                            <item>Quire 1<hi rend="superscript">20-2</hi> (ff. <locus from="2r" to="19v">2r-19v</locus>: 1st leaf
+                                                missing, 20th missing or cancelled) </item>
+                                            <item>Quire 2<hi rend="superscript">16</hi> (ff. <locus from="20r" to="35v">20-35</locus>)</item>
+                                        </list>
+                                    </p>
+                                    <formula> 1<hi rend="superscript">20-2</hi> (1 missing, 20 missing or cancelled) 2<hi rend="superscript">16</hi>
+                                    </formula>
+                                </collation>
+                                <condition> Paper in a brittle state with water damage on every page and with many tears throughout, especially ff.
+                                        <locus from="3" to="14">3-14</locus>.</condition>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="1" rulingMedium="none" writtenLines="30">
+                                    <dimensions type="written" unit="mm">
+                                        <height max="185" min="185">185</height>
+                                        <width max="125" min="120">120-125</width>
+                                    </dimensions>
+                                    <seg type="ruling"> No ruling. Single columns. 30 lines to the page. </seg>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote script="cursiva">
+                                <p>The medical recipes are written in a cursive <term type="script">Secretary</term> script with <term type="script"
+                                        >Anglicana</term> features, including the double-compartment 'a' which is used in headings.</p>
+                            </handNote>
+                            <handNote script="cursiva">
+                                <p>The added Latin text on f. <locus from="35r" to="35r">35r</locus> is written in a cursive <term type="script"
+                                        >Anglicana</term> script. </p>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote type="cadel">
+                                <p>1 large (5-line) initial in brown ink decorated with cadels and a fish on f. <locus from="8v" to="8v"
+                                    >8v</locus>.</p>
+                            </decoNote>
+                            <decoNote type="flourInit">
+                                <p>1 large (3-line) initial in brown ink with penwork flourishing on f. <locus from="8v" to="8v">8v</locus>.</p>
+                            </decoNote>
+                            <decoNote type="linefiller">
+                                <p>Line-fillers consisting of fern-like leaves in brown ink throughout.</p>
+                            </decoNote>
+                            <decoNote type="other">
+                                <p>Sketch of a castle in brown ink on the leather of the <locus from="front cover, inner" to="front cover, inner"
+                                        >inside upper cover</locus>, visible below f. <locus from="1r" to="1r">1r</locus>.</p>
+                            </decoNote>
+                            <decoNote type="other">
+                                <p>Sketches of human and animal figures on f. <locus from="1v" to="1v">1v</locus> in brown ink.</p>
+                            </decoNote>
+                            <decoNote type="other">
+                                <p>Decorated rectangular 'frame' drawn on f. <locus from="35v" to="35v">35v</locus> in brown ink, but heavily
+                                    rubbed.</p>
+                            </decoNote>
+                            <decoNote type="other">
+                                <p>Geometric figures drawn in brown ink on the leather of the <locus from="rear cover, inner" to="rear cover, inner">
+                                        inside lower cover.</locus></p>
+                            </decoNote>
+                        </decoDesc>
+
+                        <additions><note><p>A note on the manuscipt in brown ink written in a <date notAfter="1700" notBefore="1600"
+                                        >17th-century</date> hand on the <locus from="front cover, inner" to="front cover, inner">inside upper
+                                        cover</locus>: '33 Leaves [...]', possibly followed by a date 'September 1670 [or 1870]' and the initials
+                                    'A.J.W'.</p></note>
+                        </additions>
+                        <bindingDesc>
+                            <binding notAfter="1525" notBefore="1475">
+                                <p>Rough binding of vellum pieces stitched together, including a flap secured with vellum ties; spine formed of a
+                                    rigid strip of leather. Probably the original binding.</p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origDate calendar="Gregorian" cert="high" notAfter="1500" notBefore="1490"><date notAfter="1500" notBefore="1400">15th
+                                    century</date>
+                            </origDate>
+                            <origPlace key="place_g7002445">England</origPlace>
+                        </origin>
+                        <provenance notAfter="1500" notBefore="1400">
+                            <p>Unknown English owner, their name illegible in a <date from="1400" to="1500">15th-century</date> inscription on the
+                                    <locus from="front cover, inner" to="front cover, inner">inside upper cover</locus>: 'Iste liber constat
+                                [...]'.</p>
+                        </provenance>
+                        <provenance notAfter="1500" notBefore="1400">
+                            <p>Unknown English owner, their name erased in a <date from="1400" to="1500">15th-century</date> inscription on f. <locus
+                                    from="35v" to="35v">35v</locus>: 'Iste liber constat [...] scriptoris'</p>
+                        </provenance>
+                        <provenance notAfter="1500" notBefore="1400">
+                            <p>Unknown English owner, their name erased in a <date from="1400" to="1500">15th-century</date> inscription on f. <locus
+                                    from="35v" to="35v">35v</locus>: '[...] est bonus puer quem deus amat'. </p>
+                        </provenance>
+                        <provenance notAfter="1500" notBefore="1400">
+                            <p>? Thomas Wort, their name inscribed in a <date from="1400" to="1500">15th-century</date> inscription on the <locus
+                                    from="rear cover, inner" to="rear cover, inner">inside lower cover</locus>: 'Thomas wort[is] Leche'. </p>
+                        </provenance>
+                        <acquisition when="19950523">Purchased by the University Library at Bonham's Sale on 23 May 1995.</acquisition>
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source> </source>
+                            </recordHist>
+                            <availability default="false" status="restricted">
+                                <p part="N">Entry to read in the Library is permitted only on presentation of a valid reader's card. For information
+                                    on eligibility and admissions procedures, see <ref
+                                        target="https://www.lib.cam.ac.uk/using-library/joining-library">Joining the Library</ref>). For further
+                                    information on the availability of the manuscript, please contact the <ref target="mss@lib.cam.ac.uk">Manuscripts
+                                        Reading Room</ref>.</p>
+                            </availability>
+                        </adminInfo>
+                        <listBibl default="false" type="WRAPPER">
+                        <biblStruct type="bookSection"
+                            xml:id="Wakelin2014"
+                            corresp="http://zotero.org/groups/276440/items/UZVLJR29">
+                            <analytic>
+                                <title level="a">Writing the Words</title>
+                                <author>
+                                    <forename>Daniel</forename>
+                                    <surname>Wakelin</surname>
+                                </author>
+                            </analytic>
+                            <monogr>
+                                <title level="m">The Production of Books in England 1350–1500</title>
+                                <editor>
+                                    <forename>Alexandra</forename>
+                                    <surname>Gillespie</surname>
+                                </editor>
+                                <editor>
+                                    <forename>Daniel</forename>
+                                    <surname>Wakelin</surname>
+                                </editor>
+                                <imprint>
+                                    <pubPlace>Cambridge</pubPlace>
+                                    <biblScope unit="page">34-58</biblScope>
+                                    <publisher>Cambridge University Press</publisher>
+                                    <date>2014</date>
+                                </imprint>
+                            </monogr>
+                            <note>pp. 45 fn. 40, 46 fn. 42.</note>
+                        </biblStruct>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass default="false">
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85083064">Medicine</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change status="draft" when="20220812">
+                <persName>Dr Clarck Drieshen, Project Cataloguer, Cambridge University Library</persName>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic decls="#document-thumbnail" url="MS-ADD-09309-000-00000"/>
+        <surface n="front cover, outer" xml:id="page-surface-1">
+            <graphic decls="#downloadImageRights #download" height="8079px" rend="portrait" url="MS-ADD-09309-000-00000" width="6014px"/>
+        </surface>
+        <surface n="fore-edge flap" xml:id="page-surface-2">
+            <graphic decls="#downloadImageRights #download" height="7766px" rend="portrait" url="MS-ADD-09309-000-00001" width="5849px"/>
+        </surface>
+        <surface n="front cover, inner" xml:id="page-surface-3">
+            <graphic decls="#downloadImageRights #download" height="7772px" rend="portrait" url="MS-ADD-09309-000-00002" width="5837px"/>
+        </surface>
+        <surface n="1r" xml:id="page-surface-4">
+            <graphic decls="#downloadImageRights #download" height="7029px" rend="portrait" url="MS-ADD-09309-000-00003" width="2726px"/>
+        </surface>
+        <surface n="1v" xml:id="page-surface-5">
+            <graphic decls="#downloadImageRights #download" height="7469px" rend="portrait" url="MS-ADD-09309-000-00004" width="2538px"/>
+        </surface>
+        <surface n="2r" xml:id="page-surface-6">
+            <graphic decls="#downloadImageRights #download" height="7519px" rend="portrait" url="MS-ADD-09309-000-00005" width="2515px"/>
+        </surface>
+        <surface n="2v" xml:id="page-surface-7">
+            <graphic decls="#downloadImageRights #download" height="7328px" rend="portrait" url="MS-ADD-09309-000-00006" width="2596px"/>
+        </surface>
+        <surface n="3r" xml:id="page-surface-8">
+            <graphic decls="#downloadImageRights #download" height="7870px" rend="portrait" url="MS-ADD-09309-000-00007" width="5158px"/>
+        </surface>
+        <surface n="3v" xml:id="page-surface-9">
+            <graphic decls="#downloadImageRights #download" height="7984px" rend="portrait" url="MS-ADD-09309-000-00008" width="5084px"/>
+        </surface>
+        <surface n="4r" xml:id="page-surface-10">
+            <graphic decls="#downloadImageRights #download" height="8039px" rend="portrait" url="MS-ADD-09309-000-00009" width="5172px"/>
+        </surface>
+        <surface n="4v" xml:id="page-surface-11">
+            <graphic decls="#downloadImageRights #download" height="8038px" rend="portrait" url="MS-ADD-09309-000-00010" width="5084px"/>
+        </surface>
+        <surface n="5r" xml:id="page-surface-12">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00011" width="5109px"/>
+        </surface>
+        <surface n="5v" xml:id="page-surface-13">
+            <graphic decls="#downloadImageRights #download" height="8038px" rend="portrait" url="MS-ADD-09309-000-00012" width="5084px"/>
+        </surface>
+        <surface n="6r" xml:id="page-surface-14">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00013" width="5109px"/>
+        </surface>
+        <surface n="6v" xml:id="page-surface-15">
+            <graphic decls="#downloadImageRights #download" height="8038px" rend="portrait" url="MS-ADD-09309-000-00014" width="5084px"/>
+        </surface>
+        <surface n="7r" xml:id="page-surface-16">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00015" width="5161px"/>
+        </surface>
+        <surface n="7v" xml:id="page-surface-17">
+            <graphic decls="#downloadImageRights #download" height="8038px" rend="portrait" url="MS-ADD-09309-000-00016" width="5084px"/>
+        </surface>
+        <surface n="8r" xml:id="page-surface-18">
+            <graphic decls="#downloadImageRights #download" height="8044px" rend="portrait" url="MS-ADD-09309-000-00017" width="5166px"/>
+        </surface>
+        <surface n="8v" xml:id="page-surface-19">
+            <graphic decls="#downloadImageRights #download" height="8038px" rend="portrait" url="MS-ADD-09309-000-00018" width="5156px"/>
+        </surface>
+        <surface n="9r" xml:id="page-surface-20">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00019" width="5109px"/>
+        </surface>
+        <surface n="9v" xml:id="page-surface-21">
+            <graphic decls="#downloadImageRights #download" height="8065px" rend="portrait" url="MS-ADD-09309-000-00020" width="5139px"/>
+        </surface>
+        <surface n="10r" xml:id="page-surface-22">
+            <graphic decls="#downloadImageRights #download" height="7983px" rend="portrait" url="MS-ADD-09309-000-00021" width="5109px"/>
+        </surface>
+        <surface n="10v" xml:id="page-surface-23">
+            <graphic decls="#downloadImageRights #download" height="8071px" rend="portrait" url="MS-ADD-09309-000-00022" width="5120px"/>
+        </surface>
+        <surface n="11r" xml:id="page-surface-24">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00023" width="5109px"/>
+        </surface>
+        <surface n="11v" xml:id="page-surface-25">
+            <graphic decls="#downloadImageRights #download" height="8071px" rend="portrait" url="MS-ADD-09309-000-00024" width="5120px"/>
+        </surface>
+        <surface n="12r" xml:id="page-surface-26">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00025" width="5011px"/>
+        </surface>
+        <surface n="12v" xml:id="page-surface-27">
+            <graphic decls="#downloadImageRights #download" height="8071px" rend="portrait" url="MS-ADD-09309-000-00026" width="5051px"/>
+        </surface>
+        <surface n="13r" xml:id="page-surface-28">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00027" width="5062px"/>
+        </surface>
+        <surface n="13v" xml:id="page-surface-29">
+            <graphic decls="#downloadImageRights #download" height="8071px" rend="portrait" url="MS-ADD-09309-000-00028" width="5120px"/>
+        </surface>
+        <surface n="14r" xml:id="page-surface-30">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00029" width="5057px"/>
+        </surface>
+        <surface n="14v" xml:id="page-surface-31">
+            <graphic decls="#downloadImageRights #download" height="8071px" rend="portrait" url="MS-ADD-09309-000-00030" width="5120px"/>
+        </surface>
+        <surface n="15r" xml:id="page-surface-32">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00031" width="5063px"/>
+        </surface>
+        <surface n="15v" xml:id="page-surface-33">
+            <graphic decls="#downloadImageRights #download" height="8071px" rend="portrait" url="MS-ADD-09309-000-00032" width="5120px"/>
+        </surface>
+        <surface n="16r" xml:id="page-surface-34">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00033" width="5021px"/>
+        </surface>
+        <surface n="16v" xml:id="page-surface-35">
+            <graphic decls="#downloadImageRights #download" height="8071px" rend="portrait" url="MS-ADD-09309-000-00034" width="5120px"/>
+        </surface>
+        <surface n="17r" xml:id="page-surface-36">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00035" width="4966px"/>
+        </surface>
+        <surface n="17v" xml:id="page-surface-37">
+            <graphic decls="#downloadImageRights #download" height="8071px" rend="portrait" url="MS-ADD-09309-000-00036" width="5120px"/>
+        </surface>
+        <surface n="18r" xml:id="page-surface-38">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00037" width="5024px"/>
+        </surface>
+        <surface n="18v" xml:id="page-surface-39">
+            <graphic decls="#downloadImageRights #download" height="8071px" rend="portrait" url="MS-ADD-09309-000-00038" width="5120px"/>
+        </surface>
+        <surface n="19r" xml:id="page-surface-40">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00039" width="5064px"/>
+        </surface>
+        <surface n="19v" xml:id="page-surface-41">
+            <graphic decls="#downloadImageRights #download" height="8071px" rend="portrait" url="MS-ADD-09309-000-00040" width="5120px"/>
+        </surface>
+        <surface n="[19a] recto" xml:id="page-surface-42">
+            <graphic decls="#downloadImageRights #download" height="7754px" rend="portrait" url="MS-ADD-09309-000-00041" width="2466px"/>
+        </surface>
+        <surface n="[19a] verso" xml:id="page-surface-43">
+            <graphic decls="#downloadImageRights #download" height="7751px" rend="portrait" url="MS-ADD-09309-000-00042" width="2498px"/>
+        </surface>
+        <surface n="20r" xml:id="page-surface-44">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00043" width="5171px"/>
+        </surface>
+        <surface n="20v" xml:id="page-surface-45">
+            <graphic decls="#downloadImageRights #download" height="8057px" rend="portrait" url="MS-ADD-09309-000-00044" width="5005px"/>
+        </surface>
+        <surface n="21r" xml:id="page-surface-46">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00045" width="5171px"/>
+        </surface>
+        <surface n="21v" xml:id="page-surface-47">
+            <graphic decls="#downloadImageRights #download" height="8057px" rend="portrait" url="MS-ADD-09309-000-00046" width="5005px"/>
+        </surface>
+        <surface n="22r" xml:id="page-surface-48">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00047" width="5171px"/>
+        </surface>
+        <surface n="22v" xml:id="page-surface-49">
+            <graphic decls="#downloadImageRights #download" height="8057px" rend="portrait" url="MS-ADD-09309-000-00048" width="5005px"/>
+        </surface>
+        <surface n="23r" xml:id="page-surface-50">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00049" width="5171px"/>
+        </surface>
+        <surface n="23v" xml:id="page-surface-51">
+            <graphic decls="#downloadImageRights #download" height="8095px" rend="portrait" url="MS-ADD-09309-000-00050" width="5088px"/>
+        </surface>
+        <surface n="24r" xml:id="page-surface-52">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00051" width="5171px"/>
+        </surface>
+        <surface n="24v" xml:id="page-surface-53">
+            <graphic decls="#downloadImageRights #download" height="8095px" rend="portrait" url="MS-ADD-09309-000-00052" width="5088px"/>
+        </surface>
+        <surface n="25r" xml:id="page-surface-54">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00053" width="5171px"/>
+        </surface>
+        <surface n="25v" xml:id="page-surface-55">
+            <graphic decls="#downloadImageRights #download" height="8095px" rend="portrait" url="MS-ADD-09309-000-00054" width="5088px"/>
+        </surface>
+        <surface n="26r" xml:id="page-surface-56">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00055" width="5171px"/>
+        </surface>
+        <surface n="26v" xml:id="page-surface-57">
+            <graphic decls="#downloadImageRights #download" height="8095px" rend="portrait" url="MS-ADD-09309-000-00056" width="5088px"/>
+        </surface>
+        <surface n="27r" xml:id="page-surface-58">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00057" width="5171px"/>
+        </surface>
+        <surface n="27v" xml:id="page-surface-59">
+            <graphic decls="#downloadImageRights #download" height="8095px" rend="portrait" url="MS-ADD-09309-000-00058" width="5088px"/>
+        </surface>
+        <surface n="28r" xml:id="page-surface-60">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00059" width="5119px"/>
+        </surface>
+        <surface n="28v" xml:id="page-surface-61">
+            <graphic decls="#downloadImageRights #download" height="8095px" rend="portrait" url="MS-ADD-09309-000-00060" width="4940px"/>
+        </surface>
+        <surface n="29r" xml:id="page-surface-62">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00061" width="5042px"/>
+        </surface>
+        <surface n="29v" xml:id="page-surface-63">
+            <graphic decls="#downloadImageRights #download" height="8124px" rend="portrait" url="MS-ADD-09309-000-00062" width="4954px"/>
+        </surface>
+        <surface n="30r" xml:id="page-surface-64">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00063" width="5008px"/>
+        </surface>
+        <surface n="30v" xml:id="page-surface-65">
+            <graphic decls="#downloadImageRights #download" height="8095px" rend="portrait" url="MS-ADD-09309-000-00064" width="5088px"/>
+        </surface>
+        <surface n="31r" xml:id="page-surface-66">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00065" width="4995px"/>
+        </surface>
+        <surface n="31v" xml:id="page-surface-67">
+            <graphic decls="#downloadImageRights #download" height="8095px" rend="portrait" url="MS-ADD-09309-000-00066" width="4836px"/>
+        </surface>
+        <surface n="32r" xml:id="page-surface-68">
+            <graphic decls="#downloadImageRights #download" height="8058px" rend="portrait" url="MS-ADD-09309-000-00067" width="4979px"/>
+        </surface>
+        <surface n="32v" xml:id="page-surface-69">
+            <graphic decls="#downloadImageRights #download" height="8095px" rend="portrait" url="MS-ADD-09309-000-00068" width="4973px"/>
+        </surface>
+        <surface n="33r" xml:id="page-surface-70">
+            <graphic decls="#downloadImageRights #download" height="8000px" rend="portrait" url="MS-ADD-09309-000-00069" width="5001px"/>
+        </surface>
+        <surface n="33v" xml:id="page-surface-71">
+            <graphic decls="#downloadImageRights #download" height="8054px" rend="portrait" url="MS-ADD-09309-000-00070" width="4973px"/>
+        </surface>
+        <surface n="34r" xml:id="page-surface-72">
+            <graphic decls="#downloadImageRights #download" height="8003px" rend="portrait" url="MS-ADD-09309-000-00071" width="4994px"/>
+        </surface>
+        <surface n="34v" xml:id="page-surface-73">
+            <graphic decls="#downloadImageRights #download" height="8095px" rend="portrait" url="MS-ADD-09309-000-00072" width="4973px"/>
+        </surface>
+        <surface n="35r" xml:id="page-surface-74">
+            <graphic decls="#downloadImageRights #download" height="8013px" rend="portrait" url="MS-ADD-09309-000-00073" width="4969px"/>
+        </surface>
+        <surface n="35v" xml:id="page-surface-75">
+            <graphic decls="#downloadImageRights #download" height="8095px" rend="portrait" url="MS-ADD-09309-000-00074" width="4973px"/>
+        </surface>
+        <surface n="rear cover, inner" xml:id="page-surface-76">
+            <graphic decls="#downloadImageRights #download" height="8069px" rend="portrait" url="MS-ADD-09309-000-00075" width="7368px"/>
+        </surface>
+        <surface n="rear cover, outer" xml:id="page-surface-77">
+            <graphic decls="#downloadImageRights #download" height="7820px" rend="landscape" url="MS-ADD-09309-000-00076" width="8076px"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div>
+                <pb facs="#page-surface-1" n="front cover, outer" xml:id="page-pb-1"/>
+                <pb facs="#page-surface-2" n="fore-edge flap" xml:id="page-pb-2"/>
+                <pb facs="#page-surface-3" n="front cover, inner" xml:id="page-pb-3"/>
+                <pb facs="#page-surface-4" n="1r" xml:id="page-pb-4"/>
+                <pb facs="#page-surface-5" n="1v" xml:id="page-pb-5"/>
+                <pb facs="#page-surface-6" n="2r" xml:id="page-pb-6"/>
+                <pb facs="#page-surface-7" n="2v" xml:id="page-pb-7"/>
+                <pb facs="#page-surface-8" n="3r" xml:id="page-pb-8"/>
+                <pb facs="#page-surface-9" n="3v" xml:id="page-pb-9"/>
+                <pb facs="#page-surface-10" n="4r" xml:id="page-pb-10"/>
+                <pb facs="#page-surface-11" n="4v" xml:id="page-pb-11"/>
+                <pb facs="#page-surface-12" n="5r" xml:id="page-pb-12"/>
+                <pb facs="#page-surface-13" n="5v" xml:id="page-pb-13"/>
+                <pb facs="#page-surface-14" n="6r" xml:id="page-pb-14"/>
+                <pb facs="#page-surface-15" n="6v" xml:id="page-pb-15"/>
+                <pb facs="#page-surface-16" n="7r" xml:id="page-pb-16"/>
+                <pb facs="#page-surface-17" n="7v" xml:id="page-pb-17"/>
+                <pb facs="#page-surface-18" n="8r" xml:id="page-pb-18"/>
+                <pb facs="#page-surface-19" n="8v" xml:id="page-pb-19"/>
+                <pb facs="#page-surface-20" n="9r" xml:id="page-pb-20"/>
+                <pb facs="#page-surface-21" n="9v" xml:id="page-pb-21"/>
+                <pb facs="#page-surface-22" n="10r" xml:id="page-pb-22"/>
+                <pb facs="#page-surface-23" n="10v" xml:id="page-pb-23"/>
+                <pb facs="#page-surface-24" n="11r" xml:id="page-pb-24"/>
+                <pb facs="#page-surface-25" n="11v" xml:id="page-pb-25"/>
+                <pb facs="#page-surface-26" n="12r" xml:id="page-pb-26"/>
+                <pb facs="#page-surface-27" n="12v" xml:id="page-pb-27"/>
+                <pb facs="#page-surface-28" n="13r" xml:id="page-pb-28"/>
+                <pb facs="#page-surface-29" n="13v" xml:id="page-pb-29"/>
+                <pb facs="#page-surface-30" n="14r" xml:id="page-pb-30"/>
+                <pb facs="#page-surface-31" n="14v" xml:id="page-pb-31"/>
+                <pb facs="#page-surface-32" n="15r" xml:id="page-pb-32"/>
+                <pb facs="#page-surface-33" n="15v" xml:id="page-pb-33"/>
+                <pb facs="#page-surface-34" n="16r" xml:id="page-pb-34"/>
+                <pb facs="#page-surface-35" n="16v" xml:id="page-pb-35"/>
+                <pb facs="#page-surface-36" n="17r" xml:id="page-pb-36"/>
+                <pb facs="#page-surface-37" n="17v" xml:id="page-pb-37"/>
+                <pb facs="#page-surface-38" n="18r" xml:id="page-pb-38"/>
+                <pb facs="#page-surface-39" n="18v" xml:id="page-pb-39"/>
+                <pb facs="#page-surface-40" n="19r" xml:id="page-pb-40"/>
+                <pb facs="#page-surface-41" n="19v" xml:id="page-pb-41"/>
+                <pb facs="#page-surface-42" n="[19a] recto" xml:id="page-pb-42"/>
+                <pb facs="#page-surface-43" n="[19a] verso" xml:id="page-pb-43"/>
+                <pb facs="#page-surface-44" n="20r" xml:id="page-pb-44"/>
+                <pb facs="#page-surface-45" n="20v" xml:id="page-pb-45"/>
+                <pb facs="#page-surface-46" n="21r" xml:id="page-pb-46"/>
+                <pb facs="#page-surface-47" n="21v" xml:id="page-pb-47"/>
+                <pb facs="#page-surface-48" n="22r" xml:id="page-pb-48"/>
+                <pb facs="#page-surface-49" n="22v" xml:id="page-pb-49"/>
+                <pb facs="#page-surface-50" n="23r" xml:id="page-pb-50"/>
+                <pb facs="#page-surface-51" n="23v" xml:id="page-pb-51"/>
+                <pb facs="#page-surface-52" n="24r" xml:id="page-pb-52"/>
+                <pb facs="#page-surface-53" n="24v" xml:id="page-pb-53"/>
+                <pb facs="#page-surface-54" n="25r" xml:id="page-pb-54"/>
+                <pb facs="#page-surface-55" n="25v" xml:id="page-pb-55"/>
+                <pb facs="#page-surface-56" n="26r" xml:id="page-pb-56"/>
+                <pb facs="#page-surface-57" n="26v" xml:id="page-pb-57"/>
+                <pb facs="#page-surface-58" n="27r" xml:id="page-pb-58"/>
+                <pb facs="#page-surface-59" n="27v" xml:id="page-pb-59"/>
+                <pb facs="#page-surface-60" n="28r" xml:id="page-pb-60"/>
+                <pb facs="#page-surface-61" n="28v" xml:id="page-pb-61"/>
+                <pb facs="#page-surface-62" n="29r" xml:id="page-pb-62"/>
+                <pb facs="#page-surface-63" n="29v" xml:id="page-pb-63"/>
+                <pb facs="#page-surface-64" n="30r" xml:id="page-pb-64"/>
+                <pb facs="#page-surface-65" n="30v" xml:id="page-pb-65"/>
+                <pb facs="#page-surface-66" n="31r" xml:id="page-pb-66"/>
+                <pb facs="#page-surface-67" n="31v" xml:id="page-pb-67"/>
+                <pb facs="#page-surface-68" n="32r" xml:id="page-pb-68"/>
+                <pb facs="#page-surface-69" n="32v" xml:id="page-pb-69"/>
+                <pb facs="#page-surface-70" n="33r" xml:id="page-pb-70"/>
+                <pb facs="#page-surface-71" n="33v" xml:id="page-pb-71"/>
+                <pb facs="#page-surface-72" n="34r" xml:id="page-pb-72"/>
+                <pb facs="#page-surface-73" n="34v" xml:id="page-pb-73"/>
+                <pb facs="#page-surface-74" n="35r" xml:id="page-pb-74"/>
+                <pb facs="#page-surface-75" n="35v" xml:id="page-pb-75"/>
+                <pb facs="#page-surface-76" n="rear cover, inner" xml:id="page-pb-76"/>
+                <pb facs="#page-surface-77" n="rear cover, outer" xml:id="page-pb-77"/>
+            </div>
+        </body>
+    </text>
+</TEI>

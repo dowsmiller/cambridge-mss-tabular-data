@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_12052">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Cambridge, Trinity College, MS R.17.11</title>
+            <funder>The Polonsky Foundation</funder>
+            <principal>Suzanne Paul</principal>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>University Library</publisher>
+
+            <availability status="restricted" xml:id="displayImageRights">
+               <p>Zooming image © University Library, All rights reserved.</p>
+            </availability>
+            <availability status="restricted" xml:id="downloadImageRights">
+               <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+            Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC
+            3.0)</licence>
+            </availability>
+            <availability status="restricted" xml:id="metadataRights">
+               <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+            Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+            </availability>
+
+         <availability xml:id="watermark" status="restricted"><licence>Trinity College, Cambridge (CC BY-NC 4.0)</licence></availability></publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="MS-TRINITY-R-00017-00011" xml:lang="en">
+               <msIdentifier>
+                  <institution>Trinity College, Cambridge</institution>
+                  <repository>Trinity College Library</repository>
+                  <collection>Manuscripts</collection>
+                  <idno type="shelfmark">Cambridge, Trinity College, MS R.17.11</idno>
+                  <altIdentifier type="internal">
+                     <idno type="james">MS 997</idno>
+                  </altIdentifier>
+                  <altIdentifier type="external">
+                     <idno type="diktyon">Diktyon 12052</idno>
+                  </altIdentifier>
+               </msIdentifier>
+
+               <msContents>
+                  <summary>
+                     <seg type="para">This manuscript is composed of a series of four
+                fragments bound together, three of which belong to the same
+                original manuscript, originally copied during the first half of
+                the 12th century. The fourth was probably a later addition to
+                that manuscript. Its contents consist largely of a series of
+                brief <title>Lexica</title>, each defining unusual words found
+                in a specific text or group of texts. Of those whose source text
+                can be identified, most are drawn from books of the Bible, but
+                one (<locus from="11v-12r" to="13v-14r">ff. 11v-13v</locus>)
+                relates to a text on medicinal plants, while others remain
+                unidentified.</seg>
+                     <seg type="para">The manuscript also contains a poem (<locus from="8v-9r" to="9v-10r">f. 9r-9v</locus>), presented as an
+                acrostic on the name Basileios (Basil). Peculiarly, while the
+                first six lines each contain words beginning with the relevant
+                letter of that name, these are not the first words of each line,
+                while the last three do not contain words beginning with the
+                relevant letter at all.</seg>
+                     <seg type="para">The copyist of the original manuscript has been
+                identified as a priest named Konstantinos, who copied a number
+                of other known manuscripts, one of which is dated to 1125,
+                placing his period of activity in the first half of the 12th
+                century. Most of that manuscript has now been lost, as indicated
+                by a quire signature on <locus from="1r" to="1r">f. 1r</locus>, which identifies this as the
+                beginning of nineteenth quire. Some of the lexica have been
+                supplemented by the addition of further entries by later hands,
+                both in the Byzantine period and much later in western
+                Europe.</seg>
+                     <seg type="para">The last folio (<locus from="13v-14r" to="14v">f. 14v</locus>) was copied much later than
+                the rest, probably in the 15th or 16th century. This was
+                probably either an expansion of the original with further lexica
+                of the same sort or a replacement for a lost folio. However,
+                since the whole survived as a group of separate fragments until
+                acquiring their present binding in 1859, it is conceivable that
+                this folio originated as part of a separate manuscript and
+                became associated with the others after both original books had
+                disintegrated, because of the similarity of their content.</seg>
+                     <seg type="para">Dr Christopher Wright</seg>
+                  </summary>
+
+                  <textLang mainLang="grc">Greek</textLang>
+               </msContents>
+
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <extent>
+                           <seg type="object">
+                              <objectType>Codex </objectType>
+                           </seg>
+                           <seg type="leaf">
+                              <measure quantity="4" type="laterEndleaf">iv</measure> +
+                      <measure quantity="13" type="leaf">13</measure> + <measure quantity="2" type="laterEndleaf">ii</measure>
+                           </seg>
+                           <seg type="dimensions">
+                              <dimensions type="leaf" unit="mm">
+                                 <height quantity="235">235</height>
+                                 <width quantity="195">195</width>
+                              </dimensions>
+                           </seg>
+                        </extent>
+
+                        <foliation>The manuscript is foliated with the numbers [i-iv] +
+                  1-6, 8-14 + [v-vi] in Arabic numerals, in black ink, recto,
+                  upper right. Either the number 7 has been omitted or the
+                  seventh folio has been lost subsequent to the addition of this
+                  foliation, with the result that the numbers thereafter are too
+                  large by one.</foliation>
+                     </supportDesc>
+                  </objectDesc>
+
+                  <additions>A contents list and note on the acquisition and binding
+              of the manuscript appear on <locus from="[i] verso-[ii] recto" to="[i] verso-[ii] recto">f. [ii] recto</locus>, in the hand of
+                <name key="person_v9938572" type="person">
+                        <persName type="display">Henry R. Luard (1825-1891)</persName>
+                        <persName type="standard">Luard, Henry Richards,
+                1825-1891</persName>
+                     </name>, Fellow of Trinity.</additions>
+
+                  <bindingDesc>
+                     <binding calendar="gregorian" when="1859">
+                        <p>Bound in 1859, according to the note on <locus from="[i] verso-[ii] recto" to="[i] verso-[ii] recto">f.
+                    [ii] recto</locus>. Half leather and patterned paper
+                  covering over millboards, with marbled pastedowns.</p>
+                        <p>
+                           <dimensions type="binding" unit="mm">
+                              <height quantity="249">249</height>
+                              <width quantity="203">203</width>
+                              <depth quantity="10">10</depth>
+                           </dimensions>
+                        </p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+
+               <history>
+                  <provenance>Owned, as unbound fragments, by the classicist <name key="person_v10655647" role="fmo">
+                        <persName type="display">Richard Porson (1759-1808)</persName>
+                        <persName type="standard">Porson, Richard,
+              1759-1808</persName>
+                     </name>.</provenance>
+
+                  <acquisition calendar="gregorian" when="1809">Purchased by Trinity
+              College along with the rest of Porson's books in <date calendar="gregorian" when="1809">1809</date>, according to a
+              note on <locus from="[i] verso-[ii] recto" to="[i] verso-[ii] recto">f. [ii] recto</locus>.</acquisition>
+               </history>
+
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source/>
+                     </recordHist>
+                     <availability status="restricted">
+                        <p>Visitors to Trinity College who wish to consult Special Collections material
+                           are required to apply to the Library in advance of their visit. For information
+                           on eligibility and admission procedures see: <ref target="https://www.trin.cam.ac.uk/library/wren-library/information-for-readers/">Trinity College: Information for Readers</ref>.</p>
+                     </availability>
+                  </adminInfo>
+
+                  <listBibl default="false">
+                     <biblStruct corresp="http://zotero.org/groups/276440/items/W785UEVP" type="book" xml:id="James1900">
+                        <monogr>
+                           <title level="m">The western manuscripts in the library of
+                    Trinity College, Cambridge: a descriptive catalogue</title>
+                           <author>
+                              <forename>M.R.</forename>
+                              <surname>James</surname>
+                           </author>
+                           <imprint>
+                              <pubPlace>Cambridge</pubPlace>
+                              <biblScope unit="volume">2</biblScope>
+                              <publisher>Cambridge University Press</publisher>
+                              <date>1900</date>
+                           </imprint>
+                        </monogr>
+                     </biblStruct>
+                     <biblStruct corresp="http://zotero.org/groups/276440/items/4Y3WFA4T" type="journalArticle" xml:id="Lucà2001">
+                        <analytic>
+                           <title level="a">Teodoro Sacerdote, copista del Reg. gr. Pii
+                    II 35. Appunti su scribi e committenti di manoscritti
+                    greci</title>
+                           <author>
+                              <forename>Santo</forename>
+                              <surname>Lucà</surname>
+                           </author>
+                        </analytic>
+                        <monogr>
+                           <title level="j">Bollettino della Badia Greca di
+                    Grottaferrata</title>
+                           <imprint>
+                              <biblScope unit="volume">55</biblScope>
+                              <biblScope unit="page">127-163</biblScope>
+                              <date>2001</date>
+                           </imprint>
+                        </monogr>
+                     </biblStruct>
+                  </listBibl>
+               </additional>
+
+
+               <msPart n="1">
+                  <msIdentifier>
+                     <idno>Part I</idno>
+                  </msIdentifier>
+
+                  <msContents>
+                     <textLang mainLang="grc">Greek</textLang>
+              
+                     <msItem n="1">
+                        <locus from="1r" to="1v-2r">f. 1r-1v</locus>
+                        <title>Lexicon of Proverbs</title>
+                        <incipit defective="true">
+                           <locus from="1r" to="1r">f. 1r</locus>
+                  Ἐρείδεται· ἐμπιστεύει πέποιθεν</incipit>
+                        <explicit defective="true">
+                           <locus from="1v-2r" to="1v-2r">f.
+                    1v</locus> Προνομεύσει· αἰχμαλωτεύσει</explicit>
+                        <note>Defective at the beginning and end.</note>
+                     </msItem>
+
+                     <msItem n="2">
+                        <locus from="1v-2r" to="2v-3r">f. 2r-2v</locus>
+                        <title>Lexicon</title>
+                        <incipit defective="true">
+                           <locus from="1v-2r" to="1v-2r">f. 2r </locus>
+                           &lt;<supplied reason="damage">ἐναν</supplied>&gt;τίου πάλιν</incipit>
+                        <explicit>
+                           <locus from="2v-3r" to="2v-3r">f. 2v</locus> Χάσματα·
+                  φαντάσματα</explicit>
+                        <note>Defective at the beginning.</note>
+                     </msItem>
+
+                     <msItem n="3">
+                        <locus from="2v-3r" to="4v-5r">ff. 2v-5r</locus>
+                        <title>Lexicon of Ecclesiasticus</title>
+                        <rubric>
+                           <locus from="2v-3r" to="2v-3r">f. 2v</locus> Λέξεις Σοφίας
+                  Ἰησοῦ τοῦ Σιρὰχ καταστοιχεῖον</rubric>
+                        <incipit>
+                           <locus from="2v-3r" to="2v-3r">f. 2v</locus> Ἀνθέζεται·
+                  ἀντηλήψεται</incipit>
+                        <explicit>
+                           <locus from="4v-5r" to="4v-5r">f. 5r</locus> Ὠχύρωσεν·
+                  ἰσχυρὸν ἐποίησεν</explicit>
+                     </msItem>
+
+                     <msItem n="4">
+                        <locus from="4v-5r" to="5v-6r">f. 5r-5v</locus>
+                        <title>Lexicon of Acts</title>
+                        <rubric>
+                           <locus from="4v-5r" to="4v-5r">f. 5r</locus> Λέξεις Πράξεων
+                  τῶν ἁγίων ἀποστόλων</rubric>
+                        <incipit>
+                           <locus from="4v-5r" to="4v-5r">f. 5r</locus> Ὁπτανόμενος·
+                  ὁρώμενος φαινόμενος</incipit>
+                        <explicit defective="true">
+                           <locus from="5v-6r" to="5v-6r">f.
+                    5v</locus> Τῆς προθήσεως· τῆς <sic>σπονδής</sic></explicit>
+                        <note>Defective at the end.</note>
+                     </msItem>
+
+                     <msItem n="5">
+                        <locus from="5v-6r" to="6v-8r">f. 6r-6v</locus>
+                        <title>Lexicon of Odes</title>
+                        <incipit defective="true">
+                           <locus from="5v-6r" to="5v-6r">f. 6r</locus> Ἀπῶσμε· ἐξερρίφην
+                  ἀπέρριμμε</incipit>
+                        <explicit>
+                           <locus from="6v-8r" to="6v-8r">f. 6v</locus>
+                  Παράτεινον τὸ <sic>ελεός</sic> σου· <sic>μη</sic> <sic>αποκόψεις,</sic>
+                  μὴ <sic>αποστήσει</sic>
+                        </explicit>
+                        <note>Defective at the beginning.</note>
+                     </msItem>
+
+                     <msItem n="6">
+                        <locus from="6v-8r" to="6v-8r">f. 6v</locus>
+                        <title>Lexicon</title>
+                        <rubric>
+                           <locus from="6v-8r" to="6v-8r">f. 6v</locus> Ἐκλογὴ λέξεων
+                    <sic>κατα</sic> διαφορὰν καὶ <sic>κατα</sic> στοῖχον
+                        </rubric>
+                        <incipit>
+                           <locus from="6v-8r" to="6v-8r">f. 6v</locus>
+                           <sic>Ἀμυνονα</sic>· ἀγαθὸν φέρτερον</incipit>
+                        <explicit defective="true">
+                           <locus from="6v-8r" to="6v-8r">f.
+                    6v</locus> Ἄγαστον· ἔνδοξον θαυμαστόν</explicit>
+                        <note>Defective at the end.</note>
+                     </msItem>
+
+                     <msItem n="7">
+                        <locus from="6v-8r" to="8v-9r">ff. 8r-9r</locus>
+                        <title>Lexicon</title>
+                        <incipit defective="true">
+                           <locus from="6v-8r" to="6v-8r">f. 8r</locus> Ἰέμενοι·
+                  ἐπιθυμοῦντες</incipit>
+                        <explicit>
+                           <locus from="8v-9r" to="8v-9r">f. 9r</locus>
+                  Ὡστοσκοπεῖ· ἐνοχλεῖ λαλῶν</explicit>
+                        <note>Defective at the beginning.</note>
+                     </msItem>
+
+                     <msItem n="8">
+                        <locus from="8v-9r" to="9v-10r">f. 9r-9v</locus>
+                        <title>Acrostic poem on the name Basileios</title>
+                        <rubric>
+                           <locus from="8v-9r" to="8v-9r">f. 9r</locus> Στίχοι, ιβʹ
+                  σύλλαβοι· Βασίλειος</rubric>
+                        <incipit>
+                           <locus from="8v-9r" to="8v-9r">f. 9r</locus> Ἐκ μὲν
+                  θειοῖ <sic>ο</sic> βασιλεύει τῶ Σιώβ</incipit>
+                        <explicit>
+                           <locus from="9v-10r" to="9v-10r">f. 9v</locus> <sic>Νυν</sic> τῆς
+                  θυσίας· <sic>ἰκετειας</sic> μετρίας</explicit>
+                     </msItem>
+
+                     <msItem n="9">
+                        <locus from="9v-10r" to="11v-12r">ff. 9v-11v</locus>
+                        <title>Lexicon of the books of the Twelve Prophets</title>
+                        <rubric>
+                           <locus from="9v-10r" to="9v-10r">f. 9v</locus> Λέξεις
+                  τῶν ιβʹ προφητῶν κατα στοιχον</rubric>
+                        <incipit>
+                           <locus from="9v-10r" to="9v-10r">f. 9v</locus>
+                  Ἀντιτασσόμενος· ἀνθηστάμενος</incipit>
+                        <explicit>
+                           <locus from="11v-12r" to="11v-12r">f. 11v</locus>
+                  Χερσοθήσεται· ἐρημωθήσεται</explicit>
+                     </msItem>
+
+                     <msItem n="10">
+                        <locus from="11v-12r" to="13v-14r">ff. 11v-13v</locus>
+                        <title>Lexicon of a medical text on plants</title>
+                        <rubric>
+                           <locus from="11v-12r" to="11v-12r">f. 11v </locus>
+                           <sic>Λέξις</sic> ἰατρικοῦ βιβλίου <sic>ἑρμηνία</sic>
+                  βοτάνων</rubric>
+                        <incipit>
+                           <locus from="11v-12r" to="11v-12r">f. 11v</locus>
+                  Ἄκανθα Αἰγύπτια· ἀγριόκαρδος</incipit>
+                        <explicit>
+                           <locus from="13v-14r" to="13v-14r">f. 13v</locus>
+                  Ταριχευτά· κρέοι καὶ ἰχθύες</explicit>
+                     </msItem>
+                  </msContents>
+
+                  <physDesc>
+                     <objectDesc form="codex">
+                        <supportDesc material="paper">
+                           <support>
+                              <material>Parchment (<term type="disposition">FHHF</term>),
+                      of medium thickness and poor quality, with conspicuous
+                      follicles.</material>
+                           </support>
+
+                           <collation>
+                              <p>The main body of the manuscript consists of portions of 4
+                      different quires, the extent of which does not permit
+                      their original form to be established.</p>
+                              <p>
+                                 <list>
+                                    <item>Quire 1<hi rend="superscript">1</hi>
+                                       <locus from="1r" to="1v-2r"> f. 1 </locus>
+                                       <note anchored="true">This is the sole surviving leaf
+                            of an otherwise lost quire.</note>
+                                    </item>
+                                    <item>Quire 2<hi rend="superscript">4</hi>
+                                       <locus from="1v-2r" to="5v-6r"> ff. 2-5 </locus>
+                                       <note anchored="true">This is the surviving portion of
+                            an otherwise lost quire.</note>
+                                    </item>
+                                    <item>Quire 3<hi rend="superscript">1</hi>
+                                       <locus from="5v-6r" to="6v-7r"> f. 6 </locus>
+                                       <note anchored="true">This is the sole surviving leaf
+                            of an otherwise lost quire.</note>
+                                    </item>
+                                    <item>Quire 4<hi rend="superscript">6</hi>
+                                       <locus from="6v-8r" to="13v-14r"> ff. 8-13 </locus>
+                                       <note anchored="true">This is the surviving portion of
+                            an otherwise lost quire, probably a quaternion of
+                            which the first and last folios have been
+                            lost.</note>
+                                    </item>
+                                 </list>
+                              </p>
+                              <signatures type="quire">
+                                 <p>There is a Greek quire signature, in black ink, on
+                          <locus from="1r" to="1r">f.
+                          1r</locus>, giving the number 19 (ιθʹ).</p>
+                              </signatures>
+                              <signatures type="leaf">Leaf signatures in Arabic numerals,
+                      in brown ink, have been added to ff. <locus from="1v-2r" to="5v-6r">2-5</locus> and <locus from="6v-8r" to="14v">8-14</locus>, recto, lower right,
+                      giving an apparently erroneous reconstruction of the
+                      original quire structure.</signatures>
+                           </collation>
+
+                           <condition>There is some creasing, severe in places, as in the
+                    case of <locus from="4v-5r" to="5v-6r">f. 5</locus>. Pale
+                    brown stains appear in the gutter, and there are areas of
+                    dirt.</condition>
+                        </supportDesc>
+
+                        <layoutDesc>
+                           <layout columns="2" rulingMedium="hardpoint" topLine="below" writtenLines="32">Two columns of 32 lines. <dimensions type="written" unit="mm">
+                                 <height quantity="176">176</height>
+                                 <width quantity="140">140</width>
+                              </dimensions>
+                              <seg type="pricking">Pricking survives in the outer margin,
+                      but most has been lost to cropping. </seg>
+                              <seg type="ruling">Ruled in hardpoint, system Leroy 1, type
+                      Leroy <formula notation="Leroy">42C2</formula>. Text hangs
+                      from the lines.</seg>
+                           </layout>
+                        </layoutDesc>
+                     </objectDesc>
+
+                     <handDesc>
+                        <handNote scope="major" xml:id="hand-1">
+                           <p>
+                              <locus from="1r" to="13v-14">ff. 1r-13v</locus>
+                    were copied by Konstantinos (Hand A) (RGK I 231, II 320) in
+                    a <term type="script">mixed minuscule</term> script with
+                    variable slant, in black ink, with little variation in
+                    letter size.</p>
+                           <p>Syllabic abbreviations and superscript word endings appear
+                    at the end of lines only. Breathings are round and mute <hi rend="italic">iota</hi> is absent. Use of the double dot
+                    is functional only.</p>
+                           <p>Punctuation used includes the middle and upper points and
+                    full stop.</p>
+                           <p>Headings were written in <term type="script">Alexandrine
+                      majuscule script</term>, in red ink.</p>
+                        </handNote>
+                     </handDesc>
+
+                     <decoDesc>
+                        <decoNote type="vignette"> Simple vignettes in red ink precede
+                  the beginning of each section.</decoNote>
+
+                        <decoNote type="colInit">Simple minor initials in red ink mark
+                  the beginning of each section. Each entry begins with a normal
+                  letter in red ink.</decoNote>
+                     </decoDesc>
+
+                     <additions>
+                        <p>Additional entries and occasional corrections have been added
+                  on <locus from="6v-8r" to="8v-9r">ff. 6v-9r</locus> by a hand
+                  probably of the <date calendar="gregorian" notAfter="1299" notBefore="1150">later 12th or 13th century</date>.</p>
+                        <p>Latin and Greek notes have been added on ff. <locus from="1v-2r" to="1v-2r">1v-2r</locus> and <locus from="10v-11r" to="10v-11r">10v</locus>, and the same hand
+                  has added additional entries on ff. <locus from="5v-6r" to="5v-6r">5v-6r</locus> and <locus from="13v-14r" to="13v-14r">13v</locus>, and completed an entry on <locus from="1v-2r" to="1v-2r">f. 2r</locus>, which was incomplete
+                  due to the loss of the preceding folio.</p>
+                     </additions>
+                  </physDesc>
+
+                  <history>
+                     <origin>The manuscript was copied by the priest Konstantinos (RGK
+                I 231, II 320), active in the <origDate calendar="gregorian" notAfter="1149" notBefore="1100">first half of the 12th
+                  century</origDate>.</origin>
+                  </history>
+               </msPart>
+
+               <msPart n="2">
+                  <msIdentifier>
+                     <idno>Part II</idno>
+                  </msIdentifier>
+
+                  <msContents>
+                     <msItem n="11">
+                        <locus from="13v-14r" to="14v">f. 14r-14v</locus>
+                        <title>Lexicon</title>
+                        <incipit defective="true">
+                           <locus from="13v-14r" to="13v-14r">f.
+                    14r</locus> Οῦ· ὄπου: ὄστις</incipit>
+                        <explicit>
+                           <locus from="14v" to="14v">f. 14v</locus>
+                  Ωσθεῖς· ὡσθιζόμενος</explicit>
+                        <note>Defective at the beginning.</note>
+                     </msItem>
+
+                     <msItem n="12">
+                        <locus from="14v" to="14v">f. 14v</locus>
+                        <title>Lexicon of Odes</title>
+                        <rubric>
+                           <locus from="14v" to="14v">f.
+                    14v</locus> Λέξεις τῶν Ὁδῶν</rubric>
+                        <incipit>
+                           <locus from="14v" to="14v">f.
+                    14v</locus> Τριστάτας. τρίτης μοίρας ἔχοντας</incipit>
+                        <explicit defective="true">
+                           <locus from="14v" to="14v">f. 14v</locus>
+                  Καρδίας· θαλάσσης· τοῦ βίου</explicit>
+                        <note>Defective at the end.</note>
+                     </msItem>
+                  </msContents>
+
+                  <physDesc>
+                     <objectDesc form="codex">
+                        <supportDesc material="paper">
+                           <support>
+                              <material>Parchment, of medium thickness and poor
+                      quality.</material>
+                           </support>
+
+                           <condition>There is some creasing, brown stains in the gutter
+                    and areas of dirt.</condition>
+                        </supportDesc>
+
+                        <layoutDesc>
+                           <layout columns="2" rulingMedium="hardpoint" topLine="below" writtenLines="31">Two columns of 31 lines. <dimensions type="written" unit="mm">
+                                 <height quantity="162">162</height>
+                                 <width quantity="125">125</width>
+                              </dimensions>
+                              <seg type="pricking">Pricking does not survive. </seg>
+                              <seg type="ruling">Ruled in hardpoint, type Leroy <formula notation="Leroy">X2 20D2</formula>. Text hangs from the
+                      lines.</seg>
+                           </layout>
+                        </layoutDesc>
+                     </objectDesc>
+
+                     <handDesc>
+                        <handNote scope="minor" xml:id="hand-2">
+                           <p>
+                              <locus from="13v-14r" to="14v">f. 14r-14v</locus>
+                    was copied by Hand B in an inelegant <term type="script">mixed minuscule</term> script, slanting to the right, in
+                    black ink, with moderate variation in letter size.</p>
+                           <p>Syllabic abbreviations and superscript word endings appear
+                    throughout the line. Breathings are round and mute <hi rend="italic">iota</hi> is absent. Accents are sometimes
+                    joined to letters and breathings.</p>
+                           <p>Majuscule <hi rend="italic">delta</hi> appears in a
+                    distinctive, bulbous form whose extension to the left at the base is a
+                    loop, with no extension to the right.</p>
+                           <p>Punctuation used includes the middle point, lower and
+                    middle commas and full stop.</p>
+                        </handNote>
+                     </handDesc>
+
+                     <decoDesc>
+                        <decoNote type="vignette">The beginning of a section on <locus from="14v" to="14v">f. 14v</locus> is
+                  preceded by a horizontal bar in red ink.</decoNote>
+
+                        <decoNote type="colInit">Each entry begins with an enlarged
+                  letter in black ink, ornamented with red ink
+                  infill.</decoNote>
+                     </decoDesc>
+                  </physDesc>
+
+                  <history>
+                     <origin>This folio may have been added to the original manuscript
+                as a replacement for losses or as an expansion with additional
+                content. Alternatively, it could come from a different
+                manuscript but have become associated with the other fragments
+                because of its similarity of content. The style of the script
+                suggests that it was copied in the <date calendar="gregorian" notAfter="1599" notBefore="1400">15th or 16th
+                century</date>.</origin>
+                  </history>
+               </msPart>
+
+
+            </msDesc>
+         </sourceDesc>
+
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="LCSH">
+               <bibl default="false" status="draft">
+                  <ref target="https://authorities.loc.gov/">Library of Congress
+              Subject Headings</ref>
+               </bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <textClass default="false">
+            <keywords scheme="#LCSH">
+               <list>
+                  <item>
+                     <term key="subject_sh85013576">Bible</term>
+                     <term key="subject_sh85083063">Medicinal plants</term>
+                  </item>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2022-03-17">
+            <persName>Christopher Wright</persName>
+         </change>
+
+      </revisionDesc>
+  </teiHeader>
+
+  <facsimile>
+      <graphic decls="#document-thumbnail" rend="portrait" url="MS-TRINITY-R-00017-00011-000-00001"/>
+      <surface n="left cover outside" xml:id="i1">
+            <graphic decls="#downloadImageRights #download" height="3195px" rend="portrait" url="MS-TRINITY-R-00017-00011-000-00001" width="2599px"/>
+      </surface>
+      <surface n="left cover, inside" xml:id="i2">
+            <graphic decls="#downloadImageRights #download" height="3153px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00002" width="5027px"/>
+      </surface>
+      <surface n="[i]" xml:id="i3">
+            <graphic decls="#downloadImageRights #download" height="3128px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00003" width="4936px"/>
+      </surface>
+      <surface n="[ii]" xml:id="i4">
+            <graphic decls="#downloadImageRights #download" height="3168px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00004" width="4984px"/>
+      </surface>
+      <surface n="1r" xml:id="i5">
+            <graphic decls="#downloadImageRights #download" height="3128px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00005" width="4984px"/>
+      </surface>
+      <surface n="1v-2r" xml:id="i6">
+            <graphic decls="#downloadImageRights #download" height="3235px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00006" width="4966px"/>
+      </surface>
+      <surface n="2v-3r" xml:id="i7">
+            <graphic decls="#downloadImageRights #download" height="3184px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00007" width="5024px"/>
+      </surface>
+      <surface n="3v-4r" xml:id="i8">
+            <graphic decls="#downloadImageRights #download" height="3139px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00008" width="5006px"/>
+      </surface>
+      <surface n="4v-5r" xml:id="i9">
+            <graphic decls="#downloadImageRights #download" height="3145px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00009" width="5065px"/>
+      </surface>
+      <surface n="5v-6r" xml:id="i10">
+            <graphic decls="#downloadImageRights #download" height="3176px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00010" width="5032px"/>
+      </surface>
+      <surface n="6v-8r" xml:id="i11">
+            <graphic decls="#downloadImageRights #download" height="3144px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00011" width="4960px"/>
+      </surface>
+      <surface n="8v-9r" xml:id="i12">
+            <graphic decls="#downloadImageRights #download" height="3153px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00012" width="5049px"/>
+      </surface>
+      <surface n="9v-10r" xml:id="i13">
+            <graphic decls="#downloadImageRights #download" height="3152px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00013" width="5024px"/>
+      </surface>
+      <surface n="10v-11r" xml:id="i14">
+            <graphic decls="#downloadImageRights #download" height="3163px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00014" width="5038px"/>
+      </surface>
+      <surface n="11v-12r" xml:id="i15">
+            <graphic decls="#downloadImageRights #download" height="3128px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00015" width="5000px"/>
+      </surface>
+      <surface n="12v-13r" xml:id="i16">
+            <graphic decls="#downloadImageRights #download" height="3137px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00016" width="5041px"/>
+      </surface>
+      <surface n="13v-14r" xml:id="i17">
+            <graphic decls="#downloadImageRights #download" height="3113px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00017" width="4977px"/>
+      </surface>
+      <surface n="14v" xml:id="i18">
+            <graphic decls="#downloadImageRights #download" height="3144px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00018" width="5024px"/>
+      </surface>
+      <surface n="[iii]" xml:id="i19">
+            <graphic decls="#downloadImageRights #download" height="3120px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00019" width="5024px"/>
+      </surface>
+      <surface n="right cover, inside" xml:id="i20">
+            <graphic decls="#downloadImageRights #download" height="3113px" rend="landscape" url="MS-TRINITY-R-00017-00011-000-00020" width="5009px"/>
+      </surface>
+      <surface n="right cover, outside" xml:id="i21">
+            <graphic decls="#downloadImageRights #download" height="3164px" rend="portrait" url="MS-TRINITY-R-00017-00011-000-00021" width="2590px"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div>
+            <pb facs="#i1" n="left cover outside" xml:id="pb-leftcoveroutside"/>
+            <pb facs="#i2" n="left cover, inside" xml:id="pb-leftcover,inside"/>
+            <pb facs="#i3" n="[i]" xml:id="pb-i"/>
+            <pb facs="#i4" n="[ii]" xml:id="pb-ii"/>
+            <pb facs="#i5" n="1r" xml:id="pb-1r"/>
+            <pb facs="#i6" n="1v-2r" xml:id="pb-1v-2r"/>
+            <pb facs="#i7" n="2v-3r" xml:id="pb-2v-3r"/>
+            <pb facs="#i8" n="3v-4r" xml:id="pb-3v-4r"/>
+            <pb facs="#i9" n="4v-5r" xml:id="pb-4v-5r"/>
+            <pb facs="#i10" n="5v-6r" xml:id="pb-5v-6r"/>
+            <pb facs="#i11" n="6v-8r" xml:id="pb-6v-8r"/>
+            <pb facs="#i12" n="8v-9r" xml:id="pb-8v-9r"/>
+            <pb facs="#i13" n="9v-10r" xml:id="pb-9v-10r"/>
+            <pb facs="#i14" n="10v-11r" xml:id="pb-10v-11r"/>
+            <pb facs="#i15" n="11v-12r" xml:id="pb-11v-12r"/>
+            <pb facs="#i16" n="12v-13r" xml:id="pb-12v-13r"/>
+            <pb facs="#i17" n="13v-14r" xml:id="pb-13v-14r"/>
+            <pb facs="#i18" n="14v" xml:id="pb-14v"/>
+            <pb facs="#i19" n="[iii]" xml:id="pb-iii"/>
+            <pb facs="#i20" n="right cover, inside" xml:id="pb-rightcover,inside"/>
+            <pb facs="#i21" n="right cover, outside" xml:id="pb-rightcover,outside"/>
+         </div>
+      </body>
+   </text>
+
+</TEI>

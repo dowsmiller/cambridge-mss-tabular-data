@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/msDesc/consolidated-tei-schema/master/msdesc.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="manuscript_1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge, Magdalene College, Pepys MS 878</title>
+                <funder>Wellcome</funder>
+                <principal>James Freeman</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge University Library</publisher>
+                <availability default="false" status="restricted" xml:id="displayImageRights">
+                    <p part="N">Zooming image © Cambridge University Library, All rights reserved.</p>
+                </availability>
+                <availability default="false" status="restricted" xml:id="downloadImageRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/">Images made available for download are licensed under a Creative
+                        Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)</licence>
+                </availability>
+                <availability default="false" status="restricted" xml:id="metadataRights">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/">This metadata is licensed under a Creative Commons
+                        Attribution-NonCommercial-NoDerivs 3.0 Unported License.</licence>
+                </availability>
+            <availability xml:id="watermark" status="restricted"><licence>Magdalene College, Cambridge (CC BY-NC 4.0)</licence></availability></publicationStmt>
+            <sourceDesc>
+                <msDesc status="draft" xml:id="MS-MAGDALENE-PEPYS-00878" xml:lang="en">
+                    <msIdentifier>
+                        <institution>Magdalene College, Cambridge</institution>
+                        <repository>Pepys Library</repository>
+                        <collection>Manuscripts</collection>
+                        <idno type="shelfmark">Cambridge, Magdalene College, Pepys MS 878</idno>
+                    </msIdentifier>
+                    <head>Medical treatises</head>
+                    <msContents>
+                        <summary>
+                            <seg type="para">This manuscript contains a large number of medical treatises, and medical recipes alongside instructions
+                                of a magical, cosmetic, practical, equestrian, and horticultural nature.</seg>
+                            <seg type="para">The collection also a previously unidentified selection of recipes from the <hi rend="italic">Treatises
+                                    of fistula in ano: haemorrhoids, and clysters</hi> by the London surgeon John Arderne (1307–1392) on pp. <locus from="156" to="160">156-160</locus>. An adaptation made to one of Arderne's recipes on p. <locus from="160" to="160">160</locus>, called a 'Valence of Wormwood', may give an insight into the scribe's background. Arderne's
+                                original version reports how the surgeon used this medicine to heal a fisherman from London who had injured his arm on
+                                a sharp iron attached to the door of the monastery of the Carmelites or White Friars [see D'Arcy Power (1910), pp.
+                                100, 133-134]. However, the version in Pepys MS 878 has been updated with what appears to be another medical
+                                practitioner's testimony: <q>This medicine I have often used and praised because with it I healed a sheriff at Bristol
+                                    who endured a puncture wound in the muscle of his left arm from a small dagger while separating two (fighting) men
+                                    and he was close to death because of the pain, swelling, burning, and cramp caused by a miserable cure from a
+                                    barber-surgeon who put tight rolls of linen in the wound and put diachylon on top of it. I removed his cure and
+                                    replaced it with 'Valence of Wormwood' and 'Sanguis Verenis' and God healed him shortly after that - in accordance
+                                    with William Elmeden [Elmedon] and the mayor of Rockingham</q> ['þis I have mekyll vsed and loued for with it I
+                                helyd a shirreff at Bristowe þe which of þe prikyng of a small dagger poynt as he departyd .ij. men in the lacert of
+                                is lyfte arme almost for payn bolnyng and brynnyng and crampe was ny dede thorow an onappy cure of a barbowre þe which
+                                putte harde tentys of lyne in þe wounde and layde diaculium layde aboue is cure put a way valcen sanguis verenis putte
+                                in a lityll while god helyd hym. With þis cure god helyd. Secundum Wylliam Elmedene and þe mayre of Rokyngham'].</seg>
+                            <seg type="para">The account has previously been largely missed. McKitterick and Beadle expand 'S. Wylliam Elmedene' to
+                                'Ser Wylliam Elmedene' and suggest that William Elmeden was a patient (see McKitterick and Beadle (1992), p. 5).
+                                However, it is possible that William Elmeden - perhaps Sir William de Elmedon (1381-1447), Lord of Elmedon, of
+                                Embleton, Durham, or his son William Elmedon (b. 1417) - testified to the medicine's efficacy as a medical
+                                practitioner instead. The same may apply to the unnamed mayor of Rockingham, Northamptonshire, to whose testimony the
+                                text also refers. This could be suggestive of the milieu in and for which the manuscript was copied; one in which
+                                non-university trained healers shared information about medical treatments with one another.</seg>
+                            <seg type="para">Dr Clarck Drieshen<lb/> Project Cataloguer<lb/> Cambridge University Library</seg>
+                        </summary>
+                        <textLang mainLang="enm">Middle English, with dialectal features that are locatable to East Anglia [see McKitterick and Beadle
+                            (1992), p. 5]</textLang>
+                        <msItem n="1">
+                            <locus from="1" to="37">1-37</locus>
+                            <title key="">The Wise Book of Astronomy and Philosophy</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="1" to="1">1</locus> Her begynnyth þe wyse boke of philosophye and after conteyned and made of þe
+                                wysest philosophur and astronemo þat euer was seth þe world was frist [sic] be goun þat is so say of þe lond of grece
+                                ffor in þat lond an Englysch man ffulwis was and wel vnderstandyng of philosophie and astronome stodied and compyled
+                                þis boke out of grewe in to Englysche graciously</rubric>
+                            <incipit><locus from="1" to="1">1</locus> Fyrst þis boke tellyth how many heuenys þer ben aftyrward he pronounsed and
+                                declareth of þe cowrs and of þe gouernaunce of þe planetis aftryward of þe syngnes and þe sterres of þe firmament
+                                aftyrward of þe elementis and complexcyons and þe maner of man without weche scyense and knowyng no man may cum to
+                                perfyte worchyng of astronomye ne philosofie ne surgerie ne of non othur sotyll scyence</incipit>
+                            <explicit><locus from="37" to="37">37</locus> who so vseþe te ete .iij. leues of sage or a pepyrcorne eche day he schal
+                                not drede þe palsye noþer þe rynnyng gowte</explicit>
+                            <note>The text contains a horoscope (pp. <locus from="16" to="34">16-34</locus>).</note>
+                            <listBibl>
+                                <bibl>eVK2 v0074260000</bibl>
+                                <bibl>eVK2 v0074270000</bibl>
+                                <bibl>Griffin (2006)</bibl>
+                                <bibl>Griffin (2013)</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="2">
+                            <locus from="16" to="34">16-34</locus>
+                            <title key="">The Book of Destinary</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="16" to="16">16</locus> Nowe it is for to declare and determyne of þe xij sygnes and of her kyndez
+                                wat euery man is ordeynyd be way of kynd and predestinacioun</incipit>
+                            <explicit><locus from="34" to="34">34</locus> she shcal lyue an .C. ȝere here gode dayes ben monday þursday and fryday and
+                                wednysday saterday ben euyll</explicit>
+                            <listBibl>
+                                <bibl>eVK2 v0074280000</bibl>
+                                <bibl>eVK2 v0074290000</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="3">
+                            <locus from="34" to="35">34-35</locus>
+                            <title key="">Lucky and unlucky days for bloodletting</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="34" to="34">34</locus> And it is to wete þat who wil perfytlye þe lif and predesteniacioun of man be
+                                þese forsayde .xij. sygnes .vij. planetes and iiij. Elementes him be howiþ to be hold and folowe þe perilous timys of
+                                þe kalender and trewly and perfytely he may ȝeue þer of a dome</rubric>
+                            <incipit><locus from="34" to="34">34</locus> But who so wil lerne of þe mone vnderstond wel þat on þe first is iij.
+                                mondays and clerkys seyn þat þei be waried on þe whech no man lete hym blode of wound noþer o veyne</incipit>
+                            <explicit><locus from="35" to="35">35</locus> þese forsayde dayes ben þe perlous days in þe mone and þe gode aclep þe
+                                canyculer dayes þat ken tel you byfore on þe boke as þe kalendour makeþ mencyuun and after þe fest of þe
+                                [?sterr]</explicit>
+                            <listBibl>
+                                <bibl>eVK2 v0074300000</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="4">
+                            <locus from="35" to="37">35-37</locus>
+                            <title key="">Prophecies of Esdras</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="35" to="35">35</locus> Esdras þe prophete doþ us to wete þat þer beþ .xxxij. dayes in þe ȝer perlous
+                                in þe whech a man or womman falleþ in syknesse</incipit>
+                            <explicit><locus from="37" to="37">37</locus> who so vseþe te ete .iij. leues of sage or a pepyrcorne eche day he schal
+                                not drede þe palsye noþer þe rynnyng gowte</explicit>
+                            <listBibl>
+                                <bibl>eVK2 v0074310000</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="5">
+                            <locus from="39" to="54">39-54</locus>
+                            <title key="">Uroscopic treatise ['Urine Brown with a Black Ring']</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="39" to="39">39</locus> Uryne brovne with a blacke rynge is syngne of deth</incipit>
+                            <explicit><locus from="54" to="54">54</locus> Now vndirstond þis rewle mortificacioun is as moche to seyne as for doyng of
+                                kyndly hete</explicit>
+                            <listBibl>
+                                <bibl>eVK2 v0074320000 </bibl>
+                                <bibl>Tavormina (2014), p. 76 (no. 12.1)</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="6">
+                            <locus from="54" to="107">54-107</locus>
+                            <title key=""> Collection of medical, magical, cosmetical, gynaecological and household recipes</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="54" to="55">54-55</locus> ffor þe morfu: Take an vnce of vergrece and a oþer of quyck b[r]ymston and
+                                make hem boþe in powdir and þan take j. schepis hedis and take out þe brayne and seeþ þe hedis till þey ben tendre and
+                                cole hem and gedir þe greswe and menge it with powdir an anoynte þe þerwith and it schal make þe hole</incipit>
+                            <explicit><locus from="107" to="107">107</locus> On oþer for alle gutes. Take nien dayes . inen þe leste leues þat mist
+                                finde of blake þistel and of wylde þistel and hete fastinde þanne take herbeine and planteyne and seth hem wel in rede
+                                wyn and drinc amoruen cold and an euen hoth</explicit>
+                            <note>The collection mostly concerns medical recipes but ends with different types of recipes, including: <list>
+                                    <item>Magical recipes (p. <locus from="102" to="102">102</locus>), including methods to obtain a woman's secrets
+                                        by placing an amber or jet stone on her body during sleep and to prevent a goose's chickens from dying by
+                                        giving them water to drink in which bread or parchment inscribed with the Lord's Prayer has been
+                                        washed.</item>
+                                    <item>Gynaecological recipes (pp. <locus from="103" to="104">103-104</locus>), including methods to help a couple
+                                        become pregnant, a method for establishing whether the cause for unwanted childlessness in a couple lies with
+                                        the man or the woman, and methods for establishing the sex of an unborn child. </item>
+                                    <item>Cosmetic recipes (pp. <locus from="103" to="104">103-104</locus>), including methods to dye hair black and
+                                        blond ('gold') and remove blemishes.</item>
+                                    <item>Repellants (pp. <locus from="102" to="103">102-103</locus>, <locus from="105" to="105">105</locus>),
+                                        including methods to stop dogs from barking at you, drive flies out of a house, and keep wolves from a piece
+                                        of land.</item>
+                                    <item>Household/Practical recipes (pp. <locus from="105" to="106">105-106</locus>), including methods to open a
+                                        silver ring by adding mercury to it and join to pieces of meat together.</item>
+                                    <item>Equestrian medicine (p. <locus from="105" to="106">105-106</locus>), including recipes for healing ailments
+                                        in horses.</item>
+                                    <item>Horticultural instructions (p. <locus from="107" to="107">107</locus>), including methods for harvesting
+                                        grapes and cherries all year round.</item>
+                                </list></note>
+                            <note>McKitterick and Beadle (1992), p. 3, point out that many of the recipes on pp. <locus from="59" to="107">59-107</locus> also appear in a collection of recipes in <bibl subtype="external" type="MS">Lincoln, Cathedral
+                                    Library, MS 91</bibl> [The Lincoln Thornton Manuscript], entitled 'Liber de diversis medicinis' but this is not
+                                the case for most of the specified non-medical recipes.</note>
+                            <note>The collection contains a previously unidentified selection of recipes from John Arderne's <hi rend="italic">Treatises of fistula in ano : haemorrhoids, and clysters</hi>: 'Sanguis veneris' (pp. <locus from="156" to="157">156-157</locus>; 'Valens of Scabius' (pp. <locus from="158" to="159">158-159</locus>); 'Valence of Wourmot' (pp.
+                                    <locus from="159" to="160">159-160</locus>).</note>
+                            <listBibl>
+                                <bibl>eVK2 v0074330000</bibl>
+                                <bibl>eVK2 v0074340000</bibl>
+                                <bibl>Rider (2017), p. 278</bibl>
+                                <bibl>Hindley (2019), p. 367 fn. 25.</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="7">
+                            <locus from="68" to="68">68</locus>
+                            <title key="">Charm against the hiccup</title>
+                            <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                            <rubric><locus from="68" to="68">68</locus> An oþer</rubric>
+                            <incipit><locus from="68" to="68">68</locus> Sey . kyrieleison. Christe eleison . Kyerieleson and hold þy hed vpwarde and
+                                þi honde by fore þey þrote and holde so þi breȝth inne . also longe ast þou mayst</incipit>
+                            <note>Full transcription.</note>
+                            <note>The recipe that precedes the charm instructs the patient to hold both hands in holy water.</note>
+                        </msItem>
+                        <msItem n="8">
+                            <locus from="108" to="113">108-113</locus>
+                            <title key="">Uroscopic tract</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="108" to="108">108</locus> Omnis vrina est colamentum sanguinis</incipit>
+                            <explicit><locus from="113" to="113">113</locus> si moribus nascitur placientes pleni indentur</explicit>
+                            <note>Latin version of the Middle English text on pp. 183–188.</note>
+                        </msItem>
+                        <msItem n="9">
+                            <locus from="113" to="116">113-116</locus>
+                            <title key="">Alphabetical list of medical ingredients</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="113" to="113">113</locus> Ambra / Acacia / Agarica</incipit>
+                            <explicit><locus from="116" to="116">116</locus> Zucare .bi. li. 1. s. / Zinzibere alexandrium .li. 12. d. / Zinzibere
+                                conditum .li. 2. s.</explicit>
+                        </msItem>
+                        <msItem n="10">
+                            <locus from="116" to="118">116-118</locus>
+                            <title key="">List of oils and unguents</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="116" to="116">116</locus> Olea calida sunt / Oleum laurinum / Oleum missellinum / Oleum
+                                anatilion</incipit>
+                            <explicit><locus from="118" to="118">118</locus> Pro quartana. / Musa enea. / Adrianum pocio</explicit>
+                        </msItem>
+                        <msItem n="11">
+                            <locus from="118" to="121">118-121</locus>
+                            <title key=""> Tract on the properties of oil</title>
+                            <textLang mainLang="la" otherLangs="enm">Latin with some Middle English words</textLang>
+                            <incipit><locus from="118" to="118">118</locus> Oleum de tertero accipe de illo et pulueriza et in funde in
+                                aceto</incipit>
+                            <explicit><locus from="121" to="121">121</locus> R. de eo sero et mano</explicit>
+                            <note>The tract is written in Latin but some recipes include English terms for ingredients, including: 'figys',
+                                'raysynys', 'herb yve' (p. <locus from="121" to="121">121</locus>.</note>
+                        </msItem>
+                        <msItem n="12">
+                            <locus from="121" to="125">121-124</locus>
+                            <title key=""> Collection of medical recipes</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="121" to="121">121</locus> For hed warke betan veruan wormod camamil et fenel ana [ounce] 1</incipit>
+                            <explicit><locus from="125" to="125">125</locus> ffor zeskyns drynk: þe ius of sawge with stale ale at moren cold at ewyn
+                                hot</explicit>
+                            <listBibl>
+                                <bibl>eVK2 v0074350000</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="13">
+                            <locus from="124" to="124">124</locus>
+                            <title key=""> Recipe for making gingerbread</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="124" to="124">124</locus> ffor gynge bred take quartes of hony and seet yt and styr yt to yt be wax
+                                tycke and þen take yt downe and put it in a wet wesayl and put þerto a pund of powdyr of gyngar and a quartrun of
+                                powdir of peper and ster al wele togedere and seet yt a lytyl ouer þe fir and styrre yt wele and þen draw yt to yt be
+                                cold and kep yt</incipit>
+                            <note>Full transcription.</note>
+                        </msItem>
+                        <msItem n="14">
+                            <locus from="124" to="125">124-125</locus>
+                            <title key=""> Recipe for making a dish of quinces and pears</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="124" to="125">124-125</locus> ffor schard coynys tak a wart of hony and clarefy yt and put þerto
+                                [ounce] j of pepyr and tak xxx coynys and x wardonis and schet þem in wyne or ale and ye stampe þem and streye þem in
+                                to þe hony and þen boyle þem to þei be thyk and ay be ster and and [sic] þen take yt down and do þerto [ounce] j of
+                                powdir of gyngar and galiga and canel ana [ounce] j and mel al togydere and kep yt ffor scharde wardune tak .xxx.
+                                wardownys and x coynys and make os yt ys be forsayd</incipit>
+                            <note>Full transcription.</note>
+                        </msItem>
+                        <msItem n="15">
+                            <locus from="125" to="125">125</locus>
+                            <title key="">Recipe for making Aqua Vite</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="125" to="125">125</locus> Aqua uite perfectissima recipe ollivam terram et impleatur usque ad medium
+                                bono vino rube</incipit>
+                            <explicit><locus from="125" to="125">125</locus> Ista aqua assimulatur balsamo naturali que habet omnipotens eius
+                                virtutes</explicit>
+                        </msItem>
+                        <msItem n="16">
+                            <locus from="125" to="125">125</locus>
+                            <title key=""> Recipe for a panacea</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="125" to="125">125</locus> Custodit carnes et pisces relentes et cok[u]at suis naturis et sibi
+                                subtrahit omnes dulcedines omni specierum et radicium in ea coktarum et valet in omnibus infrimitatibus frigidis et
+                                pro paralise et gutta frigida ad neruos retractos et custodit omnes sanitates infra corpus humanum et dat bonum
+                                appetitum et clarificat visum destruam carnem mortuam de wlneribus et mortificat fistulam et cancrum et wlt ardere
+                                super omnem rem sine lesione et verum et multos alijs</incipit>
+                            <note>Full transcription.</note>
+                        </msItem>
+                        <msItem n="17">
+                            <locus from="125" to="126">125-126</locus>
+                            <title key=""> Magical uses for powder from a snake's heart</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="125" to="126">125-126</locus> Cum luna fuerit amentando in primo gradu signi geminorum pulueriza cor
+                                serpentis in isto modo calefac duos lapides in igne ut rubeus sint et tunc inter pone cor serpentis et sic ardetur et
+                                puluerizetur et vsui reseruetur</incipit>
+                            <explicit><locus from="126" to="126">126</locus> Et si quis timiat de veneno sciat quacumque fuerit appositum totum
+                                dispergetur. Et si quis super se gerat erit inuisibilis et omnibus amabilis</explicit>
+                            <note>The text explains how to make powder from a snake's heart and use it to heal all wounds, become invulnerableto
+                                injuries, heal leprosy, make foes flee and gain the affection and help of friends, become appointed, identify thieves
+                                and stolen objects, become invulnerable to poison, become invisible, and loved by all.</note>
+                        </msItem>
+                        <msItem n="18">
+                            <locus from="126" to="126">126</locus>
+                            <title key="">Note on the celestial bodies and their elements</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <rubric><locus from="126" to="126">126</locus> Notandum est hic de 12 signis</rubric>
+                            <incipit><locus from="126" to="126">126</locus> Aries est de naturaa de igne</incipit>
+                            <explicit><locus from="126" to="126">126</locus> Saturnus de mercurio</explicit>
+                        </msItem>
+                        <msItem n="19">
+                            <locus from="126" to="126">126</locus>
+                            <title key="">Unlucky days for medicine</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="126" to="126">126</locus> Notandum est hic de diebus infortunatis et malis quorum in anuo sunt
+                                33</incipit>
+                            <explicit><locus from="126" to="126">126</locus>December habet 3<hi rend="superscript">a</hi> 6. 2. 17. et fleobotometur
+                                quod bonum est</explicit>
+                        </msItem>
+                        <msItem n="20">
+                            <locus from="127" to="133">127-133</locus>
+                            <title key=""> Herbal</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="127" to="127">127</locus> De calidis in primo gradu absinthium</incipit>
+                            <explicit><locus from="133" to="133">133</locus> Testudines / De potibus / Nix</explicit>
+                            <listBibl>
+                                <bibl>eTK t0072130000</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="21">
+                            <locus from="133" to="151">133-151</locus>
+                            <title key=""> Dictionary of medicinal ingredients</title>
+                            <textLang mainLang="la">Latin</textLang>
+                            <incipit><locus from="133" to="133">133</locus> Aloen succus est herbe calidus est in 2<hi rend="superscript">o</hi> gradu
+                                uirtute habet purgandi coleram et fleminam et melancoliam</incipit>
+                            <explicit><locus from="151" to="151">151</locus> Zucarum calidum et humidum temperate nassitur in canna virtutem habet
+                                humectandi infrigiandi nutriendi et relaxendi</explicit>
+                        </msItem>
+                        <msItem n="22">
+                            <locus from="152" to="170">152-170</locus>
+                            <title key=""> Collection of medical recipes</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="152" to="152">152</locus> ffor the migryine: Take wex and rosyll ffrankensens mastike gumme edere
+                                terpontine galbanum evene portioun and take oyle of olyue poudere of linsed pouder of anneys comyne fenel sede bays of
+                                lorey euene portioun melte hem alle to gedere and make a cappe of ledere and ley this thynge there onne and take lyne
+                                cloth and ley there abowe and poyne itt well to gedere and do it on thyne hedde and þat will laste .xx. ȝere</incipit>
+                            <explicit><locus from="170" to="170">170</locus> Now vnderstand þat þis oytement makes good skynne in two nyghtis and hit
+                                elys sunbrennyng chynnes and ragatiffes and sissurus [sic: ? 'fissures'] on hand hips and al oþer membres for þis
+                                oytement may no good Siyu[r]g[ien] want þer for hawe it in reuerence</explicit>
+                            <note>The collection features recipes for a previously unidentified selection of recipes from John Arderne's <hi rend="italic">Treatises of fistula in ano : haemorrhoids, and clysters</hi> 'Sanguis veneris' (pp. <locus from="156" to="157">156-157</locus>; 'Valens of Scabius' (pp. <locus from="158" to="159">158-159</locus>);
+                                'Valence of Wourmot' (pp. <locus from="159" to="160">159-160</locus>); In his recipe for a 'Valence of wormod',
+                                Arderne reports how he used the medicine to heal a fisherman from London who had injured his arm on a sharp iron near
+                                the monastery of the Carmelites. However, the version in Pepys MS 878 has been updated with what appear to be another
+                                physician's testimonies. This physician states that 'this medicine I have often used and praised because with it I
+                                healed a sheriff at Bristol who endured a puncture wound in the muscle of his left arm from a small dagger as he
+                                separated two (fighting) men and was close to death because of the pain, swelling, burning, and cramp and because a
+                                miserable cure from a barber who put tight rolls of linen in the wound and put diachylon on top of it. I removed his
+                                cure and replaced it with 'valence of wormwood' and 'sanguis verenis' and God healed him shortly after that -
+                                according to the practice of William Elmeden [Elmedon] and the mayor of Rockingham.' ['þis I have mekyll vsed and
+                                loued for with it I helyd a shirreff at Bristowe þe which of þe prikyng of a small dagger poynt as he departyd .ij.
+                                men in the lacert of is lyfte arme almost for payn bolnyng and brynnyng and crampe was ny dede thorow an onappy cure
+                                of a barbowre þe which putte harde tentys of lyne in þe wounde and layde diaculium layde aboue is cure put a way
+                                valcen sanguis verenis putte in a lityll while god helyd hym. With þis cure god helyd. Secundum Wylliam Elmeden and þe
+                                mayre of Rokyngham'].</note>
+                            <listBibl>
+                                <bibl>eVK2 v0074360000 </bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="23">
+                            <locus from="154" to="155">154-155</locus>
+                            <title key="">Charm to heal a wound</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="154" to="154">154</locus> to hele iche maner of wounde</rubric>
+                            <incipit><locus from="154" to="155">154-155</locus> By a plate of lede it schal not fester ne cancre whil þe plat lith
+                                þer. Tys maner þe plat be mad + and bles it wil þou makeste it an whan þou makist þe Croyse say .v. Pater noster in þe
+                                worchep of owrlord Jhesu and after say þis vers. Wlnera quinque dei sint medicina mei / Sunt Medicina tui pia crux et
+                                passio Christi. And after þis say Jhesu as sothly as þu suffirdest .v. woundes in þi precius body for all sinneres so
+                                sothly hele þou þis man þi serwant of þis malendye and of all oþer malodyes in þe worchep of þe fader and sone and þe
+                                holy gost amen pater noster. v. syȝes and war wele þat þe plate touche not þe erþe aftir þe blessyng and remewe þe
+                                plate iij. tymes in þe day and wasche it in hote water at eche remewyng v. pater noster in worchep of .v woundes þat
+                                crist suffird for all sinful men</incipit>
+                            <note>Full transcription.</note>
+                        </msItem>
+                        <msItem n="24">
+                            <locus from="155" to="155">155</locus>
+                            <title key="">Method for ascertaining whether a sick man shall live or die</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="155" to="155">155</locus> To knowe weþer a seke man schal dye or noon</rubric>
+                            <incipit><locus from="155" to="155">155</locus> Say þeis wordes before is bed wan he slepes Ancorea pancorene and if he
+                                here hem he schal lywe and if he here hem not he schal dye</incipit>
+                            <note>Full transcription.</note>
+                        </msItem>
+                        <msItem n="25">
+                            <locus from="170" to="173">170-173</locus>
+                            <title key=""> Medical and dietary advice for the four seasons of the year</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="170" to="170">170</locus> Here begynnyþ þe .7. ende of feuerer and enduryþ to þe .7. ende of
+                                may</incipit>
+                            <explicit><locus from="173" to="173">173</locus> and þese þinges abatyt þe superfluwyte of malencoly</explicit>
+                            <listBibl>
+                                <bibl>eVK2 v0074370000</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="26">
+                            <locus from="173" to="173">173-176</locus>
+                            <title key="">Canicular days</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="173" to="173">173</locus> Caniculares</rubric>
+                            <incipit><locus from="173" to="173">173</locus> Caniculares and ferþer more þer ben somere dayes caniculares in þe wheche
+                                is grette perel to take dryinkes oþer for to be lete blod</incipit>
+                            <explicit><locus from="176" to="176">176</locus> In december ete þu well all gode metes and drynkes well alle gode drynkes
+                                and lete þe blod and þe nede and ete lekes and coles in wortes and kepe þe welle from cold and from surfettis for it
+                                is perel to ketche colde in surfettyng for þe dropesy</explicit>
+                            <listBibl>
+                                <bibl>eVK2 v0074380000</bibl>
+                                <bibl>eVK2 v0074390000</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="27">
+                            <locus from="176" to="178">176-178</locus>
+                            <title key=""> Herbal</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="176" to="176">176</locus> The virtu of beteyne: Beteyne is as herbe of many uirtuys qwat manere of
+                                man þat beres beten up on hym þer schall no manere venomys best doo hym any harme whil he beryt it</incipit>
+                            <explicit><locus from="177" to="178">177-178</locus> and it schal slake þeache vnder þe sydys and of þe wombe of þe stomak
+                                and for þe dropsye and for þe palsy and for þe hedache</explicit>
+                            <listBibl>
+                                <bibl>eVK2 v0074400000</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="28">
+                            <locus from="178" to="178">178</locus>
+                            <title key=""> Recipe to remove freckles</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="178" to="178">178</locus> ffor to doun awey frekeles</rubric>
+                            <incipit><locus from="178" to="178">178</locus> For to doun awey frekeles in a mannys face or on a mannys hondys. Take þe
+                                blod of an hare or þe blod of a bole and anoynte þe face þer þe frekeles ben and it schal distrie hem for
+                                serteyne</incipit>
+                            <note>Full transcription.</note>
+                        </msItem>
+                        <msItem n="29">
+                            <locus from="178" to="181">178-181</locus>
+                            <title key=""> Tract on the four human body parts that are subject to disease</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="178" to="178">178</locus> Her ben þe .4. partyes of a man</rubric>
+                            <incipit><locus from="178" to="178">178</locus> Here ben þe .4. partyes of a man in þe wheche and a man takit rapest
+                                greuaunce and sekenesse þat is to wete in þe hede or in þe brest on in wombe or in þe bledder and be þese tokenes
+                                aftir wretyn þu schalt knowe in what euel in a mannys body he is most grewyd</incipit>
+                            <explicit><locus from="181" to="181">181</locus> And also þe juse of purge on englische dowisfecte and sopes gras soþen in
+                                wyn and hoso husit noȝt þese medycyn þer sewiþ hastyly þe dropsey and dropik or chawfyd in þe leuere or þe entrales
+                                stoppit or he schal haue þe stoun</explicit>
+                            <listBibl>
+                                <bibl>eVK2 0074410000</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="30">
+                            <locus from="181" to="181">181</locus>
+                            <title key=""> Prognostic method for determining whether a patient will live or die</title>
+                            <textLang mainLang="enm" otherLangs="la">Middle English and Latin</textLang>
+                            <rubric><locus from="181" to="181">181</locus> ffor to wete ȝif a man schall dye or leue</rubric>
+                            <incipit><locus from="181" to="181">181</locus> For to wete ȝif a man schal dye or leue. Take an egge þat his leyde þe
+                                same day of an henne and wryte þeron þese lettres .ȝ. f. g. f. y. z. x. g. y. s. þanne ley þin egge hundir hym in a
+                                faste place al nyȝte and ȝif þer be blod wiþ inne he schal dye and ȝif þer be non he schal leue. Si uis ut appariet
+                                uel in sompnorem tuam furat scribeas litteras in pargamino et pone sub capite quando vadis ad lectum tuum</incipit>
+                            <note>Full transcription.</note>
+                            <listBibl>
+                                <bibl>eVK2 v0074420000</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="31">
+                            <locus from="181" to="183">181-183</locus>
+                            <title key="">Tract on the urines of women [excerpt from 'Urina Rufa']</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <rubric><locus from="181" to="181">181</locus> Vryne</rubric>
+                            <incipit><locus from="183" to="183">183</locus> V[r]yne of hem þat ben wiþ chyld ȝif þei agon a moneþ or .ij. or .3. it
+                                schal be ful clere and it schal haue a whyte ypostasye in þe grounde</incipit>
+                            <explicit><locus from="181" to="181">181</locus> moystenes is cause of colour of þikke substaunce</explicit>
+                            <listBibl>
+                                <bibl>eVK2 v0074430000</bibl>
+                                <bibl>Tavormina (2014), p. 32 (no. 3.2)</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="32">
+                            <locus from="183" to="184">183-184</locus>
+                            <title key="">Cleansing of Blood</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="183" to="183">183</locus> Huryne is deuidid: Huyrine is deuidid in .4. perties</incipit>
+                            <explicit><locus from="184" to="184">184</locus> it is ful of lytil stones and oþer while þe recedens is þikke and þenne
+                                but it be by hurynys expulciones of venomouse mater it is sygne of deþ</explicit>
+                            <listBibl>
+                                <bibl>eVK2 v0074440000</bibl>
+                                <bibl>Tavormina (2014), p. 33 (no. 3.3.1a)</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="33">
+                            <locus from="184" to="187">184-187</locus>
+                            <title key=""> Collection of medical recipes</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="184" to="184">184</locus> A medicynes for colowr: A medicinez for colour of chaunilez flesch avente
+                                þe in þe leggis huse þe crope of sange and drinke triasandaly</incipit>
+                            <explicit><locus from="187" to="187">187</locus> Glauca medicyne: Glauca medicine .Recipe. Juse of tansey þe rede worte
+                                boyle hem in wyn wiþ alitill honey and use it</explicit>
+                        </msItem>
+                        <msItem n="34">
+                            <locus from="187" to="192">187-192</locus>
+                            <title key="work_2810">Tractatus de morbo epidemiae [Shorter version] [English translation]</title>
+                            <author key="person_v17232883"> John of Burgundy</author>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="187" to="187">187</locus> The .1. capittellus how man schal kepe hym in tyme þerof. The 2. sekenesse
+                                comes. The 3. qwat meycines aȝens it is</incipit>
+                            <explicit><locus from="192" to="192">192</locus> And loke þat þu ordeyne þese þinges þat þo be forseyde for to make
+                                poundir. And drede þe neuere þe pestelence.</explicit>
+                            <finalRubric><locus from="192" to="192">192</locus> Explicit liber</finalRubric>
+                            <listBibl>
+                                <bibl>eVK2 v0074450000</bibl>
+                                <bibl>eVK2 v0074460000</bibl>
+                            </listBibl>
+                        </msItem>
+                        <msItem n="35">
+                            <locus from="192" to="192">192</locus>
+                            <title key="">Added note on the manuscript</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="192" to="192">192</locus> this book is 104 leves</incipit>
+                            <note>The note, if correct, suggests that a quire of eight leaves (a quaternion) is missing from the manuscript as it was
+                                in the early 16th century.</note>
+                        </msItem>
+                        <msItem n="36">
+                            <locus from="192" to="192">192</locus>
+                            <title key=""> Medical recipe for the cough</title>
+                            <textLang mainLang="enm">Middle English</textLang>
+                            <incipit><locus from="192" to="192">192</locus> ffor the cowhe and for to breke fleme: Take fenell annes sugarcandy
+                                lycores nuttemugges and a few greyns breke them yn a brasyn morter togeder and syfte them thorowe a fyne syve of of
+                                here</incipit>
+                            <note>Full transcription; added in the late 15th or early 16th century.</note>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <p>
+                            <secFol>
+                                <locus from="3" to="3">3</locus> þis signe pore </secFol>
+                        </p>
+                        <objectDesc form="codex">
+                            <supportDesc material="perg">
+                                <support>
+                                    <material>Parchment (<term type="disposition">FHHF</term>)</material>
+                                </support>
+                                <extent>
+                                    <seg type="object">Codex: </seg>
+                                    <seg type="leaf">
+                                        <measure quantity="2" type="laterEndleaf">ii</measure> + <measure quantity="96" type="leaf">96</measure> +
+                                            <measure quantity="2" type="laterEndleaf">ii</measure> leaves.</seg>
+                                    <seg type="dimensions">
+                                        <dimensions type="leaf" unit="mm">
+                                            <height quantity="170">170</height>
+                                            <width quantity="125">125</width>
+                                        </dimensions>
+                                    </seg>
+                                </extent>
+                                <foliation notAfter="1800" notBefore="1600">
+                                    <p>Early modern (17th- or 18th-century) pagination with modern foliation of the flyleaves:</p>
+                                    <p>i-iii, 1-192, iv-[v]</p>
+                                    <note>Numbering in black ink in the upper right-hand corners of the rectos in the hand of Daniel Waterland
+                                        (1683-1740), Master of Magdalene College; except for the numbers 'i' (pastedown on the inside of the upper
+                                        cover), 'ii', 'iii', and 'iv' that have been written in pencil on the paper pastedown on the inside of the
+                                        upper cover and flyleaves at the beginningby a modern hand (f. [v] is an unfoliated flyleaf that follows f.
+                                        iv).</note>
+                                </foliation>
+                                <collation mainStructures="8">
+                                    <p>
+                                        <list>
+                                            <item>Quire 1<hi rend="superscript">8</hi> (pp. <locus from="1" to="16">1-16</locus>)</item>
+                                            <item>Quire 2<hi rend="superscript">10+1</hi> (pp. <locus from="17" to="38">17-38</locus>: 11th leaf
+                                                inserted, pp. 37-38)</item>
+                                            <item>Quire 3<hi rend="superscript">8</hi> (pp. <locus from="39" to="54">39-54</locus>)</item>
+                                            <item>Quire 4<hi rend="superscript">10</hi> (pp. <locus from="55" to="74">55-74</locus>)</item>
+                                            <item>Quires 5-6<hi rend="superscript">8</hi> (pp. <locus from="75" to="106">75-106</locus>)</item>
+                                            <item>Quire 7<hi rend="superscript">10</hi> (pp. <locus from="107" to="126">107-126</locus>)</item>
+                                            <item>Quires 8-10<hi rend="superscript">8</hi> (pp. <locus from="127" to="174">127-174</locus>)</item>
+                                            <item>Quire 11<hi rend="superscript">8+1</hi> (pp. <locus from="175" to="192">175-192</locus>: 9th leaf
+                                                inserted, pp. 191-192)</item>
+                                        </list>
+                                    </p>
+                                    <formula> 1<hi rend="superscript">8</hi> 2<hi rend="superscript">10+1</hi> (11th leaf inserted) 3<hi rend="superscript">8</hi> 4<hi rend="superscript">10</hi> 5-6<hi rend="superscript">8</hi> 7<hi rend="superscript">10</hi> 8-10<hi rend="superscript">8</hi> 11<hi rend="superscript">8+1</hi> (9th leaf
+                                        inserted) </formula>
+                                    <catchwords><seg type="para">Catchwords visible in the lower right-hand corners of the last versos of some quires
+                                            (pp. 36, 54, 74, 90, 106)</seg></catchwords>
+                                </collation>
+                                <condition> </condition>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="1" rulingMedium="ink" topLine="below" writtenLines="27 31">
+                                    <dimensions type="written" unit="mm">
+                                        <height max="130" min="120">130-120</height>
+                                        <width quantity="90">90</width>
+                                    </dimensions>
+                                    <seg type="ruling"> Ruled in ink, frame and line ruling. Mainly single columns, except pp. <locus from="113" to="116">113-116</locus> which have three columns. Usually 27 lines to the page, but sometimes 29 or 31,
+                                        written below top line. </seg>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote script="CursivaAntiquior">
+                                <p> pp. <locus from="1" to="38">1-38</locus> and pp. <locus from="42" to="192">42-192</locus> have been copied by one
+                                    scribe in an <term type="script">Anglicana Formata</term> occasionally written more cursively. It appears that the
+                                    scribe worked on this manuscript over a longer period of time. </p>
+                            </handNote>
+                            <handNote script="Cursiva">
+                                <p> pp. <locus from="39" to="341">39-41</locus> have been copied by a scribe working in a small cursive hand with both
+                                        <term type="script">Secretary</term> and <term type="script">Anglicana</term> features. </p>
+                            </handNote>
+                            <handNote script="textualisNorthern">
+                                <p>pp. <locus from="110" to="142">110-142</locus> are a palimpsest. They feature a fourteenth-century liturgical text
+                                    in Gothic <term type="script">textura</term> that has been largely washed off to create blank leaves for this
+                                    manuscript.</p>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote type="colInit">
+                                <p>Small and large (1-2 lines) plain red initials.</p>
+                            </decoNote>
+                            <decoNote type="flourInit">
+                                <p>1 large (3 line) red initial with penwork decoration in black ink inside the letter and pen-flourishing in black
+                                    ink extending into the margin on p. <locus from="108" to="108">108</locus>.</p>
+                            </decoNote>
+                            <decoNote type="other">
+                                <p>Paraphs in red ink.</p>
+                            </decoNote>
+                            <decoNote type="other">
+                                <p>Underlining in red ink.</p>
+                            </decoNote>
+                        </decoDesc>
+                        <additions>
+                            <note>Marginal additions to medical treatises and recipes in 15th-, 16th- and possibly early 17th-century hands. These
+                                usually concern the names of recipes or their ingredients, but there are two longer additions: an astrological note in
+                                the lower margin of p. <locus from="16" to="16">16</locus>: <q>because the time is very neare exactly knowne how longe
+                                    a woman goeth from þe time of conception: yf it be knowne in what moneth a man is borne and what signe, by
+                                    counting backward the time of a womans aging, ye may count þe moneth [...]</q>; and a lists of humours and planets
+                                and their relationship to organs in the human body in the lower margin of p. <locus from="111" to="111">111</locus>.
+                                Both texts were probably added in the 16th century.</note>
+                            <note><p>Note of the manuscript's contents and a table of contents by of Daniel Waterland (1683-1740), Master of Magdalene
+                                    College, on on p. <locus from="iii recto" to="iii recto"> iii recto</locus>.</p></note>
+                            <note><p>Quire numbers in pencil in the lower right-hand corners of the first rectos of quires added by a modern
+                                hand.</p></note>
+                        </additions>
+                        <bindingDesc>
+                            <binding notAfter="1700" notBefore="1600">
+                                <p>17th-century mottled brown calf with a blank coat of arms inscribed with the name of Samuel Peppys on the front
+                                    cover, and Pepys' coat of arms gold-stamped on the rear cover; red-speckled edges. </p>
+                                <p>Binding height: 165mm; width: 130mm; depth: 35mm.</p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origDate calendar="Gregorian" cert="high" notAfter="1450" notBefore="1400"> Copied in the first half of the 15th century. </origDate>
+                            <origPlace key="place_g7002445"> England </origPlace>
+                        </origin>
+                        <provenance notAfter="1700"> Acquired before 1700 by <name key="" role="dnr">
+                                <persName type="display">Samuel Pepys (1633–1703), naval officer and diarist</persName>
+                                <persName type="standard">Pepys, Samuel, 1633-1703</persName></name>; no. 6802.83 in <bibl>Bernard, <hi rend="italic">Catalogi librorum manuscriptorum Angliæ et Hiberniæ</hi> (c. 1697); f. <locus from="iii verso" to="iii">iii
+                                    verso</locus> features an engraving of his portrait with the motto: 'Mens cujusque is est Quisque' and 'Sam.
+                                Pepys. Car. et. Iac. Angl. Regib. A. Secretis. Admiraliae' by R. White ['R. W. sculp.'], c. 1690</bibl> ; f. iv recto
+                            a paper pastedown with Pepys's bookplate engraved with two anchors and the motto 'Mens cujusque is est Quisque'.</provenance>
+                        <acquisition when="1724">
+                            <p>Acquired by Magdalene College, Cambridge upon the death of <name key="" role="dnr">
+                                <persName type="display">John Jackson (d. 1724)</persName>
+                                <persName type="standard">Jackson, John, d. 1724</persName>
+                            </name>: in his will (The National Archives, PROB 1/9, Will of Samuel Pepys, Codicil, 13th May 1703), Pepys left a
+                                bequest of approximately 3000 manuscripts and printed books to Magdalene College and instructed his nephew John
+                                Jackson to arrange for this but they only came to the college after Jackson died. Jackson respected the instructions
+                                given in the codicil to the will as can be evidenced from Magdalene College Archives A/41/1: an indenture between Anne
+                                Jackson, widow and executrix of John Jackson (nephew and residuary legatee of Samuel Pepys), and the Master and
+                                Fellows being a deed of covenant as to providing a Library at the College for the reception of the collection of the
+                                books and papers bequeathed to the College by Samuel Pepys, 1 June 1724. It is here that the manuscript's current shelfmark
+                                'N<hi rend="superscript">o</hi> 878' was inscribed in red ink on the <locus from="front cover, inner" to="front cover, inner">inside of the front cover</locus> (p.
+                                <locus from="i" to="i">i</locus>).</p>
+                        </acquisition>
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <recordHist>
+                                <source> This catalogue entry draws on <bibl><name key="person_v88882890"><persName type="display">M.R.
+                                                James</persName>
+                                            <persName type="standard">James, M.R. (Montague Rhodes), 1862-1936</persName></name>
+                                        <hi rend="italic">A Descriptive Catalogue of the Manuscripts in the College Library of Magdalene College,
+                                            Cambridge</hi> (London: Sidgwick and Jackson, 1914)</bibl> and the <bibl><hi rend="italic">Catalogue of
+                                            the Pepys Library at Magdalene College Cambridge, Volume V: Manuscripts, Part I: Medieval</hi>, compiled
+                                        by Rosamond McKitterick and Richard Beadle (Woodbridge: Brewer, 1992)</bibl>, by kind permission of the
+                                    Boydell Press. </source>
+                            </recordHist>
+                            <availability status="restricted">
+                                <p>Visitors to Magdalene College who wish to consult Special Collections material are required to apply to the Pepys
+                                    Library in advance of their visit. For information on eligibility and admission procedures see: <ref target="https://www.magd.cam.ac.uk/pepys">Magdalene College: Pepys Library</ref>.</p>
+                            </availability>
+                        </adminInfo>
+                        <listBibl>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/76NC3UHB" type="book" xml:id="Arderne1910">
+                                <monogr>
+                                    <title level="m">Treatises of fistula in ano, haemorrhoids, and clysters</title>
+                                    <author>
+                                        <forename>John</forename>
+                                        <surname>Arderne</surname>
+                                    </author>
+                                    <editor>
+                                        <forename>D'Arcy</forename>
+                                        <surname>Power</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>Kegan Paul, Trench, Trübner</publisher>
+                                        <date>1910</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Early English Text Society, Original series</title>
+                                    <biblScope unit="volume">139</biblScope>
+                                </series>
+                                <note>pp. xxxiv-xxxv.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/HFE2LH6T" type="book" xml:id="James1923">
+                                <monogr>
+                                    <title level="m">Bibliotheca Pepysiana: A Descriptive Catalogue of the Library of Samuel Pepys</title>
+                                    <author>
+                                        <forename>M.R.</forename>
+                                        <surname>James</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <publisher>Sidgwick and Jackson</publisher>
+                                        <date>1914</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 3-4.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/YUHKIHNG" type="journalArticle" xml:id="Kelly1961">
+                                <analytic>
+                                    <title level="a">Notes and Events</title>
+                                    <author>
+                                        <forename>Michael</forename>
+                                        <surname>Kelly</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Journal of the History of Medicine and Allied Sciences</title>
+                                    <imprint>
+                                        <biblScope unit="volume">16</biblScope>
+                                        <biblScope unit="issue">2</biblScope>
+                                        <biblScope unit="page">186-192</biblScope>
+                                        <date>1961</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 189.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/XAUWNTPB" type="journalArticle" xml:id="Robbins1970">
+                                <analytic>
+                                    <title level="a">Medical Manuscripts in Middle English</title>
+                                    <idno type="DOI">10.2307/2853500</idno>
+                                    <author>
+                                        <forename>Rossell Hope</forename>
+                                        <surname>Robbins</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Speculum</title>
+                                    <imprint>
+                                        <biblScope unit="volume">45</biblScope>
+                                        <biblScope unit="issue">3</biblScope>
+                                        <biblScope unit="page">393-415</biblScope>
+                                        <date>1970</date>
+                                        <note type="accessed">2014-04-15T11:50:20Z</note>
+                                        <note type="url">http://www.jstor.org/stable/2853500</note>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 403 fn. 28.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/RUXB69IW" type="bookSection" xml:id="Beadle1991">
+                                <analytic>
+                                    <title level="a">Prolegomena to a literary geography of later medieval Norfolk</title>
+                                    <author>
+                                        <forename>Richard</forename>
+                                        <surname>Beadle</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Regionalism in Late Medieval Manuscripts and Texts</title>
+                                    <imprint>
+                                        <biblScope unit="page">89-108</biblScope>
+                                        <date>1991</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/7QCIJTNC" type="book" xml:id="McKitterick1992">
+                                <monogr>
+                                    <title level="m">Manuscripts (Medieval)</title>
+                                    <author>
+                                        <forename>Rosamond</forename>
+                                        <surname>McKitterick</surname>
+                                    </author>
+                                    <author>
+                                        <forename>Richard</forename>
+                                        <surname>Beadle</surname>
+                                    </author>
+                                    <editor>
+                                        <forename>Robert</forename>
+                                        <surname>Latham</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Cambridge</pubPlace>
+                                        <biblScope unit="volume">V.i</biblScope>
+                                        <publisher>Brewer</publisher>
+                                        <date>1992</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 3-5.</note>
+                                <series>
+                                    <title level="s">Catalogue of the Pepys Library at Magdalene College Cambridge</title>
+                                </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/CFLB8A3A" type="thesis" xml:id="Jones2000">
+                                <monogr>
+                                    <title level="m">Vernacular literacy in late-medieval England: The Example of East Anglian Medical
+                                        Manuscripts</title>
+                                    <author>
+                                        <forename>M. Claire</forename>
+                                        <surname>Jones</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Glasgow</pubPlace>
+                                        <date>2000</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 182-185.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/7VFPT5FC" type="thesis" xml:id="Griffin2006">
+                                <monogr>
+                                    <title level="m">"A Good Reder": The Middle English Wise Book of Philosophy and Astronomy, Instruction, Publics,
+                                        and Manuscripts</title>
+                                    <author>
+                                        <forename>Carrie</forename>
+                                        <surname>Griffin</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Cork</pubPlace>
+                                        <date>2006</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 111-113.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/BI5B8VS5" type="book" xml:id="Griffin2013">
+                                <monogr>
+                                    <title level="m">The Middle English Wise Book of philosophy and astronomy: a parallel-text edition: edited from
+                                        London, British Library, MS Sloane 2453 with a parallel text from New York, Columbia University, MS Plimpton
+                                        260</title>
+                                    <author>
+                                        <forename>Carrie</forename>
+                                        <surname>Griffin</surname>
+                                    </author>
+                                    <imprint>
+                                        <pubPlace>Heidelberg</pubPlace>
+                                        <publisher>Universitätsverlag Winter</publisher>
+                                        <date>2013</date>
+                                    </imprint>
+                                </monogr>
+                                <series>
+                                    <title level="s">Middle English texts</title>
+                                    <biblScope unit="volume">47</biblScope>
+                                </series>
+                                <note/>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/3K5PZ7M4" type="bookSection" xml:id="Tavormina2014">
+                                <analytic>
+                                    <title level="a">Uroscopy in Middle English: A Guide to the Texts and Manuscripts</title>
+                                    <author>
+                                        <forename>M. Teresa</forename>
+                                        <surname>Tavormina</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <imprint>
+                                        <pubPlace>[Michigan?]</pubPlace>
+                                        <date>2014</date>
+                                    </imprint>
+                                </monogr>
+                                <note>pp. 32 (no. 3.2), 76 (no. 12.1), 33 (no. 3.3.1a).</note>
+                                <series>
+                                    <title level="s">Studies in medieval and renaissance history</title>
+                                    <biblScope unit="volume">3rd series, 11</biblScope>
+                                </series>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/6T2VB6PU" type="bookSection" xml:id="Rider2017">
+                                <analytic>
+                                    <title level="a">Men's Responses to Infertility in Late Medieval England</title>
+                                    <author>
+                                        <forename>Catherine</forename>
+                                        <surname>Rider</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <editor>
+                                        <forename>Gayle</forename>
+                                        <surname>Davis</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>Tracey</forename>
+                                        <surname>Loughran</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>London</pubPlace>
+                                        <biblScope unit="page">273-290</biblScope>
+                                        <publisher>Palgrave Macmillan</publisher>
+                                        <date>2017</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 278.</note>
+                            </biblStruct>
+                            <biblStruct corresp="http://zotero.org/groups/276440/items/RX3PMSV3" type="bookSection" xml:id="Hindley2019">
+                                <analytic>
+                                    <title level="a">Eating Words and Burning Them The Power of Destruction in Medieval English Charm Texts</title>
+                                    <author>
+                                        <forename>Katherine Storm</forename>
+                                        <surname>Hindley</surname>
+                                    </author>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Zerstörung von Geschriebenem: Historische und transkulturelle Perspektiven</title>
+                                    <editor>
+                                        <forename>Carina</forename>
+                                        <surname>Kühne-Wespi</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>Klaus Peter</forename>
+                                        <surname>Oschema</surname>
+                                    </editor>
+                                    <editor>
+                                        <forename>Joachim Friedrich</forename>
+                                        <surname>Quack</surname>
+                                    </editor>
+                                    <imprint>
+                                        <pubPlace>Berlin</pubPlace>
+                                        <biblScope unit="page">359-372</biblScope>
+                                        <publisher>De Gruyter</publisher>
+                                        <date>2019</date>
+                                    </imprint>
+                                </monogr>
+                                <note>p. 367 n. 25.</note>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass default="false">
+                <keywords scheme="#LCSH">
+                    <list>
+                        <item>
+                            <term key="subject_sh85083064"> Medicine</term>
+                        </item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <change status="draft" when="2023-05-01">
+                <persName>Dr Clarck Drieshen, Project Cataloguer, Cambridge University Library</persName>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+<facsimile><graphic decls="#document-thumbnail" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00001"/><surface n="front cover, outer" xml:id="page-surface-1"><graphic decls="#downloadImageRights #download" height="5887px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00001" width="4243px"/></surface><surface n="i verso" xml:id="page-surface-2"><graphic decls="#downloadImageRights #download" height="5786px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00002" width="3920px"/></surface><surface n="ii recto" xml:id="page-surface-3"><graphic decls="#downloadImageRights #download" height="5744px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00003" width="3859px"/></surface><surface n="ii verso" xml:id="page-surface-4"><graphic decls="#downloadImageRights #download" height="5695px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00004" width="3708px"/></surface><surface n="iii recto" xml:id="page-surface-5"><graphic decls="#downloadImageRights #download" height="5744px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00005" width="3859px"/></surface><surface n="iii verso" xml:id="page-surface-6"><graphic decls="#downloadImageRights #download" height="5570px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00006" width="3698px"/></surface><surface n="1" xml:id="page-surface-7"><graphic decls="#downloadImageRights #download" height="5744px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00007" width="3859px"/></surface><surface n="2" xml:id="page-surface-8"><graphic decls="#downloadImageRights #download" height="5664px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00008" width="3636px"/></surface><surface n="3" xml:id="page-surface-9"><graphic decls="#downloadImageRights #download" height="5752px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00009" width="3711px"/></surface><surface n="4" xml:id="page-surface-10"><graphic decls="#downloadImageRights #download" height="5648px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00010" width="3525px"/></surface><surface n="5" xml:id="page-surface-11"><graphic decls="#downloadImageRights #download" height="5748px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00011" width="3542px"/></surface><surface n="6" xml:id="page-surface-12"><graphic decls="#downloadImageRights #download" height="5629px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00012" width="3544px"/></surface><surface n="7" xml:id="page-surface-13"><graphic decls="#downloadImageRights #download" height="5735px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00013" width="3501px"/></surface><surface n="8" xml:id="page-surface-14"><graphic decls="#downloadImageRights #download" height="5629px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00014" width="3544px"/></surface><surface n="9" xml:id="page-surface-15"><graphic decls="#downloadImageRights #download" height="5735px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00015" width="3536px"/></surface><surface n="10" xml:id="page-surface-16"><graphic decls="#downloadImageRights #download" height="5629px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00016" width="3544px"/></surface><surface n="11" xml:id="page-surface-17"><graphic decls="#downloadImageRights #download" height="5718px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00017" width="3612px"/></surface><surface n="12" xml:id="page-surface-18"><graphic decls="#downloadImageRights #download" height="5629px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00018" width="3544px"/></surface><surface n="13" xml:id="page-surface-19"><graphic decls="#downloadImageRights #download" height="5718px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00019" width="3612px"/></surface><surface n="14" xml:id="page-surface-20"><graphic decls="#downloadImageRights #download" height="5629px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00020" width="3544px"/></surface><surface n="15" xml:id="page-surface-21"><graphic decls="#downloadImageRights #download" height="5718px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00021" width="3612px"/></surface><surface n="16" xml:id="page-surface-22"><graphic decls="#downloadImageRights #download" height="5629px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00022" width="3544px"/></surface><surface n="17" xml:id="page-surface-23"><graphic decls="#downloadImageRights #download" height="5718px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00023" width="3612px"/></surface><surface n="18" xml:id="page-surface-24"><graphic decls="#downloadImageRights #download" height="5647px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00024" width="3493px"/></surface><surface n="19" xml:id="page-surface-25"><graphic decls="#downloadImageRights #download" height="5718px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00025" width="3612px"/></surface><surface n="20" xml:id="page-surface-26"><graphic decls="#downloadImageRights #download" height="5647px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00026" width="3493px"/></surface><surface n="21" xml:id="page-surface-27"><graphic decls="#downloadImageRights #download" height="5718px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00027" width="3612px"/></surface><surface n="22" xml:id="page-surface-28"><graphic decls="#downloadImageRights #download" height="5647px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00028" width="3493px"/></surface><surface n="23" xml:id="page-surface-29"><graphic decls="#downloadImageRights #download" height="5718px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00029" width="3612px"/></surface><surface n="24" xml:id="page-surface-30"><graphic decls="#downloadImageRights #download" height="5629px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00030" width="3544px"/></surface><surface n="25" xml:id="page-surface-31"><graphic decls="#downloadImageRights #download" height="5787px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00031" width="3675px"/></surface><surface n="26" xml:id="page-surface-32"><graphic decls="#downloadImageRights #download" height="5629px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00032" width="3544px"/></surface><surface n="27" xml:id="page-surface-33"><graphic decls="#downloadImageRights #download" height="5787px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00033" width="3675px"/></surface><surface n="28" xml:id="page-surface-34"><graphic decls="#downloadImageRights #download" height="5632px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00034" width="3569px"/></surface><surface n="29" xml:id="page-surface-35"><graphic decls="#downloadImageRights #download" height="5787px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00035" width="3675px"/></surface><surface n="30" xml:id="page-surface-36"><graphic decls="#downloadImageRights #download" height="5632px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00036" width="3569px"/></surface><surface n="31" xml:id="page-surface-37"><graphic decls="#downloadImageRights #download" height="5771px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00037" width="3619px"/></surface><surface n="32" xml:id="page-surface-38"><graphic decls="#downloadImageRights #download" height="5632px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00038" width="3569px"/></surface><surface n="33" xml:id="page-surface-39"><graphic decls="#downloadImageRights #download" height="5771px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00039" width="3619px"/></surface><surface n="34" xml:id="page-surface-40"><graphic decls="#downloadImageRights #download" height="5632px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00040" width="3569px"/></surface><surface n="35" xml:id="page-surface-41"><graphic decls="#downloadImageRights #download" height="5771px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00041" width="3619px"/></surface><surface n="36" xml:id="page-surface-42"><graphic decls="#downloadImageRights #download" height="5632px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00042" width="3569px"/></surface><surface n="37" xml:id="page-surface-43"><graphic decls="#downloadImageRights #download" height="5771px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00043" width="3619px"/></surface><surface n="38" xml:id="page-surface-44"><graphic decls="#downloadImageRights #download" height="5599px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00044" width="3628px"/></surface><surface n="39" xml:id="page-surface-45"><graphic decls="#downloadImageRights #download" height="5794px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00045" width="3758px"/></surface><surface n="40" xml:id="page-surface-46"><graphic decls="#downloadImageRights #download" height="5632px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00046" width="3569px"/></surface><surface n="41" xml:id="page-surface-47"><graphic decls="#downloadImageRights #download" height="5794px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00047" width="3758px"/></surface><surface n="42" xml:id="page-surface-48"><graphic decls="#downloadImageRights #download" height="5598px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00048" width="3610px"/></surface><surface n="43" xml:id="page-surface-49"><graphic decls="#downloadImageRights #download" height="5709px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00049" width="3737px"/></surface><surface n="44" xml:id="page-surface-50"><graphic decls="#downloadImageRights #download" height="5598px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00050" width="3610px"/></surface><surface n="45" xml:id="page-surface-51"><graphic decls="#downloadImageRights #download" height="5709px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00051" width="3737px"/></surface><surface n="46" xml:id="page-surface-52"><graphic decls="#downloadImageRights #download" height="5598px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00052" width="3610px"/></surface><surface n="47" xml:id="page-surface-53"><graphic decls="#downloadImageRights #download" height="5709px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00053" width="3737px"/></surface><surface n="48" xml:id="page-surface-54"><graphic decls="#downloadImageRights #download" height="5598px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00054" width="3610px"/></surface><surface n="49" xml:id="page-surface-55"><graphic decls="#downloadImageRights #download" height="5709px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00055" width="3737px"/></surface><surface n="50" xml:id="page-surface-56"><graphic decls="#downloadImageRights #download" height="5601px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00056" width="3633px"/></surface><surface n="51" xml:id="page-surface-57"><graphic decls="#downloadImageRights #download" height="5709px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00057" width="3737px"/></surface><surface n="52" xml:id="page-surface-58"><graphic decls="#downloadImageRights #download" height="5601px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00058" width="3633px"/></surface><surface n="53" xml:id="page-surface-59"><graphic decls="#downloadImageRights #download" height="5709px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00059" width="3737px"/></surface><surface n="54" xml:id="page-surface-60"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00060" width="3691px"/></surface><surface n="55" xml:id="page-surface-61"><graphic decls="#downloadImageRights #download" height="5706px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00061" width="3728px"/></surface><surface n="56" xml:id="page-surface-62"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00062" width="3691px"/></surface><surface n="57" xml:id="page-surface-63"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00063" width="3761px"/></surface><surface n="58" xml:id="page-surface-64"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00064" width="3691px"/></surface><surface n="59" xml:id="page-surface-65"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00065" width="3761px"/></surface><surface n="60" xml:id="page-surface-66"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00066" width="3691px"/></surface><surface n="61" xml:id="page-surface-67"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00067" width="3761px"/></surface><surface n="62" xml:id="page-surface-68"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00068" width="3691px"/></surface><surface n="63" xml:id="page-surface-69"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00069" width="3761px"/></surface><surface n="64" xml:id="page-surface-70"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00070" width="3691px"/></surface><surface n="65" xml:id="page-surface-71"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00071" width="3761px"/></surface><surface n="66" xml:id="page-surface-72"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00072" width="3691px"/></surface><surface n="67" xml:id="page-surface-73"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00073" width="3761px"/></surface><surface n="68" xml:id="page-surface-74"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00074" width="3691px"/></surface><surface n="69" xml:id="page-surface-75"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00075" width="3761px"/></surface><surface n="70" xml:id="page-surface-76"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00076" width="3691px"/></surface><surface n="71" xml:id="page-surface-77"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00077" width="3761px"/></surface><surface n="72" xml:id="page-surface-78"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00078" width="3691px"/></surface><surface n="73" xml:id="page-surface-79"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00079" width="3761px"/></surface><surface n="74" xml:id="page-surface-80"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00080" width="3691px"/></surface><surface n="75" xml:id="page-surface-81"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00081" width="3761px"/></surface><surface n="76" xml:id="page-surface-82"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00082" width="3691px"/></surface><surface n="77" xml:id="page-surface-83"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00083" width="3761px"/></surface><surface n="78" xml:id="page-surface-84"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00084" width="3691px"/></surface><surface n="79" xml:id="page-surface-85"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00085" width="3761px"/></surface><surface n="80" xml:id="page-surface-86"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00086" width="3691px"/></surface><surface n="81" xml:id="page-surface-87"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00087" width="3761px"/></surface><surface n="82" xml:id="page-surface-88"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00088" width="3691px"/></surface><surface n="83" xml:id="page-surface-89"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00089" width="3761px"/></surface><surface n="84" xml:id="page-surface-90"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00090" width="3691px"/></surface><surface n="85" xml:id="page-surface-91"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00091" width="3761px"/></surface><surface n="86" xml:id="page-surface-92"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00092" width="3691px"/></surface><surface n="87" xml:id="page-surface-93"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00093" width="3761px"/></surface><surface n="88" xml:id="page-surface-94"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00094" width="3691px"/></surface><surface n="89" xml:id="page-surface-95"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00095" width="3761px"/></surface><surface n="90" xml:id="page-surface-96"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00096" width="3691px"/></surface><surface n="91" xml:id="page-surface-97"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00097" width="3761px"/></surface><surface n="92" xml:id="page-surface-98"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00098" width="3691px"/></surface><surface n="93" xml:id="page-surface-99"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00099" width="3761px"/></surface><surface n="94" xml:id="page-surface-100"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00100" width="3691px"/></surface><surface n="95" xml:id="page-surface-101"><graphic decls="#downloadImageRights #download" height="5765px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00101" width="3761px"/></surface><surface n="96" xml:id="page-surface-102"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00102" width="3691px"/></surface><surface n="97" xml:id="page-surface-103"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00103" width="3760px"/></surface><surface n="98" xml:id="page-surface-104"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00104" width="3691px"/></surface><surface n="99" xml:id="page-surface-105"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00105" width="3760px"/></surface><surface n="100" xml:id="page-surface-106"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00106" width="3691px"/></surface><surface n="101" xml:id="page-surface-107"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00107" width="3760px"/></surface><surface n="102" xml:id="page-surface-108"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00108" width="3691px"/></surface><surface n="103" xml:id="page-surface-109"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00109" width="3760px"/></surface><surface n="104" xml:id="page-surface-110"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00110" width="3691px"/></surface><surface n="105" xml:id="page-surface-111"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00111" width="3760px"/></surface><surface n="106" xml:id="page-surface-112"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00112" width="3691px"/></surface><surface n="107" xml:id="page-surface-113"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00113" width="3760px"/></surface><surface n="108" xml:id="page-surface-114"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00114" width="3691px"/></surface><surface n="109" xml:id="page-surface-115"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00115" width="3760px"/></surface><surface n="110" xml:id="page-surface-116"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00116" width="3646px"/></surface><surface n="111" xml:id="page-surface-117"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00117" width="3652px"/></surface><surface n="112" xml:id="page-surface-118"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00118" width="3646px"/></surface><surface n="113" xml:id="page-surface-119"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00119" width="3652px"/></surface><surface n="114" xml:id="page-surface-120"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00120" width="3646px"/></surface><surface n="115" xml:id="page-surface-121"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00121" width="3652px"/></surface><surface n="116" xml:id="page-surface-122"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00122" width="3646px"/></surface><surface n="117" xml:id="page-surface-123"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00123" width="3652px"/></surface><surface n="118" xml:id="page-surface-124"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00124" width="3646px"/></surface><surface n="119" xml:id="page-surface-125"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00125" width="3652px"/></surface><surface n="120" xml:id="page-surface-126"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00126" width="3646px"/></surface><surface n="121" xml:id="page-surface-127"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00127" width="3652px"/></surface><surface n="122" xml:id="page-surface-128"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00128" width="3646px"/></surface><surface n="123" xml:id="page-surface-129"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00129" width="3652px"/></surface><surface n="124" xml:id="page-surface-130"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00130" width="3646px"/></surface><surface n="125" xml:id="page-surface-131"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00131" width="3652px"/></surface><surface n="126" xml:id="page-surface-132"><graphic decls="#downloadImageRights #download" height="5592px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00132" width="3539px"/></surface><surface n="127" xml:id="page-surface-133"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00133" width="3652px"/></surface><surface n="128" xml:id="page-surface-134"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00134" width="3646px"/></surface><surface n="129" xml:id="page-surface-135"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00135" width="3652px"/></surface><surface n="130" xml:id="page-surface-136"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00136" width="3646px"/></surface><surface n="131" xml:id="page-surface-137"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00137" width="3652px"/></surface><surface n="132" xml:id="page-surface-138"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00138" width="3646px"/></surface><surface n="133" xml:id="page-surface-139"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00139" width="3652px"/></surface><surface n="134" xml:id="page-surface-140"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00140" width="3646px"/></surface><surface n="135" xml:id="page-surface-141"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00141" width="3652px"/></surface><surface n="136" xml:id="page-surface-142"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00142" width="3646px"/></surface><surface n="137" xml:id="page-surface-143"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00143" width="3652px"/></surface><surface n="138" xml:id="page-surface-144"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00144" width="3646px"/></surface><surface n="139" xml:id="page-surface-145"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00145" width="3652px"/></surface><surface n="140" xml:id="page-surface-146"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00146" width="3646px"/></surface><surface n="141" xml:id="page-surface-147"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00147" width="3652px"/></surface><surface n="142" xml:id="page-surface-148"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00148" width="3649px"/></surface><surface n="143" xml:id="page-surface-149"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00149" width="3652px"/></surface><surface n="144" xml:id="page-surface-150"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00150" width="3649px"/></surface><surface n="145" xml:id="page-surface-151"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00151" width="3652px"/></surface><surface n="146" xml:id="page-surface-152"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00152" width="3649px"/></surface><surface n="147" xml:id="page-surface-153"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00153" width="3652px"/></surface><surface n="148" xml:id="page-surface-154"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00154" width="3586px"/></surface><surface n="149" xml:id="page-surface-155"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00155" width="3652px"/></surface><surface n="150" xml:id="page-surface-156"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00156" width="3586px"/></surface><surface n="151" xml:id="page-surface-157"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00157" width="3652px"/></surface><surface n="152" xml:id="page-surface-158"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00158" width="3586px"/></surface><surface n="153" xml:id="page-surface-159"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00159" width="3652px"/></surface><surface n="154" xml:id="page-surface-160"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00160" width="3586px"/></surface><surface n="155" xml:id="page-surface-161"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00161" width="3652px"/></surface><surface n="156" xml:id="page-surface-162"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00162" width="3586px"/></surface><surface n="157" xml:id="page-surface-163"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00163" width="3652px"/></surface><surface n="158" xml:id="page-surface-164"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00164" width="3586px"/></surface><surface n="159" xml:id="page-surface-165"><graphic decls="#downloadImageRights #download" height="5720px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00165" width="3652px"/></surface><surface n="160" xml:id="page-surface-166"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00166" width="3586px"/></surface><surface n="161" xml:id="page-surface-167"><graphic decls="#downloadImageRights #download" height="5749px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00167" width="3709px"/></surface><surface n="162" xml:id="page-surface-168"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00168" width="3586px"/></surface><surface n="163" xml:id="page-surface-169"><graphic decls="#downloadImageRights #download" height="5749px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00169" width="3709px"/></surface><surface n="164" xml:id="page-surface-170"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00170" width="3586px"/></surface><surface n="165" xml:id="page-surface-171"><graphic decls="#downloadImageRights #download" height="5749px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00171" width="3709px"/></surface><surface n="166" xml:id="page-surface-172"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00172" width="3586px"/></surface><surface n="167" xml:id="page-surface-173"><graphic decls="#downloadImageRights #download" height="5749px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00173" width="3709px"/></surface><surface n="168" xml:id="page-surface-174"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00174" width="3586px"/></surface><surface n="169" xml:id="page-surface-175"><graphic decls="#downloadImageRights #download" height="5749px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00175" width="3709px"/></surface><surface n="170" xml:id="page-surface-176"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00176" width="3586px"/></surface><surface n="171" xml:id="page-surface-177"><graphic decls="#downloadImageRights #download" height="5749px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00177" width="3709px"/></surface><surface n="172" xml:id="page-surface-178"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00178" width="3586px"/></surface><surface n="173" xml:id="page-surface-179"><graphic decls="#downloadImageRights #download" height="5717px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00179" width="3627px"/></surface><surface n="174" xml:id="page-surface-180"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00180" width="3586px"/></surface><surface n="175" xml:id="page-surface-181"><graphic decls="#downloadImageRights #download" height="5717px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00181" width="3627px"/></surface><surface n="176" xml:id="page-surface-182"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00182" width="3586px"/></surface><surface n="177" xml:id="page-surface-183"><graphic decls="#downloadImageRights #download" height="5717px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00183" width="3627px"/></surface><surface n="178" xml:id="page-surface-184"><graphic decls="#downloadImageRights #download" height="5579px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00184" width="3586px"/></surface><surface n="179" xml:id="page-surface-185"><graphic decls="#downloadImageRights #download" height="5717px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00185" width="3627px"/></surface><surface n="180" xml:id="page-surface-186"><graphic decls="#downloadImageRights #download" height="5551px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00186" width="3568px"/></surface><surface n="181" xml:id="page-surface-187"><graphic decls="#downloadImageRights #download" height="5717px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00187" width="3627px"/></surface><surface n="182" xml:id="page-surface-188"><graphic decls="#downloadImageRights #download" height="5513px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00188" width="3625px"/></surface><surface n="183" xml:id="page-surface-189"><graphic decls="#downloadImageRights #download" height="5717px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00189" width="3627px"/></surface><surface n="184" xml:id="page-surface-190"><graphic decls="#downloadImageRights #download" height="5513px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00190" width="3625px"/></surface><surface n="185" xml:id="page-surface-191"><graphic decls="#downloadImageRights #download" height="5717px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00191" width="3627px"/></surface><surface n="186" xml:id="page-surface-192"><graphic decls="#downloadImageRights #download" height="5513px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00192" width="3625px"/></surface><surface n="187" xml:id="page-surface-193"><graphic decls="#downloadImageRights #download" height="5717px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00193" width="3627px"/></surface><surface n="188" xml:id="page-surface-194"><graphic decls="#downloadImageRights #download" height="5513px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00194" width="3625px"/></surface><surface n="189" xml:id="page-surface-195"><graphic decls="#downloadImageRights #download" height="5717px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00195" width="3627px"/></surface><surface n="190" xml:id="page-surface-196"><graphic decls="#downloadImageRights #download" height="5513px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00196" width="3625px"/></surface><surface n="191" xml:id="page-surface-197"><graphic decls="#downloadImageRights #download" height="5742px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00197" width="3636px"/></surface><surface n="192" xml:id="page-surface-198"><graphic decls="#downloadImageRights #download" height="5513px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00198" width="3625px"/></surface><surface n="iv recto" xml:id="page-surface-199"><graphic decls="#downloadImageRights #download" height="5792px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00199" width="3724px"/></surface><surface n="iv verso" xml:id="page-surface-200"><graphic decls="#downloadImageRights #download" height="5513px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00200" width="3625px"/></surface><surface n="[v] recto" xml:id="page-surface-201"><graphic decls="#downloadImageRights #download" height="5792px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00201" width="3834px"/></surface><surface n="[v] verso" xml:id="page-surface-202"><graphic decls="#downloadImageRights #download" height="5513px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00202" width="3625px"/></surface><surface n="rear cover, inner" xml:id="page-surface-203"><graphic decls="#downloadImageRights #download" height="5900px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00203" width="3874px"/></surface><surface n="rear cover, outer" xml:id="page-surface-204"><graphic decls="#downloadImageRights #download" height="5709px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00204" width="3966px"/></surface><surface n="spine" xml:id="page-surface-205"><graphic decls="#downloadImageRights #download" height="5114px" rend="portrait" url="MS-MAGDALENE-COLLEGE-PEPYS-00878-000-00205" width="1831px"/></surface></facsimile><text><body><div><pb facs="#page-surface-1" n="front cover, outer" xml:id="page-pb-1"/><pb facs="#page-surface-2" n="i verso" xml:id="page-pb-2"/><pb facs="#page-surface-3" n="ii recto" xml:id="page-pb-3"/><pb facs="#page-surface-4" n="ii verso" xml:id="page-pb-4"/><pb facs="#page-surface-5" n="iii recto" xml:id="page-pb-5"/><pb facs="#page-surface-6" n="iii verso" xml:id="page-pb-6"/><pb facs="#page-surface-7" n="1" xml:id="page-pb-7"/><pb facs="#page-surface-8" n="2" xml:id="page-pb-8"/><pb facs="#page-surface-9" n="3" xml:id="page-pb-9"/><pb facs="#page-surface-10" n="4" xml:id="page-pb-10"/><pb facs="#page-surface-11" n="5" xml:id="page-pb-11"/><pb facs="#page-surface-12" n="6" xml:id="page-pb-12"/><pb facs="#page-surface-13" n="7" xml:id="page-pb-13"/><pb facs="#page-surface-14" n="8" xml:id="page-pb-14"/><pb facs="#page-surface-15" n="9" xml:id="page-pb-15"/><pb facs="#page-surface-16" n="10" xml:id="page-pb-16"/><pb facs="#page-surface-17" n="11" xml:id="page-pb-17"/><pb facs="#page-surface-18" n="12" xml:id="page-pb-18"/><pb facs="#page-surface-19" n="13" xml:id="page-pb-19"/><pb facs="#page-surface-20" n="14" xml:id="page-pb-20"/><pb facs="#page-surface-21" n="15" xml:id="page-pb-21"/><pb facs="#page-surface-22" n="16" xml:id="page-pb-22"/><pb facs="#page-surface-23" n="17" xml:id="page-pb-23"/><pb facs="#page-surface-24" n="18" xml:id="page-pb-24"/><pb facs="#page-surface-25" n="19" xml:id="page-pb-25"/><pb facs="#page-surface-26" n="20" xml:id="page-pb-26"/><pb facs="#page-surface-27" n="21" xml:id="page-pb-27"/><pb facs="#page-surface-28" n="22" xml:id="page-pb-28"/><pb facs="#page-surface-29" n="23" xml:id="page-pb-29"/><pb facs="#page-surface-30" n="24" xml:id="page-pb-30"/><pb facs="#page-surface-31" n="25" xml:id="page-pb-31"/><pb facs="#page-surface-32" n="26" xml:id="page-pb-32"/><pb facs="#page-surface-33" n="27" xml:id="page-pb-33"/><pb facs="#page-surface-34" n="28" xml:id="page-pb-34"/><pb facs="#page-surface-35" n="29" xml:id="page-pb-35"/><pb facs="#page-surface-36" n="30" xml:id="page-pb-36"/><pb facs="#page-surface-37" n="31" xml:id="page-pb-37"/><pb facs="#page-surface-38" n="32" xml:id="page-pb-38"/><pb facs="#page-surface-39" n="33" xml:id="page-pb-39"/><pb facs="#page-surface-40" n="34" xml:id="page-pb-40"/><pb facs="#page-surface-41" n="35" xml:id="page-pb-41"/><pb facs="#page-surface-42" n="36" xml:id="page-pb-42"/><pb facs="#page-surface-43" n="37" xml:id="page-pb-43"/><pb facs="#page-surface-44" n="38" xml:id="page-pb-44"/><pb facs="#page-surface-45" n="39" xml:id="page-pb-45"/><pb facs="#page-surface-46" n="40" xml:id="page-pb-46"/><pb facs="#page-surface-47" n="41" xml:id="page-pb-47"/><pb facs="#page-surface-48" n="42" xml:id="page-pb-48"/><pb facs="#page-surface-49" n="43" xml:id="page-pb-49"/><pb facs="#page-surface-50" n="44" xml:id="page-pb-50"/><pb facs="#page-surface-51" n="45" xml:id="page-pb-51"/><pb facs="#page-surface-52" n="46" xml:id="page-pb-52"/><pb facs="#page-surface-53" n="47" xml:id="page-pb-53"/><pb facs="#page-surface-54" n="48" xml:id="page-pb-54"/><pb facs="#page-surface-55" n="49" xml:id="page-pb-55"/><pb facs="#page-surface-56" n="50" xml:id="page-pb-56"/><pb facs="#page-surface-57" n="51" xml:id="page-pb-57"/><pb facs="#page-surface-58" n="52" xml:id="page-pb-58"/><pb facs="#page-surface-59" n="53" xml:id="page-pb-59"/><pb facs="#page-surface-60" n="54" xml:id="page-pb-60"/><pb facs="#page-surface-61" n="55" xml:id="page-pb-61"/><pb facs="#page-surface-62" n="56" xml:id="page-pb-62"/><pb facs="#page-surface-63" n="57" xml:id="page-pb-63"/><pb facs="#page-surface-64" n="58" xml:id="page-pb-64"/><pb facs="#page-surface-65" n="59" xml:id="page-pb-65"/><pb facs="#page-surface-66" n="60" xml:id="page-pb-66"/><pb facs="#page-surface-67" n="61" xml:id="page-pb-67"/><pb facs="#page-surface-68" n="62" xml:id="page-pb-68"/><pb facs="#page-surface-69" n="63" xml:id="page-pb-69"/><pb facs="#page-surface-70" n="64" xml:id="page-pb-70"/><pb facs="#page-surface-71" n="65" xml:id="page-pb-71"/><pb facs="#page-surface-72" n="66" xml:id="page-pb-72"/><pb facs="#page-surface-73" n="67" xml:id="page-pb-73"/><pb facs="#page-surface-74" n="68" xml:id="page-pb-74"/><pb facs="#page-surface-75" n="69" xml:id="page-pb-75"/><pb facs="#page-surface-76" n="70" xml:id="page-pb-76"/><pb facs="#page-surface-77" n="71" xml:id="page-pb-77"/><pb facs="#page-surface-78" n="72" xml:id="page-pb-78"/><pb facs="#page-surface-79" n="73" xml:id="page-pb-79"/><pb facs="#page-surface-80" n="74" xml:id="page-pb-80"/><pb facs="#page-surface-81" n="75" xml:id="page-pb-81"/><pb facs="#page-surface-82" n="76" xml:id="page-pb-82"/><pb facs="#page-surface-83" n="77" xml:id="page-pb-83"/><pb facs="#page-surface-84" n="78" xml:id="page-pb-84"/><pb facs="#page-surface-85" n="79" xml:id="page-pb-85"/><pb facs="#page-surface-86" n="80" xml:id="page-pb-86"/><pb facs="#page-surface-87" n="81" xml:id="page-pb-87"/><pb facs="#page-surface-88" n="82" xml:id="page-pb-88"/><pb facs="#page-surface-89" n="83" xml:id="page-pb-89"/><pb facs="#page-surface-90" n="84" xml:id="page-pb-90"/><pb facs="#page-surface-91" n="85" xml:id="page-pb-91"/><pb facs="#page-surface-92" n="86" xml:id="page-pb-92"/><pb facs="#page-surface-93" n="87" xml:id="page-pb-93"/><pb facs="#page-surface-94" n="88" xml:id="page-pb-94"/><pb facs="#page-surface-95" n="89" xml:id="page-pb-95"/><pb facs="#page-surface-96" n="90" xml:id="page-pb-96"/><pb facs="#page-surface-97" n="91" xml:id="page-pb-97"/><pb facs="#page-surface-98" n="92" xml:id="page-pb-98"/><pb facs="#page-surface-99" n="93" xml:id="page-pb-99"/><pb facs="#page-surface-100" n="94" xml:id="page-pb-100"/><pb facs="#page-surface-101" n="95" xml:id="page-pb-101"/><pb facs="#page-surface-102" n="96" xml:id="page-pb-102"/><pb facs="#page-surface-103" n="97" xml:id="page-pb-103"/><pb facs="#page-surface-104" n="98" xml:id="page-pb-104"/><pb facs="#page-surface-105" n="99" xml:id="page-pb-105"/><pb facs="#page-surface-106" n="100" xml:id="page-pb-106"/><pb facs="#page-surface-107" n="101" xml:id="page-pb-107"/><pb facs="#page-surface-108" n="102" xml:id="page-pb-108"/><pb facs="#page-surface-109" n="103" xml:id="page-pb-109"/><pb facs="#page-surface-110" n="104" xml:id="page-pb-110"/><pb facs="#page-surface-111" n="105" xml:id="page-pb-111"/><pb facs="#page-surface-112" n="106" xml:id="page-pb-112"/><pb facs="#page-surface-113" n="107" xml:id="page-pb-113"/><pb facs="#page-surface-114" n="108" xml:id="page-pb-114"/><pb facs="#page-surface-115" n="109" xml:id="page-pb-115"/><pb facs="#page-surface-116" n="110" xml:id="page-pb-116"/><pb facs="#page-surface-117" n="111" xml:id="page-pb-117"/><pb facs="#page-surface-118" n="112" xml:id="page-pb-118"/><pb facs="#page-surface-119" n="113" xml:id="page-pb-119"/><pb facs="#page-surface-120" n="114" xml:id="page-pb-120"/><pb facs="#page-surface-121" n="115" xml:id="page-pb-121"/><pb facs="#page-surface-122" n="116" xml:id="page-pb-122"/><pb facs="#page-surface-123" n="117" xml:id="page-pb-123"/><pb facs="#page-surface-124" n="118" xml:id="page-pb-124"/><pb facs="#page-surface-125" n="119" xml:id="page-pb-125"/><pb facs="#page-surface-126" n="120" xml:id="page-pb-126"/><pb facs="#page-surface-127" n="121" xml:id="page-pb-127"/><pb facs="#page-surface-128" n="122" xml:id="page-pb-128"/><pb facs="#page-surface-129" n="123" xml:id="page-pb-129"/><pb facs="#page-surface-130" n="124" xml:id="page-pb-130"/><pb facs="#page-surface-131" n="125" xml:id="page-pb-131"/><pb facs="#page-surface-132" n="126" xml:id="page-pb-132"/><pb facs="#page-surface-133" n="127" xml:id="page-pb-133"/><pb facs="#page-surface-134" n="128" xml:id="page-pb-134"/><pb facs="#page-surface-135" n="129" xml:id="page-pb-135"/><pb facs="#page-surface-136" n="130" xml:id="page-pb-136"/><pb facs="#page-surface-137" n="131" xml:id="page-pb-137"/><pb facs="#page-surface-138" n="132" xml:id="page-pb-138"/><pb facs="#page-surface-139" n="133" xml:id="page-pb-139"/><pb facs="#page-surface-140" n="134" xml:id="page-pb-140"/><pb facs="#page-surface-141" n="135" xml:id="page-pb-141"/><pb facs="#page-surface-142" n="136" xml:id="page-pb-142"/><pb facs="#page-surface-143" n="137" xml:id="page-pb-143"/><pb facs="#page-surface-144" n="138" xml:id="page-pb-144"/><pb facs="#page-surface-145" n="139" xml:id="page-pb-145"/><pb facs="#page-surface-146" n="140" xml:id="page-pb-146"/><pb facs="#page-surface-147" n="141" xml:id="page-pb-147"/><pb facs="#page-surface-148" n="142" xml:id="page-pb-148"/><pb facs="#page-surface-149" n="143" xml:id="page-pb-149"/><pb facs="#page-surface-150" n="144" xml:id="page-pb-150"/><pb facs="#page-surface-151" n="145" xml:id="page-pb-151"/><pb facs="#page-surface-152" n="146" xml:id="page-pb-152"/><pb facs="#page-surface-153" n="147" xml:id="page-pb-153"/><pb facs="#page-surface-154" n="148" xml:id="page-pb-154"/><pb facs="#page-surface-155" n="149" xml:id="page-pb-155"/><pb facs="#page-surface-156" n="150" xml:id="page-pb-156"/><pb facs="#page-surface-157" n="151" xml:id="page-pb-157"/><pb facs="#page-surface-158" n="152" xml:id="page-pb-158"/><pb facs="#page-surface-159" n="153" xml:id="page-pb-159"/><pb facs="#page-surface-160" n="154" xml:id="page-pb-160"/><pb facs="#page-surface-161" n="155" xml:id="page-pb-161"/><pb facs="#page-surface-162" n="156" xml:id="page-pb-162"/><pb facs="#page-surface-163" n="157" xml:id="page-pb-163"/><pb facs="#page-surface-164" n="158" xml:id="page-pb-164"/><pb facs="#page-surface-165" n="159" xml:id="page-pb-165"/><pb facs="#page-surface-166" n="160" xml:id="page-pb-166"/><pb facs="#page-surface-167" n="161" xml:id="page-pb-167"/><pb facs="#page-surface-168" n="162" xml:id="page-pb-168"/><pb facs="#page-surface-169" n="163" xml:id="page-pb-169"/><pb facs="#page-surface-170" n="164" xml:id="page-pb-170"/><pb facs="#page-surface-171" n="165" xml:id="page-pb-171"/><pb facs="#page-surface-172" n="166" xml:id="page-pb-172"/><pb facs="#page-surface-173" n="167" xml:id="page-pb-173"/><pb facs="#page-surface-174" n="168" xml:id="page-pb-174"/><pb facs="#page-surface-175" n="169" xml:id="page-pb-175"/><pb facs="#page-surface-176" n="170" xml:id="page-pb-176"/><pb facs="#page-surface-177" n="171" xml:id="page-pb-177"/><pb facs="#page-surface-178" n="172" xml:id="page-pb-178"/><pb facs="#page-surface-179" n="173" xml:id="page-pb-179"/><pb facs="#page-surface-180" n="174" xml:id="page-pb-180"/><pb facs="#page-surface-181" n="175" xml:id="page-pb-181"/><pb facs="#page-surface-182" n="176" xml:id="page-pb-182"/><pb facs="#page-surface-183" n="177" xml:id="page-pb-183"/><pb facs="#page-surface-184" n="178" xml:id="page-pb-184"/><pb facs="#page-surface-185" n="179" xml:id="page-pb-185"/><pb facs="#page-surface-186" n="180" xml:id="page-pb-186"/><pb facs="#page-surface-187" n="181" xml:id="page-pb-187"/><pb facs="#page-surface-188" n="182" xml:id="page-pb-188"/><pb facs="#page-surface-189" n="183" xml:id="page-pb-189"/><pb facs="#page-surface-190" n="184" xml:id="page-pb-190"/><pb facs="#page-surface-191" n="185" xml:id="page-pb-191"/><pb facs="#page-surface-192" n="186" xml:id="page-pb-192"/><pb facs="#page-surface-193" n="187" xml:id="page-pb-193"/><pb facs="#page-surface-194" n="188" xml:id="page-pb-194"/><pb facs="#page-surface-195" n="189" xml:id="page-pb-195"/><pb facs="#page-surface-196" n="190" xml:id="page-pb-196"/><pb facs="#page-surface-197" n="191" xml:id="page-pb-197"/><pb facs="#page-surface-198" n="192" xml:id="page-pb-198"/><pb facs="#page-surface-199" n="iv recto" xml:id="page-pb-199"/><pb facs="#page-surface-200" n="iv verso" xml:id="page-pb-200"/><pb facs="#page-surface-201" n="[v] recto" xml:id="page-pb-201"/><pb facs="#page-surface-202" n="[v] verso" xml:id="page-pb-202"/><pb facs="#page-surface-203" n="rear cover, inner" xml:id="page-pb-203"/><pb facs="#page-surface-204" n="rear cover, outer" xml:id="page-pb-204"/><pb facs="#page-surface-205" n="spine" xml:id="page-pb-205"/></div></body></text></TEI>
