@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Require Values in Columns</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="back-link">
+            <a href="/select">← Back to Column Selection</a>
+        </div>
+        <h1>Select Required Values</h1>
+    </header>
+    <div class="container">
+        <form method="post" action="/merge">
+            <div class="columns-wrapper">
+                {% for file, columns in files.items() %}
+                    <div class="column-group">
+                        {% set shortname = file.split('/')[-1].replace('.csv', '') %}
+                        <fieldset>
+                            <legend><strong>{{ shortname }}</strong></legend>
+                            {% for column in columns %}
+                                {% if column == 'metadata: part ID' %}
+                                    <label>
+                                        <input type="checkbox" name="required_columns" value="{{ column }}" checked disabled>
+                                        {{ column }}
+                                    </label>
+                                    <input type="hidden" name="required_columns" value="{{ column }}">
+                                {% else %}
+                                    <label>
+                                        <input type="checkbox" name="required_columns" value="{{ column }}">
+                                        {{ column }}
+                                    </label>
+                                {% endif %}
+                            {% endfor %}
+                        </fieldset>
+                    </div>
+                {% endfor %}
+            </div>
+            <label>
+              <input type="checkbox" name="exclude_empty_rows" value="true">
+              Exclude empty rows
+            </label><br>
+            <input type="hidden" name="files" value='{{ files | tojson | safe }}'>
+            <input type="submit" class="btn" value="Merge">
+        </form>
+    </div>
+</body>
+</html>

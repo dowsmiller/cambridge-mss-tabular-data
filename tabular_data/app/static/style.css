@@ -1,0 +1,233 @@
+/* Global & Typography */
+body {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #003366;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout Containers */
+.container {
+  width: min(960px, 90%);
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.columns-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.column-group {
+  flex: 1 1 250px;
+  min-width: 200px;
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 1.5rem;
+  background-color: #00264d;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin: 0;
+  text-align: center;
+  flex: 0 1 auto;
+}
+
+/* Results Area */
+.results-container {
+  font-family: Arial, sans-serif;
+  font-size: 11pt;
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.table-wrapper table {
+  width: 100%;
+  min-width: 960px;
+  table-layout: auto;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+}
+
+table th {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+/* Buttons */
+button,
+.btn {
+  background-color: #0055a5;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #003f80;
+}
+
+/* Button Group */
+.button-group form {
+  display: inline;
+}
+
+.button-group button {
+  margin-right: 10px;
+}
+
+/* Forms & Fields */
+form {
+  margin-top: 1.5rem;
+}
+
+input[type="file"] {
+  margin-bottom: 1rem;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.column-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+/* Back Links */
+.back-link {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+header .back-link {
+  position: absolute;
+  left: 1.5rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header .back-link a {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer .back-link a {
+  color: #0055a5;
+}
+
+/* File Upload */
+#customFileButton {
+  background-color: #0055a5;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#customFileButton:hover {
+  background-color: #003f80;
+}
+
+#files {
+  display: none;
+}
+
+#fileNames {
+  margin-left: 1rem;
+  font-style: italic;
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+#submitButton {
+  display: none;
+}
+
+#progress-container {
+  display: none;
+}
+
+#error-container {
+  display: none;
+  color: red;
+}
