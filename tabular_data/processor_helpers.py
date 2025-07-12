@@ -120,7 +120,6 @@ def process_file(
 ):
     """
     Function that processes either authority or collection files depending on file_type.
-
     Args:
         file_type (str): Either 'authority' or 'collection' to choose which branch to run.
         config_name (str): Name of the configuration file.
@@ -136,11 +135,9 @@ def process_file(
         tuple: (config_name, processed DataFrame)
     """
     try:
-        # Load the DataFrame
         df = df_list[config_name]
-
+        # Extract config columns
         if file_type == "authority":
-            # Extract columns for authority processing
             try:
                 auth_files, xpaths, formats = (
                     config[col].tolist() for col in ["auth_file", "xpath", "format"]
@@ -148,48 +145,12 @@ def process_file(
             except Exception as e:
                 tqdm.write(f"Failed to extract configuration columns for '{config_name}'. Error: {e}")
                 return config_name, df
-
-            # Count cores
-            num_workers = (os.cpu_count() or 1) - cores_spare
-            num_workers = max(num_workers, 1)
-
-            # Prepare arguments
+            num_workers = max(1, (os.cpu_count() or 1) - cores_spare)
             all_args = [
                 (i, xpath, auth_file)
-                for i, (xpath, auth_file)
-                in enumerate(zip(xpaths, auth_files))
+                for i, (xpath, auth_file) in enumerate(zip(xpaths, auth_files))
             ]
-
-            max_batches = min(len(all_args), num_workers)
-            max_batches = num_workers + 1
-            batch_size = max(1, math.ceil(len(all_args) / max_batches))
-
-            batches = [
-                all_args[i : i + batch_size]
-                for i in range(0, len(all_args), batch_size)
-            ]
-
-            # Dispatch batches in parallel
-            with ProcessPoolExecutor(max_workers=num_workers) as executor:
-                futures = [
-                    executor.submit(process_batch, batch=batch, file_type=file_type, xml_data=xml_data)
-                    for batch in batches
-                ]
-                for future in tqdm(
-                    as_completed(futures),
-                    total=len(futures),
-                    desc=f"File '{config_name}'",
-                    position=bar_pos
-                ):
-                    try:
-                        batch_result = future.result()
-                        for i, col_data in batch_result.items():
-                            df.iloc[:, i] = col_data
-                    except Exception as e:
-                        tqdm.write(f"Error processing batch for '{config_name}'. Error: {e}")
-
         elif file_type == "collection":
-            # Extract columns for collection processing
             try:
                 xpaths, auth_files, auth_sections, auth_cols, separators, formats = (
                     config[col].tolist() for col in ["xpath", "auth_file", "auth_section", "auth_col", "separator", "format"]
@@ -197,63 +158,63 @@ def process_file(
             except Exception as e:
                 tqdm.write(f"Failed to extract configuration columns for '{config_name}'. Error: {e}")
                 return config_name, df
-
-            # Count cores
             num_workers = max(1, (os.cpu_count() or 1) - cores_spare)
-
-            # Prepare arguments
             all_args = [
                 (i, xpath, auth_file, auth_section, auth_col, separator)
                 for i, (xpath, auth_file, auth_section, auth_col, separator)
                 in enumerate(zip(xpaths, auth_files, auth_sections, auth_cols, separators))
             ]
-
-            # Split into batches
-            max_batches = num_workers + 1
-            batch_size = max(1, math.ceil(len(all_args) / max_batches))
-
-            batches = [
-                all_args[i : i + batch_size]
-                for i in range(0, len(all_args), batch_size)
-            ]
-
-            # Dispatch batches in parallel
-            with ProcessPoolExecutor(max_workers=num_workers) as executor:
-                futures = [
-                    executor.submit(process_batch, batch=batch, file_type=file_type, xml_data=xml_data, lookup_df_list=lookup_df_list, separator_map=separator_map)
-                    for batch in batches
-                ]
-                for future in tqdm(as_completed(futures), total=len(futures),
-                                desc=f"File '{config_name}'", position=bar_pos):
-                    batch_result = future.result()
-                    for i, col_data in batch_result.items():
-                        df.iloc[:, i] = col_data
-
         else:
             raise ValueError(f"Unsupported file_type: '{file_type}'. Valid options are 'authority' or 'collection'.")
-        
+
+        # Batch processing
+        batch_size = max(1, math.ceil(len(all_args) / (num_workers + 1)))
+        batches = [all_args[i:i+batch_size] for i in range(0, len(all_args), batch_size)]
+        futures = []
+        with ProcessPoolExecutor(max_workers=num_workers) as executor:
+            for batch in batches:
+                if file_type == "authority":
+                    futures.append(executor.submit(process_batch, batch=batch, file_type=file_type, xml_data=xml_data))
+                else:
+                    futures.append(executor.submit(process_batch, batch=batch, file_type=file_type, xml_data=xml_data, lookup_df_list=lookup_df_list, separator_map=separator_map))
+            for future in tqdm(as_completed(futures), total=len(futures), desc=f"File '{config_name}'", position=bar_pos):
+                try:
+                    batch_result = future.result()
+                    for i, col_data in batch_result.items():
+                        # Normalise all cells to scalars
+                        df.iloc[:, i] = [normalise_cell(x) for x in col_data]
+                except Exception as e:
+                    tqdm.write(f"Error processing batch for '{config_name}'. Error: {e}")
     except Exception as e:
         tqdm.write(f"Failed to fully process '{config_name}'. Returning an empty DataFrame. Error: {e}")
         return config_name, pd.DataFrame()
-    
-    # Defragment the DataFrame
+
+    # Defragment, unlist, format, and sort
     df = defrag(df)
-
-    # Unlist each column in the DataFrame
     df = unlist_columns(df)
-
-    # Set data formats
     df = set_format(df, formats=formats)
-
-    # Sort authority data
     df = sort_df(df=df, file_type=file_type)
-
-    # Save the processed DataFrame to CSV and JSON files
     save_as(df, csv_output_dir, config_name, format="csv")
     save_as(df, json_output_dir, config_name, format="json")
-
-    # Return the outputs
     return config_name, df
+
+# Helper function to normalise any cell to a scalar string
+def normalise_cell(cell):
+    """ Normalises a cell to a scalar string.
+    Args:
+        cell: The cell value to normalise.
+    Returns:
+        str: The normalised cell value as a string.
+    """
+    if isinstance(cell, list):
+        flat = list(chain.from_iterable(cell)) if any(isinstance(i, list) for i in cell) else cell
+        cell_text = "".join(str(x) if x is not None else "" for x in flat)
+        tqdm.write(f"Warning: Cell values were received as a list and have been merged to: '{cell_text}'.")
+        return cell_text
+    elif cell is None or (isinstance(cell, float) and math.isnan(cell)):
+        return ""
+    else:
+        return str(cell)
 
 # Helper function to process batches of columns
 def process_batch(
@@ -369,8 +330,10 @@ def process_column(
             auth_df = None
             if lookup_df_list is not None:
                 auth_df = lookup_df_list.get(auth_file.lower().strip())
+
             # Set the separator
             s = get_separator(separator, separator_map)
+
             # Set the column name, handling None values
             auth_section_str = auth_section + ": " if auth_section is not None else ""
             auth_col_str = auth_col if auth_col is not None else ""
@@ -400,10 +363,10 @@ def process_column(
     else:
         raise ValueError(f"Unsupported file_type: {file_type}. Valid options are 'authority' or 'collection'.")
 
-# Helper function to apply XPath 2.0 queries to an XML element in the TEI namespace
+# Helper function to apply XPath 3.1 queries to an XML element in the TEI namespace
 def extract_with_xpath(xml_element, xpath_expr):
     """
-    Extracts data from an XML element using XPath 2.0 queries.
+    Extracts data from an XML element using XPath 3.1 queries.
     Args:
         xml_element (Element): The XML element to search.
         xpath_expr (str): The XPath expression to evaluate.
@@ -421,9 +384,10 @@ def extract_with_xpath(xml_element, xpath_expr):
             namespaces={'tei': 'http://www.tei-c.org/ns/1.0'},
             parser=XPath31Parser
         )
-        # Convert non-list results (including booleans) to a list.
+        # Convert non-list results to a list
         if not isinstance(result, list):
             result = [result]
+
     except Exception as e:
         tqdm.write(f"XPath extraction failed. Offending XPath: {xpath_expr}. Error: {e}")
         result = ""
@@ -431,6 +395,13 @@ def extract_with_xpath(xml_element, xpath_expr):
 
 # Helper function to determine the separator for authority lookups
 def get_separator(separator, separator_map):
+    """
+    Determines the separator to use for authority lookups based on the provided separator and a separator map.
+    Args:
+        separator (str): The separator to use.
+        separator_map (dict): A dictionary mapping separators to their string representations.
+    Returns:
+        str: The determined separator string."""
     if separator_map is None:
         s = "; "
         tqdm.write(f"No separator map found. Using '{s}' instead.")
@@ -495,7 +466,7 @@ def defrag(df):
 # Helper function to unlist columnd in DataFrame
 def unlist_columns(df):
     """
-    Unlists each cell in the DataFrame (assuming there is only one value per cell).
+    Unlists each cell in the DataFrame (ensures only one value per cell, or joins lists as string).
     Args:
         df (DataFrame): The DataFrame to unlist.
     Returns:
@@ -503,7 +474,7 @@ def unlist_columns(df):
     """
     for col in df.columns:
         try:
-            df[col] = df[col].apply(lambda x: x[0] if isinstance(x, list) and len(x) == 1 else x)
+            df[col] = df[col].apply(normalise_cell)
         except Exception as e:
             tqdm.write(f"Failed to unlist column '{col}'. Error: {e}")
     return df
@@ -590,59 +561,104 @@ def sort_df(df, file_type):
     """
     try:
         if file_type == "authority":
-            # If the first column contains numbers after "_", sort by that number
-            if df.iloc[:, 0].str.contains(r'_\d+', na=False).any():
-                df['temp'] = df.iloc[:, 0].str.extract(r'_(\d+)', expand=False).astype(float)
+            if df.iloc[:, 0].astype(str).str.contains(r'_\d+', na=False).any():
+                df['temp'] = df.iloc[:, 0].astype(str).str.extract(r'_(\d+)', expand=False).astype(float)
                 df = df.sort_values(by='temp', ascending=True, na_position='last').reset_index(drop=True)
                 df.drop(columns='temp', inplace=True)
             else:
                 df = df.sort_values(by=df.columns[0], ascending=True, na_position='last').reset_index(drop=True)
+
         elif file_type == "collection":
-            # If 'metadata: file URL' exists, sort by it first, then by the first column
-            if 'metadata: file URL' in df.columns:
-                temp_col = df['metadata: file URL'].str.extract(r'manuscript_(\d+)')[0].astype(float)
-                temp_col.name = 'metadata: file URL temp'
-                df = pd.concat([df, temp_col], axis=1)
-                first_col = df.columns[0]
-                sort_by = ['metadata: file URL temp'] if first_col == 'metadata: file URL' else ['metadata: file URL temp', first_col]
-                df.sort_values(by=sort_by, ascending=True, na_position='last', inplace=True)
-                df.drop(columns=['metadata: file URL temp'], inplace=True)
+            if 'metadata: collection' in df.columns and 'metadata: shelfmark' in df.columns:
+                df = df.assign(
+                    _collection_sort=df['metadata: collection'],
+                    _shelfmark_sort=df['metadata: shelfmark'].map(parse_shelfmark)
+                ).sort_values(
+                    by=['_collection_sort', '_shelfmark_sort'],
+                    ascending=True,
+                    na_position='last'
+                ).drop(columns=['_collection_sort', '_shelfmark_sort']).reset_index(drop=True)
+
             elif 'metadata: collection' in df.columns:
                 first_col = df.columns[0]
-                df.sort_values(
-                    by=['metadata: collection', first_col],
-                    key=lambda col: col.map(natural_keys),
+                df = df.assign(
+                    _collection_sort=df['metadata: collection'],
+                    _first_sort=df[first_col].map(parse_shelfmark)
+                ).sort_values(
+                    by=['_collection_sort', '_first_sort'],
                     ascending=True,
-                    na_position='last',
-                    inplace=True
-                )
+                    na_position='last'
+                ).drop(columns=['_collection_sort', '_first_sort']).reset_index(drop=True)
+
+            elif 'metadata: shelfmark' in df.columns:
+                first_col = df.columns[0]
+                df = df.assign(
+                    _shelfmark_sort=df['metadata: shelfmark'].map(parse_shelfmark),
+                    _first_sort=df[first_col]
+                ).sort_values(
+                    by=['_shelfmark_sort', '_first_sort'],
+                    ascending=True,
+                    na_position='last'
+                ).drop(columns=['_shelfmark_sort', '_first_sort']).reset_index(drop=True)
+
             else:
                 first_col = df.columns[0]
-                df.sort_values(
-                    by=first_col,
-                    key=lambda col: col.map(natural_keys),
+                df = df.assign(
+                    _first_sort=df[first_col]
+                ).sort_values(
+                    by=['_first_sort'],
                     ascending=True,
-                    na_position='last',
-                    inplace=True
-                )
+                    na_position='last'
+                ).drop(columns=['_first_sort']).reset_index(drop=True)
+
         else:
             tqdm.write(f"Unknown file_type '{file_type}' for sorting. Returning unsorted DataFrame.")
-        return df
-    except Exception as e:
-        tqdm.write(f"Sorting DataFrame failed. Error: {e}")
+
         return df
 
-# Helper function for natural sorting of strings
-def natural_keys(text):
+    except Exception as e:
+        tqdm.write(f"Sorting DataFrame failed. Error: {e}. Returning unsorted DataFrame.")
+
+        return df
+
+# Helper function for natural sorting of shelfmarks
+def parse_shelfmark(text):
     """
-    Convert a string into a list of integers and strings for natural sorting.
+    Converts a shelfmark into a single sortable string.
     Args:
-        text (str): The string to convert.
+        text (str): The shelfmark string to parse.
     Returns:
-        list: A list of integers and strings.
+        list: A list of tokens, with numbers converted to integers.
     """
-    list = [int(c) if c.isdigit() else c.lower() for c in re.split(r'(\d+)', text)]
-    return list
+    if pd.isnull(text):
+        return ""
+    
+    clean = str(text).replace('–', '-')
+    tokens = re.split(r'[^\w\-]+', clean)
+    parsed = []
+
+    for token in tokens:
+        if not token:
+            continue
+
+        # Handle dash ranges (e.g. "65-9")
+        if re.match(r'^\d+-\d+$', token):
+            start, end = map(int, token.split('-'))
+            mid = start + (end - start) / 2
+            parsed.append(f"{mid:05.1f}")
+
+        # Handle digit + letter suffix (e.g. "10b")
+        elif re.match(r'^\d+[a-zA-Z]$', token):
+            parsed.append(f"{int(token[:-1]):05}.{ord(token[-1].lower())}")
+
+        # Handle simple digits
+        elif token.isdigit():
+            parsed.append(f"{int(token):05}")
+
+        else:
+            parsed.append(token.lower())
+
+    return " ".join(parsed)
 
 # Helper function to save DataFrame as either csv or json file
 def save_as(df, output_dir, config_name, format):
@@ -674,7 +690,7 @@ def save_as(df, output_dir, config_name, format):
     except Exception as e:
         tqdm.write(f"Saving data to '{output_filename}' failed. Error: {e}")
 
-# Function to save DataFrame list as an xlsx file with individual tables as tabs
+# Helper function to save DataFrame list as an xlsx file with individual tables as tabs
 def save_as_xlsx(df_list, config_list, output_dir, output_filename):
     """
     Saves a list of DataFrames to an Excel file with each DataFrame in a separate sheet.
@@ -689,7 +705,7 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
     sections_list = [config_list[config_name]['section'].to_numpy() for config_name in config_list.keys()]
     headings_list = [config_list[config_name]['heading'].to_numpy() for config_name in config_list.keys()]
     comments_list = [config_list[config_name]['comment'].to_numpy() for config_name in config_list.keys()]
-    tqdm.write(f"Saving '{output_filename}'...")
+    tqdm.write(f"Saving '{output_filename}.xlsx'...")
 
     try:
         with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
@@ -800,10 +816,10 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
                             )
                         last_section = sections[col_idx - 1]
 
-        tqdm.write(f"Saved data to '{output_filename}'")
+        tqdm.write(f"Saved data to '{output_filename}.xlsx'")
 
     except Exception as e:
-        tqdm.write(f"Saving data to '{output_filename}' failed. Error: {e}")
+        tqdm.write(f"Saving data to '{output_filename}.xlsx' failed. Error: {e}")
 
 def merge_and_center_cells(worksheet, sections):
     """
