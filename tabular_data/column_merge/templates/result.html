@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Merged Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="back-link">
+            <a href="/">← Back to Upload</a>
+        </div>
+        <h1>Merged Data Preview</h1>
+    </header>
+    <div class="results-container">
+        <div class="button-group">
+            <form action="/download_csv" method="get">
+                <button type="submit">Download CSV</button>
+            </form>
+            <form action="/download_json" method="get">
+                <button type="submit">Download JSON</button>
+            </form>
+        </div>
+
+        <div class="table-wrapper">
+            {{ table | safe }}
+        </div>
+
+        <div id="error-container">
+          <p>An error occurred while processing your request. Please try again.</p>
+        </div>
+    </div>
+</body>
+</html>

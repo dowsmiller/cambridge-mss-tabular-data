@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Columns to Merge</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="back-link"><a href="/">← Back to Upload</a></div>
+        <h1>Select Columns to Merge</h1>
+    </header>
+    <div class="container">
+        <p class="instructions">{{ instructions }}</p>
+        <form method="post" action="/require_values">
+            <div class="columns-wrapper">
+                {% for filename, columns in files.items() %}
+                    {% set safe = safe_keys[filename] %}
+                    <div class="column-group">
+                        <fieldset>
+                            <legend><strong>{{ filename }}</strong></legend>
+                            <label for="merge_key_{{ loop.index }}"><strong>Merge Key for {{ filename }}:</strong></label>
+                            <select name="{{ filename }}_merge_key" id="merge_key_{{ loop.index }}" onchange="updateCheckbox('{{ safe }}', this.value)">
+                                {% for column in columns %}
+                                    {% set column_id = (safe ~ '_' ~ column|replace(' ', '_')|replace(':', '_')|replace('.', '_')) %}
+                                    <option value="{{ column }}" {% if 'part id' in column|lower %}selected{% endif %}>{{ column }}</option>
+                                {% endfor %}
+                            </select><br><br>
+                            <label for="merge_key_{{ loop.index }}"><strong>Select columns to include:</strong></label>
+                            {% for column in columns %}
+                                {% set column_id = (safe ~ '_' ~ column|replace(' ', '_')|replace(':', '_')|replace('.', '_')) %}
+                                <label for="{{ column_id }}">
+                                    <input type="checkbox" name="{{ filename }}" value="{{ column }}" class="colbox_{{ safe }}" id="{{ column_id }}">
+                                    {{ column }}
+                                </label>
+                            {% endfor %}
+                        </fieldset>
+                    </div>
+                {% endfor %}
+            </div>
+            <input type="submit" class="btn" value="Continue">
+        </form>
+    </div>
+
+    <script>
+        function slugify(text) {
+            return text.replace(/[:./\s]/g, '_');
+        }
+
+        function updateCheckbox(fileKey, selectedValue) {
+            const safeId = `${fileKey}_${slugify(selectedValue)}`;
+            const checkboxes = document.querySelectorAll(`.colbox_${fileKey}`);
+
+            checkboxes.forEach(cb => {
+                if (cb.disabled) {
+                    // Previously disabled checkbox - uncheck and enable it if it's not the new selected
+                    if (cb.value !== selectedValue) {
+                        cb.checked = false;
+                        cb.disabled = false;
+                    }
+                }
+            });
+
+            const match = document.getElementById(safeId);
+                if (match) {
+                    match.checked = true;
+                    match.disabled = true;
+                }
+            }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('select[name$="_merge_key"]').forEach(select => {
+            const fileKey = select.name.replace(/_merge_key$/, '').replace(/[:./\s]/g, '_');
+                updateCheckbox(fileKey, select.value);
+            });
+        });
+    </script>
+</body>
+</html>

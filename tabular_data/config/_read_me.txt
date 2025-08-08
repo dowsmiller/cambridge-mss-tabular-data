@@ -21,7 +21,7 @@ Below is an explanation of the information contained within each of the default
 		and scholars who had cataloguing priorities and practices that
 		are different to those of modern cataloguers. In particular,
 		in previous cataloguing cycles, measurements have often been
-		rounded to the nearest 5mm or quarter/eigth of an inch, and
+		rounded to the nearest 5mm or quarter/eighth of an inch, and
 		features such as decoration have been described using
 		assessments of aesthetic and material quality (e.g. "Good
 		border"), rather than through dispassionate descriptions of
@@ -31,7 +31,7 @@ Below is an explanation of the information contained within each of the default
 
 	1.2. Order of Processing
 
-	All authority files will be processed in alphabetical order by filename,
+	All configuration files will be processed in alphabetical order by filename,
 		and this is also the order in which the output tabs will appear
 		in the output .xlsx files. If you wish to modify this order,
 		include numbers at the beginning of your config filenames.
@@ -152,6 +152,9 @@ Below is an explanation of the information contained within each of the default
 				included as a note attached to the relevant
 				column heading in the .xlsx output file.
 
+	All authority configuration files must begin with a column containing a
+		unique identifier, in order for authority lookups to be possible.
+
 	The default configuration files result in output files in .csv and .json
 		format of the same name, as well as a combined .xlsx file with
 		tabs corresponding to each configuration file.
@@ -161,8 +164,8 @@ Below is an explanation of the information contained within each of the default
 
 	3.1. Source Files
 
-	Any .xml file found in the root directory of the repository will be
-		treated as a file containing data about an individual manuscript
+	Any .xml file found in the collection directory or its sub-directories will
+		be treated as a file containing data about an individual manuscript
 		unit.
 
 	3.2. Default Configuration Files

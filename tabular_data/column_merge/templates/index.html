@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Select CSV Files to Merge</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Select CSV Files</h1>
+    </header>
+    <div class="container">
+        <p class="instructions">{{ instructions }}</p>
+        <form method="post" enctype="multipart/form-data" id="uploadForm">
+            <label for="files" class="custom-file-label">Choose CSV files to merge:</label><br/>
+            <input type="file" id="filePicker" multiple style="display: none;" />
+            <button type="button" id="customFileButton">Select files</button>
+            <button type="button" id="clearButton" style="display: none;">Clear files</button><br/>
+            <span id="fileNames"></span>
+            <div id="fileInputsContainer"></div>
+            <button type="submit" id="submitButton" style="display: none;">Continue</button>
+        </form>
+        <div id="progress-container">
+            <p>Processing files, please wait...</p>
+        </div>
+    </div>
+
+    <script>
+        const filePicker = document.getElementById('filePicker');
+        const customButton = document.getElementById('customFileButton');
+        const clearButton = document.getElementById('clearButton');
+        const fileNamesSpan = document.getElementById('fileNames');
+        const submitButton = document.getElementById('submitButton');
+        const fileInputsContainer = document.getElementById('fileInputsContainer');
+        const form = document.getElementById('uploadForm');
+
+        // Store name, size, and actual File object
+        let selectedFiles = [];
+
+        function formatFileSize(bytes) {
+            const isWindows = /Win/.test(navigator.userAgent || navigator.platform);
+            const divisor = isWindows ? 1024 : 1000;
+
+            if (bytes < divisor) {
+                return bytes + ' B';
+            } else if (bytes < divisor ** 2) {
+                return (bytes / divisor).toFixed(1) + ' KB';
+            } else {
+                return (bytes / (divisor ** 2)).toFixed(2) + ' MB';
+            }
+        }
+
+        function updateFileListDisplay() {
+            if (selectedFiles.length === 0) {
+                fileNamesSpan.innerHTML = '';
+                fileNamesSpan.style.display = 'none';
+                submitButton.style.display = 'none';
+                clearButton.style.display = 'none';
+            } else {
+                let details = '<strong>Selected files:</strong><ul style="margin: 0.5em 0; padding-left: 1.2em;">';
+                selectedFiles.forEach((entry, index) => {
+                    details += `<li>
+                        ${entry.name} <span style="color: #666;">(${formatFileSize(entry.size)})</span>
+                        <button type="button" class="remove-file" data-index="${index}" title="Remove file" style="margin-left: 0.5em;">✖</button>
+                    </li>`;
+                });
+                details += '</ul>';
+                fileNamesSpan.innerHTML = details;
+                fileNamesSpan.style.display = 'block';
+
+                // Attach remove event listeners
+                document.querySelectorAll('.remove-file').forEach(button => {
+                    button.addEventListener('click', (e) => {
+                        const idx = parseInt(e.target.getAttribute('data-index'));
+                        selectedFiles.splice(idx, 1);
+                        updateFileListDisplay();
+                        syncFilesToForm();
+                    });
+                });
+
+                submitButton.style.display = 'inline-block';
+                clearButton.style.display = 'inline-block';
+            }
+        }
+
+        function syncFilesToForm() {
+            fileInputsContainer.innerHTML = '';
+            selectedFiles.forEach(entry => {
+                const fileInput = document.createElement('input');
+                fileInput.type = 'file';
+                fileInput.name = 'files';
+                fileInput.style.display = 'none';
+                fileInput.files = createFileList([entry.file]);
+                fileInputsContainer.appendChild(fileInput);
+            });
+        }
+
+        function createFileList(files) {
+            const dt = new DataTransfer();
+            files.forEach(file => dt.items.add(file));
+            return dt.files;
+        }
+
+        customButton.addEventListener('click', () => {
+            filePicker.click();
+        });
+
+        filePicker.addEventListener('change', () => {
+            for (let i = 0; i < filePicker.files.length; i++) {
+                const newFile = filePicker.files[i];
+                const isDuplicate = selectedFiles.some(existing =>
+                    existing.name === newFile.name && existing.size === newFile.size
+                );
+                if (!isDuplicate) {
+                    selectedFiles.push({
+                        name: newFile.name,
+                        size: newFile.size,
+                        file: newFile
+                    });
+                }
+            }
+            updateFileListDisplay();
+            syncFilesToForm();
+            filePicker.value = '';
+        });
+
+        clearButton.addEventListener('click', () => {
+            selectedFiles = [];
+            updateFileListDisplay();
+            fileInputsContainer.innerHTML = '';
+        });
+
+        form.addEventListener('submit', () => {
+            document.getElementById('progress-container').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

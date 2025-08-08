@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Require Values in Columns</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="back-link"><a href="/">← Back to Upload</a></div>
+        <div><h1>Select Required Values</h1></div>
+    </header>
+    <div class="container">
+        <p class="instructions">{{ instructions }}</p>
+        <form method="post" action="/merge" enctype="multipart/form-data">
+
+            <div class="columns-wrapper">
+                {% for file, columns in files.items() %}
+                    {% set merge_key = merge_keys.get(file, '') %}
+                    {% if merge_key %}
+                        {% set all_columns = [merge_key] + (columns | reject('equalto', merge_key) | list) %}
+                    {% else %}
+                        {% set all_columns = columns %}
+                    {% endif %}
+                    <fieldset>
+                        <legend><strong>{{ file }}</strong></legend>
+                        <div class="checkboxes">
+                            {% for column in all_columns %}
+                                {% if column %}
+                                    {% set is_merge_key = (column == merge_key) %}
+                                    <label>
+                                        <input type="checkbox" name="required_columns" value="{{ column }}" {% if is_merge_key %}checked disabled{% endif %}>
+                                        {{ column }}
+                                    </label>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </fieldset>
+                {% endfor %}
+                {% for file, key in merge_keys.items() %}
+                    <input type="hidden" name="{{ file }}_merge_key" value="{{ key }}">
+                {% endfor %}
+            </div>
+
+            <!-- Tickboxes -->
+            <label><input type="checkbox" id="all_required"> Select all columns</label><br>
+            <label><input type="checkbox" name="exclude_empty_rows" value="true"> Exclude empty rows</label><br>
+            <label><input type="checkbox" name="exclude_duplicates" value="true"> Exclude duplicates</label><br>
+            <input type="hidden" name="files" value='{{ files_json | safe }}'>
+            <input type="submit" class="btn" value="Merge">
+        </form>
+    </div>
+
+    <script>
+        const allBox = document.getElementById('all_required');
+        const columnCheckboxes = document.querySelectorAll('input[name="required_columns"]');
+
+        // Handle "Select all" checkbox toggle
+        allBox.addEventListener('change', () => {
+            columnCheckboxes.forEach(cb => {
+                if (!cb.disabled) {
+                    cb.checked = allBox.checked;
+                }
+            });
+        });
+
+        // Uncheck "Select all" if any column checkbox is manually unchecked
+        columnCheckboxes.forEach(cb => {
+            if (!cb.disabled) {
+                cb.addEventListener('change', () => {
+                    if (!cb.checked) {
+                        allBox.checked = false;
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

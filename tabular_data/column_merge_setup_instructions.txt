@@ -1,0 +1,96 @@
+Column Merge App - Setup Instructions
+
+Follow the steps below to set up and run the CSV merging web application on Mac,
+	Windows, or Linux.
+
+1. Clone the Repository
+
+	Clone the repository to your local machine using git, or download the
+	repository directly.
+
+2. Open a Terminal or Command Prompt
+
+	Navigate to the `tabular_data` directory in your terminal (Mac/Linux) or
+	Command Prompt/PowerShell (Windows), or open a new Terminal/Command Prompt
+	window at that directory.
+
+
+3. Check Python and pip Installation
+
+	Make sure Python 3 and pip are installed:
+
+		Mac/Linux:
+
+			python3 --version
+			pip3 --version
+
+		Windows:
+
+			python --version
+			pip --version
+
+	If not installed, download Python from https://www.python.org/downloads/
+
+
+4. Create a Virtual Environment
+
+	Mac/Linux:
+
+		python3 -m venv .venv
+
+	Windows:
+
+		python -m venv .venv
+
+
+5. Activate the Virtual Environment
+
+	Mac/Linux:
+
+		source .venv/bin/activate
+
+	Windows (Command Prompt):
+
+		.venv\Scripts\activate.bat
+
+	Windows (PowerShell):
+
+		.venv\Scripts\Activate.ps1
+
+
+6. Install Dependencies
+
+	Once the virtual environment is active, install the required
+	Python packages:
+
+		pip install -r requirements.txt
+
+
+7. Run the Web Application
+
+	Start the web server with:
+
+    		python column_merge.py
+
+	You should see the following output:
+
+		Starting server at http://127.0.0.1:5000/
+		Press CTRL+C to quit.
+
+8. Access the App
+
+	Open your web browser and go to:
+
+    		http://127.0.0.1:5000/
+
+
+9. Use the App
+
+	Follow the instructions on each page to perform the merge
+	and download the resulting file.
+
+10. Stop the Server
+
+	To stop the app, return to the terminal and press:
+
+    		CTRL+C

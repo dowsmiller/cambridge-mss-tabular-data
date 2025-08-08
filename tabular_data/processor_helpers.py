@@ -3,8 +3,7 @@ import re
 import math
 import pandas as pd
 import xml.etree.ElementTree as ET
-import elementpath
-from elementpath.xpath3 import XPath31Parser
+from saxonche import PySaxonProcessor
 from collections import defaultdict
 from itertools import chain
 from pathlib import Path
@@ -375,23 +374,50 @@ def extract_with_xpath(xml_element, xpath_expr):
     """
     if xml_element is None:
         tqdm.write("XPath extraction failed. XML file not found.")
-        return
+        return []
 
     try:
-        result = elementpath.select(
-            xml_element, 
-            xpath_expr, 
-            namespaces={'tei': 'http://www.tei-c.org/ns/1.0'},
-            parser=XPath31Parser
-        )
-        # Convert non-list results to a list
-        if not isinstance(result, list):
-            result = [result]
+        xml_str = ET.tostring(xml_element, encoding="unicode")
+        with PySaxonProcessor(license=False) as proc:
+            doc = proc.parse_xml(xml_text=xml_str)
+            if doc is None:
+                tqdm.write("Failed to parse XML string into Saxon XdmNode.")
+                return []
+
+            xpath_proc = proc.new_xpath_processor()
+            xpath_proc.declare_namespace("tei", "http://www.tei-c.org/ns/1.0")
+            xpath_proc.set_context(xdm_item=doc)
+
+            result = xpath_proc.evaluate(xpath_expr)
+            if result is None:
+                return []
+
+            # Convert result to a list of strings
+            items = []
+            try:
+                for i in range(result.size):
+                    item = result.item_at(i)
+                    if hasattr(item, 'string_value'):
+                        items.append(item.string_value)
+                    else:
+                        items.append(str(item))
+            except Exception as e:
+                tqdm.write(f"Could not iterate result items. Error: {e}")
+                # fallback for singleton result
+                try:
+                    if hasattr(result, 'string_value'):
+                        items.append(result.string_value)
+                    else:
+                        items.append(str(result))
+                except Exception as inner_e:
+                    tqdm.write(f"Failed to extract string value from result. Error: {inner_e}")
+                    return []
+
+            return items
 
     except Exception as e:
         tqdm.write(f"XPath extraction failed. Offending XPath: {xpath_expr}. Error: {e}")
-        result = ""
-    return result
+        return []
 
 # Helper function to determine the separator for authority lookups
 def get_separator(separator, separator_map):
@@ -628,12 +654,14 @@ def parse_shelfmark(text):
     Args:
         text (str): The shelfmark string to parse.
     Returns:
-        list: A list of tokens, with numbers converted to integers.
+        str: A single normalised string for sorting.
     """
+    # Handle nulls
     if pd.isnull(text):
         return ""
-    
-    clean = str(text).replace('–', '-')
+
+    # Normalise dashes and split tokens
+    clean = str(text).replace('–', '-').replace('—', '-')
     tokens = re.split(r'[^\w\-]+', clean)
     parsed = []
 
@@ -641,11 +669,14 @@ def parse_shelfmark(text):
         if not token:
             continue
 
-        # Handle dash ranges (e.g. "65-9")
+        # Handle dash ranges
         if re.match(r'^\d+-\d+$', token):
             start, end = map(int, token.split('-'))
-            mid = start + (end - start) / 2
-            parsed.append(f"{mid:05.1f}")
+            if start <= end: # e.g. 10-20
+                sort_value = end
+            else: #e.g. 20-5
+                sort_value = float(start)
+            parsed.append(f"{sort_value:05.1f}")
 
         # Handle digit + letter suffix (e.g. "10b")
         elif re.match(r'^\d+[a-zA-Z]$', token):
@@ -654,11 +685,13 @@ def parse_shelfmark(text):
         # Handle simple digits
         elif token.isdigit():
             parsed.append(f"{int(token):05}")
+            parsed.append(" ")
 
         else:
             parsed.append(token.lower())
 
     return " ".join(parsed)
+
 
 # Helper function to save DataFrame as either csv or json file
 def save_as(df, output_dir, config_name, format):
@@ -781,7 +814,7 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
                 # Force formula-looking strings to text in data cells
                 for row in worksheet.iter_rows(min_row=3, max_row=worksheet.max_row):
                     for cell in row:
-                        if isinstance(cell.value, str) and cell.value.startswith('='):
+                        if isinstance(cell.value, str) and cell.value.startswith(('=', '-', '+', '@')):
                             cell.value = "'" + cell.value
 
                 # Set column widths based on heading length
@@ -821,6 +854,7 @@ def save_as_xlsx(df_list, config_list, output_dir, output_filename):
     except Exception as e:
         tqdm.write(f"Saving data to '{output_filename}.xlsx' failed. Error: {e}")
 
+# Helper function to merge and center cells in the first row of the worksheet
 def merge_and_center_cells(worksheet, sections):
     """
     Merges and centers identical consecutive section values in the first row of the worksheet.
