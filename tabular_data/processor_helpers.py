@@ -647,7 +647,6 @@ def sort_df(df, file_type):
 
         return df
 
-# Helper function for natural sorting of shelfmarks
 def parse_shelfmark(text):
     """
     Converts a shelfmark into a tuple for deterministic natural sorting.
@@ -659,35 +658,30 @@ def parse_shelfmark(text):
     if pd.isnull(text):
         return ()
 
-    # Split into tokens on non-word boundaries
     tokens = re.split(r'[\W_]+', text)
     parsed = []
 
-    for token in tokens:
+    for ti, token in enumerate(tokens):
         if not token:
             continue
 
         # Handle digit+letter combinations
         elif re.search(r'[A-Za-z]', token) and re.search(r'\d', token):
             parts = re.findall(r'\d+|[A-Za-z]+', token)
-            for i, part in enumerate(parts):
+            for pi, part in enumerate(parts):
                 if part.isdigit():
                     parsed.append(int(part))
-
                 else:
                     parsed.append(part.lower())
-
-                if i != len(parts) - 1:
+                if pi != len(parts) - 1:
                     parsed.append("")
-
-        # Handle plain digits
         elif token.isdigit():
             parsed.append(int(token))
-
         else:
             parsed.append(token.lower())
 
-        parsed.append("")
+        if ti != len(tokens) - 1:
+            parsed.append("")
 
     return tuple(parsed)
 
